@@ -158,7 +158,7 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
                     (RAIZ / "piezas" / pid / "salida" / "verificacion.json").write_text(json.dumps(ver, ensure_ascii=False, indent=2))
                     if ver["decision"] in ("RETENER", "RECHAZADA"):
                         tipo = "transitorio" if verificador.es_transitoria(ver) else "sustantivo"
-                        cola.mover(c, pid, "RETENIDO", f'verificación jurídica: {ver["decision"]}')
+                        cola.mover(c, pid, "RETENIDO", f'verificación jurídica: {ver["decision"]}' + "".join(f' · [{x["regla"]}] {x["detalle"]}' for x in ver.get("razonamiento", []) if x["severidad"] == "bloqueante")[:900])
                         t["retencion"] = {"tipo": tipo, "desde": cola.ahora(), "verificador": verificador.VERSION}; resumen["retenidas"].append(pid)
                         if tipo == "sustantivo": alerta(f"{pid} retenido por verificación jurídica ({ver['decision']}).")
                         continue

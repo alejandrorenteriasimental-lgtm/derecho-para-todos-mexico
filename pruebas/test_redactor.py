@@ -25,7 +25,12 @@ BORRADOR = {"titulo": "¿Te pueden meter a la cárcel por deber dinero?", "escen
     {"tipo": "lista", "texto": "Eso significa que una deuda civil, por sí sola, no te lleva a prisión, aunque sí pueden cobrarte por la vía legal.", "items": ["Pueden cobrarte", "Ante un juez", "Sin cárcel por la deuda"]},
     {"tipo": "titular", "texto": "Si alguien te amenaza con la cárcel por una deuda civil, esa amenaza no tiene sustento en la Constitución.", "titulo": ["SIN CÁRCEL", "POR DEUDAS"]}],
   "afirmaciones": [{"escena": 2, "fuente": "F1", "tipo": "hecho_normativo", "texto": "No hay prisión por deudas civiles.",
-                    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "duda": None}]}
+                    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "duda": None}],
+  "razonamiento": {"pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
+                   "respuesta_corta": "No, una deuda civil por sí sola no te lleva a prisión, aunque sí pueden cobrarte por la vía legal.",
+                   "reglas": [{"conclusion": "No hay prisión por deudas de carácter puramente civil.", "fuente": "F1",
+                               "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "condiciones": [], "excepciones": []}],
+                   "distinciones": [], "limites": "No aborda delitos como el fraude."}}
 
 
 def simulador_con(investigar=None, redactar=None, auditar=None):
@@ -139,7 +144,7 @@ def test_genera_imagen_valida_que_pasa_la_auditoria_grafica(uso, tmp_path):
     b = {"titular": "¿Te pueden encarcelar por una deuda?", "bajada": "La Constitución prohíbe la prisión por deudas de carácter puramente civil.",
          "cita_literal_destacada": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "fuente_cita": "F1",
          "ojo": "Cobrar una deuda por la vía legal sí es válido.", "copy": "Una deuda civil no te lleva a la cárcel.\n\nLo dice el artículo 17 de la Constitución.\n\nGuárdalo y compártelo.",
-         "alt": "Pieza sobre prisión por deudas", "afirmaciones": [{"fuente": "F1", "tipo": "hecho_normativo", "texto": "No hay cárcel por deudas civiles",
+         "razonamiento": {"pregunta": "¿Te pueden encarcelar por una deuda?", "respuesta_corta": "No, la Constitución prohíbe la prisión por deudas de carácter puramente civil.", "reglas": [{"conclusion": "No hay prisión por deudas de carácter puramente civil.", "fuente": "F1", "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "condiciones": [], "excepciones": []}], "distinciones": [{"a": "deuda civil", "b": "fraude", "diferencia": "El fraude es un delito; no pagar no lo es."}], "limites": ""}, "alt": "Pieza sobre prisión por deudas", "afirmaciones": [{"fuente": "F1", "tipo": "hecho_normativo", "texto": "No hay cárcel por deudas civiles",
                                                                  "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil"}]}
     g = redactor.generar(sol, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
     assert esquema.validar(g) == [] and "no es asesoría legal" in g["copy"]

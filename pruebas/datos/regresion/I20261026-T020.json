@@ -1,0 +1,134 @@
+{
+  "id": "I20261026-T020",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿Es legal la frase 'no hay cambios ni devoluciones'?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T020",
+  "pieza": {
+    "titular": "¿Es legal la frase 'no hay cambios ni devoluciones'?",
+    "bajada": "La ley establece derechos mínimos e impide condiciones que reduzcan las garantías legales del consumidor.",
+    "cita": "Las garantías ofrecidas no pueden ser inferiores a las que determinen las disposiciones aplicables",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 79",
+    "ojo": "La garantía mínima legal es de noventa días.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, arts. 77, 79 y 92"
+  },
+  "copy": "En el comercio en México, la Ley Federal de Protección al Consumidor en su artículo 79 dispone que las garantías ofrecidas no pueden limitar o reducir los derechos legales de las personas consumidoras. Además, el artículo 77 señala que la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.\n\nAsimismo, el artículo 92 reconoce el derecho del consumidor a elegir entre la reposición del producto o la devolución del dinero si el bien no corresponde a la calidad o especificaciones ofrecidas, o si el bien reparado no queda en estado adecuado dentro del plazo de garantía.\n\nDe acuerdo con el mismo artículo 79, el cumplimiento de las garantías es exigible al productor, al importador y al distribuidor, salvo en los casos en que alguno de ellos o algún tercero asuma por escrito dicha obligación.\n\nGuardar o compartir esta información permite difundir y consultar los derechos contemplados en la legislación mexicana.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre garantías en México conforme a la Ley Federal de Protección al Consumidor, destacando la prohibición de reducir derechos legales.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "77",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "la garantía no podrá se r inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 77",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-26"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Las garantías ofrecidas no pueden ser inferiores a las que determinen las disposiciones aplicables ni prescribir condiciones o limitaciones que reduzcan los derechos que legalmente corresponden al consumidor.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-26"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor, salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-26"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-26"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La garantía legal de un bien o servicio no puede ser menor a noventa días desde su entrega o prestación.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Las condiciones de garantía no pueden reducir ni limitar los derechos legales del consumidor.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "La garantía se puede exigir al productor, importador y distribuidor, salvo que la obligación haya sido asumida por escrito por alguno de ellos o un tercero.",
+      "fuente": "F3"
+    },
+    {
+      "id": "A4",
+      "tipo": "hecho_normativo",
+      "texto": "El consumidor puede elegir la devolución del dinero o la reposición del producto en los casos señalados por la ley.",
+      "fuente": "F4"
+    }
+  ],
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-26T16:01:54+00:00",
+    "solicitud": "2026-10-26_imagen_T020.json",
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-31b-it",
+    "historial": [
+      {
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "objeciones": [
+            {
+              "donde": "copy: \"Incluso si el producto fue reparado y no quedó bien, se puede exigir el cumplimiento de la garantía ante el vendedor, fabricante o importador.\"",
+              "problema": "La pieza atribuye la exigibilidad de la garantía ante el vendedor, fabricante o importador de forma genérica, pero el texto oficial establece una jerarquía o condición específica sobre quién asume la obligación.",
+              "correccion": "Asegurar que se mencione que el cumplimiento es exigible al productor, importador o distribuidor, salvo que alguno de ellos o un tercero asuma la obligación por escrito, según el artículo 79."
+            },
+            {
+              "donde": "copy: \"No permitas que te impongan reglas que vayan en contra de lo que dicta la norma. Guarda este post para tu próxima compra y compártelo con quien necesite conocer sus derechos.\"",
+              "problema": "El texto utiliza un lenguaje de exhortación y llamado a la acción que se aproxima a la asesoría personalizada o instrucción de conducta, lo cual contraviene la política de no dar asesoría.",
+              "correccion": "Eliminar las frases imperativas y de exhortación para mantener un tono puramente informativo y divulgativo."
+            }
+          ]
+        }
+      },
+      {
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

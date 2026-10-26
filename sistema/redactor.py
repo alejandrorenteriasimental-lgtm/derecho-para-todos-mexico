@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import esquema, modelos, verificador
+import esquema, modelos, verificador, razonamiento
 
 RAIZ = Path(__file__).resolve().parent.parent
 ORDEN = {o["sigla"]: o for o in json.loads((RAIZ / "data" / "ordenamientos.json").read_text())["ordenamientos"]}
@@ -53,7 +53,7 @@ class Biblioteca:
                 raise Descartada(f"{o['url']} no corresponde a «{o['documento']}»")
             self.docs[sigla] = (cab, cuerpo)
         cab, cuerpo = self.docs[sigla]
-        return verificador.articulo_texto(cuerpo, numero, max_car=2200)
+        return verificador.articulo_texto(cuerpo, numero, max_car=6000)
 
 
 # ---------------- instrucciones a los modelos ----------------
@@ -65,6 +65,12 @@ general en México. Escribes en español de México, claro, cercano y exacto. Re
 - Nada de asesoría personalizada: prohibido "en tu caso", "te garantizo", "contáctanos", "asesoría gratuita".
 - No llames culpable, asesino o delincuente a nadie. No menciones personas reales.
 - No uses lenguaje absoluto ("siempre", "nunca", "en todos los casos") salvo que el texto oficial lo diga.
+- Razona como abogado ANTES de redactar: identifica la pregunta, la norma que la responde, sus condiciones, requisitos,
+  límites y excepciones, y los conceptos parecidos que NO son lo mismo. Si el artículo dice «todo bien que se ofrezca con
+  garantía…», la regla vale para ESOS bienes, no para todos. Si preguntan por la renuncia, responde sobre la renuncia y no
+  sobre otra causa de terminación. Si los textos no alcanzan para responder, dilo («la ley no lo establece de forma
+  general…») en lugar de forzar una respuesta.
+- El contenido visible debe RESPONDER la pregunta del título de forma directa (Sí / No / Depende de…).
 Responde únicamente con un objeto JSON válido."""
 
 PEDIR_FUENTES = """Tema: {titulo}
@@ -78,10 +84,19 @@ Usa solo siglas de la lista. El número de artículo sin la palabra «artículo�
 
 PEDIR_REEL = """Escribe el guion de un Reel vertical de 45 a 70 segundos (700 a 1,100 caracteres de narración en total) sobre:
 Tema: {titulo}
-Gancho sugerido: {gancho}
+Pregunta que DEBE responder: {gancho}
 Textos oficiales disponibles (fuente → texto):
 {textos}
 
+
+Antes del contenido, incluye el campo "razonamiento" (no se publica; sirve para revisar tu lógica):
+{{"razonamiento": {{"pregunta": "la pregunta exacta que responde la pieza",
+   "respuesta_corta": "Sí, … / No, … / Depende: … (una oración)",
+   "reglas": [{{"conclusion": "…", "fuente": "F1", "cita_literal": "copia exacta que la sostiene", "condiciones": ["…"], "excepciones": ["…"]}}],
+   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],
+   "limites": "lo que la norma no dice"}}, …resto de campos…}}
+Conceptos que el público suele confundir en este tema (no los mezcles; si usas dos, explica su diferencia):
+{glosario}
 Estructura obligatoria del JSON:
 {{"titulo": "pregunta o frase de 40 a 70 caracteres",
   "escenas": [
@@ -103,6 +118,15 @@ Plantilla: {plantilla}
 Textos oficiales disponibles (fuente → texto):
 {textos}
 
+
+Antes del contenido, incluye el campo "razonamiento" (no se publica; sirve para revisar tu lógica):
+{{"razonamiento": {{"pregunta": "la pregunta exacta que responde la pieza",
+   "respuesta_corta": "Sí, … / No, … / Depende: … (una oración)",
+   "reglas": [{{"conclusion": "…", "fuente": "F1", "cita_literal": "copia exacta que la sostiene", "condiciones": ["…"], "excepciones": ["…"]}}],
+   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],
+   "limites": "lo que la norma no dice"}}, …resto de campos…}}
+Conceptos que el público suele confundir en este tema (no los mezcles; si usas dos, explica su diferencia):
+{glosario}
 Devuelve JSON con:
 {{"titular": "≤ 60 caracteres", "bajada": "≤ 150 caracteres",
   {campos}
@@ -119,18 +143,23 @@ CAMPOS_PLANTILLA = {
     "diferencia": '"columnas": [["Concepto A", "≤ 120 caracteres"], ["Concepto B", "≤ 120 caracteres"]],',
 }
 
-AUDITAR = """Eres auditor jurídico independiente. Revisa la pieza contra los textos oficiales y responde con rigor.
-Textos oficiales:
+AUDITAR = """Eres auditor jurídico independiente. No basta con que las citas existan: revisa si las CONCLUSIONES que la pieza saca
+de ellas son jurídicamente válidas. Textos oficiales (completos):
 {textos}
 
-Pieza:
+Pieza (incluye el mapa de razonamiento del redactor y la pregunta que debía responder):
 {pieza}
 
-Revisa también la COHERENCIA: el titular, el mito, la realidad, el gancho y la conclusión deben hablar de la misma figura jurídica
-que regulan los textos citados (p. ej., no titular sobre la renuncia y responder con el «mutuo consentimiento», que es otra causa).
-Señala SOLO problemas reales: afirmaciones que el texto oficial no sustenta, cifras o plazos distintos, excepciones omitidas que
-cambian el sentido, lenguaje absoluto, frases que parezcan asesoría personalizada, o confusión entre jurisdicción federal y estatal.
-Devuelve: {{"veredicto": "sin_objeciones" | "con_objeciones", "objeciones": [{{"donde": "...", "problema": "...", "correccion": "..."}}]}}"""
+Para cada conclusión, pregúntate: ¿el texto citado la sostiene por completo, solo en parte o no la sostiene? ¿Omite una
+condición, requisito, límite o excepción del artículo (p. ej., «que se ofrezca con garantía», «siempre que», «salvo»)?
+¿Confunde conceptos parecidos (garantía, devolución, cambio, bonificación, rescisión; renuncia, mutuo consentimiento,
+despido)? ¿La pieza responde de forma directa la pregunta de su título y la del plan editorial? ¿Presenta como regla general
+lo que la ley solo prevé en supuestos concretos? ¿Afirma algo que la ley no dice (p. ej., que algo es ilegal sin que un texto
+lo establezca)? Señala SOLO problemas reales, cada uno con la corrección concreta.
+Devuelve: {{"veredicto": "sin_objeciones" | "con_objeciones",
+ "conclusiones": [{{"conclusion": "...", "sostenida": "si" | "parcial" | "no", "motivo": "..."}}],
+ "objeciones": [{{"donde": "...", "problema": "...", "correccion": "..."}}]}}
+Si alguna conclusión es «parcial» o «no», el veredicto es «con_objeciones»."""
 
 
 def _textos(fuentes):
@@ -193,6 +222,13 @@ def _cierre(fuentes):
             "afirmaciones": []}
 
 
+def _mapa(borrador, fuentes):
+    rz = dict(borrador.get("razonamiento") or {})
+    rz["reglas"] = [{**r, "ref": {k: fuentes[r["fuente"]][k] for k in ("documento", "articulo")} if r.get("fuente") in fuentes else {}}
+                    for r in (rz.get("reglas") or []) if isinstance(r, dict)]
+    return rz
+
+
 def construir_reel(sol, borrador, fuentes):
     afs, quitadas = _anclar(borrador.get("afirmaciones", []), fuentes)
     if not afs:
@@ -224,7 +260,7 @@ def construir_reel(sol, borrador, fuentes):
     escenas.append(_cierre(fuentes))
     return {"id": sol["pieza_id"], "formato": "reel", "titulo": borrador.get("titulo") or sol["titulo"], "version_esquema": "0.3",
             "riesgo": RIESGO_CARRIL.get(sol.get("carril", "A"), "medio"), "carril_inicial": sol.get("carril", "A"),
-            "tema_id": sol["tema_id"], "fuentes": fichas, "escenas": escenas,
+            "tema_id": sol["tema_id"], "fuentes": fichas, "escenas": escenas, "razonamiento": _mapa(borrador, fuentes),
             "generacion": {"afirmaciones_eliminadas_sin_ancla": quitadas}}
 
 
@@ -260,11 +296,31 @@ def construir_imagen(sol, borrador, fuentes):
             "alt": borrador.get("alt") or pieza["titular"], "relacion_reel": sol.get("relacion"), "fuentes": fichas,
             "afirmaciones": [{"id": f"A{j + 1}", "tipo": a.get("tipo", "interpretacion"), "texto": a.get("texto", ""), "fuente": mapa[j],
                               **({"nota": a["duda"]} if a.get("duda") else {})} for j, a in enumerate(afs)],
-            "generacion": {"afirmaciones_eliminadas_sin_ancla": quitadas}}
+            "razonamiento": _mapa(borrador, fuentes), "generacion": {"afirmaciones_eliminadas_sin_ancla": quitadas}}
+
+
+def _glosario(sol, fuentes):
+    """Conceptos confundibles del tema (por la pregunta y por los textos oficiales), con su definición editorial."""
+    base = " ".join([sol.get("titulo", ""), sol.get("gancho", ""), sol.get("angulo", "")] + [f["texto_oficial"][:1500] for f in fuentes.values()])
+    grupos = {g for g, _ in razonamiento.conceptos_en(base)}
+    lin = []
+    for g in sorted(grupos):
+        for c, d in razonamiento.CONCEPTOS["grupos"][g]["conceptos"].items():
+            lin.append(f"- {c.replace('_', ' ')}: {d['definicion']}")
+    return "\n".join(lin) or "- (sin conceptos confundibles detectados)"
+
+
+def _fuentes_por_ficha(g, fuentes):
+    """Las fichas del guion (F1, F2… una por cita) apuntan a artículos; devuelve {ficha: fuente con su texto oficial}."""
+    out = {}
+    for fid, fi in (g.get("fuentes") or {}).items():
+        src = next((f for f in fuentes.values() if f["documento"] == fi["documento"] and f["articulo"] == fi["articulo"]), None)
+        if src: out[fid] = src
+    return out
 
 
 def auditar_ia(guion, fuentes, auditor, simulador=None):
-    pieza = json.dumps({k: guion[k] for k in ("titulo", "escenas", "pieza", "copy") if k in guion}, ensure_ascii=False)[:9000]
+    pieza = json.dumps({k: guion[k] for k in ("pregunta_original", "titulo", "razonamiento", "escenas", "pieza", "copy") if k in guion}, ensure_ascii=False)[:12000]
     return auditor.completar(REGLAS_COMUNES, AUDITAR.format(textos=_textos(fuentes), pieza=pieza), simulador)
 
 
@@ -281,24 +337,33 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
         biblio = Biblioteca(transporte)
         fuentes, descartes = investigar(sol, inv, biblio, simulador)
         textos = _textos(fuentes)
+        glosario = _glosario(sol, fuentes)
         if sol["formato"] == "reel":
-            pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=sol.get("gancho", ""), textos=textos) + extra, simulador)
+            pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=sol.get("gancho", ""), textos=textos, glosario=glosario) + extra, simulador)
             construir = construir_reel
         else:
             pl = sol.get("plantilla", "concepto")
             pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_IMAGEN.format(titulo=sol["titulo"], angulo=sol.get("angulo", ""), plantilla=pl,
-                                                                                    campos=CAMPOS_PLANTILLA[pl], textos=textos) + extra, simulador)
+                                                                                    campos=CAMPOS_PLANTILLA[pl], textos=textos, glosario=glosario) + extra, simulador)
             construir = construir_imagen
         historial = []
         extra = ""
         for intento in range(3):                                     # borrador + dos correcciones como máximo
             g = construir(sol, pedir(extra), fuentes)
+            g["pregunta_original"] = sol.get("gancho") or sol.get("angulo") or sol["titulo"]
             errores = esquema.validar(g)
+            hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
+            g["revision_razonamiento"] = hall
+            errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
             if errores:
                 historial.append({"intento": intento, "errores_esquema": errores})
                 extra = "\n\nTu versión anterior tenía estos problemas; corrígelos:\n- " + "\n- ".join(errores[:8]); continue
             a = auditar_ia(g, fuentes, aud, simulador)
             historial.append({"intento": intento, "auditoria_ia": a})
+            if a.get("veredicto") == "sin_objeciones" and any(str(x.get("sostenida", "si")).lower() != "si" for x in a.get("conclusiones", []) or []):
+                a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
+                    {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
+                    for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
             if a.get("veredicto") == "sin_objeciones":
                 m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
                 fam = lambda m: m.split("-")[0].split("/")[-1].lower()

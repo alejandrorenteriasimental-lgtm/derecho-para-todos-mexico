@@ -1,0 +1,120 @@
+{
+ "id": "R20261027-T052",
+ "formato": "reel",
+ "titulo": "¿Quién designa al Presidente de la institución?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "carril_inicial": "A",
+ "tema_id": "T052",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+   "articulo": "23",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf",
+   "texto_literal": "El Presidente será designado por el Secretario de Hacienda y Crédito Público.",
+   "cita": "Ley de Protección y Defensa al Usuario de Servicios Financieros, artículo 23",
+   "jurisdiccion": "federal",
+   "consultado": "2026-10-26"
+  }
+ },
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "texto": "¿Sabes de qué manera la ley sobre protección a usuarios financieros establece la designación del Presidente de la institución?",
+   "titulo": [
+    "DESIGNACIÓN DEL",
+    "PRESIDENTE",
+    "EN LA LEY"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "titular",
+   "texto": "Dentro del marco legal que regula la defensa de los usuarios de servicios financieros, la norma contempla la vía oficial para el nombramiento de la persona titular de la presidencia.",
+   "titulo": [
+    "MARCO",
+    "LEGAL"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cita",
+   "texto": "Sobre el nombramiento del cargo del Presidente, la ley precisa claramente lo siguiente: El Presidente será designado por el Secretario de Hacienda y Crédito Público.",
+   "etiqueta": "Ley de Protección y Defensa al Usuario de Servicios Financieros, art. 23",
+   "cita": "El Presidente será designado por el Secretario de Hacienda y Crédito Público.",
+   "afirmaciones": []
+  },
+  {
+   "tipo": "lista",
+   "texto": "Revisar el texto legal nos ayuda a comprender los mecanismos de representación oficial fijados por la norma jurídica.",
+   "items": [
+    "Designación del titular",
+    "Facultad de Hacienda",
+    "Marco legal aplicable"
+   ],
+   "afirmaciones": [
+    {
+     "id": "A1",
+     "tipo": "hecho_normativo",
+     "texto": "El Presidente de la entidad es designado por el Secretario de Hacienda y Crédito Público.",
+     "fuente": "F1"
+    }
+   ]
+  },
+  {
+   "tipo": "titular",
+   "texto": "Conocer esta disposición legal sobre el nombramiento del Presidente ayuda a entender las facultades y el origen de la autoridad previstos en la ley marco para la protección del usuario.",
+   "titulo": [
+    "ORIGEN DEL",
+    "CARGO"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cierre",
+   "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+   "aviso": "Información general, no asesoría legal.",
+   "afirmaciones": []
+  }
+ ],
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-10-26T16:34:49+00:00",
+  "solicitud": "2026-10-27_reel_T052.json",
+  "modelos": {
+   "investigador": "gemini-3.5-flash-lite",
+   "redactor": "gemini-3.6-flash"
+  }
+ },
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemma-4-31b-it",
+  "historial": [
+   {
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "con_objeciones",
+     "objeciones": [
+      {
+       "donde": "escena 1 (gancho) y escena 2 (titular)",
+       "problema": "La pieza utiliza términos en plural ('autoridades', 'quiénes ocupan los cargos principales') para referirse al contenido de la norma, pero el texto oficial proporcionado solo menciona la designación de un cargo específico: el Presidente.",
+       "correccion": "Modificar el texto para que se refiera de forma singular al cargo de Presidente, evitando sugerir que la ley detalla la ocupación de múltiples cargos o autoridades."
+      }
+     ]
+    }
+   },
+   {
+    "intento": 1,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": true
+ },
+ "pregunta_original": "¿El banco tiene que devolverte un cargo que no hiciste?"
+}

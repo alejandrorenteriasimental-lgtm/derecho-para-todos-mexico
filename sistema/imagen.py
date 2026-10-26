@@ -141,6 +141,8 @@ def plantilla_mito_realidad(L, g, y):
 
 def plantilla_diferencia(L, g, y):
     p = g["pieza"]; y = _titular(L, y, p["titular"], 2)
+    if p.get("bajada"):                                   # la respuesta corta debe verse, no solo estar en el guion
+        y, _, _ = L.parrafo(M, y + 4, p["bajada"], "serif", 38, C["tinta"], C["papel"], W - 2 * M, max_lineas=3); y += 26
     col_w = (W - 2 * M - 30) // 2; y0 = y
     for j, (nombre, desc) in enumerate(p["columnas"][:2]):
         x = M + j * (col_w + 30)

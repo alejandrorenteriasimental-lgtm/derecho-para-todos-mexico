@@ -1,0 +1,222 @@
+{
+  "nota": "Mapa editorial de conceptos jurídicos que el público (y los modelos) suelen confundir. Cada grupo reúne figuras relacionadas pero distintas. 'patrones' detecta el concepto en un texto (expresiones regulares sobre texto en minúsculas y sin acentos). 'regula' indica dónde se apoya habitualmente la figura; es una pista para revisar, no una fuente: la fuente siempre es el texto oficial citado en cada pieza. Revisado por el editor el 26-10-2026; ampliar solo con verificación contra el texto oficial.",
+  "grupos": {
+    "consumo_postventa": {
+      "descripcion": "Derechos del consumidor después de la compra (Ley Federal de Protección al Consumidor).",
+      "conceptos": {
+        "garantia": {
+          "patrones": [
+            "garantia"
+          ],
+          "definicion": "Compromiso sobre la calidad o funcionamiento del bien o servicio; si se ofrece, no puede ser inferior al mínimo legal ni limitar los derechos legales del consumidor.",
+          "regula": "LFPC 77-79"
+        },
+        "devolucion_dinero": {
+          "patrones": [
+            "devolucion de la cantidad pagada",
+            "devolucion del dinero",
+            "devolver (?:el|tu) dinero",
+            "devoluciones?"
+          ],
+          "definicion": "Restitución del precio pagado. La LFPC la reconoce en supuestos concretos (p. ej., defectos o incumplimientos, art. 92); no establece un derecho general a devolver un bien solo porque ya no se quiere.",
+          "regula": "LFPC 92"
+        },
+        "cambio_reposicion": {
+          "patrones": [
+            "reposicion",
+            "cambios?\\b",
+            "cambiar el producto"
+          ],
+          "definicion": "Sustitución del producto por otro. La ley la prevé en supuestos concretos (art. 92); el cambio por gusto depende de la política que el proveedor haya ofrecido.",
+          "regula": "LFPC 92"
+        },
+        "bonificacion": {
+          "patrones": [
+            "bonificacion",
+            "compensacion"
+          ],
+          "definicion": "Cantidad que el proveedor debe pagar al consumidor como compensación en los supuestos legales; es distinta de la devolución del precio.",
+          "regula": "LFPC 92 Bis, 92 Ter"
+        },
+        "rescision": {
+          "patrones": [
+            "rescision",
+            "rescindir"
+          ],
+          "definicion": "Terminación del contrato por incumplimiento de una de las partes.",
+          "regula": "Código Civil y LFPC según el caso"
+        },
+        "revocacion_consentimiento": {
+          "patrones": [
+            "revocar (?:su|tu|el) consentimiento",
+            "revocacion"
+          ],
+          "definicion": "Facultad de dejar sin efecto una compra en plazos breves en las ventas a domicilio, por teléfono o a distancia.",
+          "regula": "LFPC 56"
+        }
+      }
+    },
+    "terminacion_laboral": {
+      "descripcion": "Formas de terminar la relación de trabajo (Ley Federal del Trabajo).",
+      "conceptos": {
+        "renuncia": {
+          "patrones": [
+            "renuncia",
+            "renunciar",
+            "separ\\w* voluntariamente",
+            "retiro voluntario"
+          ],
+          "definicion": "Separación decidida por la persona trabajadora.",
+          "regula": "LFT (p. ej., 162 fr. III para la prima de antigüedad)"
+        },
+        "mutuo_consentimiento": {
+          "patrones": [
+            "mutuo consentimiento",
+            "acuerdo entre (?:las )?partes"
+          ],
+          "definicion": "Terminación acordada por ambas partes.",
+          "regula": "LFT 53 fr. I"
+        },
+        "despido": {
+          "patrones": [
+            "despido",
+            "despedir",
+            "rescision (?:de la relacion|por el patron)"
+          ],
+          "definicion": "Separación decidida por el patrón, justificada o injustificada.",
+          "regula": "LFT 47-50"
+        },
+        "rescision_trabajador": {
+          "patrones": [
+            "rescision (?:por|imputable al) (?:el )?patron",
+            "causas de rescision"
+          ],
+          "definicion": "Terminación por causas imputables al patrón, a iniciativa de la persona trabajadora.",
+          "regula": "LFT 51-52"
+        }
+      }
+    },
+    "deudas": {
+      "descripcion": "Deudas civiles frente a conductas penales.",
+      "conceptos": {
+        "deuda_civil": {
+          "patrones": [
+            "deudas? (?:de caracter )?(?:puramente )?civil",
+            "deber dinero"
+          ],
+          "definicion": "Obligación de pago de naturaleza civil; no lleva a prisión.",
+          "regula": "CPEUM 17"
+        },
+        "fraude": {
+          "patrones": [
+            "fraude",
+            "enganar"
+          ],
+          "definicion": "Delito que implica engaño para obtener un lucro indebido; es distinto de no pagar.",
+          "regula": "CPF 386"
+        },
+        "abandono_familiar": {
+          "patrones": [
+            "abandono de (?:hijos|conyuge|personas)",
+            "sin recursos para atender"
+          ],
+          "definicion": "Delito por dejar sin recursos a quienes se tiene obligación de mantener.",
+          "regula": "CPF 336"
+        }
+      }
+    }
+  },
+  "marcadores_condicion": [
+    "que se ofrezca",
+    "que se ofrezcan",
+    "siempre que",
+    "siempre y cuando",
+    "cuando",
+    "salvo",
+    "excepto",
+    "a menos que",
+    "en los casos",
+    "en su caso",
+    "sin perjuicio",
+    "para tal efecto",
+    "para los efectos",
+    "de conformidad con",
+    "en los terminos",
+    "unicamente",
+    "solo",
+    "que hayan",
+    "que se encuentren",
+    "por lo menos"
+  ],
+  "absolutos": [
+    "toda",
+    "todo",
+    "todos",
+    "todas",
+    "siempre",
+    "nunca",
+    "cualquier",
+    "ninguna",
+    "ningun",
+    "minima legal",
+    "en todos los casos",
+    "jamas",
+    "obligatoriamente"
+  ],
+  "sinonimos": {
+    "carcel": [
+      "carcel",
+      "prision",
+      "aprision",
+      "encarcel",
+      "preso",
+      "presa"
+    ],
+    "deuda": [
+      "deuda",
+      "deber",
+      "debo",
+      "debes",
+      "dinero",
+      "adeud",
+      "cobranza",
+      "cobrar"
+    ],
+    "devolver": [
+      "devol",
+      "devuel",
+      "reembols",
+      "reintegr"
+    ],
+    "cargo": [
+      "cargo",
+      "cobro",
+      "transaccion",
+      "compra"
+    ],
+    "despido": [
+      "despid",
+      "corrieron",
+      "correr del trabajo"
+    ],
+    "renuncia": [
+      "renunc",
+      "separ",
+      "retiro voluntario"
+    ],
+    "garantia": [
+      "garant",
+      "poliza"
+    ],
+    "cambio": [
+      "cambi",
+      "reposic"
+    ],
+    "banco": [
+      "banco",
+      "bancari",
+      "tarjeta",
+      "institucion financiera"
+    ]
+  }
+}

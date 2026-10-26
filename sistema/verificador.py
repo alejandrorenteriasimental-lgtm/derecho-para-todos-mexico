@@ -22,7 +22,7 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
-VERSION = "0.3.2"   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+VERSION = "0.4.0"   # 0.4.0: revisión del razonamiento jurídico (respuesta, conceptos, sustento, condiciones)   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
 
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)
@@ -270,6 +270,7 @@ def adaptar(g):
 
 def verificar_guion(g, transporte=transporte_http):
     """Devuelve el dictamen documental de todas las fuentes y la regla de decisión aplicada a las afirmaciones."""
+    original = g
     g = adaptar(g)
     memo = {}
     def una_vez(url, timeout=60):   # un mismo PDF (p. ej. el Código Penal) se descarga una sola vez por guion
@@ -314,7 +315,26 @@ def verificar_guion(g, transporte=transporte_http):
         aia = g.get("auditoria_ia") or {}
         ia_ok = aia.get("veredicto") == "sin_objeciones" and aia.get("familia_distinta", True) is not False   # auditor de otra familia
         decision = "APTA_CON_CRITERIO" if r == "bajo" or (r == "medio" and ia_ok) else "REVISION_HUMANA"
-    return {"decision": decision, "fuentes": ev, "afirmaciones": afirm}
+    # razonamiento jurídico contra el texto oficial COMPLETO de cada artículo citado
+    hall = []
+    try:
+        import razonamiento
+        textos = {}
+        for f in g.get("fuentes", []):
+            st = memo.get(f.get("url"))
+            if not st or st[0] != "ok" or st[1][0] != 200: continue
+            try:
+                cab, cuerpo = texto_de(st[1][1], st[1][2])
+                t = articulo_texto(cuerpo, f.get("articulo"), max_car=8000)
+                if t: textos[(f.get("documento"), str(f.get("articulo")))] = t
+            except Exception:
+                continue
+        hall = razonamiento.revisar(original, textos)
+    except Exception as e:
+        hall = [{"regla": "razonamiento", "severidad": "advertencia", "detalle": f"no se pudo revisar: {e}"}]
+    if decision in ("APTA", "APTA_CON_CRITERIO", "REVISION_HUMANA") and any(x["severidad"] == "bloqueante" for x in hall):
+        decision = "RETENER"
+    return {"decision": decision, "fuentes": ev, "afirmaciones": afirm, "razonamiento": hall}
 
 
 if __name__ == "__main__":

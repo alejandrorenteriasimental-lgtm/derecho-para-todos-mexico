@@ -105,7 +105,8 @@ def juridica(guion: dict, hoy: date):
     nombres = re.findall(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\b", narr)
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos"}
     INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México"}
-    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES]
+    oficiales = " ".join(str(f.get(k, "")) for f in fuentes.values() for k in ("documento", "cita", "texto_literal", "literal"))
+    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and x not in oficiales]   # cargos e instituciones citados en la ley no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
     if personas: carril = "C"
     regla("Toda afirmación jurídica tiene fuente", all(e["fuente"] != "SIN FUENTE" for e in estados), f"{len(estados)} afirmaciones")
