@@ -10,14 +10,14 @@ D=models/ia; mkdir -p "$D"
 bajar() { [ -s "$2" ] && [ "$(stat -c %s "$2")" -ge "$3" ] && return 0
   curl -fL --retry 3 -sS -o "$2.tmp" "$1"; [ "$(stat -c %s "$2.tmp")" -ge "$3" ] || { echo "descarga incompleta: $1"; exit 1; }; mv "$2.tmp" "$2"; }
 if [ ! -x "$D/bin/llama-server" ]; then
-  URL=$(curl -fsSL ${GITHUB_TOKEN:+-H "Authorization: Bearer $GITHUB_TOKEN"} https://api.github.com/repos/ggml-org/llama.cpp/releases/latest | python3 -c "
+  URL=$(curl -fsSL ${GITHUB_TOKEN:+-H "Authorization: Bearer $GITHUB_TOKEN"} "https://api.github.com/repos/ggml-org/llama.cpp/releases?per_page=15" | python3 -c "
 import json,sys
-a=[x['browser_download_url'] for x in json.load(sys.stdin)['assets']]
+a=[x['browser_download_url'] for r in json.load(sys.stdin) for x in r['assets']]   # la «latest» a veces solo trae una etiqueta
 malos=('vulkan','cuda','sycl','rocm','hip','opencl','arm64','aarch64','s390x','musa','kompute')
 c=[u for u in a if 'ubuntu' in u.lower() and 'x64' in u.lower() and not any(m in u.lower() for m in malos) and (u.endswith('.zip') or u.endswith('.tar.gz'))]
 if not c:
     sys.stderr.write('Activos disponibles:\n' + '\n'.join(a) + '\n'); sys.exit(1)
-print(sorted(c, key=len)[0])")
+print(c[0])")
   rm -rf /tmp/llama && mkdir -p /tmp/llama
   case "$URL" in
     *.zip) curl -fsSL -o /tmp/llama.zip "$URL" && unzip -q /tmp/llama.zip -d /tmp/llama ;;
