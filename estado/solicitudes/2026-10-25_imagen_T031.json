@@ -9,10 +9,19 @@
   "angulo": "¿Te pueden volver a juzgar por lo mismo?",
   "fuentes_sugeridas": "CPEUM art. 23",
   "hora_publicacion_mx": "09:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "SUPERSEDIDA",
   "instrucciones": "docs/tarea_guionista.md",
   "pieza_id": "I20261025-T031",
   "archivo": "2026-10-25_imagen_T031.json",
   "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: IA local: HTTP Error 400: Bad Request"
+  "ultimo_motivo": "modelo no disponible: IA local: HTTP Error 400: Bad Request",
+  "historial": [
+    {
+      "estado": "PENDIENTE_GUION",
+      "a": "SUPERSEDIDA",
+      "fecha_cambio": "2026-10-26"
+    }
+  ],
+  "supersedida_por": "2026-10-25_imagen_T089.json",
+  "motivo_cierre": "Duplicado por fecha y formato (defecto del planificador hasta v0.3); se conserva como historial."
 }

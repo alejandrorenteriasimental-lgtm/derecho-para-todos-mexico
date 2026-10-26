@@ -9,6 +9,15 @@
   "angulo": "¿Por qué no todo lo que dice la Corte obliga?",
   "fuentes_sugeridas": "Ley de Amparo arts. 215-230; Acuerdo General 7/2025 SCJN",
   "hora_publicacion_mx": "09:00",
-  "estado": "PENDIENTE_GUION",
-  "instrucciones": "docs/tarea_guionista.md"
+  "estado": "SUPERSEDIDA",
+  "instrucciones": "docs/tarea_guionista.md",
+  "historial": [
+    {
+      "estado": "PENDIENTE_GUION",
+      "a": "SUPERSEDIDA",
+      "fecha_cambio": "2026-10-26"
+    }
+  ],
+  "supersedida_por": "2026-10-27_imagen_T014.json",
+  "motivo_cierre": "Duplicado por fecha y formato (defecto del planificador hasta v0.3); se conserva como historial."
 }

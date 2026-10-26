@@ -9,6 +9,15 @@
   "angulo": "Concepto clave detrás de «Robo de identidad: qué hacer», en formato concepto; reutiliza las fuentes ya verificadas del Reel; prohibido repetir su guion.",
   "fuentes_sugeridas": "CONDUSEF; Buró de Crédito; códigos penales locales",
   "hora_publicacion_mx": "09:00",
-  "estado": "PENDIENTE_GUION",
-  "instrucciones": "docs/tarea_guionista.md"
+  "estado": "SUPERSEDIDA",
+  "instrucciones": "docs/tarea_guionista.md",
+  "historial": [
+    {
+      "estado": "PENDIENTE_GUION",
+      "a": "SUPERSEDIDA",
+      "fecha_cambio": "2026-10-26"
+    }
+  ],
+  "supersedida_por": "2026-10-31_imagen_T015.json",
+  "motivo_cierre": "Duplicado por fecha y formato (defecto del planificador hasta v0.3); se conserva como historial."
 }

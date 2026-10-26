@@ -8,6 +8,15 @@
   "fuentes_sugeridas": "CPEUM arts. 14, 16, 20",
   "riesgo_exactitud": "Bajo",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
-  "instrucciones": "docs/tarea_guionista.md"
+  "estado": "SUPERSEDIDA",
+  "instrucciones": "docs/tarea_guionista.md",
+  "historial": [
+    {
+      "estado": "PENDIENTE_GUION",
+      "a": "SUPERSEDIDA",
+      "fecha_cambio": "2026-10-26"
+    }
+  ],
+  "supersedida_por": "2026-10-26_reel_T014.json",
+  "motivo_cierre": "Duplicado por fecha y formato (defecto del planificador hasta v0.3); se conserva como historial."
 }
