@@ -1,0 +1,73 @@
+{
+  "decision": "APTA",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-10-26T13:54:27+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 58127,
+      "extracto": "- son causas de terminacion de las relaciones de trabajo: i. el mutuo consentimiento de las partes; ii. la muerte del trabajador; iii. la terminacion de la obra o vencimiento del termino o inversion del capital, de conformidad con los articulos 36, 37 y 38; iv. la incapacidad fis ica o mental o inhabilidad manifiesta del trabajador, que haga imposible la prestacion del trabajo; y v. los casos a que se refiere el articulo 434.",
+      "huella_articulo": "343b58ee5c7e34676370fd72a908cb3a2b254ccad5e3118a1cd44c06dc2ecb59",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-10-26T13:54:48+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 70515,
+      "extracto": "- los trabajadores tendran derecho a un aguinaldo anual que debera pagarse antes del dia veinte de diciembre, equivalente a quince dias de salario, por lo menos. los que no hayan cumplido el ano de servicios, independienteme nte de que se encuentren laborando o no en la fecha de liquidacion del aguinaldo, tendran derecho a que se les pague la parte proporcional del mismo, conforme al tiempo que hubieren trabajado, cualquiera que fuere este. parrafo reformado dof 31-12-1975",
+      "huella_articulo": "1f705611188007393761efc2c7c7cea60dff582ed40bb3efe079dc51e76c5b26",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-10-26T13:55:08+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 151905,
+      "extracto": "- los trabajadores de planta tienen derecho a una prima de antiguedad, de conformidad con las normas siguientes: i. la prima de antiguedad consistira en el importe de doce dias de salario, por cada ano de servicios; ii. para determinar el monto del salario, se estara a lo dispuesto en los articulos 485 y 486; iii. la prima de antiguedad se pagara a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince anos de servicios, por lo menos. asimismo se pagara a los que se separen por causa justificada y a los que sean separados de su empleo, independientement",
+      "huella_articulo": "968234f803223c2eb9b488a0beae9b44e528423073d5895c8c473e2660594995",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F3"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": "La norma no especifica si el mutuo consentimiento se considera siempre una separación voluntaria para efectos de la prima de antigüedad."
+    }
+  ]
+}

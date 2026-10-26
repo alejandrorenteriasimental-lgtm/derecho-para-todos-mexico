@@ -1,0 +1,127 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1155 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1016"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "34 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "92% de 39 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 81/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261025-T089",
+    "formato": "imagen",
+    "titulo": "¿Renunciar significa perder tus derechos?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261025-T089.png",
+    "sha256": "72f3ed4fe9706693dbeec7696b119582e432c41fc191dd6b9893d8074035e19f",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000001110000000000000011001111111111111100111111111111110000011111111111000111111111111100000000011111110000000000111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "9e507db8da1a28ea4da1b45d315f3f8f25d31f986d38048a10e8973a2d38b65f",
+    "texto_alternativo": "Infografía de estilo mito y realidad. El mito dice que al renunciar se pierde todo el dinero. La realidad explica que por mutuo consentimiento se conserva el derecho al aguinaldo proporcional y a otras prestaciones según la antigüedad.",
+    "copy": "La terminación de las relaciones de trabajo puede ocurrir por el mutuo consentimiento de las partes, de conformidad con el artículo 53, fracción I, de la Ley Federal del Trabajo. Esto no implica la pérdida total de los pagos acumulados por el tiempo laborado.\n\nSegún el artículo 87 de la misma ley, los trabajadores tienen derecho a recibir la parte proporcional de su aguinaldo conforme al tiempo que hubieren trabajado, sin importar si están laborando o no en la fecha de liquidación de dicha prestación.\n\nEn cuanto a la prima de antigüedad, el artículo 162 indica que esta se paga a quienes se separen voluntariamente de su empleo siempre que hayan cumplido, por lo menos, quince años de servicios. Esta prestación se cubre independientemente de cualquier otra que corresponda al trabajador.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "53",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "87",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "162",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-10-26T13:55:30+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

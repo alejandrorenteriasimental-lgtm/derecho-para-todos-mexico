@@ -84,6 +84,39 @@
         "desde": "2026-10-26T03:40:07+00:00",
         "verificador": "0.3.1"
       }
+    },
+    "I20261025-T089": {
+      "id": "I20261025-T089",
+      "formato": "imagen",
+      "huella": "9e507db8da1a28ea4da1b45d315f3f8f25d31f986d38048a10e8973a2d38b65f",
+      "estado": "SIMULADO",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-26T13:54:27+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-26T13:55:30+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "APROBADO",
+          "ts": "2026-10-26T13:55:30+00:00",
+          "motivo": "APTO"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-26T13:55:30+00:00",
+          "motivo": "PUBLICAR distinto de 1"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }

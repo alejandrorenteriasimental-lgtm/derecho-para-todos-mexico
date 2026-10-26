@@ -1,0 +1,116 @@
+{
+  "id": "I20261025-T089",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Renunciar significa perder tus derechos?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T089",
+  "pieza": {
+    "titular": "¿Renunciar significa perder tus derechos?",
+    "bajada": "La ley contempla pagos que se mantienen incluso si la relación laboral termina por acuerdo entre las partes.",
+    "mito": "“Si firmo mi renuncia, pierdo todo mi dinero y mis prestaciones”",
+    "realidad": "Al terminar la relación por mutuo consentimiento, conservas derechos como la parte proporcional de tu aguinaldo.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 53 · Ley Federal del Trabajo, art. 87 · Ley Federal del Trabajo, art. 162"
+  },
+  "copy": "La terminación de las relaciones de trabajo puede ocurrir por el mutuo consentimiento de las partes, de conformidad con el artículo 53, fracción I, de la Ley Federal del Trabajo. Esto no implica la pérdida total de los pagos acumulados por el tiempo laborado.\n\nSegún el artículo 87 de la misma ley, los trabajadores tienen derecho a recibir la parte proporcional de su aguinaldo conforme al tiempo que hubieren trabajado, sin importar si están laborando o no en la fecha de liquidación de dicha prestación.\n\nEn cuanto a la prima de antigüedad, el artículo 162 indica que esta se paga a quienes se separen voluntariamente de su empleo siempre que hayan cumplido, por lo menos, quince años de servicios. Esta prestación se cubre independientemente de cualquier otra que corresponda al trabajador.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía de estilo mito y realidad. El mito dice que al renunciar se pierde todo el dinero. La realidad explica que por mutuo consentimiento se conserva el derecho al aguinaldo proporcional y a otras prestaciones según la antigüedad.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "53",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes",
+      "cita": "Ley Federal del Trabajo, artículo 53",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-26"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "87",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "tendrán derecho a que se les pague la parte proporcional del mismo, conforme al tiempo que hubieren trabajado, cualquiera que fuere éste",
+      "cita": "Ley Federal del Trabajo, artículo 87",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-26"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "162",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios",
+      "cita": "Ley Federal del Trabajo, artículo 162",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-26"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "",
+      "fuente": "F3",
+      "nota": "La norma no especifica si el mutuo consentimiento se considera siempre una separación voluntaria para efectos de la prima de antigüedad."
+    }
+  ],
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-26T13:54:27+00:00",
+    "solicitud": "2026-10-25_imagen_T089.json",
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "objeciones": [
+            {
+              "donde": "La renuncia es una de las causas de terminación de la relación de trabajo por mutuo consentimiento, según lo establece el artículo 53 de la Ley Federal del Trabajo.",
+              "problema": "Confusión conceptual entre 'renuncia' y 'mutuo consentimiento'. El texto oficial lista el 'mutuo consentimiento de las partes' como una causa, pero no define la renuncia como sinónimo de este concepto.",
+              "correccion": "La terminación de las relaciones de trabajo puede ocurrir por el mutuo consentimiento de las partes, de conformidad con el artículo 53, fracción I, de la Ley Federal del Trabajo."
+            },
+            {
+              "donde": "Guarda esta información o compártela con quien la necesite.",
+              "problema": "Uso de lenguaje que se aleja de la divulgación informativa para entrar en un tono de interacción/llamado a la acción que puede interpretarse como una instrucción de conducta o asesoría indirecta.",
+              "correccion": "Eliminar la frase para mantener el carácter estrictamente informativo y neutral del medio."
+            }
+          ]
+        }
+      },
+      {
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones"
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

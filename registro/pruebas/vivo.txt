@@ -1,50 +1,4 @@
-......FF...................                                              [100%]
-=================================== FAILURES ===================================
-_____________ test_cada_rol_tiene_al_menos_un_modelo_del_catalogo ______________
-pruebas/test_vivo_ia.py:23: in test_cada_rol_tiene_al_menos_un_modelo_del_catalogo
-    ids = _catalogo()
-          ^^^^^^^^^^^
-pruebas/test_vivo_ia.py:19: in _catalogo
-    return {m["id"] for m in json.loads(crudo)}
-                             ^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py:346: in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py:338: in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py:356: in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-____________________ test_llamada_real_minima_devuelve_json ____________________
-sistema/modelos.py:97: in _http
-    return json.loads(crudo)
-           ^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py:346: in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py:338: in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py:356: in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-pruebas/test_vivo_ia.py:31: in test_llamada_real_minima_devuelve_json
-    r = m.completar("Responde solo con JSON.", 'Devuelve {"ok": true}')
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:121: in completar
-    return self._completar_remoto(sistema, usuario, simulador)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:158: in _completar_remoto
-    raise ultimo or FallaModelo("sin modelos configurados")
-sistema/modelos.py:146: in _completar_remoto
-    r = self._http(modelo, [{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:99: in _http
-    raise FallaModelo(f"{modelo}: respuesta no JSON del proveedor: {crudo[:120]!r}")
-E   modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
+..........s...................                                           [100%]
 ==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pruebas/test_vivo.py::test_cpeum_17_verificado_en_el_documento_oficial
@@ -53,6 +7,10 @@ PASSED pruebas/test_vivo.py::test_oficial_real_con_cita_alterada_se_rechaza
 PASSED pruebas/test_vivo.py::test_oficial_real_con_articulo_equivocado_se_rechaza
 PASSED pruebas/test_vivo.py::test_oficial_real_con_documento_equivocado_se_rechaza
 PASSED pruebas/test_vivo.py::test_cambio_normativo_simulado_sobre_documento_real
+PASSED pruebas/test_vivo_ia.py::test_cada_rol_tiene_al_menos_un_modelo_gemini_disponible
+PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[investigador]
+PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[redactor]
+PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[auditor]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CPEUM]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CPF]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CNPP]
@@ -72,6 +30,5 @@ PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGV
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LNEP]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LFDA]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGAMVLV]
-FAILED pruebas/test_vivo_ia.py::test_cada_rol_tiene_al_menos_un_modelo_del_catalogo - json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-FAILED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json - modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
-2 failed, 25 passed, 117 deselected in 266.46s (0:04:26)
+SKIPPED [1] pruebas/test_vivo_ia.py:54: ningún rol usa GitHub Models
+29 passed, 1 skipped, 134 deselected in 383.29s (0:06:23)

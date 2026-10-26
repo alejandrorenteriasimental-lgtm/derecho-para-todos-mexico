@@ -29,3 +29,11 @@
 {"ts": "2026-10-26T04:59:36+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T019.json", "transitoria": false, "motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"}
 {"ts": "2026-10-26T05:05:20+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T031.json", "transitoria": true, "motivo": "modelo no disponible: IA local: HTTP Error 400: Bad Request"}
 {"ts": "2026-10-26T05:05:20+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 4, "producidas": 0, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0}
+{"ts": "2026-10-26T13:38:05+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-26T13:42:19+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T089.json", "transitoria": true, "motivo": "modelo no disponible: gemini-3.8-flash: sin conexión o respuesta ilegible (TimeoutError)"}
+{"ts": "2026-10-26T13:54:27+00:00", "evento": "redactada", "pieza": "I20261025-T089", "solicitud": "2026-10-25_imagen_T089.json"}
+{"ts": "2026-10-26T13:54:27+00:00", "pieza": "I20261025-T089", "evento": "encolado"}
+{"ts": "2026-10-26T13:55:30+00:00", "pieza": "I20261025-T089", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-26T13:55:30+00:00", "pieza": "I20261025-T089", "evento": "transicion", "a": "APROBADO", "motivo": "APTO"}
+{"ts": "2026-10-26T13:55:30+00:00", "pieza": "I20261025-T089", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-26T13:55:30+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0}
