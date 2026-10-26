@@ -64,6 +64,13 @@ def _sinpunt(t):
     return re.sub(r"\s+", " ", re.sub(r"[,;:.\"'()\[\]¿?¡!]", " ", t)).strip()
 
 
+def _compacto(t):
+    """Solo letras y dígitos, sin espacios ni puntuación. La extracción de texto de los PDF oficiales inserta espacios
+    espurios dentro de las palabras («resp onsabilidad», «moti vo»); comparar en esta forma los neutraliza, y una sola
+    letra distinta sigue haciendo fallar el cotejo."""
+    return re.sub(r"[^a-z0-9ñ]", "", _plano(t))
+
+
 def dominio_oficial(url):
     u = urlparse(url)
     if u.scheme != "https" or not u.hostname:
@@ -161,7 +168,7 @@ def articulo_texto(cuerpo, numero, max_car=6000):
 
 def contiene(texto_oficial, cita):
     """¿La cita aparece en el texto oficial? (insensible a mayúsculas, acentos y puntuación)."""
-    return _sinpunt(_plano(cita)) in _sinpunt(_plano(texto_oficial))
+    return len(_plano(cita).split()) >= 5 and _compacto(cita) in _compacto(texto_oficial)
 
 
 # ---------------- verificación de una fuente ----------------
@@ -202,17 +209,19 @@ def verificar_fuente(f, transporte=transporte_http, ahora=None):
     if seg is None:
         return res("RECHAZADA", f"no existe el encabezado «Artículo {f['articulo']}» en el documento")
     ev["posicion_articulo"] = pos
-    lit = _sinpunt(_plano(f["literal"]))
-    seg_c, cue_c = _sinpunt(seg), _sinpunt(cue)
+    if len(_plano(f["literal"]).split()) < 5:
+        return res("RECHAZADA", "la cita es demasiado corta para cotejarla con seguridad (mínimo 5 palabras)")
+    lit = _compacto(f["literal"])
+    seg_c, cue_c = _compacto(seg), _compacto(cue)
     i = seg_c.find(lit)
     if i < 0:
         if lit in cue_c:
             return res("RECHAZADA", f"el texto citado existe, pero no en el artículo {f['articulo']}")
         return res("RECHAZADA", "el texto citado no coincide con el texto oficial")
     for ancla in f.get("anclas", []):
-        if _sinpunt(_plano(ancla)) not in seg_c:
+        if _compacto(ancla) not in seg_c:
             return res("RECHAZADA", f"ancla no encontrada en el artículo: «{ancla}»")
-    ev["extracto"] = seg_c[max(0, i - 120): i + len(lit) + 120]
+    ev["extracto"] = seg[:600]
     huella = hashlib.sha256(seg.encode()).hexdigest()
     ev["huella_articulo"] = huella   # se fija en el guion tras la primera verificación
     esperada = f.get("ultima_reforma_documento")

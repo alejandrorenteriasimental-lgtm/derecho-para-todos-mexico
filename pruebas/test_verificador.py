@@ -178,3 +178,13 @@ def test_formato_v01_se_adapta():
     g = {"riesgo": "bajo", "fuentes": {"F1": {"nivel": "oficial", "url": URL, "documento": BASE["documento"], "articulo": "17", "texto_literal": LIT17}},
          "escenas": [{"afirmaciones": [{"id": "A1", "tipo": "hecho_normativo", "fuente": "F1"}]}]}
     assert v.verificar_guion(g, transporte_fijo(DOC))["decision"] == "APTA"
+
+
+def test_espacios_espurios_de_la_extraccion_pdf_no_rechazan_y_una_letra_distinta_si():
+    doc = pdf_ley(articulos=[("17", "Nadie puede ser apri sionado por deu das de carácter pura mente civil."), ("18", "x")])
+    assert v.verificar_fuente(BASE, transporte_fijo(doc))["estado"] == "VERIFICADA"
+    assert v.verificar_fuente({**BASE, "literal": "Nadie puede ser aprisionado por deudas de carácter puramente civiles"}, transporte_fijo(doc))["estado"] == "RECHAZADA"
+
+
+def test_cita_demasiado_corta_se_rechaza():
+    assert v.verificar_fuente({**BASE, "literal": "puramente civil"}, transporte_fijo(DOC))["estado"] == "RECHAZADA"
