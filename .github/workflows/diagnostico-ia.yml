@@ -25,6 +25,25 @@ jobs:
           done
           sed -i 's/\(Authorization: Bearer \).*/\1***/' $o
           cat $o
+      - name: Acción oficial ai-inference
+        id: ai
+        uses: actions/ai-inference@v1
+        continue-on-error: true
+        with:
+          model: openai/gpt-4.1-mini
+          prompt: "Responde solo con la palabra: hola"
+      - name: CLI gh models
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        continue-on-error: true
+        run: |
+          o=registro/diagnostico/ia.txt
+          echo "### ai-inference: outcome=${{ steps.ai.outcome }} respuesta=${{ steps.ai.outputs.response }}" >> $o
+          gh extension install https://github.com/github/gh-models >> $o 2>&1 || true
+          echo "### gh models list" >> $o; gh models list 2>&1 | head -15 >> $o
+          echo "### gh models run" >> $o; echo "hola" | gh models run openai/gpt-4.1-mini "Responde solo: hola" 2>&1 | head -10 >> $o
+          echo "### curl -v catálogo (stderr)" >> $o
+          curl -sS -v -m 30 -H "Authorization: Bearer $GH_TOKEN" https://models.github.ai/catalog/models 2>&1 | grep -iE "^< |^\* (Connected|subject|issuer)|HTTP" | head -25 | sed 's/\(Bearer \).*/\1***/' >> $o
+          cat $o
       - name: Guardar
         run: |
           git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
