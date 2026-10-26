@@ -22,6 +22,8 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
+VERSION = "0.3.1"   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)
     "scjn.gob.mx",             # Suprema Corte (incluye sjf2.scjn.gob.mx y www.scjn.gob.mx)
