@@ -13,7 +13,9 @@
       ],
       "tope_diario": 12,
       "max_tokens": 800,
-      "temperatura": 0.1
+      "temperatura": 0.1,
+      "razonamiento": "low",
+      "timeout_s": 90
     },
     "redactor": {
       "modelos": [
@@ -24,7 +26,9 @@
       ],
       "tope_diario": 12,
       "max_tokens": 3000,
-      "temperatura": 0.5
+      "temperatura": 0.5,
+      "razonamiento": "medium",
+      "timeout_s": 180
     },
     "auditor": {
       "modelos": [
@@ -34,7 +38,9 @@
       ],
       "tope_diario": 12,
       "max_tokens": 1500,
-      "temperatura": 0.0
+      "temperatura": 0.0,
+      "razonamiento": "low",
+      "timeout_s": 150
     }
   },
   "respaldo_local": {
@@ -58,5 +64,6 @@
   "endpoint_gemini": "https://generativelanguage.googleapis.com/v1beta",
   "pausa_429_s": 35,
   "timeout_gemini_s": 100,
-  "pausa_5xx_s": 20
+  "pausa_5xx_s": 20,
+  "presupuesto_redaccion_s": 1500
 }

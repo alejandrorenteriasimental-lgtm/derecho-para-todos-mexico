@@ -57,12 +57,15 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
     planificador.RAIZ = RAIZ; planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"
     import modelos; modelos.USO = RAIZ / "estado" / "uso_ia.jsonl"
     planificador.planificar(dias=7, desde=_hoy_mx(), env=env, escribir=True)
+    import time as _t; t0 = _t.time(); limite = modelos.config().get("presupuesto_redaccion_s", 1500)
     for formato in ("reel", "imagen"):
         if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS for t in c["trabajos"].values()):
             continue
         intentos = 0
         for f in sorted(planificador.SOLICITUDES.glob(f"*_{formato}_*.json")):
             if intentos >= INTENTOS_REDACCION: break
+            if _t.time() - t0 > limite:                      # tope de minutos de Actions por ciclo
+                cola.log({"evento": "redaccion_pospuesta", "motivo": f"presupuesto de redacción agotado ({limite} s)"}); break
             sol = json.loads(f.read_text())
             if sol["estado"] != "PENDIENTE_GUION": continue   # en orden de fecha; si un tema falla se adelanta el siguiente
             sol["pieza_id"] = f'{"R" if formato == "reel" else "I"}{sol["fecha"].replace("-", "")}-{sol["tema_id"]}'

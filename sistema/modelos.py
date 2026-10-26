@@ -91,7 +91,7 @@ class Modelo:
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
         cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
-        self.pausa_429 = cfg.get("pausa_429_s", 35); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = cfg.get("timeout_gemini_s", 100); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
+        self.pausa_429 = cfg.get("pausa_429_s", 35); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = r.get("timeout_s", cfg.get("timeout_gemini_s", 100)); self.razonamiento = r.get("razonamiento"); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
         self.endpoint_gemini = cfg.get("endpoint_gemini", "https://generativelanguage.googleapis.com/v1beta")
         rl = cfg.get("respaldo_local") or {}
@@ -127,6 +127,8 @@ class Modelo:
         if not clave: raise FallaModelo("sin GEMINI_API_KEY (secreto del repositorio)")
         gen = {"temperature": self.temperatura, "maxOutputTokens": max(self.max_tokens, 1024) * 3}   # margen para el razonamiento interno
         if json_mode: gen["responseMimeType"] = "application/json"
+        if self.razonamiento and modelo.startswith("gemini-3") and not getattr(self, "_sin_razonamiento", False):
+            gen["thinkingConfig"] = {"thinkingLevel": self.razonamiento}
         cuerpo = {"systemInstruction": {"parts": [{"text": sistema}]}, "contents": [{"role": "user", "parts": [{"text": usuario}]}],
                   "generationConfig": gen}
         url = f"{self.endpoint_gemini}/models/{modelo}:generateContent"
@@ -138,6 +140,9 @@ class Modelo:
         except urllib.error.HTTPError as e:
             txt = e.read()[:400].decode("utf-8", "replace").replace(clave, "***")
             if e.code == 429: raise CuotaAgotada(f"{modelo}: HTTP 429 {txt[:200]}")
+            if e.code == 400 and "thinking" in txt.lower() and not getattr(self, "_sin_razonamiento", False):
+                self._sin_razonamiento = True                      # el modelo no acepta el nivel de razonamiento
+                return self._http_gemini(modelo, sistema, usuario, json_mode)
             if e.code in (500, 502, 503, 504): raise Saturado(f"{modelo}: HTTP {e.code} {txt[:160]}")
             if e.code == 400 and json_mode and ("mime" in txt.lower() or "json" in txt.lower()):
                 return self._http_gemini(modelo, sistema, usuario, json_mode=False)    # modelos (p. ej., Gemma) sin modo JSON

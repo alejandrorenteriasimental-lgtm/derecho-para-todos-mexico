@@ -307,7 +307,9 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                         "solicitud": sol.get("archivo"), "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                 return g
-            extra = "\n\nUn auditor independiente objetó lo siguiente; corrige sin agregar información nueva:\n" + \
+            extra = ("\n\nUn auditor independiente objetó lo siguiente. Aplica TODAS las correcciones; si una afirmación no puede "
+                     "sustentarse con el texto oficial, ELIMÍNALA en lugar de reformularla; no agregues información nueva; evita "
+                     "lenguaje absoluto y menciona las excepciones que el texto prevé:\n") + \
                     json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
         raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
                          json.dumps(historial[-1], ensure_ascii=False)[:400])
