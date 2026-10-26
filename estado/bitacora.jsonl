@@ -11,3 +11,14 @@
 {"ts": "2026-10-26T03:11:23+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T060.json", "transitoria": true, "motivo": "modelo no disponible: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\\r\\n'"}
 {"ts": "2026-10-26T03:11:23+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T019.json", "transitoria": true, "motivo": "modelo no disponible: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\\r\\n'"}
 {"ts": "2026-10-26T03:11:23+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0}
+{"ts": "2026-10-26T03:39:34+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-26T03:39:35+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T019.json", "transitoria": true, "motivo": "modelo no disponible: IA local: <urlopen error [Errno 111] Connection refused>"}
+{"ts": "2026-10-26T03:39:35+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T019.json", "transitoria": true, "motivo": "modelo no disponible: IA local: <urlopen error [Errno 111] Connection refused>"}
+{"ts": "2026-10-26T03:39:35+00:00", "pieza": "I001", "evento": "transicion", "a": "PENDIENTE", "motivo": "verificador actualizado a 0.3.1; se vuelve a verificar"}
+{"ts": "2026-10-26T03:39:35+00:00", "pieza": "T073", "evento": "transicion", "a": "PENDIENTE", "motivo": "verificador actualizado a 0.3.1; se vuelve a verificar"}
+{"ts": "2026-10-26T03:40:07+00:00", "pieza": "T073", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-10-26T03:40:07+00:00", "evento": "alerta", "mensaje": "T073 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-10-26T03:40:28+00:00", "pieza": "I001", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-26T03:40:28+00:00", "pieza": "I001", "evento": "transicion", "a": "APROBADO", "motivo": "APTO_CON_CRITERIO"}
+{"ts": "2026-10-26T03:40:28+00:00", "pieza": "I001", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-26T03:40:28+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 1, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0}

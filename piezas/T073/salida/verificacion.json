@@ -1,16 +1,16 @@
 {
-  "decision": "RECHAZADA",
+  "decision": "RETENER",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-10-26T02:59:57+00:00",
+      "consultado": "2026-10-26T03:39:35+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
       "ultima_reforma_documento": "2026-10-07",
       "posicion_articulo": 68322,
-      "extracto": "s no podran ser inferiores a las que correspondan a los agentes del ministerio publico parrafo reformado dof 29-01-2016 nadie puede ser aprisionado por deudas de caracter puramente civil articulo reformado dof 17-03-1987 18-06-2008 29-07-2010",
+      "extracto": "ninguna persona podra hacerse justicia por si misma, ni ejercer violencia para reclamar su derecho. toda persona tiene derecho a que se le adm inistre justicia por tribunales que estaran expeditos para impartirla en los plazos y terminos que fijen las leyes, emitiendo sus resoluciones de manera pronta, completa e imparcial. su servicio sera gratuito, quedando, en consecuencia, prohibidas las cost as judiciales. las leyes preveran las cuantias y supuestos en materia tributaria en las cuales tanto los tribunales administrativos como las juezas y jueces de distrito y tribunales de circuito del po",
       "huella_articulo": "10378056768433e467b416d3b2af07f07ab085d0461413bebb7f9bac51c97822",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
@@ -18,13 +18,13 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T03:00:15+00:00",
+      "consultado": "2026-10-26T03:39:48+00:00",
       "http": 200,
       "bytes": 2794133,
       "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
       "ultima_reforma_documento": "2026-03-13",
       "posicion_articulo": 365764,
-      "extracto": "- comete el delito de fraude el que enganando a uno o aprovechandose del error en que este se halla se hace ilicitamente de alguna cosa o alcanza un lucro indebido el delito de fraude se castigara con las penas siguientes i - con prision de 3 dias a 6 meses o de 30 a 180 dias multa ",
+      "extracto": "- comete el delito de fraude el que enganando a uno o aprovechandose del error en que este se halla se hace ilicitamente de alguna cosa o alcanza un lucro indebido. el delito de fraude se castigara con las penas siguientes: i.- con prision de 3 dias a 6 meses o de 30 a 180 dias multa, cuando el valor de lo defraudado no exceda de diez veces el salario; fraccion reformada dof 30-12-1991 ii.- con prision de 6 meses a 3 anos y multa de 10 a 100 veces el salario, cuando el valor de lo defraudado excediera de 10, pero no de 500 veces el salario; fe de erratas a la fraccion dof 13-01-1982, 15-01-198",
       "huella_articulo": "1d62ee61ae2f45b59c6fb895fb3b0045e572dee3a7193023543eb9b3e9612b43",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
@@ -32,14 +32,16 @@
     "F3": {
       "fuente": "F3",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T03:00:29+00:00",
+      "consultado": "2026-10-26T03:39:58+00:00",
       "http": 200,
       "bytes": 2794133,
       "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
       "ultima_reforma_documento": "2026-03-13",
       "posicion_articulo": 333361,
-      "estado": "RECHAZADA",
-      "motivo": "el texto citado no coincide con el texto oficial"
+      "extracto": "- al que sin moti vo justificado abandone a sus hijos o a su conyuge, sin recursos para atender a sus necesidades de subsistencia, se le aplicaran de un mes a cinco anos de prision, o de 180 a 360 dias multa; privacion de los derechos de familia, y pago, como reparacion del dano, de las cantidades no suministradas oportunamente por el acusado. articulo reformado dof 26-12-1977, 30-12-1991",
+      "huella_articulo": "0b8a7dea9bd1e3ae5d22e554ffea50573bc05591de52b9ef62357ff52f8dd039",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
   },
   "afirmaciones": [
@@ -72,7 +74,7 @@
       "fuentes": [
         "F3"
       ],
-      "dictamen": "RECHAZADA",
+      "dictamen": "VERIFICADA",
       "duda": null
     },
     {

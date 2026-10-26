@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1205 KB"
+      "detalle": "1212 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,7 +28,7 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1108"
+      "detalle": "fin del contenido en y=1159"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
@@ -38,7 +38,7 @@
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "98% de 46 palabras reconocidas"
+      "detalle": "100% de 45 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -57,16 +57,12 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "transitorio",
+    "decision": "APTO_CON_CRITERIO",
+    "tipo_retencion": null,
     "motivos": [
-      "F1: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
-      "F2: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
-      "A1: RETENER",
-      "A2: RETENER",
-      "A3: RETENER"
+      "A3: REQUIERE_CRITERIO"
     ],
-    "verificacion": "RETENER",
+    "verificacion": "APTA_CON_CRITERIO",
     "carril": "A",
     "reglas": [
       {
@@ -97,8 +93,8 @@
     "titulo": "¿Qué es la presunción de inocencia?",
     "plantilla": "concepto",
     "archivo": "I001.png",
-    "sha256": "9ced8eea17c5db4860d3350b5934fa82a905d935b6b8991f87e71a373b917ecc",
-    "ahash": "1000101111111111111111111111111111111111111111111101111111111011100000000011111110111111111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "sha256": "1363a5e447117ff6765bc744f093ef82b8243c7f0d47621447ad616d1c989364",
+    "ahash": "1000101111111111111111111111111111111111111111111100000111111111100000000011111110000000111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
     "huella_guion": "16ffcc77a4be924c757eb2c45fd4c976ec923efced73ec76587c6cd0274bd26f",
     "texto_alternativo": "Pieza editorial: ¿Qué es la presunción de inocencia? Cita del artículo 20 constitucional: toda persona imputada tiene derecho a que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia.",
     "copy": "La presunción de inocencia es un derecho de toda persona imputada en un proceso penal: mientras no exista una sentencia que declare su responsabilidad, debe ser tratada como inocente.\n\nLo establece la Constitución (artículo 20, apartado B, fracción I) y lo desarrolla el Código Nacional de Procedimientos Penales (artículo 13), que la aplica en todas las etapas del procedimiento.\n\nPor eso, ser detenido, investigado o acusado no equivale a ser culpable.\n\nEsto es información general, no es asesoría legal.\n\nGuárdalo y compártelo con quien lo necesite.",
@@ -117,8 +113,8 @@
       }
     ],
     "relacion_reel": "Independiente. Refuerza la serie de derechos en un proceso penal; no reutiliza el guion de ningún Reel.",
-    "estado": "RETENIDO",
-    "fecha": "2026-10-26T01:21:38+00:00",
+    "estado": "APTO_CON_CRITERIO",
+    "fecha": "2026-10-26T03:40:28+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

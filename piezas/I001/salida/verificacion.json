@@ -1,29 +1,33 @@
 {
-  "decision": "RECHAZADA",
+  "decision": "APTA_CON_CRITERIO",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-10-26T03:00:43+00:00",
+      "consultado": "2026-10-26T03:40:07+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
       "ultima_reforma_documento": "2026-10-07",
       "posicion_articulo": 80523,
-      "estado": "RECHAZADA",
-      "motivo": "el texto citado no coincide con el texto oficial"
+      "extracto": "el proceso penal sera acusatorio y oral. se regira por los principios de publicidad, contradiccion, concentracion, continuidad e inmediacion. a. de los principios generales: i. el proceso penal tendra por objeto el esclarecimiento de los hechos, proteger al inoc ente, procurar que el culpable no quede impune y que los danos causados por el delito se reparen; ii. toda audiencia se desarrollara en presencia del juez, sin que pueda delegar en ninguna persona el desahogo y la valoracion de las pruebas, la cual deber a realizarse de manera libre y logica; iii. para los efectos de la sentencia solo ",
+      "huella_articulo": "6250f37685626ae37395b16358765cfb82ef8ad8b025d9273f665d24477ade36",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     },
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "consultado": "2026-10-26T03:01:01+00:00",
+      "consultado": "2026-10-26T03:40:20+00:00",
       "http": 200,
       "bytes": 1704798,
       "sha256": "7ceb0682c948d7d945e7e68b8d8699ceb795fc9a491aa62325db91ccf2309904",
       "ultima_reforma_documento": "2025-11-28",
       "posicion_articulo": 9079,
-      "estado": "RECHAZADA",
-      "motivo": "el texto citado no coincide con el texto oficial"
+      "extracto": "principio de presuncion de inocencia toda persona se presume inocente y s era tratada como tal en todas las etapas del procedimiento, mientras no se declare su responsabilidad mediante sentencia emitida por el organo jurisdiccional, en los terminos senalados en este codigo.",
+      "huella_articulo": "83e39e6a73b2f1b28823a932ecd9ab8f4469ff36622c5acbce163c6284c58b81",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
   },
   "afirmaciones": [
@@ -32,7 +36,7 @@
       "fuentes": [
         "F1"
       ],
-      "dictamen": "RECHAZADA",
+      "dictamen": "VERIFICADA",
       "duda": null
     },
     {
@@ -40,7 +44,7 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RECHAZADA",
+      "dictamen": "VERIFICADA",
       "duda": null
     },
     {
@@ -48,7 +52,7 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RECHAZADA",
+      "dictamen": "REQUIERE_CRITERIO",
       "duda": null
     }
   ]
