@@ -68,7 +68,9 @@ jobs:
           path: models/ia
           key: ia-local-qwen2.5-7b-phi3.5-v1
       - name: Iniciar IA local gratuita (llama.cpp)
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: bash sistema/ia_local.sh iniciar
+        continue-on-error: true     # si la IA local no arranca, el ciclo sigue: verifica y produce lo que ya tenga guion
       - name: Marca de inicio (consumo)
         run: date -u +%s > /tmp/inicio
       - name: Ciclo
@@ -112,7 +114,7 @@ jobs:
           mkdir -p registro
           python - <<'PY'
           import json, os, time, shutil
-          ini = int(open('/tmp/inicio').read()); seg = int(time.time()) - ini
+          ini = int(open('/tmp/inicio').read()) if os.path.exists('/tmp/inicio') else int(time.time()); seg = int(time.time()) - ini
           du = shutil.disk_usage('.'); tam = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk('piezas') for f in fs)
           ev = {"ts": time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), "run": os.environ.get('GITHUB_RUN_ID'), "segundos_ciclo": seg,
                 "minutos_facturables_estimados": -(-seg // 60), "bytes_piezas": tam, "runner": os.environ.get('RUNNER_OS'), "costo_mxn": 0}
