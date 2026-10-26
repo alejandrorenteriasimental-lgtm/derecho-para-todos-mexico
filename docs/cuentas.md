@@ -7,7 +7,7 @@ Actualizado: 26-10-2026. Este documento no contiene contraseñas ni claves; solo
 | Facebook (página) | facebook.com/aquidicelaley · ID 61595676911245 | Perfil personal de Alejandro Rentería (Facebook) | Creada. Logo, portada, presentación, categoría «Sitio web de educación». Filtro de groserías activado. Opiniones desactivadas. Sin publicaciones. | Activar verificación en dos pasos en el perfil personal que administra la página. Desactivar, si se desea, los correos de marketing de Meta. |
 | Instagram | @aquidicelaley | Cuenta profesional vinculada a la página de Facebook | Creada y conectada a la página. Logo, nombre, biografía. Sin publicaciones. | Revisar categoría de cuenta profesional. |
 | YouTube | @aquidicelaley · canal UCpV9zgqTbC23jn7SJnj2vRA | Cuenta de marca (limitada a YouTube) cuyo propietario es info@brandlabbeauty.org | Creado. Logo, banner 2048×1152, descripción. Sin videos. | Invitar a alejandrorenteriasimental@gmail.com como Administrador (YouTube Studio → Configuración → Permisos). Evaluar transferir la propiedad. |
-| TikTok | aquidicelaley (sin crear) | — | En pausa por decisión del usuario. | Registrar con alejandrorenteriasimental+aquidicelaley@gmail.com. |
+| TikTok | @aquidicelaley | Creada por el usuario (26-10-2026) | Existe, sin publicaciones, sin biografía. La foto de perfil visible es el logotipo de HealthMark (revisar). 5 seguidos / 5 seguidores. | Cambiar foto al logotipo oficial, añadir biografía, revisar correo de registro y 2FA. |
 
 ## Incidencias registradas
 
@@ -20,3 +20,5 @@ Actualizado: 26-10-2026. Este documento no contiene contraseñas ni claves; solo
 - No publicar en ninguna red sin autorización expresa.
 - Las cuentas de Aquí Dice la Ley no comparten sesión, correo de registro ni permisos con Cronista Imposible.
 - Las contraseñas y códigos los introduce solo el titular.
+
+- 26-10-2026 17:55: logotipo oficial aprobado aplicado. Facebook (foto y portada, subidas por el usuario); Instagram (foto) y YouTube (foto y banner 2048×1152) aplicados desde los archivos ya alojados por Facebook, sin transcripción manual.
