@@ -1,0 +1,25 @@
+# Extrae el texto oficial de artículos concretos (manual). No produce ni publica nada.
+name: textos-oficiales
+on:
+  workflow_dispatch:
+    inputs:
+      articulos: { description: 'Ej.: LFPC:56,77,79,92;LFT:53,87', required: true }
+permissions: { contents: write }
+concurrency: { group: textos, cancel-in-progress: false }
+jobs:
+  textos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -q -r requirements.txt
+      - name: Extraer
+        env: { ARTS: "${{ inputs.articulos }}" }
+        run: python sistema/textos.py "$ARTS"
+      - name: Guardar
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add registro/textos && git commit -m "textos oficiales ${{ github.run_id }}" && git pull --rebase -q && git push
