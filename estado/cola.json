@@ -86,6 +86,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T15:09:20+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-26T17:25:08+00:00",
+          "motivo": "verificador actualizado a 0.4.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T17:27:03+00:00",
+          "motivo": "verificación jurídica: RETENER"
         }
       ],
       "error": null,
@@ -93,8 +105,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-26T15:09:20+00:00",
-        "verificador": "0.3.2"
+        "desde": "2026-10-26T17:27:03+00:00",
+        "verificador": "0.4.0"
       }
     },
     "I20261025-T089": {
@@ -135,22 +147,34 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T14:00:02+00:00",
           "motivo": "Revisión editorial posterior a la producción (26-10-2026): (1) incoherencia jurídica: el titular y el mito hablan de la RENUNCIA, pero la «realidad» se apoya en el mutuo consentimiento (LFT art. 53, fr. I), que es otra causa de terminación; el art. 87 sí sustenta que quien renuncia conserva el aguinaldo proporcional, pero la pieza no lo dice así; (2) A3 declara una duda material (si el mutuo consentimiento es separación voluntaria para la prima de antigüedad) y el verificador v0.3.1 no retenía dudas en hechos normativos (corregido en v0.3.2); (3) dos de tres afirmaciones sin texto. Las tres citas literales SÍ están verificadas en el PDF oficial de la LFT."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-26T17:25:08+00:00",
+          "motivo": "verificador actualizado a 0.4.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T17:29:46+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
       "retencion": {
-        "tipo": "editorial",
-        "verificador": "0.3.2",
-        "motivo": "Revisión editorial posterior a la producción (26-10-2026): (1) incoherencia jurídica: el titular y el mito hablan de la RENUNCIA, pero la «realidad» se apoya en el mutuo consentimiento (LFT art. 53, fr. I), que es otra causa de terminación; el art. 87 sí sustenta que quien renuncia conserva el aguinaldo proporcional, pero la pieza no lo dice así; (2) A3 declara una duda material (si el mutuo consentimiento es separación voluntaria para la prima de antigüedad) y el verificador v0.3.1 no retenía dudas en hechos normativos (corregido en v0.3.2); (3) dos de tres afirmaciones sin texto. Las tres citas literales SÍ están verificadas en el PDF oficial de la LFT."
+        "tipo": "sustantivo",
+        "desde": "2026-10-26T17:29:46+00:00",
+        "verificador": "0.4.0"
       }
     },
     "I20261026-T020": {
       "id": "I20261026-T020",
       "formato": "imagen",
       "huella": "1f41ee457370c4c5ca12ec64d5c48ed466a55c90e65c3162e6516ebadc370da1",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T16:01:54+00:00",
@@ -184,6 +208,12 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T16:06:15+00:00",
           "motivo": "Revisión editorial (26-10-2026): las 4 citas literales están verificadas en el PDF oficial de la LFPC (última reforma DOF 12-12-2025), pero (1) el «OJO» generaliza: el art. 77 fija el mínimo de 90 días para los bienes o servicios que se ofrecen CON garantía, no dice que toda compra tenga garantía legal de 90 días; (2) el titular pregunta si es legal «no hay cambios ni devoluciones» y la pieza no lo responde: no distingue la devolución por gusto (que la ley no impone en general) de la garantía por defectos (arts. 79 y 92), que ese letrero no puede eliminar."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-26T17:25:08+00:00",
+          "motivo": "verificador actualizado a 0.4.0; se vuelve a verificar"
         }
       ],
       "error": null,
@@ -225,6 +255,20 @@
         "desde": "2026-10-26T16:47:18+00:00"
       },
       "revision_editorial": "26-10-2026: retención correcta por otro motivo. El plan pedía «¿El banco tiene que devolverte un cargo que no hiciste?» y el Reel explica quién designa al presidente de una institución (Ley de Protección y Defensa al Usuario de Servicios Financieros, art. 23): no responde la pregunta y no aporta utilidad al público. La regla «personas reales» la retuvo por un falso positivo («Crédito Público»), ya corregido. Con el verificador 0.4.0 la deriva de tema es un bloqueante."
+    },
+    "I20261026-T020v2": {
+      "id": "I20261026-T020v2",
+      "formato": "imagen",
+      "huella": "e90586275b879e88824232f52ef9468ec57bca14e8dd60662be17d0d8004594d",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-26T17:25:08+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }
