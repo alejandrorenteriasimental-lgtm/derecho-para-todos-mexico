@@ -175,7 +175,7 @@ def escena(d, esc, p, tl, fuentes):
     elif tipo == "cierre":
         e = ease(tl / 0.6)
         fw = font("black", 112); y = 520
-        for i, ln in enumerate(["DERECHO", "PARA TODOS"]):
+        for i, ln in enumerate(["AQUÍ DICE", "LA LEY"]):
             d.text(((W - fw.getlength(ln)) / 2, y + (1 - e) * 50), ln, font=fw, fill=a(C["acc"] if i else C["txt"], e)); y += 118
         fa = font("med", 46); y += 60
         for ln in wrap(esc["aviso"], fa, 820):
@@ -191,6 +191,9 @@ def escena(d, esc, p, tl, fuentes):
         lines = wrap(txt, fs, 900); y = 1250
         for ln in lines:
             d.text(((W - fs.getlength(ln)) / 2, y), ln, font=fs, fill=a(C["mut"], e)); y += 44
+
+
+FIRMA = json.loads((Path(__file__).resolve().parent.parent / "marca" / "tokens.json").read_text())["firma"]
 
 
 def render(guion, linea, salida_mp4, t_total):
@@ -218,7 +221,7 @@ def render(guion, linea, salida_mp4, t_total):
         escena(d, guion["escenas"][k], p, tl, guion["fuentes"])
         # barra superior
         d.rectangle([0, 0, W, 10], fill=(255, 255, 255, 30)); d.rectangle([0, 0, W * t / t_total, 10], fill=a(C["acc"], 1))
-        d.text((60, 140), "DERECHO PARA TODOS", font=fh, fill=a(C["txt"], 0.9))
+        d.text((60, 140), FIRMA, font=fh, fill=a(C["txt"], 0.9))
         lab = "Voz generada con IA"
         d.text((W - 60 - fs_.getlength(lab), 144), lab, font=fs_, fill=a(C["mut"], 0.9))
         dibujar_subtitulos(d, t, bls)

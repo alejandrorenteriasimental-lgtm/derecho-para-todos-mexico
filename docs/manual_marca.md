@@ -1,15 +1,14 @@
-# Manual de marca — Derecho para Todos México (v1.0, 25-10-2026)
+# Manual de marca — Aquí Dice la Ley (v1.1, 26-10-2026; antes «Derecho para Todos México»)
 
 **Idea de marca:** «El Derecho, explicado en voz clara.» Un medio editorial cercano y riguroso, no un despacho.
 Fuente única de verdad para colores y tipografías: `marca/tokens.json`. Los activos se regeneran con `python sistema/marca.py`.
 
 ## Nombre
-Se conserva **Derecho para Todos México**: dice lo que es y para quién, se entiende a la primera y no suena a despacho.
-Riesgos: es una frase genérica (hay páginas y organizaciones con nombres parecidos) y su registro como marca ante el
-IMPI no está verificado. Antes del lanzamiento se debe buscar en MARCia (IMPI) en las clases 41 (educación y
-entretenimiento) y 38 (difusión), y confirmar que los nombres de usuario `@derechoparatodosmx` estén libres en
-Facebook, Instagram, YouTube y TikTok. Si existe un registro previo en esas clases, la alternativa preparada es
-**«En Claro: Derecho para Todos»**, que conserva el lema y el símbolo.
+**Aquí Dice la Ley** (aprobado por el responsable el 26-10-2026; sustituye a «Derecho para Todos México»).
+Promesa: cada pieza muestra lo que dice la ley, con el artículo exacto a la vista. Descriptor: «Derecho mexicano».
+Motivo del cambio y evidencia: docs/auditoria_marca.md (usuarios ocupados, Página y despacho homónimos, antecedentes en el IMPI).
+Pendiente: confirmar el usuario de Instagram al crear la cuenta; registro de marca (IMPI) y reserva de derechos (INDAUTOR)
+solo con autorización, porque tienen costo.
 
 ## Símbolo y logotipo
 - **Símbolo:** una burbuja de diálogo con el signo de sección «§». Burbuja = explicación y conversación; § = norma.

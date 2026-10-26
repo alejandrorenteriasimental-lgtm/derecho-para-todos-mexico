@@ -57,7 +57,7 @@ class Biblioteca:
 
 
 # ---------------- instrucciones a los modelos ----------------
-REGLAS_COMUNES = """Eres parte del equipo editorial de «Derecho para Todos México», un medio de divulgación jurídica para público
+REGLAS_COMUNES = """Eres parte del equipo editorial de «Aquí Dice la Ley», un medio de divulgación jurídica para público
 general en México. Escribes en español de México, claro, cercano y exacto. Reglas que no se negocian:
 - Usa SOLO los textos oficiales que se te entregan. No agregues artículos, tesis, cifras, fechas, casos ni personas que no estén ahí.
 - Cada afirmación jurídica lleva "cita_literal": un fragmento COPIADO EXACTAMENTE del texto oficial (8 a 40 palabras).

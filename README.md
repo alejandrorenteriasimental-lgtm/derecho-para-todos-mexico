@@ -1,4 +1,4 @@
-# Derecho para Todos México — sistema de producción v0.2
+# Aquí Dice la Ley (antes «Derecho para Todos México») — sistema de producción v0.3
 
 Producción autónoma, gratuita y auditada de **1 Reel + 1 imagen fija al día** sobre Derecho mexicano.
 Corre en GitHub Actions; no requiere una conversación abierta. **Nada se publica** sin `PUBLICAR=1`,

@@ -1,4 +1,4 @@
-"""Identidad de Derecho para Todos México generada por código (sin herramientas de diseño de pago).
+"""Identidad de Aquí Dice la Ley (antes «Derecho para Todos México») generada por código (sin herramientas de diseño de pago).
 Fuente única de verdad: marca/tokens.json. Este script produce logotipos, avatar, portadas e identidad sonora."""
 import json, math, sys
 from pathlib import Path
@@ -33,7 +33,7 @@ def logo_horizontal(alto=300, tema="claro"):
     fg = C["noche"] if tema == "claro" else C["papel"]; bg = (0, 0, 0, 0)
     s = simbolo(alto, "noche" if tema == "claro" else "cempasuchil", "cempasuchil" if tema == "claro" else "noche")
     f1 = F("display_black", int(alto * 0.36)); f2 = F("semi", int(alto * 0.15))
-    t1, t2 = "Derecho para Todos", "M É X I C O"
+    t1, t2 = TOK["nombre"], " ".join("DERECHO MEXICANO").replace("   ", "  ")
     w = int(alto * 1.18 + max(f1.getlength(t1), f2.getlength(t2)) + alto * 0.1)
     im = Image.new("RGBA", (w, alto), bg); im.alpha_composite(s, (0, 0)); d = ImageDraw.Draw(im)
     x = int(alto * 1.12); d.text((x, int(alto * 0.13)), t1, font=f1, fill=fg)

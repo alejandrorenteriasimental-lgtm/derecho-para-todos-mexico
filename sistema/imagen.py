@@ -48,6 +48,11 @@ class Lienzo:
         return y, len(lineas), tam
 
 
+def _sin_acentos(x):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", x.upper()) if unicodedata.category(c) != "Mn")
+
+
 def _textura(img):
     """Grano de papel muy tenue para evitar el aspecto de plantilla plana."""
     rng = np.random.default_rng(7); r = rng.normal(0, 3.2, (H, W, 1)).astype(np.float32)
@@ -58,7 +63,7 @@ def _textura(img):
 def _cabecera(L, g):
     d = L.d
     d.rectangle([0, 0, W, 14], fill=C["tinta"])
-    L.texto((M, 52), "DERECHO PARA TODOS", render.font("black", 30), C["tinta"], C["papel"])
+    L.texto((M, 50), render.FIRMA, render.font("xbold", 32), C["tinta"], C["papel"])
     serie = f'N.º {g.get("numero", g["id"])}'
     f = render.font("semi", 26); L.texto((W - M - f.getlength(serie), 56), serie, f, C["gris"], C["papel"])
     d.line([(M, 108), (W - M, 108)], fill=C["linea"], width=2)
@@ -229,7 +234,7 @@ def auditar(png, textos, y_fin, previos_hash=()):
     if not ocr_disponible():
         raise RuntimeError("OCR no disponible (falta tesseract con idioma «spa»): la auditoría de imagen no puede aprobar sin él")
     ok("OCR: el texto renderizado es legible y completo (≥ 90 %)", cobertura >= 0.9, f"{cobertura:.0%} de {len(esperado)} palabras reconocidas")
-    ok("Firma de marca y aviso presentes", any("DERECHO PARA TODOS" in t["texto"] for t in textos) and any("no asesoría legal" in t["texto"] for t in textos))
+    ok("Firma de marca y aviso presentes", any(_sin_acentos(render.FIRMA) in _sin_acentos(t["texto"]) for t in textos) and any("no asesoría legal" in t["texto"] for t in textos))
     ok("Fuente visible en la pieza", any(t["texto"].startswith("Fuente:") for t in textos))
     h = ahash(png); dist = min((sum(a != b for a, b in zip(h, p)) for p in previos_hash), default=256)
     ok("No es casi idéntica a una imagen anterior", dist > 12, f"distancia mínima {dist}/256")
