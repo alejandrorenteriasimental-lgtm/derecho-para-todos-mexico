@@ -311,7 +311,8 @@ def verificar_guion(g, transporte=transporte_http):
         # Riesgo bajo: pasa. Riesgo medio: solo si un auditor independiente (otro modelo, contra los mismos
         # textos oficiales) no encontró objeciones. Riesgo alto: siempre revisión humana.
         r = g.get("riesgo", "medio")
-        ia_ok = (g.get("auditoria_ia") or {}).get("veredicto") == "sin_objeciones"
+        aia = g.get("auditoria_ia") or {}
+        ia_ok = aia.get("veredicto") == "sin_objeciones" and aia.get("familia_distinta", True) is not False   # auditor de otra familia
         decision = "APTA_CON_CRITERIO" if r == "bajo" or (r == "medio" and ia_ok) else "REVISION_HUMANA"
     return {"decision": decision, "fuentes": ev, "afirmaciones": afirm}
 

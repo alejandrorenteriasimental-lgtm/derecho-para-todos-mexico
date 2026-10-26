@@ -20,6 +20,18 @@ CONFIG = Path(__file__).resolve().parent / "config_ia.json"
 USO = RAIZ / "estado" / "uso_ia.jsonl"
 
 
+PROVEEDORES = {"github_models", "gemini", "simulado"}
+
+
+def _limpiar_json(t):
+    """Quita cercas ```json … ``` y texto alrededor del primer objeto JSON."""
+    t = t.strip()
+    if t.startswith("```"): t = t.split("\n", 1)[1] if "\n" in t else t[3:]
+    if t.endswith("```"): t = t[:-3]
+    i, j = t.find("{"), t.rfind("}")
+    return t[i:j + 1] if i >= 0 and j > i else t
+
+
 class CuotaAgotada(Exception): pass
 class FallaModelo(Exception): pass
 
@@ -77,8 +89,9 @@ class Modelo:
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
         cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
-        self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
+        self.pausa_429 = cfg.get("pausa_429_s", 35); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
+        self.endpoint_gemini = cfg.get("endpoint_gemini", "https://generativelanguage.googleapis.com/v1beta")
         rl = cfg.get("respaldo_local") or {}
         self.local = {**rl[rol], **{k: rl[k] for k in ("binario", "puerto", "contexto") if k in rl}} if env.get("IA_LOCAL") == "1" and rol in rl else None
 
@@ -104,6 +117,44 @@ class Modelo:
             raise FallaModelo(f"{modelo}: HTTP {e.code} {txt}")
         except (urllib.error.URLError, TimeoutError, OSError) as e:
             raise FallaModelo(f"{modelo}: sin conexión ({e})")
+
+    def _http_gemini(self, modelo, sistema, usuario, json_mode=True):
+        """API de Gemini (Google AI Studio), nivel gratuito: sin facturación, el exceso de cuota devuelve 429 (no cobra).
+        La clave viaja en el encabezado x-goog-api-key, nunca en la URL ni en los registros."""
+        clave = self.env.get("GEMINI_API_KEY")
+        if not clave: raise FallaModelo("sin GEMINI_API_KEY (secreto del repositorio)")
+        gen = {"temperature": self.temperatura, "maxOutputTokens": max(self.max_tokens, 1024) * 3}   # margen para el razonamiento interno
+        if json_mode: gen["responseMimeType"] = "application/json"
+        cuerpo = {"systemInstruction": {"parts": [{"text": sistema}]}, "contents": [{"role": "user", "parts": [{"text": usuario}]}],
+                  "generationConfig": gen}
+        url = f"{self.endpoint_gemini}/models/{modelo}:generateContent"
+        req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), method="POST",
+                                     headers={"x-goog-api-key": clave, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=240) as r:
+                d = json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            txt = e.read()[:400].decode("utf-8", "replace").replace(clave, "***")
+            if e.code == 429: raise CuotaAgotada(f"{modelo}: HTTP 429 {txt[:200]}")
+            if e.code == 400 and json_mode and ("mime" in txt.lower() or "json" in txt.lower()):
+                return self._http_gemini(modelo, sistema, usuario, json_mode=False)    # modelos (p. ej., Gemma) sin modo JSON
+            if e.code == 400 and "system" in txt.lower() and "instruction" in txt.lower():
+                return self._http_gemini_sin_sistema(modelo, sistema, usuario)
+            raise FallaModelo(f"{modelo}: HTTP {e.code} {txt[:200]}")
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
+            raise FallaModelo(f"{modelo}: sin conexión o respuesta ilegible ({type(e).__name__})")
+        cands = d.get("candidates") or []
+        if not cands: raise FallaModelo(f"{modelo}: sin respuesta (bloqueo: {d.get('promptFeedback')})")
+        partes = (cands[0].get("content") or {}).get("parts") or []
+        texto = "".join(p.get("text", "") for p in partes if not p.get("thought"))
+        if not texto.strip(): raise FallaModelo(f"{modelo}: respuesta vacía (finishReason={cands[0].get('finishReason')})")
+        um = d.get("usageMetadata", {})
+        return {"choices": [{"message": {"content": _limpiar_json(texto)}}],
+                "usage": {"prompt_tokens": um.get("promptTokenCount"), "completion_tokens": um.get("candidatesTokenCount"),
+                          "thinking_tokens": um.get("thoughtsTokenCount")}}
+
+    def _http_gemini_sin_sistema(self, modelo, sistema, usuario):
+        return self._http_gemini(modelo, "Sigue las instrucciones.", f"INSTRUCCIONES DEL SISTEMA:\n{sistema}\n\n---\n\n{usuario}", json_mode=False)
 
     def _http_local(self, mensajes):
         url = servidor_local(self.local)
@@ -135,22 +186,36 @@ class Modelo:
 
     def _completar_remoto(self, sistema, usuario, simulador=None):
         ultimo = None
-        for modelo in self.modelos:                         # cadena de respaldo, en orden
-            if usos_hoy(modelo, self.archivo_uso, self.proveedor) >= self.tope:
+        for entrada in self.modelos:                        # cadena de respaldo, en orden; «proveedor:modelo» o solo «modelo»
+            prov, modelo = (entrada.split(":", 1) if ":" in entrada and entrada.split(":", 1)[0] in PROVEEDORES else (self.proveedor, entrada))
+            if self.proveedor == "simulado": prov = "simulado"
+            if usos_hoy(modelo, self.archivo_uso, prov) >= self.tope:
                 ultimo = CuotaAgotada(f"tope propio diario alcanzado para {modelo}"); continue
             t0 = time.time()
-            try:
-                if self.proveedor == "simulado":
-                    contenido = simulador(self.rol, sistema, usuario); uso = {}
-                else:
-                    r = self._http(modelo, [{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
-                    contenido = r["choices"][0]["message"]["content"]; uso = r.get("usage", {})
-            except (CuotaAgotada, FallaModelo) as e:
-                _registrar({"rol": self.rol, "proveedor": self.proveedor, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
-                ultimo = e; continue
+            for intento in (1, 2):
+                try:
+                    if prov == "simulado":
+                        contenido = simulador(self.rol, sistema, usuario); uso = {}
+                    elif prov == "gemini":
+                        r = self._http_gemini(modelo, sistema, usuario)
+                        contenido = r["choices"][0]["message"]["content"]; uso = r.get("usage", {})
+                    else:
+                        r = self._http(modelo, [{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
+                        contenido = r["choices"][0]["message"]["content"]; uso = r.get("usage", {})
+                    break
+                except CuotaAgotada as e:                   # 429: límite por minuto; un reintento tras una pausa
+                    _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
+                    ultimo = e
+                    if intento == 1 and prov == "gemini" and "PerDay" not in str(e): time.sleep(self.pausa_429); continue
+                    contenido = None; break
+                except FallaModelo as e:
+                    _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
+                    ultimo = e; contenido = None; break
+            if contenido is None: continue
             self.ultimo_modelo = modelo
-            _registrar({"rol": self.rol, "proveedor": self.proveedor, "modelo": modelo, "resultado": "ok", "segundos": round(time.time() - t0, 1),
-                        "tokens_entrada": uso.get("prompt_tokens"), "tokens_salida": uso.get("completion_tokens")}, self.archivo_uso)
+            _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "ok", "segundos": round(time.time() - t0, 1),
+                        "tokens_entrada": uso.get("prompt_tokens"), "tokens_salida": uso.get("completion_tokens"),
+                        "tokens_razonamiento": uso.get("thinking_tokens")}, self.archivo_uso)
             try:
                 return json.loads(contenido) if isinstance(contenido, str) else contenido
             except ValueError:

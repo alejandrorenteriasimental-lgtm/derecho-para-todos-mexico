@@ -1,6 +1,7 @@
 # Ciclo autónomo de Derecho para Todos México. Corre en GitHub Actions; no requiere una conversación abierta.
 # Seguridad: sin PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI (variables del repositorio) TODO corre en simulación.
-# Costo: runner Linux estándar. Repositorio privado: 2,000 min/mes gratis en el plan Free; un ciclo usa ≈6–12 min.
+# Costo: runner Linux estándar. Repositorio privado: 2,000 min/mes gratis en el plan Free; un ciclo usa ≈6–15 min.
+# IA: API de Gemini en nivel gratuito (sin facturación). La IA local (sistema/ia_local.sh) se retiró del ciclo el 26-10-2026.
 name: ciclo-produccion
 on:
   schedule:
@@ -11,7 +12,7 @@ concurrency:                  # nunca dos ciclos a la vez
   cancel-in-progress: false
 permissions:
   contents: write             # para guardar estado/, registro/ y los guiones redactados en el repositorio
-  models: read                # GitHub Models (redacción y auditoría): gratuito con límites diarios; sin pago no hay cargos
+  models: read                # GitHub Models (respaldo): gratuito con límites diarios; sin pago no hay cargos
 jobs:
   pruebas:
     runs-on: ubuntu-latest
@@ -29,6 +30,7 @@ jobs:
       - name: Pruebas en vivo (fuentes oficiales y modelos)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}             # nivel gratuito de Gemini; sin facturación
         run: |
           mkdir -p registro/pruebas
           python -m pytest -q -rA --tb=short --junitxml=registro/pruebas/junit_vivo.xml pruebas -m vivo 2>&1 | tee registro/pruebas/vivo.txt
@@ -66,7 +68,8 @@ jobs:
         run: date -u +%s > /tmp/inicio
       - name: Ciclo
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                   # solo para GitHub Models (models: read)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                   # respaldo: GitHub Models (models: read)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}               # redacción y auditoría (nivel gratuito, sin facturación)
           PUBLICAR: ${{ vars.PUBLICAR }}                              # "1" solo tras la autorización de lanzamiento
           LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}  # "SI" solo por decisión expresa del responsable
           TOPE_MXN_MES: ${{ vars.TOPE_MXN_MES }}                      # vacío = 0 MXN

@@ -1,36 +1,37 @@
 {
-  "nota": "Modelos para redacción y auditoría. Proveedor gratuito: GitHub Models (GITHUB_TOKEN del workflow). El auditor usa una familia de modelos distinta a la del redactor para que la revisión no se califique a sí misma. Los identificadores se validan en vivo contra el catálogo (pruebas/test_vivo_ia.py); si uno no existe se usa el siguiente de la lista. Respaldo gratuito: modelos de código abierto ejecutados en la CPU del runner con llama.cpp (sistema/ia_local.sh): Qwen2.5-3B-Instruct (Apache-2.0) redacta e investiga y Phi-3.5-mini (MIT), de otra familia, audita.",
+  "nota": "Modelos para redacción y auditoría. Proveedor principal (desde 26-10-2026): API de Gemini en su nivel GRATUITO (Google AI Studio, sin facturación; el exceso de cuota devuelve HTTP 429 y no genera cargos; secreto GEMINI_API_KEY). Condiciones verificadas el 26-10-2026 (ai.google.dev/gemini-api/terms, actualizadas el 28-04-2026): en el nivel gratuito Google puede usar lo enviado para mejorar sus productos y personas pueden revisarlo → solo se envían textos legales públicos y guiones, nunca datos personales. Los límites gratuitos por proyecto solo se muestran en AI Studio (ai.google.dev/gemini-api/docs/rate-limits); reportes de terceros (sept. 2026): ≈20 solicitudes/día en Flash y ≈500/día en Flash-Lite. Los topes propios de abajo quedan por debajo. El auditor es de otra familia (Gemma 4, modelo abierto) para que la revisión no la haga el mismo modelo que redacta; la comprobación documental la hace siempre verificador.py contra el PDF oficial, nunca un modelo. Formato de cada entrada: «proveedor:modelo». GitHub Models queda como respaldo (hoy no responde para esta cuenta). La IA local (sistema/ia_local.sh) se retiró del ciclo diario por inviable (1.8 tokens/s; 55 min por ciclo).",
   "proveedor": "github_models",
   "endpoint": "https://models.github.ai/inference/chat/completions",
   "catalogo": "https://models.github.ai/catalog/models",
   "roles": {
     "investigador": {
       "modelos": [
-        "openai/gpt-4.1-mini",
-        "openai/gpt-4o-mini"
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.8-flash"
       ],
-      "tope_diario": 20,
+      "tope_diario": 12,
       "max_tokens": 800,
       "temperatura": 0.1
     },
     "redactor": {
       "modelos": [
-        "openai/gpt-4.1",
-        "openai/gpt-4o",
-        "openai/gpt-4.1-mini"
+        "gemini:gemini-3.8-flash",
+        "gemini:gemini-3.6-flash",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.5-flash-lite"
       ],
-      "tope_diario": 16,
+      "tope_diario": 12,
       "max_tokens": 3000,
       "temperatura": 0.5
     },
     "auditor": {
       "modelos": [
-        "deepseek/DeepSeek-V3-0324",
-        "meta/Llama-4-Maverick-17B-128E-Instruct-FP8",
-        "mistral-ai/mistral-medium-2505",
-        "openai/gpt-4.1-mini"
+        "gemini:gemma-4-31b-it",
+        "gemini:gemma-4-26b-a4b-it",
+        "gemini:gemini-3.1-flash-lite"
       ],
-      "tope_diario": 16,
+      "tope_diario": 12,
       "max_tokens": 1500,
       "temperatura": 0.0
     }
@@ -50,6 +51,9 @@
     "auditor": {
       "gguf": "models/ia/phi-3.5-mini-instruct-q4_k_m.gguf",
       "modelo": "phi-3.5-mini-instruct"
-    }
-  }
+    },
+    "nota": "Solo si IA_LOCAL=1 (ya no se activa en ciclo.yml). Documentación: docs/ia_local.md"
+  },
+  "endpoint_gemini": "https://generativelanguage.googleapis.com/v1beta",
+  "pausa_429_s": 35
 }

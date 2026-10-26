@@ -284,7 +284,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             construir = construir_imagen
         historial = []
         extra = ""
-        for intento in range(2):                                     # borrador + una corrección como máximo
+        for intento in range(3):                                     # borrador + dos correcciones como máximo
             g = construir(sol, pedir(extra), fuentes)
             errores = esquema.validar(g)
             if errores:
@@ -293,13 +293,16 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             a = auditar_ia(g, fuentes, aud, simulador)
             historial.append({"intento": intento, "auditoria_ia": a})
             if a.get("veredicto") == "sin_objeciones":
-                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": getattr(aud, "ultimo_modelo", aud.modelos), "historial": historial}
+                m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
+                fam = lambda m: m.split("-")[0].split("/")[-1].lower()
+                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,
+                                     "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
                 g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                         "solicitud": sol.get("archivo"), "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                 return g
             extra = "\n\nUn auditor independiente objetó lo siguiente; corrige sin agregar información nueva:\n" + \
                     json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
-        raise Descartada("no superó la validación o la auditoría independiente tras una corrección: " +
+        raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
                          json.dumps(historial[-1], ensure_ascii=False)[:400])
     except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
         raise Descartada(f"modelo no disponible: {e}", transitoria=True)
