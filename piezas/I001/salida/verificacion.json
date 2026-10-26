@@ -1,19 +1,29 @@
 {
-  "decision": "RETENER",
+  "decision": "RECHAZADA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-10-26T01:21:35+00:00",
-      "estado": "RETENER",
-      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+      "consultado": "2026-10-26T03:00:43+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 80523,
+      "estado": "RECHAZADA",
+      "motivo": "el texto citado no coincide con el texto oficial"
     },
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "consultado": "2026-10-26T01:21:35+00:00",
-      "estado": "RETENER",
-      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+      "consultado": "2026-10-26T03:01:01+00:00",
+      "http": 200,
+      "bytes": 1704798,
+      "sha256": "7ceb0682c948d7d945e7e68b8d8699ceb795fc9a491aa62325db91ccf2309904",
+      "ultima_reforma_documento": "2025-11-28",
+      "posicion_articulo": 9079,
+      "estado": "RECHAZADA",
+      "motivo": "el texto citado no coincide con el texto oficial"
     }
   },
   "afirmaciones": [
@@ -22,7 +32,7 @@
       "fuentes": [
         "F1"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "RECHAZADA",
       "duda": null
     },
     {
@@ -30,7 +40,7 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "RECHAZADA",
       "duda": null
     },
     {
@@ -38,7 +48,7 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "RECHAZADA",
       "duda": null
     }
   ]

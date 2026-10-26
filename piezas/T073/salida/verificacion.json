@@ -1,26 +1,45 @@
 {
-  "decision": "RETENER",
+  "decision": "RECHAZADA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-10-26T01:25:07+00:00",
-      "estado": "RETENER",
-      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+      "consultado": "2026-10-26T02:59:57+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 68322,
+      "extracto": "s no podran ser inferiores a las que correspondan a los agentes del ministerio publico parrafo reformado dof 29-01-2016 nadie puede ser aprisionado por deudas de caracter puramente civil articulo reformado dof 17-03-1987 18-06-2008 29-07-2010",
+      "huella_articulo": "10378056768433e467b416d3b2af07f07ab085d0461413bebb7f9bac51c97822",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     },
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T01:25:07+00:00",
-      "estado": "RETENER",
-      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+      "consultado": "2026-10-26T03:00:15+00:00",
+      "http": 200,
+      "bytes": 2794133,
+      "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
+      "ultima_reforma_documento": "2026-03-13",
+      "posicion_articulo": 365764,
+      "extracto": "- comete el delito de fraude el que enganando a uno o aprovechandose del error en que este se halla se hace ilicitamente de alguna cosa o alcanza un lucro indebido el delito de fraude se castigara con las penas siguientes i - con prision de 3 dias a 6 meses o de 30 a 180 dias multa ",
+      "huella_articulo": "1d62ee61ae2f45b59c6fb895fb3b0045e572dee3a7193023543eb9b3e9612b43",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     },
     "F3": {
       "fuente": "F3",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T01:25:07+00:00",
-      "estado": "RETENER",
-      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+      "consultado": "2026-10-26T03:00:29+00:00",
+      "http": 200,
+      "bytes": 2794133,
+      "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
+      "ultima_reforma_documento": "2026-03-13",
+      "posicion_articulo": 333361,
+      "estado": "RECHAZADA",
+      "motivo": "el texto citado no coincide con el texto oficial"
     }
   },
   "afirmaciones": [
@@ -29,7 +48,7 @@
       "fuentes": [
         "F1"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "VERIFICADA",
       "duda": null
     },
     {
@@ -45,7 +64,7 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "VERIFICADA",
       "duda": null
     },
     {
@@ -53,7 +72,7 @@
       "fuentes": [
         "F3"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "RECHAZADA",
       "duda": null
     },
     {
@@ -61,7 +80,7 @@
       "fuentes": [
         "F1"
       ],
-      "dictamen": "RETENER",
+      "dictamen": "REQUIERE_CRITERIO",
       "duda": null
     }
   ]

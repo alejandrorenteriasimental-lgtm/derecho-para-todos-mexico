@@ -1,0 +1,52 @@
+{
+  "trabajos": {
+    "I001": {
+      "id": "I001",
+      "formato": "imagen",
+      "huella": "16ffcc77a4be924c757eb2c45fd4c976ec923efced73ec76587c6cd0274bd26f",
+      "estado": "RETENIDO",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-26T02:59:57+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T03:01:09+00:00",
+          "motivo": "verificación jurídica: RECHAZADA"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-10-26T03:01:09+00:00"
+      }
+    },
+    "T073": {
+      "id": "T073",
+      "formato": "reel",
+      "huella": "d33eaee1b7ce49267a097cf4bf77e5e49b4687b20d3fee0ffe4a4a7d8016dfe4",
+      "estado": "RETENIDO",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-26T02:59:57+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T03:00:43+00:00",
+          "motivo": "verificación jurídica: RECHAZADA"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-10-26T03:00:43+00:00"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{"ts": "2026-10-26T02:59:57+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-26T02:59:57+00:00", "evento": "alerta", "mensaje": "Falla en la redacción automática: Expecting value: line 1 column 1 (char 0)"}
+{"ts": "2026-10-26T02:59:57+00:00", "pieza": "I001", "evento": "encolado"}
+{"ts": "2026-10-26T02:59:57+00:00", "pieza": "T073", "evento": "encolado"}
+{"ts": "2026-10-26T03:00:43+00:00", "pieza": "T073", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RECHAZADA"}
+{"ts": "2026-10-26T03:00:43+00:00", "evento": "alerta", "mensaje": "T073 retenido por verificación jurídica (RECHAZADA)."}
+{"ts": "2026-10-26T03:01:09+00:00", "pieza": "I001", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RECHAZADA"}
+{"ts": "2026-10-26T03:01:09+00:00", "evento": "alerta", "mensaje": "I001 retenido por verificación jurídica (RECHAZADA)."}
+{"ts": "2026-10-26T03:01:09+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 2, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 1}
