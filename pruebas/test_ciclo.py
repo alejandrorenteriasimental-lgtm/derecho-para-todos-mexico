@@ -39,7 +39,6 @@ def raiz(tmp_path, monkeypatch):
     (tmp_path / "piezas" / "X1").mkdir(parents=True)
     (tmp_path / "piezas" / "X1" / "guion.json").write_text(json.dumps(GUION, ensure_ascii=False))
     monkeypatch.setattr(ciclo, "RAIZ", tmp_path)
-    monkeypatch.setattr(ciclo, "APROBACIONES", tmp_path / "estado" / "aprobaciones.json")
     monkeypatch.setattr(cola, "COLA", tmp_path / "estado" / "cola.json")
     monkeypatch.setattr(cola, "BITACORA", tmp_path / "estado" / "bitacora.jsonl")
     monkeypatch.setattr(cola, "LOCK", tmp_path / "estado" / "lock.json")
@@ -177,14 +176,11 @@ def test_ciclo_redacta_produce_y_simula_ambos_formatos(raiz_vacia):
     assert sorted(t["formato"] for t in cola.cargar()["trabajos"].values()) == ["imagen", "reel"]
     assert all(t["estado"] == "REVISION_HUMANA" for t in cola.cargar()["trabajos"].values()), [(t["id"], t["estado"], t["historial"][-1:]) for t in cola.cargar()["trabajos"].values()]
     assert any((raiz_vacia / "piezas").glob("I*/salida/*.png"))
-    # sin aprobación humana no avanza; con ella, pasa a simulación; un rechazo la retiene
-    ids = sorted(cola.cargar()["trabajos"]); hoy = "2026-10-26"
-    monkeypatch_aprob = ciclo.APROBACIONES
-    monkeypatch_aprob.write_text(json.dumps({ids[0]: {"decision": "APROBADA", "por": "responsable", "fecha": hoy},
-                                             ids[1]: {"decision": "RECHAZADA", "nota": "prueba"}}))
+    # sin aprobación humana no avanza (la aprobación por Telegram se prueba en test_revision.py)
     ciclo.ciclo("t", fuentes_ok, env={}, simulador=sim)
-    est = {k: v["estado"] for k, v in cola.cargar()["trabajos"].items()}
-    assert est[ids[0]] == "SIMULADO" and est[ids[1]] == "RETENIDO", est
+    assert all(t["estado"] == "REVISION_HUMANA" for t in cola.cargar()["trabajos"].values())
+    m = json.loads((raiz_vacia / "estado" / "respaldo.json").read_text())        # respaldo con huella de cada archivo
+    assert all(any(k.endswith((".png", ".mp4")) for k in v) for v in m.values()), m
 
 
 def test_sin_revision_obligatoria_va_directo_a_simulacion(raiz_vacia):

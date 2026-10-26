@@ -89,8 +89,7 @@ jobs:
           TOPE_MXN_MES: ${{ vars.TOPE_MXN_MES }}                      # vacío = 0 MXN
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}                 # bot de revisión (el chat se vincula con código; ver sistema/revision.py)
         run: python sistema/ciclo.py
       - name: Conservar piezas producidas (14 días)
         if: always()

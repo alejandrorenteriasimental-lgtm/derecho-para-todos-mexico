@@ -17,14 +17,16 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import cola, producir, publicar, verificador, esquema, presupuesto, planificador, redactor
+import cola, producir, publicar, verificador, esquema, presupuesto, planificador, redactor, respaldo, revision
 
 RAIZ = Path(__file__).resolve().parent.parent
 REVERIFICAR_H = 6
 
 
 def alerta(msg):
-    tok, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT")
+    tok = os.environ.get("TELEGRAM_TOKEN")
+    try: chat = revision.estado_tg().get("chat_id")       # chat vinculado con código (sistema/revision.py)
+    except Exception: chat = None
     cola.log({"evento": "alerta", "mensaje": msg})
     if tok and chat:
         data = urllib.parse.urlencode({"chat_id": chat, "text": f"[DPT] {msg}"}).encode()
@@ -46,26 +48,27 @@ def programar_para(formato, ahora=None):
 
 
 ACTIVOS = {"PENDIENTE", "PRODUCIDO", "APROBADO", "PUBLICANDO"}
-APROBACIONES = RAIZ / "estado" / "aprobaciones.json"
 
 
 def _requiere_revision(pid, env):
     """Toda pieza redactada por IA pasa por aprobación humana (REVISION_HUMANA_OBLIGATORIA=0 la desactiva, solo por
-    decisión del responsable tras validar la calidad). Las aprobaciones se registran en estado/aprobaciones.json."""
+    decisión del responsable tras validar la calidad). Las decisiones llegan por revision.py (Telegram) y quedan en
+    estado/aprobaciones.jsonl con la versión exacta revisada."""
     g = _guion(pid)
     return bool((g.get("generacion") or {}).get("modelos")) and env.get("REVISION_HUMANA_OBLIGATORIA", "1") != "0"
 
 
-def aplicar_aprobaciones(c, resumen):
-    """{"I20261026-T020": {"decision": "APROBADA"|"RECHAZADA", "por": "...", "fecha": "...", "nota": "..."}}"""
-    if not APROBACIONES.exists(): return
-    for pid, a in json.loads(APROBACIONES.read_text()).items():
-        t = c["trabajos"].get(pid)
-        if not t or t["estado"] != "REVISION_HUMANA": continue
-        if a.get("decision") == "APROBADA":
-            cola.mover(c, pid, "APROBADO", f'aprobación humana: {a.get("por", "?")} {a.get("fecha", "")} {a.get("nota", "")}'.strip())
-        elif a.get("decision") == "RECHAZADA":
-            cola.mover(c, pid, "RETENIDO", f'rechazo humano: {a.get("nota", "")}'); t["retencion"] = {"tipo": "editorial", "desde": cola.ahora()}
+def _rutas():
+    """Las rutas de estado de los módulos auxiliares siguen a RAIZ (las pruebas la sustituyen por una carpeta temporal)."""
+    respaldo.MANIFIESTO = RAIZ / "estado" / "respaldo.json"
+    revision.RAIZ = RAIZ; revision.ESTADO_TG = RAIZ / "estado" / "telegram.json"; revision.REGISTRO = RAIZ / "estado" / "aprobaciones.jsonl"
+
+
+def _respaldar(pid, resumen, env):
+    try:
+        respaldo.respaldar(pid, RAIZ / "piezas" / pid / "salida", env)
+    except Exception as e:
+        resumen["errores"].append(f"{pid}: respaldo: {e}"); alerta(f"No se pudo respaldar {pid}: {e}")
 INTENTOS_REDACCION = 3
 
 
@@ -120,7 +123,11 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
         except Exception as e:
             resumen["errores"].append(f"redacción: {e}"); alerta(f"Falla en la redacción automática: {type(e).__name__}: {e}")
             cola.log({"evento": "error_redaccion", "detalle": traceback.format_exc(limit=6)[-1500:]})
-        aplicar_aprobaciones(c, resumen)
+        _rutas()
+        try:
+            revision.recoger(c, env); resumen["decisiones"] = revision.aplicar(c)
+        except Exception as e:
+            resumen["errores"].append(f"revisión: {e}"); cola.log({"evento": "error_revision", "detalle": str(e)[:300]})
         # 2) encolar y detectar guiones modificados
         for g_path in sorted((RAIZ / "piezas").glob("*/guion.json")):
             pid = g_path.parent.name
@@ -168,10 +175,12 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
                     else:
                         reg, tec, jur = producir.producir(RAIZ / "piezas" / pid, ver)
                     cola.mover(c, pid, "PRODUCIDO", f'{reg.get("duracion_s", "imagen")}')
-                    resumen["producidas"].append(pid)
+                    resumen["producidas"].append(pid); _respaldar(pid, resumen, env)
                     if jur["decision"] in ("APTO", "APTO_CON_CRITERIO") and _requiere_revision(pid, env):
                         cola.mover(c, pid, "REVISION_HUMANA", f'{jur["decision"]}; pieza redactada por IA: espera la aprobación editorial humana')
                         resumen.setdefault("en_revision", []).append(pid)
+                        try: revision.enviar(c, pid, env)
+                        except Exception as e: cola.log({"evento": "revision_sin_enviar", "pieza": pid, "motivo": str(e)[:200]})
                     elif jur["decision"] in ("APTO", "APTO_CON_CRITERIO"):
                         cola.mover(c, pid, "APROBADO", jur["decision"])
                         _publicar(c, t, modo, env, http_meta, resumen)
@@ -185,6 +194,7 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
         # piezas aprobadas que quedaron sin publicar en un ciclo anterior
         for t in cola.siguientes(c, "APROBADO", n=2):
             _publicar(c, t, modo, env, http_meta, resumen)
+        revision.enviar_pendientes(c, env)
     finally:
         cola.log({"evento": "fin_ciclo", **{k: len(v) for k, v in resumen.items()}})
         cola.guardar(c); cola.liberar_lock(dueño)
@@ -193,15 +203,21 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
 
 def _publicar(c, t, modo, env, http_meta, resumen, retomar=False):
     pid = t["id"]; g = _guion(pid); fmt = t.get("formato", "reel")
+    d = t.get("decision_humana")
+    if d and not retomar and revision.version(pid, fmt)[0] != d.get("version"):    # cambió después de aprobarse
+        cola.mover(c, pid, "RETENIDO", "la pieza cambió después de la aprobación humana; se requiere una nueva revisión")
+        t["retencion"] = {"tipo": "editorial", "desde": cola.ahora()}; resumen["retenidas"].append(pid); return
     salida = RAIZ / "piezas" / pid / "salida"
     archivo = salida / (f"{pid}_final.mp4" if fmt == "reel" else f"{pid}.png")
     texto = g.get("copy") or g["titulo"]
     try:
         if fmt == "imagen":
+            if modo == "real" and not archivo.exists():
+                salida.mkdir(parents=True, exist_ok=True); respaldo.descargar(pid, archivo.name, archivo, env)
             r = publicar.publicar_imagen(pid, archivo, texto, t["huella"], programar_para("imagen"), modo=modo, env=env, http=http_meta)
         else:
-            if modo == "real" and not archivo.exists():
-                producir.producir(RAIZ / "piezas" / pid)   # runner nuevo: se regenera antes de retomar la subida
+            if modo == "real" and not archivo.exists():   # runner nuevo: se recupera el archivo EXACTO aprobado (no se regenera)
+                salida.mkdir(parents=True, exist_ok=True); respaldo.descargar(pid, archivo.name, archivo, env)
             r = publicar.publicar_reel(pid, archivo, texto, t["huella"], programar_para("reel"), modo=modo, env=env, http=http_meta)
     except publicar.PublicacionAmbigua as e:
         if t["estado"] == "APROBADO": cola.mover(c, pid, "PUBLICANDO", "respuesta ambigua de Meta", modo="real")
