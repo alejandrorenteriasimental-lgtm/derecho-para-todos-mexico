@@ -46,6 +46,26 @@ def programar_para(formato, ahora=None):
 
 
 ACTIVOS = {"PENDIENTE", "PRODUCIDO", "APROBADO", "PUBLICANDO"}
+APROBACIONES = RAIZ / "estado" / "aprobaciones.json"
+
+
+def _requiere_revision(pid, env):
+    """Toda pieza redactada por IA pasa por aprobación humana (REVISION_HUMANA_OBLIGATORIA=0 la desactiva, solo por
+    decisión del responsable tras validar la calidad). Las aprobaciones se registran en estado/aprobaciones.json."""
+    g = _guion(pid)
+    return bool((g.get("generacion") or {}).get("modelos")) and env.get("REVISION_HUMANA_OBLIGATORIA", "1") != "0"
+
+
+def aplicar_aprobaciones(c, resumen):
+    """{"I20261026-T020": {"decision": "APROBADA"|"RECHAZADA", "por": "...", "fecha": "...", "nota": "..."}}"""
+    if not APROBACIONES.exists(): return
+    for pid, a in json.loads(APROBACIONES.read_text()).items():
+        t = c["trabajos"].get(pid)
+        if not t or t["estado"] != "REVISION_HUMANA": continue
+        if a.get("decision") == "APROBADA":
+            cola.mover(c, pid, "APROBADO", f'aprobación humana: {a.get("por", "?")} {a.get("fecha", "")} {a.get("nota", "")}'.strip())
+        elif a.get("decision") == "RECHAZADA":
+            cola.mover(c, pid, "RETENIDO", f'rechazo humano: {a.get("nota", "")}'); t["retencion"] = {"tipo": "editorial", "desde": cola.ahora()}
 INTENTOS_REDACCION = 3
 
 
@@ -100,6 +120,7 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
         except Exception as e:
             resumen["errores"].append(f"redacción: {e}"); alerta(f"Falla en la redacción automática: {type(e).__name__}: {e}")
             cola.log({"evento": "error_redaccion", "detalle": traceback.format_exc(limit=6)[-1500:]})
+        aplicar_aprobaciones(c, resumen)
         # 2) encolar y detectar guiones modificados
         for g_path in sorted((RAIZ / "piezas").glob("*/guion.json")):
             pid = g_path.parent.name
@@ -148,7 +169,10 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
                         reg, tec, jur = producir.producir(RAIZ / "piezas" / pid, ver)
                     cola.mover(c, pid, "PRODUCIDO", f'{reg.get("duracion_s", "imagen")}')
                     resumen["producidas"].append(pid)
-                    if jur["decision"] in ("APTO", "APTO_CON_CRITERIO"):
+                    if jur["decision"] in ("APTO", "APTO_CON_CRITERIO") and _requiere_revision(pid, env):
+                        cola.mover(c, pid, "REVISION_HUMANA", f'{jur["decision"]}; pieza redactada por IA: espera la aprobación editorial humana')
+                        resumen.setdefault("en_revision", []).append(pid)
+                    elif jur["decision"] in ("APTO", "APTO_CON_CRITERIO"):
                         cola.mover(c, pid, "APROBADO", jur["decision"])
                         _publicar(c, t, modo, env, http_meta, resumen)
                     else:

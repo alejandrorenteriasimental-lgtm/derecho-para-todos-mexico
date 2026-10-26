@@ -39,6 +39,7 @@ def raiz(tmp_path, monkeypatch):
     (tmp_path / "piezas" / "X1").mkdir(parents=True)
     (tmp_path / "piezas" / "X1" / "guion.json").write_text(json.dumps(GUION, ensure_ascii=False))
     monkeypatch.setattr(ciclo, "RAIZ", tmp_path)
+    monkeypatch.setattr(ciclo, "APROBACIONES", tmp_path / "estado" / "aprobaciones.json")
     monkeypatch.setattr(cola, "COLA", tmp_path / "estado" / "cola.json")
     monkeypatch.setattr(cola, "BITACORA", tmp_path / "estado" / "bitacora.jsonl")
     monkeypatch.setattr(cola, "LOCK", tmp_path / "estado" / "lock.json")
@@ -173,8 +174,24 @@ def test_ciclo_redacta_produce_y_simula_ambos_formatos(raiz_vacia):
     r = ciclo.ciclo("t", fuentes_ok, env={}, simulador=sim)
     assert len(r["redactadas"]) == 2 and not r["errores"], r
     assert sorted(t["formato"] for t in cola.cargar()["trabajos"].values()) == ["imagen", "reel"]
-    assert all(t["estado"] == "SIMULADO" for t in cola.cargar()["trabajos"].values()), [(t["id"], t["estado"], t["historial"][-1:]) for t in cola.cargar()["trabajos"].values()]
+    assert all(t["estado"] == "REVISION_HUMANA" for t in cola.cargar()["trabajos"].values()), [(t["id"], t["estado"], t["historial"][-1:]) for t in cola.cargar()["trabajos"].values()]
     assert any((raiz_vacia / "piezas").glob("I*/salida/*.png"))
+    # sin aprobación humana no avanza; con ella, pasa a simulación; un rechazo la retiene
+    ids = sorted(cola.cargar()["trabajos"]); hoy = "2026-10-26"
+    monkeypatch_aprob = ciclo.APROBACIONES
+    monkeypatch_aprob.write_text(json.dumps({ids[0]: {"decision": "APROBADA", "por": "responsable", "fecha": hoy},
+                                             ids[1]: {"decision": "RECHAZADA", "nota": "prueba"}}))
+    ciclo.ciclo("t", fuentes_ok, env={}, simulador=sim)
+    est = {k: v["estado"] for k, v in cola.cargar()["trabajos"].items()}
+    assert est[ids[0]] == "SIMULADO" and est[ids[1]] == "RETENIDO", est
+
+
+def test_sin_revision_obligatoria_va_directo_a_simulacion(raiz_vacia):
+    base = _sim_dos_formatos()
+    def sim(rol, sistema, usuario):
+        sim_ultimo[0] = usuario; return base(rol, sistema, usuario)
+    ciclo.ciclo("t", fuentes_ok, env={"REVISION_HUMANA_OBLIGATORIA": "0"}, simulador=sim)
+    assert all(t["estado"] == "SIMULADO" for t in cola.cargar()["trabajos"].values())
 
 
 def test_tema_que_no_supera_la_auditoria_se_descarta_y_se_intenta_otro(raiz_vacia):

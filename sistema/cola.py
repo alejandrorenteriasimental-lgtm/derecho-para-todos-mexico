@@ -16,7 +16,7 @@ LOCK = RAIZ / "estado" / "lock.json"
 MAX_INTENTOS = 3
 TRANSICIONES = {
     "PENDIENTE": {"PRODUCIDO", "RETENIDO", "REVISION_HUMANA", "FALLIDO"},   # la verificación jurídica ocurre antes de producir
-    "PRODUCIDO": {"APROBADO", "RETENIDO"},
+    "PRODUCIDO": {"APROBADO", "RETENIDO", "REVISION_HUMANA"},
     "RETENIDO": {"PENDIENTE"},            # vuelve a verificarse si el motivo era transitorio o si el guion cambió
     "REVISION_HUMANA": {"APROBADO", "RETENIDO", "PENDIENTE"},
     "APROBADO": {"SIMULADO", "PUBLICANDO", "FALLIDO"},
