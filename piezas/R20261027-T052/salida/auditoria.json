@@ -1,0 +1,136 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 30 y 90 s (límite de Reels por API)",
+      "resultado": "APROBADO",
+      "detalle": "56.6 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "56.6 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.0 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.6 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "44 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "803ba4fe3395c334"
+    },
+    {
+      "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
+      "resultado": "APROBADO",
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
+    }
+  ],
+  "juridica": {
+    "decision": "RETENIDO",
+    "tipo_retencion": "sustantivo",
+    "motivos": [
+      "Regla: Sin personas reales identificables"
+    ],
+    "verificacion": "APTA",
+    "carril": "C",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "FALLA",
+        "detalle": "Crédito Público"
+      }
+    ]
+  },
+  "registro": {
+    "id": "R20261027-T052",
+    "titulo": "¿Quién designa al Presidente de la institución?",
+    "fecha": "2026-10-26T16:47:18+00:00",
+    "sha256": "803ba4fe3395c33466f502710fa27d63e64b5b75247609e70e0fc16ecd09c3ab",
+    "duracion_s": 56.6,
+    "estado": "RETENIDO",
+    "huella_guion": "2a2f06b9bac0e38d9622f35ae4ecbc3079d9963e4eefdcedff6c4492781f28f3",
+    "carril": "C",
+    "tiempos_s": {
+      "auditoria_juridica": 0.0,
+      "narracion": 33.6,
+      "musica": 2.8,
+      "render_video": 63.6,
+      "mezcla_audio": 2.6,
+      "auditoria_tecnica": 14.4
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 1.95,
+      "computo_equivalente_runner_usd": 0.0117,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1698,
+    "caracteres_narrados": 859
+  }
+}

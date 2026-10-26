@@ -8,11 +8,11 @@
   "fuentes_sugeridas": "LFT art. 76 (reforma DOF 27/12/2022)",
   "riesgo_exactitud": "Bajo: verificar tabla vigente",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-26T15:19:30Z",
   "pieza_id": "R20261026-T016",
   "archivo": "2026-10-26_reel_T016.json",
-  "intentos": 2,
-  "ultimo_motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"
+  "intentos": 3,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"objeciones\": [{\"donde\": \"Escena 'lista', ítem 2: 'Sube 2 días por cada año'\", \"problema\": \"La pieza simplifica la regla de incremento de forma inexacta. El texto oficial establece que el aumento de dos días es 'hasta llegar a veinte', lo cual ocurre al quinto año, no es una regla lineal indefinida.\", \"correccion\": \"Aclarar que el aume"
 }
