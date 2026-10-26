@@ -33,6 +33,8 @@ def _limpiar_json(t):
 
 
 class CuotaAgotada(Exception): pass
+class Saturado(Exception):
+    """HTTP 5xx del proveedor («model is currently experiencing high demand»): se reintenta tras una pausa."""
 class FallaModelo(Exception): pass
 
 
@@ -89,7 +91,7 @@ class Modelo:
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
         cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
-        self.pausa_429 = cfg.get("pausa_429_s", 35); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
+        self.pausa_429 = cfg.get("pausa_429_s", 35); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = cfg.get("timeout_gemini_s", 100); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
         self.endpoint_gemini = cfg.get("endpoint_gemini", "https://generativelanguage.googleapis.com/v1beta")
         rl = cfg.get("respaldo_local") or {}
@@ -131,11 +133,12 @@ class Modelo:
         req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), method="POST",
                                      headers={"x-goog-api-key": clave, "Content-Type": "application/json"})
         try:
-            with urllib.request.urlopen(req, timeout=240) as r:
+            with urllib.request.urlopen(req, timeout=self.timeout_gemini) as r:
                 d = json.loads(r.read())
         except urllib.error.HTTPError as e:
             txt = e.read()[:400].decode("utf-8", "replace").replace(clave, "***")
             if e.code == 429: raise CuotaAgotada(f"{modelo}: HTTP 429 {txt[:200]}")
+            if e.code in (500, 502, 503, 504): raise Saturado(f"{modelo}: HTTP {e.code} {txt[:160]}")
             if e.code == 400 and json_mode and ("mime" in txt.lower() or "json" in txt.lower()):
                 return self._http_gemini(modelo, sistema, usuario, json_mode=False)    # modelos (p. ej., Gemma) sin modo JSON
             if e.code == 400 and "system" in txt.lower() and "instruction" in txt.lower():
@@ -207,6 +210,11 @@ class Modelo:
                     _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
                     ultimo = e
                     if intento == 1 and prov == "gemini" and "PerDay" not in str(e): time.sleep(self.pausa_429); continue
+                    contenido = None; break
+                except Saturado as e:                       # 5xx: saturación temporal; un reintento y luego el siguiente modelo
+                    _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
+                    ultimo = FallaModelo(str(e))
+                    if intento == 1: time.sleep(self.pausa_5xx); continue
                     contenido = None; break
                 except FallaModelo as e:
                     _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)

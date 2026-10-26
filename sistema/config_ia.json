@@ -7,8 +7,9 @@
     "investigador": {
       "modelos": [
         "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
         "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.8-flash"
+        "gemini:gemini-3.6-flash"
       ],
       "tope_diario": 12,
       "max_tokens": 800,
@@ -17,8 +18,8 @@
     "redactor": {
       "modelos": [
         "gemini:gemini-3.8-flash",
-        "gemini:gemini-3.6-flash",
         "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.6-flash",
         "gemini:gemini-3.5-flash-lite"
       ],
       "tope_diario": 12,
@@ -55,5 +56,7 @@
     "nota": "Solo si IA_LOCAL=1 (ya no se activa en ciclo.yml). Documentación: docs/ia_local.md"
   },
   "endpoint_gemini": "https://generativelanguage.googleapis.com/v1beta",
-  "pausa_429_s": 35
+  "pausa_429_s": 35,
+  "timeout_gemini_s": 100,
+  "pausa_5xx_s": 20
 }

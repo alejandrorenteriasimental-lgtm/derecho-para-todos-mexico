@@ -110,3 +110,15 @@ def test_tope_propio_diario(llamadas):
     with pytest.raises(modelos.CuotaAgotada):
         m.completar("s", "u")
     assert len(log) == 1
+
+
+def test_503_reintenta_una_vez_y_pasa_al_siguiente_modelo(llamadas):
+    log, guion, uso = llamadas
+    guion += [http_error(503, "This model is currently experiencing high demand"), http_error(503, "high demand"), resp('{"ok": 4}')]
+    m = modelo(uso); assert m.completar("s", "u") == {"ok": 4} and m.ultimo_modelo == "gemini-b" and len(log) == 3
+
+
+def test_timeout_es_configurable(llamadas):
+    log, guion, uso = llamadas
+    m = modelos.Modelo("redactor", {**CFG, "timeout_gemini_s": 7}, {"GEMINI_API_KEY": CLAVE}, archivo_uso=uso)
+    assert m.timeout_gemini == 7

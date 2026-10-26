@@ -64,8 +64,9 @@ def _cabecera(L, g):
     d = L.d
     d.rectangle([0, 0, W, 14], fill=C["tinta"])
     L.texto((M, 50), render.FIRMA, render.font("xbold", 32), C["tinta"], C["papel"])
-    serie = f'N.º {g.get("numero", g["id"])}'
-    f = render.font("semi", 26); L.texto((W - M - f.getlength(serie), 56), serie, f, C["gris"], C["papel"])
+    serie = f'N.º {g["numero"]}' if g.get("numero") else ""   # el identificador interno no se muestra al público
+    f = render.font("semi", 26)
+    if serie: L.texto((W - M - f.getlength(serie), 56), serie, f, C["gris"], C["papel"])
     d.line([(M, 108), (W - M, 108)], fill=C["linea"], width=2)
     k = KICKER.get(g["plantilla"], "DERECHO COTIDIANO"); fk = render.font("bold", 28)
     w = fk.getlength(k)

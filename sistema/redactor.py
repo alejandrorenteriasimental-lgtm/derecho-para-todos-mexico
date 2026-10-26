@@ -126,6 +126,8 @@ Textos oficiales:
 Pieza:
 {pieza}
 
+Revisa también la COHERENCIA: el titular, el mito, la realidad, el gancho y la conclusión deben hablar de la misma figura jurídica
+que regulan los textos citados (p. ej., no titular sobre la renuncia y responder con el «mutuo consentimiento», que es otra causa).
 Señala SOLO problemas reales: afirmaciones que el texto oficial no sustenta, cifras o plazos distintos, excepciones omitidas que
 cambian el sentido, lenguaje absoluto, frases que parezcan asesoría personalizada, o confusión entre jurisdicción federal y estatal.
 Devuelve: {{"veredicto": "sin_objeciones" | "con_objeciones", "objeciones": [{{"donde": "...", "problema": "...", "correccion": "..."}}]}}"""
@@ -162,6 +164,8 @@ def _anclar(afirmaciones, fuentes):
     for a in afirmaciones:
         f = fuentes.get(a.get("fuente"))
         cita = (a.get("cita_literal") or "").strip().strip("«»\"")
+        if len((a.get("texto") or "").strip()) < 10:
+            quitadas.append("(afirmación sin texto)"); continue
         if f and len(cita.split()) >= 5 and verificador.contiene(f["texto_oficial"], cita):
             ok.append({**a, "cita_literal": cita})
         else:
@@ -244,7 +248,10 @@ def construir_imagen(sol, borrador, fuentes):
         pieza["columnas"] = borrador.get("columnas", [])[:2]
     usados = {}
     for a in afs: usados.setdefault((fuentes[a["fuente"]]["documento"], fuentes[a["fuente"]]["articulo"]), 1)
-    pieza["fuente_visible"] = " · ".join(f'{d.split(",")[0]}, art. {n}' for d, n in usados)
+    por_doc = {}
+    for d, n in usados: por_doc.setdefault(d.split(",")[0], []).append(n)
+    y = lambda ns: ns[0] if len(ns) == 1 else ", ".join(ns[:-1]) + " y " + ns[-1]
+    pieza["fuente_visible"] = " · ".join(f'{d}, art{"s" if len(ns) > 1 else ""}. {y(ns)}' for d, ns in por_doc.items())
     locales = any(f["sigla"] in LOCALES for f in fuentes.values())
     copy = borrador.get("copy", "").strip() + "\n\nEsto es información general, no es asesoría legal." + \
            (" Las leyes penales y civiles pueden variar según tu estado." if locales else "")

@@ -151,3 +151,16 @@ def test_cierre_agrega_leyenda_estatal_si_cita_codigo_penal():
     c = redactor._cierre({"F1": {"sigla": "CPF"}})
     assert "según tu estado" in c["texto"]
     assert "según tu estado" not in redactor._cierre({"F1": {"sigla": "CPEUM"}})["texto"]
+
+
+def test_afirmacion_sin_texto_se_elimina(uso):
+    b = copy.deepcopy(BORRADOR)
+    for a in b["afirmaciones"]: a["texto"] = ""
+    with pytest.raises(redactor.Descartada):
+        redactor.generar(SOL, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
+
+
+def test_duda_declarada_en_un_hecho_normativo_retiene(uso):
+    b = copy.deepcopy(BORRADOR); b["afirmaciones"][0]["duda"] = "La norma no aclara si aplica a este supuesto."
+    g = redactor.generar(SOL, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
+    assert verificador.verificar_guion(g, transporte)["decision"] == "RETENER"

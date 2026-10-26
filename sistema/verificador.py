@@ -22,7 +22,7 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
-VERSION = "0.3.1"   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+VERSION = "0.3.2"   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
 
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)
@@ -286,10 +286,10 @@ def verificar_guion(g, transporte=transporte_http):
             ests = [ev.get(fid, {"estado": "INEXISTENTE"})["estado"] for fid in a.get("fuentes", [])]
             if not ests:
                 d = "SIN_FUENTE"
+            elif any(s == "VERIFICADA" for s in ests) and a.get("duda"):
+                d = "RETENER"   # duda material declarada por el propio guion (en un hecho o en una interpretación)
             elif any(s == "VERIFICADA" for s in ests) and not a.get("interpretativa"):
                 d = "VERIFICADA"
-            elif any(s == "VERIFICADA" for s in ests) and a.get("duda"):
-                d = "RETENER"   # interpretación con duda material declarada por el propio guion
             elif any(s == "VERIFICADA" for s in ests):
                 d = "REQUIERE_CRITERIO"
             elif any(s in ("RETENER", "CAMBIO_NORMATIVO") for s in ests):
