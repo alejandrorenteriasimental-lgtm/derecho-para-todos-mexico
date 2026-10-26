@@ -1,5 +1,5 @@
 {
-  "nota": "Modelos para redacción y auditoría. Proveedor gratuito: GitHub Models (GITHUB_TOKEN del workflow). El auditor usa una familia de modelos distinta a la del redactor para que la revisión no se califique a sí misma. Los identificadores se validan en vivo contra el catálogo (pruebas/test_vivo_ia.py); si uno no existe se usa el siguiente de la lista. Respaldo gratuito: modelos de código abierto ejecutados en la CPU del runner con llama.cpp (sistema/ia_local.sh): Qwen2.5-7B-Instruct (Apache-2.0) redacta e investiga y Phi-3.5-mini (MIT), de otra familia, audita.",
+  "nota": "Modelos para redacción y auditoría. Proveedor gratuito: GitHub Models (GITHUB_TOKEN del workflow). El auditor usa una familia de modelos distinta a la del redactor para que la revisión no se califique a sí misma. Los identificadores se validan en vivo contra el catálogo (pruebas/test_vivo_ia.py); si uno no existe se usa el siguiente de la lista. Respaldo gratuito: modelos de código abierto ejecutados en la CPU del runner con llama.cpp (sistema/ia_local.sh): Qwen2.5-3B-Instruct (Apache-2.0) redacta e investiga y Phi-3.5-mini (MIT), de otra familia, audita.",
   "proveedor": "github_models",
   "endpoint": "https://models.github.ai/inference/chat/completions",
   "catalogo": "https://models.github.ai/catalog/models",
@@ -36,17 +36,20 @@
     }
   },
   "respaldo_local": {
+    "binario": "models/ia/bin/llama-server",
+    "puerto": 8080,
+    "contexto": 6144,
     "investigador": {
-      "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
-      "modelo": "local-redactor"
+      "gguf": "models/ia/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "modelo": "qwen2.5-3b-instruct"
     },
     "redactor": {
-      "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
-      "modelo": "local-redactor"
+      "gguf": "models/ia/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "modelo": "qwen2.5-3b-instruct"
     },
     "auditor": {
-      "endpoint": "http://127.0.0.1:8081/v1/chat/completions",
-      "modelo": "local-auditor"
+      "gguf": "models/ia/phi-3.5-mini-instruct-q4_k_m.gguf",
+      "modelo": "phi-3.5-mini-instruct"
     }
   }
 }

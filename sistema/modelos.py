@@ -41,6 +41,37 @@ def _registrar(ev, archivo=None):
     with open(f, "a") as h: h.write(json.dumps({"ts": datetime.now(timezone.utc).isoformat(timespec="seconds"), **ev}, ensure_ascii=False) + "\n")
 
 
+_SERVIDOR = {"proc": None, "gguf": None}
+
+
+def servidor_local(cfg):
+    """Mantiene UN llama-server con el modelo pedido (en 7 GB de RAM no caben dos). Cambia de modelo si hace falta."""
+    import subprocess, atexit
+    url = f'http://127.0.0.1:{cfg["puerto"]}'
+    if _SERVIDOR["gguf"] == cfg["gguf"] and _SERVIDOR["proc"] and _SERVIDOR["proc"].poll() is None:
+        return url + "/v1/chat/completions"
+    if _SERVIDOR["proc"] and _SERVIDOR["proc"].poll() is None:
+        _SERVIDOR["proc"].terminate(); _SERVIDOR["proc"].wait(30)
+    binario, gguf = RAIZ / cfg["binario"], RAIZ / cfg["gguf"]
+    if not (binario.exists() and gguf.exists()):
+        raise FallaModelo(f"IA local no instalada ({binario.name} / {gguf.name})")
+    log = open(f"/tmp/llama-{gguf.stem}.log", "w")
+    env = {**os.environ, "LD_LIBRARY_PATH": f'{binario.parent}:{os.environ.get("LD_LIBRARY_PATH", "")}'}
+    _SERVIDOR["proc"] = subprocess.Popen([str(binario), "-m", str(gguf), "--port", str(cfg["puerto"]), "-c", str(cfg["contexto"]),
+                                         "-t", str(os.cpu_count() or 2), "--alias", cfg["modelo"]], stdout=log, stderr=log, env=env)
+    _SERVIDOR["gguf"] = cfg["gguf"]; atexit.register(lambda: _SERVIDOR["proc"] and _SERVIDOR["proc"].terminate())
+    for _ in range(180):
+        try:
+            with urllib.request.urlopen(url + "/health", timeout=5) as r:
+                if r.status == 200: return url + "/v1/chat/completions"
+        except Exception:
+            pass
+        if _SERVIDOR["proc"].poll() is not None:
+            raise FallaModelo(f"llama-server terminó al cargar {gguf.name}: ver /tmp/llama-{gguf.stem}.log")
+        time.sleep(2)
+    raise FallaModelo("llama-server no respondió en 6 minutos")
+
+
 class Modelo:
     """Interfaz: completar(sistema, usuario) → dict (JSON)."""
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
@@ -48,7 +79,8 @@ class Modelo:
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
         self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
-        self.local = (cfg.get("respaldo_local") or {}).get(rol) if env.get("IA_LOCAL") == "1" else None
+        rl = cfg.get("respaldo_local") or {}
+        self.local = {**rl[rol], **{k: rl[k] for k in ("binario", "puerto", "contexto") if k in rl}} if env.get("IA_LOCAL") == "1" and rol in rl else None
 
     def _http(self, modelo, mensajes):
         token = self.env.get("GITHUB_TOKEN") or self.env.get("MODELOS_TOKEN")
@@ -74,9 +106,10 @@ class Modelo:
             raise FallaModelo(f"{modelo}: sin conexión ({e})")
 
     def _http_local(self, mensajes):
+        url = servidor_local(self.local)
         cuerpo = {"model": self.local["modelo"], "messages": mensajes, "temperature": self.temperatura, "max_tokens": self.max_tokens,
                   "response_format": {"type": "json_object"}}
-        req = urllib.request.Request(self.local["endpoint"], data=json.dumps(cuerpo).encode(), method="POST", headers={"Content-Type": "application/json"})
+        req = urllib.request.Request(url, data=json.dumps(cuerpo).encode(), method="POST", headers={"Content-Type": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=1500) as r:
                 return json.loads(r.read())

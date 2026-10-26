@@ -72,10 +72,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: models/ia
-          key: ia-local-qwen2.5-7b-phi3.5-v1
-      - name: Iniciar IA local gratuita (llama.cpp)
+          key: ia-local-qwen2.5-3b-phi3.5-v2
+      - name: Descargar IA local gratuita (llama.cpp + modelos abiertos)
         env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
-        run: bash sistema/ia_local.sh iniciar
+        run: bash sistema/ia_local.sh
         continue-on-error: true     # si la IA local no arranca, el ciclo sigue: verifica y produce lo que ya tenga guion
       - name: Marca de inicio (consumo)
         run: date -u +%s > /tmp/inicio
@@ -114,6 +114,9 @@ jobs:
           name: pruebas-vivo-${{ github.run_id }}
           path: registro/
         continue-on-error: true
+      - name: Registro de la IA local
+        if: always()
+        run: mkdir -p registro/diagnostico && tail -n 40 /tmp/llama-*.log > registro/diagnostico/ia_local.txt 2>/dev/null || true
       - name: Registrar consumo real del ciclo
         if: always()
         run: |

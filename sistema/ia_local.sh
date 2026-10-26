@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # IA local y gratuita para la redacción y la auditoría (respaldo cuando GitHub Models no responde).
 # llama.cpp (MIT) desde sus GitHub Releases + modelos GGUF de código abierto desde Hugging Face:
-#   redactor/investigador: Qwen2.5-7B-Instruct Q4_K_M (Apache-2.0) → puerto 8080
-#   auditor (otra familia): Phi-3.5-mini-instruct Q4_K_M (MIT)      → puerto 8081
+#   redactor/investigador: Qwen2.5-3B-Instruct Q4_K_M (Apache-2.0, ≈1.9 GB)
+#   auditor (otra familia): Phi-3.5-mini-instruct Q4_K_M (MIT, ≈2.4 GB)
+# El runner gratuito de un repositorio privado tiene 2 núcleos y 7 GB de RAM: modelos.py carga UN modelo a la vez
+# (inicia y detiene llama-server según el rol). Este script solo descarga el binario y los modelos.
 # Corre en la CPU del runner; no hay cuentas, llaves ni cargos. Uso: bash sistema/ia_local.sh [iniciar|descargar]
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -27,15 +29,7 @@ print(c[0])")
   echo "$URL" > "$D/bin/ORIGEN"
 fi
 df -h . | tail -1
-bajar https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf "$D/qwen2.5-7b-instruct-q4_k_m.gguf" 4000000000
+bajar https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q4_K_M.gguf "$D/qwen2.5-3b-instruct-q4_k_m.gguf" 1500000000
 bajar https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf "$D/phi-3.5-mini-instruct-q4_k_m.gguf" 2000000000
-[ "${1:-iniciar}" = "descargar" ] && exit 0
-export LD_LIBRARY_PATH="$PWD/$D/bin:${LD_LIBRARY_PATH:-}"
-HILOS=$(nproc)
-nohup "$D/bin/llama-server" -m "$D/qwen2.5-7b-instruct-q4_k_m.gguf" --port 8080 -c 8192 -t "$HILOS" --alias local-redactor > /tmp/llama-8080.log 2>&1 &
-nohup "$D/bin/llama-server" -m "$D/phi-3.5-mini-instruct-q4_k_m.gguf" --port 8081 -c 8192 -t "$HILOS" --alias local-auditor > /tmp/llama-8081.log 2>&1 &
-for p in 8080 8081; do
-  for i in $(seq 1 120); do curl -fs "http://127.0.0.1:$p/health" >/dev/null 2>&1 && break; sleep 2; done
-  curl -fs "http://127.0.0.1:$p/health" >/dev/null || { echo "el servidor $p no arrancó"; tail -20 /tmp/llama-$p.log; exit 1; }
-done
-echo "IA local lista (8080 redactor, 8081 auditor)"
+"$D/bin/llama-server" --version 2>&1 | head -2 || true
+echo "IA local descargada: $(ls -1 $D/*.gguf | xargs -n1 basename | tr '\n' ' ')"
