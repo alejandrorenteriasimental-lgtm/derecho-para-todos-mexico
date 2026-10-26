@@ -145,7 +145,9 @@ def editorial(guion: dict):
     nombres = re.findall(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\b", narr)
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos", "Guárdalo", "Comparte", "Qué", "Cuál"}
     INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Ley Federal", "Federal Trabajo", "Código Civil", "Código Nacional"}
-    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and not (set(x.split()) & JURIDICAS)]
+    oficiales = " ".join(str(f.get(k, "")) for f in fuentes for k in ("documento", "cita", "texto_literal", "literal"))
+    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and not (set(x.split()) & JURIDICAS)
+                and x not in oficiales]   # cargos e instituciones que aparecen en el texto legal citado no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
     if personas: carril = "C"
     if guion.get("riesgo") == "alto": carril = "C"

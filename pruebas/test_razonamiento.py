@@ -113,3 +113,10 @@ def test_integracion_el_verificador_aprueba_la_v2():
     v = V.verificar_guion(pieza("I20261026-T020v2"), tr)
     assert all(x["estado"] == "VERIFICADA" for x in v["fuentes"].values()), v["fuentes"]
     assert v["decision"] in ("APTA", "APTA_CON_CRITERIO") and not R.bloqueantes(v["razonamiento"]), v
+
+
+def test_cargo_institucional_citado_en_la_ley_no_es_persona_real():
+    import auditoria
+    g = pieza("R20261027-T052")
+    r = auditoria.editorial(g) if hasattr(auditoria, "editorial") else None
+    assert r is None or all(x["resultado"] == "APROBADO" for x in r["reglas"] if x["control"] == "Sin personas reales identificables"), r
