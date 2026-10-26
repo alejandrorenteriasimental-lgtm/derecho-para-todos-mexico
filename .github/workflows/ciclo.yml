@@ -29,7 +29,9 @@ jobs:
       - name: Pruebas en vivo (fuentes oficiales y modelos)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m pytest -q -rA pruebas -m vivo 2>&1 | tee registro_vivo.txt
+        run: |
+          mkdir -p registro/pruebas
+          python -m pytest -q -rA --tb=short --junitxml=registro/pruebas/junit_vivo.xml pruebas -m vivo 2>&1 | tee registro/pruebas/vivo.txt
         continue-on-error: true   # si un portal oficial está caído no se detiene el sistema; las piezas quedan RETENIDAS
       - name: Guardar resultado de pruebas en vivo
         if: always()
@@ -37,8 +39,9 @@ jobs:
         with:
           name: pruebas-vivo-${{ github.run_id }}
           path: |
-            registro_vivo.txt
+            registro/pruebas/
             registro/*.json*
+            registro/*.txt
           if-no-files-found: ignore
   ciclo:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
@@ -85,6 +88,16 @@ jobs:
             piezas/*/salida/*_copy.txt
           retention-days: 14
           if-no-files-found: ignore
+      - name: Diagnóstico de fuentes rechazadas (texto oficial del artículo)
+        if: always()
+        run: python sistema/diagnostico.py || true
+      - name: Traer el reporte de pruebas en vivo
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: pruebas-vivo-${{ github.run_id }}
+          path: registro/
+        continue-on-error: true
       - name: Registrar consumo real del ciclo
         if: always()
         run: |

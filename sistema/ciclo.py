@@ -95,7 +95,8 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
         try:
             redactar_pendientes(c, resumen, transporte_fuentes, env, simulador)
         except Exception as e:
-            resumen["errores"].append(f"redacción: {e}"); alerta(f"Falla en la redacción automática: {e}")
+            resumen["errores"].append(f"redacción: {e}"); alerta(f"Falla en la redacción automática: {type(e).__name__}: {e}")
+            cola.log({"evento": "error_redaccion", "detalle": traceback.format_exc(limit=6)[-1500:]})
         # 2) encolar y detectar guiones modificados
         for g_path in sorted((RAIZ / "piezas").glob("*/guion.json")):
             pid = g_path.parent.name

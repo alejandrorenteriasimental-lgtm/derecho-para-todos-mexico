@@ -11,9 +11,12 @@ RAIZ = Path(__file__).resolve().parent.parent
 
 
 def _catalogo():
-    req = urllib.request.Request(modelos.config()["catalogo"], headers={"Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}"})
+    req = urllib.request.Request(modelos.config()["catalogo"], headers={"Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}",
+                                 "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
     with urllib.request.urlopen(req, timeout=60) as r:
-        return {m["id"] for m in json.loads(r.read())}
+        crudo = r.read()
+    Path("registro").mkdir(exist_ok=True); Path("registro/catalogo_crudo.txt").write_bytes(crudo[:4000])
+    return {m["id"] for m in json.loads(crudo)}
 
 
 def test_cada_rol_tiene_al_menos_un_modelo_del_catalogo():

@@ -55,10 +55,15 @@ class Modelo:
         cuerpo = {"model": modelo, "messages": mensajes, "temperature": self.temperatura, "max_tokens": self.max_tokens,
                   "response_format": {"type": "json_object"}}
         req = urllib.request.Request(self.endpoint, data=json.dumps(cuerpo).encode(), method="POST",
-                                     headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
+                                     headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                                              "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
-                return json.loads(r.read())
+                crudo = r.read()
+            try:
+                return json.loads(crudo)
+            except ValueError:
+                raise FallaModelo(f"{modelo}: respuesta no JSON del proveedor: {crudo[:120]!r}")
         except urllib.error.HTTPError as e:
             txt = e.read()[:300].decode("utf-8", "replace")
             if e.code == 429: raise CuotaAgotada(f"{modelo}: HTTP 429 {txt}")
