@@ -46,7 +46,7 @@ jobs:
   ciclo:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -62,27 +62,11 @@ jobs:
           key: modelos-v0.2-kokoro1.0-piper-claude
       - name: Descargar modelos si faltan (GitHub Releases, sin costo)
         run: bash sistema/descargar_modelos.sh
-      - name: Liberar espacio en disco para los modelos de IA (≈7 GB)
-        run: |
-          df -h / | tail -1
-          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost || true
-          sudo docker image prune -af >/dev/null 2>&1 || true
-          df -h / | tail -1
-      - name: Modelos de IA locales (caché)
-        uses: actions/cache@v4
-        with:
-          path: models/ia
-          key: ia-local-qwen2.5-3b-phi3.5-v2
-      - name: Descargar IA local gratuita (llama.cpp + modelos abiertos)
-        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
-        run: bash sistema/ia_local.sh
-        continue-on-error: true     # si la IA local no arranca, el ciclo sigue: verifica y produce lo que ya tenga guion
       - name: Marca de inicio (consumo)
         run: date -u +%s > /tmp/inicio
       - name: Ciclo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                   # solo para GitHub Models (models: read)
-          IA_LOCAL: "1"                                               # respaldo: modelos abiertos en la CPU del runner
           PUBLICAR: ${{ vars.PUBLICAR }}                              # "1" solo tras la autorización de lanzamiento
           LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}  # "SI" solo por decisión expresa del responsable
           TOPE_MXN_MES: ${{ vars.TOPE_MXN_MES }}                      # vacío = 0 MXN
@@ -114,9 +98,6 @@ jobs:
           name: pruebas-vivo-${{ github.run_id }}
           path: registro/
         continue-on-error: true
-      - name: Registro de la IA local
-        if: always()
-        run: mkdir -p registro/diagnostico && tail -n 40 /tmp/llama-*.log > registro/diagnostico/ia_local.txt 2>/dev/null || true
       - name: Registrar consumo real del ciclo
         if: always()
         run: |
