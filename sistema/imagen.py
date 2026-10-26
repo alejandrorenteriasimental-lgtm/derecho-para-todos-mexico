@@ -75,9 +75,9 @@ def _pie(L, g):
     fuente = g["pieza"].get("fuente_visible", "")
     L.parrafo(M, y + 22, "Fuente: " + fuente, "med", 26, C["gris"], C["papel"], W - 2 * M, max_lineas=2, tam_min=24)
     L.texto((M, H - 62), "Información general, no asesoría legal.", render.font("semi", 26), C["tinta"], C["papel"])
-    sello = "dpt"; fs = render.font("black", 30)
-    d.ellipse([W - M - 64, H - 84, W - M, H - 20], fill=C["tinta"])
-    L.texto((W - M - 32 - fs.getlength(sello) / 2, H - 72), sello, fs, C["acc"], C["tinta"])
+    import marca                                   # símbolo oficial de la marca (marca/tokens.json)
+    sim = marca.simbolo(72, "noche", "cempasuchil", cola=True)
+    L.img.alpha_composite(sim, (W - M - 72, H - 96)); L.d = ImageDraw.Draw(L.img)
 
 
 def _titular(L, y, t, max_lineas=3):

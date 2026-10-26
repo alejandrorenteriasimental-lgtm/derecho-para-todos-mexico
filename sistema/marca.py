@@ -54,12 +54,17 @@ def portada(w, h, zona_segura=None):
     base = (np.array(C["noche"]) * (1 - y) + np.array(C["noche_2"]) * y)
     im = Image.fromarray(np.repeat(base, w, axis=1).astype(np.uint8)).convert("RGBA")
     capa = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(capa)
-    d.ellipse([w * 0.62, -h * 0.4, w * 1.15, h * 0.9], fill=C["cempasuchil"] + (60,))
-    im.alpha_composite(capa.filter(ImageFilter.GaussianBlur(h * 0.18)))
+    d.ellipse([w * 0.58, -h * 0.5, w * 1.2, h * 1.0], fill=(70, 110, 160, 70))         # resplandor frío, sin tonos lodosos
+    im.alpha_composite(capa.filter(ImageFilter.GaussianBlur(h * 0.2)))
+    lin = Image.new("RGBA", (w, h), (0, 0, 0, 0)); dl = ImageDraw.Draw(lin)
+    for x in range(-h, w, max(40, h // 9)):                                               # líneas diagonales tenues (papel legal), como en el Reel
+        dl.line([(x, 0), (x + h, h)], fill=(255, 255, 255, 10), width=2)
+    im.alpha_composite(lin)
     zw, zh = zona_segura or (w, h); x0, y0 = (w - zw) // 2, (h - zh) // 2
     lg = logo_horizontal(int(zh * 0.30), "oscuro"); im.alpha_composite(lg, (x0 + int(zw * 0.04), y0 + int(zh * 0.18)))
     d = ImageDraw.Draw(im); f = F("serif_it", int(zh * 0.11))
     d.text((x0 + int(zw * 0.04), y0 + int(zh * 0.62)), TOK["lema"], font=f, fill=C["papel"])
+    d.rectangle([x0 + int(zw * 0.04), y0 + int(zh * 0.86), x0 + int(zw * 0.04) + int(zh * 0.35), y0 + int(zh * 0.86) + max(4, zh // 60)], fill=C["cempasuchil"])
     return im
 
 

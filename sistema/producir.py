@@ -36,18 +36,21 @@ def producir(carpeta: Path, verificacion=None):
         (out / "verificacion.json").write_text(json.dumps(verificacion, ensure_ascii=False, indent=2))
     with etapa("narracion", tiempos):
         linea = narracion.sintetizar(guion, out)
-    total = linea["duracion"] + 0.6
+    total = linea["duracion"] + 2.0   # 0.3 s de aire + 1.7 s para la firma sonora sobre la tarjeta de cierre
     with etapa("musica", tiempos):
         musica.pad(total, salida=str(out / "musica.wav"))
     with etapa("render_video", tiempos):
         info = render.render(guion, linea, out / "video_mudo.mp4", total)
     final = out / f'{guion["id"]}_final.mp4'
     with etapa("mezcla_audio", tiempos):
+        firma = RAIZ / "marca" / "firma_sonora.wav"          # identidad sonora: firma de 1.6 s al cierre de cada Reel
+        retardo = int((linea["duracion"] + 0.3) * 1000)
         filtro = ("[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[v][vsc];"
                   "[1:a]volume=0.22[m];[m][vsc]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md];"
-                  "[v][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
+                  f"[3:a]aresample=48000,pan=stereo|c0=c0|c1=c0,volume=0.35,adelay={retardo}|{retardo}[f];"
+                  "[v][md][f]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "voz.wav"), "-i", str(out / "musica.wav"), "-i", str(out / "video_mudo.mp4"),
-                        "-filter_complex", filtro, "-map", "2:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
+                        "-i", str(firma), "-filter_complex", filtro, "-map", "2:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
                         "-shortest", "-movflags", "+faststart", str(final)], check=True)
         srt_final = final.with_suffix(".srt"); srt_final.write_text((out / "video_mudo.srt").read_text())
     previos = set()
