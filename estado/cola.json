@@ -74,6 +74,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T03:40:07+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-26T15:08:22+00:00",
+          "motivo": "verificador actualizado a 0.3.2; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T15:09:20+00:00",
+          "motivo": "verificación jurídica: RETENER"
         }
       ],
       "error": null,
@@ -81,8 +93,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-26T03:40:07+00:00",
-        "verificador": "0.3.1"
+        "desde": "2026-10-26T15:09:20+00:00",
+        "verificador": "0.3.2"
       }
     },
     "I20261025-T089": {
