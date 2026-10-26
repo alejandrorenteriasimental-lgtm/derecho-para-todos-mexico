@@ -1,15 +1,4 @@
-.........Fs...................                                           [100%]
-=================================== FAILURES ===================================
-_______________ test_llamada_real_minima_devuelve_json[auditor] ________________
-pruebas/test_vivo_ia.py:50: in test_llamada_real_minima_devuelve_json
-    r = m.completar("Responde solo con JSON.", 'Devuelve exactamente {"ok": true}')
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:180: in completar
-    return self._completar_remoto(sistema, usuario, simulador)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:236: in _completar_remoto
-    raise ultimo or FallaModelo("sin modelos configurados")
-E   modelos.CuotaAgotada: tope propio diario alcanzado para gemini-3.1-flash-lite
+..........s...................                                           [100%]
 ==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pruebas/test_vivo.py::test_cpeum_17_verificado_en_el_documento_oficial
@@ -21,6 +10,7 @@ PASSED pruebas/test_vivo.py::test_cambio_normativo_simulado_sobre_documento_real
 PASSED pruebas/test_vivo_ia.py::test_cada_rol_tiene_al_menos_un_modelo_gemini_disponible
 PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[investigador]
 PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[redactor]
+PASSED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[auditor]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CPEUM]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CPF]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[CNPP]
@@ -41,5 +31,4 @@ PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LNE
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LFDA]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGAMVLV]
 SKIPPED [1] pruebas/test_vivo_ia.py:54: ningún rol usa GitHub Models
-FAILED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json[auditor] - modelos.CuotaAgotada: tope propio diario alcanzado para gemini-3.1-flash-lite
-1 failed, 28 passed, 1 skipped, 138 deselected in 326.60s (0:05:26)
+29 passed, 1 skipped, 138 deselected in 457.55s (0:07:37)
