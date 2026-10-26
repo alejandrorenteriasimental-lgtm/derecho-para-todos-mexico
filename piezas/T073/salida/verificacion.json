@@ -1,0 +1,68 @@
+{
+  "decision": "RETENER",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "consultado": "2026-10-26T01:25:07+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      "consultado": "2026-10-26T01:25:07+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      "consultado": "2026-10-26T01:25:07+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "RETENER",
+      "duda": "Interpretación del alcance de 'puramente civil' para deudas mercantiles; requiere criterio jurisprudencial confirmado."
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A4",
+      "fuentes": [
+        "F3"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A5",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    }
+  ]
+}

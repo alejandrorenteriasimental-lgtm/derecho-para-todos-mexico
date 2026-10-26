@@ -1,0 +1,5 @@
+# Solo para pruebas y banco de voces (no se usan en producción)
+pytest>=8
+fpdf2>=2.7                # documentos de prueba
+praat-parselmouth>=0.4    # medición de entonación (banco de voces)
+sherpa-onnx==2.0.0        # Whisper small para medir inteligibilidad (banco de voces)

@@ -1,0 +1,138 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 30 y 90 s (límite de Reels por API)",
+      "resultado": "APROBADO",
+      "detalle": "57.2 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "57.2 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.1 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.9 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "45 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "8f13e10da9cabdf1"
+    }
+  ],
+  "juridica": {
+    "decision": "RETENIDO",
+    "tipo_retencion": "sustantivo",
+    "motivos": [
+      "F1: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
+      "F2: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
+      "F3: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
+      "A1: RETENER",
+      "A2: RETENER (Interpretación del alcance de 'puramente civil' para deudas mercantiles; requiere criterio jurisprudencial confirmado.)",
+      "A3: RETENER",
+      "A4: RETENER",
+      "A5: RETENER"
+    ],
+    "verificacion": "RETENER",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "registro": {
+    "id": "T073",
+    "titulo": "¿Te pueden meter a la cárcel por deber dinero?",
+    "fecha": "2026-10-26T01:28:25+00:00",
+    "sha256": "8f13e10da9cabdf153af9c973d9ecd39d0e8c9c768d06e099801f16908193f05",
+    "duracion_s": 57.2,
+    "estado": "RETENIDO",
+    "huella_guion": "d33eaee1b7ce49267a097cf4bf77e5e49b4687b20d3fee0ffe4a4a7d8016dfe4",
+    "carril": "A",
+    "tiempos_s": {
+      "auditoria_juridica": 0.4,
+      "narracion": 103.4,
+      "musica": 4.6,
+      "render_video": 65.4,
+      "mezcla_audio": 5.8,
+      "auditoria_tecnica": 18.6
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 3.3,
+      "computo_equivalente_runner_usd": 0.0198,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1734,
+    "caracteres_narrados": 869
+  }
+}

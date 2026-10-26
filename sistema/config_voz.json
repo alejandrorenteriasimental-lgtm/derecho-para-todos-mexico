@@ -1,0 +1,9 @@
+{
+  "nota": "Voz de narración vigente. Cambiarla aquí afecta a todas las piezas nuevas. Recomendación provisional v0.2 pendiente de validación auditiva.",
+  "voz": {"motor": "kokoro", "id": "em_santa", "lang": "es-419", "velocidad": 0.95, "pausa_oracion": 0.36},
+  "alternativas": {
+    "kokoro_alex": {"motor": "kokoro", "id": "em_alex", "lang": "es-419", "velocidad": 0.95, "pausa_oracion": 0.36},
+    "kokoro_mezcla": {"motor": "kokoro", "id": "mezcla", "mezcla": {"em_alex": 0.5, "em_santa": 0.5}, "lang": "es-419", "velocidad": 0.95, "pausa_oracion": 0.36},
+    "piper_mx_claude": {"motor": "piper", "id": "es_MX-claude-high", "velocidad": 0.97, "pausa_oracion": 0.36}
+  }
+}

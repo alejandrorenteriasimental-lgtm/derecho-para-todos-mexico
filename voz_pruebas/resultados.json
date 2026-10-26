@@ -1,0 +1,121 @@
+{
+  "fragmentos": [
+    "¿Te pueden meter a la cárcel por deber dinero? El artículo 17 de la Constitución lo responde: «Nadie puede ser aprisionado por deudas de carácter puramente civil». Pero ojo: el Código Penal Federal, en su artículo 336, prevé de 1 mes a 5 años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la Condusef o a la Profeco. Y recuerda: lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León.",
+    "La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario, y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Xochimilco, en Texcoco o en Michoacán. ¿Neta? Sí: así lo dice la ley desde 1970."
+  ],
+  "voces": {
+    "A_kokoro_alex_v01": {
+      "motor": "kokoro",
+      "id": "em_alex",
+      "lang": "es",
+      "velocidad": 1.0
+    },
+    "B_kokoro_alex_latam": {
+      "motor": "kokoro",
+      "id": "em_alex",
+      "lang": "es-419",
+      "velocidad": 0.95
+    },
+    "C_kokoro_dora_latam": {
+      "motor": "kokoro",
+      "id": "ef_dora",
+      "lang": "es-419",
+      "velocidad": 0.95
+    },
+    "D_piper_mx_claude": {
+      "motor": "piper",
+      "id": "es_MX-claude-high",
+      "velocidad": 1.0
+    },
+    "E_piper_mx_ald": {
+      "motor": "piper",
+      "id": "es_MX-ald-medium",
+      "velocidad": 1.0
+    },
+    "G_kokoro_santa_latam": {
+      "motor": "kokoro",
+      "id": "em_santa",
+      "lang": "es-419",
+      "velocidad": 0.95
+    },
+    "F_piper_mx_claude_ajustada": {
+      "motor": "piper",
+      "id": "es_MX-claude-high",
+      "velocidad": 0.93,
+      "noise_scale": 0.75,
+      "noise_w": 0.9
+    }
+  },
+  "resultados": {
+    "A_kokoro_alex_v01": {
+      "duracion_s": 54.4,
+      "rtf": 1.74,
+      "wer": 0.018,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero ojo, el Código Penal Federal, en su artículo 336, prevé de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la Conducef o a la Profeco. Y recuerda, lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario, y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Sochimilco, en Texcoco o en Michoacán. Neta, así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 125.1,
+      "variacion_entonacion_st": 3.73,
+      "rango_entonacion_st": 11.52,
+      "palabras_por_min": 182
+    },
+    "B_kokoro_alex_latam": {
+      "duracion_s": 61.4,
+      "rtf": 1.6,
+      "wer": 0.018,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero, Oshud, el Código Penal Federal, en su artículo 336, prevé de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la Conducef o a la Profeco. Y recuerda, lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario. Y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Sochimilco, en Texcoco o en Michoacán. Neta. Sí, así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 125.7,
+      "variacion_entonacion_st": 3.72,
+      "rango_entonacion_st": 11.39,
+      "palabras_por_min": 161
+    },
+    "C_kokoro_dora_latam": {
+      "duracion_s": 61.0,
+      "rtf": 1.65,
+      "wer": 0.121,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero, O'Hugh, el Código Penal Federal, en su artículo 336, prevé de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la conducé o a la profeco. Y recuerda, lo que a La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario. Y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Sochimilco, en Texcoco o en Michoacán. Neto. y así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 167.9,
+      "variacion_entonacion_st": 3.22,
+      "rango_entonacion_st": 9.77,
+      "palabras_por_min": 162
+    },
+    "D_piper_mx_claude": {
+      "duracion_s": 64.5,
+      "rtf": 0.07,
+      "wer": 0.048,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero ojo, el Código Penal Federal, en su artículo 336, prevé de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la conducive o a la profeco. Y recuerda, lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chama, la Ley Federal del Trabajo, en su artículo 80 y 7, te da derecho a un raguinaldo de al menos 15 días de salario, y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Sochimilco. en Texcóco, Buen Michoacán. Meta. Sí, así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 178.8,
+      "variacion_entonacion_st": 2.76,
+      "rango_entonacion_st": 9.48,
+      "palabras_por_min": 153
+    },
+    "E_piper_mx_ald": {
+      "duracion_s": 69.5,
+      "rtf": 0.08,
+      "wer": 0.109,
+      "transcripcion": "¿Te pueden meter a la casa el por de ver dinero? El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero... El Código Penal Federal, en su artículo 336, provee de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la conducive o a la y recuerda lo que apica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó Juli's prudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario y si te corren, te deben tu finito. Esto pica igual en Oaxaca, en Sochimico, en Texcoco, en Michoacán. Así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 153.1,
+      "variacion_entonacion_st": 2.08,
+      "rango_entonacion_st": 6.63,
+      "palabras_por_min": 142
+    },
+    "G_kokoro_santa_latam": {
+      "duracion_s": 61.5,
+      "rtf": 1.6,
+      "wer": 0.012,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser aprisionado por deudas de carácter puramente civil. Pero, Lózio, el Código Penal Federal, en su artículo 336, prevé de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la Conduzef o a la Profeco. Y recuerda, lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Nuevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un aguinaldo de al menos 15 días de salario, y si te corren, te deben tu finiquito. Esto aplica igual en Oaxaca, en Xochimilco, en Texcoco o en Michoacán. Neta. Sí, así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 126.8,
+      "variacion_entonacion_st": 4.65,
+      "rango_entonacion_st": 14.73,
+      "palabras_por_min": 161
+    },
+    "F_piper_mx_claude_ajustada": {
+      "duracion_s": 66.7,
+      "rtf": 0.06,
+      "wer": 0.067,
+      "transcripcion": "te pueden meter a la cárcel por deber dinero. El artículo 17 de la Constitución lo responde. Nadie puede ser rapricionado por deudas de carácter puramente civil. Pero ojo, el Código Penal Federal, en su artículo 336, prevee de un mes a cinco años de prisión por abandonar a tus hijos sin sustento. Si un despacho de cobranza te amenaza, puedes acudir a la conducive o a la profeco. Y recuerda, lo que aplica en la Ciudad de México puede cambiar en Jalisco o en Muevo León. La Suprema Corte de Justicia de la Nación resolvió un amparo directo en revisión y fijó jurisprudencia. En la Chamba, la Ley Federal del Trabajo, en su artículo 87, te da derecho a un reinaldo de al menos 15 días de salario, y si te corren, te deben tu finiquito. Esto aplica igual en Ajaca, en Sochimico, en Texcóco, Buen Michoacán, Neta, Sir, así lo dice la ley desde 1970.",
+      "f0_mediana_hz": 178.6,
+      "variacion_entonacion_st": 2.86,
+      "rango_entonacion_st": 9.58,
+      "palabras_por_min": 148
+    }
+  }
+}

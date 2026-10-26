@@ -1,0 +1,127 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1205 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Constitución, ar»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1108"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "60 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "98% de 46 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "RETENIDO",
+    "tipo_retencion": "transitorio",
+    "motivos": [
+      "F1: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
+      "F2: sin conexión con la fuente oficial (<urlopen error Tunnel connection failed: 403 Forbidden>); no se aprueba sin comprobar",
+      "A1: RETENER",
+      "A2: RETENER",
+      "A3: RETENER"
+    ],
+    "verificacion": "RETENER",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I001",
+    "formato": "imagen",
+    "titulo": "¿Qué es la presunción de inocencia?",
+    "plantilla": "concepto",
+    "archivo": "I001.png",
+    "sha256": "9ced8eea17c5db4860d3350b5934fa82a905d935b6b8991f87e71a373b917ecc",
+    "ahash": "1000101111111111111111111111111111111111111111111101111111111011100000000011111110111111111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "16ffcc77a4be924c757eb2c45fd4c976ec923efced73ec76587c6cd0274bd26f",
+    "texto_alternativo": "Pieza editorial: ¿Qué es la presunción de inocencia? Cita del artículo 20 constitucional: toda persona imputada tiene derecho a que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia.",
+    "copy": "La presunción de inocencia es un derecho de toda persona imputada en un proceso penal: mientras no exista una sentencia que declare su responsabilidad, debe ser tratada como inocente.\n\nLo establece la Constitución (artículo 20, apartado B, fracción I) y lo desarrolla el Código Nacional de Procedimientos Penales (artículo 13), que la aplica en todas las etapas del procedimiento.\n\nPor eso, ser detenido, investigado o acusado no equivale a ser culpable.\n\nEsto es información general, no es asesoría legal.\n\nGuárdalo y compártelo con quien lo necesite.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "20",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Código Nacional de Procedimientos Penales",
+        "articulo": "13",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf"
+      }
+    ],
+    "relacion_reel": "Independiente. Refuerza la serie de derechos en un proceso penal; no reutiliza el guion de ningún Reel.",
+    "estado": "RETENIDO",
+    "fecha": "2026-10-26T01:21:38+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

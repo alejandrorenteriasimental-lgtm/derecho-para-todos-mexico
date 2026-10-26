@@ -1,0 +1,60 @@
+{
+  "id": "I001",
+  "numero": "001",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "riesgo": "bajo",
+  "version_esquema": "0.2",
+  "titulo": "¿Qué es la presunción de inocencia?",
+  "relacion_reel": "Independiente. Refuerza la serie de derechos en un proceso penal; no reutiliza el guion de ningún Reel.",
+  "pieza": {
+    "titular": "¿Qué es la presunción de inocencia?",
+    "bajada": "Mientras un juez no dicte sentencia que declare tu responsabilidad, la ley te trata como inocente.",
+    "cita": "A que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa",
+    "etiqueta_cita": "Constitución, artículo 20, apartado B, fracción I",
+    "ojo": "Ser detenido o acusado no te convierte en culpable.",
+    "fuente_visible": "Constitución, art. 20, apartado B, fracc. I · Código Nacional de Procedimientos Penales, art. 13"
+  },
+  "alt": "Pieza editorial: ¿Qué es la presunción de inocencia? Cita del artículo 20 constitucional: toda persona imputada tiene derecho a que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia.",
+  "copy": "La presunción de inocencia es un derecho de toda persona imputada en un proceso penal: mientras no exista una sentencia que declare su responsabilidad, debe ser tratada como inocente.\n\nLo establece la Constitución (artículo 20, apartado B, fracción I) y lo desarrolla el Código Nacional de Procedimientos Penales (artículo 13), que la aplica en todas las etapas del procedimiento.\n\nPor eso, ser detenido, investigado o acusado no equivale a ser culpable.\n\nEsto es información general, no es asesoría legal.\n\nGuárdalo y compártelo con quien lo necesite.",
+  "fuentes": {
+    "F1": {
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "nivel": "oficial",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "cita": "CPEUM, artículo 20, apartado B, fracción I",
+      "texto_literal": "A que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-25"
+    },
+    "F2": {
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "13",
+      "nivel": "oficial",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "cita": "CNPP, artículo 13 (principio de presunción de inocencia)",
+      "texto_literal": "Toda persona se presume inocente y será tratada como tal en todas las etapas del procedimiento",
+      "jurisdiccion": "nacional (procedimiento penal acusatorio)",
+      "consultado": "2026-10-25"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "interpretacion",
+      "fuente": "F2",
+      "texto": "Ser detenido o acusado no equivale a ser culpable."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Producción (GitHub Actions y local). Todas gratuitas y de código abierto.
+kokoro-onnx==0.6.1        # Apache-2.0 · motor de voz (incluye onnxruntime y espeak-ng vía espeakng-loader)
+onnxruntime>=1.20         # MIT · inferencia de Kokoro y Piper
+soundfile>=0.12           # BSD
+numpy>=1.26               # BSD
+pillow>=10                # MIT-CMU · render de cuadros e imágenes fijas
+pypdf>=5                  # BSD · extracción de texto de los PDF oficiales
+num2words==0.5.14         # LGPL-2.1 (uso como biblioteca, sin modificar) · cifras a palabras

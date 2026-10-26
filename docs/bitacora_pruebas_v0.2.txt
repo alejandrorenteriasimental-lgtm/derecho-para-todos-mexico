@@ -1,0 +1,148 @@
+BITÁCORA DE PRUEBAS — DPT sistema v0.2
+Fecha: 2026-10-26T01:33Z · Entorno: contenedor Linux, Python 3.13.17, sin acceso de red a portales oficiales
+PUBLICAR=(sin definir) · LANZAMIENTO_AUTORIZADO=(sin definir) · TOPE_MXN_MES=(sin definir → 0 MXN)
+
+== 1. Pruebas sin red (deterministas) ==
+pruebas/test_ciclo.py::test_flujo_completo_en_simulacion PASSED
+pruebas/test_ciclo.py::test_segundo_ciclo_no_reproduce_ni_republica PASSED
+pruebas/test_ciclo.py::test_guion_incompleto_se_retiene_sin_producir PASSED
+pruebas/test_ciclo.py::test_guion_corregido_vuelve_a_pendiente PASSED
+pruebas/test_ciclo.py::test_red_caida_retiene_y_reverifica_despues PASSED
+pruebas/test_ciclo.py::test_fuente_falsa_retiene_de_forma_sustantiva PASSED
+pruebas/test_ciclo.py::test_cita_incorrecta_no_se_produce PASSED
+pruebas/test_ciclo.py::test_modo_real_programa_y_no_duplica PASSED
+pruebas/test_ciclo.py::test_modo_real_respuesta_ambigua_se_resuelve_en_el_siguiente_ciclo PASSED
+pruebas/test_ciclo.py::test_sin_autorizacion_de_lanzamiento_aunque_haya_secretos PASSED
+pruebas/test_ciclo.py::test_bloqueo_impide_dos_ciclos_simultaneos PASSED
+pruebas/test_cola.py::test_encolar_y_rechazar_duplicado PASSED
+pruebas/test_cola.py::test_transicion_invalida PASSED
+pruebas/test_cola.py::test_bloqueo PASSED
+pruebas/test_cola.py::test_tres_fallos_llevan_a_fallido PASSED
+pruebas/test_cola.py::test_reintento_respeta_la_espera PASSED
+pruebas/test_cola.py::test_persistencia_atomica PASSED
+pruebas/test_cola.py::test_filtrado_por_formato PASSED
+pruebas/test_imagen.py::test_plantillas_pasan_la_auditoria_tecnica[concepto] PASSED
+pruebas/test_imagen.py::test_plantillas_pasan_la_auditoria_tecnica[tres_claves] PASSED
+pruebas/test_imagen.py::test_plantillas_pasan_la_auditoria_tecnica[mito_realidad] PASSED
+pruebas/test_imagen.py::test_plantillas_pasan_la_auditoria_tecnica[diferencia] PASSED
+pruebas/test_imagen.py::test_contraste_wcag PASSED
+pruebas/test_imagen.py::test_texto_ilegible_falla_el_ocr PASSED
+pruebas/test_imagen.py::test_imagen_duplicada_se_detecta PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-titular demasiado largo] PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-m\xe1s de tres puntos] PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-aviso] PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-plantilla desconocida] PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-sin afirmaciones] PASSED
+pruebas/test_imagen.py::test_fichas_invalidas[<lambda>-fuente inexistente] PASSED
+pruebas/test_publicacion.py::test_modo_operacion[env0-simulacion] PASSED
+pruebas/test_publicacion.py::test_modo_operacion[env1-simulacion] PASSED
+pruebas/test_publicacion.py::test_modo_operacion[env2-simulacion] PASSED
+pruebas/test_publicacion.py::test_modo_operacion[env3-simulacion] PASSED
+pruebas/test_publicacion.py::test_modo_operacion[env4-real] PASSED
+pruebas/test_publicacion.py::test_simulacion_no_llama_a_meta_ni_guarda_ids PASSED
+pruebas/test_publicacion.py::test_cola_no_permite_programado_o_publicado_sin_modo_real PASSED
+pruebas/test_publicacion.py::test_camino_real_programa_y_confirma PASSED
+pruebas/test_publicacion.py::test_token_nunca_va_en_la_url PASSED
+pruebas/test_publicacion.py::test_usa_el_upload_url_devuelto_por_start PASSED
+pruebas/test_publicacion.py::test_segunda_ejecucion_no_duplica PASSED
+pruebas/test_publicacion.py::test_libro_perdido_pero_marca_en_la_pagina_se_recupera PASSED
+pruebas/test_publicacion.py::test_busqueda_de_marca_sigue_la_paginacion PASSED
+pruebas/test_publicacion.py::test_caida_durante_la_subida_se_reanuda_en_la_misma_sesion PASSED
+pruebas/test_publicacion.py::test_finish_aplicado_pero_respuesta_perdida_no_duplica PASSED
+pruebas/test_publicacion.py::test_finish_no_aplicado_se_reintenta_sobre_el_mismo_video PASSED
+pruebas/test_publicacion.py::test_respuestas_ambiguas_de_finish[500] PASSED
+pruebas/test_publicacion.py::test_respuestas_ambiguas_de_finish[html] PASSED
+pruebas/test_publicacion.py::test_respuestas_ambiguas_de_finish[vacio] PASSED
+pruebas/test_publicacion.py::test_subida_sin_success_no_finaliza PASSED
+pruebas/test_publicacion.py::test_token_invalido_es_error_permanente PASSED
+pruebas/test_publicacion.py::test_limite_de_tasa_es_transitorio PASSED
+pruebas/test_publicacion.py::test_sesion_expirada_se_abandona_y_crea_una_nueva PASSED
+pruebas/test_publicacion.py::test_imagen_simulada PASSED
+pruebas/test_publicacion.py::test_imagen_real_y_segunda_ejecucion PASSED
+pruebas/test_publicacion.py::test_imagen_respuesta_perdida_se_recupera_por_marca PASSED
+pruebas/test_publicacion.py::test_imagen_ambigua_sin_rastro_no_se_reintenta_a_ciegas PASSED
+pruebas/test_publicacion.py::test_presupuesto_cero_rechaza_cualquier_gasto PASSED
+pruebas/test_publicacion.py::test_tope_ilegible_o_negativo_es_cero[] PASSED
+pruebas/test_publicacion.py::test_tope_ilegible_o_negativo_es_cero[abc] PASSED
+pruebas/test_publicacion.py::test_tope_ilegible_o_negativo_es_cero[-50] PASSED
+pruebas/test_publicacion.py::test_tope_ilegible_o_negativo_es_cero[None] PASSED
+pruebas/test_verificador.py::test_fuente_correcta_se_verifica PASSED
+pruebas/test_verificador.py::test_remision_interna_no_corta_el_articulo PASSED
+pruebas/test_verificador.py::test_fuente_oficial_falsa_se_rechaza[https://diputados.gob.mx.sitio-falso.com/CPEUM.pdf-dominio no oficial] PASSED
+pruebas/test_verificador.py::test_fuente_oficial_falsa_se_rechaza[https://www.diputadosgob.mx/CPEUM.pdf-dominio no oficial] PASSED
+pruebas/test_verificador.py::test_fuente_oficial_falsa_se_rechaza[http://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf-https] PASSED
+pruebas/test_verificador.py::test_fuente_oficial_falsa_se_rechaza[https://es.wikipedia.org/wiki/Constitucion-dominio no oficial] PASSED
+pruebas/test_verificador.py::test_documento_equivocado_se_rechaza PASSED
+pruebas/test_verificador.py::test_cita_alterada_se_rechaza PASSED
+pruebas/test_verificador.py::test_articulo_equivocado_se_rechaza PASSED
+pruebas/test_verificador.py::test_no_confunde_17_con_17_bis_ni_con_170 PASSED
+pruebas/test_verificador.py::test_articulo_inexistente_se_rechaza PASSED
+pruebas/test_verificador.py::test_cambio_normativo_sin_huella_se_retiene PASSED
+pruebas/test_verificador.py::test_cambio_en_el_texto_del_articulo_se_detecta_por_huella PASSED
+pruebas/test_verificador.py::test_reforma_en_otro_articulo_no_bloquea_si_la_huella_coincide PASSED
+pruebas/test_verificador.py::test_ley_abrogada_se_rechaza PASSED
+pruebas/test_verificador.py::test_red_caida_retiene_nunca_aprueba PASSED
+pruebas/test_verificador.py::test_errores_http[404-RECHAZADA] PASSED
+pruebas/test_verificador.py::test_errores_http[500-RETENER] PASSED
+pruebas/test_verificador.py::test_errores_http[403-RETENER] PASSED
+pruebas/test_verificador.py::test_pagina_html_de_error_con_200_se_rechaza PASSED
+pruebas/test_verificador.py::test_respuesta_truncada_se_retiene PASSED
+pruebas/test_verificador.py::test_pdf_corrupto_se_retiene PASSED
+pruebas/test_verificador.py::test_ficha_incompleta_se_rechaza PASSED
+pruebas/test_verificador.py::test_fuente_secundaria_no_sustenta PASSED
+pruebas/test_verificador.py::test_sin_fecha_de_reforma_se_retiene PASSED
+pruebas/test_verificador.py::test_guion_verificado_es_apto PASSED
+pruebas/test_verificador.py::test_afirmacion_sin_fuente_rechaza_el_guion PASSED
+pruebas/test_verificador.py::test_afirmacion_con_fuente_inexistente_rechaza PASSED
+pruebas/test_verificador.py::test_afirmacion_solo_con_fuente_secundaria_rechaza PASSED
+pruebas/test_verificador.py::test_interpretativa_riesgo_medio_va_a_revision_humana PASSED
+pruebas/test_verificador.py::test_red_caida_retiene_el_guion PASSED
+pruebas/test_verificador.py::test_guion_sin_afirmaciones_se_retiene PASSED
+pruebas/test_verificador.py::test_puntuacion_distinta_no_rechaza_pero_palabras_si PASSED
+pruebas/test_verificador.py::test_interpretacion_con_duda_declarada_se_retiene PASSED
+pruebas/test_verificador.py::test_formato_v01_se_adapta PASSED
+====================== 98 passed, 6 deselected in 14.49s =======================
+
+== 2. Pruebas en vivo contra fuentes oficiales (esperado aquí: fallan por red bloqueada; se ejecutan en GitHub Actions) ==
+pruebas/test_vivo.py::test_cpeum_17_verificado_en_el_documento_oficial FAILED
+pruebas/test_vivo.py::test_cpf_336_verificado_en_el_documento_oficial FAILED
+pruebas/test_vivo.py::test_oficial_real_con_cita_alterada_se_rechaza FAILED
+pruebas/test_vivo.py::test_oficial_real_con_articulo_equivocado_se_rechaza FAILED
+pruebas/test_vivo.py::test_oficial_real_con_documento_equivocado_se_rechaza FAILED
+pruebas/test_vivo.py::test_cambio_normativo_simulado_sobre_documento_real FAILED
+FAILED pruebas/test_vivo.py::test_cpeum_17_verificado_en_el_documento_oficial
+FAILED pruebas/test_vivo.py::test_cpf_336_verificado_en_el_documento_oficial
+FAILED pruebas/test_vivo.py::test_oficial_real_con_cita_alterada_se_rechaza
+FAILED pruebas/test_vivo.py::test_oficial_real_con_articulo_equivocado_se_rechaza
+FAILED pruebas/test_vivo.py::test_oficial_real_con_documento_equivocado_se_rechaza
+FAILED pruebas/test_vivo.py::test_cambio_normativo_simulado_sobre_documento_real
+======================= 6 failed, 98 deselected in 1.85s =======================
+
+== 3. Prueba de mutación (¿las pruebas detectan un error real?) ==
+Se desactivó a propósito el libro de operaciones en publicar.py: 5 pruebas de idempotencia fallaron (duplicados detectados). Se restauró el código: 32/32.
+
+== 4. Simulación de CI en copia limpia (sin modelos, estado ni salidas; entorno virtual nuevo) ==
+Primera corrida: 4 pruebas de imagen fallaron porque faltaba el modelo OCR en español → corregido (descargar_modelos.sh lo obtiene; la auditoría ya no aprueba si no hay OCR).
+Segunda corrida: 98/98 pruebas; producir.py T073 (2 min 1 s) e imagen.py I001 se ejecutan desde cero. ciclo.py: T073 e I001 RETENIDOS (sin acceso a fuentes oficiales: comportamiento correcto).
+
+== 5. Producción real en este entorno ==
+T073 (Reel, voz nueva): 57.2 s; auditoría técnica: 13/13 controles obligatorios aprobados (el de TikTok >60 s es informativo) y control nuevo de sincronía aprobado; sincronía voz-subtítulos: desfase máximo 30 ms en 12 oraciones.
+T073 dictamen: RETENIDO sustantivo — sin conexión a fuentes oficiales y A2 declara duda material (alcance de «puramente civil» en deudas mercantiles).
+I001 (imagen): 11/11 controles técnicos aprobados (contraste mínimo 5.85:1, OCR 98 %, 60 palabras de contenido). Dictamen: RETENIDO transitorio (sin conexión).
+
+== 6. Banco de voces (mismo texto: 2 fragmentos, ≈1 min, siglas, cifras, artículos, topónimos y expresiones) ==
+WER = error de palabras de Whisper small al transcribir la voz (inteligibilidad). Entonación = desviación estándar del tono en semitonos (mayor = menos monótona).
+Ronda 1 (división de oraciones v1):
+  A_kokoro_alex_v01                WER   1.8 %  entonación 3.73 st  rango 11.5 st  182 pal/min  RTF 1.74
+  B_kokoro_alex_latam              WER   1.8 %  entonación 3.72 st  rango 11.4 st  161 pal/min  RTF 1.6
+  C_kokoro_dora_latam              WER  12.1 %  entonación 3.22 st  rango 9.8 st  162 pal/min  RTF 1.65
+  D_piper_mx_claude                WER   4.8 %  entonación 2.76 st  rango 9.5 st  153 pal/min  RTF 0.07
+  E_piper_mx_ald                   WER  10.9 %  entonación 2.08 st  rango 6.6 st  142 pal/min  RTF 0.08
+  G_kokoro_santa_latam             WER   1.2 %  entonación 4.65 st  rango 14.7 st  161 pal/min  RTF 1.6
+  F_piper_mx_claude_ajustada       WER   6.7 %  entonación 2.86 st  rango 9.6 st  148 pal/min  RTF 0.06
+Ronda 2 (finalistas; une enunciados cortos como «Pero ojo:» que se pronunciaban mal):
+  R2_B_kokoro_alex                 WER   1.8 %  entonación 3.67 st  rango 11.4 st  169 pal/min  RTF 1.62
+  R2_G_kokoro_santa                WER   0.6 %  entonación 4.70 st  rango 14.4 st  169 pal/min  RTF 1.64
+  R2_H_kokoro_mezcla_alex_santa    WER   3.0 %  entonación 4.15 st  rango 12.3 st  169 pal/min  RTF 1.72
+  R2_D_piper_mx_claude             WER   4.8 %  entonación 2.77 st  rango 9.6 st  155 pal/min  RTF 0.08
+Límite: estas métricas son indicadores objetivos, no sustituyen la escucha. La naturalidad final la valida el responsable.

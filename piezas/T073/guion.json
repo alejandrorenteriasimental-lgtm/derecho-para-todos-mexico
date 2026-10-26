@@ -1,0 +1,168 @@
+{
+  "id": "T073",
+  "titulo": "¿Te pueden meter a la cárcel por deber dinero?",
+  "carril_inicial": "A",
+  "fuentes": {
+    "F1": {
+      "tipo": "constitucion",
+      "cita": "CPEUM, artículo 17, último párrafo",
+      "texto_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "nivel": "oficial",
+      "jurisdiccion": "federal",
+      "ultima_reforma_articulo": "DOF 15-09-2024",
+      "consultado": "2026-10-25",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url_alterna": "https://www.supremacorte.gob.mx/sites/default/files/cpeum/documento/CPEUM-017_0.pdf"
+    },
+    "F2": {
+      "tipo": "ley",
+      "cita": "Código Penal Federal, artículo 386 (fraude)",
+      "texto_literal": "Comete el delito de fraude el que engañando a uno o aprovechándose del error en que éste se halla se hace ilícitamente de alguna cosa o alcanza un lucro indebido.",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      "nivel": "oficial",
+      "nota_nivel": "Texto esperado tomado de espejo privado; el verificador lo coteja contra el PDF oficial antes de producir.",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-25",
+      "documento": "Código Penal Federal",
+      "articulo": "386"
+    },
+    "F3": {
+      "tipo": "ley",
+      "cita": "Código Penal Federal, artículo 336 (abandono de hijos o cónyuge)",
+      "texto_literal": "Al que sin motivo justificado abandone a sus hijos o a su cónyuge, sin recursos para atender a sus necesidades de subsistencia",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      "nivel": "oficial",
+      "nota_nivel": "Texto esperado tomado de espejo privado; el verificador lo coteja contra el PDF oficial antes de producir.",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-25",
+      "documento": "Código Penal Federal",
+      "articulo": "336",
+      "anclas": [
+        "de un mes a cinco años de prisión",
+        "180 a 360 días multa"
+      ]
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden meter a la cárcel por deber dinero?",
+      "titulo": [
+        "¿CÁRCEL",
+        "POR DEBER",
+        "DINERO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En México, la respuesta está en una sola línea de la Constitución.",
+      "titulo": [
+        "UNA LÍNEA",
+        "DE LA CONSTITUCIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo diecisiete dice: nadie puede ser aprisionado por deudas de carácter puramente civil.",
+      "etiqueta": "Constitución, artículo 17",
+      "cita": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El art. 17 CPEUM prohíbe la prisión por deudas de carácter puramente civil.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un juez, pero la deuda por sí sola no es un delito.",
+      "items": [
+        "Te pueden demandar",
+        "Te pueden cobrar ante un juez",
+        "La deuda sola no es delito"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "interpretacion",
+          "texto": "El incumplimiento de un préstamo, sin engaño, es una deuda no penal.",
+          "fuente": "F1",
+          "nota": "Interpretación del alcance de 'puramente civil' para deudas mercantiles; requiere criterio jurisprudencial confirmado."
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Pero hay dos excepciones importantes.",
+      "titulo": [
+        "DOS",
+        "EXCEPCIONES"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si obtuviste el dinero engañando a alguien, eso puede ser fraude, y el fraude sí es un delito.",
+      "encabezado": "Engañar para obtener dinero",
+      "detalle": "Puede ser fraude",
+      "fuente_corta": "Código Penal Federal, art. 386",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Obtener dinero mediante engaño puede constituir fraude (CPF art. 386).",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 2,
+      "texto": "Y abandonar sin recursos a tus hijos o a tu cónyuge también es delito. El Código Penal Federal prevé de un mes a cinco años de prisión, o una multa.",
+      "encabezado": "Dejar sin sustento a hijos o cónyuge",
+      "detalle": "1 mes a 5 años de prisión, o multa",
+      "fuente_corta": "Código Penal Federal, art. 336",
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "El abandono de hijos o cónyuge sin recursos se sanciona con 1 mes a 5 años de prisión o 180 a 360 días multa (CPF art. 336).",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Así que, si un cobrador te amenaza con la cárcel por una deuda normal, esa amenaza no tiene sustento en la Constitución.",
+      "titulo": [
+        "LA AMENAZA",
+        "NO TIENE",
+        "SUSTENTO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A5",
+          "tipo": "interpretacion",
+          "texto": "La amenaza de cárcel por una deuda sin engaño contradice el art. 17 CPEUM.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Las leyes penales pueden variar según tu estado. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal. Las leyes penales varían por estado.",
+      "afirmaciones": []
+    }
+  ],
+  "version_esquema": "0.2",
+  "riesgo": "medio"
+}

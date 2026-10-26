@@ -1,0 +1,105 @@
+# Ciclo autónomo de Derecho para Todos México. Corre en GitHub Actions; no requiere una conversación abierta.
+# Seguridad: sin PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI (variables del repositorio) TODO corre en simulación.
+# Costo: runner Linux estándar. Repositorio privado: 2,000 min/mes gratis en el plan Free; un ciclo usa ≈6–12 min.
+name: ciclo-produccion
+on:
+  schedule:
+    - cron: "17 13 * * *"     # 07:17 hora de Ciudad de México (UTC-6): produce y programa el Reel y la imagen del día
+  workflow_dispatch: {}
+concurrency:                  # nunca dos ciclos a la vez
+  group: ciclo-produccion
+  cancel-in-progress: false
+permissions:
+  contents: write             # para guardar estado/, registro/ y los guiones redactados en el repositorio
+  models: read                # GitHub Models (redacción y auditoría): gratuito con límites diarios; sin pago no hay cargos
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - name: Dependencias del sistema
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr tesseract-ocr-spa
+      - name: Dependencias de Python
+        run: pip install -q -r requirements.txt pytest fpdf2
+      - name: Pruebas (sin red, sin costo)
+        run: python -m pytest -q pruebas -m "not vivo"
+      - name: Pruebas en vivo (fuentes oficiales y modelos)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m pytest -q -rA pruebas -m vivo 2>&1 | tee registro_vivo.txt
+        continue-on-error: true   # si un portal oficial está caído no se detiene el sistema; las piezas quedan RETENIDAS
+      - name: Guardar resultado de pruebas en vivo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pruebas-vivo-${{ github.run_id }}
+          path: |
+            registro_vivo.txt
+            registro/*.json*
+          if-no-files-found: ignore
+  ciclo:
+    needs: pruebas            # si una prueba falla, no se produce ni se publica nada
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr tesseract-ocr-spa
+          pip install -q -r requirements.txt
+      - name: Modelos de voz (caché)
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: modelos-v0.2-kokoro1.0-piper-claude
+      - name: Descargar modelos si faltan (GitHub Releases, sin costo)
+        run: bash sistema/descargar_modelos.sh
+      - name: Marca de inicio (consumo)
+        run: date -u +%s > /tmp/inicio
+      - name: Ciclo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                   # solo para GitHub Models (models: read)
+          PUBLICAR: ${{ vars.PUBLICAR }}                              # "1" solo tras la autorización de lanzamiento
+          LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}  # "SI" solo por decisión expresa del responsable
+          TOPE_MXN_MES: ${{ vars.TOPE_MXN_MES }}                      # vacío = 0 MXN
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+        run: python sistema/ciclo.py
+      - name: Conservar piezas producidas (14 días)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: piezas-${{ github.run_id }}
+          path: |
+            piezas/*/salida/*_final.mp4
+            piezas/*/salida/*_final.srt
+            piezas/*/salida/*.png
+            piezas/*/salida/*.json
+            piezas/*/salida/*_copy.txt
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Registrar consumo real del ciclo
+        if: always()
+        run: |
+          mkdir -p registro
+          python - <<'PY'
+          import json, os, time, shutil
+          ini = int(open('/tmp/inicio').read()); seg = int(time.time()) - ini
+          du = shutil.disk_usage('.'); tam = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk('piezas') for f in fs)
+          ev = {"ts": time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), "run": os.environ.get('GITHUB_RUN_ID'), "segundos_ciclo": seg,
+                "minutos_facturables_estimados": -(-seg // 60), "bytes_piezas": tam, "runner": os.environ.get('RUNNER_OS'), "costo_mxn": 0}
+          open('registro/consumo.jsonl', 'a').write(json.dumps(ev) + '\n'); print(ev)
+          PY
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add estado registro piezas/*/guion.json piezas/*/salida/*.json || true
+          git diff --cached --quiet || (git commit -m "ciclo ${{ github.run_id }}" && git pull --rebase -q && git push)
