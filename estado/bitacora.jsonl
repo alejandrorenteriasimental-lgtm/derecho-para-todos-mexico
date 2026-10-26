@@ -22,3 +22,10 @@
 {"ts": "2026-10-26T03:40:28+00:00", "pieza": "I001", "evento": "transicion", "a": "APROBADO", "motivo": "APTO_CON_CRITERIO"}
 {"ts": "2026-10-26T03:40:28+00:00", "pieza": "I001", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
 {"ts": "2026-10-26T03:40:28+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 1, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0}
+{"ts": "2026-10-26T04:10:25+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-26T04:28:08+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T019.json", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras una corrección: {\"intento\": 1, \"errores_esquema\": [\"escena 2: cita demasiado larga para pantalla\", \"escena 4: tipo desconocido «exclamación»\", \"escena 6: tipo desconocido «exclamación»\"]}"}
+{"ts": "2026-10-26T04:47:48+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T060.json", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras una corrección: {\"intento\": 1, \"errores_esquema\": [\"escena 3: elemento de lista demasiado largo («Puedes denunciar en cualquier …»)\"]}"}
+{"ts": "2026-10-26T04:55:16+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_reel_T071.json", "transitoria": false, "motivo": "ninguna afirmación del borrador está anclada en el texto oficial"}
+{"ts": "2026-10-26T04:59:36+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T019.json", "transitoria": false, "motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"}
+{"ts": "2026-10-26T05:05:20+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-25_imagen_T031.json", "transitoria": true, "motivo": "modelo no disponible: IA local: HTTP Error 400: Bad Request"}
+{"ts": "2026-10-26T05:05:20+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 4, "producidas": 0, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0}

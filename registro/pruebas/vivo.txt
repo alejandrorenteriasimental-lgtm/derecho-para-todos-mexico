@@ -17,7 +17,7 @@ pruebas/test_vivo_ia.py:19: in _catalogo
     raise JSONDecodeError("Expecting value", s, err.value) from None
 E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 ____________________ test_llamada_real_minima_devuelve_json ____________________
-sistema/modelos.py:65: in _http
+sistema/modelos.py:97: in _http
     return json.loads(crudo)
            ^^^^^^^^^^^^^^^^^
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py:346: in loads
@@ -34,15 +34,15 @@ During handling of the above exception, another exception occurred:
 pruebas/test_vivo_ia.py:31: in test_llamada_real_minima_devuelve_json
     r = m.completar("Responde solo con JSON.", 'Devuelve {"ok": true}')
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:88: in completar
+sistema/modelos.py:121: in completar
     return self._completar_remoto(sistema, usuario, simulador)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:125: in _completar_remoto
+sistema/modelos.py:158: in _completar_remoto
     raise ultimo or FallaModelo("sin modelos configurados")
-sistema/modelos.py:113: in _completar_remoto
+sistema/modelos.py:146: in _completar_remoto
     r = self._http(modelo, [{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:67: in _http
+sistema/modelos.py:99: in _http
     raise FallaModelo(f"{modelo}: respuesta no JSON del proveedor: {crudo[:120]!r}")
 E   modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
 ==================================== PASSES ====================================
@@ -74,4 +74,4 @@ PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LFD
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGAMVLV]
 FAILED pruebas/test_vivo_ia.py::test_cada_rol_tiene_al_menos_un_modelo_del_catalogo - json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 FAILED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json - modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
-2 failed, 25 passed, 117 deselected in 255.76s (0:04:15)
+2 failed, 25 passed, 117 deselected in 266.46s (0:04:26)

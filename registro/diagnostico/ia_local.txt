@@ -1,0 +1,83 @@
+==> /tmp/llama-phi-3.5-mini-instruct-q4_k_m.log <==
+0.00.094.758 I srv    load_model: loading model '/home/runner/work/derecho-para-todos-mexico/derecho-para-todos-mexico/models/ia/phi-3.5-mini-instruct-q4_k_m.gguf'
+0.00.133.327 W load_arch_hparams: Phi SWA is currently disabled - results might be suboptimal for some models (see https://github.com/ggml-org/llama.cpp/pull/13676)
+0.00.144.439 W load: control-looking token:      2 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.21.682.227 I cmn          init: llama threadpool init, n_threads = 2
+1.06.809.577 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 6144, kv_unified = 'true'
+1.06.827.126 I srv  server_run_i: model loaded
+1.06.827.289 I srv  server_on_li: listening on http://127.0.0.1:8080
+1.08.640.047 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+1.08.643.386 E common_sampler_init: error initializing grammar sampler for grammar:
+array ::= "[" space ( value ("," space value)* )? space "]"
+boolean ::= ("true" | "false")
+char ::= [^"\\\x7F\x00-\x1F] | [\\] (["\\bfnrt] | "u" [0-9a-fA-F]{4})
+decimal-part ::= [0-9]{1,16}
+integral-part ::= [0] | [1-9] [0-9]{0,15}
+json-array ::= "[" space ("]" | json-value (space "," space json-value)* space "]")
+json-bool ::= "true" | "false"
+json-null ::= "null"
+json-number ::= "-"? ("0" | [1-9] [0-9]*) ("." [0-9]+)? (("e" | "E") [+-]? [0-9]+)?
+json-object ::= "{" space ("}" | json-string space ":" space json-value (space "," space json-string space ":" space json-value)* space "}")
+json-string ::= "\"" ( [^"\\] | "\\" ( ["\\/ bfnrt] | "u" [0-9a-fA-F]{4} ) )* "\""
+json-value ::= json-object | json-array | json-string | json-number | json-bool | json-null
+null ::= "null"
+number ::= ("-"? integral-part) ("." decimal-part)? ([eE] [-+]? integral-part)?
+object ::= "{" space ( string ":" space value ("," space string ":" space value)* )? space "}"
+response-format ::= response-format-schema
+response-format-schema ::= object
+root ::= "assistant|>\n" space space ("```json" space response-format space "```" | space response-format space)
+space ::= | " " | "\n"{1,2} [ \t]{0,20}
+string ::= "\"" char* "\""
+value ::= object | array | string | number | boolean | null
+
+
+Generation prompt:
+'assistant|>
+'
+1.08.644.442 E srv    send_error: task id = 0, error: Failed to initialize samplers: std::exception
+1.08.644.617 E srv  process_sing: failed to launch slot with task, id_task = 0
+1.08.644.637 W srv          stop: cancel task, id_task = 0
+1.08.757.341 I srv    operator(): operator(): cleaning up before exit...
+Received second interrupt, terminating immediately.
+
+==> /tmp/llama-qwen2.5-3b-instruct-q4_k_m.log <==
+51.56.072.365 I slot print_timing: id  0 | task 3842 | n_gen =    124, tg =   1.84 t/s, tg_3s =   1.86 t/s
+51.59.325.923 I slot print_timing: id  0 | task 3842 | n_gen =    130, tg =   1.84 t/s, tg_3s =   1.84 t/s
+52.02.567.106 I slot print_timing: id  0 | task 3842 | n_gen =    136, tg =   1.84 t/s, tg_3s =   1.85 t/s
+52.05.781.742 I slot print_timing: id  0 | task 3842 | n_gen =    142, tg =   1.84 t/s, tg_3s =   1.87 t/s
+52.09.023.824 I slot print_timing: id  0 | task 3842 | n_gen =    148, tg =   1.84 t/s, tg_3s =   1.85 t/s
+52.12.234.454 I slot print_timing: id  0 | task 3842 | n_gen =    154, tg =   1.84 t/s, tg_3s =   1.87 t/s
+52.15.448.295 I slot print_timing: id  0 | task 3842 | n_gen =    160, tg =   1.84 t/s, tg_3s =   1.87 t/s
+52.18.670.878 I slot print_timing: id  0 | task 3842 | n_gen =    166, tg =   1.84 t/s, tg_3s =   1.86 t/s
+52.21.897.415 I slot print_timing: id  0 | task 3842 | n_gen =    172, tg =   1.84 t/s, tg_3s =   1.86 t/s
+52.25.123.440 I slot print_timing: id  0 | task 3842 | n_gen =    178, tg =   1.84 t/s, tg_3s =   1.86 t/s
+52.28.401.327 I slot print_timing: id  0 | task 3842 | n_gen =    184, tg =   1.84 t/s, tg_3s =   1.83 t/s
+52.31.595.093 I slot print_timing: id  0 | task 3842 | n_gen =    190, tg =   1.85 t/s, tg_3s =   1.88 t/s
+52.34.814.043 I slot print_timing: id  0 | task 3842 | n_gen =    196, tg =   1.85 t/s, tg_3s =   1.86 t/s
+52.38.076.663 I slot print_timing: id  0 | task 3842 | n_gen =    202, tg =   1.85 t/s, tg_3s =   1.84 t/s
+52.41.297.154 I slot print_timing: id  0 | task 3842 | n_gen =    208, tg =   1.85 t/s, tg_3s =   1.86 t/s
+52.44.731.494 I slot print_timing: id  0 | task 3842 | n_gen =    214, tg =   1.84 t/s, tg_3s =   1.75 t/s
+52.48.302.739 I slot print_timing: id  0 | task 3842 | n_gen =    220, tg =   1.84 t/s, tg_3s =   1.68 t/s
+52.51.819.171 I slot print_timing: id  0 | task 3842 | n_gen =    226, tg =   1.83 t/s, tg_3s =   1.71 t/s
+52.54.821.746 I slot print_timing: id  0 | task 3842 | n_gen =    231, tg =   1.83 t/s, tg_3s =   1.67 t/s
+52.58.383.328 I slot print_timing: id  0 | task 3842 | n_gen =    237, tg =   1.83 t/s, tg_3s =   1.68 t/s
+53.01.931.013 I slot print_timing: id  0 | task 3842 | n_gen =    243, tg =   1.82 t/s, tg_3s =   1.69 t/s
+53.05.463.167 I slot print_timing: id  0 | task 3842 | n_gen =    249, tg =   1.82 t/s, tg_3s =   1.70 t/s
+53.09.007.818 I slot print_timing: id  0 | task 3842 | n_gen =    255, tg =   1.82 t/s, tg_3s =   1.69 t/s
+53.12.553.837 I slot print_timing: id  0 | task 3842 | n_gen =    261, tg =   1.81 t/s, tg_3s =   1.69 t/s
+53.16.059.801 I slot print_timing: id  0 | task 3842 | n_gen =    267, tg =   1.81 t/s, tg_3s =   1.71 t/s
+53.19.554.305 I slot print_timing: id  0 | task 3842 | n_gen =    273, tg =   1.81 t/s, tg_3s =   1.72 t/s
+53.23.048.826 I slot print_timing: id  0 | task 3842 | n_gen =    279, tg =   1.81 t/s, tg_3s =   1.72 t/s
+53.26.552.704 I slot print_timing: id  0 | task 3842 | n_gen =    285, tg =   1.80 t/s, tg_3s =   1.71 t/s
+53.30.041.532 I slot print_timing: id  0 | task 3842 | n_gen =    291, tg =   1.80 t/s, tg_3s =   1.72 t/s
+53.33.551.382 I slot print_timing: id  0 | task 3842 | n_gen =    297, tg =   1.80 t/s, tg_3s =   1.71 t/s
+53.37.056.350 I slot print_timing: id  0 | task 3842 | n_gen =    303, tg =   1.80 t/s, tg_3s =   1.71 t/s
+53.40.560.634 I slot print_timing: id  0 | task 3842 | n_gen =    309, tg =   1.80 t/s, tg_3s =   1.71 t/s
+53.44.092.349 I slot print_timing: id  0 | task 3842 | n_gen =    315, tg =   1.80 t/s, tg_3s =   1.70 t/s
+53.45.266.997 I slot print_timing: id  0 | task 3842 | prompt eval time =   40548.93 ms /   527 tokens (   76.94 ms per token,    13.00 tokens per second)
+53.45.267.007 I slot print_timing: id  0 | task 3842 |        eval time =  176104.24 ms /   317 tokens (  557.29 ms per token,     1.79 tokens per second)
+53.45.267.008 I slot print_timing: id  0 | task 3842 |       total time =  216653.17 ms /   844 tokens
+53.45.267.009 I slot print_timing: id  0 | task 3842 |    graphs reused =       4109
+53.45.267.011 I slot print_timing: id  0 | task 3842 |   graph reallocs =          0    /     0        (same size) / (changed size)
+53.45.268.784 I slot      release: id  0 | task 3842 | stop processing: n_tokens = 1131, truncated = 0
+53.45.462.086 I srv    operator(): operator(): cleaning up before exit...
