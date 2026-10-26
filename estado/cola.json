@@ -174,7 +174,7 @@
       "id": "I20261026-T020",
       "formato": "imagen",
       "huella": "1f41ee457370c4c5ca12ec64d5c48ed466a55c90e65c3162e6516ebadc370da1",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T16:01:54+00:00",
@@ -214,15 +214,21 @@
           "a": "PENDIENTE",
           "ts": "2026-10-26T17:25:08+00:00",
           "motivo": "verificador actualizado a 0.4.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-26T23:12:18+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
       "retencion": {
-        "tipo": "editorial",
-        "verificador": "0.3.2",
-        "motivo": "Revisión editorial (26-10-2026): las 4 citas literales están verificadas en el PDF oficial de la LFPC (última reforma DOF 12-12-2025), pero (1) el «OJO» generaliza: el art. 77 fija el mínimo de 90 días para los bienes o servicios que se ofrecen CON garantía, no dice que toda compra tenga garantía legal de 90 días; (2) el titular pregunta si es legal «no hay cambios ni devoluciones» y la pieza no lo responde: no distingue la devolución por gusto (que la ley no impone en general) de la garantía por defectos (arts. 79 y 92), que ese letrero no puede eliminar."
+        "tipo": "transitorio",
+        "desde": "2026-10-26T23:12:18+00:00",
+        "verificador": "0.4.0"
       }
     },
     "R20261027-T052": {
