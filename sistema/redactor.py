@@ -293,9 +293,9 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             a = auditar_ia(g, fuentes, aud, simulador)
             historial.append({"intento": intento, "auditoria_ia": a})
             if a.get("veredicto") == "sin_objeciones":
-                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": aud.modelos, "historial": historial}
+                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": getattr(aud, "ultimo_modelo", aud.modelos), "historial": historial}
                 g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                                        "solicitud": sol.get("archivo"), "modelos": {"investigador": inv.modelos, "redactor": red.modelos}})
+                                        "solicitud": sol.get("archivo"), "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                 return g
             extra = "\n\nUn auditor independiente objetó lo siguiente; corrige sin agregar información nueva:\n" + \
                     json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]

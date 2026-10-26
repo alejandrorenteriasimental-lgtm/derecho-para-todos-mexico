@@ -1,11 +1,52 @@
 {
-  "nota": "Modelos para redacción y auditoría. Proveedor gratuito: GitHub Models (GITHUB_TOKEN del workflow). El auditor usa una familia de modelos distinta a la del redactor para que la revisión no se califique a sí misma. Los identificadores se validan en vivo contra el catálogo (pruebas/test_vivo_ia.py); si uno no existe se usa el siguiente de la lista.",
+  "nota": "Modelos para redacción y auditoría. Proveedor gratuito: GitHub Models (GITHUB_TOKEN del workflow). El auditor usa una familia de modelos distinta a la del redactor para que la revisión no se califique a sí misma. Los identificadores se validan en vivo contra el catálogo (pruebas/test_vivo_ia.py); si uno no existe se usa el siguiente de la lista. Respaldo gratuito: modelos de código abierto ejecutados en la CPU del runner con llama.cpp (sistema/ia_local.sh): Qwen2.5-7B-Instruct (Apache-2.0) redacta e investiga y Phi-3.5-mini (MIT), de otra familia, audita.",
   "proveedor": "github_models",
   "endpoint": "https://models.github.ai/inference/chat/completions",
   "catalogo": "https://models.github.ai/catalog/models",
   "roles": {
-    "investigador": {"modelos": ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"], "tope_diario": 20, "max_tokens": 800, "temperatura": 0.1},
-    "redactor": {"modelos": ["openai/gpt-4.1", "openai/gpt-4o", "openai/gpt-4.1-mini"], "tope_diario": 16, "max_tokens": 3000, "temperatura": 0.5},
-    "auditor": {"modelos": ["deepseek/DeepSeek-V3-0324", "meta/Llama-4-Maverick-17B-128E-Instruct-FP8", "mistral-ai/mistral-medium-2505", "openai/gpt-4.1-mini"], "tope_diario": 16, "max_tokens": 1500, "temperatura": 0.0}
+    "investigador": {
+      "modelos": [
+        "openai/gpt-4.1-mini",
+        "openai/gpt-4o-mini"
+      ],
+      "tope_diario": 20,
+      "max_tokens": 800,
+      "temperatura": 0.1
+    },
+    "redactor": {
+      "modelos": [
+        "openai/gpt-4.1",
+        "openai/gpt-4o",
+        "openai/gpt-4.1-mini"
+      ],
+      "tope_diario": 16,
+      "max_tokens": 3000,
+      "temperatura": 0.5
+    },
+    "auditor": {
+      "modelos": [
+        "deepseek/DeepSeek-V3-0324",
+        "meta/Llama-4-Maverick-17B-128E-Instruct-FP8",
+        "mistral-ai/mistral-medium-2505",
+        "openai/gpt-4.1-mini"
+      ],
+      "tope_diario": 16,
+      "max_tokens": 1500,
+      "temperatura": 0.0
+    }
+  },
+  "respaldo_local": {
+    "investigador": {
+      "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+      "modelo": "local-redactor"
+    },
+    "redactor": {
+      "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+      "modelo": "local-redactor"
+    },
+    "auditor": {
+      "endpoint": "http://127.0.0.1:8081/v1/chat/completions",
+      "modelo": "local-auditor"
+    }
   }
 }

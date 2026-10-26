@@ -48,6 +48,7 @@ class Modelo:
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
         self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
+        self.local = (cfg.get("respaldo_local") or {}).get(rol) if env.get("IA_LOCAL") == "1" else None
 
     def _http(self, modelo, mensajes):
         token = self.env.get("GITHUB_TOKEN") or self.env.get("MODELOS_TOKEN")
@@ -72,7 +73,34 @@ class Modelo:
         except (urllib.error.URLError, TimeoutError, OSError) as e:
             raise FallaModelo(f"{modelo}: sin conexión ({e})")
 
+    def _http_local(self, mensajes):
+        cuerpo = {"model": self.local["modelo"], "messages": mensajes, "temperature": self.temperatura, "max_tokens": self.max_tokens,
+                  "response_format": {"type": "json_object"}}
+        req = urllib.request.Request(self.local["endpoint"], data=json.dumps(cuerpo).encode(), method="POST", headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=1500) as r:
+                return json.loads(r.read())
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
+            raise FallaModelo(f"IA local: {e}")
+
     def completar(self, sistema, usuario, simulador=None):
+        try:
+            return self._completar_remoto(sistema, usuario, simulador)
+        except (CuotaAgotada, FallaModelo) as e:
+            if not self.local or self.proveedor == "simulado":
+                raise
+            t0 = time.time()
+            r = self._http_local([{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
+            uso = r.get("usage", {})
+            _registrar({"rol": self.rol, "proveedor": "local", "modelo": self.local["modelo"], "resultado": "ok", "motivo_respaldo": str(e)[:160],
+                        "segundos": round(time.time() - t0, 1), "tokens_entrada": uso.get("prompt_tokens"), "tokens_salida": uso.get("completion_tokens")}, self.archivo_uso)
+            self.ultimo_modelo = self.local["modelo"]
+            try:
+                return json.loads(r["choices"][0]["message"]["content"])
+            except (ValueError, KeyError, IndexError):
+                raise FallaModelo("IA local: la respuesta no es JSON válido")
+
+    def _completar_remoto(self, sistema, usuario, simulador=None):
         ultimo = None
         for modelo in self.modelos:                         # cadena de respaldo, en orden
             if usos_hoy(modelo, self.archivo_uso, self.proveedor) >= self.tope:
@@ -87,6 +115,7 @@ class Modelo:
             except (CuotaAgotada, FallaModelo) as e:
                 _registrar({"rol": self.rol, "proveedor": self.proveedor, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
                 ultimo = e; continue
+            self.ultimo_modelo = modelo
             _registrar({"rol": self.rol, "proveedor": self.proveedor, "modelo": modelo, "resultado": "ok", "segundos": round(time.time() - t0, 1),
                         "tokens_entrada": uso.get("prompt_tokens"), "tokens_salida": uso.get("completion_tokens")}, self.archivo_uso)
             try:
