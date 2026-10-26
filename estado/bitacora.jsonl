@@ -49,3 +49,7 @@
 {"ts": "2026-10-26T15:09:20+00:00", "pieza": "T073", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
 {"ts": "2026-10-26T15:09:20+00:00", "evento": "alerta", "mensaje": "T073 retenido por verificación jurídica (RETENER)."}
 {"ts": "2026-10-26T15:09:20+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 3, "producidas": 0, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0}
+{"ts": "2026-10-26T15:19:30+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-26T15:20:56+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-26_reel_T016.json", "transitoria": true, "motivo": "modelo no disponible: tope propio diario alcanzado para gemini-3.1-flash-lite"}
+{"ts": "2026-10-26T15:21:40+00:00", "evento": "redaccion_descartada", "solicitud": "2026-10-26_imagen_T020.json", "transitoria": true, "motivo": "modelo no disponible: tope propio diario alcanzado para gemini-3.1-flash-lite"}
+{"ts": "2026-10-26T15:21:40+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0}
