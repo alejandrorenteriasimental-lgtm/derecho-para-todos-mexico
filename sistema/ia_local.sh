@@ -26,6 +26,7 @@ print(c[0])")
   mkdir -p "$D/bin"; cp -r "$(dirname "$(find /tmp/llama -name llama-server -type f | head -1)")"/* "$D/bin/"; chmod +x "$D/bin/"* || true
   echo "$URL" > "$D/bin/ORIGEN"
 fi
+df -h . | tail -1
 bajar https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf "$D/qwen2.5-7b-instruct-q4_k_m.gguf" 4000000000
 bajar https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf "$D/phi-3.5-mini-instruct-q4_k_m.gguf" 2000000000
 [ "${1:-iniciar}" = "descargar" ] && exit 0

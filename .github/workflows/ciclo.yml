@@ -62,6 +62,12 @@ jobs:
           key: modelos-v0.2-kokoro1.0-piper-claude
       - name: Descargar modelos si faltan (GitHub Releases, sin costo)
         run: bash sistema/descargar_modelos.sh
+      - name: Liberar espacio en disco para los modelos de IA (≈7 GB)
+        run: |
+          df -h / | tail -1
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost || true
+          sudo docker image prune -af >/dev/null 2>&1 || true
+          df -h / | tail -1
       - name: Modelos de IA locales (caché)
         uses: actions/cache@v4
         with:
