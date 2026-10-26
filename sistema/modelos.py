@@ -47,7 +47,8 @@ def usos_hoy(modelo, archivo=None, proveedor=None):
     f = Path(archivo or USO); hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     if not f.exists(): return 0
     return sum(1 for l in f.read_text().splitlines() if l.strip() and (e := json.loads(l))["modelo"] == modelo
-               and e["ts"].startswith(hoy) and e.get("proveedor", "github_models") == (proveedor or "github_models"))
+               and e["ts"].startswith(hoy) and e.get("proveedor", "github_models") == (proveedor or "github_models")
+               and (e.get("resultado") == "ok" or "429" in e.get("error", "")))   # los 5xx y tiempos agotados no consumen cuota
 
 
 def _registrar(ev, archivo=None):
@@ -91,7 +92,7 @@ class Modelo:
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
         cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
-        self.pausa_429 = cfg.get("pausa_429_s", 35); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = r.get("timeout_s", cfg.get("timeout_gemini_s", 100)); self.razonamiento = r.get("razonamiento"); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
+        self.pausa_429 = cfg.get("pausa_429_s", 35); self.topes = cfg.get("topes_por_modelo", {}); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = r.get("timeout_s", cfg.get("timeout_gemini_s", 100)); self.razonamiento = r.get("razonamiento"); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
         self.endpoint_gemini = cfg.get("endpoint_gemini", "https://generativelanguage.googleapis.com/v1beta")
         rl = cfg.get("respaldo_local") or {}
@@ -197,7 +198,7 @@ class Modelo:
         for entrada in self.modelos:                        # cadena de respaldo, en orden; «proveedor:modelo» o solo «modelo»
             prov, modelo = (entrada.split(":", 1) if ":" in entrada and entrada.split(":", 1)[0] in PROVEEDORES else (self.proveedor, entrada))
             if self.proveedor == "simulado": prov = "simulado"
-            if usos_hoy(modelo, self.archivo_uso, prov) >= self.tope:
+            if usos_hoy(modelo, self.archivo_uso, prov) >= min(self.tope, self.topes.get(modelo, self.tope)):
                 ultimo = CuotaAgotada(f"tope propio diario alcanzado para {modelo}"); continue
             t0 = time.time()
             for intento in (1, 2):

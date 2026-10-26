@@ -5,7 +5,7 @@
 name: ciclo-produccion
 on:
   schedule:
-    - cron: "17 13 * * *"     # 07:17 hora de Ciudad de México (UTC-6): produce y programa el Reel y la imagen del día
+    - cron: "17 9 * * *"      # 03:17 hora de Ciudad de México (UTC-6): redacta de madrugada, cuando Gemini se satura menos; la publicación se programa a las 09:00 y 19:00
   workflow_dispatch: {}
 concurrency:                  # nunca dos ciclos a la vez
   group: ciclo-produccion
