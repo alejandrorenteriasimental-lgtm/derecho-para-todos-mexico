@@ -14,3 +14,39 @@ OK
 
 ### POST https://models.inference.ai.azure.com/chat/completions
 
+### ai-inference: outcome=failure respuesta=
+### gh models list
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models list [flags]
+
+Flags:
+  -h, --help   help for list
+
+### gh models run
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models run [model] [prompt] [flags]
+
+Examples:
+gh models run openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --org my-org openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --file prompt.yml --var name=Alice --var topic="machine learning"
+
+
+### curl -v catálogo (stderr)
+* Connected to models.github.ai (140.82.114.21) port 443
+* ALPN: curl offers h2,http/1.1
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://models.github.ai/catalog/models
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: models.github.ai]
+* [HTTP/2] [1] [:path: /catalog/models]
+* [HTTP/2] [1] [user-agent: curl/8.5.0]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [authorization: Bearer ***
+> GET /catalog/models HTTP/2
+< HTTP/2 200 
+< content-type: text/plain
+< 
