@@ -22,7 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - name: Dependencias del sistema
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr tesseract-ocr-spa
+        timeout-minutes: 8
+        run: bash sistema/apt.sh
       - name: Dependencias de Python
         run: pip install -q -r requirements.txt pytest fpdf2
       - name: Pruebas (sin red, sin costo)
@@ -54,8 +55,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - name: Dependencias
+        timeout-minutes: 10
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr tesseract-ocr-spa
+          bash sistema/apt.sh
           pip install -q -r requirements.txt
       - name: Modelos de voz (caché)
         uses: actions/cache@v4
