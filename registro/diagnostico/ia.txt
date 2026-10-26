@@ -1,0 +1,16 @@
+### GET https://models.github.ai/catalog/models
+HTTP/2 200 
+content-type: text/plain
+
+OK
+
+### GET https://models.inference.ai.azure.com/models
+
+### POST https://models.github.ai/inference/chat/completions
+HTTP/2 200 
+content-type: text/plain
+
+OK
+
+### POST https://models.inference.ai.azure.com/chat/completions
+
