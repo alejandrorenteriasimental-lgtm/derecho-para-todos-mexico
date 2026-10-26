@@ -1,13 +1,5 @@
-.F....FF...................                                              [100%]
+......FF...................                                              [100%]
 =================================== FAILURES ===================================
-_______________ test_cpf_336_verificado_en_el_documento_oficial ________________
-pruebas/test_vivo.py:36: in test_cpf_336_verificado_en_el_documento_oficial
-    assert r["estado"] == "VERIFICADA", r
-E   AssertionError: {'fuente': 'F3', 'url': 'https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf', 'consultado': '2026-10-26T03:05:03+00:00', 'http': 200, ...}
-E   assert 'RECHAZADA' == 'VERIFICADA'
-E     
-E     - VERIFICADA
-E     + RECHAZADA
 _____________ test_cada_rol_tiene_al_menos_un_modelo_del_catalogo ______________
 pruebas/test_vivo_ia.py:23: in test_cada_rol_tiene_al_menos_un_modelo_del_catalogo
     ids = _catalogo()
@@ -25,7 +17,7 @@ pruebas/test_vivo_ia.py:19: in _catalogo
     raise JSONDecodeError("Expecting value", s, err.value) from None
 E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 ____________________ test_llamada_real_minima_devuelve_json ____________________
-sistema/modelos.py:64: in _http
+sistema/modelos.py:65: in _http
     return json.loads(crudo)
            ^^^^^^^^^^^^^^^^^
 /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py:346: in loads
@@ -42,17 +34,21 @@ During handling of the above exception, another exception occurred:
 pruebas/test_vivo_ia.py:31: in test_llamada_real_minima_devuelve_json
     r = m.completar("Responde solo con JSON.", 'Devuelve {"ok": true}')
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:96: in completar
+sistema/modelos.py:88: in completar
+    return self._completar_remoto(sistema, usuario, simulador)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sistema/modelos.py:125: in _completar_remoto
     raise ultimo or FallaModelo("sin modelos configurados")
-sistema/modelos.py:85: in completar
+sistema/modelos.py:113: in _completar_remoto
     r = self._http(modelo, [{"role": "system", "content": sistema}, {"role": "user", "content": usuario}])
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-sistema/modelos.py:66: in _http
+sistema/modelos.py:67: in _http
     raise FallaModelo(f"{modelo}: respuesta no JSON del proveedor: {crudo[:120]!r}")
 E   modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
 ==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pruebas/test_vivo.py::test_cpeum_17_verificado_en_el_documento_oficial
+PASSED pruebas/test_vivo.py::test_cpf_336_verificado_en_el_documento_oficial
 PASSED pruebas/test_vivo.py::test_oficial_real_con_cita_alterada_se_rechaza
 PASSED pruebas/test_vivo.py::test_oficial_real_con_articulo_equivocado_se_rechaza
 PASSED pruebas/test_vivo.py::test_oficial_real_con_documento_equivocado_se_rechaza
@@ -76,11 +72,6 @@ PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGV
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LNEP]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LFDA]
 PASSED pruebas/test_vivo_ia.py::test_pdf_oficial_existe_y_es_el_ordenamiento[LGAMVLV]
-FAILED pruebas/test_vivo.py::test_cpf_336_verificado_en_el_documento_oficial - AssertionError: {'fuente': 'F3', 'url': 'https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf', 'consultado': '2026-10-26T03:05:03+00:00', 'http': 200, ...}
-assert 'RECHAZADA' == 'VERIFICADA'
-  
-  - VERIFICADA
-  + RECHAZADA
 FAILED pruebas/test_vivo_ia.py::test_cada_rol_tiene_al_menos_un_modelo_del_catalogo - json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 FAILED pruebas/test_vivo_ia.py::test_llamada_real_minima_devuelve_json - modelos.FallaModelo: openai/gpt-4o-mini: respuesta no JSON del proveedor: b'OK\r\n'
-3 failed, 24 passed, 115 deselected in 353.64s (0:05:53)
+2 failed, 25 passed, 117 deselected in 185.02s (0:03:05)
