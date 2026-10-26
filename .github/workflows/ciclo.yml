@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with: { ref: main }      # siempre el estado más reciente (una ejecución en fila no parte de un commit viejo)
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - name: ffmpeg estático (caché)
@@ -57,6 +58,7 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with: { ref: main }      # siempre el estado más reciente (una ejecución en fila no parte de un commit viejo)
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - name: ffmpeg estático (caché)
