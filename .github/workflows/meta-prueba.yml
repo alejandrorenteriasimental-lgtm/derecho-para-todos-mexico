@@ -1,0 +1,15 @@
+# Prueba de SOLO LECTURA de la conexión con Meta (Página + Instagram). Manual. No publica nada.
+name: meta-prueba
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  lectura:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobaciones de lectura
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+        run: python sistema/meta_prueba.py
