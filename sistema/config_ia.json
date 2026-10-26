@@ -19,9 +19,9 @@
     },
     "redactor": {
       "modelos": [
-        "gemini:gemini-3.8-flash",
         "gemini:gemini-3-flash-preview",
         "gemini:gemini-3.6-flash",
+        "gemini:gemini-3.8-flash",
         "gemini:gemini-3.5-flash-lite"
       ],
       "tope_diario": 60,
@@ -32,8 +32,8 @@
     },
     "auditor": {
       "modelos": [
-        "gemini:gemma-4-31b-it",
         "gemini:gemma-4-26b-a4b-it",
+        "gemini:gemma-4-31b-it",
         "gemini:gemini-3.1-flash-lite"
       ],
       "tope_diario": 60,
@@ -75,5 +75,6 @@
     "gemma-4-31b-it": 60,
     "gemma-4-26b-a4b-it": 60
   },
-  "nota_topes": "Topes propios por modelo y día (UTC), por debajo de los límites gratuitos reportados (~20/día Flash, ~500/día Flash-Lite). Solo cuentan las llamadas exitosas y los 429."
+  "nota_topes": "Topes propios por modelo y día (UTC), por debajo de los límites gratuitos reportados (~20/día Flash, ~500/día Flash-Lite). Solo cuentan las llamadas exitosas y los 429.",
+  "nota_orden_26_10": "Orden ajustado el 26-10-2026 con el registro real (estado/uso_ia.jsonl): gemini-3-flash-preview respondió 15/15; gemini-3.8-flash 0/33 (429 y 503); gemma-4-26b respondió 12/37 frente a 2/43 de gemma-4-31b (HTTP 500 interno). La redacción ahora hace también la etapa de análisis jurídico (1-2 llamadas por pieza)."
 }

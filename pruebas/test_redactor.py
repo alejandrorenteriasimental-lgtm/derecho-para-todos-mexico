@@ -33,9 +33,17 @@ BORRADOR = {"titulo": "¿Te pueden meter a la cárcel por deber dinero?", "escen
                    "distinciones": [], "limites": "No aborda delitos como el fraude."}}
 
 
-def simulador_con(investigar=None, redactar=None, auditar=None):
-    llamadas = {"investigador": [], "redactor": [], "auditor": []}
+ANALISIS = {"suficiente": True, **copy.deepcopy(BORRADOR["razonamiento"])}
+
+
+def simulador_con(investigar=None, redactar=None, auditar=None, analizar=None):
+    """Simula los tres roles. La etapa 1 (análisis jurídico) la hace el rol redactor; se cuenta aparte en «analista»."""
+    llamadas = {"investigador": [], "redactor": [], "auditor": [], "analista": []}
     def sim(rol, sistema, usuario):
+        if rol == "redactor" and "ETAPA 1 DE 2" in usuario:
+            llamadas["analista"].append(usuario)
+            r = analizar(len(llamadas["analista"])) if callable(analizar) else (analizar or ANALISIS)
+            return copy.deepcopy(r)
         llamadas[rol].append(usuario)
         if rol == "investigador":
             return investigar or {"articulos": [{"sigla": "CPEUM", "articulo": "17"}, {"sigla": "CPEUM", "articulo": "999"}, {"sigla": "XYZ", "articulo": "1"}]}
@@ -60,7 +68,7 @@ def test_genera_un_reel_valido_y_verificable(uso):
     assert v["decision"] in ("APTA", "APTA_CON_CRITERIO"), v
     assert auditoria.dictamen(g, v, date.today())["decision"] in ("APTO", "APTO_CON_CRITERIO")
     assert g["escenas"][-1]["tipo"] == "cierre" and "no asesoría legal" in g["escenas"][-1]["texto"]
-    assert len(uso.read_text().splitlines()) == 3      # investigador + redactor + auditor
+    assert len(uso.read_text().splitlines()) == 4      # investigador + análisis + redactor + auditor
 
 
 def test_cita_inventada_se_elimina_y_si_no_queda_ninguna_se_descarta(uso):

@@ -143,6 +143,49 @@ CAMPOS_PLANTILLA = {
     "diferencia": '"columnas": [["Concepto A", "≤ 120 caracteres"], ["Concepto B", "≤ 120 caracteres"]],',
 }
 
+ANALIZAR = """ETAPA 1 DE 2 — ANÁLISIS JURÍDICO (todavía NO redactes la pieza).
+Pregunta del plan editorial que la pieza DEBE responder (no la cambies por otra): {pregunta}
+Tema: {titulo}
+Textos oficiales disponibles (fuente → texto completo del artículo):
+{textos}
+
+Conceptos que el público suele confundir en este tema:
+{glosario}
+
+Trabaja como abogado, en este orden:
+1. Identifica qué pregunta exactamente el público y qué concepto jurídico está en juego (usa el mismo término de la pregunta).
+2. Busca en los textos la regla que la responde. Copia la cita literal (8 a 40 palabras) que la sostiene.
+3. Lee la oración completa y las anteriores: anota TODAS las condiciones, requisitos, plazos y excepciones de esa regla
+   («siempre que», «cuando», «salvo», «que se ofrezca…», «en los casos…»). Si la regla solo vale para ciertos supuestos, dilo.
+4. Distingue los conceptos parecidos que NO son lo mismo y que podrían confundirse en la respuesta.
+5. Con todo lo anterior, escribe la respuesta corta: empieza con «Sí», «No» o «Depende» y menciona en ella la condición principal.
+6. Si los textos no permiten responder la pregunta con seguridad, NO fuerces una respuesta: marca "suficiente": false.
+Devuelve:
+{{"suficiente": true,
+  "pregunta": "{pregunta}",
+  "concepto_central": "el concepto de la pregunta",
+  "respuesta_corta": "Sí/No/Depende: … (una oración, ≤ 160 caracteres, con la condición principal)",
+  "reglas": [{{"conclusion": "qué establece la norma para ESTA pregunta", "fuente": "F1", "cita_literal": "copia exacta",
+              "condiciones": ["condición o requisito que limita la regla"], "excepciones": ["excepción que prevé el texto"]}}],
+  "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "en una oración"}}],
+  "limites": "lo que estos textos NO dicen o lo que la pieza no debe afirmar",
+  "fuentes_irrelevantes": ["F3"]}}
+Usa solo F1, F2… de la lista. Ninguna conclusión puede ir más allá de lo que dice su cita."""
+
+PLAN_FIJO = """
+ETAPA 2 DE 2 — REDACCIÓN. El análisis jurídico de abajo YA FUE REVISADO contra el texto oficial. Redacta la pieza usando
+EXCLUSIVAMENTE ese análisis:
+- El título debe ser la pregunta del análisis (puedes acortarla, pero conserva sus palabras clave).
+- La respuesta corta debe aparecer en el contenido visible con casi las mismas palabras ({donde_respuesta}).
+- Cada condición y excepción del análisis debe decirse en el contenido visible; nunca presentes la regla como general.
+- Cada afirmación debe salir de una regla del análisis y llevar su misma cita literal y su misma fuente. No agregues reglas,
+  artículos, cifras ni ejemplos jurídicos que no estén en el análisis.
+- Si usas dos conceptos de las distinciones, explica su diferencia.
+- Repite en "razonamiento" exactamente el análisis recibido (no lo modifiques).
+Análisis aprobado:
+{mapa}
+"""
+
 AUDITAR = """Eres auditor jurídico independiente. No basta con que las citas existan: revisa si las CONCLUSIONES que la pieza saca
 de ellas son jurídicamente válidas. Textos oficiales (completos):
 {textos}
@@ -319,13 +362,79 @@ def _fuentes_por_ficha(g, fuentes):
     return out
 
 
+def pregunta_plan(sol):
+    return sol.get("gancho") or sol.get("angulo") or sol["titulo"]
+
+
+def analizar(sol, fuentes, red, glosario, simulador=None, extra=""):
+    """Etapa 1: la regla, sus condiciones, excepciones y fuentes ANTES de escribir una sola línea de la pieza."""
+    r = red.completar(REGLAS_COMUNES, ANALIZAR.format(pregunta=pregunta_plan(sol), titulo=sol["titulo"], textos=_textos(fuentes),
+                                                       glosario=glosario) + extra, simulador)
+    return r if isinstance(r, dict) else {}
+
+
+def validar_mapa(mapa, sol, fuentes):
+    """Revisión determinista del análisis contra el texto oficial COMPLETO de cada artículo. Aplica las MISMAS reglas que
+    después se aplican a la pieza (razonamiento.revisar), más las propias del análisis. Devuelve la lista de errores."""
+    if mapa.get("suficiente") is False:
+        return ["INSUFICIENTE: " + (mapa.get("limites") or mapa.get("motivo") or "los textos no permiten responder la pregunta")]
+    err = []
+    reglas = [r for r in (mapa.get("reglas") or []) if isinstance(r, dict)]
+    if not reglas:
+        err.append("[mapa] No hay reglas: cada conclusión debe ligarse a una fuente con su cita literal.")
+    for r in reglas:
+        if r.get("fuente") not in fuentes:
+            err.append(f'[mapa] La regla «{str(r.get("conclusion", ""))[:60]}» usa una fuente que no existe ({r.get("fuente")}).')
+        elif len(str(r.get("cita_literal", "")).split()) < 5:
+            err.append(f'[mapa] La regla «{str(r.get("conclusion", ""))[:60]}» no trae una cita literal suficiente.')
+    rz = {**mapa, "reglas": [{**r, "ref": {k: fuentes[r["fuente"]][k] for k in ("documento", "articulo")}} for r in reglas if r.get("fuente") in fuentes]}
+    prueba = {"titulo": pregunta_plan(sol).strip(), "pregunta_original": pregunta_plan(sol), "razonamiento": rz,
+              "pieza": {"bajada": mapa.get("respuesta_corta", "")}, "fuentes": {}}
+    if not prueba["titulo"].endswith("?"): prueba["titulo"] += "?"
+    textos = {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}
+    err += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(razonamiento.revisar(prueba, textos, ia=True))]
+    # el análisis debe responder la MISMA pregunta del plan (la prueba de arriba usa la pregunta del plan como título)
+    plan = pregunta_plan(sol)
+    propio = " ".join([str(mapa.get("pregunta", "")), str(mapa.get("respuesta_corta", ""))] + [str(r.get("conclusion", "")) for r in reglas])
+    if not (razonamiento._temas(plan) & razonamiento._temas(propio)) and \
+       not ({g for g, _ in razonamiento.conceptos_en(plan)} & {g for g, _ in razonamiento.conceptos_en(propio)}):
+        err.append(f"[tema] El análisis no responde la pregunta del plan editorial («{plan[:80]}»): trata «{str(mapa.get('pregunta', ''))[:80]}».")
+    return err
+
+
+def _mapa_fijo(mapa, fuentes):
+    """El análisis validado, con la referencia oficial de cada regla; es lo que viaja en el guion (el redactor no lo cambia)."""
+    usadas = {r.get("fuente") for r in mapa.get("reglas", []) if isinstance(r, dict)}
+    return {k: v for k, v in {**mapa, "reglas": [{**r, "ref": {k2: fuentes[r["fuente"]][k2] for k2 in ("documento", "articulo")}}
+                                                  for r in mapa.get("reglas", []) if isinstance(r, dict) and r.get("fuente") in fuentes]}.items()
+            if k not in ("fuentes_irrelevantes",)}, usadas
+
+
 def auditar_ia(guion, fuentes, auditor, simulador=None):
     pieza = json.dumps({k: guion[k] for k in ("pregunta_original", "titulo", "razonamiento", "escenas", "pieza", "copy") if k in guion}, ensure_ascii=False)[:12000]
     return auditor.completar(REGLAS_COMUNES, AUDITAR.format(textos=_textos(fuentes), pieza=pieza), simulador)
 
 
+DONDE_RESPUESTA = {"reel": "en la escena «titular» que sigue al gancho, y otra vez en la conclusión",
+                   "concepto": "en la bajada", "dato": "en la bajada", "tres_claves": "en la bajada", "diferencia": "en la bajada",
+                   "mito_realidad": "en «realidad»"}
+
+
+def _objeta_mapa(a, mapa):
+    """¿El auditor declara no sostenida (total o parcialmente) una conclusión del análisis? Entonces el error está en la
+    etapa 1 y se corrige el análisis, no solo la redacción."""
+    concl = [str(r.get("conclusion", "")) for r in mapa.get("reglas", []) if isinstance(r, dict)]
+    for x in a.get("conclusiones", []) or []:
+        if str(x.get("sostenida", "si")).lower() != "si" and any(razonamiento._coincide(str(x.get("conclusion", "")), c) for c in concl):
+            return True
+    return False
+
+
 def generar(sol, transporte=verificador.transporte_http, simulador=None, env=None, archivo_uso=None):
-    """Devuelve el guion listo para la cola, o lanza Descartada con el motivo."""
+    """Devuelve el guion listo para la cola, o lanza Descartada con el motivo.
+    Etapa 1 (analizar): pregunta → regla → condiciones/excepciones → distinciones → respuesta corta, validado de forma
+    determinista contra el texto oficial ANTES de redactar. Etapa 2 (redactar): la pieza se escribe sobre ese análisis
+    congelado; después pasan los mismos controles de siempre (esquema, razonamiento, auditor independiente)."""
     import os
     env = env if env is not None else os.environ
     if sol.get("carril") == "C":
@@ -336,47 +445,76 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
     try:
         biblio = Biblioteca(transporte)
         fuentes, descartes = investigar(sol, inv, biblio, simulador)
-        textos = _textos(fuentes)
         glosario = _glosario(sol, fuentes)
-        if sol["formato"] == "reel":
-            pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=sol.get("gancho", ""), textos=textos, glosario=glosario) + extra, simulador)
-            construir = construir_reel
-        else:
-            pl = sol.get("plantilla", "concepto")
-            pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_IMAGEN.format(titulo=sol["titulo"], angulo=sol.get("angulo", ""), plantilla=pl,
-                                                                                    campos=CAMPOS_PLANTILLA[pl], textos=textos, glosario=glosario) + extra, simulador)
-            construir = construir_imagen
-        historial = []
-        extra = ""
-        for intento in range(3):                                     # borrador + dos correcciones como máximo
-            g = construir(sol, pedir(extra), fuentes)
-            g["pregunta_original"] = sol.get("gancho") or sol.get("angulo") or sol["titulo"]
-            errores = esquema.validar(g)
-            hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
-            g["revision_razonamiento"] = hall
-            errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
-            if errores:
-                historial.append({"intento": intento, "errores_esquema": errores})
-                extra = "\n\nTu versión anterior tenía estos problemas; corrígelos:\n- " + "\n- ".join(errores[:8]); continue
-            a = auditar_ia(g, fuentes, aud, simulador)
-            historial.append({"intento": intento, "auditoria_ia": a})
-            if a.get("veredicto") == "sin_objeciones" and any(str(x.get("sostenida", "si")).lower() != "si" for x in a.get("conclusiones", []) or []):
-                a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
-                    {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
-                    for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
-            if a.get("veredicto") == "sin_objeciones":
-                m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
-                fam = lambda m: m.split("-")[0].split("/")[-1].lower()
-                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,
-                                     "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
-                g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                                        "solicitud": sol.get("archivo"), "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
-                return g
-            extra = ("\n\nUn auditor independiente objetó lo siguiente. Aplica TODAS las correcciones; si una afirmación no puede "
-                     "sustentarse con el texto oficial, ELIMÍNALA en lugar de reformularla; no agregues información nueva; evita "
-                     "lenguaje absoluto y menciona las excepciones que el texto prevé:\n") + \
-                    json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
-        raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
-                         json.dumps(historial[-1], ensure_ascii=False)[:400])
+        historial, extra_a, reanalisis = [], "", 0
+        while True:
+            # ---- etapa 1: análisis jurídico (dos oportunidades) ----
+            mapa = None
+            for intento in range(2):
+                m = analizar(sol, fuentes, red, glosario, simulador, extra_a)
+                errores = validar_mapa(m, sol, fuentes)
+                if errores and errores[0].startswith("INSUFICIENTE"):
+                    raise Descartada("el análisis concluyó que los textos oficiales no bastan para responder la pregunta: " + errores[0][14:300])
+                historial.append({"etapa": "analisis", "intento": intento, "errores": errores})
+                if not errores:
+                    mapa = m; break
+                extra_a = "\n\nTu análisis anterior tenía estos problemas; corrígelos sin cambiar la pregunta:\n- " + "\n- ".join(errores[:8])
+            if mapa is None:
+                raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400])
+            mapa_fijo, usadas = _mapa_fijo(mapa, fuentes)
+            fuentes_red = {fid: f for fid, f in fuentes.items() if fid in usadas} or fuentes
+            textos = _textos(fuentes_red)
+            fijo = PLAN_FIJO.format(mapa=json.dumps({k: v for k, v in mapa.items() if k != "fuentes_irrelevantes"}, ensure_ascii=False, indent=1),
+                                    donde_respuesta=DONDE_RESPUESTA.get("reel" if sol["formato"] == "reel" else sol.get("plantilla", "concepto"), "en la bajada"))
+            if sol["formato"] == "reel":
+                pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=pregunta_plan(sol), textos=textos, glosario=glosario) + fijo + extra, simulador)
+                construir = construir_reel
+            else:
+                pl = sol.get("plantilla", "concepto")
+                pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_IMAGEN.format(titulo=sol["titulo"], angulo=sol.get("angulo", ""), plantilla=pl,
+                                                                                        campos=CAMPOS_PLANTILLA[pl], textos=textos, glosario=glosario) + fijo + extra, simulador)
+                construir = construir_imagen
+            # ---- etapa 2: redacción sobre el análisis congelado (borrador + dos correcciones) ----
+            extra, volver = "", False
+            for intento in range(3):
+                borrador = pedir(extra)
+                borrador = {**(borrador if isinstance(borrador, dict) else {}), "razonamiento": mapa}   # el redactor no puede alterar el análisis
+                g = construir(sol, borrador, fuentes_red)
+                g["razonamiento"] = mapa_fijo
+                g["pregunta_original"] = pregunta_plan(sol)
+                errores = esquema.validar(g)
+                hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
+                g["revision_razonamiento"] = hall
+                errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
+                if errores:
+                    historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores})
+                    extra = "\n\nTu versión anterior tenía estos problemas; corrígelos respetando el análisis aprobado:\n- " + "\n- ".join(errores[:8]); continue
+                a = auditar_ia(g, fuentes_red, aud, simulador)
+                historial.append({"etapa": "redaccion", "intento": intento, "auditoria_ia": a})
+                if a.get("veredicto") == "sin_objeciones" and any(str(x.get("sostenida", "si")).lower() != "si" for x in a.get("conclusiones", []) or []):
+                    a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
+                        {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
+                        for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
+                if a.get("veredicto") == "sin_objeciones":
+                    m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
+                    fam = lambda m: m.split("-")[0].split("/")[-1].lower()
+                    g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,
+                                         "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
+                    g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                            "solicitud": sol.get("archivo"), "metodo": "analisis_previo_v1",
+                                            "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
+                    return g
+                if _objeta_mapa(a, mapa) and reanalisis < 1:
+                    reanalisis += 1; volver = True
+                    extra_a = ("\n\nUn auditor independiente revisó una pieza basada en tu análisis y objetó estas conclusiones; "
+                               "corrige el ANÁLISIS (ajusta la conclusión a lo que dice la cita, agrega condiciones o elimina la regla):\n") + \
+                              json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
+                    break
+                extra = ("\n\nUn auditor independiente objetó lo siguiente. Aplica TODAS las correcciones sin salirte del análisis aprobado; "
+                         "si una afirmación no puede sustentarse con el texto oficial, ELIMÍNALA; no agregues información nueva:\n") + \
+                        json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
+            if not volver:
+                raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
+                                 json.dumps(historial[-1], ensure_ascii=False)[:400])
     except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
         raise Descartada(f"modelo no disponible: {e}", transitoria=True)
