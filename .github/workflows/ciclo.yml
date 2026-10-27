@@ -78,6 +78,12 @@ jobs:
           key: modelos-v0.2-kokoro1.0-piper-claude
       - name: Descargar modelos si faltan (GitHub Releases, sin costo)
         run: bash sistema/descargar_modelos.sh
+      - name: Copias de respaldo de fuentes oficiales (caché, máx. 7 días de uso)
+        uses: actions/cache@v4
+        with:
+          path: cache_fuentes
+          key: fuentes-${{ github.run_id }}
+          restore-keys: fuentes-
       - name: Marca de inicio (consumo)
         run: date -u +%s > /tmp/inicio
       - name: Ciclo

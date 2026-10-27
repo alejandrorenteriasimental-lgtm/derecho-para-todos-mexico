@@ -97,7 +97,7 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
                 g = redactor.generar(sol, transporte, simulador, env=env)
             except redactor.Descartada as e:
                 sol["intentos"] = sol.get("intentos", 0) + 1; sol["ultimo_motivo"] = str(e)[:500]
-                if not e.transitoria or sol["intentos"] >= 3:
+                if not e.transitoria or sol["intentos"] >= (6 if e.transitoria else 3):   # fallas de red: más margen antes de descartar
                     sol["estado"] = "DESCARTADA"; resumen["descartadas"].append(f'{sol["tema_id"]}: {str(e)[:120]}')
                 f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
                 cola.log({"evento": "redaccion_descartada", "solicitud": f.name, "transitoria": e.transitoria, "motivo": str(e)[:300]})
@@ -110,7 +110,7 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             break
 
 
-def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publicar.http_real, env=os.environ, por_formato=1, simulador=None):
+def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_meta=publicar.http_real, env=os.environ, por_formato=1, simulador=None):
     if not cola.adquirir_lock(dueño):
         print("Otra ejecución tiene el bloqueo; salgo sin hacer nada."); return {"resultado": "bloqueado"}
     c = cola.cargar(); resumen = {"redactadas": [], "descartadas": [], "producidas": [], "retenidas": [], "simuladas": [], "publicando": [], "confirmadas": [], "errores": []}
@@ -160,7 +160,11 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
                 pid = t["id"]
                 try:
                     g = _guion(pid)
+                    n0 = len(verificador.RESPALDOS_USADOS)
                     ver = verificador.verificar_guion(g, transporte_fuentes)
+                    if verificador.RESPALDOS_USADOS[n0:]:       # el texto oficial se cotejó contra una copia reciente, no en vivo
+                        ver["copias_respaldo"] = verificador.RESPALDOS_USADOS[n0:]
+                        cola.log({"evento": "fuente_desde_respaldo", "pieza": pid, "copias": ver["copias_respaldo"]})
                     (RAIZ / "piezas" / pid / "salida").mkdir(exist_ok=True)
                     (RAIZ / "piezas" / pid / "salida" / "verificacion.json").write_text(json.dumps(ver, ensure_ascii=False, indent=2))
                     if ver["decision"] in ("RETENER", "RECHAZADA"):
@@ -196,6 +200,7 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_http, http_meta=publ
             _publicar(c, t, modo, env, http_meta, resumen)
         revision.enviar_pendientes(c, env)
     finally:
+        if verificador.RESPALDOS_USADOS: cola.log({"evento": "respaldos_fuentes", "usados": verificador.RESPALDOS_USADOS})
         cola.log({"evento": "fin_ciclo", **{k: len(v) for k, v in resumen.items()}})
         cola.guardar(c); cola.liberar_lock(dueño)
     return resumen

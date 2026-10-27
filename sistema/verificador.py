@@ -52,6 +52,52 @@ def transporte_http(url, timeout=60):
         raise SinConexion(str(e))
 
 
+
+# ---------------- transporte con reintentos y copia de respaldo ----------------
+# diputados.gob.mx a veces no responde desde los servidores de GitHub (26-10-2026: dos ciclos seguidos sin poder bajar la
+# LFPC, aunque el mismo día las pruebas en vivo la descargaron bien). Se reintenta con plazos crecientes y, si aun así no hay
+# conexión, se usa la última copia descargada del MISMO URL oficial si tiene como máximo RESPALDO_DIAS días. Cada uso de la
+# copia queda anotado (RESPALDOS_USADOS) para que la bitácora y la revisión humana sepan de qué fecha es el texto cotejado.
+import os as _os, time as _time
+from pathlib import Path as _Path
+CACHE_FUENTES = _Path(_os.environ.get("DPT_CACHE_FUENTES", _Path(__file__).resolve().parent.parent / "cache_fuentes"))
+RESPALDO_DIAS = 7
+RESPALDOS_USADOS = []
+
+
+def _ruta_cache(url):
+    return CACHE_FUENTES / hashlib.sha256(url.encode()).hexdigest()[:24]
+
+
+def transporte_resiliente(url, timeout=60, base=transporte_http, plazos=(60, 120, 180), espera=5, ahora=None, dormir=_time.sleep):
+    ultimo = None
+    for i, t in enumerate(plazos):
+        try:
+            estado, ctype, datos = base(url, timeout=max(t, timeout))
+        except SinConexion as e:
+            ultimo = e
+            if i < len(plazos) - 1: dormir(espera * (i + 1))
+            continue
+        if estado == 200 and datos:
+            try:
+                r = _ruta_cache(url); r.parent.mkdir(parents=True, exist_ok=True)
+                r.with_suffix(".bin").write_bytes(datos)
+                r.with_suffix(".json").write_text(json.dumps({"url": url, "content_type": ctype, "descargado": (ahora or datetime.now(timezone.utc)).isoformat(),
+                                                              "sha256": hashlib.sha256(datos).hexdigest(), "bytes": len(datos)}))
+            except OSError:
+                pass
+        return estado, ctype, datos
+    r = _ruta_cache(url)
+    try:
+        meta = json.loads(r.with_suffix(".json").read_text()); datos = r.with_suffix(".bin").read_bytes()
+    except (OSError, ValueError):
+        raise SinConexion(f"{ultimo} (sin copia de respaldo)")
+    edad = ((ahora or datetime.now(timezone.utc)) - datetime.fromisoformat(meta["descargado"])).total_seconds() / 86400
+    if meta.get("url") != url or hashlib.sha256(datos).hexdigest() != meta.get("sha256") or edad > RESPALDO_DIAS:
+        raise SinConexion(f"{ultimo} (copia de respaldo no válida o de más de {RESPALDO_DIAS} días)")
+    RESPALDOS_USADOS.append({"url": url, "descargado": meta["descargado"], "sha256": meta["sha256"], "motivo": str(ultimo)})
+    return 200, meta.get("content_type", ""), datos
+
 # ---------------- normalización de texto ----------------
 def _plano(t):
     t = unicodedata.normalize("NFD", t)
