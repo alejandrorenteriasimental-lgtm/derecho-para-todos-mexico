@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-26T17:27:03+00:00",
+      "consultado": "2026-10-27T02:01:27+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -18,7 +18,7 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-26T17:27:32+00:00",
+      "consultado": "2026-10-27T02:01:57+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -32,7 +32,7 @@
     "F3": {
       "fuente": "F3",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-26T17:28:00+00:00",
+      "consultado": "2026-10-27T02:02:26+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -90,6 +90,11 @@
       "regla": "sustento",
       "severidad": "bloqueante",
       "detalle": "No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente."
+    },
+    {
+      "regla": "cobertura",
+      "severidad": "bloqueante",
+      "detalle": "La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
     }
   ]
 }

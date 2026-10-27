@@ -1,0 +1,143 @@
+{
+  "id": "I20261030-T016",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Te dieron 6 días? Puede que te deban más",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T016",
+  "pieza": {
+    "titular": "¿Te dieron 6 días? Puede que te deban más",
+    "bajada": "Depende: el periodo anual de vacaciones no puede ser inferior a doce días laborables si tienes más de un año.",
+    "cita": "que en ningún caso podrá ser inferior a doce días laborables",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 76",
+    "ojo": "Revisa tu ley",
+    "fuente_visible": "Ley Federal del Trabajo, art. 76"
+  },
+  "copy": "De acuerdo con la Ley Federal del Trabajo, las reglas sobre tus días de descanso cambiaron recientemente.\n\nLa Ley Federal del Trabajo, artículo 76, establece que si tienes más de un año de servicios, tus vacaciones pagadas no pueden ser menores a este límite.\n\nGuarda esta información y compártela para que más personas conozcan sus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre el mínimo de días de vacaciones según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "76",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+      "cita": "Ley Federal del Trabajo, artículo 76",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-27"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El periodo anual de vacaciones no puede ser menor a doce días laborables para quienes tienen más de un año de servicios.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te dieron 6 días? Puede que te deban más",
+    "concepto_central": "periodo anual de vacaciones pagadas",
+    "respuesta_corta": "Depende: el periodo anual de vacaciones no puede ser inferior a doce días laborables si tienes más de un año.",
+    "reglas": [
+      {
+        "conclusion": "El periodo anual de vacaciones no puede ser menor a doce días laborables para quienes tienen más de un año de servicios.",
+        "fuente": "F1",
+        "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+        "condiciones": [
+          "tener más de un año de servicios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "76"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Un periodo menor a doce días laborables incumple el mínimo de vacaciones establecido por la ley.",
+        "fuente": "F1",
+        "cita_literal": "en ningún caso podrá ser inferior a doce días laborables",
+        "motivo": ""
+      },
+      {
+        "elemento": "que_hacer",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial no señala qué hacer en caso de recibir menos días.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El artículo analizado no regula este aspecto."
+      },
+      {
+        "elemento": "ante_quien",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial no indica ante qué autoridad acudir.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El artículo analizado no regula este aspecto."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial no establece un plazo para reclamar.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El artículo analizado no regula este aspecto."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no menciona procedimientos de reclamación, autoridades competentes ni plazos para exigir los días de vacaciones."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-27T01:59:25+00:00",
+    "solicitud": "2026-10-30_imagen_T016.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te dieron 6 días? Puede que te deban más",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El periodo anual de vacaciones no puede ser menor a doce días laborables para quienes tienen más de un año de servicios.",
+              "sostenida": "si",
+              "motivo": "El artículo 76 de la Ley Federal del Trabajo establece explícitamente que el periodo anual de vacaciones pagadas no podrá ser inferior a doce días laborables para personas con más de un año de servicios."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

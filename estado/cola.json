@@ -98,6 +98,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T17:27:03+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-27T01:59:25+00:00",
+          "motivo": "verificador actualizado a 0.5.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T02:01:27+00:00",
+          "motivo": "verificación jurídica: RETENER · [sustento] «Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece. · [sustento] «Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
         }
       ],
       "error": null,
@@ -105,8 +117,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-26T17:27:03+00:00",
-        "verificador": "0.4.0"
+        "desde": "2026-10-27T02:01:27+00:00",
+        "verificador": "0.5.0"
       }
     },
     "I20261025-T089": {
@@ -159,6 +171,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T17:29:46+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-27T01:59:25+00:00",
+          "motivo": "verificador actualizado a 0.5.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T02:04:17+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [cobertura] La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
@@ -166,15 +190,15 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-26T17:29:46+00:00",
-        "verificador": "0.4.0"
+        "desde": "2026-10-27T02:04:17+00:00",
+        "verificador": "0.5.0"
       }
     },
     "I20261026-T020": {
       "id": "I20261026-T020",
       "formato": "imagen",
       "huella": "1f41ee457370c4c5ca12ec64d5c48ed466a55c90e65c3162e6516ebadc370da1",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T16:01:54+00:00",
@@ -220,6 +244,12 @@
           "a": "RETENIDO",
           "ts": "2026-10-26T23:12:18+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-27T01:59:25+00:00",
+          "motivo": "verificador actualizado a 0.5.0; se vuelve a verificar"
         }
       ],
       "error": null,
@@ -266,7 +296,7 @@
       "id": "I20261026-T020v2",
       "formato": "imagen",
       "huella": "e90586275b879e88824232f52ef9468ec57bca14e8dd60662be17d0d8004594d",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T17:25:08+00:00",
@@ -276,6 +306,12 @@
           "a": "RETENIDO",
           "ts": "2026-10-27T00:12:04+00:00",
           "motivo": "verificación jurídica: RETENER · [sustento] La conclusión «Un letrero o una política no puede eliminar los derechos que da la ley» cita Ley Federal de Protección al Consumidor, art. 1, cuyo texto oficial no está disponible. · [sustento] La conclusión «El consumidor puede elegir reposición o devolución de lo pagado, más u» cita Ley Federal de Protección al Consumidor, art. 92, cuyo texto oficial no está disponible. · [sustento] La conclusión «Si la tienda ofreció una política, debe respetar las condiciones que o» cita Ley Federal de Protección al Consumidor, art. 7, cuyo texto oficial no está disponible. · [sustento] La conclusión «En ventas fuera del establecimiento el consumidor puede revocar la com» cita Ley Federal de Protección al Consumidor, art. 56, cuyo texto oficial no está disponible."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-27T01:59:25+00:00",
+          "motivo": "verificador actualizado a 0.5.0; se vuelve a verificar"
         }
       ],
       "error": null,
@@ -291,7 +327,7 @@
       "id": "R20261028-T068",
       "formato": "reel",
       "huella": "ff2aee43d6a30fda921c0e2619fb271abab2ae8fb50a64a46ecfbbdebf44549e",
-      "estado": "REVISION_HUMANA",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-27T00:58:12+00:00",
@@ -307,19 +343,55 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-27T01:00:43+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T01:59:25+00:00",
+          "motivo": "rechazo humano: Alejandro Rentería (chat, 26-10-2026 19:27 CDMX) 2026-10-27T01:28:23+00:00 versión c607942b03d912b6 1) El contenido no responde suficientemente la pregunta principal. 2) El artículo 33 de la LFT, por sí solo, no sustenta todas las consecuencias jurídicas que deben explicarse. 3) La referencia a un «recurso legal específico» es vaga. 4) Los subtítulos tapan parte de la cita jurídica."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
+      "retencion": {
+        "tipo": "editorial",
+        "desde": "2026-10-27T01:59:25+00:00"
+      },
       "revision": {
         "version": "c607942b03d912b6",
         "huella_guion": "f4d83fed355c2721f3def25c3a958d289c78da592cdec23eb5138020e3d996e1",
         "huella_archivo": "32c9b6b9868ad2e32bf83240ca52ef89a104a516187c34d07cf8863eb69715c2",
         "preparada": "2026-10-27T01:22:47+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261028-T068",
+        "decision": "RECHAZADA",
+        "version": "c607942b03d912b6",
+        "huella_guion": "f4d83fed355c2721f3def25c3a958d289c78da592cdec23eb5138020e3d996e1",
+        "huella_archivo": "32c9b6b9868ad2e32bf83240ca52ef89a104a516187c34d07cf8863eb69715c2",
+        "por": {
+          "nombre": "Alejandro Rentería (chat, 26-10-2026 19:27 CDMX)"
+        },
+        "fecha": "2026-10-27T01:28:23+00:00",
+        "canal": "chat",
+        "nota": "1) El contenido no responde suficientemente la pregunta principal. 2) El artículo 33 de la LFT, por sí solo, no sustenta todas las consecuencias jurídicas que deben explicarse. 3) La referencia a un «recurso legal específico» es vaga. 4) Los subtítulos tapan parte de la cita jurídica."
       }
+    },
+    "I20261030-T016": {
+      "id": "I20261030-T016",
+      "formato": "imagen",
+      "huella": "943ecd4e2ec0516264ab969ca0104a19a4be32367aae171753de8ebb6aacb084",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-27T01:59:25+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }

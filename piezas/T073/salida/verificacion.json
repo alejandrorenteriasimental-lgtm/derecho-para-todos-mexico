@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-10-26T17:25:08+00:00",
+      "consultado": "2026-10-27T01:59:25+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
@@ -18,7 +18,7 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T17:25:31+00:00",
+      "consultado": "2026-10-27T01:59:50+00:00",
       "http": 200,
       "bytes": 2794133,
       "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
@@ -32,7 +32,7 @@
     "F3": {
       "fuente": "F3",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
-      "consultado": "2026-10-26T17:25:51+00:00",
+      "consultado": "2026-10-27T02:00:09+00:00",
       "http": 200,
       "bytes": 2794133,
       "sha256": "a2d80c4383c5fbc8453cf290c19b7853eb0a5a05d1e366572da384edfafda88c",
@@ -96,6 +96,16 @@
       "regla": "conceptos",
       "severidad": "advertencia",
       "detalle": "El contenido mezcla «deuda_civil» con «fraude» sin declarar la distinción entre ellos."
+    },
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "«Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
+    },
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "«Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
     }
   ]
 }
