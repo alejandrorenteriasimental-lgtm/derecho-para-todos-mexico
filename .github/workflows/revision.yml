@@ -3,8 +3,8 @@
 # nunca corre al mismo tiempo que una producción. Sin TELEGRAM_TOKEN no hace nada.
 name: revision
 on:
-  schedule:
-    - cron: "41 */4 * * *"     # cada 4 horas (Telegram conserva los botones pendientes 24 h)
+  # 26-10-2026: el usuario descartó Telegram; la revisión es por el chat (sistema/decidir.py). Sin horario, para no
+  # gastar minutos de Actions; queda solo la ejecución manual por si algún día se reactiva.
   workflow_dispatch: {}
 concurrency:
   group: ciclo-produccion

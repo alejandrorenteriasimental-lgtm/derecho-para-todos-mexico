@@ -91,8 +91,13 @@ def enviar(c, pid, env=os.environ, http=None):
     tok, e = env.get("TELEGRAM_TOKEN"), estado_tg()
     t = c["trabajos"][pid]; fmt = t.get("formato", "reel")
     ver, hg, ha = version(pid, fmt)
+    if ver and not (t.get("revision") or {}).get("version") == ver:
+        # canal por defecto (decisión del usuario, 26-10-2026): revisión en el chat con Claude. Se fija aquí la versión
+        # exacta que se le mostrará; una decisión solo se aplica a esta versión (sistema/decidir.py).
+        t["revision"] = {"version": ver, "huella_guion": hg, "huella_archivo": ha, "preparada": _ahora(), "canal": "chat"}
+        cola.log({"evento": "revision_preparada", "pieza": pid, "version": ver, "canal": "chat"})
     if not (tok and e.get("chat_id") and ver):
-        cola.log({"evento": "revision_sin_enviar", "pieza": pid, "motivo": "sin bot" if not tok else "sin vínculo" if not e.get("chat_id") else "sin respaldo"})
+        if not ver: cola.log({"evento": "revision_sin_enviar", "pieza": pid, "motivo": "sin respaldo"})
         return False
     g = json.loads((RAIZ / "piezas" / pid / "guion.json").read_text())
     arch = RAIZ / "piezas" / pid / "salida" / principal(pid, fmt)
@@ -190,7 +195,8 @@ def aplicar(c):
 
 def enviar_pendientes(c, env=os.environ, http=None):
     http = http or http_real
-    for t in [x for x in c["trabajos"].values() if x["estado"] == "REVISION_HUMANA" and not (x.get("revision") or {}).get("mensaje_id")]:
+    for t in [x for x in c["trabajos"].values() if x["estado"] == "REVISION_HUMANA" and not (x.get("revision") or {}).get("mensaje_id")
+              and (env.get("TELEGRAM_TOKEN") or not (x.get("revision") or {}).get("version"))]:
         try: enviar(c, t["id"], env, http)
         except Exception as ex: cola.log({"evento": "revision_sin_enviar", "pieza": t["id"], "motivo": str(ex)[:200]})
 
