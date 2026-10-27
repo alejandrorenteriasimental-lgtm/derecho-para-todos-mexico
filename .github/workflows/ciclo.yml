@@ -64,10 +64,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pruebas-vivo-${{ github.run_id }}
-          path: |
-            registro/pruebas/
-            registro/*.json*
-            registro/*.txt
+          path: registro/pruebas/          # solo el reporte: copiar registro/*.json* pisaba las métricas del ciclo al traerlo de vuelta
           if-no-files-found: ignore
   ciclo:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
@@ -140,7 +137,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: pruebas-vivo-${{ github.run_id }}
-          path: registro/
+          path: registro/pruebas/
         continue-on-error: true
       - name: Registrar consumo real del ciclo
         if: always()
