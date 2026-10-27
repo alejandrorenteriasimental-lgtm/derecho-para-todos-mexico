@@ -286,6 +286,33 @@
         "desde": "2026-10-27T00:12:04+00:00",
         "verificador": "0.4.0"
       }
+    },
+    "R20261028-T068": {
+      "id": "R20261028-T068",
+      "formato": "reel",
+      "huella": "ff2aee43d6a30fda921c0e2619fb271abab2ae8fb50a64a46ecfbbdebf44549e",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-27T00:58:12+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-27T01:00:38+00:00",
+          "motivo": "63.2"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-27T01:00:43+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }
