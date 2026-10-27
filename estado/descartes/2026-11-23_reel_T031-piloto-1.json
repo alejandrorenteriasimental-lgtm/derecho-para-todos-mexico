@@ -1,7 +1,7 @@
 {
  "solicitud": "2026-11-23_reel_T031-piloto-1.json",
- "fecha": "2026-10-27T18:04:52+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice.\"]}",
+ "fecha": "2026-10-27T18:38:17+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.\", \"sostenida\": \"si\", \"motivo\": \"La cita literal del artículo 23 de la CPEUM respalda directamente la prohibición de ser juzgado dos vece",
  "historial": [
   {
    "etapa": "analisis",
@@ -11,24 +11,167 @@
   {
    "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La imposibilidad legal de iniciar o continuar un proceso penal cuando »), pero la pieza no lo dice.",
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
-   ]
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Queda prohibido procesar o juzgar a una persona por un delito respecto del cual ya fue juzgada previamente.",
+      "sostenida": "si",
+      "motivo": "La cita literal de F1 respalda la prohibición de ser juzgado dos veces por el mismo delito."
+     },
+     {
+      "conclusion": "El artículo 23 constitucional mandata que nadie puede ser juzgado dos veces por el mismo delito.",
+      "sostenida": "no",
+      "motivo": "La conclusión se atribuye a una fuente (F2) que no fue entregada en los textos oficiales."
+     },
+     {
+      "conclusion": "Se garantiza que ninguna persona sea juzgada en dos ocasiones por la misma conducta delictiva.",
+      "sostenida": "no",
+      "motivo": "La conclusión se atribuye a una fuente (F3) que no fue entregada en los textos oficiales."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Afirmación A2",
+      "problema": "Se utiliza una fuente inexistente (F2) para sustentar la afirmación, violando la regla de usar solo los textos entregados.",
+      "correccion": "Eliminar la referencia a F2 y atribuir la información únicamente a F1."
+     },
+     {
+      "donde": "Afirmación A3",
+      "problema": "Se utiliza una fuente inexistente (F3) para sustentar la afirmación, violando la regla de usar solo los textos entregados.",
+      "correccion": "Eliminar la referencia a F3 y atribuir la información únicamente a F1."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una paráfrasis exacta de la prohibición contenida en el artículo 23 de la Constitución."
+     },
+     {
+      "conclusion": "La prohibición opera de igual manera tanto si la persona resultó absuelta como si fue condenada.",
+      "sostenida": "si",
+      "motivo": "El texto oficial especifica explícitamente que la prohibición aplica 'ya sea que en el juicio se le absuelva o se le condene'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo 'lista', afirmación A2",
+      "problema": "Se atribuye la información a una fuente inexistente ('F2').",
+      "correccion": "Cambiar la fuente 'F2' por 'F1', ya que la información proviene del artículo 23 de la Constitución."
+     },
+     {
+      "donde": "Escena tipo 'titular', afirmación A3",
+      "problema": "Se atribuye la información a una fuente inexistente ('F3').",
+      "correccion": "Cambiar la fuente 'F3' por 'F1'."
+     },
+     {
+      "donde": "Escena tipo 'titular', afirmación A4",
+      "problema": "Se atribuye la información a una fuente inexistente ('F4').",
+      "correccion": "Cambiar la fuente 'F4' por 'F1'."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
-   ]
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una paráfrasis exacta de la prohibición contenida en el artículo 23 constitucional."
+     },
+     {
+      "conclusion": "La prohibición opera de igual manera tanto si la persona resultó absuelta como si fue condenada.",
+      "sostenida": "si",
+      "motivo": "El texto oficial especifica explícitamente que la prohibición aplica 'ya sea que en el juicio se le absuelva o se le condene'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento -> elementos -> items",
+      "problema": "La pieza atribuye la afirmación A2 a una fuente inexistente ('F2').",
+      "correccion": "Cambiar la fuente de la afirmación A2 de 'F2' a 'F1', ya que el texto proviene únicamente de la Constitución Política de los Estados Unidos Mexicanos, artículo 23."
+     },
+     {
+      "donde": "razonamiento -> elementos -> items",
+      "problema": "La pieza atribuye la afirmación A3 a una fuente inexistente ('F3') y la A4 a una fuente inexistente ('F4').",
+      "correccion": "Cambiar las fuentes de las afirmaciones A3 y A4 a 'F1', pues no existen otros textos oficiales proporcionados en el contexto."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
-   ]
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.",
+      "sostenida": "si",
+      "motivo": "La cita literal del artículo 23 de la CPEUM respalda directamente la prohibición de ser juzgado dos veces por el mismo delito."
+     },
+     {
+      "conclusion": "La prohibición de juzgar dos veces opera de igual manera tanto si la persona resultó absuelta como si fue condenada.",
+      "sostenida": "si",
+      "motivo": "El texto oficial especifica explícitamente 'ya sea que en el juicio se le absuelva o se le condene'."
+     },
+     {
+      "conclusion": "No se puede someter a nadie a un segundo juicio por la misma conducta, sin importar el resultado previo.",
+      "sostenida": "si",
+      "motivo": "Es una paráfrasis correcta de la prohibición constitucional contenida en el texto proporcionado."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "afirmación A2",
+      "problema": "Referencia a fuente inexistente. La afirmación A2 indica que la fuente es 'F2', pero en los textos entregados solo existe 'F1'.",
+      "correccion": "Cambiar la referencia de la fuente de 'F2' a 'F1'."
+     },
+     {
+      "donde": "afirmación A3",
+      "problema": "Referencia a fuente inexistente. La afirmación A3 indica que la fuente es 'F3', pero en los textos entregados solo existe 'F1'.",
+      "correccion": "Cambiar la referencia de la fuente de 'F3' a 'F1'."
+     },
+     {
+      "donde": "afirmación A4",
+      "problema": "Referencia a fuente inexistente. La afirmación A4 indica que la fuente es 'F4', pero en los textos entregados solo existe 'F1'.",
+      "correccion": "Cambiar la referencia de la fuente de 'F4' a 'F1'."
+     }
+    ]
+   }
   }
  ]
 }

@@ -1,71 +1,41 @@
 {
  "tema_id": "T093",
  "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
- "fecha": "2026-10-27T18:06:30+00:00",
- "objetado": true,
+ "fecha": "2026-10-27T18:44:16+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
-  "concepto_central": "hacerse justicia por sí misma",
-  "respuesta_corta": "No. La Constitución prohíbe que cualquier persona se haga justicia por cuenta propia o utilice la violencia para reclamar sus derechos.",
+  "concepto_central": "justicia por propia mano",
+  "respuesta_corta": "No: ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar su derecho.",
   "reglas": [
    {
-    "conclusion": "Existe una prohibición constitucional absoluta sobre el uso de la fuerza o la justicia privada para resolver conflictos.",
+    "conclusion": "Está prohibido hacerse justicia por propia mano o usar la violencia para reclamar derechos.",
     "fuente": "F1",
     "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
-    "condiciones": [
-     "Aplica para cualquier persona"
-    ],
-    "excepciones": [
-     "Ninguna mencionada en este artículo"
-    ]
+    "condiciones": [],
+    "excepciones": []
    }
   ],
   "elementos": [
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "Cualquier intento de justicia por propia mano es ilegal y violenta el derecho a que la justicia sea administrada exclusivamente por el Estado.",
+    "respuesta": "Hacerse justicia por propia mano está prohibido y no se puede ejercer violencia.",
     "fuente": "F1",
     "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho."
    },
    {
-    "elemento": "que_hacer",
-    "estado": "cubierto",
-    "respuesta": "Se debe acudir a los tribunales establecidos para que resuelvan el conflicto de manera imparcial.",
-    "fuente": "F1",
-    "cita_literal": "Toda persona tiene derecho a que se le administre justicia por tribunales que estarán expeditos para impartirla en los plazos y términos que fijen las leyes"
-   },
-   {
     "elemento": "ante_quien",
     "estado": "cubierto",
-    "respuesta": "La autoridad competente son los tribunales, los cuales deben emitir resoluciones de forma gratuita.",
+    "respuesta": "La justicia debe solicitarse ante los tribunales expeditos para impartirla.",
     "fuente": "F1",
-    "cita_literal": "Toda persona tiene derecho a que se le administre justicia por tribunales que estarán expeditos para impartirla... Su servicio será gratuito"
-   },
-   {
-    "elemento": "plazo",
-    "estado": "cubierto",
-    "respuesta": "La justicia debe impartirse en los plazos legales; en materia tributaria, los tribunales deben resolver en un máximo de seis meses.",
-    "fuente": "F1",
-    "cita_literal": "deberán resolver en un máximo de seis meses, contados a partir del conocimiento del asunto por parte de la autoridad competente."
+    "cita_literal": "Toda persona tiene derecho a que se le adm inistre justicia por tribunales que estarán expeditos para impartirla en los plazos y términos que fijen las leyes"
    }
   ],
-  "interpretaciones": [
-   {
-    "afirmacion": "El acceso a la justicia no debe tener un costo directo para el ciudadano.",
-    "condicion": "Siempre que se trate de la administración de justicia por tribunales estatales.",
-    "base": "F1: «quedando, en consecuencia, prohibidas las costas judiciales»."
-   }
-  ],
-  "distinciones": [
-   {
-    "a": "hacerse justicia por sí misma",
-    "b": "administración de justicia",
-    "diferencia": "La primera es una acción privada prohibida por la ley, mientras que la segunda es una obligación del Estado a través de tribunales."
-   }
-  ],
-  "limites": "El texto oficial no establece sanciones penales específicas por violar esta prohibición, ni menciona la figura de la legítima defensa como excepción en este artículo."
- },
- "motivo_objetado": "auditor 27-10 (corrida 40555659141): «ilegal… exclusivamente por el Estado» parcialmente sostenida"
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no señala las sanciones penales o administrativas específicas por infringir la prohibición de hacerse justicia por propia mano.",
+  "fuentes_irrelevantes": []
+ }
 }

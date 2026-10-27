@@ -1,8 +1,48 @@
 {
  "solicitud": "2026-11-24_reel_T015-piloto-1.json",
- "fecha": "2026-10-27T18:05:56+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El incumplimiento del pago del aguinaldo constituye una viol») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "fecha": "2026-10-27T18:43:48+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"El aguinaldo anual debe pagarse antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o la parte proporcional correspondiente al tiempo laborado.\", \"sostenida\": \"si\", \"motivo\": \"La conclusión integra co",
  "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El aguinaldo debe pagarse antes del 20 de diciembre y debe equivaler a por lo menos 15 días de salario o a la parte proporcional según el tiempo trabajado.",
+      "sostenida": "si",
+      "motivo": "La conclusión sintetiza correctamente los dos supuestos del artículo 87: el pago anual de 15 días y el pago proporcional para quienes no cumplen el año."
+     },
+     {
+      "conclusion": "El cálculo del pago proporcional aplica sin importar si el trabajador sigue activo o si la relación laboral concluyó antes de diciembre.",
+      "sostenida": "si",
+      "motivo": "Se ajusta a la literalidad del texto que menciona 'independientemente de que se encuentren laborando o no en la fecha de liquidación'."
+     },
+     {
+      "conclusion": "Los trabajadores sin el año cumplido reciben parte proporcional sin importar si siguen laborando.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión es correcta en su esencia, pero la pieza atribuye esta afirmación a una fuente inexistente ('F2') en lugar de la fuente oficial proporcionada (F1)."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo 'titular' (segunda aparición)",
+      "problema": "Error de referencia de fuente. La afirmación A2 indica que la fuente es 'F2', pero el texto oficial proporcionado es únicamente 'F1'.",
+      "correccion": "Cambiar la referencia de la fuente de 'F2' a 'F1'."
+     }
+    ]
+   }
+  },
   {
    "etapa": "analisis",
    "intento": 0,
@@ -22,9 +62,79 @@
   {
    "etapa": "analisis",
    "intento": 1,
-   "errores": [
-    "[cobertura] El elemento «efecto» («El incumplimiento del pago del aguinaldo constituye una viol») no trae una cita literal que esté en el texto oficial de su fuente."
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[sustento] «Menos de un año trabajado» menciona un plazo (1 ano) que no aparece en los artículos citados."
    ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o la parte proporcional correspondiente al tiempo laborado.",
+      "sostenida": "parcial",
+      "motivo": "La cita literal proporcionada en este bloque no incluye el fragmento que sustenta el derecho a la parte proporcional, limitándose solo al pago de los quince días."
+     },
+     {
+      "conclusion": "Las personas que no hayan cumplido el año de servicios tienen derecho a la parte proporcional del aguinaldo.",
+      "sostenida": "no",
+      "motivo": "La conclusión se atribuye a una fuente denominada 'F2', la cual no existe en los textos oficiales entregados para la auditoría."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento.reglas[0]",
+      "problema": "La cita literal es insuficiente para respaldar la totalidad de la conclusión redactada en ese objeto.",
+      "correccion": "Extender la 'cita_literal' para incluir: 'Los que no hayan cumplido el año de servicios... tendrán derecho a que se les pague la parte proporcional del mismo'."
+     },
+     {
+      "donde": "escenas[5].afirmaciones[0]",
+      "problema": "Error de referencia de fuente (alusión a 'F2' cuando la información proviene de 'F1').",
+      "correccion": "Cambiar el valor de 'fuente' de 'F2' a 'F1'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o la parte proporcional correspondiente al tiempo laborado.",
+      "sostenida": "si",
+      "motivo": "La conclusión integra correctamente el derecho al pago antes del 20 de diciembre, el monto mínimo de quince días y la regla de la parte proporcional para quienes no cumplen el año."
+     },
+     {
+      "conclusion": "Quienes no cumplen el año reciben la parte proporcional sin importar si laboran en la fecha de liquidación.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite mencionar que el derecho a la parte proporcional aplica 'conforme al tiempo que hubieren trabajado', que es la condición técnica para el cálculo."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "escenas -> tipo: titular (segunda aparición)",
+      "problema": "La afirmación A2 cita una fuente inexistente ('F2') para sustentar el derecho a la parte proporcional.",
+      "correccion": "Cambiar la fuente de 'F2' a 'F1' (Ley Federal del Trabajo, artículo 87)."
+     }
+    ]
+   }
   }
  ]
 }

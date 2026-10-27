@@ -1,0 +1,46 @@
+{
+ "tema_id": "T015",
+ "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+ "fecha": "2026-10-27T18:43:48+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+  "concepto_central": "aguinaldo",
+  "respuesta_corta": "Depende: se debe pagar antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o su parte proporcional.",
+  "reglas": [
+   {
+    "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o la parte proporcional correspondiente al tiempo laborado.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+    "condiciones": [
+     "por lo menos quince días de salario",
+     "conforme al tiempo que hubieren trabajado"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe pagar un aguinaldo anual equivalente a quince días de salario, por lo menos, antes del 20 de diciembre.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Quienes no hayan cumplido el año de servicios tienen derecho a la parte proporcional, sin importar si laboran o no en la fecha de liquidación.",
+    "fuente": "F1",
+    "cita_literal": "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no detallan el procedimiento específico para exigir el pago ni las vías jurídicas concretas en caso de incumplimiento, más allá de la existencia general de sanciones por violaciones a las normas de trabajo.",
+  "fuentes_irrelevantes": [
+   "F2"
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "tema_id": "T015",
+ "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+ "fecha": "2026-10-27T18:41:44+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+  "concepto_central": "aguinaldo",
+  "respuesta_corta": "Depende del tiempo trabajado: se paga antes del 20 de diciembre y equivale a por lo menos 15 días de salario o la parte proporcional.",
+  "reglas": [
+   {
+    "conclusion": "El aguinaldo debe pagarse antes del 20 de diciembre y debe equivaler a por lo menos 15 días de salario o a la parte proporcional según el tiempo trabajado.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+    "condiciones": [
+     "Aplica a los trabajadores.",
+     "Si no han cumplido el año de servicios, se paga proporcional al tiempo trabajado."
+    ],
+    "excepciones": [
+     "Ninguna excepción sobre el derecho al cobro proporcional aunque no estén laborando a la fecha de liquidación."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El aguinaldo se debe pagar antes del 20 de diciembre y su monto equivale como mínimo a 15 días de salario.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Quienes no hayan cumplido un año de servicios tienen derecho al pago proporcional conforme al tiempo que hubieren trabajado.",
+    "fuente": "F1",
+    "cita_literal": "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El cálculo del pago proporcional aplica sin importar si el trabajador sigue activo o si la relación laboral concluyó antes de diciembre.",
+    "condicion": "Cuando el trabajador no haya cumplido el año de servicios a la fecha de liquidación o ya no se encuentre laborando.",
+    "base": "Artículo 87 de la LFT (F1), al señalar que aplica independientemente de que se encuentren laborando o no."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "aguinaldo completo (15 días)",
+    "b": "aguinaldo proporcional",
+    "diferencia": "El aguinaldo completo corresponde a quienes tienen un año o más de servicios, mientras que el proporcional aplica para quienes no han cumplido el año conforme al tiempo trabajado."
+   }
+  ],
+  "limites": "El texto oficial F1 no menciona acciones específicas, autoridades ni plazos para reclamar en caso de falta de pago del aguinaldo.",
+  "fuentes_irrelevantes": []
+ }
+}
