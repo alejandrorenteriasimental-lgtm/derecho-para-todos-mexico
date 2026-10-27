@@ -378,10 +378,13 @@ _NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis":
         "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "noventa": 90, "cien": 100}   # la ley escribe los números con letra
 
 
-def _plazos(p):
+def _plazos(p, base=False):
+    """Plazos «número + unidad». En el texto legal, «el año de servicios» o «el mes» también cuentan como 1 (la pieza
+    puede decir «un año» si la ley dice «el año»)."""
     out = set()
-    for n, u in re.findall(r"\b(\d{1,3}|" + "|".join(_NUM) + r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b", p):
-        out.add((_NUM.get(n, None) or int(n), {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}.get(u, u)))
+    nums = dict(_NUM, **({"el": 1} if base else {}))
+    for n, u in re.findall(r"\b(\d{1,3}|" + "|".join(nums) + r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b", p):
+        out.add((nums.get(n, None) or int(n), {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}.get(u, u)))
     return out
 
 
@@ -395,7 +398,7 @@ def consecuencias_sin_sustento(cuerpo, textos_citados):
         for nombre, pat in CONSECUENCIAS.items():
             if re.search(pat, p) and not re.search(pat, base):
                 out.append(f"«{frase.strip()[:80]}» habla de {nombre}, pero ninguno de los artículos que cita la pieza lo establece.")
-        for pl in _plazos(p) - _plazos(base):
+        for pl in _plazos(p) - _plazos(base, base=True):
             out.append(f"«{frase.strip()[:80]}» menciona un plazo ({pl[0]} {pl[1]}) que no aparece en los artículos citados.")
     return list(dict.fromkeys(out))
 

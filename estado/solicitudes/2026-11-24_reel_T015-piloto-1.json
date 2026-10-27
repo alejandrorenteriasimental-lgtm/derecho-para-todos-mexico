@@ -12,12 +12,12 @@
   "lote": "piloto-1",
   "motivo_seleccion": "El art. 87 LFT fija plazo (antes del 20 de diciembre), monto mínimo (15 días de salario) y la parte proporcional. Se reformula la pregunta del catálogo («¿llega después del 20 de diciembre?»), que se descartó porque el texto no fija la consecuencia del pago tardío.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-27T18:03:28Z",
   "pieza_id": "R20261124-T015",
   "archivo": "2026-11-24_reel_T015-piloto-1.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"El aguinaldo anual debe pagarse antes del 20 de diciembre y equivale a quince días de salario, por lo menos, o la parte proporcional correspondiente al tiempo laborado.\", \"sostenida\": \"si\", \"motivo\": \"La conclusión integra co",
   "ultima_categoria": "juridico",
   "huella_entrada": "37b4988d8367a31f",
@@ -28,6 +28,13 @@
       "fecha_cambio": "2026-10-27",
       "motivo": "reabierta tras corregir la causa del sistema (números con letra; «contenido» en obligación/derecho; paráfrasis de la cita; reanálisis ante objeción al análisis)",
       "motivo_anterior": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El incumplimiento del pago del aguinaldo constituye una viol») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    },
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-27",
+      "motivo": "reabierta: el auditor recibía fuentes con otra numeración (F2…F4 inexistentes) y «un año» frente a «el año»; corregido en el sistema",
+      "motivo_anterior": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"El aguinaldo anual debe pagarse antes del 20 de d"
     }
   ]
 }

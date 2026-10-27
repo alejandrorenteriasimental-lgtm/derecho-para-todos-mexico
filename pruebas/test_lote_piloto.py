@@ -162,3 +162,22 @@ def test_objecion_a_la_respuesta_corta_del_analisis_provoca_reanalisis():
             "respuesta_corta": "Cualquier intento de justicia por propia mano es ilegal y violenta el derecho a que la justicia sea administrada exclusivamente por el Estado."}
     a = {"conclusiones": [{"conclusion": "Cualquier intento de justicia por propia mano es ilegal y violenta el derecho a que la justicia sea administrada exclusivamente por el Estado.", "sostenida": "parcial"}]}
     assert redactor._objeta_mapa(a, mapa)
+
+
+def test_un_anio_frente_a_el_anio_de_la_ley():
+    """R20261124-T015 (2.º ciclo): «menos de un año trabajado» frente a «no hayan cumplido el año de servicios» (art. 87 LFT)."""
+    ley = "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no"
+    assert razonamiento.consecuencias_sin_sustento("Si tienes menos de un año trabajado, te toca la parte proporcional.", [ley]) == []
+
+
+def test_el_auditor_ve_cada_afirmacion_con_el_articulo_exacto():
+    """R20261123-T031 (2.º ciclo): el auditor objetó tres veces «fuente inexistente F2/F3/F4»: las fichas del guion
+    (una por cita) no coincidían con la numeración de los textos que recibía."""
+    fuentes = {"F1": {"documento": "CPEUM", "articulo": "23", "texto_oficial": "Nadie puede ser juzgado dos veces por el mismo delito."}}
+    guion = {"titulo": "¿t?", "fuentes": {f"F{i}": {"documento": "CPEUM", "articulo": "23"} for i in (1, 2, 3)},
+             "escenas": [{"afirmaciones": [{"id": "A1", "fuente": "F1"}, {"id": "A2", "fuente": "F2"}]}, {"afirmaciones": [{"id": "A3", "fuente": "F3"}]}],
+             "razonamiento": {"reglas": [{"fuente": "F1", "conclusion": "x"}]}}
+    g, textos = redactor._para_auditor(guion, fuentes)
+    refs = {a["fuente"] for e in g["escenas"] for a in e["afirmaciones"]} | {g["razonamiento"]["reglas"][0]["fuente"]}
+    assert refs == {"CPEUM, artículo 23"} and textos.startswith("CPEUM, artículo 23:")
+    assert guion["escenas"][0]["afirmaciones"][1]["fuente"] == "F2"          # el guion real no se modifica

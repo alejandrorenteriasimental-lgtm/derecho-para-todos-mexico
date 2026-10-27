@@ -573,9 +573,34 @@ def _mapa_fijo(mapa, fuentes):
             if k not in ("fuentes_irrelevantes",)}, usadas
 
 
+def _para_auditor(guion, fuentes):
+    """El guion numera sus fichas por cita (F1…Fn) y el análisis numera los artículos (F1…Fm): son dos numeraciones
+    distintas. Antes el auditor veía «F2» en una afirmación sin un texto «F2» y objetaba una fuente inexistente (piloto
+    27-10: T031 y T015 se descartaron así). Ahora toda referencia se reescribe con la etiqueta del artículo."""
+    etiqueta = lambda doc, art: f"{doc}, artículo {art}"
+    textos = {etiqueta(f["documento"], f["articulo"]): f for f in fuentes.values()}
+    fichas = guion.get("fuentes") or {}
+    if isinstance(fichas, list): fichas = {f.get("id"): f for f in fichas}
+    por_ficha = {fid: etiqueta(f.get("documento"), f.get("articulo")) for fid, f in fichas.items() if isinstance(f, dict)}
+    por_fuente = {fid: etiqueta(f["documento"], f["articulo"]) for fid, f in fuentes.items()}
+    g = copy.deepcopy({k: guion[k] for k in ("pregunta_original", "titulo", "razonamiento", "escenas", "pieza", "copy") if k in guion})
+    for e in g.get("escenas") or []:
+        for a in e.get("afirmaciones") or []:
+            if a.get("fuente") in por_ficha: a["fuente"] = por_ficha[a["fuente"]]
+    rz = g.get("razonamiento") or {}
+    for x in [*(rz.get("reglas") or []), *(rz.get("elementos") or [])]:
+        if isinstance(x, dict) and x.get("fuente") in por_fuente: x["fuente"] = por_fuente[x["fuente"]]
+    pz = g.get("pieza") or {}
+    if pz.get("fuente_cita") in por_ficha: pz["fuente_cita"] = por_ficha[pz["fuente_cita"]]
+    texto = "\n\n".join(f'{et}:\n{f["texto_oficial"]}' for et, f in textos.items())
+    return g, texto
+
+
 def auditar_ia(guion, fuentes, auditor, simulador=None):
-    pieza = json.dumps({k: guion[k] for k in ("pregunta_original", "titulo", "razonamiento", "escenas", "pieza", "copy") if k in guion}, ensure_ascii=False)[:12000]
-    return auditor.completar(REGLAS_COMUNES, AUDITAR.format(textos=_textos(fuentes), pieza=pieza), simulador)
+    g, textos = _para_auditor(guion, fuentes)
+    pieza = json.dumps(g, ensure_ascii=False)[:12000]
+    return auditor.completar(REGLAS_COMUNES, AUDITAR.format(textos=textos, pieza=pieza) +
+                             "\n\nLas fuentes se identifican por documento y artículo; cada afirmación indica el artículo exacto que la sostiene.", simulador)
 
 
 DONDE_RESPUESTA = {"reel": "en la escena «titular» que sigue al gancho, y otra vez en la conclusión",
