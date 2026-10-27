@@ -35,6 +35,8 @@ def test_aprobar_y_rechazar_por_chat(en_revision):
     ciclo.ciclo("t", fuentes_ok, env=env, simulador=sim)
     t = cola.cargar()["trabajos"]
     assert t[a["id"]]["estado"] == "SIMULADO" and t[r["id"]]["estado"] == "RETENIDO"
+    sols = [json.loads(f.read_text()) for f in (revision.RAIZ / "estado" / "solicitudes").glob("*.json")]
+    assert all(s["estado"] == "DESCARTADA" and "Rechazo humano" in s["motivo_cierre"] for s in sols if s.get("pieza") == r["id"])
     for d in (json.loads(l) for l in revision.REGISTRO.read_text().splitlines()):
         assert d["canal"] == "chat" and d["por"]["nombre"] == "Alejandro Rentería (chat)" and d["fecha"] and len(d["version"]) == 16
 

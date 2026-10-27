@@ -168,6 +168,17 @@ def recoger(c, env=os.environ, http=None):
     return hechas
 
 
+def _cerrar_solicitud(pid, motivo):
+    """La solicitud de una pieza rechazada deja de ocupar su fecha: si no, el planificador descartaría la versión corregida."""
+    carpeta = RAIZ / "estado" / "solicitudes"
+    for f in carpeta.glob("*.json") if carpeta.exists() else []:
+        try: d = json.loads(f.read_text())
+        except ValueError: continue
+        if d.get("pieza") == pid and d.get("estado") not in ("DESCARTADA", "SUPERSEDIDA"):
+            d["historial"] = d.get("historial", []) + [{"estado": d["estado"], "a": "DESCARTADA", "fecha_cambio": _ahora()[:10]}]
+            d.update(estado="DESCARTADA", motivo_cierre=motivo); f.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+
+
 def aplicar(c):
     """Aplica la última decisión registrada de cada pieza en REVISION_HUMANA, solo si es para la versión vigente."""
     if not REGISTRO.exists(): return []
@@ -189,6 +200,7 @@ def aplicar(c):
         else:
             cola.mover(c, pid, "RETENIDO", f'rechazo humano: {quien} {d["fecha"]} versión {d["version"]} {d.get("nota", "")}'.strip())
             t["retencion"] = {"tipo": "editorial", "desde": cola.ahora()}
+            _cerrar_solicitud(pid, f'Rechazo humano de {pid} (versión {d["version"]}): {d.get("nota", "")}'[:500])
         t["decision_humana"] = d; aplicadas.append(pid)
     return aplicadas
 
