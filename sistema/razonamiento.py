@@ -260,6 +260,7 @@ ELEMENTOS = {
     "ante_quien": "ante qué autoridad u órgano concreto se hace",
     "plazo": "en qué plazo debe hacerse",
     "definicion": "qué es y qué alcance tiene el concepto",
+    "contenido": "qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe",
     "condiciones": "bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna)",
     "excepcion": "qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna)",
     "via": "cómo se hace: qué trámite, solicitud o acción concreta",
@@ -272,9 +273,9 @@ TIPOS_PREGUNTA = (     # en orden: gana el primer patrón que coincide
     ("excepcion", r"\bsiempre\b|\ben todos los casos\b|\bhay excepciones\b|\bsin excepcion\b",
      ("efecto", "excepcion")),
     ("derecho", r"\b(tengo|tienes|tiene|tenemos|tienen) derecho\b|\b(me|te|le|nos|les) pueden? (volver a |obligar|detener|juzgar|encarcelar|despedir|cobrar)",
-     ("efecto", "condiciones", "excepcion")),
+     ("contenido", "condiciones", "excepcion")),
     ("obligacion", r"\b(cuando|cuanto|cuantos|cuantas)\b.*\b(deben|debe|tienen que|tiene que|pagan|paga|corresponden?|tocan?)\b|\b(estan?|esta) obligad",
-     ("efecto", "condiciones")),
+     ("contenido", "condiciones")),
     ("legalidad", r"\bes (legal|ilegal|valido|valida|delito)\b|\besta (permitido|prohibido)\b|\bse (puede|vale)\b|\bpueden?\b|\b(tienen?|tienes|tengo) que\b|\bestan? obligad",
      ("efecto",)),
     ("definicion", r"\bque (es|son|significa|significan)\b|\ben que consiste\b|\bcual es la diferencia\b|\bdiferencia entre\b",
@@ -331,10 +332,12 @@ def revisar_cobertura(g, textos):
             H.append({"regla": "cobertura", "severidad": "bloqueante",
                       "detalle": f"El elemento «{k}» («{str(e.get('respuesta', ''))[:60]}») no trae una cita literal que esté en el texto oficial de su fuente."}); continue
         if visible is not None:
-            clave = [w for w in plano(e.get("respuesta", "")).split() if len(w) > 4][:6]
-            if clave and sum(1 for w in clave if w in visible) < max(2, (len(clave) + 1) // 2):
+            def dicho(texto):          # se acepta con sus palabras o con las de la cita oficial (paráfrasis legítima)
+                clave = [w for w in plano(texto).split() if len(w) > 4][:6]
+                return not clave or sum(1 for w in clave if w in visible) >= max(2, (len(clave) + 1) // 2)
+            if not (dicho(e.get("respuesta", "")) or (e.get("cita_literal") and dicho(e["cita_literal"]))):
                 H.append({"regla": "cobertura", "severidad": "bloqueante",
-                          "detalle": f"El análisis responde {ELEMENTOS[k]} («{str(e.get('respuesta', ''))[:70]}»), pero la pieza no lo dice."})
+                          "detalle": f"El análisis responde {ELEMENTOS[k]} («{str(e.get('respuesta', ''))[:160]}»), pero la pieza no lo dice: agrégalo al texto visible."})
     return H
 
 
@@ -369,8 +372,10 @@ CONSECUENCIAS = {
     "Profeco": r"\bprofeco|\bprocuraduria federal del consumidor", "Ministerio Público": r"\bministerio publico",
     "demanda": r"\bdemand", "multa": r"\bmulta", "prisión": r"prision|carcel|encarcel", "amparo": r"\bamparo", "nulidad": r"\bnul[ao]s?\b|\bnulidad",
 }
-_NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10, "quince": 15,
-        "treinta": 30, "sesenta": 60, "noventa": 90}
+_NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10,
+        "once": 11, "doce": 12, "trece": 13, "catorce": 14, "quince": 15, "dieciseis": 16, "diecisiete": 17, "dieciocho": 18,
+        "diecinueve": 19, "veinte": 20, "veintiun": 21, "veintiuno": 21, "veintidos": 22, "veinticinco": 25, "treinta": 30,
+        "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "noventa": 90, "cien": 100}   # la ley escribe los números con letra
 
 
 def _plazos(p):

@@ -12,13 +12,22 @@
   "lote": "piloto-1",
   "motivo_seleccion": "Una sola norma constitucional, federal, vigente y de texto directo; sin variación estatal.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-27T18:03:28Z",
   "pieza_id": "R20261123-T031",
   "archivo": "2026-11-23_reel_T031-piloto-1.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "f97a1bb208061f23"
+  "huella_entrada": "f97a1bb208061f23",
+  "historial": [
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-27",
+      "motivo": "reabierta tras corregir la causa del sistema (números con letra; «contenido» en obligación/derecho; paráfrasis de la cita; reanálisis ante objeción al análisis)",
+      "motivo_anterior": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron d"
+    }
+  ]
 }

@@ -34,7 +34,7 @@ class Descartada(Exception):
 
 
 JURIDICAS = ("[cobertura]", "[sustento]", "[conceptos]", "[condiciones]", "[respuesta]", "[tema]", "[mapa]", "[jurisprudencia]", "INSUFICIENTE")
-PUNTUALES = ("demasiado larg", "más de ", "línea de título", "[vaguedad]", "narración de ")   # se corrigen sin regenerar
+PUNTUALES = ("demasiado larg", "más de ", "línea de título", "[vaguedad]", "narración de ", "pero la pieza no lo dice")   # se corrigen sin regenerar
 
 
 def categoria_de(motivo, transitoria=False, errores=None):
@@ -585,8 +585,12 @@ DONDE_RESPUESTA = {"reel": "en la escena «titular» que sigue al gancho, y otra
 
 def _objeta_mapa(a, mapa):
     """¿El auditor declara no sostenida (total o parcialmente) una conclusión del análisis? Entonces el error está en la
-    etapa 1 y se corrige el análisis, no solo la redacción."""
+    etapa 1 y se corrige el análisis, no solo la redacción. Se compara contra todo lo que el análisis afirma (reglas,
+    respuesta corta, elementos e interpretaciones), porque la pieza viaja con el análisis y el redactor no puede cambiarlo
+    (piloto 27-10: la objeción repetida a «es ilegal… exclusivamente por el Estado» no se corregía redactando)."""
     concl = [str(r.get("conclusion", "")) for r in mapa.get("reglas", []) if isinstance(r, dict)]
+    concl += [str(mapa.get("respuesta_corta", ""))] + [str(e.get("respuesta", "")) for e in mapa.get("elementos", []) or [] if isinstance(e, dict)]
+    concl += [json.dumps(x, ensure_ascii=False) if isinstance(x, dict) else str(x) for x in mapa.get("interpretaciones", []) or []]
     for x in a.get("conclusiones", []) or []:
         if str(x.get("sostenida", "si")).lower() != "si" and any(razonamiento._coincide(str(x.get("conclusion", "")), c) for c in concl):
             return True
@@ -595,7 +599,8 @@ def _objeta_mapa(a, mapa):
 
 REPARAR = """Tu borrador tiene SOLO estos problemas puntuales:
 - {errores}
-Corrige únicamente esos campos. No cambies el resto, no agregues afirmaciones jurídicas nuevas ni cambies citas literales.
+Corrige únicamente esos campos. No cambies el resto, no agregues afirmaciones jurídicas nuevas ni cambies citas literales
+(excepción: si el problema dice que falta en la pieza algo del análisis aprobado, agrégalo con esas mismas palabras o las de su cita).
 Devuelve: {{"cambios": [{{"escena": 3, "campo": "items", "valor": ["…"]}}, {{"campo": "titular", "valor": "…"}}]}}
 ("escena" es el índice en "escenas"; omítelo para campos de la pieza gráfica). Borrador:
 {borrador}"""

@@ -35,7 +35,7 @@ def test_tipo_fijado_por_el_plan_tiene_prioridad():
 
 def test_pregunta_de_derecho_exige_condiciones_y_excepciones():
     g = {"pregunta_original": "¿Te pueden volver a juzgar por el mismo delito?", "_solo_analisis": True,
-         "razonamiento": {"elementos": [{"elemento": "efecto", "estado": "cubierto", "fuente": "F1", "respuesta": "no",
+         "razonamiento": {"elementos": [{"elemento": "contenido", "estado": "cubierto", "fuente": "F1", "respuesta": "no",
                                           "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito"}],
                           "reglas": [{"fuente": "F1", "ref": {"documento": "CPEUM", "articulo": "23"}}]}}
     textos = {("CPEUM", "23"): "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene."}
@@ -127,3 +127,38 @@ def test_modelo_con_5xx_repetidos_no_se_vuelve_a_llamar_en_el_ciclo(tmp_path, mo
     m = modelos.Modelo("auditor", cfg, {"GEMINI_API_KEY": "x"}, archivo_uso=tmp_path / "uso.jsonl")
     assert m.completar("s", "u") == {"ok": 1} and m.completar("s", "u") == {"ok": 1}
     assert llamadas == ["m-caido", "m-caido", "m-bien", "m-bien"]
+
+
+# ---------- regresiones del primer ciclo del piloto (27-10-2026, corrida 40555659141) ----------
+def test_plazo_escrito_con_letra_en_la_ley_no_es_falta_de_sustento():
+    """I20261123-T016 se descartó: «12 días» frente a «doce días laborables» del art. 76 LFT."""
+    ley = "disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables"
+    assert razonamiento.consecuencias_sin_sustento("El mínimo es de 12 días laborables tras el primer año.", [ley]) == []
+    assert razonamiento.consecuencias_sin_sustento("Te tocan 30 días.", [ley])          # una cifra que no está sí se bloquea
+
+
+def test_obligacion_pide_contenido_no_una_consecuencia_inventada():
+    """R20261124-T015: con «efecto» el modelo inventó que el pago tardío «constituye una violación»."""
+    tipo, req = razonamiento.tipo_pregunta("¿Cuándo y cuánto te deben pagar de aguinaldo?", "obligacion")
+    assert "contenido" in req and "efecto" not in req
+
+
+def test_condicion_dicha_con_las_palabras_de_la_cita_cuenta_como_dicha():
+    """R20261123-T031: la pieza decía «ya sea que te absuelvan o te condenen» y el control exigía «declarados inocentes»."""
+    cita = "ya sea que en el juicio se le absuelva o se le condene"
+    g = {"pregunta_original": "¿Te pueden volver a juzgar por el mismo delito?", "tipo_pregunta": "derecho",
+         "escenas": [{"tipo": "texto", "texto": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene."}],
+         "razonamiento": {"reglas": [{"fuente": "F1", "ref": {"documento": "CPEUM", "articulo": "23"}}], "elementos": [
+             {"elemento": "contenido", "estado": "cubierto", "fuente": "F1", "respuesta": "Nadie puede ser juzgado dos veces por el mismo delito", "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito"},
+             {"elemento": "condiciones", "estado": "cubierto", "fuente": "F1", "respuesta": "La protección aplica tanto para quienes fueron declarados inocentes como condenados", "cita_literal": cita},
+             {"elemento": "excepcion", "estado": "no_aplica", "motivo": "el artículo no prevé ninguna excepción"}]}}
+    textos = {("CPEUM", "23"): "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene."}
+    assert razonamiento.revisar_cobertura(g, textos) == [], razonamiento.revisar_cobertura(g, textos)
+
+
+def test_objecion_a_la_respuesta_corta_del_analisis_provoca_reanalisis():
+    """R20261125-T093: el auditor objetó tres veces «es ilegal… exclusivamente por el Estado», que venía del análisis."""
+    mapa = {"reglas": [{"conclusion": "Nadie puede hacerse justicia por sí misma"}],
+            "respuesta_corta": "Cualquier intento de justicia por propia mano es ilegal y violenta el derecho a que la justicia sea administrada exclusivamente por el Estado."}
+    a = {"conclusiones": [{"conclusion": "Cualquier intento de justicia por propia mano es ilegal y violenta el derecho a que la justicia sea administrada exclusivamente por el Estado.", "sostenida": "parcial"}]}
+    assert redactor._objeta_mapa(a, mapa)
