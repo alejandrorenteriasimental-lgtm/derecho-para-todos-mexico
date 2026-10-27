@@ -395,7 +395,7 @@
       "id": "I20261030-T016",
       "formato": "imagen",
       "huella": "943ecd4e2ec0516264ab969ca0104a19a4be32367aae171753de8ebb6aacb084",
-      "estado": "REVISION_HUMANA",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-27T01:59:25+00:00",
@@ -411,6 +411,62 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-27T10:24:23+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T18:22:28+00:00",
+          "motivo": "rechazo humano: Alejandro Rentería (chat, 27-10-2026 07:09 CDMX) 2026-10-27T13:09:37+00:00 versión 42d216b84f61539e 1) El texto de acompañamiento afirma que las reglas cambiaron recientemente sin citar el decreto. 2) El «OJO» («Revisa tu ley») no aporta información. 3) Menciona «este límite» sin decir que son doce días."
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": {
+        "tipo": "editorial",
+        "desde": "2026-10-27T18:22:28+00:00"
+      },
+      "revision": {
+        "version": "42d216b84f61539e",
+        "huella_guion": "9761c19b35c3872390afe65d9cbec6b57206513a849853306851722b289ea3c3",
+        "huella_archivo": "906ad91bd4ddbf0a5e2414d02d5d941643d7e846d2c3ee5d843efad6c621bfe1",
+        "preparada": "2026-10-27T10:24:23+00:00",
+        "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261030-T016",
+        "decision": "RECHAZADA",
+        "version": "42d216b84f61539e",
+        "huella_guion": "9761c19b35c3872390afe65d9cbec6b57206513a849853306851722b289ea3c3",
+        "huella_archivo": "906ad91bd4ddbf0a5e2414d02d5d941643d7e846d2c3ee5d843efad6c621bfe1",
+        "por": {
+          "nombre": "Alejandro Rentería (chat, 27-10-2026 07:09 CDMX)"
+        },
+        "fecha": "2026-10-27T13:09:37+00:00",
+        "canal": "chat",
+        "nota": "1) El texto de acompañamiento afirma que las reglas cambiaron recientemente sin citar el decreto. 2) El «OJO» («Revisa tu ley») no aporta información. 3) Menciona «este límite» sin decir que son doce días."
+      }
+    },
+    "I20261124-T073": {
+      "id": "I20261124-T073",
+      "formato": "imagen",
+      "huella": "a53dafc7b3846f2c471f7f9ec5937051e0c255594af8106de8ec3f398b9a1ac7",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-27T18:22:28+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-27T18:23:19+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-27T18:23:22+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -418,10 +474,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "42d216b84f61539e",
-        "huella_guion": "9761c19b35c3872390afe65d9cbec6b57206513a849853306851722b289ea3c3",
-        "huella_archivo": "906ad91bd4ddbf0a5e2414d02d5d941643d7e846d2c3ee5d843efad6c621bfe1",
-        "preparada": "2026-10-27T10:24:23+00:00",
+        "version": "fde514914ab42a78",
+        "huella_guion": "b15b4de7396eccec9966eeabb4238aad43de9ff9039af2a87ec416df4881df6a",
+        "huella_archivo": "165e3ec6f2e23aa7af98cd375dcbaf7869972164839781482121febd7ef7dcce",
+        "preparada": "2026-10-27T18:23:22+00:00",
         "canal": "chat"
       }
     }

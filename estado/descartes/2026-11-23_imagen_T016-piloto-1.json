@@ -1,0 +1,31 @@
+{
+ "solicitud": "2026-11-23_imagen_T016-piloto-1.json",
+ "fecha": "2026-10-27T18:10:20+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «el mínimo es de 12 días laborables tras el primer año de servicios y aumenta seg» menciona un plazo (12 dia) que no aparece en los artículos citados.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «efecto» («Tienes derecho a tomar doce días de forma ininterrumpida o d») no trae una cita literal que esté en el texto oficial de su fuente.",
+    "[cobertura] La pregunta es de tipo «obligacion» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»)."
+   ]
+  },
+  {
+   "etapa": "investigacion_complementaria",
+   "faltan": [
+    "[cobertura] La pregunta es de tipo «obligacion» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»)."
+   ],
+   "agregadas": [
+    "LFT 81"
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[sustento] «el mínimo es de 12 días laborables tras el primer año de servicios y aumenta seg» menciona un plazo (12 dia) que no aparece en los artículos citados."
+   ]
+  }
+ ]
+}

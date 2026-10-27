@@ -1,0 +1,73 @@
+{
+ "tema_id": "T031",
+ "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
+ "fecha": "2026-10-27T18:03:59+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
+  "concepto_central": "prohibición de ser juzgado dos veces por el mismo delito",
+  "respuesta_corta": "No. La Constitución prohíbe que una persona sea sometida a un nuevo juicio por el mismo delito, sin importar si fue absuelta o condenada anteriormente.",
+  "reglas": [
+   {
+    "conclusion": "Existe una prohibición constitucional absoluta de duplicidad de juicios por el mismo delito.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene.",
+    "condiciones": [
+     "Que se trate del mismo delito",
+     "Que haya existido un juicio previo con sentencia de absolución o condena"
+    ],
+    "excepciones": [
+     "no_aplica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La imposibilidad legal de iniciar o continuar un proceso penal cuando el hecho ya fue juzgado.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La protección aplica tanto para quienes fueron declarados inocentes como para quienes recibieron una condena.",
+    "fuente": "F1",
+    "cita_literal": "ya sea que en el juicio se le absuelva o se le condene."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto constitucional no prevé excepciones a la regla de no ser juzgado dos veces por el mismo delito.",
+    "fuente": "F1",
+    "motivo": "La norma establece una prohibición tajante sin supuestos de excepción.",
+    "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito"
+   },
+   {
+    "elemento": "limite de proceso",
+    "estado": "cubierto",
+    "respuesta": "Un proceso penal tiene un límite máximo de tres etapas de revisión legal.",
+    "fuente": "F1",
+    "cita_literal": "Ningún juicio criminal deberá tener más de tres instancias."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La prohibición impide reabrir un caso incluso si se considera que la sentencia previa fue injusta o errónea.",
+    "condicion": "Siempre que la sentencia haya recaído sobre el mismo delito.",
+    "base": "ya sea que en el juicio se le absuelva o se le condene"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "instancias del juicio",
+    "b": "ser juzgado dos veces",
+    "diferencia": "Las instancias son etapas de revisión (máximo tres) dentro de un mismo proceso, mientras que ser juzgado dos veces implica un nuevo juicio tras una sentencia definitiva."
+   }
+  ],
+  "limites": "El texto no define qué criterios técnicos determinan cuándo un delito es exactamente el 'mismo' que otro, ni menciona si esta regla aplica a sanciones administrativas.",
+  "fuentes_irrelevantes": []
+ }
+}

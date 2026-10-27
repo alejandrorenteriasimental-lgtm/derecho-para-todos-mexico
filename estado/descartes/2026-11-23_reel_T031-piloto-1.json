@@ -1,0 +1,34 @@
+{
+ "solicitud": "2026-11-23_reel_T031-piloto-1.json",
+ "fecha": "2026-10-27T18:04:52+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La imposibilidad legal de iniciar o continuar un proceso penal cuando »), pero la pieza no lo dice.",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La protección aplica tanto para quienes fueron declarados inocentes co»), pero la pieza no lo dice."
+   ]
+  }
+ ]
+}

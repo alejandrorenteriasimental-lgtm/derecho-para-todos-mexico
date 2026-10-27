@@ -1,0 +1,214 @@
+{
+  "id": "I20261124-T073",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden meter a la cárcel por deber dinero?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T073",
+  "pieza": {
+    "titular": "¿Te pueden meter a la cárcel por deber dinero?",
+    "bajada": "Conoce lo que establece la Constitución sobre las consecuencias jurídicas de tener deudas.",
+    "mito": "Si debes dinero, te pueden encarcelar de inmediato.",
+    "realidad": "No: nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 17"
+  },
+  "copy": "Existe la creencia frecuente de que no pagar una deuda conlleva la cárcel de forma automática. Sin embargo, la ley protege a las personas frente a esta situación.\n\nLa Constitución Política de los Estados Unidos Mexicanos, artículo 17, establece con claridad una limitante directa para las autoridades y los particulares en estos casos.\n\nEl texto oficial señala de manera expresa que «Nadie puede ser aprisionado por deudas de carácter puramente civil.». Guarda esta información y compártela para que más personas conozcan sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Pieza gráfica con plantilla mito y realidad que responde si te pueden meter a la cárcel por deber dinero.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-27"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Se prohíbe el encarcelamiento por deudas de carácter puramente civil.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
+    "concepto_central": "deudas de carácter puramente civil",
+    "respuesta_corta": "No: nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "reglas": [
+      {
+        "conclusion": "Se prohíbe el encarcelamiento por deudas de carácter puramente civil.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "17"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Se establece la prohibición de ser aprisionado por deudas de carácter puramente civil.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+        "motivo": ""
+      },
+      {
+        "elemento": "que_hacer",
+        "estado": "no_cubierto",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no detalla las acciones a seguir."
+      },
+      {
+        "elemento": "ante_quien",
+        "estado": "no_cubierto",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no menciona una autoridad específica para este supuesto."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no establece plazos aplicables a esta protección."
+      },
+      {
+        "elemento": "definicion",
+        "estado": "no_cubierto",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no define el concepto de deuda de carácter puramente civil."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no define qué constituye una deuda de carácter puramente civil ni contempla otros supuestos fuera de dicha regla general."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-27T18:22:28+00:00",
+    "solicitud": "2026-11-24_imagen_T073-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 9,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 11,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te pueden meter a la cárcel por deber dinero?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La imposibilidad legal de privar de la libertad a una persona por el i»), pero la pieza no lo dice."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La imposibilidad legal de privar de la libertad a una persona por el i»), pero la pieza no lo dice."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Existe una prohibición constitucional absoluta contra el aprisionamiento motivado por deudas civiles.",
+              "sostenida": "parcial",
+              "motivo": "El texto oficial no habla de 'deudas civiles' en general, sino específicamente de deudas de carácter 'puramente civil'."
+            },
+            {
+              "conclusion": "La deuda civil es un incumplimiento de pago sin dolo, mientras que el fraude implica engaño para obtener un lucro.",
+              "sostenida": "no",
+              "motivo": "El texto oficial F1 no contiene definiciones sobre dolo, engaño, fraude, ni establece la distinción entre estos conceptos."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Párrafo 3 del copy y sección de 'distinciones' del razonamiento.",
+              "problema": "Se introducen conceptos jurídicos externos (dolo, engaño, fraude) para intentar explicar la norma, violando la regla de usar exclusivamente el texto oficial entregado.",
+              "correccion": "Eliminar la distinción entre deuda civil y fraude, así como las definiciones de dolo y engaño. La pieza debe limitarse a señalar que la prohibición aplica a deudas de carácter 'puramente civil', sin añadir supuestos que la ley no menciona."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Se prohíbe el encarcelamiento por deudas de carácter puramente civil.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una derivación directa y exacta de la prohibición establecida en el artículo 17 de la Constitución Política de los Estados Unidos Mexicanos, respetando la condición de que la deuda sea de carácter 'puramente civil'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

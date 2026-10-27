@@ -1,26 +1,17 @@
 {
  "registro": "2026355",
- "consultado": "2026-10-27T10:42:00+00:00",
- "metodo": "página oficial sjf2.scjn.gob.mx/detalle/tesis/2026355, leída en el navegador del responsable (el servicio del Semanario responde 403 desde GitHub Actions)",
- "instancia": "Segunda Sala de la SCJN",
- "epoca": "Undécima",
- "tipo": "Jurisprudencia (contradicción de criterios 243/2022)",
- "clave": "2a./J. 14/2023 (11a.)",
- "fuente": "Gaceta del Semanario Judicial de la Federación, Libro 24, abril de 2023, Tomo II, p. 1744",
- "publicacion": "2023-04-28; obligatoria desde 2023-05-02",
- "rubro": "ESCRITO DE RENUNCIA. ESTÁNDARES DE VALORACIÓN DE PRUEBAS QUE LOS ÓRGANOS JURISDICCIONALES DEBEN CONSIDERAR PARA ATRIBUIRLE PLENO VALOR PROBATORIO.",
- "criterio_extracto": "el escrito de renuncia tendrá valor probatorio únicamente si se demuestra de manera fehaciente que fue emitida de manera autónoma y unilateral",
- "dictamen": "EXISTE_COINCIDE",
- "pendiente_humano": "Confirmar su vigencia tras la reforma judicial de 2024-2025 (nueva integración de la SCJN sin Salas) y que no haya sido superada; nota del SJF: la denuncia de contradicción 37/2024 fue desechada (13-02-2024). Mientras no se confirme, no se cita en piezas.",
- "vigencia": {
-  "base": "LOPJF, artículo Décimo Octavo transitorio del decreto publicado en el DOF el 20-12-2024 (texto oficial de la Cámara de Diputados, última reforma 28-11-2025, extraído en GitHub Actions el 27-10-2026, corrida 40510358163)",
-  "literal": "Los precedentes, tesis, jurisprudencias y criterios obligatorios de los órganos jurisdiccionales del Poder Judicial de la Federación que se hubieran emitido con anterioridad a la entrada en vigor del presente Decreto mantendrán su vigencia y, por tanto, su carácter orientativo o vinculante según corresponda.",
-  "conclusion_propuesta": "Vigente y obligatoria: el transitorio conserva la jurisprudencia de las extintas Salas, y la ficha oficial del SJF (consultada el 27-10-2026) no registra que haya sido superada, interrumpida o modificada.",
-  "estado": "VERIFICADA_NO_SE_USA_AUN"
- },
- "decision": {
-  "fecha": "2026-10-27T13:19:00+00:00",
-  "por": "Claude, por delegación expresa del responsable («elige la mejor», 27-10-2026 07:18 CDMX)",
-  "texto": "Existencia, texto y vigencia verificados en fuentes oficiales. No se inyecta todavía en la generación automática: el redactor no tiene un canal para citar jurisprudencia con su texto oficial y la regla «jurisprudencia» la bloquea. T068v2 se redacta solo con la LFT; la tesis se podrá usar en una versión posterior, citada como criterio judicial y con revisión humana."
- }
+ "consultado": "2026-10-27T18:03:27+00:00",
+ "intentos": [
+  {
+   "url": "https://sjf2.scjn.gob.mx/services/sjftesismicroservice/api/public/tesis/2026355?isSemanal=true&hostName=https://sjf2.scjn.gob.mx",
+   "http": 403,
+   "bytes": 48
+  },
+  {
+   "url": "https://sjf2.scjn.gob.mx/services/sjftesismicroservice/api/public/tesis/2026355",
+   "http": 403,
+   "bytes": 48
+  }
+ ],
+ "dictamen": "SIN_ACCESO"
 }

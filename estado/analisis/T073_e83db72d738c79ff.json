@@ -1,0 +1,67 @@
+{
+ "tema_id": "T073",
+ "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
+ "fecha": "2026-10-27T18:17:31+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
+  "concepto_central": "deudas de carácter puramente civil",
+  "respuesta_corta": "No: nadie puede ser aprisionado por deudas de carácter puramente civil.",
+  "reglas": [
+   {
+    "conclusion": "Se prohíbe el encarcelamiento por deudas de carácter puramente civil.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Se establece la prohibición de ser aprisionado por deudas de carácter puramente civil.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "motivo": ""
+   },
+   {
+    "elemento": "que_hacer",
+    "estado": "no_cubierto",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no detalla las acciones a seguir."
+   },
+   {
+    "elemento": "ante_quien",
+    "estado": "no_cubierto",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no menciona una autoridad específica para este supuesto."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no establece plazos aplicables a esta protección."
+   },
+   {
+    "elemento": "definicion",
+    "estado": "no_cubierto",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no define el concepto de deuda de carácter puramente civil."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no define qué constituye una deuda de carácter puramente civil ni contempla otros supuestos fuera de dicha regla general.",
+  "fuentes_irrelevantes": []
+ }
+}
