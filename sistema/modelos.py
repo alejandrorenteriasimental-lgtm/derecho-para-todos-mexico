@@ -125,6 +125,7 @@ class Modelo:
     """Interfaz: completar(sistema, usuario) → dict (JSON)."""
     llamadas_ciclo = 0          # llamadas reales (incluye las rechazadas) en este proceso; se reinicia en cada ciclo
     tope_ciclo = 10 ** 9
+    caidos_ciclo = set()        # modelos con fallas internas repetidas (5xx) en este ciclo: no se vuelven a llamar hasta el siguiente
 
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
         cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso; self.llamadas = 0
@@ -240,6 +241,8 @@ class Modelo:
                 ultimo = CuotaAgotada(f"tope propio diario alcanzado para {modelo}"); continue
             if prov == "gemini" and agotado_hoy(modelo, self.archivo_uso, prov):
                 ultimo = CuotaAgotada(f"cuota diaria gratuita agotada para {modelo} (no se vuelve a llamar hasta el reinicio)"); continue
+            if modelo in Modelo.caidos_ciclo:
+                ultimo = FallaModelo(f"{modelo}: falló repetidamente en este ciclo (no se vuelve a llamar)"); continue
             if prov != "simulado" and Modelo.llamadas_ciclo >= Modelo.tope_ciclo:
                 raise CuotaAgotada(f"tope de {Modelo.tope_ciclo} llamadas de IA por ciclo alcanzado")
             Modelo.llamadas_ciclo += prov != "simulado"; self.llamadas += 1
@@ -264,6 +267,7 @@ class Modelo:
                     _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)
                     ultimo = FallaModelo(str(e))
                     if intento == 1: time.sleep(self.pausa_5xx); continue
+                    Modelo.caidos_ciclo.add(modelo)          # dos 5xx seguidos: se salta el resto del ciclo (cortacircuitos)
                     contenido = None; break
                 except FallaModelo as e:
                     _registrar({"rol": self.rol, "proveedor": prov, "modelo": modelo, "resultado": "error", "error": str(e)[:200]}, self.archivo_uso)

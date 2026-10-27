@@ -260,10 +260,21 @@ ELEMENTOS = {
     "ante_quien": "ante qué autoridad u órgano concreto se hace",
     "plazo": "en qué plazo debe hacerse",
     "definicion": "qué es y qué alcance tiene el concepto",
+    "condiciones": "bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna)",
+    "excepcion": "qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna)",
+    "via": "cómo se hace: qué trámite, solicitud o acción concreta",
 }
-TIPOS_PREGUNTA = (
+TIPOS_PREGUNTA = (     # en orden: gana el primer patrón que coincide
+    ("procedimiento", r"\bcomo (se )?(denuncia|reclama|tramita|pide|solicita|presenta|inicia|promueve|defiende)\b|\b(donde|ante quien) (se )?(denuncia|reclama|acudo|acudir|presento|presentar|tramita)\b",
+     ("via", "ante_quien", "plazo")),
     ("consecuencia", r"\bque pasa (si|cuando)\b|\bque (hago|puedo hacer|debo hacer|se puede hacer)\b|\b(me|te|le|nos|les) (obligan|obliga|despiden|despide|corren|corre|niegan|niega|quitan|quita|retienen|retiene)\b",
      ("efecto", "que_hacer", "ante_quien", "plazo")),
+    ("excepcion", r"\bsiempre\b|\ben todos los casos\b|\bhay excepciones\b|\bsin excepcion\b",
+     ("efecto", "excepcion")),
+    ("derecho", r"\b(tengo|tienes|tiene|tenemos|tienen) derecho\b|\b(me|te|le|nos|les) pueden? (volver a |obligar|detener|juzgar|encarcelar|despedir|cobrar)",
+     ("efecto", "condiciones", "excepcion")),
+    ("obligacion", r"\b(cuando|cuanto|cuantos|cuantas)\b.*\b(deben|debe|tienen que|tiene que|pagan|paga|corresponden?|tocan?)\b|\b(estan?|esta) obligad",
+     ("efecto", "condiciones")),
     ("legalidad", r"\bes (legal|ilegal|valido|valida|delito)\b|\besta (permitido|prohibido)\b|\bse (puede|vale)\b|\bpueden?\b|\b(tienen?|tienes|tengo) que\b|\bestan? obligad",
      ("efecto",)),
     ("definicion", r"\bque (es|son|significa|significan)\b|\ben que consiste\b|\bcual es la diferencia\b|\bdiferencia entre\b",
@@ -271,7 +282,13 @@ TIPOS_PREGUNTA = (
 )
 
 
-def tipo_pregunta(pregunta):
+TIPOS_VALIDOS = {n: req for n, _, req in TIPOS_PREGUNTA}
+
+
+def tipo_pregunta(pregunta, tipo=None):
+    """Tipo de pregunta y elementos que la respuesta debe cubrir. Un tipo fijado por el plan editorial (p. ej., el lote
+    piloto) tiene prioridad sobre la detección por patrones."""
+    if tipo in TIPOS_VALIDOS: return tipo, TIPOS_VALIDOS[tipo]
     p = plano(pregunta)
     for nombre, patron, req in TIPOS_PREGUNTA:
         if re.search(patron, p): return nombre, req
@@ -289,7 +306,7 @@ def revisar_cobertura(g, textos):
     H = []
     rz = g.get("razonamiento") or {}
     pregunta = g.get("pregunta_original") or rz.get("pregunta") or g.get("titulo", "")
-    tipo, req = tipo_pregunta(pregunta)
+    tipo, req = tipo_pregunta(pregunta, g.get("tipo_pregunta"))
     els = {str(e.get("elemento", "")).strip(): e for e in rz.get("elementos") or [] if isinstance(e, dict)}
     fichas = g.get("fuentes") or {}
     if isinstance(fichas, list): fichas = {f["id"]: f for f in fichas}

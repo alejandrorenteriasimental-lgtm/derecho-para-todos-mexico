@@ -16,6 +16,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 CATALOGO = RAIZ / "data" / "catalogo.csv"
+LOTE = RAIZ / "data" / "lote_piloto.json"
 SOLICITUDES = RAIZ / "estado" / "solicitudes"
 PLANTILLA_DIA = ["concepto", "tres_claves", "mito_realidad", "diferencia", "dato", "concepto", "tres_claves"]   # lunes…domingo
 COMPLEMENTA = {1, 3, 5}          # martes, jueves y sábado: la imagen complementa el Reel del día anterior
@@ -52,10 +53,10 @@ def consolidar(hoy=None):
     punt = {r["id"]: float(r["puntaje"]) for r in cargar_catalogo()}
     grupos = {}
     for f, d in solicitudes():
-        if d.get("estado") in ACTIVAS: grupos.setdefault((d["fecha"], d["formato"]), []).append((f, d))
+        if d.get("estado") in ACTIVAS: grupos.setdefault((d["fecha"], d["formato"], d.get("lote")), []).append((f, d))
     orden = {"GUION_LISTO": 0, "REDACTANDO": 1, "PENDIENTE_GUION": 2}
     cambios = []
-    for (fecha, formato), lst in grupos.items():
+    for (fecha, formato, _lote), lst in grupos.items():
         if len(lst) < 2: continue
         lst.sort(key=lambda x: (orden[x[1]["estado"]], -punt.get(x[1]["tema_id"], 0), x[0].name))
         queda = lst[0][0].name
@@ -87,7 +88,42 @@ def carriles_permitidos(env=os.environ):
     return {"A", "B"} if env.get("LANZAMIENTO_AUTORIZADO") == "SI" else {"A"}
 
 
+def lote_activo():
+    """El lote piloto vigente (data/lote_piloto.json) o None."""
+    try: d = json.loads(LOTE.read_text())
+    except (OSError, ValueError): return None
+    return d if d.get("activo") else None
+
+
+def planificar_lote(lote, escribir=True):
+    """Crea (una sola vez) las solicitudes del lote piloto: pregunta, tipo y artículos fijados por el plan editorial."""
+    cat = {r["id"]: r for r in cargar_catalogo()}
+    plan = []
+    cupo = {"reel": 0, "imagen": 0}
+    for t in lote.get("temas", []):
+        if cupo[t["formato"]] >= lote.get("max_por_formato", 3): continue
+        cupo[t["formato"]] += 1
+        r = cat.get(t["tema_id"], {})
+        s = {"fecha": t["fecha"], "formato": t["formato"], "tema_id": t["tema_id"], "titulo": r.get("titulo", t["pregunta"]),
+             "gancho": t["pregunta"], "pregunta": t["pregunta"], "tipo_pregunta": t["tipo_pregunta"], "carril": r.get("carril", "A"),
+             "fuentes_sugeridas": t["fuentes_sugeridas"], "riesgo_exactitud": r.get("riesgo_exactitud", ""), "lote": lote["id"],
+             "motivo_seleccion": t.get("motivo_seleccion", ""), "hora_publicacion_mx": "19:00" if t["formato"] == "reel" else "09:00"}
+        if t["formato"] == "imagen":
+            s.update(relacion="independiente", plantilla=t.get("plantilla", "concepto"), angulo=t["pregunta"])
+        plan.append(s)
+        f = SOLICITUDES / f'{t["fecha"]}_{t["formato"]}_{t["tema_id"]}-{lote["id"]}.json'
+        if escribir and not f.exists():
+            SOLICITUDES.mkdir(parents=True, exist_ok=True)
+            _escribir(f, {**s, "estado": "PENDIENTE_GUION", "instrucciones": "docs/tarea_guionista.md",
+                          "creada": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
+    return plan
+
+
 def planificar(dias=7, desde=None, env=os.environ, escribir=True):
+    lote = lote_activo()
+    if lote:                                   # lote piloto: no se crean solicitudes nuevas del catálogo hasta medirlo
+        if escribir: consolidar()
+        return planificar_lote(lote, escribir)
     cat = sorted(cargar_catalogo(), key=lambda r: -float(r["puntaje"]))
     if escribir: consolidar()
     ok = carriles_permitidos(env); ya = usados(); occ = ocupadas(); desde = desde or date.today() + timedelta(days=1)

@@ -109,12 +109,14 @@ def reabrir_por_cambio():
 
 
 def redactar_pendientes(c, resumen, transporte, env, simulador=None):
-    planificador.RAIZ = RAIZ; planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"
-    import modelos; modelos.USO = RAIZ / "estado" / "uso_ia.jsonl"; modelos.Modelo.llamadas_ciclo = 0
+    planificador.RAIZ = RAIZ; planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"; planificador.LOTE = RAIZ / "data" / "lote_piloto.json"
+    redactor.ANALISIS = RAIZ / "estado" / "analisis"
+    import modelos; modelos.USO = RAIZ / "estado" / "uso_ia.jsonl"; modelos.Modelo.llamadas_ciclo = 0; modelos.Modelo.caidos_ciclo = set()
     planificador.planificar(dias=7, desde=_hoy_mx(), env=env, escribir=True)
     import time as _t; t0 = _t.time(); limite = modelos.config().get("presupuesto_redaccion_s", 1500)
     reabrir_por_cambio()
     sin_cuota = False
+    lote = planificador.lote_activo()
     for formato in ("reel", "imagen"):
         if sin_cuota: break                                   # cuota agotada: no se intenta ningún otro formato en este ciclo
         if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS for t in c["trabajos"].values()):
@@ -126,6 +128,7 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
                 cola.log({"evento": "redaccion_pospuesta", "motivo": f"presupuesto de redacción agotado ({limite} s)"}); break
             sol = json.loads(f.read_text())
             if sol["estado"] != "PENDIENTE_GUION": continue   # en orden de fecha; si un tema falla se adelanta el siguiente
+            if lote and sol.get("lote") != lote["id"]: continue  # lote piloto activo: las demás solicitudes esperan
             sol["pieza_id"] = f'{"R" if formato == "reel" else "I"}{sol["fecha"].replace("-", "")}-{sol["tema_id"]}'
             sol["archivo"] = f.name; intentos += 1
             try:

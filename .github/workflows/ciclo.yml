@@ -13,32 +13,45 @@ concurrency:                  # nunca dos ciclos a la vez
 permissions:
   contents: write             # para guardar estado/, registro/ y los guiones redactados en el repositorio
   models: read                # GitHub Models (respaldo): gratuito con límites diarios; sin pago no hay cargos
+  actions: read               # para calcular los minutos del mes (guardia del límite gratuito)
 jobs:
   pruebas:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    outputs:
+      continuar: ${{ steps.guardia.outputs.continuar }}
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }      # siempre el estado más reciente (una ejecución en fila no parte de un commit viejo)
+      - name: Guardia de minutos gratuitos de Actions (sin dependencias)
+        id: guardia
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: python3 sistema/metricas_diarias.py --guardia
       - uses: actions/setup-python@v5
+        if: steps.guardia.outputs.continuar == 'true'
         with: { python-version: "3.12", cache: pip }
       - name: ffmpeg estático (caché)
+        if: steps.guardia.outputs.continuar == 'true'
         uses: actions/cache@v4
         with:
           path: ~/ffmpeg-static
           key: ffmpeg-btbn-v1
       - name: Dependencias del sistema
+        if: steps.guardia.outputs.continuar == 'true'
         timeout-minutes: 12
         run: bash sistema/apt.sh
       - name: Dependencias de Python
+        if: steps.guardia.outputs.continuar == 'true'
         run: pip install -q -r requirements.txt pytest fpdf2
       - name: Pruebas (sin red, sin costo)
+        if: steps.guardia.outputs.continuar == 'true'
         run: |
           python -m pytest -q -rf --tb=line pruebas -m "not vivo" --junitxml=/tmp/junit.xml || {
             # cada prueba fallida queda como anotación de GitHub (consultable por la API aunque no se puedan bajar los registros)
             python -c "import xml.etree.ElementTree as E;[print(f'::error title={c.get(\"classname\")}.{c.get(\"name\")}::'+((c.find('failure') if c.find('failure') is not None else c.find('error')).get('message') or '')[:400].replace(chr(10),' ')) for c in E.parse('/tmp/junit.xml').iter('testcase') if c.find('failure') is not None or c.find('error') is not None]"
             exit 1; }
       - name: Pruebas en vivo (fuentes oficiales y modelos)
+        if: github.event_name == 'schedule' && steps.guardia.outputs.continuar == 'true'   # solo en la ejecución diaria (ahorra minutos)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}             # nivel gratuito de Gemini; sin facturación
@@ -58,6 +71,7 @@ jobs:
           if-no-files-found: ignore
   ciclo:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
+    if: needs.pruebas.outputs.continuar == 'true'     # tope propio de minutos del mes alcanzado: no se ejecuta
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -140,6 +154,10 @@ jobs:
                 "minutos_facturables_estimados": -(-seg // 60), "bytes_piezas": tam, "runner": os.environ.get('RUNNER_OS'), "costo_mxn": 0}
           open('registro/consumo.jsonl', 'a').write(json.dumps(ev) + '\n'); print(ev)
           PY
+      - name: Métricas diarias (solo lectura de registros)
+        if: always()
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: python sistema/metricas_diarias.py || true
       - name: Guardar estado
         if: always()
         run: |

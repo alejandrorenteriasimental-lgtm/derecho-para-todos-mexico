@@ -430,6 +430,7 @@ def investigar_complemento(sol, faltan, fuentes, investigador, biblio, simulador
 SENALES = {   # ¿los textos oficiales contienen, al menos, el tipo de dato que exige cada elemento de la respuesta?
     "que_hacer": r"podr[aá]n? (solicitar|demandar|reclamar|exigir|pedir|optar|acudir)|tendr[aá]n? derecho|tiene derecho|tienen derecho|acci[oó]n|reclam|denunci|querell|queja",
     "ante_quien": r"tribunal|centros? (federal )?de conciliaci|autoridad conciliadora|procuradur|profeco|\bjuez|ministerio p[uú]blico|condusef|fiscal[ií]a|comisi[oó]n nacional",
+    "via": r"solicitud|demanda|denuncia|querella|queja|tr[aá]mite|por escrito|presentar|promover|reclamaci[oó]n",
     "plazo": r"\b(\d{1,3}|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|diez|quince|treinta|sesenta|noventa)\s+(d[ií]as|mes(es)?|a[nñ]os?|semanas?|horas)\b|prescrib",
 }
 
@@ -438,7 +439,7 @@ def prechequeo(sol, fuentes):
     """Comprobación sin IA: ¿los artículos oficiales reunidos pueden, en principio, responder la pregunta? Devuelve los
     elementos para los que no hay ni una señal en los textos (p. ej., ninguna autoridad ni plazo en una pregunta de
     «¿qué pasa si…?»). Si falta algo, primero se buscan más fuentes; si sigue faltando, no se llama al redactor."""
-    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol))
+    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol), sol.get("tipo_pregunta"))
     texto = " ".join(f["texto_oficial"] for f in fuentes.values()).lower()
     return [k for k in req if k in SENALES and not re.search(SENALES[k], texto)]
 
@@ -465,12 +466,13 @@ def fuentes_sugeridas(sol, biblio, maximo=6):
 
 
 def pregunta_plan(sol):
-    return sol.get("gancho") or sol.get("angulo") or sol["titulo"]
+    """La pregunta exacta que la pieza debe contestar. El lote piloto la fija («pregunta»); si no, la del catálogo."""
+    return sol.get("pregunta") or sol.get("gancho") or sol.get("angulo") or sol["titulo"]
 
 
 def analizar(sol, fuentes, red, glosario, simulador=None, extra=""):
     """Etapa 1: la regla, sus condiciones, excepciones y fuentes ANTES de escribir una sola línea de la pieza."""
-    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol))
+    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol), sol.get("tipo_pregunta"))
     nota = ""
     if sol.get("investigacion") and (RAIZ / sol["investigacion"]).exists():   # investigación editorial previa (p. ej., tras un rechazo humano)
         nota = ("\n\nNOTA DE INVESTIGACIÓN EDITORIAL (no es texto oficial: úsala para entender el problema y los errores a evitar; "
@@ -519,7 +521,7 @@ def validar_mapa(mapa, sol, fuentes):
             err.append(f'[mapa] La regla «{str(r.get("conclusion", ""))[:60]}» no trae una cita literal suficiente.')
     rz = {**mapa, "reglas": [{**r, "ref": {k: fuentes[r["fuente"]][k] for k in ("documento", "articulo")}} for r in reglas if r.get("fuente") in fuentes]}
     prueba = {"titulo": pregunta_plan(sol).strip(), "pregunta_original": pregunta_plan(sol), "razonamiento": rz,
-              "pieza": {"bajada": mapa.get("respuesta_corta", "")}, "fuentes": {}, "_solo_analisis": True}
+              "pieza": {"bajada": mapa.get("respuesta_corta", "")}, "fuentes": {}, "_solo_analisis": True, "tipo_pregunta": sol.get("tipo_pregunta")}
     if not prueba["titulo"].endswith("?"): prueba["titulo"] += "?"
     textos = {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}
     err += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(razonamiento.revisar(prueba, textos, ia=True))]
@@ -530,6 +532,37 @@ def validar_mapa(mapa, sol, fuentes):
        not ({g for g, _ in razonamiento.conceptos_en(plan)} & {g for g, _ in razonamiento.conceptos_en(propio)}):
         err.append(f"[tema] El análisis no responde la pregunta del plan editorial («{plan[:80]}»): trata «{str(mapa.get('pregunta', ''))[:80]}».")
     return err
+
+
+ANALISIS = RAIZ / "estado" / "analisis"
+
+
+def _clave_analisis(sol, fuentes):
+    """Un análisis validado se reutiliza solo para la MISMA pregunta, el mismo tipo y los mismos artículos oficiales
+    (con el mismo texto): así un Reel y su imagen, o un reintento, no gastan otra llamada de IA en repetirlo."""
+    import hashlib
+    base = {"pregunta": pregunta_plan(sol), "tipo": sol.get("tipo_pregunta"),
+            "fuentes": sorted((f["sigla"], str(f["articulo"]), hashlib.sha256(f["texto_oficial"].encode()).hexdigest()[:12]) for f in fuentes.values())}
+    return hashlib.sha256(json.dumps(base, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+
+
+def analisis_guardado(sol, fuentes):
+    f = ANALISIS / f'{sol.get("tema_id", "T")}_{_clave_analisis(sol, fuentes)}.json'
+    try: d = json.loads(f.read_text())
+    except (OSError, ValueError): return None
+    if d.get("objetado"): return None
+    m = d.get("mapa")
+    return m if isinstance(m, dict) and not validar_mapa(m, sol, fuentes) else None    # se vuelve a revisar (sin IA)
+
+
+def guardar_analisis(sol, fuentes, mapa, objetado=False):
+    try:
+        ANALISIS.mkdir(parents=True, exist_ok=True)
+        f = ANALISIS / f'{sol.get("tema_id", "T")}_{_clave_analisis(sol, fuentes)}.json'
+        f.write_text(json.dumps({"tema_id": sol.get("tema_id"), "pregunta": pregunta_plan(sol), "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                 "objetado": objetado, "mapa": mapa}, ensure_ascii=False, indent=1))
+    except OSError:
+        pass
 
 
 def _mapa_fijo(mapa, fuentes):
@@ -629,8 +662,10 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
         n_analisis = n_redaccion = 0
         while True:
             # ---- etapa 1: análisis jurídico (dos oportunidades) ----
-            mapa = None
-            for intento in range(2):
+            mapa = analisis_guardado(sol, fuentes) if not reanalisis else None
+            if mapa is not None:
+                historial.append({"etapa": "analisis", "reutilizado": True, "errores": []})
+            for intento in range(0 if mapa is not None else 2):
                 n_analisis += 1
                 m = _citas_exactas(analizar(sol, fuentes, red, glosario, simulador, extra_a), fuentes)
                 errores = validar_mapa(m, sol, fuentes)
@@ -649,6 +684,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             if mapa is None:
                 raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial,
                                  categoria="juridico", metricas=_metricas(inv, red, aud, n_analisis, n_redaccion, complemento))
+            guardar_analisis(sol, fuentes, mapa)
             mapa_fijo, usadas = _mapa_fijo(mapa, fuentes)
             fuentes_red = {fid: f for fid, f in fuentes.items() if fid in usadas} or fuentes
             textos = _textos(fuentes_red)
@@ -679,6 +715,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 g = construir(sol, borrador, fuentes_red)
                 g["razonamiento"] = mapa_fijo
                 g["pregunta_original"] = pregunta_plan(sol)
+                if sol.get("tipo_pregunta"): g["tipo_pregunta"] = sol["tipo_pregunta"]
                 errores = esquema.validar(g)
                 hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
                 g["revision_razonamiento"] = hall
@@ -708,6 +745,8 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                                             "metricas": _metricas(inv, red, aud, n_analisis, n_redaccion, complemento),
                                             "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                     return g
+                if _objeta_mapa(a, mapa):
+                    guardar_analisis(sol, fuentes, mapa, objetado=True)     # no se reutiliza un análisis objetado
                 if _objeta_mapa(a, mapa) and reanalisis < 1:
                     reanalisis += 1; volver = True
                     extra_a = ("\n\nUn auditor independiente revisó una pieza basada en tu análisis y objetó estas conclusiones; "
