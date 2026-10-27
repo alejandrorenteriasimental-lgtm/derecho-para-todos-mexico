@@ -166,3 +166,14 @@ def test_cita_extrema_tampoco_queda_tapada():
     abajo = _medir({"tipo": "cita", "cita": cita, "etiqueta": "Ley Federal del Trabajo, art. 33", "afirmaciones": []})
     y, cabe = render.posicion_subtitulos(abajo)
     assert (cabe and y - 22 >= abajo + render.SUB_MARGEN - 1) or not cabe     # o queda debajo, o se reporta como falla
+
+
+# ---------- cuota ----------
+def test_modelo_con_cuota_diaria_agotada_no_se_vuelve_a_llamar(tmp_path):
+    import modelos
+    from datetime import datetime, timezone
+    u = tmp_path / "uso.jsonl"
+    u.write_text(json.dumps({"ts": "2026-10-27T02:00:00+00:00", "rol": "redactor", "proveedor": "gemini", "modelo": "m1", "resultado": "error",
+                             "error": "m1: HTTP 429 quota ... GenerateRequestsPerDayPerProjectPerModel-FreeTier"}) + "\n")
+    assert modelos.agotado_hoy("m1", u, "gemini", ahora=datetime(2026, 10, 27, 5, 0, tzinfo=timezone.utc))
+    assert not modelos.agotado_hoy("m1", u, "gemini", ahora=datetime(2026, 10, 27, 9, 17, tzinfo=timezone.utc))   # ya se reinició (00:00 del Pacífico)

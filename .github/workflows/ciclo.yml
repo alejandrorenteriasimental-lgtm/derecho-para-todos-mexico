@@ -84,6 +84,10 @@ jobs:
           path: cache_fuentes
           key: fuentes-${{ github.run_id }}
           restore-keys: fuentes-
+      - name: Verificar tesis en el Semanario Judicial (sin IA; no detiene el ciclo)
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python sistema/tesis.py
       - name: Marca de inicio (consumo)
         run: date -u +%s > /tmp/inicio
       - name: Ciclo

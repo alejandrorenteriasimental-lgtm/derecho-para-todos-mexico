@@ -217,6 +217,14 @@ def revisar(g, textos, ia=None):
             H.append(x)
     for x in vaguedades(cuerpo):
         h("vaguedad", "bloqueante", x)
+    # 6. JURISPRUDENCIA: no se cita una tesis o criterio judicial que no se haya verificado en el Semanario Judicial
+    verificadas = {str(t) for t in (g.get("tesis_verificadas") or [])}
+    for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo + " " + (g.get("copy") or "")):
+        p_ = plano(frase)
+        regs = set(re.findall(r"\b(\d{7})\b", p_))
+        if re.search(r"\bjurisprudencia\b|\btesis\b|registro digital|criterio (judicial|de la corte|del tribunal)|\bla (suprema )?corte (resolvio|determino|establecio)", p_) or regs:
+            if not regs or not regs <= verificadas:
+                h("jurisprudencia", "bloqueante", f"«{frase.strip()[:80]}» invoca un criterio judicial que no está verificado en el Semanario Judicial de la Federación; no se cita.")
     usados = [tx(f) or "" for f in fichas.values()] + [tx(r.get("ref") or fichas.get(r.get("fuente")) or {}) or "" for r in reglas]
     for x in consecuencias_sin_sustento(cuerpo, usados):
         h("sustento", "bloqueante", x)

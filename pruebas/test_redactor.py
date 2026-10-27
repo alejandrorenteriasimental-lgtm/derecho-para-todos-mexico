@@ -64,8 +64,9 @@ def uso(tmp_path): return tmp_path / "uso.jsonl"
 
 def test_genera_un_reel_valido_y_verificable(uso):
     sim = simulador_con()
-    g = redactor.generar(SOL, transporte, sim, env={}, archivo_uso=uso)
+    g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, sim, env={}, archivo_uso=uso)
     assert esquema.validar(g) == []
+    assert g["generacion"]["metricas"]["llamadas_ia_total"] == 4 and g["generacion"]["metricas"]["intentos_redaccion"] == 1
     assert any("999" in d for d in g["generacion"]["fuentes_descartadas"]) and any("XYZ" in d for d in g["generacion"]["fuentes_descartadas"])
     v = verificador.verificar_guion(g, transporte)
     assert v["decision"] in ("APTA", "APTA_CON_CRITERIO"), v
@@ -118,7 +119,7 @@ def test_sin_red_es_descarte_transitorio(uso):
 
 def test_solo_articulos_inexistentes_descarta(uso):
     with pytest.raises(redactor.Descartada) as e:
-        redactor.generar(SOL, transporte, simulador_con(investigar={"articulos": [{"sigla": "CPEUM", "articulo": "999"}]}), env={}, archivo_uso=uso)
+        redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(investigar={"articulos": [{"sigla": "CPEUM", "articulo": "999"}]}), env={}, archivo_uso=uso)
     assert "ninguna fuente" in str(e.value)
 
 
@@ -128,7 +129,7 @@ def test_carril_c_no_se_automatiza(uso):
 
 
 def test_cuota_agotada_es_transitoria_y_queda_registrada(uso, monkeypatch):
-    cfg = modelos.config(); cfg["roles"]["investigador"]["tope_diario"] = 0
+    cfg = modelos.config(); cfg["roles"]["redactor"]["tope_diario"] = 0
     monkeypatch.setattr(modelos, "config", lambda: cfg)
     with pytest.raises(redactor.Descartada) as e:
         redactor.generar(SOL, transporte, simulador_con(), env={}, archivo_uso=uso)
@@ -180,3 +181,45 @@ def test_duda_declarada_en_un_hecho_normativo_retiene(uso):
     b = copy.deepcopy(BORRADOR); b["afirmaciones"][0]["duda"] = "La norma no aclara si aplica a este supuesto."
     g = redactor.generar(SOL, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
     assert verificador.verificar_guion(g, transporte)["decision"] == "RETENER"
+
+
+def test_fuentes_del_catalogo_ahorran_la_llamada_del_investigador(uso):
+    sim = simulador_con()
+    g = redactor.generar(SOL, transporte, sim, env={}, archivo_uso=uso)
+    assert sim.llamadas["investigador"] == [] and g["generacion"]["metricas"]["llamadas_ia"]["investigador"] == 0
+
+
+def test_cuota_agotada_se_clasifica_como_cuota(uso, monkeypatch):
+    cfg = modelos.config(); cfg["roles"]["redactor"]["tope_diario"] = 0
+    monkeypatch.setattr(modelos, "config", lambda: cfg)
+    with pytest.raises(redactor.Descartada) as e:
+        redactor.generar(SOL, transporte, simulador_con(), env={}, archivo_uso=uso)
+    assert e.value.categoria == "cuota"
+
+
+def test_problema_puntual_se_repara_sin_regenerar(uso):
+    largo = copy.deepcopy(BORRADOR); largo["escenas"][3]["items"] = ["Pueden cobrarte por la vía legal ante un juez civil", "Ante un juez", "Sin cárcel por la deuda"]
+    pedidos = []
+    def red(n):
+        pedidos.append(n)
+        return largo if n == 1 else {"cambios": [{"escena": 3, "campo": "items", "valor": ["Pueden cobrarte", "Ante un juez", "Sin cárcel por la deuda"]}]}
+    sim = simulador_con(redactar=red)
+    g = redactor.generar(SOL, transporte, sim, env={}, archivo_uso=uso)
+    assert any("REPARAR" in u or "SOLO estos problemas puntuales" in u for u in sim.llamadas["redactor"])
+    assert g["escenas"][3]["items"][0] == "Pueden cobrarte" and g["escenas"][2]["cita"].startswith("Nadie puede ser aprisionado")
+
+
+def test_el_parche_no_puede_tocar_citas_ni_afirmaciones():
+    previo = copy.deepcopy(BORRADOR)
+    b = redactor.aplicar_parche(previo, {"cambios": [{"escena": 2, "campo": "cita_literal", "valor": "otra cosa"},
+                                                     {"campo": "afirmaciones", "valor": []}]})
+    assert b == previo
+
+
+def test_prechequeo_sin_autoridad_ni_plazo_no_llama_al_redactor(uso):
+    sol = {**SOL, "gancho": "¿Qué pasa si te obligan a firmar tu renuncia?", "fuentes_sugeridas": "CPEUM art. 17"}
+    sim = simulador_con(investigar={"articulos": [{"sigla": "CPEUM", "articulo": "17"}]})
+    with pytest.raises(redactor.Descartada) as e:
+        redactor.generar(sol, transporte, sim, env={}, archivo_uso=uso)
+    assert "prechequeo" in str(e.value) and sim.llamadas["redactor"] == [] and sim.llamadas["analista"] == []
+    assert e.value.categoria == "juridico"

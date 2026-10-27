@@ -13,7 +13,7 @@ Por qué es confiable aunque la redacte un modelo de lenguaje:
 Lo que no garantiza: que la interpretación sea la única posible. Por eso los temas de riesgo alto (carril C) no se
 automatizan y las interpretaciones con duda declarada se retienen.
 """
-import json, re, sys
+import copy, json, re, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -28,8 +28,22 @@ LOCALES = ("CPF", "CCF")  # tienen equivalentes estatales distintos → leyenda 
 
 class Descartada(Exception):
     """El tema no puede convertirse en una pieza verificable ahora. `transitoria` = reintentar más tarde."""
-    def __init__(self, motivo, transitoria=False, historial=None):
+    def __init__(self, motivo, transitoria=False, historial=None, categoria=None, metricas=None):
         super().__init__(motivo); self.transitoria = transitoria; self.historial = historial
+        self.categoria = categoria or categoria_de(motivo, transitoria); self.metricas = metricas
+
+
+JURIDICAS = ("[cobertura]", "[sustento]", "[conceptos]", "[condiciones]", "[respuesta]", "[tema]", "[mapa]", "[jurisprudencia]", "INSUFICIENTE")
+PUNTUALES = ("demasiado larg", "más de ", "línea de título", "[vaguedad]", "narración de ")   # se corrigen sin regenerar
+
+
+def categoria_de(motivo, transitoria=False, errores=None):
+    """jurídico | redacción | técnico | cuota: para medir y decidir qué corregir (no se mezclan en las estadísticas)."""
+    m = str(motivo) + " " + " ".join(errores or [])
+    if transitoria and re.search(r"cuota|tope|429|PerDay|quota", m, re.I): return "cuota"
+    if transitoria or re.search(r"sin conexión|HTTP \d|no corresponde a|no es JSON|modelo no disponible|no existe en el documento oficial|número inválido", m): return "tecnico"
+    if any(x in m for x in JURIDICAS) or re.search(r"auditor|objeci|no bastan|anclad|fuentes insuficientes", m, re.I): return "juridico"
+    return "redaccion"
 
 
 # ---------------- textos oficiales ----------------
@@ -306,7 +320,8 @@ def construir_reel(sol, borrador, fuentes):
             f = fuentes.get(src.get("fuente"))
             if not (f and verificador.contiene(f["texto_oficial"], cita)):
                 continue                                         # una cita no verificable no se muestra en pantalla
-            e["cita"] = cita; e.setdefault("etiqueta", f'{f["documento"].split(",")[0]}, artículo {f["articulo"]}')
+            e["cita"] = cita if len(cita) <= 220 else cita[:214].rsplit(" ", 1)[0] + " …"   # en pantalla, fragmento literal; la voz dice la cita completa
+            e.setdefault("etiqueta", f'{f["documento"].split(",")[0]}, artículo {f["articulo"]}')
             if not verificador.contiene(e.get("texto", ""), cita):
                 e["texto"] = (e.get("texto", "").rstrip(". ") + ": " + cita).strip(": ")
         e["afirmaciones"] = [{"id": f"A{j + 1}", "tipo": a.get("tipo", "interpretacion"), "texto": a.get("texto", ""), "fuente": mapa[j],
@@ -412,6 +427,40 @@ def investigar_complemento(sol, faltan, fuentes, investigador, biblio, simulador
     return nuevas
 
 
+SENALES = {   # ¿los textos oficiales contienen, al menos, el tipo de dato que exige cada elemento de la respuesta?
+    "que_hacer": r"podr[aá]n? (solicitar|demandar|reclamar|exigir|pedir|optar|acudir)|tendr[aá]n? derecho|tiene derecho|tienen derecho|acci[oó]n|reclam|denunci|querell|queja",
+    "ante_quien": r"tribunal|centros? (federal )?de conciliaci|autoridad conciliadora|procuradur|profeco|\bjuez|ministerio p[uú]blico|condusef|fiscal[ií]a|comisi[oó]n nacional",
+    "plazo": r"\b(\d{1,3}|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|diez|quince|treinta|sesenta|noventa)\s+(d[ií]as|mes(es)?|a[nñ]os?|semanas?|horas)\b|prescrib",
+}
+
+
+def prechequeo(sol, fuentes):
+    """Comprobación sin IA: ¿los artículos oficiales reunidos pueden, en principio, responder la pregunta? Devuelve los
+    elementos para los que no hay ni una señal en los textos (p. ej., ninguna autoridad ni plazo en una pregunta de
+    «¿qué pasa si…?»). Si falta algo, primero se buscan más fuentes; si sigue faltando, no se llama al redactor."""
+    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol))
+    texto = " ".join(f["texto_oficial"] for f in fuentes.values()).lower()
+    return [k for k in req if k in SENALES and not re.search(SENALES[k], texto)]
+
+
+def fuentes_sugeridas(sol, biblio, maximo=6):
+    """Artículos del catálogo editorial («LFT arts. 33, 48, 518; CPEUM 17») obtenidos directo del texto oficial, sin IA.
+    Si bastan, no hace falta gastar una llamada del investigador."""
+    fuentes = {}
+    for grupo in re.split(r"[;\n]", sol.get("fuentes_sugeridas") or ""):
+        m = re.match(r"\s*([A-Za-zÁÉÍÓÚ]{2,10})\b\.?\s*(?:arts?\.?|artículos?)?\s*(.*)", grupo.strip())
+        if not m or m.group(1).upper() not in ORDEN: continue
+        sigla = m.group(1).upper()
+        for num in re.findall(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?(?:-[A-Z])?", m.group(2)):
+            if len(fuentes) >= maximo: break
+            texto = biblio.articulo(sigla, num)
+            if not texto: continue
+            fid = f"F{len(fuentes) + 1}"
+            fuentes[fid] = {"sigla": sigla, "documento": ORDEN[sigla]["documento"], "articulo": num, "url": ORDEN[sigla]["url"],
+                            "ambito": ORDEN[sigla]["ambito"], "texto_oficial": texto, "para_que": "sugerida por el catálogo editorial"}
+    return fuentes
+
+
 def pregunta_plan(sol):
     return sol.get("gancho") or sol.get("angulo") or sol["titulo"]
 
@@ -486,6 +535,33 @@ def _objeta_mapa(a, mapa):
     return False
 
 
+REPARAR = """Tu borrador tiene SOLO estos problemas puntuales:
+- {errores}
+Corrige únicamente esos campos. No cambies el resto, no agregues afirmaciones jurídicas nuevas ni cambies citas literales.
+Devuelve: {{"cambios": [{{"escena": 3, "campo": "items", "valor": ["…"]}}, {{"campo": "titular", "valor": "…"}}]}}
+("escena" es el índice en "escenas"; omítelo para campos de la pieza gráfica). Borrador:
+{borrador}"""
+
+
+def aplicar_parche(previo, parche):
+    """Aplica los cambios del redactor solo a los campos de forma; nunca a citas, fuentes ni afirmaciones."""
+    b = copy.deepcopy(previo)
+    for c in (parche or {}).get("cambios", []) if isinstance(parche, dict) else []:
+        campo = c.get("campo")
+        if campo in (None, "cita_literal", "fuente", "afirmaciones", "razonamiento", "fuentes", "tipo"): continue
+        if "escena" in c and isinstance(b.get("escenas"), list) and 0 <= int(c["escena"]) < len(b["escenas"]):
+            b["escenas"][int(c["escena"])][campo] = c.get("valor")
+        elif "escena" not in c:
+            b[campo] = c.get("valor")
+    return b
+
+
+def _metricas(inv, red, aud, n_analisis, n_redaccion, complemento=False):
+    ll = {r: getattr(m, "llamadas", 0) for r, m in (("investigador", inv), ("redactor", red), ("auditor", aud)) if m is not None}
+    return {"llamadas_ia": ll, "llamadas_ia_total": sum(ll.values()), "intentos_analisis": n_analisis, "intentos_redaccion": n_redaccion,
+            "investigacion_complementaria": bool(complemento)}
+
+
 def generar(sol, transporte=verificador.transporte_http, simulador=None, env=None, archivo_uso=None):
     """Devuelve el guion listo para la cola, o lanza Descartada con el motivo.
     Etapa 1 (analizar): pregunta → regla → condiciones/excepciones → distinciones → respuesta corta, validado de forma
@@ -500,13 +576,37 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
     inv, red, aud = (modelos.Modelo(r, cfg, env, archivo_uso) for r in ("investigador", "redactor", "auditor"))
     try:
         biblio = Biblioteca(transporte)
-        fuentes, descartes = investigar(sol, inv, biblio, simulador)
+        # fuentes: primero las del catálogo (sin IA); el investigador solo si no bastan
+        fuentes, descartes = fuentes_sugeridas(sol, biblio), []
+        if not fuentes or prechequeo(sol, fuentes):
+            prev = fuentes
+            try:
+                fuentes, descartes = investigar(sol, inv, biblio, simulador)
+            except Descartada:
+                if not prev: raise
+                fuentes = {}
+            for f in prev.values():                                   # conserva las del catálogo que no repitió el investigador
+                if (f["sigla"], f["articulo"]) not in {(x["sigla"], x["articulo"]) for x in fuentes.values()} and len(fuentes) < 6:
+                    fuentes[f"F{len(fuentes) + 1}"] = f
+        faltan = prechequeo(sol, fuentes)
+        if faltan:
+            nuevas = investigar_complemento(sol, [f"{k} ({razonamiento.ELEMENTOS[k]})" for k in faltan], fuentes, inv, biblio, simulador)
+            fuentes.update(nuevas); complemento_previo = True
+            faltan = prechequeo(sol, fuentes)
+        if faltan:
+            raise Descartada("fuentes insuficientes (prechequeo sin redactar): los artículos oficiales reunidos no contienen "
+                             + ", ".join(razonamiento.ELEMENTOS[k] for k in faltan) + "; "
+                             + ", ".join(f'{f["sigla"]} {f["articulo"]}' for f in fuentes.values()),
+                             categoria="juridico", metricas=_metricas(inv, red, aud, 0, 0))
         glosario = _glosario(sol, fuentes)
-        historial, extra_a, reanalisis, complemento = [], "", 0, False
+        historial, extra_a, reanalisis = [], "", 0
+        complemento = locals().get("complemento_previo", False)
+        n_analisis = n_redaccion = 0
         while True:
             # ---- etapa 1: análisis jurídico (dos oportunidades) ----
             mapa = None
             for intento in range(2):
+                n_analisis += 1
                 m = analizar(sol, fuentes, red, glosario, simulador, extra_a)
                 errores = validar_mapa(m, sol, fuentes)
                 if errores and errores[0].startswith("INSUFICIENTE"):
@@ -522,7 +622,8 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                     fuentes.update(nuevas); glosario = _glosario(sol, fuentes)
                 extra_a = "\n\nTu análisis anterior tenía estos problemas; corrígelos sin cambiar la pregunta:\n- " + "\n- ".join(errores[:8])
             if mapa is None:
-                raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial)
+                raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial,
+                                 categoria="juridico", metricas=_metricas(inv, red, aud, n_analisis, n_redaccion, complemento))
             mapa_fijo, usadas = _mapa_fijo(mapa, fuentes)
             fuentes_red = {fid: f for fid, f in fuentes.items() if fid in usadas} or fuentes
             textos = _textos(fuentes_red)
@@ -537,10 +638,19 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                                                                                         campos=CAMPOS_PLANTILLA[pl], textos=textos, glosario=glosario) + fijo + extra, simulador)
                 construir = construir_imagen
             # ---- etapa 2: redacción sobre el análisis congelado (borrador + dos correcciones) ----
-            extra, volver = "", False
+            extra, volver, previo, errores_previos = "", False, None, []
             for intento in range(3):
-                borrador = pedir(extra)
+                n_redaccion += 1
+                if previo is not None and errores_previos and all(any(p in e for p in PUNTUALES) for e in errores_previos):
+                    # problema puntual (longitud, línea de título, referencia vaga…): se corrige SOLO eso sobre el borrador anterior
+                    parche = red.completar(REGLAS_COMUNES, REPARAR.format(borrador=json.dumps({k: v for k, v in previo.items() if k != "razonamiento"}, ensure_ascii=False)[:9000],
+                                                                          errores="\n- ".join(errores_previos[:8])), simulador)
+                    borrador = aplicar_parche(previo, parche)
+                    historial.append({"etapa": "reparacion_puntual", "intento": intento, "errores": errores_previos})
+                else:
+                    borrador = pedir(extra)
                 borrador = {**(borrador if isinstance(borrador, dict) else {}), "razonamiento": mapa}   # el redactor no puede alterar el análisis
+                previo = copy.deepcopy(borrador)
                 g = construir(sol, borrador, fuentes_red)
                 g["razonamiento"] = mapa_fijo
                 g["pregunta_original"] = pregunta_plan(sol)
@@ -548,6 +658,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
                 g["revision_razonamiento"] = hall
                 errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
+                errores_previos = errores
                 if errores:
                     historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores})
                     extra = "\n\nTu versión anterior tenía estos problemas; corrígelos respetando el análisis aprobado:\n- " + "\n- ".join(errores[:8]); continue
@@ -569,6 +680,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                                          "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
                     g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                             "solicitud": sol.get("archivo"), "metodo": "analisis_previo_v2_cobertura",
+                                            "metricas": _metricas(inv, red, aud, n_analisis, n_redaccion, complemento),
                                             "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                     return g
                 if _objeta_mapa(a, mapa) and reanalisis < 1:
@@ -581,7 +693,11 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                          "si una afirmación no puede sustentarse con el texto oficial, ELIMÍNALA; no agregues información nueva:\n") + \
                         json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
             if not volver:
+                ult = historial[-1]
                 raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
-                                 json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial)
+                                 json.dumps(ult, ensure_ascii=False)[:400], historial=historial,
+                                 categoria=categoria_de("", errores=ult.get("errores_esquema") or (["auditor"] if "auditoria_ia" in ult else [])),
+                                 metricas=_metricas(inv, red, aud, n_analisis, n_redaccion, complemento))
     except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
-        raise Descartada(f"modelo no disponible: {e}", transitoria=True)
+        raise Descartada(f"modelo no disponible: {e}", transitoria=True, categoria="cuota" if isinstance(e, modelos.CuotaAgotada) else "tecnico",
+                         metricas=_metricas(*[x for x in (locals().get("inv"), locals().get("red"), locals().get("aud"))], locals().get("n_analisis", 0), locals().get("n_redaccion", 0)))

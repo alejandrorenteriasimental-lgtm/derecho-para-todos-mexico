@@ -46,9 +46,34 @@ def usos_hoy(modelo, archivo=None, proveedor=None):
     """Solicitudes de hoy (UTC, como GitHub) a ese modelo y proveedor; las simuladas no consumen la cuota real."""
     f = Path(archivo or USO); hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     if not f.exists(): return 0
+    # Gemini reinicia su cuota a medianoche del Pacífico; contar desde la medianoche UTC bloquearía modelos ya disponibles
+    desde = _ultimo_reinicio_gemini().isoformat(timespec="seconds") if proveedor == "gemini" else hoy
     return sum(1 for l in f.read_text().splitlines() if l.strip() and (e := json.loads(l))["modelo"] == modelo
-               and e["ts"].startswith(hoy) and e.get("proveedor", "github_models") == (proveedor or "github_models")
+               and e["ts"] >= desde and e.get("proveedor", "github_models") == (proveedor or "github_models")
                and (e.get("resultado") == "ok" or "429" in e.get("error", "")))   # los 5xx y tiempos agotados no consumen cuota
+
+
+def _ultimo_reinicio_gemini(ahora=None):
+    """La cuota diaria gratuita de Gemini se reinicia a medianoche del Pacífico (no a medianoche UTC)."""
+    from zoneinfo import ZoneInfo
+    ahora = ahora or datetime.now(timezone.utc)
+    pac = ahora.astimezone(ZoneInfo("America/Los_Angeles"))
+    return pac.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+
+
+def agotado_hoy(modelo, archivo=None, proveedor="gemini", ahora=None):
+    """¿Ese modelo ya respondió «cuota diaria agotada» desde el último reinicio? Entonces no se vuelve a llamar (cada
+    llamada rechazada también gasta tiempo de Actions y puede contar contra el límite por minuto)."""
+    f = Path(archivo or USO)
+    if not f.exists() or proveedor != "gemini": return False
+    desde = _ultimo_reinicio_gemini(ahora).isoformat(timespec="seconds")
+    for l in f.read_text().splitlines()[-3000:]:
+        if not l.strip(): continue
+        e = json.loads(l)
+        if e.get("modelo") == modelo and e.get("proveedor") == "gemini" and e["ts"] >= desde and e.get("resultado") == "error" \
+           and "429" in e.get("error", "") and ("PerDay" in e.get("error", "") or "per day" in e.get("error", "").lower()):
+            return True
+    return False
 
 
 def _registrar(ev, archivo=None):
@@ -89,8 +114,12 @@ def servidor_local(cfg):
 
 class Modelo:
     """Interfaz: completar(sistema, usuario) → dict (JSON)."""
+    llamadas_ciclo = 0          # llamadas reales (incluye las rechazadas) en este proceso; se reinicia en cada ciclo
+    tope_ciclo = 10 ** 9
+
     def __init__(self, rol, cfg=None, env=os.environ, archivo_uso=None):
-        cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso
+        cfg = cfg or config(); self.rol = rol; self.env = env; self.archivo_uso = archivo_uso; self.llamadas = 0
+        Modelo.tope_ciclo = cfg.get("max_llamadas_ia_por_ciclo", Modelo.tope_ciclo)
         r = cfg["roles"][rol]; self.proveedor = cfg["proveedor"]; self.modelos = r["modelos"]
         self.pausa_429 = cfg.get("pausa_429_s", 35); self.topes = cfg.get("topes_por_modelo", {}); self.pausa_5xx = cfg.get("pausa_5xx_s", 20); self.timeout_gemini = r.get("timeout_s", cfg.get("timeout_gemini_s", 100)); self.razonamiento = r.get("razonamiento"); self.tope = r["tope_diario"]; self.max_tokens = r.get("max_tokens", 3000); self.temperatura = r.get("temperatura", 0.4)
         self.endpoint = cfg.get("endpoint", "https://models.github.ai/inference/chat/completions")
@@ -200,6 +229,11 @@ class Modelo:
             if self.proveedor == "simulado": prov = "simulado"
             if usos_hoy(modelo, self.archivo_uso, prov) >= min(self.tope, self.topes.get(modelo, self.tope)):
                 ultimo = CuotaAgotada(f"tope propio diario alcanzado para {modelo}"); continue
+            if prov == "gemini" and agotado_hoy(modelo, self.archivo_uso, prov):
+                ultimo = CuotaAgotada(f"cuota diaria gratuita agotada para {modelo} (no se vuelve a llamar hasta el reinicio)"); continue
+            if prov != "simulado" and Modelo.llamadas_ciclo >= Modelo.tope_ciclo:
+                raise CuotaAgotada(f"tope de {Modelo.tope_ciclo} llamadas de IA por ciclo alcanzado")
+            Modelo.llamadas_ciclo += prov != "simulado"; self.llamadas += 1
             t0 = time.time()
             for intento in (1, 2):
                 try:

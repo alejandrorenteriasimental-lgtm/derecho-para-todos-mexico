@@ -76,12 +76,47 @@ def _hoy_mx():
     return (datetime.now(timezone.utc) - timedelta(hours=6)).date()
 
 
+def metrica(ev):
+    """registro/metricas_generacion.jsonl: llamadas de IA e intentos por solicitud, con su resultado y categoría."""
+    f = RAIZ / "registro" / "metricas_generacion.jsonl"; f.parent.mkdir(parents=True, exist_ok=True)
+    with f.open("a") as h: h.write(json.dumps({"ts": cola.ahora(), **ev}, ensure_ascii=False) + "\n")
+
+
+def huella_entrada(sol):
+    """Lo que define a una solicitud: si no cambia, repetirla daría el mismo resultado (y gastaría cuota)."""
+    import hashlib
+    clave = {k: sol.get(k) for k in ("titulo", "gancho", "angulo", "plantilla", "fuentes_sugeridas", "investigacion")}
+    return hashlib.sha256(json.dumps(clave, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+
+
+def reabrir_por_cambio():
+    """Una solicitud descartada por motivo jurídico o de redacción solo vuelve a intentarse si su tema cambió en el
+    catálogo (pregunta, fuentes sugeridas o investigación). Los rechazos humanos y las supersedidas no se reabren."""
+    planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"
+    try: cat = {r["id"]: r for r in planificador.cargar_catalogo()}
+    except Exception: return
+    for f in sorted(planificador.SOLICITUDES.glob("*.json")):
+        try: sol = json.loads(f.read_text())
+        except ValueError: continue
+        if sol.get("estado") != "DESCARTADA" or "Rechazo humano" in str(sol.get("motivo_cierre", "")) or not sol.get("huella_entrada"): continue
+        r = cat.get(sol.get("tema_id"))
+        if not r: continue
+        nueva = {**sol, "titulo": r.get("titulo", sol.get("titulo")), "gancho": r.get("gancho", sol.get("gancho")), "fuentes_sugeridas": r.get("fuentes_sugeridas", sol.get("fuentes_sugeridas"))}
+        if huella_entrada(nueva) != sol["huella_entrada"]:
+            nueva["historial"] = sol.get("historial", []) + [{"estado": "DESCARTADA", "a": "PENDIENTE_GUION", "fecha_cambio": cola.ahora()[:10], "motivo": "el tema cambió en el catálogo"}]
+            nueva.update(estado="PENDIENTE_GUION", intentos=0); f.write_text(json.dumps(nueva, ensure_ascii=False, indent=2))
+            cola.log({"evento": "solicitud_reabierta", "solicitud": f.name, "motivo": "el tema cambió en el catálogo"})
+
+
 def redactar_pendientes(c, resumen, transporte, env, simulador=None):
     planificador.RAIZ = RAIZ; planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"
-    import modelos; modelos.USO = RAIZ / "estado" / "uso_ia.jsonl"
+    import modelos; modelos.USO = RAIZ / "estado" / "uso_ia.jsonl"; modelos.Modelo.llamadas_ciclo = 0
     planificador.planificar(dias=7, desde=_hoy_mx(), env=env, escribir=True)
     import time as _t; t0 = _t.time(); limite = modelos.config().get("presupuesto_redaccion_s", 1500)
+    reabrir_por_cambio()
+    sin_cuota = False
     for formato in ("reel", "imagen"):
+        if sin_cuota: break                                   # cuota agotada: no se intenta ningún otro formato en este ciclo
         if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS for t in c["trabajos"].values()):
             continue
         intentos = 0
@@ -96,11 +131,14 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             try:
                 g = redactor.generar(sol, transporte, simulador, env=env)
             except redactor.Descartada as e:
-                sol["intentos"] = sol.get("intentos", 0) + 1; sol["ultimo_motivo"] = str(e)[:500]
+                sol["intentos"] = sol.get("intentos", 0) + (0 if e.categoria == "cuota" else 1); sol["ultimo_motivo"] = str(e)[:500]   # la cuota no es culpa del tema
+                sol["ultima_categoria"] = e.categoria; sol["huella_entrada"] = huella_entrada(sol)
+                metrica({"solicitud": f.name, "resultado": "descartada", "categoria": e.categoria, "transitoria": e.transitoria, **(e.metricas or {})})
+                if e.categoria == "cuota": sin_cuota = True
                 if not e.transitoria or sol["intentos"] >= (6 if e.transitoria else 3):   # fallas de red: más margen antes de descartar
                     sol["estado"] = "DESCARTADA"; resumen["descartadas"].append(f'{sol["tema_id"]}: {str(e)[:120]}')
                 f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
-                cola.log({"evento": "redaccion_descartada", "solicitud": f.name, "transitoria": e.transitoria, "motivo": str(e)[:300]})
+                cola.log({"evento": "redaccion_descartada", "solicitud": f.name, "categoria": e.categoria, "transitoria": e.transitoria, "motivo": str(e)[:300]})
                 if getattr(e, "historial", None):           # diagnóstico completo de cada descarte (para mejorar el sistema)
                     d = RAIZ / "estado" / "descartes"; d.mkdir(parents=True, exist_ok=True)
                     (d / f.name).write_text(json.dumps({"solicitud": f.name, "fecha": cola.ahora(), "motivo": str(e), "historial": e.historial}, ensure_ascii=False, indent=1)[:200000])
@@ -109,6 +147,7 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             carpeta = RAIZ / "piezas" / sol["pieza_id"]; carpeta.mkdir(parents=True, exist_ok=True)
             (carpeta / "guion.json").write_text(json.dumps(g, ensure_ascii=False, indent=2))
             sol["estado"] = "GUION_LISTO"; sol["pieza"] = sol["pieza_id"]; f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
+            metrica({"solicitud": f.name, "pieza": sol["pieza_id"], "resultado": "redactada", **((g.get("generacion") or {}).get("metricas") or {})})
             resumen["redactadas"].append(sol["pieza_id"]); cola.log({"evento": "redactada", "pieza": sol["pieza_id"], "solicitud": f.name})
             break
 

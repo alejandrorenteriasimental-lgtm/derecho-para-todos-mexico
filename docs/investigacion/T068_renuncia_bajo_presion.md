@@ -26,13 +26,12 @@ Esta investigación se hizo después del rechazo humano de R20261028-T068 (26-10
 ## B. Lo que requiere interpretación o depende de pruebas (no presentarlo como regla general)
 
 1. **La ley no dice expresamente que una renuncia obtenida por coacción equivalga a un despido.** Esa consecuencia viene de criterios judiciales y depende de que se pruebe la presión. Si se prueba, la separación puede tratarse como no voluntaria y reclamarse con las acciones por despido (arts. 48 y 518).
-2. **Criterio judicial relevante (pendiente de confirmar en el Semanario Judicial).**
-   - **Datos:** Quinto Tribunal Colegiado en Materia de Trabajo del Primer Circuito. Jurisprudencia I.5o.T. J/1 L (11a.), registro digital 2024400, Undécima Época. Se publicó el 01-04-2022 y es obligatoria desde el 04-04-2022.
-   - **Rubro:** «RENUNCIA. ESTÁNDARES DE VALORACIÓN DE PRUEBAS QUE LOS ÓRGANOS JURISDICCIONALES DEBEN CONSIDERAR CUANDO EL TRABAJADOR ALEGA QUE FUE OBLIGADO E, INCLUSIVE, RECIBIÓ INSTRUCCIONES PARA FIRMARLA…»
-   - **Qué establece:** el patrón debe acreditar el escrito original y que refleja una voluntad libre. El trabajador debe aportar indicios objetivos que hagan dudoso su consentimiento.
-   - **Alcance:** es jurisprudencia de un tribunal colegiado. Obliga a los órganos de su circuito, no a todo el país ni a la Suprema Corte.
+2. **Criterio judicial: NO CITAR.** Existe una jurisprudencia de un tribunal colegiado sobre cómo se valoran las pruebas cuando
+   el trabajador alega que lo obligaron a renunciar, pero **no se ha verificado en el Semanario Judicial de la Federación**
+   (instrucción del responsable, 26-10-2026). Mientras no se verifique ahí, la pieza no menciona tesis, jurisprudencia ni
+   registros, y no afirma cómo se reparte la carga de la prueba. Sus datos quedan en `registro/tesis/` para la verificación.
 3. **«Firmar o no»:** la ley no ordena firmar ni prohíbe negarse. Cualquier consejo sobre qué hacer en el momento sería asesoría personalizada y se debe evitar.
-4. **Para la pieza:** lo seguro es explicar la regla general y sus condiciones (efecto, vía, autoridad y plazo, con su artículo) e invitar a la asesoría gratuita del Centro de Conciliación (art. 684-E), sin prometer un resultado.
+4. **Para la pieza:** lo seguro es explicar la regla general y sus condiciones (efecto, vía, autoridad y plazo, con su artículo), sin prometer un resultado ni dar consejo personal.
 
 ## C. Qué dejó ver el error
 
