@@ -180,6 +180,21 @@ Trabaja como abogado, en este orden:
 7. Separa lo que la norma dice expresamente de lo que es interpretación (criterio judicial, consecuencia que depende de
    pruebas o de condiciones): las interpretaciones van en "interpretaciones" con su condición, nunca como regla general.
 8. Si los textos no permiten responder la pregunta con seguridad, NO fuerces una respuesta: marca "suficiente": false.
+
+ERRORES QUE YA OCURRIERON EN ESTE PROYECTO (revisión humana y auditoría de oct-2026). No los repitas:
+- Inventar una consecuencia: escribir que algo «constituye una violación», «es delito», «genera una multa», «es nulo» o «te
+  pueden demandar» cuando el artículo no lo dice. Si el texto solo fija una obligación, la respuesta es la obligación, no su sanción.
+- Responder otra figura: garantía no es cambio ni devolución; renuncia no es terminación por mutuo consentimiento; un cargo
+  no reconocido no es un tema de nombramientos. Usa el mismo término de la pregunta y, si el texto habla de otra figura, dilo.
+- Calificar más fuerte que la ley: no digas «ilegal», «absoluto», «siempre», «exclusivamente» o «en todos los casos» si el texto
+  solo dice «no podrá», «se prohíbe» o «tiene derecho». Usa el verbo del propio artículo.
+- Citar media regla: si una conclusión tiene dos partes (p. ej., «15 días de salario» y «la parte proporcional»), la cita debe
+  contener ambas o hay que separarla en dos reglas, cada una con su cita.
+- Afirmar cambios en la ley («se reformó», «ahora», «recientemente», «nueva regla»): están prohibidos; responde con el texto
+  vigente, sin historia legislativa.
+- Dejar una respuesta incompleta: si la pregunta es «¿qué pasa si…?», la persona necesita qué puede hacer, ante quién y en qué
+  plazo; si algo de eso no está en los textos, márcalo "no_cubierto", no lo supongas.
+- Referencias vagas («autoridad competente», «este límite», «revisa tu ley»): nombra la autoridad o la cifra del texto, o no lo digas.
 Devuelve:
 {{"suficiente": true,
   "pregunta": "{pregunta}",
@@ -187,7 +202,7 @@ Devuelve:
   "respuesta_corta": "Sí/No/Depende: … (una oración, ≤ 160 caracteres, con la condición principal)",
   "reglas": [{{"conclusion": "qué establece la norma para ESTA pregunta", "fuente": "F1", "cita_literal": "copia exacta",
               "condiciones": ["condición o requisito que limita la regla"], "excepciones": ["excepción que prevé el texto"]}}],
-  "elementos": [{{"elemento": "efecto | que_hacer | ante_quien | plazo | definicion", "estado": "cubierto | no_aplica | no_cubierto",
+  "elementos": [{{"elemento": "uno de los pedidos en el punto 6: {nombres}", "estado": "cubierto | no_aplica | no_cubierto",
                  "respuesta": "en una oración, con las palabras que usará la pieza", "fuente": "F1", "cita_literal": "copia exacta", "motivo": "solo si no aplica"}}],
   "interpretaciones": [{{"afirmacion": "…", "condicion": "de qué depende", "base": "qué la apoya"}}],
   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "en una oración"}}],
@@ -209,6 +224,8 @@ EXCLUSIVAMENTE ese análisis:
   nombre que da el texto oficial, p. ej., «Centro de Conciliación», «Tribunal», «Profeco»). Las «interpretaciones» solo
   pueden aparecer con su condición («si se demuestra…»).
 - Si usas dos conceptos de las distinciones, explica su diferencia.
+- No califiques más fuerte que el análisis («ilegal», «absoluto», «siempre», «exclusivamente») ni agregues sanciones o
+  consecuencias que el análisis no tiene; no hables de reformas ni de cambios recientes.
 - Repite en "razonamiento" exactamente el análisis recibido (no lo modifiques).
 Análisis aprobado:
 {mapa}
@@ -478,8 +495,14 @@ def analizar(sol, fuentes, red, glosario, simulador=None, extra=""):
         nota = ("\n\nNOTA DE INVESTIGACIÓN EDITORIAL (no es texto oficial: úsala para entender el problema y los errores a evitar; "
                 "toda afirmación normativa debe salir de los textos oficiales de arriba, y lo que la nota marca como interpretación solo "
                 "puede ir en «interpretaciones» con su condición):\n" + (RAIZ / sol["investigacion"]).read_text()[:5000])
-    r = red.completar(REGLAS_COMUNES, ANALIZAR.format(pregunta=pregunta_plan(sol), titulo=sol["titulo"], textos=_textos(fuentes), glosario=glosario,
-                                                       tipo=tipo, requeridos="; ".join(f"{k} ({razonamiento.ELEMENTOS[k]})" for k in req)) + nota + extra, simulador)
+    t0 = getattr(red, "temperatura", None)
+    if t0 is not None: red.temperatura = min(t0, 0.15)     # el análisis jurídico no debe ser creativo; la redacción sí conserva su temperatura
+    try:
+        r = red.completar(REGLAS_COMUNES, ANALIZAR.format(pregunta=pregunta_plan(sol), titulo=sol["titulo"], textos=_textos(fuentes), glosario=glosario,
+                                                           tipo=tipo, requeridos="; ".join(f"{k} ({razonamiento.ELEMENTOS[k]})" for k in req),
+                                                           nombres=" | ".join(req)) + nota + extra, simulador)
+    finally:
+        if t0 is not None: red.temperatura = t0
     return r if isinstance(r, dict) else {}
 
 

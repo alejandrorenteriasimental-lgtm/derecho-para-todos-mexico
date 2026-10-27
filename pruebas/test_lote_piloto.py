@@ -215,3 +215,19 @@ def test_el_motivo_exacto_de_cada_descarte_queda_registrado(raiz_vacia, monkeypa
     m = [json.loads(l) for l in (raiz_vacia / "registro" / "metricas_generacion.jsonl").read_text().splitlines()]
     r = next(x for x in m if x["tema_id"] == "T031")
     assert r["motivo"] == "[sustento] motivo exacto" and r["categoria"] == "juridico" and r["resultado"] == "descartada"
+
+
+def test_el_analisis_pide_los_elementos_correctos_y_sin_creatividad():
+    """El formato de respuesta listaba elementos viejos (efecto|que_hacer|…) aunque el tipo pidiera «contenido»,
+    «condiciones» o «excepcion»; y el análisis se pedía con la temperatura de la redacción (0.5)."""
+    vistos = {}
+    class Red:
+        temperatura = 0.5
+        def completar(self, sistema, usuario, simulador=None):
+            vistos["prompt"] = usuario; vistos["temp"] = self.temperatura; return {}
+    red = Red()
+    sol = {"titulo": "t", "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?", "tipo_pregunta": "obligacion"}
+    redactor.analizar(sol, {"F1": {"documento": "LFT", "articulo": "87", "texto_oficial": "x"}}, red, "")
+    assert "contenido | condiciones" in vistos["prompt"] and "efecto | que_hacer" not in vistos["prompt"]
+    assert vistos["temp"] <= 0.15 and red.temperatura == 0.5
+    assert "Inventar una consecuencia" in vistos["prompt"]
