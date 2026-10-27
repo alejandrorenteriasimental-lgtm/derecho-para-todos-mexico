@@ -164,6 +164,8 @@ sim_ultimo = [""]
 def raiz_vacia(raiz, monkeypatch):
     (raiz / "piezas" / "X1" / "guion.json").unlink(); (raiz / "piezas" / "X1").rmdir()
     monkeypatch.setattr(_imagen, "RAIZ", raiz)
+    from datetime import date
+    monkeypatch.setattr(ciclo, "_hoy_mx", lambda: date(2026, 10, 26))   # planeación determinista (los temas dependen de la fecha)
     return raiz
 
 

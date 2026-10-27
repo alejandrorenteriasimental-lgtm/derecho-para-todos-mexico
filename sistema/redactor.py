@@ -453,7 +453,10 @@ def fuentes_sugeridas(sol, biblio, maximo=6):
         sigla = m.group(1).upper()
         for num in re.findall(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?(?:-[A-Z])?", m.group(2)):
             if len(fuentes) >= maximo: break
-            texto = biblio.articulo(sigla, num)
+            try:
+                texto = biblio.articulo(sigla, num)
+            except Descartada:                     # documento no disponible: el investigador sigue siendo la vía de respaldo
+                texto = None
             if not texto: continue
             fid = f"F{len(fuentes) + 1}"
             fuentes[fid] = {"sigla": sigla, "documento": ORDEN[sigla]["documento"], "articulo": num, "url": ORDEN[sigla]["url"],
