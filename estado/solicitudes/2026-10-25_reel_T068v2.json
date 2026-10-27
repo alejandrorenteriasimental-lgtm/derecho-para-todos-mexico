@@ -8,7 +8,7 @@
   "fuentes_sugeridas": "LFT arts. 33, 47, 48, 518, 521, 684-E",
   "riesgo_exactitud": "Bajo-medio",
   "hora_publicacion_mx": "19:00",
-  "estado": "SUPERSEDIDA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "reemplaza": "R20261028-T068 (rechazada por revisión humana el 26-10-2026, versión c607942b03d912b6)",
   "investigacion": "docs/investigacion/T068_renuncia_bajo_presion.md",
@@ -17,8 +17,12 @@
       "estado": "PENDIENTE_GUION",
       "a": "SUPERSEDIDA",
       "fecha_cambio": "2026-10-27"
+    },
+    {
+      "estado": "SUPERSEDIDA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-27",
+      "motivo": "supersedida por error: la solicitud original estaba rechazada"
     }
-  ],
-  "supersedida_por": "2026-10-28_reel_T068.json",
-  "motivo_cierre": "Duplicado por fecha y formato (defecto del planificador hasta v0.3); se conserva como historial."
+  ]
 }
