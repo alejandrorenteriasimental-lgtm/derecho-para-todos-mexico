@@ -395,15 +395,35 @@
       "id": "I20261030-T016",
       "formato": "imagen",
       "huella": "943ecd4e2ec0516264ab969ca0104a19a4be32367aae171753de8ebb6aacb084",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-27T01:59:25+00:00",
-      "historial": [],
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-27T10:24:19+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-27T10:24:23+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "42d216b84f61539e",
+        "huella_guion": "9761c19b35c3872390afe65d9cbec6b57206513a849853306851722b289ea3c3",
+        "huella_archivo": "906ad91bd4ddbf0a5e2414d02d5d941643d7e846d2c3ee5d843efad6c621bfe1",
+        "preparada": "2026-10-27T10:24:23+00:00",
+        "canal": "chat"
+      }
     }
   }
 }
