@@ -10,7 +10,7 @@ Solo usa peticiones GET. Uso: python sistema/meta_prueba.py  (variables META_PAG
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 
-GRAPH = "https://graph.facebook.com/v23.0"
+GRAPH = "https://graph.facebook.com/v26.0"
 PAGINA_ESPERADA = "61595676911245"          # facebook.com/aquidicelaley
 IG_ESPERADO = "aquidicelaley"
 PUBLICACION = {"pages_manage_posts", "instagram_content_publish", "publish_video", "pages_manage_engagement"}
