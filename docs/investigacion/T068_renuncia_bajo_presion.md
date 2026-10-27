@@ -39,3 +39,14 @@ Esta investigación se hizo después del rechazo humano de R20261028-T068 (26-10
 - No dijo qué hacer, ante quién ni en qué plazo.
 - Aludió a un «recurso legal específico» sin nombrarlo.
 - Lo corregido en el sistema: `razonamiento.revisar_cobertura`, `vaguedades`, `consecuencias_sin_sustento`, la investigación complementaria en `redactor.generar` y los subtítulos medidos en `render`.
+
+
+## D. Verificación de jurisprudencia en el Semanario Judicial (27-10-2026)
+
+Se consultó la página oficial del Semanario Judicial (sjf2.scjn.gob.mx) desde el navegador del responsable, en modo de solo lectura. El servicio del Semanario rechaza las consultas desde GitHub Actions (HTTP 403).
+
+- **Registro 2024400 · I.5o.T. J/1 L (11a.): NO CITAR.** Existe y coincide con los datos de las fuentes secundarias, pero el propio Quinto Tribunal Colegiado en Materia de Trabajo del Primer Circuito **abandonó el criterio** (amparo directo 344/2024, sesión del 28-11-2024). Ahora atiende solo la jurisprudencia 2a./J. 14/2023 (11a.).
+- **Registro 2026355 · 2a./J. 14/2023 (11a.), Segunda Sala:** existe y coincide. Se publicó el 28-04-2023 y es obligatoria desde el 02-05-2023. Criterio: «el escrito de renuncia tendrá valor probatorio únicamente si se demuestra de manera fehaciente que fue emitida de manera autónoma y unilateral».
+  - **Pendiente de revisión humana:** su vigencia después de la reforma judicial (nueva integración de la Suprema Corte). Mientras no se confirme, no se cita en piezas.
+
+Detalle en `registro/tesis/2024400.json` y `registro/tesis/2026355.json`.

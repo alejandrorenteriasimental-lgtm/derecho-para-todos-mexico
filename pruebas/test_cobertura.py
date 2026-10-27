@@ -177,3 +177,25 @@ def test_modelo_con_cuota_diaria_agotada_no_se_vuelve_a_llamar(tmp_path):
                              "error": "m1: HTTP 429 quota ... GenerateRequestsPerDayPerProjectPerModel-FreeTier"}) + "\n")
     assert modelos.agotado_hoy("m1", u, "gemini", ahora=datetime(2026, 10, 27, 5, 0, tzinfo=timezone.utc))
     assert not modelos.agotado_hoy("m1", u, "gemini", ahora=datetime(2026, 10, 27, 9, 17, tzinfo=timezone.utc))   # ya se reinició (00:00 del Pacífico)
+
+
+# ---------- I20261030-T016 (27-10): copy con un «cambio reciente» sin fuente y un «ojo» vacío ----------
+def test_cambio_legal_sin_decreto_y_ojo_vacio_se_bloquean():
+    g = {"titulo": "¿Te dieron 6 días? Puede que te deban más", "plantilla": "dato",
+         "pieza": {"titular": "¿Te dieron 6 días?", "bajada": "Depende: el periodo anual de vacaciones no puede ser inferior a doce días laborables.", "ojo": "Revisa tu ley"},
+         "copy": "De acuerdo con la Ley Federal del Trabajo, las reglas sobre tus días de descanso cambiaron recientemente. Tus vacaciones no pueden ser menores a este límite.",
+         "fuentes": {"F1": {"documento": LFT, "articulo": "76", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"}}}
+    det = " ".join(x["detalle"] for x in R.bloqueantes(R.revisar(g, {}, ia=False)))
+    assert "cambio legal" in det and "Revisa tu ley" in det and "este límite" in det
+
+
+def test_cita_casi_literal_se_sustituye_por_el_texto_oficial():
+    fz = {"F1": {"texto_oficial": ART[("LFT", "48")]["texto"]}}
+    m = {"elementos": [{"elemento": "que_hacer", "fuente": "F1",
+                        "cita_literal": "que se le reinstale en el trabajo que desempeñaba o que se le indemnice con el importe de tres meses de salario"}]}
+    redactor._citas_exactas(m, fz)
+    import verificador
+    assert verificador.contiene(ART[("LFT", "48")]["texto"], m["elementos"][0]["cita_literal"])
+    m2 = {"elementos": [{"elemento": "plazo", "fuente": "F1", "cita_literal": "tienes un año para presentar la demanda ante el juez de lo civil"}]}
+    redactor._citas_exactas(m2, fz)
+    assert "cita_literal_original" not in m2["elementos"][0]            # no inventa una equivalencia

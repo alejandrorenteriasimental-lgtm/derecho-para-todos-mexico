@@ -215,8 +215,11 @@ def revisar(g, textos, ia=None):
     if ia or rz.get("elementos"):
         for x in revisar_cobertura(g, textos):
             H.append(x)
-    for x in vaguedades(cuerpo):
+    acompana = cuerpo + "\n" + (g.get("copy") or "")       # el texto que acompaña también lo lee el público
+    for x in vaguedades(acompana):
         h("vaguedad", "bloqueante", x)
+    for x in afirmaciones_temporales(acompana, g):
+        h("sustento", "bloqueante", x)
     # 6. JURISPRUDENCIA: no se cita una tesis o criterio judicial que no se haya verificado en el Semanario Judicial
     verificadas = {str(t) for t in (g.get("tesis_verificadas") or [])}
     for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo + " " + (g.get("copy") or "")):
@@ -226,7 +229,7 @@ def revisar(g, textos, ia=None):
             if not regs or not regs <= verificadas:
                 h("jurisprudencia", "bloqueante", f"«{frase.strip()[:80]}» invoca un criterio judicial que no está verificado en el Semanario Judicial de la Federación; no se cita.")
     usados = [tx(f) or "" for f in fichas.values()] + [tx(r.get("ref") or fichas.get(r.get("fuente")) or {}) or "" for r in reglas]
-    for x in consecuencias_sin_sustento(cuerpo, usados):
+    for x in consecuencias_sin_sustento(acompana, usados):
         h("sustento", "bloqueante", x)
     # sin duplicados
     vistos, out = set(), []
@@ -325,6 +328,8 @@ VAGOS = (
     r"\b(tomar|emprender|iniciar|ejercer) (las )?acciones (legales|correspondientes)\b",
     r"\bla ley (preve|contempla|establece|ofrece) (opciones|mecanismos|alternativas|herramientas|vias)\b",
     r"\b(recurso|via|mecanismo) legal (especifico|especial|adecuado)\b",
+    r"^\W*(ojo\W*)?(revisa|consulta|checa|lee) (tu|la) (ley|contrato|caso|situacion)\W*$",
+    r"\b(este|ese|dicho) (limite|minimo|maximo|plazo|monto)\b(?! de \d)",
 )
 CONCRETOS = r"\b(tribunal|tribunales|juez|jueza|centro de conciliacion|centros de conciliacion|profeco|procuraduria|ministerio publico|fiscalia|condusef|demanda|demandar|denuncia|denunciar|queja|amparo|conciliacion|reinstalacion|indemnizacion|nulidad)\b"
 
@@ -371,3 +376,18 @@ def consecuencias_sin_sustento(cuerpo, textos_citados):
         for pl in _plazos(p) - _plazos(base):
             out.append(f"«{frase.strip()[:80]}» menciona un plazo ({pl[0]} {pl[1]}) que no aparece en los artículos citados.")
     return list(dict.fromkeys(out))
+
+
+
+def afirmaciones_temporales(texto, g):
+    """«La ley cambió recientemente», «nueva reforma»: afirmaciones sobre cambios legales que exigen una fuente que las
+    pruebe (el decreto en el DOF). Ninguna pieza las tiene hoy, así que se bloquean."""
+    fuentes = g.get("fuentes") or {}
+    vals = fuentes.values() if isinstance(fuentes, dict) else fuentes
+    hay_dof = any("dof" in str(f.get("url", "")).lower() or "decreto" in str(f.get("documento", "")).lower() for f in vals)
+    out = []
+    for frase in re.split(r"(?<=[.!?:])\s+|\n", texto or ""):
+        p = plano(frase)
+        if re.search(r"\b(recientemente|reciente(s)? reforma|nueva(s)? (ley|reforma|regla)|cambi(o|aron) (la ley|las reglas|recientemente)|ya cambio|ahora la ley|desde la reforma)\b", p) and not hay_dof:
+            out.append(f"«{frase.strip()[:80]}» afirma un cambio legal sin citar el decreto que lo establece (DOF).")
+    return out

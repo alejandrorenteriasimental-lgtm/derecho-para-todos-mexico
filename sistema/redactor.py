@@ -481,6 +481,28 @@ def analizar(sol, fuentes, red, glosario, simulador=None, extra=""):
     return r if isinstance(r, dict) else {}
 
 
+def _citas_exactas(mapa, fuentes):
+    """Corrección puntual SIN IA: si la cita de un elemento o regla no es literal pero el artículo contiene un fragmento
+    casi idéntico (≥ 85 % de las palabras en el mismo orden), se sustituye por el texto oficial exacto. El contenido de la
+    respuesta no cambia; si no hay un fragmento así, la cita queda como estaba y la revisión la bloquea."""
+    from difflib import SequenceMatcher
+    for x in [*(mapa.get("reglas") or []), *(mapa.get("elementos") or [])]:
+        if not isinstance(x, dict) or x.get("fuente") not in fuentes or not x.get("cita_literal"): continue
+        oficial = fuentes[x["fuente"]]["texto_oficial"]
+        if verificador.contiene(oficial, x["cita_literal"]): continue
+        pc = razonamiento.plano(x["cita_literal"]).split(); po = oficial.split(); n = len(pc)
+        if n < 6: continue
+        mejor, frag = 0.0, None
+        for i in range(0, max(1, len(po) - n + 1)):
+            for m in (n - 2, n - 1, n, n + 1, n + 2):
+                cand = po[i:i + m]
+                r = SequenceMatcher(None, pc, razonamiento.plano(" ".join(cand)).split()).ratio()
+                if r > mejor: mejor, frag = r, " ".join(cand)
+        if mejor >= 0.85 and frag:
+            x["cita_literal_original"] = x["cita_literal"]; x["cita_literal"] = frag.strip(" ,;:")
+    return mapa
+
+
 def validar_mapa(mapa, sol, fuentes):
     """Revisión determinista del análisis contra el texto oficial COMPLETO de cada artículo. Aplica las MISMAS reglas que
     después se aplican a la pieza (razonamiento.revisar), más las propias del análisis. Devuelve la lista de errores."""
@@ -610,7 +632,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             mapa = None
             for intento in range(2):
                 n_analisis += 1
-                m = analizar(sol, fuentes, red, glosario, simulador, extra_a)
+                m = _citas_exactas(analizar(sol, fuentes, red, glosario, simulador, extra_a), fuentes)
                 errores = validar_mapa(m, sol, fuentes)
                 if errores and errores[0].startswith("INSUFICIENTE"):
                     raise Descartada("el análisis concluyó que los textos oficiales no bastan para responder la pregunta: " + errores[0][14:300])
