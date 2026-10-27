@@ -159,7 +159,13 @@ Trabaja como abogado, en este orden:
    («siempre que», «cuando», «salvo», «que se ofrezca…», «en los casos…»). Si la regla solo vale para ciertos supuestos, dilo.
 4. Distingue los conceptos parecidos que NO son lo mismo y que podrían confundirse en la respuesta.
 5. Con todo lo anterior, escribe la respuesta corta: empieza con «Sí», «No» o «Depende» y menciona en ella la condición principal.
-6. Si los textos no permiten responder la pregunta con seguridad, NO fuerces una respuesta: marca "suficiente": false.
+6. COBERTURA. Esta pregunta es de tipo «{tipo}». Quien la hace necesita saber: {requeridos}. Para CADA uno escribe un
+   elemento: "cubierto" con su respuesta, la fuente y una cita literal que lo diga expresamente; o "no_aplica" con el motivo
+   (p. ej., no hay nada que reclamar). Si un artículo no lo dice expresamente, NO lo deduzcas: márcalo "no_cubierto" y el
+   sistema buscará el artículo que falta. Un solo artículo rara vez basta para explicar efecto, vía, autoridad y plazo.
+7. Separa lo que la norma dice expresamente de lo que es interpretación (criterio judicial, consecuencia que depende de
+   pruebas o de condiciones): las interpretaciones van en "interpretaciones" con su condición, nunca como regla general.
+8. Si los textos no permiten responder la pregunta con seguridad, NO fuerces una respuesta: marca "suficiente": false.
 Devuelve:
 {{"suficiente": true,
   "pregunta": "{pregunta}",
@@ -167,6 +173,9 @@ Devuelve:
   "respuesta_corta": "Sí/No/Depende: … (una oración, ≤ 160 caracteres, con la condición principal)",
   "reglas": [{{"conclusion": "qué establece la norma para ESTA pregunta", "fuente": "F1", "cita_literal": "copia exacta",
               "condiciones": ["condición o requisito que limita la regla"], "excepciones": ["excepción que prevé el texto"]}}],
+  "elementos": [{{"elemento": "efecto | que_hacer | ante_quien | plazo | definicion", "estado": "cubierto | no_aplica | no_cubierto",
+                 "respuesta": "en una oración, con las palabras que usará la pieza", "fuente": "F1", "cita_literal": "copia exacta", "motivo": "solo si no aplica"}}],
+  "interpretaciones": [{{"afirmacion": "…", "condicion": "de qué depende", "base": "qué la apoya"}}],
   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "en una oración"}}],
   "limites": "lo que estos textos NO dicen o lo que la pieza no debe afirmar",
   "fuentes_irrelevantes": ["F3"]}}
@@ -180,6 +189,9 @@ EXCLUSIVAMENTE ese análisis:
 - Cada condición y excepción del análisis debe decirse en el contenido visible; nunca presentes la regla como general.
 - Cada afirmación debe salir de una regla del análisis y llevar su misma cita literal y su misma fuente. No agregues reglas,
   artículos, cifras ni ejemplos jurídicos que no estén en el análisis.
+- Cada elemento «cubierto» del análisis (efecto, qué hacer, ante quién, plazo…) debe decirse en el contenido visible con
+  casi las mismas palabras de su «respuesta». No aludas a un recurso, vía o autoridad sin nombrarlo («existe un recurso legal
+  específico» está prohibido). Las «interpretaciones» solo pueden aparecer con su condición («si se demuestra…»).
 - Si usas dos conceptos de las distinciones, explica su diferencia.
 - Repite en "razonamiento" exactamente el análisis recibido (no lo modifiques).
 Análisis aprobado:
@@ -198,11 +210,17 @@ condición, requisito, límite o excepción del artículo (p. ej., «que se ofre
 ¿Confunde conceptos parecidos (garantía, devolución, cambio, bonificación, rescisión; renuncia, mutuo consentimiento,
 despido)? ¿La pieza responde de forma directa la pregunta de su título y la del plan editorial? ¿Presenta como regla general
 lo que la ley solo prevé en supuestos concretos? ¿Afirma algo que la ley no dice (p. ej., que algo es ilegal sin que un texto
-lo establezca)? Señala SOLO problemas reales, cada uno con la corrección concreta.
+lo establezca)?
+COBERTURA: ponte en el lugar de quien hizo la pregunta. ¿La pieza le dice lo esencial (qué consecuencia tiene, qué puede
+hacer, ante quién y en qué plazo, cuando aplique)? ¿O responde un aspecto lateral (p. ej., la validez de un documento) y
+deja sin contestar el núcleo? ¿Alguna consecuencia se apoya en un artículo que no la establece? ¿Hay referencias vagas
+(«existe un recurso», «acude a las autoridades competentes») sin nombrar la vía o la autoridad?
+Señala SOLO problemas reales, cada uno con la corrección concreta.
 Devuelve: {{"veredicto": "sin_objeciones" | "con_objeciones",
+ "cobertura": {{"responde_nucleo": true | false, "faltantes": ["lo esencial que no se responde"]}},
  "conclusiones": [{{"conclusion": "...", "sostenida": "si" | "parcial" | "no", "motivo": "..."}}],
  "objeciones": [{{"donde": "...", "problema": "...", "correccion": "..."}}]}}
-Si alguna conclusión es «parcial» o «no», el veredicto es «con_objeciones»."""
+Si alguna conclusión es «parcial» o «no», o si "responde_nucleo" es false, el veredicto es «con_objeciones»."""
 
 
 def _textos(fuentes):
@@ -217,7 +235,7 @@ def investigar(sol, investigador, biblio, simulador=None):
     fuentes, descartes = {}, []
     for c in (r.get("articulos") or [])[:4]:
         sigla, num = str(c.get("sigla", "")).strip(), str(c.get("articulo", "")).strip()
-        if sigla not in ORDEN or not re.fullmatch(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?", num, re.I):
+        if sigla not in ORDEN or not re.fullmatch(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?(?:-[A-Z])?", num, re.I):
             descartes.append(f"{sigla} {num}: fuera del catálogo o número inválido"); continue
         texto = biblio.articulo(sigla, num)
         if not texto:
@@ -362,14 +380,50 @@ def _fuentes_por_ficha(g, fuentes):
     return out
 
 
+PEDIR_COMPLEMENTO = """Tema: {titulo}
+Pregunta: {pregunta}
+Ya se tienen estos artículos: {tenidos}
+Falta sustento oficial para: {faltan}
+Ordenamientos disponibles (sigla: nombre): {lista}
+
+Propón de 1 a 3 artículos ADICIONALES que establezcan expresamente lo que falta (p. ej., la acción que se puede ejercer,
+la autoridad ante la que se hace y el plazo). Devuelve:
+{{"articulos": [{{"sigla": "...", "articulo": "48", "para_que": "qué elemento sustenta"}}]}}"""
+
+
+def investigar_complemento(sol, faltan, fuentes, investigador, biblio, simulador=None, maximo=6):
+    """Segunda búsqueda dirigida: cuando el análisis no encuentra sustento para un elemento esencial de la respuesta."""
+    lista = "; ".join(f'{s}: {o["documento"]}' for s, o in ORDEN.items())
+    tenidos = ", ".join(f'{f["sigla"]} art. {f["articulo"]}' for f in fuentes.values())
+    r = investigador.completar(REGLAS_COMUNES, PEDIR_COMPLEMENTO.format(titulo=sol["titulo"], pregunta=pregunta_plan(sol), tenidos=tenidos,
+                                                                        faltan="; ".join(faltan), lista=lista), simulador)
+    nuevas, ya = {}, {(f["sigla"], f["articulo"]) for f in fuentes.values()}
+    for c in (r.get("articulos") or [])[:3]:
+        sigla, num = str(c.get("sigla", "")).strip(), str(c.get("articulo", "")).strip()
+        if len(fuentes) + len(nuevas) >= maximo or (sigla, num) in ya or sigla not in ORDEN: continue
+        if not re.fullmatch(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?(?:-[A-Z])?", num, re.I): continue
+        texto = biblio.articulo(sigla, num)
+        if not texto: continue
+        fid = f"F{len(fuentes) + len(nuevas) + 1}"
+        nuevas[fid] = {"sigla": sigla, "documento": ORDEN[sigla]["documento"], "articulo": num, "url": ORDEN[sigla]["url"],
+                       "ambito": ORDEN[sigla]["ambito"], "texto_oficial": texto, "para_que": c.get("para_que", "")}
+    return nuevas
+
+
 def pregunta_plan(sol):
     return sol.get("gancho") or sol.get("angulo") or sol["titulo"]
 
 
 def analizar(sol, fuentes, red, glosario, simulador=None, extra=""):
     """Etapa 1: la regla, sus condiciones, excepciones y fuentes ANTES de escribir una sola línea de la pieza."""
-    r = red.completar(REGLAS_COMUNES, ANALIZAR.format(pregunta=pregunta_plan(sol), titulo=sol["titulo"], textos=_textos(fuentes),
-                                                       glosario=glosario) + extra, simulador)
+    tipo, req = razonamiento.tipo_pregunta(pregunta_plan(sol))
+    nota = ""
+    if sol.get("investigacion") and (RAIZ / sol["investigacion"]).exists():   # investigación editorial previa (p. ej., tras un rechazo humano)
+        nota = ("\n\nNOTA DE INVESTIGACIÓN EDITORIAL (no es texto oficial: úsala para entender el problema y los errores a evitar; "
+                "toda afirmación normativa debe salir de los textos oficiales de arriba, y lo que la nota marca como interpretación solo "
+                "puede ir en «interpretaciones» con su condición):\n" + (RAIZ / sol["investigacion"]).read_text()[:5000])
+    r = red.completar(REGLAS_COMUNES, ANALIZAR.format(pregunta=pregunta_plan(sol), titulo=sol["titulo"], textos=_textos(fuentes), glosario=glosario,
+                                                       tipo=tipo, requeridos="; ".join(f"{k} ({razonamiento.ELEMENTOS[k]})" for k in req)) + nota + extra, simulador)
     return r if isinstance(r, dict) else {}
 
 
@@ -389,7 +443,7 @@ def validar_mapa(mapa, sol, fuentes):
             err.append(f'[mapa] La regla «{str(r.get("conclusion", ""))[:60]}» no trae una cita literal suficiente.')
     rz = {**mapa, "reglas": [{**r, "ref": {k: fuentes[r["fuente"]][k] for k in ("documento", "articulo")}} for r in reglas if r.get("fuente") in fuentes]}
     prueba = {"titulo": pregunta_plan(sol).strip(), "pregunta_original": pregunta_plan(sol), "razonamiento": rz,
-              "pieza": {"bajada": mapa.get("respuesta_corta", "")}, "fuentes": {}}
+              "pieza": {"bajada": mapa.get("respuesta_corta", "")}, "fuentes": {}, "_solo_analisis": True}
     if not prueba["titulo"].endswith("?"): prueba["titulo"] += "?"
     textos = {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}
     err += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(razonamiento.revisar(prueba, textos, ia=True))]
@@ -446,7 +500,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
         biblio = Biblioteca(transporte)
         fuentes, descartes = investigar(sol, inv, biblio, simulador)
         glosario = _glosario(sol, fuentes)
-        historial, extra_a, reanalisis = [], "", 0
+        historial, extra_a, reanalisis, complemento = [], "", 0, False
         while True:
             # ---- etapa 1: análisis jurídico (dos oportunidades) ----
             mapa = None
@@ -458,6 +512,12 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 historial.append({"etapa": "analisis", "intento": intento, "errores": errores})
                 if not errores:
                     mapa = m; break
+                faltan = [e for e in errores if e.startswith("[cobertura]") and ("Falta sustento" in e or "no dice" in e)]
+                if faltan and not complemento:
+                    complemento = True
+                    nuevas = investigar_complemento(sol, faltan, fuentes, inv, biblio, simulador)
+                    historial.append({"etapa": "investigacion_complementaria", "faltan": faltan, "agregadas": [f'{f["sigla"]} {f["articulo"]}' for f in nuevas.values()]})
+                    fuentes.update(nuevas); glosario = _glosario(sol, fuentes)
                 extra_a = "\n\nTu análisis anterior tenía estos problemas; corrígelos sin cambiar la pregunta:\n- " + "\n- ".join(errores[:8])
             if mapa is None:
                 raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400])
@@ -495,13 +555,18 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                     a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
                         {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
                         for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
+                cob = a.get("cobertura") or {}
+                if a.get("veredicto") == "sin_objeciones" and cob.get("responde_nucleo") is False:
+                    a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
+                        {"donde": "respuesta", "problema": "no responde el núcleo de la pregunta: " + "; ".join(map(str, cob.get("faltantes") or [])),
+                         "correccion": "explica lo que falta con su fuente o descarta la pieza"}]}
                 if a.get("veredicto") == "sin_objeciones":
                     m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
                     fam = lambda m: m.split("-")[0].split("/")[-1].lower()
                     g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,
                                          "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
                     g["generacion"].update({"fuentes_descartadas": descartes, "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                                            "solicitud": sol.get("archivo"), "metodo": "analisis_previo_v1",
+                                            "solicitud": sol.get("archivo"), "metodo": "analisis_previo_v2_cobertura",
                                             "modelos": {"investigador": getattr(inv, "ultimo_modelo", inv.modelos), "redactor": getattr(red, "ultimo_modelo", red.modelos)}})
                     return g
                 if _objeta_mapa(a, mapa) and reanalisis < 1:

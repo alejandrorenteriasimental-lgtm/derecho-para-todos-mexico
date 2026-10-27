@@ -211,6 +211,15 @@ def revisar(g, textos, ia=None):
             if cita and _coincide(frase, cita) and contexto_omitido(txt, cita) and not _marcadores_en(frase):
                 frag = fragmento_condicion(txt, cita, contexto_omitido(txt, cita)[0])
                 h("condiciones", "bloqueante", f"Frase absoluta «{frase.strip()[:80]}» sobre una regla condicionada de {fid} («…{frag}…»).")
+    # 5. COBERTURA, VAGUEDAD y SUSTENTO DE LO VISIBLE (rechazo humano de R20261028-T068, 26-10-2026)
+    if ia or rz.get("elementos"):
+        for x in revisar_cobertura(g, textos):
+            H.append(x)
+    for x in vaguedades(cuerpo):
+        h("vaguedad", "bloqueante", x)
+    usados = [tx(f) or "" for f in fichas.values()] + [tx(r.get("ref") or fichas.get(r.get("fuente")) or {}) or "" for r in reglas]
+    for x in consecuencias_sin_sustento(cuerpo, usados):
+        h("sustento", "bloqueante", x)
     # sin duplicados
     vistos, out = set(), []
     for x in H:
@@ -229,3 +238,128 @@ def _coincide(frase, referencia, minimo=2):
 
 def bloqueantes(hallazgos):
     return [x for x in hallazgos if x["severidad"] == "bloqueante"]
+
+
+# ---------------- cobertura de la pregunta ----------------
+# Lo que una persona necesita saber según el TIPO de pregunta. Una pieza que pregunta «¿qué pasa si…?» y solo explica la
+# validez de un documento, sin decir qué se puede hacer, ante quién ni en qué plazo, no responde la pregunta.
+ELEMENTOS = {
+    "efecto": "qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…)",
+    "que_hacer": "qué puede hacer la persona (qué acción, reclamo o derecho puede ejercer)",
+    "ante_quien": "ante qué autoridad u órgano concreto se hace",
+    "plazo": "en qué plazo debe hacerse",
+    "definicion": "qué es y qué alcance tiene el concepto",
+}
+TIPOS_PREGUNTA = (
+    ("consecuencia", r"\bque pasa (si|cuando)\b|\bque (hago|puedo hacer|debo hacer|se puede hacer)\b|\b(me|te|le|nos|les) (obligan|obliga|despiden|despide|corren|corre|niegan|niega|quitan|quita|retienen|retiene)\b",
+     ("efecto", "que_hacer", "ante_quien", "plazo")),
+    ("legalidad", r"\bes (legal|ilegal|valido|valida|delito)\b|\besta (permitido|prohibido)\b|\bse (puede|vale)\b|\bpueden?\b|\b(tienen?|tienes|tengo) que\b|\bestan? obligad",
+     ("efecto",)),
+    ("definicion", r"\bque (es|son|significa|significan)\b|\ben que consiste\b|\bcual es la diferencia\b|\bdiferencia entre\b",
+     ("definicion",)),
+)
+
+
+def tipo_pregunta(pregunta):
+    p = plano(pregunta)
+    for nombre, patron, req in TIPOS_PREGUNTA:
+        if re.search(patron, p): return nombre, req
+    return "general", ("efecto",)
+
+
+def elementos_requeridos(pregunta):
+    return tipo_pregunta(pregunta)[1]
+
+
+def revisar_cobertura(g, textos):
+    """Cada elemento requerido por el tipo de pregunta debe estar en el análisis («elementos»): cubierto con fuente y cita
+    literal que esté en el texto oficial, o «no_aplica» con un motivo. Lo «no_cubierto» bloquea (faltan fuentes). Lo cubierto
+    debe decirse en el contenido visible."""
+    H = []
+    rz = g.get("razonamiento") or {}
+    pregunta = g.get("pregunta_original") or rz.get("pregunta") or g.get("titulo", "")
+    tipo, req = tipo_pregunta(pregunta)
+    els = {str(e.get("elemento", "")).strip(): e for e in rz.get("elementos") or [] if isinstance(e, dict)}
+    fichas = g.get("fuentes") or {}
+    if isinstance(fichas, list): fichas = {f["id"]: f for f in fichas}
+    refs = {r.get("fuente"): r.get("ref") for r in rz.get("reglas") or [] if isinstance(r, dict) and r.get("ref")}
+    visible = None if g.get("_solo_analisis") else plano(cuerpo_visible(g))
+    for k in req:
+        e = els.get(k)
+        if not e:
+            H.append({"regla": "cobertura", "severidad": "bloqueante", "detalle": f"La pregunta es de tipo «{tipo}» y el análisis no dice {ELEMENTOS[k]} (elemento «{k}»)."}); continue
+        est = str(e.get("estado", "")).lower()
+        if est == "no_aplica":
+            if len(str(e.get("motivo", "")).split()) < 4:
+                H.append({"regla": "cobertura", "severidad": "bloqueante", "detalle": f"El elemento «{k}» se marca como no aplicable sin explicar por qué."})
+            continue
+        if est != "cubierto":
+            H.append({"regla": "cobertura", "severidad": "bloqueante",
+                      "detalle": f"Falta sustento oficial para {ELEMENTOS[k]} (elemento «{k}»): hay que buscar el artículo que lo regula o no publicar la pieza."}); continue
+        ref = refs.get(e.get("fuente")) or fichas.get(e.get("fuente")) or {}
+        txt = textos.get((ref.get("documento"), str(ref.get("articulo")))) if ref else None
+        cita = plano(e.get("cita_literal", ""))
+        if not txt or len(cita.split()) < 4 or _ubicar(plano(txt), cita)[0] < 0:
+            H.append({"regla": "cobertura", "severidad": "bloqueante",
+                      "detalle": f"El elemento «{k}» («{str(e.get('respuesta', ''))[:60]}») no trae una cita literal que esté en el texto oficial de su fuente."}); continue
+        if visible is not None:
+            clave = [w for w in plano(e.get("respuesta", "")).split() if len(w) > 4][:6]
+            if clave and sum(1 for w in clave if w in visible) < max(2, (len(clave) + 1) // 2):
+                H.append({"regla": "cobertura", "severidad": "bloqueante",
+                          "detalle": f"El análisis responde {ELEMENTOS[k]} («{str(e.get('respuesta', ''))[:70]}»), pero la pieza no lo dice."})
+    return H
+
+
+# ---------------- vaguedad ----------------
+VAGOS = (
+    r"\b(existe|existen|hay) (un|una|unos|unas)? ?(recurso|recursos|mecanismo|mecanismos|via|vias|procedimiento|procedimientos|medio|medios|accion|acciones|instancia|instancias)( legal| legales| juridico| juridicos| especifico| especificos| especial)*\b",
+    r"\b(autoridad|autoridades|instancia|instancias) (competente|competentes|correspondiente|correspondientes)\b",
+    r"\b(tomar|emprender|iniciar|ejercer) (las )?acciones (legales|correspondientes)\b",
+    r"\bla ley (preve|contempla|establece|ofrece) (opciones|mecanismos|alternativas|herramientas|vias)\b",
+    r"\b(recurso|via|mecanismo) legal (especifico|especial|adecuado)\b",
+)
+CONCRETOS = r"\b(tribunal|tribunales|juez|jueza|centro de conciliacion|centros de conciliacion|profeco|procuraduria|ministerio publico|fiscalia|condusef|demanda|demandar|denuncia|denunciar|queja|amparo|conciliacion|reinstalacion|indemnizacion|nulidad)\b"
+
+
+def vaguedades(cuerpo):
+    """Frases que aluden a un recurso, vía o autoridad sin nombrarlos («existe un recurso legal específico»)."""
+    out = []
+    for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo or ""):
+        p = plano(frase)
+        if any(re.search(v, p) for v in VAGOS) and not re.search(CONCRETOS, p):
+            out.append(f"Referencia vaga: «{frase.strip()[:90]}». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.")
+    return out
+
+
+# ---------------- consecuencias visibles sin sustento ----------------
+# Términos de consecuencia jurídica: si la pieza los dice, algún artículo citado por la pieza debe contenerlos.
+CONSECUENCIAS = {
+    "despido": r"\bdespid|\bdespedi", "indemnización": r"\bindemniz", "reinstalación": r"\breinstal", "prescripción": r"\bprescri",
+    "Tribunal": r"\btribunal", "Centro de Conciliación": r"\bcentros? de conciliacion", "conciliación": r"\bconciliacion",
+    "Profeco": r"\bprofeco|\bprocuraduria federal del consumidor", "Ministerio Público": r"\bministerio publico",
+    "demanda": r"\bdemand", "multa": r"\bmulta", "prisión": r"prision|carcel|encarcel", "amparo": r"\bamparo", "nulidad": r"\bnul[ao]s?\b|\bnulidad",
+}
+_NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10, "quince": 15,
+        "treinta": 30, "sesenta": 60, "noventa": 90}
+
+
+def _plazos(p):
+    out = set()
+    for n, u in re.findall(r"\b(\d{1,3}|" + "|".join(_NUM) + r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b", p):
+        out.add((_NUM.get(n, None) or int(n), {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}.get(u, u)))
+    return out
+
+
+def consecuencias_sin_sustento(cuerpo, textos_citados):
+    """Consecuencias, autoridades y plazos que la pieza afirma y que no aparecen en ningún artículo que la pieza cita."""
+    base = plano(" ".join(t for t in textos_citados if t))
+    out = []
+    if not base: return out
+    for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo or ""):
+        p = plano(frase)
+        for nombre, pat in CONSECUENCIAS.items():
+            if re.search(pat, p) and not re.search(pat, base):
+                out.append(f"«{frase.strip()[:80]}» habla de {nombre}, pero ninguno de los artículos que cita la pieza lo establece.")
+        for pl in _plazos(p) - _plazos(base):
+            out.append(f"«{frase.strip()[:80]}» menciona un plazo ({pl[0]} {pl[1]}) que no aparece en los artículos citados.")
+    return list(dict.fromkeys(out))

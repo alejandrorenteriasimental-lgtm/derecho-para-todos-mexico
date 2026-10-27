@@ -88,22 +88,48 @@ def bloques(palabras, max_car=24):
     return res
 
 
-def dibujar_subtitulos(d, t, bls):
+SUB_Y = 1380            # posición preferida de los subtítulos (la caja empieza 22 px arriba)
+SUB_Y_MAX = H - 430     # más abajo los tapa la interfaz de Reels/TikTok (nombre, descripción, botones)
+SUB_MARGEN = 36         # separación mínima entre el contenido de la escena y la caja del subtítulo
+
+
+class Medidor:
+    """Envuelve ImageDraw y registra el borde inferior de todo lo que dibuja la escena (texto, tarjetas, círculos),
+    para colocar los subtítulos sin tapar citas ni información esencial."""
+    def __init__(self, d): self.d, self.abajo = d, 0
+    def _y(self, caja): self.abajo = max(self.abajo, caja[3])
+    def text(self, xy, txt, font=None, fill=None, **k):
+        self.d.text(xy, txt, font=font, fill=fill, **k)
+        if txt.strip() and (fill is None or len(fill) < 4 or fill[3] > 40): self._y(self.d.textbbox(xy, txt, font=font))   # lo casi transparente (decorativo) no cuenta
+    def rectangle(self, c, **k): self.d.rectangle(c, **k); self._y(c)
+    def rounded_rectangle(self, c, r, **k): self.d.rounded_rectangle(c, r, **k); self._y(c)
+    def ellipse(self, c, **k): self.d.ellipse(c, **k); self._y(c)
+    def __getattr__(self, n): return getattr(self.d, n)
+
+
+def posicion_subtitulos(abajo_contenido):
+    """(y, cabe): y del texto del subtítulo y si cabe sin tapar el contenido ni quedar bajo la interfaz de la app."""
+    y = max(SUB_Y, abajo_contenido + SUB_MARGEN + 22)
+    return min(y, SUB_Y_MAX), y <= SUB_Y_MAX
+
+
+def dibujar_subtitulos(d, t, bls, y0=SUB_Y):
     actual = None
     for b in bls:
         if b[0][1] - 0.05 <= t <= b[-1][2] + 0.15:
             actual = b
     if not actual:
-        return
+        return False
     f = font("xbold", 66)
     texto = " ".join(x[0] for x in actual)
-    ancho = f.getlength(texto); x0 = (W - ancho) / 2; y0 = 1380
+    ancho = f.getlength(texto); x0 = (W - ancho) / 2
     d.rounded_rectangle([x0 - 34, y0 - 22, x0 + ancho + 34, y0 + 100], 26, fill=(8, 14, 24, 200))
     x = x0
     for (p, ti, tf) in actual:
         col = C["acc"] if ti <= t else C["txt"]
         d.text((x, y0), p, font=f, fill=a(col, 1))
         x += f.getlength(p + " ")
+    return True
 
 
 def chip(d, x, y, texto, f, fg, bg, alpha=1.0, pad=(22, 12)):
@@ -134,8 +160,12 @@ def escena(d, esc, p, tl, fuentes):
     elif tipo == "cita":
         e = ease(tl / 0.5)
         x0, y0, x1 = 90, 470 + (1 - e) * 80, W - 90
-        f = font("serif_it", 74); lineas = wrap("«" + esc["cita"] + "»", f, x1 - x0 - 120)
-        alto = 220 + len(lineas) * 100
+        tam = 74                                     # la tarjeta completa debe quedar arriba de la fuente y los subtítulos
+        while True:
+            f = font("serif_it", tam); lineas = wrap("«" + esc["cita"] + "»", f, x1 - x0 - 120); paso = int(tam * 1.35)
+            if 470 + 200 + len(lineas) * paso <= CITA_Y_MAX or tam <= 44: break
+            tam -= 4
+        alto = 200 + len(lineas) * paso
         d.rounded_rectangle([x0, y0, x1, y0 + alto], 36, fill=a(C["paper"], e))
         chip(d, x0 + 60, y0 + 56, esc["etiqueta"].upper(), font("bold", 34), C["paper"], C["ink"], e)
         yy = y0 + 160
@@ -143,9 +173,9 @@ def escena(d, esc, p, tl, fuentes):
             lw = f.getlength(ln)
             prog = max(0.0, min(1.0, (p - 0.32 - i * 0.12) / 0.25))
             if prog > 0:
-                d.rectangle([x0 + 60, yy + 18, x0 + 60 + lw * prog, yy + 86], fill=(242, 181, 68, int(150 * e)))
+                d.rectangle([x0 + 60, yy + int(tam * 0.24), x0 + 60 + lw * prog, yy + int(tam * 1.16)], fill=(242, 181, 68, int(150 * e)))
             d.text((x0 + 60, yy), ln, font=f, fill=a(C["ink"], e))
-            yy += 100
+            yy += paso
     elif tipo == "lista":
         f = font("bold", 60); y = 520
         for i, it in enumerate(esc["items"]):
@@ -188,9 +218,12 @@ def escena(d, esc, p, tl, fuentes):
         fu = fuentes[fid]
         txt = "Fuente: " + fu["cita"]
         fs = font("med", 36); e = ease(tl / 0.6)
-        lines = wrap(txt, fs, 900); y = 1250
+        lines = wrap(txt, fs, 900); y = max(1250, getattr(d, "abajo", 0) + 28)   # nunca encima de una tarjeta larga
         for ln in lines:
             d.text(((W - fs.getlength(ln)) / 2, y), ln, font=fs, fill=a(C["mut"], e)); y += 44
+
+
+CITA_Y_MAX = 1200   # la tarjeta de cita termina antes de la línea de fuente (1250) y de los subtítulos (1358)
 
 
 FIRMA = json.loads((Path(__file__).resolve().parent.parent / "marca" / "tokens.json").read_text())["firma"]
@@ -206,6 +239,7 @@ def render(guion, linea, salida_mp4, t_total):
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     t0 = time.time()
     fh, fs_ = font("bold", 30), font("med", 26)
+    solapes = []
     for i in range(n):
         t = i / FPS
         off = int(600 * t / t_total)
@@ -218,13 +252,16 @@ def render(guion, linea, salida_mp4, t_total):
         inicio = s["inicio"] - 0.2
         fin = segs[k + 1]["inicio"] - 0.2 if k + 1 < len(segs) else t_total
         p = (t - inicio) / max(0.1, fin - inicio); tl = t - inicio
-        escena(d, guion["escenas"][k], p, tl, guion["fuentes"])
+        med = Medidor(d)
+        escena(med, guion["escenas"][k], p, tl, guion["fuentes"])
         # barra superior
         d.rectangle([0, 0, W, 10], fill=(255, 255, 255, 30)); d.rectangle([0, 0, W * t / t_total, 10], fill=a(C["acc"], 1))
         d.text((60, 140), FIRMA, font=fh, fill=a(C["txt"], 0.9))
         lab = "Voz generada con IA"
         d.text((W - 60 - fs_.getlength(lab), 144), lab, font=fs_, fill=a(C["mut"], 0.9))
-        dibujar_subtitulos(d, t, bls)
+        y_sub, cabe = posicion_subtitulos(med.abajo)
+        if dibujar_subtitulos(d, t, bls, y_sub) and not cabe:
+            solapes.append({"t": round(t, 2), "escena": k, "tipo": guion["escenas"][k]["tipo"], "contenido_hasta": int(med.abajo)})
         frame = Image.alpha_composite(frame, capa).convert("RGB")
         proc.stdin.write(frame.tobytes())
     proc.stdin.close(); proc.wait()
@@ -235,4 +272,4 @@ def render(guion, linea, salida_mp4, t_total):
     with open(srt, "w") as fh_:
         for idx, b in enumerate(bls, 1):
             fh_.write(f"{idx}\n{ts(b[0][1])} --> {ts(b[-1][2])}\n{' '.join(x[0] for x in b)}\n\n")
-    return {"frames": n, "segundos_render": round(time.time() - t0, 1), "srt": str(srt)}
+    return {"frames": n, "segundos_render": round(time.time() - t0, 1), "srt": str(srt), "solapes_subtitulos": solapes}

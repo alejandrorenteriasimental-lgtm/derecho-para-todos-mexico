@@ -59,6 +59,7 @@ def producir(carpeta: Path, verificacion=None):
     with etapa("auditoria_tecnica", tiempos):
         tec, sha, dur = auditoria.tecnica(final, srt_final, previos)
         tec.append(auditoria.sincronia(out))
+        tec.append(auditoria.subtitulos_sin_solape(info.get("solapes_subtitulos")))
     seg_total = sum(tiempos.values())
     costo = {
         "apis_de_pago_usd": 0.0,

@@ -1,0 +1,222 @@
+{
+  "id": "R20261028-T068",
+  "formato": "reel",
+  "titulo": "¿Qué pasa si te obligan a firmar tu renuncia?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T068",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-27"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te han obligado a firmar un documento de renuncia y te preguntas cuáles son las consecuencias legales de esta situación en tu empleo?",
+      "titulo": [
+        "¿TE OBLIGAN",
+        "A FIRMAR",
+        "TU RENUNCIA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende: si el documento implica renunciar a salarios o prestaciones devengadas, dicha renuncia es nula y puede reclamarse ante el Tribunal competente.",
+      "titulo": [
+        "LO QUE",
+        "DICE LA LEY"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley es clara al proteger los ingresos del trabajador. El texto oficial señala textualmente lo siguiente: Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+      "etiqueta": "Ley Federal del Trabajo, art. 33",
+      "cita": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Los elementos que protege la norma son los siguientes:",
+      "items": [
+        "Salarios devengados",
+        "Indemnizaciones",
+        "Prestaciones derivadas"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La renuncia a salarios devengados e indemnizaciones es nula sin importar la forma.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si el convenio se celebra sin la intervención de las autoridades, existe un recurso legal específico.",
+      "encabezado": "Firma sin autoridades laborales",
+      "detalle": "Se puede reclamar la nulidad",
+      "fuente_corta": "Ley Federal del Trabajo, art. 33",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Recuerda que depende: si el documento implica renunciar a salarios o prestaciones devengadas, dicha renuncia es nula y puede reclamarse ante el Tribunal.",
+      "titulo": [
+        "RECLAMA",
+        "TUS DERECHOS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué pasa si te obligan a firmar tu renuncia?",
+    "concepto_central": "renuncia",
+    "respuesta_corta": "Depende: si el documento implica renunciar a salarios o prestaciones devengadas, dicha renuncia es nula y puede reclamarse ante el Tribunal.",
+    "reglas": [
+      {
+        "conclusion": "Cualquier renuncia a salarios devengados, indemnizaciones o prestaciones laborales carece de validez legal, sin importar el nombre o formato que se le asigne al documento.",
+        "fuente": "F1",
+        "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que der iven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé.",
+        "condiciones": [
+          "Aplica sobre salarios devengados, indemnizaciones y prestaciones derivadas de los servicios prestados",
+          "Aplica cualquiera que sea la forma o denominación que se le dé al documento"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "33"
+        }
+      },
+      {
+        "conclusion": "Si el documento o convenio se firma sin la intervención de las autoridades laborales, se puede demandar su nulidad ante el Tribunal respecto de los derechos a los que se haya renunciado.",
+        "fuente": "F1",
+        "cita_literal": "Cuando el convenio sea celebrado sin la intervención de las autoridades, será susceptible de ser reclamada la nulidad ante el Tribunal, solamente de aquello que contenga renuncia de los derechos de los trabajadores",
+        "condiciones": [
+          "Que el convenio sea celebrado sin la intervención de las autoridades (Centros de Conciliación o Tribunal)"
+        ],
+        "excepciones": [
+          "Conserva su validez el resto de las cláusulas convenidas que no contengan renuncia de derechos"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "33"
+        }
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "renuncia",
+        "b": "despido",
+        "diferencia": "La renuncia es la separación voluntaria decidida por la persona trabajadora, mientras que el despido es la terminación de la relación laboral decidida por el patrón."
+      },
+      {
+        "a": "renuncia",
+        "b": "mutuo consentimiento",
+        "diferencia": "La renuncia proviene de una decisión unilateral del trabajador, mientras que el mutuo consentimiento requiere el acuerdo conjunto de ambas partes para terminar la relación."
+      },
+      {
+        "a": "renuncia",
+        "b": "rescision trabajador",
+        "diferencia": "La renuncia es una separación por voluntad del empleado, mientras que la rescisión por parte del trabajador es la terminación justificada motivada por una falta imputable al patrón."
+      }
+    ],
+    "limites": "El texto oficial disponible (artículo 33 de la LFT) no regula expresamente el delito o acto material de coacción física o moral para forzar una firma, ni establece cómo demostrar la coacción; únicamente determina que toda renuncia a derechos devengados es legalmente nula y puede reclamarse ante el Tribunal."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-27T00:45:29+00:00",
+    "solicitud": "2026-10-28_reel_T068.json",
+    "metodo": "analisis_previo_v1",
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Qué pasa si te obligan a firmar tu renuncia?",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "conclusiones": [
+            {
+              "conclusion": "Cualquier renuncia a salarios devengados, indemnizaciones o prestaciones laborales carece de validez legal, sin importar el nombre o formato que se le adscriba.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 de la LFT establece explícitamente la nulidad de la renuncia a estos conceptos, independientemente de la forma o denominación."
+            },
+            {
+              "conclusion": "Si el documento o convenio se firma sin la intervención de las autoridades laborales, se puede demandar su nulidad ante el Tribunal respecto de los derechos a los que se haya renunciado.",
+              "sostenida": "si",
+              "motivo": "El texto legal prevé expresamente que, ante la falta de intervención de autoridades, es posible reclamar la nulidad ante el Tribunal sobre aquello que contenga renuncia de derechos."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Razonamiento / Distinciones",
+              "problema": "El redactor incluye definiciones de 'despido', 'mutuo consentimiento' y 'rescisión' que no están presentes en el texto oficial (F1).",
+              "correccion": "Eliminar las distinciones conceptuales que no se derivan directamente del artículo 33 de la LFT, ya que el mandato es usar solo los textos oficiales entregados."
+            },
+            {
+              "donde": "Escenas / Tipo: cierre",
+              "problema": "El texto de cierre incluye 'Síguenos para entender tus derechos', lo cual contraviene la instrucción de no incluir llamadas a la acción o asesoría personalizada.",
+              "correccion": "Eliminar la frase 'Síguenos para entender tus derechos' y mantener únicamente el aviso de información general."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "conclusiones": [
+            {
+              "conclusion": "Cualquier renuncia a salarios devengados, indemnizaciones o prestaciones laborales carece de validez legal, sin importar el nombre o formato que se le asigne al documento.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 de la Ley Federal del Trabajo establece explícitamente la nulidad de la renuncia a estos conceptos, independientemente de la denominación del documento."
+            },
+            {
+              "conclusion": "Si el documento o convenio se firma sin la intervención de las autoridades laborales, se puede demandar su nulidad ante el Tribunal respecto de los derechos a los que se haya renunciado.",
+              "sostenida": "si",
+              "motivo": "El texto oficial prevé expresamente que, ante la falta de intervención de autoridades, es posible reclamar la nulidad de las cláusulas que impliquen renuncia de derechos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

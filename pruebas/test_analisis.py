@@ -119,7 +119,7 @@ def test_el_redactor_no_puede_cambiar_el_analisis(tmp_path):
     b = copy.deepcopy(BORRADOR); b["razonamiento"]["respuesta_corta"] = "Sí, siempre te pueden encarcelar."
     g = redactor.generar(SOL, transporte, simulador_con(redactar=b), env={}, archivo_uso=tmp_path / "u")
     assert g["razonamiento"]["respuesta_corta"] == ANALISIS["respuesta_corta"]
-    assert g["generacion"]["metodo"] == "analisis_previo_v1"
+    assert g["generacion"]["metodo"] == "analisis_previo_v2_cobertura"
 
 
 def test_objecion_del_auditor_al_analisis_lo_corrige(tmp_path):

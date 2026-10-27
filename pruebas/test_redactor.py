@@ -30,6 +30,8 @@ BORRADOR = {"titulo": "¿Te pueden meter a la cárcel por deber dinero?", "escen
                    "respuesta_corta": "No, una deuda civil por sí sola no te lleva a prisión, aunque sí pueden cobrarte por la vía legal.",
                    "reglas": [{"conclusion": "No hay prisión por deudas de carácter puramente civil.", "fuente": "F1",
                                "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "condiciones": [], "excepciones": []}],
+                   "elementos": [{"elemento": "efecto", "estado": "cubierto", "respuesta": "Una deuda civil, por sí sola, no te lleva a prisión.",
+                                  "fuente": "F1", "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil"}],
                    "distinciones": [], "limites": "No aborda delitos como el fraude."}}
 
 
@@ -46,6 +48,7 @@ def simulador_con(investigar=None, redactar=None, auditar=None, analizar=None):
             return copy.deepcopy(r)
         llamadas[rol].append(usuario)
         if rol == "investigador":
+            if callable(investigar): return investigar(len(llamadas["investigador"]))
             return investigar or {"articulos": [{"sigla": "CPEUM", "articulo": "17"}, {"sigla": "CPEUM", "articulo": "999"}, {"sigla": "XYZ", "articulo": "1"}]}
         if rol == "redactor":
             r = redactar(len(llamadas["redactor"])) if callable(redactar) else (redactar or BORRADOR)

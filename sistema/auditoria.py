@@ -190,3 +190,13 @@ def sincronia(salida: Path, tolerancia=0.15):
     peor = max(desf, default=0)
     return {"control": f"Sincronía voz-subtítulos ≤ {int(tolerancia*1000)} ms por oración", "resultado": "APROBADO" if peor <= tolerancia else "FALLA",
             "detalle": f"desfase máximo {peor*1000:.0f} ms en {len(ors)} oraciones"}
+
+
+def subtitulos_sin_solape(solapes):
+    """Los subtítulos no deben tapar citas, fuentes ni información esencial (rechazo humano de R20261028-T068, 26-10-2026).
+    El render mide el borde inferior del contenido de cada cuadro y coloca el subtítulo debajo; si no cabe, lo reporta."""
+    if solapes is None:
+        return {"control": "Subtítulos sin tapar citas ni contenido", "resultado": "FALLA", "detalle": "el render no midió el contenido"}
+    escenas = sorted({(s["escena"], s["tipo"]) for s in solapes})
+    return {"control": "Subtítulos sin tapar citas ni contenido", "resultado": "APROBADO" if not solapes else "FALLA",
+            "detalle": "0 cuadros con solape" if not solapes else f"{len(solapes)} cuadros; escenas {escenas[:5]}"}
