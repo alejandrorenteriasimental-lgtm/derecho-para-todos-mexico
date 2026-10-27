@@ -266,15 +266,26 @@
       "id": "I20261026-T020v2",
       "formato": "imagen",
       "huella": "e90586275b879e88824232f52ef9468ec57bca14e8dd60662be17d0d8004594d",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T17:25:08+00:00",
-      "historial": [],
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T00:12:04+00:00",
+          "motivo": "verificación jurídica: RETENER · [sustento] La conclusión «Un letrero o una política no puede eliminar los derechos que da la ley» cita Ley Federal de Protección al Consumidor, art. 1, cuyo texto oficial no está disponible. · [sustento] La conclusión «El consumidor puede elegir reposición o devolución de lo pagado, más u» cita Ley Federal de Protección al Consumidor, art. 92, cuyo texto oficial no está disponible. · [sustento] La conclusión «Si la tienda ofreció una política, debe respetar las condiciones que o» cita Ley Federal de Protección al Consumidor, art. 7, cuyo texto oficial no está disponible. · [sustento] La conclusión «En ventas fuera del establecimiento el consumidor puede revocar la com» cita Ley Federal de Protección al Consumidor, art. 56, cuyo texto oficial no está disponible."
+        }
+      ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": {
+        "tipo": "transitorio",
+        "desde": "2026-10-27T00:12:04+00:00",
+        "verificador": "0.4.0"
+      }
     }
   }
 }

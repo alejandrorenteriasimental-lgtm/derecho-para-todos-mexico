@@ -1,0 +1,119 @@
+{
+  "decision": "RETENER",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:11:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:12:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:12:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    },
+    "F4": {
+      "fuente": "F4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:12:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    },
+    "F5": {
+      "fuente": "F5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:12:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    },
+    "F6": {
+      "fuente": "F6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "consultado": "2026-10-27T00:12:04+00:00",
+      "estado": "RETENER",
+      "motivo": "sin conexión con la fuente oficial (<urlopen error timed out>); no se aprueba sin comprobar"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F3"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A4",
+      "fuentes": [
+        "F4"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A5",
+      "fuentes": [
+        "F5"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    },
+    {
+      "id": "A6",
+      "fuentes": [
+        "F6"
+      ],
+      "dictamen": "RETENER",
+      "duda": null
+    }
+  ],
+  "razonamiento": [
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "La conclusión «Un letrero o una política no puede eliminar los derechos que da la ley» cita Ley Federal de Protección al Consumidor, art. 1, cuyo texto oficial no está disponible."
+    },
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "La conclusión «El consumidor puede elegir reposición o devolución de lo pagado, más u» cita Ley Federal de Protección al Consumidor, art. 92, cuyo texto oficial no está disponible."
+    },
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "La conclusión «Si la tienda ofreció una política, debe respetar las condiciones que o» cita Ley Federal de Protección al Consumidor, art. 7, cuyo texto oficial no está disponible."
+    },
+    {
+      "regla": "sustento",
+      "severidad": "bloqueante",
+      "detalle": "La conclusión «En ventas fuera del establecimiento el consumidor puede revocar la com» cita Ley Federal de Protección al Consumidor, art. 56, cuyo texto oficial no está disponible."
+    }
+  ]
+}
