@@ -8,7 +8,7 @@
   "fuentes_sugeridas": "LFT arts. 33, 47, 48, 518, 521, 684-E",
   "riesgo_exactitud": "Bajo-medio",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "reemplaza": "R20261028-T068 (rechazada por revisión humana el 26-10-2026, versión c607942b03d912b6)",
   "investigacion": "docs/investigacion/T068_renuncia_bajo_presion.md",
@@ -29,11 +29,17 @@
       "a": "PENDIENTE_GUION",
       "fecha_cambio": "2026-10-27",
       "motivo": "reintento tras reforzar la regla de nombres concretos (el descarte fue por «autoridad competente» en una lista)"
+    },
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-27",
+      "motivo": "cambio relevante del sistema: la causa del descarte (cita casi literal) ahora se corrige sin IA con el texto oficial exacto"
     }
   ],
   "pieza_id": "R20261028-T068v2",
   "archivo": "2026-10-25_reel_T068v2.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «que_hacer» («Puedes solicitar que se te devuelva tu puesto de trabajo o q») no trae una cita literal que esté en el texto oficial de su fuente.\", \"[cobertura] El elemento «ante_quien» («Debes acudir primero a los Centros de Conciliación, ya sean ») no trae una cita literal que esté en el texto oficial de su fuente.\", \"[cober",
   "ultima_categoria": "juridico",
   "huella_entrada": "caba1eccc1100377"
