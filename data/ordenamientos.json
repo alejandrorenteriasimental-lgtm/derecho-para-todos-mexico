@@ -1,24 +1,145 @@
 {
-  "nota": "Únicas fuentes normativas que la generación automática puede usar. Las URL marcadas confirmada=true se leyeron en el índice oficial de LeyesBiblio (25-10-2026); las demás siguen la convención de nombres del sitio y la prueba en vivo test_ordenamientos las comprueba antes de usarse. Una URL que no responda deja la pieza RETENIDA; nunca se sustituye por un espejo privado.",
-  "ordenamientos": [
-    {"sigla": "CPEUM", "documento": "Constitución Política de los Estados Unidos Mexicanos", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "CPF", "documento": "Código Penal Federal", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf", "ambito": "federal (cada estado tiene su código penal)", "confirmada": true},
-    {"sigla": "CNPP", "documento": "Código Nacional de Procedimientos Penales", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf", "ambito": "nacional", "confirmada": true},
-    {"sigla": "CCF", "documento": "Código Civil Federal", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf", "ambito": "federal (cada estado tiene su código civil)", "confirmada": true},
-    {"sigla": "CNPCF", "documento": "Código Nacional de Procedimientos Civiles y Familiares", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf", "ambito": "nacional (entrada en vigor escalonada; plazo máximo 1-abr-2027)", "confirmada": true},
-    {"sigla": "LAmp", "documento": "Ley de Amparo", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "LPDUSF", "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "LIC", "documento": "Ley de Instituciones de Crédito", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIC.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "LAgra", "documento": "Ley Agraria", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAgra.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "LMigra", "documento": "Ley de Migración", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf", "ambito": "federal", "confirmada": true},
-    {"sigla": "LFT", "documento": "Ley Federal del Trabajo", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf", "ambito": "federal (aplica en todo el país)", "confirmada": false},
-    {"sigla": "LFPC", "documento": "Ley Federal de Protección al Consumidor", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf", "ambito": "federal", "confirmada": false},
-    {"sigla": "LGDNNA", "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf", "ambito": "general", "confirmada": false},
-    {"sigla": "LFPDPPP", "documento": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf", "ambito": "federal", "confirmada": false},
-    {"sigla": "LSS", "documento": "Ley del Seguro Social", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf", "ambito": "federal", "confirmada": false},
-    {"sigla": "LGV", "documento": "Ley General de Víctimas", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGV.pdf", "ambito": "general", "confirmada": false},
-    {"sigla": "LNEP", "documento": "Ley Nacional de Ejecución Penal", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf", "ambito": "nacional", "confirmada": false},
-    {"sigla": "LFDA", "documento": "Ley Federal del Derecho de Autor", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf", "ambito": "federal", "confirmada": false},
-    {"sigla": "LGAMVLV", "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf", "ambito": "general", "confirmada": false}
-  ]
+ "nota": "Únicas fuentes normativas que la generación automática puede usar. Las URL marcadas confirmada=true se leyeron en el índice oficial de LeyesBiblio (25-10-2026); las demás siguen la convención de nombres del sitio y la prueba en vivo test_ordenamientos las comprueba antes de usarse. Una URL que no responda deja la pieza RETENIDA; nunca se sustituye por un espejo privado.",
+ "ordenamientos": [
+  {
+   "sigla": "CPEUM",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "CPF",
+   "documento": "Código Penal Federal",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+   "ambito": "federal (cada estado tiene su código penal)",
+   "confirmada": true
+  },
+  {
+   "sigla": "CNPP",
+   "documento": "Código Nacional de Procedimientos Penales",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+   "ambito": "nacional",
+   "confirmada": true
+  },
+  {
+   "sigla": "CCF",
+   "documento": "Código Civil Federal",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf",
+   "ambito": "federal (cada estado tiene su código civil)",
+   "confirmada": true
+  },
+  {
+   "sigla": "CNPCF",
+   "documento": "Código Nacional de Procedimientos Civiles y Familiares",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf",
+   "ambito": "nacional (entrada en vigor escalonada; plazo máximo 1-abr-2027)",
+   "confirmada": true
+  },
+  {
+   "sigla": "LAmp",
+   "documento": "Ley de Amparo",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "LPDUSF",
+   "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "LIC",
+   "documento": "Ley de Instituciones de Crédito",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIC.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "LAgra",
+   "documento": "Ley Agraria",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAgra.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "LMigra",
+   "documento": "Ley de Migración",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  },
+  {
+   "sigla": "LFT",
+   "documento": "Ley Federal del Trabajo",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "ambito": "federal (aplica en todo el país)",
+   "confirmada": false
+  },
+  {
+   "sigla": "LFPC",
+   "documento": "Ley Federal de Protección al Consumidor",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+   "ambito": "federal",
+   "confirmada": false
+  },
+  {
+   "sigla": "LGDNNA",
+   "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+   "ambito": "general",
+   "confirmada": false
+  },
+  {
+   "sigla": "LFPDPPP",
+   "documento": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+   "ambito": "federal",
+   "confirmada": false
+  },
+  {
+   "sigla": "LSS",
+   "documento": "Ley del Seguro Social",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+   "ambito": "federal",
+   "confirmada": false
+  },
+  {
+   "sigla": "LGV",
+   "documento": "Ley General de Víctimas",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGV.pdf",
+   "ambito": "general",
+   "confirmada": false
+  },
+  {
+   "sigla": "LNEP",
+   "documento": "Ley Nacional de Ejecución Penal",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+   "ambito": "nacional",
+   "confirmada": false
+  },
+  {
+   "sigla": "LFDA",
+   "documento": "Ley Federal del Derecho de Autor",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+   "ambito": "federal",
+   "confirmada": false
+  },
+  {
+   "sigla": "LGAMVLV",
+   "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+   "ambito": "general",
+   "confirmada": false
+  },
+  {
+   "sigla": "LOPJF",
+   "documento": "Ley Orgánica del Poder Judicial de la Federación",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf",
+   "ambito": "federal",
+   "confirmada": true
+  }
+ ]
 }

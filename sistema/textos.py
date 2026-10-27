@@ -22,6 +22,15 @@ def extraer(espec, transporte=verificador.transporte_http):
         cab, cuerpo = verificador.texto_de(ctype, datos)
         reforma = verificador.ultima_reforma(cab) if hasattr(verificador, "ultima_reforma") else None
         for a in [x.strip() for x in arts.split(",") if x.strip()]:
+            if a.startswith("?"):                           # búsqueda de un término (p. ej., en los transitorios)
+                import re as _re
+                plano = _re.sub(r"\s+", " ", cuerpo); term = a[1:].lower(); hallazgos = []
+                for m in _re.finditer(_re.escape(term), plano.lower()):
+                    hallazgos.append(plano[max(0, m.start() - 600): m.end() + 600])
+                reg = {"sigla": sigla.strip(), "documento": o["documento"], "busqueda": term, "url": o["url"], "ultima_reforma": reforma,
+                       "consultado": datetime.now(timezone.utc).isoformat(timespec="seconds"), "hallazgos": hallazgos[-12:]}
+                (out / f"{sigla.strip()}_buscar_{term.replace(' ', '_')[:30]}.json").write_text(json.dumps(reg, ensure_ascii=False, indent=1))
+                resumen.append(f"{sigla} ?{term}: {len(hallazgos)} hallazgos"); continue
             t = verificador.articulo_texto(cuerpo, a, max_car=20000)
             reg = {"sigla": sigla.strip(), "documento": o["documento"], "articulo": a, "url": o["url"], "ultima_reforma": reforma,
                    "consultado": datetime.now(timezone.utc).isoformat(timespec="seconds"), "texto": t}
