@@ -108,6 +108,13 @@ def reabrir_por_cambio():
             cola.log({"evento": "solicitud_reabierta", "solicitud": f.name, "motivo": "el tema cambió en el catálogo"})
 
 
+def _reproduccion(t):
+    """Una pieza que ya se produjo antes y vuelve a verificarse (edición, verificador nuevo, retención vencida) no ocupa el
+    espacio de redacción de su formato. Antes la bloqueaba: el 27-10 la re-producción de I20261124-T073 impidió redactar
+    las imágenes T016 y T028 del piloto."""
+    return any(h.get("a") == "PRODUCIDO" for h in t.get("historial", []))
+
+
 def redactar_pendientes(c, resumen, transporte, env, simulador=None):
     planificador.RAIZ = RAIZ; planificador.SOLICITUDES = RAIZ / "estado" / "solicitudes"; planificador.LOTE = RAIZ / "data" / "lote_piloto.json"
     redactor.ANALISIS = RAIZ / "estado" / "analisis"
@@ -119,8 +126,8 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
     lote = planificador.lote_activo()
     for formato in ("reel", "imagen"):
         if sin_cuota: break                                   # cuota agotada: no se intenta ningún otro formato en este ciclo
-        if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS for t in c["trabajos"].values()):
-            continue
+        if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS and not _reproduccion(t) for t in c["trabajos"].values()):
+            continue                                          # ya hay un guion nuevo de este formato esperando producción
         intentos = 0
         for f in sorted(planificador.SOLICITUDES.glob(f"*_{formato}_*.json")):
             if intentos >= INTENTOS_REDACCION: break
@@ -136,7 +143,8 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             except redactor.Descartada as e:
                 sol["intentos"] = sol.get("intentos", 0) + (0 if e.categoria == "cuota" else 1); sol["ultimo_motivo"] = str(e)[:500]   # la cuota no es culpa del tema
                 sol["ultima_categoria"] = e.categoria; sol["huella_entrada"] = huella_entrada(sol)
-                metrica({"solicitud": f.name, "resultado": "descartada", "categoria": e.categoria, "transitoria": e.transitoria, **(e.metricas or {})})
+                metrica({"solicitud": f.name, "tema_id": sol.get("tema_id"), "lote": sol.get("lote"), "resultado": "descartada", "categoria": e.categoria,
+                         "transitoria": e.transitoria, "motivo": str(e)[:600], **(e.metricas or {})})
                 if e.categoria == "cuota": sin_cuota = True
                 if not e.transitoria or sol["intentos"] >= (6 if e.transitoria else 3):   # fallas de red: más margen antes de descartar
                     sol["estado"] = "DESCARTADA"; resumen["descartadas"].append(f'{sol["tema_id"]}: {str(e)[:120]}')
@@ -150,7 +158,7 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             carpeta = RAIZ / "piezas" / sol["pieza_id"]; carpeta.mkdir(parents=True, exist_ok=True)
             (carpeta / "guion.json").write_text(json.dumps(g, ensure_ascii=False, indent=2))
             sol["estado"] = "GUION_LISTO"; sol["pieza"] = sol["pieza_id"]; f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
-            metrica({"solicitud": f.name, "pieza": sol["pieza_id"], "resultado": "redactada", **((g.get("generacion") or {}).get("metricas") or {})})
+            metrica({"solicitud": f.name, "tema_id": sol.get("tema_id"), "lote": sol.get("lote"), "pieza": sol["pieza_id"], "resultado": "redactada", **((g.get("generacion") or {}).get("metricas") or {})})
             resumen["redactadas"].append(sol["pieza_id"]); cola.log({"evento": "redactada", "pieza": sol["pieza_id"], "solicitud": f.name})
             break
 
@@ -201,7 +209,7 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_met
             _publicar(c, t, modo, env, http_meta, resumen, retomar=True)
         # 3–5) una pieza por formato
         for formato in ("reel", "imagen"):
-            for t in cola.siguientes(c, "PENDIENTE", n=por_formato, formato=formato):
+            for t in cola.siguientes(c, "PENDIENTE", n=por_formato + (1 if formato == "imagen" else 0), formato=formato):   # una imagen tarda segundos: caben la nueva y una re-producción
                 pid = t["id"]
                 try:
                     g = _guion(pid)

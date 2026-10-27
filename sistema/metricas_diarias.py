@@ -80,6 +80,7 @@ def calcular(hoy=None, actions=None, raiz=RAIZ):
     aprob = _jsonl(raiz / "estado" / "aprobaciones.jsonl")
     uso = _jsonl(raiz / "estado" / "uso_ia.jsonl")
     consumo = _jsonl(raiz / "registro" / "consumo.jsonl")
+    bit = [e for e in _jsonl(raiz / "estado" / "bitacora.jsonl") if dia_mx(e.get("ts")) == hoy]
 
     def eventos(a):    # (pieza, formato, día) de cada paso de la cola al estado «a»
         return [(pid, t.get("formato", "reel"), dia_mx(h.get("ts"))) for pid, t in cola.items() for h in t.get("historial", []) if h.get("a") == a]
@@ -119,6 +120,14 @@ def calcular(hoy=None, actions=None, raiz=RAIZ):
         "6_gemini": {"utiles": util, "rechazadas": len(hoy_ia) - util,
                      "cuota": sum(1 for e in hoy_ia if e.get("resultado") != "ok" and "429" in str(e.get("error", ""))),
                      "errores_proveedor": sum(1 for e in hoy_ia if e.get("resultado") != "ok" and "429" not in str(e.get("error", "")))},
+        "intentos_redaccion": {"redactadas": sum(1 for e in bit if e.get("evento") == "redactada"),
+                               "descartadas_definitivas": sum(1 for e in bit if e.get("evento") == "redaccion_descartada" and not e.get("transitoria")),
+                               "fallas_temporales": sum(1 for e in bit if e.get("evento") == "redaccion_descartada" and e.get("transitoria"))},
+        "tasa_llamadas_utiles": round(util / len(hoy_ia), 3) if hoy_ia else None,
+        "tasa_llegan_a_revision": (lambda n, r: round(r / n, 3) if n else None)(
+            sum(1 for e in bit if e.get("evento") in ("redactada", "redaccion_descartada") and not e.get("transitoria")),
+            sum(1 for _, _, d in auditadas if d == hoy)),
+        "costo_externo_por_pieza_mxn": 0.0 if prod_hoy else None,
         "7_minutos_por_pieza_producida": round(sum(tiempos) / len(prod_hoy), 1) if prod_hoy else None,
         "8_costo_externo_mxn": sum(float(e.get("costo_mxn", 0) or 0) for e in consumo),
         "9_aprobadas_disponibles": disp, "dias_de_contenido": min(disp.values()),

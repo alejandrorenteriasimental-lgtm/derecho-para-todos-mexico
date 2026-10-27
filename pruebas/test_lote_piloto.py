@@ -181,3 +181,37 @@ def test_el_auditor_ve_cada_afirmacion_con_el_articulo_exacto():
     refs = {a["fuente"] for e in g["escenas"] for a in e["afirmaciones"]} | {g["razonamiento"]["reglas"][0]["fuente"]}
     assert refs == {"CPEUM, artículo 23"} and textos.startswith("CPEUM, artículo 23:")
     assert guion["escenas"][0]["afirmaciones"][1]["fuente"] == "F2"          # el guion real no se modifica
+
+
+def test_reproduccion_de_una_imagen_no_bloquea_redactar_otra(raiz_vacia, monkeypatch):
+    """27-10: la re-producción de I20261124-T073 (PENDIENTE tras una edición) impidió redactar T016 y T028."""
+    import cola
+    c = cola.cargar()
+    c["trabajos"]["I-VIEJA"] = {"id": "I-VIEJA", "formato": "imagen", "estado": "PENDIENTE", "prioridad": 0, "intentos": 0, "creado": "2026-10-27T00:00:00+00:00",
+                                "historial": [{"de": "PENDIENTE", "a": "PRODUCIDO", "ts": "2026-10-27T10:00:00+00:00"}, {"de": "REVISION_HUMANA", "a": "PENDIENTE", "ts": "2026-10-27T11:00:00+00:00"}],
+                                "error": None, "publicaciones": {}, "proximo_intento": None, "retencion": None}
+    cola.guardar(c)
+    sol = raiz_vacia / "estado" / "solicitudes"; sol.mkdir(parents=True, exist_ok=True)
+    (sol / "2026-10-28_imagen_T016.json").write_text(json.dumps({"fecha": "2026-10-28", "formato": "imagen", "tema_id": "T016", "titulo": "x",
+                                                                  "gancho": "¿x?", "estado": "PENDIENTE_GUION", "plantilla": "dato"}))
+    vistas = []
+    def generar(s, *a, **k):
+        vistas.append(s["archivo"]); raise redactor.Descartada("prueba", categoria="juridico")
+    monkeypatch.setattr(redactor, "generar", generar)
+    c = cola.cargar(); ciclo.redactar_pendientes(c, {"descartadas": [], "redactadas": []}, None, {})
+    assert "2026-10-28_imagen_T016.json" in vistas
+    c["trabajos"]["I-VIEJA"]["historial"] = []                       # un guion NUEVO sin producir sí ocupa el espacio
+    vistas.clear(); ciclo.redactar_pendientes(c, {"descartadas": [], "redactadas": []}, None, {})
+    assert not any("imagen" in v for v in vistas)
+
+
+def test_el_motivo_exacto_de_cada_descarte_queda_registrado(raiz_vacia, monkeypatch):
+    sol = raiz_vacia / "estado" / "solicitudes"; sol.mkdir(parents=True, exist_ok=True)
+    (sol / "2026-10-28_reel_T031.json").write_text(json.dumps({"fecha": "2026-10-28", "formato": "reel", "tema_id": "T031", "titulo": "x",
+                                                                 "gancho": "¿x?", "estado": "PENDIENTE_GUION", "carril": "A", "fuentes_sugeridas": ""}))
+    monkeypatch.setattr(redactor, "generar", lambda s, *a, **k: (_ for _ in ()).throw(redactor.Descartada("[sustento] motivo exacto", categoria="juridico")))
+    import cola
+    ciclo.redactar_pendientes(cola.cargar(), {"descartadas": [], "redactadas": []}, None, {})
+    m = [json.loads(l) for l in (raiz_vacia / "registro" / "metricas_generacion.jsonl").read_text().splitlines()]
+    r = next(x for x in m if x["tema_id"] == "T031")
+    assert r["motivo"] == "[sustento] motivo exacto" and r["categoria"] == "juridico" and r["resultado"] == "descartada"

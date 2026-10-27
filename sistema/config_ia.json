@@ -21,7 +21,6 @@
       "modelos": [
         "gemini:gemini-3-flash-preview",
         "gemini:gemini-3.6-flash",
-        "gemini:gemini-3.8-flash",
         "gemini:gemini-3.5-flash-lite"
       ],
       "tope_diario": 60,
@@ -78,5 +77,6 @@
   "nota_orden_26_10": "Orden ajustado el 26-10-2026 con el registro real (estado/uso_ia.jsonl): gemini-3-flash-preview respondió 15/15; gemini-3.8-flash 0/33 (429 y 503); gemma-4-26b respondió 12/37 frente a 2/43 de gemma-4-31b (HTTP 500 interno). La redacción ahora hace también la etapa de análisis jurídico (1-2 llamadas por pieza).",
   "max_llamadas_ia_por_ciclo": 60,
   "nota_cuota_27_10": "Cuota: los modelos con 429 diario no se vuelven a llamar hasta el reinicio (medianoche del Pacífico); máximo 60 llamadas de IA por ciclo.",
-  "nota_27_10_tarde": "Registro real 25-27/10: gemma-4-31b-it respondió 3 de 54 llamadas (HTTP 500 interno) → retirado del auditor. Cortacircuitos: un modelo con dos 5xx seguidos no se vuelve a llamar en el resto del ciclo. Los análisis validados se reutilizan (estado/analisis/)."
+  "nota_27_10_tarde": "Registro real 25-27/10: gemma-4-31b-it respondió 3 de 54 llamadas (HTTP 500 interno) → retirado del auditor. Cortacircuitos: un modelo con dos 5xx seguidos no se vuelve a llamar en el resto del ciclo. Los análisis validados se reutilizan (estado/analisis/).",
+  "nota_27_10_noche": "Piloto 27-10: gemini-3.8-flash 0 de 5 (5xx y tiempos agotados) y 0 de 33 el 26-10 → retirado del redactor. Cadena: 3-flash-preview, 3.6-flash, 3.5-flash-lite."
 }
