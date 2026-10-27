@@ -302,7 +302,7 @@
       "id": "I20261026-T020v2",
       "formato": "imagen",
       "huella": "e90586275b879e88824232f52ef9468ec57bca14e8dd60662be17d0d8004594d",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-26T17:25:08+00:00",
@@ -318,15 +318,21 @@
           "a": "PENDIENTE",
           "ts": "2026-10-27T01:59:25+00:00",
           "motivo": "verificador actualizado a 0.5.0; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-27T02:30:56+00:00",
+          "motivo": "verificación jurídica: RETENER · [cobertura] La pregunta es de tipo «legalidad» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
       "retencion": {
-        "tipo": "transitorio",
-        "desde": "2026-10-27T00:12:04+00:00",
-        "verificador": "0.4.0"
+        "tipo": "sustantivo",
+        "desde": "2026-10-27T02:30:56+00:00",
+        "verificador": "0.5.0"
       }
     },
     "R20261028-T068": {
