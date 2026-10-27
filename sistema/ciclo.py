@@ -101,6 +101,9 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
                     sol["estado"] = "DESCARTADA"; resumen["descartadas"].append(f'{sol["tema_id"]}: {str(e)[:120]}')
                 f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
                 cola.log({"evento": "redaccion_descartada", "solicitud": f.name, "transitoria": e.transitoria, "motivo": str(e)[:300]})
+                if getattr(e, "historial", None):           # diagnóstico completo de cada descarte (para mejorar el sistema)
+                    d = RAIZ / "estado" / "descartes"; d.mkdir(parents=True, exist_ok=True)
+                    (d / f.name).write_text(json.dumps({"solicitud": f.name, "fecha": cola.ahora(), "motivo": str(e), "historial": e.historial}, ensure_ascii=False, indent=1)[:200000])
                 if e.transitoria: break                # falla de red o de cuota: no tiene caso probar otro tema ahora
                 continue
             carpeta = RAIZ / "piezas" / sol["pieza_id"]; carpeta.mkdir(parents=True, exist_ok=True)

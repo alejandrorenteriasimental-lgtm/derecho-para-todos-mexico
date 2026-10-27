@@ -28,8 +28,8 @@ LOCALES = ("CPF", "CCF")  # tienen equivalentes estatales distintos → leyenda 
 
 class Descartada(Exception):
     """El tema no puede convertirse en una pieza verificable ahora. `transitoria` = reintentar más tarde."""
-    def __init__(self, motivo, transitoria=False):
-        super().__init__(motivo); self.transitoria = transitoria
+    def __init__(self, motivo, transitoria=False, historial=None):
+        super().__init__(motivo); self.transitoria = transitoria; self.historial = historial
 
 
 # ---------------- textos oficiales ----------------
@@ -191,7 +191,9 @@ EXCLUSIVAMENTE ese análisis:
   artículos, cifras ni ejemplos jurídicos que no estén en el análisis.
 - Cada elemento «cubierto» del análisis (efecto, qué hacer, ante quién, plazo…) debe decirse en el contenido visible con
   casi las mismas palabras de su «respuesta». No aludas a un recurso, vía o autoridad sin nombrarlo («existe un recurso legal
-  específico» está prohibido). Las «interpretaciones» solo pueden aparecer con su condición («si se demuestra…»).
+  específico», «autoridad competente» o «instancia correspondiente» están prohibidos, también en listas y encabezados: usa el
+  nombre que da el texto oficial, p. ej., «Centro de Conciliación», «Tribunal», «Profeco»). Las «interpretaciones» solo
+  pueden aparecer con su condición («si se demuestra…»).
 - Si usas dos conceptos de las distinciones, explica su diferencia.
 - Repite en "razonamiento" exactamente el análisis recibido (no lo modifiques).
 Análisis aprobado:
@@ -520,7 +522,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                     fuentes.update(nuevas); glosario = _glosario(sol, fuentes)
                 extra_a = "\n\nTu análisis anterior tenía estos problemas; corrígelos sin cambiar la pregunta:\n- " + "\n- ".join(errores[:8])
             if mapa is None:
-                raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400])
+                raise Descartada("el análisis jurídico no superó la revisión contra el texto oficial: " + json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial)
             mapa_fijo, usadas = _mapa_fijo(mapa, fuentes)
             fuentes_red = {fid: f for fid, f in fuentes.items() if fid in usadas} or fuentes
             textos = _textos(fuentes_red)
@@ -580,6 +582,6 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                         json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
             if not volver:
                 raise Descartada("no superó la validación o la auditoría independiente tras dos correcciones: " +
-                                 json.dumps(historial[-1], ensure_ascii=False)[:400])
+                                 json.dumps(historial[-1], ensure_ascii=False)[:400], historial=historial)
     except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
         raise Descartada(f"modelo no disponible: {e}", transitoria=True)
