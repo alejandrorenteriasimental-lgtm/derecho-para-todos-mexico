@@ -33,7 +33,11 @@ jobs:
       - name: Dependencias de Python
         run: pip install -q -r requirements.txt pytest fpdf2
       - name: Pruebas (sin red, sin costo)
-        run: python -m pytest -q pruebas -m "not vivo"
+        run: |
+          python -m pytest -q -rf --tb=line pruebas -m "not vivo" --junitxml=/tmp/junit.xml || {
+            # cada prueba fallida queda como anotación de GitHub (consultable por la API aunque no se puedan bajar los registros)
+            python -c "import xml.etree.ElementTree as E;[print(f'::error title={c.get(\"classname\")}.{c.get(\"name\")}::'+((c.find('failure') if c.find('failure') is not None else c.find('error')).get('message') or '')[:400].replace(chr(10),' ')) for c in E.parse('/tmp/junit.xml').iter('testcase') if c.find('failure') is not None or c.find('error') is not None]"
+            exit 1; }
       - name: Pruebas en vivo (fuentes oficiales y modelos)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

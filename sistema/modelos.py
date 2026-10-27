@@ -55,10 +55,19 @@ def usos_hoy(modelo, archivo=None, proveedor=None):
 
 def _ultimo_reinicio_gemini(ahora=None):
     """La cuota diaria gratuita de Gemini se reinicia a medianoche del Pacífico (no a medianoche UTC)."""
-    from zoneinfo import ZoneInfo
     ahora = ahora or datetime.now(timezone.utc)
-    pac = ahora.astimezone(ZoneInfo("America/Los_Angeles"))
-    return pac.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    try:
+        from zoneinfo import ZoneInfo
+        pac = ahora.astimezone(ZoneInfo("America/Los_Angeles"))
+        return pac.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    except Exception:            # sin base de zonas horarias en el sistema: regla de horario de verano de EE. UU.
+        from datetime import timedelta
+        a = ahora.year
+        dom = lambda mes, n: (lambda d: d + timedelta(days=(6 - d.weekday()) % 7 + 7 * (n - 1)))(datetime(a, mes, 1, tzinfo=timezone.utc))
+        verano = dom(3, 2) + timedelta(hours=10) <= ahora < dom(11, 1) + timedelta(hours=9)
+        off = timedelta(hours=-7 if verano else -8)
+        local = ahora + off
+        return (local.replace(hour=0, minute=0, second=0, microsecond=0) - off)
 
 
 def agotado_hoy(modelo, archivo=None, proveedor="gemini", ahora=None):
