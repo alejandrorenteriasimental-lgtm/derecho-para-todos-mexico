@@ -365,3 +365,23 @@
 {"ts": "2026-10-28T19:33:26+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T19:33:26+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T19:33:26+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-28T19:39:09+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T19:41:20+00:00", "evento": "redactada", "pieza": "R20261129-T084", "solicitud": "2026-11-29_reel_T084-piloto-2.json"}
+{"ts": "2026-10-28T19:44:02+00:00", "evento": "redactada", "pieza": "I20261129-T093", "solicitud": "2026-11-29_imagen_T093-piloto-2.json"}
+{"ts": "2026-10-28T19:44:02+00:00", "pieza": "I20261129-T093", "evento": "encolado"}
+{"ts": "2026-10-28T19:44:02+00:00", "pieza": "R20261129-T084", "evento": "encolado"}
+{"ts": "2026-10-28T19:44:45+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER · [vaguedad] Referencia vaga: «Ese plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizad». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."}
+{"ts": "2026-10-28T19:44:45+00:00", "evento": "alerta", "mensaje": "R20261126-T061 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-10-28T19:47:27+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "PRODUCIDO", "motivo": "54.2"}
+{"ts": "2026-10-28T19:47:31+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:47:31+00:00", "evento": "revision_preparada", "pieza": "R20261129-T084", "version": "92345e2369a85b91", "canal": "chat"}
+{"ts": "2026-10-28T19:48:28+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T19:48:32+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:48:32+00:00", "evento": "revision_preparada", "pieza": "I20261126-T025", "version": "7148d8d7e99434ad", "canal": "chat"}
+{"ts": "2026-10-28T19:49:18+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T19:49:20+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:49:20+00:00", "evento": "revision_preparada", "pieza": "I20261128-T010", "version": "b8885d50d8b1f946", "canal": "chat"}
+{"ts": "2026-10-28T19:50:05+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T19:50:09+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:50:09+00:00", "evento": "revision_preparada", "pieza": "I20261129-T093", "version": "0537b7ad2285df8b", "canal": "chat"}
+{"ts": "2026-10-28T19:50:09+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 4, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 4}

@@ -1,0 +1,178 @@
+{
+  "id": "I20261129-T093",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T093",
+  "pieza": {
+    "titular": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+    "bajada": "La ley prohíbe la violencia y la justicia por propia mano.",
+    "mito": "Mito: Si me deben, puedo cobrarme por la fuerza.",
+    "realidad": "No, ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 17"
+  },
+  "copy": "Ante un adeudo, algunas personas consideran tomar acciones directas por cuenta propia. No obstante, la Constitución Política de los Estados Unidos Mexicanos, artículo 17, establece límites claros al respecto.\n\nEl texto oficial indica que «Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho». Esto establece la prohibición absoluta de usar la fuerza o vías de hecho.\n\nGuarda esta información y compártela para conocer lo que dice la ley sobre la solución de conflictos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Gráfica editorial que explica que no está permitido cobrar deudas por propia mano.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Prohibición de hacerse justicia por propia mano para reclamar derechos.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+    "concepto_central": "hacerse justicia por sí misma",
+    "respuesta_corta": "No, ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar su derecho.",
+    "reglas": [
+      {
+        "conclusion": "Está prohibido hacerse justicia por propia mano o ejercer violencia para reclamar un derecho.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "17"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La norma establece la prohibición absoluta para las personas de hacerse justicia por propia mano o usar la violencia para reclamar.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla los procedimientos específicos para el cobro de deudas, limitándose a prohibir la justicia por propia mano y señalar que nadie puede ser aprisionado por deudas de carácter puramente civil."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T19:44:02+00:00",
+    "solicitud": "2026-11-29_imagen_T093-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La vía legal para reclamar el derecho (la administración de justicia por tribunales) que menciona el mismo artículo."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Está prohibido hacerse justicia por propia mano o ejercer violencia para reclamar un derecho.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la prohibición establecida en el primer párrafo del artículo 17 constitucional."
+            },
+            {
+              "conclusion": "está prohibido tomar medidas por cuenta propia para exigir pagos.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación válida de la prohibición de 'hacerse justicia por sí misma' aplicada al contexto de la pregunta sobre deudas."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "pieza",
+              "problema": "Aunque la pieza responde directamente al 'no' de la pregunta, incumple con la cobertura esencial al no informar al usuario qué es lo que sí puede hacer (acudir a tribunales) para reclamar su derecho, según lo dispuesto en el mismo artículo 17.",
+              "correccion": "Incluir que, para reclamar un derecho, la persona tiene derecho a que se le administre justicia por tribunales que actúen de manera pronta, completa e imparcial."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[respuesta] La respuesta corta no aparece en el contenido visible: «No, ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar».",
+          "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La norma establece la prohibición absoluta para las personas de hacerse justicia por propia mano o usar la violencia para reclamar.»), pero la pieza no lo dice: agrégalo al texto visible."
+        ],
+        "visible": "  \n   \n Cobrar una deuda por mano propia usando la fuerza. \n No. Tienes derecho a que los tribunales administren justicia de forma pronta, completa e imparcial."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Está prohibido hacerse justicia por propia mano o ejercer violencia para reclamar un derecho.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente del primer párrafo del artículo 17, que prohíbe expresamente hacerse justicia por sí misma o ejercer violencia."
+            },
+            {
+              "conclusion": "La norma establece la prohibición absoluta de usar la fuerza o vías de hecho.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional utiliza el término 'Ninguna persona podrá', lo que sustenta la naturaleza de la prohibición descrita en la pieza."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

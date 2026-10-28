@@ -1,0 +1,139 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 30 y 90 s (límite de Reels por API)",
+      "resultado": "APROBADO",
+      "detalle": "54.2 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "54.2 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.0 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.5 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "39 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "5a45d273fc0508d5"
+    },
+    {
+      "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
+      "resultado": "APROBADO",
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
+    },
+    {
+      "control": "Subtítulos sin tapar citas ni contenido",
+      "resultado": "APROBADO",
+      "detalle": "0 cuadros con solape"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "registro": {
+    "id": "R20261129-T084",
+    "titulo": "¿En México te pueden castigar con azotes?",
+    "fecha": "2026-10-28T19:47:27+00:00",
+    "sha256": "5a45d273fc0508d5b892d036035ed6d987a8c3cac8df26bf2ef6a1364540c521",
+    "duracion_s": 54.2,
+    "estado": "APTO",
+    "huella_guion": "bedf41d920fef3eef9b0d2cb300d5b48126bd913b5bd1f62b1fd674d018b0dcf",
+    "carril": "A",
+    "tiempos_s": {
+      "auditoria_juridica": 0.0,
+      "narracion": 35.2,
+      "musica": 3.0,
+      "render_video": 64.3,
+      "mezcla_audio": 2.7,
+      "auditoria_tecnica": 14.7
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 2.0,
+      "computo_equivalente_runner_usd": 0.012,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1627,
+    "caracteres_narrados": 823
+  }
+}

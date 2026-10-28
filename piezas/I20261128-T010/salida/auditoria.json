@@ -57,13 +57,11 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "Regla: Sin personas reales identificables"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
-    "carril": "C",
+    "carril": "A",
     "reglas": [
       {
         "control": "Aviso de información general",
@@ -82,8 +80,8 @@
       },
       {
         "control": "Sin personas reales identificables",
-        "resultado": "FALLA",
-        "detalle": "Aquí Dice"
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
       }
     ]
   },
@@ -107,8 +105,8 @@
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "RETENIDO",
-    "fecha": "2026-10-28T19:30:09+00:00",
+    "estado": "APTO",
+    "fecha": "2026-10-28T19:49:18+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
