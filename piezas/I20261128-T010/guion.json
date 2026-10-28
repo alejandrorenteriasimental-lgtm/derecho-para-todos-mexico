@@ -1,0 +1,135 @@
+{
+  "id": "I20261128-T010",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Lo que calles se usa en tu contra?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T010",
+  "pieza": {
+    "titular": "¿Lo que calles se usa en tu contra?",
+    "bajada": "La Constitución Política de los Estados Unidos Mexicanos regula tu derecho a guardar silencio.",
+    "mito": "Si guardas silencio ante la autoridad, aceptas tu culpa.",
+    "realidad": "No, el derecho a guardar silencio no podrá ser utilizado en perjuicio de la persona.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 20"
+  },
+  "copy": "Frecuentemente existe la duda sobre si el silencio ante las autoridades puede interpretarse como una aceptación de responsabilidad. Sin embargo, las normas protegen a quienes enfrentan una detención.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 20, toda persona imputada tiene derecho «a guardar silencio, el cual no podrá ser utilizado en su perjuicio» desde el momento de su detención.\n\nGuarda y comparte esta información de «Aquí Dice la Ley» para que más personas conozcan sus derechos fundamentales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen tipo mito y realidad que responde si lo que calles puede usarse en tu contra, basado en la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El derecho a guardar silencio no podrá ser utilizado en perjuicio de la persona imputada.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Lo que calles puede usarse en tu contra?",
+    "concepto_central": "derecho a guardar silencio",
+    "respuesta_corta": "No, el derecho a guardar silencio no puede ser utilizado en perjuicio de la persona imputada.",
+    "reglas": [
+      {
+        "conclusion": "El ejercicio del derecho a guardar silencio no puede ser utilizado en perjuicio de la persona imputada.",
+        "fuente": "F1",
+        "cita_literal": "su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+        "condiciones": [
+          "desde el momento de su detención se le harán saber los motivos y su derecho"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La ley establece que el derecho a guardar silencio no podrá ser utilizado en perjuicio de la persona.",
+        "fuente": "F1",
+        "cita_literal": "su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla los mecanismos específicos o sanciones concretas para el caso de que una autoridad intente usar el silencio en perjuicio de la persona, más allá de la prohibición expresa."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T19:08:36+00:00",
+    "solicitud": "2026-11-28_imagen_T010-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Lo que calles puede usarse en tu contra?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El ejercicio del derecho a guardar silencio no puede ser utilizado en perjuicio de la persona imputada.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente de la fracción II del apartado B del artículo 20 constitucional, que prohíbe expresamente que el derecho a guardar silencio sea utilizado en perjuicio del imputado."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

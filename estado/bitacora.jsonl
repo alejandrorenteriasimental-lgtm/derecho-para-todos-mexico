@@ -334,3 +334,17 @@
 {"ts": "2026-10-28T18:54:10+00:00", "evento": "alerta", "mensaje": "I20261126-T025 retenido por verificación jurídica (RETENER)."}
 {"ts": "2026-10-28T18:54:10+00:00", "pieza": "I20261123-T084", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
 {"ts": "2026-10-28T18:54:10+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 1, "retenidas": 2, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
+{"ts": "2026-10-28T19:05:31+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T19:06:14+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-26_reel_T061-piloto-2.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «La Constitución Política de los Estados Unidos Mexicanos señala el límite temporal aplicab» se presenta sin la condición que impone Con"}
+{"ts": "2026-10-28T19:07:33+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-29_reel_T025-piloto-2.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"El descanso por adopción es una categoría distinta al descanso por maternidad (parto)"}
+{"ts": "2026-10-28T19:08:36+00:00", "evento": "redactada", "pieza": "I20261128-T010", "solicitud": "2026-11-28_imagen_T010-piloto-2.json"}
+{"ts": "2026-10-28T19:08:36+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "PENDIENTE", "motivo": "el guion cambió; se vuelve a verificar"}
+{"ts": "2026-10-28T19:08:36+00:00", "pieza": "I20261128-T010", "evento": "encolado"}
+{"ts": "2026-10-28T19:08:36+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "PENDIENTE", "motivo": "verificador actualizado a 0.5.4; se vuelve a verificar"}
+{"ts": "2026-10-28T19:10:20+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T19:10:23+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:10:23+00:00", "evento": "revision_preparada", "pieza": "I20261127-T015", "version": "0c0186ad4484b3e5", "canal": "chat"}
+{"ts": "2026-10-28T19:11:17+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T19:11:21+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:11:21+00:00", "evento": "revision_preparada", "pieza": "I20261126-T025", "version": "3d6c0bfe4dad032a", "canal": "chat"}
+{"ts": "2026-10-28T19:11:21+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 2, "producidas": 2, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}

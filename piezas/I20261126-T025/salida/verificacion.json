@@ -1,10 +1,10 @@
 {
-  "decision": "RETENER",
+  "decision": "APTA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-28T18:53:39+00:00",
+      "consultado": "2026-10-28T19:10:23+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -26,36 +26,5 @@
       "duda": null
     }
   ],
-  "razonamiento": [
-    {
-      "regla": "sustento",
-      "severidad": "bloqueante",
-      "detalle": "La cita de la conclusión «Corresponden cinco días laborables con goce de sueldo por el» no está en Ley Federal del Trabajo, art. 132."
-    },
-    {
-      "regla": "cobertura",
-      "severidad": "bloqueante",
-      "detalle": "El elemento «contenido» («Se otorgan cinco días laborables con goce de sueldo.») no trae una cita literal que esté en el texto oficial de su fuente."
-    },
-    {
-      "regla": "cobertura",
-      "severidad": "bloqueante",
-      "detalle": "El elemento «condiciones» («Aplica a los hombres trabajadores por el nacimiento de sus h») no trae una cita literal que esté en el texto oficial de su fuente."
-    },
-    {
-      "regla": "sustento",
-      "severidad": "bloqueante",
-      "detalle": "«Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tu» menciona un plazo (5 dia) que no aparece en los artículos citados."
-    },
-    {
-      "regla": "sustento",
-      "severidad": "bloqueante",
-      "detalle": "«Otorgar permiso de paternidad de cinco días laborables con goce de sueldo» menciona un plazo (5 dia) que no aparece en los artículos citados."
-    },
-    {
-      "regla": "sustento",
-      "severidad": "bloqueante",
-      "detalle": "«El artículo 132, fracción XXVII Bis, establece la obligación de las personas emp» menciona un plazo (5 dia) que no aparece en los artículos citados."
-    }
-  ]
+  "razonamiento": []
 }

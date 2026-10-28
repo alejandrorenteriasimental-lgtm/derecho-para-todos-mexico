@@ -1111,8 +1111,8 @@
     "I20261127-T015": {
       "id": "I20261127-T015",
       "formato": "imagen",
-      "huella": "22a167a483b0235e0facc3d0b1b9fe9eecced13a9942a20a98dcf7f5e74dac3f",
-      "estado": "RETENIDO",
+      "huella": "5524fb98bcfc3d628bd2ebd8d0380db701e390e60bd7fe9cd1f35eedaffddcf0",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:11:02+00:00",
@@ -1140,6 +1140,24 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T18:53:39+00:00",
           "motivo": "verificación jurídica: RETENER · [cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a todos los trabajadores, incluidos los que no hayan cumplido el año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T19:08:36+00:00",
+          "motivo": "el guion cambió; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T19:10:20+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T19:10:23+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -1149,6 +1167,13 @@
         "tipo": "sustantivo",
         "desde": "2026-10-28T18:53:39+00:00",
         "verificador": "0.5.3"
+      },
+      "revision": {
+        "version": "0c0186ad4484b3e5",
+        "huella_guion": "5322c4b7cfbd994c357109342705061075737677e8063a25201c34dad936a4e8",
+        "huella_archivo": "266b84bbd2dd9840ddd4cbce5f98a60c1f01c47de73488c5e1abaee6995a03d1",
+        "preparada": "2026-10-28T19:10:23+00:00",
+        "canal": "chat"
       }
     },
     "R20261127-T010": {
@@ -1207,7 +1232,7 @@
       "id": "I20261126-T025",
       "formato": "imagen",
       "huella": "40cab8d74fcb9bce3cadcb817b9df5c16ee4dcd3ccdeb04bcdb737a3ed58f174",
-      "estado": "RETENIDO",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:31:31+00:00",
@@ -1217,6 +1242,24 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T18:54:10+00:00",
           "motivo": "verificación jurídica: RETENER · [sustento] La cita de la conclusión «Corresponden cinco días laborables con goce de sueldo por el» no está en Ley Federal del Trabajo, art. 132. · [cobertura] El elemento «contenido» («Se otorgan cinco días laborables con goce de sueldo.») no trae una cita literal que esté en el texto oficial de su fuente. · [cobertura] El elemento «condiciones» («Aplica a los hombres trabajadores por el nacimiento de sus h») no trae una cita literal que esté en el texto oficial de su fuente. · [sustento] «Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tu» menciona un plazo (5 dia) que no aparece en los artículos citados. · [sustento] «Otorgar permiso de paternidad de cinco días laborables con goce de sueldo» menciona un plazo (5 dia) que no aparece en los artículos citados. · [sustento] «El artículo 132, fracción XXVII Bis, establece la obligación de las personas emp» m"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T19:08:36+00:00",
+          "motivo": "verificador actualizado a 0.5.4; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T19:11:17+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T19:11:21+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -1226,6 +1269,13 @@
         "tipo": "sustantivo",
         "desde": "2026-10-28T18:54:10+00:00",
         "verificador": "0.5.3"
+      },
+      "revision": {
+        "version": "3d6c0bfe4dad032a",
+        "huella_guion": "f3b74939e54806aea3e794f444ca3f2ba9894a8b77a441e76b3c3a7fc1c4ee3f",
+        "huella_archivo": "7a9df1ef6d882cc2947548890bb83ffd28bba999516ea882a95198c3742d943f",
+        "preparada": "2026-10-28T19:11:21+00:00",
+        "canal": "chat"
       }
     },
     "R20261128-T028": {
@@ -1261,6 +1311,20 @@
         "preparada": "2026-10-28T18:52:37+00:00",
         "canal": "chat"
       }
+    },
+    "I20261128-T010": {
+      "id": "I20261128-T010",
+      "formato": "imagen",
+      "huella": "bae674a363acda83b8cb2af2670d6bc63c786734ed106671262f36c17276ac4c",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T19:08:36+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }

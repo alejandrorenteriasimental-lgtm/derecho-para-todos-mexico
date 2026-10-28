@@ -1,0 +1,83 @@
+{
+ "solicitud": "2026-11-29_reel_T025-piloto-2.json",
+ "fecha": "2026-10-28T19:07:33+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"El descanso por adopción es una categoría distinta al descanso por maternidad (parto), y la pieza no distingue que la pregunta sobre 'maternidad' suele referirse al proceso biológico, aunque la ley lo incluya en el mismo artículo.\"]}, \"conclusiones\": [{\"conclus",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «condiciones» («Se pueden transferir hasta cuatro semanas previas al parto o») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[condiciones] Generalización: «En caso de que los hijos hayan nacido con cualquier tipo de discapacidad o requieran atenc» se presenta sin la condición que impone Ley Federal del Trabajo, art. 170 («…de la institucion de seguridad social que le corresponda o en su caso del se rvicio de salud que otorgue el patron tomando en cuenta la opinion del p…»).",
+    "[sustento] «También puedes transferir hasta cuatro semanas previas al parto cumpliendo los s» menciona un plazo (4 semana) que no aparece en los artículos citados."
+   ],
+   "visible": "  \n ¿Sabías que la ley establece periodos específicos para el descanso de las madres trabajadoras? ¿Cuántas semanas de descanso por maternidad te corresponden? \n ¿CUÁNTAS SEMANAS \n DE DESCANSO \n TE CORRESPONDEN? \n Te corresponden seis semanas anteriores y seis posteriores al parto, pudiendo transferirse semanas o ampliarse hasta ocho por necesidades médicas. \n DESCANSO \n POR MATERNIDAD \n La ley es muy clara al indicar lo siguiente sobre este derecho laboral: Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto. \n Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto. \n También puedes transferir hasta cuatro semanas previas al parto cum"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[sustento] «Transferir hasta 4 semanas» menciona un plazo (4 semana) que no aparece en los artículos citados."
+   ],
+   "visible": "  \n ¿Sabes exactamente cuántas semanas de descanso por maternidad establece la ley? \n ¿CUÁNTAS \n SEMANAS? \n DESCANSO \n Te corresponden seis semanas anteriores y seis posteriores al parto, pudiendo transferirse semanas o ampliarse hasta ocho por necesidades médicas. \n DERECHO \n LABORAL \n La legislación laboral establece de forma específica el periodo base que corresponde a las madres trabajadoras: Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto. \n Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto. \n Considera las siguientes modalidades según tu situación: \n Transferir hasta 4 semanas \n Hasta 8 semanas por salud \n 6 semanas por "
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "El descanso por adopción es una categoría distinta al descanso por maternidad (parto), y la pieza no distingue que la pregunta sobre 'maternidad' suele referirse al proceso biológico, aunque la ley lo incluya en el mismo artículo."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Corresponde un descanso de seis semanas antes y seis semanas después del parto.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la fracción II del artículo 170."
+     },
+     {
+      "conclusion": "Se pueden transferir hasta cuatro semanas previas al parto para después del mismo, bajo solicitud y autorización médica.",
+      "sostenida": "si",
+      "motivo": "La conclusión resume correctamente las condiciones de la fracción II."
+     },
+     {
+      "conclusion": "El descanso posterior al parto puede ser de hasta ocho semanas si los hijos tienen discapacidad o requieren atención médica hospitalaria.",
+      "sostenida": "si",
+      "motivo": "La conclusión es fiel a la excepción establecida en la fracción II."
+     },
+     {
+      "conclusion": "En caso de adopción, el descanso es de seis semanas posteriores al día en que se reciba al infante.",
+      "sostenida": "si",
+      "motivo": "La conclusión es exacta según la fracción II Bis."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "titular / respuesta_corta",
+      "problema": "La pieza presenta como una regla general de 'maternidad' la posibilidad de ampliar el descanso a ocho semanas, cuando esto es una excepción supeditada a condiciones específicas (discapacidad o atención hospitalaria).",
+      "correccion": "Debe aclararse que el descanso estándar es de seis y seis, y que la ampliación a ocho semanas es una excepción para casos de discapacidad o necesidad de atención médica hospitalaria."
+     },
+     {
+      "donde": "razonamiento / elementos",
+      "problema": "La pieza omite mencionar que la transferencia de semanas requiere también la opinión del patrón y la naturaleza del trabajo, elementos que sí están en la norma.",
+      "correccion": "Incluir en las condiciones de transferencia que se debe tomar en cuenta la opinión del patrón y la naturaleza del trabajo desempeñado."
+     }
+    ]
+   }
+  }
+ ]
+}
