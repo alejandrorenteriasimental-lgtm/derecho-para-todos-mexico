@@ -577,3 +577,6 @@
 {"ts": "2026-10-28T19:07:58+00:00", "rol": "redactor", "proveedor": "gemini", "modelo": "gemini-3.5-flash-lite", "resultado": "ok", "segundos": 3.6, "tokens_entrada": 3954, "tokens_salida": 362, "tokens_razonamiento": 938}
 {"ts": "2026-10-28T19:08:04+00:00", "rol": "redactor", "proveedor": "gemini", "modelo": "gemini-3.5-flash-lite", "resultado": "ok", "segundos": 6.3, "tokens_entrada": 3727, "tokens_salida": 689, "tokens_razonamiento": 1796}
 {"ts": "2026-10-28T19:08:36+00:00", "rol": "auditor", "proveedor": "gemini", "modelo": "gemma-4-26b-a4b-it", "resultado": "ok", "segundos": 29.7, "tokens_entrada": 3626, "tokens_salida": 155, "tokens_razonamiento": 1211}
+{"ts": "2026-10-28T19:23:53+00:00", "rol": "redactor", "proveedor": "gemini", "modelo": "gemini-3.5-flash-lite", "resultado": "ok", "segundos": 9.5, "tokens_entrada": 3736, "tokens_salida": 1325, "tokens_razonamiento": 1795}
+{"ts": "2026-10-28T19:26:23+00:00", "rol": "auditor", "proveedor": "gemini", "modelo": "gemma-4-26b-a4b-it", "resultado": "error", "error": "gemma-4-26b-a4b-it: sin conexión o respuesta ilegible (TimeoutError)"}
+{"ts": "2026-10-28T19:26:29+00:00", "rol": "auditor", "proveedor": "gemini", "modelo": "gemini-3.1-flash-lite", "resultado": "ok", "segundos": 6.1, "tokens_entrada": 3704, "tokens_salida": 220, "tokens_razonamiento": 1167}

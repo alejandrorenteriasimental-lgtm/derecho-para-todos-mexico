@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "38.1 s"
+      "detalle": "38.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.1 s"
+      "detalle": "38.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "f5e943039a6953ed"
+      "detalle": "06e562b12b8cbc3b"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261128-T028",
     "titulo": "¿Tienes que demostrar que eres inocente?",
-    "fecha": "2026-10-28T18:52:33+00:00",
-    "sha256": "f5e943039a6953edc2054f0c3649f385262d241cbbaf71a85b4a8bf296529091",
-    "duracion_s": 38.1,
+    "fecha": "2026-10-28T19:27:43+00:00",
+    "sha256": "06e562b12b8cbc3bfa3e3abf2f0aa399c04e65c3b001c69d0186858b246d0e72",
+    "duracion_s": 38.8,
     "estado": "APTO",
-    "huella_guion": "937eac91543f1b78cad52c2a42b23695c4cbf7af303c3975ccaa7e516eae97af",
+    "huella_guion": "e27d2d592850bff15864a75622c61c0a7cde223ba552222d33be66b948d1cff4",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 11.3,
+      "narracion": 10.9,
       "musica": 1.1,
-      "render_video": 28.3,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 6.7
+      "render_video": 28.8,
+      "mezcla_audio": 1.1,
+      "auditoria_tecnica": 6.6
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
       "computo_minutos": 0.81,
-      "computo_equivalente_runner_usd": 0.0048,
+      "computo_equivalente_runner_usd": 0.0049,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1143,
-    "caracteres_narrados": 556
+    "frames": 1163,
+    "caracteres_narrados": 565
   }
 }
