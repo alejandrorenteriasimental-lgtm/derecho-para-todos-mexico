@@ -770,6 +770,9 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 g["pregunta_original"] = pregunta_plan(sol)
                 if sol.get("tipo_pregunta"): g["tipo_pregunta"] = sol["tipo_pregunta"]
                 errores = esquema.validar(g)
+                if sol["formato"] == "imagen" and not errores:
+                    import imagen as _imagen
+                    errores += _imagen.revision_previa(g)
                 hall = razonamiento.revisar(g, {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}, ia=True)
                 g["revision_razonamiento"] = hall
                 errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]

@@ -231,3 +231,37 @@ def test_el_analisis_pide_los_elementos_correctos_y_sin_creatividad():
     assert "contenido | condiciones" in vistos["prompt"] and "efecto | que_hacer" not in vistos["prompt"]
     assert vistos["temp"] <= 0.15 and red.temperatura == 0.5
     assert "Inventar una consecuencia" in vistos["prompt"]
+
+
+def _g_vacaciones(visible):
+    return {"pregunta_original": "¿Cuántos días de vacaciones te corresponden?", "tipo_pregunta": "obligacion",
+            "escenas": [{"tipo": "texto", "texto": visible}],
+            "razonamiento": {"reglas": [{"fuente": "F1", "ref": {"documento": "LFT", "articulo": "76"}}], "elementos": [
+                {"elemento": "contenido", "estado": "cubierto", "fuente": "F1", "respuesta": "El periodo mínimo es de doce días laborables",
+                 "cita_literal": "en ningún caso podrá ser inferior a doce días laborables"},
+                {"elemento": "condiciones", "estado": "cubierto", "fuente": "F1",
+                 "respuesta": "Este derecho se adquiere una vez que la persona trabajadora ha acumulado más de un año de servicios para el empleador.",
+                 "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas"}]}}
+
+
+TEXTO_76 = {("LFT", "76"): "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables"}
+
+
+def test_condicion_dicha_en_singular_o_con_otra_flexion_cuenta():
+    """I20261123-T016 (28-10): «si tienes más de un año de servicio» frente a «personas trabajadoras … un año de servicios»."""
+    g = _g_vacaciones("Si eres persona trabajadora y tienes más de un año de servicio, disfrutarás de vacaciones pagadas: el periodo mínimo es de doce días laborables.")
+    assert razonamiento.revisar_cobertura(g, TEXTO_76) == []
+
+
+def test_condicion_omitida_sigue_bloqueando():
+    g = _g_vacaciones("Te tocan como mínimo doce días laborables de vacaciones.")
+    assert any("condiciones" in h["detalle"] or "requisitos" in h["detalle"] for h in razonamiento.revisar_cobertura(g, TEXTO_76))
+
+
+def test_imagen_demasiado_larga_se_detecta_al_redactar():
+    """I20261125-T028 (28-10): 64 palabras visibles; la auditoría técnica la retuvo después de producirla."""
+    import imagen
+    g = json.loads((AQUI.parent / "piezas" / "I20261125-T028" / "guion.json").read_text())
+    assert any("demasiado largo" in e for e in imagen.revision_previa(g))
+    g2 = json.loads((AQUI.parent / "piezas" / "I20261124-T073" / "guion.json").read_text())
+    assert imagen.revision_previa(g2) == []

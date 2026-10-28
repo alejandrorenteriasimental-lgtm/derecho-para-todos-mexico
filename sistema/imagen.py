@@ -244,6 +244,23 @@ def auditar(png, textos, y_fin, previos_hash=()):
     return R, h, cobertura
 
 
+def revision_previa(g):
+    """Dibuja la ficha en un archivo temporal ANTES de aceptar el guion y aplica los mismos límites de la auditoría técnica
+    que dependen del texto (≤ 60 palabras de contenido; sin invadir el pie). Así el redactor corrige la longitud en la
+    redacción y no se pierde el ciclo produciendo una imagen que la auditoría retendrá (I20261125-T028, 28-10: 64 palabras)."""
+    import tempfile
+    try:
+        with tempfile.TemporaryDirectory() as d:
+            textos, y_fin = dibujar(g, Path(d) / "previa.png")
+    except Exception as e:
+        return [f"imagen: no se pudo dibujar la ficha ({type(e).__name__})"]
+    err = []
+    n = sum(len(t["texto"].split()) for t in textos if t.get("zona") == "contenido")
+    if n > 60: err.append(f"imagen: contenido demasiado largo ({n} palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta")
+    if y_fin > H - 160: err.append("imagen: contenido demasiado largo: invade el pie de la ficha")
+    return err
+
+
 def producir(carpeta: Path, verificacion=None):
     g = json.loads((carpeta / "guion.json").read_text())
     out = carpeta / "salida"; out.mkdir(exist_ok=True)

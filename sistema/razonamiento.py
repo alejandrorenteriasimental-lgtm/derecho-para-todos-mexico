@@ -332,9 +332,11 @@ def revisar_cobertura(g, textos):
             H.append({"regla": "cobertura", "severidad": "bloqueante",
                       "detalle": f"El elemento «{k}» («{str(e.get('respuesta', ''))[:60]}») no trae una cita literal que esté en el texto oficial de su fuente."}); continue
         if visible is not None:
+            raices = {w[:6] for w in visible.split() if len(w) > 4}
             def dicho(texto):          # se acepta con sus palabras o con las de la cita oficial (paráfrasis legítima)
-                clave = [w for w in plano(texto).split() if len(w) > 4][:6]
-                return not clave or sum(1 for w in clave if w in visible) >= max(2, (len(clave) + 1) // 2)
+                # por raíz (6 letras): «servicio» = «servicios», «trabajador» = «trabajadoras» (I20261123-T016, 28-10)
+                clave = list(dict.fromkeys(w[:6] for w in plano(texto).split() if len(w) > 4))[:6]
+                return not clave or sum(1 for w in clave if w in raices) >= max(2, (len(clave) + 1) // 2)
             if not (dicho(e.get("respuesta", "")) or (e.get("cita_literal") and dicho(e["cita_literal"]))):
                 H.append({"regla": "cobertura", "severidad": "bloqueante",
                           "detalle": f"El análisis responde {ELEMENTOS[k]} («{str(e.get('respuesta', ''))[:160]}»), pero la pieza no lo dice: agrégalo al texto visible."})
