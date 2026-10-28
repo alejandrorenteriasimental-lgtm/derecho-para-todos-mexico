@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-28T23:00:25+00:00",
+ "fecha": "2026-10-28T23:04:45+00:00",
  "pasos": [
   {
    "paso": "autenticación",
@@ -18,38 +18,38 @@
   },
   {
    "paso": "Facebook: Reel cargado completo SIN finalizar (no publicado)",
-   "resultado": "OK",
-   "detalle": "video 1103489812287493: SUBIDO"
+   "resultado": "FALLA",
+   "detalle": "HTTP 400 · código 368: Limitamos la frecuencia con la que puedes publicar, comentar o realizar otras acciones durante un período determinado para proteger a la comunidad frente al spam. Vuelve a intentarlo más tarde. Más información (subcódigo 1390008)"
   },
   {
    "paso": "Instagram: contenedor de imagen procesado SIN publicar",
    "resultado": "OK",
-   "detalle": "contenedor 17995802333867253: FINISHED · ruta: IMAGEN_ALOJADA"
+   "detalle": "contenedor 17995804310867253: FINISHED · ruta: IMAGEN_ALOJADA"
   },
   {
    "paso": "Instagram: contenedor de reel procesado SIN publicar",
    "resultado": "FALLA",
-   "detalle": "contenedor 17995803059867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: parte en offset 4194304 de 4496525 bytes: HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
+   "detalle": "HTTP 400 · código 368: Limitamos la frecuencia con la que puedes publicar, comentar o realizar otras acciones durante un período determinado para proteger a la comunidad frente al spam. Vuelve a intentarlo más tarde. Más información (subcódigo 1390008)"
   },
   {
    "paso": "Diagnóstico: clip sintético conforme (no se publica)",
    "resultado": "OK",
-   "detalle": "contenedor 17995803089867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995804700867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
   },
   {
    "paso": "Diagnóstico: primeros 5 s del Reel sin recodificar (no se publica)",
    "resultado": "OK",
-   "detalle": "contenedor 17995803260867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995804898867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
   },
   {
-   "paso": "Diagnóstico: sintético 30 s liviano (<1 MB), 566 KB (no se publica)",
-   "resultado": "OK",
-   "detalle": "contenedor 17995803377867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "paso": "Diagnóstico: video aprobado completo con tono sintético (no se publica)",
+   "resultado": "FALLA",
+   "detalle": "HTTP 400 · código 368: Limitamos la frecuencia con la que puedes publicar, comentar o realizar otras acciones durante un período determinado para proteger a la comunidad frente al spam. Vuelve a intentarlo más tarde. Más información (subcódigo 1390008) · HTTP 400 · código None: parte en offset 4194304 de 4495606 bytes: HTTP 400 · código None: Request processing failed"
   },
   {
-   "paso": "Diagnóstico: sintético 10 s pesado (>3 MB), 3844 KB (no se publica)",
-   "resultado": "OK",
-   "detalle": "contenedor 17995803530867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "paso": "Diagnóstico: audio aprobado completo con video gris (no se publica)",
+   "resultado": "FALLA",
+   "detalle": "HTTP 400 · código 368: Limitamos la frecuencia con la que puedes publicar, comentar o realizar otras acciones durante un período determinado para proteger a la comunidad frente al spam. Vuelve a intentarlo más tarde. Más información (subcódigo 1390008) · HTTP 400 · código None: parte en offset 1048576 de 1119518 bytes: HTTP 400 · código None: Request processing failed"
   },
   {
    "paso": "Instagram: búsqueda anti-duplicados",
