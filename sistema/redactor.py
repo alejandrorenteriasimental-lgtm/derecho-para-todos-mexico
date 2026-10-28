@@ -359,6 +359,19 @@ def construir_reel(sol, borrador, fuentes):
             "generacion": {"afirmaciones_eliminadas_sin_ancla": quitadas}}
 
 
+def copy_reel(g, mapa):
+    """Texto de publicación del Reel SIN IA, solo con lo ya validado: la pregunta, la respuesta corta del análisis aprobado,
+    las fuentes exactas y el aviso. Antes los Reels no tenían texto propio y se publicarían solo con el título."""
+    fuentes = g.get("fuentes") or {}
+    vistos = []
+    for f in (fuentes.values() if isinstance(fuentes, dict) else fuentes):
+        ref = f'{f.get("documento")}, artículo {f.get("articulo")}'
+        if ref not in vistos: vistos.append(ref)
+    partes = [g.get("pregunta_original") or g.get("titulo", ""), str(mapa.get("respuesta_corta", "")).strip(),
+              "Fuente: " + "; ".join(vistos) + "." if vistos else "", "Esto es información general, no es asesoría legal."]
+    return "\n\n".join(p for p in partes if p)
+
+
 def construir_imagen(sol, borrador, fuentes):
     afs, quitadas = _anclar(borrador.get("afirmaciones", []), fuentes)
     if not afs:
@@ -792,6 +805,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                         {"donde": "respuesta", "problema": "no responde el núcleo de la pregunta: " + "; ".join(map(str, cob.get("faltantes") or [])),
                          "correccion": "explica lo que falta con su fuente o descarta la pieza"}]}
                 if a.get("veredicto") == "sin_objeciones":
+                    if sol["formato"] == "reel" and not g.get("copy"): g["copy"] = copy_reel(g, mapa)
                     m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
                     fam = lambda m: m.split("-")[0].split("/")[-1].lower()
                     g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,

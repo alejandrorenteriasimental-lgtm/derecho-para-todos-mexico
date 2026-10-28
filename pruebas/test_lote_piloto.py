@@ -265,3 +265,12 @@ def test_imagen_demasiado_larga_se_detecta_al_redactar():
     assert any("demasiado largo" in e for e in imagen.revision_previa(g))
     g2 = json.loads((AQUI.parent / "piezas" / "I20261124-T073" / "guion.json").read_text())
     assert imagen.revision_previa(g2) == []
+
+
+def test_reel_lleva_texto_de_publicacion_sin_ia():
+    """R20261123-T031 (28-10) llegó a revisión sin texto de publicación: se publicaría solo con el título."""
+    g = {"pregunta_original": "¿Te pueden volver a juzgar por el mismo delito?",
+         "fuentes": {"F1": {"documento": "Constitución Política de los Estados Unidos Mexicanos", "articulo": "23"},
+                     "F2": {"documento": "Constitución Política de los Estados Unidos Mexicanos", "articulo": "23"}}}
+    c = redactor.copy_reel(g, {"respuesta_corta": "No: nadie puede ser juzgado dos veces por el mismo delito."})
+    assert c.count("artículo 23") == 1 and "no es asesoría legal" in c and c.startswith("¿Te pueden")
