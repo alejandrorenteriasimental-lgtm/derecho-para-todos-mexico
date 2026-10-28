@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-28T22:44:36+00:00",
+ "fecha": "2026-10-28T22:47:33+00:00",
  "pasos": [
   {
    "paso": "autenticación",
@@ -19,22 +19,22 @@
   {
    "paso": "Facebook: Reel cargado completo SIN finalizar (no publicado)",
    "resultado": "OK",
-   "detalle": "video 2205211857043648: SUBIDO"
+   "detalle": "video 1165449436421460: SUBIDO"
   },
   {
    "paso": "Instagram: contenedor de imagen procesado SIN publicar",
    "resultado": "OK",
-   "detalle": "contenedor 17995797770867253: FINISHED · ruta: IMAGEN_ALOJADA"
+   "detalle": "contenedor 17995798421867253: FINISHED · ruta: IMAGEN_ALOJADA"
   },
   {
    "paso": "Instagram: contenedor de reel procesado SIN publicar",
    "resultado": "FALLA",
-   "detalle": "contenedor 17995798001867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995798751867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
   },
   {
    "paso": "Diagnóstico: clip sintético conforme (no se publica)",
    "resultado": "OK",
-   "detalle": "contenedor 17995798013867253: FINISHED"
+   "detalle": "contenedor 17995798769867253: FINISHED"
   },
   {
    "paso": "Instagram: búsqueda anti-duplicados",
