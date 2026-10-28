@@ -89,7 +89,10 @@ def subir_por_partes(g, uri, datos, parte=PARTE):
     for ini in range(0, total, parte):
         trozo = datos[ini: ini + parte]
         cab = g._cab({"offset": str(ini), "file_size": str(total), "Content-Type": "application/octet-stream"})
-        r = _json(*g.http("POST", uri, cab, trozo, 300))
+        try:
+            r = _json(*g.http("POST", uri, cab, trozo, 300))
+        except ErrorGraph as e:
+            raise ErrorGraph(e.estado, e.codigo, f"parte en offset {ini} de {total} bytes: {e}", transitorio=e.transitorio)
     return r
 
 

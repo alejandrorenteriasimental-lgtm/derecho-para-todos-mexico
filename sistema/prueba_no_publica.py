@@ -73,7 +73,12 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
                 v1 = Path("/tmp/diag_5s_copia.mp4")      # primeros 5 s del Reel aprobado, sin recodificar video
                 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", "5", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(v1)], check=True, timeout=120)
                 variantes += [("primeros 5 s del Reel sin recodificar", v1)]
-                for seg in (15, 30):
+                for nombre, args in (("sintético 30 s liviano (<1 MB)", ["-f", "lavfi", "-i", "color=c=gray:size=1080x1920:rate=30", "-f", "lavfi", "-i", "sine=sample_rate=48000", "-t", "30", "-c:v", "libx264", "-crf", "35"]),
+                                     ("sintético 10 s pesado (>3 MB)", ["-f", "lavfi", "-i", "testsrc2=size=1080x1920:rate=30", "-f", "lavfi", "-i", "sine=sample_rate=48000", "-t", "10", "-c:v", "libx264", "-b:v", "3M"])):
+                    vs = Path(f"/tmp/diag_{len(variantes)}.mp4")
+                    subprocess.run(["ffmpeg", "-y", "-v", "error", *args, "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(vs)], check=True, timeout=180)
+                    variantes.append((f"{nombre}, {vs.stat().st_size // 1024} KB", vs))
+                for seg in ():
                     vs = Path(f"/tmp/diag_{seg}s_copia.mp4")
                     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", str(seg), "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(vs)], check=True, timeout=120)
                     variantes.append((f"primeros {seg} s del Reel sin recodificar", vs))
@@ -86,6 +91,9 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
                         paso(f"Diagnóstico: {nombre} (no se publica)", est == "FINISHED", f"contenedor {cid}: {est}" + ("" if est == "FINISHED" else f" · {instagram.detalle_contenedor(g, cid)}") + f" · ruta: {' → '.join(ruta)}")
                     except Exception as e:
                         paso(f"Diagnóstico: {nombre} (no se publica)", False, e)
+                    if lb.exists():
+                        for l in lb.read_text().splitlines():
+                            if json.loads(l).get("error"): R["pasos"][-1]["detalle"] += " · " + json.loads(l)["error"][:160]
             except Exception as e:
                 paso("Diagnóstico de Reel", False, e)
         try:
