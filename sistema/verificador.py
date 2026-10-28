@@ -22,7 +22,7 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
-VERSION = "0.5.3"   # 0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+VERSION = "0.5.4"   # 0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
 
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)
@@ -371,7 +371,7 @@ def verificar_guion(g, transporte=transporte_http):
             if not st or st[0] != "ok" or st[1][0] != 200: continue
             try:
                 cab, cuerpo = texto_de(st[1][1], st[1][2])
-                t = articulo_texto(cuerpo, f.get("articulo"), max_car=8000)
+                t = articulo_texto(cuerpo, f.get("articulo"), max_car=20000)   # LFT 132 fr. XXVII Bis (car. 9568) quedaba fuera
                 if t: textos[(f.get("documento"), str(f.get("articulo")))] = t
             except Exception:
                 continue

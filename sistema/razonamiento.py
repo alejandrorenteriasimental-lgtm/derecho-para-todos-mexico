@@ -86,12 +86,28 @@ def _ubicar(pa, pc):
     return mapa[j], mapa[j + len(cc) - 1] + 1
 
 
+def _oraciones_previas(texto_articulo, pa, i):
+    """Texto (normalizado) de la oración anterior y del inicio de la actual, sin cruzar a oraciones más lejanas.
+    Antes se tomaban 420 caracteres fijos y entraban condiciones de otro párrafo (28-10, CPEUM 16: la prórroga del
+    arraigo «siempre y cuando…» se exigía como condición de la retención de 48 horas)."""
+    marc = plano(re.sub(r"[.;](?=\s|$)", " zzfinzz ", texto_articulo or "")).split()
+    ti = pa[:i].count(" ") if i > 0 else 0          # índice de la palabra donde empieza la cita
+    k = n = 0
+    for k, w in enumerate(marc):
+        if w == "zzfinzz": continue
+        if n == ti: break
+        n += 1
+    fines = [j for j, w in enumerate(marc[:k]) if w == "zzfinzz"]
+    desde = fines[-2] + 1 if len(fines) >= 2 else 0
+    return " ".join(w for w in marc[desde:k] if w != "zzfinzz")
+
+
 def contexto_omitido(texto_articulo, cita, ventana=420):
     """Condiciones del artículo que rodean a la cita y que la cita NO incluye (la oración anterior y la actual)."""
     pa, pc = plano(texto_articulo), plano(cita)
     i, f = _ubicar(pa, pc)
     if i < 0: return []
-    antes = pa[max(0, i - ventana):i]; despues = pa[f: f + 160]
+    antes = _oraciones_previas(texto_articulo, pa, i)[-ventana:]; despues = pa[f: f + 160]
     cand = _marcadores_en(antes) + [m for m in _marcadores_en(despues) if m in ("salvo", "excepto", "a menos que", "siempre que", "siempre y cuando")]
     en_cita = set(_marcadores_en(cita))
     return [m for m in dict.fromkeys(cand) if m not in en_cita]
@@ -211,14 +227,16 @@ def revisar(g, textos, ia=None):
                 h("condiciones", "bloqueante", f"{fid} condiciona la regla («…{frag}…») y la conclusión «{concl[:60]}» no declara condiciones.")
             # ¿la conclusión se muestra en forma absoluta en el contenido visible?
             for frase in re.split(r"(?<=[.!?])\s+|\n", cuerpo):
-                if _coincide(frase, concl) and not _marcadores_en(frase) and (_es_absoluta(frase) or not declaradas.strip()):
+                literal = len(plano(frase).split()) >= 6 and _ubicar(plano(txt), plano(frase).replace(" zzfinzz", ""))[0] >= 0
+                if not literal and _coincide(frase, concl) and not _marcadores_en(frase) and (_es_absoluta(frase) or not declaradas.strip()):
                     h("condiciones", "bloqueante", f"Generalización: «{frase.strip()[:90]}» se presenta sin la condición que impone {fid} («…{frag}…»).")
     # frases absolutas visibles apoyadas en reglas condicionadas aunque no estén en el mapa
     for frase in re.split(r"(?<=[.!?])\s+|\n", cuerpo):
         if not _es_absoluta(frase): continue
         for fid, fi in fichas.items():
             txt = tx(fi) or ""; cita = fi.get("texto_literal", "")
-            if cita and _coincide(frase, cita) and contexto_omitido(txt, cita) and not _marcadores_en(frase):
+            literal = txt and len(plano(frase).split()) >= 6 and _ubicar(plano(txt), plano(frase))[0] >= 0   # citar la ley textual no es generalizar
+            if cita and not literal and _coincide(frase, cita) and contexto_omitido(txt, cita) and not _marcadores_en(frase):
                 frag = fragmento_condicion(txt, cita, contexto_omitido(txt, cita)[0])
                 h("condiciones", "bloqueante", f"Frase absoluta «{frase.strip()[:80]}» sobre una regla condicionada de {fid} («…{frag}…»).")
     # 5. COBERTURA, VAGUEDAD y SUSTENTO DE LO VISIBLE (rechazo humano de R20261028-T068, 26-10-2026)

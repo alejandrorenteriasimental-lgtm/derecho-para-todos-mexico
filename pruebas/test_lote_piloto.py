@@ -378,3 +378,19 @@ def test_retenidas_archivadas_no_se_reverifican(raiz):
     t["estado"] = "RETENIDO"; t["retencion"] = {"tipo": "sustantivo", "verificador": "0.0.1", "archivada": "prueba"}; cola.guardar(c)
     ciclo.ciclo("t", lambda u, timeout=60: (200, "application/pdf", b""), env={})
     assert cola.cargar()["trabajos"]["X1"]["estado"] == "RETENIDO"
+
+
+def test_condicion_de_otro_parrafo_no_se_exige_y_la_cita_textual_no_es_generalizacion():
+    """R20261126-T061 (28-10): se exigía la prórroga del arraigo («siempre y cuando…») como condición de la retención de
+    48 horas y se marcaba como «generalización» la propia frase literal del art. 16."""
+    t = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_16.json").read_text())["texto"]
+    cita = "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas"
+    assert "siempre y cuando" not in razonamiento.contexto_omitido(t, cita)
+    frase = "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial."
+    g = {"titulo": "¿Cuánto tiempo puede retenerte el Ministerio Público?", "tipo_pregunta": "derecho",
+         "razonamiento": {"respuesta_corta": "Hasta cuarenta y ocho horas.", "reglas": [{"fuente": "F1", "conclusion": "Ningún indiciado podrá ser retenido más de cuarenta y ocho horas",
+                          "cita_literal": cita, "condiciones": [], "ref": {"documento": "CPEUM", "articulo": "16"}}]},
+         "fuentes": {"F1": {"documento": "CPEUM", "articulo": "16", "texto_literal": cita}},
+         "escenas": [{"tipo": "texto", "texto": frase}]}
+    h = [x for x in razonamiento.revisar(g, {("CPEUM", "16"): t}) if x["regla"] == "condiciones" and ("Generalización" in x["detalle"] or "Frase absoluta" in x["detalle"])]
+    assert h == [], h
