@@ -882,7 +882,7 @@
       "id": "I20261123-T084",
       "formato": "imagen",
       "huella": "d54fab3ebc2930e9aed88d1c9a5ca00d3d7f848581cd9a8645c154607e18162c",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T12:52:51+00:00",
@@ -904,12 +904,31 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T13:13:54+00:00",
           "motivo": "edición de forma (Claude, 28-10): «OJO» y texto de publicación; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T13:23:32+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T13:23:36+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "3d4218e1b499e422",
+        "huella_guion": "56874270916ce294976506c2083f4b0f841453a39630b0e46b553483fbd32f66",
+        "huella_archivo": "f525621c3fcedba85d0d1fcc019e447ce9a1fe22e35a0b866a83766b7a9947bc",
+        "preparada": "2026-10-28T13:23:36+00:00",
+        "canal": "chat"
+      }
     }
   }
 }
