@@ -343,7 +343,7 @@ def revisar_cobertura(g, textos):
             def dicho(texto):          # se acepta con sus palabras o con las de la cita oficial (paráfrasis legítima)
                 # por raíz (6 letras): «servicio» = «servicios», «trabajador» = «trabajadoras» (I20261123-T016, 28-10)
                 clave = list(dict.fromkeys(w[:6] for w in plano(texto).split() if len(w) > 4))[:6]
-                return not clave or sum(1 for w in clave if w in raices) >= max(2, (len(clave) + 1) // 2)
+                return not clave or sum(1 for w in clave if w in raices) >= max(2, -(-len(clave) // 3))   # un tercio (mín. 2): 28-10, T016 «Aplica al cumplir más de un año de servicios»
             if not (dicho(e.get("respuesta", "")) or (e.get("cita_literal") and dicho(e["cita_literal"]))):
                 H.append({"regla": "cobertura", "severidad": "bloqueante",
                           "detalle": f"El análisis responde {ELEMENTOS[k]} («{str(e.get('respuesta', ''))[:160]}»), pero la pieza no lo dice: agrégalo al texto visible."})

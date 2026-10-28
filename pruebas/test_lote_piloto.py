@@ -293,3 +293,21 @@ def test_definicion_contestada_directamente_no_se_bloquea():
     assert h == []
     g2 = {**g, "razonamiento": {**g["razonamiento"], "respuesta_corta": "La Constitución protege a las personas."}, "pregunta_original": "¿Es legal X?", "tipo_pregunta": None, "titulo": "¿Es legal X?"}
     assert [x for x in razonamiento.revisar(g2, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
+
+
+def test_solicitud_del_lote_descartada_no_se_reabre_por_el_catalogo(raiz_vacia):
+    """28-10: la pregunta fijada del lote difiere del gancho del catálogo y reabrir_por_cambio la reabría en cada ciclo."""
+    sol = raiz_vacia / "estado" / "solicitudes"; sol.mkdir(parents=True, exist_ok=True)
+    f = sol / "2026-11-24_reel_T015-piloto-1.json"
+    f.write_text(json.dumps({"fecha": "2026-11-24", "formato": "reel", "tema_id": "T015", "titulo": "x", "gancho": "¿Cuándo y cuánto…?",
+                             "pregunta": "¿Cuándo y cuánto…?", "lote": "piloto-1", "estado": "DESCARTADA", "huella_entrada": "0" * 16}))
+    ciclo.reabrir_por_cambio()
+    assert json.loads(f.read_text())["estado"] == "DESCARTADA"
+
+
+def test_condicion_parafraseada_breve_cuenta():
+    """I20261123-T016 (28-10, 3.er intento): «Aplica al cumplir más de un año de servicios» frente a
+    «Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios»."""
+    g = _g_vacaciones("El periodo mínimo es de doce días laborables. Aplica al cumplir más de un año de servicios.")
+    g["razonamiento"]["elementos"][1]["respuesta"] = "Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios."
+    assert razonamiento.revisar_cobertura(g, TEXTO_76) == []

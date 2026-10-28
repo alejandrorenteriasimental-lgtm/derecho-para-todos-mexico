@@ -99,6 +99,7 @@ def reabrir_por_cambio():
         try: sol = json.loads(f.read_text())
         except ValueError: continue
         if sol.get("estado") != "DESCARTADA" or "Rechazo humano" in str(sol.get("motivo_cierre", "")) or not sol.get("huella_entrada"): continue
+        if sol.get("lote"): continue        # la pregunta del lote la fija data/lote_piloto.json, no el catálogo (28-10: T015 se reabría en cada ciclo)
         r = cat.get(sol.get("tema_id"))
         if not r: continue
         nueva = {**sol, "titulo": r.get("titulo", sol.get("titulo")), "gancho": r.get("gancho", sol.get("gancho")), "fuentes_sugeridas": r.get("fuentes_sugeridas", sol.get("fuentes_sugeridas"))}
