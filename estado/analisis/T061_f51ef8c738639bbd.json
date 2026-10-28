@@ -1,0 +1,50 @@
+{
+ "tema_id": "T061",
+ "pregunta": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+ "fecha": "2026-10-28T18:29:26+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+  "concepto_central": "retención por el Ministerio Público",
+  "respuesta_corta": "Por un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada.",
+  "reglas": [
+   {
+    "conclusion": "El Ministerio Público no puede retener a un indiciado por más de cuarenta y ocho horas, debiendo ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+    "fuente": "F1",
+    "cita_literal": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial",
+    "condiciones": [
+     "tratarse de un indiciado retenido por el Ministerio Público"
+    ],
+    "excepciones": [
+     "el plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El Ministerio Público puede retener a un indiciado hasta por cuarenta y ocho horas, plazo en el cual debe ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+    "fuente": "F1",
+    "cita_literal": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "no_aplica",
+    "motivo": "la norma fija el plazo general de retención sin condicionantes previas de procedencia aparte de la calidad de indiciado"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "El plazo de retención puede duplicarse en los casos que la ley prevea como delincuencia organizada.",
+    "fuente": "F1",
+    "cita_literal": "este plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no detalla cuáles leyes específicas prevén la delincuencia organizada ni los mecanismos operativos de la duplicidad del plazo.",
+  "fuentes_irrelevantes": []
+ }
+}

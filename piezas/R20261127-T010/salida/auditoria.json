@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "57.0 s"
+      "detalle": "53.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "57.0 s"
+      "detalle": "53.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.5 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "44 bloques"
+      "detalle": "41 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "a36125e04b6844bf"
+      "detalle": "4b342459a390e33b"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261127-T010",
     "titulo": "¿Tienes derecho a guardar silencio si te detienen?",
-    "fecha": "2026-10-28T18:13:21+00:00",
-    "sha256": "a36125e04b6844bf24d234d1dc66bc6ce78012748c3c94ae4714e60eb2741bf3",
-    "duracion_s": 57.0,
+    "fecha": "2026-10-28T18:36:07+00:00",
+    "sha256": "4b342459a390e33b5fd846bde8a6a6528a789184956c731a93ce905bd9dfa269",
+    "duracion_s": 53.8,
     "estado": "APTO",
-    "huella_guion": "718f7d72f2f2a8c7d4ae3095d280eb51d0115ab45b26c5b25cb0f8732a6d537a",
+    "huella_guion": "05500e3be3b7f4400abffed7c28495507fc2e4994dd1c4924910f8c947bedebd",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 28.3,
-      "musica": 3.1,
-      "render_video": 60.1,
-      "mezcla_audio": 2.2,
-      "auditoria_tecnica": 12.1
+      "narracion": 33.4,
+      "musica": 2.6,
+      "render_video": 70.3,
+      "mezcla_audio": 2.8,
+      "auditoria_tecnica": 13.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.76,
-      "computo_equivalente_runner_usd": 0.0106,
+      "computo_minutos": 2.05,
+      "computo_equivalente_runner_usd": 0.0123,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1711,
-    "caracteres_narrados": 853
+    "frames": 1613,
+    "caracteres_narrados": 801
   }
 }

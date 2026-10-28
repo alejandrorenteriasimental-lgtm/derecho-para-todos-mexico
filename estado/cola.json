@@ -134,6 +134,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T13:03:32+00:00",
           "motivo": "verificación jurídica: RETENER · [sustento] «Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece. · [sustento] «Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:31:31+00:00",
+          "motivo": "verificador actualizado a 0.5.3; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T18:33:21+00:00",
+          "motivo": "verificación jurídica: RETENER · [sustento] «Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece. · [sustento] «Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
         }
       ],
       "error": null,
@@ -141,8 +153,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T13:03:32+00:00",
-        "verificador": "0.5.2"
+        "desde": "2026-10-28T18:33:21+00:00",
+        "verificador": "0.5.3"
       }
     },
     "I20261025-T089": {
@@ -231,6 +243,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T13:10:45+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [cobertura] La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:31:31+00:00",
+          "motivo": "verificador actualizado a 0.5.3; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T18:38:50+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [cobertura] La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
@@ -238,8 +262,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T13:10:45+00:00",
-        "verificador": "0.5.2"
+        "desde": "2026-10-28T18:38:50+00:00",
+        "verificador": "0.5.3"
       }
     },
     "I20261026-T020": {
@@ -328,6 +352,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T13:11:37+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [condiciones] Frase absoluta «La garantía mínima legal es de noventa días.» sobre una regla condicionada de F1 («…todo bien o servicio que se ofre"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:31:31+00:00",
+          "motivo": "verificador actualizado a 0.5.3; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T18:39:39+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [condiciones] Frase absoluta «La garantía mínima legal es de noventa días.» sobre una regla condicionada de F1 («…todo bien o servicio que se ofre"
         }
       ],
       "error": null,
@@ -335,8 +371,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T13:11:37+00:00",
-        "verificador": "0.5.2"
+        "desde": "2026-10-28T18:39:39+00:00",
+        "verificador": "0.5.3"
       }
     },
     "R20261027-T052": {
@@ -420,6 +456,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T13:12:56+00:00",
           "motivo": "verificación jurídica: RETENER · [cobertura] La pregunta es de tipo «legalidad» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:31:31+00:00",
+          "motivo": "verificador actualizado a 0.5.3; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T18:40:54+00:00",
+          "motivo": "verificación jurídica: RETENER · [cobertura] La pregunta es de tipo «legalidad» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
@@ -427,8 +475,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T13:12:56+00:00",
-        "verificador": "0.5.2"
+        "desde": "2026-10-28T18:40:54+00:00",
+        "verificador": "0.5.3"
       }
     },
     "R20261028-T068": {
@@ -812,7 +860,7 @@
       "id": "R20261125-T093",
       "formato": "reel",
       "huella": "3ff130139799d8ef419fa9cfd806e90c35fdaabce9b0e35e14c6dd255ea1356a",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T11:40:51+00:00",
@@ -852,6 +900,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T18:11:02+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 0e6c0e51c6b1b1d1 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-28T18:40:54+00:00",
+          "motivo": "PUBLICAR distinto de 1"
         }
       ],
       "error": null,
@@ -883,7 +937,7 @@
       "id": "R20261124-T015",
       "formato": "reel",
       "huella": "1569e1e71b2a27925c61d3f44a5d62a4c9c61379d3e233bed43c17d099a82043",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T12:05:27+00:00",
@@ -935,6 +989,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T18:11:02+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 58e291a6adeda64b (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-28T18:40:54+00:00",
+          "motivo": "PUBLICAR distinto de 1"
         }
       ],
       "error": null,
@@ -1074,7 +1134,7 @@
       "id": "R20261127-T010",
       "formato": "reel",
       "huella": "718f7d72f2f2a8c7d4ae3095d280eb51d0115ab45b26c5b25cb0f8732a6d537a",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:11:02+00:00",
@@ -1096,8 +1156,41 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T18:20:40+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T18:36:07+00:00",
+          "motivo": "53.8"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T18:36:11+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "9e4c409f295c9ea6",
+        "huella_guion": "3bf5af857c63e3365b975723b2bc2e351aa12d1f4adb4033dd74e0b17332ba74",
+        "huella_archivo": "4b342459a390e33b5fd846bde8a6a6528a789184956c731a93ce905bd9dfa269",
+        "preparada": "2026-10-28T18:36:11+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20261126-T025": {
+      "id": "I20261126-T025",
+      "formato": "imagen",
+      "huella": "40cab8d74fcb9bce3cadcb817b9df5c16ee4dcd3ccdeb04bcdb737a3ed58f174",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T18:31:31+00:00",
+      "historial": [],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,

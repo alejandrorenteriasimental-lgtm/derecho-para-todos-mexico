@@ -1,0 +1,51 @@
+{
+ "tema_id": "T025",
+ "pregunta": "¿Cuántos días de permiso de paternidad te corresponden?",
+ "fecha": "2026-10-28T18:30:47+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántos días de permiso de paternidad te corresponden?",
+  "concepto_central": "permiso de paternidad",
+  "respuesta_corta": "Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tus hijos o por la adopción de un infante.",
+  "reglas": [
+   {
+    "conclusion": "Corresponden cinco días laborables con goce de sueldo por el nacimiento de hijos o adopción de un infante.",
+    "fuente": "F1",
+    "cita_literal": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo, a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante",
+    "condiciones": [
+     "Ser hombre trabajador",
+     "Por el nacimiento de sus hijos",
+     "En el caso de la adopción de un infante"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se otorgan cinco días laborables con goce de sueldo.",
+    "fuente": "F1",
+    "cita_literal": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica a los hombres trabajadores por el nacimiento de sus hijos o adopción de un infante.",
+    "fuente": "F1",
+    "cita_literal": "a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "permiso de paternidad",
+    "b": "permiso de maternidad",
+    "diferencia": "El permiso de paternidad se otorga a hombres trabajadores por nacimiento o adopción, regulado específicamente en la fracción correspondiente."
+   }
+  ],
+  "limites": "Los textos no detallan plazos de aviso previo ni requisitos de comprobación médica o legal adicionales.",
+  "fuentes_irrelevantes": []
+ }
+}

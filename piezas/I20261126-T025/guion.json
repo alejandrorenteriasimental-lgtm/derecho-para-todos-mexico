@@ -1,0 +1,150 @@
+{
+  "id": "I20261126-T025",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuántos días de permiso de paternidad te corresponden?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T025",
+  "pieza": {
+    "titular": "¿Cuántos días de permiso de paternidad te corresponden?",
+    "bajada": "Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tus hijos o adopción de un infante.",
+    "cita": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 132",
+    "ojo": "Hombres trabajadores",
+    "fuente_visible": "Ley Federal del Trabajo, art. 132"
+  },
+  "copy": "Conforme a la Ley Federal del Trabajo, los hombres trabajadores tienen derecho a solicitar un permiso remunerado ante la llegada de un nuevo integrante a la familia.\n\nEl artículo 132, fracción XXVII Bis, establece la obligación de las personas empleadoras de \"Otorgar permiso de paternidad de cinco días laborables con goce de sueldo, a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante\".\n\nEs importante tener presente la distinción jurídica, ya que el permiso de paternidad se otorga específicamente a hombres trabajadores por nacimiento o adopción.\n\nGuarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que detalla los cinco días laborables con goce de sueldo por permiso de paternidad para hombres trabajadores.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "132",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo, a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante",
+      "cita": "Ley Federal del Trabajo, artículo 132",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Corresponden cinco días laborables con goce de sueldo por el nacimiento de hijos o adopción de un infante para los hombres trabajadores.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuántos días de permiso de paternidad te corresponden?",
+    "concepto_central": "permiso de paternidad",
+    "respuesta_corta": "Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tus hijos o por la adopción de un infante.",
+    "reglas": [
+      {
+        "conclusion": "Corresponden cinco días laborables con goce de sueldo por el nacimiento de hijos o adopción de un infante.",
+        "fuente": "F1",
+        "cita_literal": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo, a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante",
+        "condiciones": [
+          "Ser hombre trabajador",
+          "Por el nacimiento de sus hijos",
+          "En el caso de la adopción de un infante"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "132"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se otorgan cinco días laborables con goce de sueldo.",
+        "fuente": "F1",
+        "cita_literal": "Otorgar permiso de paternidad de cinco días laborables con goce de sueldo"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica a los hombres trabajadores por el nacimiento de sus hijos o adopción de un infante.",
+        "fuente": "F1",
+        "cita_literal": "a los hombres trabajadores, por el nacimiento de sus hijos y de igual manera en el caso de la adopción de un infante"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "permiso de paternidad",
+        "b": "permiso de maternidad",
+        "diferencia": "El permiso de paternidad se otorga a hombres trabajadores por nacimiento o adopción, regulado específicamente en la fracción correspondiente."
+      }
+    ],
+    "limites": "Los textos no detallan plazos de aviso previo ni requisitos de comprobación médica o legal adicionales."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T18:31:31+00:00",
+    "solicitud": "2026-11-26_imagen_T025-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cuántos días de permiso de paternidad te corresponden?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los hombres trabajadores tienen derecho a cinco días laborables de permiso con goce de sueldo por nacimiento o adopción.",
+              "sostenida": "si",
+              "motivo": "La fracción XXVII Bis del artículo 132 de la Ley Federal del Trabajo establece esta obligación patronal de forma directa y clara."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
