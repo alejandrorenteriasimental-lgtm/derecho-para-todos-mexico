@@ -284,3 +284,12 @@ def test_definicion_no_se_contesta_con_si_o_no():
     assert any("definición" in h["detalle"] for h in razonamiento.revisar_cobertura(g, {}))
     g["razonamiento"]["respuesta_corta"] = "Significa que a la persona imputada se le presume inocente mientras una sentencia no declare su responsabilidad."
     assert not any("definición" in h["detalle"] for h in razonamiento.revisar_cobertura(g, {}))
+
+
+def test_definicion_contestada_directamente_no_se_bloquea():
+    """I20261125-T028 (28-10): la regla exigía «Sí/No/Depende» también en definiciones (contradicción con el control nuevo)."""
+    g = json.loads((AQUI.parent / "piezas" / "I20261125-T028" / "guion.json").read_text())
+    h = [x for x in razonamiento.revisar(g, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
+    assert h == []
+    g2 = {**g, "razonamiento": {**g["razonamiento"], "respuesta_corta": "La Constitución protege a las personas."}, "pregunta_original": "¿Es legal X?", "tipo_pregunta": None, "titulo": "¿Es legal X?"}
+    assert [x for x in razonamiento.revisar(g2, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]

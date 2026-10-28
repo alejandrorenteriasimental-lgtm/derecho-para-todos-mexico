@@ -137,8 +137,11 @@ def revisar(g, textos, ia=None):
             nucleo = plano(rc).split()
             clave = [w for w in nucleo if len(w) > 4][:6]
             presentes = sum(1 for w in clave if w in plano(cuerpo))
-            if not re.match(r"^(si|no|depende|en general|solo|depende de)\b", plano(rc)):
-                h("respuesta", "bloqueante", f"La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «{rc[:90]}».")
+            tipo_p = tipo_pregunta(g.get("pregunta_original") or titulo, g.get("tipo_pregunta"))[0]
+            directa = r"^(si|no|depende|en general|solo|depende de)\b" if tipo_p not in ("definicion", "obligacion", "procedimiento") else \
+                      r"^(significa|es|son|consiste|se (le |les )?(presume|considera|entiende|refiere|trata)|al menos|antes|como minimo|minimo|debe|deben|tienes|tiene|en|a la|a las|al|el|la|los|las|se)\b"
+            if not re.match(directa, plano(rc)):
+                h("respuesta", "bloqueante", f"La respuesta corta no contesta de forma directa ({'debe empezar con Sí, No, Depende…' if tipo_p not in ('definicion', 'obligacion', 'procedimiento') else 'debe decir qué significa, cuánto, cuándo o cómo'}): «{rc[:90]}».")
             if clave and presentes < max(2, len(clave) // 2):
                 h("respuesta", "bloqueante", f"La respuesta corta no aparece en el contenido visible: «{rc[:90]}».")
 
