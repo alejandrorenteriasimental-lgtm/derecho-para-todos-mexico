@@ -261,10 +261,11 @@ def test_condicion_omitida_sigue_bloqueando():
 def test_imagen_demasiado_larga_se_detecta_al_redactar():
     """I20261125-T028 (28-10): 64 palabras visibles; la auditoría técnica la retuvo después de producirla."""
     import imagen
-    g = json.loads((AQUI.parent / "piezas" / "I20261125-T028" / "guion.json").read_text())
-    assert any("demasiado largo" in e for e in imagen.revision_previa(g))
     g2 = json.loads((AQUI.parent / "piezas" / "I20261124-T073" / "guion.json").read_text())
     assert imagen.revision_previa(g2) == []
+    import copy
+    g = copy.deepcopy(g2); g["pieza"]["realidad"] += " " + " ".join(["palabra"] * 40)
+    assert any("demasiado largo" in e for e in imagen.revision_previa(g))
 
 
 def test_reel_lleva_texto_de_publicacion_sin_ia():
@@ -274,3 +275,12 @@ def test_reel_lleva_texto_de_publicacion_sin_ia():
                      "F2": {"documento": "Constitución Política de los Estados Unidos Mexicanos", "articulo": "23"}}}
     c = redactor.copy_reel(g, {"respuesta_corta": "No: nadie puede ser juzgado dos veces por el mismo delito."})
     assert c.count("artículo 23") == 1 and "no es asesoría legal" in c and c.startswith("¿Te pueden")
+
+
+def test_definicion_no_se_contesta_con_si_o_no():
+    """I20261125-T028 (28-10): «¿Qué significa la presunción de inocencia?» → «Sí: la persona imputada es inocente…»."""
+    g = {"pregunta_original": "¿Qué significa la presunción de inocencia?", "tipo_pregunta": "definicion", "_solo_analisis": True,
+         "razonamiento": {"respuesta_corta": "Sí: la persona imputada es inocente hasta que un juez emita sentencia.", "elementos": []}}
+    assert any("definición" in h["detalle"] for h in razonamiento.revisar_cobertura(g, {}))
+    g["razonamiento"]["respuesta_corta"] = "Significa que a la persona imputada se le presume inocente mientras una sentencia no declare su responsabilidad."
+    assert not any("definición" in h["detalle"] for h in razonamiento.revisar_cobertura(g, {}))

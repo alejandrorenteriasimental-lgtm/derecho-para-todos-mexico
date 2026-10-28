@@ -313,6 +313,10 @@ def revisar_cobertura(g, textos):
     if isinstance(fichas, list): fichas = {f["id"]: f for f in fichas}
     refs = {r.get("fuente"): r.get("ref") for r in rz.get("reglas") or [] if isinstance(r, dict) and r.get("ref")}
     visible = None if g.get("_solo_analisis") else plano(cuerpo_visible(g))
+    rc = plano(str(rz.get("respuesta_corta", "")) + " " + str((g.get("pieza") or {}).get("bajada", "")))
+    if tipo == "definicion" and re.match(r"\s*(si|no)\b", rc):
+        H.append({"regla": "cobertura", "severidad": "bloqueante",
+                  "detalle": "La pregunta pide una definición y la respuesta empieza con «Sí» o «No»: contesta qué significa (I20261125-T028, 28-10)."})
     for k in req:
         e = els.get(k)
         if not e:

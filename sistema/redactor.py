@@ -172,7 +172,9 @@ Trabaja como abogado, en este orden:
 3. Lee la oración completa y las anteriores: anota TODAS las condiciones, requisitos, plazos y excepciones de esa regla
    («siempre que», «cuando», «salvo», «que se ofrezca…», «en los casos…»). Si la regla solo vale para ciertos supuestos, dilo.
 4. Distingue los conceptos parecidos que NO son lo mismo y que podrían confundirse en la respuesta.
-5. Con todo lo anterior, escribe la respuesta corta: empieza con «Sí», «No» o «Depende» y menciona en ella la condición principal.
+5. Con todo lo anterior, escribe la respuesta corta: si la pregunta se contesta con sí o no, empieza con «Sí», «No» o «Depende» y
+   menciona la condición principal; si pregunta qué es, qué significa, cuánto o cuándo, contesta directamente («Significa que…»,
+   «Al menos…», «Antes del…»), nunca con «Sí» o «No».
 6. COBERTURA. Esta pregunta es de tipo «{tipo}». Quien la hace necesita saber: {requeridos}. Para CADA uno escribe un
    elemento: "cubierto" con su respuesta, la fuente y una cita literal que lo diga expresamente; o "no_aplica" con el motivo
    (p. ej., no hay nada que reclamar). Si un artículo no lo dice expresamente, NO lo deduzcas: márcalo "no_cubierto" y el
@@ -195,6 +197,9 @@ ERRORES QUE YA OCURRIERON EN ESTE PROYECTO (revisión humana y auditoría de oct
 - Dejar una respuesta incompleta: si la pregunta es «¿qué pasa si…?», la persona necesita qué puede hacer, ante quién y en qué
   plazo; si algo de eso no está en los textos, márcalo "no_cubierto", no lo supongas.
 - Referencias vagas («autoridad competente», «este límite», «revisa tu ley»): nombra la autoridad o la cifra del texto, o no lo digas.
+- Convertir una presunción o un derecho en un hecho: «se presume inocente» no es «es inocente»; «tiene derecho a» no es «recibe».
+- Cambiar quién tiene la obligación: si el texto obliga a los tribunales o a la autoridad (p. ej., resolver en plazo, servicio
+  gratuito), no lo presentes como un requisito o condición que debe cumplir la persona.
 Devuelve:
 {{"suficiente": true,
   "pregunta": "{pregunta}",
@@ -224,6 +229,8 @@ EXCLUSIVAMENTE ese análisis:
   nombre que da el texto oficial, p. ej., «Centro de Conciliación», «Tribunal», «Profeco»). Las «interpretaciones» solo
   pueden aparecer con su condición («si se demuestra…»).
 - Si usas dos conceptos de las distinciones, explica su diferencia.
+- En una lista, el encabezado debe describir con exactitud lo que enumera: no llames «condiciones obligatorias» o
+  «requisitos» a garantías u obligaciones que la ley impone a la autoridad.
 - No califiques más fuerte que el análisis («ilegal», «absoluto», «siempre», «exclusivamente») ni agregues sanciones o
   consecuencias que el análisis no tiene; no hables de reformas ni de cambios recientes.
 - Repite en "razonamiento" exactamente el análisis recibido (no lo modifiques).
@@ -791,7 +798,8 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                 errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
                 errores_previos = errores
                 if errores:
-                    historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores})
+                    historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores,
+                                      "visible": razonamiento.cuerpo_visible(g)[:700]})   # para diagnosticar sin repetir la llamada
                     extra = "\n\nTu versión anterior tenía estos problemas; corrígelos respetando el análisis aprobado:\n- " + "\n- ".join(errores[:8]); continue
                 a = auditar_ia(g, fuentes_red, aud, simulador)
                 historial.append({"etapa": "redaccion", "intento": intento, "auditoria_ia": a})
