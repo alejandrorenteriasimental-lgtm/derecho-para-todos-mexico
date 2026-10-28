@@ -79,6 +79,20 @@ def adaptar_reel_ig(mp4, ffmpeg="ffmpeg"):
     return out
 
 
+PARTE = 1024 * 1024
+
+
+def subir_por_partes(g, uri, datos, parte=PARTE):
+    """Carga reanudable en partes (offset creciente, file_size = total). Un solo POST con el Reel completo falló en la
+    prueba no pública del 28-10 («Request processing failed»), mientras que un clip de 5 s sí se aceptó."""
+    total, r = len(datos), {}
+    for ini in range(0, total, parte):
+        trozo = datos[ini: ini + parte]
+        cab = g._cab({"offset": str(ini), "file_size": str(total), "Content-Type": "application/octet-stream"})
+        r = _json(*g.http("POST", uri, cab, trozo, 300))
+    return r
+
+
 def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base=None, dormir=time.sleep):
     """Crea el contenedor (NO publica). Devuelve su id."""
     if formato == "imagen":
@@ -94,7 +108,7 @@ def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base
     if base is not None: registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid}, libro)
     datos = Path(archivo).read_bytes()
     try:
-        up = g.subir(uri, datos)
+        up = subir_por_partes(g, uri, datos)
         if not up.get("success", True): raise ErrorGraph(200, None, f"carga no confirmada: {up}", transitorio=True)
     except ErrorGraph as e:
         if e.transitorio or not page: raise ErrorGraph(e.estado, e.codigo, f"carga del video a Instagram: {e}", transitorio=e.transitorio)

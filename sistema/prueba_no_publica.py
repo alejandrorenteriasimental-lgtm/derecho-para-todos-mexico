@@ -72,10 +72,11 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
                 variantes = [("clip sintético conforme", clip)]
                 v1 = Path("/tmp/diag_5s_copia.mp4")      # primeros 5 s del Reel aprobado, sin recodificar video
                 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", "5", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(v1)], check=True, timeout=120)
-                v2 = Path("/tmp/diag_recodificado.mp4")  # Reel aprobado completo recodificado (solo diagnóstico)
-                subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-g", "60",
-                                "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(v2)], check=True, timeout=300)
-                variantes += [("primeros 5 s del Reel sin recodificar", v1), ("Reel completo recodificado", v2)]
+                variantes += [("primeros 5 s del Reel sin recodificar", v1)]
+                for seg in (15, 30):
+                    vs = Path(f"/tmp/diag_{seg}s_copia.mp4")
+                    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", str(seg), "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(vs)], check=True, timeout=120)
+                    variantes.append((f"primeros {seg} s del Reel sin recodificar", vs))
                 for nombre, f in variantes:
                     lb = Path("/tmp") / f"ops_diag_{f.stem}.jsonl"; lb.unlink(missing_ok=True)
                     try:
