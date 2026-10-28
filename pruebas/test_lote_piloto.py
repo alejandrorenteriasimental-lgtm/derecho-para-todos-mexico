@@ -368,3 +368,13 @@ def test_minimo_legal_no_se_presenta_como_cifra_exacta():
     bien = {**base, "escenas": [{"tipo": "texto", "texto": "Debe pagarse antes del 20 de diciembre y equivale, por lo menos, a quince días de salario."}]}
     assert any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(mal, {}))
     assert not any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(bien, {}))
+
+
+def test_retenidas_archivadas_no_se_reverifican(raiz):
+    """28-10: 4 piezas viejas se re-verificaban con cada versión del verificador y ocupaban los lugares de producción."""
+    import cola, verificador as v
+    ciclo.ciclo("t", lambda u, timeout=60: (200, "application/pdf", b""), env={})
+    c = cola.cargar(); t = c["trabajos"]["X1"]
+    t["estado"] = "RETENIDO"; t["retencion"] = {"tipo": "sustantivo", "verificador": "0.0.1", "archivada": "prueba"}; cola.guardar(c)
+    ciclo.ciclo("t", lambda u, timeout=60: (200, "application/pdf", b""), env={})
+    assert cola.cargar()["trabajos"]["X1"]["estado"] == "RETENIDO"

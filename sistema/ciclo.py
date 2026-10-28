@@ -198,8 +198,9 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_met
             if t["estado"] == "RETENIDO" and huella and t.get("huella") != huella and not errores:
                 t["huella"] = huella; cola.mover(c, pid, "PENDIENTE", "el guion cambió; se vuelve a verificar")
         # 6b) si cambió la lógica del verificador, las retenciones por verificación se revisan de nuevo
-        for t in [x for x in c["trabajos"].values() if x["estado"] == "RETENIDO" and (x.get("retencion") or {}).get("verificador") not in (None, verificador.VERSION)
-                  or (x["estado"] == "RETENIDO" and (x.get("retencion") or {}).get("verificador") is None and "verificación jurídica" in (x["historial"][-1]["motivo"] if x["historial"] else ""))]:
+        for t in [x for x in c["trabajos"].values() if x["estado"] == "RETENIDO" and not (x.get("retencion") or {}).get("archivada")
+                  and (x.get("retencion") or {}).get("verificador") not in (None, verificador.VERSION)
+                  or (x["estado"] == "RETENIDO" and not (x.get("retencion") or {}).get("archivada") and (x.get("retencion") or {}).get("verificador") is None and "verificación jurídica" in (x["historial"][-1]["motivo"] if x["historial"] else ""))]:
             cola.mover(c, t["id"], "PENDIENTE", f"verificador actualizado a {verificador.VERSION}; se vuelve a verificar")
         # 7) retenciones transitorias vencidas
         for t in [x for x in c["trabajos"].values() if x["estado"] == "RETENIDO" and (x.get("retencion") or {}).get("tipo") == "transitorio"]:
