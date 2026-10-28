@@ -1,0 +1,153 @@
+{
+  "id": "I20261123-T084",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿En México existe la pena de muerte?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T084",
+  "pieza": {
+    "titular": "¿En México existe la pena de muerte?",
+    "bajada": "No, la Constitución prohíbe expresamente la pena de muerte.",
+    "cita": "Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 22",
+    "ojo": "Prohibida por la Constitución Federal",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 22"
+  },
+  "copy": "De acuerdo con la Constitución Política de los Estados Unidos Mexicanos, esta sanción no tiene cabida en el sistema jurídico del país.\n\nEl artículo 22 señala de manera clara que la pena de muerte está completamente prohibida junto con otras medidas similares.\n\nComparte o guarda esta información para conocer las bases que protegen los derechos fundamentales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica que la pena de muerte está prohibida en México según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "22",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 22",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La Constitución prohíbe explícitamente la pena de muerte en el país.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿En México existe la pena de muerte?",
+    "concepto_central": "pena de muerte",
+    "respuesta_corta": "No, en México la Constitución prohíbe expresamente la aplicación de la pena de muerte y otras penas inusitadas.",
+    "reglas": [
+      {
+        "conclusion": "La Constitución prohíbe explícitamente la pena de muerte en el país.",
+        "fuente": "F1",
+        "cita_literal": "Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "22"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La pena de muerte está prohibida legalmente.",
+        "fuente": "F1",
+        "cita_literal": "Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial establece la prohibición vigente, pero no detalla la fecha exacta en que desapareció o fue abolida históricamente."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T12:52:51+00:00",
+    "solicitud": "2026-11-23_imagen_T084-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿En México existe la pena de muerte?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n No, en México la Constitución prohíbe expresamente la aplicación de la pena de muerte y otras penas inusitadas. \n Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie \n Prohibida por la Constitución Federal"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La Constitución prohíbe explícitamente la pena de muerte en el país.",
+              "sostenida": "si",
+              "motivo": "El artículo 22 de la Constitución establece de forma directa la prohibición de las penas de muerte."
+            },
+            {
+              "conclusion": "La pena de muerte está prohibida legalmente.",
+              "sostenida": "si",
+              "motivo": "El texto oficial incluye la pena de muerte dentro del catálogo de sanciones prohibidas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -241,3 +241,12 @@
 {"ts": "2026-10-28T12:40:41+00:00", "evento": "revision_preparada", "pieza": "I20261125-T028", "version": "92245bb80c8ddb27", "canal": "chat"}
 {"ts": "2026-10-28T12:40:41+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 1, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
 {"ts": "2026-10-28T12:41:42+00:00", "pieza": "R20261124-T015", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición de forma (Claude, 28-10): palabra partida por el PDF; se vuelve a verificar y producir"}
+{"ts": "2026-10-28T12:50:28+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T12:52:51+00:00", "evento": "redactada", "pieza": "I20261123-T084", "solicitud": "2026-11-23_imagen_T084-piloto-1.json"}
+{"ts": "2026-10-28T12:52:51+00:00", "pieza": "I20261123-T084", "evento": "encolado"}
+{"ts": "2026-10-28T12:54:38+00:00", "pieza": "R20261124-T015", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER · [respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo m»."}
+{"ts": "2026-10-28T12:54:38+00:00", "evento": "alerta", "mensaje": "R20261124-T015 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-10-28T12:55:26+00:00", "pieza": "I20261123-T084", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T12:55:30+00:00", "pieza": "I20261123-T084", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T12:55:30+00:00", "evento": "revision_preparada", "pieza": "I20261123-T084", "version": "e8620ba768b2679d", "canal": "chat"}
+{"ts": "2026-10-28T12:55:30+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}

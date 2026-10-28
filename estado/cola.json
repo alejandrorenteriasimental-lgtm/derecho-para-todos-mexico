@@ -766,7 +766,7 @@
       "id": "R20261124-T015",
       "formato": "reel",
       "huella": "6bd6bbc9bb895283714456a873e8803cb8ad341155ab62dd87dc8093c5140877",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T12:05:27+00:00",
@@ -788,12 +788,56 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T12:41:42+00:00",
           "motivo": "edición de forma (Claude, 28-10): palabra partida por el PDF; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T12:54:38+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo m»."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-10-28T12:54:38+00:00",
+        "verificador": "0.5.1"
+      }
+    },
+    "I20261123-T084": {
+      "id": "I20261123-T084",
+      "formato": "imagen",
+      "huella": "d54fab3ebc2930e9aed88d1c9a5ca00d3d7f848581cd9a8645c154607e18162c",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T12:52:51+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T12:55:26+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T12:55:30+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "e8620ba768b2679d",
+        "huella_guion": "7a29fa57f98615d991b5cea5a897f3cae690e035941fc10f1696e4e3c95524f0",
+        "huella_archivo": "a569ff2d7b52b063e61406bf4eb977ba504d1ee793e1879b6acb1ae1aefd8f5a",
+        "preparada": "2026-10-28T12:55:30+00:00",
+        "canal": "chat"
+      }
     }
   }
 }
