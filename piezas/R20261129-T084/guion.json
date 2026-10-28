@@ -22,7 +22,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "Te preguntas si las autoridades en México pueden imponerte azotes o algún tipo de tormento como castigo legal.",
+      "texto": "¿En México te pueden castigar con azotes o tormento?",
       "titulo": [
         "¿TE PUEDEN CASTIGAR",
         "CON AZOTES",
@@ -41,18 +41,18 @@
     },
     {
       "tipo": "cita",
-      "texto": "El texto fundamental de nuestra nación establece de forma clara que este tipo de castigos corporales ya no forman parte del sistema legal: Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
+      "texto": "El artículo 22 de la Constitución establece: Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
       "etiqueta": "Constitución, artículo 22",
       "cita": "Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Estas prohibiciones protegen tus derechos fundamentales frente a castigos crueles e inusitados dentro del territorio nacional.",
+      "texto": "El artículo 22 prohíbe, entre otras:",
       "items": [
-        "Prohibidos los azotes",
-        "Cualquier tormento",
-        "No hay mutilación"
+        "La pena de muerte",
+        "Los azotes",
+        "El tormento de cualquier especie"
       ],
       "afirmaciones": [
         {
@@ -65,7 +65,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "No, la Constitución prohíbe expresamente los azotes y el tormento de cualquier especie, protegiendo firmemente la dignidad humana.",
+      "texto": "No, la Constitución prohíbe expresamente los azotes y el tormento de cualquier especie.",
       "titulo": [
         "PROTECCIÓN",
         "CONSTITUCIONAL"
@@ -172,5 +172,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "gancho como pregunta; sin «ya no forman parte», «crueles» ni «dignidad humana» (no están en el texto); lista literal"
+    }
+  ]
 }
