@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-28T22:50:25+00:00",
+ "fecha": "2026-10-28T22:55:49+00:00",
  "pasos": [
   {
    "paso": "autenticación",
@@ -19,32 +19,37 @@
   {
    "paso": "Facebook: Reel cargado completo SIN finalizar (no publicado)",
    "resultado": "OK",
-   "detalle": "video 1467720535536640: SUBIDO"
+   "detalle": "video 1518683920077943: SUBIDO"
   },
   {
    "paso": "Instagram: contenedor de imagen procesado SIN publicar",
    "resultado": "OK",
-   "detalle": "contenedor 17995799132867253: FINISHED · ruta: IMAGEN_ALOJADA"
+   "detalle": "contenedor 17995800824867253: FINISHED · ruta: IMAGEN_ALOJADA"
   },
   {
    "paso": "Instagram: contenedor de reel procesado SIN publicar",
    "resultado": "FALLA",
-   "detalle": "contenedor 17995799549867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995801211867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
   },
   {
    "paso": "Diagnóstico: clip sintético conforme (no se publica)",
    "resultado": "OK",
-   "detalle": "contenedor 17995799762867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995801223867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
   },
   {
    "paso": "Diagnóstico: primeros 5 s del Reel sin recodificar (no se publica)",
    "resultado": "OK",
-   "detalle": "contenedor 17995799921867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995801373867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
   },
   {
-   "paso": "Diagnóstico: Reel completo recodificado (no se publica)",
+   "paso": "Diagnóstico: primeros 15 s del Reel sin recodificar (no se publica)",
+   "resultado": "OK",
+   "detalle": "contenedor 17995801514867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
+  },
+  {
+   "paso": "Diagnóstico: primeros 30 s del Reel sin recodificar (no se publica)",
    "resultado": "FALLA",
-   "detalle": "contenedor 17995800554867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA → VIDEO_ALOJADO → CONTENEDOR_CREADO"
+   "detalle": "contenedor 17995801880867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA → VIDEO_ALOJADO → CONTENEDOR_CREADO"
   },
   {
    "paso": "Instagram: búsqueda anti-duplicados",
