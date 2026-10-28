@@ -35,11 +35,11 @@
     {
       "formato": "reel",
       "fecha": "2026-11-29",
-      "tema_id": "T025",
-      "tipo_pregunta": "obligacion",
-      "pregunta": "¿Cuántas semanas de descanso por maternidad te corresponden?",
-      "fuentes_sugeridas": "LFT art. 170",
-      "motivo_seleccion": "Art. 170, fr. II: seis semanas antes y seis después del parto, con la transferencia que prevé el texto."
+      "tema_id": "T084",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿En México te pueden castigar con azotes o tormento?",
+      "fuentes_sugeridas": "CPEUM art. 22",
+      "motivo_seleccion": "Sustituye al Reel de maternidad (T025, descartado el 28-10): la transferencia de semanas tiene varias condiciones (médico, patrón, naturaleza del trabajo) y el modelo presentó la ampliación como regla general. Art. 22: prohibición literal de penas de muerte, mutilación, azotes, palos y tormento."
     },
     {
       "formato": "imagen",
@@ -87,6 +87,13 @@
       "id": "piloto-1",
       "cerrado": "2026-10-28",
       "resultado": "3 Reels y 3 imágenes aprobados (T031, T015, T093; T073, T028, T084); T016 sustituida por T084"
+    }
+  ],
+  "cambios": [
+    {
+      "fecha": "2026-10-28",
+      "cambio": "Reel T025 → T084",
+      "motivo": "tema con demasiadas condiciones para el formato; error del modelo en la redacción"
     }
   ]
 }

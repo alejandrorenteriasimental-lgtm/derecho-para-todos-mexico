@@ -1282,7 +1282,7 @@
       "id": "R20261128-T028",
       "formato": "reel",
       "huella": "937eac91543f1b78cad52c2a42b23695c4cbf7af303c3975ccaa7e516eae97af",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:51:19+00:00",
@@ -1298,19 +1298,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-28T18:52:37+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T19:14:40+00:00",
+          "motivo": "edición de forma (Claude, 28-10): se vuelve a verificar y producir"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
-      "revision": {
-        "version": "8d829520c6da1713",
-        "huella_guion": "dbc8ee9049a309f0f2b71acc4ab31238079eed5a7a06d6e67b827d1123e0379b",
-        "huella_archivo": "f5e943039a6953edc2054f0c3649f385262d241cbbaf71a85b4a8bf296529091",
-        "preparada": "2026-10-28T18:52:37+00:00",
-        "canal": "chat"
-      }
+      "retencion": null
     },
     "I20261128-T010": {
       "id": "I20261128-T010",

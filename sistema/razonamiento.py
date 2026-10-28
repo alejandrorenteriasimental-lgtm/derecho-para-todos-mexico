@@ -102,6 +102,14 @@ def _oraciones_previas(texto_articulo, pa, i):
     return " ".join(w for w in marc[desde:k] if w != "zzfinzz")
 
 
+def _cita_textual(frase, txt):
+    """¿La frase reproduce la ley (al menos 8 palabras seguidas del texto oficial), aunque la introduzca el narrador
+    («La Constitución señala que Ningún indiciado…»)? Reproducir la norma no es generalizarla (R20261126-T061, 28-10)."""
+    if not txt: return False
+    pf, pt = plano(frase).split(), plano(txt)
+    return any(_ubicar(pt, " ".join(pf[i:i + 8]))[0] >= 0 for i in range(0, max(0, len(pf) - 7)))
+
+
 def contexto_omitido(texto_articulo, cita, ventana=420):
     """Condiciones del artículo que rodean a la cita y que la cita NO incluye (la oración anterior y la actual)."""
     pa, pc = plano(texto_articulo), plano(cita)
@@ -227,7 +235,7 @@ def revisar(g, textos, ia=None):
                 h("condiciones", "bloqueante", f"{fid} condiciona la regla («…{frag}…») y la conclusión «{concl[:60]}» no declara condiciones.")
             # ¿la conclusión se muestra en forma absoluta en el contenido visible?
             for frase in re.split(r"(?<=[.!?])\s+|\n", cuerpo):
-                literal = len(plano(frase).split()) >= 6 and _ubicar(plano(txt), plano(frase).replace(" zzfinzz", ""))[0] >= 0
+                literal = _cita_textual(frase, txt)
                 if not literal and _coincide(frase, concl) and not _marcadores_en(frase) and (_es_absoluta(frase) or not declaradas.strip()):
                     h("condiciones", "bloqueante", f"Generalización: «{frase.strip()[:90]}» se presenta sin la condición que impone {fid} («…{frag}…»).")
     # frases absolutas visibles apoyadas en reglas condicionadas aunque no estén en el mapa
@@ -235,7 +243,7 @@ def revisar(g, textos, ia=None):
         if not _es_absoluta(frase): continue
         for fid, fi in fichas.items():
             txt = tx(fi) or ""; cita = fi.get("texto_literal", "")
-            literal = txt and len(plano(frase).split()) >= 6 and _ubicar(plano(txt), plano(frase))[0] >= 0   # citar la ley textual no es generalizar
+            literal = _cita_textual(frase, txt)   # citar la ley textual no es generalizar
             if cita and not literal and _coincide(frase, cita) and contexto_omitido(txt, cita) and not _marcadores_en(frase):
                 frag = fragmento_condicion(txt, cita, contexto_omitido(txt, cita)[0])
                 h("condiciones", "bloqueante", f"Frase absoluta «{frase.strip()[:80]}» sobre una regla condicionada de {fid} («…{frag}…»).")

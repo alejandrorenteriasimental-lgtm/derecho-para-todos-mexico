@@ -394,3 +394,9 @@ def test_condicion_de_otro_parrafo_no_se_exige_y_la_cita_textual_no_es_generaliz
          "escenas": [{"tipo": "texto", "texto": frase}]}
     h = [x for x in razonamiento.revisar(g, {("CPEUM", "16"): t}) if x["regla"] == "condiciones" and ("Generalización" in x["detalle"] or "Frase absoluta" in x["detalle"])]
     assert h == [], h
+
+
+def test_cita_textual_introducida_por_el_narrador_no_es_generalizacion():
+    t = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_16.json").read_text())["texto"]
+    assert razonamiento._cita_textual("La Constitución señala que Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas.", t)
+    assert not razonamiento._cita_textual("Nadie puede estar detenido nunca más de dos días en ningún caso.", t)
