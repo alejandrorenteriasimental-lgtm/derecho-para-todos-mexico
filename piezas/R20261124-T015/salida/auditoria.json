@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "70.5 s"
+      "detalle": "70.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "APROBADO",
-      "detalle": "70.5 s"
+      "detalle": "70.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "0a9c9388ecdcb177"
+      "detalle": "c8c6afdead333165"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261124-T015",
     "titulo": "¿Cuándo y cuánto te deben pagar de aguinaldo según la ley?",
-    "fecha": "2026-10-28T12:11:50+00:00",
-    "sha256": "0a9c9388ecdcb1779a28a7559941098332ae901aec3c1e8e8cbdc6636ba7203d",
-    "duracion_s": 70.5,
+    "fecha": "2026-10-28T13:07:54+00:00",
+    "sha256": "c8c6afdead333165cd89caf8a74567867fb6fbd31ed7095767bd85d54947ecb5",
+    "duracion_s": 70.3,
     "estado": "APTO",
-    "huella_guion": "6bd6bbc9bb895283714456a873e8803cb8ad341155ab62dd87dc8093c5140877",
+    "huella_guion": "1569e1e71b2a27925c61d3f44a5d62a4c9c61379d3e233bed43c17d099a82043",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 19.3,
-      "musica": 2.1,
-      "render_video": 49.2,
-      "mezcla_audio": 2.0,
-      "auditoria_tecnica": 12.9
+      "narracion": 46.1,
+      "musica": 4.5,
+      "render_video": 82.2,
+      "mezcla_audio": 3.2,
+      "auditoria_tecnica": 18.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.43,
-      "computo_equivalente_runner_usd": 0.0086,
+      "computo_minutos": 2.58,
+      "computo_equivalente_runner_usd": 0.0155,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 2116,
-    "caracteres_narrados": 1078
+    "frames": 2108,
+    "caracteres_narrados": 1077
   }
 }

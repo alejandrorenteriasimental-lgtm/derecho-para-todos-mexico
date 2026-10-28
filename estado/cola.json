@@ -122,6 +122,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T12:21:48+00:00",
           "motivo": "verificación jurídica: RETENER · [sustento] «Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece. · [sustento] «Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T13:01:39+00:00",
+          "motivo": "verificador actualizado a 0.5.2; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T13:03:32+00:00",
+          "motivo": "verificación jurídica: RETENER · [sustento] «Si simplemente no pudiste pagar un préstamo, te pueden demandar y cobrar ante un» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece. · [sustento] «Te pueden demandar» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
         }
       ],
       "error": null,
@@ -129,8 +141,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T12:21:48+00:00",
-        "verificador": "0.5.1"
+        "desde": "2026-10-28T13:03:32+00:00",
+        "verificador": "0.5.2"
       }
     },
     "I20261025-T089": {
@@ -207,6 +219,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T12:23:21+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [cobertura] La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T13:01:39+00:00",
+          "motivo": "verificador actualizado a 0.5.2; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T13:10:45+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «mutuo_consentimiento», no de «renuncia», que es lo que pregunta el título. · [conceptos] El contenido mezcla «renuncia» con «mutuo_consentimiento» sin declarar la distinción entre ellos. · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [cobertura] La pregunta es de tipo «general» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
@@ -214,8 +238,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T12:23:21+00:00",
-        "verificador": "0.5.1"
+        "desde": "2026-10-28T13:10:45+00:00",
+        "verificador": "0.5.2"
       }
     },
     "I20261026-T020": {
@@ -292,6 +316,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T12:23:49+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [condiciones] Frase absoluta «La garantía mínima legal es de noventa días.» sobre una regla condicionada de F1 («…todo bien o servicio que se ofre"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T13:01:39+00:00",
+          "motivo": "verificador actualizado a 0.5.2; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T13:11:37+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] El título hace una pregunta y no hay respuesta corta explícita en el mapa de razonamiento. · [conceptos] La respuesta habla de «garantia», no de «cambio_reposicion», que es lo que pregunta el título. · [conceptos] La respuesta habla de «garantia», no de «devolucion_dinero», que es lo que pregunta el título. · [conceptos] El título trata «cambio_reposicion», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «cambio_reposicion». · [conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «garantia» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero». · [sustento] No hay mapa de razonamiento: cada conclusión debe ligarse a su fuente. · [condiciones] Frase absoluta «La garantía mínima legal es de noventa días.» sobre una regla condicionada de F1 («…todo bien o servicio que se ofre"
         }
       ],
       "error": null,
@@ -299,8 +335,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T12:23:49+00:00",
-        "verificador": "0.5.1"
+        "desde": "2026-10-28T13:11:37+00:00",
+        "verificador": "0.5.2"
       }
     },
     "R20261027-T052": {
@@ -372,6 +408,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T12:24:30+00:00",
           "motivo": "verificación jurídica: RETENER · [cobertura] La pregunta es de tipo «legalidad» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T13:01:39+00:00",
+          "motivo": "verificador actualizado a 0.5.2; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T13:12:56+00:00",
+          "motivo": "verificación jurídica: RETENER · [cobertura] La pregunta es de tipo «legalidad» y el análisis no dice qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) (elemento «efecto»)."
         }
       ],
       "error": null,
@@ -379,8 +427,8 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T12:24:30+00:00",
-        "verificador": "0.5.1"
+        "desde": "2026-10-28T13:12:56+00:00",
+        "verificador": "0.5.2"
       }
     },
     "R20261028-T068": {
@@ -765,8 +813,8 @@
     "R20261124-T015": {
       "id": "R20261124-T015",
       "formato": "reel",
-      "huella": "6bd6bbc9bb895283714456a873e8803cb8ad341155ab62dd87dc8093c5140877",
-      "estado": "RETENIDO",
+      "huella": "1569e1e71b2a27925c61d3f44a5d62a4c9c61379d3e233bed43c17d099a82043",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T12:05:27+00:00",
@@ -794,6 +842,24 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T12:54:38+00:00",
           "motivo": "verificación jurídica: RETENER · [respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo m»."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T13:01:39+00:00",
+          "motivo": "el guion cambió; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T13:07:54+00:00",
+          "motivo": "70.3"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T13:07:58+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -803,6 +869,13 @@
         "tipo": "sustantivo",
         "desde": "2026-10-28T12:54:38+00:00",
         "verificador": "0.5.1"
+      },
+      "revision": {
+        "version": "58e291a6adeda64b",
+        "huella_guion": "15885d8a8a3d9a1e13b164e0b378600fb5ed749c2e43459ca467b5b483ca1f18",
+        "huella_archivo": "c8c6afdead333165cd89caf8a74567867fb6fbd31ed7095767bd85d54947ecb5",
+        "preparada": "2026-10-28T13:07:58+00:00",
+        "canal": "chat"
       }
     },
     "I20261123-T084": {
