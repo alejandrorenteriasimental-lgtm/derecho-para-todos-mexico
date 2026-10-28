@@ -56,9 +56,12 @@ def _json(estado, cuerpo):
     except ValueError:
         raise ErrorGraph(estado, None, f"respuesta no JSON: {cuerpo[:120]!r}", transitorio=estado >= 500)
     if estado >= 400 or "error" in d:
-        e = d.get("error", {})
+        e = d.get("error") or {}
+        dbg = d.get("debug_info") or {}            # rupload (carga reanudable) informa así sus errores
         cod = e.get("code")
-        raise ErrorGraph(estado, cod, e.get("message", "sin mensaje"), transitorio=(estado >= 500 or cod in CODIGOS_TRANSITORIOS))
+        msg = e.get("message") or e.get("error_user_msg") or dbg.get("message") or (json.dumps(d, ensure_ascii=False)[:300] if d else "sin mensaje")
+        if e.get("error_subcode"): msg += f" (subcódigo {e['error_subcode']})"
+        raise ErrorGraph(estado, cod, msg, transitorio=(estado >= 500 or cod in CODIGOS_TRANSITORIOS))
     return d
 
 

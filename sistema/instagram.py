@@ -51,11 +51,17 @@ def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base
     if formato == "imagen":
         url = url_publica_imagen(g, page, archivo, libro, base)
         return g.post(f"{ig}/media", image_url=url, caption=texto).get("id")
-    r = g.post(f"{ig}/media", media_type="REELS", upload_type="resumable", caption=texto, share_to_feed="true")
+    try:
+        r = g.post(f"{ig}/media", media_type="REELS", upload_type="resumable", caption=texto, share_to_feed="true")
+    except ErrorGraph as e:
+        raise ErrorGraph(e.estado, e.codigo, f"creación del contenedor de Reel: {e}", transitorio=e.transitorio)
     cid, uri = r.get("id"), r.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{publicar.GRAPH_VERSION}/{r.get('id')}"
     if base is not None: registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid}, libro)
     datos = Path(archivo).read_bytes()
-    up = g.subir(uri, datos)
+    try:
+        up = g.subir(uri, datos)
+    except ErrorGraph as e:
+        raise ErrorGraph(e.estado, e.codigo, f"carga del video a Instagram: {e}", transitorio=e.transitorio)
     if not up.get("success", True): raise ErrorGraph(200, None, f"carga no confirmada: {up}", transitorio=True)
     return cid
 
