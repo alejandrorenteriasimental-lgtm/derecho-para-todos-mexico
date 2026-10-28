@@ -30,5 +30,5 @@ jobs:
         if: always()
         run: |
           git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
-          git add registro/publicacion.jsonl estado/operaciones.jsonl estado/pausa_publicacion.json 2>/dev/null || true
+          git add -A registro estado || true
           git diff --cached --quiet || (git commit -m "publicacion ${{ github.run_id }}" && git pull --rebase -q && git push)
