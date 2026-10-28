@@ -16,6 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }
+      - name: ffmpeg (copia de Reels conforme a la especificación de Instagram)
+        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Publicar lo que corresponde
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

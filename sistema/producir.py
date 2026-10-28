@@ -50,8 +50,8 @@ def producir(carpeta: Path, verificacion=None):
                   f"[3:a]aresample=48000,pan=stereo|c0=c0|c1=c0,volume=0.35,adelay={retardo}|{retardo}[f];"
                   "[v][md][f]amix=inputs=3:duration=longest:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "voz.wav"), "-i", str(out / "musica.wav"), "-i", str(out / "video_mudo.mp4"),
-                        "-i", str(firma), "-filter_complex", filtro, "-map", "2:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
-                        "-shortest", "-movflags", "+faststart", str(final)], check=True)
+                        "-i", str(firma), "-filter_complex", filtro, "-map", "2:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
+                        "-shortest", "-movflags", "+faststart", "-use_editlist", "0", str(final)], check=True)   # 128k y sin listas de edición: especificación de Instagram (28-10)
         srt_final = final.with_suffix(".srt"); srt_final.write_text((out / "video_mudo.srt").read_text())
     previos = set()
     if REGISTRO.exists():

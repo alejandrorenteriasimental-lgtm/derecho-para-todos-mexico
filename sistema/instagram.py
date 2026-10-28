@@ -11,7 +11,7 @@ Idempotencia: cada fase se registra en estado/operaciones.jsonl ANTES y DESPUÉS
 Si `media_publish` responde de forma ambigua, el siguiente intento busca el texto exacto en las publicaciones recientes
 de la cuenta antes de volver a publicar; nunca publica dos veces el mismo contenedor.
 """
-import json, os, time
+import hashlib, json, os, subprocess, time
 from pathlib import Path
 
 import publicar
@@ -66,6 +66,18 @@ def url_publica_video(g, page, mp4, libro=None, base=None, intentos=18, pausa=10
     raise ErrorGraph(200, None, f"el video no publicado {vid} no devolvió URL", transitorio=True)
 
 
+def adaptar_reel_ig(mp4, ffmpeg="ffmpeg"):
+    """Copia del Reel APROBADO ajustada a la especificación de Instagram (prueba no pública del 28-10: error 2207076).
+    Instagram exige audio AAC de 128 kbps como máximo y MP4 sin listas de edición; los Reels aprobados llevan audio a
+    160 kbps y listas de edición. La imagen se copia sin recodificar (mismos cuadros); solo se recodifica el audio a
+    128 kbps. El archivo aprobado no se modifica: la copia se crea aparte y su SHA-256 queda en el libro."""
+    out = Path(mp4).with_name(Path(mp4).stem + "_ig.mp4")
+    subprocess.run([ffmpeg, "-y", "-v", "error", "-i", str(mp4), "-map", "0:v:0", "-map", "0:a:0", "-c:v", "copy",
+                    "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", "-use_editlist", "0", str(out)],
+                   check=True, timeout=300)
+    return out
+
+
 def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base=None, dormir=time.sleep):
     """Crea el contenedor (NO publica). Devuelve su id."""
     if formato == "imagen":
@@ -75,6 +87,8 @@ def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base
         r = g.post(f"{ig}/media", media_type="REELS", upload_type="resumable", caption=texto, share_to_feed="true")
     except ErrorGraph as e:
         raise ErrorGraph(e.estado, e.codigo, f"creación del contenedor de Reel: {e}", transitorio=e.transitorio)
+    archivo = adaptar_reel_ig(archivo)
+    if base is not None: registrar({**base, "fase": "COPIA_IG", "archivo_ig": archivo.name, "sha256_ig": hashlib.sha256(archivo.read_bytes()).hexdigest()}, libro)
     cid, uri = r.get("id"), r.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{publicar.GRAPH_VERSION}/{r.get('id')}"
     if base is not None: registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid}, libro)
     datos = Path(archivo).read_bytes()
