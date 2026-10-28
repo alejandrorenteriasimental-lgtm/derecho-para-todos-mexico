@@ -27,8 +27,11 @@ jobs:
         env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
           mkdir -p /tmp/p && cd /tmp/p
-          gh release download piezas-2026-10 -R "$GITHUB_REPOSITORY" -p "I20261124-T073__*__I20261124-T073.png" -p "R20261123-T031__*__R20261123-T031_final.mp4"
-          mv I20261124-T073__*__I20261124-T073.png I20261124-T073.png && mv R20261123-T031__*__R20261123-T031_final.mp4 R20261123-T031_final.mp4 && ls -la
+          # versiones APROBADAS exactas (prefijo = SHA-256 del archivo aprobado, ver data/calendario_lanzamiento.json)
+          gh release download piezas-2026-10 -R "$GITHUB_REPOSITORY" -p "I20261124-T073__470bc5a586b4__I20261124-T073.png" -p "R20261123-T031__0e6d77dd09c7__R20261123-T031_final.mp4"
+          mv I20261124-T073__470bc5a586b4__I20261124-T073.png I20261124-T073.png && mv R20261123-T031__0e6d77dd09c7__R20261123-T031_final.mp4 R20261123-T031_final.mp4
+          echo "470bc5a586b4a7213adefc11ad93f76fd03dd45b2c7f2176d8a8bf6028f95e14  I20261124-T073.png" | sha256sum -c
+          echo "0e6d77dd09c7b9f044a32feafa753bd36e6442f288630c0b8189bc2470301204  R20261123-T031_final.mp4" | sha256sum -c && ls -la
       - name: Prueba no pública
         if: inputs.modo == 'no_publica'
         env:
