@@ -5,29 +5,69 @@
   "max_por_formato": 3,
   "nota": "Lote piloto (instrucción del responsable, 27-10-2026): hasta 3 Reels y 3 imágenes con pregunta precisa, tipo de pregunta fijado y fundamento federal claro y vigente. Mientras está activo, el ciclo no redacta otras solicitudes (quedan en espera, sin borrarse) y el planificador no crea nuevas. No se amplía el lote hasta medir sus resultados. Las fechas son las de la primera semana del lanzamiento objetivo (23-11-2026).",
   "temas": [
-    {"formato": "reel", "fecha": "2026-11-23", "tema_id": "T031", "tipo_pregunta": "derecho",
-     "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
-     "fuentes_sugeridas": "CPEUM art. 23",
-     "motivo_seleccion": "Una sola norma constitucional, federal, vigente y de texto directo; sin variación estatal."},
-    {"formato": "reel", "fecha": "2026-11-24", "tema_id": "T015", "tipo_pregunta": "obligacion",
-     "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
-     "fuentes_sugeridas": "LFT art. 87",
-     "motivo_seleccion": "El art. 87 LFT fija plazo (antes del 20 de diciembre), monto mínimo (15 días de salario) y la parte proporcional. Se reformula la pregunta del catálogo («¿llega después del 20 de diciembre?»), que se descartó porque el texto no fija la consecuencia del pago tardío."},
-    {"formato": "reel", "fecha": "2026-11-25", "tema_id": "T093", "tipo_pregunta": "legalidad",
-     "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
-     "fuentes_sugeridas": "CPEUM art. 17",
-     "motivo_seleccion": "Prohibición expresa del art. 17 constitucional y derecho a tribunales; federal y vigente."},
-    {"formato": "imagen", "fecha": "2026-11-23", "tema_id": "T016", "tipo_pregunta": "obligacion", "plantilla": "dato",
-     "pregunta": "¿Cuántos días de vacaciones te corresponden?",
-     "fuentes_sugeridas": "LFT arts. 76, 78",
-     "motivo_seleccion": "Tabla de días del art. 76 LFT vigente. La imagen anterior (I20261030-T016) fue rechazada por afirmar un cambio legal sin decreto: esta pregunta pide el contenido vigente, no la historia de la reforma."},
-    {"formato": "imagen", "fecha": "2026-11-24", "tema_id": "T073", "tipo_pregunta": "legalidad", "plantilla": "mito_realidad",
-     "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
-     "fuentes_sugeridas": "CPEUM art. 17",
-     "motivo_seleccion": "Art. 17 constitucional: nadie puede ser aprisionado por deudas de carácter puramente civil. La condición «puramente civil» es obligatoria en la respuesta."},
-    {"formato": "imagen", "fecha": "2026-11-25", "tema_id": "T028", "tipo_pregunta": "definicion", "plantilla": "concepto",
-     "pregunta": "¿Qué significa la presunción de inocencia?",
-     "fuentes_sugeridas": "CPEUM art. 20",
-     "motivo_seleccion": "Definición constitucional (art. 20, apartado B, fr. I); federal y vigente."}
+    {
+      "formato": "reel",
+      "fecha": "2026-11-23",
+      "tema_id": "T031",
+      "tipo_pregunta": "derecho",
+      "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
+      "fuentes_sugeridas": "CPEUM art. 23",
+      "motivo_seleccion": "Una sola norma constitucional, federal, vigente y de texto directo; sin variación estatal."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-11-24",
+      "tema_id": "T015",
+      "tipo_pregunta": "obligacion",
+      "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+      "fuentes_sugeridas": "LFT art. 87",
+      "motivo_seleccion": "El art. 87 LFT fija plazo (antes del 20 de diciembre), monto mínimo (15 días de salario) y la parte proporcional. Se reformula la pregunta del catálogo («¿llega después del 20 de diciembre?»), que se descartó porque el texto no fija la consecuencia del pago tardío."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-11-25",
+      "tema_id": "T093",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
+      "fuentes_sugeridas": "CPEUM art. 17",
+      "motivo_seleccion": "Prohibición expresa del art. 17 constitucional y derecho a tribunales; federal y vigente."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-23",
+      "tema_id": "T084",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "concepto",
+      "pregunta": "¿En México existe la pena de muerte?",
+      "fuentes_sugeridas": "CPEUM art. 22",
+      "motivo_seleccion": "Sustituye a T016 (vacaciones), descartada 4 veces el 27 y 28-10: la respuesta completa (12 días, aumentos y la condición de más de un año) no cupo en 60 palabras con la cita, y la imagen nunca dijo a la vez la cifra y la condición. T084: prohibición literal del art. 22 constitucional, federal y vigente; sin jurisprudencia ni historia legislativa."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-24",
+      "tema_id": "T073",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "mito_realidad",
+      "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
+      "fuentes_sugeridas": "CPEUM art. 17",
+      "motivo_seleccion": "Art. 17 constitucional: nadie puede ser aprisionado por deudas de carácter puramente civil. La condición «puramente civil» es obligatoria en la respuesta."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-25",
+      "tema_id": "T028",
+      "tipo_pregunta": "definicion",
+      "plantilla": "concepto",
+      "pregunta": "¿Qué significa la presunción de inocencia?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Definición constitucional (art. 20, apartado B, fr. I); federal y vigente."
+    }
+  ],
+  "cambios": [
+    {
+      "fecha": "2026-10-28",
+      "cambio": "imagen T016 → T084",
+      "motivo": "tema no viable en formato de imagen tras 4 descartes por cobertura y longitud"
+    }
   ]
 }
