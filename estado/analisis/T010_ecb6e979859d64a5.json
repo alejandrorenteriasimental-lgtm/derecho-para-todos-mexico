@@ -1,0 +1,53 @@
+{
+ "tema_id": "T010",
+ "pregunta": "¿Tienes derecho a guardar silencio si te detienen?",
+ "fecha": "2026-10-28T18:07:23+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes derecho a guardar silencio si te detienen?",
+  "concepto_central": "derecho a guardar silencio",
+  "respuesta_corta": "Sí, tienes derecho a declarar o a guardar silencio desde el momento de tu detención, sin que este sea utilizado en tu perjuicio.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona imputada tiene derecho a declarar o a guardar silencio desde el momento de su detención, el cual no podrá ser usado en su perjuicio.",
+    "fuente": "F1",
+    "cita_literal": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+    "condiciones": [
+     "Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El derecho a declarar o a guardar silencio, el cual no puede ser utilizado en perjuicio de la persona detenida.",
+    "fuente": "F1",
+    "cita_literal": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+    "motivo": ""
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Se deben informar los motivos de la detención y el derecho a guardar silencio desde el momento en que se efectúa la detención.",
+    "fuente": "F1",
+    "cita_literal": "Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio",
+    "motivo": ""
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto no prevé excepciones para este derecho.",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El artículo no contempla excepciones aplicables al derecho a guardar silencio."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla protocolos adicionales de actuación policial más allá de la obligación de informar los motivos y el derecho al momento de la detención.",
+  "fuentes_irrelevantes": []
+ }
+}

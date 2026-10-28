@@ -1,0 +1,182 @@
+{
+  "id": "I20261127-T015",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Antes de qué fecha deben pagarte el aguinaldo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T015",
+  "pieza": {
+    "titular": "¿Antes de qué fecha deben pagarte el aguinaldo?",
+    "bajada": "Debe pagarse antes del 20 de diciembre; equivale a quince días de salario.",
+    "cita": "que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 87",
+    "ojo": "Aplica también si no cumpliste el año de servicio.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 87"
+  },
+  "copy": "La Ley Federal del Trabajo establece en su artículo 87 el derecho de las personas trabajadoras a recibir un aguinaldo anual. La norma indica que este pago debe realizarse antes del día veinte de diciembre, y equivale a quince días de salario, por lo menos.\n\nLa disposición aplica también para quienes no hayan cumplido el año de servicios. En estos casos, la ley señala que se tiene derecho a recibir la parte proporcional conforme al tiempo laborado, sin importar si continúan laborando o no en la fecha de liquidación.\n\nComparte esta información o guárdala para tener presentes tus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que responde cuándo deben pagar el aguinaldo, indicando que la fecha límite es antes del 20 de diciembre.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "87",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+      "cita": "Ley Federal del Trabajo, artículo 87",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "87",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional",
+      "cita": "Ley Federal del Trabajo, artículo 87",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El aguinaldo debe pagarse antes del 20 de diciembre y equivale a quince días de salario por lo menos.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Los trabajadores que no hayan cumplido el año de servicios tienen derecho a la parte proporcional.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Antes de qué fecha deben pagarte el aguinaldo?",
+    "concepto_central": "aguinaldo anual",
+    "respuesta_corta": "El aguinaldo anual debe pagarse antes del día veinte de diciembre.",
+    "reglas": [
+      {
+        "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre.",
+        "fuente": "F1",
+        "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "87"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El aguinaldo debe pagarse antes del 20 de diciembre y equivale a quince días de salario por lo menos.",
+        "fuente": "F1",
+        "cita_literal": "que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica a todos los trabajadores, incluidos los que no hayan cumplido el año de servicios.",
+        "fuente": "F1",
+        "cita_literal": "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala procedimientos específicos ni sanciones en caso de incumplimiento del pago."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T18:11:02+00:00",
+    "solicitud": "2026-11-27_imagen_T015-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Antes de qué fecha deben pagarte el aguinaldo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n El aguinaldo anual debe pagarse antes del día veinte de diciembre, equivalente a quince días de salario por lo menos. \n que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos. \n Aplica también si no cumpliste el año de servicio."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre.",
+              "sostenida": "si",
+              "motivo": "El artículo 87 de la Ley Federal del Trabajo establece textualmente que el pago debe realizarse antes de esa fecha."
+            },
+            {
+              "conclusion": "El aguinaldo equivale a quince días de salario, por lo menos.",
+              "sostenida": "si",
+              "motivo": "La norma define el monto mínimo como equivalente a quince días de salario."
+            },
+            {
+              "conclusion": "Aplica a todos los trabajadores, incluidos los que no hayan cumplido el año de servicios.",
+              "sostenida": "si",
+              "motivo": "El texto oficial especifica que quienes no hayan cumplido el año tienen derecho al pago de la parte proporcional."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

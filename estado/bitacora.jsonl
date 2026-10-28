@@ -276,3 +276,24 @@
 {"ts": "2026-10-28T13:23:36+00:00", "evento": "revision_preparada", "pieza": "I20261123-T084", "version": "3d4218e1b499e422", "canal": "chat"}
 {"ts": "2026-10-28T13:23:36+00:00", "evento": "respaldos_fuentes", "usados": [{"url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf", "descargado": "2026-10-28T13:01:40.779671+00:00", "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65", "motivo": "<urlopen error [Errno 110] Connection timed out>"}]}
 {"ts": "2026-10-28T13:23:36+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
+{"ts": "2026-10-28T18:05:25+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T18:06:51+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-26_reel_T061-piloto-2.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Hasta cuarenta y ocho horas, plazo que puede duplicarse en los casos previstos como d"}
+{"ts": "2026-10-28T18:08:09+00:00", "evento": "redactada", "pieza": "R20261127-T010", "solicitud": "2026-11-27_reel_T010-piloto-2.json"}
+{"ts": "2026-10-28T18:09:05+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-26_imagen_T025-piloto-2.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Te corresponden cinco días laborables con goce de sueldo por el nacimie"}
+{"ts": "2026-10-28T18:11:02+00:00", "evento": "redactada", "pieza": "I20261127-T015", "solicitud": "2026-11-27_imagen_T015-piloto-2.json"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión c74805279e16deb6 (chat)"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "R20261124-T015", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 58e291a6adeda64b (chat)"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "R20261125-T093", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 0e6c0e51c6b1b1d1 (chat)"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 92245bb80c8ddb27 (chat)"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "I20261123-T084", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 08:09 CDMX) 2026-10-28T14:10:13+00:00 versión 3d4218e1b499e422 (chat)"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "I20261127-T015", "evento": "encolado"}
+{"ts": "2026-10-28T18:11:02+00:00", "pieza": "R20261127-T010", "evento": "encolado"}
+{"ts": "2026-10-28T18:13:21+00:00", "pieza": "R20261127-T010", "evento": "transicion", "a": "PRODUCIDO", "motivo": "57.0"}
+{"ts": "2026-10-28T18:13:24+00:00", "pieza": "R20261127-T010", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T18:13:24+00:00", "evento": "revision_preparada", "pieza": "R20261127-T010", "version": "430170757def7558", "canal": "chat"}
+{"ts": "2026-10-28T18:14:47+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T18:14:50+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T18:14:50+00:00", "evento": "revision_preparada", "pieza": "I20261127-T015", "version": "bdf24c31525d9d8f", "canal": "chat"}
+{"ts": "2026-10-28T18:14:50+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-28T18:14:50+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-28T18:14:50+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 2, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 5, "en_revision": 2}

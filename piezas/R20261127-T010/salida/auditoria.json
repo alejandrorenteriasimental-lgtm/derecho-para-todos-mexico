@@ -1,0 +1,139 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 30 y 90 s (límite de Reels por API)",
+      "resultado": "APROBADO",
+      "detalle": "57.0 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "57.0 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.1 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.7 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "44 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "a36125e04b6844bf"
+    },
+    {
+      "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
+      "resultado": "APROBADO",
+      "detalle": "desfase máximo 30 ms en 9 oraciones"
+    },
+    {
+      "control": "Subtítulos sin tapar citas ni contenido",
+      "resultado": "APROBADO",
+      "detalle": "0 cuadros con solape"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "registro": {
+    "id": "R20261127-T010",
+    "titulo": "¿Tienes derecho a guardar silencio si te detienen?",
+    "fecha": "2026-10-28T18:13:21+00:00",
+    "sha256": "a36125e04b6844bf24d234d1dc66bc6ce78012748c3c94ae4714e60eb2741bf3",
+    "duracion_s": 57.0,
+    "estado": "APTO",
+    "huella_guion": "718f7d72f2f2a8c7d4ae3095d280eb51d0115ab45b26c5b25cb0f8732a6d537a",
+    "carril": "A",
+    "tiempos_s": {
+      "auditoria_juridica": 0.0,
+      "narracion": 28.3,
+      "musica": 3.1,
+      "render_video": 60.1,
+      "mezcla_audio": 2.2,
+      "auditoria_tecnica": 12.1
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 1.76,
+      "computo_equivalente_runner_usd": 0.0106,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1711,
+    "caracteres_narrados": 853
+  }
+}
