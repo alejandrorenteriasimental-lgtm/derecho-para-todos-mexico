@@ -311,3 +311,16 @@ def test_condicion_parafraseada_breve_cuenta():
     g = _g_vacaciones("El periodo mínimo es de doce días laborables. Aplica al cumplir más de un año de servicios.")
     g["razonamiento"]["elementos"][1]["respuesta"] = "Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios."
     assert razonamiento.revisar_cobertura(g, TEXTO_76) == []
+
+
+def test_palabras_partidas_por_el_pdf_se_unen_sin_cambiar_la_cita():
+    """R20261124-T015 (28-10): en pantalla aparecía «independienteme nte» (corte de línea del PDF oficial)."""
+    doc = "independientemente administración costas responsabilidad el año de servicios en el juicio se le absuelva porque"
+    assert redactor.limpiar_cortes("independienteme nte de que se encuentren", doc) == "independientemente de que se encuentren"
+    assert redactor.limpiar_cortes("que se le adm inistre justicia", doc) == "que se le administre justicia"
+    assert redactor.limpiar_cortes("las cost as judiciales", doc) == "las costas judiciales"
+    for igual in ("cumplido el año de servicios", "en el juicio se le absuelva", "por que motivo"):
+        assert redactor.limpiar_cortes(igual, doc) == igual
+    import verificador
+    assert verificador.contiene("tendrán derecho, independienteme nte de que se encuentren laborando o no",
+                                "independientemente de que se encuentren laborando o no")

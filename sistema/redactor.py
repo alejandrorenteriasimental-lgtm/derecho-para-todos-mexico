@@ -47,6 +47,33 @@ def categoria_de(motivo, transitoria=False, errores=None):
 
 
 # ---------------- textos oficiales ----------------
+COMUNES = set("a ante bajo con contra de desde durante en entre hacia hasta mediante para por según sin sobre tras el la lo los las un una unos unas y e ni o u que qué quien cual se le les su sus no si sí ya al del más mas como cuando donde este esta estos estas ese esa es son ser fue sea haya han ha hay".split())
+
+
+def limpiar_cortes(texto, documento=""):
+    """El PDF oficial a veces parte palabras con un espacio al cambiar de línea («independienteme nte», «adm inistre»,
+    «cost as»). Se unen dos pedazos contiguos solo si ninguno es una palabra común y la unión existe como palabra en el
+    documento (o, si mide 8 letras o más, es el inicio de una). No cambia ninguna letra: el cotejo del verificador ignora los
+    espacios, así que la cita sigue siendo literal (R20261124-T015, 28-10: «independienteme nte» aparecía en pantalla)."""
+    import re as _re, bisect
+    vocab = set(_re.findall(r"[a-záéíóúñü]+", (documento or texto).lower()))
+    orden = sorted(vocab)
+    def existe(w):
+        if w in vocab: return True
+        if len(w) < 8: return False
+        k = w[:-2]; i = bisect.bisect_left(orden, k)
+        return i < len(orden) and orden[i].startswith(k)
+    partes = _re.split(r"( )", texto)            # palabras y espacios simples, en orden
+    out = []
+    for p in partes:
+        if out and len(out) >= 2 and out[-1] == " " and p and p.isalpha() and p.islower() and out[-2].isalpha():
+            a = out[-2]
+            if a.lower() not in COMUNES and p not in COMUNES and existe((a + p).lower()):
+                out[-2] = a + p; out.pop(); continue
+        out.append(p)
+    return "".join(out)
+
+
 class Biblioteca:
     """Descarga cada PDF oficial una sola vez por ejecución y extrae artículos con su texto original."""
     def __init__(self, transporte=verificador.transporte_http):
@@ -67,7 +94,8 @@ class Biblioteca:
                 raise Descartada(f"{o['url']} no corresponde a «{o['documento']}»")
             self.docs[sigla] = (cab, cuerpo)
         cab, cuerpo = self.docs[sigla]
-        return verificador.articulo_texto(cuerpo, numero, max_car=6000)
+        t = verificador.articulo_texto(cuerpo, numero, max_car=6000)
+        return limpiar_cortes(t, cuerpo) if t else t
 
 
 # ---------------- instrucciones a los modelos ----------------
