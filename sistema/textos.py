@@ -12,7 +12,7 @@ import redactor, verificador
 RAIZ = Path(__file__).resolve().parent.parent
 
 
-def extraer(espec, transporte=verificador.transporte_http):
+def extraer(espec, transporte=verificador.transporte_resiliente):   # reintentos (el portal falla seguido desde GitHub)
     out = RAIZ / "registro" / "textos"; out.mkdir(parents=True, exist_ok=True)
     resumen = []
     for grupo in [g for g in espec.split(";") if g.strip()]:
