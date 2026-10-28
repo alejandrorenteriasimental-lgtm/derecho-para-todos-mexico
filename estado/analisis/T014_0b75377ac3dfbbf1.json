@@ -1,0 +1,51 @@
+{
+ "tema_id": "T014",
+ "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
+ "fecha": "2026-10-28T21:42:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
+  "concepto_central": "reinstalación o indemnización",
+  "respuesta_corta": "Puedes solicitar que se te reinstale en el trabajo que desempeñabas o que se te indemnice con tres meses de salario.",
+  "reglas": [
+   {
+    "conclusion": "El trabajador puede solicitar la reinstalación en su trabajo o una indemnización de tres meses de salario ante la autoridad correspondiente.",
+    "fuente": "F1",
+    "cita_literal": "El trabajador podrá solicitar ante la Autoridad Conciliadora, o ante el Tribunal si no existe arreglo conciliatorio, que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario",
+    "condiciones": [
+     "observando previamente las disposiciones relativas al procedimiento de conciliación"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Puedes pedir que se te reinstale en tu trabajo o que se te indemnice con el importe de tres meses de salario.",
+    "fuente": "F1",
+    "cita_literal": "que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Debes cumplir previamente con las disposiciones del procedimiento de conciliación ante la Autoridad Conciliadora o el Tribunal.",
+    "fuente": "F1",
+    "cita_literal": "observando previamente las disposiciones relativas al procedimiento de conciliación previsto en el"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto oficial no prevé excepciones para este supuesto.",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El fragmento proporcionado no menciona excepciones."
+   }
+  ],
+  "interpretaciones": [],
+  "distinctions": [],
+  "limites": "El texto oficial disponible se interrumpe al final, por lo que no menciona reglas adicionales como salarios caídos u otros detalles del proceso.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "solicitud": "2026-12-01_imagen_T019-lote-3.json",
+ "fecha": "2026-10-28T21:47:33+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.\"], \"visible\": \"  \\n   \\n Significa que el precio exhibido debe incluir todos los cargos obligatorios. \\n Dicho monto deberá incluir im",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+    "[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n   \n Significa que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional al contado o a crédito. \n Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional \n Aplica al contado o a crédito."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+    "[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n   \n Significa que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional al contado o a crédito. \n Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional \n Aplica a todo lo que se requiera cubrir con motivo de la adquisición o"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n   \n Significa que el precio exhibido debe incluir todos los cargos obligatorios. \n Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional \n Aplica a todo lo que se requiera cubrir con motivo de la adquisición o"
+  }
+ ]
+}

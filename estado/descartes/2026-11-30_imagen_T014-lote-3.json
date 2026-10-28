@@ -1,0 +1,21 @@
+{
+ "solicitud": "2026-11-30_imagen_T014-lote-3.json",
+ "fecha": "2026-10-28T21:47:00+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[sustento] La conclusión «La indemnización por despido es por el importe de tres meses de salari» trata «despido», pero Ley Federal del Trabajo, art. 48 no regula ese concepto (no aparece en su texto)."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  }
+ ]
+}

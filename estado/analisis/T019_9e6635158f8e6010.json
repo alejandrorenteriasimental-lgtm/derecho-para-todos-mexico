@@ -1,0 +1,43 @@
+{
+ "tema_id": "T019",
+ "pregunta": "¿Qué debe incluir el precio que te muestran?",
+ "fecha": "2026-10-28T21:47:12+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué debe incluir el precio que te muestran?",
+  "concepto_central": "el monto total a pagar",
+  "respuesta_corta": "Significa que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional al contado o a crédito.",
+  "reglas": [
+   {
+    "conclusion": "El precio total debe incluir todos los cobros necesarios para la adquisición o contratación.",
+    "fuente": "F1",
+    "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva",
+    "condiciones": [
+     "aplica para bienes, productos o servicios que se ofrezcan al consumidor, ya sea al contado o a crédito"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El precio debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional.",
+    "fuente": "F1",
+    "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica para la adquisición o contratación de bienes, productos o servicios, ya sea al contado o a crédito.",
+    "fuente": "F1",
+    "cita_literal": "con motivo de la adquisición o contratación respectiva, sea ésta al contado o a crédito."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no establece multas, sanciones específicas ni procedimientos para exigir el cumplimiento en este artículo.",
+  "fuentes_irrelevantes": []
+ }
+}

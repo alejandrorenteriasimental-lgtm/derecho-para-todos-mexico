@@ -1,0 +1,43 @@
+{
+ "tema_id": "T019",
+ "pregunta": "¿El precio que te muestran debe incluir impuestos y comisiones?",
+ "fecha": "2026-10-28T21:45:06+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿El precio que te muestran debe incluir impuestos y comisiones?",
+  "concepto_central": "monto total a pagar",
+  "respuesta_corta": "Sí: el monto total que se te informe debe incluir impuestos, comisiones y cualquier costo adicional de los bienes o servicios.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor debe informar el monto total a pagar incluyendo impuestos y comisiones.",
+    "fuente": "F1",
+    "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir",
+    "condiciones": [
+     "aplica a la adquisición o contratación, sea ésta al contado o a crédito"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El proveedor debe informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios.",
+    "fuente": "F1",
+    "cita_literal": "El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación aplica a cualquier adquisición o contratación, ya sea al contado o a crédito.",
+    "fuente": "F1",
+    "cita_literal": "con motivo de la adquisición o contratación respectiva, sea ésta al contado o a crédito."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial establece la obligación de informar el monto total, pero no detalla multas, sanciones ni autoridades encargadas de vigilarlo.",
+  "fuentes_irrelevantes": []
+ }
+}
