@@ -36,7 +36,7 @@ def probar(tok, page_id=None, http=get):
     perms = http("me/permissions", tok)
     concedidos = {p["permission"] for p in perms.get("data", []) if p.get("status") == "granted"}
     if concedidos:
-        ok("sin permisos de publicación (aún no autorizados)", not (concedidos & PUBLICACION), ", ".join(sorted(concedidos)))
+        ok("permisos de publicación concedidos (necesarios para el lanzamiento)", {"pages_manage_posts", "instagram_content_publish"} <= concedidos, ", ".join(sorted(concedidos)))
     pag = http(str(pid), tok, fields="name,username,followers_count,instagram_business_account{username,followers_count,media_count}")
     ok("lectura de la Página", "error" not in pag, json.dumps({k: pag.get(k) for k in ("name", "username", "followers_count")}, ensure_ascii=False))
     ig = pag.get("instagram_business_account") or {}

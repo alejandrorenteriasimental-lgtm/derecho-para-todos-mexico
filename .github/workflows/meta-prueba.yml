@@ -1,15 +1,43 @@
-# Prueba de SOLO LECTURA de la conexión con Meta (Página + Instagram). Manual. No publica nada.
+# Pruebas de la conexión con Meta (Página + Instagram). Manual. NUNCA publica nada visible.
+#  · lectura: solo GET.
+#  · no_publica: foto NO publicada, Reel cargado SIN finalizar y contenedores de Instagram SIN media_publish,
+#    con piezas ya aprobadas descargadas del respaldo. Resultado en registro/meta_prueba_no_publica.json.
 name: meta-prueba
-on: { workflow_dispatch: {} }
-permissions: { contents: read }
+on:
+  workflow_dispatch:
+    inputs:
+      modo: { description: "lectura | no_publica", required: true, default: "lectura" }
+permissions: { contents: write }
+concurrency: { group: meta-prueba, cancel-in-progress: false }
 jobs:
-  lectura:
+  prueba:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Comprobaciones de lectura
+        with: { ref: main }
+      - name: Lectura
+        if: inputs.modo == 'lectura'
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
         run: python sistema/meta_prueba.py
+      - name: Piezas aprobadas desde el respaldo
+        if: inputs.modo == 'no_publica'
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: |
+          mkdir -p /tmp/p && cd /tmp/p
+          gh release download piezas-2026-10 -R "$GITHUB_REPOSITORY" -p "I20261124-T073__*__I20261124-T073.png" -p "R20261123-T031__*__R20261123-T031_final.mp4"
+          mv I20261124-T073__*__I20261124-T073.png I20261124-T073.png && mv R20261123-T031__*__R20261123-T031_final.mp4 R20261123-T031_final.mp4 && ls -la
+      - name: Prueba no pública
+        if: inputs.modo == 'no_publica'
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+        run: python sistema/prueba_no_publica.py /tmp/p/I20261124-T073.png /tmp/p/R20261123-T031_final.mp4
+      - name: Guardar resultado
+        if: always() && inputs.modo == 'no_publica'
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add registro/meta_prueba_no_publica.json estado/operaciones.jsonl 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "prueba no pública de Meta ${{ github.run_id }}" && git pull --rebase -q && git push)

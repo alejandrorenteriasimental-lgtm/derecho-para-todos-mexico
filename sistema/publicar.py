@@ -85,7 +85,19 @@ class Graph:
 
 # ---------------- libro de operaciones ----------------
 def marca(pieza_id, huella):
+    """Identificador interno de la operación (libro). Ya NO se agrega al texto público (28-10: el responsable aprobó los
+    textos exactos; una etiqueta «#dpt-…» visible no forma parte de lo aprobado)."""
     return f"#dpt-{pieza_id.lower()}-{huella[:8]}"
+
+
+def firma(texto):
+    """Lo que identifica una publicación en la página: su texto, normalizado (cada pieza aprobada tiene un texto único)."""
+    import re as _re
+    return _re.sub(r"\s+", " ", (texto or "")).strip()[:240]
+
+
+def coincide(texto_remoto, texto):
+    return bool(texto) and firma(texto_remoto).startswith(firma(texto)[:200])
 
 
 def registrar(evento, libro=None):
@@ -120,12 +132,12 @@ def modo_operacion(env=os.environ):
 
 
 # ---------------- consulta remota ----------------
-def buscar_en_pagina(g, page, etiqueta, paginas=4):
+def buscar_en_pagina(g, page, texto, paginas=4):
     url = f"{page}/video_reels"; params = {"fields": "id,description,created_time", "limit": 50}
     for _ in range(paginas):
         d = g.get(url, **params)
         for v in d.get("data", []):
-            if etiqueta in (v.get("description") or ""):
+            if coincide(v.get("description"), texto):
                 return v["id"]
         url = d.get("paging", {}).get("next"); params = {}
         if not url: break
@@ -151,7 +163,7 @@ def estado_video(g, video_id):
 # ---------------- publicación ----------------
 def publicar_reel(pieza_id, mp4, descripcion, huella, programar_unix=None, modo=None, env=os.environ, http=http_real, libro=None):
     etiqueta = marca(pieza_id, huella)
-    texto = f"{descripcion}\n\n{etiqueta}"
+    texto = descripcion
     if modo is None:
         modo, motivo = modo_operacion(env)
     else:
@@ -178,7 +190,7 @@ def publicar_reel(pieza_id, mp4, descripcion, huella, programar_unix=None, modo=
         if est in ("PUBLICADO", "PROGRAMADO"):
             return confirmar(est, vid, "recuperada_por_estado")
         if est in ("ERROR", "INEXISTENTE"):
-            previo = buscar_en_pagina(g, page, etiqueta)
+            previo = buscar_en_pagina(g, page, texto)
             if previo: return confirmar("PUBLICADO", previo, "recuperada_por_marca")
             registrar({**base, "fase": "ABANDONADA", "video_id": vid, "motivo": f"sesión previa en estado {est}"}, libro)
             vid = None
@@ -188,7 +200,7 @@ def publicar_reel(pieza_id, mp4, descripcion, huella, programar_unix=None, modo=
             if not r.get("success"): raise ErrorGraph(200, None, f"subida no confirmada: {r}", transitorio=True)
             registrar({**base, "fase": "BYTES_SUBIDOS", "video_id": vid, "reanudada_desde": transferidos}, libro)
     else:
-        previo = buscar_en_pagina(g, page, etiqueta)
+        previo = buscar_en_pagina(g, page, texto)
         if previo:
             return confirmar("PUBLICADO", previo, "recuperada_por_marca")
 
@@ -238,14 +250,14 @@ def _multipart(campos, nombre_archivo, datos, tipo="image/png"):
     return b"".join(partes), f"multipart/form-data; boundary={b}"
 
 
-def buscar_publicacion(g, page, etiqueta):
+def buscar_publicacion(g, page, texto):
     for ruta in (f"{page}/scheduled_posts", f"{page}/posts"):
         try:
             d = g.get(ruta, fields="id,message", limit=50)
         except ErrorGraph:
             continue
         for p in d.get("data", []):
-            if etiqueta in (p.get("message") or ""):
+            if coincide(p.get("message"), texto):
                 return p["id"], ("PROGRAMADO" if "scheduled" in ruta else "PUBLICADO")
     return None, None
 
@@ -253,7 +265,7 @@ def buscar_publicacion(g, page, etiqueta):
 def publicar_imagen(pieza_id, png, texto, huella, programar_unix=None, modo=None, env=os.environ, http=http_real, libro=None):
     """Una sola llamada crea la publicación; por eso el riesgo de duplicado está en respuestas ambiguas:
     antes de cualquier intento se busca la marca en las publicaciones programadas y publicadas de la página."""
-    etiqueta = marca(pieza_id, huella); mensaje = f"{texto}\n\n{etiqueta}"
+    etiqueta = marca(pieza_id, huella); mensaje = texto
     if modo is None: modo, motivo = modo_operacion(env)
     else: motivo = "modo indicado por quien llama"
     base = {"pieza": pieza_id, "marca": etiqueta, "modo": modo, "formato": "imagen"}
@@ -264,7 +276,7 @@ def publicar_imagen(pieza_id, png, texto, huella, programar_unix=None, modo=None
     op = operacion(etiqueta, "real", libro) or {}
     if op.get("fase") == "CONFIRMADA":
         return {"estado": op["estado_remoto"], "post_id": op["post_id"], "marca": etiqueta, "origen": "libro"}
-    pid, est = buscar_publicacion(g, page, etiqueta)
+    pid, est = buscar_publicacion(g, page, mensaje)
     if pid:
         registrar({**base, "fase": "CONFIRMADA", "post_id": pid, "estado_remoto": est, "origen": "recuperada_por_marca"}, libro)
         return {"estado": est, "post_id": pid, "marca": etiqueta, "origen": "recuperada_por_marca"}

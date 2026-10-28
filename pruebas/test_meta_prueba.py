@@ -14,12 +14,13 @@ def falso(perms):
     return http
 
 
-def test_permisos_minimos_pasan():
-    assert M.probar("t", http=falso(["pages_show_list", "pages_read_engagement", "instagram_basic"]))["ok"]
+def test_permisos_de_publicacion_pasan():
+    """Desde el 28-10 el lanzamiento requiere los permisos de publicación (autorizados por el responsable)."""
+    assert M.probar("t", http=falso(["pages_show_list", "pages_read_engagement", "instagram_basic", "pages_manage_posts", "instagram_content_publish"]))["ok"]
 
 
-def test_permiso_de_publicacion_se_senala():
-    r = M.probar("t", http=falso(["pages_show_list", "pages_manage_posts"]))
+def test_falta_de_permiso_de_publicacion_se_senala():
+    r = M.probar("t", http=falso(["pages_show_list", "pages_read_engagement", "instagram_basic"]))
     assert not r["ok"] and any(c["resultado"] == "FALLA" and "publicación" in c["prueba"] for c in r["comprobaciones"])
 
 
