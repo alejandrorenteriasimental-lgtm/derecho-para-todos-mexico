@@ -15,13 +15,22 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿Cuántos días de permiso de paternidad te corresponden?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T18:05:25Z",
   "pieza_id": "I20261126-T025",
   "archivo": "2026-11-26_imagen_T025-piloto-2.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Te corresponden cinco días laborables con goce de sueldo por el nacimiento de tus hijos o ».\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "ffc7e68aaefb8413"
+  "huella_entrada": "ffc7e68aaefb8413",
+  "historial": [
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-28",
+      "motivo": "reabierta: el control exigía «Sí/No» o una lista cerrada de inicios en preguntas abiertas; corregido (verificador 0.5.3)",
+      "motivo_anterior": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[respuesta] La respuesta corta no contesta de forma directa (debe decir qué significa, cuánto, cuándo o cómo): «Te corresponden cinco días laborables con goce de sueldo por el nacimie"
+    }
+  ]
 }

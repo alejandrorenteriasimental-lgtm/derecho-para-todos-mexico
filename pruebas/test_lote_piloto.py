@@ -342,3 +342,18 @@ def test_ojo_que_repite_la_respuesta_se_detecta_al_redactar():
     assert any(e.startswith("[ojo]") for e in imagen.revision_previa(g))
     g["pieza"]["ojo"] = "También prohíbe la mutilación y los azotes."
     assert not any(e.startswith("[ojo]") for e in imagen.revision_previa(g))
+
+
+@pytest.mark.parametrize("tipo,pregunta,rc,bloquea", [
+    ("obligacion", "¿Cuántos días de permiso de paternidad te corresponden?", "Te corresponden cinco días laborables con goce de sueldo.", False),
+    ("derecho", "¿Cuánto tiempo puede retenerte el Ministerio Público?", "Hasta cuarenta y ocho horas; el plazo puede duplicarse en delincuencia organizada.", False),
+    ("derecho", "¿Cuánto tiempo puede retenerte el Ministerio Público?", "La Constitución establece reglas sobre la detención.", True),
+    ("legalidad", "¿Puedes hacerte justicia por tu propia mano?", "Hacerse justicia está prohibido.", True),
+    ("legalidad", "¿Puedes hacerte justicia por tu propia mano?", "No: nadie puede hacerse justicia por sí mismo.", False),
+])
+def test_respuesta_directa_segun_tipo(tipo, pregunta, rc, bloquea):
+    """28-10 (piloto-2): T025 y T061 se descartaron por exigir «Sí/No» o una lista cerrada de inicios."""
+    g = {"titulo": pregunta, "pregunta_original": pregunta, "tipo_pregunta": tipo, "razonamiento": {"respuesta_corta": rc},
+         "escenas": [{"tipo": "texto", "texto": rc}]}
+    h = [x for x in razonamiento.revisar(g, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
+    assert bool(h) == bloquea

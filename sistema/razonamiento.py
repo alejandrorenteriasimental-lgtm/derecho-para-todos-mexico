@@ -140,9 +140,15 @@ def revisar(g, textos, ia=None):
             tipo_p = tipo_pregunta(g.get("pregunta_original") or titulo, g.get("tipo_pregunta"))[0]
             sino = r"si|no|depende|en general|solo|depende de"
             directo = r"significa|es|son|consiste|se (le |les )?(presume|considera|entiende|refiere|trata)|al menos|antes|como minimo|minimo|debe|deben|tienes|tiene|en|a la|a las|al|el|la|los|las|se"
-            directa = {"definicion": rf"^({directo})\b", "obligacion": rf"^({sino}|{directo})\b", "procedimiento": rf"^({sino}|{directo})\b"}.get(tipo_p, rf"^({sino})\b")
-            if not re.match(directa, plano(rc)):
-                h("respuesta", "bloqueante", f"La respuesta corta no contesta de forma directa ({'debe empezar con Sí, No, Depende…' if tipo_p not in ('definicion', 'obligacion', 'procedimiento') else 'debe decir qué significa, cuánto, cuándo o cómo'}): «{rc[:90]}».")
+            # Sí/No/Depende solo se exige en preguntas cerradas; en las demás basta que no empiece con rodeos
+            # (28-10: «Te corresponden cinco días…» y «Hasta cuarenta y ocho horas…» se bloqueaban sin razón).
+            rodeo = r"^(la ley|la constitucion|el articulo|es importante|hay que|existen?|segun|de acuerdo)\b"
+            if tipo_p in ("legalidad", "general", "excepcion"):
+                mal = not re.match(rf"^({sino})\b", plano(rc))
+            else:
+                mal = bool(re.match(rodeo, plano(rc))) or (tipo_p == "definicion" and re.match(r"^(si|no)\b", plano(rc)))
+            if mal:
+                h("respuesta", "bloqueante", f"La respuesta corta no contesta de forma directa ({'debe empezar con Sí, No, Depende…' if tipo_p in ('legalidad', 'general', 'excepcion') else 'debe empezar por la respuesta, sin rodeos'}): «{rc[:90]}».")
             if clave and presentes < max(2, len(clave) // 2):
                 h("respuesta", "bloqueante", f"La respuesta corta no aparece en el contenido visible: «{rc[:90]}».")
 
