@@ -1,62 +1,50 @@
 {
  "solicitud": "2026-11-23_imagen_T016-piloto-1.json",
- "fecha": "2026-10-28T12:05:27+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Depende de los años de servicio: corresponden al menos d",
+ "fecha": "2026-10-28T12:39:48+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Al menos doce días laborables al cumplir más de un año de servicios, aumentando según los ».\"], \"visible\": \"  \\n   \\n Corresponde un periodo anual de vacaciones pagadas no inferior a doce días laborables, con incrementos de dos días por año hasta llegar a veinte y, desde el",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
-   "errores": [
-    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Corresponden al menos doce días laborables al cumplir más de un año de servicios, aumentan»."
-   ]
-  },
-  {
-   "etapa": "analisis",
-   "intento": 1,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible.",
-    "[vaguedad] Referencia vaga: «Este mínimo aumentará en dos días laborables por cada año subsecuente de servicios hasta a». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
-    "[sustento] «Este mínimo aumentará en dos días laborables por cada año subsecuente de servici» menciona un plazo (20 dia) que no aparece en los artículos citados."
+    "[cobertura] El análisis responde qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe («Corresponde un periodo anual de vacaciones pagadas no inferior a doce días laborables, con incrementos de dos días por año hasta llegar a veinte y, desde el sex»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n Depende de los años de servicio: corresponden al menos doce días laborables tras el primer año, aumentando progresivamente según la antigüedad. \n en ningún caso podrá ser inferior a doce días laborables \n Aplica al cumplir más de un año de servicios."
+   "visible": "  \n   \n Al menos doce días laborables al cumplir más de un año de servicios, aumentando según los años de trabajo acumulados. \n en ningún caso podrá ser inferior a doce días laborables \n Más de un año de servicios"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe («Corresponde un periodo anual de vacaciones pagadas no inferior a doce días laborables, con incrementos de dos días por año hasta llegar a veinte y, desde el sex»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": []
-    },
-    "conclusiones": [
-     {
-      "conclusion": "Las personas trabajadoras con más de un año de servicios tienen derecho a un periodo anual de vacaciones pagadas no inferior a doce días laborables, incrementándose con los años subsecuentes.",
-      "sostenida": "si",
-      "motivo": "El texto del artículo 76 de la LFT respalda explícitamente el derecho a un mínimo de doce días tras el primer año y el aumento progresivo."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Elemento 'contenido' en el razonamiento y la pieza en general",
-      "problema": "La pieza omite explicar la regla específica de aumento a partir del sexto año (dos días por cada cinco de servicios), lo cual es parte esencial del cálculo de vacaciones según el artículo 76.",
-      "correccion": "Incluir la regla de aumento para periodos posteriores al quinto año: 'A partir del sexto año, el periodo de vacaciones aumentará en dos días por cada cinco de servicios'."
-     }
-    ]
-   }
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Al menos doce días laborables al cumplir más de un año de servicios, aumentando según los »."
+   ],
+   "visible": "  \n   \n Corresponde un periodo anual de vacaciones pagadas no inferior a doce días laborables, con incrementos de dos días por año hasta llegar a veinte y, desde el sex \n en ningún caso podrá ser inferior a doce días laborables \n Más de un año de servicios"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Al menos doce días laborables al cumplir más de un año de servicios, aumentando según los »."
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Al menos doce días laborables al cumplir más de un año de servicios, aumentando según los »."
    ],
-   "visible": "  \n   \n Depende de los años de servicio: corresponden al menos doce días laborables tras el primer año, aumentando progresivamente. \n en ningún caso podrá ser inferior a doce días laborables, y que aumentará en dos días laborables \n Consulta la Ley Federal del Trabajo"
+   "visible": "  \n   \n Corresponde un periodo anual de vacaciones pagadas no inferior a doce días laborables, con incrementos de dos días por año hasta llegar a veinte y, desde el sex \n en ningún caso podrá ser inferior a doce días laborables \n Más de un año de servicios"
   }
  ]
 }

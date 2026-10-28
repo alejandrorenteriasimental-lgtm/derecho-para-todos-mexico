@@ -576,7 +576,7 @@
       "id": "I20261125-T028",
       "formato": "imagen",
       "huella": "35af711e8cc79a68ad2eff2acf5ded8388fa33b22c57c87b477ab6872e11fbbe",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T10:12:24+00:00",
@@ -628,6 +628,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T12:20:44+00:00",
           "motivo": "el guion cambió; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T12:40:38+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T12:40:41+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -637,6 +649,13 @@
         "tipo": "sustantivo",
         "desde": "2026-10-28T12:12:21+00:00",
         "verificador": "0.5.0"
+      },
+      "revision": {
+        "version": "92245bb80c8ddb27",
+        "huella_guion": "66d3518e5df53b17d3fbbb4e6e294d43c346833697b2ca404070dad5a99650c6",
+        "huella_archivo": "9da1d8f0ca50b0408981c7e047e77154995b9593e27a41d75848e994e170235c",
+        "preparada": "2026-10-28T12:40:41+00:00",
+        "canal": "chat"
       }
     },
     "R20261123-T031": {
