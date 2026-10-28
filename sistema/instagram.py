@@ -25,6 +25,12 @@ def _ig_id(g, page):
     return ig
 
 
+def detalle_contenedor(g, cid):
+    """Texto de estado de Meta para un contenedor fallido (p. ej. «Error: … 2207026»)."""
+    try: return g.get(cid, fields="status").get("status") or ""
+    except (ErrorGraph, SinRed) as e: return f"(sin detalle: {e})"
+
+
 def esperar_contenedor(g, cid, intentos=30, pausa=10, dormir=time.sleep):
     """FINISHED | ERROR | EXPIRED | IN_PROGRESS (tras agotar los intentos)."""
     for _ in range(intentos):
@@ -121,7 +127,7 @@ def publicar_ig(pieza_id, formato, archivo, texto, huella, modo=None, env=os.env
     est = esperar_contenedor(g, cid, dormir=dormir)
     if est != "FINISHED":
         registrar({**base, "fase": "FALLIDA" if est in ("ERROR", "EXPIRED") else "PROCESANDO", "contenedor": cid, "estado_contenedor": est}, libro)
-        raise ErrorGraph(200, None, f"contenedor {cid} en estado {est}", transitorio=(est == "IN_PROGRESS"))
+        raise ErrorGraph(200, None, f"contenedor {cid} en estado {est}: {detalle_contenedor(g, cid)}", transitorio=(est == "IN_PROGRESS"))
     registrar({**base, "fase": "PUBLICANDO", "contenedor": cid}, libro)
     try:
         r = g.post(f"{ig}/media_publish", timeout=120, creation_id=cid)
