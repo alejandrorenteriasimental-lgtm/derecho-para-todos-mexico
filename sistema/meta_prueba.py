@@ -50,4 +50,8 @@ if __name__ == "__main__":
     if not tok:
         print("Falta el secreto META_PAGE_TOKEN; no se hizo ninguna llamada."); sys.exit(0)
     r = probar(tok, os.environ.get("META_PAGE_ID"))
+    from datetime import datetime, timezone
+    r["fecha"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "registro", "meta_prueba_lectura.json")
+    with open(out, "w") as f: f.write(json.dumps(r, ensure_ascii=False, indent=1))
     print(json.dumps(r, ensure_ascii=False, indent=2)); sys.exit(0 if r["ok"] else 1)

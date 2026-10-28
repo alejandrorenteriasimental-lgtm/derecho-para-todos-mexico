@@ -36,7 +36,7 @@ jobs:
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
         run: python sistema/prueba_no_publica.py /tmp/p/I20261124-T073.png /tmp/p/R20261123-T031_final.mp4
       - name: Guardar resultado
-        if: always() && inputs.modo == 'no_publica'
+        if: always()
         run: |
           git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
           git add -A registro estado || true
