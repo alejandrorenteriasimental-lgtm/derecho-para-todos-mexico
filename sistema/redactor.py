@@ -94,7 +94,7 @@ class Biblioteca:
                 raise Descartada(f"{o['url']} no corresponde a «{o['documento']}»")
             self.docs[sigla] = (cab, cuerpo)
         cab, cuerpo = self.docs[sigla]
-        t = verificador.articulo_texto(cuerpo, numero, max_car=6000)
+        t = verificador.articulo_texto(cuerpo, numero, max_car=14000)   # LFT 132 fr. XXVII Bis empieza en el carácter 9568
         return limpiar_cortes(t, cuerpo) if t else t
 
 

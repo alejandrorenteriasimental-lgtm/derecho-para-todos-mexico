@@ -1,73 +1,92 @@
 {
-  "id": "piloto-1",
+  "id": "piloto-2",
   "activo": true,
-  "creado": "2026-10-27",
-  "max_por_formato": 3,
-  "nota": "Lote piloto (instrucción del responsable, 27-10-2026): hasta 3 Reels y 3 imágenes con pregunta precisa, tipo de pregunta fijado y fundamento federal claro y vigente. Mientras está activo, el ciclo no redacta otras solicitudes (quedan en espera, sin borrarse) y el planificador no crea nuevas. No se amplía el lote hasta medir sus resultados. Las fechas son las de la primera semana del lanzamiento objetivo (23-11-2026).",
+  "creado": "2026-10-28",
+  "max_por_formato": 4,
+  "nota": "Segundo lote (autorizado por el responsable el 28-10 08:50): misma metodología que piloto-1; completa el inventario de lanzamiento (7 Reels + 7 imágenes). Fechas: 26 a 29-11-2026. Preguntas con respuesta literal en un artículo federal; sin jurisprudencia.",
   "temas": [
     {
       "formato": "reel",
-      "fecha": "2026-11-23",
-      "tema_id": "T031",
+      "fecha": "2026-11-26",
+      "tema_id": "T061",
       "tipo_pregunta": "derecho",
-      "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
-      "fuentes_sugeridas": "CPEUM art. 23",
-      "motivo_seleccion": "Una sola norma constitucional, federal, vigente y de texto directo; sin variación estatal."
+      "pregunta": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+      "fuentes_sugeridas": "CPEUM art. 16",
+      "motivo_seleccion": "Art. 16: máximo 48 horas; se duplica solo en delincuencia organizada. Literal y federal."
     },
     {
       "formato": "reel",
-      "fecha": "2026-11-24",
+      "fecha": "2026-11-27",
+      "tema_id": "T010",
+      "tipo_pregunta": "derecho",
+      "pregunta": "¿Tienes derecho a guardar silencio si te detienen?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Art. 20, apartado B, fr. II: derecho a declarar o guardar silencio; no puede usarse en su perjuicio."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-11-28",
+      "tema_id": "T028",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿Tienes que demostrar que eres inocente?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Art. 20, apartado A, fr. V: la carga de la prueba corresponde a la parte acusadora; apartado B, fr. I: presunción de inocencia."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-11-29",
+      "tema_id": "T025",
+      "tipo_pregunta": "obligacion",
+      "pregunta": "¿Cuántas semanas de descanso por maternidad te corresponden?",
+      "fuentes_sugeridas": "LFT art. 170",
+      "motivo_seleccion": "Art. 170, fr. II: seis semanas antes y seis después del parto, con la transferencia que prevé el texto."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-26",
+      "tema_id": "T025",
+      "tipo_pregunta": "obligacion",
+      "plantilla": "dato",
+      "pregunta": "¿Cuántos días de permiso de paternidad te corresponden?",
+      "fuentes_sugeridas": "LFT art. 132",
+      "motivo_seleccion": "Art. 132, fr. XXVII Bis: cinco días laborables con goce de sueldo, por nacimiento o adopción. Respuesta corta para imagen."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-27",
       "tema_id": "T015",
       "tipo_pregunta": "obligacion",
-      "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+      "plantilla": "dato",
+      "pregunta": "¿Antes de qué fecha deben pagarte el aguinaldo?",
       "fuentes_sugeridas": "LFT art. 87",
-      "motivo_seleccion": "El art. 87 LFT fija plazo (antes del 20 de diciembre), monto mínimo (15 días de salario) y la parte proporcional. Se reformula la pregunta del catálogo («¿llega después del 20 de diciembre?»), que se descartó porque el texto no fija la consecuencia del pago tardío."
-    },
-    {
-      "formato": "reel",
-      "fecha": "2026-11-25",
-      "tema_id": "T093",
-      "tipo_pregunta": "legalidad",
-      "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
-      "fuentes_sugeridas": "CPEUM art. 17",
-      "motivo_seleccion": "Prohibición expresa del art. 17 constitucional y derecho a tribunales; federal y vigente."
+      "motivo_seleccion": "Complementa el Reel aprobado R20261124-T015 con otro ángulo (la fecha); reutiliza su fuente verificada."
     },
     {
       "formato": "imagen",
-      "fecha": "2026-11-23",
-      "tema_id": "T084",
-      "tipo_pregunta": "legalidad",
-      "plantilla": "concepto",
-      "pregunta": "¿En México existe la pena de muerte?",
-      "fuentes_sugeridas": "CPEUM art. 22",
-      "motivo_seleccion": "Sustituye a T016 (vacaciones), descartada 4 veces el 27 y 28-10: la respuesta completa (12 días, aumentos y la condición de más de un año) no cupo en 60 palabras con la cita, y la imagen nunca dijo a la vez la cifra y la condición. T084: prohibición literal del art. 22 constitucional, federal y vigente; sin jurisprudencia ni historia legislativa."
-    },
-    {
-      "formato": "imagen",
-      "fecha": "2026-11-24",
-      "tema_id": "T073",
+      "fecha": "2026-11-28",
+      "tema_id": "T010",
       "tipo_pregunta": "legalidad",
       "plantilla": "mito_realidad",
-      "pregunta": "¿Te pueden meter a la cárcel por deber dinero?",
-      "fuentes_sugeridas": "CPEUM art. 17",
-      "motivo_seleccion": "Art. 17 constitucional: nadie puede ser aprisionado por deudas de carácter puramente civil. La condición «puramente civil» es obligatoria en la respuesta."
+      "pregunta": "¿Lo que calles puede usarse en tu contra?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Art. 20, apartado B, fr. II: el silencio no podrá ser utilizado en su perjuicio. Mito frecuente de las películas."
     },
     {
       "formato": "imagen",
-      "fecha": "2026-11-25",
-      "tema_id": "T028",
-      "tipo_pregunta": "definicion",
-      "plantilla": "concepto",
-      "pregunta": "¿Qué significa la presunción de inocencia?",
-      "fuentes_sugeridas": "CPEUM art. 20",
-      "motivo_seleccion": "Definición constitucional (art. 20, apartado B, fr. I); federal y vigente."
+      "fecha": "2026-11-29",
+      "tema_id": "T093",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "mito_realidad",
+      "pregunta": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+      "fuentes_sugeridas": "CPEUM art. 17",
+      "motivo_seleccion": "Complementa el Reel aprobado R20261125-T093; art. 17: nadie puede hacerse justicia por sí mismo ni ejercer violencia para reclamar su derecho."
     }
   ],
-  "cambios": [
+  "lotes_anteriores": [
     {
-      "fecha": "2026-10-28",
-      "cambio": "imagen T016 → T084",
-      "motivo": "tema no viable en formato de imagen tras 4 descartes por cobertura y longitud"
+      "id": "piloto-1",
+      "cerrado": "2026-10-28",
+      "resultado": "3 Reels y 3 imágenes aprobados (T031, T015, T093; T073, T028, T084); T016 sustituida por T084"
     }
   ]
 }

@@ -6,6 +6,7 @@ name: ciclo-produccion
 on:
   schedule:
     - cron: "17 9 * * *"      # 03:17 hora de Ciudad de México (UTC-6): redacta de madrugada, cuando Gemini se satura menos; la publicación se programa a las 09:00 y 19:00
+    - cron: "17 21 * * *"     # 15:17 CDMX: segundo ciclo mientras se forma el inventario de lanzamiento (28-10); usa la cuota restante del día de Google. Quitarlo al lanzar si los minutos lo exigen (guardia: 1,700/mes)
   workflow_dispatch: {}
 concurrency:                  # nunca dos ciclos a la vez
   group: ciclo-produccion

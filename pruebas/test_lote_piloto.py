@@ -53,7 +53,7 @@ def test_pregunta_plan_usa_la_pregunta_fijada():
 
 # ---------- lote piloto ----------
 def test_lote_real_respeta_el_tope_y_fija_pregunta_tipo_y_fuentes():
-    assert LOTE_REAL["max_por_formato"] <= 3
+    assert LOTE_REAL["max_por_formato"] <= 4
     for t in LOTE_REAL["temas"]:
         assert t["pregunta"].startswith("¿") and t["tipo_pregunta"] in razonamiento.TIPOS_VALIDOS and t["fuentes_sugeridas"]
         assert razonamiento.tipo_pregunta(t["pregunta"], t["tipo_pregunta"])[0] == t["tipo_pregunta"]
@@ -66,10 +66,11 @@ def test_planificar_con_lote_no_crea_temas_del_catalogo(tmp_path, monkeypatch):
     monkeypatch.setattr(planificador, "SOLICITUDES", tmp_path / "sol")
     monkeypatch.setattr(planificador, "RAIZ", tmp_path)
     plan = planificador.planificar()
-    assert len([s for s in plan if s["formato"] == "reel"]) == 3 and len([s for s in plan if s["formato"] == "imagen"]) == 3
-    assert all(s["lote"] == "piloto-1" and s["pregunta"] for s in plan)
+    n = LOTE_REAL["max_por_formato"]
+    assert len([s for s in plan if s["formato"] == "reel"]) == n and len([s for s in plan if s["formato"] == "imagen"]) == n
+    assert all(s["lote"] == LOTE_REAL["id"] and s["pregunta"] for s in plan)
     archivos = sorted(p.name for p in (tmp_path / "sol").glob("*.json"))
-    assert len(archivos) == 6 and not any("T999" in a for a in archivos)
+    assert len(archivos) == 2 * n and not any("T999" in a for a in archivos)
     planificador.planificar()                                         # idempotente
     assert sorted(p.name for p in (tmp_path / "sol").glob("*.json")) == archivos
     for f in (tmp_path / "sol").glob("*_imagen_*.json"):
@@ -88,7 +89,7 @@ def test_ciclo_solo_redacta_solicitudes_del_lote(raiz_vacia, monkeypatch):
         vistas.append(s["archivo"]); raise redactor.Descartada("prueba", categoria="juridico")
     monkeypatch.setattr(redactor, "generar", generar)
     ciclo.ciclo("t", lambda u, timeout=60: (200, "application/pdf", b""), env={})
-    assert vistas and all("piloto-1" in v for v in vistas), vistas
+    assert vistas and all(LOTE_REAL["id"] in v for v in vistas), vistas
     assert json.loads((sol / "2026-10-20_reel_T068v2.json").read_text())["estado"] == "PENDIENTE_GUION"   # en espera, intacta
 
 
