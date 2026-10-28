@@ -209,7 +209,8 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_met
             _publicar(c, t, modo, env, http_meta, resumen, retomar=True)
         # 3–5) una pieza por formato
         for formato in ("reel", "imagen"):
-            for t in cola.siguientes(c, "PENDIENTE", n=por_formato + (1 if formato == "imagen" else 0), formato=formato):   # una imagen tarda segundos: caben la nueva y una re-producción
+            extra = min(2, sum(1 for x in c["trabajos"].values() if x["estado"] == "PENDIENTE" and x.get("formato", "reel") == formato and _reproduccion(x)))
+            for t in cola.siguientes(c, "PENDIENTE", n=por_formato + extra, formato=formato):   # las re-producciones (edición, verificador nuevo) no quitan el lugar a una pieza nueva
                 pid = t["id"]
                 try:
                     g = _guion(pid)
