@@ -357,3 +357,14 @@ def test_respuesta_directa_segun_tipo(tipo, pregunta, rc, bloquea):
          "escenas": [{"tipo": "texto", "texto": rc}]}
     h = [x for x in razonamiento.revisar(g, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
     assert bool(h) == bloquea
+
+
+def test_minimo_legal_no_se_presenta_como_cifra_exacta():
+    """I20261127-T015 (28-10): «equivale a quince días de salario» — la ley dice «quince días de salario, por lo menos»."""
+    cita = "que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos"
+    base = {"pregunta_original": "¿Antes de qué fecha deben pagarte el aguinaldo?", "tipo_pregunta": "obligacion",
+            "razonamiento": {"reglas": [{"fuente": "F1", "cita_literal": cita}], "elementos": []}}
+    mal = {**base, "escenas": [{"tipo": "texto", "texto": "Debe pagarse antes del 20 de diciembre; equivale a quince días de salario."}]}
+    bien = {**base, "escenas": [{"tipo": "texto", "texto": "Debe pagarse antes del 20 de diciembre y equivale, por lo menos, a quince días de salario."}]}
+    assert any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(mal, {}))
+    assert not any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(bien, {}))

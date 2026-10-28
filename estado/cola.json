@@ -1041,7 +1041,7 @@
       "id": "I20261127-T015",
       "formato": "imagen",
       "huella": "22a167a483b0235e0facc3d0b1b9fe9eecced13a9942a20a98dcf7f5e74dac3f",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:11:02+00:00",
@@ -1057,25 +1057,24 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-28T18:14:50+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:20:40+00:00",
+          "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
-      "revision": {
-        "version": "bdf24c31525d9d8f",
-        "huella_guion": "1ebd4aad6978eafda0da3537fdd6fbfed500af4c5d186c8ad20d3e8204ecdf94",
-        "huella_archivo": "8e24e78ae5d91849cb6e8bb9d223337e31a6c2fd1cf74846d8116797b1e55600",
-        "preparada": "2026-10-28T18:14:50+00:00",
-        "canal": "chat"
-      }
+      "retencion": null
     },
     "R20261127-T010": {
       "id": "R20261127-T010",
       "formato": "reel",
       "huella": "718f7d72f2f2a8c7d4ae3095d280eb51d0115ab45b26c5b25cb0f8732a6d537a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T18:11:02+00:00",
@@ -1091,19 +1090,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-28T18:13:24+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T18:20:40+00:00",
+          "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
-      "revision": {
-        "version": "430170757def7558",
-        "huella_guion": "3c09cbd74568a6f87566748419807fb305428166e1c862fb8f6e66d6a24a1c82",
-        "huella_archivo": "a36125e04b6844bf24d234d1dc66bc6ce78012748c3c94ae4714e60eb2741bf3",
-        "preparada": "2026-10-28T18:13:24+00:00",
-        "canal": "chat"
-      }
+      "retencion": null
     }
   }
 }

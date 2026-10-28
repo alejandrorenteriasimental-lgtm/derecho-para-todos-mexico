@@ -327,6 +327,19 @@ def revisar_cobertura(g, textos):
     if tipo == "definicion" and re.match(r"\s*(si|no)\b", rc):
         H.append({"regla": "cobertura", "severidad": "bloqueante",
                   "detalle": "La pregunta pide una definición y la respuesta empieza con «Sí» o «No»: contesta qué significa (I20261125-T028, 28-10)."})
+    # mínimos legales: si la ley dice «por lo menos / al menos / como mínimo», la pieza no puede presentar la cifra como exacta
+    # (I20261127-T015, 28-10: «equivale a quince días de salario» sin «por lo menos»)
+    if visible is not None:
+        citas = [str(x.get("cita_literal", "")) for x in [*(rz.get("reglas") or []), *(rz.get("elementos") or [])] if isinstance(x, dict)]
+        cifras = set()
+        for c in citas:
+            pc = plano(c)
+            if re.search(r"\b(por lo menos|al menos|como minimo|minimo)\b", pc): cifras |= {n for n, _ in _plazos(pc)}
+        for frase in re.split(r"(?<=[.;!?])\s+|\n", cuerpo_visible(g)):
+            pf = plano(frase)
+            if any(n in cifras for n, _ in _plazos(pf)) and not re.search(r"\b(por lo menos|al menos|como minimo|minimo|minima|min|o mas|desde)\b", pf):
+                H.append({"regla": "minimo", "severidad": "bloqueante",
+                          "detalle": f"«{frase.strip()[:90]}» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."})
     for k in req:
         e = els.get(k)
         if not e:
