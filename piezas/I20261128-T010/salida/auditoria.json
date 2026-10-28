@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1126 KB"
+      "detalle": "1112 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "34 palabras sin cabecera ni pie"
+      "detalle": "29 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "94% de 34 palabras reconocidas"
+      "detalle": "94% de 31 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -53,7 +53,7 @@
     {
       "control": "No es casi idéntica a una imagen anterior",
       "resultado": "APROBADO",
-      "detalle": "distancia mínima 76/256"
+      "detalle": "distancia mínima 29/256"
     }
   ],
   "juridica": {
@@ -91,11 +91,11 @@
     "titulo": "¿Lo que calles se usa en tu contra?",
     "plantilla": "mito_realidad",
     "archivo": "I20261128-T010.png",
-    "sha256": "fa1f47dfff3e0a79965670b512992d4d4024b25a8d0bb3fbb7e32bf33bb56aeb",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000001111111001111111111111100111111111111110011111111111111000111111111111100000000000011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "bae674a363acda83b8cb2af2670d6bc63c786734ed106671262f36c17276ac4c",
+    "sha256": "2b6abf882b0bf98c5a08775eb20c208141e5f31fbd9ddbbc6ab1b7e901f50b94",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000001111111001111111111111100111111111111110011111111111111000111111111111100011001001111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "01ba40559a2958df2a0c683b13da70e6476184e6d2bd2e3d96bdbe238d4683cf",
     "texto_alternativo": "Imagen tipo mito y realidad que responde si lo que calles puede usarse en tu contra, basado en la Constitución.",
-    "copy": "Frecuentemente existe la duda sobre si el silencio ante las autoridades puede interpretarse como una aceptación de responsabilidad. Sin embargo, las normas protegen a quienes enfrentan una detención.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 20, toda persona imputada tiene derecho «a guardar silencio, el cual no podrá ser utilizado en su perjuicio» desde el momento de su detención.\n\nGuarda y comparte esta información de «Aquí Dice la Ley» para que más personas conozcan sus derechos fundamentales.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Lo que calles se usa en tu contra?\n\nNo. El artículo 20, apartado B, fracción II, de la Constitución reconoce a toda persona imputada el derecho a declarar o a guardar silencio, «el cual no podrá ser utilizado en su perjuicio».\n\nGuarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +106,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-28T19:49:18+00:00",
+    "fecha": "2026-10-28T20:04:33+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

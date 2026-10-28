@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "54.2 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "54.2 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "39 bloques"
+      "detalle": "27 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "5a45d273fc0508d5"
+      "detalle": "598ecad8ef7591f7"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261129-T084",
     "titulo": "¿En México te pueden castigar con azotes?",
-    "fecha": "2026-10-28T19:47:27+00:00",
-    "sha256": "5a45d273fc0508d5b892d036035ed6d987a8c3cac8df26bf2ef6a1364540c521",
-    "duracion_s": 54.2,
+    "fecha": "2026-10-28T20:03:42+00:00",
+    "sha256": "598ecad8ef7591f7d3343a7c14c43b672f0962057577f76aaa1199e93eda745e",
+    "duracion_s": 38.0,
     "estado": "APTO",
-    "huella_guion": "bedf41d920fef3eef9b0d2cb300d5b48126bd913b5bd1f62b1fd674d018b0dcf",
+    "huella_guion": "437baf1deb001a8b12436d0ccd8bf401163ba5ab5d3285263f3c41f2e3aefcf0",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 35.2,
-      "musica": 3.0,
-      "render_video": 64.3,
-      "mezcla_audio": 2.7,
-      "auditoria_tecnica": 14.7
+      "narracion": 23.7,
+      "musica": 1.9,
+      "render_video": 46.5,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 10.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.0,
-      "computo_equivalente_runner_usd": 0.012,
+      "computo_minutos": 1.4,
+      "computo_equivalente_runner_usd": 0.0084,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1627,
-    "caracteres_narrados": 823
+    "frames": 1139,
+    "caracteres_narrados": 538
   }
 }

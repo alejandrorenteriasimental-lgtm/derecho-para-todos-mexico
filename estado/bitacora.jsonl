@@ -394,3 +394,14 @@
 {"ts": "2026-10-28T19:58:25+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T19:58:25+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T19:58:25+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-28T20:01:34+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T20:03:42+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.0"}
+{"ts": "2026-10-28T20:03:46+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T20:03:46+00:00", "evento": "revision_preparada", "pieza": "R20261129-T084", "version": "af3ae99607cea843", "canal": "chat"}
+{"ts": "2026-10-28T20:04:33+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T20:04:37+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T20:04:37+00:00", "evento": "revision_preparada", "pieza": "I20261128-T010", "version": "2cce600fded43168", "canal": "chat"}
+{"ts": "2026-10-28T20:05:23+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T20:05:27+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T20:05:27+00:00", "evento": "revision_preparada", "pieza": "I20261129-T093", "version": "86764ed03be7c890", "canal": "chat"}
+{"ts": "2026-10-28T20:05:27+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 3, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 3}

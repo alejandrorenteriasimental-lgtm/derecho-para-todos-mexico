@@ -1348,7 +1348,7 @@
       "id": "I20261128-T010",
       "formato": "imagen",
       "huella": "bae674a363acda83b8cb2af2670d6bc63c786734ed106671262f36c17276ac4c",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:08:36+00:00",
@@ -1388,12 +1388,31 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T19:58:25+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T20:04:33+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T20:04:37+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "2cce600fded43168",
+        "huella_guion": "c5ff4c311a254ebbae51a2c53a639d78b7d43293559c50e8c135e2a60b710da0",
+        "huella_archivo": "2b6abf882b0bf98c5a08775eb20c208141e5f31fbd9ddbbc6ab1b7e901f50b94",
+        "preparada": "2026-10-28T20:04:37+00:00",
+        "canal": "chat"
+      }
     },
     "R20261126-T061": {
       "id": "R20261126-T061",
@@ -1463,7 +1482,7 @@
       "id": "I20261129-T093",
       "formato": "imagen",
       "huella": "74d4500c731a2d0043abba8509ee0d0e60888e929b65363899fab31eb8923d12",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:44:02+00:00",
@@ -1485,18 +1504,37 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T19:58:25+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T20:05:23+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T20:05:27+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "86764ed03be7c890",
+        "huella_guion": "139244c47cae2f91330796c0567e84cd8d0764a3b48bfeb8051203b667e9d7ac",
+        "huella_archivo": "d72ee0547c82080f8cf9f758464f2cb45ffaa9bbd6d6e6f5e162c8af683320e3",
+        "preparada": "2026-10-28T20:05:27+00:00",
+        "canal": "chat"
+      }
     },
     "R20261129-T084": {
       "id": "R20261129-T084",
       "formato": "reel",
       "huella": "bedf41d920fef3eef9b0d2cb300d5b48126bd913b5bd1f62b1fd674d018b0dcf",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:44:02+00:00",
@@ -1518,12 +1556,31 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T19:58:25+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T20:03:42+00:00",
+          "motivo": "38.0"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T20:03:46+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "af3ae99607cea843",
+        "huella_guion": "e8fe5089cb6ecd45dce4a06b950310aeb80e651d1427d3508c9778a24801f0bf",
+        "huella_archivo": "598ecad8ef7591f7d3343a7c14c43b672f0962057577f76aaa1199e93eda745e",
+        "preparada": "2026-10-28T20:03:46+00:00",
+        "canal": "chat"
+      }
     }
   }
 }
