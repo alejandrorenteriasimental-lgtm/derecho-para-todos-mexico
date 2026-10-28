@@ -169,3 +169,18 @@
 {"ts": "2026-10-27T18:47:51+00:00", "pieza": "I20261124-T073", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
 {"ts": "2026-10-27T18:47:51+00:00", "evento": "revision_preparada", "pieza": "I20261124-T073", "version": "738d51c31c1c3b32", "canal": "chat"}
 {"ts": "2026-10-27T18:47:51+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 2, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
+{"ts": "2026-10-28T10:04:33+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T10:05:10+00:00", "evento": "redactada", "pieza": "R20261123-T031", "solicitud": "2026-11-23_reel_T031-piloto-1.json"}
+{"ts": "2026-10-28T10:07:30+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-23_imagen_T016-piloto-1.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Este derecho se adquiere una vez que la persona "}
+{"ts": "2026-10-28T10:12:24+00:00", "evento": "redactada", "pieza": "I20261125-T028", "solicitud": "2026-11-25_imagen_T028-piloto-1.json"}
+{"ts": "2026-10-28T10:12:24+00:00", "pieza": "I20261124-T073", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: César Alejandro Rentería (chat, 27-10-2026 15:13 CDMX) 2026-10-27T21:13:33+00:00 versión 738d51c31c1c3b32 (chat)"}
+{"ts": "2026-10-28T10:12:24+00:00", "pieza": "I20261125-T028", "evento": "encolado"}
+{"ts": "2026-10-28T10:12:24+00:00", "pieza": "R20261123-T031", "evento": "encolado"}
+{"ts": "2026-10-28T10:16:02+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "PRODUCIDO", "motivo": "57.5"}
+{"ts": "2026-10-28T10:16:06+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T10:16:06+00:00", "evento": "revision_preparada", "pieza": "R20261123-T031", "version": "60ad95fd4df65490", "canal": "chat"}
+{"ts": "2026-10-28T10:18:27+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-28T10:18:31+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: falla técnica de la imagen"}
+{"ts": "2026-10-28T10:18:31+00:00", "evento": "alerta", "mensaje": "I20261125-T028 retenido: RETENIDO"}
+{"ts": "2026-10-28T10:18:31+00:00", "pieza": "I20261124-T073", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-28T10:18:31+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 2, "retenidas": 1, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 1}

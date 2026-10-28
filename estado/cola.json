@@ -451,7 +451,7 @@
       "id": "I20261124-T073",
       "formato": "imagen",
       "huella": "a53dafc7b3846f2c471f7f9ec5937051e0c255594af8106de8ec3f398b9a1ac7",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-27T18:22:28+00:00",
@@ -485,6 +485,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-27T18:47:51+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-28T10:12:24+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 27-10-2026 15:13 CDMX) 2026-10-27T21:13:33+00:00 versión 738d51c31c1c3b32 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-28T10:18:31+00:00",
+          "motivo": "PUBLICAR distinto de 1"
         }
       ],
       "error": null,
@@ -496,6 +508,83 @@
         "huella_guion": "8d88ad0dffe78240fd2174cf4ec030a2281cec2a46ff3ca20e05da9808ab8337",
         "huella_archivo": "470bc5a586b4a7213adefc11ad93f76fd03dd45b2c7f2176d8a8bf6028f95e14",
         "preparada": "2026-10-27T18:47:51+00:00",
+        "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261124-T073",
+        "decision": "APROBADA",
+        "version": "738d51c31c1c3b32",
+        "huella_guion": "8d88ad0dffe78240fd2174cf4ec030a2281cec2a46ff3ca20e05da9808ab8337",
+        "huella_archivo": "470bc5a586b4a7213adefc11ad93f76fd03dd45b2c7f2176d8a8bf6028f95e14",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 27-10-2026 15:13 CDMX)"
+        },
+        "fecha": "2026-10-27T21:13:33+00:00",
+        "canal": "chat",
+        "nota": "Aprobada en el chat. Observación conocida: no explica qué deudas quedan fuera de «puramente civil»."
+      }
+    },
+    "I20261125-T028": {
+      "id": "I20261125-T028",
+      "formato": "imagen",
+      "huella": "b8922888d83115d452d87b9b465cf8836e36fa137ee18844bd9e2c5103de2a6a",
+      "estado": "RETENIDO",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T10:12:24+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T10:18:27+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T10:18:31+00:00",
+          "motivo": "RETENIDO: falla técnica de la imagen"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-10-28T10:18:31+00:00"
+      }
+    },
+    "R20261123-T031": {
+      "id": "R20261123-T031",
+      "formato": "reel",
+      "huella": "7c965f8fad9fa024c3d61671527c6b99f0832339a6b402b7aee489d3a5e07338",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T10:12:24+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T10:16:02+00:00",
+          "motivo": "57.5"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T10:16:06+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "60ad95fd4df65490",
+        "huella_guion": "21e2d8efe217b65abd5afd26ebf01167b94b7a67066e954918326d674841e5f8",
+        "huella_archivo": "67d55477b5b86dfb3f1c355b730485e324b7fc917d40428ec5336829b86c8b2d",
+        "preparada": "2026-10-28T10:16:06+00:00",
         "canal": "chat"
       }
     }

@@ -1,0 +1,210 @@
+{
+  "id": "R20261123-T031",
+  "formato": "reel",
+  "titulo": "¿Te pueden volver a juzgar por el mismo delito?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T031",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "23",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 23",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "23",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "ya sea que en el juicio se le absuelva o se le condene.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 23",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te has preguntado si alguien puede enfrentar dos juicios distintos por exactamente el mismo delito?",
+      "titulo": [
+        "¿DOS VECES",
+        "POR LO MISMO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "La respuesta es no. En el sistema jurídico mexicano, la Constitución establece que nadie puede ser juzgado dos veces por el mismo delito, sea que se le absuelva o se le condene.",
+      "titulo": [
+        "RESPUESTA:",
+        "NO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Este derecho fundamental se encuentra en el artículo 23 de nuestra ley fundamental, que dice: \"Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene.\"",
+      "etiqueta": "Constitución, artículo 23",
+      "cita": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución prohíbe que una persona sea juzgada dos veces por el mismo delito.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esta protección garantiza que no se repita un proceso por la misma conducta delictiva, bajo estas condiciones:",
+      "items": [
+        "Si hubo condena previa",
+        "Si hubo absolución previa"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La prohibición de doble juicio aplica tanto si el resultado fue absolución como si fue condena.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, no te pueden volver a juzgar por el mismo delito. Esta regla asegura que, una vez dictada una sentencia, el Estado no pueda iniciar un nuevo juicio penal por ese mismo hecho.",
+      "titulo": [
+        "PROTECCIÓN",
+        "CONSTITUCIONAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden volver a juzgar por el mismo delito?",
+    "concepto_central": "juzgar dos veces por el mismo delito",
+    "respuesta_corta": "No: la Constitución establece que nadie puede ser juzgado dos veces por el mismo delito, sea que se le absuelva o se le condene.",
+    "reglas": [
+      {
+        "conclusion": "Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene.",
+        "condiciones": [
+          "Aplica sin importar si el juicio anterior concluyó con una sentencia absolutoria o condenatoria."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "23"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se garantiza que una persona no sea juzgada en dos ocasiones por la misma conducta delictiva.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser juzgado dos veces por el mismo delito, ya sea que en el juicio se le absuelva o se le condene."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La prohibición opera de igual manera tanto si la persona resultó absuelta como si fue condenada.",
+        "fuente": "F1",
+        "cita_literal": "ya sea que en el juicio se le absuelva o se le condene."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "motivo": "El texto del artículo 23 constitucional no contempla ninguna excepción a la prohibición."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial disponible se limita al artículo 23 de la Constitución Política de los Estados Unidos Mexicanos; no se deben inferir ni señalar excepciones procesales no contenidas expresamente en este texto."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T10:05:10+00:00",
+    "solicitud": "2026-11-23_reel_T031-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 1,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 2,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te pueden volver a juzgar por el mismo delito?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser sometido a un segundo juicio por el mismo delito del que ya fue juzgado.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la prohibición contenida en el artículo 23 constitucional."
+            },
+            {
+              "conclusion": "La prohibición de doble juicio aplica tanto si el resultado fue absolución como si fue condena.",
+              "sostenida": "si",
+              "motivo": "El texto oficial establece explícitamente que la prohibición aplica 'ya sea que en el juicio se le absuelva o se le condene'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

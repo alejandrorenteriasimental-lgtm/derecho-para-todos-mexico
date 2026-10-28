@@ -1,0 +1,226 @@
+{
+  "id": "I20261125-T028",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿Qué significa la presunción de inocencia?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T028",
+  "pieza": {
+    "titular": "¿Qué significa la presunción de inocencia?",
+    "bajada": "Es el derecho de la persona imputada a ser considerada inocente mientras no se declare su responsabilidad por sentencia del juez.",
+    "cita": "A que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+    "ojo": "Quien acusa debe probar la culpabilidad.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 20"
+  },
+  "copy": "En el sistema de justicia de México, la Constitución Política de los Estados Unidos Mexicanos protege a quienes enfrentan un proceso penal. El artículo 20 establece que toda persona imputada tiene derecho a que se presuma su inocencia.\n\nLa Constitución establece este derecho para toda persona imputada, sin especificar un inicio o fin temporal distinto al de la sentencia que declara la responsabilidad. Esto asegura un trato de inocente durante el procedimiento.\n\nPara que se dicte una sanción, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora. El juez solo condenará cuando exista convicción de la culpabilidad del procesado, según la fracción VIII del apartado A.\n\nConocer estos principios ayuda a entender cómo funciona el sistema jurídico. Guarda esta información o compártela con quien necesite conocer sus derechos fundamentales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre el concepto de presunción de inocencia en México, explicando que toda persona imputada es inocente hasta que una sentencia judicial diga lo contrario.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A que se presuma su inocencia mientras no se declare su resp onsabilidad mediante sentencia emitida por el juez de la causa;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "El juez sólo condenará cuando exista convicción de la culpabilidad del procesado;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La persona imputada debe ser tratada como inocente hasta que el juez dicte una sentencia de responsabilidad.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Corresponde a quien acusa presentar las pruebas para demostrar que alguien es culpable.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El juzgador requiere estar convencido de la culpabilidad para poder emitir una condena.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué significa la presunción de inocencia?",
+    "concepto_central": "presunción de inocencia",
+    "respuesta_corta": "Depende: es el derecho de la persona imputada a ser considerada inocente mientras no se declare su responsabilidad mediante sentencia del juez.",
+    "reglas": [
+      {
+        "conclusion": "La persona imputada tiene derecho a que se presuma su inocencia mientras no exista una sentencia del juez de la causa que declare su responsabilidad, correspondiendo la carga de la prueba de la culpabilidad a la parte acusadora.",
+        "fuente": "F1",
+        "cita_literal": "A que se presuma su inocencia mientras no se declare su resp onsabilidad mediante sentencia emitida por el juez de la causa;",
+        "condiciones": [
+          "Aplica durante el proceso penal para toda persona imputada mientras no se dicte sentencia de responsabilidad."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Consiste en el derecho de toda persona imputada a que se presuma su inocencia a lo largo del proceso penal mientras un juez no declare su responsabilidad mediante sentencia.",
+        "fuente": "F1",
+        "cita_literal": "A que se presuma su inocencia mientras no se declare su resp onsabilidad mediante sentencia emitida por el juez de la causa;"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "Los textos suministrados no establecen consecuencias ni reglas de la presunción de inocencia en materia laboral, civil o administrativa, únicamente en el proceso penal."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T10:12:24+00:00",
+    "solicitud": "2026-11-25_imagen_T028-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 4
+      },
+      "llamadas_ia_total": 9,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Qué significa la presunción de inocencia?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Es el derecho de toda persona a ser considerada inocente durante su proceso penal hasta qu»."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La persona imputada tiene derecho a que se presuma su inocencia mientras no exista una sentencia del juez de la causa que declare su responsabilidad.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente este derecho en el artículo 20, apartado B, fracción I."
+            },
+            {
+              "conclusion": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, apartado A, fracción V, establece textualmente que la carga de la prueba corresponde a la parte acusadora."
+            },
+            {
+              "conclusion": "El juez solo podrá emitir una condena cuando exista una convicción plena sobre la culpabilidad tras analizar los elementos presentados en la audiencia de juicio.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, apartado A, fracción VIII, señala que el juez solo condenará cuando exista convicción de la culpabilidad, y la fracción III indica que para la sentencia solo se consideran pruebas desahogadas en juicio."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Párrafo 2: 'Es una protección fundamental que rige desde el inicio de la investigación hasta que se dicta una resolución final.'",
+              "problema": "El texto constitucional no define explícitamente el inicio y fin temporal de la presunción de inocencia con esas palabras exactas, aunque se infiere del proceso penal. Es una interpretación que, aunque lógica, no está citada literalmente.",
+              "correccion": "Ajustar la redacción para que se limite a lo que dice la norma: 'La Constitución establece este derecho para toda persona imputada, sin especificar un inicio o fin temporal distinto al de la sentencia que declara la responsabilidad'."
+            },
+            {
+              "donde": "Párrafo 4: 'El juez solo podrá emitir una condena cuando exista una convicción plena sobre la culpabilidad tras analizar los elementos presentados en la audiencia de juicio.'",
+              "problema": "La pieza menciona 'convicción plena', pero el texto oficial solo dice 'convicción de la culpabilidad'. Agregar adjetivos no presentes en la ley puede alterar el estándar probatorio.",
+              "correccion": "Eliminar la palabra 'plena' para ajustarse estrictamente a la cita literal del artículo 20, apartado A, fracción VIII."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La persona imputada tiene derecho a que se presuma su inocencia mientras no exista una sentencia del juez de la causa que declare su responsabilidad.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente este derecho en el apartado B, fracción I."
+            },
+            {
+              "conclusion": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, apartado A, fracción V, establece expresamente que la carga de la prueba corresponde a la parte acusadora."
+            },
+            {
+              "conclusion": "El juez solo condenará cuando exista convicción de la culpabilidad del procesado.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, apartado A, fracción VIII, señala textualmente que el juez solo condenará cuando exista convicción de la culpabilidad."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

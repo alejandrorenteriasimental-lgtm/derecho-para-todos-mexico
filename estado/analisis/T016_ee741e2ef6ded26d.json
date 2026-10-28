@@ -1,0 +1,73 @@
+{
+ "tema_id": "T016",
+ "pregunta": "¿Cuántos días de vacaciones te corresponden?",
+ "fecha": "2026-10-28T10:05:50+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántos días de vacaciones te corresponden?",
+  "concepto_central": "periodo anual de vacaciones pagadas",
+  "respuesta_corta": "Depende de tu antigüedad: tienes derecho a un mínimo de doce días laborables tras el primer año de servicios, aumentando según los años que lleves trabajando.",
+  "reglas": [
+   {
+    "conclusion": "Al cumplir el primer año de servicios, te corresponden al menos doce días laborables de vacaciones, los cuales aumentarán dos días por cada año siguiente hasta llegar a veinte.",
+    "fuente": "F1",
+    "cita_literal": "disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables, y que aumentará en dos días laborables, hasta llegar a veinte",
+    "condiciones": [
+     "Tener más de un año de servicios"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Una vez que alcanzas el sexto año de servicios, el aumento de los días de vacaciones cambia a una frecuencia de cada cinco años.",
+    "fuente": "F1",
+    "cita_literal": "A partir del sexto año, el periodo de vacaciones aumentará en dos días por cada cinco de servicios.",
+    "condiciones": [
+     "Haber cumplido al menos seis años de servicios"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Tienes derecho a tomar al menos doce días de tu periodo vacacional de forma continua, aunque puedes distribuirlos de otra forma si así lo prefieres.",
+    "fuente": "F2",
+    "cita_literal": "la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido",
+    "condiciones": [
+     "Que el periodo total correspondiente sea igual o mayor a doce días"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El periodo mínimo es de doce días laborables tras el primer año, con incrementos anuales de dos días hasta llegar a veinte, y posteriormente incrementos cada cinco años.",
+    "fuente": "F1",
+    "cita_literal": "en ningún caso podrá ser inferior a doce días laborables, y que aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Este derecho se adquiere una vez que la persona trabajadora ha acumulado más de un año de servicios para el empleador.",
+    "fuente": "F1",
+    "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Los días de descanso semanal o días festivos no deben descontarse del total de vacaciones.",
+    "condicion": "Debido a que la norma especifica que los días son laborables",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "días laborables",
+    "b": "días naturales",
+    "diferencia": "La ley establece el cálculo sobre días laborables, lo que significa que solo se cuentan los días en los que normalmente se trabaja, excluyendo descansos obligatorios."
+   }
+  ],
+  "limites": "Los textos no mencionan el pago de la prima vacacional, el plazo para solicitar las vacaciones ni qué sucede si se trabaja menos de un año.",
+  "fuentes_irrelevantes": []
+ }
+}
