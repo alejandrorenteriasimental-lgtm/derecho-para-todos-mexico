@@ -84,6 +84,20 @@ def hora_utc(fecha, hora):
     return datetime.fromisoformat(fecha).replace(hour=h, minute=m, tzinfo=MX).astimezone(timezone.utc)
 
 
+AUT = RAIZ / "data" / "lanzamiento.json"
+
+
+def con_autorizacion(env, archivo=None):
+    """Variables del repositorio primero; si no están, la autorización registrada en data/lanzamiento.json."""
+    archivo = archivo or AUT
+    try: a = json.loads(Path(archivo).read_text())
+    except (OSError, ValueError): return dict(env)
+    out = dict(env)
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS"):
+        if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
+    return out
+
+
 def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descargar, carpeta="/tmp/publicacion"):
     ahora = ahora or datetime.now(timezone.utc)
     modo, motivo = publicar.modo_operacion(env)
@@ -107,11 +121,13 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                         r = publicar.publicar_reel(e["pieza"], f, texto(e["pieza"]), huella, int(cuando.timestamp()), modo=modo, env=env, http=http)
                     acc["facebook"] = r.get("estado")
                 # Instagram: publicar al llegar la hora (sin programación por API)
-                if timedelta(0) <= ahora - cuando <= VENTANA_IG:
+                if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG:
+                    acc["instagram"] = "REEL_IG_EN_ESPERA"     # carga de Reels a IG pendiente de resolver (28-10); no detiene lo demás
+                elif timedelta(0) <= ahora - cuando <= VENTANA_IG:
                     f = bajar(e, carpeta, env); comprobar(e, f)
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)
                     acc["instagram"] = r.get("estado")
-                elif ahora - cuando > VENTANA_IG and modo == "real":
+                elif ahora - cuando > VENTANA_IG and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") == "1"):
                     op = publicar.operacion(publicar.marca(e["pieza"], e["version"]) + "-ig", "real") or {}
                     if op.get("fase") != "CONFIRMADA": acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
             except NoAprobada as x:
@@ -130,7 +146,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
 
 if __name__ == "__main__":
     ahora = datetime.fromisoformat(sys.argv[1]).replace(tzinfo=timezone.utc) if len(sys.argv) > 1 else None
-    r = ejecutar(ahora)
+    r = ejecutar(ahora, env=con_autorizacion(os.environ))
     out = RAIZ / "registro" / "publicacion.jsonl"; out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("a") as h: h.write(json.dumps(r, ensure_ascii=False) + "\n")
     print(json.dumps(r, ensure_ascii=False, indent=1))

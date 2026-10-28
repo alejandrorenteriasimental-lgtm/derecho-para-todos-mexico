@@ -24,6 +24,7 @@ jobs:
           PUBLICAR: ${{ vars.PUBLICAR }}
           LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}
           PAUSA_PUBLICACION: ${{ vars.PAUSA_PUBLICACION }}
+          IG_REELS: ${{ vars.IG_REELS }}        # 1 cuando la carga de Reels a Instagram supere la prueba no pública
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           META_IG_ID: "17841456017575703"

@@ -55,3 +55,21 @@ def test_instagram_solo_en_su_ventana(ent, monkeypatch):
 def test_pausa_por_variable(ent):
     r = publicador.ejecutar(datetime(2026, 11, 1, tzinfo=timezone.utc), env={"PAUSA_PUBLICACION": "1"}, bajar=ent["bajar"])
     assert r["pausa"] and not r["acciones"]
+
+
+def test_reel_de_instagram_en_espera_no_detiene_lo_demas(ent, monkeypatch):
+    """28-10: la carga de Reels a IG aún falla; sin IG_REELS=1 el Reel no se intenta en IG y nada se pausa."""
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    hora = publicador.hora_utc("2026-11-23", "19:00")
+    r = publicador.ejecutar(hora.replace(minute=5), env={}, bajar=ent["bajar"])
+    ig = [a for a in r["acciones"] if "instagram" in a]
+    assert len(ig) == 1 and ig[0]["pieza"] == "R20261123-T031" and ig[0]["instagram"] == "REEL_IG_EN_ESPERA" and not r.get("pausa")
+    r2 = publicador.ejecutar(hora.replace(minute=5), env={"IG_REELS": "1"}, bajar=ent["bajar"])
+    assert [a["instagram"] for a in r2["acciones"] if "instagram" in a] == ["SIMULADO"]
+
+
+def test_autorizacion_registrada_y_variable_tiene_prioridad(tmp_path):
+    a = tmp_path / "l.json"; a.write_text(json.dumps({"PUBLICAR": "1", "LANZAMIENTO_AUTORIZADO": "SI", "IG_REELS": "0"}))
+    e = publicador.con_autorizacion({"META_PAGE_ID": "P", "META_PAGE_TOKEN": "T"}, a)
+    assert publicar.modo_operacion(e)[0] == "real"
+    assert publicar.modo_operacion(publicador.con_autorizacion({"PUBLICAR": "0", "META_PAGE_ID": "P", "META_PAGE_TOKEN": "T"}, a))[0] == "simulacion"

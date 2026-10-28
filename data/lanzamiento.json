@@ -1,0 +1,10 @@
+{
+ "descripcion": "Autorización de lanzamiento del responsable. La publicación real requiere PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI; se registran aquí (auditable en git) porque las variables del repositorio no se pueden fijar desde la sesión. Paro de emergencia: variable PAUSA_PUBLICACION=1 o estado/pausa_publicacion.json (docs/paro_emergencia.md); para revocar, poner PUBLICAR en 0.",
+ "PUBLICAR": "1",
+ "LANZAMIENTO_AUTORIZADO": "SI",
+ "IG_REELS": "0",
+ "autorizado_por": "César Alejandro Rentería Simental (responsable)",
+ "fecha_autorizacion": "2026-10-28T17:18-06:00",
+ "texto_autorizacion": "autorizo todo",
+ "alcance": "Calendario data/calendario_lanzamiento.json (23-11 al 29-11-2026), solo versiones aprobadas exactas. Facebook: imágenes y Reels programados. Instagram: imágenes a la hora; Reels con copia de audio a 128 kbps (autorizada) cuando la carga a IG supere la prueba no pública (IG_REELS=1)."
+}
