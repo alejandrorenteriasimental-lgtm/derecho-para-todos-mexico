@@ -1,85 +1,142 @@
 {
-  "id": "piloto-2",
+  "id": "lote-3",
   "activo": true,
   "creado": "2026-10-28",
-  "max_por_formato": 4,
-  "nota": "Segundo lote (autorizado por el responsable el 28-10 08:50): misma metodología que piloto-1; completa el inventario de lanzamiento (7 Reels + 7 imágenes). Fechas: 26 a 29-11-2026. Preguntas con respuesta literal en un artículo federal; sin jurisprudencia.",
+  "max_por_formato": 7,
+  "nota": "Semana 2 (30-11 al 06-12-2026), continuidad tras el lanzamiento. Misma metodología de los pilotos: pregunta con respuesta literal en un artículo federal verificado, sin jurisprudencia. Revisión humana obligatoria.",
   "temas": [
     {
       "formato": "reel",
-      "fecha": "2026-11-26",
-      "tema_id": "T061",
+      "fecha": "2026-11-30",
+      "tema_id": "T014",
       "tipo_pregunta": "derecho",
-      "pregunta": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
-      "fuentes_sugeridas": "CPEUM art. 16",
-      "motivo_seleccion": "Art. 16: máximo 48 horas; se duplica solo en delincuencia organizada. Literal y federal."
+      "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
+      "fuentes_sugeridas": "LFT art. 48",
+      "motivo_seleccion": "Reinstalación o indemnización de tres meses de salario, ante la Autoridad Conciliadora o el Tribunal."
     },
     {
       "formato": "reel",
-      "fecha": "2026-11-27",
-      "tema_id": "T010",
-      "tipo_pregunta": "derecho",
-      "pregunta": "¿Tienes derecho a guardar silencio si te detienen?",
-      "fuentes_sugeridas": "CPEUM art. 20",
-      "motivo_seleccion": "Art. 20, apartado B, fr. II: derecho a declarar o guardar silencio; no puede usarse en su perjuicio."
-    },
-    {
-      "formato": "reel",
-      "fecha": "2026-11-28",
-      "tema_id": "T028",
-      "tipo_pregunta": "legalidad",
-      "pregunta": "¿Tienes que demostrar que eres inocente?",
-      "fuentes_sugeridas": "CPEUM art. 20",
-      "motivo_seleccion": "Art. 20, apartado A, fr. V: la carga de la prueba corresponde a la parte acusadora; apartado B, fr. I: presunción de inocencia."
-    },
-    {
-      "formato": "reel",
-      "fecha": "2026-11-29",
-      "tema_id": "T084",
-      "tipo_pregunta": "legalidad",
-      "pregunta": "¿En México te pueden castigar con azotes o tormento?",
-      "fuentes_sugeridas": "CPEUM art. 22",
-      "motivo_seleccion": "Sustituye al Reel de maternidad (T025, descartado el 28-10): la transferencia de semanas tiene varias condiciones (médico, patrón, naturaleza del trabajo) y el modelo presentó la ampliación como regla general. Art. 22: prohibición literal de penas de muerte, mutilación, azotes, palos y tormento."
-    },
-    {
-      "formato": "imagen",
-      "fecha": "2026-11-26",
-      "tema_id": "T025",
+      "fecha": "2026-12-01",
+      "tema_id": "T019",
       "tipo_pregunta": "obligacion",
-      "plantilla": "dato",
-      "pregunta": "¿Cuántos días de permiso de paternidad te corresponden?",
-      "fuentes_sugeridas": "LFT art. 132",
-      "motivo_seleccion": "Art. 132, fr. XXVII Bis: cinco días laborables con goce de sueldo, por nacimiento o adopción. Respuesta corta para imagen."
+      "pregunta": "¿El precio que te muestran debe incluir impuestos y comisiones?",
+      "fuentes_sugeridas": "LFPC art. 7 Bis",
+      "motivo_seleccion": "Monto total visible con impuestos, comisiones y cualquier cargo."
     },
     {
-      "formato": "imagen",
-      "fecha": "2026-11-27",
-      "tema_id": "T015",
-      "tipo_pregunta": "obligacion",
-      "plantilla": "dato",
-      "pregunta": "¿Antes de qué fecha deben pagarte el aguinaldo?",
+      "formato": "reel",
+      "fecha": "2026-12-02",
+      "tema_id": "T030",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+      "fuentes_sugeridas": "CPEUM art. 14",
+      "motivo_seleccion": "Irretroactividad: a ninguna ley se dará efecto retroactivo en perjuicio de persona alguna."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-12-03",
+      "tema_id": "T089",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿Te toca aguinaldo si dejas tu trabajo antes de diciembre?",
       "fuentes_sugeridas": "LFT art. 87",
-      "motivo_seleccion": "Complementa el Reel aprobado R20261124-T015 con otro ángulo (la fecha); reutiliza su fuente verificada."
+      "motivo_seleccion": "Parte proporcional aunque ya no labore en la fecha de pago."
     },
     {
-      "formato": "imagen",
-      "fecha": "2026-11-28",
-      "tema_id": "T010",
+      "formato": "reel",
+      "fecha": "2026-12-04",
+      "tema_id": "T061",
       "tipo_pregunta": "legalidad",
-      "plantilla": "mito_realidad",
-      "pregunta": "¿Lo que calles puede usarse en tu contra?",
-      "fuentes_sugeridas": "CPEUM art. 20",
-      "motivo_seleccion": "Art. 20, apartado B, fr. II: el silencio no podrá ser utilizado en su perjuicio. Mito frecuente de las películas."
+      "pregunta": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+      "fuentes_sugeridas": "CPEUM art. 16",
+      "motivo_seleccion": "Flagrancia: cualquier persona puede detener y debe poner sin demora a disposición de la autoridad."
     },
     {
-      "formato": "imagen",
-      "fecha": "2026-11-29",
+      "formato": "reel",
+      "fecha": "2026-12-05",
       "tema_id": "T093",
       "tipo_pregunta": "legalidad",
-      "plantilla": "mito_realidad",
-      "pregunta": "¿Puedes cobrarte una deuda por tu propia cuenta?",
+      "pregunta": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
       "fuentes_sugeridas": "CPEUM art. 17",
-      "motivo_seleccion": "Complementa el Reel aprobado R20261125-T093; art. 17: nadie puede hacerse justicia por sí mismo ni ejercer violencia para reclamar su derecho."
+      "motivo_seleccion": "El servicio de los tribunales es gratuito; prohibidas las costas judiciales."
+    },
+    {
+      "formato": "reel",
+      "fecha": "2026-12-06",
+      "tema_id": "T028",
+      "tipo_pregunta": "legalidad",
+      "pregunta": "¿Vale una confesión hecha sin abogado?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Apartado B, fr. II: la confesión sin asistencia del defensor carece de todo valor probatorio."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-11-30",
+      "tema_id": "T014",
+      "tipo_pregunta": "obligacion",
+      "plantilla": "dato",
+      "pregunta": "¿De cuánto es la indemnización por despido injustificado?",
+      "fuentes_sugeridas": "LFT art. 48",
+      "motivo_seleccion": "Tres meses de salario (art. 48)."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-01",
+      "tema_id": "T019",
+      "tipo_pregunta": "obligacion",
+      "plantilla": "concepto",
+      "pregunta": "¿Qué debe incluir el precio que te muestran?",
+      "fuentes_sugeridas": "LFPC art. 7 Bis",
+      "motivo_seleccion": "Impuestos, comisiones, intereses, seguros y cualquier otro cargo."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-02",
+      "tema_id": "T030",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "mito_realidad",
+      "pregunta": "¿Una ley nueva puede aplicarse en tu contra?",
+      "fuentes_sugeridas": "CPEUM art. 14",
+      "motivo_seleccion": "Irretroactividad en perjuicio."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-03",
+      "tema_id": "T089",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "mito_realidad",
+      "pregunta": "¿Si renuncias pierdes tu aguinaldo?",
+      "fuentes_sugeridas": "LFT art. 87",
+      "motivo_seleccion": "Parte proporcional (art. 87)."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-04",
+      "tema_id": "T031",
+      "tipo_pregunta": "obligacion",
+      "plantilla": "dato",
+      "pregunta": "¿Cuántas instancias puede tener un juicio penal?",
+      "fuentes_sugeridas": "CPEUM art. 23",
+      "motivo_seleccion": "Ningún juicio criminal deberá tener más de tres instancias."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-05",
+      "tema_id": "T093",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "concepto",
+      "pregunta": "¿Las costas judiciales están permitidas en México?",
+      "fuentes_sugeridas": "CPEUM art. 17",
+      "motivo_seleccion": "Servicio gratuito; costas prohibidas."
+    },
+    {
+      "formato": "imagen",
+      "fecha": "2026-12-06",
+      "tema_id": "T028",
+      "tipo_pregunta": "legalidad",
+      "plantilla": "mito_realidad",
+      "pregunta": "¿Una confesión sin abogado tiene valor?",
+      "fuentes_sugeridas": "CPEUM art. 20",
+      "motivo_seleccion": "Apartado B, fr. II."
     }
   ],
   "lotes_anteriores": [
@@ -87,13 +144,11 @@
       "id": "piloto-1",
       "cerrado": "2026-10-28",
       "resultado": "3 Reels y 3 imágenes aprobados (T031, T015, T093; T073, T028, T084); T016 sustituida por T084"
-    }
-  ],
-  "cambios": [
+    },
     {
-      "fecha": "2026-10-28",
-      "cambio": "Reel T025 → T084",
-      "motivo": "tema con demasiadas condiciones para el formato; error del modelo en la redacción"
+      "id": "piloto-2",
+      "cerrado": "2026-10-28",
+      "resultado": "4 Reels y 4 imágenes aprobados (T061, T010, T028, T084; T025, T015, T010, T093); Reel T025 sustituido por T084"
     }
   ]
 }

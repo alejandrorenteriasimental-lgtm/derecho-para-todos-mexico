@@ -53,7 +53,7 @@ def test_pregunta_plan_usa_la_pregunta_fijada():
 
 # ---------- lote piloto ----------
 def test_lote_real_respeta_el_tope_y_fija_pregunta_tipo_y_fuentes():
-    assert LOTE_REAL["max_por_formato"] <= 4
+    assert LOTE_REAL["max_por_formato"] <= 7
     for t in LOTE_REAL["temas"]:
         assert t["pregunta"].startswith("¿") and t["tipo_pregunta"] in razonamiento.TIPOS_VALIDOS and t["fuentes_sugeridas"]
         assert razonamiento.tipo_pregunta(t["pregunta"], t["tipo_pregunta"])[0] == t["tipo_pregunta"]
