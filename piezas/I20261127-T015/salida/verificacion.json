@@ -1,10 +1,10 @@
 {
-  "decision": "APTA",
+  "decision": "RETENER",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-28T18:13:24+00:00",
+      "consultado": "2026-10-28T18:52:37+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -18,7 +18,7 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-10-28T18:13:45+00:00",
+      "consultado": "2026-10-28T18:52:53+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -48,5 +48,11 @@
       "duda": null
     }
   ],
-  "razonamiento": []
+  "razonamiento": [
+    {
+      "regla": "cobertura",
+      "severidad": "bloqueante",
+      "detalle": "El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a todos los trabajadores, incluidos los que no hayan cumplido el año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible."
+    }
+  ]
 }

@@ -1,0 +1,202 @@
+{
+  "id": "R20261128-T028",
+  "formato": "reel",
+  "titulo": "¿Tienes que demostrar que eres inocente?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T028",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Tienes que demostrar que eres inocente?",
+      "titulo": [
+        "¿TIENES QUE",
+        "DEMOSTRAR",
+        "TU INOCENCIA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+      "titulo": [
+        "CARGA DE LA",
+        "PRUEBA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución establece que la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+      "etiqueta": "Constitución, art. 20",
+      "cita": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Toda persona tiene derecho a que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa.",
+      "titulo": [
+        "DERECHO A LA",
+        "PRESUNCIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes que demostrar que eres inocente?",
+    "concepto_central": "Presunción de inocencia",
+    "respuesta_corta": "No, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.",
+    "reglas": [
+      {
+        "conclusion": "La obligación de demostrar la culpabilidad recae en la parte acusadora y no en la persona imputada.",
+        "fuente": "F1",
+        "cita_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+        "condiciones": [
+          "conforme lo establezca el tipo penal"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      },
+      {
+        "conclusion": "Toda persona imputada tiene derecho a que se presuma su inocencia durante el proceso.",
+        "fuente": "F1",
+        "cita_literal": "A que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa",
+        "condiciones": [
+          "mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que la parte acusadora debe demostrar la culpabilidad y la persona conserva su presunción de inocencia hasta que un juez emita sentencia.",
+        "fuente": "F1",
+        "cita_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "presunción de inocencia",
+        "b": "declaración de inocencia definitiva",
+        "diferencia": "La presunción de inocencia es el derecho a ser tratado como inocente mientras no se declare la responsabilidad mediante sentencia."
+      }
+    ],
+    "limites": "Los textos oficiales no detallan los pasos procedimentales específicos que realiza la parte acusadora para cumplir con la carga de la prueba fuera de los principios constitucionales."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T18:51:19+00:00",
+    "solicitud": "2026-11-28_reel_T028-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tienes que demostrar que eres inocente?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Tienes que demostrar que eres inocente?\n\nNo, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[condiciones] Generalización: «La Constitución Política de los Estados Unidos Mexicanos protege a toda persona imputada a» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 20 («…n como prueba aquellas que hayan sido desahogadas en la audiencia de juicio la ley establecera las excepciones y…»).",
+          "[condiciones] Generalización: «Además, durante el proceso penal, la persona imputada cuenta con derechos fundamentales pa» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 20 («…n como prueba aquellas que hayan sido desahogadas en la audiencia de juicio la ley establecera las excepciones y…»).",
+          "[condiciones] Frase absoluta «La Constitución Política de los Estados Unidos Mexicanos protege a toda persona » sobre una regla condicionada de F1 («…n como prueba aquellas que hayan sido desahogadas en la audiencia de juicio la ley establecera las excepciones y…»)."
+        ],
+        "visible": "  \n ¿Tienes que demostrar que eres inocente ante un procedimiento penal en México? Muchas personas tienen esta duda cuando enfrentan una acusación legal. \n ¿TIENES QUE \n DEMOSTRAR QUE \n ERES INOCENTE? \n No, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal. Esto significa que la persona acusada no tiene la obligación de probar su inocencia. \n CARGA DE LA \n PRUEBA \n La Constitución Política de los Estados Unidos Mexicanos protege a toda persona imputada al señalar textualmente lo siguiente:: La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal. \n La "
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La obligación de demostrar la culpabilidad recae en la parte acusadora y no en la persona imputada.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, fracción A, inciso V de la Constitución establece que la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora."
+            },
+            {
+              "conclusion": "Toda persona imputada tiene derecho a que se presuma su inocencia durante el proceso.",
+              "sostenida": "si",
+              "motivo": "El artículo 20, fracción B, inciso I garantiza el derecho a la presunción de inocencia mientras no se declare la responsabilidad mediante sentencia."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

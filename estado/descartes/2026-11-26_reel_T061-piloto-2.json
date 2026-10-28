@@ -1,21 +1,53 @@
 {
  "solicitud": "2026-11-26_reel_T061-piloto-2.json",
- "fecha": "2026-10-28T18:06:51+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Hasta cuarenta y ocho horas, plazo que puede duplicarse en los casos previstos como delinc».\"]}",
+ "fecha": "2026-10-28T18:49:19+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho h» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que s",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
-   "errores": [
-    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «El Ministerio Público puede retener a un indiciado hasta por cuarenta y ocho horas, plazo »."
-   ]
+   "reutilizado": true,
+   "errores": []
   },
   {
-   "etapa": "analisis",
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "escena 0: línea de título demasiado larga para pantalla («EL MINISTERIO PÚBLICO?»)",
+    "[condiciones] Generalización: «La ley establece claramente el límite de tiempo que una persona puede estar retenida por l» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Generalización: «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho h» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «La ley establece claramente el límite de tiempo que una persona puede estar rete» sobre una regla condicionada de F1 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «La ley establece claramente el límite de tiempo que una persona puede estar rete» sobre una regla condicionada de F2 («…rsonas para cometer delitos en forma permanente o reiterada en los terminos de la ley de la materia ningun indiciado podra ser retenido por el ministe…»).",
+    "[condiciones] Frase absoluta «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarent» sobre una regla condicionada de F1 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarent» sobre una regla condicionada de F2 («…rsonas para cometer delitos en forma permanente o reiterada en los terminos de la ley de la materia ningun indiciado podra ser retenido por el ministe…»).",
+    "[vaguedad] Referencia vaga: «En ese plazo debe cumplirse una de estas dos acciones:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n ¿Te preguntas cuánto tiempo puede durar una retención? \n ¿CUÁNTO TIEMPO \n PUEDE RETENERTE \n EL MINISTERIO PÚBLICO? \n Por un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada. \n PLAZO MÁXIMO \n DE RETENCIÓN \n La ley establece claramente el límite de tiempo que una persona puede estar retenida por la autoridad ministerial: Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial \n Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que"
+  },
+  {
+   "etapa": "redaccion",
    "intento": 1,
-   "errores": [
-    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Hasta cuarenta y ocho horas, plazo que puede duplicarse en los casos previstos como delinc»."
-   ]
+   "errores_esquema": [
+    "escena 0: línea de título demasiado larga para pantalla («EL MINISTERIO PÚBLICO?»)",
+    "[condiciones] Generalización: «La Constitución establece el límite de tiempo que dura la retención para un indiciado: Nin» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Generalización: «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho h» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «La Constitución establece el límite de tiempo que dura la retención para un indi» sobre una regla condicionada de F1 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarent» sobre una regla condicionada de F1 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[vaguedad] Referencia vaga: «En ese plazo, la autoridad debe cumplir una de estas acciones:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n ¿Cuánto tiempo puede retenerte el Ministerio Público? \n ¿CUÁNTO TIEMPO \n PUEDE RETENERTE \n EL MINISTERIO PÚBLICO? \n Por un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada. \n PLAZO MÁXIMO \n DE RETENCIÓN \n La Constitución establece el límite de tiempo que dura la retención para un indiciado: Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial \n Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[condiciones] Generalización: «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho h» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 16 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarent» sobre una regla condicionada de F1 («…iga a la accion de la justicia este plazo podra prorrogarse siempre y cuando el ministerio publico acredite que subsisten las causas que le di eron or…»).",
+    "[condiciones] Frase absoluta «Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarent» sobre una regla condicionada de F2 («…rsonas para cometer delitos en forma permanente o reiterada en los terminos de la ley de la materia ningun indiciado podra ser retenido por el ministe…»).",
+    "[vaguedad] Referencia vaga: «En ese plazo obligatorio la autoridad debe cumplir con las siguientes acciones establecida». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+    "[vaguedad] Referencia vaga: «este plazo podrá duplicarse». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+    "[sustento] «48 HORAS» menciona un plazo (48 hora) que no aparece en los artículos citados."
+   ],
+   "visible": "  \n ¿Cuánto tiempo puede durar una retención ministerial? \n ¿CUÁNTO TIEMPO \n TE PUEDE \n RETENER? \n Por un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada. \n MÁXIMO \n 48 HORAS \n La Constitución establece un límite temporal preciso. Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial. \n Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial \n En ese pl"
   }
  ]
 }

@@ -1,0 +1,51 @@
+{
+ "tema_id": "T028",
+ "pregunta": "¿Tienes que demostrar que eres inocente?",
+ "fecha": "2026-10-28T18:49:47+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes que demostrar que eres inocente?",
+  "concepto_central": "Presunción de inocencia",
+  "respuesta_corta": "No, la carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora.",
+  "reglas": [
+   {
+    "conclusion": "La obligación de demostrar la culpabilidad recae en la parte acusadora y no en la persona imputada.",
+    "fuente": "F1",
+    "cita_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal.",
+    "condiciones": [
+     "conforme lo establezca el tipo penal"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Toda persona imputada tiene derecho a que se presuma su inocencia durante el proceso.",
+    "fuente": "F1",
+    "cita_literal": "A que se presuma su inocencia mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa",
+    "condiciones": [
+     "mientras no se declare su responsabilidad mediante sentencia emitida por el juez de la causa"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La consecuencia jurídica es que la parte acusadora debe demostrar la culpabilidad y la persona conserva su presunción de inocencia hasta que un juez emita sentencia.",
+    "fuente": "F1",
+    "cita_literal": "La carga de la prueba para demostrar la culpabilidad corresponde a la parte acusadora, conforme lo establezca el tipo penal."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "presunción de inocencia",
+    "b": "declaración de inocencia definitiva",
+    "diferencia": "La presunción de inocencia es el derecho a ser tratado como inocente mientras no se declare la responsabilidad mediante sentencia."
+   }
+  ],
+  "limites": "Los textos oficiales no detallan los pasos procedimentales específicos que realiza la parte acusadora para cumplir con la carga de la prueba fuera de los principios constitucionales.",
+  "fuentes_irrelevantes": []
+ }
+}
