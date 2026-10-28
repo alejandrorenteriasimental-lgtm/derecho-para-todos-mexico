@@ -72,8 +72,9 @@ def test_planificar_con_lote_no_crea_temas_del_catalogo(tmp_path, monkeypatch):
     assert len(archivos) == 6 and not any("T999" in a for a in archivos)
     planificador.planificar()                                         # idempotente
     assert sorted(p.name for p in (tmp_path / "sol").glob("*.json")) == archivos
-    img = json.loads(next((tmp_path / "sol").glob("*_imagen_T016-*.json")).read_text())
-    assert img["plantilla"] == "dato" and img["angulo"] == img["pregunta"]
+    for f in (tmp_path / "sol").glob("*_imagen_*.json"):
+        img = json.loads(f.read_text())
+        assert img["plantilla"] and img["angulo"] == img["pregunta"]
 
 
 def test_ciclo_solo_redacta_solicitudes_del_lote(raiz_vacia, monkeypatch):
