@@ -199,3 +199,13 @@ def test_cita_casi_literal_se_sustituye_por_el_texto_oficial():
     m2 = {"elementos": [{"elemento": "plazo", "fuente": "F1", "cita_literal": "tienes un año para presentar la demanda ante el juez de lo civil"}]}
     redactor._citas_exactas(m2, fz)
     assert "cita_literal_original" not in m2["elementos"][0]            # no inventa una equivalencia
+
+
+def test_cita_textual_de_la_ley_no_es_vaguedad():
+    """I20261201-T019 (28-10): «Dicho monto deberá incluir impuestos, comisiones…» es LFPC 7 Bis literal; no es una
+    alusión vaga a un plazo o monto sin nombrar. La misma frase sin respaldo textual sigue siendo vaga."""
+    txt = json.loads((AQUI.parent / "registro" / "textos" / "LFPC_7_Bis.json").read_text())["texto"]
+    frase = "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional."
+    assert R.vaguedades(frase)                       # sin la ley: alusión sin nombrar
+    assert not R.vaguedades(frase, [txt])            # reproduce la ley citada: no es vaga
+    assert R.vaguedades("Ese plazo se cuenta desde que lo pides.", [txt])

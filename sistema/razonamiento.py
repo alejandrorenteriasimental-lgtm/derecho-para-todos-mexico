@@ -252,7 +252,7 @@ def revisar(g, textos, ia=None):
         for x in revisar_cobertura(g, textos):
             H.append(x)
     acompana = cuerpo + "\n" + (g.get("copy") or "")       # el texto que acompaña también lo lee el público
-    for x in vaguedades(acompana):
+    for x in vaguedades(acompana, [t for t in textos.values() if t]):
         h("vaguedad", "bloqueante", x)
     for x in afirmaciones_temporales(acompana, g):
         h("sustento", "bloqueante", x)
@@ -410,12 +410,14 @@ VAGOS = (
 CONCRETOS = r"\b(tribunal|tribunales|juez|jueza|centro de conciliacion|centros de conciliacion|profeco|procuraduria|ministerio publico|fiscalia|condusef|demanda|demandar|denuncia|denunciar|queja|amparo|conciliacion|reinstalacion|indemnizacion|nulidad)\b"
 
 
-def vaguedades(cuerpo):
-    """Frases que aluden a un recurso, vía o autoridad sin nombrarlos («existe un recurso legal específico»)."""
+def vaguedades(cuerpo, textos_oficiales=()):
+    """Frases que aluden a un recurso, vía o autoridad sin nombrarlos («existe un recurso legal específico»).
+    Una frase que reproduce textualmente la ley citada no es una alusión vaga (I20261201-T019, LFPC 7 Bis, 28-10)."""
     out = []
     for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo or ""):
         p = plano(frase)
-        if any(re.search(v, p) for v in VAGOS) and not re.search(CONCRETOS, p):
+        if any(re.search(v, p) for v in VAGOS) and not re.search(CONCRETOS, p) \
+                and not any(_cita_textual(frase, t) for t in textos_oficiales):
             out.append(f"Referencia vaga: «{frase.strip()[:90]}». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.")
     return out
 
