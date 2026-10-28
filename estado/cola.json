@@ -1400,7 +1400,7 @@
       "id": "R20261126-T061",
       "formato": "reel",
       "huella": "afe8545198c83a918ba0951248628f44ae706e701190dccceeb592a1b9f70999",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:26:29+00:00",
@@ -1428,16 +1428,18 @@
           "a": "RETENIDO",
           "ts": "2026-10-28T19:44:45+00:00",
           "motivo": "verificación jurídica: RETENER · [vaguedad] Referencia vaga: «Ese plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizad». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-28T19:51:27+00:00",
+          "motivo": "corrección de forma (Claude, 28-10): «ese plazo» → «las cuarenta y ocho horas»"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": {
-        "tipo": "sustantivo",
-        "desde": "2026-10-28T19:44:45+00:00",
-        "verificador": "0.5.4"
-      }
+      "retencion": null
     },
     "I20261129-T093": {
       "id": "I20261129-T093",
