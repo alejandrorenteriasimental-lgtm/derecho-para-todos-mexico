@@ -400,3 +400,11 @@ def test_cita_textual_introducida_por_el_narrador_no_es_generalizacion():
     t = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_16.json").read_text())["texto"]
     assert razonamiento._cita_textual("La Constitución señala que Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas.", t)
     assert not razonamiento._cita_textual("Nadie puede estar detenido nunca más de dos días en ningún caso.", t)
+
+
+def test_el_nombre_de_la_marca_no_es_una_persona_real():
+    """I20261128-T010 (28-10): «Aquí Dice» (la marca, en el texto de publicación) se detectó como persona real."""
+    import auditoria
+    g = json.loads((AQUI.parent / "piezas" / "I20261128-T010" / "guion.json").read_text())
+    r = auditoria.editorial(g)
+    assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]

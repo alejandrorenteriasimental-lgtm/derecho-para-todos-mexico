@@ -405,6 +405,7 @@ VAGOS = (
     r"\b(recurso|via|mecanismo) legal (especifico|especial|adecuado)\b",
     r"^\W*(ojo\W*)?(revisa|consulta|checa|lee) (tu|la) (ley|contrato|caso|situacion)\W*$",
     r"\b(este|ese|dicho) (limite|minimo|maximo|plazo|monto)\b(?! de \d)",
+    r"\b(normatividad|legislacion|normativa) aplicable\b|\bsupuestos (muy )?(especificos|particulares) previstos\b",   # R20261126-T061, 28-10
 )
 CONCRETOS = r"\b(tribunal|tribunales|juez|jueza|centro de conciliacion|centros de conciliacion|profeco|procuraduria|ministerio publico|fiscalia|condusef|demanda|demandar|denuncia|denunciar|queja|amparo|conciliacion|reinstalacion|indemnizacion|nulidad)\b"
 

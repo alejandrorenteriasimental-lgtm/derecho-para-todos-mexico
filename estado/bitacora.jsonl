@@ -362,3 +362,6 @@
 {"ts": "2026-10-28T19:30:13+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: Regla: Sin personas reales identificables"}
 {"ts": "2026-10-28T19:30:13+00:00", "evento": "alerta", "mensaje": "I20261128-T010 retenido: RETENIDO"}
 {"ts": "2026-10-28T19:30:13+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 3, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
+{"ts": "2026-10-28T19:33:26+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-28T19:33:26+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-28T19:33:26+00:00", "pieza": "I20261128-T010", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición/corrección (Claude, 28-10): se vuelve a verificar y producir"}

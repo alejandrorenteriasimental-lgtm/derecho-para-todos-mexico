@@ -104,7 +104,7 @@ def juridica(guion: dict, hoy: date):
     regla("Sin frases de asesoría o adjetivos de culpabilidad", not pro, ", ".join(pro) or "ninguna")
     nombres = re.findall(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\b", narr)
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos"}
-    INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México"}
+    INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Aquí Dice", "Dice La", "Ministerio Público", "Estados Unidos", "Unidos Mexicanos"}
     oficiales = " ".join(str(f.get(k, "")) for f in fuentes.values() for k in ("documento", "cita", "texto_literal", "literal"))
     personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and x not in oficiales]   # cargos e instituciones citados en la ley no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
@@ -144,7 +144,7 @@ def editorial(guion: dict):
     regla("Sin frases de asesoría o adjetivos de culpabilidad", not pro, ", ".join(pro) or "ninguna")
     nombres = re.findall(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+ [A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\b", narr)
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos", "Guárdalo", "Comparte", "Qué", "Cuál"}
-    INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Ley Federal", "Federal Trabajo", "Código Civil", "Código Nacional"}
+    INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Ley Federal", "Federal Trabajo", "Código Civil", "Código Nacional", "Aquí Dice", "Dice La", "Ministerio Público", "Estados Unidos", "Unidos Mexicanos"}
     oficiales = " ".join(str(f.get(k, "")) for f in fuentes for k in ("documento", "cita", "texto_literal", "literal"))
     personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and not (set(x.split()) & JURIDICAS)
                 and x not in oficiales]   # cargos e instituciones que aparecen en el texto legal citado no son personas

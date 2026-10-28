@@ -22,7 +22,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes cuánto tiempo exacto puede una persona permanecer detenida ante la autoridad ministerial en México?",
+      "texto": "¿Sabes cuánto tiempo puede retenerte el Ministerio Público?",
       "titulo": [
         "¿CUÁNTO TIEMPO",
         "PUEDEN RETENERTE?"
@@ -55,18 +55,17 @@
     },
     {
       "tipo": "lista",
-      "texto": "Durante este periodo, la autoridad debe definir la situación legal mediante las siguientes opciones obligatorias:",
+      "texto": "Al terminar ese plazo, el Ministerio Público debe:",
       "items": [
         "Ordenar su libertad",
-        "Poner ante autoridad judicial",
-        "Cumplir plazo legal"
+        "Ponerlo ante la autoridad judicial"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "El plazo general puede modificarse bajo supuestos muy específicos previstos en la normatividad aplicable.",
+      "texto": "Ese plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada.",
       "encabezado": "Excepción por delincuencia",
       "detalle": "El plazo podrá duplicarse",
       "fuente_corta": "Constitución, art. 16",
@@ -201,5 +200,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "excepción vaga («normatividad aplicable») → texto literal del art. 16; lista sin «cumplir plazo legal»; gancho sin «exacto»"
+    }
+  ]
 }
