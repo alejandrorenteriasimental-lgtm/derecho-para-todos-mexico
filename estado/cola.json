@@ -1400,7 +1400,7 @@
       "id": "R20261126-T061",
       "formato": "reel",
       "huella": "afe8545198c83a918ba0951248628f44ae706e701190dccceeb592a1b9f70999",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:26:29+00:00",
@@ -1434,12 +1434,31 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T19:51:27+00:00",
           "motivo": "corrección de forma (Claude, 28-10): «ese plazo» → «las cuarenta y ocho horas»"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T19:57:17+00:00",
+          "motivo": "59.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T19:57:21+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "c8b101816816cdb0",
+        "huella_guion": "a5aabab46706303436fdeb063c53fd69d3893a69d143aede6017919f7baad2b7",
+        "huella_archivo": "dc1d02310e29e498fe2f20a321fd769be3c84e207f137f49074b3bdd8a195d47",
+        "preparada": "2026-10-28T19:57:21+00:00",
+        "canal": "chat"
+      }
     },
     "I20261129-T093": {
       "id": "I20261129-T093",

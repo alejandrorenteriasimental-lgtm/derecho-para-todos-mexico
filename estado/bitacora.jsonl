@@ -386,3 +386,8 @@
 {"ts": "2026-10-28T19:50:09+00:00", "evento": "revision_preparada", "pieza": "I20261129-T093", "version": "0537b7ad2285df8b", "canal": "chat"}
 {"ts": "2026-10-28T19:50:09+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 4, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 4}
 {"ts": "2026-10-28T19:51:27+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "PENDIENTE", "motivo": "corrección de forma (Claude, 28-10): «ese plazo» → «las cuarenta y ocho horas»"}
+{"ts": "2026-10-28T19:54:19+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T19:57:17+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "PRODUCIDO", "motivo": "59.4"}
+{"ts": "2026-10-28T19:57:21+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T19:57:21+00:00", "evento": "revision_preparada", "pieza": "R20261126-T061", "version": "c8b101816816cdb0", "canal": "chat"}
+{"ts": "2026-10-28T19:57:21+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
