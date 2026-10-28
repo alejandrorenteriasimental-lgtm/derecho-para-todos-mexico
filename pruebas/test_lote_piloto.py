@@ -325,3 +325,9 @@ def test_palabras_partidas_por_el_pdf_se_unen_sin_cambiar_la_cita():
     import verificador
     assert verificador.contiene("tendrán derecho, independienteme nte de que se encuentren laborando o no",
                                 "independientemente de que se encuentren laborando o no")
+
+
+def test_obligacion_puede_contestarse_con_depende():
+    """R20261124-T015 (28-10): «Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre…» se retuvo."""
+    g = json.loads((AQUI.parent / "piezas" / "R20261124-T015" / "guion.json").read_text())
+    assert not [x for x in razonamiento.revisar(g, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
