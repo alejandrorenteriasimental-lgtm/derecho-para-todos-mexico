@@ -69,11 +69,24 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
                 clip = Path("/tmp/diagnostico_ig.mp4")
                 subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "testsrc2=size=1080x1920:rate=30", "-f", "lavfi", "-i", "sine=frequency=440:sample_rate=48000",
                                 "-t", "5", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-ac", "2", "-movflags", "+faststart", "-use_editlist", "0", str(clip)], check=True, timeout=120)
-                cid = instagram.crear_contenedor(g, ig, "reel", clip, "diagnóstico (no se publica)", page, dormir=dormir)
-                est = instagram.esperar_contenedor(g, cid, dormir=dormir)
-                paso("Diagnóstico: clip sintético conforme (no se publica)", est == "FINISHED", f"contenedor {cid}: {est}" + ("" if est == "FINISHED" else f" · {instagram.detalle_contenedor(g, cid)}"))
+                variantes = [("clip sintético conforme", clip)]
+                v1 = Path("/tmp/diag_5s_copia.mp4")      # primeros 5 s del Reel aprobado, sin recodificar video
+                subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", "5", "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(v1)], check=True, timeout=120)
+                v2 = Path("/tmp/diag_recodificado.mp4")  # Reel aprobado completo recodificado (solo diagnóstico)
+                subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-g", "60",
+                                "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(v2)], check=True, timeout=300)
+                variantes += [("primeros 5 s del Reel sin recodificar", v1), ("Reel completo recodificado", v2)]
+                for nombre, f in variantes:
+                    lb = Path("/tmp") / f"ops_diag_{f.stem}.jsonl"; lb.unlink(missing_ok=True)
+                    try:
+                        cid = instagram.crear_contenedor(g, ig, "reel", f, "diagnóstico (no se publica)", page, libro=lb, base={"pieza": "diag"}, dormir=dormir)
+                        est = instagram.esperar_contenedor(g, cid, dormir=dormir)
+                        ruta = [json.loads(l).get("fase") for l in lb.read_text().splitlines()] if lb.exists() else []
+                        paso(f"Diagnóstico: {nombre} (no se publica)", est == "FINISHED", f"contenedor {cid}: {est}" + ("" if est == "FINISHED" else f" · {instagram.detalle_contenedor(g, cid)}") + f" · ruta: {' → '.join(ruta)}")
+                    except Exception as e:
+                        paso(f"Diagnóstico: {nombre} (no se publica)", False, e)
             except Exception as e:
-                paso("Diagnóstico: clip sintético conforme (no se publica)", False, e)
+                paso("Diagnóstico de Reel", False, e)
         try:
             paso("Instagram: búsqueda anti-duplicados", instagram.buscar_publicado(g, ig, texto_img) is None, "el texto aprobado no aparece publicado")
         except (ErrorGraph, SinRed) as e:
