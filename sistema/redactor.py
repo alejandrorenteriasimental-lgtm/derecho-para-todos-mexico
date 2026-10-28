@@ -34,7 +34,7 @@ class Descartada(Exception):
 
 
 JURIDICAS = ("[cobertura]", "[sustento]", "[conceptos]", "[condiciones]", "[respuesta]", "[tema]", "[mapa]", "[jurisprudencia]", "INSUFICIENTE")
-PUNTUALES = ("demasiado larg", "más de ", "línea de título", "[vaguedad]", "narración de ", "pero la pieza no lo dice")   # se corrigen sin regenerar
+PUNTUALES = ("demasiado larg", "más de ", "línea de título", "[vaguedad]", "narración de ", "pero la pieza no lo dice", "[ojo]")   # se corrigen sin regenerar
 
 
 def categoria_de(motivo, transitoria=False, errores=None):

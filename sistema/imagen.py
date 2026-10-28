@@ -255,6 +255,12 @@ def revision_previa(g):
     except Exception as e:
         return [f"imagen: no se pudo dibujar la ficha ({type(e).__name__})"]
     err = []
+    import razonamiento as _rz
+    pz = g.get("pieza") or {}
+    ojo = [w[:6] for w in _rz.plano(pz.get("ojo", "")).split() if len(w) > 4]
+    base = {w[:6] for w in _rz.plano(" ".join([pz.get("titular", ""), pz.get("bajada", ""), g.get("titulo", "")])).split() if len(w) > 4}
+    if ojo and sum(1 for w in ojo if w in base) >= max(1, round(len(ojo) * 0.7)):
+        err.append("[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse")
     n = sum(len(t["texto"].split()) for t in textos if t.get("zona") == "contenido")
     if n > 60: err.append(f"imagen: contenido demasiado largo ({n} palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta")
     if y_fin > H - 160: err.append("imagen: contenido demasiado largo: invade el pie de la ficha")

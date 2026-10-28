@@ -331,3 +331,13 @@ def test_obligacion_puede_contestarse_con_depende():
     """R20261124-T015 (28-10): «Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre…» se retuvo."""
     g = json.loads((AQUI.parent / "piezas" / "R20261124-T015" / "guion.json").read_text())
     assert not [x for x in razonamiento.revisar(g, {}) if x["regla"] == "respuesta" and "directa" in x["detalle"]]
+
+
+def test_ojo_que_repite_la_respuesta_se_detecta_al_redactar():
+    """I20261123-T084 (28-10): «OJO: Prohibida por la Constitución Federal» repetía la bajada (el 27-10 se rechazó un «OJO» vacío)."""
+    import imagen
+    g = json.loads((AQUI.parent / "piezas" / "I20261123-T084" / "guion.json").read_text())
+    g["pieza"]["ojo"] = "Prohibida por la Constitución Federal"
+    assert any(e.startswith("[ojo]") for e in imagen.revision_previa(g))
+    g["pieza"]["ojo"] = "También prohíbe la mutilación y los azotes."
+    assert not any(e.startswith("[ojo]") for e in imagen.revision_previa(g))
