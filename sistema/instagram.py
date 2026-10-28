@@ -46,7 +46,21 @@ def url_publica_imagen(g, page, png, libro=None, base=None):
     return url
 
 
-def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base=None):
+def url_publica_video(g, page, mp4, libro=None, base=None, intentos=18, pausa=10, dormir=time.sleep):
+    """Video NO publicado en la Página (published=false, sin historia: no lo ve el público) → URL del archivo en los
+    servidores de Meta. Respaldo cuando la carga reanudable de Instagram falla (prueba no pública del 28-10:
+    «Request processing failed» en rupload ig-api-upload)."""
+    cuerpo, ctype = publicar._multipart({"published": "false", "no_story": "true"}, Path(mp4).name, Path(mp4).read_bytes(), "video/mp4")
+    vid = _json(*g.http("POST", f"{GRAPH}/{page}/videos", g._cab({"Content-Type": ctype}), cuerpo, 900)).get("id")
+    if base is not None: registrar({**base, "fase": "VIDEO_ALOJADO", "video_no_publicado": vid}, libro)
+    for _ in range(intentos):
+        src = g.get(vid, fields="source").get("source")
+        if src: return src
+        dormir(pausa)
+    raise ErrorGraph(200, None, f"el video no publicado {vid} no devolvió URL", transitorio=True)
+
+
+def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base=None, dormir=time.sleep):
     """Crea el contenedor (NO publica). Devuelve su id."""
     if formato == "imagen":
         url = url_publica_imagen(g, page, archivo, libro, base)
@@ -60,9 +74,14 @@ def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base
     datos = Path(archivo).read_bytes()
     try:
         up = g.subir(uri, datos)
+        if not up.get("success", True): raise ErrorGraph(200, None, f"carga no confirmada: {up}", transitorio=True)
     except ErrorGraph as e:
-        raise ErrorGraph(e.estado, e.codigo, f"carga del video a Instagram: {e}", transitorio=e.transitorio)
-    if not up.get("success", True): raise ErrorGraph(200, None, f"carga no confirmada: {up}", transitorio=True)
+        if e.transitorio or not page: raise ErrorGraph(e.estado, e.codigo, f"carga del video a Instagram: {e}", transitorio=e.transitorio)
+        # respaldo: el video se aloja como NO publicado en la Página y se crea otro contenedor con su URL
+        if base is not None: registrar({**base, "fase": "CARGA_REANUDABLE_FALLIDA", "contenedor": cid, "error": str(e)[:200]}, libro)
+        url = url_publica_video(g, page, archivo, libro, base, dormir=dormir)
+        cid = g.post(f"{ig}/media", media_type="REELS", video_url=url, caption=texto, share_to_feed="true").get("id")
+        if base is not None: registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid, "via": "video_url"}, libro)
     return cid
 
 
@@ -97,7 +116,7 @@ def publicar_ig(pieza_id, formato, archivo, texto, huella, modo=None, env=os.env
         cid = None
     if not cid:
         registrar({**base, "fase": "CREANDO_CONTENEDOR"}, libro)
-        cid = crear_contenedor(g, ig, formato, archivo, texto, page, libro, base)
+        cid = crear_contenedor(g, ig, formato, archivo, texto, page, libro, base, dormir)
         registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid}, libro)
     est = esperar_contenedor(g, cid, dormir=dormir)
     if est != "FINISHED":

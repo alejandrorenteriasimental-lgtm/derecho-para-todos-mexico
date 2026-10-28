@@ -55,7 +55,7 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
     if ig:
         for fmt, archivo, texto in (("imagen", imagen, texto_img), ("reel", reel, texto_reel)):
             try:
-                cid = instagram.crear_contenedor(g, ig, fmt, archivo, texto, page)
+                cid = instagram.crear_contenedor(g, ig, fmt, archivo, texto, page, dormir=dormir)
                 est = instagram.esperar_contenedor(g, cid, dormir=dormir)
                 paso(f"Instagram: contenedor de {fmt} procesado SIN publicar", est == "FINISHED", f"contenedor {cid}: {est}")
             except (ErrorGraph, SinRed) as e:

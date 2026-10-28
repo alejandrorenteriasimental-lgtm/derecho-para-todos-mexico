@@ -78,3 +78,31 @@ def test_sin_autorizacion_solo_simula(entorno):
 def test_texto_publico_sin_etiqueta_interna(tmp_path):
     r = publicar.publicar_imagen("I1", tmp_path / "x.png", "Texto aprobado", "h" * 16, modo="simulacion", libro=tmp_path / "l.jsonl")
     assert "#dpt" not in r["descripcion"] and r["descripcion"] == "Texto aprobado"
+
+
+class IGRuploadFalla(IGFalso):
+    """Como en la prueba no pública real del 28-10: rupload ig-api-upload responde 400 «Request processing failed»."""
+    def __init__(self):
+        super().__init__(); self.videos = []
+    def __call__(self, metodo, url, cab=None, datos=None, timeout=60):
+        if "ig-api-upload" in url:
+            return 400, json.dumps({"debug_info": {"retriable": False, "type": "ProcessingFailedError", "message": "Request processing failed"}}).encode()
+        if url.endswith("/P1/videos"):
+            assert b'name="published"\r\n\r\nfalse' in datos and b'name="no_story"\r\n\r\ntrue' in datos
+            self.videos.append(1); return 200, json.dumps({"id": "V1"}).encode()
+        if "/V1?" in url: return 200, json.dumps({"source": "https://video.example/v1.mp4"}).encode()
+        return super().__call__(metodo, url, cab, datos, timeout)
+
+
+def test_reel_respaldo_video_no_publicado_si_falla_la_carga(entorno):
+    f = IGRuploadFalla()
+    r = instagram.publicar_ig("R1", "reel", entorno["mp4"], "Reel aprobado", "h" * 16, env=ENV, http=f, libro=entorno["libro"], dormir=lambda s: None)
+    assert r["estado"] == "PUBLICADO" and f.videos == [1] and len(f.publicados) == 1
+    assert f.contenedores["C2"]["video_url"] == "https://video.example/v1.mp4" and f.contenedores["C2"]["caption"] == "Reel aprobado"
+    fases = [json.loads(l)["fase"] for l in entorno["libro"].read_text().splitlines()]
+    assert "CARGA_REANUDABLE_FALLIDA" in fases and "VIDEO_ALOJADO" in fases
+
+
+def test_error_de_carga_muestra_el_mensaje():
+    with pytest.raises(publicar.ErrorGraph, match="Request processing failed"):
+        publicar._json(400, json.dumps({"debug_info": {"message": "Request processing failed"}}).encode())
