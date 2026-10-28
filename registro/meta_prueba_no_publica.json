@@ -1,0 +1,47 @@
+{
+ "fecha": "2026-10-28T22:25:13+00:00",
+ "pasos": [
+  {
+   "paso": "autenticación",
+   "resultado": "OK",
+   "detalle": "Aquí Dice la Ley (1359758353893509)"
+  },
+  {
+   "paso": "Instagram vinculado",
+   "resultado": "OK",
+   "detalle": "17841456017575703"
+  },
+  {
+   "paso": "Facebook: imagen cargada como NO publicada",
+   "resultado": "OK",
+   "detalle": "URL alojada por Meta (no visible en la página)"
+  },
+  {
+   "paso": "Facebook: Reel cargado completo SIN finalizar (no publicado)",
+   "resultado": "OK",
+   "detalle": "video 1840959450657926: SUBIDO"
+  },
+  {
+   "paso": "Instagram: contenedor de imagen procesado SIN publicar",
+   "resultado": "OK",
+   "detalle": "contenedor 17995794125867253: FINISHED"
+  },
+  {
+   "paso": "Instagram: contenedor de reel procesado SIN publicar",
+   "resultado": "FALLA",
+   "detalle": "HTTP 400 · código None: sin mensaje"
+  },
+  {
+   "paso": "Instagram: búsqueda anti-duplicados",
+   "resultado": "OK",
+   "detalle": "el texto aprobado no aparece publicado"
+  },
+  {
+   "paso": "Facebook: búsqueda anti-duplicados",
+   "resultado": "OK",
+   "detalle": "el texto aprobado no aparece publicado ni programado"
+  }
+ ],
+ "publicado_algo": false,
+ "ok": false
+}
