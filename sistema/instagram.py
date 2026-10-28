@@ -70,10 +70,11 @@ def adaptar_reel_ig(mp4, ffmpeg="ffmpeg"):
     """Copia del Reel APROBADO ajustada a la especificación de Instagram (prueba no pública del 28-10: error 2207076).
     Instagram exige audio AAC de 128 kbps como máximo y MP4 sin listas de edición; los Reels aprobados llevan audio a
     160 kbps y listas de edición. La imagen se copia sin recodificar (mismos cuadros); solo se recodifica el audio a
-    128 kbps. El archivo aprobado no se modifica: la copia se crea aparte y su SHA-256 queda en el libro."""
+    128 kbps y se declara la proporción de píxel 1:1 en los metadatos del flujo (el Reel original no la declaraba;
+    un clip sintético con 1:1 sí fue aceptado). El archivo aprobado no se modifica: la copia se crea aparte y su SHA-256 queda en el libro."""
     out = Path(mp4).with_name(Path(mp4).stem + "_ig.mp4")
     subprocess.run([ffmpeg, "-y", "-v", "error", "-i", str(mp4), "-map", "0:v:0", "-map", "0:a:0", "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", "-use_editlist", "0", str(out)],
+                    "-bsf:v", "h264_metadata=sample_aspect_ratio=1/1", "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", "-use_editlist", "0", str(out)],
                    check=True, timeout=300)
     return out
 
