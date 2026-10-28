@@ -426,3 +426,8 @@
 {"ts": "2026-10-28T21:50:30+00:00", "pieza": "I20261127-T015", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
 {"ts": "2026-10-28T21:50:30+00:00", "pieza": "R20261127-T010", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
 {"ts": "2026-10-28T21:50:30+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 3, "producidas": 1, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 8, "en_revision": 1}
+{"ts": "2026-10-28T21:57:33+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T21:57:57+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-02_reel_T030-lote-3.json", "categoria": "cuota", "transitoria": true, "motivo": "modelo no disponible: tope propio diario alcanzado para gemini-3.5-flash-lite"}
+{"ts": "2026-10-28T21:57:57+00:00", "pieza": "I20261126-T025", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-28T21:57:57+00:00", "pieza": "R20261128-T028", "evento": "transicion", "a": "SIMULADO", "motivo": "PUBLICAR distinto de 1"}
+{"ts": "2026-10-28T21:57:57+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0}
