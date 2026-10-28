@@ -1,0 +1,34 @@
+# Publicación del calendario de lanzamiento (Facebook programado con anticipación; Instagram a la hora).
+# Sin PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI (variables del repositorio) solo SIMULA y registra qué haría.
+# Paro de emergencia: variable PAUSA_PUBLICACION=1, o el archivo estado/pausa_publicacion.json (ver docs/paro_emergencia.md).
+name: publicacion
+on:
+  schedule:
+    - cron: "3 15 * * *"     # 09:03 CDMX (imagen)
+    - cron: "3 1 * * *"      # 19:03 CDMX (Reel)
+  workflow_dispatch: {}
+concurrency: { group: publicacion, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: Publicar lo que corresponde
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLICAR: ${{ vars.PUBLICAR }}
+          LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}
+          PAUSA_PUBLICACION: ${{ vars.PAUSA_PUBLICACION }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_IG_ID: "17841456017575703"
+        run: python sistema/publicador.py
+      - name: Guardar registros
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add registro/publicacion.jsonl estado/operaciones.jsonl estado/pausa_publicacion.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "publicacion ${{ github.run_id }}" && git pull --rebase -q && git push)

@@ -262,8 +262,17 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_met
     return resumen
 
 
+def _en_calendario(pid):
+    try: cal = json.loads((RAIZ / "data" / "calendario_lanzamiento.json").read_text())
+    except (OSError, ValueError): return False
+    return any(d[f]["pieza"] == pid for d in cal.get("dias", []) for f in ("imagen", "reel"))
+
+
 def _publicar(c, t, modo, env, http_meta, resumen, retomar=False):
-    pid = t["id"]; g = _guion(pid); fmt = t.get("formato", "reel")
+    pid = t["id"]
+    if modo == "real" and _en_calendario(pid):     # las piezas del calendario las publica publicador.py a su hora
+        resumen.setdefault("en_calendario", []).append(pid); return
+    g = _guion(pid); fmt = t.get("formato", "reel")
     d = t.get("decision_humana")
     if d and not retomar and revision.version(pid, fmt)[0] != d.get("version"):    # cambió después de aprobarse
         cola.mover(c, pid, "RETENIDO", "la pieza cambió después de la aprobación humana; se requiere una nueva revisión")

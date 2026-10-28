@@ -1,0 +1,57 @@
+"""Publicador del calendario: solo versiones aprobadas exactas; Facebook programado, Instagram a la hora; paro de
+emergencia ante archivos no aprobados o errores no transitorios; sin autorización solo simula."""
+import hashlib, json, sys
+from datetime import datetime, timezone
+from pathlib import Path
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "sistema"))
+import publicador, publicar
+
+CAL = json.loads((Path(__file__).resolve().parent.parent / "data" / "calendario_lanzamiento.json").read_text())
+
+
+@pytest.fixture
+def ent(tmp_path, monkeypatch):
+    monkeypatch.setattr(publicador, "PAUSA", tmp_path / "pausa.json")
+    monkeypatch.setattr(publicar, "LIBRO", tmp_path / "ops.jsonl")
+    archivos = {}
+    def bajar(e, carpeta, env):
+        f = tmp_path / e["archivo"]
+        if not f.exists(): f.write_bytes(archivos.get(e["pieza"], b"falso"))
+        return f
+    return {"tmp": tmp_path, "bajar": bajar, "archivos": archivos}
+
+
+def test_aprobaciones_del_calendario_coinciden_con_el_registro():
+    for d in CAL["dias"]:
+        for fmt in ("imagen", "reel"):
+            e = d[fmt]; a = publicador.ultima_decision(e["pieza"])
+            assert a["decision"] == "APROBADA" and a["version"] == e["version"] and a["huella_archivo"] == e["sha256"], e["pieza"]
+
+
+def test_archivo_distinto_al_aprobado_detiene_todo(ent):
+    r = publicador.ejecutar(datetime(2026, 11, 1, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])
+    assert r["pausa"] and "no es el aprobado" in r["pausa"] and publicador.PAUSA.exists()
+    r2 = publicador.ejecutar(datetime(2026, 11, 1, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])
+    assert r2["pausa"] and not r2["acciones"]                         # pausado: no se envía nada hasta revisarlo
+
+
+def test_sin_autorizacion_simula_con_archivos_aprobados(ent, monkeypatch):
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    r = publicador.ejecutar(datetime(2026, 11, 3, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])   # todo el calendario cae dentro de 28 días
+    assert r["modo"] == "simulacion" and not r.get("pausa")
+    assert {a.get("facebook") for a in r["acciones"]} == {"SIMULADO"} and len(r["acciones"]) == 14
+
+
+def test_instagram_solo_en_su_ventana(ent, monkeypatch):
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    hora = publicador.hora_utc("2026-11-23", "09:00")
+    r = publicador.ejecutar(hora.replace(minute=5), env={}, bajar=ent["bajar"])
+    ig = [a for a in r["acciones"] if "instagram" in a]
+    assert len(ig) == 1 and ig[0]["pieza"] == "I20261123-T084" and ig[0]["instagram"] == "SIMULADO"
+
+
+def test_pausa_por_variable(ent):
+    r = publicador.ejecutar(datetime(2026, 11, 1, tzinfo=timezone.utc), env={"PAUSA_PUBLICACION": "1"}, bajar=ent["bajar"])
+    assert r["pausa"] and not r["acciones"]
