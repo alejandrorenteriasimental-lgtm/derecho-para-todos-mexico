@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "59.8 s"
+      "detalle": "56.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "59.8 s"
+      "detalle": "56.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "44 bloques"
+      "detalle": "41 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "db0390201fd9d67a"
+      "detalle": "bdc6bb4af768e903"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261125-T093",
     "titulo": "¿Puedes hacerte justicia por tu propia mano?",
-    "fecha": "2026-10-28T11:43:33+00:00",
-    "sha256": "db0390201fd9d67a20a01472b3b7e7daa8666db9eaf4585a5efda15775ab749f",
-    "duracion_s": 59.8,
+    "fecha": "2026-10-28T12:09:21+00:00",
+    "sha256": "bdc6bb4af768e903847122d0143220760fdbcca7b9a6ff32767cbe6d0430facb",
+    "duracion_s": 56.1,
     "estado": "APTO",
-    "huella_guion": "3ff130139799d8ef419fa9cfd806e90c35fdaabce9b0e35e14c6dd255ea1356a",
+    "huella_guion": "c962d468f2b27e6cacb05f0eb9170af6a641d63c3c658cf20701b2fb77bd3778",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 28.9,
-      "musica": 2.7,
-      "render_video": 53.4,
-      "mezcla_audio": 2.3,
-      "auditoria_tecnica": 12.0
+      "narracion": 14.7,
+      "musica": 1.6,
+      "render_video": 37.6,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 9.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.66,
-      "computo_equivalente_runner_usd": 0.0099,
+      "computo_minutos": 1.08,
+      "computo_equivalente_runner_usd": 0.0065,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1793,
-    "caracteres_narrados": 887
+    "frames": 1684,
+    "caracteres_narrados": 821
   }
 }

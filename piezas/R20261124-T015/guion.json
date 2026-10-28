@@ -1,0 +1,242 @@
+{
+  "id": "R20261124-T015",
+  "formato": "reel",
+  "titulo": "¿Cuándo y cuánto te deben pagar de aguinaldo según la ley?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T015",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "87",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+      "cita": "Ley Federal del Trabajo, artículo 87",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "87",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los que no hayan cumplido el año de servicios, independienteme nte de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo",
+      "cita": "Ley Federal del Trabajo, artículo 87",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes exactamente cuándo y cuánto deben pagarte de aguinaldo cada año?",
+      "titulo": [
+        "PAGO DE",
+        "AGUINALDO",
+        "EN MÉXICO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo menos 15 días de salario o a su parte proporcional.",
+      "titulo": [
+        "¿CUÁNDO Y",
+        "CUÁNTO ES?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Ley Federal del Trabajo establece en su artículo 87 que «Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.»",
+      "etiqueta": "Ley Federal del Trabajo, art. 87",
+      "cita": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para saber lo que te corresponde recibir, la ley establece dos formas de pago según tu antigüedad en el puesto:",
+      "items": [
+        "Año completo: 15 días mín.",
+        "Menos de un año: parte prop.",
+        "Aplica aunque ya no labores"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El aguinaldo anual debe pagarse antes del 20 de diciembre y su monto equivale a por lo menos 15 días de salario para quien cumplió un año de servicios.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Respecto a quien no cumplió un año, la norma aclara: «Los que no hayan cumplido el año de servicios, independienteme nte de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo», conforme al tiempo trabajado.",
+      "encabezado": "Pago proporcional por menos de un año",
+      "detalle": "Según el tiempo que trabajaron",
+      "fuente_corta": "Ley Federal del Trabajo, art. 87",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo menos 15 días de salario o a su parte proporcional.",
+      "titulo": [
+        "LO QUE DICE",
+        "LA LEY"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Quienes no cumplieron un año de servicios tienen derecho al pago de la parte proporcional del aguinaldo conforme al tiempo trabajado.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+    "concepto_central": "aguinaldo",
+    "respuesta_corta": "Depende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo menos 15 días de salario o a su parte proporcional.",
+    "reglas": [
+      {
+        "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre y su monto equivale a por lo menos 15 días de salario.",
+        "fuente": "F1",
+        "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos.",
+        "condiciones": [
+          "haber cumplido el año de servicios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "87"
+        }
+      },
+      {
+        "conclusion": "Los trabajadores que no hayan cumplido un año de servicios tienen derecho a la parte proporcional del aguinaldo conforme al tiempo trabajado.",
+        "fuente": "F1",
+        "cita_literal": "Los que no hayan cumplido el año de servicios, independienteme nte de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo",
+        "condiciones": [
+          "haber trabajado cualquier tiempo menor a un año"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "87"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El aguinaldo debe pagarse antes del 20 de diciembre y consiste en al menos 15 días de salario o la parte proporcional.",
+        "fuente": "F1",
+        "cita_literal": "Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica por un año completo de servicios o en parte proporcional según el tiempo trabajado, sin importar si la persona sigue laborando al momento del pago.",
+        "fuente": "F1",
+        "cita_literal": "conforme al tiempo que hubieren trabajado, cualquiera que fuere éste."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "aguinaldo anual completo",
+        "b": "parte proporcional del aguinaldo",
+        "diferencia": "El aguinaldo completo (al menos 15 días de salario) corresponde a quien cumplió el año de servicios, mientras que la parte proporcional se calcula conforme al tiempo trabajado para quienes no cumplieron el año."
+      }
+    ],
+    "limites": "El texto oficial disponible no señala sanciones, multas, autoridades ante las cuales acudir ni el plazo para demandar en caso de no pago del aguinaldo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T12:03:34+00:00",
+    "solicitud": "2026-11-24_reel_T015-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Cuándo y cuánto te deben pagar de aguinaldo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Cuándo y cuánto te deben pagar de aguinaldo?\n\nDepende del tiempo trabajado: debe pagarse antes del 20 de diciembre y equivale a por lo menos 15 días de salario o a su parte proporcional.\n\nFuente: Ley Federal del Trabajo, artículo 87.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Debe pagarse antes del 20 de diciembre y equivale a por lo menos 15 días de salario o a la»."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El aguinaldo anual debe pagarse antes del 20 de diciembre y su monto equivale a por lo menos 15 días de salario para quien cumplió un año de servicios.",
+              "sostenida": "si",
+              "motivo": "El artículo 87 establece explícitamente el plazo y el monto mínimo para quienes cumplen el año de servicios."
+            },
+            {
+              "conclusion": "Quienes no cumplieron un año de servicios tienen derecho al pago de la parte proporcional del aguinaldo conforme al tiempo trabajado.",
+              "sostenida": "si",
+              "motivo": "El artículo 87 prevé expresamente el derecho a la parte proporcional para quienes no han cumplido el año, sin importar si siguen laborando."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

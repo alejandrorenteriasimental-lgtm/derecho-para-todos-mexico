@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "57.5 s"
+      "detalle": "57.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "57.5 s"
+      "detalle": "57.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "67d55477b5b86dfb"
+      "detalle": "0e6d77dd09c7b9f0"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 31 ms en 8 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261123-T031",
     "titulo": "¿Te pueden volver a juzgar por el mismo delito?",
-    "fecha": "2026-10-28T10:16:02+00:00",
-    "sha256": "67d55477b5b86dfb3f1c355b730485e324b7fc917d40428ec5336829b86c8b2d",
-    "duracion_s": 57.5,
+    "fecha": "2026-10-28T12:07:24+00:00",
+    "sha256": "0e6d77dd09c7b9f044a32feafa753bd36e6442f288630c0b8189bc2470301204",
+    "duracion_s": 57.8,
     "estado": "APTO",
-    "huella_guion": "7c965f8fad9fa024c3d61671527c6b99f0832339a6b402b7aee489d3a5e07338",
+    "huella_guion": "8cbedde59578fc70fd7d6f596010ee67f9b07efa399ea7f3bc21cb4299edecda",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 36.8,
-      "musica": 3.0,
-      "render_video": 68.7,
-      "mezcla_audio": 2.8,
-      "auditoria_tecnica": 15.9
+      "narracion": 16.1,
+      "musica": 1.6,
+      "render_video": 40.7,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 9.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.12,
-      "computo_equivalente_runner_usd": 0.0127,
+      "computo_minutos": 1.16,
+      "computo_equivalente_runner_usd": 0.007,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1726,
-    "caracteres_narrados": 866
+    "frames": 1733,
+    "caracteres_narrados": 867
   }
 }

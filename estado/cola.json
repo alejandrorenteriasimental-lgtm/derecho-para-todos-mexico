@@ -528,7 +528,7 @@
       "id": "I20261125-T028",
       "formato": "imagen",
       "huella": "b1d53d666a3793a3e21c3cb44f2bce40c4e75a26b1c3b27482fc87418bf06a70",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T10:12:24+00:00",
@@ -568,6 +568,12 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T11:50:12+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-10-28T12:12:21+00:00",
+          "motivo": "verificación jurídica: RETENER · [respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Significa que a la persona imputada se le presume inocente mientras una sentencia del juez»."
         }
       ],
       "error": null,
@@ -575,14 +581,15 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-28T10:18:31+00:00"
+        "desde": "2026-10-28T12:12:21+00:00",
+        "verificador": "0.5.0"
       }
     },
     "R20261123-T031": {
       "id": "R20261123-T031",
       "formato": "reel",
       "huella": "7c965f8fad9fa024c3d61671527c6b99f0832339a6b402b7aee489d3a5e07338",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T10:12:24+00:00",
@@ -604,18 +611,37 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T11:50:12+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T12:07:24+00:00",
+          "motivo": "57.8"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T12:07:28+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "c74805279e16deb6",
+        "huella_guion": "a9b7c0f4568049970e016337cea653b837f2c024b252c063d7c666f28fe88677",
+        "huella_archivo": "0e6d77dd09c7b9f044a32feafa753bd36e6442f288630c0b8189bc2470301204",
+        "preparada": "2026-10-28T12:07:28+00:00",
+        "canal": "chat"
+      }
     },
     "R20261125-T093": {
       "id": "R20261125-T093",
       "formato": "reel",
       "huella": "3ff130139799d8ef419fa9cfd806e90c35fdaabce9b0e35e14c6dd255ea1356a",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T11:40:51+00:00",
@@ -637,12 +663,65 @@
           "a": "PENDIENTE",
           "ts": "2026-10-28T11:50:12+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T12:09:21+00:00",
+          "motivo": "56.1"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T12:09:25+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null
+      "retencion": null,
+      "revision": {
+        "version": "0e6c0e51c6b1b1d1",
+        "huella_guion": "a89d71a53a20fe1714dbbabe79a2f3cf47cc1fbb9fb5917c41f61281abe1b8e3",
+        "huella_archivo": "bdc6bb4af768e903847122d0143220760fdbcca7b9a6ff32767cbe6d0430facb",
+        "preparada": "2026-10-28T12:09:25+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20261124-T015": {
+      "id": "R20261124-T015",
+      "formato": "reel",
+      "huella": "6bd6bbc9bb895283714456a873e8803cb8ad341155ab62dd87dc8093c5140877",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-28T12:05:27+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-28T12:11:50+00:00",
+          "motivo": "70.5"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-28T12:11:54+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "5278129fb53643f8",
+        "huella_guion": "b6526562d4daef33f58c4d23a2a7f867360ed565ca7e2ccd099f486189d1be63",
+        "huella_archivo": "0a9c9388ecdcb1779a28a7559941098332ae901aec3c1e8e8cbdc6636ba7203d",
+        "preparada": "2026-10-28T12:11:54+00:00",
+        "canal": "chat"
+      }
     }
   }
 }

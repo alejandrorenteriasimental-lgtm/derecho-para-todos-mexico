@@ -3,11 +3,11 @@
   "formato": "imagen",
   "tema_id": "T016",
   "titulo": "Vacaciones dignas: cuántos días te tocan",
-  "gancho": "¿Cuántos días de vacaciones te corresponden?",
+  "gancho": "¿Te dieron 6 días? Puede que te deban más",
   "pregunta": "¿Cuántos días de vacaciones te corresponden?",
   "tipo_pregunta": "obligacion",
   "carril": "A",
-  "fuentes_sugeridas": "LFT arts. 76, 78",
+  "fuentes_sugeridas": "LFT art. 76 (reforma DOF 27/12/2022)",
   "riesgo_exactitud": "Bajo: verificar tabla vigente",
   "lote": "piloto-1",
   "motivo_seleccion": "Tabla de días del art. 76 LFT vigente. La imagen anterior (I20261030-T016) fue rechazada por afirmar un cambio legal sin decreto: esta pregunta pide el contenido vigente, no la historia de la reforma.",
@@ -21,9 +21,9 @@
   "pieza_id": "I20261123-T016",
   "archivo": "2026-11-23_imagen_T016-piloto-1.json",
   "intentos": 1,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Este derecho se adquiere una vez que la persona trabajadora ha acumulado más de un año de servicios para el empleador.»), pero la pieza no lo dice: agrégalo al texto visible.\"]}",
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Depende de los años de servicio: corresponden al menos d",
   "ultima_categoria": "juridico",
-  "huella_entrada": "ba6d0646df764c28",
+  "huella_entrada": "708cbd67624a6b5a",
   "historial": [
     {
       "estado": "DESCARTADA",
@@ -38,6 +38,12 @@
       "fecha_cambio": "2026-10-28",
       "motivo": "reabierta: el control de cobertura no aceptaba «servicio» por «servicios» (paráfrasis); corregido con comparación por raíz",
       "motivo_anterior": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Este derecho se adquiere una vez que la persona "
+    },
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-10-28",
+      "motivo": "el tema cambió en el catálogo"
     }
   ]
 }

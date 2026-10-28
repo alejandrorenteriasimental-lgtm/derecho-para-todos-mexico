@@ -201,3 +201,21 @@
 {"ts": "2026-10-28T11:50:12+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T11:50:12+00:00", "pieza": "R20261125-T093", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-28T11:50:12+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-28T11:59:34+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "PUBLICAR distinto de 1", "tope_mxn": 0.0}
+{"ts": "2026-10-28T11:59:34+00:00", "evento": "solicitud_reabierta", "solicitud": "2026-11-23_imagen_T016-piloto-1.json", "motivo": "el tema cambió en el catálogo"}
+{"ts": "2026-10-28T11:59:34+00:00", "evento": "solicitud_reabierta", "solicitud": "2026-11-24_reel_T015-piloto-1.json", "motivo": "el tema cambió en el catálogo"}
+{"ts": "2026-10-28T12:03:34+00:00", "evento": "redactada", "pieza": "R20261124-T015", "solicitud": "2026-11-24_reel_T015-piloto-1.json"}
+{"ts": "2026-10-28T12:05:27+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-23_imagen_T016-piloto-1.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica a las personas trabajadoras a partir de q"}
+{"ts": "2026-10-28T12:05:27+00:00", "pieza": "R20261124-T015", "evento": "encolado"}
+{"ts": "2026-10-28T12:07:24+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "PRODUCIDO", "motivo": "57.8"}
+{"ts": "2026-10-28T12:07:28+00:00", "pieza": "R20261123-T031", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T12:07:28+00:00", "evento": "revision_preparada", "pieza": "R20261123-T031", "version": "c74805279e16deb6", "canal": "chat"}
+{"ts": "2026-10-28T12:09:21+00:00", "pieza": "R20261125-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "56.1"}
+{"ts": "2026-10-28T12:09:25+00:00", "pieza": "R20261125-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T12:09:25+00:00", "evento": "revision_preparada", "pieza": "R20261125-T093", "version": "0e6c0e51c6b1b1d1", "canal": "chat"}
+{"ts": "2026-10-28T12:11:50+00:00", "pieza": "R20261124-T015", "evento": "transicion", "a": "PRODUCIDO", "motivo": "70.5"}
+{"ts": "2026-10-28T12:11:54+00:00", "pieza": "R20261124-T015", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-28T12:11:54+00:00", "evento": "revision_preparada", "pieza": "R20261124-T015", "version": "5278129fb53643f8", "canal": "chat"}
+{"ts": "2026-10-28T12:12:21+00:00", "pieza": "I20261125-T028", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER · [respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Significa que a la persona imputada se le presume inocente mientras una sentencia del juez»."}
+{"ts": "2026-10-28T12:12:21+00:00", "evento": "alerta", "mensaje": "I20261125-T028 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-10-28T12:12:21+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 3, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 3}

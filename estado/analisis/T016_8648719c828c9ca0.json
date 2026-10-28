@@ -1,0 +1,46 @@
+{
+ "tema_id": "T016",
+ "pregunta": "¿Cuántos días de vacaciones te corresponden?",
+ "fecha": "2026-10-28T12:04:09+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántos días de vacaciones te corresponden?",
+  "concepto_central": "vacaciones pagadas",
+  "respuesta_corta": "Depende de los años de servicio: corresponden al menos doce días laborables tras el primer año, aumentando progresivamente según la antigüedad.",
+  "reglas": [
+   {
+    "conclusion": "Las personas trabajadoras con más de un año de servicios tienen derecho a un periodo anual de vacaciones pagadas no inferior a doce días laborables, incrementándose con los años subsecuentes.",
+    "fuente": "F1",
+    "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+    "condiciones": [
+     "Tener más de un año de servicios"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se establece un mínimo de doce días laborables de vacaciones pagadas al año, que aumenta dos días por cada año subsecuente hasta veinte, y dos días por cada cinco años a partir del sexto.",
+    "fuente": "F1",
+    "cita_literal": "en ningún caso podrá ser inferior a doce días laborables, y que aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica a las personas trabajadoras a partir de que cumplen más de un año de servicios.",
+    "fuente": "F1",
+    "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones pagadas"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no detallan el pago de vacaciones proporcionales en periodos menores a un año ni el calendario específico para disfrutarlas.",
+  "fuentes_irrelevantes": [
+   "F2",
+   "F3"
+  ]
+ }
+}
