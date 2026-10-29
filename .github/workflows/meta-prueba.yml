@@ -39,6 +39,7 @@ jobs:
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          SOLO_REEL_IG: "1"     # 29-10: solo el Reel a Instagram (FB e imagen de IG ya comprobados; límite anti-spam de Meta)
         run: python sistema/prueba_no_publica.py /tmp/p/I20261124-T073.png /tmp/p/R20261123-T031_final.mp4
       - name: Guardar resultado
         if: always()
