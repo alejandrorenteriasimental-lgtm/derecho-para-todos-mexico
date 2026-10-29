@@ -1,0 +1,292 @@
+{
+  "id": "R20261202-T030",
+  "formato": "reel",
+  "titulo": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T030",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "mediante juicio seguido ante los tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden aplicar una ley nueva para perjudicarte en un juicio o trámite?",
+      "titulo": [
+        "¿LEY NUEVA",
+        "EN TU",
+        "CONTRA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. La Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si esto causa un perjuicio a cualquier persona.",
+      "titulo": [
+        "NO ES",
+        "POSIBLE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Nuestra ley máxima protege tu pasado y tu presente, pues ordena que «A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna».",
+      "etiqueta": "Constitución, artículo 14",
+      "cita": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Existe una prohibición de aplicar leyes de forma retroactiva cuando esto resulte en un perjuicio.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para que te priven de la libertad, propiedades o derechos, la autoridad debe cumplir con estas garantías de debido proceso:",
+      "items": [
+        "Juicio ante tribunales",
+        "Formalidades esenciales",
+        "Leyes previas al hecho"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "En asuntos criminales, no se pueden inventar penas por parecido. El texto oficial dice que se requiere un juicio «conforme a las Leyes expedidas con anterioridad al hecho».",
+      "encabezado": "PROHIBICIÓN DE ANALOGÍA",
+      "detalle": "Pena debe ser exactamente aplicable",
+      "fuente_corta": "Constitución, art. 14",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La privación de derechos debe ser mediante juicio y conforme a leyes anteriores al hecho.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, cualquier acto que afecte tu libertad o bienes debe seguir leyes que existían antes de que ocurriera el hecho.",
+      "titulo": [
+        "PROTECCIÓN",
+        "CONSTITUCIONAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+    "concepto_central": "efecto retroactivo",
+    "respuesta_corta": "No. La Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si esto causa un perjuicio a cualquier persona.",
+    "reglas": [
+      {
+        "conclusion": "Existe una prohibición constitucional de aplicar leyes de forma retroactiva cuando esto resulte en un daño o perjuicio para el individuo.",
+        "fuente": "F1",
+        "cita_literal": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
+        "condiciones": [
+          "Que la aplicación de la ley sea en perjuicio de la persona"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "14"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Cualquier acto de privación de libertad, propiedades o derechos debe realizarse siguiendo leyes que hayan sido emitidas antes de que ocurriera el hecho.",
+        "fuente": "F1",
+        "cita_literal": "mediante juicio seguido ante los tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho.",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La aplicación retroactiva de una ley podría ser posible si esta no genera un perjuicio a la persona.",
+        "condicion": "Que el efecto de la nueva norma no sea perjudicial.",
+        "base": "El texto constitucional limita la prohibición específicamente al supuesto de «perjuicio de persona alguna»."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "analogía",
+        "b": "exacta aplicación",
+        "diferencia": "En materia criminal, la ley prohíbe imponer penas por simple parecido entre casos; la ley debe ser exactamente aplicable al delito."
+      }
+    ],
+    "limites": "Los textos no definen técnicamente qué se entiende por «perjuicio» ni establecen el procedimiento para reclamar la aplicación retroactiva de una norma."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T10:00:43+00:00",
+    "solicitud": "2026-12-02_reel_T030-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 3,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden aplicar una ley nueva en tu perjuicio?\n\nNo. La Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si esto causa un perjuicio a cualquier persona.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 14.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La distinción entre la prohibición de analogía en materia criminal y la interpretación en materia civil."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Existe una prohibición constitucional de aplicar leyes nuevas a situaciones pasadas si el resultado es perjudicial para el individuo.",
+              "sostenida": "si",
+              "motivo": "Se deriva directamente del primer párrafo del artículo 14."
+            },
+            {
+              "conclusion": "Cualquier privación de libertad, propiedades o derechos debe basarse en normas que ya existían antes de que ocurriera el suceso.",
+              "sostenida": "si",
+              "motivo": "El texto exige que se cumplan las formalidades conforme a las leyes expedidas con anterioridad al hecho."
+            },
+            {
+              "conclusion": "Para que una privación sea válida, debe realizarse a través de un juicio donde se respeten las formalidades esenciales.",
+              "sostenida": "si",
+              "motivo": "El texto establece que nadie podrá ser privado de derechos sino mediante juicio con formalidades esenciales."
+            },
+            {
+              "conclusion": "El proceso debe llevarse a cabo ante órganos jurisdiccionales que hayan sido creados antes del caso en cuestión.",
+              "sostenida": "si",
+              "motivo": "El texto exige tribunales previamente establecidos."
+            },
+            {
+              "conclusion": "La aplicación retroactiva de una ley podría ser permitida si no causa un perjuicio (por ejemplo, si beneficia a la persona).",
+              "sostenida": "parcial",
+              "motivo": "Aunque la interpretación es jurídicamente lógica basada en la limitación 'en perjuicio de persona alguna', el texto oficial no menciona explícitamente el beneficio como una excepción permitida, solo limita la prohibición al perjuicio."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "interpretaciones",
+              "problema": "La interpretación sobre la aplicación de leyes que benefician a la persona es una inferencia lógica, pero el texto oficial no establece explícitamente el supuesto de 'beneficio'.",
+              "correccion": "Aclarar que la prohibición de retroactividad está condicionada al perjuicio, sin afirmar que el beneficio sea una regla de aplicación automática según el texto literal."
+            },
+            {
+              "donde": "cobertura general",
+              "problema": "La pieza omite la distinción fundamental que hace el artículo 14 entre juicios criminales (prohibición de analogía) y juicios civiles (interpretación y principios generales).",
+              "correccion": "Incluir que en materia criminal no se puede aplicar la ley por analogía o mayoría de razón, y que en materia civil la sentencia debe seguir la letra o interpretación de la ley."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[sustento] La cita de la conclusión «Cualquier acto de privación de libertad, propiedades o derec» no está en Constitución Política de los Estados Unidos Mexicanos, art. 14."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Existe una prohibición constitucional de aplicar leyes de forma retroactiva cuando esto resulte en un daño o perjuicio para el individuo.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente la prohibición de retroactividad condicionada al perjuicio de la persona."
+            },
+            {
+              "conclusion": "La privación de derechos debe ser mediante juicio y conforme a leyes anteriores al hecho.",
+              "sostenida": "si",
+              "motivo": "El artículo 14 establece el debido proceso como requisito indispensable para cualquier privación de libertad o derechos."
+            },
+            {
+              "conclusion": "En asuntos criminales, no se pueden imponer penas por simple analogía.",
+              "sostenida": "si",
+              "motivo": "El texto oficial prohíbe expresamente la analogía y la mayoría de razón en materia criminal, exigiendo una ley exactamente aplicable."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

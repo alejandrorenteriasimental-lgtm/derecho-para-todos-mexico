@@ -1,0 +1,143 @@
+{
+ "solicitud": "2026-12-02_imagen_T030-lote-3.json",
+ "fecha": "2026-10-29T10:08:25+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si e».\", \"[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Cualquier acto que prive a alguien de su libertad o derechos deb",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Se prohibe aplicar una ley de forma retroactiva si esto perjudica a una persona.",
+      "sostenida": "si",
+      "motivo": "La conclusión se deriva directamente de la prohibición de efectos retroactivos en perjuicio de persona alguna establecida en el artículo 14."
+     },
+     {
+      "conclusion": "si una conducta era legal cuando ocurrió, una ley posterior no puede usarse para sancionarte.",
+      "sostenida": "si",
+      "motivo": "Es una interpretación jurídica válida de la prohibición de retroactividad en perjuicio, ya que sancionar una conducta pasada con una ley nueva constituye un perjuicio."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "pieza -> realidad",
+      "problema": "La respuesta directa a la pregunta del título ('No') es absoluta e imprecisa. Una ley nueva sí puede aplicarse en contra de una persona para hechos o conductas futuras; lo que la Constitución prohíbe es la aplicación retroactiva en perjuicio.",
+      "correccion": "La respuesta debe ser 'No de forma retroactiva' o 'Depende', para evitar la interpretación errónea de que las leyes nuevas nunca pueden afectar a los ciudadanos."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[sustento] «Si sale una ley hoy, pueden castigarme por algo que hice legalmente hace un año.» menciona un plazo (1 ano) que no aparece en los artículos citados."
+   ],
+   "visible": "  \n   \n Si sale una ley hoy, pueden castigarme por algo que hice legalmente hace un año. \n No de forma retroactiva: a ninguna ley se le dará ese efecto en perjuicio de persona alguna según la Constitución."
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La distinción entre la aplicación inmediata de una ley nueva (que puede ser en contra de alguien) y la aplicación retroactiva (que es la que está prohibida en perjuicio)."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Se prohibe aplicar una ley de forma retroactiva si esto perjudica a una persona.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una paráfrasis exacta de la prohibición de retroactividad establecida en el primer párrafo del artículo 14."
+     },
+     {
+      "conclusion": "No: a ninguna ley se le dará efecto retroactivo en perjuicio de persona alguna.",
+      "sostenida": "parcial",
+      "motivo": "Aunque la cita es correcta, la respuesta 'No' a la pregunta del título es jurídicamente errónea. Una ley nueva sí puede aplicarse en contra de una persona si el hecho ocurre bajo su vigencia; la prohibición constitucional es específicamente sobre la retroactividad en perjuicio."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Título y respuesta corta",
+      "problema": "La pieza presenta una respuesta absoluta ('No') a una pregunta general ('¿Una ley nueva puede aplicarse en tu contra?'). Esto es falso, pues las leyes nuevas sí pueden aplicarse en contra de los ciudadanos siempre que el hecho sea posterior a su entrada en vigor. La pieza confunde la 'aplicación de una ley nueva' con la 'aplicación retroactiva de una ley'.",
+      "correccion": "Modificar la pregunta del título para que sea específica sobre la retroactividad, por ejemplo: '¿Puede una ley nueva aplicarse a hechos ocurridos en el pasado si me perjudica?'"
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «efecto» («Cualquier acto que prive a alguien de su libertad, propiedad») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si e».",
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Cualquier acto que prive a alguien de su libertad o derechos debe basarse en leyes que ya existían antes de que ocurriera el hecho.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Si se crea una ley nueva, pueden castigarme por algo que hice antes de que existiera. \n No, la Constitución prohíbe aplicar leyes de forma retroactiva cuando esto cause un perjuicio a cualquier persona."
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Se prohíbe la aplicación de una norma hacia hechos ocurridos en el pasado si dicha aplicación daña a la persona.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una paráfrasis exacta de la prohibición de efectos retroactivos en perjuicio de persona alguna contenida en el artículo 14."
+     },
+     {
+      "conclusion": "Cualquier acto que prive a alguien de su libertad o derechos debe basarse en leyes que ya existían antes de que ocurriera el hecho.",
+      "sostenida": "parcial",
+      "motivo": "Aunque la conclusión es jurídicamente correcta según el artículo 14, la cita literal proporcionada en el apartado de 'elementos' está truncada y no incluye la parte que menciona la aplicación de leyes expedidas con anterioridad al hecho."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento.elementos",
+      "problema": "La cita literal utilizada para sustentar la conclusión sobre la privación de derechos es incompleta. Al terminar en 'tribunales previamente establecidos', omite el requisito de que se haga 'conforme a las Leyes expedidas con anterioridad al hecho', que es precisamente el núcleo de la afirmación.",
+      "correccion": "Completar la cita literal en el elemento para que incluya: '...en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si e».",
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Cualquier acto que prive a alguien de su libertad o derechos debe basarse en leyes que ya existían antes de que ocurriera el hecho.»), pero la pieza no lo dice: agrégalo al texto visible.",
+    "[sustento] «¿Te preocupa que una nueva regla afecte tus derechos de forma retroactiva?» afirma un cambio legal sin citar el decreto que lo establece (DOF)."
+   ],
+   "visible": "  \n   \n Si el Congreso cambia la ley hoy, pueden castigarme por algo que hice ayer. \n No, la Constitución prohíbe aplicar leyes nuevas hacia el pasado si esto te perjudica; se deben usar leyes previas al hecho."
+  }
+ ]
+}

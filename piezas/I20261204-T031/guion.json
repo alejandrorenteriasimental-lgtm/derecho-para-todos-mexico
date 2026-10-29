@@ -1,0 +1,222 @@
+{
+  "id": "I20261204-T031",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuántas instancias puede tener un juicio penal?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T031",
+  "pieza": {
+    "titular": "¿Cuántas instancias puede tener un juicio penal?",
+    "bajada": "Un juicio criminal no puede tener más de tres instancias, de acuerdo con la norma constitucional.",
+    "cita": "Ningún juicio criminal deberá tener más de tres instancias.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 23",
+    "ojo": "Queda prohibida la práctica de absolver de la instancia.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 23"
+  },
+  "copy": "El artículo 23 de la Constitución Política de los Estados Unidos Mexicanos establece una regla clara para los juicios criminales: ningún juicio criminal deberá tener más de tres instancias.\n\nAsimismo, la norma distingue entre fijar este tope de revisión y la figura de absolver de la instancia, expresando que esta última práctica queda prohibida.\n\nLa Constitución únicamente establece el límite máximo de tres instancias para el juicio criminal, sin definir el concepto de instancia ni regular el procedimiento interno de cada una. Guarda esta publicación o compártela para que más personas conozcan lo que dice la ley en México.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre el límite constitucional de instancias en un juicio penal en México, citando el artículo 23 de la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "23",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ningún juicio criminal deberá tener más de tres instancias.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 23",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "En la tramitación de un juicio criminal existe un límite máximo de tres instancias.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuántas instancias puede tener un juicio penal?",
+    "concepto_central": "instancias en un juicio penal",
+    "respuesta_corta": "Un juicio criminal no puede tener más de tres instancias.",
+    "reglas": [
+      {
+        "conclusion": "Un juicio criminal no puede exceder de tres instancias.",
+        "fuente": "F1",
+        "cita_literal": "Ningún juicio criminal deberá tener más de tres instancias.",
+        "condiciones": [
+          "Aplica a juicios criminales."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "23"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Un juicio criminal no debe tener más de tres instancias.",
+        "fuente": "F1",
+        "cita_literal": "Ningún juicio criminal deberá tener más de tres instancias."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "no_aplica",
+        "motivo": "El texto oficial no establece condiciones o requisitos adicionales para la aplicación del límite de instancias."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "En la tramitación de un juicio criminal no se pueden exceder las tres instancias permitidas por la norma constitucional.",
+        "condicion": "En el desarrollo de un juicio criminal.",
+        "base": "Artículo 23 de la Constitución Política de los Estados Unidos Mexicanos (F1)."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "Límite de hasta tres instancias",
+        "b": "Absolver de la instancia",
+        "diferencia": "El límite de hasta tres instancias es el máximo permitido en un juicio criminal, mientras que la práctica de absolver de la instancia está expresamente prohibida por la norma."
+      }
+    ],
+    "limites": "El texto oficial no define el concepto de 'instancia' ni regula el procedimiento interno de cada una de ellas, únicamente fija el límite máximo de tres para el juicio criminal."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T10:13:20+00:00",
+    "solicitud": "2026-12-04_imagen_T031-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Cuántas instancias puede tener un juicio penal?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "En México, los procesos penales tienen un límite constitucional de etapas o instancias procesales.",
+              "sostenida": "parcial",
+              "motivo": "La cita utilizada mezcla dos garantías distintas: el límite de instancias y la prohibición de ser juzgado dos veces por el mismo delito (non bis in idem)."
+            },
+            {
+              "conclusion": "El proceso penal debe llegar a una conclusión definitiva sin exceder las etapas señaladas.",
+              "sostenida": "no",
+              "motivo": "El texto oficial no establece que el proceso deba llegar a una 'conclusión definitiva', solo impone un límite de instancias y prohíbe una práctica específica."
+            },
+            {
+              "conclusion": "La instancia es cada grado jurisdiccional del juicio, mientras que absolver de la instancia era una práctica antigua, ahora prohibida, que dejaba el juicio inconcluso.",
+              "sostenida": "no",
+              "motivo": "El texto oficial prohíbe la práctica de absolver de la instancia, pero no proporciona definiciones para los conceptos de 'instancia' ni de 'absolver de la instancia'."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "razonamiento/reglas",
+              "problema": "La cita es imprecisa para la conclusión presentada al incluir un precepto que no es necesario para el concepto de instancias.",
+              "correccion": "La cita debe limitarse exclusivamente a: 'Ningún juicio criminal deberá tener más de tres instancias'."
+            },
+            {
+              "donde": "razonamiento/interpretaciones",
+              "problema": "Se afirma algo que la ley no dice (la obligación de llegar a una conclusión definitiva).",
+              "correccion": "La interpretación debe limitarse a señalar que no se pueden exceder las tres instancias permitidas."
+            },
+            {
+              "donde": "razonamiento/distinciones",
+              "problema": "Se introducen definiciones de conceptos que no están en el texto oficial entregado.",
+              "correccion": "Eliminar las definiciones de 'instancia' y 'absolver de la instancia', limitándose a mencionar que la segunda práctica está prohibida según el texto."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[vaguedad] Referencia vaga: «En el desarrollo de un juicio criminal, el texto constitucional impone este límite máximo ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ],
+        "visible": "  \n   \n Un juicio criminal no puede tener más de tres instancias, de acuerdo con la norma constitucional. \n Ningún juicio criminal deberá tener más de tres instancias. \n Queda prohibida la práctica de absolver de la instancia."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[vaguedad] Referencia vaga: «En el desarrollo de un juicio criminal, el texto constitucional impone este límite máximo ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Un juicio criminal no puede exceder de tres instancias.",
+              "sostenida": "si",
+              "motivo": "El artículo 23 de la Constitución establece textualmente que ningún juicio criminal deberá tener más de tres instancias."
+            },
+            {
+              "conclusion": "La práctica de absolver de la instancia está prohibida.",
+              "sostenida": "si",
+              "motivo": "El texto oficial contiene la prohibición expresa: 'Queda prohibida la práctica de absolver de la instancia'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

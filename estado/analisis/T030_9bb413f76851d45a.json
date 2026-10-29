@@ -1,0 +1,49 @@
+{
+ "tema_id": "T030",
+ "pregunta": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+ "fecha": "2026-10-29T09:58:49+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
+  "concepto_central": "efecto retroactivo",
+  "respuesta_corta": "No. La Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si esto causa un perjuicio a cualquier persona.",
+  "reglas": [
+   {
+    "conclusion": "Existe una prohibición constitucional de aplicar leyes de forma retroactiva cuando esto resulte en un daño o perjuicio para el individuo.",
+    "fuente": "F1",
+    "cita_literal": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
+    "condiciones": [
+     "Que la aplicación de la ley sea en perjuicio de la persona"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Cualquier acto de privación de libertad, propiedades o derechos debe realizarse siguiendo leyes que hayan sido emitidas antes de que ocurriera el hecho.",
+    "fuente": "F1",
+    "cita_literal": "mediante juicio seguido ante los tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho.",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La aplicación retroactiva de una ley podría ser posible si esta no genera un perjuicio a la persona.",
+    "condicion": "Que el efecto de la nueva norma no sea perjudicial.",
+    "base": "El texto constitucional limita la prohibición específicamente al supuesto de «perjuicio de persona alguna»."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "analogía",
+    "b": "exacta aplicación",
+    "diferencia": "En materia criminal, la ley prohíbe imponer penas por simple parecido entre casos; la ley debe ser exactamente aplicable al delito."
+   }
+  ],
+  "limites": "Los textos no definen técnicamente qué se entiende por «perjuicio» ni establecen el procedimiento para reclamar la aplicación retroactiva de una norma.",
+  "fuentes_irrelevantes": []
+ }
+}

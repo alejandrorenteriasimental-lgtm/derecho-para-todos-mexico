@@ -1,0 +1,53 @@
+{
+ "tema_id": "T031",
+ "pregunta": "¿Cuántas instancias puede tener un juicio penal?",
+ "fecha": "2026-10-29T10:11:43+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas instancias puede tener un juicio penal?",
+  "concepto_central": "instancias en un juicio penal",
+  "respuesta_corta": "Un juicio criminal no puede tener más de tres instancias.",
+  "reglas": [
+   {
+    "conclusion": "Un juicio criminal no puede exceder de tres instancias.",
+    "fuente": "F1",
+    "cita_literal": "Ningún juicio criminal deberá tener más de tres instancias.",
+    "condiciones": [
+     "Aplica a juicios criminales."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Un juicio criminal no debe tener más de tres instancias.",
+    "fuente": "F1",
+    "cita_literal": "Ningún juicio criminal deberá tener más de tres instancias."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "no_aplica",
+    "motivo": "El texto oficial no establece condiciones o requisitos adicionales para la aplicación del límite de instancias."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "En la tramitación de un juicio criminal no se pueden exceder las tres instancias permitidas por la norma constitucional.",
+    "condicion": "En el desarrollo de un juicio criminal.",
+    "base": "Artículo 23 de la Constitución Política de los Estados Unidos Mexicanos (F1)."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Límite de hasta tres instancias",
+    "b": "Absolver de la instancia",
+    "diferencia": "El límite de hasta tres instancias es el máximo permitido en un juicio criminal, mientras que la práctica de absolver de la instancia está expresamente prohibida por la norma."
+   }
+  ],
+  "limites": "El texto oficial no define el concepto de 'instancia' ni regula el procedimiento interno de cada una de ellas, únicamente fija el límite máximo de tres para el juicio criminal.",
+  "fuentes_irrelevantes": []
+ }
+}
