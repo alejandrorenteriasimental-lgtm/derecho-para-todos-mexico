@@ -36,8 +36,7 @@
       "texto": "¿Te pueden aplicar una ley nueva para perjudicarte en un juicio o trámite?",
       "titulo": [
         "¿LEY NUEVA",
-        "EN TU",
-        "CONTRA?"
+        "EN TU CONTRA?"
       ],
       "afirmaciones": []
     },
@@ -52,7 +51,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "Nuestra ley máxima protege tu pasado y tu presente, pues ordena que «A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna».",
+      "texto": "La Constitución lo dice así: «A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna».",
       "etiqueta": "Constitución, artículo 14",
       "cita": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
       "afirmaciones": [
@@ -67,7 +66,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Para que te priven de la libertad, propiedades o derechos, la autoridad debe cumplir con estas garantías de debido proceso:",
+      "texto": "Además, para privarte de tu libertad, tus propiedades o tus derechos, la Constitución exige:",
       "items": [
         "Juicio ante tribunales",
         "Formalidades esenciales",
@@ -76,27 +75,11 @@
       "afirmaciones": []
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "En asuntos criminales, no se pueden inventar penas por parecido. El texto oficial dice que se requiere un juicio «conforme a las Leyes expedidas con anterioridad al hecho».",
-      "encabezado": "PROHIBICIÓN DE ANALOGÍA",
-      "detalle": "Pena debe ser exactamente aplicable",
-      "fuente_corta": "Constitución, art. 14",
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "La privación de derechos debe ser mediante juicio y conforme a leyes anteriores al hecho.",
-          "fuente": "F2"
-        }
-      ]
-    },
-    {
       "tipo": "titular",
-      "texto": "En resumen, cualquier acto que afecte tu libertad o bienes debe seguir leyes que existían antes de que ocurriera el hecho.",
+      "texto": "En resumen: una ley nueva no puede aplicarse hacia atrás para perjudicarte.",
       "titulo": [
-        "PROTECCIÓN",
-        "CONSTITUCIONAL"
+        "NO HACIA",
+        "ATRÁS"
       ],
       "afirmaciones": []
     },
@@ -288,5 +271,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "gancho en dos líneas; sin «protege tu pasado y tu presente» (no está en el texto); se elimina la escena de «inventar penas por parecido» (la analogía en materia penal no está en la fuente citada y la cita no correspondía); resumen sin «cualquier acto que afecte» (el art. 14 habla de privar)"
+    }
+  ]
 }
