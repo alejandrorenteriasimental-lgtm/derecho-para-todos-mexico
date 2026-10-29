@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "56.9 s"
+      "detalle": "45.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "56.9 s"
+      "detalle": "45.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "46 bloques"
+      "detalle": "34 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "c18fa3c1e8bfe923"
+      "detalle": "48e6dca4fa5e0fc3"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261201-T019",
     "titulo": "¿El precio que te muestran debe incluir impuestos?",
-    "fecha": "2026-10-28T21:50:26+00:00",
-    "sha256": "c18fa3c1e8bfe923247e9a53b082d551937525be5a1de13c0e8d5926a74b37d7",
-    "duracion_s": 56.9,
+    "fecha": "2026-10-29T01:08:19+00:00",
+    "sha256": "48e6dca4fa5e0fc35b047fd05232020a1add43332944eb2a83269fd94ca80a3e",
+    "duracion_s": 45.4,
     "estado": "APTO",
-    "huella_guion": "47c5f82f51cec2dfd0497efe4857d20f960130628cf7116bc81cbcda2babc5c4",
+    "huella_guion": "2ff00239b54e88e5180f929110a25f5b8be193c65e73d0c24ad68ac94003bb5f",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 34.0,
-      "musica": 3.0,
-      "render_video": 67.0,
-      "mezcla_audio": 2.8,
-      "auditoria_tecnica": 15.3
+      "narracion": 21.0,
+      "musica": 2.0,
+      "render_video": 40.2,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 6.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.03,
-      "computo_equivalente_runner_usd": 0.0122,
+      "computo_minutos": 1.19,
+      "computo_equivalente_runner_usd": 0.0072,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1707,
-    "caracteres_narrados": 853
+    "frames": 1359,
+    "caracteres_narrados": 655
   }
 }

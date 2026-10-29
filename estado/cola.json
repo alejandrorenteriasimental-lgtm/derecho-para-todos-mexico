@@ -1448,7 +1448,7 @@
       "id": "I20261128-T010",
       "formato": "imagen",
       "huella": "bae674a363acda83b8cb2af2670d6bc63c786734ed106671262f36c17276ac4c",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:08:36+00:00",
@@ -1506,6 +1506,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T21:47:58+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 15:22 CDMX) 2026-10-28T21:22:43+00:00 versión 2cce600fded43168 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T01:08:22+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -1537,7 +1543,7 @@
       "id": "R20261126-T061",
       "formato": "reel",
       "huella": "afe8545198c83a918ba0951248628f44ae706e701190dccceeb592a1b9f70999",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:26:29+00:00",
@@ -1589,6 +1595,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T21:47:58+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 15:22 CDMX) 2026-10-28T21:22:42+00:00 versión c8b101816816cdb0 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T01:08:22+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -1762,7 +1774,7 @@
       "id": "R20261201-T019",
       "formato": "reel",
       "huella": "47c5f82f51cec2dfd0497efe4857d20f960130628cf7116bc81cbcda2babc5c4",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T21:47:58+00:00",
@@ -1784,6 +1796,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-29T01:02:58+00:00",
           "motivo": "edición editorial de forma (Claude, 28-10): se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T01:08:19+00:00",
+          "motivo": "45.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T01:08:22+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -1791,10 +1815,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "da9dc64cccd3f4f4",
-        "huella_guion": "7df230db23e922f7883ee4a4c514fc15a7cfff4ef7a36a576cee4194b67ab89a",
-        "huella_archivo": "c18fa3c1e8bfe923247e9a53b082d551937525be5a1de13c0e8d5926a74b37d7",
-        "preparada": "2026-10-28T21:50:30+00:00",
+        "version": "0eaa71dcb14fc370",
+        "huella_guion": "7761ab8d62bc27fc6c790120e2d1838bab91d64162777cac29e326c8f593a5c0",
+        "huella_archivo": "48e6dca4fa5e0fc35b047fd05232020a1add43332944eb2a83269fd94ca80a3e",
+        "preparada": "2026-10-29T01:08:22+00:00",
         "canal": "chat"
       }
     }
