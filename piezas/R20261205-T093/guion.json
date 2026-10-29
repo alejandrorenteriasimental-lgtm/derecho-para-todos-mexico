@@ -1,0 +1,181 @@
+{
+  "id": "R20261205-T093",
+  "formato": "reel",
+  "titulo": "¿Tienes que pagarle al tribunal para resolver tu caso?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T093",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
+      "titulo": [
+        "¿PAGAS AL TRIBUNAL?",
+        "JUSTICIA Y DINERO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.",
+      "titulo": [
+        "SERVICIO",
+        "GRATUITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La norma indica claramente cómo opera la impartición de justicia sin cobros para las personas: Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+      "etiqueta": "Constitución, artículo 17",
+      "cita": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El servicio de los tribunales es gratuito y no se pueden cobrar costas judiciales.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Aspectos clave sobre la justicia:",
+      "items": [
+        "Servicios sin costo",
+        "Cero costas judiciales",
+        "Tribunales expeditos"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.",
+      "titulo": [
+        "RECUERDA",
+        "ESTO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
+    "concepto_central": "gratuidad de la administración de justicia",
+    "respuesta_corta": "No, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.",
+    "reglas": [
+      {
+        "conclusion": "El servicio de los tribunales es gratuito y se prohíben las costas judiciales.",
+        "fuente": "F1",
+        "cita_literal": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "17"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El servicio de los tribunales es gratuito y no se pueden cobrar costas judiciales.",
+        "fuente": "F1",
+        "cita_literal": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla supuestos específicos en los que se apliquen cargos adicionales o excepciones a la prohibición de costas judiciales."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T10:49:39+00:00",
+    "solicitud": "2026-12-05_reel_T093-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Tienes que pagarle al tribunal para que resuelva tu caso?\n\nNo, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El servicio de los tribunales es gratuito y se prohíben las costas judiciales.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel del sentido y la literalidad del artículo 17 de la Constitución Política de los Estados Unidos Mexicanos."
+            },
+            {
+              "conclusion": "El servicio de los tribunales es gratuito y no se pueden cobrar costas judiciales.",
+              "sostenida": "si",
+              "motivo": "La afirmación es jurídicamente válida y se deriva directamente de la prohibición constitucional de las costas judiciales y la gratuidad del servicio."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1880,7 +1880,7 @@
     "I20261204-T031": {
       "id": "I20261204-T031",
       "formato": "imagen",
-      "huella": "02101e3d93d78ae8466d7995ba62a6fb797dcc6e21636ba5930f3e483700d109",
+      "huella": "9d4ffe5d0af0e32d69c151674171200b2e19e8a95a64955f93a616fc686aea51",
       "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
@@ -1915,6 +1915,24 @@
           "a": "RETENIDO",
           "ts": "2026-10-29T10:41:28+00:00",
           "motivo": "RETENIDO: falla técnica de la imagen"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T10:51:46+00:00",
+          "motivo": "el guion cambió; se vuelve a verificar"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T10:54:09+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "RETENIDO",
+          "ts": "2026-10-29T10:54:11+00:00",
+          "motivo": "RETENIDO: falla técnica de la imagen"
         }
       ],
       "error": null,
@@ -1922,7 +1940,7 @@
       "proximo_intento": null,
       "retencion": {
         "tipo": "sustantivo",
-        "desde": "2026-10-29T10:41:28+00:00"
+        "desde": "2026-10-29T10:54:11+00:00"
       },
       "revision": {
         "version": "185380f6b819f6b7",
@@ -2049,6 +2067,74 @@
         "huella_guion": "644db51339ec997daee8d66a704be295128d437b3a5af426bd3b32381f84a242",
         "huella_archivo": "34146053e12b86c41696b6308199759968acbfa6fb931f5d7be01ab8b5c6e68c",
         "preparada": "2026-10-29T10:40:44+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20261206-T028": {
+      "id": "I20261206-T028",
+      "formato": "imagen",
+      "huella": "bf6572d678509209cd5e12ab3864ad20b15e65981fdacad4b3b3b708d645b074",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-29T10:51:46+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T10:54:46+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T10:54:50+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "ec21902a5533d3f2",
+        "huella_guion": "95d4fd3e9ed96dea75b6929995becf48eeb2a28cf9bd5c58c94c290c4624deb8",
+        "huella_archivo": "0478b618671c2e9be77c8ef722b0438098d172c31e770d7aa96263159bb4d373",
+        "preparada": "2026-10-29T10:54:50+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20261205-T093": {
+      "id": "R20261205-T093",
+      "formato": "reel",
+      "huella": "c6f37024fc09ff8b2ccec9bd69814ce77f419e0dc3535520413b4958371c97a7",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-29T10:51:46+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T10:53:30+00:00",
+          "motivo": "40.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T10:53:34+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "b4429600fdfd302a",
+        "huella_guion": "0ad72d8deef986f304426a6d70687b9af1930c65c798144480f76cfd3119e8b0",
+        "huella_archivo": "7c7f04a9ed435e2c004e3ff29cd333a1b4271b7044c91590eeb60e3b222a7096",
+        "preparada": "2026-10-29T10:53:34+00:00",
         "canal": "chat"
       }
     }
