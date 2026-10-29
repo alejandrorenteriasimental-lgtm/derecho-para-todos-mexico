@@ -2844,7 +2844,7 @@
       "id": "I20261202-T030",
       "formato": "imagen",
       "huella": "422ddf241d14e547bc0c9ce195d9d46aa877250587efd383a3076aba008aad7a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T15:37:55+00:00",
@@ -2860,6 +2860,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T15:47:44+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T15:54:34+00:00",
+          "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"
         }
       ],
       "error": null,
