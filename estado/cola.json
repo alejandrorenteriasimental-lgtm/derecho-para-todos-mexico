@@ -2232,7 +2232,7 @@
       "id": "R20261206-T028",
       "formato": "reel",
       "huella": "eeb560bcd3b04fbf4df570db1e1d85229d13d495cf7c045c3375a0adef000265",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T11:04:38+00:00",
@@ -2248,6 +2248,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:08:59+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T11:12:20+00:00",
+          "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"
         }
       ],
       "error": null,

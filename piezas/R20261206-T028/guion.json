@@ -22,16 +22,16 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes qué sucede cuando una persona que enfrenta un proceso penal rinde una declaración sobre los hechos sin contar con el apoyo de su abogado defensor?",
+      "texto": "¿Vale una confesión que hiciste sin tu abogado?",
       "titulo": [
-        "CONFESIÓN",
-        "SIN ABOGADO"
+        "¿CONFESIÓN",
+        "SIN ABOGADO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio conforme a la norma fundamental de nuestro país.",
+      "texto": "No. Según la Constitución, una confesión rendida sin la asistencia del defensor no vale como prueba.",
       "titulo": [
         "NO TIENE",
         "VALOR"
@@ -40,8 +40,8 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley es muy precisa al señalar que cualquier declaración de esta naturaleza no puede ser tomada en cuenta por el juez encargado del caso: La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
-      "etiqueta": "Constitución, artículo 20",
+      "texto": "La Constitución lo dice así: «La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio».",
+      "etiqueta": "Constitución, artículo 20, apartado B",
       "cita": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
       "afirmaciones": [
         {
@@ -55,20 +55,20 @@
     },
     {
       "tipo": "lista",
-      "texto": "Ten en cuenta los siguientes elementos clave sobre esta importante disposición jurídica aplicable en los procesos:",
+      "texto": "Además, desde el momento de tu detención, la Constitución ordena que se te hagan saber los motivos y tu derecho a guardar silencio, que no podrá ser utilizado en tu perjuicio.",
       "items": [
-        "Asistencia de defensor",
-        "Sin abogado no vale",
-        "Protección constitucional"
+        "Saber los motivos",
+        "Guardar silencio",
+        "Tu silencio no te perjudica"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Recuerda que la respuesta definitiva es clara: no, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.",
+      "texto": "En resumen: sin tu defensor, tu confesión no vale como prueba.",
       "titulo": [
-        "REGLA",
-        "CLARA"
+        "SIN DEFENSOR,",
+        "NO VALE"
       ],
       "afirmaciones": []
     },
@@ -141,7 +141,7 @@
   "pregunta_original": "¿Vale una confesión hecha sin abogado?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Vale una confesión hecha sin abogado?\n\nNo, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Vale una confesión hecha sin abogado?\n\nNo. La Constitución establece que la confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio. Además, desde tu detención deben informarte los motivos y tu derecho a guardar silencio, que no podrá usarse en tu perjuicio.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20, apartado B, fracción II.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -172,5 +172,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "sin «no puede ser tomada en cuenta por el juez» (inferencia); lista vaga sustituida por los derechos literales del art. 20 B II (motivos, silencio, no perjuicio); títulos sin repetición ni relleno; respuesta y copy en lenguaje claro"
+    }
+  ]
 }
