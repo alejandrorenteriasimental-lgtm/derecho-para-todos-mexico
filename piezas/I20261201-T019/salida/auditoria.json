@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1191 KB"
+      "detalle": "1200 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1107"
+      "detalle": "fin del contenido en y=1118"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "53 palabras sin cabecera ni pie"
+      "detalle": "55 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 40 palabras reconocidas"
+      "detalle": "100% de 42 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -91,11 +91,11 @@
     "titulo": "¿Qué debe incluir el precio que te muestran?",
     "plantilla": "concepto",
     "archivo": "I20261201-T019.png",
-    "sha256": "bf9e100dd4d429dc15ef8a91689d848e07f5d2250e215c65ccf3c7799d7ce51b",
-    "ahash": "1101111111111111111111111111111111111111111111111101111111111111100000000111111110000000111111111000000111111111111111111111111111111011111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
-    "huella_guion": "a142e396d5afb8256f3335074ef4497c8ad043fd0d9f3d06bb9d076c7088fcd9",
+    "sha256": "90bf0b28d0acdd1aef9b8015dabf966098734d879338c1291fbaf30509a678b9",
+    "ahash": "1101111111111111111111111111111111111111111111111100000000000111100000000111111110000000111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "4ea1546463a774c620fafaca5e0098858ac5643e7b234b26d583cecf70f31047",
     "texto_alternativo": "Imagen informativa que explica qué debe incluir el precio visible de bienes y servicios según la Ley Federal de Protección al Consumidor.",
-    "copy": "Cuando acudes a adquirir bienes, productos o servicios, la Ley Federal de Protección al Consumidor establece en su artículo 7 Bis la obligación de informar el monto total a pagar de forma notoria y visible.\n\nGuarda y comparte esta información para conocer tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Qué debe incluir el precio que te muestran?\n\nEl monto total a pagar, que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo o cargo que tengas que cubrir para comprar o contratar, de contado o a crédito. El proveedor debe informarlo de forma notoria y visible.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 7 Bis.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +106,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-29T14:46:15+00:00",
+    "fecha": "2026-10-29T15:16:59+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

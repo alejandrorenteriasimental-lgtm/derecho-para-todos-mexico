@@ -82,13 +82,11 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "Regla: Sin personas reales identificables"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
-    "carril": "C",
+    "carril": "A",
     "reglas": [
       {
         "control": "Aviso de información general",
@@ -107,31 +105,31 @@
       },
       {
         "control": "Sin personas reales identificables",
-        "resultado": "FALLA",
-        "detalle": "Autoridad Conciliadora"
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
       }
     ]
   },
   "registro": {
     "id": "R20261130-T014",
     "titulo": "¿Qué puedes pedir si te despiden sin causa justificada?",
-    "fecha": "2026-10-29T15:02:36+00:00",
+    "fecha": "2026-10-29T15:12:47+00:00",
     "sha256": "2062ebabecb4c4737b2bb3b56255658a4bf1b85fde3f276c94adde593d605eb2",
     "duracion_s": 60.1,
-    "estado": "RETENIDO",
+    "estado": "APTO",
     "huella_guion": "94d1789181404bdbf4cfbb41e99cce0659a35f79b67c43761a035fd47ede55ac",
-    "carril": "C",
+    "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 36.4,
+      "narracion": 37.0,
       "musica": 2.9,
       "render_video": 69.2,
-      "mezcla_audio": 2.8,
-      "auditoria_tecnica": 15.4
+      "mezcla_audio": 2.7,
+      "auditoria_tecnica": 15.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.11,
+      "computo_minutos": 2.12,
       "computo_equivalente_runner_usd": 0.0127,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
