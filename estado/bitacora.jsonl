@@ -530,3 +530,10 @@
 {"ts": "2026-10-29T11:10:28+00:00", "evento": "revision_preparada", "pieza": "I20261206-T028", "version": "cac1238312b0a86e", "canal": "chat"}
 {"ts": "2026-10-29T11:10:28+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 6, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 6}
 {"ts": "2026-10-29T11:12:20+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-29T11:16:13+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T11:22:26+00:00", "evento": "fuente_desde_respaldo", "pieza": "R20261206-T028", "copias": [{"url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf", "descargado": "2026-10-29T11:09:58.596193+00:00", "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65", "motivo": "<urlopen error [Errno 110] Connection timed out>"}]}
+{"ts": "2026-10-29T11:23:56+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.5"}
+{"ts": "2026-10-29T11:23:59+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:23:59+00:00", "evento": "revision_preparada", "pieza": "R20261206-T028", "version": "c1d43101a438d525", "canal": "chat"}
+{"ts": "2026-10-29T11:23:59+00:00", "evento": "respaldos_fuentes", "usados": [{"url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf", "descargado": "2026-10-29T11:09:58.596193+00:00", "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65", "motivo": "<urlopen error [Errno 110] Connection timed out>"}]}
+{"ts": "2026-10-29T11:23:59+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "57.1 s"
+      "detalle": "41.5 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "57.1 s"
+      "detalle": "41.5 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "42 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "f980526fe32c9ddb"
+      "detalle": "7fb2197b375dabdd"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261206-T028",
     "titulo": "¿Vale una confesión hecha sin abogado en México?",
-    "fecha": "2026-10-29T11:08:56+00:00",
-    "sha256": "f980526fe32c9ddbe894413b4c10ec24464d06397b9402e52b82a13d1bc524bb",
-    "duracion_s": 57.1,
+    "fecha": "2026-10-29T11:23:56+00:00",
+    "sha256": "7fb2197b375dabdd7477c118cfa716ae9d63d652f2562b38702b4046f38d7cba",
+    "duracion_s": 41.5,
     "estado": "APTO",
-    "huella_guion": "eeb560bcd3b04fbf4df570db1e1d85229d13d495cf7c045c3375a0adef000265",
+    "huella_guion": "7dcde5c831d494b19fc1e1068ac558aa88e4818446fe0f8b940046640ba0bf7d",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 15.3,
-      "musica": 1.5,
-      "render_video": 36.6,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 9.1
+      "narracion": 26.5,
+      "musica": 2.0,
+      "render_video": 48.3,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 11.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.07,
-      "computo_equivalente_runner_usd": 0.0064,
+      "computo_minutos": 1.5,
+      "computo_equivalente_runner_usd": 0.009,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1711,
-    "caracteres_narrados": 848
+    "frames": 1244,
+    "caracteres_narrados": 585
   }
 }
