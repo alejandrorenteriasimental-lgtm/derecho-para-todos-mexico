@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1169 KB"
+      "detalle": "1163 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1053"
+      "detalle": "fin del contenido en y=1057"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "39 palabras sin cabecera ni pie"
+      "detalle": "41 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "91% de 33 palabras reconocidas"
+      "detalle": "92% de 36 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -53,7 +53,7 @@
     {
       "control": "No es casi idéntica a una imagen anterior",
       "resultado": "APROBADO",
-      "detalle": "distancia mínima 18/256"
+      "detalle": "distancia mínima 70/256"
     }
   ],
   "juridica": {
@@ -88,14 +88,14 @@
   "metadatos": {
     "id": "I20261205-T093",
     "formato": "imagen",
-    "titulo": "¿Las costas judiciales están permitidas en México?",
+    "titulo": "¿El tribunal te puede cobrar por resolver tu caso?",
     "plantilla": "concepto",
     "archivo": "I20261205-T093.png",
-    "sha256": "1c361321defebc90bf860bd4b0f79e7b8db51f7156817ce9d21709647f438de4",
-    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000000110000000000001111000001111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "d3b5cfd659a191b1041993821cfbe6fa4a52036a6046491013dd422c3953a945",
+    "sha256": "74c3c34cc6e156663db34c5b9e99cf4e3835134fa43f6f80daa42f2d93d4b3eb",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000001110000000000000011000011111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "7a614ad664b1f2653d07f0b268d9191407445411a53c96bd3ffe88001c7cde30",
     "texto_alternativo": "Imagen gráfica que explica la prohibición de las costas judiciales en México según el artículo 17 constitucional.",
-    "copy": "De acuerdo con la Constitución Política de los Estados Unidos Mexicanos, en su artículo 17, toda persona tiene derecho a que se le administre justicia por los tribunales.\n\nEl texto oficial establece que el servicio de impartición de justicia será gratuito, por lo que se prohíben expresamente las costas judiciales.\n\nGuarda y comparte esta información para que más personas conozcan sus derechos al acudir a los tribunales.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿El tribunal te puede cobrar por resolver tu caso?\n\nNo. La Constitución establece que el servicio de los tribunales es gratuito.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +106,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-29T10:42:09+00:00",
+    "fecha": "2026-10-29T11:09:54+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

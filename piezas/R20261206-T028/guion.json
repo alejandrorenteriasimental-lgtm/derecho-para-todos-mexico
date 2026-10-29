@@ -1,0 +1,176 @@
+{
+  "id": "R20261206-T028",
+  "formato": "reel",
+  "titulo": "¿Vale una confesión hecha sin abogado en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T028",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes qué sucede cuando una persona que enfrenta un proceso penal rinde una declaración sobre los hechos sin contar con el apoyo de su abogado defensor?",
+      "titulo": [
+        "CONFESIÓN",
+        "SIN ABOGADO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio conforme a la norma fundamental de nuestro país.",
+      "titulo": [
+        "NO TIENE",
+        "VALOR"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley es muy precisa al señalar que cualquier declaración de esta naturaleza no puede ser tomada en cuenta por el juez encargado del caso: La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+      "etiqueta": "Constitución, artículo 20",
+      "cita": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La confesión carece de todo valor probatorio si se realiza sin la asistencia del defensor.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Ten en cuenta los siguientes elementos clave sobre esta importante disposición jurídica aplicable en los procesos:",
+      "items": [
+        "Asistencia de defensor",
+        "Sin abogado no vale",
+        "Protección constitucional"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Recuerda que la respuesta definitiva es clara: no, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.",
+      "titulo": [
+        "REGLA",
+        "CLARA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Vale una confesión hecha sin abogado?",
+    "concepto_central": "confesión sin asistencia del defensor",
+    "respuesta_corta": "No, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.",
+    "reglas": [
+      {
+        "conclusion": "La confesión hecha sin la asistencia de un defensor no tiene ningún valor probatorio.",
+        "fuente": "F1",
+        "cita_literal": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La confesión carece de todo valor probatorio si se realiza sin la asistencia del defensor.",
+        "fuente": "F1",
+        "cita_literal": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla mayores requisitos sobre la asistencia del defensor en este supuesto más allá de establecer la falta de valor probatorio."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T11:04:38+00:00",
+    "solicitud": "2026-12-06_reel_T028-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Vale una confesión hecha sin abogado?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Vale una confesión hecha sin abogado?\n\nNo, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La confesión hecha sin la asistencia de un defensor no tiene ningún valor probatorio.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la consecuencia jurídica establecida en el artículo 20, apartado B, fracción II de la Constitución Política de los Estados Unidos Mexicanos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

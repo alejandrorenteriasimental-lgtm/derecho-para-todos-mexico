@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "58.2 s"
+      "detalle": "53.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "58.2 s"
+      "detalle": "53.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.9 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "44 bloques"
+      "detalle": "41 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "34146053e12b86c4"
+      "detalle": "d5284b6bc1c1b97c"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261204-T061",
     "titulo": "¿Cualquier persona puede detener a alguien?",
-    "fecha": "2026-10-29T10:40:41+00:00",
-    "sha256": "34146053e12b86c41696b6308199759968acbfa6fb931f5d7be01ab8b5c6e68c",
-    "duracion_s": 58.2,
+    "fecha": "2026-10-29T11:06:10+00:00",
+    "sha256": "d5284b6bc1c1b97c4a2b1823f43675a03b8f7b83f69dfa4dacb5715ca8c54a1e",
+    "duracion_s": 53.0,
     "estado": "APTO",
-    "huella_guion": "403cd4462df862a41988734cf255b533742fc27b85e6c77c8a3a3093e80373b8",
+    "huella_guion": "f81cc45cd8630790c9bf033df0788f3411eff671e1de9fd15d71bbc7bb6cae77",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 33.7,
-      "musica": 3.9,
-      "render_video": 67.1,
-      "mezcla_audio": 3.0,
-      "auditoria_tecnica": 15.6
+      "narracion": 15.5,
+      "musica": 1.5,
+      "render_video": 38.4,
+      "mezcla_audio": 1.4,
+      "auditoria_tecnica": 9.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.06,
-      "computo_equivalente_runner_usd": 0.0123,
+      "computo_minutos": 1.1,
+      "computo_equivalente_runner_usd": 0.0066,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1745,
-    "caracteres_narrados": 892
+    "frames": 1587,
+    "caracteres_narrados": 797
   }
 }

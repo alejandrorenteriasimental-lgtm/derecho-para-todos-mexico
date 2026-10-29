@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1138 KB"
+      "detalle": "1141 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "33 palabras sin cabecera ni pie"
+      "detalle": "35 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "97% de 37 palabras reconocidas"
+      "detalle": "97% de 38 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -53,7 +53,7 @@
     {
       "control": "No es casi idéntica a una imagen anterior",
       "resultado": "APROBADO",
-      "detalle": "distancia mínima 21/256"
+      "detalle": "distancia mínima 106/256"
     }
   ],
   "juridica": {
@@ -91,11 +91,11 @@
     "titulo": "¿Una confesión sin abogado tiene valor?",
     "plantilla": "mito_realidad",
     "archivo": "I20261206-T028.png",
-    "sha256": "0478b618671c2e9be77c8ef722b0438098d172c31e770d7aa96263159bb4d373",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011000011111111111100111111111111110000000001111111000111111111111100000000000011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "bf6572d678509209cd5e12ab3864ad20b15e65981fdacad4b3b3b708d645b074",
+    "sha256": "95e6c6dd1f53212d2633314067d2b060abf967d8841508f2206a16a8246f63a7",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011000011111111111100111111111111110000000001111111000111111111111100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "1292c256bd7fd925950c585fe4fabb2cf10ad29b335404ff6bcf26eb046f8b34",
     "texto_alternativo": "Imagen fija que explica si una confesión sin abogado tiene valor según la Constitución.",
-    "copy": "En el sistema penal mexicano, los derechos de toda persona imputada protegen el debido proceso. La Constitución Política de los Estados Unidos Mexicanos establece garantías claras sobre la defensa adecuada en todo momento.\n\nEspecíficamente, el artículo 20 señala que la confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio. Esto significa que no puede utilizarse para sustentar una condena si no se respetó este requisito fundamental.\n\nComparte o guarda esta información para conocer más sobre tus derechos y la ley mexicana.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Una confesión sin abogado tiene valor?\n\nNo. La Constitución establece que la confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio; es decir, no vale como prueba.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20, apartado B, fracción II.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +106,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-29T10:54:46+00:00",
+    "fecha": "2026-10-29T11:10:24+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

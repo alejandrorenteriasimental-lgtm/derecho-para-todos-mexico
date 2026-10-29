@@ -52,16 +52,14 @@
     },
     {
       "control": "No es casi idéntica a una imagen anterior",
-      "resultado": "FALLA",
-      "detalle": "distancia mínima 11/256"
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "falla técnica de la imagen"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -107,8 +105,8 @@
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "RETENIDO",
-    "fecha": "2026-10-29T10:54:09+00:00",
+    "estado": "APTO",
+    "fecha": "2026-10-29T11:09:26+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

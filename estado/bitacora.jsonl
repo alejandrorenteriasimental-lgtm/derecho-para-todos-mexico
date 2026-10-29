@@ -507,3 +507,25 @@
 {"ts": "2026-10-29T10:58:52+00:00", "pieza": "R20261205-T093", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-29T10:58:52+00:00", "pieza": "I20261205-T093", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-29T10:58:52+00:00", "pieza": "I20261206-T028", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-29T11:02:50+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T11:04:38+00:00", "evento": "redactada", "pieza": "R20261206-T028", "solicitud": "2026-12-06_reel_T028-lote-3.json"}
+{"ts": "2026-10-29T11:04:38+00:00", "pieza": "R20261206-T028", "evento": "encolado"}
+{"ts": "2026-10-29T11:06:10+00:00", "pieza": "R20261204-T061", "evento": "transicion", "a": "PRODUCIDO", "motivo": "53.0"}
+{"ts": "2026-10-29T11:06:14+00:00", "pieza": "R20261204-T061", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:06:14+00:00", "evento": "revision_preparada", "pieza": "R20261204-T061", "version": "cceb362a337f4e09", "canal": "chat"}
+{"ts": "2026-10-29T11:07:21+00:00", "pieza": "R20261205-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "34.8"}
+{"ts": "2026-10-29T11:07:25+00:00", "pieza": "R20261205-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:07:25+00:00", "evento": "revision_preparada", "pieza": "R20261205-T093", "version": "d820b0534a57346b", "canal": "chat"}
+{"ts": "2026-10-29T11:08:56+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "PRODUCIDO", "motivo": "57.1"}
+{"ts": "2026-10-29T11:08:59+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:08:59+00:00", "evento": "revision_preparada", "pieza": "R20261206-T028", "version": "a1968f69b46dc913", "canal": "chat"}
+{"ts": "2026-10-29T11:09:26+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T11:09:28+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:09:28+00:00", "evento": "revision_preparada", "pieza": "I20261204-T031", "version": "a361b05b3e066819", "canal": "chat"}
+{"ts": "2026-10-29T11:09:54+00:00", "pieza": "I20261205-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T11:09:57+00:00", "pieza": "I20261205-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:09:57+00:00", "evento": "revision_preparada", "pieza": "I20261205-T093", "version": "cdfcd9e7d5f03781", "canal": "chat"}
+{"ts": "2026-10-29T11:10:24+00:00", "pieza": "I20261206-T028", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T11:10:28+00:00", "pieza": "I20261206-T028", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T11:10:28+00:00", "evento": "revision_preparada", "pieza": "I20261206-T028", "version": "cac1238312b0a86e", "canal": "chat"}
+{"ts": "2026-10-29T11:10:28+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 6, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 6}

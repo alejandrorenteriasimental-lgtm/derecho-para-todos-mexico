@@ -1,0 +1,35 @@
+{
+ "tema_id": "T028",
+ "pregunta": "¿Vale una confesión hecha sin abogado?",
+ "fecha": "2026-10-29T11:03:33+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Vale una confesión hecha sin abogado?",
+  "concepto_central": "confesión sin asistencia del defensor",
+  "respuesta_corta": "No, la confesión rendida sin la asistencia del defensor carece de todo valor probatorio.",
+  "reglas": [
+   {
+    "conclusion": "La confesión hecha sin la asistencia de un defensor no tiene ningún valor probatorio.",
+    "fuente": "F1",
+    "cita_literal": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La confesión carece de todo valor probatorio si se realiza sin la asistencia del defensor.",
+    "fuente": "F1",
+    "cita_literal": "La confesión rendida sin la asistencia del defensor carecerá de todo valor probatorio;",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla mayores requisitos sobre la asistencia del defensor en este supuesto más allá de establecer la falta de valor probatorio.",
+  "fuentes_irrelevantes": []
+ }
+}
