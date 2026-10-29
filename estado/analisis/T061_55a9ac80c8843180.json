@@ -1,0 +1,55 @@
+{
+ "tema_id": "T061",
+ "pregunta": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+ "fecha": "2026-10-29T10:32:06+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+  "concepto_central": "detención por cualquier persona en el momento de cometer un delito",
+  "respuesta_corta": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
+  "reglas": [
+   {
+    "conclusion": "Cualquier persona está facultada para detener a un individuo que comete un delito en ese momento o inmediatamente después.",
+    "fuente": "F1",
+    "cita_literal": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
+    "condiciones": [
+     "ponerlo sin demora a disposición de la autoridad civil más cercana"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Cualquier persona puede realizar la detención de quien comete un delito en flagrancia.",
+    "fuente": "F1",
+    "cita_literal": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "El detenido debe ser entregado a la autoridad civil más cercana y esta al Ministerio Público.",
+    "fuente": "F1",
+    "cita_literal": "poniéndolo sin demora a disposición de la autoridad civil más cercana y ésta con la misma prontitud, a la del Ministerio Público."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "cubierto",
+    "respuesta": "La entrega debe realizarse sin demora y con prontitud.",
+    "fuente": "F1",
+    "cita_literal": "poniéndolo sin demora a disposición de la autoridad civil más cercana y ésta con la misma prontitud"
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_aplica",
+    "motivo": "La norma constitucional establece la facultad material de detención y puesta a disposición, no una vía procesal específica."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto constitucional solo regula la detención en el momento de cometer el delito o inmediatamente después, así como la obligación de registro y puesta a disposición inmediata ante la autoridad civil.",
+  "fuentes_irrelevantes": []
+ }
+}

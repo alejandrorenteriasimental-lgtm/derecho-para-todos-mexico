@@ -1,0 +1,34 @@
+{
+ "tema_id": "T093",
+ "pregunta": "¿Las costas judiciales están permitidas en México?",
+ "fecha": "2026-10-29T10:34:41+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Las costas judiciales están permitidas en México?",
+  "concepto_central": "costas judiciales",
+  "respuesta_corta": "No, las costas judiciales están prohibidas porque el servicio de administración de justicia es gratuito.",
+  "reglas": [
+   {
+    "conclusion": "Las costas judiciales están prohibidas en la administración de justicia.",
+    "fuente": "F1",
+    "cita_literal": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Las costas judiciales están prohibidas debido a la gratuidad del servicio de justicia.",
+    "fuente": "F1",
+    "cita_literal": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no establece excepciones ni supuestos adicionales sobre la prohibición de las costas judiciales.",
+  "fuentes_irrelevantes": []
+ }
+}

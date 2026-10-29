@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1186 KB"
+      "detalle": "1165 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1109"
+      "detalle": "fin del contenido en y=1086"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "51 palabras sin cabecera ni pie"
+      "detalle": "40 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "92% de 39 palabras reconocidas"
+      "detalle": "91% de 32 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -52,14 +52,16 @@
     },
     {
       "control": "No es casi idéntica a una imagen anterior",
-      "resultado": "APROBADO",
-      "detalle": "distancia mínima 24/256"
+      "resultado": "FALLA",
+      "detalle": "distancia mínima 11/256"
     }
   ],
   "juridica": {
-    "decision": "APTO",
-    "tipo_retencion": null,
-    "motivos": [],
+    "decision": "RETENIDO",
+    "tipo_retencion": "sustantivo",
+    "motivos": [
+      "falla técnica de la imagen"
+    ],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -91,11 +93,11 @@
     "titulo": "¿Cuántas instancias puede tener un juicio penal?",
     "plantilla": "dato",
     "archivo": "I20261204-T031.png",
-    "sha256": "1d2b5932878cbeaa62cf85502696e8c5812b7b5457c94b226c9c0e6b0bf73c6f",
-    "ahash": "1000011111111111111111111111111111111111111111111000000000000011100000000000001110000111111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "02101e3d93d78ae8466d7995ba62a6fb797dcc6e21636ba5930f3e483700d109",
+    "sha256": "a3f72370b1a629f9a027ec0581b678be6124d3efb9cb5963c7bd49f0c6308ea5",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000001110000000100000111000011111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "9d4ffe5d0af0e32d69c151674171200b2e19e8a95a64955f93a616fc686aea51",
     "texto_alternativo": "Placa informativa sobre el límite constitucional de instancias en un juicio penal en México, citando el artículo 23 de la Constitución.",
-    "copy": "El artículo 23 de la Constitución Política de los Estados Unidos Mexicanos establece una regla clara para los juicios criminales: ningún juicio criminal deberá tener más de tres instancias.\n\nAsimismo, la norma distingue entre fijar este tope de revisión y la figura de absolver de la instancia, expresando que esta última práctica queda prohibida.\n\nLa Constitución únicamente establece el límite máximo de tres instancias para el juicio criminal, sin definir el concepto de instancia ni regular el procedimiento interno de cada una. Guarda esta publicación o compártela para que más personas conozcan lo que dice la ley en México.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Cuántas instancias puede tener un juicio penal?\n\nHasta tres. La Constitución establece que ningún juicio criminal deberá tener más de tres instancias.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 23.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -105,8 +107,8 @@
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "APTO",
-    "fecha": "2026-10-29T10:16:40+00:00",
+    "estado": "RETENIDO",
+    "fecha": "2026-10-29T10:41:25+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

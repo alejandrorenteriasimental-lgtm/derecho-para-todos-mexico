@@ -467,3 +467,22 @@
 {"ts": "2026-10-29T10:16:44+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 2, "producidas": 2, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 2}
 {"ts": "2026-10-29T10:19:24+00:00", "pieza": "R20261202-T030", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 29-10): se vuelve a verificar y producir"}
 {"ts": "2026-10-29T10:19:24+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial de forma (Claude, 29-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-29T10:27:20+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T10:31:16+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-03_reel_T089-lote-3.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Las personas trabajadoras que no estén laborando "}
+{"ts": "2026-10-29T10:34:16+00:00", "evento": "redactada", "pieza": "R20261204-T061", "solicitud": "2026-12-04_reel_T061-lote-3.json"}
+{"ts": "2026-10-29T10:35:21+00:00", "evento": "redactada", "pieza": "I20261205-T093", "solicitud": "2026-12-05_imagen_T093-lote-3.json"}
+{"ts": "2026-10-29T10:35:21+00:00", "pieza": "I20261205-T093", "evento": "encolado"}
+{"ts": "2026-10-29T10:35:21+00:00", "pieza": "R20261204-T061", "evento": "encolado"}
+{"ts": "2026-10-29T10:37:57+00:00", "pieza": "R20261202-T030", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.9"}
+{"ts": "2026-10-29T10:38:00+00:00", "pieza": "R20261202-T030", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T10:38:00+00:00", "evento": "revision_preparada", "pieza": "R20261202-T030", "version": "a64ad5d0c1c6cf27", "canal": "chat"}
+{"ts": "2026-10-29T10:40:41+00:00", "pieza": "R20261204-T061", "evento": "transicion", "a": "PRODUCIDO", "motivo": "58.2"}
+{"ts": "2026-10-29T10:40:44+00:00", "pieza": "R20261204-T061", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T10:40:44+00:00", "evento": "revision_preparada", "pieza": "R20261204-T061", "version": "ee06eccd0646ec13", "canal": "chat"}
+{"ts": "2026-10-29T10:41:25+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T10:41:28+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: falla técnica de la imagen"}
+{"ts": "2026-10-29T10:41:28+00:00", "evento": "alerta", "mensaje": "I20261204-T031 retenido: RETENIDO"}
+{"ts": "2026-10-29T10:42:09+00:00", "pieza": "I20261205-T093", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T10:42:12+00:00", "pieza": "I20261205-T093", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T10:42:12+00:00", "evento": "revision_preparada", "pieza": "I20261205-T093", "version": "953d90a639fcd898", "canal": "chat"}
+{"ts": "2026-10-29T10:42:12+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 4, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 3}

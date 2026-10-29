@@ -1,0 +1,42 @@
+{
+ "tema_id": "T089",
+ "pregunta": "¿Te toca aguinaldo si dejas tu trabajo antes de diciembre?",
+ "fecha": "2026-10-29T10:27:52+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te toca aguinaldo si dejas tu trabajo antes de diciembre?",
+  "concepto_central": "aguinaldo proporcional al dejar el trabajo",
+  "respuesta_corta": "Sí, tienes derecho a recibir la parte proporcional del aguinaldo según el tiempo trabajado, aunque ya no laborador en la fecha de pago.",
+  "reglas": [
+   {
+    "conclusion": "Las personas trabajadoras que no estén laborando en la fecha de pago del aguinaldo tienen derecho a recibir la parte proporcional correspondiente al tiempo trabajado.",
+    "fuente": "F1",
+    "cita_literal": "Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo",
+    "condiciones": [
+     "Haber trabajado un tiempo determinado durante el año"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El efecto jurídico es el derecho del trabajador a percibir la parte proporcional del aguinaldo conforme al tiempo que haya trabajado.",
+    "fuente": "F1",
+    "cita_literal": "tendrán derecho a que se les pague la parte proporcional del mismo, conforme al tiempo que hubieren trabajado, cualquiera que fuere éste."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "renuncia",
+    "b": "despido",
+    "diferencia": "La renuncia es la separación decidida voluntariamente por la persona trabajadora, mientras que el despido es la separación decidida por el patrón."
+   }
+  ],
+  "limites": "El texto oficial no especifica el plazo exacto de entrega del finiquito al momento del retiro antes de diciembre, únicamente señala la fecha límite del pago anual (antes del 20 de diciembre) y el derecho al proporcional.",
+  "fuentes_irrelevantes": []
+ }
+}

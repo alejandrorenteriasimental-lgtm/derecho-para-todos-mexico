@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "56.8 s"
+      "detalle": "38.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "56.8 s"
+      "detalle": "38.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "43 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "980dfa8a5f71ac9f"
+      "detalle": "978354e246f6dcd2"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 9 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261202-T030",
     "titulo": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
-    "fecha": "2026-10-29T10:16:01+00:00",
-    "sha256": "980dfa8a5f71ac9fec15415631987c11c0f085a4c105274275cfc7ce4a0ac223",
-    "duracion_s": 56.8,
+    "fecha": "2026-10-29T10:37:57+00:00",
+    "sha256": "978354e246f6dcd236049a59a52b7a9ae7a5fd6225cabaa7bb58b00580dba309",
+    "duracion_s": 38.9,
     "estado": "APTO",
-    "huella_guion": "ec5ed4a3948908917490eb25959e638be57eb33643085e58b3bff19fb3ccfb3a",
+    "huella_guion": "2e7fe566f2879f28a86d71c8f1262bb9d13defe2b827a1379fd91e835f9e83f2",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 28.1,
-      "musica": 2.6,
-      "render_video": 51.7,
-      "mezcla_audio": 2.2,
-      "auditoria_tecnica": 12.0
+      "narracion": 21.8,
+      "musica": 1.9,
+      "render_video": 46.3,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.61,
-      "computo_equivalente_runner_usd": 0.0097,
+      "computo_minutos": 1.37,
+      "computo_equivalente_runner_usd": 0.0082,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1702,
-    "caracteres_narrados": 850
+    "frames": 1164,
+    "caracteres_narrados": 561
   }
 }

@@ -1,0 +1,68 @@
+{
+ "solicitud": "2026-12-03_reel_T089-lote-3.json",
+ "fecha": "2026-10-29T10:31:16+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Las personas trabajadoras que no estén laborando en la fecha de pago tienen derecho a recibir la parte proporcional del aguinaldo.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 87 establece explícitamente que los trabajadores t",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[sustento] «La renuncia es la separación decidida voluntariamente por la persona trabajadora» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
+   ],
+   "visible": "  \n ¿Crees que si firmas tu renuncia voluntaria pierdes totalmente tu derecho al aguinaldo? \n ¿PIERDES TODO \n AL RENUNCIAR \n A TU TRABAJO? \n Sí, tienes derecho a recibir la parte proporcional del aguinaldo según el tiempo trabajado, aunque ya no laborador en la fecha de pago. La renuncia es la separación decidida voluntariamente por la persona trabajadora, mientras que el despido es la separación decidida por el patrón. \n AGUINALDO \n PROPORCIONAL \n La norma dispone expresamente: Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo. \n Lo"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[sustento] «Sin importar si se trata de una renuncia decidida por la persona trabajadora o d» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
+   ],
+   "visible": "  \n ¿Crees que por dejar tu trabajo antes de fin de año pierdes el derecho a cobrar tu aguinaldo? \n ¿RENUNCIASTE \n ANTES DE \n DICIEMBRE? \n Sí, tienes derecho a recibir la parte proporcional del aguinaldo según el tiempo trabajado, aunque ya no estés laborando en la fecha de pago. \n SÍ TE \n CORRESPONDE \n El artículo 87 de la Ley Federal del Trabajo establece que «Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo». \n Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liq"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Las personas trabajadoras que no estén laborando en la fecha de pago tienen derecho a recibir la parte proporcional del aguinaldo.",
+      "sostenida": "si",
+      "motivo": "El artículo 87 establece explícitamente que los trabajadores tienen derecho a la parte proporcional independientemente de si se encuentran laborando o no en la fecha de liquidación."
+     },
+     {
+      "conclusion": "El texto oficial dispone el pago proporcional según el tiempo laborado.",
+      "sostenida": "si",
+      "motivo": "El artículo 87 señala que el pago debe ser conforme al tiempo que hubieren trabajado."
+     },
+     {
+      "conclusion": "El efecto jurídico es el derecho del trabajador a percibir la parte proporcional conforme al tiempo trabajado.",
+      "sostenida": "si",
+      "motivo": "Es una interpretación directa y correcta del artículo 87."
+     },
+     {
+      "conclusion": "Existe el derecho al pago proporcional independientemente de estar laborando en la fecha de liquidación.",
+      "sostenida": "si",
+      "motivo": "El artículo 87 menciona textualmente: 'independientemente de que se encuentren laborando o no en la fecha de liquidación'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "distinciones",
+      "problema": "La pieza incluye definiciones de 'renuncia' y 'despido' que no se encuentran en el texto oficial proporcionado (Ley Federal del Trabajo, artículo 87).",
+      "correccion": "Eliminar las definiciones de renuncia y despido, ya que el texto oficial no las contiene y la instrucción prohíbe agregar conceptos no presentes en la fuente."
+     }
+    ]
+   }
+  }
+ ]
+}

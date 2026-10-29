@@ -1,0 +1,210 @@
+{
+  "id": "R20261204-T061",
+  "formato": "reel",
+  "titulo": "¿Cualquier persona puede detener a alguien?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T061",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "16",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Cualquier persona puede detener a alguien que está cometiendo un delito en la calle o en la vía pública?",
+      "titulo": [
+        "DETENCIÓN",
+        "POR UN",
+        "PARTICULAR"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
+      "titulo": [
+        "RESPUESTA",
+        "DIRECTA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El marco constitucional es muy claro respecto a esta facultad ciudadana cuando ocurre una flagrancia: Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
+      "etiqueta": "Ley, artículo 16",
+      "cita": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para que esta acción sea válida y conforme a derecho, se deben cumplir las siguientes condiciones operativas indispensables:",
+      "items": [
+        "Ponerlo sin demora",
+        "Autoridad civil cercana",
+        "Al Ministerio Público"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Cualquier persona puede realizar la detención de quien comete un delito.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Además, la norma exige un control estricto sobre el procedimiento para evitar cualquier clase de omisión:",
+      "encabezado": "Registro obligatorio",
+      "detalle": "Inmediato por ley",
+      "fuente_corta": "Ley, art. 16",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
+      "titulo": [
+        "CONCLUSIÓN",
+        "JURÍDICA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+    "concepto_central": "detención por cualquier persona en el momento de cometer un delito",
+    "respuesta_corta": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
+    "reglas": [
+      {
+        "conclusion": "Cualquier persona está facultada para detener a un individuo que comete un delito en ese momento o inmediatamente después.",
+        "fuente": "F1",
+        "cita_literal": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
+        "condiciones": [
+          "ponerlo sin demora a disposición de la autoridad civil más cercana"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "16"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Cualquier persona puede realizar la detención de quien comete un delito en flagrancia.",
+        "fuente": "F1",
+        "cita_literal": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido"
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "cubierto",
+        "respuesta": "El detenido debe ser entregado a la autoridad civil más cercana y esta al Ministerio Público.",
+        "fuente": "F1",
+        "cita_literal": "poniéndolo sin demora a disposición de la autoridad civil más cercana y ésta con la misma prontitud, a la del Ministerio Público."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "cubierto",
+        "respuesta": "La entrega debe realizarse sin demora y con prontitud.",
+        "fuente": "F1",
+        "cita_literal": "poniéndolo sin demora a disposición de la autoridad civil más cercana y ésta con la misma prontitud"
+      },
+      {
+        "elemento": "vía",
+        "estado": "no_aplica",
+        "motivo": "La norma constitucional establece la facultad material de detención y puesta a disposición, no una vía procesal específica."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto constitucional solo regula la detención en el momento de cometer el delito o inmediatamente después, así como la obligación de registro y puesta a disposición inmediata ante la autoridad civil."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T10:34:16+00:00",
+    "solicitud": "2026-12-04_reel_T061-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?\n\nSí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Cualquier persona está facultada para detener a un individuo que comete un delito en ese momento o inmediatamente después.",
+              "sostenida": "si",
+              "motivo": "La conclusión es jurídicamente válida y se desprende directamente del texto constitucional, respetando los supuestos temporales de la detención por particulares."
+            },
+            {
+              "conclusion": "El detenido debe ser entregado a la autoridad civil más cercana y esta al Ministerio Público.",
+              "sostenida": "si",
+              "motivo": "La conclusión describe correctamente la cadena de puesta a disposición establecida en el artículo 16."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
