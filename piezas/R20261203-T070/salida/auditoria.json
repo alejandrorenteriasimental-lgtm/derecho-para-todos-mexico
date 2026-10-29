@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "6e98e9036413b88d"
+      "detalle": "d5fc0c4fd09aac15"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,24 +113,24 @@
   "registro": {
     "id": "R20261203-T070",
     "titulo": "¿La empresa debe pagarte luz e internet?",
-    "fecha": "2026-10-29T15:16:38+00:00",
-    "sha256": "6e98e9036413b88d7dfc28647503ebf77811c7394360f15aa734144039d2cae8",
+    "fecha": "2026-10-29T15:45:47+00:00",
+    "sha256": "d5fc0c4fd09aac15c6ca1001a940a4064b194e8beec042d508a067d77d9f5155",
     "duracion_s": 56.8,
     "estado": "APTO",
-    "huella_guion": "486492ec62fc9be5347b6c64586af57236e1571b37e6d6f48d8737fbfd5e09fe",
+    "huella_guion": "d60aeaae66761b433b9dc7fe0f7919030f6a61cca394ed7a7f2d0a46146f53ab",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 33.2,
-      "musica": 3.2,
-      "render_video": 66.3,
-      "mezcla_audio": 2.6,
-      "auditoria_tecnica": 14.3
+      "narracion": 33.9,
+      "musica": 2.9,
+      "render_video": 66.5,
+      "mezcla_audio": 2.7,
+      "auditoria_tecnica": 14.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.99,
-      "computo_equivalente_runner_usd": 0.012,
+      "computo_minutos": 2.01,
+      "computo_equivalente_runner_usd": 0.0121,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 1702,

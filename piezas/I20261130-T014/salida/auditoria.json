@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1146 KB"
+      "detalle": "1149 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -38,7 +38,7 @@
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "95% de 37 palabras reconocidas"
+      "detalle": "95% de 38 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -91,11 +91,11 @@
     "titulo": "¿Te pueden despedir por estar embarazada?",
     "plantilla": "mito_realidad",
     "archivo": "I20261130-T014.png",
-    "sha256": "41b21b8895a9a8f732b586ac16ad38874c0ee02a49a46f2a61a84347009b0145",
+    "sha256": "915d5450a51ef28fbeec854f2eb043508862318f56815da4ad3eb7999062e31f",
     "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100011011111111110000001111111111000111111111111100000000000001111011110011111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "fd8d00d1ee06e6c4c7c62dfb0ed1004fb846f8d350b07c1dd7040dcf797cd96c",
+    "huella_guion": "41f5a78145cc045687d026aad04e74a6fa0778678ee4f959d80d44ea3c2e009b",
     "texto_alternativo": "Infografía tipo mito y realidad sobre si te pueden despedir por estar embarazada. Mito: Si te embarazas, el patrón puede despedirte o pedirte que renuncies. Realidad: No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
-    "copy": "En el ámbito laboral existen dudas sobre las prohibiciones que tienen los patrones frente a la maternidad. La Ley Federal del Trabajo regula estas situaciones de forma directa.\n\nDe acuerdo con la Ley Federal del Trabajo, en su artículo 133, se prohíbe a las personas empleadoras despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores. Es importante señalar la diferencia entre el despido, que es una separación decidida por el patrón, y la renuncia, que es una separación decidida por la persona trabajadora.\n\nCabe aclarar que el texto legal prohíbe estas acciones, pero no detalla la vía legal, las autoridades ni los plazos para inconformarse.\n\nGuarda esta publicación para consultarla después o compártela con quien necesite conocer esta información.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Te pueden despedir por estar embarazada?\n\nNo. La Ley Federal del Trabajo prohíbe a las personas empleadoras despedir a una trabajadora, o presionarla directa o indirectamente para que renuncie, por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores.\n\nFuente: Ley Federal del Trabajo, artículo 133, fracción XV.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +106,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-29T15:28:18+00:00",
+    "fecha": "2026-10-29T15:46:49+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

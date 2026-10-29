@@ -1,0 +1,147 @@
+{
+  "id": "I20261202-T030",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden castigar por algo similar a un delito?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T030",
+  "pieza": {
+    "titular": "¿Te pueden castigar por algo similar a un delito?",
+    "bajada": "En México, la ley protege frente a sanciones basadas en similitudes.",
+    "mito": "Sí, te pueden castigar si tu conducta se parece a un delito.",
+    "realidad": "No. En juicios del orden criminal está prohibido imponer, por simple analogía, penas no decretadas por ley.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 14"
+  },
+  "copy": "En los juicios del orden criminal, las autoridades no pueden sancionar una conducta únicamente porque se parezca a otra prohibida.\n\nLa Constitución Política de los Estados Unidos Mexicanos, en su artículo 14, establece que queda prohibido imponer cualquier pena por simple analogía.\n\nGuarda y comparte esta información para conocer tus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen gráfica que explica la prohibición de castigar por analogía en juicios criminales según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "En los juicios del orden criminal queda prohibido imponer, por simple analogía, y aún por mayoría de razón, pena alguna que no esté decretada por una ley exactamente aplicable al delito de que se trata.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Prohibición de imponer penas por analogía en juicios criminales según la Constitución.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden castigar por algo que solo se parece a un delito?",
+    "concepto_central": "imposición de penas por simple analogía o mayoría de razón",
+    "respuesta_corta": "No. En juicios del orden criminal está prohibido imponer, por simple analogía o mayoría de razón, penas no decretadas por una ley exactamente aplicable.",
+    "reglas": [
+      {
+        "conclusion": "En materia criminal está prohibido castigar o imponer penas con base en la semejanza o analogía con un delito, pues la pena debe estar decretada por una ley exactamente aplicable.",
+        "fuente": "F1",
+        "cita_literal": "En los juicios del orden criminal queda prohibido imponer, por simple analogía, y aún por mayoría de razón, pena alguna que no esté decretada por una ley exactamente aplicable al delito de que se trata.",
+        "condiciones": [
+          "Aplica en los juicios del orden criminal",
+          "La pena debe estar decretada por una ley expedida con anterioridad al hecho"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "14"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Queda prohibido imponer cualquier pena por simple analogía o por mayoría de razón si la conducta no está decretada en una ley exactamente aplicable.",
+        "fuente": "F1",
+        "cita_literal": "En los juicios del orden criminal queda prohibido imponer, por simple analogía, y aún por mayoría de razón, pena alguna que no esté decretada por una ley exactamente aplicable al delito de que se trata."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Un juez no puede crear o extender un delito para sancionar una acción parecida a otra legalmente castigada.",
+        "condicion": "En juicios del orden criminal.",
+        "base": "Prohibición constitucional de imponer penas por simple analogía o mayoría de razón en el artículo 14."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "castigo por simple analogía",
+        "b": "ley exactamente aplicable",
+        "diferencia": "La analogía pretende sancionar un hecho por su parecido con una infracción, mientras que la ley exactamente aplicable exige que la conducta concreta coincida con lo descrito expresamente por la norma penal."
+      }
+    ],
+    "limites": "El texto oficial no define delitos específicos ni regula el procedimiento detallado para impugnar una pena dictada por analogía."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T15:37:55+00:00",
+    "solicitud": "2026-12-02_imagen_T030-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te pueden castigar por algo que solo se parece a un delito?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "En materia criminal está prohibido castigar o imponer penas con base en la semejanza o analogía con un delito, pues la pena debe estar decretada por una ley exactamente aplicable.",
+              "sostenida": "si",
+              "motivo": "La conclusión se desprende directamente del segundo párrafo del artículo 14, que prohíbe expresamente la analogía y la mayoría de razón en juicios criminales."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
