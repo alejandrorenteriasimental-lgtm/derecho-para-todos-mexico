@@ -4,6 +4,12 @@ from datetime import date
 from pathlib import Path
 
 
+# Primera palabra de una institución o autoridad (no de una persona): «Autoridad Conciliadora», «Tribunal Colegiado»…
+# R20261130-T014, 29-10: «Autoridad Conciliadora» (LFT 48) se marcó como persona real.
+INICIO_INSTITUCION = {"Autoridad", "Autoridades", "Tribunal", "Tribunales", "Centro", "Centros", "Procuraduría", "Secretaría", "Instituto",
+                      "Comisión", "Junta", "Juzgado", "Fiscalía", "Congreso", "Cámara", "Poder", "Consejo", "Defensoría", "Registro"}
+
+
 def _run(cmd):
     r = subprocess.run(cmd, capture_output=True, text=True)
     return r.returncode, r.stdout, r.stderr
@@ -106,7 +112,7 @@ def juridica(guion: dict, hoy: date):
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos"}
     INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Aquí Dice", "Dice La", "Ministerio Público", "Estados Unidos", "Unidos Mexicanos"}
     oficiales = " ".join(str(f.get(k, "")) for f in fuentes.values() for k in ("documento", "cita", "texto_literal", "literal"))
-    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and x not in oficiales]   # cargos e instituciones citados en la ley no son personas
+    personas = [x for x in nombres if x.split()[0] not in INICIO and x.split()[0] not in INICIO_INSTITUCION and x not in INSTITUCIONES and x not in oficiales]   # cargos e instituciones citados en la ley no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
     if personas: carril = "C"
     regla("Toda afirmación jurídica tiene fuente", all(e["fuente"] != "SIN FUENTE" for e in estados), f"{len(estados)} afirmaciones")
@@ -146,7 +152,7 @@ def editorial(guion: dict):
     INICIO = {"En", "El", "La", "Los", "Las", "Pero", "Si", "Y", "Así", "Esto", "Eso", "Esta", "Este", "Un", "Una", "Nadie", "Síguenos", "Guárdalo", "Comparte", "Qué", "Cuál"}
     INSTITUCIONES = {"Código Penal", "Penal Federal", "Suprema Corte", "Corte Interamericana", "Diario Oficial", "Ciudad México", "Ley Federal", "Federal Trabajo", "Código Civil", "Código Nacional", "Aquí Dice", "Dice La", "Ministerio Público", "Estados Unidos", "Unidos Mexicanos"}
     oficiales = " ".join(str(f.get(k, "")) for f in fuentes for k in ("documento", "cita", "texto_literal", "literal"))
-    personas = [x for x in nombres if x.split()[0] not in INICIO and x not in INSTITUCIONES and not (set(x.split()) & JURIDICAS)
+    personas = [x for x in nombres if x.split()[0] not in INICIO and x.split()[0] not in INICIO_INSTITUCION and x not in INSTITUCIONES and not (set(x.split()) & JURIDICAS)
                 and x not in oficiales]   # cargos e instituciones que aparecen en el texto legal citado no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
     if personas: carril = "C"

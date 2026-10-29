@@ -408,3 +408,14 @@ def test_el_nombre_de_la_marca_no_es_una_persona_real():
     g = json.loads((AQUI.parent / "piezas" / "I20261128-T010" / "guion.json").read_text())
     r = auditoria.editorial(g)
     assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
+
+
+def test_autoridad_conciliadora_no_es_persona_real():
+    """R20261130-T014 (29-10): «Autoridad Conciliadora» (LFT 48) se detectó como persona real y retuvo la pieza."""
+    import auditoria
+    from datetime import date
+    g = json.loads((AQUI.parent / "piezas" / "R20261130-T014" / "guion.json").read_text())
+    for r in (auditoria.juridica(g, date(2026, 10, 29)), auditoria.editorial(g)):
+        assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"], r
+    g2 = {**g, "escenas": [{**g["escenas"][0], "texto": "Juan Pérez fue despedido."}] + g["escenas"][1:]}
+    assert [x for x in auditoria.juridica(g2, date(2026, 10, 29))["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
