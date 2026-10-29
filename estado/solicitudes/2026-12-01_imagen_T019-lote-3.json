@@ -15,13 +15,22 @@
   "relacion": "independiente",
   "plantilla": "concepto",
   "angulo": "¿Qué debe incluir el precio que te muestran?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T21:42:20Z",
   "pieza_id": "I20261201-T019",
   "archivo": "2026-12-01_imagen_T019-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.\"], \"visible\": \"  \\n   \\n Significa que el precio exhibido debe incluir todos los cargos obligatorios. \\n Dicho monto deberá incluir im",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "7ed7db19013b0566"
+  "huella_entrada": "7ed7db19013b0566",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[vaguedad] Referencia vaga: «Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro cost». Nombra la vía, la autoridad o el derecho con"
+    }
+  ]
 }

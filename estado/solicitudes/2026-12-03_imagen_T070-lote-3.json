@@ -15,13 +15,22 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿Quién debe darte la computadora si trabajas desde casa?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-29T13:49:51Z",
   "pieza_id": "I20261203-T070",
   "archivo": "2026-12-03_imagen_T070-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "ninguna fuente propuesta existe en los documentos oficiales: LFT 330-E: el artículo no existe en el documento oficial",
   "ultima_categoria": "tecnico",
-  "huella_entrada": "025b356682497457"
+  "huella_entrada": "025b356682497457",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "ninguna fuente propuesta existe en los documentos oficiales: LFT 330-E: el artículo no existe en el documento oficial"
+    }
+  ]
 }

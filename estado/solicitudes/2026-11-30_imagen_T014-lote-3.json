@@ -15,13 +15,22 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿De cuánto es la indemnización por despido injustificado?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T21:42:20Z",
   "pieza_id": "I20261130-T014",
   "archivo": "2026-11-30_imagen_T014-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "ae816b0de55e6cad"
+  "huella_entrada": "ae816b0de55e6cad",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    }
+  ]
 }

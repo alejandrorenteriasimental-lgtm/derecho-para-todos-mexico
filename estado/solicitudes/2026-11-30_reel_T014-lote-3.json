@@ -12,13 +12,22 @@
   "lote": "lote-3",
   "motivo_seleccion": "Reinstalación o indemnización de tres meses de salario, ante la Autoridad Conciliadora o el Tribunal.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T21:42:20Z",
   "pieza_id": "R20261130-T014",
   "archivo": "2026-11-30_reel_T014-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que el salario de la indemnización debe calcularse a razón del que corresponda a la fecha en que se realice el pago, lo cual es un elemento esencial del derecho a la indemnización según el texto proporcionado.\"]}, \"conclusiones\": [{\"conclus",
   "ultima_categoria": "juridico",
-  "huella_entrada": "4c491b8948d1a2a1"
+  "huella_entrada": "4c491b8948d1a2a1",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que el salario de la indemnización debe calcularse a razón del q"
+    }
+  ]
 }

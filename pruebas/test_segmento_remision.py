@@ -27,3 +27,21 @@ def test_remision_al_inicio_de_linea_no_corta_el_articulo():
 def test_encabezados_reales_siguen_cortando():
     assert V.articulo_texto(CUERPO, "47").endswith("Son causas de rescisión de la relación de trabajo.")
     assert V.articulo_texto(CUERPO, "48 Bis").endswith("En los juicios derivados de las relaciones de trabajo.")
+
+
+TELETRABAJO = """Artículo 330-D.- Las personas trabajadoras bajo la modalidad de teletrabajo.
+Artículo adicionado DOF 11-01-2021 Artículo 330 -E.- En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes:
+III. Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;
+Artículo 330 -F.- Las personas trabajadoras tendrán las obligaciones especiales siguientes.
+"""
+
+
+def test_articulo_con_letra_y_espacio_antes_del_guion():
+    """LFT 29-10: el PDF oficial escribe «Artículo 330 -E.-»; «330-E» se daba por inexistente."""
+    t = V.articulo_texto(TELETRABAJO.replace("Artículo adicionado DOF 11-01-2021 ", "\n"), "330-E", max_car=20000)
+    assert t and "parte proporcional de electricidad" in t and "330 -F" not in t and "obligaciones especiales siguientes." not in t
+
+
+def test_articulo_con_letra_en_texto_corrido():
+    t = V.articulo_texto(TELETRABAJO, "330-E", max_car=20000)
+    assert "parte proporcional de electricidad" in t and "330 -F" not in t

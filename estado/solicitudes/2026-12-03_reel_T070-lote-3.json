@@ -12,13 +12,22 @@
   "lote": "lote-3",
   "motivo_seleccion": "Sustituye a T089 (29-10): aguinaldo al renunciar se descartó dos veces (el art. 87 no fija cuándo se paga al renunciar) y repetía el tema del Reel del 24-11. Art. 330-E fr. III LFT: el patrón asume los costos del teletrabajo, incluido el pago de servicios de telecomunicación y la parte proporcional de electricidad.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-29T13:49:51Z",
   "pieza_id": "R20261203-T070",
   "archivo": "2026-12-03_reel_T070-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "ninguna fuente propuesta existe en los documentos oficiales: LFT 330-E: el artículo no existe en el documento oficial",
   "ultima_categoria": "tecnico",
-  "huella_entrada": "d08fb94e9bf7f103"
+  "huella_entrada": "d08fb94e9bf7f103",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "ninguna fuente propuesta existe en los documentos oficiales: LFT 330-E: el artículo no existe en el documento oficial"
+    }
+  ]
 }
