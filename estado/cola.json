@@ -1774,7 +1774,7 @@
       "id": "R20261201-T019",
       "formato": "reel",
       "huella": "47c5f82f51cec2dfd0497efe4857d20f960130628cf7116bc81cbcda2babc5c4",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T21:47:58+00:00",
@@ -1808,6 +1808,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T01:08:22+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T01:11:02+00:00",
+          "motivo": "etiqueta de la cita cortada («…CONSUMIDOR, ARTÍ»): corrección del render, se vuelve a producir"
         }
       ],
       "error": null,

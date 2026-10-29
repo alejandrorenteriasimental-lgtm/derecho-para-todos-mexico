@@ -139,6 +139,19 @@ def chip(d, x, y, texto, f, fg, bg, alpha=1.0, pad=(22, 12)):
     return w + 2 * pad[0]
 
 
+def etiqueta_ajustada(texto, ancho, tam=34, minimo=24, pad=22):
+    """Líneas de la etiqueta de la tarjeta de cita, que deben caber en la tarjeta: se reduce la letra hasta `minimo`;
+    si aún no cabe, se parte en dos líneas por la primera coma (documento / artículo). Nunca se corta el texto.
+    R20261201-T019, 28-10: «LEY FEDERAL DE PROTECCIÓN AL CONSUMIDOR, ARTÍ» cortado."""
+    t = texto.upper(); cabe = lambda ls, f: max(f.getlength(x) for x in ls) + 2 * pad <= ancho
+    lineas = [t]
+    while tam > minimo and not cabe(lineas, font("bold", tam)): tam -= 2
+    if not cabe(lineas, font("bold", tam)) and "," in t:
+        a_, b_ = t.split(",", 1); lineas = [a_.strip(), b_.strip()]; tam = 34
+        while tam > 20 and not cabe(lineas, font("bold", tam)): tam -= 2
+    return lineas, font("bold", tam)
+
+
 def escena(d, esc, p, tl, fuentes):
     tipo = esc["tipo"]
     if tipo in ("gancho", "titular"):
@@ -167,7 +180,9 @@ def escena(d, esc, p, tl, fuentes):
             tam -= 4
         alto = 200 + len(lineas) * paso
         d.rounded_rectangle([x0, y0, x1, y0 + alto], 36, fill=a(C["paper"], e))
-        chip(d, x0 + 60, y0 + 56, esc["etiqueta"].upper(), font("bold", 34), C["paper"], C["ink"], e)
+        ets, fe = etiqueta_ajustada(esc["etiqueta"], x1 - x0 - 120)
+        for k, et in enumerate(ets):                 # una o dos líneas, arriba de la cita (que empieza en y0 + 160)
+            chip(d, x0 + 60, y0 + (56 if len(ets) == 1 else 28 + k * (fe.size + 30)), et, fe, C["paper"], C["ink"], e)
         yy = y0 + 160
         for i, ln in enumerate(lineas):
             lw = f.getlength(ln)
