@@ -562,3 +562,12 @@
 {"ts": "2026-10-29T14:08:29+00:00", "pieza": "I20261206-T028", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-29T14:08:29+00:00", "pieza": "R20261205-T093", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-29T14:08:29+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0}
+{"ts": "2026-10-29T14:13:40+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T14:18:56+00:00", "evento": "redactada", "pieza": "R20261130-T014", "solicitud": "2026-11-30_reel_T014-lote-3.json"}
+{"ts": "2026-10-29T14:19:48+00:00", "evento": "redaccion_descartada", "solicitud": "2026-11-30_imagen_T014-lote-3.json", "categoria": "tecnico", "transitoria": true, "motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"}
+{"ts": "2026-10-29T14:19:48+00:00", "pieza": "R20261130-T014", "evento": "encolado"}
+{"ts": "2026-10-29T14:22:05+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "PRODUCIDO", "motivo": "53.7"}
+{"ts": "2026-10-29T14:22:09+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T14:22:09+00:00", "evento": "revision_preparada", "pieza": "R20261130-T014", "version": "5300cd14fcbc4261", "canal": "chat"}
+{"ts": "2026-10-29T14:22:09+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-10-29T14:22:09+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}

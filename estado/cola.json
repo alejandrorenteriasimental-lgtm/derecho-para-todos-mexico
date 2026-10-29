@@ -2382,7 +2382,7 @@
       "id": "R20261206-T028",
       "formato": "reel",
       "huella": "eeb560bcd3b04fbf4df570db1e1d85229d13d495cf7c045c3375a0adef000265",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T11:04:38+00:00",
@@ -2422,6 +2422,12 @@
           "a": "APROBADO",
           "ts": "2026-10-29T13:51:01+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión c1d43101a438d525 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T14:22:09+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -2447,6 +2453,40 @@
         "fecha": "2026-10-29T13:44:17+00:00",
         "canal": "chat",
         "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
+      }
+    },
+    "R20261130-T014": {
+      "id": "R20261130-T014",
+      "formato": "reel",
+      "huella": "affc415d02c67491bbe20d58dc53fee11cbf2a34d105c5937e8d6265a0209ace",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-29T14:19:48+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T14:22:05+00:00",
+          "motivo": "53.7"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T14:22:09+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "5300cd14fcbc4261",
+        "huella_guion": "5b2ca6d1fd598fe31c7c148359841bebcbf4984dd92322fb806340b2da739c41",
+        "huella_archivo": "0772961ebb3c21ecfbabd0be839348a7d38200c389592bac21d20020372e954b",
+        "preparada": "2026-10-29T14:22:09+00:00",
+        "canal": "chat"
       }
     }
   }

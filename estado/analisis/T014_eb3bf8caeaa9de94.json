@@ -1,0 +1,76 @@
+{
+ "tema_id": "T014",
+ "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
+ "fecha": "2026-10-29T14:17:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
+  "concepto_central": "despido",
+  "respuesta_corta": "Puedes pedir la reinstalación en tu trabajo o una indemnización de tres meses de salario, además de salarios vencidos e intereses.",
+  "reglas": [
+   {
+    "conclusion": "Puedes solicitar la reinstalación en el trabajo que desempeñabas o una indemnización de tres meses de salario.",
+    "fuente": "F1",
+    "cita_literal": "que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario",
+    "condiciones": [
+     "Observando previamente las disposiciones relativas al procedimiento de conciliación"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Si el patrón no comprueba la causa de la rescisión, tienes derecho al pago de salarios vencidos hasta por un período máximo de doce meses y, de continuar el procedimiento, al pago de intereses.",
+    "fuente": "F1",
+    "cita_literal": "el trabajador tendrá derecho, además, cualquiera que hubiese sido la acción intentada, a que se le paguen los salarios vencidos computados desde la fecha del despido hasta por un período máximo de doce meses",
+    "condiciones": [
+     "Que en el juicio correspondiente el patrón no compruebe la causa de la rescisión"
+    ],
+    "excepciones": [
+     "En caso de muerte del trabajador, dejarán de computarse los salarios vencidos como parte del conflicto, a partir de la fecha del fallecimiento."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Puedes pedir la reinstalación, una indemnización de tres meses de salario, salarios vencidos hasta por doce meses e intereses del dos por ciento mensual si el procedimiento se prolonga.",
+    "fuente": "F1",
+    "cita_literal": "que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario",
+    "motivo": null
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Se debe agotar previamente la conciliación y, en el juicio, que el patrón no compruebe la causa del despido.",
+    "fuente": "F1",
+    "cita_literal": "observando previamente las disposiciones relativas al procedimiento de conciliación previsto en el artículo 684-A y subsiguientes",
+    "motivo": null
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Si ocurre el fallecimiento de la persona trabajadora, los salarios vencidos dejan de computarse desde esa fecha.",
+    "fuente": "F1",
+    "cita_literal": "En caso de muerte del trabajador, dejarán de computarse los salarios vencidos como parte del conflicto, a partir de la fecha del fallecimiento.",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Se generan intereses sobre el importe de quince meses de salario a razón del dos por ciento mensual.",
+    "condicion": "Si al término del plazo de doce meses no ha concluido el procedimiento o no se ha dado cumplimiento a la sentencia.",
+    "base": "Artículo 48 de la Ley Federal del Trabajo"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es la separación decidida por el patrón, mientras que la renuncia es la separación decidida por la persona trabajadora."
+   }
+  ],
+  "limites": "Los textos no detallan otros conceptos indemnizatorios distintos a los señalados expresamente en el artículo 48.",
+  "fuentes_irrelevantes": []
+ }
+}
