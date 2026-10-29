@@ -1881,7 +1881,7 @@
       "id": "I20261204-T031",
       "formato": "imagen",
       "huella": "9d4ffe5d0af0e32d69c151674171200b2e19e8a95a64955f93a616fc686aea51",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:13:20+00:00",
@@ -1951,6 +1951,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:09:28+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión a361b05b3e066819 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -1966,13 +1978,26 @@
         "huella_archivo": "a3f72370b1a629f9a027ec0581b678be6124d3efb9cb5963c7bd49f0c6308ea5",
         "preparada": "2026-10-29T11:09:28+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261204-T031",
+        "decision": "APROBADA",
+        "version": "a361b05b3e066819",
+        "huella_guion": "642483ff9e84a37087e2b716945a5c4d92b6b585f3aa9f25602a62d42dedc881",
+        "huella_archivo": "a3f72370b1a629f9a027ec0581b678be6124d3efb9cb5963c7bd49f0c6308ea5",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "R20261202-T030": {
       "id": "R20261202-T030",
       "formato": "reel",
       "huella": "ec5ed4a3948908917490eb25959e638be57eb33643085e58b3bff19fb3ccfb3a",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:13:20+00:00",
@@ -2006,6 +2031,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T10:38:00+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión a64ad5d0c1c6cf27 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -2018,13 +2055,26 @@
         "huella_archivo": "978354e246f6dcd236049a59a52b7a9ae7a5fd6225cabaa7bb58b00580dba309",
         "preparada": "2026-10-29T10:38:00+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261202-T030",
+        "decision": "APROBADA",
+        "version": "a64ad5d0c1c6cf27",
+        "huella_guion": "56f522361673a9f242e888c452e8e8c8cc3698dfb3542c36a781eb6ad07fb177",
+        "huella_archivo": "978354e246f6dcd236049a59a52b7a9ae7a5fd6225cabaa7bb58b00580dba309",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "I20261205-T093": {
       "id": "I20261205-T093",
       "formato": "imagen",
       "huella": "d3b5cfd659a191b1041993821cfbe6fa4a52036a6046491013dd422c3953a945",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:35:21+00:00",
@@ -2058,6 +2108,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:09:57+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión cdfcd9e7d5f03781 (chat)"
         }
       ],
       "error": null,
@@ -2070,13 +2126,26 @@
         "huella_archivo": "74c3c34cc6e156663db34c5b9e99cf4e3835134fa43f6f80daa42f2d93d4b3eb",
         "preparada": "2026-10-29T11:09:57+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261205-T093",
+        "decision": "APROBADA",
+        "version": "cdfcd9e7d5f03781",
+        "huella_guion": "47af5c9693dfb77733995ee628e663f17b1d686b7d4a0c08f6c0aac0b4972969",
+        "huella_archivo": "74c3c34cc6e156663db34c5b9e99cf4e3835134fa43f6f80daa42f2d93d4b3eb",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "R20261204-T061": {
       "id": "R20261204-T061",
       "formato": "reel",
       "huella": "403cd4462df862a41988734cf255b533742fc27b85e6c77c8a3a3093e80373b8",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:35:21+00:00",
@@ -2110,6 +2179,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:06:14+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión cceb362a337f4e09 (chat)"
         }
       ],
       "error": null,
@@ -2122,13 +2197,26 @@
         "huella_archivo": "d5284b6bc1c1b97c4a2b1823f43675a03b8f7b83f69dfa4dacb5715ca8c54a1e",
         "preparada": "2026-10-29T11:06:14+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261204-T061",
+        "decision": "APROBADA",
+        "version": "cceb362a337f4e09",
+        "huella_guion": "428e63e7829e1609599e81a543351b7a379d9f96e3ef648ecc40d45334278e3f",
+        "huella_archivo": "d5284b6bc1c1b97c4a2b1823f43675a03b8f7b83f69dfa4dacb5715ca8c54a1e",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "I20261206-T028": {
       "id": "I20261206-T028",
       "formato": "imagen",
       "huella": "bf6572d678509209cd5e12ab3864ad20b15e65981fdacad4b3b3b708d645b074",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:51:46+00:00",
@@ -2162,6 +2250,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:10:28+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión cac1238312b0a86e (chat)"
         }
       ],
       "error": null,
@@ -2174,13 +2268,26 @@
         "huella_archivo": "95e6c6dd1f53212d2633314067d2b060abf967d8841508f2206a16a8246f63a7",
         "preparada": "2026-10-29T11:10:28+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261206-T028",
+        "decision": "APROBADA",
+        "version": "cac1238312b0a86e",
+        "huella_guion": "1468c31709afaef37981462418755814e6c7052098abf8abe59857a30ec38ee2",
+        "huella_archivo": "95e6c6dd1f53212d2633314067d2b060abf967d8841508f2206a16a8246f63a7",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "R20261205-T093": {
       "id": "R20261205-T093",
       "formato": "reel",
       "huella": "c6f37024fc09ff8b2ccec9bd69814ce77f419e0dc3535520413b4958371c97a7",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:51:46+00:00",
@@ -2214,6 +2321,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:07:25+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión d820b0534a57346b (chat)"
         }
       ],
       "error": null,
@@ -2226,13 +2339,26 @@
         "huella_archivo": "59b29b3167407950c14e634e76bdaa97fe713f515d65024ae052fb70305475e5",
         "preparada": "2026-10-29T11:07:25+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261205-T093",
+        "decision": "APROBADA",
+        "version": "d820b0534a57346b",
+        "huella_guion": "55d90824018665d53b8f3334173b99dff9014db790871296fb181bc1e539fae1",
+        "huella_archivo": "59b29b3167407950c14e634e76bdaa97fe713f515d65024ae052fb70305475e5",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     },
     "R20261206-T028": {
       "id": "R20261206-T028",
       "formato": "reel",
       "huella": "eeb560bcd3b04fbf4df570db1e1d85229d13d495cf7c045c3375a0adef000265",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T11:04:38+00:00",
@@ -2266,6 +2392,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T11:23:59+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-29T13:51:01+00:00",
+          "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX) 2026-10-29T13:44:17+00:00 versión c1d43101a438d525 (chat)"
         }
       ],
       "error": null,
@@ -2278,6 +2410,19 @@
         "huella_archivo": "7fb2197b375dabdd7477c118cfa716ae9d63d652f2562b38702b4046f38d7cba",
         "preparada": "2026-10-29T11:23:59+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261206-T028",
+        "decision": "APROBADA",
+        "version": "c1d43101a438d525",
+        "huella_guion": "c74b268483932ef9001675bbc3d633db7818061c3eff4a8db9264ea9a6b64b2f",
+        "huella_archivo": "7fb2197b375dabdd7477c118cfa716ae9d63d652f2562b38702b4046f38d7cba",
+        "por": {
+          "nombre": "César Alejandro Rentería (chat, 29-10-2026 07:44 CDMX)"
+        },
+        "fecha": "2026-10-29T13:44:17+00:00",
+        "canal": "chat",
+        "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo todas»). No modificar ni regenerar."
       }
     }
   }
