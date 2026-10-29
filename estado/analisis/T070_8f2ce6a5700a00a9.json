@@ -1,0 +1,45 @@
+{
+ "tema_id": "T070",
+ "pregunta": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
+ "fecha": "2026-10-29T14:31:43+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
+  "concepto_central": "pago de servicios de telecomunicación y electricidad en teletrabajo",
+  "respuesta_corta": "Sí: la empresa debe asumir los costos derivados del teletrabajo, incluyendo las telecomunicaciones y la parte proporcional de electricidad.",
+  "reglas": [
+   {
+    "conclusion": "Los patrones deben asumir los costos derivados del teletrabajo, lo que incluye en su caso el pago de internet y la parte proporcional de electricidad.",
+    "fuente": "F1",
+    "cita_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+    "condiciones": [
+     "en su caso"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La empresa tiene la obligación de cubrir el pago de servicios de telecomunicación y la parte proporcional de electricidad.",
+    "fuente": "F1",
+    "cita_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+    "motivo": ""
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación aplica según el caso de la modalidad de teletrabajo.",
+    "fuente": "F1",
+    "cita_literal": "incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla montos, porcentajes específicos ni fórmulas para calcular la parte proporcional de la electricidad o el internet.",
+  "fuentes_irrelevantes": []
+ }
+}

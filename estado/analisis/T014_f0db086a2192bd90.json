@@ -1,0 +1,69 @@
+{
+ "tema_id": "T014",
+ "pregunta": "¿De cuánto es la indemnización por despido injustificado?",
+ "fecha": "2026-10-29T14:36:15+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿De cuánto es la indemnización por despido injustificado?",
+  "concepto_central": "despido",
+  "respuesta_corta": "Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses de salario, además de salarios vencidos e intereses.",
+  "reglas": [
+   {
+    "conclusion": "El trabajador tiene derecho a una indemnización de tres meses de salario si no es reinstalado.",
+    "fuente": "F1",
+    "cita_literal": "que se le indemnice con el importe de tres meses de salario, a razón del que corresponda a la fecha en que se realice el pago",
+    "condiciones": [
+     "solicitarla ante la Autoridad Conciliadora o ante el Tribunal si no existe arreglo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Se deben pagar salarios vencidos por un periodo máximo de doce meses.",
+    "fuente": "F1",
+    "cita_literal": "a que se le paguen los salarios vencidos computados desde la fecha del despido hasta por un período máximo de doce meses",
+    "condiciones": [
+     "si en el juicio correspondiente no comprueba el patrón la causa de la rescisión"
+    ],
+    "excepciones": [
+     "en caso de muerte del trabajador, dejarán de computarse los salarios vencidos"
+    ]
+   },
+   {
+    "conclusion": "Se pagan intereses mensuales si el procedimiento se prolonga tras el plazo de doce meses.",
+    "fuente": "F1",
+    "cita_literal": "se pagarán también al trabajador los intereses que se generen sobre el importe de quince meses de salario, a razón del dos por ciento mensual",
+    "condiciones": [
+     "si al término del plazo señalado en el párrafo anterior no ha concluido el procedimiento o no se ha dado cumplimiento a la sentencia"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La indemnización consiste en tres meses de salario, el pago de salarios vencidos de hasta doce meses y, de continuar el juicio, intereses del dos por ciento mensual sobre quince meses de salario.",
+    "fuente": "F1",
+    "cita_literal": "que se le indemnice con el importe de tres meses de salario, a razón del que corresponda a la fecha en que se realice el pago"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando el patrón no comprueba la causa de la rescisión en el juicio correspondiente.",
+    "fuente": "F1",
+    "cita_literal": "Si en el juicio correspondiente no comprueba el patrón la causa de la rescisión, el trabajador tendrá derecho"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es la separación decidida por el patrón, mientras que la renuncia es la separación decidida por la persona trabajadora."
+   }
+  ],
+  "limites": "Los textos no detallan cómo se calcula el salario diario ni otras prestaciones accesorias fuera de los tres meses, salarios vencidos e intereses indicados.",
+  "fuentes_irrelevantes": []
+ }
+}

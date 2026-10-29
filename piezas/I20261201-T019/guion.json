@@ -1,0 +1,164 @@
+{
+  "id": "I20261201-T019",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿Qué debe incluir el precio que te muestran?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T019",
+  "pieza": {
+    "titular": "¿Qué debe incluir el precio que te muestran?",
+    "bajada": "Debe incluir impuestos, comisiones, intereses, seguros y cualquier costo adicional.",
+    "cita": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 7 Bis",
+    "ojo": "El precio total aplica al contado o a crédito.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 7 Bis"
+  },
+  "copy": "Cuando acudes a adquirir bienes, productos o servicios, la Ley Federal de Protección al Consumidor establece en su artículo 7 Bis la obligación de informar el monto total a pagar de forma notoria y visible.\n\nGuarda y comparte esta información para conocer tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica qué debe incluir el precio visible de bienes y servicios según la Ley Federal de Protección al Consumidor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "7 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 7 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-29"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El precio total debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional requerido para la adquisición o contratación.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué debe incluir el precio que te muestran?",
+    "concepto_central": "el monto total a pagar",
+    "respuesta_corta": "Significa que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional al contado o a crédito.",
+    "reglas": [
+      {
+        "conclusion": "El precio total debe incluir todos los cobros necesarios para la adquisición o contratación.",
+        "fuente": "F1",
+        "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva",
+        "condiciones": [
+          "aplica para bienes, productos o servicios que se ofrezcan al consumidor, ya sea al contado o a crédito"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "7 Bis"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El precio debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional.",
+        "fuente": "F1",
+        "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir con motivo de la adquisición o contratación respectiva"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica para la adquisición o contratación de bienes, productos o servicios, ya sea al contado o a crédito.",
+        "fuente": "F1",
+        "cita_literal": "con motivo de la adquisición o contratación respectiva, sea ésta al contado o a crédito."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no establece multas, sanciones específicas ni procedimientos para exigir el cumplimiento en este artículo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T14:40:12+00:00",
+    "solicitud": "2026-12-01_imagen_T019-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Qué debe incluir el precio que te muestran?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "[vaguedad] Referencia vaga: «Dicho monto debe contemplar todos los conceptos necesarios sin excepciones sorpresivas al ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ],
+        "visible": "  \n   \n Significa que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo adicional al contado o a crédito. \n Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación \n El precio total aplica al contado o a crédito."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "[vaguedad] Referencia vaga: «Dicho monto debe contemplar todos los conceptos necesarios sin excepciones sorpresivas al ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El precio total debe incluir todos los cobros necesarios para la adquisición o contratación.",
+              "sostenida": "si",
+              "motivo": "El texto del artículo 7 Bis establece explícitamente que el monto debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional requerida para la adquisición o contratación."
+            },
+            {
+              "conclusion": "Debe incluir impuestos, comisiones, intereses, seguros y cualquier costo adicional.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la enumeración de conceptos que la ley exige integrar en el monto total a pagar."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

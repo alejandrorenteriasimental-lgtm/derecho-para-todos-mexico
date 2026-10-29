@@ -15,14 +15,14 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿De cuánto es la indemnización por despido injustificado?",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T21:42:20Z",
   "pieza_id": "I20261130-T014",
   "archivo": "2026-11-30_imagen_T014-lote-3.json",
-  "intentos": 3,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 4,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\", \"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses ».\"], \"visible\": \"  \\n   \\n Depende si el",
+  "ultima_categoria": "juridico",
   "huella_entrada": "ae816b0de55e6cad",
   "historial_reaperturas": [
     {

@@ -1,21 +1,48 @@
 {
  "solicitud": "2026-11-30_imagen_T014-lote-3.json",
- "fecha": "2026-10-28T21:47:00+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "fecha": "2026-10-29T14:38:37+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\", \"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses ».\"], \"visible\": \"  \\n   \\n Depende si el",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (61 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses ».",
+    "[vaguedad] Referencia vaga: «Además, si al término de ese plazo no ha concluido el procedimiento, se pagarán intereses ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n   \n Depende: indemnización de tres meses de salario, salarios vencidos e intereses si el patrón no comprueba la causa en el juicio. \n que se le indemnice con el importe de tres meses de salario, a razón del que corresponda a la fecha en que se realice el pago \n Derechos laborales"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (68 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el patrón no comprueba la causa de la rescisión en el juicio correspondiente.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses de salario, además de salarios vencidos e intereses. \n que se le indemnice con el importe de tres meses de salario, a razón del que corresponda a la fecha en que se realice el pago \n Ley Federal del Trabajo, artículo 48."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
    "errores": [
-    "[sustento] La conclusión «La indemnización por despido es por el importe de tres meses de salari» trata «despido», pero Ley Federal del Trabajo, art. 48 no regula ese concepto (no aparece en su texto)."
+    "imagen: contenido demasiado largo (68 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el patrón no comprueba la causa de la rescisión en el juicio correspondiente.»), pero la pieza no lo dice: agrégalo al texto visible."
    ]
   },
   {
-   "etapa": "analisis",
-   "intento": 1,
-   "errores": [
-    "[cobertura] El elemento «condiciones» («Aplica si se solicita ante la Autoridad Conciliadora o el Tr») no trae una cita literal que esté en el texto oficial de su fuente."
-   ]
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: el trabajador puede solicitar la reinstalación o una indemnización de tres meses »."
+   ],
+   "visible": "  \n   \n Depende si el patrón no comprueba la causa: se pide reinstalación o tres meses de salario. \n que se le indemnice con el importe de tres meses de salario, a razón del que corresponda a la fecha en que se realice el pago \n Ley Federal del Trabajo, artículo 48."
   }
  ]
 }
