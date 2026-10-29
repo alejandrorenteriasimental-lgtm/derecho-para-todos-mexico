@@ -256,6 +256,8 @@ def revisar(g, textos, ia=None):
         h("vaguedad", "bloqueante", x)
     for x in afirmaciones_temporales(acompana, g):
         h("sustento", "bloqueante", x)
+    for x in coherencia_visible(g):
+        h("coherencia", "bloqueante", x)
     # 6. JURISPRUDENCIA: no se cita una tesis o criterio judicial que no se haya verificado en el Semanario Judicial
     verificadas = {str(t) for t in (g.get("tesis_verificadas") or [])}
     for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo + " " + (g.get("copy") or "")):
@@ -473,4 +475,23 @@ def afirmaciones_temporales(texto, g):
         p = plano(frase)
         if re.search(r"\b(recientemente|reciente(s)? reforma|nueva(s)? (ley|reforma|regla)|cambi(o|aron) (la ley|las reglas|recientemente)|ya cambio|ahora la ley|desde la reforma)\b", p) and not hay_dof:
             out.append(f"«{frase.strip()[:80]}» afirma un cambio legal sin citar el decreto que lo establece (DOF).")
+    return out
+
+
+
+# ---------------- coherencia entre lo que se ve y lo que se narra ----------------
+_GENERICAS = {"excepc", "import", "recuer", "atenci", "import", "clave", "regla"}
+
+
+def coherencia_visible(g):
+    """El encabezado visible de una escena de excepción debe tratar lo mismo que su narración (R20261130-T014, 29-10:
+    la tarjeta decía «Excepción por fallecimiento» mientras la voz hablaba de salarios vencidos si el patrón no prueba
+    la causa; quedó de una versión anterior del guion)."""
+    out = []
+    for i, e in enumerate(g.get("escenas") or []):
+        if e.get("tipo") != "excepcion" or not e.get("encabezado"): continue
+        raices = {w[:6] for w in plano(e["encabezado"]).split() if len(w) > 5} - _GENERICAS
+        narr = {w[:6] for w in plano(e.get("texto", "")).split() if len(w) > 5}
+        if raices and not (raices & narr):
+            out.append(f"Escena {i + 1}: el encabezado visible «{e['encabezado']}» no corresponde a lo que se narra («{e.get('texto', '')[:70]}»).")
     return out

@@ -78,14 +78,14 @@
       "tipo": "excepcion",
       "numero": 1,
       "texto": "Y si en el juicio el patrón no comprueba la causa del despido, además te deben pagar los salarios vencidos desde la fecha del despido, hasta por un período máximo de doce meses.",
-      "encabezado": "Excepción por fallecimiento",
-      "detalle": "Cesan los salarios vencidos",
-      "fuente_corta": "Ley, art. 48",
+      "encabezado": "Si el patrón no prueba la causa",
+      "detalle": "Salarios vencidos hasta 12 meses",
+      "fuente_corta": "LFT, art. 48",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Cesan salarios vencidos en caso de muerte",
+          "texto": "Si en el juicio el patrón no comprueba la causa de la rescisión, el trabajador tiene derecho a salarios vencidos desde la fecha del despido hasta por doce meses.",
           "fuente": "F2"
         }
       ]
@@ -292,6 +292,11 @@
       "fecha": "2026-10-29",
       "por": "Claude (director editorial)",
       "que": "salarios vencidos e intereses ya no se presentan como incondicionales (solo si el patrón no comprueba la causa; sin intereses, que tienen otra condición); salario a la fecha del pago; etiqueta «Ley» → «Ley Federal del Trabajo»; escena de excepción vaga sustituida por la condición literal; F2 (muerte del trabajador, ajena a la pregunta) sustituida por el párrafo de salarios vencidos; títulos sin relleno; doble «::» eliminado"
+    },
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "tarjeta visible de la escena de excepción («Excepción por fallecimiento / Cesan los salarios vencidos», resto del guion anterior) alineada con la narración: «Si el patrón no prueba la causa / Salarios vencidos hasta 12 meses»"
     }
   ]
 }

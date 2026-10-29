@@ -22,7 +22,7 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
-VERSION = "0.5.6"   # 0.5.6: artículos con letra y espacio antes del guion («330 -E.-», LFT).  0.5.5: remisión «artículo 684-A de…» al inicio de línea ya no corta el artículo (LFT 48).  0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+VERSION = "0.5.7"   # 0.5.7: coherencia entre encabezado visible y narración en escenas de excepción.  0.5.6: artículos con letra y espacio antes del guion («330 -E.-», LFT).  0.5.5: remisión «artículo 684-A de…» al inicio de línea ya no corta el artículo (LFT 48).  0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
 
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)

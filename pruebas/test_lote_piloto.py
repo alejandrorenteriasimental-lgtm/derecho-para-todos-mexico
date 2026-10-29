@@ -419,3 +419,13 @@ def test_autoridad_conciliadora_no_es_persona_real():
         assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"], r
     g2 = {**g, "escenas": [{**g["escenas"][0], "texto": "Juan Pérez fue despedido."}] + g["escenas"][1:]}
     assert [x for x in auditoria.juridica(g2, date(2026, 10, 29))["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
+
+
+def test_encabezado_de_excepcion_coincide_con_la_narracion():
+    """R20261130-T014 (29-10): tarjeta «Excepción por fallecimiento» con narración sobre salarios vencidos."""
+    esc = {"tipo": "excepcion", "texto": "Y si en el juicio el patrón no comprueba la causa del despido, además te deben pagar los salarios vencidos.",
+           "encabezado": "Excepción por fallecimiento", "detalle": "Cesan los salarios vencidos"}
+    assert razonamiento.coherencia_visible({"escenas": [esc]})
+    assert not razonamiento.coherencia_visible({"escenas": [{**esc, "encabezado": "Si el patrón no prueba la causa"}]})
+    g = json.loads((AQUI.parent / "piezas" / "R20261130-T014" / "guion.json").read_text())
+    assert not razonamiento.coherencia_visible(g)

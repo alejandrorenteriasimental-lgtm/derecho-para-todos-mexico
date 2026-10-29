@@ -60,17 +60,10 @@
       "tipo": "lista",
       "texto": "Pero ojo: para la ley es teletrabajo cuando trabajas más del cuarenta por ciento del tiempo en tu domicilio o en el que elijas. No cuenta si es ocasional o esporádico.",
       "items": [
-        "Más del 40 % en casa",
-        "No si es ocasional",
-        "Luz e internet a cargo del patrón"
+        "Más del 40 % en tu domicilio",
+        "No si es ocasional"
       ],
       "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "Los patrones deben asumir los costos derivados del teletrabajo, incluyendo servicios de telecomunicación y la parte proporcional de electricidad.",
-          "fuente": "F1"
-        },
         {
           "id": "A40",
           "tipo": "hecho_normativo",
@@ -236,6 +229,11 @@
       "fecha": "2026-10-29",
       "por": "Claude (director editorial)",
       "que": "se agrega la condición del art. 330-A (más del 40 % del tiempo en el domicilio; no el trabajo ocasional), sin la cual el «Sí» era una generalización; escena final vaga sustituida; etiqueta «Ley» → «Ley Federal del Trabajo»; doble «::» eliminado"
+    },
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "la escena de la condición (art. 330-A) ya no mezcla el punto del art. 330-E, para que su fuente visible sea la correcta"
     }
   ]
 }
