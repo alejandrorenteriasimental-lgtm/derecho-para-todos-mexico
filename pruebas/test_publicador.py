@@ -1,7 +1,7 @@
 """Publicador del calendario: solo versiones aprobadas exactas; Facebook programado, Instagram a la hora; paro de
 emergencia ante archivos no aprobados o errores no transitorios; sin autorización solo simula."""
 import hashlib, json, sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import pytest
 
@@ -41,7 +41,10 @@ def test_sin_autorizacion_simula_con_archivos_aprobados(ent, monkeypatch):
     monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
     r = publicador.ejecutar(datetime(2026, 11, 3, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])   # todo el calendario cae dentro de 28 días
     assert r["modo"] == "simulacion" and not r.get("pausa")
-    assert {a.get("facebook") for a in r["acciones"]} == {"SIMULADO"} and len(r["acciones"]) == 14
+    ahora = datetime(2026, 11, 3, tzinfo=timezone.utc)
+    esperadas = sum(1 for d in CAL["dias"] for f in ("imagen", "reel")
+                    if timedelta(minutes=20) < publicador.hora_utc(d["fecha"], d[f]["hora"]) - ahora < timedelta(days=28))
+    assert {a.get("facebook") for a in r["acciones"]} == {"SIMULADO"} and len(r["acciones"]) == esperadas >= 14
 
 
 def test_instagram_solo_en_su_ventana(ent, monkeypatch):
