@@ -651,3 +651,8 @@
 {"ts": "2026-10-29T15:52:36+00:00", "pieza": "I20261203-T070", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-29T15:52:36+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2}
 {"ts": "2026-10-29T15:54:34+00:00", "pieza": "I20261202-T030", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): se vuelve a verificar y producir"}
+{"ts": "2026-10-29T15:58:26+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T15:59:15+00:00", "pieza": "I20261202-T030", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T15:59:20+00:00", "pieza": "I20261202-T030", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T15:59:20+00:00", "evento": "revision_preparada", "pieza": "I20261202-T030", "version": "bab2eb2202deafd6", "canal": "chat"}
+{"ts": "2026-10-29T15:59:20+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
