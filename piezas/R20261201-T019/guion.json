@@ -33,7 +33,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿El precio que te muestran en el establecimiento debe incluir los impuestos y las comisiones correspondientes? Vamos a revisarlo.",
+      "texto": "¿El precio que te muestran ya debe incluir impuestos y comisiones? Esto dice la ley.",
       "titulo": [
         "¿EL PRECIO",
         "INCLUYE TODO?"
@@ -42,7 +42,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí: el monto total que se te informe debe incluir impuestos, comisiones y cualquier costo adicional de los bienes o servicios que adquieras.",
+      "texto": "Sí: el monto total que te informen debe incluir impuestos, comisiones y cualquier otro cargo que tengas que pagar para comprar o contratar.",
       "titulo": [
         "SÍ, DEBE",
         "INCLUIR TODO"
@@ -58,11 +58,11 @@
     },
     {
       "tipo": "lista",
-      "texto": "La disposición legal detalla explícitamente los conceptos que deben integrarse en la suma final que vas a pagar por el producto o servicio adquirido.",
+      "texto": "Según la ley, el monto total que te informen debe sumar todo lo que tienes que pagar por la compra o la contratación.",
       "items": [
         "Impuestos y comisiones",
         "Intereses y seguros",
-        "Cargos o gastos extra"
+        "Otros cargos obligatorios"
       ],
       "afirmaciones": [
         {
@@ -75,7 +75,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "No olvides que esta misma obligación se mantiene firme en cualquier escenario: con motivo de la adquisición o contratación respectiva, sea ésta al contado o a crédito.",
+      "texto": "Y aplica igual si pagas de contado o a crédito.",
       "titulo": [
         "CONTADO",
         "O CRÉDITO"
@@ -166,7 +166,7 @@
   "pregunta_original": "¿El precio que te muestran debe incluir impuestos y comisiones?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿El precio que te muestran debe incluir impuestos y comisiones?\n\nSí: el monto total que se te informe debe incluir impuestos, comisiones y cualquier costo adicional de los bienes o servicios.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 7 Bis.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿El precio que te muestran debe incluir impuestos y comisiones?\n\nSí: el monto total que te informen debe incluir impuestos, comisiones, intereses, seguros y cualquier otro cargo que tengas que pagar para comprar o contratar, sea de contado o a crédito.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 7 Bis.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -207,5 +207,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "sin «en el establecimiento» (la ley aplica a todo proveedor); «cualquier costo adicional» → «cualquier otro cargo que tengas que pagar para comprar o contratar» (la ley: «que se requiera cubrir»); narración de la escena 5 sin lenguaje legal ni «en cualquier escenario»; lista: «Otros cargos obligatorios»"
+    }
+  ]
 }
