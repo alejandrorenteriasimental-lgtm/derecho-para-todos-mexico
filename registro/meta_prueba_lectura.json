@@ -1,0 +1,31 @@
+{
+ "ok": true,
+ "comprobaciones": [
+  {
+   "prueba": "token válido",
+   "resultado": "OK",
+   "detalle": "Aquí Dice la Ley"
+  },
+  {
+   "prueba": "es la Página de Aquí Dice la Ley",
+   "resultado": "OK",
+   "detalle": "id 1359758353893509"
+  },
+  {
+   "prueba": "lectura de la Página",
+   "resultado": "OK",
+   "detalle": "{\"name\": \"Aquí Dice la Ley\", \"username\": \"aquidicelaley\", \"followers_count\": 0}"
+  },
+  {
+   "prueba": "Instagram vinculado",
+   "resultado": "OK",
+   "detalle": "{\"username\": \"aquidicelaley\", \"followers_count\": 0, \"media_count\": 0, \"id\": \"17841456017575703\"}"
+  },
+  {
+   "prueba": "publicaciones programadas en la Página (lectura)",
+   "resultado": "OK",
+   "detalle": "[{\"id\": \"1359758353893509_122105698455522563\", \"hora\": 1795618800, \"texto\": \"¿Qué significa la presunción de inocencia?\\n\\nEl art\"}, {\"id\": \"1359758353893509_122105698407522563\", \"hora\": 1795568400, \"texto\": \"¿Cuándo y cuánto te deben pagar de aguinaldo?\\n\\nDep\"}, {\"id\": \"1359758353893509_122105698287522563\", \"hora\": 1795532400, \"texto\": \"Mucha gente cree que no pagar una deuda puede llev\"}, {\"id\": \"1359758353893509_122105698197522563\", \"hora\": 1795482000, \"texto\": \"¿Te pueden volver a juzgar por el mismo delito?\\n\\nN\"}, {\"id\": \"1359758353893509_122105698083522563\", \"hora\": 1795446000, \"texto\": \"¿En México existe la pena de muerte?\\n\\nNo. El artíc\"}]"
+  }
+ ],
+ "fecha": "2026-10-29T00:53:12+00:00"
+}
