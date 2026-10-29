@@ -1,0 +1,43 @@
+{
+ "tema_id": "T070",
+ "pregunta": "¿Quién debe darte la computadora si trabajas desde casa?",
+ "fecha": "2026-10-29T14:57:22+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Quién debe darte la computadora si trabajas desde casa?",
+  "concepto_central": "obligaciones del patrón en teletrabajo",
+  "respuesta_corta": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario para trabajar desde casa.",
+  "reglas": [
+   {
+    "conclusion": "El patrón tiene la obligación de proporcionar, instalar y encargarse del mantenimiento del equipo de cómputo necesario para el teletrabajo.",
+    "fuente": "F1",
+    "cita_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+    "condiciones": [
+     "En modalidad de teletrabajo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El patrón debe proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario.",
+    "fuente": "F1",
+    "cita_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando las personas laboran bajo la modalidad de teletrabajo.",
+    "fuente": "F1",
+    "cita_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala plazos específicos de entrega ni marcas o características técnicas obligatorias del equipo.",
+  "fuentes_irrelevantes": []
+ }
+}

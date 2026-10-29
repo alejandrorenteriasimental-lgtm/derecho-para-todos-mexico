@@ -1,20 +1,20 @@
 {
  "tema_id": "T030",
  "pregunta": "¿Una ley nueva puede aplicarse en tu contra?",
- "fecha": "2026-10-29T10:08:12+00:00",
- "objetado": true,
+ "fecha": "2026-10-29T14:52:49+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Una ley nueva puede aplicarse en tu contra?",
   "concepto_central": "efecto retroactivo",
-  "respuesta_corta": "No, la Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si este resulta en perjuicio de alguna persona.",
+  "respuesta_corta": "No, ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
   "reglas": [
    {
-    "conclusion": "Se prohíbe la aplicación de una norma hacia hechos ocurridos en el pasado si dicha aplicación daña a la persona.",
+    "conclusion": "Se prohíbe aplicar una ley de forma retroactiva cuando esto cause perjuicio a una persona.",
     "fuente": "F1",
     "cita_literal": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna.",
     "condiciones": [
-     "Que la aplicación de la ley sea en perjuicio de la persona"
+     "en perjuicio de persona alguna"
     ],
     "excepciones": []
    }
@@ -23,26 +23,14 @@
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "Cualquier acto que prive a alguien de su libertad o derechos debe basarse en leyes que ya existían antes de que ocurriera el hecho.",
+    "respuesta": "La aplicación retroactiva de la ley está prohibida si causa perjuicio a la persona.",
     "fuente": "F1",
-    "cita_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos"
+    "cita_literal": "A ninguna ley se dará efecto retroactivo en perjuicio de persona alguna."
    }
   ],
-  "interpretaciones": [
-   {
-    "afirmacion": "La aplicación retroactiva de una ley podría ser permitida si no causa un perjuicio.",
-    "condicion": "Siempre que la norma beneficie a la persona en lugar de afectarla.",
-    "base": "F1 menciona específicamente la prohibición cuando existe 'perjuicio de persona alguna'."
-   }
-  ],
-  "distinciones": [
-   {
-    "a": "leyes expedidas con anterioridad",
-    "b": "leyes nuevas",
-    "diferencia": "Las primeras son las que estaban vigentes cuando sucedió el acto, mientras que las segundas se crean después y no deben afectar situaciones pasadas negativamente."
-   }
-  ],
-  "limites": "Los textos no definen técnicamente qué se considera un 'perjuicio' ni establecen los plazos o el recurso legal específico para impugnar una ley retroactiva.",
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla reglas específicas sobre aplicaciones retroactivas que no causen perjuicio.",
   "fuentes_irrelevantes": []
  }
 }

@@ -1,0 +1,115 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1201 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal del »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1118"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "52 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "98% de 43 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261203-T070",
+    "formato": "imagen",
+    "titulo": "¿Quién debe darte la computadora en home office?",
+    "plantilla": "dato",
+    "archivo": "I20261203-T070.png",
+    "sha256": "2ea4a1c8bbd0696c5f51ddcfd6d5aceb49d9a16d979c2a5c60c5d904e5fdb017",
+    "ahash": "1111111111111111111111111111111111111111111111111100000000000011100000000001111110000000011111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "2ec987422154ee1a8b71f5f05837ffe358da18de54de898e906756e1d34acbb8",
+    "texto_alternativo": "Imagen informativa que explica que el patrón debe proporcionar, instalar y dar mantenimiento a la computadora si se trabaja desde casa.",
+    "copy": "Si laboras desde casa, es fundamental conocer lo que establecen las normas laborales vigentes para proteger tus herramientas de trabajo diarias.\n\nDe acuerdo con la Ley Federal del Trabajo, artículo 330-E, en la modalidad de teletrabajo, se establece el deber de \"Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo\".\n\nEsta disposición aplica específicamente cuando las personas prestan sus servicios bajo la modalidad de teletrabajo. Guarda y comparte esta publicación para informar a más personas.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "330-E",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-10-29T15:03:38+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

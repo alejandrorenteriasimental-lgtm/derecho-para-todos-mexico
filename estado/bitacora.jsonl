@@ -588,3 +588,15 @@
 {"ts": "2026-10-29T14:46:19+00:00", "pieza": "I20261201-T019", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
 {"ts": "2026-10-29T14:46:19+00:00", "evento": "revision_preparada", "pieza": "I20261201-T019", "version": "17944294ce997659", "canal": "chat"}
 {"ts": "2026-10-29T14:46:19+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 3, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
+{"ts": "2026-10-29T14:51:07+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T14:56:03+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-02_imagen_T030-lote-3.json", "categoria": "juridico", "transitoria": false, "motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"}
+{"ts": "2026-10-29T14:58:41+00:00", "evento": "redactada", "pieza": "I20261203-T070", "solicitud": "2026-12-03_imagen_T070-lote-3.json"}
+{"ts": "2026-10-29T14:58:41+00:00", "pieza": "I20261203-T070", "evento": "encolado"}
+{"ts": "2026-10-29T14:58:41+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "PENDIENTE", "motivo": "el guion cambió; se vuelve a verificar"}
+{"ts": "2026-10-29T15:02:36+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "PRODUCIDO", "motivo": "60.1"}
+{"ts": "2026-10-29T15:02:40+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: Regla: Sin personas reales identificables"}
+{"ts": "2026-10-29T15:02:40+00:00", "evento": "alerta", "mensaje": "R20261130-T014 retenido: RETENIDO"}
+{"ts": "2026-10-29T15:03:38+00:00", "pieza": "I20261203-T070", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T15:03:42+00:00", "pieza": "I20261203-T070", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T15:03:42+00:00", "evento": "revision_preparada", "pieza": "I20261203-T070", "version": "4274fb50db6dc10e", "canal": "chat"}
+{"ts": "2026-10-29T15:03:42+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 2, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}

@@ -1,0 +1,142 @@
+{
+  "id": "I20261203-T070",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Quién debe darte la computadora en home office?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T070",
+  "pieza": {
+    "titular": "¿Quién debe darte la computadora en home office?",
+    "bajada": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario para trabajar desde casa.",
+    "cita": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 330-E",
+    "ojo": "Obligación en teletrabajo",
+    "fuente_visible": "Ley Federal del Trabajo, art. 330-E"
+  },
+  "copy": "Si laboras desde casa, es fundamental conocer lo que establecen las normas laborales vigentes para proteger tus herramientas de trabajo diarias.\n\nDe acuerdo con la Ley Federal del Trabajo, artículo 330-E, en la modalidad de teletrabajo, se establece el deber de \"Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo\".\n\nEsta disposición aplica específicamente cuando las personas prestan sus servicios bajo la modalidad de teletrabajo. Guarda y comparte esta publicación para informar a más personas.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica que el patrón debe proporcionar, instalar y dar mantenimiento a la computadora si se trabaja desde casa.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-E",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes: I. Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+      "cita": "Ley Federal del Trabajo, artículo 330-E",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo cuando las personas laboran bajo la modalidad de teletrabajo.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Quién debe darte la computadora si trabajas desde casa?",
+    "concepto_central": "obligaciones del patrón en teletrabajo",
+    "respuesta_corta": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario para trabajar desde casa.",
+    "reglas": [
+      {
+        "conclusion": "El patrón tiene la obligación de proporcionar, instalar y encargarse del mantenimiento del equipo de cómputo necesario para el teletrabajo.",
+        "fuente": "F1",
+        "cita_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+        "condiciones": [
+          "En modalidad de teletrabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "330-E"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El patrón debe proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario.",
+        "fuente": "F1",
+        "cita_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica cuando las personas laboran bajo la modalidad de teletrabajo.",
+        "fuente": "F1",
+        "cita_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala plazos específicos de entrega ni marcas o características técnicas obligatorias del equipo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T14:58:41+00:00",
+    "solicitud": "2026-12-03_imagen_T070-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Quién debe darte la computadora si trabajas desde casa?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El patrón tiene la obligación de proporcionar, instalar y encargarse del mantenimiento del equipo de cómputo necesario para el teletrabajo.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la obligación establecida en la fracción I del artículo 330-E de la Ley Federal del Trabajo, la cual vincula la obligación al sujeto (patrón) y a la modalidad (teletrabajo)."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "60.3 s"
+      "detalle": "60.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "APROBADO",
-      "detalle": "60.3 s"
+      "detalle": "60.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "a9858d7fe95ab464"
+      "detalle": "2062ebabecb4c473"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -115,27 +115,27 @@
   "registro": {
     "id": "R20261130-T014",
     "titulo": "¿Qué puedes pedir si te despiden sin causa justificada?",
-    "fecha": "2026-10-29T14:43:17+00:00",
-    "sha256": "a9858d7fe95ab464a71a7077671108c7caecb33c71e071929da974d0f76bd8f5",
-    "duracion_s": 60.3,
+    "fecha": "2026-10-29T15:02:36+00:00",
+    "sha256": "2062ebabecb4c4737b2bb3b56255658a4bf1b85fde3f276c94adde593d605eb2",
+    "duracion_s": 60.1,
     "estado": "RETENIDO",
     "huella_guion": "94d1789181404bdbf4cfbb41e99cce0659a35f79b67c43761a035fd47ede55ac",
     "carril": "C",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 31.6,
-      "musica": 3.3,
-      "render_video": 58.9,
-      "mezcla_audio": 2.4,
-      "auditoria_tecnica": 12.6
+      "narracion": 36.4,
+      "musica": 2.9,
+      "render_video": 69.2,
+      "mezcla_audio": 2.8,
+      "auditoria_tecnica": 15.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.81,
-      "computo_equivalente_runner_usd": 0.0109,
+      "computo_minutos": 2.11,
+      "computo_equivalente_runner_usd": 0.0127,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1808,
+    "frames": 1802,
     "caracteres_narrados": 895
   }
 }
