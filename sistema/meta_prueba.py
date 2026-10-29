@@ -41,6 +41,9 @@ def probar(tok, page_id=None, http=get):
     ok("lectura de la Página", "error" not in pag, json.dumps({k: pag.get(k) for k in ("name", "username", "followers_count")}, ensure_ascii=False))
     ig = pag.get("instagram_business_account") or {}
     ok("Instagram vinculado", ig.get("username") == IG_ESPERADO, json.dumps(ig, ensure_ascii=False))
+    prog = http(f"{pid}/scheduled_posts", tok, fields="id,message,scheduled_publish_time", limit=50)
+    lista = [{"id": p.get("id"), "hora": p.get("scheduled_publish_time"), "texto": (p.get("message") or "")[:50]} for p in prog.get("data", [])]
+    ok("publicaciones programadas en la Página (lectura)", "error" not in prog, json.dumps(lista, ensure_ascii=False))
     res["ok"] = all(c["resultado"] == "OK" for c in res["comprobaciones"])
     return res
 
