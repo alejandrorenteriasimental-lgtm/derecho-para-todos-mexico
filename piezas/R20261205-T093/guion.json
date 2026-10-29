@@ -24,14 +24,14 @@
       "tipo": "gancho",
       "texto": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
       "titulo": [
-        "¿PAGAS AL TRIBUNAL?",
-        "JUSTICIA Y DINERO"
+        "¿HAY QUE PAGAR",
+        "AL TRIBUNAL?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.",
+      "texto": "No: la Constitución establece que el servicio de los tribunales es gratuito.",
       "titulo": [
         "SERVICIO",
         "GRATUITO"
@@ -40,7 +40,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "La norma indica claramente cómo opera la impartición de justicia sin cobros para las personas: Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
+      "texto": "La Constitución lo dice así: «Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales».",
       "etiqueta": "Constitución, artículo 17",
       "cita": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
       "afirmaciones": [
@@ -55,20 +55,20 @@
     },
     {
       "tipo": "lista",
-      "texto": "Aspectos clave sobre la justicia:",
+      "texto": "Además, la Constitución dice que los tribunales deben emitir sus resoluciones de manera:",
       "items": [
-        "Servicios sin costo",
-        "Cero costas judiciales",
-        "Tribunales expeditos"
+        "Pronta",
+        "Completa",
+        "Imparcial"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.",
+      "texto": "En resumen: el tribunal no te puede cobrar por resolver tu caso.",
       "titulo": [
-        "RECUERDA",
-        "ESTO"
+        "LA JUSTICIA",
+        "ES GRATUITA"
       ],
       "afirmaciones": []
     },
@@ -141,7 +141,7 @@
   "pregunta_original": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Tienes que pagarle al tribunal para que resuelva tu caso?\n\nNo, el servicio de los tribunales para administrar justicia es gratuito y están prohibidas las costas judiciales.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tienes que pagarle al tribunal para que resuelva tu caso?\n\nNo. La Constitución establece que el servicio de los tribunales es gratuito y que sus resoluciones deben ser prontas, completas e imparciales.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -177,5 +177,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "respuesta sin «están prohibidas las costas judiciales» como explicación (tecnicismo que el público puede confundir con los gastos del juicio entre las partes); la frase queda solo en la cita literal; lista con «pronta, completa e imparcial» (art. 17) en vez de «Cero costas»; títulos sin relleno"
+    }
+  ]
 }

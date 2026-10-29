@@ -2,18 +2,18 @@
   "id": "I20261205-T093",
   "formato": "imagen",
   "plantilla": "concepto",
-  "titulo": "¿Las costas judiciales están permitidas en México?",
+  "titulo": "¿El tribunal te puede cobrar por resolver tu caso?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T093",
   "pieza": {
-    "titular": "¿Las costas judiciales están permitidas en México?",
-    "bajada": "No, están prohibidas porque el servicio de administración de justicia es gratuito.",
+    "titular": "¿El tribunal te puede cobrar por resolver tu caso?",
+    "bajada": "No: la Constitución establece que el servicio de los tribunales es gratuito.",
     "cita": "Su servicio será gratuito, quedando, en consecuencia, prohibidas las costas judiciales.",
     "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
     "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 17"
   },
-  "copy": "De acuerdo con la Constitución Política de los Estados Unidos Mexicanos, en su artículo 17, toda persona tiene derecho a que se le administre justicia por los tribunales.\n\nEl texto oficial establece que el servicio de impartición de justicia será gratuito, por lo que se prohíben expresamente las costas judiciales.\n\nGuarda y comparte esta información para que más personas conozcan sus derechos al acudir a los tribunales.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿El tribunal te puede cobrar por resolver tu caso?\n\nNo. La Constitución establece que el servicio de los tribunales es gratuito.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen gráfica que explica la prohibición de las costas judiciales en México según el artículo 17 constitucional.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -95,7 +95,7 @@
       "redactor": "gemini-3.5-flash-lite"
     }
   },
-  "pregunta_original": "¿Las costas judiciales están permitidas en México?",
+  "pregunta_original": "¿El tribunal te puede cobrar por resolver tu caso?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
   "auditoria_ia": {
@@ -143,5 +143,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "titular reformulado: «¿Las costas judiciales están permitidas?» → «¿El tribunal te puede cobrar…?» («costas» se confunde con los gastos del juicio que puede pagar quien pierde); copy simplificado"
+    }
+  ]
 }

@@ -22,11 +22,10 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Cualquier persona puede detener a alguien que está cometiendo un delito en la calle o en la vía pública?",
+      "texto": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
       "titulo": [
-        "DETENCIÓN",
-        "POR UN",
-        "PARTICULAR"
+        "¿TÚ PUEDES",
+        "DETENERLO?"
       ],
       "afirmaciones": []
     },
@@ -34,25 +33,25 @@
       "tipo": "titular",
       "texto": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
       "titulo": [
-        "RESPUESTA",
-        "DIRECTA"
+        "SÍ, EN",
+        "FLAGRANCIA"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "El marco constitucional es muy claro respecto a esta facultad ciudadana cuando ocurre una flagrancia: Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
-      "etiqueta": "Ley, artículo 16",
+      "texto": "La Constitución lo dice así: «Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido».",
+      "etiqueta": "Constitución, artículo 16",
       "cita": "Cualquier persona puede detener al indiciado en el momento en que esté cometiendo un delito o inmediatamente después de haberlo cometido",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Para que esta acción sea válida y conforme a derecho, se deben cumplir las siguientes condiciones operativas indispensables:",
+      "texto": "Pero no puedes retenerlo: la Constitución ordena ponerlo sin demora a disposición de la autoridad civil más cercana, y ésta, con la misma prontitud, a la del Ministerio Público.",
       "items": [
-        "Ponerlo sin demora",
-        "Autoridad civil cercana",
-        "Al Ministerio Público"
+        "Sin demora",
+        "A la autoridad más cercana",
+        "Después, al Ministerio Público"
       ],
       "afirmaciones": [
         {
@@ -66,7 +65,7 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Además, la norma exige un control estricto sobre el procedimiento para evitar cualquier clase de omisión:",
+      "texto": "Además, la Constitución ordena que exista un registro inmediato de la detención.",
       "encabezado": "Registro obligatorio",
       "detalle": "Inmediato por ley",
       "fuente_corta": "Ley, art. 16",
@@ -74,10 +73,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.",
+      "texto": "En resumen: sí puedes detenerlo en flagrancia, pero debes entregarlo de inmediato a la autoridad.",
       "titulo": [
-        "CONCLUSIÓN",
-        "JURÍDICA"
+        "ENTRÉGALO",
+        "SIN DEMORA"
       ],
       "afirmaciones": []
     },
@@ -170,7 +169,7 @@
   "pregunta_original": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?\n\nSí, cualquier persona puede detener a alguien en el momento en que esté cometiendo un delito o inmediatamente después.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?\n\nSí, en el momento en que lo esté cometiendo o inmediatamente después. Pero debe ponerlo sin demora a disposición de la autoridad civil más cercana, y ésta, con la misma prontitud, a la del Ministerio Público.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -206,5 +205,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "etiqueta de la cita corregida («Ley» → «Constitución»); títulos de relleno («RESPUESTA DIRECTA», «CONCLUSIÓN JURÍDICA») sustituidos; lista y narración con las palabras del art. 16; escena vaga sustituida por el registro inmediato de la detención (art. 16); copy con la obligación de entregarlo"
+    }
+  ]
 }
