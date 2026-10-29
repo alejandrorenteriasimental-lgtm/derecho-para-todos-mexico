@@ -24,7 +24,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "48",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "En caso de muerte del trabajador, dejarán de computarse los salarios vencidos como parte del conflicto, a partir de la fecha del fallecimiento.",
+      "texto_literal": "Si en el juicio correspondiente no comprueba el patrón la causa de la rescisión, el trabajador tendrá derecho, además, cualquiera que hubiese sido la acción intentada, a que se le paguen los salarios vencidos computados desde la fecha del despido hasta por un período máximo de doce meses",
       "cita": "Ley Federal del Trabajo, artículo 48",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-10-29"
@@ -33,28 +33,26 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te despidieron de tu empleo sin que exista una causa justificada conforme a la ley?",
+      "texto": "¿Te despidieron sin causa justificada? Esto es lo que puedes pedir.",
       "titulo": [
-        "¿TE",
-        "DESPIDIERON",
+        "¿TE DESPIDIERON",
         "SIN CAUSA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Puedes pedir la reinstalación en tu trabajo o una indemnización de tres meses de salario, además de salarios vencidos e intereses.",
+      "texto": "Puedes pedir que te reinstalen en tu trabajo o que te indemnicen con el importe de tres meses de salario.",
       "titulo": [
-        "LO QUE",
-        "PUEDES",
-        "PEDIR"
+        "REINSTALACIÓN",
+        "O 3 MESES"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La Ley Federal del Trabajo establece que el trabajador podrá solicitar lo siguiente ante la autoridad:: que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario",
-      "etiqueta": "Ley, artículo 48",
+      "texto": "La Ley Federal del Trabajo lo dice así: puedes solicitar «que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 48",
       "cita": "que se le reinstale en el trabajo que desempeñaba, o que se le indemnice con el importe de tres meses de salario",
       "afirmaciones": [
         {
@@ -68,18 +66,18 @@
     },
     {
       "tipo": "lista",
-      "texto": "Para ello, debes considerar las siguientes condiciones y reglas procesales:",
+      "texto": "Lo pides primero ante la Autoridad Conciliadora y, si no hay arreglo, ante el Tribunal. La indemnización se calcula con el salario que corresponda a la fecha en que se realice el pago.",
       "items": [
-        "Agotar la conciliación",
-        "Juicio laboral previo",
-        "Patrón no prueba causa"
+        "Primero, conciliación",
+        "Sin arreglo, el Tribunal",
+        "Salario a la fecha del pago"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "La ley contempla una excepción importante respecto al cálculo de los salarios vencidos.",
+      "texto": "Y si en el juicio el patrón no comprueba la causa del despido, además te deben pagar los salarios vencidos desde la fecha del despido, hasta por un período máximo de doce meses.",
       "encabezado": "Excepción por fallecimiento",
       "detalle": "Cesan los salarios vencidos",
       "fuente_corta": "Ley, art. 48",
@@ -94,10 +92,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "Puedes pedir la reinstalación en tu trabajo o una indemnización de tres meses de salario, además de salarios vencidos e intereses.",
+      "texto": "En resumen: reinstalación o tres meses de salario, y salarios vencidos si el patrón no comprueba la causa.",
       "titulo": [
-        "RESUMEN",
-        "FINAL"
+        "TUS DOS",
+        "OPCIONES"
       ],
       "afirmaciones": []
     },
@@ -215,7 +213,7 @@
   "pregunta_original": "¿Qué puedes pedir si te despiden sin causa justificada?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Qué puedes pedir si te despiden sin causa justificada?\n\nPuedes pedir la reinstalación en tu trabajo o una indemnización de tres meses de salario, además de salarios vencidos e intereses.\n\nFuente: Ley Federal del Trabajo, artículo 48.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué puedes pedir si te despiden sin causa justificada?\n\nQue te reinstalen en tu trabajo o que te indemnicen con el importe de tres meses de salario, calculado con el salario a la fecha del pago. Se pide ante la Autoridad Conciliadora y, si no hay arreglo, ante el Tribunal. Si en el juicio el patrón no comprueba la causa, además te deben pagar salarios vencidos desde la fecha del despido, hasta por doce meses.\n\nFuente: Ley Federal del Trabajo, artículo 48.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -288,5 +286,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "salarios vencidos e intereses ya no se presentan como incondicionales (solo si el patrón no comprueba la causa; sin intereses, que tienen otra condición); salario a la fecha del pago; etiqueta «Ley» → «Ley Federal del Trabajo»; escena de excepción vaga sustituida por la condición literal; F2 (muerte del trabajador, ajena a la pregunta) sustituida por el párrafo de salarios vencidos; títulos sin relleno; doble «::» eliminado"
+    }
+  ]
 }

@@ -2459,7 +2459,7 @@
       "id": "R20261130-T014",
       "formato": "reel",
       "huella": "affc415d02c67491bbe20d58dc53fee11cbf2a34d105c5937e8d6265a0209ace",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T14:19:48+00:00",
@@ -2475,6 +2475,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-29T14:22:09+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T14:26:37+00:00",
+          "motivo": "edición editorial (Claude, 29-10): condiciones de salarios vencidos; se vuelve a verificar y producir"
         }
       ],
       "error": null,

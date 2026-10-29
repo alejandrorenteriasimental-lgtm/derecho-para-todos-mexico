@@ -571,3 +571,4 @@
 {"ts": "2026-10-29T14:22:09+00:00", "evento": "revision_preparada", "pieza": "R20261130-T014", "version": "5300cd14fcbc4261", "canal": "chat"}
 {"ts": "2026-10-29T14:22:09+00:00", "pieza": "R20261206-T028", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-29T14:22:09+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
+{"ts": "2026-10-29T14:26:37+00:00", "pieza": "R20261130-T014", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, 29-10): condiciones de salarios vencidos; se vuelve a verificar y producir"}
