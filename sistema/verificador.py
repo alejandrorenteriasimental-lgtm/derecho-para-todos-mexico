@@ -22,7 +22,7 @@ import hashlib, io, json, re, unicodedata, urllib.error, urllib.request
 from datetime import datetime, timezone, date
 from urllib.parse import urlparse
 
-VERSION = "0.5.4"   # 0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
+VERSION = "0.5.5"   # 0.5.5: remisión «artículo 684-A de…» al inicio de línea ya no corta el artículo (LFT 48).  0.5.0: cobertura de la pregunta, vaguedad y sustento de lo visible (rechazo humano de R20261028-T068). 0.4.0: razonamiento jurídico   # al cambiar la lógica de cotejo, las piezas retenidas por verificación se vuelven a verificar
 
 DOMINIOS_OFICIALES = (
     "diputados.gob.mx",        # Cámara de Diputados — LeyesBiblio (textos vigentes compilados)
@@ -178,7 +178,7 @@ def segmento_articulo(cuerpo, numero):
     variantes = [  # (inicio del artículo buscado, inicio del siguiente artículo)
         # 1) encabezado al inicio de línea, como en los PDF de LeyesBiblio
         (rf"(?m)^[ \t]*articulo\s+{num}{sufijo}\s*[.\-–](?!\s*(?:bis|ter|quater)\b)",
-         rf"(?m)^[ \t]*articulo\s+\d+{sufijo}(?:\s+(?:bis|ter|quater))?\s*[.\-–]"),
+         rf"(?m)^[ \t]*articulo\s+\d+{sufijo}(?:-[a-z]\b)?(?:\s+(?:bis|ter|quater))?\s*(?:\.|[\-–](?=\s)|[\-–]$)"),
         # 2) texto con líneas fusionadas: exige punto tras el número y mayúscula/palabra después
         (rf"\barticulo\s+{num}{sufijo}\s*\.(?!\s*(?:bis|ter|quater)\b)",
          rf"\barticulo\s+\d+{sufijo}(?:\s+(?:bis|ter|quater))?\s*\.\s+[a-z]"),
@@ -203,7 +203,7 @@ def articulo_texto(cuerpo, numero, max_car=6000):
         return None
     num = re.escape(str(numero).lower()); suf = r"(?:o\b|[°º])?"
     pares = [(rf"(?m)^[ \t]*articulo\s+{num}{suf}\s*[.\-–](?!\s*(?:bis|ter|quater)\b)",
-              rf"(?m)^[ \t]*articulo\s+\d+{suf}(?:\s+(?:bis|ter|quater))?\s*[.\-–]"),
+              rf"(?m)^[ \t]*articulo\s+\d+{suf}(?:-[a-z]\b)?(?:\s+(?:bis|ter|quater))?\s*(?:\.|[\-–](?=\s)|[\-–]$)"),   # «artículo 684-A de esta Ley» al inicio de línea es remisión, no encabezado (LFT 48, 29-10)
              (rf"\barticulo\s+{num}{suf}\s*\.(?!\s*(?:bis|ter|quater)\b)",
               rf"\barticulo\s+\d+{suf}(?:\s+(?:bis|ter|quater))?\s*\.\s+[a-z]")]
     for ini, sig in pares:
