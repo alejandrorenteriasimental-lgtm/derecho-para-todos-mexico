@@ -2,28 +2,27 @@
   "fecha": "2026-12-02",
   "formato": "imagen",
   "tema_id": "T030",
-  "titulo": "Debido proceso en 60 segundos",
-  "gancho": "¿Una ley nueva puede aplicarse en tu contra?",
-  "pregunta": "¿Una ley nueva puede aplicarse en tu contra?",
+  "titulo": "¿Te pueden castigar por algo que solo se parece a un delito?",
+  "gancho": "¿Te pueden castigar por algo que solo se parece a un delito?",
+  "pregunta": "¿Te pueden castigar por algo que solo se parece a un delito?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
   "fuentes_sugeridas": "CPEUM art. 14",
   "riesgo_exactitud": "Bajo",
   "lote": "lote-3",
-  "motivo_seleccion": "Irretroactividad en perjuicio.",
+  "motivo_seleccion": "Sustituye a «¿Una ley nueva puede aplicarse en tu contra?» (29-10): dos descartes y repetía al Reel del mismo día. Art. 14 CPEUM, párrafo tercero: en los juicios del orden criminal queda prohibido imponer, por simple analogía, y aún por mayoría de razón, pena alguna que no esté decretada por una ley exactamente aplicable al delito.",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "mito_realidad",
-  "angulo": "¿Una ley nueva puede aplicarse en tu contra?",
-  "estado": "DESCARTADA",
+  "angulo": "¿Te pueden castigar por algo que solo se parece a un delito?",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-28T21:42:20Z",
   "pieza_id": "I20261202-T030",
   "archivo": "2026-12-02_imagen_T030-lote-3.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial",
   "ultima_categoria": "juridico",
-  "huella_entrada": "d11b978b27bb39b7",
   "historial_reaperturas": [
     {
       "fecha": "2026-10-29",
@@ -31,6 +30,13 @@
       "motivo": "causa del sistema corregida (verificador 0.5.5/0.5.6: LFT 48 cortado, «330 -E» no encontrado; vaguedad en cita literal) o descarte por cuota/forma; se reintenta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que a ninguna ley se le puede dar un efecto retroactivo si e».\", \"[c"
+    },
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras descartes repetidos",
+      "pregunta_anterior": "¿Una ley nueva puede aplicarse en tu contra?",
+      "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"
     }
   ]
 }
