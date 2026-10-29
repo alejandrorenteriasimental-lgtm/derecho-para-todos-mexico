@@ -502,3 +502,4 @@
 {"ts": "2026-10-29T10:54:50+00:00", "pieza": "I20261206-T028", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
 {"ts": "2026-10-29T10:54:50+00:00", "evento": "revision_preparada", "pieza": "I20261206-T028", "version": "ec21902a5533d3f2", "canal": "chat"}
 {"ts": "2026-10-29T10:54:50+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 3, "retenidas": 1, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
+{"ts": "2026-10-29T10:57:17+00:00", "pieza": "I20261204-T031", "evento": "transicion", "a": "PENDIENTE", "motivo": "retención por «casi idéntica» era falso positivo (otra pieza con la misma plantilla); control corregido"}

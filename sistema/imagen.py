@@ -218,6 +218,17 @@ def ahash(png):
     a = np.asarray(Image.open(png).convert("L").resize((16, 16))); return "".join("1" if v else "0" for v in (a > a.mean()).flatten())
 
 
+def _mismo_tema(g, otro_id):
+    """La comparación de «casi idéntica» solo tiene sentido entre piezas del mismo tema o con titulares parecidos: con la
+    misma plantilla, dos piezas distintas dan huellas visuales cercanas (I20261204-T031 vs. I20261126-T025, 29-10:
+    distancia 11/256 con contenido totalmente distinto)."""
+    if g.get("tema_id") and otro_id.endswith("-" + g["tema_id"]): return True
+    try: t2 = json.loads((RAIZ / "piezas" / otro_id / "guion.json").read_text()).get("titulo", "")
+    except (OSError, ValueError): return True          # sin datos: se compara (criterio conservador)
+    a = {w for w in _palabras(g.get("titulo", "")) if len(w) > 3}; b = {w for w in _palabras(t2) if len(w) > 3}
+    return bool(a and b) and len(a & b) / len(a | b) >= 0.5
+
+
 def auditar(png, textos, y_fin, previos_hash=()):
     R = []
     def ok(n, c, det=""): R.append({"control": n, "resultado": "APROBADO" if c else "FALLA", "detalle": det})
@@ -277,7 +288,7 @@ def producir(carpeta: Path, verificacion=None):
     png = out / f'{g["id"]}.png'
     textos, y_fin = dibujar(g, png)
     reg_f = RAIZ / "registro" / "imagenes.jsonl"
-    previos = [json.loads(l)["ahash"] for l in reg_f.read_text().splitlines() if l.strip() and json.loads(l)["id"] != g["id"]] if reg_f.exists() else []
+    previos = [x["ahash"] for x in (json.loads(l) for l in reg_f.read_text().splitlines() if l.strip()) if x["id"] != g["id"] and _mismo_tema(g, x["id"])] if reg_f.exists() else []
     tec, h, cob = auditar(png, textos, y_fin, previos)
     tec_ok = all(r["resultado"] == "APROBADO" for r in tec)
     if not tec_ok:

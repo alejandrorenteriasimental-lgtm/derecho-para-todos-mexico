@@ -1881,7 +1881,7 @@
       "id": "I20261204-T031",
       "formato": "imagen",
       "huella": "9d4ffe5d0af0e32d69c151674171200b2e19e8a95a64955f93a616fc686aea51",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T10:13:20+00:00",
@@ -1933,6 +1933,12 @@
           "a": "RETENIDO",
           "ts": "2026-10-29T10:54:11+00:00",
           "motivo": "RETENIDO: falla técnica de la imagen"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-10-29T10:57:17+00:00",
+          "motivo": "retención por «casi idéntica» era falso positivo (otra pieza con la misma plantilla); control corregido"
         }
       ],
       "error": null,
