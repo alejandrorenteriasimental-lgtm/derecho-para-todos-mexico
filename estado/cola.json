@@ -1632,7 +1632,7 @@
       "id": "I20261129-T093",
       "formato": "imagen",
       "huella": "74d4500c731a2d0043abba8509ee0d0e60888e929b65363899fab31eb8923d12",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:44:02+00:00",
@@ -1672,6 +1672,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T21:47:58+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 15:22 CDMX) 2026-10-28T21:22:43+00:00 versión 86764ed03be7c890 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T01:16:51+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -1703,7 +1709,7 @@
       "id": "R20261129-T084",
       "formato": "reel",
       "huella": "bedf41d920fef3eef9b0d2cb300d5b48126bd913b5bd1f62b1fd674d018b0dcf",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T19:44:02+00:00",
@@ -1743,6 +1749,12 @@
           "a": "APROBADO",
           "ts": "2026-10-28T21:47:58+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 28-10-2026 15:22 CDMX) 2026-10-28T21:22:43+00:00 versión af3ae99607cea843 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-29T01:16:51+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -1774,7 +1786,7 @@
       "id": "R20261201-T019",
       "formato": "reel",
       "huella": "47c5f82f51cec2dfd0497efe4857d20f960130628cf7116bc81cbcda2babc5c4",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-28T21:47:58+00:00",
@@ -1814,6 +1826,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-29T01:11:02+00:00",
           "motivo": "etiqueta de la cita cortada («…CONSUMIDOR, ARTÍ»): corrección del render, se vuelve a producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T01:16:48+00:00",
+          "motivo": "45.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T01:16:51+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -1821,10 +1845,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "0eaa71dcb14fc370",
+        "version": "ed66703c7f9a69ab",
         "huella_guion": "7761ab8d62bc27fc6c790120e2d1838bab91d64162777cac29e326c8f593a5c0",
-        "huella_archivo": "48e6dca4fa5e0fc35b047fd05232020a1add43332944eb2a83269fd94ca80a3e",
-        "preparada": "2026-10-29T01:08:22+00:00",
+        "huella_archivo": "36e4f748d070593e111c41ba370a1432ecce65cd1ceb76026a5412023e4454ad",
+        "preparada": "2026-10-29T01:16:51+00:00",
         "canal": "chat"
       }
     }

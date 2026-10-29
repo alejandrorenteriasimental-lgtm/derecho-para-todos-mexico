@@ -441,3 +441,11 @@
 {"ts": "2026-10-29T01:08:22+00:00", "pieza": "R20261126-T061", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-29T01:08:22+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
 {"ts": "2026-10-29T01:11:02+00:00", "pieza": "R20261201-T019", "evento": "transicion", "a": "PENDIENTE", "motivo": "etiqueta de la cita cortada («…CONSUMIDOR, ARTÍ»): corrección del render, se vuelve a producir"}
+{"ts": "2026-10-29T01:14:22+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T01:14:42+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-02_reel_T030-lote-3.json", "categoria": "cuota", "transitoria": true, "motivo": "modelo no disponible: tope propio diario alcanzado para gemini-3.5-flash-lite"}
+{"ts": "2026-10-29T01:16:48+00:00", "pieza": "R20261201-T019", "evento": "transicion", "a": "PRODUCIDO", "motivo": "45.4"}
+{"ts": "2026-10-29T01:16:51+00:00", "pieza": "R20261201-T019", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T01:16:51+00:00", "evento": "revision_preparada", "pieza": "R20261201-T019", "version": "ed66703c7f9a69ab", "canal": "chat"}
+{"ts": "2026-10-29T01:16:51+00:00", "pieza": "I20261129-T093", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-10-29T01:16:51+00:00", "pieza": "R20261129-T084", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-10-29T01:16:51+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
