@@ -618,3 +618,10 @@
 {"ts": "2026-10-29T15:18:57+00:00", "pieza": "I20261203-T070", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
 {"ts": "2026-10-29T15:18:57+00:00", "evento": "revision_preparada", "pieza": "I20261203-T070", "version": "6b2e55b9846fce8b", "canal": "chat"}
 {"ts": "2026-10-29T15:18:57+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 4, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 4}
+{"ts": "2026-10-29T15:24:13+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-29T15:27:44+00:00", "evento": "redactada", "pieza": "I20261130-T014", "solicitud": "2026-11-30_imagen_T014-lote-3.json"}
+{"ts": "2026-10-29T15:27:44+00:00", "pieza": "I20261130-T014", "evento": "encolado"}
+{"ts": "2026-10-29T15:28:18+00:00", "pieza": "I20261130-T014", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-29T15:28:22+00:00", "pieza": "I20261130-T014", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-29T15:28:22+00:00", "evento": "revision_preparada", "pieza": "I20261130-T014", "version": "652a2f804388a950", "canal": "chat"}
+{"ts": "2026-10-29T15:28:22+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}

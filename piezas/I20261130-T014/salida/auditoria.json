@@ -1,0 +1,115 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1146 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1002"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "38 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "95% de 37 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261130-T014",
+    "formato": "imagen",
+    "titulo": "¿Te pueden despedir por estar embarazada?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261130-T014.png",
+    "sha256": "41b21b8895a9a8f732b586ac16ad38874c0ee02a49a46f2a61a84347009b0145",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100011011111111110000001111111111000111111111111100000000000001111011110011111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "fd8d00d1ee06e6c4c7c62dfb0ed1004fb846f8d350b07c1dd7040dcf797cd96c",
+    "texto_alternativo": "Infografía tipo mito y realidad sobre si te pueden despedir por estar embarazada. Mito: Si te embarazas, el patrón puede despedirte o pedirte que renuncies. Realidad: No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
+    "copy": "En el ámbito laboral existen dudas sobre las prohibiciones que tienen los patrones frente a la maternidad. La Ley Federal del Trabajo regula estas situaciones de forma directa.\n\nDe acuerdo con la Ley Federal del Trabajo, en su artículo 133, se prohíbe a las personas empleadoras despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores. Es importante señalar la diferencia entre el despido, que es una separación decidida por el patrón, y la renuncia, que es una separación decidida por la persona trabajadora.\n\nCabe aclarar que el texto legal prohíbe estas acciones, pero no detalla la vía legal, las autoridades ni los plazos para inconformarse.\n\nGuarda esta publicación para consultarla después o compártela con quien necesite conocer esta información.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "133",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-10-29T15:28:18+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

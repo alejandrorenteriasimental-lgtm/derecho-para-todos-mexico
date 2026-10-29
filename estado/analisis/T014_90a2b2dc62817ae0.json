@@ -1,0 +1,70 @@
+{
+ "tema_id": "T014",
+ "pregunta": "¿Te pueden despedir por estar embarazada?",
+ "fecha": "2026-10-29T15:25:32+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden despedir por estar embarazada?",
+  "concepto_central": "despido",
+  "respuesta_corta": "No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
+  "reglas": [
+   {
+    "conclusion": "Las personas empleadoras tienen prohibido despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada.",
+    "fuente": "F1",
+    "cita_literal": "Despedir a una trabajadora o coaccionarla directa o indirectamente para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El despido o la coacción para renunciar por embarazo está prohibido para las personas empleadoras.",
+    "fuente": "F1",
+    "cita_literal": "Despedir a una trabajadora o coaccionarla directa o indirectamente para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores",
+    "motivo": ""
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "respuesta": "El texto oficial disponible no especifica la vía legal para inconformarse.",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El artículo proporcionado solo establece la prohibición y no detalla procedimientos."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "respuesta": "El texto oficial disponible no menciona ante qué autoridad debe acudir la trabajadora.",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El artículo proporcionado no regula las autoridades competentes para este supuesto."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "respuesta": "El texto oficial disponible no señala un plazo para presentar una reclamación.",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "No se incluyen plazos en el artículo proporcionado."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es la separación decidida por el patrón, mientras que la renuncia es una separación decidida por la persona trabajadora."
+   },
+   {
+    "a": "despido",
+    "b": "mutuo consentimiento",
+    "diferencia": "El despido es una decisión unilateral del patrón, mientras que el mutuo consentimiento es una terminación acordada por ambas partes."
+   }
+  ],
+  "limites": "El texto prohíbe el despido por embarazo, pero no detalla las vías legales, autoridades ni plazos aplicables para reclamarlo.",
+  "fuentes_irrelevantes": []
+ }
+}

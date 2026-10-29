@@ -2701,6 +2701,40 @@
         "preparada": "2026-10-29T15:18:57+00:00",
         "canal": "chat"
       }
+    },
+    "I20261130-T014": {
+      "id": "I20261130-T014",
+      "formato": "imagen",
+      "huella": "fd8d00d1ee06e6c4c7c62dfb0ed1004fb846f8d350b07c1dd7040dcf797cd96c",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-29T15:27:44+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-29T15:28:18+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-29T15:28:22+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "652a2f804388a950",
+        "huella_guion": "5626fd5b9b30802a5d5d29b6ef2cf740e7268911f3203719ee0a071132a901bf",
+        "huella_archivo": "41b21b8895a9a8f732b586ac16ad38874c0ee02a49a46f2a61a84347009b0145",
+        "preparada": "2026-10-29T15:28:22+00:00",
+        "canal": "chat"
+      }
     }
   }
 }

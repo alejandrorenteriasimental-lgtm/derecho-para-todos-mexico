@@ -1,0 +1,173 @@
+{
+  "id": "I20261130-T014",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden despedir por estar embarazada?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T014",
+  "pieza": {
+    "titular": "¿Te pueden despedir por estar embarazada?",
+    "bajada": "Conoce lo que establece la Ley Federal del Trabajo sobre este tema.",
+    "mito": "Si te embarazas, el patrón puede despedirte o pedirte que renuncies.",
+    "realidad": "No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 133"
+  },
+  "copy": "En el ámbito laboral existen dudas sobre las prohibiciones que tienen los patrones frente a la maternidad. La Ley Federal del Trabajo regula estas situaciones de forma directa.\n\nDe acuerdo con la Ley Federal del Trabajo, en su artículo 133, se prohíbe a las personas empleadoras despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores. Es importante señalar la diferencia entre el despido, que es una separación decidida por el patrón, y la renuncia, que es una separación decidida por la persona trabajadora.\n\nCabe aclarar que el texto legal prohíbe estas acciones, pero no detalla la vía legal, las autoridades ni los plazos para inconformarse.\n\nGuarda esta publicación para consultarla después o compártela con quien necesite conocer esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía tipo mito y realidad sobre si te pueden despedir por estar embarazada. Mito: Si te embarazas, el patrón puede despedirte o pedirte que renuncies. Realidad: No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "133",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Despedir a una trabajadora o coaccionarla directa o indirectamente para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores",
+      "cita": "Ley Federal del Trabajo, artículo 133",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las personas empleadoras tienen prohibido despedir a una trabajadora o coaccionarla para que renuncie debido a su embarazo.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden despedir por estar embarazada?",
+    "concepto_central": "despido",
+    "respuesta_corta": "No. Queda prohibido a las personas empleadoras despedir o coaccionar a una trabajadora para que renuncie por estar embarazada.",
+    "reglas": [
+      {
+        "conclusion": "Las personas empleadoras tienen prohibido despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada.",
+        "fuente": "F1",
+        "cita_literal": "Despedir a una trabajadora o coaccionarla directa o indirectamente para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "133"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El despido o la coacción para renunciar por embarazo está prohibido para las personas empleadoras.",
+        "fuente": "F1",
+        "cita_literal": "Despedir a una trabajadora o coaccionarla directa o indirectamente para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores",
+        "motivo": ""
+      },
+      {
+        "elemento": "vía",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial disponible no especifica la vía legal para inconformarse.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El artículo proporcionado solo establece la prohibición y no detalla procedimientos."
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial disponible no menciona ante qué autoridad debe acudir la trabajadora.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El artículo proporcionado no regula las autoridades competentes para este supuesto."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "respuesta": "El texto oficial disponible no señala un plazo para presentar una reclamación.",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "No se incluyen plazos en el artículo proporcionado."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "despido",
+        "b": "renuncia",
+        "diferencia": "El despido es la separación decidida por el patrón, mientras que la renuncia es una separación decidida por la persona trabajadora."
+      },
+      {
+        "a": "despido",
+        "b": "mutuo consentimiento",
+        "diferencia": "El despido es una decisión unilateral del patrón, mientras que el mutuo consentimiento es una terminación acordada por ambas partes."
+      }
+    ],
+    "limites": "El texto prohíbe el despido por embarazo, pero no detalla las vías legales, autoridades ni plazos aplicables para reclamarlo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T15:27:44+00:00",
+    "solicitud": "2026-11-30_imagen_T014-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Te pueden despedir por estar embarazada?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas empleadoras tienen prohibido despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada.",
+              "sostenida": "si",
+              "motivo": "La conclusión se desprende directamente de la fracción XV del artículo 133 de la Ley Federal del Trabajo, que prohíbe expresamente estas conductas."
+            },
+            {
+              "conclusion": "El despido o la coacción para renunciar por embarazo está prohibido para las personas empleadoras.",
+              "sostenida": "si",
+              "motivo": "Es una paráfrasis exacta de la prohibición establecida en la fracción XV del artículo 133 de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
