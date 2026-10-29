@@ -8,13 +8,13 @@
   "tema_id": "T019",
   "pieza": {
     "titular": "¿Qué debe incluir el precio que te muestran?",
-    "bajada": "Debe incluir impuestos, comisiones, intereses, seguros y cualquier costo adicional.",
+    "bajada": "El monto total: impuestos, comisiones, intereses, seguros y cualquier otro cargo obligatorio.",
     "cita": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación",
     "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 7 Bis",
-    "ojo": "El precio total aplica al contado o a crédito.",
+    "ojo": "Aplica igual si pagas de contado o a crédito.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 7 Bis"
   },
-  "copy": "Cuando acudes a adquirir bienes, productos o servicios, la Ley Federal de Protección al Consumidor establece en su artículo 7 Bis la obligación de informar el monto total a pagar de forma notoria y visible.\n\nGuarda y comparte esta información para conocer tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué debe incluir el precio que te muestran?\n\nEl monto total a pagar, que debe incluir impuestos, comisiones, intereses, seguros y cualquier otro costo o cargo que tengas que cubrir para comprar o contratar, de contado o a crédito. El proveedor debe informarlo de forma notoria y visible.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 7 Bis.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa que explica qué debe incluir el precio visible de bienes y servicios según la Ley Federal de Protección al Consumidor.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -160,5 +160,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "«cualquier costo adicional» → «cualquier otro cargo que tengas que pagar para comprar o contratar» (la ley: «que se requiera cubrir»); OJO en lenguaje claro; copy que responde la pregunta"
+    }
+  ]
 }

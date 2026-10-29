@@ -8,13 +8,13 @@
   "tema_id": "T070",
   "pieza": {
     "titular": "¿Quién debe darte la computadora en home office?",
-    "bajada": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo necesario para trabajar desde casa.",
-    "cita": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+    "bajada": "Tu patrón: debe proporcionar, instalar y mantener el equipo que necesitas.",
+    "cita": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 330-E",
-    "ojo": "Obligación en teletrabajo",
-    "fuente_visible": "Ley Federal del Trabajo, art. 330-E"
+    "ojo": "Aplica si trabajas más del 40 % del tiempo en tu domicilio.",
+    "fuente_visible": "Ley Federal del Trabajo, arts. 330-A y 330-E"
   },
-  "copy": "Si laboras desde casa, es fundamental conocer lo que establecen las normas laborales vigentes para proteger tus herramientas de trabajo diarias.\n\nDe acuerdo con la Ley Federal del Trabajo, artículo 330-E, en la modalidad de teletrabajo, se establece el deber de \"Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo\".\n\nEsta disposición aplica específicamente cuando las personas prestan sus servicios bajo la modalidad de teletrabajo. Guarda y comparte esta publicación para informar a más personas.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Quién debe darte la computadora si trabajas desde casa?\n\nTu patrón. En teletrabajo debe proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios, como equipo de cómputo, sillas ergonómicas e impresoras. Para la ley es teletrabajo cuando trabajas más del cuarenta por ciento del tiempo en tu domicilio o en el que elijas; no cuenta el trabajo ocasional o esporádico.\n\nFuente: Ley Federal del Trabajo, artículos 330-A y 330-E.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa que explica que el patrón debe proporcionar, instalar y dar mantenimiento a la computadora si se trabaja desde casa.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -24,8 +24,19 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "330-E",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes: I. Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo",
+      "texto_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros;",
       "cita": "Ley Federal del Trabajo, artículo 330-E",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora bajo la modalidad de teletrabajo, o en el domicilio elegido por ésta. No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica.",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-10-29"
     }
@@ -36,6 +47,12 @@
       "tipo": "hecho_normativo",
       "texto": "Los patrones deben proporcionar, instalar y dar mantenimiento al equipo de cómputo cuando las personas laboran bajo la modalidad de teletrabajo.",
       "fuente": "F1"
+    },
+    {
+      "id": "A40",
+      "tipo": "hecho_normativo",
+      "texto": "Es teletrabajo cuando la relación laboral se desarrolla más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora; el trabajo ocasional o esporádico no lo es.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
@@ -138,5 +155,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "respuesta directa («Tu patrón»); OJO con la condición del art. 330-A (más del 40 %; no ocasional) en vez de «Obligación en teletrabajo»; cita completa con sillas e impresoras; copy sin relleno"
+    }
+  ]
 }

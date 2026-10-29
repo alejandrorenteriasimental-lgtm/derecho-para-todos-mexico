@@ -17,42 +17,52 @@
       "cita": "Ley Federal del Trabajo, artículo 330-E",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-10-29"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora bajo la modalidad de teletrabajo, o en el domicilio elegido por ésta. No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica.",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Trabajas bajo la modalidad de teletrabajo y te preguntas si la empresa debe pagarte la luz y el internet que utilizas para cumplir tus funciones?",
+      "texto": "¿Trabajas desde casa? ¿Tu empresa debe pagarte la luz y el internet?",
       "titulo": [
-        "¿TRABAJAS EN",
-        "TELETRABAJO?",
-        "¿PAGAN LUZ?"
+        "¿HOME OFFICE?",
+        "¿QUIÉN PAGA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, siempre que la relación laboral se encuentre bajo la modalidad de teletrabajo, ya que la empresa debe asumir los costos derivados de esta actividad.",
+      "texto": "Sí, si es teletrabajo: la empresa debe asumir los costos, incluido el pago de servicios de telecomunicación y la parte proporcional de electricidad.",
       "titulo": [
-        "SÍ DEBEN",
-        "PAGARLOS"
+        "SÍ, SI ES",
+        "TELETRABAJO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La Ley Federal del Trabajo señala de forma precisa la obligación patronal en esta materia, indicando textualmente lo siguiente respecto a los gastos generados:: Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
-      "etiqueta": "Ley, artículo 330-E",
+      "texto": "La Ley Federal del Trabajo lo dice así: el patrón debe «Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 330-E",
       "cita": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Entre las obligaciones que la legislación contempla para proteger a quienes laboran bajo esta modalidad, se encuentran los siguientes aspectos fundamentales:",
+      "texto": "Pero ojo: para la ley es teletrabajo cuando trabajas más del cuarenta por ciento del tiempo en tu domicilio o en el que elijas. No cuenta si es ocasional o esporádico.",
       "items": [
-        "Telecomunicación",
-        "Parte de electricidad",
-        "Costos derivados"
+        "Más del 40 % en casa",
+        "No si es ocasional",
+        "Luz e internet a cargo del patrón"
       ],
       "afirmaciones": [
         {
@@ -60,15 +70,21 @@
           "tipo": "hecho_normativo",
           "texto": "Los patrones deben asumir los costos derivados del teletrabajo, incluyendo servicios de telecomunicación y la parte proporcional de electricidad.",
           "fuente": "F1"
+        },
+        {
+          "id": "A40",
+          "tipo": "hecho_normativo",
+          "texto": "El capítulo de teletrabajo se aplica cuando la relación laboral se desarrolla más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora o en el que elija; el trabajo ocasional o esporádico no es teletrabajo.",
+          "fuente": "F2"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Por ello, ten en cuenta que esta disposición opera conforme a las reglas específicas de la ley y según el caso particular de la modalidad de teletrabajo.",
+      "texto": "En resumen: si trabajas desde casa más del cuarenta por ciento del tiempo, la luz y el internet de tu trabajo no deben salir de tu bolsillo.",
       "titulo": [
-        "MODALIDAD DE",
-        "TELETRABAJO"
+        "NO SALE DE",
+        "TU BOLSILLO"
       ],
       "afirmaciones": []
     },
@@ -151,7 +167,7 @@
   "pregunta_original": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?\n\nSí: la empresa debe asumir los costos derivados del teletrabajo, incluyendo las telecomunicaciones y la parte proporcional de electricidad.\n\nFuente: Ley Federal del Trabajo, artículo 330-E.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?\n\nSí, si es teletrabajo: el patrón debe asumir los costos, incluido el pago de servicios de telecomunicación y la parte proporcional de electricidad. Para la ley es teletrabajo cuando trabajas más del cuarenta por ciento del tiempo en tu domicilio o en el que elijas; no cuenta el trabajo ocasional o esporádico.\n\nFuente: Ley Federal del Trabajo, artículos 330-A y 330-E.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -214,5 +230,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "se agrega la condición del art. 330-A (más del 40 % del tiempo en el domicilio; no el trabajo ocasional), sin la cual el «Sí» era una generalización; escena final vaga sustituida; etiqueta «Ley» → «Ley Federal del Trabajo»; doble «::» eliminado"
+    }
+  ]
 }
