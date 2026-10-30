@@ -13,16 +13,38 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "74",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;",
       "cita": "Ley Federal del Trabajo, artículo 74",
       "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-10-30"
+      "consultado": "2026-10-30",
+      "texto_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero; III. El tercer lunes de marzo en conmemoración del 21 de marzo; IV. El 1o. de mayo; V. El 16 de septiembre; VI. El tercer lunes de noviembre en conmemoración del 20 de noviembre;"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "74",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "cita": "Ley Federal del Trabajo, artículo 74",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30",
+      "texto_literal": "VII. El 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal;"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "74",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "cita": "Ley Federal del Trabajo, artículo 74",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30",
+      "texto_literal": "VIII. El 25 de diciembre, y IX. El que determinen las leyes federales y locales electorales, en el caso de elecciones ordinarias, para efectuar la jornada electoral."
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes cuáles son los días de descanso obligatorio en el país?",
+      "texto": "¿Qué días de descanso obligatorio marca la ley en México?",
       "titulo": [
         "DÍAS DE",
         "DESCANSO",
@@ -32,45 +54,77 @@
     },
     {
       "tipo": "titular",
-      "texto": "Los días de descanso obligatorio incluyen fechas fijas, ciertos lunes conmemorativos, el 1 de octubre cada seis años y las jornadas electorales.",
+      "texto": "La Ley Federal del Trabajo lo responde así: son siete fechas cada año, más el 1 de octubre cada seis años y el día de la jornada electoral en elecciones ordinarias.",
       "titulo": [
-        "FECHAS",
-        "OFICIALES"
+        "7 FECHAS",
+        "CADA AÑO"
       ],
       "afirmaciones": []
     },
     {
-      "tipo": "cita",
-      "texto": "La ley señala los días específicos que aplican en el año. La norma indica textualmente: «Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;»",
-      "etiqueta": "Ley Federal del Trabajo, artículo 74",
-      "cita": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;",
-      "afirmaciones": []
-    },
-    {
       "tipo": "lista",
-      "texto": "Revisa los días principales establecidos por la normativa.",
+      "texto": "Cuatro son fechas fijas: el 1 de enero, el 1 de mayo, el 16 de septiembre y el 25 de diciembre.",
       "items": [
-        "1o. de enero",
-        "Primer lunes de febrero",
-        "1o. de mayo"
+        "1 de enero",
+        "1 de mayo",
+        "16 de septiembre",
+        "25 de diciembre"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La ley establece los días que son de descanso obligatorio.",
+          "texto": "El 1 de enero, el 1 de mayo, el 16 de septiembre y el 25 de diciembre son días de descanso obligatorio.",
           "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "titular",
-      "texto": "Los días de descanso obligatorio incluyen fechas fijas, ciertos lunes conmemorativos, el 1 de octubre cada seis años y las jornadas electorales.",
-      "titulo": [
-        "TOMA",
-        "NOTA"
+      "tipo": "lista",
+      "texto": "Y tres caen en lunes: el primer lunes de febrero, el tercer lunes de marzo y el tercer lunes de noviembre, en conmemoración del 5 de febrero, el 21 de marzo y el 20 de noviembre.",
+      "items": [
+        "Primer lunes de febrero",
+        "Tercer lunes de marzo",
+        "Tercer lunes de noviembre"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El primer lunes de febrero, el tercer lunes de marzo y el tercer lunes de noviembre son días de descanso obligatorio.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "Además, la ley incluye «el 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 74",
+      "cita": "El 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El 1 de octubre de cada seis años es de descanso obligatorio cuando corresponde a la transmisión del Poder Ejecutivo Federal.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Y el día que determinen las leyes federales y locales electorales para la jornada electoral, en el caso de elecciones ordinarias.",
+      "titulo": [
+        "DÍA DE",
+        "ELECCIONES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Es de descanso obligatorio el día que determinen las leyes electorales para la jornada electoral en elecciones ordinarias.",
+          "fuente": "F3"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -83,12 +137,12 @@
     "suficiente": true,
     "pregunta": "¿Qué días son de descanso obligatorio en México?",
     "concepto_central": "días de descanso obligatorio",
-    "respuesta_corta": "Los días de descanso obligatorio incluyen fechas fijas, ciertos lunes conmemorativos, el 1 de octubre cada seis años y las jornadas electorales.",
+    "respuesta_corta": "Son siete fechas cada año, más el 1 de octubre cada seis años y el día de la jornada electoral en elecciones ordinarias.",
     "reglas": [
       {
-        "conclusion": "La ley establece un listado específico de días que son de descanso obligatorio para los trabajadores.",
+        "conclusion": "La LFT enumera los días de descanso obligatorio: siete fechas anuales, el 1 de octubre cada seis años y el día de la jornada electoral.",
         "fuente": "F1",
-        "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;",
+        "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero; III. El tercer lunes de marzo en conmemoración del 21 de marzo; IV. El 1o. de mayo; V. El 16 de septiembre; VI. El tercer lunes de noviembre en conmemoración del 20 de noviembre;",
         "condiciones": [
           "cuando corresponda a la transmisión del Poder Ejecutivo Federal",
           "en el caso de elecciones ordinarias, para efectuar la jornada electoral"
@@ -104,16 +158,16 @@
       {
         "elemento": "contenido",
         "estado": "cubierto",
-        "respuesta": "La ley señala los días específicos del año que se consideran de descanso obligatorio.",
+        "respuesta": "El 1 de enero, el primer lunes de febrero, el tercer lunes de marzo, el 1 de mayo, el 16 de septiembre, el tercer lunes de noviembre y el 25 de diciembre.",
         "fuente": "F1",
-        "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;"
+        "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero; III. El tercer lunes de marzo en conmemoración del 21 de marzo; IV. El 1o. de mayo; V. El 16 de septiembre; VI. El tercer lunes de noviembre en conmemoración del 20 de noviembre;"
       },
       {
         "elemento": "condiciones",
         "estado": "cubierto",
-        "respuesta": "Se establecen condiciones temporales o de eventos específicos para aplicar ciertos días de descanso como la transmisión del Poder Ejecutivo o elecciones.",
-        "fuente": "F1",
-        "cita_literal": "VII. El 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal"
+        "respuesta": "El 1 de octubre solo cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal; y el día de la jornada electoral en elecciones ordinarias.",
+        "fuente": "F2",
+        "cita_literal": "VII. El 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal;"
       }
     ],
     "interpretaciones": [],
@@ -150,7 +204,7 @@
   "pregunta_original": "¿Qué días son de descanso obligatorio en México?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Qué días son de descanso obligatorio en México?\n\nLos días de descanso obligatorio incluyen fechas fijas, ciertos lunes conmemorativos, el 1 de octubre cada seis años y las jornadas electorales.\n\nFuente: Ley Federal del Trabajo, artículo 74.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué días son de descanso obligatorio en México?\n\nSegún el artículo 74 de la Ley Federal del Trabajo: el 1 de enero; el primer lunes de febrero (por el 5 de febrero); el tercer lunes de marzo (por el 21 de marzo); el 1 de mayo; el 16 de septiembre; el tercer lunes de noviembre (por el 20 de noviembre) y el 25 de diciembre.\n\nTambién el 1 de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal, y el día que determinen las leyes electorales para la jornada electoral en elecciones ordinarias.\n\nFuente: Ley Federal del Trabajo, artículo 74.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -196,5 +250,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-30",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "reescritura: la versión anterior no respondía la pregunta (solo 3 de 9 fechas, presentadas como «principales»; escena repetida; cita cortada en la fracción II). Ahora enumera las 7 fechas anuales y las 2 condicionadas (fr. VII y IX) con citas literales del art. 74 (F1-F3)"
+    }
+  ]
 }
