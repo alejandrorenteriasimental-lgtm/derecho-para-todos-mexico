@@ -1,0 +1,60 @@
+{
+ "tema_id": "T105",
+ "pregunta": "¿Todos los trabajadores reciben utilidades?",
+ "fecha": "2026-10-30T21:57:38+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Todos los trabajadores reciben utilidades?",
+  "concepto_central": "reparto de utilidades",
+  "respuesta_corta": "No, pues la ley excluye explícitamente a ciertos puestos como directores o trabajadores del hogar, y exige requisitos de tiempo a otros.",
+  "reglas": [
+   {
+    "conclusion": "Los directores, administradores y gerentes generales no participan en el reparto de utilidades.",
+    "fuente": "F1",
+    "cita_literal": "Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades",
+    "condiciones": [
+     "Desempeñar el puesto de director, administrador o gerente general de la empresa"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Las personas trabajadoras del hogar están excluidas de la participación de utilidades.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores del hogar no participarán en el reparto de utilidades",
+    "condiciones": [
+     "Ser trabajador del hogar"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Los trabajadores eventuales tienen derecho a utilidades solo si cumplen con un tiempo mínimo trabajado en el año.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores eventuales tendrán derecho a participar en las utilidades de la e mpresa cuando hayan trabajado sesenta días durante el año, por lo menos.",
+    "condiciones": [
+     "Haber laborado al menos sesenta días durante el año"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Ciertos puestos quedan excluidos por ley del reparto de utilidades, mientras que los eventuales requieren laborar un tiempo mínimo.",
+    "fuente": "F1",
+    "cita_literal": "Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "Trabajadores en servicio activo ordinarios",
+    "b": "Trabajadores eventuales",
+    "diferencia": "Los trabajadores eventuales condicionan su derecho al reparto de utilidades a haber laborado por lo menos sesenta días en el año."
+   }
+  ],
+  "limites": "El texto oficial no señala las sanciones por no pagar utilidades ni el procedimiento administrativo para exigirlas.",
+  "fuentes_irrelevantes": []
+ }
+}

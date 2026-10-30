@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "55.1 s"
+      "detalle": "46.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "55.1 s"
+      "detalle": "46.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "40 bloques"
+      "detalle": "36 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "1ce1d7e29c7ebfc2"
+      "detalle": "74391d3087a22a35"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261207-T101",
     "titulo": "¿Cuántos días de descanso a la semana te corresponden?",
-    "fecha": "2026-10-30T12:14:21+00:00",
-    "sha256": "1ce1d7e29c7ebfc2f3946ef7814db1ee2e61867a7a03ccf436059e762f7b0187",
-    "duracion_s": 55.1,
+    "fecha": "2026-10-30T22:05:24+00:00",
+    "sha256": "74391d3087a22a350365c6ade13c1c268ce9b9e58ff6b6bd92cef19438cf98c4",
+    "duracion_s": 46.1,
     "estado": "APTO",
-    "huella_guion": "f5ee6f64181ade6a92b0247725a4653b974a8883188366c809c3cef8d2d7c7fd",
+    "huella_guion": "0a6f5e7e856b0f2e2c7f3b6ff8cfc8cd99c255f8b679bbd67febe26a0686593b",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 32.4,
-      "musica": 2.6,
-      "render_video": 60.9,
-      "mezcla_audio": 2.5,
-      "auditoria_tecnica": 14.5
+      "narracion": 28.6,
+      "musica": 2.2,
+      "render_video": 54.0,
+      "mezcla_audio": 2.1,
+      "auditoria_tecnica": 11.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.88,
-      "computo_equivalente_runner_usd": 0.0113,
+      "computo_minutos": 1.64,
+      "computo_equivalente_runner_usd": 0.0098,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1650,
-    "caracteres_narrados": 813
+    "frames": 1382,
+    "caracteres_narrados": 663
   }
 }

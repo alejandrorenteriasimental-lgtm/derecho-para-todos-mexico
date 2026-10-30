@@ -721,3 +721,23 @@
 {"ts": "2026-10-30T12:19:55+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 5, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 5}
 {"ts": "2026-10-30T12:22:26+00:00", "pieza": "I20261208-T102", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 30-10): copy sin afirmación no sustentada; se vuelve a verificar y producir"}
 {"ts": "2026-10-30T12:22:26+00:00", "pieza": "R20261207-T101", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 30-10): narración sin relleno; se vuelve a verificar y producir"}
+{"ts": "2026-10-30T21:51:52+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-30T21:55:43+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-08_reel_T102-lote-4.json", "categoria": "tecnico", "transitoria": true, "motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"}
+{"ts": "2026-10-30T21:56:59+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-10_imagen_T104-lote-4.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[vaguedad] Referencia vaga: «La Constitución establece que la autoridad competente debe expedir la primera copia certif». Nombra la vía, la autoridad o el derecho concreto (con su fue"}
+{"ts": "2026-10-30T22:00:16+00:00", "evento": "redactada", "pieza": "I20261211-T105", "solicitud": "2026-12-11_imagen_T105-lote-4.json"}
+{"ts": "2026-10-30T22:00:16+00:00", "pieza": "R20261209-T103", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión b0a30ec4b199a91f (delegada)"}
+{"ts": "2026-10-30T22:00:16+00:00", "pieza": "R20261210-T104", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión 2a091c4b5a4f2045 (delegada)"}
+{"ts": "2026-10-30T22:00:16+00:00", "pieza": "I20261209-T103", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión 3758743a7b1b07a0 (delegada)"}
+{"ts": "2026-10-30T22:00:16+00:00", "pieza": "I20261211-T105", "evento": "encolado"}
+{"ts": "2026-10-30T22:05:24+00:00", "pieza": "R20261207-T101", "evento": "transicion", "a": "PRODUCIDO", "motivo": "46.1"}
+{"ts": "2026-10-30T22:05:28+00:00", "pieza": "R20261207-T101", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-30T22:05:28+00:00", "evento": "revision_preparada", "pieza": "R20261207-T101", "version": "389f2c25cf4c094c", "canal": "chat"}
+{"ts": "2026-10-30T22:08:09+00:00", "pieza": "I20261208-T102", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-30T22:08:12+00:00", "pieza": "I20261208-T102", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-30T22:08:12+00:00", "evento": "revision_preparada", "pieza": "I20261208-T102", "version": "07ae7771ffc9cb1c", "canal": "chat"}
+{"ts": "2026-10-30T22:10:52+00:00", "pieza": "I20261211-T105", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-30T22:10:55+00:00", "pieza": "I20261211-T105", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-30T22:10:55+00:00", "evento": "revision_preparada", "pieza": "I20261211-T105", "version": "a5a81c0fabf89844", "canal": "chat"}
+{"ts": "2026-10-30T22:10:55+00:00", "pieza": "R20261209-T103", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-10-30T22:10:55+00:00", "pieza": "I20261209-T103", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-10-30T22:10:55+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 3, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 3}

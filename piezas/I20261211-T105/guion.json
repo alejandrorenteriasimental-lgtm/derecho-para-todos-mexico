@@ -1,0 +1,218 @@
+{
+  "id": "I20261211-T105",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Todos los trabajadores reciben utilidades?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T105",
+  "pieza": {
+    "titular": "¿Todos los trabajadores reciben utilidades?",
+    "bajada": "La Ley Federal del Trabajo establece excepciones y requisitos según el puesto y tiempo laborado.",
+    "mito": "Cualquier persona trabajadora tiene derecho a recibir utilidades de su empresa.",
+    "realidad": "No, pues la ley excluye explícitamente a ciertos puestos como directores o trabajadores del hogar, y exige requisitos de tiempo a otros.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 127"
+  },
+  "copy": "La respuesta corta es no. La Ley Federal del Trabajo, en su artículo 127, determina explícitamente qué personas no participan en este reparto y fija condiciones de tiempo para otras.\n\nDe acuerdo con la norma, «Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades» y «Los trabajadores del hogar no participarán en el reparto de utilidades».\n\nAsimismo, para el personal eventual se exige un tiempo mínimo laborado: «Los trabajadores eventuales tendrán derecho a participar en las utilidades de la e mpresa cuando hayan trabajado sesenta días durante el año, por lo menos.»\n\nGuarda esta publicación para tener presentes estas reglas o compártela con quien necesite consultar lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa titulada '¿Todos los trabajadores reciben utilidades?'. Presenta el mito de que cualquier trabajador recibe utilidades y la realidad señalando que la ley excluye a directores y trabajadores del hogar, y condiciona a los eventuales a laborar al menos 60 días.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "127",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades",
+      "cita": "Ley Federal del Trabajo, artículo 127",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "127",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los trabajadores del hogar no participarán en el reparto de utilidades",
+      "cita": "Ley Federal del Trabajo, artículo 127",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "127",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los trabajadores eventuales tendrán derecho a participar en las utilidades de la e mpresa cuando hayan trabajado sesenta días durante el año, por lo menos.",
+      "cita": "Ley Federal del Trabajo, artículo 127",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los directores, administradores y gerentes generales están excluidos del reparto de utilidades.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Las personas trabajadoras del hogar no participan en las utilidades.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "Los trabajadores eventuales requieren al menos sesenta días laborados en el año para participar en las utilidades.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Todos los trabajadores reciben utilidades?",
+    "concepto_central": "reparto de utilidades",
+    "respuesta_corta": "No, pues la ley excluye explícitamente a ciertos puestos como directores o trabajadores del hogar, y exige requisitos de tiempo a otros.",
+    "reglas": [
+      {
+        "conclusion": "Los directores, administradores y gerentes generales no participan en el reparto de utilidades.",
+        "fuente": "F1",
+        "cita_literal": "Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades",
+        "condiciones": [
+          "Desempeñar el puesto de director, administrador o gerente general de la empresa"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "127"
+        }
+      },
+      {
+        "conclusion": "Las personas trabajadoras del hogar están excluidas de la participación de utilidades.",
+        "fuente": "F1",
+        "cita_literal": "Los trabajadores del hogar no participarán en el reparto de utilidades",
+        "condiciones": [
+          "Ser trabajador del hogar"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "127"
+        }
+      },
+      {
+        "conclusion": "Los trabajadores eventuales tienen derecho a utilidades solo si cumplen con un tiempo mínimo trabajado en el año.",
+        "fuente": "F1",
+        "cita_literal": "Los trabajadores eventuales tendrán derecho a participar en las utilidades de la e mpresa cuando hayan trabajado sesenta días durante el año, por lo menos.",
+        "condiciones": [
+          "Haber laborado al menos sesenta días durante el año"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "127"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Ciertos puestos quedan excluidos por ley del reparto de utilidades, mientras que los eventuales requieren laborar un tiempo mínimo.",
+        "fuente": "F1",
+        "cita_literal": "Los directores, administradores y gerentes generales de las empresas no participarán en las utilidades"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "Trabajadores en servicio activo ordinarios",
+        "b": "Trabajadores eventuales",
+        "diferencia": "Los trabajadores eventuales condicionan su derecho al reparto de utilidades a haber laborado por lo menos sesenta días en el año."
+      }
+    ],
+    "limites": "El texto oficial no señala las sanciones por no pagar utilidades ni el procedimiento administrativo para exigirlas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-30T22:00:16+00:00",
+    "solicitud": "2026-12-11_imagen_T105-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Todos los trabajadores reciben utilidades?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[minimo] «No, pues la ley excluye a directores y trabajadores del hogar, y a eventuales les exige 60» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+        ],
+        "visible": "  \n   \n Cualquier persona trabajadora recibe utilidades sin importar su puesto. \n No, pues la ley excluye a directores y trabajadores del hogar, y a eventuales les exige 60 días laborados."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los directores, administradores y gerentes generales no participan en el reparto de utilidades.",
+              "sostenida": "si",
+              "motivo": "La conclusión coincide exactamente con lo establecido en el artículo 127, fracción I de la Ley Federal del Trabajo."
+            },
+            {
+              "conclusion": "Las personas trabajadoras del hogar están excluidas de la participación de utilidades.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la prohibición establecida en la fracción VI del artículo 127."
+            },
+            {
+              "conclusion": "Los trabajadores eventuales tienen derecho a utilidades solo si cumplen con un tiempo mínimo trabajado en el año.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja correctamente la condición de temporalidad (sesenta días) prevista en la fracción VII del artículo 127."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

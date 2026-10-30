@@ -3055,7 +3055,7 @@
       "id": "R20261209-T103",
       "formato": "reel",
       "huella": "76068bff6b1ee8c53ad5b9a2d7a522f1165a52e2c7ece7e35f89db4c54b87ed1",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T04:05:37+00:00",
@@ -3089,6 +3089,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T12:05:59+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-30T22:00:16+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión b0a30ec4b199a91f (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-30T22:10:55+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -3101,13 +3113,26 @@
         "huella_archivo": "cd21647471b6114133d5196bed8ede2bc3cc1ce77d1a4accdc4c03f761a91c0d",
         "preparada": "2026-10-30T12:05:59+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261209-T103",
+        "decision": "APROBADA",
+        "version": "b0a30ec4b199a91f",
+        "huella_guion": "b6bb91beeeaa03396f6ca99e5bb38f2b0faf24aa54cb8fc578756f74929ac0eb",
+        "huella_archivo": "cd21647471b6114133d5196bed8ede2bc3cc1ce77d1a4accdc4c03f761a91c0d",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-10-30T12:22:26+00:00",
+        "canal": "delegada",
+        "nota": "LFT 74: las 9 fracciones, citas literales; revisado cuadro por cuadro (30-10)"
       }
     },
     "I20261209-T103": {
       "id": "I20261209-T103",
       "formato": "imagen",
       "huella": "53a81fa58f8a63adf2b0ec261d4d6cb6aac5e0188bf599ccaf02bfcb55107424",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T10:12:01+00:00",
@@ -3141,6 +3166,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T12:17:09+00:00",
           "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-30T22:00:16+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión 3758743a7b1b07a0 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-30T22:10:55+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -3153,13 +3190,26 @@
         "huella_archivo": "4201a65c30d888ada4646dd6883a1d3e9f516c8e4fc4b64e3b40a7d998e2c164",
         "preparada": "2026-10-30T12:17:09+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261209-T103",
+        "decision": "APROBADA",
+        "version": "3758743a7b1b07a0",
+        "huella_guion": "5f48af5b4a179b26619d468bbf17e15d23c50ee76aaed63cbb5e60ac0daedfbb",
+        "huella_archivo": "4201a65c30d888ada4646dd6883a1d3e9f516c8e4fc4b64e3b40a7d998e2c164",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-10-30T12:22:26+00:00",
+        "canal": "delegada",
+        "nota": "LFT 75 literal: salario del descanso + salario doble; número de trabajadores; imagen y copy revisados (30-10)"
       }
     },
     "R20261210-T104": {
       "id": "R20261210-T104",
       "formato": "reel",
       "huella": "567324120b07a398067ab0c4e791286546b2603fa3d18a0e8e25d887eb08c09e",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T10:12:01+00:00",
@@ -3193,6 +3243,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T12:08:55+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-30T22:00:16+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión 2a091c4b5a4f2045 (delegada)"
         }
       ],
       "error": null,
@@ -3205,13 +3261,26 @@
         "huella_archivo": "e6a859c1fb971212fb9ad784717f0e9052ad812ca5393b1836fbe8b31affce07",
         "preparada": "2026-10-30T12:08:55+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261210-T104",
+        "decision": "APROBADA",
+        "version": "2a091c4b5a4f2045",
+        "huella_guion": "bdbe121433f870e59d09bb7267f27f0fe830312dabe34f711877c63870608ab9",
+        "huella_archivo": "e6a859c1fb971212fb9ad784717f0e9052ad812ca5393b1836fbe8b31affce07",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-10-30T12:22:26+00:00",
+        "canal": "delegada",
+        "nota": "CPEUM 8 literal: escrita, pacífica y respetuosa; acuerdo escrito en breve término; materia política; revisado cuadro por cuadro (30-10)"
       }
     },
     "I20261208-T102": {
       "id": "I20261208-T102",
       "formato": "imagen",
       "huella": "386a75e1e4a70f994e7e7a2220fc496e757dc3ffc0e5c2c1184a0e42e2fa883a",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3233,6 +3302,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-30T12:22:26+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 30-10): copy sin afirmación no sustentada; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T22:08:09+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T22:08:12+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3240,10 +3321,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "ede7b810421221a2",
-        "huella_guion": "e4482cd6e8f179785b56262cb90e22c51c024f845a86718f002dc63ea87515c6",
+        "version": "07ae7771ffc9cb1c",
+        "huella_guion": "67e2d9757a82e244bd7a24bbe913f37a7411cda90872fe92a971558f23bff8c1",
         "huella_archivo": "46ca0be005fb555f786000470aa267ae02cb60a8e478a2eb9b9f7b82778c3b27",
-        "preparada": "2026-10-30T12:19:55+00:00",
+        "preparada": "2026-10-30T22:08:12+00:00",
         "canal": "chat"
       }
     },
@@ -3251,7 +3332,7 @@
       "id": "R20261207-T101",
       "formato": "reel",
       "huella": "f5ee6f64181ade6a92b0247725a4653b974a8883188366c809c3cef8d2d7c7fd",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3273,6 +3354,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-30T12:22:26+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 30-10): narración sin relleno; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T22:05:24+00:00",
+          "motivo": "46.1"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T22:05:28+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3280,10 +3373,44 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "96d8d0bf8ddd6d78",
-        "huella_guion": "958e780884f4b4b29c5bb5694629f010aea81aefe72f4f299fb2e4341af66a75",
-        "huella_archivo": "1ce1d7e29c7ebfc2f3946ef7814db1ee2e61867a7a03ccf436059e762f7b0187",
-        "preparada": "2026-10-30T12:14:25+00:00",
+        "version": "389f2c25cf4c094c",
+        "huella_guion": "d81d069f619fc44712072c0a1d43aa8d09dc20a244bb58b88bf19c783f6e5c22",
+        "huella_archivo": "74391d3087a22a350365c6ade13c1c268ce9b9e58ff6b6bd92cef19438cf98c4",
+        "preparada": "2026-10-30T22:05:28+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20261211-T105": {
+      "id": "I20261211-T105",
+      "formato": "imagen",
+      "huella": "36a9882cc07a00197d23681deffc698eaaf8efffb977b62f49aaeb090e7711fc",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-30T22:00:16+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T22:10:52+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T22:10:55+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "a5a81c0fabf89844",
+        "huella_guion": "106efec91881d51ed7542a35464edf5d12f204c0b786540a15b06c64aa16cbaa",
+        "huella_archivo": "6af1a04efbd7c44f6fa73cffa6de9879d2e0447b03e0eb76f3681723db3b415b",
+        "preparada": "2026-10-30T22:10:55+00:00",
         "canal": "chat"
       }
     }
