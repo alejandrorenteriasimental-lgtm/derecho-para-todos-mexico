@@ -1,0 +1,281 @@
+{
+  "id": "R20261210-T104",
+  "formato": "reel",
+  "titulo": "¿La autoridad debe responder a tu petición?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T104",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "8",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 8",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-30"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te has preguntado si los funcionarios están obligados a contestar los escritos que les entregas?",
+      "titulo": [
+        "¿DEBEN",
+        "RESPONDERTE?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, la autoridad tiene la obligación de responder con un acuerdo escrito en breve término si la solicitud es pacífica y respetuosa.",
+      "titulo": [
+        "SÍ, ES",
+        "OBLIGATORIO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Nuestra Constitución es clara al señalar que: «A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario».",
+      "etiqueta": "Constitución, artículo 8",
+      "cita": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La autoridad tiene la obligación de responder a toda petición con un acuerdo escrito y darlo a conocer en un plazo breve.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para que este derecho sea respetado, tu solicitud debe cumplir con lo siguiente:",
+      "items": [
+        "Formularse por escrito",
+        "De manera pacífica",
+        "Ser respetuosa"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Es importante considerar que en materia política, este derecho es exclusivo para los ciudadanos de la República.",
+      "encabezado": "Limitación en materia política",
+      "detalle": "Solo para ciudadanos de la República",
+      "fuente_corta": "Constitución, art. 8",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, la autoridad debe emitir un acuerdo por escrito y notificarte en un periodo de tiempo corto, aunque esto no garantiza un resultado favorable.",
+      "titulo": [
+        "RESPUESTA",
+        "POR ESCRITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
+    "concepto_central": "derecho de petición",
+    "respuesta_corta": "Sí, siempre que la solicitud sea escrita, pacífica y respetuosa; la autoridad tiene la obligación de responder con un acuerdo escrito en breve término.",
+    "reglas": [
+      {
+        "conclusion": "Los funcionarios y empleados públicos tienen la obligación legal de respetar el derecho de petición y emitir una respuesta por escrito.",
+        "fuente": "F1",
+        "cita_literal": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
+        "condiciones": [
+          "Que la petición se formule por escrito",
+          "Que se realice de manera pacífica",
+          "Que se realice de manera respetuosa"
+        ],
+        "excepciones": [
+          "En materia política, este derecho es exclusivo para los ciudadanos de la República."
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "8"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La autoridad debe emitir un acuerdo por escrito y notificarlo al peticionario.",
+        "fuente": "F1",
+        "cita_literal": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El ejercicio de este derecho requiere que la solicitud sea pacífica, respetuosa y por escrito.",
+        "fuente": "F1",
+        "cita_literal": "siempre que ésta se formule por escrito, de manera pacífica y respetuosa"
+      },
+      {
+        "elemento": "plazo",
+        "estado": "cubierto",
+        "respuesta": "La autoridad debe dar a conocer su respuesta en un periodo de tiempo corto.",
+        "fuente": "F1",
+        "cita_literal": "la cual tiene obligación de hacerlo conocer en breve término al peticionario."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La autoridad no está obligada a resolver en un sentido específico (favorable o desfavorable), sino únicamente a emitir y notificar el acuerdo.",
+        "condicion": "Siempre que se cumplan los requisitos de forma",
+        "base": "F1 indica que debe recaer un 'acuerdo escrito', pero no predetermina el sentido de la decisión."
+      },
+      {
+        "afirmacion": "El plazo exacto para recibir la respuesta puede variar según la materia.",
+        "condicion": "Debido a la falta de una cifra de días específica en el texto constitucional",
+        "base": "El artículo 8 de la F1 utiliza el concepto indeterminado 'breve término'."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "derecho de petición general",
+        "b": "derecho de petición en materia política",
+        "diferencia": "El primero puede ser ejercido por cualquier persona, mientras que el segundo está reservado exclusivamente para ciudadanos de la República."
+      }
+    ],
+    "limites": "El texto oficial no establece una cantidad de días específica para definir el 'breve término', ni menciona las consecuencias o sanciones en caso de que la autoridad ignore la petición."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-30T10:09:11+00:00",
+    "solicitud": "2026-12-10_reel_T104-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿La autoridad tiene que responderte si le haces una petición por escrito?\n\nSí, siempre que la solicitud sea escrita, pacífica y respetuosa; la autoridad tiene la obligación de responder con un acuerdo escrito en breve término.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 8.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La autoridad tiene la obligación de responder a las peticiones escritas, pacíficas y respetuosas.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 constitucional establece explícitamente la obligación de la autoridad de emitir un acuerdo escrito ante tales peticiones."
+            },
+            {
+              "conclusion": "La autoridad no está obligada a resolver en un sentido favorable, solo a emitir un acuerdo.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional exige un 'acuerdo escrito', lo cual implica una respuesta formal, pero no predetermina el sentido de la resolución."
+            },
+            {
+              "conclusion": "El derecho de petición en materia política es exclusivo para ciudadanos de la República.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 establece una distinción clara entre el derecho general y el ejercicio en materia política."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Sección 'lista', punto 3: 'Ser siempre respetuosa.'",
+              "problema": "Uso de lenguaje absoluto ('siempre') no permitido por las reglas de estilo, ya que el texto oficial no califica la respetuosidad con esa temporalidad.",
+              "correccion": "Eliminar la palabra 'siempre' para que el punto quede como: 'Ser respetuosa'."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los funcionarios y empleados públicos tienen la obligación legal de respetar el derecho de petición y emitir una respuesta por escrito.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente que los funcionarios deben respetar el derecho y que a toda petición debe recaer un acuerdo escrito."
+            },
+            {
+              "conclusion": "La autoridad debe emitir un acuerdo por escrito y notificarlo al peticionario.",
+              "sostenida": "si",
+              "motivo": "La cita literal confirma la obligación de un acuerdo escrito y de hacerlo conocer al peticionario."
+            },
+            {
+              "conclusion": "El ejercicio de este derecho requiere que la solicitud sea pacífica, respetuosa y por escrito.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 establece estas tres condiciones como requisitos para el ejercicio del derecho."
+            },
+            {
+              "conclusion": "La autoridad debe dar a conocer su respuesta en un periodo de tiempo corto.",
+              "sostenida": "si",
+              "motivo": "La norma utiliza la expresión 'en breve término', lo cual es equivalente a un periodo de tiempo corto."
+            },
+            {
+              "conclusion": "La autoridad no está obligada a resolver en un sentido específico (favorable o desfavorable), sino únicamente a emitir y notificar el acuerdo.",
+              "sostenida": "si",
+              "motivo": "El texto exige un 'acuerdo escrito', pero no impone que el contenido de dicho acuerdo deba ser favorable al peticionario."
+            },
+            {
+              "conclusion": "El plazo exacto para recibir la respuesta puede variar según la materia.",
+              "sostenida": "si",
+              "motivo": "Dado que la Constitución solo menciona 'breve término' sin definir días exactos, la interpretación de la temporalidad queda sujeta a la naturaleza del asunto."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,55 @@
+{
+ "tema_id": "T103",
+ "pregunta": "¿Cuánto te deben pagar si trabajas el 25 de diciembre?",
+ "fecha": "2026-10-30T10:10:24+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto te deben pagar si trabajas el 25 de diciembre?",
+  "concepto_central": "pago por servicio prestado en día de descanso obligatorio",
+  "respuesta_corta": "Te deben pagar tu salario diario normal más un salario doble por el servicio prestado, lo que equivale a un pago triple por ese día.",
+  "reglas": [
+   {
+    "conclusion": "El trabajador tiene derecho a recibir su salario normal por el descanso obligatorio y, adicionalmente, un salario doble por el trabajo realizado.",
+    "fuente": "F1",
+    "cita_literal": "tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado.",
+    "condiciones": [
+     "Que el trabajador preste sus servicios en un día de descanso obligatorio"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe pagar el salario que corresponde por el descanso obligatorio más un salario doble por el servicio prestado.",
+    "fuente": "F1",
+    "cita_literal": "tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Los trabajadores y patrones deben determinar cuántas personas trabajarán; si no hay acuerdo, decidirá el Tribunal.",
+    "fuente": "F1",
+    "cita_literal": "los trabajadores y los patrones determinarán el número de trabajadores que deban prestar sus servicios. Si no se llega a un convenio, resolverá el Tribunal."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El pago total por trabajar en esta fecha equivale al triple del salario diario.",
+    "condicion": "Si se suma el salario por el descanso (100%) más el salario doble por el servicio (200%)",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "salario por descanso obligatorio",
+    "b": "salario por el servicio prestado",
+    "diferencia": "El primero se recibe por ser un día festivo oficial, mientras que el segundo es la compensación adicional por acudir a trabajar ese día."
+   }
+  ],
+  "limites": "Los textos proporcionados no mencionan explícitamente que el 25 de diciembre sea descanso obligatorio (se asume por la remisión al artículo anterior), ni establecen plazos para efectuar el pago o sanciones por incumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}

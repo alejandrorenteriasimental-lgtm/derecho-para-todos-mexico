@@ -3059,6 +3059,74 @@
         "preparada": "2026-10-30T04:08:18+00:00",
         "canal": "chat"
       }
+    },
+    "I20261209-T103": {
+      "id": "I20261209-T103",
+      "formato": "imagen",
+      "huella": "53a81fa58f8a63adf2b0ec261d4d6cb6aac5e0188bf599ccaf02bfcb55107424",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-30T10:12:01+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T10:17:31+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T10:17:34+00:00",
+          "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "9b614c1f6b7131c8",
+        "huella_guion": "e5a839f38da9b9a08a1c467f0c848fb683fcb901d28e77bcb5139fa386baa53a",
+        "huella_archivo": "ef648ccc94f45a83a5da79d8d3c547378a28c38708c96e78ca42cfb604b056d4",
+        "preparada": "2026-10-30T10:17:34+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20261210-T104": {
+      "id": "R20261210-T104",
+      "formato": "reel",
+      "huella": "567324120b07a398067ab0c4e791286546b2603fa3d18a0e8e25d887eb08c09e",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-30T10:12:01+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T10:14:53+00:00",
+          "motivo": "58.2"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T10:14:57+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "faef5414ebdc6857",
+        "huella_guion": "9d3c87bcea2f31e0d62a3d1c6fe0f9ad2bce5909e94ce8354de5462a6caf802e",
+        "huella_archivo": "4647f4cb951e0939586dd771f254e3b68fdb7b122a21a8e7447e036c37c21757",
+        "preparada": "2026-10-30T10:14:57+00:00",
+        "canal": "chat"
+      }
     }
   }
 }

@@ -1,0 +1,71 @@
+{
+ "tema_id": "T104",
+ "pregunta": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
+ "fecha": "2026-10-30T10:06:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
+  "concepto_central": "derecho de petición",
+  "respuesta_corta": "Sí, siempre que la solicitud sea escrita, pacífica y respetuosa; la autoridad tiene la obligación de responder con un acuerdo escrito en breve término.",
+  "reglas": [
+   {
+    "conclusion": "Los funcionarios y empleados públicos tienen la obligación legal de respetar el derecho de petición y emitir una respuesta por escrito.",
+    "fuente": "F1",
+    "cita_literal": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
+    "condiciones": [
+     "Que la petición se formule por escrito",
+     "Que se realice de manera pacífica",
+     "Que se realice de manera respetuosa"
+    ],
+    "excepciones": [
+     "En materia política, este derecho es exclusivo para los ciudadanos de la República."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La autoridad debe emitir un acuerdo por escrito y notificarlo al peticionario.",
+    "fuente": "F1",
+    "cita_literal": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El ejercicio de este derecho requiere que la solicitud sea pacífica, respetuosa y por escrito.",
+    "fuente": "F1",
+    "cita_literal": "siempre que ésta se formule por escrito, de manera pacífica y respetuosa"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "cubierto",
+    "respuesta": "La autoridad debe dar a conocer su respuesta en un periodo de tiempo corto.",
+    "fuente": "F1",
+    "cita_literal": "la cual tiene obligación de hacerlo conocer en breve término al peticionario."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La autoridad no está obligada a resolver en un sentido específico (favorable o desfavorable), sino únicamente a emitir y notificar el acuerdo.",
+    "condicion": "Siempre que se cumplan los requisitos de forma",
+    "base": "F1 indica que debe recaer un 'acuerdo escrito', pero no predetermina el sentido de la decisión."
+   },
+   {
+    "afirmacion": "El plazo exacto para recibir la respuesta puede variar según la materia.",
+    "condicion": "Debido a la falta de una cifra de días específica en el texto constitucional",
+    "base": "El artículo 8 de la F1 utiliza el concepto indeterminado 'breve término'."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "derecho de petición general",
+    "b": "derecho de petición en materia política",
+    "diferencia": "El primero puede ser ejercido por cualquier persona, mientras que el segundo está reservado exclusivamente para ciudadanos de la República."
+   }
+  ],
+  "limites": "El texto oficial no establece una cantidad de días específica para definir el 'breve término', ni menciona las consecuencias o sanciones en caso de que la autoridad ignore la petición.",
+  "fuentes_irrelevantes": []
+ }
+}

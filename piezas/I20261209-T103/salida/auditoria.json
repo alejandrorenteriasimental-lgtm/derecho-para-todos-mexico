@@ -1,0 +1,129 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1140 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=974"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "47 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "95% de 39 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO_CON_CRITERIO",
+    "tipo_retencion": null,
+    "motivos": [
+      "A3: REQUIERE_CRITERIO"
+    ],
+    "verificacion": "APTA_CON_CRITERIO",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261209-T103",
+    "formato": "imagen",
+    "titulo": "¿Cuánto te pagan si trabajas el 25 de diciembre?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261209-T103.png",
+    "sha256": "ef648ccc94f45a83a5da79d8d3c547378a28c38708c96e78ca42cfb604b056d4",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000001101001110001111111111111000011111010011100000000000011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "53a81fa58f8a63adf2b0ec261d4d6cb6aac5e0188bf599ccaf02bfcb55107424",
+    "texto_alternativo": "Infografía sobre el pago por trabajar el 25 de diciembre. Explica que se debe recibir el salario normal más un pago doble, y que el Tribunal interviene si no hay acuerdo sobre quién trabaja.",
+    "copy": "Según el artículo 75 de la Ley Federal del Trabajo, patrones y trabajadores deben acordar quiénes laborarán en días de descanso obligatorio. Si no llegan a un convenio, el Tribunal es quien resolverá la situación.\n\nQuienes presten el servicio \"tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado\".\n\nEsto significa que el pago total por laborar en esta fecha equivale al triple del salario diario, al sumar el pago por el descanso obligatorio y el pago doble por el trabajo realizado.\n\nGuarda esta información o compártela con quien deba trabajar en días festivos oficiales.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "75",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "75",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "75",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO_CON_CRITERIO",
+    "fecha": "2026-10-30T10:17:31+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

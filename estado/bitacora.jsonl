@@ -680,3 +680,16 @@
 {"ts": "2026-10-30T04:09:17+00:00", "pieza": "I20261130-T014", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-30T04:09:17+00:00", "pieza": "I20261202-T030", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-10-30T04:09:17+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 2, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
+{"ts": "2026-10-30T10:06:20+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-10-30T10:09:11+00:00", "evento": "redactada", "pieza": "R20261210-T104", "solicitud": "2026-12-10_reel_T104-lote-4.json"}
+{"ts": "2026-10-30T10:09:50+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-08_imagen_T102-lote-4.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan el pago de horas extra en situaciones generales, ni establecen porcentajes adicionales, pagos dobles o triples, ya que el párrafo que regulaba otros supuestos aparece como derog"}
+{"ts": "2026-10-30T10:12:01+00:00", "evento": "redactada", "pieza": "I20261209-T103", "solicitud": "2026-12-09_imagen_T103-lote-4.json"}
+{"ts": "2026-10-30T10:12:01+00:00", "pieza": "I20261209-T103", "evento": "encolado"}
+{"ts": "2026-10-30T10:12:01+00:00", "pieza": "R20261210-T104", "evento": "encolado"}
+{"ts": "2026-10-30T10:14:53+00:00", "pieza": "R20261210-T104", "evento": "transicion", "a": "PRODUCIDO", "motivo": "58.2"}
+{"ts": "2026-10-30T10:14:57+00:00", "pieza": "R20261210-T104", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-30T10:14:57+00:00", "evento": "revision_preparada", "pieza": "R20261210-T104", "version": "faef5414ebdc6857", "canal": "chat"}
+{"ts": "2026-10-30T10:17:31+00:00", "pieza": "I20261209-T103", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-10-30T10:17:34+00:00", "pieza": "I20261209-T103", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-10-30T10:17:34+00:00", "evento": "revision_preparada", "pieza": "I20261209-T103", "version": "9b614c1f6b7131c8", "canal": "chat"}
+{"ts": "2026-10-30T10:17:34+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 2, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
