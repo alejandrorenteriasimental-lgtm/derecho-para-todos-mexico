@@ -1,142 +1,142 @@
 {
- "id": "lote-3",
+ "id": "lote-4",
  "activo": true,
- "creado": "2026-10-28",
+ "creado": "2026-10-29",
  "max_por_formato": 7,
- "nota": "Semana 2 (30-11 al 06-12-2026), continuidad tras el lanzamiento. Misma metodología de los pilotos: pregunta con respuesta literal en un artículo federal verificado, sin jurisprudencia. Revisión humana obligatoria.",
+ "nota": "Semana 3 (07-12 al 13-12-2026). Misma metodología: pregunta con respuesta literal en un artículo federal verificado, sin jurisprudencia. Aprobación DELEGADA en Claude con 72 h de veto del responsable (decisión del 29-10-2026; ver data/lanzamiento.json).",
  "temas": [
   {
    "formato": "reel",
-   "fecha": "2026-11-30",
-   "tema_id": "T014",
+   "fecha": "2026-12-07",
+   "tema_id": "T101",
    "tipo_pregunta": "derecho",
-   "pregunta": "¿Qué puedes pedir si te despiden sin causa justificada?",
-   "fuentes_sugeridas": "LFT art. 48",
-   "motivo_seleccion": "Reinstalación o indemnización de tres meses de salario, ante la Autoridad Conciliadora o el Tribunal."
+   "pregunta": "¿Cuántos días de descanso a la semana te corresponden?",
+   "fuentes_sugeridas": "LFT art. 69",
+   "motivo_seleccion": "Art. 69 LFT: por cada seis días de trabajo, un día de descanso por lo menos, con goce de salario íntegro."
   },
   {
-   "formato": "reel",
-   "fecha": "2026-12-01",
-   "tema_id": "T019",
+   "formato": "imagen",
+   "fecha": "2026-12-07",
+   "tema_id": "T101",
    "tipo_pregunta": "obligacion",
-   "pregunta": "¿El precio que te muestran debe incluir impuestos y comisiones?",
-   "fuentes_sugeridas": "LFPC art. 7 Bis",
-   "motivo_seleccion": "Monto total visible con impuestos, comisiones y cualquier cargo."
+   "pregunta": "¿Te deben pagar extra si trabajas en domingo?",
+   "fuentes_sugeridas": "LFT art. 71",
+   "motivo_seleccion": "Art. 71 LFT: prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios.",
+   "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2026-12-02",
-   "tema_id": "T030",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden aplicar una ley nueva en tu perjuicio?",
-   "fuentes_sugeridas": "CPEUM art. 14",
-   "motivo_seleccion": "Irretroactividad: a ninguna ley se dará efecto retroactivo en perjuicio de persona alguna."
-  },
-  {
-   "formato": "reel",
-   "fecha": "2026-12-03",
-   "tema_id": "T070",
+   "fecha": "2026-12-08",
+   "tema_id": "T102",
    "tipo_pregunta": "obligacion",
-   "pregunta": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
-   "fuentes_sugeridas": "LFT art. 330-E",
-   "motivo_seleccion": "Sustituye a T089 (29-10): aguinaldo al renunciar se descartó dos veces (el art. 87 no fija cuándo se paga al renunciar) y repetía el tema del Reel del 24-11. Art. 330-E fr. III LFT: el patrón asume los costos del teletrabajo, incluido el pago de servicios de telecomunicación y la parte proporcional de electricidad."
+   "pregunta": "¿Cuál es la jornada máxima de trabajo?",
+   "fuentes_sugeridas": "LFT arts. 60, 61",
+   "motivo_seleccion": "Art. 61 LFT: ocho horas la diurna, siete la nocturna y siete horas y media la mixta (art. 60 define cada jornada)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-08",
+   "tema_id": "T102",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cómo te deben pagar las horas extra?",
+   "fuentes_sugeridas": "LFT art. 67",
+   "motivo_seleccion": "Art. 67 LFT: las horas de trabajo extraordinario se pagan con un ciento por ciento más del salario de las horas de la jornada.",
+   "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2026-12-04",
-   "tema_id": "T061",
+   "fecha": "2026-12-09",
+   "tema_id": "T103",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Qué días son de descanso obligatorio en México?",
+   "fuentes_sugeridas": "LFT art. 74",
+   "motivo_seleccion": "Art. 74 LFT: lista de días de descanso obligatorio (incluye 1 de enero y 25 de diciembre). Oportuno para diciembre."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-09",
+   "tema_id": "T103",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto te deben pagar si trabajas el 25 de diciembre?",
+   "fuentes_sugeridas": "LFT art. 75",
+   "motivo_seleccion": "Art. 75 LFT: además del salario del descanso obligatorio, un salario doble por el servicio prestado.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-10",
+   "tema_id": "T104",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
+   "fuentes_sugeridas": "CPEUM art. 8",
+   "motivo_seleccion": "Art. 8 CPEUM: a toda petición debe recaer un acuerdo escrito de la autoridad, que debe hacerlo conocer en breve término. Condiciones: por escrito, de manera pacífica y respetuosa."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-10",
+   "tema_id": "T104",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Cualquier persona puede detener a alguien que está cometiendo un delito?",
+   "pregunta": "¿Te pueden cobrar la primera copia de tu acta de nacimiento?",
+   "fuentes_sugeridas": "CPEUM art. 4",
+   "motivo_seleccion": "Art. 4 CPEUM: la autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-11",
+   "tema_id": "T105",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuándo te deben pagar las utilidades?",
+   "fuentes_sugeridas": "LFT art. 122",
+   "motivo_seleccion": "Art. 122 LFT: el reparto se efectúa dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-11",
+   "tema_id": "T105",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Todos los trabajadores reciben utilidades?",
+   "fuentes_sugeridas": "LFT art. 127",
+   "motivo_seleccion": "Art. 127 LFT: los directores, administradores y gerentes generales de las empresas no participan en las utilidades.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-12",
+   "tema_id": "T106",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden pedir una prueba de embarazo para contratarte?",
+   "fuentes_sugeridas": "LFT art. 133",
+   "motivo_seleccion": "Art. 133 fr. XIV LFT: prohibido exigir certificados médicos de no embarazo para el ingreso, permanencia o ascenso."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-12",
+   "tema_id": "T106",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden negar un empleo por tu edad?",
+   "fuentes_sugeridas": "LFT art. 133",
+   "motivo_seleccion": "Art. 133 fr. I LFT: prohibido negarse a aceptar trabajadores por razón de edad, entre otras.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-13",
+   "tema_id": "T107",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
    "fuentes_sugeridas": "CPEUM art. 16",
-   "motivo_seleccion": "Flagrancia: cualquier persona puede detener y debe poner sin demora a disposición de la autoridad."
+   "motivo_seleccion": "Art. 16 CPEUM: la orden de cateo solo puede expedirla la autoridad judicial, a solicitud del Ministerio Público, expresando el lugar, las personas y los objetos; al concluir se levanta acta."
   },
   {
-   "formato": "reel",
-   "fecha": "2026-12-05",
-   "tema_id": "T093",
+   "formato": "imagen",
+   "fecha": "2026-12-13",
+   "tema_id": "T107",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Tienes que pagarle al tribunal para que resuelva tu caso?",
-   "fuentes_sugeridas": "CPEUM art. 17",
-   "motivo_seleccion": "El servicio de los tribunales es gratuito; prohibidas las costas judiciales."
-  },
-  {
-   "formato": "reel",
-   "fecha": "2026-12-06",
-   "tema_id": "T028",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Vale una confesión hecha sin abogado?",
-   "fuentes_sugeridas": "CPEUM art. 20",
-   "motivo_seleccion": "Apartado B, fr. II: la confesión sin asistencia del defensor carece de todo valor probatorio."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-11-30",
-   "tema_id": "T014",
-   "tipo_pregunta": "legalidad",
-   "plantilla": "mito_realidad",
-   "pregunta": "¿Te pueden despedir por estar embarazada?",
-   "fuentes_sugeridas": "LFT art. 133 fr. XV",
-   "motivo_seleccion": "Sustituye a «¿De cuánto es la indemnización…?» (29-10): tres descartes por longitud y condiciones. Art. 133 fr. XV LFT: queda prohibido despedir a una trabajadora o coaccionarla para que renuncie por estar embarazada, por cambio de estado civil o por tener el cuidado de hijos menores. Respuesta literal y breve; acompaña al Reel de despido del mismo día."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-01",
-   "tema_id": "T019",
-   "tipo_pregunta": "obligacion",
-   "plantilla": "concepto",
-   "pregunta": "¿Qué debe incluir el precio que te muestran?",
-   "fuentes_sugeridas": "LFPC art. 7 Bis",
-   "motivo_seleccion": "Impuestos, comisiones, intereses, seguros y cualquier otro cargo."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-02",
-   "tema_id": "T030",
-   "tipo_pregunta": "legalidad",
-   "plantilla": "mito_realidad",
-   "pregunta": "¿Te pueden castigar por algo que solo se parece a un delito?",
-   "fuentes_sugeridas": "CPEUM art. 14",
-   "motivo_seleccion": "Sustituye a «¿Una ley nueva puede aplicarse en tu contra?» (29-10): dos descartes y repetía al Reel del mismo día. Art. 14 CPEUM, párrafo tercero: en los juicios del orden criminal queda prohibido imponer, por simple analogía, y aún por mayoría de razón, pena alguna que no esté decretada por una ley exactamente aplicable al delito."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-03",
-   "tema_id": "T070",
-   "tipo_pregunta": "obligacion",
-   "plantilla": "dato",
-   "pregunta": "¿Quién debe darte la computadora si trabajas desde casa?",
-   "fuentes_sugeridas": "LFT art. 330-E",
-   "motivo_seleccion": "Sustituye a T089 (29-10). Art. 330-E fr. I LFT: el patrón debe proporcionar, instalar y mantener los equipos necesarios para el teletrabajo (equipo de cómputo, sillas ergonómicas, impresoras)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-04",
-   "tema_id": "T031",
-   "tipo_pregunta": "obligacion",
-   "plantilla": "dato",
-   "pregunta": "¿Cuántas instancias puede tener un juicio penal?",
-   "fuentes_sugeridas": "CPEUM art. 23",
-   "motivo_seleccion": "Ningún juicio criminal deberá tener más de tres instancias."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-05",
-   "tema_id": "T093",
-   "tipo_pregunta": "legalidad",
-   "plantilla": "concepto",
-   "pregunta": "¿Las costas judiciales están permitidas en México?",
-   "fuentes_sugeridas": "CPEUM art. 17",
-   "motivo_seleccion": "Servicio gratuito; costas prohibidas."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-06",
-   "tema_id": "T028",
-   "tipo_pregunta": "legalidad",
-   "plantilla": "mito_realidad",
-   "pregunta": "¿Una confesión sin abogado tiene valor?",
-   "fuentes_sugeridas": "CPEUM art. 20",
-   "motivo_seleccion": "Apartado B, fr. II."
+   "pregunta": "¿Pueden abrir tu correspondencia?",
+   "fuentes_sugeridas": "CPEUM art. 16",
+   "motivo_seleccion": "Art. 16 CPEUM: la correspondencia que bajo cubierta circule por las estafetas estará libre de todo registro; su violación será penada por la ley.",
+   "plantilla": "mito_realidad"
   }
  ],
  "lotes_anteriores": [
@@ -149,6 +149,11 @@
    "id": "piloto-2",
    "cerrado": "2026-10-28",
    "resultado": "4 Reels y 4 imágenes aprobados (T061, T010, T028, T084; T025, T015, T010, T093); Reel T025 sustituido por T084"
+  },
+  {
+   "id": "lote-3",
+   "cerrado": "2026-10-29",
+   "resultado": "14/14 aprobadas por el responsable (aprobación directa); en el calendario 30-11 al 06-12. Sustituciones: T089→T070 (teletrabajo); imágenes 30-11 (LFT 133 XV) y 2-12 (CPEUM 14, analogía)."
   }
  ]
 }
