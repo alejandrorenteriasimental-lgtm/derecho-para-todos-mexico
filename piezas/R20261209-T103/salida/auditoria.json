@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "50.0 s"
+      "detalle": "58.6 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "50.0 s"
+      "detalle": "58.6 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "38 bloques"
+      "detalle": "42 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "3d1f30aff3eb1a97"
+      "detalle": "cd21647471b61141"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -113,27 +113,27 @@
   "registro": {
     "id": "R20261209-T103",
     "titulo": "¿Qué días son de descanso obligatorio en México?",
-    "fecha": "2026-10-30T04:08:15+00:00",
-    "sha256": "3d1f30aff3eb1a97afcf84303cd4461dc95bbaaf2b4dd393aabe0885cb9eeb41",
-    "duracion_s": 50.0,
+    "fecha": "2026-10-30T12:05:56+00:00",
+    "sha256": "cd21647471b6114133d5196bed8ede2bc3cc1ce77d1a4accdc4c03f761a91c0d",
+    "duracion_s": 58.6,
     "estado": "APTO",
-    "huella_guion": "76068bff6b1ee8c53ad5b9a2d7a522f1165a52e2c7ece7e35f89db4c54b87ed1",
+    "huella_guion": "374f6d07a4e379a28bb2b627ab6b9e0077c6d10f87060f3882d79893d35be08a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 29.5,
-      "musica": 2.5,
-      "render_video": 57.5,
-      "mezcla_audio": 2.3,
-      "auditoria_tecnica": 12.5
+      "narracion": 36.7,
+      "musica": 2.8,
+      "render_video": 68.6,
+      "mezcla_audio": 2.7,
+      "auditoria_tecnica": 15.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.74,
-      "computo_equivalente_runner_usd": 0.0104,
+      "computo_minutos": 2.1,
+      "computo_equivalente_runner_usd": 0.0126,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1498,
-    "caracteres_narrados": 701
+    "frames": 1756,
+    "caracteres_narrados": 833
   }
 }

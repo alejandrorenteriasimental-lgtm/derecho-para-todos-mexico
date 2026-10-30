@@ -1,0 +1,127 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1189 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal del »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1107"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "56 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 44 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261208-T102",
+    "formato": "imagen",
+    "titulo": "¿Cuántas vacaciones tocan tras el primer año?",
+    "plantilla": "dato",
+    "archivo": "I20261208-T102.png",
+    "sha256": "46ca0be005fb555f786000470aa267ae02cb60a8e478a2eb9b9f7b82778c3b27",
+    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000000001110001111101101111001111111111111111111111111111111110111111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
+    "huella_guion": "386a75e1e4a70f994e7e7a2220fc496e757dc3ffc0e5c2c1184a0e42e2fa883a",
+    "texto_alternativo": "Infografía sobre vacaciones en México. Explica que tras el primer año de trabajo corresponden al menos 12 días laborables de vacaciones pagadas, según el artículo 76 de la Ley Federal del Trabajo.",
+    "copy": "Según el artículo 76 de la Ley Federal del Trabajo, las personas que tengan más de un año de servicios tienen derecho a vacaciones pagadas. La ley es clara al señalar que este periodo «en ningún caso podrá ser inferior a doce días laborables».\n\nEste derecho aumenta con el tiempo, pues el texto oficial indica que el periodo «aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios».\n\nEs importante distinguir que se trata de días laborables y no de días naturales (calendario). Si ya superaste tu primer año de relación laboral, este derecho se adquiere de forma inmediata.\n\nGuarda esta información para planear tu descanso o compártela con quien esté por cumplir su primer aniversario en el trabajo.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "76",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "76",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "76",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-10-30T12:19:52+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

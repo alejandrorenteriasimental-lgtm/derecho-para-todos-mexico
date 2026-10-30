@@ -1,0 +1,268 @@
+{
+  "id": "R20261207-T101",
+  "formato": "reel",
+  "titulo": "¿Cuántos días de descanso a la semana te corresponden?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T101",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "69",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
+      "cita": "Ley Federal del Trabajo, artículo 69",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "69",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
+      "cita": "Ley Federal del Trabajo, artículo 69",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "69",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Por cada seis días de trabajo",
+      "cita": "Ley Federal del Trabajo, artículo 69",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "69",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "un día de descanso con goce de salario íntegro.",
+      "cita": "Ley Federal del Trabajo, artículo 69",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes cuántos días de descanso te corresponden legalmente por cada periodo de trabajo realizado?",
+      "titulo": [
+        "¿CUÁNTOS DÍAS",
+        "DE DESCANSO",
+        "TE TOCAN?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En nuestro país, la ley indica que te corresponde al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo que hayas completado.",
+      "titulo": [
+        "REGLA",
+        "GENERAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El fundamento legal se encuentra en el artículo 69 de la Ley Federal del Trabajo, que establece: \"Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.\"",
+      "etiqueta": "Ley Federal del Trabajo, artículo 69",
+      "cita": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Corresponde al menos un día de descanso con goce de salario íntegro por cada seis días trabajados.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esta es la explicación práctica de lo que establece la normativa para tu descanso semanal:",
+      "items": [
+        "Mínimo un día de descanso",
+        "Pago de salario íntegro",
+        "Por cada seis días laborados"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La ley obliga a otorgar un día de descanso pagado tras seis días de labor.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, la normativa mexicana asegura que por cada seis días de trabajo se debe otorgar, por lo menos, un día de descanso con el pago de tu salario íntegro correspondiente.",
+      "titulo": [
+        "TUS",
+        "DERECHOS"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La condición para el descanso es haber trabajado seis días.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "El descanso debe ser con goce de salario íntegro.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuántos días de descanso a la semana te corresponden?",
+    "concepto_central": "días de descanso",
+    "respuesta_corta": "Al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.",
+    "reglas": [
+      {
+        "conclusion": "Se debe otorgar al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.",
+        "fuente": "F1",
+        "cita_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
+        "condiciones": [
+          "Por cada seis días de trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "69"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Corresponde al menos un día de descanso con goce de salario íntegro por cada seis días trabajados.",
+        "fuente": "F1",
+        "cita_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La regla aplica por cada seis días de trabajo.",
+        "fuente": "F1",
+        "cita_literal": "Por cada seis días de trabajo"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "motivo": "El texto oficial no prevé excepciones para esta regla."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no especifica qué día exacto de la semana debe otorgarse el descanso ni regula jornadas especiales o distintas distribuciones de días."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-30T11:58:21+00:00",
+    "solicitud": "2026-12-07_reel_T101-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuántos días de descanso a la semana te corresponden?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Cuántos días de descanso a la semana te corresponden?\n\nAl menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.\n\nFuente: Ley Federal del Trabajo, artículo 69.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[minimo] «¿Sabes exactamente cuántos días de descanso obligatorio te corresponden por ley después de» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+          "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada seis días de trabajo.»), pero la pieza no lo dice: agrégalo al texto visible.",
+          "[sustento] «¿Sabes exactamente cuántos días de descanso obligatorio te corresponden por ley » menciona un plazo (1 semana) que no aparece en los artículos citados."
+        ],
+        "visible": "  \n ¿Sabes exactamente cuántos días de descanso obligatorio te corresponden por ley después de una semana de labores? \n ¿CUÁNTOS DÍAS \n DE DESCANSO \n TE TOCAN? \n De acuerdo con la legislación laboral, te corresponde al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo. \n DÍA DE \n DESCANSO \n La Ley Federal del Trabajo es muy clara al respecto. En su artículo 69 establece lo siguiente: \"Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.\" \n Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Esta disposición legal establece las condiciones mín"
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Se debe otorgar al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la regla establecida en el artículo 69."
+            },
+            {
+              "conclusion": "La ley obliga a otorgar un día de descanso pagado tras seis días de labor.",
+              "sostenida": "si",
+              "motivo": "El concepto 'pagado' es una interpretación válida de 'con goce de salario íntegro' y la relación de días es correcta según el texto."
+            },
+            {
+              "conclusion": "La condición para el descanso es haber trabajado seis días.",
+              "sostenida": "si",
+              "motivo": "El texto establece la proporción de seis días de trabajo como el presupuesto para el derecho al descanso."
+            },
+            {
+              "conclusion": "El descanso debe ser con goce de salario íntegro.",
+              "sostenida": "si",
+              "motivo": "Es un requisito explícito contenido en el texto oficial."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "id": "I20261208-T102",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuántas vacaciones tocan tras el primer año?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T102",
+  "pieza": {
+    "titular": "¿Cuántas vacaciones tocan tras el primer año?",
+    "bajada": "Al menos doce días laborables, siempre que hayas cumplido más de un año de servicios.",
+    "cita": "disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 76",
+    "ojo": "El conteo es sobre días laborables, no naturales.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 76"
+  },
+  "copy": "Según el artículo 76 de la Ley Federal del Trabajo, las personas que tengan más de un año de servicios tienen derecho a vacaciones pagadas. La ley es clara al señalar que este periodo «en ningún caso podrá ser inferior a doce días laborables».\n\nEste derecho aumenta con el tiempo, pues el texto oficial indica que el periodo «aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios».\n\nEs importante distinguir que se trata de días laborables y no de días naturales (calendario). Si ya superaste tu primer año de relación laboral, este derecho se adquiere de forma inmediata.\n\nGuarda esta información para planear tu descanso o compártela con quien esté por cumplir su primer aniversario en el trabajo.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre vacaciones en México. Explica que tras el primer año de trabajo corresponden al menos 12 días laborables de vacaciones pagadas, según el artículo 76 de la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "76",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones",
+      "cita": "Ley Federal del Trabajo, artículo 76",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "76",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "en ningún caso podrá ser inferior a doce días laborables",
+      "cita": "Ley Federal del Trabajo, artículo 76",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "76",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios",
+      "cita": "Ley Federal del Trabajo, artículo 76",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Es requisito indispensable haber laborado más de un año para tener derecho al periodo vacacional.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El periodo anual de vacaciones pagadas no puede ser menor a doce días laborables.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El periodo de vacaciones se incrementa en dos días por cada año posterior hasta alcanzar los veinte días.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+    "concepto_central": "vacaciones pagadas",
+    "respuesta_corta": "Al menos doce días laborables, siempre que hayas cumplido más de un año de servicios.",
+    "reglas": [
+      {
+        "conclusion": "Las personas trabajadoras tienen derecho a un periodo anual de vacaciones de mínimo doce días laborables tras el primer año de servicios.",
+        "fuente": "F1",
+        "cita_literal": "disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+        "condiciones": [
+          "Tener más de un año de servicios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "76"
+        }
+      },
+      {
+        "conclusion": "El periodo de vacaciones se incrementa en dos días por cada año posterior hasta alcanzar los veinte días.",
+        "fuente": "F1",
+        "cita_literal": "aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios",
+        "condiciones": [
+          "Cumplir años subsecuentes de servicios después del primero"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "76"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El periodo anual de vacaciones pagadas no puede ser menor a doce días laborables.",
+        "fuente": "F1",
+        "cita_literal": "en ningún caso podrá ser inferior a doce días laborables"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Es requisito indispensable haber laborado más de un año para tener derecho al periodo vacacional.",
+        "fuente": "F1",
+        "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El derecho a los doce días de vacaciones se adquiere inmediatamente al superar el primer año de servicios.",
+        "condicion": "Haber completado el primer año de relación laboral",
+        "base": "F1 indica que quienes tengan más de un año de servicios disfrutarán del periodo."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "días laborables",
+        "b": "días naturales",
+        "diferencia": "La ley especifica que el conteo de las vacaciones debe realizarse sobre días laborables, no sobre días calendario totales."
+      }
+    ],
+    "limites": "El texto oficial no menciona el pago de la prima vacacional, los plazos para solicitar las vacaciones ni las consecuencias si el patrón se niega a otorgarlas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-30T12:01:08+00:00",
+    "solicitud": "2026-12-08_imagen_T102-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas trabajadoras tienen derecho a un periodo anual de vacaciones de mínimo doce días laborables tras el primer año de servicios.",
+              "sostenida": "si",
+              "motivo": "El artículo 76 establece explícitamente que quienes tengan más de un año de servicios disfrutarán de un periodo no inferior a doce días laborables."
+            },
+            {
+              "conclusion": "El periodo de vacaciones se incrementa en dos días por cada año posterior hasta alcanzar los veinte días.",
+              "sostenida": "si",
+              "motivo": "El artículo 76 señala que el periodo aumentará en dos días laborables por cada año subsecuente hasta llegar a veinte."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1140 KB"
+      "detalle": "1146 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "47 palabras sin cabecera ni pie"
+      "detalle": "48 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "95% de 39 palabras reconocidas"
+      "detalle": "95% de 40 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -93,11 +93,11 @@
     "titulo": "¿Cuánto te pagan si trabajas el 25 de diciembre?",
     "plantilla": "mito_realidad",
     "archivo": "I20261209-T103.png",
-    "sha256": "ef648ccc94f45a83a5da79d8d3c547378a28c38708c96e78ca42cfb604b056d4",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000001101001110001111111111111000011111010011100000000000011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "53a81fa58f8a63adf2b0ec261d4d6cb6aac5e0188bf599ccaf02bfcb55107424",
-    "texto_alternativo": "Infografía sobre el pago por trabajar el 25 de diciembre. Explica que se debe recibir el salario normal más un pago doble, y que el Tribunal interviene si no hay acuerdo sobre quién trabaja.",
-    "copy": "Según el artículo 75 de la Ley Federal del Trabajo, patrones y trabajadores deben acordar quiénes laborarán en días de descanso obligatorio. Si no llegan a un convenio, el Tribunal es quien resolverá la situación.\n\nQuienes presten el servicio \"tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado\".\n\nEsto significa que el pago total por laborar en esta fecha equivale al triple del salario diario, al sumar el pago por el descanso obligatorio y el pago doble por el trabajo realizado.\n\nGuarda esta información o compártela con quien deba trabajar en días festivos oficiales.\n\nEsto es información general, no es asesoría legal.",
+    "sha256": "4201a65c30d888ada4646dd6883a1d3e9f516c8e4fc4b64e3b40a7d998e2c164",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000001110000000000000011001111111111111100000001111001110001111111111111000011111111111100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "ab7153e31815bea9318d9c019cf3d35d44f7d26f25e889e70c8dcd67106e6a64",
+    "texto_alternativo": "Infografía sobre el pago por trabajar el 25 de diciembre. Explica que se debe recibir el salario normal más un salario doble, y que el Tribunal resuelve si no hay acuerdo sobre cuántas personas trabajan.",
+    "copy": "Según el artículo 75 de la Ley Federal del Trabajo, patrones y trabajadores determinan el número de trabajadores que deben prestar sus servicios en los días de descanso obligatorio. Si no llegan a un convenio, resuelve el Tribunal.\n\nQuienes presten el servicio «tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado».\n\nEn la práctica: el salario del día de descanso más el salario doble suman el triple del salario diario por ese día.\n\nGuárdalo o compártelo con quien trabaje en días de descanso obligatorio.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -120,7 +120,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO_CON_CRITERIO",
-    "fecha": "2026-10-30T10:17:31+00:00",
+    "fecha": "2026-10-30T12:17:06+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

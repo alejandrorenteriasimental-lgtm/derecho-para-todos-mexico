@@ -1,0 +1,64 @@
+{
+ "tema_id": "T102",
+ "pregunta": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+ "fecha": "2026-10-30T11:58:57+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+  "concepto_central": "vacaciones pagadas",
+  "respuesta_corta": "Al menos doce días laborables, siempre que hayas cumplido más de un año de servicios.",
+  "reglas": [
+   {
+    "conclusion": "Las personas trabajadoras tienen derecho a un periodo anual de vacaciones de mínimo doce días laborables tras el primer año de servicios.",
+    "fuente": "F1",
+    "cita_literal": "disfrutarán de un periodo anual de vacaciones pagadas, que en ningún caso podrá ser inferior a doce días laborables",
+    "condiciones": [
+     "Tener más de un año de servicios"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El periodo de vacaciones se incrementa en dos días por cada año posterior hasta alcanzar los veinte días.",
+    "fuente": "F1",
+    "cita_literal": "aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios",
+    "condiciones": [
+     "Cumplir años subsecuentes de servicios después del primero"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El periodo anual de vacaciones pagadas no puede ser menor a doce días laborables.",
+    "fuente": "F1",
+    "cita_literal": "en ningún caso podrá ser inferior a doce días laborables"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Es requisito indispensable haber laborado más de un año para tener derecho al periodo vacacional.",
+    "fuente": "F1",
+    "cita_literal": "Las personas trabajadoras que tengan más de un año de servicios disfrutarán de un periodo anual de vacaciones"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El derecho a los doce días de vacaciones se adquiere inmediatamente al superar el primer año de servicios.",
+    "condicion": "Haber completado el primer año de relación laboral",
+    "base": "F1 indica que quienes tengan más de un año de servicios disfrutarán del periodo."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "días laborables",
+    "b": "días naturales",
+    "diferencia": "La ley especifica que el conteo de las vacaciones debe realizarse sobre días laborables, no sobre días calendario totales."
+   }
+  ],
+  "limites": "El texto oficial no menciona el pago de la prima vacacional, los plazos para solicitar las vacaciones ni las consecuencias si el patrón se niega a otorgarlas.",
+  "fuentes_irrelevantes": []
+ }
+}
