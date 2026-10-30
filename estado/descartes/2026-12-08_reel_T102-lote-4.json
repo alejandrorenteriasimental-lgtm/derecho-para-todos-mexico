@@ -1,0 +1,70 @@
+{
+ "solicitud": "2026-12-08_reel_T102-lote-4.json",
+ "fecha": "2026-10-30T04:02:21+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 61 de la Ley Federal d",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[sustento] «Menor a 3.5 horas nocturnas» menciona un plazo (5 hora) que no aparece en los artículos citados."
+   ],
+   "visible": "  \n ¿Sabes cuál es la jornada máxima de trabajo permitida y cómo se clasifican los horarios laborales según la ley actual? \n ¿JORNADA \n MÁXIMA? \n La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta según la ley. \n DURACIÓN \n DIARIA \n La legislación federal establece reglas claras sobre esto: La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta. \n La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta. \n Conoce la duración exacta según cada horario aplicable: \n Jornada diurna: ocho horas \n Jornada nocturna: siete horas "
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "escena 3: elemento de lista demasiado largo («Mixta: menor de tres horas y m…»)"
+   ],
+   "visible": "  \n ¿Sabes cuál es la jornada máxima de trabajo permitida según la ley mexicana vigente? \n JORNADA \n MÁXIMA \n DE TRABAJO \n La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta. \n DURACIÓN \n DIARIA \n La ley señala de manera exacta que La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta. \n La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta. \n Los tipos de jornada se definen según el horario: \n Diurna: de 6 a 20 horas \n Nocturna: de 20 a 6 horas \n Mixta: menor de tres horas y media \n Si el período nocturno de la jorna"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "escena 3: elemento de lista demasiado largo («Mixta: menor de tres horas y m…»)"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.",
+      "sostenida": "si",
+      "motivo": "El artículo 61 de la Ley Federal del Trabajo establece explícitamente estas duraciones."
+     },
+     {
+      "conclusion": "El tipo de jornada se define según el horario en que se desarrolle, considerando jornada mixta si el período nocturno es menor a tres horas y media.",
+      "sostenida": "si",
+      "motivo": "El artículo 60 de la Ley Federal del Trabajo define los horarios y la condición específica para la jornada mixta."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo lista: 'Diurna: de 6 a 20 h', 'Nocturna: de 20 a 6 h', 'Mixta: menos de 3.5 h'",
+      "problema": "La simplificación en la lista es imprecisa y puede inducir a error. La jornada mixta no se define solo por 'menos de 3.5 h', sino por ser una combinación de periodos diurnos y nocturnos donde el nocturno es menor a 3.5 horas.",
+      "correccion": "Aclarar que la jornada mixta es la combinación de periodos diurnos y nocturnos, siempre que el periodo nocturno sea menor a tres horas y media."
+     },
+     {
+      "donde": "Escena tipo cierre: 'Síguenos para entender tus derechos.'",
+      "problema": "Aunque es un cierre estándar, la pieza no menciona que la jornada laboral es un derecho irrenunciable ni las implicaciones de excederla, lo cual es el núcleo de la preocupación del usuario al preguntar por la 'jornada máxima'.",
+      "correccion": "Añadir una breve mención de que el respeto a estos límites es una obligación patronal, sin ofrecer asesoría personalizada."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1173 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal del »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1085"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "56 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "92% de 39 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261207-T101",
+    "formato": "imagen",
+    "titulo": "¿Te deben pagar extra en domingo?",
+    "plantilla": "dato",
+    "archivo": "I20261207-T101.png",
+    "sha256": "163961487962276f205541e4836037696f48e8377157e657ec2b5c73bd513d97",
+    "ahash": "1001111111111111111111111111111111111111111111111111111111111111100000000001111110001000000011111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "b3bf3226862a013016d381fef777e0df61b845e8ee227744deef92a2ee9ca989",
+    "texto_alternativo": "Imagen informativa que explica el derecho a recibir una prima adicional del veinticinco por ciento al trabajar en domingo según la Ley Federal del Trabajo.",
+    "copy": "Si laboras en domingo, la ley protege tu derecho a recibir un pago adicional por ese día de esfuerzo.\n\nDe acuerdo con la Ley Federal del Trabajo, en su artículo 71, «las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo».\n\nConoce tus derechos laborales básicos y comparte esta información para que más personas sepan qué les corresponde por laborar en este día. ¡Guarda esta publicación!\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "71",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-10-30T04:09:14+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

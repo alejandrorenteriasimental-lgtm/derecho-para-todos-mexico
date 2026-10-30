@@ -1,0 +1,44 @@
+{
+ "tema_id": "T103",
+ "pregunta": "¿Qué días son de descanso obligatorio en México?",
+ "fecha": "2026-10-30T04:02:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué días son de descanso obligatorio en México?",
+  "concepto_central": "días de descanso obligatorio",
+  "respuesta_corta": "Los días de descanso obligatorio incluyen fechas fijas, ciertos lunes conmemorativos, el 1 de octubre cada seis años y las jornadas electorales.",
+  "reglas": [
+   {
+    "conclusion": "La ley establece un listado específico de días que son de descanso obligatorio para los trabajadores.",
+    "fuente": "F1",
+    "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;",
+    "condiciones": [
+     "cuando corresponda a la transmisión del Poder Ejecutivo Federal",
+     "en el caso de elecciones ordinarias, para efectuar la jornada electoral"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La ley señala los días específicos del año que se consideran de descanso obligatorio.",
+    "fuente": "F1",
+    "cita_literal": "Son días de descanso obligatorio: I. El 1o. de enero; II. El primer lunes de febrero en conmemoración del 5 de febrero;"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Se establecen condiciones temporales o de eventos específicos para aplicar ciertos días de descanso como la transmisión del Poder Ejecutivo o elecciones.",
+    "fuente": "F1",
+    "cita_literal": "VII. El 1o. de octubre de cada seis años, cuando corresponda a la transmisión del Poder Ejecutivo Federal"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial únicamente enlista los días de descanso obligatorio, sin detallar reglas de pago u otras consecuencias laborales.",
+  "fuentes_irrelevantes": []
+ }
+}

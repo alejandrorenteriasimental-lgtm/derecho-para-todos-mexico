@@ -1,0 +1,172 @@
+{
+  "id": "I20261207-T101",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Te deben pagar extra en domingo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T101",
+  "pieza": {
+    "titular": "¿Te deben pagar extra en domingo?",
+    "bajada": "Sí, tienes derecho a una prima de veinticinco por ciento por lo menos sobre tu salario ordinario.",
+    "cita": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos...",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 71",
+    "ojo": "Aplica a quienes laboren en domingo",
+    "fuente_visible": "Ley Federal del Trabajo, art. 71"
+  },
+  "copy": "Si laboras en domingo, la ley protege tu derecho a recibir un pago adicional por ese día de esfuerzo.\n\nDe acuerdo con la Ley Federal del Trabajo, en su artículo 71, «las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo».\n\nConoce tus derechos laborales básicos y comparte esta información para que más personas sepan qué les corresponde por laborar en este día. ¡Guarda esta publicación!\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica el derecho a recibir una prima adicional del veinticinco por ciento al trabajar en domingo según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "71",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo.",
+      "cita": "Ley Federal del Trabajo, artículo 71",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-30"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las personas que trabajan en domingo tienen derecho a una prima adicional de al menos el veinticinco por ciento sobre el salario ordinario.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben pagar extra si trabajas en domingo?",
+    "concepto_central": "prima dominical",
+    "respuesta_corta": "Sí, tienes derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre tu salario ordinario.",
+    "reglas": [
+      {
+        "conclusion": "Las personas que trabajan en domingo tienen derecho a una prima adicional de al menos el veinticinco por ciento sobre el salario de los días ordinarios.",
+        "fuente": "F1",
+        "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "71"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se debe pagar una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios.",
+        "fuente": "F1",
+        "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica para las personas que laboren en domingo.",
+        "fuente": "F1",
+        "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla plazos, procedimientos de pago ni autoridades ante las cuales deba reclamarse esta prima en caso de incumplimiento."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-30T04:05:37+00:00",
+    "solicitud": "2026-12-07_imagen_T101-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te deben pagar extra si trabajas en domingo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, tienes derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo. \n Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos... \n Aplica si trabajas en domingo"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n Sí, tienes derecho a una prima de veinticinco por ciento por lo menos sobre tu salario ordinario. \n Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos... \n Calculado sobre el salario ordinario"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas que trabajan en domingo tienen derecho a una prima adicional de al menos el veinticinco por ciento sobre el salario de los días ordinarios.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la obligación establecida en el artículo 71 de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

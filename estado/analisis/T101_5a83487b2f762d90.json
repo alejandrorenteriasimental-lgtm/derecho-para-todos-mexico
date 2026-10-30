@@ -1,0 +1,48 @@
+{
+ "tema_id": "T101",
+ "pregunta": "¿Cuántos días de descanso a la semana te corresponden?",
+ "fecha": "2026-10-30T03:59:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántos días de descanso a la semana te corresponden?",
+  "concepto_central": "días de descanso",
+  "respuesta_corta": "Al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.",
+  "reglas": [
+   {
+    "conclusion": "Se debe otorgar al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo.",
+    "fuente": "F1",
+    "cita_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
+    "condiciones": [
+     "Por cada seis días de trabajo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Corresponde al menos un día de descanso con goce de salario íntegro por cada seis días trabajados.",
+    "fuente": "F1",
+    "cita_literal": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La regla aplica por cada seis días de trabajo.",
+    "fuente": "F1",
+    "cita_literal": "Por cada seis días de trabajo"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "motivo": "El texto oficial no prevé excepciones para esta regla."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no especifica qué día exacto de la semana debe otorgarse el descanso ni regula jornadas especiales o distintas distribuciones de días.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "tema_id": "T102",
+ "pregunta": "¿Cuál es la jornada máxima de trabajo?",
+ "fecha": "2026-10-30T04:00:25+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuál es la jornada máxima de trabajo?",
+  "concepto_central": "jornada máxima de trabajo",
+  "respuesta_corta": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+  "reglas": [
+   {
+    "conclusion": "La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.",
+    "fuente": "F2",
+    "cita_literal": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El tipo de jornada se define según el horario en que se desarrolle, considerando jornada mixta si el período nocturno es menor a tres horas y media.",
+    "fuente": "F1",
+    "cita_literal": "Jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas. Jornada mixta es la que comprende períodos de tiempo de las jornadas diurna y nocturna, siempre que el período nocturno sea menor de tres horas y media, pues si comprende tres y media o más, se reputará jornada nocturna.",
+    "condiciones": [
+     "Que el período nocturno de la jornada mixta sea menor de tres horas y media"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se establece la duración exacta de la jornada diaria según sea diurna, nocturna o mixta.",
+    "fuente": "F2",
+    "cita_literal": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La clasificación de la jornada depende del horario y de la duración del período nocturno que comprenda.",
+    "fuente": "F1",
+    "cita_literal": "Jornada mixta es la que comprende períodos de tiempo de las jornadas diurna y nocturna, siempre que el período nocturno sea menor de tres horas y media, pues si comprende tres y media o más, se reputará jornada nocturna."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "jornada diurna",
+    "b": "jornada nocturna",
+    "diferencia": "La jornada diurna se comprende entre las seis y las veinte horas con una duración de ocho horas, y la nocturna entre las veinte y las seis horas con una duración de siete horas."
+   }
+  ],
+  "limites": "Los textos no mencionan consecuencias jurídicas, sanciones ni autoridades competentes en caso de exceder la jornada.",
+  "fuentes_irrelevantes": []
+ }
+}

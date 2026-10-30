@@ -2842,7 +2842,7 @@
       "id": "I20261130-T014",
       "formato": "imagen",
       "huella": "fd8d00d1ee06e6c4c7c62dfb0ed1004fb846f8d350b07c1dd7040dcf797cd96c",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T15:27:44+00:00",
@@ -2882,6 +2882,12 @@
           "a": "APROBADO",
           "ts": "2026-10-29T22:00:17+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 15:21 CDMX) 2026-10-29T21:21:36+00:00 versión 5934486adbc4d9d7 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-30T04:09:17+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -2913,7 +2919,7 @@
       "id": "I20261202-T030",
       "formato": "imagen",
       "huella": "422ddf241d14e547bc0c9ce195d9d46aa877250587efd383a3076aba008aad7a",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-29T15:37:55+00:00",
@@ -2953,6 +2959,12 @@
           "a": "APROBADO",
           "ts": "2026-10-29T22:00:17+00:00",
           "motivo": "aprobación humana: César Alejandro Rentería (chat, 29-10-2026 15:21 CDMX) 2026-10-29T21:21:37+00:00 versión bab2eb2202deafd6 (chat)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-30T04:09:17+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -2978,6 +2990,74 @@
         "fecha": "2026-10-29T21:21:37+00:00",
         "canal": "chat",
         "nota": "Aprobado contenido jurídico y diseño visual (lote-3, «apruebo las 4»). No modificar ni regenerar."
+      }
+    },
+    "I20261207-T101": {
+      "id": "I20261207-T101",
+      "formato": "imagen",
+      "huella": "b3bf3226862a013016d381fef777e0df61b845e8ee227744deef92a2ee9ca989",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-30T04:05:37+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T04:09:14+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T04:09:17+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "962dae440c071f03",
+        "huella_guion": "64924a5b7bf392b9c454042c199425e564543879f8014ca37a0ff669de3a7da5",
+        "huella_archivo": "163961487962276f205541e4836037696f48e8377157e657ec2b5c73bd513d97",
+        "preparada": "2026-10-30T04:09:17+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20261209-T103": {
+      "id": "R20261209-T103",
+      "formato": "reel",
+      "huella": "76068bff6b1ee8c53ad5b9a2d7a522f1165a52e2c7ece7e35f89db4c54b87ed1",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-30T04:05:37+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-30T04:08:15+00:00",
+          "motivo": "50.0"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-30T04:08:18+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "8ac914f384cd2c20",
+        "huella_guion": "47139f62c1a1775c9524d019d5bbc969df9cccb6bd2b42fce107d44be3f8bced",
+        "huella_archivo": "3d1f30aff3eb1a97afcf84303cd4461dc95bbaaf2b4dd393aabe0885cb9eeb41",
+        "preparada": "2026-10-30T04:08:18+00:00",
+        "canal": "chat"
       }
     }
   }

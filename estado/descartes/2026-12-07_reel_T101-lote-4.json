@@ -1,0 +1,39 @@
+{
+ "solicitud": "2026-12-07_reel_T101-lote-4.json",
+ "fecha": "2026-10-30T03:59:52+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «Por cada seis días laborados» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada seis días de trabajo.»), pero la pieza no lo dice: agrégalo al texto visible.\"]",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[minimo] «Por cada seis días» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «Un día de descanso» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada seis días de trabajo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n ¿Sabes exactamente cuántos días de descanso a la semana te corresponden según la legislación laboral vigente en nuestro país? \n ¿CUÁNTOS DÍAS \n TE CORRESPONDEN? \n La respuesta es clara: corresponde al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo. \n DESCANSO \n LABORAL \n El texto oficial señala de manera específica que por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Ten en cuenta los siguientes puntos fundamentales sobre tu derecho al descanso laboral: \n Por cada seis días \n Un"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[minimo] «Por cada 6 días trabajados» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Sabes exactamente cuántos días de descanso te corresponden a la semana de acuerdo con las disposiciones vigentes en tu empleo? \n ¿CUÁNTOS DÍAS \n TE CORRESPONDEN? \n La regla general señala que corresponde al menos un día de descanso con goce de salario íntegro por cada seis días de trabajo realizado. \n DÍAS DE \n DESCANSO \n El texto oficial dispone textualmente lo siguiente: Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Para revisar adecuadamente cómo se distribuyen tus jornadas semanales, ten presentes las sigu"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[minimo] «Por cada seis días laborados» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada seis días de trabajo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n ¿Trabajas de manera constante y te preguntas cuántos días de descanso a la semana te corresponden según las normas vigentes? \n ¿CUÁNTOS \n DÍAS DE \n DESCANSO? \n La respuesta directa a tu duda es que corresponde al menos un día de descanso con goce de salario íntegro por cada seis días trabajados conforme a la norma. \n DESCANSO \n SEMANAL \n Específicamente, el texto oficial de la legislación laboral dispone que Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro. \n Es muy importante revisar los elementos esenciales que com"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "tema_id": "T101",
+ "pregunta": "¿Te deben pagar extra si trabajas en domingo?",
+ "fecha": "2026-10-30T04:04:41+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben pagar extra si trabajas en domingo?",
+  "concepto_central": "prima dominical",
+  "respuesta_corta": "Sí, tienes derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre tu salario ordinario.",
+  "reglas": [
+   {
+    "conclusion": "Las personas que trabajan en domingo tienen derecho a una prima adicional de al menos el veinticinco por ciento sobre el salario de los días ordinarios.",
+    "fuente": "F1",
+    "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe pagar una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios.",
+    "fuente": "F1",
+    "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica para las personas que laboren en domingo.",
+    "fuente": "F1",
+    "cita_literal": "Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla plazos, procedimientos de pago ni autoridades ante las cuales deba reclamarse esta prima en caso de incumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}
