@@ -2,26 +2,34 @@
   "fecha": "2026-12-08",
   "formato": "imagen",
   "tema_id": "T102",
-  "titulo": "¿Cómo te deben pagar las horas extra?",
-  "gancho": "¿Cómo te deben pagar las horas extra?",
-  "pregunta": "¿Cómo te deben pagar las horas extra?",
+  "titulo": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+  "gancho": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+  "pregunta": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
   "tipo_pregunta": "obligacion",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 67",
+  "fuentes_sugeridas": "LFT art. 76",
   "riesgo_exactitud": "",
   "lote": "lote-4",
-  "motivo_seleccion": "Art. 67 LFT: las horas de trabajo extraordinario se pagan con un ciento por ciento más del salario de las horas de la jornada.",
+  "motivo_seleccion": "Sustituye a «¿Cómo te deben pagar las horas extra?» (30-10): el texto oficial vigente de LFT art. 67 trae derogado su párrafo segundo (reforma DOF 01-05-2026), que fijaba el pago doble; la pregunta ya no tiene respuesta literal en ese artículo. Art. 76 LFT: con más de un año de servicios, vacaciones pagadas que en ningún caso podrán ser inferiores a doce días laborables, con aumento de dos días por año hasta veinte. Respuesta literal; no repite temas de las últimas 3 semanas.",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "¿Cómo te deben pagar las horas extra?",
-  "estado": "DESCARTADA",
+  "angulo": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261208-T102",
   "archivo": "2026-12-08_imagen_T102-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan el pago de horas extra en situaciones generales, ni establecen porcentajes adicionales, pagos dobles o triples, ya que el párrafo que regulaba otros supuestos aparece como derogado.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "474b4c40eba87dd7"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-30",
+      "por": "Claude",
+      "motivo": "pregunta sustituida: LFT 67 párrafo segundo derogado (DOF 01-05-2026); ahora LFT 76, vacaciones",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan el pago de horas extra en situaciones generales, ni establecen porcentajes adicionales, pagos dobles o triples, ya que el párrafo que regulaba otros supuestos aparece como derogado."
+    }
+  ]
 }

@@ -12,13 +12,22 @@
   "lote": "lote-4",
   "motivo_seleccion": "Art. 69 LFT: por cada seis días de trabajo, un día de descanso por lo menos, con goce de salario íntegro.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261207-T101",
   "archivo": "2026-12-07_reel_T101-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «Por cada seis días laborados» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada seis días de trabajo.»), pero la pieza no lo dice: agrégalo al texto visible.\"]",
   "ultima_categoria": "juridico",
-  "huella_entrada": "1cb9d5699872ab7f"
+  "huella_entrada": "1cb9d5699872ab7f",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-30",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (razonamiento: la regla «mínimo» marcaba todas las cifras de la cita; LFT 69 «por lo menos» solo afecta a «un día», no a «seis días»); se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «Por cada seis días laborados» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica por cada sei"
+    }
+  ]
 }

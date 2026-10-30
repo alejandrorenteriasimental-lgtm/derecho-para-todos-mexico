@@ -362,7 +362,7 @@ def revisar_cobertura(g, textos):
         cifras = set()
         for c in citas:
             pc = plano(c)
-            if re.search(r"\b(por lo menos|al menos|como minimo|minimo)\b", pc): cifras |= {n for n, _ in _plazos(pc)}
+            cifras |= _cifras_minimas(pc)
         for frase in re.split(r"(?<=[.;!?])\s+|\n", cuerpo_visible(g)):
             pf = plano(frase)
             if any(n in cifras for n, _ in _plazos(pf)) and not re.search(r"\b(por lo menos|al menos|como minimo|minimo|minima|min|o mas|desde)\b", pf):
@@ -438,13 +438,52 @@ _NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis":
         "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "noventa": 90, "cien": 100}   # la ley escribe los números con letra
 
 
+_UNIDAD = {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}
+
+
+def _plazos_pos(p, base=False):
+    """[(inicio, fin, (n, unidad))] de los plazos «número + unidad» del texto plano.
+    - Decimales: `plano` convierte «3.5 horas» en «3 5 horas»; se lee 3.5, no 5 (R20261208-T102, 30-10: «Menor a 3.5 horas
+      nocturnas» se bloqueaba por un plazo «5 hora» inexistente).
+    - «tres horas y media» = 3.5. En el texto legal (base) cuenta también el entero: LFT 61 dice «siete la nocturna y siete
+      horas y media la mixta» y la pieza puede decir «siete horas» para la nocturna."""
+    out = []
+    nums = dict(_NUM, **({"el": 1} if base else {}))
+    patron = (r"\b(\d{1,3}(?: \d(?= (?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b))?|" + "|".join(nums) +
+              r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b( y media\b)?")
+    for m in re.finditer(patron, p):
+        n, u, media = m.group(1), m.group(2), m.group(3)
+        if n in nums: v = nums[n]
+        elif " " in n: a, b = n.split(); v = float(f"{a}.{b}")
+        else: v = int(n)
+        u = _UNIDAD.get(u, u)
+        if media:
+            out.append((m.start(), m.end(), (v + 0.5, u)))
+            if base: out.append((m.start(), m.end(), (v, u)))
+        else:
+            out.append((m.start(), m.end(), (v, u)))
+    return out
+
+
 def _plazos(p, base=False):
     """Plazos «número + unidad». En el texto legal, «el año de servicios» o «el mes» también cuentan como 1 (la pieza
     puede decir «un año» si la ley dice «el año»)."""
+    return {x for _, _, x in _plazos_pos(p, base)}
+
+
+_MINIMO = r"\b(por lo menos|al menos|como minimo|minimo)\b"
+
+
+def _cifras_minimas(pc, ventana=40):
+    """Cifras que la ley fija como mínimo: solo la cifra más cercana a «por lo menos / al menos / como mínimo» (antes o
+    después, a menos de `ventana` caracteres), no todas las de la cita. R20261207-T101 (30-10): LFT 69 «Por cada seis días
+    de trabajo se deberá otorgar, por lo menos, un día de descanso»: el mínimo es «un día»; «seis días» no lo es."""
     out = set()
-    nums = dict(_NUM, **({"el": 1} if base else {}))
-    for n, u in re.findall(r"\b(\d{1,3}|" + "|".join(nums) + r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b", p):
-        out.add((nums.get(n, None) or int(n), {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}.get(u, u)))
+    pos = _plazos_pos(pc)
+    for m in re.finditer(_MINIMO, pc):
+        cand = [(m.start() - f if f <= m.start() else i - m.end(), x[0]) for i, f, x in pos]
+        cand = [(d, n) for d, n in cand if 0 <= d <= ventana]
+        if cand: out.add(min(cand)[1])
     return out
 
 

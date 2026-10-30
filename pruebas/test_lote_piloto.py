@@ -370,6 +370,30 @@ def test_minimo_legal_no_se_presenta_como_cifra_exacta():
     assert not any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(bien, {}))
 
 
+def test_minimo_solo_la_cifra_junto_a_por_lo_menos():
+    """R20261207-T101 (30-10): LFT 69 «Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso»:
+    el mínimo es «un día»; «seis días» no se marca como mínimo."""
+    cita = "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro."
+    base = {"pregunta_original": "¿Cuántos días de descanso a la semana te corresponden?", "tipo_pregunta": "derecho",
+            "razonamiento": {"reglas": [{"fuente": "F1", "cita_literal": cita}], "elementos": []}}
+    bien = {**base, "escenas": [{"tipo": "texto", "texto": "Por cada seis días de trabajo te toca, al menos, un día de descanso pagado."},
+                                {"tipo": "texto", "texto": "Por cada seis días laborados."}]}
+    mal = {**base, "escenas": [{"tipo": "texto", "texto": "Te toca un día de descanso con sueldo completo."}]}
+    assert not any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(bien, {}))
+    assert any(h["regla"] == "minimo" for h in razonamiento.revisar_cobertura(mal, {}))
+
+
+def test_plazos_con_decimales_y_media():
+    """R20261208-T102 (30-10): «3.5 horas» se leía como «5 hora» y se bloqueaba por falta de sustento."""
+    lft60 = ("Jornada mixta es la que comprende períodos de tiempo de las jornadas diurna y nocturna, siempre que el "
+             "período nocturno sea menor de tres horas y media.")
+    lft61 = "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta."
+    assert razonamiento.consecuencias_sin_sustento("Mixta: el periodo nocturno es menor a 3.5 horas.", [lft60]) == []
+    assert razonamiento.consecuencias_sin_sustento("Nocturna: siete horas. Mixta: siete horas y media.", [lft61]) == []
+    assert razonamiento.consecuencias_sin_sustento("Mixta: menos de 4.5 horas.", [lft60])      # cifra que no está: se bloquea
+    assert razonamiento.consecuencias_sin_sustento("La mixta dura ocho horas y media.", [lft61])
+
+
 def test_retenidas_archivadas_no_se_reverifican(raiz):
     """28-10: 4 piezas viejas se re-verificaban con cada versión del verificador y ocupaban los lugares de producción."""
     import cola, verificador as v
