@@ -25,7 +25,7 @@ def pendientes(c):
     return [t for t in c["trabajos"].values() if t["estado"] == "REVISION_HUMANA"]
 
 
-def decidir(c, pid, decision, ver, por, nota=""):
+def decidir(c, pid, decision, ver, por, nota="", canal="chat"):
     t = c["trabajos"].get(pid)
     if not t or t["estado"] != "REVISION_HUMANA":
         raise VersionDistinta(f"{pid} no está en revisión humana")
@@ -35,7 +35,7 @@ def decidir(c, pid, decision, ver, por, nota=""):
         raise VersionDistinta(f"{pid}: la versión {ver} no es la vigente (preparada {preparada}, actual {actual}); no se registró")
     if decision == "RECHAZADA" and not nota.strip():
         raise ValueError("un rechazo necesita el motivo (--nota)")
-    return revision.registrar(pid, decision, ver, hg, ha, {"nombre": por}, "chat", nota)
+    return revision.registrar(pid, decision, ver, hg, ha, {"nombre": por}, canal, nota)
 
 
 if __name__ == "__main__":
@@ -43,6 +43,9 @@ if __name__ == "__main__":
     ap.add_argument("accion", choices=["listar", "aprobar", "rechazar"])
     ap.add_argument("pieza", nargs="?"); ap.add_argument("version", nargs="?")
     ap.add_argument("--por"); ap.add_argument("--nota", default="")
+    ap.add_argument("--delegada", action="store_true",
+                    help="aprobación editorial delegada en Claude (decisión del responsable, 29-10-2026): la pieza solo se publica "
+                         "después de 72 h de aviso al responsable, que puede vetarla con «rechazar» en ese plazo")
     a = ap.parse_args(); c = cola.cargar()
     if a.accion == "listar":
         for t in pendientes(c):
@@ -52,6 +55,7 @@ if __name__ == "__main__":
         sys.exit(0)
     if not (a.pieza and a.version and a.por): ap.error("faltan pieza, versión o --por")
     try:
-        print(json.dumps(decidir(c, a.pieza, "APROBADA" if a.accion == "aprobar" else "RECHAZADA", a.version, a.por, a.nota), ensure_ascii=False, indent=2))
+        print(json.dumps(decidir(c, a.pieza, "APROBADA" if a.accion == "aprobar" else "RECHAZADA", a.version, a.por, a.nota,
+                                 canal="delegada" if a.delegada else "chat"), ensure_ascii=False, indent=2))
     except (VersionDistinta, ValueError) as e:
         print(f"NO REGISTRADO: {e}"); sys.exit(2)

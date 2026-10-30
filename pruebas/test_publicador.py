@@ -38,7 +38,7 @@ def test_archivo_distinto_al_aprobado_detiene_todo(ent):
 
 
 def test_sin_autorizacion_simula_con_archivos_aprobados(ent, monkeypatch):
-    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
     r = publicador.ejecutar(datetime(2026, 11, 3, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])   # todo el calendario cae dentro de 28 días
     assert r["modo"] == "simulacion" and not r.get("pausa")
     ahora = datetime(2026, 11, 3, tzinfo=timezone.utc)
@@ -48,7 +48,7 @@ def test_sin_autorizacion_simula_con_archivos_aprobados(ent, monkeypatch):
 
 
 def test_instagram_solo_en_su_ventana(ent, monkeypatch):
-    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
     hora = publicador.hora_utc("2026-11-23", "09:00")
     r = publicador.ejecutar(hora.replace(minute=5), env={}, bajar=ent["bajar"])
     ig = [a for a in r["acciones"] if "instagram" in a]
@@ -62,7 +62,7 @@ def test_pausa_por_variable(ent):
 
 def test_reel_de_instagram_en_espera_no_detiene_lo_demas(ent, monkeypatch):
     """28-10: la carga de Reels a IG aún falla; sin IG_REELS=1 el Reel no se intenta en IG y nada se pausa."""
-    monkeypatch.setattr(publicador, "comprobar", lambda e, f: True)
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
     hora = publicador.hora_utc("2026-11-23", "19:00")
     r = publicador.ejecutar(hora.replace(minute=5), env={}, bajar=ent["bajar"])
     ig = [a for a in r["acciones"] if "instagram" in a]
@@ -76,3 +76,19 @@ def test_autorizacion_registrada_y_variable_tiene_prioridad(tmp_path):
     e = publicador.con_autorizacion({"META_PAGE_ID": "P", "META_PAGE_TOKEN": "T"}, a)
     assert publicar.modo_operacion(e)[0] == "real"
     assert publicar.modo_operacion(publicador.con_autorizacion({"PUBLICAR": "0", "META_PAGE_ID": "P", "META_PAGE_TOKEN": "T"}, a))[0] == "simulacion"
+
+
+def test_aprobacion_delegada_respeta_72_horas_de_veto(monkeypatch):
+    """29-10-2026: el responsable delegó la aprobación en Claude con 72 h de aviso para vetar."""
+    ahora = datetime(2026, 11, 10, 12, tzinfo=timezone.utc)
+    d = {"decision": "APROBADA", "canal": "delegada", "fecha": "2026-11-09T12:00:00+00:00"}
+    assert publicador.plazo_de_veto(d, ahora) is not None                       # 24 h después: aún en plazo
+    assert publicador.plazo_de_veto(d, ahora + timedelta(hours=48)) is None     # 72 h cumplidas
+    assert publicador.plazo_de_veto({**d, "canal": "chat"}, ahora) is None      # aprobación directa del responsable
+    e = {"pieza": "X", "version": "v", "sha256": "h"}
+    monkeypatch.setattr(publicador, "ultima_decision", lambda p: {**d, "version": "v", "huella_archivo": "h"})
+    with pytest.raises(publicador.EnPlazoDeVeto):
+        publicador.comprobar(e, __file__, ahora)
+    monkeypatch.setattr(publicador, "ultima_decision", lambda p: {**d, "decision": "RECHAZADA"})   # vetada
+    with pytest.raises(publicador.NoAprobada):
+        publicador.comprobar(e, __file__, ahora + timedelta(days=5))

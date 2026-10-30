@@ -26,7 +26,8 @@ CAL = RAIZ / "data" / "calendario_lanzamiento.json"
 PAUSA = RAIZ / "estado" / "pausa_publicacion.json"
 APROB = RAIZ / "estado" / "aprobaciones.jsonl"
 MX = timezone(timedelta(hours=-6))
-VENTANA_IG = timedelta(hours=3)          # si una ejecución se retrasa, se publica dentro de esta ventana; después, se avisa
+VENTANA_IG = timedelta(hours=3)
+VETO = timedelta(hours=72)             # aprobación delegada en Claude: el responsable puede vetar durante 72 h (29-10-2026)          # si una ejecución se retrasa, se publica dentro de esta ventana; después, se avisa
 
 
 class NoAprobada(Exception): pass
@@ -53,10 +54,23 @@ def ultima_decision(pieza):
     return d
 
 
-def comprobar(entrada, archivo):
-    """Aprobación de la versión exacta + archivo idéntico al aprobado."""
+class EnPlazoDeVeto(Exception): pass
+
+
+def plazo_de_veto(d, ahora):
+    """Una aprobación delegada (canal «delegada») solo habilita la publicación cuando terminan las 72 h de aviso."""
+    if d and d.get("canal") == "delegada":
+        fin = datetime.fromisoformat(d["fecha"]) + VETO
+        if ahora < fin: return fin
+    return None
+
+
+def comprobar(entrada, archivo, ahora=None):
+    """Aprobación de la versión exacta + archivo idéntico al aprobado (+ plazo de veto si la aprobación es delegada)."""
     d = ultima_decision(entrada["pieza"])
     if not d or d.get("decision") != "APROBADA": raise NoAprobada(f'{entrada["pieza"]}: sin aprobación vigente')
+    fin = plazo_de_veto(d, ahora or datetime.now(timezone.utc))
+    if fin: raise EnPlazoDeVeto(f'{entrada["pieza"]}: aprobación delegada; plazo de veto hasta {fin.isoformat(timespec="minutes")}')
     if d.get("version") != entrada["version"]: raise NoAprobada(f'{entrada["pieza"]}: versión aprobada {d.get("version")} ≠ calendario {entrada["version"]}')
     if d.get("huella_archivo") != entrada["sha256"]: raise NoAprobada(f'{entrada["pieza"]}: huella aprobada distinta del calendario')
     sha = hashlib.sha256(Path(archivo).read_bytes()).hexdigest()
@@ -113,7 +127,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
             try:
                 # Facebook: programar con anticipación (más de 20 min y dentro de 28 días)
                 if timedelta(minutes=20) < cuando - ahora < timedelta(days=28):
-                    f = bajar(e, carpeta, env); comprobar(e, f)
+                    f = bajar(e, carpeta, env); comprobar(e, f, ahora)
                     huella = e["version"]
                     if fmt == "imagen":
                         r = publicar.publicar_imagen(e["pieza"], f, texto(e["pieza"]), huella, int(cuando.timestamp()), modo=modo, env=env, http=http)
@@ -124,12 +138,14 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                 if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG:
                     acc["instagram"] = "REEL_IG_EN_ESPERA"     # carga de Reels a IG pendiente de resolver (28-10); no detiene lo demás
                 elif timedelta(0) <= ahora - cuando <= VENTANA_IG:
-                    f = bajar(e, carpeta, env); comprobar(e, f)
+                    f = bajar(e, carpeta, env); comprobar(e, f, ahora)
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)
                     acc["instagram"] = r.get("estado")
                 elif ahora - cuando > VENTANA_IG and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") == "1"):
                     op = publicar.operacion(publicar.marca(e["pieza"], e["version"]) + "-ig", "real") or {}
                     if op.get("fase") != "CONFIRMADA": acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
+            except EnPlazoDeVeto as x:
+                acc["espera"] = str(x)                    # no es un error: se intenta en la siguiente ejecución
             except NoAprobada as x:
                 acc["error"] = str(x); pausar(f"pieza no aprobada en su versión exacta: {x}"); res["acciones"].append(acc); res["pausa"] = str(x); return res
             except publicar.PublicacionAmbigua as x:

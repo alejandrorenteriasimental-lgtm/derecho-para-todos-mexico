@@ -6,5 +6,13 @@
  "autorizado_por": "César Alejandro Rentería Simental (responsable)",
  "fecha_autorizacion": "2026-10-28T17:18-06:00",
  "texto_autorizacion": "autorizo todo",
- "alcance": "Calendario data/calendario_lanzamiento.json (23-11 al 29-11-2026), solo versiones aprobadas exactas. Facebook: imágenes y Reels programados. Instagram: imágenes a la hora; Reels con copia de audio a 128 kbps (autorizada) cuando la carga a IG supere la prueba no pública (IG_REELS=1)."
+ "alcance": "Calendario data/calendario_lanzamiento.json (23-11 al 29-11-2026), solo versiones aprobadas exactas. Facebook: imágenes y Reels programados. Instagram: imágenes a la hora; Reels con copia de audio a 128 kbps (autorizada) cuando la carga a IG supere la prueba no pública (IG_REELS=1).",
+ "aprobacion": {
+  "modelo": "delegada_con_veto",
+  "desde_lote": "lote-4",
+  "fecha_decision": "2026-10-29T21:05-06:00",
+  "decision_responsable": "«quiero que sea lo más autónomo posible, que todo se vaya publicando sin mi intervención en la medida de lo posible»; opción elegida: «Yo reviso; tú puedes vetar»",
+  "regla": "Claude revisa y corrige cada pieza (texto oficial, coherencia de lo visible con lo narrado, cuadro por cuadro) y la aprueba con decidir.py --delegada. El responsable recibe un resumen con las piezas; cada pieza solo se publica 72 h después de su aprobación delegada. Dentro de ese plazo el responsable puede vetarla («rechazar»). Las piezas de los lotes 1 a 3 conservan la aprobación directa del responsable.",
+  "veto_horas": 72
+ }
 }
