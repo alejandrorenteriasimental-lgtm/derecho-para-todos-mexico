@@ -3211,7 +3211,7 @@
       "id": "I20261208-T102",
       "formato": "imagen",
       "huella": "386a75e1e4a70f994e7e7a2220fc496e757dc3ffc0e5c2c1184a0e42e2fa883a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3227,6 +3227,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T12:19:55+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-30T12:22:26+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 30-10): copy sin afirmación no sustentada; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -3245,7 +3251,7 @@
       "id": "R20261207-T101",
       "formato": "reel",
       "huella": "f5ee6f64181ade6a92b0247725a4653b974a8883188366c809c3cef8d2d7c7fd",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3261,6 +3267,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T12:14:25+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-30T12:22:26+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 30-10): narración sin relleno; se vuelve a verificar y producir"
         }
       ],
       "error": null,

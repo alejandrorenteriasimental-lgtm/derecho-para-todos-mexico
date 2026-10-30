@@ -55,7 +55,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes cuántos días de descanso te corresponden legalmente por cada periodo de trabajo realizado?",
+      "texto": "¿Cuántos días de descanso a la semana te tocan por ley?",
       "titulo": [
         "¿CUÁNTOS DÍAS",
         "DE DESCANSO",
@@ -74,7 +74,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "El fundamento legal se encuentra en el artículo 69 de la Ley Federal del Trabajo, que establece: \"Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.\"",
+      "texto": "Lo dice el artículo 69 de la Ley Federal del Trabajo: «Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro».",
       "etiqueta": "Ley Federal del Trabajo, artículo 69",
       "cita": "Por cada seis días de trabajo se deberá otorgar, por lo menos, un día de descanso con goce de salario íntegro.",
       "afirmaciones": [
@@ -89,7 +89,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Esta es la explicación práctica de lo que establece la normativa para tu descanso semanal:",
+      "texto": "En corto: mínimo un día de descanso, con salario íntegro, por cada seis días de trabajo.",
       "items": [
         "Mínimo un día de descanso",
         "Pago de salario íntegro",
@@ -106,7 +106,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "En resumen, la normativa mexicana asegura que por cada seis días de trabajo se debe otorgar, por lo menos, un día de descanso con el pago de tu salario íntegro correspondiente.",
+      "texto": "Es un mínimo: la ley dice «por lo menos» un día de descanso por cada seis de trabajo, y ese día se paga completo.",
       "titulo": [
         "TUS",
         "DERECHOS"
@@ -264,5 +264,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-30",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "narración sin relleno ni repeticiones: gancho directo, la lista se narra con sus elementos, cita con comillas angulares, cierre que subraya «por lo menos» (LFT 69)"
+    }
+  ]
 }
