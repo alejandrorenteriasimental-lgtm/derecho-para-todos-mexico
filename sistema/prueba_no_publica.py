@@ -22,10 +22,29 @@ RAIZ = Path(__file__).resolve().parent.parent
 PERMISOS = {"pages_manage_posts", "pages_read_engagement", "pages_show_list", "instagram_basic", "instagram_content_publish"}
 
 
+def variante_ig(reel, variante):
+    """Derivado del Reel aprobado, SOLO para diagnóstico no público (nunca se publica):
+    «recorte:N» = primeros N s sin recodificar el video; «silencio» = video completo con audio silencioso."""
+    import subprocess
+    if not variante: return reel, ""
+    out = Path("/tmp") / f"variante_{variante.replace(':', '_')}.mp4"
+    if variante.startswith("recorte:"):
+        n = variante.split(":")[1]
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", n, "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
+    elif variante == "silencio":
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0", "-shortest",
+               "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
+    else:
+        raise ValueError(f"variante desconocida: {variante}")
+    subprocess.run(cmd, check=True, timeout=300)
+    return out, variante
+
+
 def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, dormir=time.sleep, solo_reel_ig=False):
     """solo_reel_ig: carga únicamente el Reel aprobado a Instagram (sin publicar). Facebook e imagen de IG ya se
     comprobaron (28-10); tras el límite anti-spam de Meta (código 368) se minimizan las cargas de prueba."""
     R = {"fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"), "pasos": [], "publicado_algo": False}
+    reel, R["variante"] = variante_ig(reel, env.get("VARIANTE_IG", ""))
     def paso(nombre, ok, detalle=""):
         R["pasos"].append({"paso": nombre, "resultado": "OK" if ok else "FALLA", "detalle": str(detalle)[:400]}); return ok
     page = env["META_PAGE_ID"]; g = Graph(env["META_PAGE_TOKEN"], http)
@@ -87,4 +106,9 @@ if __name__ == "__main__":
     g_reel = json.loads((RAIZ / "piezas" / Path(reel).stem.replace("_final", "") / "guion.json").read_text())
     r = probar(env, img, reel, g_img.get("copy") or g_img["titulo"], g_reel.get("copy") or g_reel["titulo"], solo_reel_ig=env.get("SOLO_REEL_IG") == "1")
     out = RAIZ / "registro" / "meta_prueba_no_publica.json"; out.write_text(json.dumps(r, ensure_ascii=False, indent=1))
+    if r.get("variante") or env.get("SOLO_REEL_IG") == "1":
+        with (RAIZ / "registro" / "diagnostico_ig.jsonl").open("a") as h:
+            reel_paso = [p for p in r["pasos"] if "reel" in p["paso"]]
+            h.write(json.dumps({"fecha": r["fecha"], "variante": r.get("variante") or "completo", "resultado": reel_paso[-1]["resultado"] if reel_paso else "SIN_PASO",
+                                "detalle": reel_paso[-1]["detalle"] if reel_paso else ""}, ensure_ascii=False) + "\n")
     print(json.dumps(r, ensure_ascii=False, indent=1)); sys.exit(0)
