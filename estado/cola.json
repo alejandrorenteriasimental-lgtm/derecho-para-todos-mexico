@@ -3286,7 +3286,7 @@
       "id": "I20261208-T102",
       "formato": "imagen",
       "huella": "386a75e1e4a70f994e7e7a2220fc496e757dc3ffc0e5c2c1184a0e42e2fa883a",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3326,6 +3326,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-31T11:50:22+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 31-10): copy completa la regla del art. 76 a partir del sexto año; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-31T22:01:24+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-31T22:01:26+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3333,10 +3345,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "07ae7771ffc9cb1c",
-        "huella_guion": "67e2d9757a82e244bd7a24bbe913f37a7411cda90872fe92a971558f23bff8c1",
+        "version": "352d87de017f8691",
+        "huella_guion": "71c98f5937e0bfbcb4a59d20a0fdd05e164d994f9e3356b8d8b30f0cf6d06c1b",
         "huella_archivo": "46ca0be005fb555f786000470aa267ae02cb60a8e478a2eb9b9f7b82778c3b27",
-        "preparada": "2026-10-30T22:08:12+00:00",
+        "preparada": "2026-10-31T22:01:26+00:00",
         "canal": "chat"
       }
     },
@@ -3344,7 +3356,7 @@
       "id": "R20261207-T101",
       "formato": "reel",
       "huella": "f5ee6f64181ade6a92b0247725a4653b974a8883188366c809c3cef8d2d7c7fd",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3378,6 +3390,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T22:05:28+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-10-31T21:54:49+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-31T11:43:55+00:00 versión 389f2c25cf4c094c (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-31T22:05:06+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -3390,13 +3414,26 @@
         "huella_archivo": "74391d3087a22a350365c6ade13c1c268ce9b9e58ff6b6bd92cef19438cf98c4",
         "preparada": "2026-10-30T22:05:28+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261207-T101",
+        "decision": "APROBADA",
+        "version": "389f2c25cf4c094c",
+        "huella_guion": "d81d069f619fc44712072c0a1d43aa8d09dc20a244bb58b88bf19c783f6e5c22",
+        "huella_archivo": "74391d3087a22a350365c6ade13c1c268ce9b9e58ff6b6bd92cef19438cf98c4",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-10-31T11:43:55+00:00",
+        "canal": "delegada",
+        "nota": "LFT 69 literal (texto vigente, reforma DOF 01-05-2026): por lo menos un día de descanso con goce de salario íntegro por cada seis de trabajo; revisado cuadro por cuadro, subtítulos y copy (31-10)"
       }
     },
     "I20261211-T105": {
       "id": "I20261211-T105",
       "formato": "imagen",
       "huella": "36a9882cc07a00197d23681deffc698eaaf8efffb977b62f49aaeb090e7711fc",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T22:00:16+00:00",
@@ -3418,6 +3455,18 @@
           "a": "PENDIENTE",
           "ts": "2026-10-31T11:50:22+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 31-10): copy corrige «e mpresa» en la cita literal del art. 127; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-31T22:04:12+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-31T22:04:15+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3425,10 +3474,78 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "a5a81c0fabf89844",
-        "huella_guion": "106efec91881d51ed7542a35464edf5d12f204c0b786540a15b06c64aa16cbaa",
+        "version": "0b83f04cc5a59e69",
+        "huella_guion": "de9f18450f2552ac6b5f852dcc031a45cd880e3892e0019ebbfeace05c57a6a4",
         "huella_archivo": "6af1a04efbd7c44f6fa73cffa6de9879d2e0447b03e0eb76f3681723db3b415b",
-        "preparada": "2026-10-30T22:10:55+00:00",
+        "preparada": "2026-10-31T22:04:15+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20261210-T104": {
+      "id": "I20261210-T104",
+      "formato": "imagen",
+      "huella": "db739f9b6095d5a0f247e2f18b16f50f9e8eb3b74777b98a4d6020320ee354c2",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-31T21:54:49+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-31T22:05:02+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-31T22:05:06+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "0aaf7bae4ee91f5e",
+        "huella_guion": "fbf300648c98eb3f0dab28682e228208f5043113e1a72973019791b19094ae8a",
+        "huella_archivo": "c70ac168d795b7636249b87631c41040eb3d13009cbda6adc8ba68ee8a3dbbdb",
+        "preparada": "2026-10-31T22:05:06+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20261208-T102": {
+      "id": "R20261208-T102",
+      "formato": "reel",
+      "huella": "e83d5c237723f32f9c4c2874db2765d365d49bc3ba4fe66ebf3296d7102135d6",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-10-31T21:54:49+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-10-31T21:58:35+00:00",
+          "motivo": "55.6"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-10-31T21:58:38+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "eb678d99027a8275",
+        "huella_guion": "ba919811b3164f13b2a577cb3af62dcac882c1aaa5917cdec6105af41230ea9d",
+        "huella_archivo": "33847843a4624c0952593a6ee7ef8c2884025c11328f316cb060e629741d0606",
+        "preparada": "2026-10-31T21:58:38+00:00",
         "canal": "chat"
       }
     }

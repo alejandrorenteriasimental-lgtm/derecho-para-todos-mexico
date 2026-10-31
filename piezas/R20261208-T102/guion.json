@@ -1,0 +1,274 @@
+{
+  "id": "R20261208-T102",
+  "formato": "reel",
+  "titulo": "¿Cuál es la jornada máxima de trabajo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T102",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "61",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+      "cita": "Ley Federal del Trabajo, artículo 61",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-31"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "60",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas.",
+      "cita": "Ley Federal del Trabajo, artículo 60",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-31"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes cuál es la duración legal de tu jornada de trabajo según el horario en el que laboras?",
+      "titulo": [
+        "¿CUÁNTO DEBE",
+        "DURAR TU",
+        "JORNADA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "La ley establece que la duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+      "titulo": [
+        "DURACIÓN",
+        "LEGAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "De acuerdo con el artículo 60 de la Ley, la jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 60",
+      "cita": "Jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La duración de la jornada diaria depende de si es diurna, nocturna o mixta.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Dependiendo del horario, la duración de la jornada diaria se establece de la siguiente manera:",
+      "items": [
+        "Diurna: ocho horas",
+        "Nocturna: siete horas",
+        "Mixta: siete horas y media"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Se definen los horarios que comprenden las jornadas diurna y nocturna.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "La jornada mixta comprende períodos de ambas jornadas, siempre que el período nocturno sea menor de tres horas y media.",
+      "encabezado": "Condición para la jornada mixta",
+      "detalle": "Nocturno menor a 3.5 horas",
+      "fuente_corta": "Ley Federal del Trabajo, art. 60",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, la duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+      "titulo": [
+        "RESUMEN DE",
+        "JORNADAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuál es la jornada máxima de trabajo?",
+    "concepto_central": "jornada máxima de trabajo",
+    "respuesta_corta": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+    "reglas": [
+      {
+        "conclusion": "La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.",
+        "fuente": "F2",
+        "cita_literal": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "61"
+        }
+      },
+      {
+        "conclusion": "El tipo de jornada se define según el horario en que se desarrolle, considerando jornada mixta si el período nocturno es menor a tres horas y media.",
+        "fuente": "F1",
+        "cita_literal": "Jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas. Jornada mixta es la que comprende períodos de tiempo de las jornadas diurna y nocturna, siempre que el período nocturno sea menor de tres horas y media, pues si comprende tres y media o más, se reputará jornada nocturna.",
+        "condiciones": [
+          "Que el período nocturno de la jornada mixta sea menor de tres horas y media"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "60"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se establece la duración exacta de la jornada diaria según sea diurna, nocturna o mixta.",
+        "fuente": "F2",
+        "cita_literal": "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La clasificación de la jornada depende del horario y de la duración del período nocturno que comprenda.",
+        "fuente": "F1",
+        "cita_literal": "Jornada mixta es la que comprende períodos de tiempo de las jornadas diurna y nocturna, siempre que el período nocturno sea menor de tres horas y media, pues si comprende tres y media o más, se reputará jornada nocturna."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "jornada diurna",
+        "b": "jornada nocturna",
+        "diferencia": "La jornada diurna se comprende entre las seis y las veinte horas con una duración de ocho horas, y la nocturna entre las veinte y las seis horas con una duración de siete horas."
+      }
+    ],
+    "limites": "Los textos no mencionan consecuencias jurídicas, sanciones ni autoridades competentes en caso de exceder la jornada."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-31T21:52:19+00:00",
+    "solicitud": "2026-12-08_reel_T102-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuál es la jornada máxima de trabajo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Cuál es la jornada máxima de trabajo?\n\nLa duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta.\n\nFuente: Ley Federal del Trabajo, artículo 61; Ley Federal del Trabajo, artículo 60.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente del artículo 61 de la Ley Federal del Trabajo."
+            },
+            {
+              "conclusion": "El tipo de jornada se define según el horario en que se desarrolle, considerando jornada mixta si el período nocturno es menor a tres horas y media.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una síntesis exacta de las condiciones establecidas en el artículo 60."
+            },
+            {
+              "conclusion": "Si el periodo nocturno en una jornada mixta es de tres horas y media o más, se considera jornada nocturna.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente la consecuencia jurídica establecida en el artículo 60."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Escena: lista",
+              "problema": "Uso de lenguaje absoluto no presente en el texto oficial.",
+              "correccion": "El texto oficial no utiliza la palabra 'máximo' para definir la duración, sino que establece la duración de la jornada. Se debe evitar decir '8 horas máximo' y preferir 'La jornada diurna es de ocho horas'."
+            },
+            {
+              "donde": "Escena: titular (conclusión final)",
+              "problema": "La conclusión final presenta la duración como un 'límite máximo' de forma absoluta, omitiendo que la ley establece la duración de la jornada, no necesariamente un tope variable de capacidad de trabajo.",
+              "correccion": "Redactar: 'En conclusión, la duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta'."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La duración máxima de la jornada diaria varía según el tipo de jornada: ocho horas para la diurna, siete para la nocturna y siete horas y media para la mixta.",
+              "sostenida": "si",
+              "motivo": "El artículo 61 de la Ley Federal del Trabajo establece explícitamente estas duraciones para cada tipo de jornada."
+            },
+            {
+              "conclusion": "El tipo de jornada se define según el horario en que se desarrolle, considerando jornada mixta si el período nocturno es menor a tres horas y media.",
+              "sostenida": "si",
+              "motivo": "El artículo 60 de la Ley Federal del Trabajo define los horarios de las jornadas diurna y nocturna, así como la condición específica para que una jornada sea considerada mixta."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
