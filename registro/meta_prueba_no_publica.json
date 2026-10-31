@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-31T00:54:13+00:00",
+ "fecha": "2026-10-31T11:51:16+00:00",
  "pasos": [
   {
    "paso": "autenticación",
@@ -13,8 +13,8 @@
   },
   {
    "paso": "Instagram: contenedor de reel procesado SIN publicar",
-   "resultado": "FALLA",
-   "detalle": "contenedor 17996449202867253: ERROR · Error: Media upload has failed with error code 2207076 · ruta: COPIA_IG → CONTENEDOR_CREADO → CARGA_REANUDABLE_FALLIDA(HTTP 400 · código None: parte en offset 3145728 de 3588012 bytes: HTTP 400 · código None: Request processing failed) → VIDEO_ALOJADO → CONTENEDOR_CREADO"
+   "resultado": "OK",
+   "detalle": "contenedor 17996589581867253: FINISHED · ruta: COPIA_IG → CONTENEDOR_CREADO"
   },
   {
    "paso": "Instagram: búsqueda anti-duplicados",
@@ -28,6 +28,6 @@
   }
  ],
  "publicado_algo": false,
- "variante": "silencio",
+ "variante": "recorte:26",
  "ok": false
 }
