@@ -55,3 +55,14 @@ Cuando haya al menos 4 Reels y 4 imágenes aprobados, y a más tardar el 13-11-2
 1. Subir **un** Reel a mano desde la app de Instagram, para comprobar si la cuenta acepta ese archivo. Si la app lo acepta, la falla es de la API.
 2. Revisar el estado de la app en Meta for Developers (modo de desarrollo o publicada) y las alertas del portafolio.
 3. Mientras tanto, publicar los Reels en Instagram a mano con el archivo aprobado. Están en el respaldo `piezas-2026-10`, con su SHA-256.
+
+### Diagnóstico por variantes (no público)
+
+Las cargas se registran en `registro/diagnostico_ig.jsonl`.
+
+| Fecha | Variante | Resultado | Qué indica |
+|---|---|---|---|
+| 30-10 | `recorte:22`: primeros 22 s del Reel R20261123-T031, sin recodificar | Pasa | El límite está entre 22 y 30 s |
+| 31-10 | `silencio`: video completo con audio silencioso | Falla, en la última parte de la carga | La causa está en la pista de video, no en el audio |
+
+Siguiente paso: bisecar la duración con `recorte:26`.
