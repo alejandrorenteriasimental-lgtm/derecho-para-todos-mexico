@@ -1,0 +1,78 @@
+{
+ "tema_id": "T107",
+ "pregunta": "¿Pueden abrir tu correspondencia?",
+ "fecha": "2026-10-31T10:00:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pueden abrir tu correspondencia?",
+  "concepto_central": "correspondencia y comunicaciones privadas",
+  "respuesta_corta": "No, la correspondencia que circula por estafetas debe estar libre de todo registro y su violación está sancionada por la ley.",
+  "reglas": [
+   {
+    "conclusion": "La correspondencia que se envía a través de servicios postales no puede ser revisada ni abierta.",
+    "fuente": "F1",
+    "cita_literal": "La correspondencia que bajo cubierta circule por las estafetas estará libre de todo registro, y su violación será penada por la ley.",
+    "condiciones": [
+     "Que la correspondencia circule bajo cubierta por las estafetas"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Las comunicaciones privadas son protegidas y solo pueden ser intervenidas con autorización judicial.",
+    "fuente": "F1",
+    "cita_literal": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la",
+    "condiciones": [
+     "Que la autoridad funde y motive las causas legales de la solicitud",
+     "Que se exprese el tipo de intervención, sujetos y duración"
+    ],
+    "excepciones": [
+     "Cuando las comunicaciones sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas"
+    ],
+    "cita_literal_original": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público... podrá autorizar la intervención"
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Cualquier acto que atente contra la libertad y privacidad de las comunicaciones o la violación de correspondencia será sancionado penalmente.",
+    "fuente": "F1",
+    "cita_literal": "La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "Únicamente un juez federal puede autorizar que se intervenga una comunicación privada.",
+    "fuente": "F1",
+    "cita_literal": "Exclusivamente la autoridad judicial federal... podrá autorizar la intervención de cualquier comunicación privada."
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "motivo": "El texto constitucional menciona que la ley sancionará penalmente, pero no especifica el procedimiento o vía procesal para denunciar la violación."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "motivo": "El artículo 16 no establece plazos para la duración de la protección ni para la prescripción de la sanción por violar correspondencia."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La protección de la correspondencia es una extensión del derecho a que nadie sea molestado en sus papeles sin una orden escrita.",
+    "condicion": "Siempre que exista un mandamiento escrito de autoridad competente que funde y motive el procedimiento.",
+    "base": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "correspondencia",
+    "b": "comunicaciones privadas",
+    "diferencia": "La correspondencia se refiere específicamente a lo que circula por estafetas (correo físico), mientras que las comunicaciones privadas son un concepto más amplio que requiere autorización judicial federal para su intervención."
+   }
+  ],
+  "limites": "Los textos no especifican qué tipo de penas (años de cárcel o multas) se aplican, ni definen qué se considera exactamente 'estafetas' en el contexto tecnológico actual.",
+  "fuentes_irrelevantes": []
+ }
+}

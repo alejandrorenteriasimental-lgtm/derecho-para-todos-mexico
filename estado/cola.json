@@ -3209,7 +3209,7 @@
       "id": "R20261210-T104",
       "formato": "reel",
       "huella": "567324120b07a398067ab0c4e791286546b2603fa3d18a0e8e25d887eb08c09e",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T10:12:01+00:00",
@@ -3249,6 +3249,12 @@
           "a": "APROBADO",
           "ts": "2026-10-30T22:00:16+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-10-30T12:22:26+00:00 versión 2a091c4b5a4f2045 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-10-31T10:02:29+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
