@@ -209,3 +209,15 @@ def test_cita_textual_de_la_ley_no_es_vaguedad():
     assert R.vaguedades(frase)                       # sin la ley: alusión sin nombrar
     assert not R.vaguedades(frase, [txt])            # reproduce la ley citada: no es vaga
     assert R.vaguedades("Ese plazo se cuenta desde que lo pides.", [txt])
+
+
+def test_expresion_de_la_ley_citada_no_es_vaguedad():
+    """I20261210-T104 (30-10): «La Constitución establece que la autoridad competente debe expedir la primera copia…» se
+    descartó por «autoridad competente», que es la expresión literal de CPEUM 4. Con otra ley citada sigue siendo vaga."""
+    cpeum4 = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_4.json").read_text())["texto"]
+    lft76 = json.loads((AQUI.parent / "registro" / "textos" / "LFT_76.json").read_text())["texto"]
+    frase = "La Constitución establece que la autoridad competente debe expedir la primera copia certificada del acta de nacimiento de forma gratuita."
+    assert R.vaguedades(frase)
+    assert not R.vaguedades(frase, [cpeum4])
+    assert R.vaguedades(frase, [lft76])
+    assert R.vaguedades("Acude ante la autoridad competente y existe un recurso legal específico.", [cpeum4])

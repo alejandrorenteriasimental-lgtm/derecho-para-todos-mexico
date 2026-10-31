@@ -210,6 +210,9 @@ Trabaja como abogado, en este orden:
 7. Separa lo que la norma dice expresamente de lo que es interpretación (criterio judicial, consecuencia que depende de
    pruebas o de condiciones): las interpretaciones van en "interpretaciones" con su condición, nunca como regla general.
 8. Si los textos no permiten responder la pregunta con seguridad, NO fuerces una respuesta: marca "suficiente": false.
+   «Suficiente» se juzga solo contra la pregunta formulada y los elementos de cobertura del paso 6. Si un artículo la
+   contesta literalmente, NO marques false porque falten temas que la pregunta no pide (sanciones, denuncia, plazos de
+   prescripción): no los menciones en la pieza.
 
 ERRORES QUE YA OCURRIERON EN ESTE PROYECTO (revisión humana y auditoría de oct-2026). No los repitas:
 - Inventar una consecuencia: escribir que algo «constituye una violación», «es delito», «genera una multa», «es nulo» o «te

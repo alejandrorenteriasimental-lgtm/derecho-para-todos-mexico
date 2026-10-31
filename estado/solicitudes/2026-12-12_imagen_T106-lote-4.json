@@ -15,7 +15,7 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Te pueden negar un empleo por tu edad?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261212-T106",
@@ -23,5 +23,14 @@
   "intentos": 1,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan las sanciones económicas para el empleador, el proceso de denuncia ante autoridades laborales ni los plazos de prescripción para reclamar este derecho.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "c55687a2dc2de64b"
+  "huella_entrada": "c55687a2dc2de64b",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-31",
+      "por": "Claude",
+      "motivo": "primer descarte: el análisis exigió sanciones, denuncia y prescripción que la pregunta no pide; LFT 133 fr. I responde literalmente («edad»). Se precisa la regla de suficiencia en el análisis (prueba de regresión) y se reintenta; si se descarta otra vez, se sustituye la pregunta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan las sanciones económicas para el empleador, el proceso de denuncia ante autoridades laborales ni los plazos de prescripción para reclamar este derecho."
+    }
+  ]
 }

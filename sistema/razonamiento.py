@@ -416,9 +416,15 @@ def vaguedades(cuerpo, textos_oficiales=()):
     """Frases que aluden a un recurso, vía o autoridad sin nombrarlos («existe un recurso legal específico»).
     Una frase que reproduce textualmente la ley citada no es una alusión vaga (I20261201-T019, LFPC 7 Bis, 28-10)."""
     out = []
+    planos = [plano(t) for t in textos_oficiales if t]
     for frase in re.split(r"(?<=[.!?:])\s+|\n", cuerpo or ""):
         p = plano(frase)
-        if any(re.search(v, p) for v in VAGOS) and not re.search(CONCRETOS, p) \
+        vagas = [m.group(0) for v in VAGOS for m in re.finditer(v, p)]
+        # La expresión que la ley citada usa con esas mismas palabras («La autoridad competente expedirá…», CPEUM 4) no es
+        # una alusión vaga de la pieza: la pieza no puede nombrar lo que la ley no nombra (I20261210-T104, 31-10).
+        if vagas and planos and all(any(re.search(r"\b" + re.escape(x) + r"\b", tp) for tp in planos) for x in vagas):
+            continue
+        if vagas and not re.search(CONCRETOS, p) \
                 and not any(_cita_textual(frase, t) for t in textos_oficiales):
             out.append(f"Referencia vaga: «{frase.strip()[:90]}». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.")
     return out

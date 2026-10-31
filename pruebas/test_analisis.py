@@ -129,3 +129,10 @@ def test_objecion_del_auditor_al_analisis_lo_corrige(tmp_path):
     g = redactor.generar(SOL, transporte, sim, env={}, archivo_uso=tmp_path / "u")
     assert len(sim.llamadas["analista"]) == 2 and "corrige el ANÁLISIS" in sim.llamadas["analista"][1]
     assert g["auditoria_ia"]["veredicto"] == "sin_objeciones"
+
+
+def test_suficiencia_se_juzga_contra_la_pregunta():
+    """I20261212-T106 (31-10): «¿Te pueden negar un empleo por tu edad?» tiene respuesta literal en LFT 133 fr. I y el
+    análisis la marcó insuficiente porque el texto no trae sanciones, denuncia ni prescripción (que la pregunta no pide)."""
+    import redactor
+    assert "NO marques false porque falten temas que la pregunta no pide" in redactor.ANALIZAR

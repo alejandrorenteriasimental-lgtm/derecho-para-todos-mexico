@@ -3286,7 +3286,7 @@
       "id": "I20261208-T102",
       "formato": "imagen",
       "huella": "386a75e1e4a70f994e7e7a2220fc496e757dc3ffc0e5c2c1184a0e42e2fa883a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T12:01:08+00:00",
@@ -3320,6 +3320,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T22:08:12+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-31T11:50:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 31-10): copy completa la regla del art. 76 a partir del sexto año; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -3390,7 +3396,7 @@
       "id": "I20261211-T105",
       "formato": "imagen",
       "huella": "36a9882cc07a00197d23681deffc698eaaf8efffb977b62f49aaeb090e7711fc",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-10-30T22:00:16+00:00",
@@ -3406,6 +3412,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-10-30T22:10:55+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-10-31T11:50:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 31-10): copy corrige «e mpresa» en la cita literal del art. 127; se vuelve a verificar y producir"
         }
       ],
       "error": null,

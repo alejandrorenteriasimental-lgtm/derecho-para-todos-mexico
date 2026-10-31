@@ -15,7 +15,7 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Te pueden cobrar la primera copia de tu acta de nacimiento?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261210-T104",
@@ -23,5 +23,14 @@
   "intentos": 1,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[vaguedad] Referencia vaga: «La Constitución establece que la autoridad competente debe expedir la primera copia certif». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "3063aa651cc596ea"
+  "huella_entrada": "3063aa651cc596ea",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-10-31",
+      "por": "Claude",
+      "motivo": "causa del sistema corregida (razonamiento.vaguedades: «autoridad competente» es la expresión literal de CPEUM 4, no una alusión vaga; prueba de regresión); se reintenta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[vaguedad] Referencia vaga: «La Constitución establece que la autoridad competente debe expedir la primera copia certif». Nombra la vía, la autoridad o el derecho concreto (con su fue"
+    }
+  ]
 }
