@@ -64,5 +64,6 @@ Las cargas se registran en `registro/diagnostico_ig.jsonl`.
 |---|---|---|---|
 | 30-10 | `recorte:22`: primeros 22 s del Reel R20261123-T031, sin recodificar | Pasa | El límite está entre 22 y 30 s |
 | 31-10 | `silencio`: video completo con audio silencioso | Falla, en la última parte de la carga | La causa está en la pista de video, no en el audio |
+| 31-10 | `recorte:26` | Pasa | El límite está entre 26 y 30 s |
 
-Siguiente paso: bisecar la duración con `recorte:26`.
+Siguiente paso (máximo 2 cargas no públicas al día; 31-10 ya tiene 2): bisecar con `recorte:28`.
