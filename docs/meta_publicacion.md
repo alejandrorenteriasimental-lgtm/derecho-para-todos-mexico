@@ -67,3 +67,12 @@ Las cargas se registran en `registro/diagnostico_ig.jsonl`.
 | 31-10 | `recorte:26` | Pasa | El límite está entre 26 y 30 s |
 
 Siguiente paso (máximo 2 cargas no públicas al día; 31-10 ya tiene 2): bisecar con `recorte:28`.
+
+**Análisis local de los segundos 22 a 30 (31-10).**
+- Nada anómalo: bitrate de 300 a 650 kbps (el pico de 2 Mbps está en el segundo 17, dentro de un recorte que pasa) y fotogramas clave en 25.0 y 33.3 s.
+- La escena es la tarjeta de cita del art. 23 con resaltado progresivo y subtítulos.
+- Hipótesis: duración acumulada del contenido real (entre 26 y 30 s) o algún fotograma posterior.
+
+**Próximas cargas:**
+- `recorte:28` (duración);
+- `desde:22` (del segundo 22 al final, unos 36 s): si pasa, la causa no es el contenido de ese tramo, sino la duración total.

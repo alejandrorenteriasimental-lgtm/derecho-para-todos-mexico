@@ -24,13 +24,17 @@ PERMISOS = {"pages_manage_posts", "pages_read_engagement", "pages_show_list", "i
 
 def variante_ig(reel, variante):
     """Derivado del Reel aprobado, SOLO para diagnóstico no público (nunca se publica):
-    «recorte:N» = primeros N s sin recodificar el video; «silencio» = video completo con audio silencioso."""
+    «recorte:N» = primeros N s sin recodificar el video; «desde:N» = del segundo N al final; «silencio» = video completo con audio silencioso."""
     import subprocess
     if not variante: return reel, ""
     out = Path("/tmp") / f"variante_{variante.replace(':', '_')}.mp4"
     if variante.startswith("recorte:"):
         n = variante.split(":")[1]
         cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-t", n, "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
+    elif variante.startswith("desde:"):        # del segundo N al final (recodifica para empezar en fotograma clave)
+        n = variante.split(":")[1]
+        cmd = ["ffmpeg", "-y", "-v", "error", "-ss", n, "-i", str(reel), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
     elif variante == "silencio":
         cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0", "-shortest",
                "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
