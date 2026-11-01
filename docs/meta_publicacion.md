@@ -76,3 +76,14 @@ Siguiente paso (máximo 2 cargas no públicas al día; 31-10 ya tiene 2): biseca
 **Próximas cargas:**
 - `recorte:28` (duración);
 - `desde:22` (del segundo 22 al final, unos 36 s): si pasa, la causa no es el contenido de ese tramo, sino la duración total.
+
+| 1-11 | `recorte:28` | Pasa | |
+| 1-11 | `desde:22`: del segundo 22 al final, unos 36 s, recodificado | Pasa | El contenido después del segundo 28 no es la causa; 36 s de duración pasan |
+
+**Lectura al 1-11.** Desde el 30-10, todo lo que pasa dura 36 s o menos; lo que falla es el video completo (unos 58 s). El fallo del recorte de 30 s fue del 28-10, el mismo día de muchas cargas seguidas y del límite anti-spam, así que no es concluyente.
+
+**Hipótesis vigente.** Límite de duración (entre 36 y 58 s) o de tamaño (falló con unos 3.6 MB y pasó con unos 2.2 MB) para esta cuenta o app.
+
+**Siguiente paso:**
+- `recorte:45`;
+- otro Reel aprobado completo y más corto (si existe uno de 40 a 45 s).
