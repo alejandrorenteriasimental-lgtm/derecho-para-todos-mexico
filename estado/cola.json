@@ -3548,6 +3548,40 @@
         "preparada": "2026-10-31T21:58:38+00:00",
         "canal": "chat"
       }
+    },
+    "R20261211-T105": {
+      "id": "R20261211-T105",
+      "formato": "reel",
+      "huella": "dfe5d48a24d6615e3c024174dd74bccbf5275f563d991426edab39763b29d0a4",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-01T10:09:37+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-01T10:15:24+00:00",
+          "motivo": "60.7"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-01T10:15:28+00:00",
+          "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "5c1899b3616d2e4a",
+        "huella_guion": "16bae253d575232ba7453d8fbfee5aa9fa4da38360b9d17d9ab75f76a00d17db",
+        "huella_archivo": "98a668c4d8da3f46cc9a5ddaa33825ef612b954cbdf5ad6adb4c38fdc7e4cb65",
+        "preparada": "2026-11-01T10:15:28+00:00",
+        "canal": "chat"
+      }
     }
   }
 }

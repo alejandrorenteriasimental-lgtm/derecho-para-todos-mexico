@@ -1,0 +1,288 @@
+{
+  "id": "R20261211-T105",
+  "formato": "reel",
+  "titulo": "¿Cuándo te deben pagar las utilidades?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T105",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "122",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual",
+      "cita": "Ley Federal del Trabajo, artículo 122",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-01"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "122",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "el reparto adicional se hará dentro de los sesenta días siguientes a la fecha en que se notifique la resolución",
+      "cita": "Ley Federal del Trabajo, artículo 122",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-01"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "122",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Sólo en el caso de que ésta fuera impugnada por el patrón, se suspenderá el pago del reparto adicional hasta que la resolución quede firme",
+      "cita": "Ley Federal del Trabajo, artículo 122",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-01"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "122",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El importe de las utilidades no reclamadas en el año en que sean exigibles, se agregará a la utilidad repartible del año siguiente.",
+      "cita": "Ley Federal del Trabajo, artículo 122",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-01"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes exactamente cuándo debe llegar el pago de tus utilidades a tu cuenta?",
+      "titulo": [
+        "¿CUÁNDO LLEGAN?",
+        "TUS UTILIDADES"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "La respuesta es que deben pagarte dentro de los sesenta días posteriores a la fecha en que deba pagarse el impuesto anual, incluso si hay una objeción en trámite.",
+      "titulo": [
+        "PLAZO DE",
+        "60 DÍAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Ley Federal del Trabajo, en su artículo 122, es muy clara al indicar que: \"El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual\".",
+      "etiqueta": "Ley Federal del Trabajo, artículo 122",
+      "cita": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El pago debe realizarse en un plazo de sesenta días posteriores a la fecha límite del impuesto anual.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Sobre los tiempos de pago, la ley distingue entre el reparto ordinario y el adicional:",
+      "items": [
+        "60 días tras impuesto anual",
+        "60 días tras ajuste de SHCP"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si el patrón decide impugnar el aumento de utilidad determinado por la autoridad, el pago adicional se detiene temporalmente.",
+      "encabezado": "Suspensión por impugnación",
+      "detalle": "Hasta que la resolución quede firme",
+      "fuente_corta": "Ley Federal del Trabajo, art. 122",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Existe un plazo específico para el pago extra si Hacienda aumenta la utilidad.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, el pago es sesenta días después del impuesto anual. Si alguien no las reclama, ese dinero se suma al reparto del próximo año.",
+      "titulo": [
+        "REPARTO",
+        "PUNTUAL"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El pago adicional se suspende si el patrón impugna la resolución de la autoridad.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "interpretacion",
+          "texto": "Si una persona no reclama sus utilidades en el periodo que le corresponde, ese dinero no se pierde para el grupo de trabajadores.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuándo te deben pagar las utilidades?",
+    "concepto_central": "reparto de utilidades",
+    "respuesta_corta": "Dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, incluso si existe una objeción de los trabajadores en trámite.",
+    "reglas": [
+      {
+        "conclusion": "El pago debe realizarse en un plazo de sesenta días posteriores a la fecha límite del impuesto anual.",
+        "fuente": "F1",
+        "cita_literal": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual",
+        "condiciones": [
+          "Que haya transcurrido la fecha en que deba pagarse el impuesto anual"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "122"
+        }
+      },
+      {
+        "conclusion": "Si la autoridad fiscal aumenta la utilidad gravable, existe un plazo específico para ese pago extra.",
+        "fuente": "F1",
+        "cita_literal": "el reparto adicional se hará dentro de los sesenta días siguientes a la fecha en que se notifique la resolución",
+        "condiciones": [
+          "Que la Secretaría de Hacienda y Crédito Público aumente el monto de la utilidad gravable",
+          "Que la resolución no sea impugnada por el patrón"
+        ],
+        "excepciones": [
+          "Si el patrón impugna la resolución, el pago se suspende hasta que esta quede firme."
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "122"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El pago debe efectuarse dentro de los sesenta días posteriores a la fecha de pago del impuesto anual.",
+        "fuente": "F1",
+        "cita_literal": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación de pago persiste aun cuando los trabajadores hayan presentado una objeción que esté en trámite.",
+        "fuente": "F1",
+        "cita_literal": "deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, aun cuando esté en trámite objeción de los trabajadores"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Si una persona no reclama sus utilidades en el periodo que le corresponde, ese dinero no se pierde para el grupo de trabajadores.",
+        "condicion": "Que las utilidades no hayan sido reclamadas en el año en que eran exigibles.",
+        "base": "El importe de las utilidades no reclamadas en el año en que sean exigibles, se agregará a la utilidad repartible del año siguiente."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "reparto de utilidades",
+        "b": "reparto adicional",
+        "difference": "El primero se basa en la declaración anual ordinaria, mientras que el segundo surge cuando la autoridad fiscal detecta y notifica un aumento en la utilidad gravable."
+      }
+    ],
+    "limites": "El texto no especifica las fechas exactas del calendario (meses) para el pago, ya que estas dependen de los plazos fiscales del impuesto anual. Tampoco establece el monto o porcentaje que corresponde a cada trabajador."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-01T10:02:24+00:00",
+    "solicitud": "2026-12-11_reel_T105-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuándo te deben pagar las utilidades?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Cuándo te deben pagar las utilidades?\n\nDentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, incluso si existe una objeción de los trabajadores en trámite.\n\nFuente: Ley Federal del Trabajo, artículo 122.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El pago debe realizarse en un plazo de sesenta días posteriores a la fecha límite del impuesto anual.",
+              "sostenida": "si",
+              "motivo": "El artículo 122 de la LFT establece explícitamente este plazo."
+            },
+            {
+              "conclusion": "Existe un plazo específico para el pago extra si Hacienda aumenta la utilidad.",
+              "sostenida": "si",
+              "motivo": "El artículo 122 de la LFT prevé el supuesto de aumento de utilidad gravable por la SHCP y fija el plazo de 60 días para el pago adicional."
+            },
+            {
+              "conclusion": "El pago adicional se suspende si el patrón impugna la resolución de la autoridad.",
+              "sostenida": "si",
+              "motivo": "El artículo 122 de la LFT establece la suspensión del pago adicional en caso de impugnación patronal, condicionada a garantizar el interés de los trabajadores."
+            },
+            {
+              "conclusion": "Si una persona no reclama sus utilidades en el periodo que le corresponde, ese dinero no se pierde para el grupo de trabajadores.",
+              "sostenida": "si",
+              "motivo": "El artículo 122 de la LFT indica que el importe no reclamado se agrega a la utilidad repartible del año siguiente."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

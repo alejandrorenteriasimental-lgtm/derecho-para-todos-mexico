@@ -1,0 +1,146 @@
+{
+ "solicitud": "2026-12-13_imagen_T107-lote-4.json",
+ "fecha": "2026-11-01T10:09:37+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que circula por estafetas está protegida contra registros y su violación es sancionada.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 16 establece explícitamente que la correspondencia bajo cubierta en estafe",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La excepción de la revisión de correspondencia o papeles mediante un mandamiento escrito de autoridad competente (cateo), que es la forma legal en que la autoridad puede abrir correspondencia."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La correspondencia que se envía a través de servicios postales no puede ser revisada ni abierta.",
+      "sostenida": "parcial",
+      "motivo": "El texto dice que la correspondencia en estafetas estará 'libre de todo registro', pero el primer párrafo del artículo 16 establece que nadie puede ser molestado en sus 'papeles' sino mediante mandamiento escrito de autoridad competente. Por lo tanto, la correspondencia sí puede ser abierta si existe un cateo judicial debidamente fundado y motivado."
+     },
+     {
+      "conclusion": "Las comunicaciones privadas son protegidas y solo pueden ser intervenidas con autorización judicial.",
+      "sostenida": "parcial",
+      "motivo": "Aunque es correcto que requiere autorización, la conclusión omite los límites y prohibiciones expresas del texto: la autoridad judicial federal no puede otorgar estas autorizaciones en materias electoral, fiscal, mercantil, civil, laboral o administrativa, ni en las comunicaciones del detenido con su defensor."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Título y sección de 'Realidad'",
+      "problema": "La respuesta es demasiado absoluta ('No') para una pregunta general. El título pregunta si 'pueden' abrir la correspondencia, y la respuesta ignora que la autoridad judicial sí puede hacerlo mediante un mandamiento escrito (cateo) sobre los 'papeles' de una persona.",
+      "correccion": "El título y la respuesta deberían indicar que 'Depende'. Se debe aclarar que, si bien la correspondencia en estafetas debe estar libre de registro, la autoridad judicial puede ordenar la revisión de papeles/correspondencia mediante un cateo debidamente fundado y motivado."
+     },
+     {
+      "donde": "Cuerpo del copy",
+      "problema": "Presenta la intervención de comunicaciones privadas como una regla general de autorización, omitiendo las materias donde está prohibida la intervención.",
+      "correccion": "Debe mencionarse que la autorización judicial tiene límites temáticos (no aplica en materia electoral, fiscal, mercantil, civil, laboral o administrativa) y de sujetos (comunicaciones del detenido con su defensor)."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La violación de la correspondencia será sancionada conforme a lo que establezca la ley penal.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Cualquier autoridad puede revisar mis paquetes o cartas si sospecha de algo. \n Depende: por regla general está libre de registro, pero un juez puede autorizar su revisión bajo requisitos legales."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La violación de la correspondencia será sancionada conforme a lo que establezca la ley penal.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La excepción constitucional que permite el uso de comunicaciones privadas cuando son aportadas voluntariamente por alguno de los participantes."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La correspondencia que se envía por servicios de estafeta no debe ser registrada y su apertura ilegal es castigada.",
+      "sostenida": "si",
+      "motivo": "El texto constitucional establece explícitamente que dicha correspondencia estará libre de registro y su violación será penada."
+     },
+     {
+      "conclusion": "La autoridad puede molestar a una persona en sus papeles únicamente si existe un mandamiento escrito que justifique legalmente el procedimiento.",
+      "sostenida": "si",
+      "motivo": "El primer párrafo del artículo 16 condiciona la molestia en papeles a la existencia de un mandamiento escrito de autoridad competente que funde y motive."
+     },
+     {
+      "conclusion": "Solo un juez federal puede autorizar que se intervengan comunicaciones privadas, siempre que se solicite y justifique debidamente.",
+      "sostenida": "parcial",
+      "motivo": "La pieza omite la excepción constitucional donde no se requiere autorización judicial si la comunicación es aportada voluntariamente por uno de los participantes."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Además, solo un juez federal puede autorizar la intervención de comunicaciones privadas bajo condiciones muy estrictas.",
+      "problema": "La afirmación es absoluta y omite la excepción prevista en el artículo 16, que permite el uso de comunicaciones privadas cuando son aportadas voluntariamente por alguno de los particulares que participan en ellas.",
+      "correccion": "Añadir que la intervención requiere autorización judicial, salvo cuando la comunicación es aportada voluntariamente por alguno de los participantes."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La correspondencia que circula por estafetas está protegida contra registros y su violación es sancionada.",
+      "sostenida": "si",
+      "motivo": "El artículo 16 establece explícitamente que la correspondencia bajo cubierta en estafetas está libre de registro."
+     },
+     {
+      "conclusion": "La autoridad puede revisar papeles solo con mandamiento escrito que funde y motive la causa legal.",
+      "sostenida": "si",
+      "motivo": "Es la regla general de protección contra molestias en papeles y posesiones contenida en el primer párrafo del artículo 16."
+     },
+     {
+      "conclusion": "La intervención de comunicaciones privadas requiere autorización de un juez federal y el cumplimiento de requisitos específicos.",
+      "sostenida": "si",
+      "motivo": "El texto señala que exclusivamente la autoridad judicial federal puede autorizar la intervención, fundando y motivando la solicitud."
+     },
+     {
+      "conclusion": "Existen materias y casos donde la autoridad judicial no puede autorizar la intervención de comunicaciones.",
+      "sostenida": "parcial",
+      "motivo": "La pieza mezcla la excepción de 'aportación voluntaria' con la prohibición específica de intervenir comunicaciones entre el detenido y su defensor, lo cual puede inducir a error sobre el alcance de la protección al defensor."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "No procede en materias electoral, fiscal, mercantil, civil, laboral o administrativa, ni para las comunicaciones del detenido con su defensor, salvo cuando las comunicaciones sean aportadas de forma voluntaria por alguno de sus participantes.",
+      "problema": "La redacción sugiere que la excepción de 'aportación voluntaria' aplica también a las comunicaciones entre el detenido y su defensor, lo cual no se desprende del texto constitucional. El artículo 16 establece la prohibición de intervención para el defensor de forma tajante y separada de la regla general de comunicaciones privadas.",
+      "correccion": "Separar la regla de la excepción. Indicar que la intervención de comunicaciones privadas es posible por vía judicial, salvo en las materias y casos específicos (incluyendo la defensa) que la Constitución prohíbe expresamente, sin vincular la excepción de aportación voluntaria a la prohibición del defensor."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "tema_id": "T105",
+ "pregunta": "¿Cuándo te deben pagar las utilidades?",
+ "fecha": "2026-11-01T10:00:11+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuándo te deben pagar las utilidades?",
+  "concepto_central": "reparto de utilidades",
+  "respuesta_corta": "Dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, incluso si existe una objeción de los trabajadores en trámite.",
+  "reglas": [
+   {
+    "conclusion": "El pago debe realizarse en un plazo de sesenta días posteriores a la fecha límite del impuesto anual.",
+    "fuente": "F1",
+    "cita_literal": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual",
+    "condiciones": [
+     "Que haya transcurrido la fecha en que deba pagarse el impuesto anual"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Si la autoridad fiscal aumenta la utilidad gravable, existe un plazo específico para ese pago extra.",
+    "fuente": "F1",
+    "cita_literal": "el reparto adicional se hará dentro de los sesenta días siguientes a la fecha en que se notifique la resolución",
+    "condiciones": [
+     "Que la Secretaría de Hacienda y Crédito Público aumente el monto de la utilidad gravable",
+     "Que la resolución no sea impugnada por el patrón"
+    ],
+    "excepciones": [
+     "Si el patrón impugna la resolución, el pago se suspende hasta que esta quede firme."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El pago debe efectuarse dentro de los sesenta días posteriores a la fecha de pago del impuesto anual.",
+    "fuente": "F1",
+    "cita_literal": "El reparto de utilidades entre los trabajadores deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación de pago persiste aun cuando los trabajadores hayan presentado una objeción que esté en trámite.",
+    "fuente": "F1",
+    "cita_literal": "deberá efectuarse dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, aun cuando esté en trámite objeción de los trabajadores"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si una persona no reclama sus utilidades en el periodo que le corresponde, ese dinero no se pierde para el grupo de trabajadores.",
+    "condicion": "Que las utilidades no hayan sido reclamadas en el año en que eran exigibles.",
+    "base": "El importe de las utilidades no reclamadas en el año en que sean exigibles, se agregará a la utilidad repartible del año siguiente."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "reparto de utilidades",
+    "b": "reparto adicional",
+    "difference": "El primero se basa en la declaración anual ordinaria, mientras que el segundo surge cuando la autoridad fiscal detecta y notifica un aumento en la utilidad gravable."
+   }
+  ],
+  "limites": "El texto no especifica las fechas exactas del calendario (meses) para el pago, ya que estas dependen de los plazos fiscales del impuesto anual. Tampoco establece el monto o porcentaje que corresponde a cada trabajador.",
+  "fuentes_irrelevantes": []
+ }
+}
