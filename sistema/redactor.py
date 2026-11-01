@@ -361,6 +361,32 @@ def _mapa(borrador, fuentes):
     return rz
 
 
+def _alinear_fuente_cita(escenas, fichas):
+    """La línea «Fuente:» al pie de una escena de cita sale de su primera afirmación. Si el modelo asignó a la cita una
+    afirmación de otro artículo, el pie contradice la etiqueta (R20261208-T102, 01-11: cita del art. 60 con pie «art. 61»).
+    Se pone primero una afirmación del mismo artículo de la escena; si no hay, se intercambia con una de otra escena."""
+    def art(a):
+        fu = fichas.get(a["fuente"]) or {}
+        return (fu.get("documento"), str(fu.get("articulo")))
+    for e in escenas:
+        src = e.pop("_src", None)
+        if not src or not e["afirmaciones"] or art(e["afirmaciones"][0]) == src:
+            continue
+        propia = next((a for a in e["afirmaciones"] if art(a) == src), None)
+        if propia:
+            e["afirmaciones"].remove(propia); e["afirmaciones"].insert(0, propia); continue
+        for otra in escenas:
+            if otra is e or otra.get("tipo") == "cita":
+                continue
+            ajena = next((a for a in otra["afirmaciones"] if art(a) == src), None)
+            if ajena:
+                mia = e["afirmaciones"][0]
+                i, j = otra["afirmaciones"].index(ajena), 0
+                mia.pop("comparar_literal", None); ajena["comparar_literal"] = True
+                otra["afirmaciones"][i], e["afirmaciones"][j] = mia, ajena
+                break
+
+
 def construir_reel(sol, borrador, fuentes):
     afs, quitadas = _anclar(borrador.get("afirmaciones", []), fuentes)
     if not afs:
@@ -379,10 +405,12 @@ def construir_reel(sol, borrador, fuentes):
             e.setdefault("etiqueta", f'{f["documento"].split(",")[0]}, artículo {f["articulo"]}')
             if not verificador.contiene(e.get("texto", ""), cita):
                 e["texto"] = (e.get("texto", "").rstrip(". ") + ": " + cita).strip(": ")
+            e["_src"] = (f["documento"], str(f["articulo"]))
         e["afirmaciones"] = [{"id": f"A{j + 1}", "tipo": a.get("tipo", "interpretacion"), "texto": a.get("texto", ""), "fuente": mapa[j],
                               **({"nota": a["duda"]} if a.get("duda") else {}), **({"comparar_literal": True} if e.get("tipo") == "cita" else {})}
                              for j, a in enumerate(afs) if a.get("escena") == i]
         escenas.append(e)
+    _alinear_fuente_cita(escenas, fichas)
     asignadas = {a["fuente"] for e in escenas for a in e["afirmaciones"]}
     huérfanas = [j for j in range(len(afs)) if mapa[j] not in asignadas]
     if huérfanas and escenas:                                    # afirmaciones sin escena válida → a la escena más cercana con texto

@@ -64,7 +64,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "La respuesta es que deben pagarte dentro de los sesenta días posteriores a la fecha en que deba pagarse el impuesto anual, incluso si hay una objeción en trámite.",
+      "texto": "La respuesta es que deben pagarte dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual, aun cuando esté en trámite una objeción de los trabajadores.",
       "titulo": [
         "PLAZO DE",
         "60 DÍAS"
@@ -88,26 +88,33 @@
     },
     {
       "tipo": "lista",
-      "texto": "Sobre los tiempos de pago, la ley distingue entre el reparto ordinario y el adicional:",
+      "texto": "La ley fija dos plazos. El reparto se hace dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual. Y si Hacienda aumenta la utilidad gravable, sin objeción de los trabajadores o ya resuelta, el reparto adicional se hace dentro de los sesenta días siguientes a que se notifique la resolución.",
       "items": [
-        "60 días tras impuesto anual",
-        "60 días tras ajuste de SHCP"
+        "60 días tras el impuesto anual",
+        "Reparto adicional: 60 días tras la resolución de Hacienda"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "Si el patrón decide impugnar el aumento de utilidad determinado por la autoridad, el pago adicional se detiene temporalmente.",
-      "encabezado": "Suspensión por impugnación",
-      "detalle": "Hasta que la resolución quede firme",
-      "fuente_corta": "Ley Federal del Trabajo, art. 122",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
           "texto": "Existe un plazo específico para el pago extra si Hacienda aumenta la utilidad.",
           "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Solo si el patrón impugna esa resolución, se suspende el pago del reparto adicional hasta que la resolución quede firme.",
+      "encabezado": "Suspensión por impugnación",
+      "detalle": "Hasta que la resolución quede firme",
+      "fuente_corta": "Ley Federal del Trabajo, art. 122",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El pago adicional se suspende si el patrón impugna la resolución de la autoridad.",
+          "fuente": "F3"
         }
       ]
     },
@@ -119,12 +126,6 @@
         "PUNTUAL"
       ],
       "afirmaciones": [
-        {
-          "id": "A3",
-          "tipo": "hecho_normativo",
-          "texto": "El pago adicional se suspende si el patrón impugna la resolución de la autoridad.",
-          "fuente": "F3"
-        },
         {
           "id": "A4",
           "tipo": "interpretacion",
@@ -284,5 +285,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-01",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "la narración de la lista dice los dos plazos que muestra la pantalla, con la condición literal del reparto adicional (sin objeción de los trabajadores o ya resuelta); «ajuste de SHCP» → «resolución de Hacienda»; «una objeción» → «una objeción de los trabajadores» (art. 122); la excepción precisa que solo se suspende el reparto adicional; cada afirmación queda en la escena que la dice"
+    }
+  ]
 }

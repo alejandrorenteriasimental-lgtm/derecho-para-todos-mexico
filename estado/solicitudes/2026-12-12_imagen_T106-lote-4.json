@@ -2,28 +2,27 @@
   "fecha": "2026-12-12",
   "formato": "imagen",
   "tema_id": "T106",
-  "titulo": "¿Te pueden negar un empleo por tu edad?",
-  "gancho": "¿Te pueden negar un empleo por tu edad?",
-  "pregunta": "¿Te pueden negar un empleo por tu edad?",
+  "titulo": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+  "gancho": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+  "pregunta": "¿Una tienda puede retenerte con el pretexto de revisarte?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 133",
+  "fuentes_sugeridas": "LFPC art. 10",
   "riesgo_exactitud": "",
   "lote": "lote-4",
-  "motivo_seleccion": "Art. 133 fr. I LFT: prohibido negarse a aceptar trabajadores por razón de edad, entre otras.",
+  "motivo_seleccion": "Sustituye a «¿Te pueden negar un empleo por tu edad?» (LFT 133 fr. I) tras dos descartes jurídicos (31-10 y 01-11): el análisis exigió sanciones, denuncia y prescripción que el artículo no trae. Art. 10 LFPC (texto vigente; última reforma de la ley DOF 12-12-2025): «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación»; si hay delito flagrante, solo pueden poner sin demora al presunto infractor a disposición de la autoridad competente. Respuesta literal con su excepción; tema de consumo, no repite temas de las últimas 3 semanas.",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "mito_realidad",
-  "angulo": "¿Te pueden negar un empleo por tu edad?",
-  "estado": "DESCARTADA",
+  "angulo": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261212-T106",
   "archivo": "2026-12-12_imagen_T106-lote-4.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no detallan las sanciones económicas para el empleador, el proceso de denuncia ante la autoridad laboral ni los plazos de prescripción para estos casos.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "c55687a2dc2de64b",
   "historial_reaperturas": [
     {
       "fecha": "2026-10-31",
@@ -31,6 +30,13 @@
       "motivo": "primer descarte: el análisis exigió sanciones, denuncia y prescripción que la pregunta no pide; LFT 133 fr. I responde literalmente («edad»). Se precisa la regla de suficiencia en el análisis (prueba de regresión) y se reintenta; si se descarta otra vez, se sustituye la pregunta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan las sanciones económicas para el empleador, el proceso de denuncia ante autoridades laborales ni los plazos de prescripción para reclamar este derecho."
+    },
+    {
+      "fecha": "2026-11-01",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 133 fr. I): ahora LFPC art. 10, retención o revisión en tiendas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no detallan las sanciones económicas para el empleador, el proceso de denuncia ante la autoridad laboral ni los plazos de prescripción para estos casos."
     }
   ]
 }

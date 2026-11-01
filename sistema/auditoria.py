@@ -156,6 +156,15 @@ def editorial(guion: dict):
                 and x not in oficiales]   # cargos e instituciones que aparecen en el texto legal citado no son personas
     regla("Sin personas reales identificables", not personas, ", ".join(personas) or "ninguna")
     if personas: carril = "C"
+    # el pie «Fuente:» de una escena de cita (primera afirmación) debe ser el mismo artículo de la etiqueta (R20261208-T102)
+    fx = guion.get("fuentes", {}) if isinstance(guion.get("fuentes"), dict) else {}
+    cruzadas = []
+    for e in guion.get("escenas", []):
+        if e.get("tipo") == "cita" and e.get("afirmaciones") and e.get("etiqueta"):
+            fu = fx.get(e["afirmaciones"][0].get("fuente")) or {}
+            if fu.get("articulo") and not re.search(r"\bart(?:iculo|\.)? " + re.escape(_norm(str(fu["articulo"]))) + r"\b", _norm(e["etiqueta"]).replace("art ", "articulo ")):
+                cruzadas.append(f'{e["etiqueta"]} ≠ pie {fu.get("cita", "")}')
+    regla("La fuente al pie de cada cita es el artículo citado", not cruzadas, "; ".join(cruzadas) or "coinciden")
     if guion.get("riesgo") == "alto": carril = "C"
     return {"reglas": hallazgos, "carril": carril}
 

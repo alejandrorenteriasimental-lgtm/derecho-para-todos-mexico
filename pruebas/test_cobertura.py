@@ -221,3 +221,32 @@ def test_expresion_de_la_ley_citada_no_es_vaguedad():
     assert not R.vaguedades(frase, [cpeum4])
     assert R.vaguedades(frase, [lft76])
     assert R.vaguedades("Acude ante la autoridad competente y existe un recurso legal específico.", [cpeum4])
+
+
+# ---------- pie de fuente de la cita (R20261208-T102, revisión delegada 01-11-2026) ----------
+def test_pie_de_la_cita_es_el_articulo_citado():
+    """El modelo asignó a la escena de cita (art. 60) la afirmación del art. 61: el pie decía «artículo 61» bajo una
+    etiqueta «artículo 60». construir_reel debe alinear el pie con la cita y la auditoría editorial debe detectarlo."""
+    a60 = "Jornada diurna es la comprendida entre las seis y las veinte horas. Jornada nocturna es la comprendida entre las veinte y las seis horas."
+    a61 = "La duración de la jornada diaria será de ocho horas la diurna, siete la nocturna y siete horas y media la mixta."
+    fuentes = {"F1": {"sigla": "LFT", "documento": LFT, "articulo": "61", "url": "u", "ambito": "federal", "texto_oficial": a61},
+               "F2": {"sigla": "LFT", "documento": LFT, "articulo": "60", "url": "u", "ambito": "federal", "texto_oficial": a60}}
+    borrador = {"titulo": "¿Cuál es la jornada máxima?", "escenas": [
+        {"tipo": "gancho", "texto": "¿Cuánto debe durar tu jornada?"},
+        {"tipo": "cita", "texto": "El artículo 60 dice:", "fuente": "F2", "cita_literal": a60},
+        {"tipo": "lista", "texto": "Diurna, ocho horas; nocturna, siete; mixta, siete y media.", "items": ["Diurna: ocho horas"]}],
+        "afirmaciones": [
+            {"texto": "La duración de la jornada diaria depende de si es diurna, nocturna o mixta.", "fuente": "F1", "cita_literal": a61, "escena": 1, "tipo": "hecho_normativo"},
+            {"texto": "Se definen los horarios de las jornadas diurna y nocturna.", "fuente": "F2", "cita_literal": a60, "escena": 2, "tipo": "hecho_normativo"}]}
+    g = redactor.construir_reel({"pieza_id": "X", "tema_id": "T102", "formato": "reel", "carril": "A", "titulo": "¿Jornada?"}, borrador, fuentes)
+    cita = next(e for e in g["escenas"] if e["tipo"] == "cita")
+    assert g["fuentes"][cita["afirmaciones"][0]["fuente"]]["articulo"] == "60"
+    assert cita["afirmaciones"][0].get("comparar_literal")
+    lista = next(e for e in g["escenas"] if e["tipo"] == "lista")
+    assert g["fuentes"][lista["afirmaciones"][0]["fuente"]]["articulo"] == "61" and not lista["afirmaciones"][0].get("comparar_literal")
+    assert all("_src" not in e for e in g["escenas"])
+    pie = lambda gg: next(r for r in auditoria.editorial(gg)["reglas"] if "pie" in r["control"])["resultado"]
+    assert pie(g) == "APROBADO"
+    # el guion tal como salió el 31-10 (pie cruzado) falla la regla
+    cita["afirmaciones"][0], lista["afirmaciones"][0] = lista["afirmaciones"][0], cita["afirmaciones"][0]
+    assert pie(g) == "FALLA"

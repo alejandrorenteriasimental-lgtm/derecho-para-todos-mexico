@@ -15,13 +15,21 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Pueden abrir tu correspondencia?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261213-T107",
   "archivo": "2026-12-13_imagen_T107-lote-4.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que circula por estafetas está protegida contra registros y su violación es sancionada.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 16 establece explícitamente que la correspondencia bajo cubierta en estafe",
   "ultima_categoria": "juridico",
-  "huella_entrada": "f238bf30939104a3"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-01",
+      "por": "Claude",
+      "motivo": "primer descarte jurídico (el del 31-10 fue técnico, 503 de Gemini): el auditor pidió las excepciones del art. 16 (mandamiento escrito, intervención con autorización judicial federal y sus límites); causa del tema, no del sistema. Se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que circula por estafetas está protegida contra registros y su violación es sancionada.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 16 establece explícitamente que la correspondencia bajo cubierta en estafe"
+    }
+  ]
 }
