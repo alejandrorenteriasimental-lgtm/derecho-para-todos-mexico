@@ -3689,7 +3689,7 @@
       "id": "R20261211-T105",
       "formato": "reel",
       "huella": "dfe5d48a24d6615e3c024174dd74bccbf5275f563d991426edab39763b29d0a4",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-01T10:09:37+00:00",
@@ -3729,6 +3729,12 @@
           "a": "APROBADO",
           "ts": "2026-11-01T12:21:34+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-01T12:12:50+00:00 versión 7cebf501576b47c5 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-01T21:49:20+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
