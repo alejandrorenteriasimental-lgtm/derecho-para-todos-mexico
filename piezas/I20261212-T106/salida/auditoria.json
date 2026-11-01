@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1163 KB"
+      "detalle": "1162 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=980"
+      "detalle": "fin del contenido en y=971"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "56 palabras sin cabecera ni pie"
+      "detalle": "59 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "96% de 49 palabras reconocidas"
+      "detalle": "96% de 48 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Una tienda puede retenerte con el pretexto de revisarte?",
     "plantilla": "mito_realidad",
     "archivo": "I20261212-T106.png",
-    "sha256": "4335f705609d96fd0161d26447981edb0634123aa4c304be7930c83ddbac6e86",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000001101111110001111111111111000000000000011100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "aa046efe2e153f0fcaab3b378eaeb61cc98d3e8ea8b55074ad3d01cd6586d506",
+    "sha256": "384e117e264f34a951d920c3cad921833203b508f7c8d8906da40b8d2bed8659",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100011110011111110001111111111111000000000000011100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "6dac17cfae40558158d963e31aaec5e6a1e9c174afa51fc024ce11edd70d8b3e",
     "texto_alternativo": "Infografía de mito y realidad sobre si una tienda puede retener a un consumidor para revisarlo, citando la Ley Federal de Protección al Consumidor.",
-    "copy": "La respuesta es no. La ley prohíbe a cualquier proveedor de bienes o servicios realizar acciones que atenten contra la libertad, seguridad e integridad personales de los consumidores con el pretexto de un registro o averiguación. La única excepción ocurre cuando una persona es sorprendida en la comisión flagrante de un delito. En ese supuesto, los proveedores, sus agentes o empleados deben limitarse, bajo su responsabilidad, a ponerla sin demora a disposición de la autoridad competente.\n\nEl incumplimiento de esta norma se sanciona conforme a la Ley Federal de Protección al Consumidor. Asimismo, se contempla la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de que no se compruebe el delito imputado.\n\nEsta regulación se encuentra en el artículo 10 de la Ley Federal de Protección al Consumidor.\n\n¿Te sirvió esta información? Guarda esta publicación para tenerla a la mano y compártela con quien le pueda ser útil.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "La respuesta es no. El artículo 10 de la Ley Federal de Protección al Consumidor dice: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación».\n\nSi alguien es sorprendido cometiendo un delito en flagrancia, los proveedores, sus agentes o empleados «se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente».\n\nSi el proveedor viola esta regla, se le sanciona conforme a esa ley, además de la reparación del daño moral y la indemnización por daños y perjuicios en caso de no comprobarse el delito imputado.\n\nGuarda esta información para tus compras de fin de año.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-01T12:11:29+00:00",
+    "fecha": "2026-11-01T12:22:02+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

@@ -1,93 +1,36 @@
 {
  "tema_id": "T107",
  "pregunta": "¿Pueden abrir tu correspondencia?",
- "fecha": "2026-11-01T10:09:37+00:00",
- "objetado": true,
+ "fecha": "2026-11-01T12:17:37+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Pueden abrir tu correspondencia?",
   "concepto_central": "correspondencia",
-  "respuesta_corta": "Depende: por regla general está libre de registro, pero la autoridad judicial puede autorizar su revisión o intervención bajo requisitos legales específicos.",
+  "respuesta_corta": "No. La correspondencia que circule bajo cubierta por las estafetas está libre de todo registro y su violación será penada por la ley.",
   "reglas": [
    {
-    "conclusion": "La correspondencia que se envía por servicios de estafeta no debe ser registrada y su apertura ilegal es castigada.",
+    "conclusion": "La correspondencia que transita bajo cubierta por las estafetas debe estar libre de cualquier registro y su violación es sancionada por la ley.",
     "fuente": "F1",
     "cita_literal": "La correspondencia que bajo cubierta circule por las estafetas estará libre de todo registro, y su violación será penada por la ley.",
     "condiciones": [
-     "Que circule bajo cubierta por las estafetas"
+     "que la correspondencia circule bajo cubierta por las estafetas"
     ],
     "excepciones": []
-   },
-   {
-    "conclusion": "La autoridad puede molestar a una persona en sus papeles únicamente si existe una orden escrita que justifique legalmente el procedimiento.",
-    "fuente": "F1",
-    "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente",
-    "condiciones": [
-     "Existencia de un mandamiento escrito",
-     "Emitido por autoridad competente",
-     "Que funde y motive la causa legal del procedimiento"
-    ],
-    "excepciones": []
-   },
-   {
-    "conclusion": "Solo un juez federal puede autorizar que se intervengan comunicaciones privadas, siempre que se solicite y justifique debidamente.",
-    "fuente": "F1",
-    "cita_literal": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la",
-    "condiciones": [
-     "Petición de autoridad federal facultada o titular del Ministerio Público local",
-     "Fundar y motivar las causas legales",
-     "Expresar tipo de intervención, sujetos y duración"
-    ],
-    "excepciones": [
-     "Materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo",
-     "Comunicaciones del detenido con su defensor"
-    ],
-    "cita_literal_original": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público... podrá autorizar la intervención"
    }
   ],
   "elementos": [
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "La violación de la correspondencia será sancionada conforme a lo que establezca la ley penal.",
+    "respuesta": "La violación a la inviolabilidad de la correspondencia que circula bajo cubierta por las estafetas será penada por la ley.",
     "fuente": "F1",
     "cita_literal": "La correspondencia que bajo cubierta circule por las estafetas estará libre de todo registro, y su violación será penada por la ley."
-   },
-   {
-    "elemento": "vía",
-    "estado": "cubierto",
-    "respuesta": "Se requiere un mandamiento escrito o una autorización judicial federal que funde y motive la causa legal.",
-    "fuente": "F1",
-    "cita_literal": "autoridad competente, que funde y motive la causa legal del procedimiento."
-   },
-   {
-    "elemento": "autoridad",
-    "estado": "cubierto",
-    "respuesta": "Únicamente la autoridad judicial federal tiene la facultad de autorizar intervenciones a comunicaciones privadas.",
-    "fuente": "F1",
-    "cita_literal": "Exclusivamente la autoridad judicial federal... podrá autorizar la intervención de cualquier comunicación privada."
-   },
-   {
-    "elemento": "plazo",
-    "estado": "no_cubierto",
-    "motivo": "El texto constitucional no establece un plazo de tiempo específico para la ejecución de la apertura o registro de correspondencia."
    }
   ],
-  "interpretaciones": [
-   {
-    "afirmacion": "La protección de 'papeles' mencionada en el primer párrafo del artículo 16 incluye la correspondencia física que no se encuentra en tránsito por estafetas.",
-    "condicion": "Cuando la autoridad pretenda realizar un cateo o inspección domiciliaria.",
-    "base": "F1, párrafo primero sobre la protección de papeles y posesiones."
-   }
-  ],
-  "distinciones": [
-   {
-    "a": "correspondencia en estafetas",
-    "b": "comunicaciones privadas",
-    "diferencia": "La correspondencia en estafetas tiene una prohibición de registro específica, mientras que las comunicaciones privadas pueden ser intervenidas exclusivamente por orden de un juez federal en materias no prohibidas."
-   }
-  ],
-  "limites": "Los textos no definen qué se considera 'estafeta' ni especifican las penas exactas (años de prisión o multas) por la violación de correspondencia.",
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto constitucional no precisa qué penas o delitos específicos se aplican a quien violente la correspondencia ni el procedimiento particular para denunciarlo.",
   "fuentes_irrelevantes": []
  }
 }
