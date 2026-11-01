@@ -7,7 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       modo: { description: "lectura | no_publica", required: true, default: "lectura" }
-      variante: { description: "diagnóstico IG (no público): vacío | recorte:N | silencio", required: false, default: "" }
+      variante: { description: "diagnóstico IG (no público): vacío | recorte:N | desde:N | silencio", required: false, default: "" }
+      reel_pieza: { description: "otro Reel aprobado para el diagnóstico (p. ej. R20261129-T084); vacío = R20261123-T031", required: false, default: "" }
+      reel_asset: { description: "asset_id del respaldo de ese Reel (data/calendario_lanzamiento.json)", required: false, default: "" }
 permissions: { contents: write }
 concurrency: { group: meta-prueba, cancel-in-progress: false }
 jobs:
@@ -33,6 +35,12 @@ jobs:
           mv I20261124-T073__470bc5a586b4__I20261124-T073.png I20261124-T073.png && mv R20261123-T031__0e6d77dd09c7__R20261123-T031_final.mp4 R20261123-T031_final.mp4
           echo "470bc5a586b4a7213adefc11ad93f76fd03dd45b2c7f2176d8a8bf6028f95e14  I20261124-T073.png" | sha256sum -c
           echo "0e6d77dd09c7b9f044a32feafa753bd36e6442f288630c0b8189bc2470301204  R20261123-T031_final.mp4" | sha256sum -c && ls -la
+      - name: Otro Reel aprobado (diagnóstico)
+        if: inputs.modo == 'no_publica' && inputs.reel_pieza != ''
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: |
+          gh api -H "Accept: application/octet-stream" "repos/$GITHUB_REPOSITORY/releases/assets/${{ inputs.reel_asset }}" > "/tmp/p/${{ inputs.reel_pieza }}_final.mp4"
+          python3 -c "import json,hashlib,sys;c=json.load(open('data/calendario_lanzamiento.json'));e=[d['reel'] for d in c['dias'] if d['reel']['pieza']=='${{ inputs.reel_pieza }}'][0];h=hashlib.sha256(open('/tmp/p/${{ inputs.reel_pieza }}_final.mp4','rb').read()).hexdigest();print(h);sys.exit(h!=e['sha256'])"
       - name: ffmpeg (copia de Reels conforme a la especificación de Instagram)
         run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Prueba no pública
@@ -42,7 +50,7 @@ jobs:
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           VARIANTE_IG: ${{ inputs.variante }}
           SOLO_REEL_IG: "1"     # 29-10: solo el Reel a Instagram (FB e imagen de IG ya comprobados; límite anti-spam de Meta)
-        run: python sistema/prueba_no_publica.py /tmp/p/I20261124-T073.png /tmp/p/R20261123-T031_final.mp4
+        run: python sistema/prueba_no_publica.py /tmp/p/I20261124-T073.png "/tmp/p/${{ inputs.reel_pieza || 'R20261123-T031' }}_final.mp4"
       - name: Guardar resultado
         if: always()
         run: |
