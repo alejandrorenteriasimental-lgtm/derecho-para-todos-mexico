@@ -82,6 +82,11 @@
         "control": "Sin personas reales identificables",
         "resultado": "APROBADO",
         "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
       }
     ]
   },
@@ -93,9 +98,9 @@
     "archivo": "I20261210-T104.png",
     "sha256": "c70ac168d795b7636249b87631c41040eb3d13009cbda6adc8ba68ee8a3dbbdb",
     "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000000000111110001111111111111000000000000011100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "db739f9b6095d5a0f247e2f18b16f50f9e8eb3b74777b98a4d6020320ee354c2",
+    "huella_guion": "3c8e0164b9e9dc82515aeb88963180158db1565d2173ec048158ea9b50130b3d",
     "texto_alternativo": "Imagen de estilo mito y realidad. El mito dice que es obligatorio pagar por la primera acta. La realidad aclara que no, pues la autoridad debe expedirla gratuitamente según la Constitución.",
-    "copy": "En México, el derecho a la identidad es fundamental. Según la Constitución Política de los Estados Unidos Mexicanos, en su artículo 4, toda persona tiene derecho a ser registrada de manera inmediata a su nacimiento y el Estado debe garantizar que esto ocurra.\n\nSobre el costo, la norma es clara: «La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento». Esto significa que el primer ejemplar que recibes no debe generar ningún cobro para quien lo solicita.\n\nEs importante distinguir entre el derecho a la identidad (ser inscrito en el registro) y el derecho a la primera copia gratuita (obtener el documento físico inicial sin pago). Si bien el primer ejemplar es gratuito, si se solicita una copia en ocasiones posteriores, esta podría tener un costo.\n\nConocer tus derechos permite asegurar que el acceso a tus documentos oficiales sea respetado. Guarda esta información o compártela con quien necesite realizar este trámite.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "La respuesta es no. El artículo 4 de la Constitución dice: «Toda persona tiene derecho a la identidad y a ser registrado de manera inmediata a su nacimiento». Y agrega: «La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento».\n\nOjo: la gratuidad que fija la Constitución es para la primera copia certificada; no dice lo mismo de las copias siguientes.\n\nGuarda esta información o compártela con quien vaya a registrar a un bebé.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -106,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-10-31T22:05:02+00:00",
+    "fecha": "2026-11-01T12:11:12+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

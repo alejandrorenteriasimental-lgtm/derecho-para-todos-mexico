@@ -1,0 +1,82 @@
+{
+ "tema_id": "T107",
+ "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
+ "fecha": "2026-11-01T12:02:10+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
+  "concepto_central": "inviolabilidad del domicilio",
+  "respuesta_corta": "Depende. Para investigar delitos se requiere orden de un juez, pero la autoridad administrativa puede entrar para verificar reglamentos de sanidad y policía.",
+  "reglas": [
+   {
+    "conclusion": "Como regla general, ninguna autoridad puede afectar tu domicilio sin un documento escrito que justifique legalmente su actuación.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente, que funde y motive la causa legal",
+    "condiciones": [
+     "Debe existir un mandamiento escrito",
+     "Debe ser emitido por autoridad competente",
+     "Debe fundar y motivar la causa legal del procedimiento"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Para realizar una inspección en busca de personas u objetos relacionados con un delito (cateo), es indispensable la orden de un juez.",
+    "fuente": "F1",
+    "cita_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse",
+    "condiciones": [
+     "Solo la autoridad judicial puede expedirla",
+     "Debe ser a solicitud del Ministerio Público",
+     "Debe precisar el lugar, personas u objetos buscados"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "La policía, como autoridad administrativa, puede entrar a un domicilio sin orden judicial únicamente para verificar el cumplimiento de reglamentos.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad administrativa podrá practicar visitas domiciliarias únicamente para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía",
+    "condiciones": [
+     "Debe ser para cerciorarse del cumplimiento de reglamentos sanitarios o de policía",
+     "Debe sujetarse a las formalidades prescritas para los cateos"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La protección constitucional impide que cualquier autoridad realice actos de molestia en el domicilio sin el sustento legal correspondiente.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "La orden de cateo es exclusiva de los jueces, mientras que las visitas de inspección reglamentaria corresponden a la autoridad administrativa.",
+    "fuente": "F1",
+    "cita_literal": "toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La entrada de la policía sin orden judicial en visitas administrativas no tiene como fin la investigación de delitos, sino la vigilancia de normas de orden público.",
+    "condicion": "Siempre que se limite a cerciorarse del cumplimiento de reglamentos sanitarios y de policía.",
+    "base": "F1, párrafo décimo sexto."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Orden de cateo",
+    "b": "Visita domiciliaria",
+    "diferencia": "El cateo lo ordena un juez para investigar delitos; la visita la realiza la autoridad administrativa para revisar reglamentos de sanidad o policía."
+   },
+   {
+    "a": "Policía administrativa",
+    "b": "Fuerza Armada en guerra",
+    "diferencia": "La policía entra para revisar reglamentos; los militares pueden exigir alojamiento solo en tiempo de guerra bajo ley marcial, no para inspecciones policiales."
+   }
+  ],
+  "limites": "El texto oficial no establece si la policía puede entrar al domicilio sin orden en casos de persecución inmediata (flagrancia) o peligro inminente para la vida."
+ }
+}

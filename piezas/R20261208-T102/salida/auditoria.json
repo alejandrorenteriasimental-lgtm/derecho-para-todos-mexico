@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "55.6 s"
+      "detalle": "61.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
-      "resultado": "FALLA",
-      "detalle": "55.6 s"
+      "resultado": "APROBADO",
+      "detalle": "61.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "41 bloques"
+      "detalle": "46 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "33847843a4624c09"
+      "detalle": "886ff1e037791f51"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -107,33 +107,38 @@
         "control": "Sin personas reales identificables",
         "resultado": "APROBADO",
         "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
       }
     ]
   },
   "registro": {
     "id": "R20261208-T102",
     "titulo": "¿Cuál es la jornada máxima de trabajo?",
-    "fecha": "2026-10-31T21:58:35+00:00",
-    "sha256": "33847843a4624c0952593a6ee7ef8c2884025c11328f316cb060e629741d0606",
-    "duracion_s": 55.6,
+    "fecha": "2026-11-01T12:07:18+00:00",
+    "sha256": "886ff1e037791f513f0c85c75a357ea923639cfb653c348473740d70bfbf1a92",
+    "duracion_s": 61.8,
     "estado": "APTO",
-    "huella_guion": "e83d5c237723f32f9c4c2874db2765d365d49bc3ba4fe66ebf3296d7102135d6",
+    "huella_guion": "5bf7b45063a979c0d6005ff4c1e87dd2dba94c9592c3ae5d26d0d2d0870f14ae",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 33.2,
-      "musica": 2.7,
-      "render_video": 65.2,
-      "mezcla_audio": 2.9,
-      "auditoria_tecnica": 14.0
+      "narracion": 16.6,
+      "musica": 1.7,
+      "render_video": 43.2,
+      "mezcla_audio": 1.6,
+      "auditoria_tecnica": 10.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.97,
-      "computo_equivalente_runner_usd": 0.0118,
+      "computo_minutos": 1.23,
+      "computo_equivalente_runner_usd": 0.0074,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1667,
-    "caracteres_narrados": 831
+    "frames": 1852,
+    "caracteres_narrados": 927
   }
 }

@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1163 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=980"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "56 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "96% de 49 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261212-T106",
+    "formato": "imagen",
+    "titulo": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261212-T106.png",
+    "sha256": "4335f705609d96fd0161d26447981edb0634123aa4c304be7930c83ddbac6e86",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000001101111110001111111111111000000000000011100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "aa046efe2e153f0fcaab3b378eaeb61cc98d3e8ea8b55074ad3d01cd6586d506",
+    "texto_alternativo": "Infografía de mito y realidad sobre si una tienda puede retener a un consumidor para revisarlo, citando la Ley Federal de Protección al Consumidor.",
+    "copy": "La respuesta es no. La ley prohíbe a cualquier proveedor de bienes o servicios realizar acciones que atenten contra la libertad, seguridad e integridad personales de los consumidores con el pretexto de un registro o averiguación. La única excepción ocurre cuando una persona es sorprendida en la comisión flagrante de un delito. En ese supuesto, los proveedores, sus agentes o empleados deben limitarse, bajo su responsabilidad, a ponerla sin demora a disposición de la autoridad competente.\n\nEl incumplimiento de esta norma se sanciona conforme a la Ley Federal de Protección al Consumidor. Asimismo, se contempla la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de que no se compruebe el delito imputado.\n\nEsta regulación se encuentra en el artículo 10 de la Ley Federal de Protección al Consumidor.\n\n¿Te sirvió esta información? Guarda esta publicación para tenerla a la mano y compártela con quien le pueda ser útil.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "10",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "10",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-01T12:11:29+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

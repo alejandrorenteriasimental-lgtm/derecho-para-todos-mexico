@@ -1,0 +1,152 @@
+{
+ "solicitud": "2026-12-13_reel_T107-lote-4.json",
+ "fecha": "2026-11-01T12:03:15+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 0: línea de título demasiado larga para pantalla («SIN ORDEN DE UN JUEZ?»)\"], \"visible\": \"  \\n ¿La policía puede entrar a tu casa sin orden de un juez? \\n ¿POLICÍA EN TU CASA \\n SIN ORDEN DE UN JUEZ? \\n Depende. Para investigar delitos se requiere orden de un juez, pero la autoridad administrativa puede entrar para verificar reglamen",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona la posibilidad de detención en flagrancia que, aunque se refiere a personas, es un supuesto de actuación policial que podría implicar el ingreso al domicilio, y el texto oficial no aclara si la flagrancia permite el ingreso sin orden."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser molestado en su domicilio sin una orden escrita de la autoridad que explique la causa legal.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide con el primer párrafo del artículo 16."
+     },
+     {
+      "conclusion": "La inspección de un domicilio (cateo) es una facultad exclusiva de los jueces a petición del Ministerio Público.",
+      "sostenida": "si",
+      "motivo": "El texto establece que solo la autoridad judicial podrá expedir la orden de cateo a solicitud del Ministerio Público."
+     },
+     {
+      "conclusion": "La policía, actuando como autoridad administrativa, podría entrar para inspecciones sanitarias o de reglamentos sin una orden judicial de cateo previa.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite que esta facultad está limitada estrictamente a cerciorarse del cumplimiento de reglamentos sanitarios y de policía, y que debe sujetarse a las formalidades prescritas para los cateos."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "interpretaciones / afirmación A1",
+      "problema": "La pieza presenta como 'hecho normativo' que se requiere mandamiento escrito, pero en la sección de 'escenas' (tipo: cita), la afirmación A1 es redundante y no añade valor jurídico al distinguir entre la regla y la excepción.",
+      "correccion": "Asegurar que las afirmaciones en las escenas distingan claramente entre la regla general de inviolabilidad y la excepción de la autoridad administrativa."
+     },
+     {
+      "donde": "escenas / tipo: excepcion / numero: 2",
+      "problema": "La pieza afirma que en tiempo de guerra los militares pueden 'exigir alojamiento', lo cual es correcto, pero la estructura de la pieza lo presenta como una excepción a la pregunta de si la policía puede entrar a la casa, cuando el texto oficial lo vincula a la Fuerza Armada y a la 'ley marcial', no a la policía administrativa.",
+      "correccion": "Clarificar que el alojamiento por militares es una excepción de la Fuerza Armada en tiempo de guerra y no una facultad de la policía para entrar a inspeccionar."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La pieza omite mencionar la excepción constitucional de flagrancia, donde cualquier persona (incluyendo policías) puede detener a alguien en el momento de cometer un delito, lo cual implica una entrada al domicilio sin orden judicial previa en situaciones de urgencia o flagrancia.",
+      "No se aclara que las visitas domiciliarias administrativas deben sujetarse a las formalidades prescritas para los cateos, lo cual es un requisito de protección fundamental."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Como regla general, ninguna autoridad puede afectar tu domicilio sin un documento escrito que justifique legalmente su actuación.",
+      "sostenida": "si",
+      "motivo": "El artículo 16 establece la inviolabilidad del domicilio salvo mandamiento escrito de autoridad competente."
+     },
+     {
+      "conclusion": "Para realizar una inspección en busca de personas u objetos relacionados con un delito (cateo), es indispensable la orden de un juez.",
+      "sostenida": "si",
+      "motivo": "El texto es claro al señalar que solo la autoridad judicial puede expedir órdenes de cateo."
+     },
+     {
+      "conclusion": "La policía, como autoridad administrativa, puede entrar a un domicilio sin orden judicial únicamente para verificar el cumplimiento de reglamentos.",
+      "sostenida": "parcial",
+      "motivo": "La pieza omite mencionar que, aunque sea una visita administrativa, el artículo 16 exige que estas se sujeten a las formalidades prescritas para los cateos."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Sección de excepciones (falta de mención a la flagrancia)",
+      "problema": "La pieza ignora la excepción constitucional de flagrancia. El artículo 16 permite que cualquier persona detenga al indiciado en el momento de cometer un delito, lo que implica una excepción a la necesidad de orden judicial previa para ingresar a un domicilio en esos casos específicos.",
+      "correccion": "Debe incluirse que, en casos de flagrancia, la detención y el ingreso al domicilio son posibles sin orden judicial previa, siempre que se cumplan los requisitos de poner al detenido a disposición de la autoridad sin demora."
+     },
+     {
+      "donde": "Excepción 2: Visitas Administrativas",
+      "problema": "La pieza omite un requisito esencial: las visitas domiciliarias administrativas deben sujetarse a las formalidades prescritas para los cateos.",
+      "correccion": "Añadir que, aunque no requieren orden judicial de cateo, las visitas administrativas deben cumplir con las formalidades legales de los cateos para ser válidas."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza no menciona la excepción de flagrancia (detención en el momento de cometer un delito) que permite la entrada de la autoridad sin orden judicial previa según el artículo 16."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Como regla general, ninguna autoridad puede afectar tu domicilio sin un documento escrito que justifique legalmente su actuación.",
+      "sostenida": "si",
+      "motivo": "Se alinea con el primer párrafo del artículo 16 sobre el mandamiento escrito de la autoridad competente."
+     },
+     {
+      "conclusion": "Para realizar una inspección en busca de personas u objetos relacionados con un delito (cateo), es indispensable la orden de un juez.",
+      "sostenida": "si",
+      "motivo": "El texto establece que la orden de cateo solo la autoridad judicial podrá expedir."
+     },
+     {
+      "conclusion": "La policía, como autoridad administrativa, puede entrar a un domicilio sin orden judicial únicamente para verificar el cumplimiento de reglamentos.",
+      "sostenida": "si",
+      "motivo": "El texto permite visitas domiciliarias de la autoridad administrativa para cerciorarse de reglamentos sanitarios y de policía."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Razonamiento / Límites",
+      "problema": "El redactor identifica correctamente en su sección de 'límites' que el texto no establece qué pasa en casos de flagrancia, pero en la respuesta corta y en el cuerpo de la pieza omite esta posibilidad, lo cual es una excepción directa a la necesidad de orden judicial para la entrada al domicilio.",
+      "correccion": "Debe incluirse que cualquier persona (y por extensión la autoridad) puede intervenir en el momento en que se esté cometiendo un delito, lo cual implica una entrada al domicilio sin orden judicial previa por la naturaleza de la flagrancia."
+     },
+     {
+      "donde": "Escena de tipo 'excepción' número 1",
+      "problema": "La conclusión presentada como excepción ('La policía puede entrar sin orden de un juez únicamente si actúa como autoridad administrativa...') es incompleta frente al texto constitucional.",
+      "correccion": "Debe aclararse que existen dos supuestos de entrada sin orden judicial: 1) La actuación de la autoridad administrativa para reglamentos sanitarios/policía, y 2) La detención en flagrancia (cuando se está cometiendo un delito o inmediatamente después)."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "escena 0: línea de título demasiado larga para pantalla («SIN ORDEN DE UN JUEZ?»)"
+   ],
+   "visible": "  \n ¿La policía puede entrar a tu casa sin orden de un juez? \n ¿POLICÍA EN TU CASA \n SIN ORDEN DE UN JUEZ? \n Depende. Para investigar delitos se requiere orden de un juez, pero la autoridad administrativa puede entrar para verificar reglamentos de sanidad y policía, o al ocurrir una detención al momento de cometerse un delito. \n REGLA GENERAL \n Y EXCEPCIONES \n El artículo 16 constitucional establece: Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente, que funde y motive la causa legal del procedimiento. \n Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en v"
+  }
+ ]
+}

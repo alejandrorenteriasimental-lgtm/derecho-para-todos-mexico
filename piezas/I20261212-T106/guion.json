@@ -1,0 +1,205 @@
+{
+  "id": "I20261212-T106",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T106",
+  "pieza": {
+    "titular": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+    "bajada": "Lo que establece la Ley Federal de Protección al Consumidor.",
+    "mito": "Una tienda puede detenerte o revisar tus pertenencias libremente.",
+    "realidad": "No. Quedan prohibidas las acciones que atenten contra tu libertad o seguridad al registrarte. En delito flagrante, deben ponerte ante la autoridad. Si no se comprueba el delito, procede la indemnización y reparación del daño moral.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 10"
+  },
+  "copy": "La respuesta es no. La ley prohíbe a cualquier proveedor de bienes o servicios realizar acciones que atenten contra la libertad, seguridad e integridad personales de los consumidores con el pretexto de un registro o averiguación. La única excepción ocurre cuando una persona es sorprendida en la comisión flagrante de un delito. En ese supuesto, los proveedores, sus agentes o empleados deben limitarse, bajo su responsabilidad, a ponerla sin demora a disposición de la autoridad competente.\n\nEl incumplimiento de esta norma se sanciona conforme a la Ley Federal de Protección al Consumidor. Asimismo, se contempla la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de que no se compruebe el delito imputado.\n\nEsta regulación se encuentra en el artículo 10 de la Ley Federal de Protección al Consumidor.\n\n¿Te sirvió esta información? Guarda esta publicación para tenerla a la mano y compártela con quien le pueda ser útil.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía de mito y realidad sobre si una tienda puede retener a un consumidor para revisarlo, citando la Ley Federal de Protección al Consumidor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 10",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-01"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La infracción de esta disposición se sancionará de acuerdo con lo previsto en esta ley, independientemente de la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de no comprobarse el delito imputado.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 10",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-01"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Queda prohibido a los proveedores llevar a cabo acciones que atenten contra la libertad, seguridad o integridad de los consumidores con pretexto de registro o averiguación.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La infracción a esta regla se sanciona conforme a la ley, además de la reparación del daño moral e indemnización si no se comprueba el delito imputado.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+    "concepto_central": "prohibición de atentar contra la libertad o seguridad personales bajo pretexto de registro o averiguación",
+    "respuesta_corta": "No. La ley prohíbe a los proveedores realizar acciones que atenten contra la libertad, seguridad o integridad de los consumidores con pretexto de registro.",
+    "reglas": [
+      {
+        "conclusion": "Los proveedores tienen prohibido llevar a cabo acciones que atenten contra la libertad, seguridad o integridad personal del consumidor con el pretexto de un registro o averiguación.",
+        "fuente": "F1",
+        "cita_literal": "Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.",
+        "condiciones": [
+          "Aplica para proveedores de bienes o servicios en relación con los consumidores"
+        ],
+        "excepciones": [
+          "Cuando alguien es sorprendido en la comisión flagrante de un delito, caso en el que los proveedores se limitarán a ponerlo sin demora a disposición de la autoridad competente."
+        ],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "10"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La infracción a esta prohibición se sanciona conforme a la ley, además de la reparación del daño moral y la indemnización por daños y perjuicios si no se comprueba el delito imputado.",
+        "fuente": "F1",
+        "cita_literal": "La infracción de esta disposición se sancionará de acuerdo con lo previsto en esta ley, independientemente de la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de no comprobarse el delito imputado."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La retención o revisión de un consumidor sin que exista la comisión flagrante de un delito constituye una infracción a la Ley Federal de Protección al Consumidor.",
+        "condicion": "Que no haya una situación de delito flagrante comprobada o evidente.",
+        "base": "Artículo 10 de la Ley Federal de Protección al Consumidor."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "Registro o averiguación unilateral por parte del proveedor",
+        "b": "Puesta a disposición ante la autoridad competente por delito flagrante",
+        "diferencia": "El registro o averiguación previa por el proveedor está prohibido si atenta contra la libertad o integridad; únicamente en delito flagrante pueden poner a la persona ante la autoridad sin demora."
+      }
+    ],
+    "limites": "El texto oficial no especifica los procedimientos concretos de denuncia, plazos para presentar la reclamación ni el monto específico de las multas o indemnizaciones."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-01T12:05:09+00:00",
+    "solicitud": "2026-12-12_imagen_T106-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Una tienda puede retenerte con el pretexto de revisarte?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La infracción a esta prohibición se sanciona conforme a la ley, además de la reparación del daño moral y la indemnización por daños y perjuicios si no se compru»), pero la pieza no lo dice: agrégalo al texto visible."
+        ],
+        "visible": "  \n   \n Cualquier tienda tiene derecho a detenerte o revisar tus pertenencias antes de salir. \n No. La ley prohíbe acciones que atenten contra tu libertad o seguridad para registrarte; salvo en delito flagrante, donde solo deben ponerte ante la autoridad."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La infracción a esta prohibición se sanciona conforme a la ley, además de la reparación del daño moral y la indemnización por daños y perjuicios si no se compru»), pero la pieza no lo dice: agrégalo al texto visible."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (81 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Cualquier tienda tiene derecho a detenerte o revisar tus pertenencias antes de salir. \n No. La ley prohíbe acciones que atenten contra tu libertad o seguridad para registrarte; salvo en delito flagrante, donde solo deben ponerte ante la autoridad. La infracción a esta prohibición se sanciona conforme a la ley, además de la reparación del daño moral y la indemnización por daños y perjuicios si no se comprueba el delito imputado."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "imagen: contenido demasiado largo (81 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los proveedores tienen prohibido llevar a cabo acciones que atenten contra la libertad, seguridad o integridad personal del consumidor con el pretexto de un registro o averiguación.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la prohibición establecida en el primer párrafo del artículo 10."
+            },
+            {
+              "conclusion": "La infracción de esta disposición se sancionará de acuerdo con lo previsto en esta ley, independientemente de la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados en caso de no comprobarse el delito imputado.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente las consecuencias jurídicas y las responsabilidades civiles mencionadas en el texto oficial."
+            },
+            {
+              "conclusion": "En caso de delito flagrante, los proveedores deben limitarse a poner al infractor a disposición de la autoridad competente.",
+              "sostenida": "si",
+              "motivo": "Se ajusta a la excepción y al límite de actuación de los proveedores descritos en el artículo 10."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
