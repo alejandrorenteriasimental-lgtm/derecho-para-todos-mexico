@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 30 y 90 s (límite de Reels por API)",
       "resultado": "APROBADO",
-      "detalle": "68.2 s"
+      "detalle": "76.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "APROBADO",
-      "detalle": "68.2 s"
+      "detalle": "76.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.5 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "55 bloques"
+      "detalle": "59 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "890cdfcf7d114e13"
+      "detalle": "fc1516c4b320b036"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 10 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261213-T107",
     "titulo": "¿La policía puede entrar a tu casa sin orden de un juez?",
-    "fecha": "2026-11-02T12:03:47+00:00",
-    "sha256": "890cdfcf7d114e13a966538f2e60455fcb944ed1235f6ffed759aa7842c03144",
-    "duracion_s": 68.2,
+    "fecha": "2026-11-02T12:25:26+00:00",
+    "sha256": "fc1516c4b320b036c265490a4a734b877bc3e84707f5014e5fa28756ca36e9d8",
+    "duracion_s": 76.7,
     "estado": "APTO",
-    "huella_guion": "0bf9b322ede9db188125382463c3bb0f0b0ef1186f9d7096c42e263599b327e8",
+    "huella_guion": "1b390b1fe2afd7d6140433e9148832d526a3a46580d6205ebc887197c6d543f6",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 41.9,
-      "musica": 3.5,
-      "render_video": 85.6,
-      "mezcla_audio": 3.1,
-      "auditoria_tecnica": 17.5
+      "narracion": 49.2,
+      "musica": 3.7,
+      "render_video": 97.0,
+      "mezcla_audio": 3.6,
+      "auditoria_tecnica": 21.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 2.53,
-      "computo_equivalente_runner_usd": 0.0152,
+      "computo_minutos": 2.92,
+      "computo_equivalente_runner_usd": 0.0175,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 2044,
-    "caracteres_narrados": 1056
+    "frames": 2300,
+    "caracteres_narrados": 1180
   }
 }

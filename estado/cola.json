@@ -3843,7 +3843,7 @@
       "id": "R20261213-T107",
       "formato": "reel",
       "huella": "0bf9b322ede9db188125382463c3bb0f0b0ef1186f9d7096c42e263599b327e8",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-02T11:59:48+00:00",
@@ -3865,6 +3865,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-02T12:20:00+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 02-11): las visitas administrativas se sujetan a las formalidades de los cateos (el borrador decía que se entra «sin orden»); requisitos literales de la orden de cateo; flagrancia advertida sin afirmarla; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-02T12:25:26+00:00",
+          "motivo": "76.7"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-02T12:25:30+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3872,10 +3884,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "c3d58a5848865b70",
-        "huella_guion": "d6d0f5a84fa89a9953669e8f3a3179a767d4d93943e6c1b85d8e66bd25369e8d",
-        "huella_archivo": "890cdfcf7d114e13a966538f2e60455fcb944ed1235f6ffed759aa7842c03144",
-        "preparada": "2026-11-02T12:03:51+00:00",
+        "version": "7f7db73e29d2136d",
+        "huella_guion": "0980c2af10428422b8252f0649f0a6e1e4b385b7a1fb8d8a11f0487807819936",
+        "huella_archivo": "fc1516c4b320b036c265490a4a734b877bc3e84707f5014e5fa28756ca36e9d8",
+        "preparada": "2026-11-02T12:25:30+00:00",
         "canal": "chat"
       }
     }

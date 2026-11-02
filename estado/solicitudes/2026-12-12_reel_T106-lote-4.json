@@ -12,13 +12,13 @@
   "lote": "lote-4",
   "motivo_seleccion": "Sustituye a «¿Te pueden pedir una prueba de embarazo para contratarte?» (LFT 133 fr. XIV) tras dos descartes jurídicos (01-11 y 02-11): en ambos el análisis puso como cita del elemento «efecto» una paráfrasis en vez del encabezado literal del artículo. Art. 518 LFT (texto vigente; última reforma de la ley DOF 14-05-2026, consultado 27-10-2026): «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación»; el término se suspende con la solicitud de conciliación (art. 684-B) y se reanuda conforme al art. 521 fr. III. Respuesta literal con su condición; tema laboral no tratado en las últimas 3 semanas (el 30-11 se trató qué pedir, no el plazo).",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 0,
-  "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+  "intentos": 1,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
     {
@@ -35,5 +35,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
     }
-  ]
+  ],
+  "huella_entrada": "ce1dca6c29473414"
 }

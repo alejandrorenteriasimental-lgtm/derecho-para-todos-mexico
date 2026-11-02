@@ -1,21 +1,47 @@
 {
  "solicitud": "2026-12-12_reel_T106-lote-4.json",
- "fecha": "2026-11-02T11:52:30+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "fecha": "2026-11-02T12:16:53+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
    "errores": [
-    "[cobertura] El elemento «efecto» («La solicitud de este documento constituye una acción prohibi») no trae una cita literal que esté en el texto oficial de su fuente."
+    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Tienes dos meses a partir del día siguiente a la fecha de la separación del trabajo para i»."
    ]
   },
   {
    "etapa": "analisis",
    "intento": 1,
-   "errores": [
-    "[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente."
-   ]
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[vaguedad] Referencia vaga: «El conteo del tiempo se detiene temporalmente si acudes a la instancia correspondiente.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+    "[coherencia] Escena 5: el encabezado visible «El plazo se suspende en conciliación» no corresponde a lo que se narra («El conteo del tiempo se detiene temporalmente si acudes a la instancia»).",
+    "[coherencia] Escena 6: el encabezado visible «La suspensión del plazo termina» no corresponde a lo que se narra («Toma en cuenta que el tiempo vuelve a correr pronto.»).",
+    "[sustento] «¿Te despidieron y no sabes cuánto tiempo tienes para actuar legalmente?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
+   ],
+   "visible": "  \n ¿Te despidieron y no sabes cuánto tiempo tienes para actuar legalmente? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Depende de tus acciones: tienes dos meses a partir del día siguiente a la separación, pero este plazo se suspende si solicitas una conciliación. \n PLAZO DE \n DOS MESES \n La Ley Federal del Trabajo es clara al señalar que: \"Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación\". \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Es fundamental en"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[coherencia] Escena 6: el encabezado visible «La suspensión del plazo termina» no corresponde a lo que se narra («El tiempo vuelve a correr cuando el Centro de Conciliación entrega la »)."
+   ],
+   "visible": "  \n ¿Te separaron de tu trabajo y no sabes cuánto tiempo tienes para reclamar legalmente? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Depende: tienes dos meses desde el día siguiente a la separación, pero el plazo se suspende si pides una conciliación. \n PLAZO DE \n DOS MESES \n La ley es clara al señalar que: \"Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación\". \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Aquí te explico los puntos clave sobre este tiemp"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
+    "[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo? \n ¿CUÁNTO TIEMPO \n PARA RECLAMAR \n UN DESPIDO? \n Depende: tienes dos meses a partir del día siguiente a la separación, término que se suspende al presentar la solicitud de conciliación. \n RESPUESTA \n DIRECTA \n El artículo 518 indica: Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Para evitar la prescripción de las acciones del trabajador "
   }
  ]
 }

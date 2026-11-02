@@ -1,0 +1,66 @@
+{
+ "tema_id": "T106",
+ "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+ "fecha": "2026-11-02T12:15:51+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "concepto_central": "prescripción de las acciones por separación del trabajo",
+  "respuesta_corta": "Depende: tienes dos meses a partir del día siguiente a la separación, término que se suspende al presentar la solicitud de conciliación.",
+  "reglas": [
+   {
+    "conclusion": "Las acciones de los trabajadores que sean separados de su trabajo prescriben en un plazo de dos meses, contado a partir del día siguiente a la fecha de la separación.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+    "condiciones": [
+     "Aplica para trabajadores que sean separados del trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El plazo de prescripción se suspende desde la fecha en que se presenta la solicitud de conciliación laboral.",
+    "fuente": "F1",
+    "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+    "condiciones": [
+     "Presentar la solicitud de conciliación correspondiente"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "La interrupción o suspensión de la prescripción concluye al día siguiente de que la Autoridad Conciliadora expida la constancia de no conciliación o se archive el expediente por falta de interés.",
+    "fuente": "F2",
+    "cita_literal": "La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia de no conciliación o en su caso, se determine el archivo del expediente por falta de interés de parte.",
+    "condiciones": [
+     "Que el Centro de Conciliación expida la constancia de no conciliación o se determine el archivo del expediente"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La consecuencia jurídica de no reclamar dentro del plazo es la prescripción de las acciones del trabajador separado.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El cómputo de los dos meses no corre de forma ininterrumpida si el trabajador acude a la instancia de conciliación previa.",
+    "condicion": "Siempre que el trabajador presente su solicitud de conciliación ante el Centro de Conciliación.",
+    "base": "F1 y F2 (fracción III)"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Prescripción del derecho",
+    "b": "Suspensión del plazo de prescripción",
+    "diferencia": "La prescripción implica la pérdida de la acción por el transcurso del tiempo, mientras que la suspensión detiene temporalmente el cómputo del plazo mientras se tramita la conciliación."
+   }
+  ],
+  "limites": "Los textos brindados no señalan indemnizaciones específicas, causas justificadas de despido ni reglas para trabajadores de confianza o supuestos normativos distintos a los artículos 518 y 521 de la Ley Federal del Trabajo.",
+  "fuentes_irrelevantes": []
+ }
+}
