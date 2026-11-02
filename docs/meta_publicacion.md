@@ -87,3 +87,12 @@ Siguiente paso (máximo 2 cargas no públicas al día; 31-10 ya tiene 2): biseca
 **Siguiente paso:**
 - `recorte:45`;
 - otro Reel aprobado completo y más corto (si existe uno de 40 a 45 s).
+| 2-11 | Reel aprobado COMPLETO R20261129-T084 (38 s, 3.31 MB) | Pasa | Un Reel real completo se carga bien |
+| 2-11 | `recorte:45` | Pasa | Límite entre 45 y unos 56 s |
+
+**Conclusión (2-11).**
+- Instagram, por API y para esta cuenta, acepta nuestros Reels de **hasta 45 s** (comprobado) y rechaza los de unos 56 a 70 s con el error 2207076.
+- El límite exacto está entre 45 y 56 s.
+- Tope operativo: **45 s**.
+- Implementado: `IG_REELS=corto` con `IG_REEL_MAX_S=45` (`publicador.reel_ig_permitido`), con prueba.
+- Activación pendiente de decisión del responsable.
