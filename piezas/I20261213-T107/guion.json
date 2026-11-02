@@ -1,0 +1,290 @@
+{
+  "id": "I20261213-T107",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T107",
+  "pieza": {
+    "titular": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+    "bajada": "Conoce qué dice la ley sobre los salarios devengados y la nulidad de su renuncia.",
+    "mito": "Sí es válido renunciar a un salario si firmas un documento.",
+    "realidad": "No, es nula la renuncia que los trabajadores hagan de los salarios devengados, cualquiera que sea la forma.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 33"
+  },
+  "copy": "La Ley Federal del Trabajo establece en su artículo 33 que «es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé».\n\nPara que cualquier convenio o liquidación sea válido, la misma disposición señala que «deberá hacerse por escrito y contener una relación circunstanciada de los hechos que lo motiven», además de ser ratificado ante los Centros de Conciliación o al Tribunal.\n\nSi el acuerdo se celebra sin la intervención de las autoridades, el artículo 33 indica que «será susceptible de ser reclamada la nulidad ante el Tribunal, solamente de aquello que contenga renuncia de los derechos de los trabajadores, conservando su validez el resto de las cláusulas». Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Gráfica editorial que explica por qué es nula la renuncia a salarios devengados según la legislación laboral mexicana.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé.",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-02"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Todo convenio o liquidación, para ser válido, deberá hacerse por escrito y contener una relación circunstanciada de los hechos que lo motiven y de los derechos comprendidos en él.",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-02"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "será susceptible de ser reclamada la nulidad ante el Tribunal, solamente de aquello que contenga renuncia de los derechos de los trabajadores, conservando su validez el resto de las cláusulas convenidas.",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-02"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La renuncia a salarios devengados carece de validez sin importar cómo se plantee.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Los convenios deben cumplir requisitos formales y de ratificación.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "La nulidad sin autoridad afecta únicamente a la parte que renuncia derechos.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+    "concepto_central": "renuncia de los salarios devengados",
+    "respuesta_corta": "No, es nula la renuncia que los trabajadores hagan de los salarios devengados, cualquiera que sea la forma que se le dé.",
+    "reglas": [
+      {
+        "conclusion": "La renuncia a los salarios devengados carece de validez jurídica sin importar la forma o denominación que se le dé.",
+        "fuente": "F1",
+        "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "33"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que dicha renuncia es nula.",
+        "fuente": "F1",
+        "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no menciona plazos de prescripción ni sanciones específicas para quien solicite dicha firma."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-02T12:40:14+00:00",
+    "solicitud": "2026-12-13_imagen_T107-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 5
+      },
+      "llamadas_ia_total": 10,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 de la LFT establece explícitamente la nulidad de la renuncia a salarios devengados, sin importar la forma o denominación."
+            },
+            {
+              "conclusion": "La consecuencia jurídica de firmar este tipo de renuncia es la nulidad de dicho acto, sin importar la forma o denominación que se le dé.",
+              "sostenida": "si",
+              "motivo": "El texto oficial señala: 'Es nula la renuncia que los trabajadores hagan de los salarios devengados... cualquiera que sea la forma o denominación que se le dé'."
+            },
+            {
+              "conclusion": "Si un convenio se celebra sin la intervención de las autoridades, el Tribunal puede declarar la nulidad solamente de aquello que contenga renuncia de derechos, conservando su validez el resto de las cláusulas convenidas.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 prevé que, ante la falta de intervención de autoridades, el Tribunal puede declarar la nulidad parcial, conservando la validez del resto de las cláusulas."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "razonamiento -> distinciones",
+              "problema": "Se incluyen definiciones de 'renuncia' y 'mutuo consentimiento' que no están presentes en el texto oficial proporcionado (Ley Federal del Trabajo, artículo 33).",
+              "correccion": "Eliminar cualquier distinción conceptual o definición que no se encuentre explícitamente en el texto oficial entregado."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.",
+              "sostenida": "parcial",
+              "motivo": "El artículo 33 establece que la nulidad puede ser parcial. Si un convenio se celebra sin la intervención de las autoridades, se puede reclamar la nulidad solamente de aquello que contenga la renuncia, conservando la validez del resto de las cláusulas. Por tanto, no es que el documento completo carezca de validez, sino la cláusula de renuncia."
+            },
+            {
+              "conclusion": "Si un convenio incluye una renuncia de derechos pero se firmó sin una autoridad presente, el resto del acuerdo puede seguir siendo válido.",
+              "sostenida": "si",
+              "motivo": "Se ajusta exactamente a lo dispuesto en el último párrafo del artículo 33."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "distinciones",
+              "problema": "El redactor introduce definiciones de 'renuncia' y 'mutuo consentimiento' que no se encuentran en el texto oficial proporcionado, violando la regla de usar solo los textos entregados.",
+              "correccion": "Eliminar la distinción, ya que el texto oficial no define la renuncia ni menciona el concepto de mutuo consentimiento."
+            },
+            {
+              "donde": "conclusión 1 (reglas)",
+              "problema": "Se afirma erróneamente que el documento completo carece de validez, cuando la norma prevé la validez de las cláusulas que no impliquen renuncia de derechos en convenios sin autoridad.",
+              "correccion": "Precisar que lo que es nulo es la renuncia a los salarios, indemnizaciones y prestaciones, y no necesariamente la totalidad del documento o convenio."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La vía para reclamar la nulidad (ante el Tribunal).",
+              "Los requisitos de validez de un convenio o liquidación (debe ser por escrito, contener relación circunstanciada de hechos y ser ratificado ante Centros de Conciliación o el Tribunal).",
+              "El límite de la nulidad en convenios sin intervención de autoridades (la nulidad solo aplica a la parte que contiene la renuncia de derechos, conservando validez el resto de las cláusulas)."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La renuncia a los salarios devengados carece de validez jurídica sin importar la forma o denominación que se le dé.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 de la LFT establece textualmente que es nula la renuncia a salarios devengados 'cualquiera que sea la forma o denominación que se le dé'."
+            },
+            {
+              "conclusion": "Ningún escrito o acuerdo elimina tu derecho al pago por los servicios que ya prestaste.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación jurídica correcta de la nulidad de la renuncia a los salarios devengados establecida en la norma."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Cuerpo del texto (Copy)",
+              "problema": "Omisión de la vía procesal y los requisitos de validez del convenio.",
+              "correccion": "Para cumplir con la cobertura de 'qué puede hacer' y 'ante quién', se debe mencionar que la nulidad se reclama ante el Tribunal y que, para que un convenio sea válido, debe ser por escrito, detallar los hechos y ser ratificado ante las autoridades correspondientes."
+            },
+            {
+              "donde": "Cuerpo del texto (Copy)",
+              "problema": "Omisión de la regla de nulidad parcial.",
+              "correccion": "Se debe precisar que, en convenios celebrados sin autoridad, la nulidad no afecta a todo el documento, sino solamente a aquello que contenga renuncia de derechos, manteniendo la validez de las demás cláusulas."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La renuncia a los salarios devengados carece de validez jurídica sin importar la forma o denominación que se le dé.",
+              "sostenida": "si",
+              "motivo": "El artículo 33 de la Ley Federal del Trabajo establece textualmente la nulidad de dicha renuncia independientemente de su forma o denominación."
+            },
+            {
+              "conclusion": "Para que un convenio o liquidación sea válido, debe ser por escrito, contener una relación de hechos y ser ratificado ante autoridades.",
+              "sostenida": "si",
+              "motivo": "La norma exige estos requisitos de forma y la intervención de Centros de Conciliación o el Tribunal para la validez del convenio."
+            },
+            {
+              "conclusion": "Si un convenio se hace sin autoridad, solo se puede reclamar la nulidad de las cláusulas que impliquen renuncia de derechos.",
+              "sostenida": "si",
+              "motivo": "El texto legal especifica que, ante la falta de intervención de autoridades, la nulidad ante el Tribunal solo procede sobre lo que contenga renuncia de derechos, manteniendo la validez del resto."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

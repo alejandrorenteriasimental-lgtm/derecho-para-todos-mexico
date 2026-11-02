@@ -3843,7 +3843,7 @@
       "id": "R20261213-T107",
       "formato": "reel",
       "huella": "0bf9b322ede9db188125382463c3bb0f0b0ef1186f9d7096c42e263599b327e8",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-02T11:59:48+00:00",
@@ -3877,6 +3877,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-02T12:25:30+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-02T12:40:14+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-02T12:27:28+00:00 versión 7f7db73e29d2136d (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-02T12:42:17+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -3888,6 +3900,53 @@
         "huella_guion": "0980c2af10428422b8252f0649f0a6e1e4b385b7a1fb8d8a11f0487807819936",
         "huella_archivo": "fc1516c4b320b036c265490a4a734b877bc3e84707f5014e5fa28756ca36e9d8",
         "preparada": "2026-11-02T12:25:30+00:00",
+        "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20261213-T107",
+        "decision": "APROBADA",
+        "version": "7f7db73e29d2136d",
+        "huella_guion": "0980c2af10428422b8252f0649f0a6e1e4b385b7a1fb8d8a11f0487807819936",
+        "huella_archivo": "fc1516c4b320b036c265490a4a734b877bc3e84707f5014e5fa28756ca36e9d8",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-02T12:27:28+00:00",
+        "canal": "delegada",
+        "nota": "Revisión 02-11 tras edición: guion con huella idéntica a la producida (0980c2af…); cuadros reconstruidos localmente con la línea de tiempo del CI; narración, pantalla y copy contrastados con CPEUM art. 16 (reforma 07-10-2026): cateo solo con orden judicial, visitas administrativas con formalidades de cateo, flagrancia advertida sin afirmarla."
+      }
+    },
+    "I20261213-T107": {
+      "id": "I20261213-T107",
+      "formato": "imagen",
+      "huella": "2785ae4ffee59b5ada6e069bc67beda0fc66bcc2aef8e1d3a5d5a65eee5b4cf1",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-02T12:40:14+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-02T12:42:13+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-02T12:42:17+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "e00ab8704d01195f",
+        "huella_guion": "9dae2cdd2abf8f822bafc26ff4710a1a34d181302694b7e8362226b352d9347a",
+        "huella_archivo": "e120a7bb4d04184fe35c6de082b770118cbef3f35586e76f860ce7a016de3cbd",
+        "preparada": "2026-11-02T12:42:17+00:00",
         "canal": "chat"
       }
     }

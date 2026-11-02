@@ -838,3 +838,13 @@
 {"ts": "2026-11-02T12:25:30+00:00", "pieza": "R20261213-T107", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
 {"ts": "2026-11-02T12:25:30+00:00", "evento": "revision_preparada", "pieza": "R20261213-T107", "version": "7f7db73e29d2136d", "canal": "chat"}
 {"ts": "2026-11-02T12:25:30+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 2, "producidas": 1, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 1}
+{"ts": "2026-11-02T12:32:47+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-02T12:33:58+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-12_reel_T106-lote-4.json", "categoria": "tecnico", "transitoria": true, "motivo": "modelo no disponible: gemini-3.5-flash-lite: la respuesta no es JSON válido"}
+{"ts": "2026-11-02T12:40:14+00:00", "evento": "redactada", "pieza": "I20261213-T107", "solicitud": "2026-12-13_imagen_T107-lote-4.json"}
+{"ts": "2026-11-02T12:40:14+00:00", "pieza": "R20261213-T107", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-02T12:27:28+00:00 versión 7f7db73e29d2136d (delegada)"}
+{"ts": "2026-11-02T12:40:14+00:00", "pieza": "I20261213-T107", "evento": "encolado"}
+{"ts": "2026-11-02T12:42:13+00:00", "pieza": "I20261213-T107", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-02T12:42:17+00:00", "pieza": "I20261213-T107", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-02T12:42:17+00:00", "evento": "revision_preparada", "pieza": "I20261213-T107", "version": "e00ab8704d01195f", "canal": "chat"}
+{"ts": "2026-11-02T12:42:17+00:00", "pieza": "R20261213-T107", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-02T12:42:17+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 1, "retenidas": 0, "simuladas": 1, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 1}

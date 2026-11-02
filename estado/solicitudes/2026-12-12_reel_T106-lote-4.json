@@ -17,9 +17,9 @@
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 0,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu",
-  "ultima_categoria": "juridico",
+  "intentos": 1,
+  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: la respuesta no es JSON válido",
+  "ultima_categoria": "tecnico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-02",
@@ -42,5 +42,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu"
     }
-  ]
+  ],
+  "huella_entrada": "e0e7c9883bfac19e"
 }
