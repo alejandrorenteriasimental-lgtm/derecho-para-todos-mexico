@@ -3766,7 +3766,7 @@
       "id": "I20261212-T106",
       "formato": "imagen",
       "huella": "aa046efe2e153f0fcaab3b378eaeb61cc98d3e8ea8b55074ad3d01cd6586d506",
-      "estado": "REVISION_HUMANA",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-01T12:05:09+00:00",
@@ -3800,6 +3800,18 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-01T12:22:05+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-02T11:59:48+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-02T11:43:45+00:00 versión 1472b7aa6269a9e8 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-02T12:03:51+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -3811,6 +3823,53 @@
         "huella_guion": "9452e6c4b21b0d833a6da2e48008b5c1a598be0d975a537889012571e570d45a",
         "huella_archivo": "384e117e264f34a951d920c3cad921833203b508f7c8d8906da40b8d2bed8659",
         "preparada": "2026-11-01T12:22:05+00:00",
+        "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20261212-T106",
+        "decision": "APROBADA",
+        "version": "1472b7aa6269a9e8",
+        "huella_guion": "9452e6c4b21b0d833a6da2e48008b5c1a598be0d975a537889012571e570d45a",
+        "huella_archivo": "384e117e264f34a951d920c3cad921833203b508f7c8d8906da40b8d2bed8659",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-02T11:43:45+00:00",
+        "canal": "delegada",
+        "nota": "Revisión 02-11: imagen re-renderizada localmente con SHA idéntico (384e117e…); visible y copy contrastados con LFPC art. 10 (reforma 12-12-2025); flagrancia como límite literal, reparación condicionada."
+      }
+    },
+    "R20261213-T107": {
+      "id": "R20261213-T107",
+      "formato": "reel",
+      "huella": "0bf9b322ede9db188125382463c3bb0f0b0ef1186f9d7096c42e263599b327e8",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-02T11:59:48+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-02T12:03:47+00:00",
+          "motivo": "68.2"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-02T12:03:51+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "c3d58a5848865b70",
+        "huella_guion": "d6d0f5a84fa89a9953669e8f3a3179a767d4d93943e6c1b85d8e66bd25369e8d",
+        "huella_archivo": "890cdfcf7d114e13a966538f2e60455fcb944ed1235f6ffed759aa7842c03144",
+        "preparada": "2026-11-02T12:03:51+00:00",
         "canal": "chat"
       }
     }

@@ -1,7 +1,7 @@
 {
  "solicitud": "2026-12-13_imagen_T107-lote-4.json",
- "fecha": "2026-11-01T12:21:34+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": false, \"faltantes\": [\"La aclaración de que la inviolabilidad de la correspondencia (como parte de las comunicaciones privadas) puede ser excepcionada mediante una autorización de la autoridad judicial federal.\"]}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que transita baj",
+ "fecha": "2026-11-02T11:59:48+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece explícitamente la nulidad de la renuncia a salarios devengados, sin im",
  "historial": [
   {
    "etapa": "analisis",
@@ -14,23 +14,36 @@
    "auditoria_ia": {
     "veredicto": "con_objeciones",
     "cobertura": {
-     "responde_nucleo": false,
-     "faltantes": [
-      "La excepción de la intervención de comunicaciones privadas mediante autorización de la autoridad judicial federal."
-     ]
+     "responde_nucleo": true,
+     "faltantes": []
     },
     "conclusiones": [
      {
-      "conclusion": "La correspondencia que transita bajo cubierta por las estafetas debe estar libre de cualquier registro y su violación es sancionada por la ley.",
+      "conclusion": "Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.",
       "sostenida": "si",
-      "motivo": "La conclusión es una paráfrasis exacta de la regla específica establecida en el artículo 16 para la correspondencia en estafetas."
+      "motivo": "El artículo 33 establece explícitamente que es nula la renuncia a salarios devengados, sin importar la forma o denominación."
+     },
+     {
+      "conclusion": "La consecuencia jurídica de firmar este tipo de renuncia es la nulidad de dicho acto o cláusula.",
+      "sostenida": "si",
+      "motivo": "El texto oficial utiliza el término 'es nula' para referirse a la renuncia de salarios devengados."
+     },
+     {
+      "conclusion": "Si un convenio incluye una renuncia de derechos pero se firmó sin una autoridad presente, el resto del acuerdo puede seguir siendo válido.",
+      "sostenida": "si",
+      "motivo": "El artículo 33 señala que, en convenios sin intervención de autoridades, se puede reclamar la nulidad solo de lo que contenga renuncia de derechos, conservando la validez del resto."
+     },
+     {
+      "conclusion": "La renuncia es la separación decidida por la persona trabajadora, mientras que el mutuo consentimiento es la terminación de la relación acordada por ambas partes.",
+      "sostenida": "no",
+      "motivo": "El texto oficial del artículo 33 no define, menciona ni distingue los conceptos de 'renuncia' (como causa de separación) ni de 'mutuo consentimiento'."
      }
     ],
     "objeciones": [
      {
-      "donde": "Título y sección de 'Realidad'",
-      "problema": "La pieza responde de forma incompleta a la pregunta general del título. Al responder 'No' de manera categórica, omite que el artículo 16 establece que las comunicaciones privadas son inviolables, pero permite su intervención mediante autorización de la autoridad judicial federal. Por lo tanto, la respuesta a la pregunta general no es un 'No' absoluto, sino un 'Depende'.",
-      "correccion": "La respuesta directa al título debe ser 'Depende'. Se debe precisar que, aunque la correspondencia bajo cubierta en estafetas no debe ser registrada, las comunicaciones privadas pueden ser intervenidas si una autoridad judicial federal lo autoriza tras fundar y motivar la solicitud."
+      "donde": "distinciones y copy",
+      "problema": "Inclusión de conceptos y definiciones jurídicas externas al texto oficial proporcionado (distinción entre renuncia y mutuo consentimiento).",
+      "correccion": "Eliminar la distinción entre renuncia y mutuo consentimiento, ya que el artículo 33 no contiene información para sustentar esa diferencia conceptual."
      }
     ]
    }
@@ -38,29 +51,10 @@
   {
    "etapa": "redaccion",
    "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": [
-      "Los límites de la intervención judicial (materias prohibidas como la electoral, fiscal, mercantil, civil, laboral o administrativa, y la comunicación con el defensor)."
-     ]
-    },
-    "conclusiones": [
-     {
-      "conclusion": "La correspondencia que transita bajo cubierta por las estafetas debe estar libre de cualquier registro y su violación es sancionada por la ley.",
-      "sostenida": "si",
-      "motivo": "El texto del artículo 16 de la Constitución establece textualmente esta protección para la correspondencia que circula bajo cubierta por las estafetas."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Realidad y Copy",
-      "problema": "La pieza presenta la intervención de comunicaciones privadas como una facultad general de la autoridad judicial sin mencionar los límites y prohibiciones expresas que establece la norma.",
-      "correccion": "Debe aclararse que la autoridad judicial federal tiene prohibido otorgar autorizaciones de intervención en materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo, así como en las comunicaciones del detenido con su defensor."
-     }
-    ]
-   }
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la ley establece que es nula la renuncia que los trabajadores hagan de los salarios ya»."
+   ],
+   "visible": "  \n   \n Si firmas un papel renunciando a tu salario ya trabajado, pierdes el derecho a cobrarlo. \n No. Es nula la renuncia de salarios devengados o prestaciones por servicios prestados, sin importar el nombre del documento."
   },
   {
    "etapa": "redaccion",
@@ -68,33 +62,31 @@
    "auditoria_ia": {
     "veredicto": "con_objeciones",
     "cobertura": {
-     "responde_nucleo": false,
-     "faltantes": [
-      "La aclaración de que la inviolabilidad de la correspondencia (como parte de las comunicaciones privadas) puede ser excepcionada mediante una autorización de la autoridad judicial federal."
-     ]
+     "responde_nucleo": true,
+     "faltantes": []
     },
     "conclusiones": [
      {
-      "conclusion": "La correspondencia que transita bajo cubierta por las estafetas debe estar libre de cualquier registro y su violación es sancionada por la ley.",
+      "conclusion": "Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.",
       "sostenida": "si",
-      "motivo": "La conclusión es una transcripción exacta de la regla específica sobre correspondencia en estafetas contenida en el artículo 16."
+      "motivo": "El artículo 33 establece explícitamente la nulidad de la renuncia a salarios devengados, sin importar la forma o denominación del documento."
      },
      {
-      "conclusion": "Respecto a la intervención de comunicaciones privadas en general, únicamente la autoridad judicial federal puede autorizarla a solicitud de la autoridad competente.",
+      "conclusion": "Si un convenio se celebra sin la intervención del Centro de Conciliación o el Tribunal, se puede reclamar la nulidad ante el Tribunal.",
       "sostenida": "si",
-      "motivo": "La afirmación coincide con la facultad exclusiva otorgada a la autoridad judicial federal para autorizar la intervención de comunicaciones privadas."
+      "motivo": "El texto oficial prevé la posibilidad de reclamar la nulidad ante el Tribunal cuando el convenio se celebra sin intervención de autoridades."
+     },
+     {
+      "conclusion": "Es importante no confundir la renuncia, que es la separación decidida por la persona trabajadora, con el mutuo consentimiento, que es la terminación acordada por ambas partes.",
+      "sostenida": "no",
+      "motivo": "El texto oficial (artículo 33) no define ni menciona la renuncia como forma de terminación ni el mutuo consentimiento; por tanto, esta distinción es ajena a la fuente proporcionada."
      }
     ],
     "objeciones": [
      {
-      "donde": "Realidad / Respuesta corta",
-      "problema": "La respuesta 'No' es absoluta y contradictoria con el resto de la pieza. Aunque la correspondencia en estafetas tiene una protección específica, el artículo 16 también establece que las comunicaciones privadas pueden ser intervenidas mediante autorización judicial federal. Al responder 'No' de forma tajante a la pregunta general, se omite que la inviolabilidad no es absoluta.",
-      "correccion": "La respuesta debe ser matizada, por ejemplo: 'Por regla general no, pero la autoridad judicial federal puede autorizar su intervención bajo los requisitos de ley'."
-     },
-     {
-      "donde": "Razonamiento / Concepto central",
-      "problema": "El razonamiento trata la 'correspondencia' y las 'comunicaciones privadas' como conceptos aislados, cuando la correspondencia es una forma de comunicación privada. Esto causa que la respuesta corta sea incompleta para el alcance de la pregunta del título.",
-      "correccion": "Integrar la regla de la intervención judicial dentro del análisis de la correspondencia para dar una respuesta integral."
+      "donde": "Es importante no confundir la renuncia, que es la separación decidida por la persona trabajadora, con el mutuo consentimiento, que es la terminación acordada por ambas partes.",
+      "problema": "La pieza introduce conceptos jurídicos (renuncia como forma de terminación y mutuo consentimiento) que no están contenidos en el artículo 33 de la Ley Federal del Trabajo proporcionado.",
+      "correccion": "Eliminar el párrafo sobre la distinción entre renuncia y mutuo consentimiento, ya que no es necesario para responder a la pregunta sobre la validez de renunciar a salarios devengados y excede el texto oficial."
      }
     ]
    }

@@ -1,0 +1,49 @@
+{
+ "tema_id": "T107",
+ "pregunta": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+ "fecha": "2026-11-02T11:56:03+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "concepto_central": "renuncia de salarios devengados",
+  "respuesta_corta": "No, la ley establece que es nula la renuncia que los trabajadores hagan de los salarios ya ganados, sin importar el nombre o la forma que se le dé al documento.",
+  "reglas": [
+   {
+    "conclusion": "Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.",
+    "fuente": "F1",
+    "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé.",
+    "condiciones": [
+     "Que se trate de salarios devengados o prestaciones derivadas de servicios ya prestados."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La consecuencia jurídica de firmar este tipo de renuncia es la nulidad de dicho acto o cláusula.",
+    "fuente": "F1",
+    "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si un convenio incluye una renuncia de derechos pero se firmó sin una autoridad presente, el resto del acuerdo puede seguir siendo válido.",
+    "condicion": "Que el convenio contenga otras cláusulas que no impliquen renuncia de derechos.",
+    "base": "Cuando el convenio sea celebrado sin la intervención de las autoridades, será susceptible de ser reclamada la nulidad ante el Tribunal, solamente de aquello que contenga renuncia de los derechos de los trabajadores, conservando su validez el resto de las cláusulas convenidas."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "renuncia",
+    "b": "mutuo consentimiento",
+    "diferencia": "La renuncia es la separación decidida por la persona trabajadora, mientras que el mutuo consentimiento es la terminación de la relación acordada por ambas partes."
+   }
+  ],
+  "limites": "El texto oficial no establece plazos de prescripción para reclamar la nulidad ni menciona sanciones específicas para el patrón que solicite dicha firma.",
+  "fuentes_irrelevantes": []
+ }
+}

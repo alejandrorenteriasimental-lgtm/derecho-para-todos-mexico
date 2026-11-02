@@ -1,0 +1,247 @@
+{
+  "id": "R20261213-T107",
+  "formato": "reel",
+  "titulo": "¿La policía puede entrar a tu casa sin orden de un juez?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T107",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "16",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-02"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "16",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-02"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Alguna vez te has preguntado si la policía tiene permitido entrar a tu casa sin que un juez lo autorice?",
+      "titulo": [
+        "¿POLICÍA EN CASA?",
+        "¿SIN ORDEN JUDICIAL?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.",
+      "titulo": [
+        "REGLA GENERAL:",
+        "NECESITAS ORDEN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Nuestra Constitución es muy clara al proteger tu hogar, pues establece que: \"Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente, que funde y motive la causa legal del procedimiento\".",
+      "etiqueta": "Constitución, artículo 16",
+      "cita": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente, que funde y motive la causa legal del procedimiento.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Se requiere un mandamiento escrito para molestar a alguien en su domicilio.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para que una orden de inspección o cateo sea válida, la ley exige que cumpla con los siguientes requisitos fundamentales:",
+      "items": [
+        "Mandamiento escrito",
+        "Autoridad competente",
+        "Funda y motiva la causa",
+        "Expedida por un juez"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "La policía, como autoridad administrativa, puede entrar sin orden de cateo solo para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía.",
+      "encabezado": "Visitas administrativas permitidas",
+      "detalle": "Para reglamentos de policía",
+      "fuente_corta": "Constitución, art. 16",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Solo la autoridad judicial puede expedir órdenes de cateo.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, tu domicilio es inviolable y solo puede inspeccionarse con un mandamiento escrito de un juez o para revisiones administrativas específicas.",
+      "titulo": [
+        "TU HOGAR",
+        "ESTÁ PROTEGIDO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
+    "concepto_central": "orden de cateo",
+    "respuesta_corta": "No, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.",
+    "reglas": [
+      {
+        "conclusion": "Nadie puede ser molestado en su domicilio sin un mandamiento escrito de la autoridad competente que justifique legalmente el procedimiento.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente, que funde y motive la causa legal del procedimiento.",
+        "condiciones": [
+          "Que exista un mandamiento escrito",
+          "Que provenga de autoridad competente",
+          "Que funde y motive la causa legal"
+        ],
+        "excepciones": [
+          "Visitas domiciliarias de autoridad administrativa para reglamentos sanitarios y de policía",
+          "Exigencia de alojamiento por militares en tiempo de guerra"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "16"
+        }
+      },
+      {
+        "conclusion": "La inspección de un domicilio para buscar personas u objetos requiere específicamente una orden de cateo que solo un juez puede autorizar.",
+        "fuente": "F1",
+        "cita_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse",
+        "condiciones": [
+          "Solicitud previa del Ministerio Público",
+          "Expedición exclusiva por autoridad judicial",
+          "Especificación del lugar, personas u objetos buscados"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "16"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La entrada al domicilio es legal únicamente si se cuenta con el mandamiento escrito que funde y motive la causa, o si se trata de una visita administrativa reglamentaria.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La policía, actuando como autoridad administrativa, puede entrar sin orden judicial de cateo solo para revisiones de reglamentos, pero debe cumplir formalidades similares.",
+        "condicion": "Que el objetivo sea cerciorarse del cumplimiento de reglamentos sanitarios y de policía.",
+        "base": "La autoridad administrativa podrá practicar visitas domiciliarias únicamente para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía [...] sujetándose en estos casos [...] a las formalidades prescritas para los cateos."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "orden de cateo",
+        "b": "orden de aprehensión",
+        "diferencia": "La orden de cateo autoriza la inspección de un lugar, mientras que la de aprehensión es dictada por un juez para detener a una persona por un probable delito."
+      }
+    ],
+    "limites": "El texto no establece si la policía puede entrar al domicilio sin orden en casos de flagrancia o persecución inmediata; solo menciona la detención en flagrancia de forma general."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-02T11:55:26+00:00",
+    "solicitud": "2026-12-13_reel_T107-lote-4.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿La policía puede entrar a tu casa sin orden de un juez?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿La policía puede entrar a tu casa sin orden de un juez?\n\nNo, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser molestado en su domicilio sin un mandamiento escrito de la autoridad competente que justifique legalmente el procedimiento.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente esta protección como regla general."
+            },
+            {
+              "conclusion": "La inspección de un domicilio para buscar personas u objetos requiere específicamente una orden de cateo que solo un juez puede autorizar.",
+              "sostenida": "si",
+              "motivo": "El artículo 16 reserva la expedición de órdenes de cateo exclusivamente a la autoridad judicial."
+            },
+            {
+              "conclusion": "La policía, como autoridad administrativa, puede entrar sin orden de cateo solo para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía.",
+              "sostenida": "si",
+              "motivo": "El texto oficial prevé esta excepción específica para visitas domiciliarias administrativas, siempre que se sujeten a las formalidades de los cateos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
