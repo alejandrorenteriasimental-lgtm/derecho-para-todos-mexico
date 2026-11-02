@@ -33,6 +33,26 @@ VETO = timedelta(hours=72)             # aprobación delegada en Claude: el resp
 class NoAprobada(Exception): pass
 
 
+def duracion(mp4):
+    import subprocess
+    try:
+        return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4)],
+                                    capture_output=True, text=True, timeout=60).stdout.strip())
+    except (ValueError, OSError, subprocess.SubprocessError):
+        return None
+
+
+def reel_ig_permitido(env, e=None, f=None, medir=None):
+    """IG_REELS: «1» = todos; «corto» = solo Reels de duración ≤ IG_REEL_MAX_S (diagnóstico del 2-11: el Reel completo de
+    38 s pasa y el de 58 s falla con 2207076); cualquier otro valor = ninguno."""
+    modo = env.get("IG_REELS")
+    if modo == "1": return True
+    if modo == "corto" and f is not None:
+        d = (medir or duracion)(f); tope = float(env.get("IG_REEL_MAX_S") or 38)
+        return d is not None and d <= tope
+    return False
+
+
 def pausado(env=os.environ):
     if env.get("PAUSA_PUBLICACION") == "1": return "variable PAUSA_PUBLICACION=1"
     if PAUSA.exists():
@@ -107,7 +127,7 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
 
@@ -135,13 +155,14 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                         r = publicar.publicar_reel(e["pieza"], f, texto(e["pieza"]), huella, int(cuando.timestamp()), modo=modo, env=env, http=http)
                     acc["facebook"] = r.get("estado")
                 # Instagram: publicar al llegar la hora (sin programación por API)
-                if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG:
-                    acc["instagram"] = "REEL_IG_EN_ESPERA"     # carga de Reels a IG pendiente de resolver (28-10); no detiene lo demás
+                if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG and \
+                        not reel_ig_permitido(env, e, bajar(e, carpeta, env) if env.get("IG_REELS") == "corto" else None):
+                    acc["instagram"] = "REEL_IG_EN_ESPERA"     # Reel fuera del límite de IG o Reels de IG desactivados; no detiene lo demás
                 elif timedelta(0) <= ahora - cuando <= VENTANA_IG:
                     f = bajar(e, carpeta, env); comprobar(e, f, ahora)
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)
                     acc["instagram"] = r.get("estado")
-                elif ahora - cuando > VENTANA_IG and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") == "1"):
+                elif ahora - cuando > VENTANA_IG and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") in ("1", "corto")):
                     op = publicar.operacion(publicar.marca(e["pieza"], e["version"]) + "-ig", "real") or {}
                     if op.get("fase") != "CONFIRMADA": acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
             except EnPlazoDeVeto as x:

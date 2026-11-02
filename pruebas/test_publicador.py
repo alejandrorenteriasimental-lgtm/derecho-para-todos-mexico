@@ -92,3 +92,20 @@ def test_aprobacion_delegada_respeta_72_horas_de_veto(monkeypatch):
     monkeypatch.setattr(publicador, "ultima_decision", lambda p: {**d, "decision": "RECHAZADA"})   # vetada
     with pytest.raises(publicador.NoAprobada):
         publicador.comprobar(e, __file__, ahora + timedelta(days=5))
+
+
+def test_reels_de_ig_solo_cortos(ent, monkeypatch):
+    """IG_REELS=corto: solo Reels de duración ≤ IG_REEL_MAX_S (2-11: 38 s pasa, 58 s falla con 2207076)."""
+    assert publicador.reel_ig_permitido({"IG_REELS": "corto", "IG_REEL_MAX_S": "38"}, f="x", medir=lambda f: 37.9)
+    assert not publicador.reel_ig_permitido({"IG_REELS": "corto", "IG_REEL_MAX_S": "38"}, f="x", medir=lambda f: 58.1)
+    assert not publicador.reel_ig_permitido({"IG_REELS": "corto"}, f="x", medir=lambda f: None)
+    assert not publicador.reel_ig_permitido({"IG_REELS": "0"}, f="x", medir=lambda f: 10)
+    assert publicador.reel_ig_permitido({"IG_REELS": "1"})
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
+    monkeypatch.setattr(publicador, "duracion", lambda f: 30.0)
+    hora = publicador.hora_utc("2026-11-23", "19:00")
+    r = publicador.ejecutar(hora.replace(minute=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
+    assert [a["instagram"] for a in r["acciones"] if "instagram" in a] == ["SIMULADO"]
+    monkeypatch.setattr(publicador, "duracion", lambda f: 58.0)
+    r = publicador.ejecutar(hora.replace(minute=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
+    assert [a["instagram"] for a in r["acciones"] if "instagram" in a] == ["REEL_IG_EN_ESPERA"]
