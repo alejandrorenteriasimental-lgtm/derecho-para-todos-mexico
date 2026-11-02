@@ -2,22 +2,22 @@
   "fecha": "2026-12-12",
   "formato": "reel",
   "tema_id": "T106",
-  "titulo": "¿Cuánto tiempo tienes para reclamar si te despiden?",
-  "gancho": "¿Cuánto tiempo tienes para reclamar si te despiden?",
-  "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
-  "tipo_pregunta": "legalidad",
+  "titulo": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+  "gancho": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+  "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+  "tipo_pregunta": "derecho",
   "carril": "A",
-  "fuentes_sugeridas": "LFT arts. 518, 48, 521",
+  "fuentes_sugeridas": "LFPC arts. 92, 92 Ter",
   "riesgo_exactitud": "",
   "lote": "lote-4",
-  "motivo_seleccion": "Sustituye a «¿Te pueden pedir una prueba de embarazo para contratarte?» (LFT 133 fr. XIV) tras dos descartes jurídicos (01-11 y 02-11): en ambos el análisis puso como cita del elemento «efecto» una paráfrasis en vez del encabezado literal del artículo. Art. 518 LFT (texto vigente; última reforma de la ley DOF 14-05-2026, consultado 27-10-2026): «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación»; el término se suspende con la solicitud de conciliación (art. 684-B) y se reanuda conforme al art. 521 fr. III. Respuesta literal con su condición; tema laboral no tratado en las últimas 3 semanas (el 30-11 se trató qué pedir, no el plazo).",
+  "motivo_seleccion": "Sustituye a «¿Cuánto tiempo tienes para reclamar si te despiden?» (LFT 518) tras dos descartes jurídicos el 02-11: el control de sustento no encuentra «despido» en el art. 518 («separados del trabajo») y el redactor no usó el art. 48. Art. 92 fr. I LFPC (texto vigente; última reforma de la ley DOF 12-12-2025, consultado 26-10-2026): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» cuando «el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque», considerados los límites de tolerancia; art. 92 Ter: la bonificación no podrá ser menor al veinte por ciento del precio pagado. Respuesta literal con su condición; consumo, no tratado en las últimas 3 semanas.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -41,7 +41,13 @@
       "motivo": "primer descarte de la pregunta nueva (LFT 518): el control de sustento no encontró «despido» en los artículos citados (el 518 dice «separados del trabajo»). Se agrega LFT 48 (reinstalación o indemnización del trabajador despedido) a las fuentes sugeridas. Si se descarta otra vez, se sustituye la pregunta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu"
+    },
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 518): ahora LFPC art. 92 fr. I y 92 Ter, contenido menor al del empaque",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\""
     }
-  ],
-  "huella_entrada": "e0e7c9883bfac19e"
+  ]
 }
