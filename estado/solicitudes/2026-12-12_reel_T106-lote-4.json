@@ -17,9 +17,9 @@
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 0,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el crite",
-  "ultima_categoria": "juridico",
+  "intentos": 1,
+  "ultimo_motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
+  "ultima_categoria": "tecnico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-02",
@@ -56,5 +56,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el crite"
     }
-  ]
+  ],
+  "huella_entrada": "29acc0895b5a324e"
 }
