@@ -1,5 +1,6 @@
 """Validación estructural de guiones (Reel) y fichas (imagen fija) antes de cualquier verificación o producción.
 Un guion incompleto nunca llega a producirse: queda RETENIDO con la lista exacta de lo que falta."""
+MAX_NARRACION = 620   # ≈ 14.5 caracteres/s con pausas → ≤ 43 s (Reels de Instagram por API: ≤ 45 s, comprobado el 2-11-2026)
 TIPOS_ESCENA = {"gancho": ["titulo"], "titular": ["titulo"], "cita": ["cita", "etiqueta"], "lista": ["items"],
                 "excepcion": ["numero", "encabezado", "detalle", "fuente_corta"], "cierre": ["aviso"]}
 CAMPOS_FUENTE = ["url", "nivel", "documento", "articulo"]
@@ -72,7 +73,7 @@ def validar(g):
         if len(e.get("encabezado", "")) > 44: err.append(f"escena {i}: encabezado demasiado largo")
         if len(e.get("detalle", "")) > 38: err.append(f"escena {i}: detalle demasiado largo")
         if e.get("tipo") == "cita" and len(e.get("cita", "")) > 220: err.append(f"escena {i}: cita demasiado larga para pantalla")
-    if esc and not (300 <= total <= 1600): err.append(f"narración de {total} caracteres (rango 300–1600, ≈20–90 s)")
+    if esc and not (300 <= total <= MAX_NARRACION): err.append(f"narración de {total} caracteres (rango 300–{MAX_NARRACION}, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)")
     if esc and "no asesoría legal" not in esc[-1].get("texto", "").lower() and "no es asesoría legal" not in esc[-1].get("texto", "").lower():
         err.append("el cierre debe decir que es información general, no asesoría legal")
     if not any(e.get("afirmaciones") for e in esc): err.append("sin afirmaciones verificables")

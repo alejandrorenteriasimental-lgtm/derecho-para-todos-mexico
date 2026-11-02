@@ -18,7 +18,7 @@ def caida(url, timeout=60): raise verificador.SinConexion("sin red simulada")
 SOL = {"pieza_id": "G001", "tema_id": "T073", "formato": "reel", "carril": "A", "titulo": "¿Cárcel por deber dinero?",
        "gancho": "¿Te pueden meter a la cárcel por deber dinero?", "fuentes_sugeridas": "CPEUM art. 17"}
 BORRADOR = {"titulo": "¿Te pueden meter a la cárcel por deber dinero?", "escenas": [
-    {"tipo": "gancho", "texto": "¿Te pueden meter a la cárcel por deber dinero? Es una de las dudas más comunes cuando llega una llamada de cobranza.", "titulo": ["¿CÁRCEL", "POR DEUDAS?"]},
+    {"tipo": "gancho", "texto": "¿Te pueden meter a la cárcel por deber dinero? Es una duda común.", "titulo": ["¿CÁRCEL", "POR DEUDAS?"]},
     {"tipo": "titular", "texto": "La respuesta está en el artículo diecisiete de la Constitución, que aplica en todo el país.", "titulo": ["LO DICE LA", "CONSTITUCIÓN"]},
     {"tipo": "cita", "texto": "El artículo diecisiete dice: nadie puede ser aprisionado por deudas de carácter puramente civil.", "fuente": "F1",
      "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil", "etiqueta": "Constitución, artículo 17"},

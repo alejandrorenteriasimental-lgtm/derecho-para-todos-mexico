@@ -124,7 +124,7 @@ Propón de 1 a 4 artículos que sustenten el tema. Devuelve:
 {{"articulos": [{{"sigla": "...", "articulo": "17", "para_que": "qué afirmación sustenta"}}]}}
 Usa solo siglas de la lista. El número de artículo sin la palabra «artículo» (p. ej., "17", "87", "1o", "17 Bis")."""
 
-PEDIR_REEL = """Escribe el guion de un Reel vertical de 45 a 70 segundos (700 a 1,100 caracteres de narración en total) sobre:
+PEDIR_REEL = """Escribe el guion de un Reel vertical de 30 a 42 segundos (420 a 600 caracteres de narración en total; Instagram por API no acepta nuestros Reels de más de 45 s) sobre:
 Tema: {titulo}
 Pregunta que DEBE responder: {gancho}
 Textos oficiales disponibles (fuente → texto):

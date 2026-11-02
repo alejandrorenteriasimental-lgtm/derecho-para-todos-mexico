@@ -46,3 +46,9 @@ Esta guía la ejecuta Claude en una tarea programada diaria (sesión nueva cada 
 
 - **GitHub Actions:** tope propio de 1,700 minutos al mes (`registro/actions_mes.json`).
 - **Gemini:** cuota gratuita. Si aparece «tope propio diario», esperar al siguiente día del Pacífico.
+
+## Reels en Instagram (decisión del responsable, 2-11-2026: opción B)
+
+- En Instagram se publican los Reels aprobados que duran **45 s o menos** (`IG_REELS=corto`, `IG_REEL_MAX_S=45` en `data/lanzamiento.json`). Los más largos salen solo en Facebook.
+- Desde el lote 5 todos los Reels se producen de 45 s o menos: el redactor pide de 30 a 42 s, el esquema limita la narración a 620 caracteres y la auditoría técnica exige de 20 a 45 s.
+- Los Reels ya aprobados no se modifican.
