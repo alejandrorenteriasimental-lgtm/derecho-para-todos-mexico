@@ -7,3 +7,4 @@ pillow>=10                # MIT-CMU · render de cuadros e imágenes fijas
 pypdf>=5                  # BSD · extracción de texto de los PDF oficiales
 num2words==0.5.14         # LGPL-2.1 (uso como biblioteca, sin modificar) · cifras a palabras
 tzdata                    # Apache-2.0 · zonas horarias si el sistema no las trae (reinicio de cuota de Gemini)
+cryptography>=42         # Apache-2.0/BSD · cifrado de los tokens de TikTok (estado/tiktok_token.enc)
