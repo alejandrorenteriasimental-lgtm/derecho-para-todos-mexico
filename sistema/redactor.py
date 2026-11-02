@@ -135,7 +135,7 @@ Antes del contenido, incluye el campo "razonamiento" (no se publica; sirve para 
 {{"razonamiento": {{"pregunta": "la pregunta exacta que responde la pieza",
    "respuesta_corta": "Sí, … / No, … / Depende: … (una oración)",
    "reglas": [{{"conclusion": "…", "fuente": "F1", "cita_literal": "copia exacta que la sostiene", "condiciones": ["…"], "excepciones": ["…"]}}],
-   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],
+   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],  (solo conceptos que aparezcan en los textos oficiales o en la lista de conceptos confundibles; si no hay, [])
    "limites": "lo que la norma no dice"}}, …resto de campos…}}
 Conceptos que el público suele confundir en este tema (no los mezcles; si usas dos, explica su diferencia):
 {glosario}
@@ -165,7 +165,7 @@ Antes del contenido, incluye el campo "razonamiento" (no se publica; sirve para 
 {{"razonamiento": {{"pregunta": "la pregunta exacta que responde la pieza",
    "respuesta_corta": "Sí, … / No, … / Depende: … (una oración)",
    "reglas": [{{"conclusion": "…", "fuente": "F1", "cita_literal": "copia exacta que la sostiene", "condiciones": ["…"], "excepciones": ["…"]}}],
-   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],
+   "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "…"}}],  (solo conceptos que aparezcan en los textos oficiales o en la lista de conceptos confundibles; si no hay, [])
    "limites": "lo que la norma no dice"}}, …resto de campos…}}
 Conceptos que el público suele confundir en este tema (no los mezcles; si usas dos, explica su diferencia):
 {glosario}
@@ -241,7 +241,7 @@ Devuelve:
   "elementos": [{{"elemento": "uno de los pedidos en el punto 6: {nombres}", "estado": "cubierto | no_aplica | no_cubierto",
                  "respuesta": "en una oración, con las palabras que usará la pieza", "fuente": "F1", "cita_literal": "copia exacta", "motivo": "solo si no aplica"}}],
   "interpretaciones": [{{"afirmacion": "…", "condicion": "de qué depende", "base": "qué la apoya"}}],
-  "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "en una oración"}}],
+  "distinciones": [{{"a": "concepto", "b": "concepto parecido", "diferencia": "en una oración"}}],  (solo conceptos presentes en los textos oficiales o en la lista de conceptos confundibles; si no hay, [])
   "limites": "lo que estos textos NO dicen o lo que la pieza no debe afirmar",
   "fuentes_irrelevantes": ["F3"]}}
 Usa solo F1, F2… de la lista. Ninguna conclusión puede ir más allá de lo que dice su cita."""

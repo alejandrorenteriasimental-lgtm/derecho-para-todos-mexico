@@ -234,3 +234,10 @@ def test_linea_de_titulo_larga_dice_el_maximo_y_el_pedido_lo_anuncia():
     assert errs and "21 caracteres; máximo 20" in errs[0]
     assert any(p in errs[0] for p in redactor.PUNTUALES)
     assert "máx. 20 caracteres" in redactor.PEDIR_REEL
+
+
+def test_el_pedido_no_invita_a_inventar_distinciones_ajenas_al_texto():
+    # regresión 02-11-2026: I20261213-T107 (LFT 33) se descartó dos veces porque el modelo llenó «distinciones» con
+    # renuncia vs. mutuo consentimiento, conceptos que el art. 33 no trae; el campo debe poder quedar vacío
+    for p in (redactor.PEDIR_REEL, redactor.PEDIR_IMAGEN):
+        assert "si no hay, []" in p

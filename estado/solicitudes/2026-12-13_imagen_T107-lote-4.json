@@ -15,12 +15,12 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Vale firmar que renuncias a un salario que ya ganaste?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261213-T107",
   "archivo": "2026-12-13_imagen_T107-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece que es nula la renuncia a los salarios devengados y prestaciones deriv",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -44,7 +44,13 @@
       "motivo": "primer descarte con la pregunta nueva (LFT 33): causa del sistema. El glosario activaba «renuncia» (terminación laboral) con la renuncia de derechos y el redactor añadió la distinción con el mutuo consentimiento, ajena al art. 33. Patrón corregido en data/conceptos.json con prueba de regresión (test_razonamiento)",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece explícitamente la nulidad de la renuncia a salarios devengados, sin im"
+    },
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "segundo descarte con LFT 33, de nuevo por la distinción renuncia vs. mutuo consentimiento, ahora puesta por el modelo en «distinciones» sin glosario. Causa del sistema: el pedido invitaba a llenar siempre ese campo. Corregido (solo conceptos presentes en los textos o en el glosario; si no, []) con prueba. Último reintento: si se descarta otra vez, se sustituye la pregunta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece que es nula la renuncia a los salarios devengados y prestaciones deriv"
     }
-  ],
-  "huella_entrada": "c94099648e4a8876"
+  ]
 }
