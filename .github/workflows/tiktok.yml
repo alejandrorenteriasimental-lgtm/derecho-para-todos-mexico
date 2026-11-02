@@ -1,0 +1,39 @@
+# TikTok: cada noche envía a la bandeja de @aquidicelaley, como borrador, el Reel aprobado del día siguiente.
+# El responsable lo publica desde la app (recordatorio diario a las 19:17 CDMX). Sin TIKTOK=1, secretos y conexión, solo simula.
+name: tiktok
+on:
+  schedule:
+    - cron: "41 2 * * *"      # 20:41 CDMX: borrador del día siguiente
+  workflow_dispatch:
+    inputs:
+      fecha: { description: "fecha del calendario (AAAA-MM-DD); vacío = mañana", required: false, default: "" }
+concurrency: { group: tiktok, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - run: pip install -q "cryptography>=42"
+      - name: Enviar a la bandeja de TikTok
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLICAR: ${{ vars.PUBLICAR }}
+          LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}
+          PAUSA_PUBLICACION: ${{ vars.PAUSA_PUBLICACION }}
+          TIKTOK: ${{ vars.TIKTOK }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_CLAVE: ${{ secrets.TIKTOK_CLAVE }}
+          FECHA: ${{ inputs.fecha }}
+        run: python sistema/tiktok.py $FECHA
+      - name: Guardar registros y tokens cifrados
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add -A registro estado || true
+          git diff --cached --quiet || (git commit -m "tiktok ${{ github.run_id }}" && git pull --rebase -q && git push)

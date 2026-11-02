@@ -1,0 +1,28 @@
+# Conexión inicial de TikTok (una vez). Pegar el código de autorización recién obtenido (caduca en minutos, un solo uso).
+name: tiktok-conectar
+on:
+  workflow_dispatch:
+    inputs:
+      codigo: { description: "código de autorización (o la dirección completa con ?code=…)", required: true }
+      redirect_uri: { description: "URI de redirección registrada en la app de TikTok", required: true, default: "https://www.facebook.com/aquidicelaley/" }
+permissions: { contents: write }
+jobs:
+  conectar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - run: pip install -q "cryptography>=42"
+      - name: Canjear el código y guardar los tokens cifrados
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_CLAVE: ${{ secrets.TIKTOK_CLAVE }}
+          TIKTOK_CODIGO: ${{ inputs.codigo }}
+          TIKTOK_REDIRECT: ${{ inputs.redirect_uri }}
+        run: python sistema/tiktok_conectar.py
+      - name: Guardar tokens cifrados
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add estado/tiktok_token.enc && git commit -m "tiktok: conexión inicial ${{ github.run_id }}" && git pull --rebase -q && git push

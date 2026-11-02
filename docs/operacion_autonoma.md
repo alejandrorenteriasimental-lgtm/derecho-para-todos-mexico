@@ -40,6 +40,7 @@ Esta guía la ejecuta Claude en una tarea programada diaria (sesión nueva cada 
 7. **Aviso al responsable.** Una vez por lote aprobado, enviarle un resumen breve en español: piezas con su fecha, qué dicen, fundamento, versión, y el recordatorio de que puede vetar en 72 h respondiendo «veto <pieza>». Si no hay nada que aprobar ni ningún problema, no escribir.
 8. **Reels en Instagram.** Seguir `docs/meta_publicacion.md`: como máximo 2 cargas no públicas al día, y si aparece el código 368 detenerse. Desde el 2-11-2026 el responsable autorizó publicar en Instagram los Reels de hasta 45 s (`IG_REELS="corto"`, `IG_REEL_MAX_S="45"` en `data/lanzamiento.json`); los más largos siguen solo en Facebook. Revisar en `registro/publicacion.jsonl` que los Reels cortos queden publicados en IG y, si aparece el código 368, poner `IG_REELS` en `"0"` y avisar.
 9. **YouTube.** Revisar en `registro/publicacion.jsonl` el campo `youtube` de cada Reel: `PROGRAMADO` es lo esperado; `SIMULADO` significa que faltan los secretos de OAuth (avisar una vez al responsable con `docs/plataformas.md`); `ERROR` con «sin confirmación» exige revisar el canal antes de reintentar (no duplicar videos).
+10. **TikTok.** Revisar `registro/tiktok.jsonl`: `EN_BANDEJA` es lo esperado; `SIMULADO` = falta la conexión (`docs/plataformas.md`); `ERROR` con «sin confirmación» = revisar la bandeja antes de reintentar; «la clave de renovación venció» = repetir `tiktok-conectar`.
 
 ## Costos y límites
 

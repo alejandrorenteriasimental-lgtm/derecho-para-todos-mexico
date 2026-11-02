@@ -5,6 +5,7 @@
  "IG_REELS": "corto",
  "IG_REEL_MAX_S": "45",
  "YOUTUBE": "1",
+ "TIKTOK": "1",
  "autorizado_por": "César Alejandro Rentería Simental (responsable)",
  "fecha_autorizacion": "2026-10-28T17:18-06:00",
  "texto_autorizacion": "autorizo todo",
@@ -30,5 +31,12 @@
   "autorizado_por": "César Alejandro Rentería Simental (responsable), chat",
   "fecha": "2026-11-02",
   "condicion": "queda en simulación hasta que existan los secretos YT_CLIENT_ID, YT_CLIENT_SECRET y YT_REFRESH_TOKEN (OAuth del responsable una sola vez; proyecto de Google Cloud sin facturación)"
+ },
+ "tiktok": {
+  "decision": "cada noche, el Reel aprobado del día siguiente se envía como borrador a la bandeja de @aquidicelaley; el responsable lo publica desde la app con el texto del recordatorio de las 19:17",
+  "texto_autorizacion": "«quiero que se publique en todos lados, facebook, instagram, youtube, tiktok y que lo hagas tú»; método de Cronista Imposible (borrador + recordatorio) aceptado; «hazlo tú»",
+  "autorizado_por": "César Alejandro Rentería Simental (responsable), chat",
+  "fecha": "2026-11-02",
+  "condicion": "simulación hasta que existan la app propia de TikTok, los secretos TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET y TIKTOK_CLAVE, y la conexión inicial (tiktok-conectar.yml)"
  }
 }

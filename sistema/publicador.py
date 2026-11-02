@@ -132,7 +132,7 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
 
