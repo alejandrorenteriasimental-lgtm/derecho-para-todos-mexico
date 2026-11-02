@@ -12,13 +12,21 @@
   "lote": "lote-4",
   "motivo_seleccion": "Art. 16 CPEUM: la orden de cateo solo puede expedirla la autoridad judicial, a solicitud del Ministerio Público, expresando el lugar, las personas y los objetos; al concluir se levanta acta.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261213-T107",
   "archivo": "2026-12-13_reel_T107-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 0: línea de título demasiado larga para pantalla («SIN ORDEN DE UN JUEZ?»)\"], \"visible\": \"  \\n ¿La policía puede entrar a tu casa sin orden de un juez? \\n ¿POLICÍA EN TU CASA \\n SIN ORDEN DE UN JUEZ? \\n Depende. Para investigar delitos se requiere orden de un juez, pero la autoridad administrativa puede entrar para verificar reglamen",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "95c2702c0eed91a9"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "primer descarte (redacción): línea de título de 21 caracteres con máximo 20. Causa del sistema corregida el 02-11 (el pedido no daba el límite numérico y el error no lo decía; prueba de regresión en test_redactor). OJO en la revisión editorial: el art. 16 no autoriza literalmente entrar a un domicilio por flagrancia (solo la detención); esa afirmación no puede publicarse sin jurisprudencia verificada. Si se descarta otra vez, se sustituye la pregunta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 0: línea de título demasiado larga para pantalla («SIN ORDEN DE UN JUEZ?»)\"], \"visible\": \"  \\n ¿La policía puede entrar a tu casa sin orden de un juez? \\n ¿POLICÍA EN TU CASA \\n SIN ORDEN DE UN JUEZ? \\n Depende. Para investigar delitos se requiere orden de un juez, pero la autoridad administrativa puede entrar para verificar reglamen"
+    }
+  ]
 }

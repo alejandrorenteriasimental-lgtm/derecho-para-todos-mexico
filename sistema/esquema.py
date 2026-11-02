@@ -64,7 +64,7 @@ def validar(g):
             if e.get(c) in (None, "", []): err.append(f"escena {i} ({e['tipo']}): falta «{c}»")
         _afirmaciones(e.get("afirmaciones", []), fu, err, f"escena {i}")
         for ln in e.get("titulo", []) if isinstance(e.get("titulo"), list) else []:
-            if len(ln) > 20: err.append(f"escena {i}: línea de título demasiado larga para pantalla («{ln}»)")
+            if len(ln) > 20: err.append(f"escena {i}: línea de título demasiado larga para pantalla («{ln}», {len(ln)} caracteres; máximo 20): pártela en otra línea o acórtala")
         if isinstance(e.get("titulo"), list) and len(e["titulo"]) > 3: err.append(f"escena {i}: más de 3 líneas de título")
         for it in e.get("items", []) or []:
             if len(it) > 32: err.append(f"escena {i}: elemento de lista demasiado largo («{it[:30]}…»)")

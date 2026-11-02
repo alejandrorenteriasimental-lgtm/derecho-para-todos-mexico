@@ -142,7 +142,7 @@ Conceptos que el público suele confundir en este tema (no los mezcles; si usas 
 Estructura obligatoria del JSON:
 {{"titulo": "pregunta o frase de 40 a 70 caracteres",
   "escenas": [
-    {{"tipo": "gancho", "texto": "pregunta inicial de una oración", "titulo": ["2 A 3", "LÍNEAS CORTAS", "EN MAYÚSCULAS"]}},
+    {{"tipo": "gancho", "texto": "pregunta inicial de una oración", "titulo": ["2 A 3", "LÍNEAS CORTAS", "EN MAYÚSCULAS"]}},  (cada línea de "titulo": máx. 20 caracteres, contando espacios y signos)
     {{"tipo": "titular", "texto": "contexto en una o dos oraciones", "titulo": ["LÍNEAS", "CORTAS"]}},
     {{"tipo": "cita", "texto": "narración que INCLUYE la cita literal completa", "fuente": "F1", "cita_literal": "copia exacta del texto oficial", "etiqueta": "Ley, artículo N"}},
     {{"tipo": "lista", "texto": "explicación práctica", "items": ["máx. 28 caracteres", "...", "..."]}},

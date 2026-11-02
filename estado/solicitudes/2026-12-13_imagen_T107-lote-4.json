@@ -2,25 +2,25 @@
   "fecha": "2026-12-13",
   "formato": "imagen",
   "tema_id": "T107",
-  "titulo": "¿Pueden abrir tu correspondencia?",
-  "gancho": "¿Pueden abrir tu correspondencia?",
-  "pregunta": "¿Pueden abrir tu correspondencia?",
+  "titulo": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "gancho": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "pregunta": "¿Vale firmar que renuncias a un salario que ya ganaste?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "CPEUM art. 16",
+  "fuentes_sugeridas": "LFT art. 33",
   "riesgo_exactitud": "",
   "lote": "lote-4",
-  "motivo_seleccion": "Art. 16 CPEUM: la correspondencia que bajo cubierta circule por las estafetas estará libre de todo registro; su violación será penada por la ley.",
+  "motivo_seleccion": "Sustituye a «¿Pueden abrir tu correspondencia?» (CPEUM 16) tras dos descartes jurídicos (01-11, dos veces; el del 31-10 fue técnico): el auditor exigió las excepciones del art. 16 sobre comunicaciones privadas (autorización judicial federal) que exceden una imagen. Art. 33 LFT (texto vigente; última reforma de la ley DOF 14-05-2026, consultado 27-10-2026): «Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé»; los convenios o liquidaciones deben constar por escrito y ratificarse ante el Centro de Conciliación o el Tribunal, que los aprueba si no contienen renuncia de derechos. Respuesta literal; tema laboral no tratado en las últimas 3 semanas.",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "mito_realidad",
-  "angulo": "¿Pueden abrir tu correspondencia?",
-  "estado": "DESCARTADA",
+  "angulo": "¿Vale firmar que renuncias a un salario que ya ganaste?",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261213-T107",
   "archivo": "2026-12-13_imagen_T107-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": false, \"faltantes\": [\"La aclaración de que la inviolabilidad de la correspondencia (como parte de las comunicaciones privadas) puede ser excepcionada mediante una autorización de la autoridad judicial federal.\"]}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que transita baj",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -30,7 +30,13 @@
       "motivo": "primer descarte jurídico (el del 31-10 fue técnico, 503 de Gemini): el auditor pidió las excepciones del art. 16 (mandamiento escrito, intervención con autorización judicial federal y sus límites); causa del tema, no del sistema. Se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que circula por estafetas está protegida contra registros y su violación es sancionada.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 16 establece explícitamente que la correspondencia bajo cubierta en estafe"
+    },
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico (CPEUM 16, correspondencia): ahora LFT art. 33, nulidad de la renuncia a salarios devengados",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": false, \"faltantes\": [\"La aclaración de que la inviolabilidad de la correspondencia (como parte de las comunicaciones privadas) puede ser excepcionada mediante una autorización de la autoridad judicial federal.\"]}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que transita baj"
     }
-  ],
-  "huella_entrada": "f238bf30939104a3"
+  ]
 }

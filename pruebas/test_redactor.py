@@ -223,3 +223,14 @@ def test_prechequeo_sin_autoridad_ni_plazo_no_llama_al_redactor(uso):
         redactor.generar(sol, transporte, sim, env={}, archivo_uso=uso)
     assert "prechequeo" in str(e.value) and sim.llamadas["redactor"] == [] and sim.llamadas["analista"] == []
     assert e.value.categoria == "juridico"
+
+
+def test_linea_de_titulo_larga_dice_el_maximo_y_el_pedido_lo_anuncia():
+    # regresión 02-11-2026: R20261213-T107 se descartó por «SIN ORDEN DE UN JUEZ?» (21 caracteres);
+    # el pedido decía «LÍNEAS CORTAS» sin número y el error no daba el máximo
+    g = copy.deepcopy(BORRADOR)
+    g["escenas"][0]["titulo"] = ["¿POLICÍA EN TU CASA", "SIN ORDEN DE UN JUEZ?"]
+    errs = [e for e in esquema.validar(g) if "línea de título" in e]
+    assert errs and "21 caracteres; máximo 20" in errs[0]
+    assert any(p in errs[0] for p in redactor.PUNTUALES)
+    assert "máx. 20 caracteres" in redactor.PEDIR_REEL
