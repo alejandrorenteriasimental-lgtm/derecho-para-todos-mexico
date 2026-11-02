@@ -1,48 +1,192 @@
 {
  "solicitud": "2026-12-12_reel_T106-lote-4.json",
- "fecha": "2026-11-02T12:49:52+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"",
+ "fecha": "2026-11-02T13:09:08+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el crite",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
-   "errores": [
-    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Tienes dos meses contados a partir del día siguiente a la fecha de la separación de tu tra»."
-   ]
-  },
-  {
-   "etapa": "analisis",
-   "intento": 1,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "[sustento] «¿Sabes cuánto tiempo tienes para reclamar legalmente si sufres un despido en tu » habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
-    "[sustento] «el despido es la separación decidida por el patrón, la renuncia es decidida por » habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
-    "[sustento] «Despido:» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
-    "[sustento] «ante un despido tienes dos meses a partir del día siguiente a la separación, per» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
-   ],
-   "visible": "  \n ¿Sabes cuánto tiempo tienes para reclamar legalmente si sufres un despido en tu empleo? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Depende: tienes dos meses a partir del día siguiente a la separación, pero el plazo se suspende al presentar la solicitud de conciliación. \n PLAZO LEGAL \n DE RECLAMO \n La Ley Federal del Trabajo establece textualmente: «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.». \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Es "
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "el procedimiento específico para exigir la bonificación directamente al proveedor en el caso de contenido neto menor (presentando el comprobante de pago del día en que se detectó la violación)",
+      "la regla sobre la forma de pago para la devolución (misma forma de pago original, salvo aceptación de otra)"
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Si el contenido neto de un producto es menor al indicado en el empaque, el consumidor tiene derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, y en todo caso a una bonificación.",
+      "sostenida": "parcial",
+      "motivo": "Omite la condición necesaria establecida en el artículo 92: que el derecho se ejerce 'contra la entrega del producto adquirido'."
+     },
+     {
+      "conclusion": "La bonificación compensatoria no podrá ser menor al veinte por ciento del precio pagado por el producto.",
+      "sostenida": "si",
+      "motivo": "La afirmación es exacta conforme al artículo 92 Ter."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Conclusión 1 (Reglas)",
+      "problema": "Omisión de un requisito de la norma.",
+      "correccion": "Debe integrarse que la elección de la reposición o devolución se realiza 'contra la entrega del producto adquirido'."
+     },
+     {
+      "donde": "Contenido general (Cobertura)",
+      "problema": "Falta información sobre la vía de exigencia para el supuesto específico de la pregunta.",
+      "correccion": "Para el caso de contenido neto menor (fracción I), se debe informar que el consumidor puede hacer efectiva la bonificación directamente al proveedor presentando su comprobante o recibo de pago del día en que se hubiere detectado la violación por la Procuraduría."
+     },
+     {
+      "donde": "Contenido general (Cobertura)",
+      "problema": "No se menciona la condición sobre la forma de devolución del dinero.",
+      "correccion": "Se debe precisar que la devolución se efectuará utilizando la misma forma de pago con la que se realizó la compra, a menos que el consumidor acepte una forma distinta."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los consumidores tienen derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, y a una bonificación.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 establece explícitamente este derecho de elección y la obligación de la bonificación."
+     },
+     {
+      "conclusion": "Aplica cuando el contenido neto del producto sea menor al indicado en el empaque.",
+      "sostenida": "parcial",
+      "motivo": "El artículo 92 condiciona este supuesto a que se consideren los límites de tolerancia permitidos por la normatividad, detalle omitido en el texto visible de la pieza."
+     },
+     {
+      "conclusion": "La bonificación no será menor al veinte por ciento del precio pagado y se puede hacer efectiva directamente presentando el comprobante del día de la detección por la Procuraduría.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter establece tanto el porcentaje mínimo como el procedimiento específico para el caso de la fracción I del artículo 92."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'lista' y 'excepcion'",
+      "problema": "Se omite mencionar que el derecho a reclamar por contenido neto menor está sujeto a los 'límites de tolerancia permitidos por la normatividad'. No toda diferencia de contenido constituye un incumplimiento legal.",
+      "correccion": "Añadir en el texto visible que el derecho aplica cuando la diferencia de contenido excede los límites de tolerancia permitidos por la normatividad."
+     },
+     {
+      "donde": "Escena 'excepcion'",
+      "problema": "La redacción puede sugerir que el consumidor siempre puede exigir la bonificación directamente al proveedor, cuando el artículo 92 Ter condiciona esta vía directa a que la Procuraduría haya detectado previamente la violación.",
+      "correccion": "Aclarar que la facultad de exigir la bonificación directamente al proveedor presentando el comprobante aplica específicamente cuando la Procuraduría ha detectado la irregularidad."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "errores_esquema": [
-    "[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
-    "[sustento] «A diferencia de la renuncia, decidida por la persona trabajadora, el despido es » habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
-   ],
-   "visible": "  \n ¿Cuánto tiempo tienes para reclamar si te despiden? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Depende: tienes dos meses a partir del día siguiente a la separación, pero el plazo se suspende al presentar la solicitud de conciliación. \n TIEMPO PARA \n RECLAMAR \n La Ley Federal del Trabajo establece que: «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.» \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n A diferencia de la renuncia, decidida por la person"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los consumidores tienen derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, y a una bonificación.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 establece explícitamente este derecho a elección y la bonificación."
+     },
+     {
+      "conclusion": "Aplica cuando el contenido neto del producto sea menor al indicado en el empaque.",
+      "sostenida": "si",
+      "motivo": "El artículo 92, fracción I, contempla este supuesto específico."
+     },
+     {
+      "conclusion": "La bonificación no será menor al veinte por ciento del precio pagado y se puede hacer efectiva directamente presentando el comprobante del día de la detección por la Procuraduría.",
+      "sostenida": "parcial",
+      "motivo": "La pieza sugiere que esta es la forma general de hacer efectiva la bonificación, cuando el artículo 92 Ter limita esta facilidad específica (presentar comprobante del día de la detección) únicamente al supuesto de la fracción I del artículo 92."
+     },
+     {
+      "conclusion": "La devolución del dinero se realiza usando la misma forma de pago de la compra, salvo que el consumidor acepte otra distinta.",
+      "sostenida": "si",
+      "motivo": "El artículo 92, párrafo segundo, establece esta regla de forma clara."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'excepcion' y 'titular' (DERECHOS CLAROS)",
+      "problema": "La pieza da a entender que para obtener la bonificación es requisito indispensable presentar el comprobante del día de la detección por la Procuraduría. Esto es incorrecto; esa es una facilidad probatoria específica para el supuesto de la fracción I (contenido neto), pero no es la única forma de exigir la bonificación general prevista en el artículo 92.",
+      "correccion": "Aclarar que la presentación del comprobante del día de la detección es una vía específica para hacer efectiva la bonificación en el caso de contenido neto menor, pero que el derecho a la bonificación deriva del incumplimiento mismo, independientemente de esa facilidad probatoria."
+     },
+     {
+      "donde": "Escena 'lista' (items)",
+      "problema": "El ítem 'Aplica dentro de tolerancia' es ambiguo y puede confundir al lector, haciéndole creer que si el producto está dentro de la tolerancia, no tiene derecho a nada, cuando la ley dice que el derecho surge cuando el contenido es menor 'considerados los límites de tolerancia permitidos'.",
+      "correccion": "Redactar de forma más precisa: 'Aplica cuando el contenido es menor a lo indicado, considerando los límites de tolerancia permitidos por la normatividad'."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "errores_esquema": [
-    "[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.",
-    "[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
-   ],
-   "visible": "  \n ¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Depende: tienes dos meses a partir del día siguiente a la separación, pero el plazo se suspende al presentar la solicitud de conciliación. \n TIEMPO PARA \n RECLAMAR \n Sobre las personas trabajadoras separadas, la ley establece que: Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación. \n Para enten"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el criterio de bienes que ameriten conocimientos técnicos o la distinción de la fracción III)."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los consumidores tienen derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, y a una bonificación.",
+      "sostenida": "si",
+      "motivo": "La cita literal del artículo 92 respalda íntegramente la elección y la obligación de la bonificación."
+     },
+     {
+      "conclusion": "Aplica cuando el contenido neto del producto sea menor al indicado en el empaque.",
+      "sostenida": "si",
+      "motivo": "Corresponde exactamente a la fracción I del artículo 92."
+     },
+     {
+      "conclusion": "La bonificación no será menor al veinte por ciento del precio pagado y se puede hacer efectiva directamente presentando el comprobante del día de la detección por la Procuraduría.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter establece tanto el porcentaje mínimo como el procedimiento para la fracción I."
+     },
+     {
+      "conclusion": "La devolución del dinero se realiza usando la misma forma de pago de la compra, salvo que el consumidor acepte otra distinta.",
+      "sostenida": "si",
+      "motivo": "El párrafo del artículo 92 regula la forma de pago para la devolución."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "interpretaciones / distinciones",
+      "problema": "La distinción entre 'bonificación' y 'devolución de dinero' es correcta, pero la pieza omite mencionar que la bonificación es 'en todo caso', es decir, es independiente de la elección entre reposición o devolución.",
+      "correccion": "Aclarar que la bonificación es un derecho adicional que se otorga independientemente de si el consumidor elige la reposición o la devolución."
+     },
+     {
+      "donde": "escenas / tipo: lista",
+      "problema": "En el item 'Misma forma de pago', se presenta como una condición para el consumidor, cuando es una regla de ejecución de la devolución por parte del proveedor.",
+      "correccion": "Redactar como: 'La devolución se hará, por regla general, con la misma forma de pago utilizada'."
+     }
+    ]
+   }
   }
  ]
 }
