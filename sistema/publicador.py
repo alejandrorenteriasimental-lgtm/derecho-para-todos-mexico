@@ -19,7 +19,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import publicar, instagram
+import publicar, instagram, youtube
 
 RAIZ = Path(__file__).resolve().parent.parent
 CAL = RAIZ / "data" / "calendario_lanzamiento.json"
@@ -113,6 +113,11 @@ def texto(pieza):
     return g.get("copy") or g["titulo"]
 
 
+def titulo(pieza):
+    g = json.loads((RAIZ / "piezas" / pieza / "guion.json").read_text())
+    return g.get("titulo") or (g.get("pieza") or {}).get("titular") or pieza
+
+
 def hora_utc(fecha, hora):
     h, m = map(int, hora.split(":"))
     return datetime.fromisoformat(fecha).replace(hour=h, minute=m, tzinfo=MX).astimezone(timezone.utc)
@@ -127,13 +132,14 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
 
 
-def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descargar, carpeta="/tmp/publicacion"):
+def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descargar, carpeta="/tmp/publicacion", http_yt=None):
     ahora = ahora or datetime.now(timezone.utc)
+    http_yt = http_yt or (youtube.http_yt if http is publicar.http_real else http)
     modo, motivo = publicar.modo_operacion(env)
     res = {"ahora": ahora.isoformat(timespec="minutes"), "modo": modo, "motivo": motivo, "acciones": []}
     p = pausado(env)
@@ -154,6 +160,12 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                     else:
                         r = publicar.publicar_reel(e["pieza"], f, texto(e["pieza"]), huella, int(cuando.timestamp()), modo=modo, env=env, http=http)
                     acc["facebook"] = r.get("estado")
+                    if fmt == "reel":           # YouTube (Shorts): se programa igual que Facebook; sus errores no detienen nada más
+                        try:
+                            ry = youtube.publicar_yt(e["pieza"], f, titulo(e["pieza"]), texto(e["pieza"]), huella, cuando, env=env, http=http_yt)
+                            acc["youtube"] = ry.get("estado")
+                        except (youtube.ErrorYouTube, youtube.YouTubeAmbigua, publicar.SinRed, KeyError) as x:
+                            acc["youtube"] = f"ERROR: {x}"
                 # Instagram: publicar al llegar la hora (sin programación por API)
                 if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG and \
                         not reel_ig_permitido(env, e, bajar(e, carpeta, env) if env.get("IG_REELS") == "corto" else None):
