@@ -39,6 +39,7 @@ Esta guía la ejecuta Claude en una tarea programada diaria (sesión nueva cada 
 6. **Siguiente lote.** Cuando el lote activo esté completo y en el calendario, crear el siguiente lote: 7 Reels y 7 imágenes, una semana después, con temas que no repitan los de las últimas 3 semanas, preferentemente de alcance federal o nacional y con un artículo de respuesta literal. Seguir la misma estructura y pasar `pruebas/test_lote_piloto.py`.
 7. **Aviso al responsable.** Una vez por lote aprobado, enviarle un resumen breve en español: piezas con su fecha, qué dicen, fundamento, versión, y el recordatorio de que puede vetar en 72 h respondiendo «veto <pieza>». Si no hay nada que aprobar ni ningún problema, no escribir.
 8. **Reels en Instagram.** Seguir `docs/meta_publicacion.md`: como máximo 2 cargas no públicas al día, y si aparece el código 368 detenerse. Desde el 2-11-2026 el responsable autorizó publicar en Instagram los Reels de hasta 45 s (`IG_REELS="corto"`, `IG_REEL_MAX_S="45"` en `data/lanzamiento.json`); los más largos siguen solo en Facebook. Revisar en `registro/publicacion.jsonl` que los Reels cortos queden publicados en IG y, si aparece el código 368, poner `IG_REELS` en `"0"` y avisar.
+9. **YouTube.** Revisar en `registro/publicacion.jsonl` el campo `youtube` de cada Reel: `PROGRAMADO` es lo esperado; `SIMULADO` significa que faltan los secretos de OAuth (avisar una vez al responsable con `docs/plataformas.md`); `ERROR` con «sin confirmación» exige revisar el canal antes de reintentar (no duplicar videos).
 
 ## Costos y límites
 
