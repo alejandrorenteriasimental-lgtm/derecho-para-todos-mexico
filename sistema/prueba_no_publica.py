@@ -24,7 +24,7 @@ PERMISOS = {"pages_manage_posts", "pages_read_engagement", "pages_show_list", "i
 
 def variante_ig(reel, variante):
     """Derivado del Reel aprobado, SOLO para diagnóstico no público (nunca se publica):
-    «recorte:N» = primeros N s sin recodificar el video; «desde:N» = del segundo N al final; «silencio» = video completo con audio silencioso."""
+    «recorte:N» = primeros N s sin recodificar el video; «desde:N» = del segundo N al final; «silencio» = video completo con audio silencioso; «recodificar» = completo recodificado; «unaparte» = completo en un solo POST."""
     import subprocess
     if not variante: return reel, ""
     out = Path("/tmp") / f"variante_{variante.replace(':', '_')}.mp4"
@@ -38,6 +38,14 @@ def variante_ig(reel, variante):
     elif variante == "silencio":
         cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0", "-shortest",
                "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
+    elif variante == "recodificar":      # 3-11: video completo recodificado (GOP cerrado de 2 s, sin B-frames): ¿límite de duración o de codificación?
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(reel), "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+               "-profile:v", "high", "-level", "4.0", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-bf", "0",
+               "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-movflags", "+faststart", "-use_editlist", "0", str(out)]
+    elif variante == "unaparte":         # 3-11: mismo archivo, carga reanudable en UN solo POST (¿falla la carga por partes?)
+        import instagram
+        instagram.PARTE = 1 << 30
+        return reel, variante
     else:
         raise ValueError(f"variante desconocida: {variante}")
     subprocess.run(cmd, check=True, timeout=300)

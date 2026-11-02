@@ -111,7 +111,7 @@ def crear_contenedor(g, ig, formato, archivo, texto, page=None, libro=None, base
     if base is not None: registrar({**base, "fase": "CONTENEDOR_CREADO", "contenedor": cid}, libro)
     datos = Path(archivo).read_bytes()
     try:
-        up = subir_por_partes(g, uri, datos)
+        up = subir_por_partes(g, uri, datos, PARTE)
         if not up.get("success", True): raise ErrorGraph(200, None, f"carga no confirmada: {up}", transitorio=True)
     except ErrorGraph as e:
         if e.transitorio or not page: raise ErrorGraph(e.estado, e.codigo, f"carga del video a Instagram: {e}", transitorio=e.transitorio)
