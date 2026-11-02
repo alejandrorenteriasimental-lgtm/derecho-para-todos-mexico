@@ -2,22 +2,22 @@
   "fecha": "2026-12-12",
   "formato": "reel",
   "tema_id": "T106",
-  "titulo": "¿Te pueden pedir una prueba de embarazo para contratarte?",
-  "gancho": "¿Te pueden pedir una prueba de embarazo para contratarte?",
-  "pregunta": "¿Te pueden pedir una prueba de embarazo para contratarte?",
+  "titulo": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "gancho": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 133",
+  "fuentes_sugeridas": "LFT arts. 518, 521",
   "riesgo_exactitud": "",
   "lote": "lote-4",
-  "motivo_seleccion": "Art. 133 fr. XIV LFT: prohibido exigir certificados médicos de no embarazo para el ingreso, permanencia o ascenso.",
+  "motivo_seleccion": "Sustituye a «¿Te pueden pedir una prueba de embarazo para contratarte?» (LFT 133 fr. XIV) tras dos descartes jurídicos (01-11 y 02-11): en ambos el análisis puso como cita del elemento «efecto» una paráfrasis en vez del encabezado literal del artículo. Art. 518 LFT (texto vigente; última reforma de la ley DOF 14-05-2026, consultado 27-10-2026): «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación»; el término se suspende con la solicitud de conciliación (art. 684-B) y se reanuda conforme al art. 521 fr. III. Respuesta literal con su condición; tema laboral no tratado en las últimas 3 semanas (el 30-11 se trató qué pedir, no el plazo).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -27,7 +27,13 @@
       "motivo": "primer descarte (análisis): el elemento «efecto» llevó una cita que no es literal; LFT 133 fr. XIV responde literalmente («Exigir la presentación de certificados médicos de no embarazo para el ingreso, permanencia o ascenso en el empleo»). Falla puntual del modelo, no del tema. Se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («Se trata de una conducta prohibida por la ley para quienes e») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    },
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 133 fr. XIV): ahora LFT 518, plazo para reclamar un despido",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
     }
-  ],
-  "huella_entrada": "6f487a9f562a3d33"
+  ]
 }

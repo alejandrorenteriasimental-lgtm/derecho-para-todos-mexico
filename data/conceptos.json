@@ -61,13 +61,15 @@
       "conceptos": {
         "renuncia": {
           "patrones": [
-            "renuncia",
-            "renunciar",
+            "renuncia\\b(?! (?:que (?:los |las )?trabajador\\w* hagan )?(?:al?|del?) (?:\\w+ ){0,2}(?:salario|derecho|prestacion|indemnizac))",
+            "renuncias?\\b(?! (?:que (?:los |las )?trabajador\\w* hagan )?(?:al?|del?) (?:\\w+ ){0,2}(?:salario|derecho|prestacion|indemnizac))",
+            "renunciar\\b(?! (?:que (?:los |las )?trabajador\\w* hagan )?(?:al?|del?) (?:\\w+ ){0,2}(?:salario|derecho|prestacion|indemnizac))",
             "separ\\w* voluntariamente",
             "retiro voluntario"
           ],
           "definicion": "Separación decidida por la persona trabajadora.",
-          "regula": "LFT (p. ej., 162 fr. III para la prima de antigüedad)"
+          "regula": "LFT (p. ej., 162 fr. III para la prima de antigüedad)",
+          "nota_patron": "02-11-2026: no se activa con la renuncia de derechos (salarios, prestaciones, indemnizaciones; LFT art. 33), que no es terminar la relación de trabajo"
         },
         "mutuo_consentimiento": {
           "patrones": [

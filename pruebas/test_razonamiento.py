@@ -120,3 +120,15 @@ def test_cargo_institucional_citado_en_la_ley_no_es_persona_real():
     g = pieza("R20261027-T052")
     r = auditoria.editorial(g) if hasattr(auditoria, "editorial") else None
     assert r is None or all(x["resultado"] == "APROBADO" for x in r["reglas"] if x["control"] == "Sin personas reales identificables"), r
+
+
+def test_renuncia_de_derechos_no_activa_el_glosario_de_terminacion_laboral():
+    # regresión 02-11-2026: I20261213-T107 (LFT 33) se descartó porque el glosario de «renuncia» (terminación del trabajo)
+    # llevó al redactor a distinguirla del mutuo consentimiento, algo ajeno a la renuncia de salarios devengados
+    import razonamiento as r
+    nada = ["¿Vale firmar que renuncias a un salario que ya ganaste?",
+            "Es nula la renuncia que los trabajadores hagan de los salarios devengados",
+            "siempre que no contenga renuncia de los derechos de los trabajadores"]
+    for t in nada: assert ("terminacion_laboral", "renuncia") not in r.conceptos_en(t), t
+    for t in ["¿Si renuncias pierdes tu aguinaldo?", "presentó su renuncia voluntaria", "renunciar a tu trabajo"]:
+        assert ("terminacion_laboral", "renuncia") in r.conceptos_en(t), t

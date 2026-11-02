@@ -15,12 +15,12 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Vale firmar que renuncias a un salario que ya ganaste?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "I20261213-T107",
   "archivo": "2026-12-13_imagen_T107-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece explícitamente la nulidad de la renuncia a salarios devengados, sin im",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -37,7 +37,13 @@
       "motivo": "pregunta sustituida tras el segundo descarte jurídico (CPEUM 16, correspondencia): ahora LFT art. 33, nulidad de la renuncia a salarios devengados",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": false, \"faltantes\": [\"La aclaración de que la inviolabilidad de la correspondencia (como parte de las comunicaciones privadas) puede ser excepcionada mediante una autorización de la autoridad judicial federal.\"]}, \"conclusiones\": [{\"conclusion\": \"La correspondencia que transita baj"
+    },
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude",
+      "motivo": "primer descarte con la pregunta nueva (LFT 33): causa del sistema. El glosario activaba «renuncia» (terminación laboral) con la renuncia de derechos y el redactor añadió la distinción con el mutuo consentimiento, ajena al art. 33. Patrón corregido en data/conceptos.json con prueba de regresión (test_razonamiento)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Cualquier documento donde se pretenda renunciar a salarios ya devengados carece de validez legal.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 33 establece explícitamente la nulidad de la renuncia a salarios devengados, sin im"
     }
-  ],
-  "huella_entrada": "c94099648e4a8876"
+  ]
 }

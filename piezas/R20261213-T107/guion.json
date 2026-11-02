@@ -24,7 +24,18 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "16",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse",
+      "texto_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse, la persona o personas que hayan de aprehenderse y los objetos que se buscan, a lo que únicamente debe limitarse la diligencia",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-02"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "16",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La autoridad administrativa podrá practicar visitas domiciliarias únicamente para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía; y exigir la exhibición de los libros y papeles indispensables para comprobar que se han acatado las disposiciones fiscales, sujetándose en estos casos, a las leyes respectivas y a las formalidades prescritas para los cateos.",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
       "jurisdiccion": "federal",
       "consultado": "2026-11-02"
@@ -42,12 +53,19 @@
     },
     {
       "tipo": "titular",
-      "texto": "No, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.",
+      "texto": "Para catear tu casa, es decir, entrar a buscar personas u objetos, la Constitución exige una orden que solo un juez puede expedir.",
       "titulo": [
-        "REGLA GENERAL:",
-        "NECESITAS ORDEN"
+        "PARA CATEAR:",
+        "ORDEN DE UN JUEZ"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Solo la autoridad judicial puede expedir órdenes de cateo.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cita",
@@ -66,37 +84,44 @@
     },
     {
       "tipo": "lista",
-      "texto": "Para que una orden de inspección o cateo sea válida, la ley exige que cumpla con los siguientes requisitos fundamentales:",
+      "texto": "Esa orden la pide el Ministerio Público y debe decir el lugar que se va a inspeccionar, las personas que se van a aprehender y los objetos que se buscan. La diligencia solo puede limitarse a eso.",
       "items": [
-        "Mandamiento escrito",
-        "Autoridad competente",
-        "Funda y motiva la causa",
-        "Expedida por un juez"
+        "Solicitud del MP",
+        "Expedida por un juez",
+        "Lugar, personas y objetos"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "La policía, como autoridad administrativa, puede entrar sin orden de cateo solo para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía.",
-      "encabezado": "Visitas administrativas permitidas",
-      "detalle": "Para reglamentos de policía",
-      "fuente_corta": "Constitución, art. 16",
       "afirmaciones": [
         {
-          "id": "A2",
+          "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "Solo la autoridad judicial puede expedir órdenes de cateo.",
+          "texto": "La orden de cateo, a solicitud del Ministerio Público, expresa el lugar, las personas y los objetos, y a ello se limita la diligencia.",
           "fuente": "F2"
         }
       ]
     },
     {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Las autoridades administrativas sí pueden hacer visitas domiciliarias, pero solo para revisar que se cumplan los reglamentos sanitarios y de policía, o para pedir libros y papeles fiscales, y deben seguir las formalidades de los cateos.",
+      "encabezado": "Visitas administrativas",
+      "detalle": "Con las formalidades del cateo",
+      "fuente_corta": "Constitución, art. 16",
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "La autoridad administrativa puede practicar visitas domiciliarias solo para reglamentos sanitarios y de policía y papeles fiscales, con las formalidades de los cateos.",
+          "fuente": "F3"
+        }
+      ],
+      "fuente": "F3"
+    },
+    {
       "tipo": "titular",
-      "texto": "En conclusión, tu domicilio es inviolable y solo puede inspeccionarse con un mandamiento escrito de un juez o para revisiones administrativas específicas.",
+      "texto": "En resumen: para catear tu casa se necesita una orden de un juez. Hay casos especiales, como la flagrancia, con reglas propias que este video no cubre.",
       "titulo": [
-        "TU HOGAR",
-        "ESTÁ PROTEGIDO"
+        "TU CASA",
+        "ESTÁ PROTEGIDA"
       ],
       "afirmaciones": []
     },
@@ -111,7 +136,7 @@
     "suficiente": true,
     "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
     "concepto_central": "orden de cateo",
-    "respuesta_corta": "No, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.",
+    "respuesta_corta": "Depende: para catear tu casa se necesita una orden que solo un juez puede expedir; las autoridades administrativas pueden hacer visitas domiciliarias limitadas, con las formalidades de los cateos.",
     "reglas": [
       {
         "conclusion": "Nadie puede ser molestado en su domicilio sin un mandamiento escrito de la autoridad competente que justifique legalmente el procedimiento.",
@@ -123,8 +148,7 @@
           "Que funde y motive la causa legal"
         ],
         "excepciones": [
-          "Visitas domiciliarias de autoridad administrativa para reglamentos sanitarios y de policía",
-          "Exigencia de alojamiento por militares en tiempo de guerra"
+          "Visitas domiciliarias de la autoridad administrativa, solo para reglamentos sanitarios y de policía y papeles fiscales, con las formalidades de los cateos"
         ],
         "ref": {
           "documento": "Constitución Política de los Estados Unidos Mexicanos",
@@ -133,8 +157,8 @@
       },
       {
         "conclusion": "La inspección de un domicilio para buscar personas u objetos requiere específicamente una orden de cateo que solo un juez puede autorizar.",
-        "fuente": "F1",
-        "cita_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse",
+        "fuente": "F2",
+        "cita_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse, la persona o personas que hayan de aprehenderse y los objetos que se buscan, a lo que únicamente debe limitarse la diligencia",
         "condiciones": [
           "Solicitud previa del Ministerio Público",
           "Expedición exclusiva por autoridad judicial",
@@ -151,16 +175,16 @@
       {
         "elemento": "efecto",
         "estado": "cubierto",
-        "respuesta": "La entrada al domicilio es legal únicamente si se cuenta con el mandamiento escrito que funde y motive la causa, o si se trata de una visita administrativa reglamentaria.",
-        "fuente": "F1",
-        "cita_literal": "Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad competente"
+        "respuesta": "Catear un domicilio requiere orden judicial; las visitas administrativas se limitan a reglamentos sanitarios, de policía y papeles fiscales, con las formalidades de los cateos.",
+        "fuente": "F2",
+        "cita_literal": "En toda orden de cateo, que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público, se expresará el lugar que ha de inspeccionarse, la persona o personas que hayan de aprehenderse y los objetos que se buscan, a lo que únicamente debe limitarse la diligencia"
       }
     ],
     "interpretaciones": [
       {
-        "afirmacion": "La policía, actuando como autoridad administrativa, puede entrar sin orden judicial de cateo solo para revisiones de reglamentos, pero debe cumplir formalidades similares.",
-        "condicion": "Que el objetivo sea cerciorarse del cumplimiento de reglamentos sanitarios y de policía.",
-        "base": "La autoridad administrativa podrá practicar visitas domiciliarias únicamente para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía [...] sujetándose en estos casos [...] a las formalidades prescritas para los cateos."
+        "afirmacion": "Las visitas domiciliarias administrativas no sustituyen a la orden de cateo: tienen un objeto limitado y deben cumplir las formalidades de los cateos.",
+        "condicion": "Que el objeto sea verificar reglamentos sanitarios y de policía o disposiciones fiscales.",
+        "base": "La autoridad administrativa podrá practicar visitas domiciliarias únicamente para cerciorarse de que se han cumplido los reglamentos sanitarios y de policía; y exigir la exhibición de los libros y papeles indispensables para comprobar que se han acatado las disposiciones fiscales, sujetándose en estos casos, a las leyes respectivas y a las formalidades prescritas para los cateos."
       }
     ],
     "distinciones": [
@@ -170,7 +194,7 @@
         "diferencia": "La orden de cateo autoriza la inspección de un lugar, mientras que la de aprehensión es dictada por un juez para detener a una persona por un probable delito."
       }
     ],
-    "limites": "El texto no establece si la policía puede entrar al domicilio sin orden en casos de flagrancia o persecución inmediata; solo menciona la detención en flagrancia de forma general."
+    "limites": "El texto no establece si la policía puede entrar al domicilio sin orden en casos de flagrancia; la pieza no lo afirma ni lo niega y advierte que esos casos tienen reglas propias."
   },
   "generacion": {
     "afirmaciones_eliminadas_sin_ancla": [],
@@ -202,7 +226,7 @@
   "pregunta_original": "¿La policía puede entrar a tu casa sin orden de un juez?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿La policía puede entrar a tu casa sin orden de un juez?\n\nNo, por regla general se requiere una orden de cateo escrita emitida por un juez, salvo para visitas de inspección sanitaria o de reglamentos de policía.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿La policía puede entrar a tu casa sin orden de un juez?\n\nPara catear un domicilio, el artículo 16 de la Constitución exige una orden «que sólo la autoridad judicial podrá expedir, a solicitud del Ministerio Público», con el lugar, las personas y los objetos que se buscan.\n\nLas autoridades administrativas pueden hacer visitas domiciliarias «únicamente» para revisar reglamentos sanitarios y de policía o papeles fiscales, y con las formalidades de los cateos.\n\nHay casos especiales, como la flagrancia, con reglas propias que este video no cubre.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -243,5 +267,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-02",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "error de fondo corregido: el borrador decía que la policía «puede entrar sin orden de cateo» para revisar reglamentos; el art. 16 sujeta las visitas administrativas a las formalidades de los cateos. Se quita «policía = autoridad administrativa»; la lista mezclada pasa a los requisitos literales de la orden de cateo; la afirmación de la escena 4 queda en la escena que la dice; fuente F3 (visitas administrativas, incluidas las fiscales); se advierte que la flagrancia tiene reglas propias, sin afirmar lo que el texto no dice"
+    }
+  ]
 }
