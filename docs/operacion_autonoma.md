@@ -16,6 +16,10 @@ Esta guía la ejecuta Claude en una tarea programada diaria (sesión nueva cada 
 - **Lotes 1 a 3.** Conservan la aprobación directa del responsable.
 - **Paro de emergencia.** Ver `docs/paro_emergencia.md`. Si existe `estado/pausa_publicacion.json`, no se reanuda sin revisar la causa.
 
+## Operación única
+
+Ver `docs/operacion_unica.md`. Al iniciar, revisar en `git log` si hay commits de sesiones ajenas a las tres autorizadas; si los hay, no revertirlos: reportarlos al responsable.
+
 ## Rutina diaria
 
 1. **Estado.** Hacer `git pull` en el repositorio `alejandrorenteriasimental-lgtm/derecho-para-todos-mexico` (con `gh`; despacho de flujos por REST: `gh api -X POST repos/{repo}/actions/workflows/<archivo>/dispatches -f ref=main`). Leer después:
