@@ -3920,7 +3920,7 @@
       "id": "I20261213-T107",
       "formato": "imagen",
       "huella": "2785ae4ffee59b5ada6e069bc67beda0fc66bcc2aef8e1d3a5d5a65eee5b4cf1",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-02T12:40:14+00:00",
@@ -3936,6 +3936,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-02T12:42:17+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-02T12:50:00+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 02-11): texto de publicación con citas completas del art. 33 LFT y sin relleno; lo visible no cambia; se vuelve a verificar y producir"
         }
       ],
       "error": null,
