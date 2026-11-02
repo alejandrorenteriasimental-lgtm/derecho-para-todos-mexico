@@ -2,7 +2,8 @@
  "descripcion": "Autorización de lanzamiento del responsable. La publicación real requiere PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI; se registran aquí (auditable en git) porque las variables del repositorio no se pueden fijar desde la sesión. Paro de emergencia: variable PAUSA_PUBLICACION=1 o estado/pausa_publicacion.json (docs/paro_emergencia.md); para revocar, poner PUBLICAR en 0.",
  "PUBLICAR": "1",
  "LANZAMIENTO_AUTORIZADO": "SI",
- "IG_REELS": "0",
+ "IG_REELS": "corto",
+ "IG_REEL_MAX_S": "45",
  "autorizado_por": "César Alejandro Rentería Simental (responsable)",
  "fecha_autorizacion": "2026-10-28T17:18-06:00",
  "texto_autorizacion": "autorizo todo",
@@ -14,5 +15,12 @@
   "decision_responsable": "«quiero que sea lo más autónomo posible, que todo se vaya publicando sin mi intervención en la medida de lo posible»; opción elegida: «Yo reviso; tú puedes vetar»",
   "regla": "Claude revisa y corrige cada pieza (texto oficial, coherencia de lo visible con lo narrado, cuadro por cuadro) y la aprueba con decidir.py --delegada. El responsable recibe un resumen con las piezas; cada pieza solo se publica 72 h después de su aprobación delegada. Dentro de ese plazo el responsable puede vetarla («rechazar»). Las piezas de los lotes 1 a 3 conservan la aprobación directa del responsable.",
   "veto_horas": 72
+ },
+ "instagram_reels": {
+  "decision": "activar Reels en Instagram con tope de 45 s (IG_REELS=corto, IG_REEL_MAX_S=45)",
+  "texto_autorizacion": "«quiero que se publique en todos lados, facebook, instagram, youtube, tiktok y que lo hagas tú»",
+  "autorizado_por": "César Alejandro Rentería Simental (responsable), chat",
+  "fecha": "2026-11-02",
+  "fundamento_tecnico": "docs/meta_publicacion.md, diagnóstico 2-11: hasta 45 s pasan; de 56 a 70 s fallan con 2207076. Los Reels más largos siguen solo en Facebook."
  }
 }

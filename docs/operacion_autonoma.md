@@ -38,7 +38,7 @@ Esta guía la ejecuta Claude en una tarea programada diaria (sesión nueva cada 
 5. **Calendario.** Cuando las 14 piezas de un lote estén aprobadas, agregar la semana a `data/calendario_lanzamiento.json` con pieza, versión, archivo, SHA-256, asset_id, release y fecha de aprobación. El formato está en las entradas existentes. Correr `pruebas/test_publicador.py`.
 6. **Siguiente lote.** Cuando el lote activo esté completo y en el calendario, crear el siguiente lote: 7 Reels y 7 imágenes, una semana después, con temas que no repitan los de las últimas 3 semanas, preferentemente de alcance federal o nacional y con un artículo de respuesta literal. Seguir la misma estructura y pasar `pruebas/test_lote_piloto.py`.
 7. **Aviso al responsable.** Una vez por lote aprobado, enviarle un resumen breve en español: piezas con su fecha, qué dicen, fundamento, versión, y el recordatorio de que puede vetar en 72 h respondiendo «veto <pieza>». Si no hay nada que aprobar ni ningún problema, no escribir.
-8. **Reels en Instagram.** Seguir `docs/meta_publicacion.md`: como máximo 2 cargas no públicas al día, y si aparece el código 368 detenerse. Mientras no se resuelva, `IG_REELS` queda en `"0"`.
+8. **Reels en Instagram.** Seguir `docs/meta_publicacion.md`: como máximo 2 cargas no públicas al día, y si aparece el código 368 detenerse. Desde el 2-11-2026 el responsable autorizó publicar en Instagram los Reels de hasta 45 s (`IG_REELS="corto"`, `IG_REEL_MAX_S="45"` en `data/lanzamiento.json`); los más largos siguen solo en Facebook. Revisar en `registro/publicacion.jsonl` que los Reels cortos queden publicados en IG y, si aparece el código 368, poner `IG_REELS` en `"0"` y avisar.
 
 ## Costos y límites
 

@@ -95,4 +95,4 @@ Siguiente paso (máximo 2 cargas no públicas al día; 31-10 ya tiene 2): biseca
 - El límite exacto está entre 45 y 56 s.
 - Tope operativo: **45 s**.
 - Implementado: `IG_REELS=corto` con `IG_REEL_MAX_S=45` (`publicador.reel_ig_permitido`), con prueba.
-- Activación pendiente de decisión del responsable.
+- **Activado el 2-11-2026** por decisión del responsable (`data/lanzamiento.json`: `IG_REELS="corto"`, `IG_REEL_MAX_S="45"`).
