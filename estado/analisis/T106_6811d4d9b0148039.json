@@ -1,0 +1,56 @@
+{
+ "tema_id": "T106",
+ "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+ "fecha": "2026-11-02T12:48:50+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "concepto_central": "despido",
+  "respuesta_corta": "Depende: tienes dos meses a partir del día siguiente a la separación, pero el plazo se suspende al presentar la solicitud de conciliación.",
+  "reglas": [
+   {
+    "conclusion": "Las acciones de las personas trabajadoras que sean separadas de su trabajo prescriben en dos meses, contados desde el día siguiente a la fecha de la separación.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+    "condiciones": [
+     "Tratarse de trabajadores que hayan sido separados de su trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El plazo de dos meses para reclamar se suspende desde la fecha en que se presenta la solicitud de conciliación.",
+    "fuente": "F1",
+    "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+    "condiciones": [
+     "Haber presentado la solicitud de conciliación conforme al procedimiento legal"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El transcurso de los dos meses sin reclamar produce la prescripción de las acciones legales de la persona trabajadora separada de su empleo.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es la separación decidida por el patrón, mientras que la renuncia es la separación decidida por la propia persona trabajadora."
+   },
+   {
+    "a": "despido",
+    "b": "mutuo consentimiento",
+    "diferencia": "El despido proviene de la decisión unilateral del patrón, a diferencia del mutuo consentimiento donde ambas partes acuerdan la terminación."
+   }
+  ],
+  "limites": "Los textos no detallan el procedimiento específico del artículo 684-B ni las excepciones que eximen del agotamiento de la conciliación.",
+  "fuentes_irrelevantes": []
+ }
+}

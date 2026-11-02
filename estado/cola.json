@@ -3920,7 +3920,7 @@
       "id": "I20261213-T107",
       "formato": "imagen",
       "huella": "2785ae4ffee59b5ada6e069bc67beda0fc66bcc2aef8e1d3a5d5a65eee5b4cf1",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-02T12:40:14+00:00",
@@ -3942,6 +3942,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-02T12:50:00+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 02-11): texto de publicación con citas completas del art. 33 LFT y sin relleno; lo visible no cambia; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-02T12:52:32+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-02T12:52:36+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -3949,10 +3961,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "e00ab8704d01195f",
-        "huella_guion": "9dae2cdd2abf8f822bafc26ff4710a1a34d181302694b7e8362226b352d9347a",
+        "version": "7d4de2bcba7c86b8",
+        "huella_guion": "e419440439a587920d4680d34b9878ac2c119447befb0f3294bdc8105bcd9ace",
         "huella_archivo": "e120a7bb4d04184fe35c6de082b770118cbef3f35586e76f860ce7a016de3cbd",
-        "preparada": "2026-11-02T12:42:17+00:00",
+        "preparada": "2026-11-02T12:52:36+00:00",
         "canal": "chat"
       }
     }
