@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "25f13f464f0ec4fe"
+      "detalle": "998f36db3c83f419"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -82,11 +82,9 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "Regla: La fuente al pie de cada cita es el artículo citado"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -112,32 +110,32 @@
       },
       {
         "control": "La fuente al pie de cada cita es el artículo citado",
-        "resultado": "FALLA",
-        "detalle": "Ley Federal del Trabajo, artículo 330-E ≠ pie Ley Federal del Trabajo, artículo 330-A"
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
       }
     ]
   },
   "registro": {
     "id": "R20261203-T070-IG",
     "titulo": "¿La empresa debe pagarte luz e internet?",
-    "fecha": "2026-11-03T01:04:21+00:00",
-    "sha256": "25f13f464f0ec4fe5f2af3a7471be05cceedc3ed1e0b0381980f3afc19e45b4b",
+    "fecha": "2026-11-03T01:33:58+00:00",
+    "sha256": "998f36db3c83f419b0306505fdee4ea704f398b2311fcded7c2806cd11301c02",
     "duracion_s": 35.1,
-    "estado": "RETENIDO",
-    "huella_guion": "0c65c5776fa315b96b5a9424e3120d5883d9651b66327a3a424991cbbbcb7644",
+    "estado": "APTO",
+    "huella_guion": "3cc59e76048726b0f9a8cb4f5342ca8c1a5afad3cce6c118d4cd7b14c506f535",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.1,
+      "narracion": 21.6,
       "musica": 1.7,
-      "render_video": 45.5,
-      "mezcla_audio": 1.7,
-      "auditoria_tecnica": 8.9
+      "render_video": 49.9,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 9.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.3,
-      "computo_equivalente_runner_usd": 0.0078,
+      "computo_minutos": 1.41,
+      "computo_equivalente_runner_usd": 0.0084,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 1051,
