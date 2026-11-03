@@ -14,6 +14,6 @@ Calendario completo y sin huecos hasta: 2026-12-11
 
 Próximos huecos: 2026-12-16 imagen, 2026-12-17 imagen, 2026-12-18 imagen, 2026-12-19 imagen, 2026-12-20 imagen, 2026-12-12 reel, 2026-12-14 reel, 2026-12-15 reel, 2026-12-16 reel, 2026-12-17 reel
 
-Cola: PENDIENTE 4, RETENIDO 7, REVISION_HUMANA 2, SIMULADO 42
+Cola: RETENIDO 7, REVISION_HUMANA 8, SIMULADO 44
 
-_Generado 2026-11-03T14:14:34+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._
+_Generado 2026-11-03T16:34:52+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._

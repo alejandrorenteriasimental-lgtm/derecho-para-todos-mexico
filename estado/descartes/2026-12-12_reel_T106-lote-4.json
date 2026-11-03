@@ -1,7 +1,7 @@
 {
  "solicitud": "2026-12-12_reel_T106-lote-4.json",
- "fecha": "2026-11-03T02:23:06+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si el empaque trae menos producto? \\n ¿TRAE MENOS \\n DE LO INDICADO \\n EN EL EMPAQUE? \\n Puedes exigir la reposición o devolución y una bonificación. \\n DERECHOS \\n DEL CONSUMIDOR \\n Los consumidores tend",
+ "fecha": "2026-11-03T16:13:10+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n ¿QUÉ EXIGIR \\n SI EL EMPAQUE \\n TRAE MENOS? \\n Puedes exigir la reposición del producto o la devolución de lo pagado y una bonificación. \\n DERECHOS",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,15 +12,15 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 623 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    "narración de 676 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
    ],
-   "visible": "  \n ¿Qué pasa si tu producto trae menos cantidad de la anunciada? \n ¿MENOS DE \n LO QUE DICE \n EL EMPAQUE? \n Puedes exigir, a tu elección, la reposición del producto o la devolución de lo pagado y, en todo caso, una bonificación no menor al 20% del precio. \n DERECHOS DEL \n CONSUMIDOR \n La ley señala que: Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación "
+   "visible": "  \n ¿Sabes qué puedes exigir si el empaque trae menos de lo indicado? \n ¿EL PRODUCTO \n TRAE MENOS? \n Puedes exigir, a tu elección, la reposición del producto o la devolución de lo pagado y, en todo caso, una bonificación no menor al 20% del precio. \n LO QUE \n PUEDES EXIGIR \n La ley señala que los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n Revisa la"
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "narración de 623 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    "narración de 676 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
    ]
   },
   {
@@ -31,26 +31,32 @@
     "cobertura": {
      "responde_nucleo": true,
      "faltantes": [
-      "No se menciona que, en caso de que la Procuraduría detecte el incumplimiento mediante verificación, el consumidor puede hacer efectiva la bonificación directamente al proveedor presentando su comprobante de pago (Art. 92 Ter)."
+      "La condición de que la devolución del dinero debe hacerse por la misma forma de pago original, salvo acuerdo distinto",
+      "La necesidad de juicio de peritos o verificación en laboratorios para bienes que requieran conocimientos técnicos"
      ]
     },
     "conclusiones": [
      {
       "conclusion": "Si el contenido neto de un producto o la cantidad entregada es menor a la indicada en el empaque, el consumidor tiene derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, además de una bonificación.",
       "sostenida": "si",
-      "motivo": "La conclusión se deriva directamente del artículo 92, fracción I, y el párrafo inicial del mismo."
+      "motivo": "El artículo 92, fracción I, establece explícitamente este derecho ante la falta de contenido neto."
      },
      {
       "conclusion": "La bonificación que le corresponde al consumidor en este supuesto no puede ser inferior al veinte por ciento del precio pagado.",
       "sostenida": "si",
-      "motivo": "El artículo 92 Ter establece explícitamente que la bonificación no podrá ser menor al veinte por ciento del precio pagado."
+      "motivo": "El artículo 92 Ter establece claramente que la bonificación no podrá ser menor al veinte por ciento del precio pagado."
      }
     ],
     "objeciones": [
      {
-      "donde": "cobertura / elementos",
-      "problema": "La pieza omite un mecanismo de ejecución importante para el supuesto de la fracción I (contenido neto menor).",
-      "correccion": "Debe incluirse que, si la Procuraduría detecta el incumplimiento mediante verificación, el consumidor puede exigir la bonificación directamente al proveedor presentando su comprobante o recibo de pago del día en que se detectó la violación (Art. 92 Ter)."
+      "donde": "Razonamiento y elementos",
+      "problema": "Se omite la regla sobre la forma de pago en caso de devolución, la cual es una condición operativa importante.",
+      "correccion": "Agregar que la devolución de la cantidad pagada se efectuará utilizando la misma forma de pago con la que se realizó la compra, pudiendo hacerse por una forma de pago distinta si el consumidor lo acepta."
+     },
+     {
+      "donde": "Razonamiento y elementos",
+      "problema": "Se omite la condición de verificación técnica para ciertos bienes, lo cual es un requisito procedimental relevante.",
+      "correccion": "Añadir que en los casos de aparatos, unidades y bienes que por sus características ameriten conocimientos técnicos, se estará al juicio de peritos o a la verificación en laboratorios debidamente acreditados."
      }
     ]
    }
@@ -59,9 +65,9 @@
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    "narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
    ],
-   "visible": "  \n ¿Qué puedes exigir si el empaque trae menos producto? \n ¿TRAE MENOS \n DE LO INDICADO \n EN EL EMPAQUE? \n Puedes exigir la reposición o devolución y una bonificación. \n DERECHOS \n DEL CONSUMIDOR \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n Opciones por contenido neto menor al indicado: \n Reposición de producto \n Devolución de dinero \n Bonific"
+   "visible": "  \n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \n ¿QUÉ EXIGIR \n SI EL EMPAQUE \n TRAE MENOS? \n Puedes exigir la reposición del producto o la devolución de lo pagado y una bonificación. \n DERECHOS DEL \n CONSUMIDOR \n La ley otorga el derecho a elegir la reposición o devolución contra la entrega y una bonificación: Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, "
   }
  ]
 }

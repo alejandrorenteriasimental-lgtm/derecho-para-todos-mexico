@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.0 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.0 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.5 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "e3a9e840df14119f"
+      "detalle": "e1a153697c2048c0"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261214-T108",
     "titulo": "¿Cada cuánto tiempo te deben pagar tu sueldo por ley?",
-    "fecha": "2026-11-03T11:59:43+00:00",
-    "sha256": "e3a9e840df14119fdedf057771bdc70a75e4707922b9bf958f65bd5faddc5972",
-    "duracion_s": 42.0,
+    "fecha": "2026-11-03T16:27:13+00:00",
+    "sha256": "e1a153697c2048c0f96b384dad7bc2cc5b7caed5dff8436ea666dd192178fab6",
+    "duracion_s": 39.7,
     "estado": "APTO",
-    "huella_guion": "af80e9332454cfc9d72e56eb8c23d98d10d2fd86661cb28a6ff923f1759eda65",
+    "huella_guion": "b7511c2cedc448f8da2d5acc2b35d44fb5de1cb1a5b1fa9535ea194fefb92a99",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 12.2,
-      "musica": 1.3,
-      "render_video": 32.5,
-      "mezcla_audio": 1.2,
-      "auditoria_tecnica": 7.7
+      "narracion": 10.2,
+      "musica": 1.1,
+      "render_video": 30.5,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 6.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.91,
-      "computo_equivalente_runner_usd": 0.0055,
+      "computo_minutos": 0.82,
+      "computo_equivalente_runner_usd": 0.0049,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1258,
-    "caracteres_narrados": 605
+    "frames": 1188,
+    "caracteres_narrados": 568
   }
 }

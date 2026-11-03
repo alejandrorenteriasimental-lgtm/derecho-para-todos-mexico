@@ -1,0 +1,120 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1156 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=998"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "41 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "97% de 38 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261219-T113",
+    "formato": "imagen",
+    "titulo": "¿Te pueden negar un servicio por tu religión?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261219-T113.png",
+    "sha256": "11c3e3ca296613e16fb63f6599b955a0c6ea4cf7b4c086f042bafe40fd0c0b69",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100000000001111110001110100111111000111111111111100000000000001111101111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "1201f15f700364f4df4c41ce02a676db8d14578905d703cf2fe7a2c956604c22",
+    "texto_alternativo": "Imagen gráfica tipo mito y realidad que explica si te pueden negar un servicio por tu religión basándose en la Constitución Política de los Estados Unidos Mexicanos.",
+    "copy": "En la vida diaria, a veces se piensa que los establecimientos o prestadores de servicios pueden elegir libremente a quién atender basándose en las creencias de las personas. Sin embargo, esto no es correcto conforme al marco legal vigente.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 1, «Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,» cuando esta tenga por objeto anular o menoscabar los derechos y libertades de las personas.\n\nEsto significa que la negativa de un servicio basada en motivos religiosos está prohibida si atenta contra la dignidad humana. Guarda y comparte esta información para conocer tus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "1",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-03T16:34:13+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

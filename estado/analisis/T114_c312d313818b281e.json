@@ -1,0 +1,67 @@
+{
+ "tema_id": "T114",
+ "pregunta": "¿Necesitas permiso para reunirte pacíficamente?",
+ "fecha": "2026-11-03T16:22:56+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Necesitas permiso para reunirse pacíficamente?",
+  "concepto_central": "derecho de reunión pacífica",
+  "respuesta_corta": "No: la ley establece que no se podrá coartar el derecho de reunirse pacíficamente con cualquier objeto lícito.",
+  "reglas": [
+   {
+    "conclusion": "No se puede coartar el derecho de reunirse pacíficamente con cualquier objeto lícito.",
+    "fuente": "F1",
+    "cita_literal": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito",
+    "condiciones": [
+     "el objeto de la reunión debe ser lícito",
+     "solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Las reuniones armadas no tienen derecho de deliberar.",
+    "fuente": "F1",
+    "cita_literal": "Ninguna reunión armada, tiene derecho de deliberar.",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Una asamblea o reunión con objeto de hacer una petición o protesta a una autoridad no se considera ilegal ni puede ser disuelta.",
+    "fuente": "F1",
+    "cita_literal": "No se considerará ilegal, y no podrá ser disuelta una asamblea o reunión que tenga por objeto hacer una petición o presentar una protesta por algún acto, a una autoridad",
+    "condiciones": [
+     "si no se profieren injurias contra ésta, ni se hiciere uso de violencias o amenazas para intimidarla u obligarla a resolver en el sentido que se desee"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se garantiza el derecho a reunirse pacíficamente con cualquier objeto lícito sin que se pueda coartar.",
+    "fuente": "F1",
+    "cita_literal": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.",
+    "fuente": "F1",
+    "cita_literal": "si no se profieren injurias contra ésta, ni se hiciere uso de violencias o amenazas para intimidarla u obligarla a resolver en el sentido que se desee"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Ninguna reunión armada tiene derecho de deliberar.",
+    "fuente": "F1",
+    "cita_literal": "Ninguna reunión armada, tiene derecho de deliberar."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no menciona trámites de permisos o licencias administrativas, sino la prohibición general de coartar el derecho y los límites sobre reuniones armadas y formas de protesta.",
+  "fuentes_irrelevantes": []
+ }
+}

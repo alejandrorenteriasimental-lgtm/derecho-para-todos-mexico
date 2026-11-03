@@ -1,112 +1,50 @@
 {
  "solicitud": "2026-12-18_imagen_T112-lote-5.json",
- "fecha": "2026-11-03T10:18:34+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Al",
+ "fecha": "2026-11-03T16:18:35+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Al menos 90 días desde la entrega, si se ofrece con garantía. \\n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del se",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[vaguedad] Referencia vaga: «Este plazo no puede ser menor a noventa días naturales.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+    "imagen: contenido demasiado largo (68 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ],
-   "visible": "  \n   \n Al menos 90 días desde la entrega, si el bien o servicio se ofrece con garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio. \n El plazo inicia al recibir el producto o servicio."
+   "visible": "  \n   \n Al menos noventa días contados a partir de la entrega del bien o la prestación del servicio, cuando se ofrezca con garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio. \n Aplica a bienes o servicios ofrecidos con garantía."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[vaguedad] Referencia vaga: «Este plazo no puede ser menor a noventa días naturales.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
-   ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": []
-    },
-    "conclusiones": [
-     {
-      "conclusion": "La duración de la garantía no puede ser menor a noventa días naturales.",
-      "sostenida": "parcial",
-      "motivo": "El texto oficial menciona 'noventa días', pero no especifica que estos deban ser 'naturales'."
-     },
-     {
-      "conclusion": "El periodo de protección puede ser más largo que el mínimo legal si así se conviene.",
-      "sostenida": "si",
-      "motivo": "El artículo 77 establece que la garantía debe sujetarse a lo pactado entre proveedor y consumidor."
-     },
-     {
-      "conclusion": "La garantía es el compromiso sobre el funcionamiento; la devolución es la restitución del precio que solo aplica en casos específicos de defectos o incumplimientos.",
-      "sostenida": "no",
-      "motivo": "El artículo 77 no menciona la devolución de dinero, ni define la garantía bajo esos términos; es información externa al texto proporcionado."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "distinciones y copy",
-      "problema": "Se introduce el concepto de 'devolución de dinero' y su definición, lo cual viola la regla de usar solo los textos oficiales entregados, ya que el artículo 77 no trata ese tema.",
-      "correccion": "Eliminar cualquier mención o distinción sobre la devolución de dinero, centrándose exclusivamente en la duración y las condiciones de la garantía según el texto."
-     },
-     {
-      "donde": "reglas (conclusión)",
-      "problema": "Se añade el adjetivo 'naturales' a la duración de los días, información que no está contenida en la fuente oficial.",
-      "correccion": "Redactar la conclusión como 'noventa días' para mantener la exactitud respecto al texto de la ley."
-     }
-    ]
-   }
-  },
-  {
-   "etapa": "analisis",
-   "intento": 0,
-   "errores": []
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 0,
-   "errores_esquema": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
-   ],
-   "visible": "  \n   \n Al menos noventa días desde la entrega del bien o servicio, siempre que el producto se ofrezca con garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio. \n El plazo inicia al recibir el bien o servicio."
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    "imagen: contenido demasiado largo (68 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
    ],
-   "visible": "  \n   \n Al menos 90 días desde la entrega, si se ofrece garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien \n Inicia al recibir el bien."
+   "visible": "  \n   \n Al menos 90 días desde la entrega, si se ofrece con garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio. \n Aplica con garantía."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 2,
    "errores": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ],
-   "visible": "  \n   \n Al menos 90 días desde la entrega, si se ofrece garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien \n Inicia al recibir el bien."
+   "visible": "  \n   \n Al menos 90 días desde la entrega, si se ofrece con garantía. \n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio. \n Contados a partir de la entrega del bien o la prestación del servicio."
   }
  ]
 }

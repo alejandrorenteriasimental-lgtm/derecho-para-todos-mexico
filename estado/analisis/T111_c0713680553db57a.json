@@ -1,0 +1,77 @@
+{
+ "tema_id": "T111",
+ "pregunta": "¿Cuántas semanas de descanso por maternidad te corresponden?",
+ "fecha": "2026-11-03T16:16:40+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas semanas de descanso por maternidad te corresponden?",
+  "concepto_central": "descanso por maternidad",
+  "respuesta_corta": "Corresponden seis semanas de descanso anteriores y seis posteriores al parto, con posibilidad de transferir algunas o extenderlas según el caso.",
+  "reglas": [
+   {
+    "conclusion": "Las madres trabajadoras tienen derecho a un periodo de descanso de seis semanas antes y seis después del parto.",
+    "fuente": "F1",
+    "cita_literal": "Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto.",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Se pueden transferir hasta cuatro semanas de descanso previas al parto para después del mismo.",
+    "fuente": "F1",
+    "cita_literal": "se podrá transferir hasta cuatro de las seis semanas de descanso previas al parto para después del mismo.",
+    "condiciones": [
+     "A solicitud expresa de la trabajadora",
+     "previa autorización escrita del médico de la institución de seguridad social o servicio de salud",
+     "tomando en cuenta la opinión del patrón y la naturaleza del trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El descanso posterior al parto puede extenderse a hasta ocho semanas si los hijos tienen discapacidad o requieren atención médica hospitalaria.",
+    "fuente": "F1",
+    "cita_literal": "el descanso podrá ser de hasta ocho semanas posteriores al parto, previa presentación del certificado médico correspondiente.",
+    "condiciones": [
+     "previa presentación del certificado médico correspondiente"
+    ],
+    "excepciones": [
+     "hijos nacidos con cualquier tipo de discapacidad o que requieran atención médica hospitalaria"
+    ]
+   },
+   {
+    "conclusion": "En caso de adopción de un infante, el descanso es de seis semanas posteriores al día en que se reciba.",
+    "fuente": "F1",
+    "cita_literal": "disfrutarán de un descanso de seis semanas con goce de sueldo, posteriores al día en que lo reciban",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se otorgan seis semanas de descanso anteriores y seis posteriores al parto, así como seis semanas en caso de adopción.",
+    "fuente": "F1",
+    "cita_literal": "Disfrutarán de un descanso de seis semanas anteriores y seis posteriores al parto."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La transferencia de semanas previas requiere solicitud de la trabajadora, autorización médica y considerar la opinión del patrón.",
+    "fuente": "F1",
+    "cita_literal": "A solicitud expresa de la trabajadora, previa autorización escrita del médico de la institución de seguridad social que le corresponda"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "El descanso posterior se amplía hasta ocho semanas si el hijo presenta discapacidad o requiere hospitalización médica.",
+    "fuente": "F1",
+    "cita_literal": "En caso de que los hijos hayan nacido con cualquier tipo de discapacidad o requieran atención médica hospitalaria, el descanso podrá ser de hasta ocho semanas posteriores al parto"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "La ley establece plazos específicos por semanas según el parto, la adopción o condiciones médicas del infante, sin contemplar otros supuestos genéricos fuera de los señalados.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "I20261222-T116",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Es legal la publicidad engañosa?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T116",
+  "pieza": {
+    "titular": "¿Es legal la publicidad engañosa?",
+    "bajada": "Conoce lo que exige la ley sobre la información de productos y servicios.",
+    "mito": "La publicidad puede exagerar sin problemas.",
+    "realidad": "No, la información o publicidad debe ser veraz y se prohíbe aquella que induzca a error o confusión al consumidor.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 32"
+  },
+  "copy": "La Ley Federal de Protección al Consumidor establece reglas claras sobre cómo debe presentarse la información de cualquier producto o servicio difundido por cualquier medio.\n\nDe acuerdo con el artículo 32 de la Ley Federal de Protección al Consumidor, los datos difundidos deben ser veraces, comprobables y claros, evitando cualquier elemento que induzca a error o confusión.\n\nGuarda esta publicación y compártela para conocer más sobre tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que explica si es legal la publicidad engañosa según la Ley Federal de Protección al Consumidor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "32",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "deberán ser veraces, comprobables, claros y exentos de textos, diálogos, sonidos, imágenes, marcas, denominaciones de origen y otras descripciones que induzcan o puedan inducir a error o confusión por engañosas o abusivas.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 32",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-03"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La información y publicidad difundida debe ser veraz, clara y comprobable, sin inducir a errores.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Es legal la publicidad engañosa?",
+    "concepto_central": "publicidad engañosa o abusiva",
+    "respuesta_corta": "No, la información o publicidad debe ser veraz y se prohíbe aquella que induzca a error o confusión al consumidor.",
+    "reglas": [
+      {
+        "conclusion": "La publicidad de bienes, productos o servicios no debe inducir a error o confusión por ser engañosa o abusiva.",
+        "fuente": "F1",
+        "cita_literal": "deberán ser veraces, comprobables, claros y exentos de textos, diálogos, sonidos, imágenes, marcas, denominaciones de origen y otras descripciones que induzcan o puedan inducir a error o confusión por engañosas o abusivas.",
+        "condiciones": [
+          "que se difundan por cualquier medio o forma"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "32"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La información o publicidad debe ser veraz y comprobable, quedando prohibida aquella que induzca a error o confusión.",
+        "fuente": "F1",
+        "cita_literal": "La información o publicidad relativa a bienes, productos o servicios que se difundan por cualquier medio o forma, deberán ser veraces, comprobables, claros"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla las sanciones específicas aplicables en caso de incumplimiento."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-03T16:25:56+00:00",
+    "solicitud": "2026-12-22_imagen_T116-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Es legal la publicidad engañosa?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La publicidad de bienes, productos o servicios no debe inducir a error o confusión por ser engañosa o abusiva.",
+              "sostenida": "si",
+              "motivo": "El artículo 32 de la Ley Federal de Protección al Consumidor establece explícitamente que la información debe ser veraz y prohíbe aquella que induzca a error o confusión."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

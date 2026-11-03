@@ -1,0 +1,114 @@
+{
+ "solicitud": "2026-12-20_imagen_T114-lote-5.json",
+ "fecha": "2026-11-03T16:23:48+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Necesitas un permiso de la ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La pieza omite mencionar las restricciones explícitas del artículo 9: la prohibición de reuniones armadas y la prohibición de usar violencia, amenazas o injurias contra la autoridad para intimidarla u obligarla a resolver en un sentido determinado."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "No se puede coartar el derecho de reunirse pacíficamente con un objeto lícito.",
+      "sostenida": "si",
+      "motivo": "El artículo 9 establece explícitamente que no se podrá coartar este derecho."
+     },
+     {
+      "conclusion": "La norma protege este derecho fundamental siempre que la asamblea cumpla con las condiciones de ser pacífica y tener un fin lícito, sin exigir licencias o permisos.",
+      "sostenida": "parcial",
+      "motivo": "Aunque la conclusión es correcta en cuanto a la no exigencia de permisos, la pieza omite las condiciones negativas que el artículo 9 impone para que una reunión no sea disuelta o considerada ilegal (no usar violencia, amenazas o injurias contra la autoridad)."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "La pieza afirma: 'La norma protege este derecho fundamental siempre que la asamblea cumpla con las condiciones de ser pacífica y tener un fin lícito, sin exigir licencias o permisos.'",
+      "problema": "La pieza presenta una visión incompleta de las condiciones de protección. El artículo 9 establece límites específicos para que una reunión no sea disuelta, particularmente cuando se trata de peticiones a la autoridad.",
+      "correccion": "Debe incluirse que la protección contra la disolución de una asamblea que presenta una petición o protesta está condicionada a que 'no se profieran injurias contra ésta, ni se hiciere uso de violencias o amenazas para intimidarla u obligarla a resolver en el sentido que se desee'."
+     },
+     {
+      "donde": "La pieza omite mencionar las reuniones armadas.",
+      "problema": "El artículo 9 establece una prohibición expresa: 'Ninguna reunión armada, tiene derecho de deliberar'. Al no mencionarlo, la pieza da una idea incompleta de los límites del derecho de reunión.",
+      "correccion": "Se debe agregar que el derecho de reunión no ampara a las reuniones armadas, conforme al artículo 9 constitucional."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Se requiere un permiso oficial para cualquier reunión pública. \n No: la ley establece que no se podrá coartar el derecho de reunirse pacíficamente con cualquier objeto lícito."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La restricción específica sobre la ciudadanía para reuniones con fines políticos."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "No se puede coartar el derecho de reunirse pacíficamente con cualquier objeto lícito.",
+      "sostenida": "si",
+      "motivo": "El texto constitucional establece explícitamente la prohibición de coartar este derecho."
+     },
+     {
+      "conclusion": "Las reuniones armadas no tienen derecho de deliberar.",
+      "sostenida": "si",
+      "motivo": "Es una limitación expresa contenida en el artículo 9."
+     },
+     {
+      "conclusion": "Una asamblea o reunión con objeto de hacer una petición o protesta a una autoridad no se considera ilegal ni puede ser disuelta.",
+      "sostenida": "si",
+      "motivo": "El artículo 9 protege estas reuniones bajo condiciones específicas de conducta."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "En el texto final (copy) destinado al público.",
+      "problema": "Se omite la condición de ciudadanía para reuniones con fines políticos, la cual es una limitación expresa del artículo 9.",
+      "correccion": "Incluir en el texto final que, si bien el derecho de reunión es amplio, 'solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Necesitas un permiso de la autoridad para cualquier reunión pacífica. \n No: la ley establece que no se podrá coartar el derecho de reunirse pacíficamente con cualquier objeto lícito."
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1128 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=964"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "33 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "97% de 29 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261222-T116",
+    "formato": "imagen",
+    "titulo": "¿Es legal la publicidad engañosa?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261222-T116.png",
+    "sha256": "becda2bb48fa6be5cd592056be913fd3d1698c40510cf92e9673f9b1aa4c5432",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000111111111001111111111111100111111111111110001111111111111000001000011111100000000111111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "51fa7c05787012ea72e8fe0820d6db5be55ffde73951d4bc8acd4198f2e4cc86",
+    "texto_alternativo": "Imagen fija que explica si es legal la publicidad engañosa según la Ley Federal de Protección al Consumidor.",
+    "copy": "La Ley Federal de Protección al Consumidor establece reglas claras sobre cómo debe presentarse la información de cualquier producto o servicio difundido por cualquier medio.\n\nDe acuerdo con el artículo 32 de la Ley Federal de Protección al Consumidor, los datos difundidos deben ser veraces, comprobables y claros, evitando cualquier elemento que induzca a error o confusión.\n\nGuarda esta publicación y compártela para conocer más sobre tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "32",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-03T16:34:26+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}
