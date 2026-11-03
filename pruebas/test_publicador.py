@@ -109,3 +109,12 @@ def test_reels_de_ig_solo_cortos(ent, monkeypatch):
     monkeypatch.setattr(publicador, "duracion", lambda f: 58.0)
     r = publicador.ejecutar(hora.replace(minute=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
     assert [a["instagram"] for a in r["acciones"] if "instagram" in a] == ["REEL_IG_EN_ESPERA"]
+
+
+def test_publicar_hasta_no_programa_fechas_posteriores(ent, monkeypatch):
+    # 3-11-2026: la aprobación no equivale a autorización de publicación; solo se programa hasta PUBLICAR_HASTA
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
+    r = publicador.ejecutar(datetime(2026, 11, 20, tzinfo=timezone.utc), env={"PUBLICAR_HASTA": "2026-11-25"}, bajar=ent["bajar"])
+    assert r["acciones"] and all(a["fecha"] <= "2026-11-25" for a in r["acciones"])
+    r2 = publicador.ejecutar(datetime(2026, 11, 20, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])
+    assert any(a["fecha"] > "2026-11-25" for a in r2["acciones"])

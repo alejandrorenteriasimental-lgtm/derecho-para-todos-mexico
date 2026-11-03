@@ -2,6 +2,7 @@
  "descripcion": "Autorización de lanzamiento del responsable. La publicación real requiere PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI; se registran aquí (auditable en git) porque las variables del repositorio no se pueden fijar desde la sesión. Paro de emergencia: variable PAUSA_PUBLICACION=1 o estado/pausa_publicacion.json (docs/paro_emergencia.md); para revocar, poner PUBLICAR en 0.",
  "PUBLICAR": "1",
  "LANZAMIENTO_AUTORIZADO": "SI",
+ "PUBLICAR_HASTA": "2026-11-22",
  "IG_REELS": "corto",
  "IG_REEL_MAX_S": "45",
  "YOUTUBE": "1",
@@ -44,5 +45,11 @@
   "opcion": "B",
   "texto": "B",
   "regla": "En Instagram se publican los Reels aprobados de ≤ 45 s (límite comprobado por API el 2-11-2026); desde el lote 5 todos los Reels se producen de ≤ 45 s para salir en Facebook e Instagram. Los Reels ya aprobados no se modifican."
+ },
+ "publicar_hasta": {
+  "fecha": "2026-11-03",
+  "valor": "2026-11-22",
+  "regla": "Solo se programan o publican fechas del calendario hasta PUBLICAR_HASTA (inclusive). Con 2026-11-22 el sistema no programa ni publica nada nuevo en ninguna red. Las 15 publicaciones ya programadas en Facebook (23-11 al 30-11 imagen) NO se cancelan: viven en Meta y el responsable pidió conservarlas.",
+  "fundamento": "Instrucción del responsable del 3-11-2026 (modelo operativo definitivo): «No interpretes esta instrucción como autorización inmediata para publicar: primero termina las verificaciones necesarias y solicítame la activación final». Al recibir la activación final, PUBLICAR_HASTA se amplía a la fecha que autorice (p. ej., 2027-02-20)."
  }
 }
