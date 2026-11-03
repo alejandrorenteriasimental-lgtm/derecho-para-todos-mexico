@@ -2,7 +2,7 @@
  "descripcion": "Autorización de lanzamiento del responsable. La publicación real requiere PUBLICAR=1 y LANZAMIENTO_AUTORIZADO=SI; se registran aquí (auditable en git) porque las variables del repositorio no se pueden fijar desde la sesión. Paro de emergencia: variable PAUSA_PUBLICACION=1 o estado/pausa_publicacion.json (docs/paro_emergencia.md); para revocar, poner PUBLICAR en 0.",
  "PUBLICAR": "1",
  "LANZAMIENTO_AUTORIZADO": "SI",
- "PUBLICAR_HASTA": "2026-11-22",
+ "PUBLICAR_HASTA": "2027-02-20",
  "IG_REELS": "corto",
  "IG_REEL_MAX_S": "45.5",
  "YOUTUBE": "1",
@@ -48,9 +48,10 @@
  },
  "publicar_hasta": {
   "fecha": "2026-11-03",
-  "valor": "2026-11-22",
-  "regla": "Solo se programan o publican fechas del calendario hasta PUBLICAR_HASTA (inclusive). Con 2026-11-22 el sistema no programa ni publica nada nuevo en ninguna red. Las 15 publicaciones ya programadas en Facebook (23-11 al 30-11 imagen) NO se cancelan: viven en Meta y el responsable pidió conservarlas.",
-  "fundamento": "Instrucción del responsable del 3-11-2026 (modelo operativo definitivo): «No interpretes esta instrucción como autorización inmediata para publicar: primero termina las verificaciones necesarias y solicítame la activación final». Al recibir la activación final, PUBLICAR_HASTA se amplía a la fecha que autorice (p. ej., 2027-02-20)."
+  "valor": "2027-02-20",
+  "regla": "Se programan y publican todas las fechas del calendario hasta el 20-02-2027, solo con piezas aprobadas en su versión exacta (las delegadas, después de las 72 h de veto). Lo ya programado en Facebook se conserva.",
+  "autorizacion": "Orden definitiva de ejecución y lanzamiento del responsable (3-11-2026): «HE TOMADO LA DECISIÓN DE LANZAR EL PROYECTO EL 23 DE NOVIEMBRE DE 2026», «Prepara el sistema para que publique las piezas aprobadas diariamente sin intervención manual», «No publiques piezas rechazadas, incompletas o sin la aprobación requerida».",
+  "anterior": "2026-11-22 (de las 00:08 a esta orden, 3-11-2026)"
  },
  "ig_reels_diagnostico_3_11": "Prueba no pública 3-11 00:02 UTC: Reel de 57.8 s RECODIFICADO (GOP cerrado, sin B-frames, 9.5 MB) también falla con 2207076 → no es la codificación ni el tamaño. 3-11 00:07 UTC: R20261201-T019 completo (45.4 s) pasa. Causa: límite de duración de Instagram por API para esta cuenta, entre 45.4 s y ~56 s. Tope operativo: 45.5 s."
 }

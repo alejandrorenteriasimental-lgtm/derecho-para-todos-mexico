@@ -1,5 +1,5 @@
 {
- "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta.",
+ "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse.",
  "zona": "America/Mexico_City",
  "dias": [
   {
@@ -349,6 +349,183 @@
     "asset_id": 688288561,
     "release": "piezas-2026-10",
     "aprobada": "2026-10-29T13:44:17+00:00",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-07",
+   "imagen": {
+    "pieza": "I20261207-T101",
+    "version": "962dae440c071f03",
+    "hora": "09:00",
+    "archivo": "I20261207-T101.png",
+    "sha256": "163961487962276f205541e4836037696f48e8377157e657ec2b5c73bd513d97",
+    "asset_id": 690877368,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-10-30T11:51:45+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261207-T101",
+    "version": "389f2c25cf4c094c",
+    "hora": "19:00",
+    "archivo": "R20261207-T101_final.mp4",
+    "sha256": "74391d3087a22a350365c6ade13c1c268ce9b9e58ff6b6bd92cef19438cf98c4",
+    "asset_id": 693556984,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-10-31T11:43:55+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-08",
+   "imagen": {
+    "pieza": "I20261208-T102",
+    "version": "352d87de017f8691",
+    "hora": "09:00",
+    "archivo": "I20261208-T102.png",
+    "sha256": "46ca0be005fb555f786000470aa267ae02cb60a8e478a2eb9b9f7b82778c3b27",
+    "asset_id": 692034994,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-11-01T11:52:57+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261208-T102",
+    "version": "4cd33d90be99c3ab",
+    "hora": "19:00",
+    "archivo": "R20261208-T102_final.mp4",
+    "sha256": "886ff1e037791f513f0c85c75a357ea923639cfb653c348473740d70bfbf1a92",
+    "asset_id": 698235060,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-01T12:12:50+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-09",
+   "imagen": {
+    "pieza": "I20261209-T103",
+    "version": "3758743a7b1b07a0",
+    "hora": "09:00",
+    "archivo": "I20261209-T103.png",
+    "sha256": "4201a65c30d888ada4646dd6883a1d3e9f516c8e4fc4b64e3b40a7d998e2c164",
+    "asset_id": 692028389,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-10-30T12:22:26+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261209-T103",
+    "version": "b0a30ec4b199a91f",
+    "hora": "19:00",
+    "archivo": "R20261209-T103_final.mp4",
+    "sha256": "cd21647471b6114133d5196bed8ede2bc3cc1ce77d1a4accdc4c03f761a91c0d",
+    "asset_id": 692001097,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-10-30T12:22:26+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-10",
+   "imagen": {
+    "pieza": "I20261210-T104",
+    "version": "b30b4ea3668cecd3",
+    "hora": "09:00",
+    "archivo": "I20261210-T104.png",
+    "sha256": "c70ac168d795b7636249b87631c41040eb3d13009cbda6adc8ba68ee8a3dbbdb",
+    "asset_id": 696597878,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-11-01T12:12:20+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261210-T104",
+    "version": "2a091c4b5a4f2045",
+    "hora": "19:00",
+    "archivo": "R20261210-T104_final.mp4",
+    "sha256": "e6a859c1fb971212fb9ad784717f0e9052ad812ca5393b1836fbe8b31affce07",
+    "asset_id": 692008591,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-10-30T12:22:26+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-11",
+   "imagen": {
+    "pieza": "I20261211-T105",
+    "version": "0b83f04cc5a59e69",
+    "hora": "09:00",
+    "archivo": "I20261211-T105.png",
+    "sha256": "6af1a04efbd7c44f6fa73cffa6de9879d2e0447b03e0eb76f3681723db3b415b",
+    "asset_id": 693569598,
+    "release": "piezas-2026-10",
+    "aprobada": "2026-11-01T11:52:57+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261211-T105",
+    "version": "7cebf501576b47c5",
+    "hora": "19:00",
+    "archivo": "R20261211-T105_final.mp4",
+    "sha256": "71afbfbfecb3b4c2ec107a049807ee517b422ee6f81e359075b5c5f34fd589f6",
+    "asset_id": 698242584,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-01T12:12:50+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-12",
+   "imagen": {
+    "pieza": "I20261212-T106",
+    "version": "1472b7aa6269a9e8",
+    "hora": "09:00",
+    "archivo": "I20261212-T106.png",
+    "sha256": "384e117e264f34a951d920c3cad921833203b508f7c8d8906da40b8d2bed8659",
+    "asset_id": 698268791,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-02T11:43:45+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-13",
+   "imagen": {
+    "pieza": "I20261213-T107",
+    "version": "7d4de2bcba7c86b8",
+    "hora": "09:00",
+    "archivo": "I20261213-T107.png",
+    "sha256": "e120a7bb4d04184fe35c6de082b770118cbef3f35586e76f860ce7a016de3cbd",
+    "asset_id": 701724646,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-02T12:57:24+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261213-T107",
+    "version": "7f7db73e29d2136d",
+    "hora": "19:00",
+    "archivo": "R20261213-T107_final.mp4",
+    "sha256": "fc1516c4b320b036c265490a4a734b877bc3e84707f5014e5fa28756ca36e9d8",
+    "asset_id": 701674432,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-02T12:27:28+00:00",
+    "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "SIMULADO"
    }
   }

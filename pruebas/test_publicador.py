@@ -26,6 +26,7 @@ def ent(tmp_path, monkeypatch):
 def test_aprobaciones_del_calendario_coinciden_con_el_registro():
     for d in CAL["dias"]:
         for fmt in ("imagen", "reel"):
+            if fmt not in d: continue                 # un día puede tener una sola pieza aprobada todavía
             e = d[fmt]; a = publicador.ultima_decision(e["pieza"])
             assert a["decision"] == "APROBADA" and a["version"] == e["version"] and a["huella_archivo"] == e["sha256"], e["pieza"]
 
@@ -43,7 +44,7 @@ def test_sin_autorizacion_simula_con_archivos_aprobados(ent, monkeypatch):
     assert r["modo"] == "simulacion" and not r.get("pausa")
     ahora = datetime(2026, 11, 3, tzinfo=timezone.utc)
     esperadas = sum(1 for d in CAL["dias"] for f in ("imagen", "reel")
-                    if timedelta(minutes=20) < publicador.hora_utc(d["fecha"], d[f]["hora"]) - ahora < timedelta(days=28))
+                    if f in d and timedelta(minutes=20) < publicador.hora_utc(d["fecha"], d[f]["hora"]) - ahora < timedelta(days=28))
     assert {a.get("facebook") for a in r["acciones"]} == {"SIMULADO"} and len(r["acciones"]) == esperadas >= 14
 
 

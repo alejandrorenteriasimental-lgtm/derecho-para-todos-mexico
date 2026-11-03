@@ -162,6 +162,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
         if hasta and dia["fecha"] > hasta:
             continue                               # en el calendario, aprobada o no, pero sin autorización de publicación todavía
         for fmt in ("imagen", "reel"):
+            if fmt not in dia: continue            # 3-11: un día puede entrar al calendario con una sola pieza aprobada
             e = dia[fmt]; cuando = hora_utc(dia["fecha"], e["hora"])
             acc = {"fecha": dia["fecha"], "formato": fmt, "pieza": e["pieza"], "version": e["version"], "hora_utc": cuando.isoformat(timespec="minutes")}
             try:
