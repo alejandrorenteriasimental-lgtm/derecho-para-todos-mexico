@@ -108,6 +108,17 @@ def descargar(entrada, destino, env=os.environ, abrir=urllib.request.urlopen):
     return f
 
 
+VERSIONES_IG = RAIZ / "estado" / "versiones_ig.json"
+
+
+def version_ig(pieza):
+    """Versión corta para Instagram (piezas/<ID>-IG) solo si está APROBADA por el responsable; si no, None."""
+    try: v = json.loads(VERSIONES_IG.read_text()).get(f"{pieza}-IG")
+    except (OSError, ValueError): return None
+    if not v or v.get("estado") != "APROBADA" or not v.get("asset_id"): return None
+    return {"pieza": f"{pieza}-IG", "version": v["sha256"][:16], "sha256": v["sha256"], "asset_id": v["asset_id"], "archivo": f"{pieza}-IG_final.mp4"}
+
+
 def texto(pieza):
     g = json.loads((RAIZ / "piezas" / pieza / "guion.json").read_text())
     return g.get("copy") or g["titulo"]
@@ -172,7 +183,13 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                 # Instagram: publicar al llegar la hora (sin programación por API)
                 if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG and \
                         not reel_ig_permitido(env, e, bajar(e, carpeta, env) if env.get("IG_REELS") == "corto" else None):
-                    acc["instagram"] = "REEL_IG_EN_ESPERA"     # Reel fuera del límite de IG o Reels de IG desactivados; no detiene lo demás
+                    ig = version_ig(e["pieza"]) if env.get("IG_REELS") == "corto" else None
+                    if ig:                                  # versión corta SOLO para Instagram, aprobada por el responsable (3-11)
+                        f = bajar(ig, carpeta, env); comprobar(ig, f, ahora)
+                        r = instagram.publicar_ig(ig["pieza"], fmt, f, texto(e["pieza"]), ig["version"], modo=modo, env=env, http=http)
+                        acc["instagram"] = f'{r.get("estado")} (versión corta {ig["pieza"]})'
+                    else:
+                        acc["instagram"] = "REEL_IG_EN_ESPERA"     # Reel fuera del límite de IG o Reels de IG desactivados; no detiene lo demás
                 elif timedelta(0) <= ahora - cuando <= VENTANA_IG:
                     f = bajar(e, carpeta, env); comprobar(e, f, ahora)
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)

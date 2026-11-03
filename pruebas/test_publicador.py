@@ -118,3 +118,20 @@ def test_publicar_hasta_no_programa_fechas_posteriores(ent, monkeypatch):
     assert r["acciones"] and all(a["fecha"] <= "2026-11-25" for a in r["acciones"])
     r2 = publicador.ejecutar(datetime(2026, 11, 20, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])
     assert any(a["fecha"] > "2026-11-25" for a in r2["acciones"])
+
+
+def test_reel_largo_usa_en_instagram_solo_la_version_corta_aprobada(ent, monkeypatch, tmp_path):
+    # 3-11-2026, opción c: el original sigue en Facebook; en Instagram va la versión -IG solo si el responsable la aprobó
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
+    monkeypatch.setattr(publicador, "reel_ig_permitido", lambda env, e=None, f=None, medir=None: False)
+    vistos = []
+    monkeypatch.setattr(publicador.instagram, "publicar_ig", lambda pid, fmt, f, t, v, **k: vistos.append(pid) or {"estado": "SIMULADO"})
+    dia = CAL["dias"][0]; cuando = publicador.hora_utc(dia["fecha"], dia["reel"]["hora"])
+    vig = tmp_path / "versiones_ig.json"; monkeypatch.setattr(publicador, "VERSIONES_IG", vig)
+    pid = dia["reel"]["pieza"]
+    vig.write_text(json.dumps({f"{pid}-IG": {"estado": "PENDIENTE_APROBACION", "sha256": "a" * 64, "asset_id": 1}}))
+    r = publicador.ejecutar(cuando + timedelta(minutes=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
+    assert [a["instagram"] for a in r["acciones"] if a.get("instagram")] == ["REEL_IG_EN_ESPERA"] and not vistos
+    vig.write_text(json.dumps({f"{pid}-IG": {"estado": "APROBADA", "sha256": "a" * 64, "asset_id": 1}}))
+    r = publicador.ejecutar(cuando + timedelta(minutes=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
+    assert vistos == [f"{pid}-IG"] and "versión corta" in [a["instagram"] for a in r["acciones"] if a.get("instagram")][0]

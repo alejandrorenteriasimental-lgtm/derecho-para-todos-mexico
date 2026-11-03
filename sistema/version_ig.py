@@ -43,5 +43,22 @@ def main():
     print(json.dumps({k: (v["estado"], v.get("duracion_s")) for k, v in reg.items()}, ensure_ascii=False, indent=1))
 
 
+def aprobar(pid, sha12, por):
+    """Registra la aprobación del responsable de una versión corta: estado APROBADA y entrada en estado/aprobaciones.jsonl
+    (misma forma que decidir.py), con la versión = primeros 16 caracteres del SHA-256 del MP4 aprobado."""
+    reg = json.loads(REG.read_text()); v = reg[pid]
+    if not v.get("sha256", "").startswith(sha12) or len(sha12) < 12: raise SystemExit(f"{pid}: la huella {sha12} no es la del archivo producido")
+    if v.get("estado") != "PENDIENTE_APROBACION": raise SystemExit(f"{pid}: estado {v.get('estado')}, no se puede aprobar")
+    ahora = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    d = {"pieza": pid, "decision": "APROBADA", "version": v["sha256"][:16], "huella_archivo": v["sha256"], "por": {"nombre": por},
+         "fecha": ahora, "canal": "chat", "nota": f"versión corta solo para Instagram de {v.get('de')}"}
+    with (RAIZ / "estado" / "aprobaciones.jsonl").open("a") as h: h.write(json.dumps(d, ensure_ascii=False) + "\n")
+    v.update(estado="APROBADA", aprobada=ahora, aprobada_por=por); REG.write_text(json.dumps(reg, ensure_ascii=False, indent=1))
+    print(json.dumps(d, ensure_ascii=False))
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) >= 4 and sys.argv[1] == "aprobar":
+        aprobar(sys.argv[2], sys.argv[3], " ".join(sys.argv[4:]) or "responsable")
+    else:
+        main()
