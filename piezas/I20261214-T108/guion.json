@@ -1,134 +1,173 @@
 {
-  "id": "I20261214-T108",
-  "formato": "imagen",
-  "plantilla": "mito_realidad",
-  "titulo": "¿Te pueden pagar el sueldo con vales?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "tema_id": "T108",
-  "pieza": {
-    "titular": "¿Te pueden pagar el sueldo con vales?",
-    "bajada": "Conoce qué dice la ley sobre si tu patrón te puede pagar con vales o fichas en lugar de dinero en efectivo.",
-    "mito": "Mi patrón me puede pagar el sueldo con vales.",
-    "realidad": "No, el salario en efectivo deberá pagarse precisamente en moneda de curso legal, no estando permitido hacerlo en vales.",
-    "fuente_visible": "Ley Federal del Trabajo, art. 101"
+ "id": "I20261214-T108",
+ "formato": "imagen",
+ "plantilla": "mito_realidad",
+ "titulo": "¿Te pueden pagar el sueldo con vales?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "tema_id": "T108",
+ "pieza": {
+  "titular": "¿Te pueden pagar el sueldo con vales?",
+  "bajada": "Lo que dice la Ley Federal del Trabajo sobre cómo te deben pagar.",
+  "mito": "Mi patrón me puede pagar el sueldo con vales.",
+  "realidad": "No. El salario en efectivo se paga en moneda de curso legal, no en vales. Con tu consentimiento, puede ser por depósito o transferencia.",
+  "fuente_visible": "Ley Federal del Trabajo, art. 101"
+ },
+ "copy": "No. El artículo 101 de la Ley Federal del Trabajo dice: «El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda».\n\nEl mismo artículo permite otra forma de pago, pero solo si estás de acuerdo: «Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico».\n\nEsto es información general, no es asesoría legal.",
+ "alt": "Imagen fija tipo mito y realidad que explica si está permitido pagar el sueldo con vales en lugar de dinero.",
+ "relacion_reel": "independiente",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Trabajo",
+   "articulo": "101",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "texto_literal": "El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda",
+   "cita": "Ley Federal del Trabajo, artículo 101",
+   "jurisdiccion": "federal (aplica en todo el país)",
+   "consultado": "2026-11-03"
   },
-  "copy": "De acuerdo con la legislación laboral, existen reglas muy claras sobre la forma en que los patrones deben entregar el pago a quienes trabajan para ellos.\n\nLa Ley Federal del Trabajo, en su artículo 101, establece que «El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda».\n\nGuarda esta información y compártela para que más personas conozcan lo que establece la ley al respecto.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Imagen fija tipo mito y realidad que explica si está permitido pagar el sueldo con vales en lugar de dinero.",
-  "relacion_reel": "independiente",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "101",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda",
-      "cita": "Ley Federal del Trabajo, artículo 101",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-03"
-    }
-  },
-  "afirmaciones": [
-    {
-      "id": "A1",
-      "tipo": "hecho_normativo",
-      "texto": "El salario debe pagarse en moneda de curso legal y no en vales u otros signos.",
-      "fuente": "F1"
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
-    "concepto_central": "pago del salario",
-    "respuesta_corta": "No, el salario en efectivo deberá pagarse precisamente en moneda de curso legal, no estando permitido hacerlo en vales.",
-    "reglas": [
-      {
-        "conclusion": "No se permite pagar el salario en vales, ya que debe hacerse precisamente en moneda de curso legal.",
-        "fuente": "F1",
-        "cita_literal": "El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo",
-        "condiciones": [
-          "El pago debe ser en moneda de curso legal"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Ley Federal del Trabajo",
-          "articulo": "101"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "No está permitido pagar el salario con vales, fichas u otro signo representativo que pretenda sustituir la moneda.",
-        "fuente": "F1",
-        "cita_literal": "no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda"
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "Los textos oficiales no mencionan sanciones específicas ni procedimientos para denunciar el pago en vales, solo establecen la prohibición."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-03T02:28:18+00:00",
-    "solicitud": "2026-12-14_imagen_T108-lote-5.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 2,
-        "auditor": 1
-      },
-      "llamadas_ia_total": 3,
-      "intentos_analisis": 1,
-      "intentos_redaccion": 1,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3.5-flash-lite"
-    }
-  },
-  "pregunta_original": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemma-4-26b-a4b-it",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "No, el salario en efectivo deberá pagarse precisamente en moneda de curso legal, no estando permitido hacerlo en vales.",
-              "sostenida": "si",
-              "motivo": "El artículo 101 de la Ley Federal del Trabajo prohíbe explícitamente el pago de salarios mediante vales, fichas, mercancías o cualquier otro signo que pretenda sustituir la moneda de curso legal."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": true
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Trabajo",
+   "articulo": "101",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "texto_literal": "Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico",
+   "cita": "Ley Federal del Trabajo, artículo 101, segundo párrafo",
+   "jurisdiccion": "federal (aplica en todo el país)",
+   "consultado": "2026-11-03"
   }
+ },
+ "afirmaciones": [
+  {
+   "id": "A1",
+   "tipo": "hecho_normativo",
+   "texto": "El salario debe pagarse en moneda de curso legal y no en vales u otros signos.",
+   "fuente": "F1"
+  },
+  {
+   "id": "A2",
+   "tipo": "hecho_normativo",
+   "texto": "Con el consentimiento del trabajador, el salario puede pagarse por depósito en cuenta bancaria, tarjeta de débito, transferencia u otro medio electrónico.",
+   "fuente": "F2"
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
+  "concepto_central": "pago del salario",
+  "respuesta_corta": "No. El salario en efectivo se paga en moneda de curso legal, no en vales; con tu consentimiento, también por depósito o transferencia.",
+  "reglas": [
+   {
+    "conclusion": "No se permite pagar el salario en vales, ya que debe hacerse precisamente en moneda de curso legal.",
+    "fuente": "F1",
+    "cita_literal": "El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo",
+    "condiciones": [
+     "El pago en efectivo debe ser en moneda de curso legal"
+    ],
+    "excepciones": [
+     "Con consentimiento del trabajador, el salario puede pagarse por depósito, tarjeta de débito, transferencia u otro medio electrónico (art. 101, segundo párrafo)"
+    ],
+    "ref": {
+     "documento": "Ley Federal del Trabajo",
+     "articulo": "101"
+    }
+   },
+   {
+    "conclusion": "Con el consentimiento del trabajador, el salario puede pagarse por medios electrónicos.",
+    "fuente": "F2",
+    "cita_literal": "Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico",
+    "condiciones": [
+     "Previo consentimiento del trabajador"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Trabajo",
+     "articulo": "101"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "No está permitido pagar el salario con vales, fichas u otro signo representativo que pretenda sustituir la moneda.",
+    "fuente": "F1",
+    "cita_literal": "no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos oficiales no mencionan sanciones específicas ni procedimientos para denunciar el pago en vales, solo establecen la prohibición."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-03T02:28:18+00:00",
+  "solicitud": "2026-12-14_imagen_T108-lote-5.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 2,
+    "auditor": 1
+   },
+   "llamadas_ia_total": 3,
+   "intentos_analisis": 1,
+   "intentos_redaccion": 1,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3.5-flash-lite"
+  }
+ },
+ "pregunta_original": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemma-4-26b-a4b-it",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "No, el salario en efectivo deberá pagarse precisamente en moneda de curso legal, no estando permitido hacerlo en vales.",
+       "sostenida": "si",
+       "motivo": "El artículo 101 de la Ley Federal del Trabajo prohíbe explícitamente el pago de salarios mediante vales, fichas, mercancías o cualquier otro signo que pretenda sustituir la moneda de curso legal."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": true
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-03",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "realidad: ya no parafrasea la cita sin comillas y agrega la condición del segundo párrafo del art. 101 (pago por depósito o transferencia solo con consentimiento del trabajador), con su fuente F2 literal; bajada más corta; texto de publicación con respuesta directa, las dos citas literales y sin «Guarda y compártela» (relleno)"
+  }
+ ]
 }

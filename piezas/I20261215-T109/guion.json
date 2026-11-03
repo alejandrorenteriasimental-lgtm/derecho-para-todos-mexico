@@ -1,148 +1,187 @@
 {
-  "id": "I20261215-T109",
-  "formato": "imagen",
-  "plantilla": "dato",
-  "titulo": "¿Cuántas horas te pueden arrestar?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "tema_id": "T109",
-  "pieza": {
-    "titular": "¿Cuántas horas te pueden arrestar?",
-    "bajada": "Depende, el arresto por infracciones a los reglamentos gubernativos y de policía es hasta por treinta y seis horas.",
-    "cita": "arresto hasta por treinta y seis horas",
-    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
-    "ojo": "Límite de sanción",
-    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 21"
+ "id": "I20261215-T109",
+ "formato": "imagen",
+ "plantilla": "dato",
+ "titulo": "¿Cuánto puede durar un arresto por una falta administrativa?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "tema_id": "T109",
+ "pieza": {
+  "titular": "¿Cuánto puede durar un arresto por una falta administrativa?",
+  "bajada": "Hasta treinta y seis horas, si infringes un reglamento gubernativo o de policía. Es una de las tres sanciones posibles.",
+  "cita": "arresto hasta por treinta y seis horas",
+  "etiqueta_cita": "Constitución, artículo 21",
+  "ojo": "Si no pagas la multa, se cambia por arresto, con igual tope",
+  "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 21"
+ },
+ "copy": "Por una falta a un reglamento gubernativo o de policía, la sanción la pone la autoridad administrativa. El artículo 21 de la Constitución dice que esas sanciones «únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad».\n\nY si no pagas la multa, el mismo artículo dice que «se permutará esta por el arresto correspondiente, que no excederá en ningún caso de treinta y seis horas».\n\nEsta regla es para las faltas administrativas, no para la detención por un delito.\n\nEsto es información general, no es asesoría legal.",
+ "alt": "Pieza gráfica que explica la duración máxima del arresto por infracciones administrativas según la Constitución.",
+ "relacion_reel": "independiente",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "21",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-03"
   },
-  "copy": "La Constitución Política de los Estados Unidos Mexicanos señala que la autoridad administrativa tiene la facultad de aplicar sanciones cuando se infringen los reglamentos gubernativos y de policía.\n\nDe acuerdo con el artículo 21, estas medidas pueden consistir en multa, trabajo comunitario o «arresto hasta por treinta y seis horas», estableciendo un límite estricto para esta clase de medidas.\n\nGuarda esta información y compártela para conocer los límites de las sanciones administrativas según la ley.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Pieza gráfica que explica la duración máxima del arresto por infracciones administrativas según la Constitución.",
-  "relacion_reel": "independiente",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "21",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-03"
-    }
-  },
-  "afirmaciones": [
-    {
-      "id": "A1",
-      "tipo": "hecho_normativo",
-      "texto": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
-      "fuente": "F1"
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
-    "concepto_central": "arresto por infracciones administrativas",
-    "respuesta_corta": "Depende, el arresto por infracciones a los reglamentos gubernativos y de policía es hasta por treinta y seis horas.",
-    "reglas": [
-      {
-        "conclusion": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
-        "fuente": "F1",
-        "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
-        "condiciones": [
-          "infracciones de los reglamentos gubernativos y de policía"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "21"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "El arresto administrativo es una sanción válida impuesta por la autoridad administrativa con un límite de hasta treinta y seis horas.",
-        "fuente": "F1",
-        "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
-        "motivo": ""
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "El texto oficial no detalla el procedimiento operativo de detención ni los requisitos específicos de los reglamentos locales."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-03T02:29:52+00:00",
-    "solicitud": "2026-12-15_imagen_T109-lote-5.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 3,
-        "auditor": 1
-      },
-      "llamadas_ia_total": 4,
-      "intentos_analisis": 2,
-      "intentos_redaccion": 1,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3.5-flash-lite"
-    }
-  },
-  "pregunta_original": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemma-4-26b-a4b-it",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": [
-          "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Te pueden arrestar hasta por treinta y seis horas por cometer infracciones a los reglament»."
-        ]
-      },
-      {
-        "etapa": "analisis",
-        "intento": 1,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
-              "sostenida": "si",
-              "motivo": "El artículo 21 de la Constitución establece que la autoridad administrativa tiene competencia para aplicar sanciones por infracciones a reglamentos gubernativos y de policía, señalando que estas pueden consistir en arresto hasta por treinta y seis horas."
-            },
-            {
-              "conclusion": "El arresto administrativo es una sanción válida impuesta por la autoridad administrativa con un límite de hasta treinta y seis horas.",
-              "sostenida": "si",
-              "motivo": "La norma constitucional define el alcance de las sanciones administrativas, limitando el arresto a un máximo de treinta y seis horas."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": true
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "21",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "se permutará esta por el arresto correspondiente, que no excederá en ningún caso de treinta y seis horas",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-03"
   }
+ },
+ "afirmaciones": [
+  {
+   "id": "A1",
+   "tipo": "hecho_normativo",
+   "texto": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
+   "fuente": "F1"
+  },
+  {
+   "id": "A2",
+   "tipo": "hecho_normativo",
+   "texto": "Si el infractor no paga la multa, se cambia por arresto, que no excede en ningún caso de treinta y seis horas.",
+   "fuente": "F2"
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
+  "concepto_central": "arresto por infracciones administrativas",
+  "respuesta_corta": "Depende de la sanción: por una falta a un reglamento gubernativo o de policía, el arresto es de hasta treinta y seis horas.",
+  "reglas": [
+   {
+    "conclusion": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
+    "fuente": "F1",
+    "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
+    "condiciones": [
+     "infracciones de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": [
+     "Si no se paga la multa, se permuta por arresto, que no excederá en ningún caso de treinta y seis horas"
+    ],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "21"
+    }
+   },
+   {
+    "conclusion": "La multa no pagada se cambia por arresto, que no excede de treinta y seis horas.",
+    "fuente": "F2",
+    "cita_literal": "se permutará esta por el arresto correspondiente, que no excederá en ningún caso de treinta y seis horas",
+    "condiciones": [
+     "Que el infractor no pague la multa impuesta"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "21"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El arresto administrativo es una sanción válida impuesta por la autoridad administrativa con un límite de hasta treinta y seis horas.",
+    "fuente": "F1",
+    "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla el procedimiento operativo de detención ni los requisitos específicos de los reglamentos locales."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-03T02:29:52+00:00",
+  "solicitud": "2026-12-15_imagen_T109-lote-5.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 3,
+    "auditor": 1
+   },
+   "llamadas_ia_total": 4,
+   "intentos_analisis": 2,
+   "intentos_redaccion": 1,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3.5-flash-lite"
+  }
+ },
+ "pregunta_original": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemma-4-26b-a4b-it",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": [
+     "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «Te pueden arrestar hasta por treinta y seis horas por cometer infracciones a los reglament»."
+    ]
+   },
+   {
+    "etapa": "analisis",
+    "intento": 1,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
+       "sostenida": "si",
+       "motivo": "El artículo 21 de la Constitución establece que la autoridad administrativa tiene competencia para aplicar sanciones por infracciones a reglamentos gubernativos y de policía, señalando que estas pueden consistir en arresto hasta por treinta y seis horas."
+      },
+      {
+       "conclusion": "El arresto administrativo es una sanción válida impuesta por la autoridad administrativa con un límite de hasta treinta y seis horas.",
+       "sostenida": "si",
+       "motivo": "La norma constitucional define el alcance de las sanciones administrativas, limitando el arresto a un máximo de treinta y seis horas."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": true
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-03",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "titular acotado a la falta administrativa (el anterior, «¿Cuántas horas te pueden arrestar?», generalizaba a cualquier detención); bajada con respuesta directa; «OJO» con la condición («Si no pagas la multa, se cambia por arresto, con igual tope») de la multa no pagada (art. 21, permuta por arresto ≤ 36 h, fuente F2 literal) en lugar de «Límite de sanción»; etiqueta de la cita más corta; texto de publicación con las dos citas y sin relleno"
+  }
+ ]
 }
