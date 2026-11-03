@@ -1,249 +1,265 @@
 {
-  "id": "R20261215-T109",
-  "formato": "reel",
-  "titulo": "¿De cuánto puede ser la multa por falta administrativa?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "carril_inicial": "A",
-  "tema_id": "T109",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "21",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-03"
-    }
+ "id": "R20261215-T109",
+ "formato": "reel",
+ "titulo": "¿De cuánto puede ser la multa por una falta administrativa?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "carril_inicial": "A",
+ "tema_id": "T109",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "21",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-03"
   },
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "texto": "¿De cuánto puede ser la multa por falta administrativa?",
-      "titulo": [
-        "MULTA POR FALTA",
-        "ADMINISTRATIVA"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador.",
-      "titulo": [
-        "LÍMITE DE",
-        "MULTA"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La Constitución establece: \"Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.\"",
-      "etiqueta": "Ley, artículo 21",
-      "cita": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "Límite de multa para trabajadores",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "Reglas aplicables según el tipo de trabajador:",
-      "items": [
-        "Jornalero u obrero",
-        "Trabajador no asalariado",
-        "Reglamentos de policía"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador.",
-      "titulo": [
-        "SALARIO DE",
-        "UN DÍA"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cierre",
-      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
-      "aviso": "Información general, no asesoría legal.",
-      "afirmaciones": []
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
-    "concepto_central": "multa por falta administrativa",
-    "respuesta_corta": "No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador.",
-    "reglas": [
-      {
-        "conclusion": "Si el infractor es jornalero, obrero o trabajador, la multa por infracción de reglamentos gubernativos y de policía no podrá ser mayor al importe de su jornal o salario de un día.",
-        "fuente": "F1",
-        "cita_literal": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
-        "condiciones": [
-          "que el infractor sea jornalero, obrero o trabajador",
-          "que se trate de una infracción de los reglamentos gubernativos y de policía"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "21"
-        }
-      },
-      {
-        "conclusion": "Tratándose de trabajadores no asalariados, la multa por infracción de los reglamentos gubernativos y de policía no excederá del equivalente a un día de su ingreso.",
-        "fuente": "F1",
-        "cita_literal": "Tratándose de trabajadores no asalariados, la multa que se imponga por infracción de los reglamentos gubernativos y de policía, no excederá del equivalente a un día de su ingreso.",
-        "condiciones": [
-          "que se trate de trabajadores no asalariados",
-          "que sea por infracción de los reglamentos gubernativos y de policía"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "21"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "La multa por una infracción a los reglamentos gubernativos y de policía tiene un límite máximo equivalente a un día de salario o ingreso, según se trate de trabajadores o no asalariados.",
-        "fuente": "F1",
-        "cita_literal": "no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día."
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "El texto oficial solo regula el límite máximo de la sanción económica para infracciones a los reglamentos gubernativos y de policía."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-03T02:26:44+00:00",
-    "solicitud": "2026-12-15_reel_T109-lote-5.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 5,
-        "auditor": 2
-      },
-      "llamadas_ia_total": 7,
-      "intentos_analisis": 2,
-      "intentos_redaccion": 3,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3.5-flash-lite"
-    }
-  },
-  "pregunta_original": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "copy": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?\n\nNo podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 21.\n\nEsto es información general, no es asesoría legal.",
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemma-4-26b-a4b-it",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "con_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": [
-              "La distinción entre trabajadores asalariados (jornaleros, obreros o trabajadores) y trabajadores no asalariados, ya que la norma establece un límite distinto para estos últimos."
-            ]
-          },
-          "conclusiones": [
-            {
-              "conclusion": "La multa por infracción a reglamentos gubernativos y de policía para un trabajador no puede exceder el salario de un día.",
-              "sostenida": "parcial",
-              "motivo": "La conclusión generaliza el límite para todos los trabajadores, pero el texto constitucional distingue entre 'jornalero, obrero o trabajador' (cuyo límite es el jornal o salario de un día) y 'trabajadores no asalariados' (cuyo límite es el equivalente a un día de su ingreso)."
-            }
-          ],
-          "objeciones": [
-            {
-              "donde": "razonamiento.respuesta_corta y razonamiento.reglas",
-              "problema": "Omisión de una categoría de trabajadores con un límite normativo específico.",
-              "correccion": "Se debe distinguir que, si el infractor es jornalero, obrero o trabajador, la multa no podrá ser mayor al importe de su jornal o salario de un día; pero si se trata de trabajadores no asalariados, la multa no excederá del equivalente a un día de su ingreso."
-            },
-            {
-              "donde": "escenas.lista.items",
-              "problema": "Reducción incompleta de los supuestos de hecho.",
-              "correccion": "Los ítems de la lista deben reflejar que la regla aplica para jornaleros, obreros, trabajadores o trabajadores no asalariados, según corresponda al tipo de ingreso."
-            }
-          ]
-        }
-      },
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "errores_esquema": [
-          "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
-        ],
-        "visible": "  \n ¿De cuánto puede ser la multa por una falta administrativa si eres trabajador? \n MULTA POR FALTA \n ADMINISTRATIVA \n No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador. \n LÍMITE DE \n MULTA \n La Constitución establece lo siguiente sobre la sanción: \"Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.\" \n Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día. \n Reglas aplicables segú"
-      },
-      {
-        "etapa": "reparacion_puntual",
-        "intento": 1,
-        "errores": [
-          "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
-        ]
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 1,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Si el infractor es jornalero, obrero o trabajador, la multa por infracción de reglamentos gubernativos y de policía no podrá ser mayor al importe de su jornal o salario de un día.",
-              "sostenida": "si",
-              "motivo": "La conclusión es una transcripción exacta de la limitación establecida en el artículo 21 de la Constitución para este grupo específico de trabajadores."
-            },
-            {
-              "conclusion": "Tratándose de trabajadores no asalariados, la multa por infracción de los reglamentos gubernativos y de policía no excederá del equivalente a un día de su ingreso.",
-              "sostenida": "si",
-              "motivo": "La conclusión refleja fielmente la distinción que hace la norma para los trabajadores no asalariados respecto al límite de la multa."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": true
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "21",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "Tratándose de trabajadores no asalariados, la multa que se imponga por infracción de los reglamentos gubernativos y de policía, no excederá del equivalente a un día de su ingreso",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 21",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-03"
   }
+ },
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "texto": "Si eres trabajador y cometes una falta administrativa, ¿de cuánto puede ser la multa?",
+   "titulo": [
+    "¿DE CUÁNTO",
+    "ES LA MULTA?"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "titular",
+   "texto": "Si eres jornalero, obrero o trabajador, no puede ser mayor de lo que ganas en un día.",
+   "titulo": [
+    "MÁXIMO:",
+    "UN DÍA DE SALARIO"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cita",
+   "texto": "El artículo veintiuno de la Constitución dice que, en ese caso, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
+   "etiqueta": "Constitución, artículo 21",
+   "cita": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
+   "afirmaciones": [
+    {
+     "id": "A1",
+     "tipo": "hecho_normativo",
+     "texto": "Si el infractor de reglamentos gubernativos y de policía es jornalero, obrero o trabajador, la multa no puede ser mayor de un día de su jornal o salario.",
+     "fuente": "F1",
+     "comparar_literal": true
+    }
+   ]
+  },
+  {
+   "tipo": "excepcion",
+   "numero": 1,
+   "texto": "Y si trabajas sin salario, por tu cuenta, la multa no puede exceder lo que ingresas en un día.",
+   "encabezado": "Si no tienes salario",
+   "detalle": "Máximo: un día de tu ingreso",
+   "fuente": "F2",
+   "fuente_corta": "Constitución, art. 21",
+   "afirmaciones": [
+    {
+     "id": "A2",
+     "tipo": "hecho_normativo",
+     "texto": "Para trabajadores no asalariados, la multa por infracción de reglamentos gubernativos y de policía no excede de un día de su ingreso.",
+     "fuente": "F2"
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+   "aviso": "Información general, no asesoría legal.",
+   "afirmaciones": []
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
+  "concepto_central": "multa por falta administrativa",
+  "respuesta_corta": "Si eres jornalero, obrero o trabajador, la multa no puede ser mayor de tu salario de un día; si no tienes salario, de un día de tu ingreso.",
+  "reglas": [
+   {
+    "conclusion": "Si el infractor es jornalero, obrero o trabajador, la multa por infracción de reglamentos gubernativos y de policía no podrá ser mayor al importe de su jornal o salario de un día.",
+    "fuente": "F1",
+    "cita_literal": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
+    "condiciones": [
+     "que el infractor sea jornalero, obrero o trabajador",
+     "que se trate de una infracción de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "21"
+    }
+   },
+   {
+    "conclusion": "Tratándose de trabajadores no asalariados, la multa por infracción de los reglamentos gubernativos y de policía no excederá del equivalente a un día de su ingreso.",
+    "fuente": "F2",
+    "cita_literal": "Tratándose de trabajadores no asalariados, la multa que se imponga por infracción de los reglamentos gubernativos y de policía, no excederá del equivalente a un día de su ingreso.",
+    "condiciones": [
+     "que se trate de trabajadores no asalariados",
+     "que sea por infracción de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "21"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La multa por una infracción a los reglamentos gubernativos y de policía tiene un límite máximo equivalente a un día de salario o ingreso, según se trate de trabajadores o no asalariados.",
+    "fuente": "F1",
+    "cita_literal": "no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial solo regula el límite máximo de la sanción económica para infracciones a los reglamentos gubernativos y de policía."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-03T02:26:44+00:00",
+  "solicitud": "2026-12-15_reel_T109-lote-5.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 5,
+    "auditor": 2
+   },
+   "llamadas_ia_total": 7,
+   "intentos_analisis": 2,
+   "intentos_redaccion": 3,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3.5-flash-lite"
+  }
+ },
+ "pregunta_original": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "copy": "Si cometes una falta a un reglamento gubernativo o de policía y eres trabajador, la Constitución pone un tope a la multa. El artículo 21 dice: «Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día».\n\nY agrega: «Tratándose de trabajadores no asalariados, la multa que se imponga por infracción de los reglamentos gubernativos y de policía, no excederá del equivalente a un día de su ingreso».\n\nEsto es información general, no es asesoría legal.",
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemma-4-26b-a4b-it",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "con_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": [
+       "La distinción entre trabajadores asalariados (jornaleros, obreros o trabajadores) y trabajadores no asalariados, ya que la norma establece un límite distinto para estos últimos."
+      ]
+     },
+     "conclusiones": [
+      {
+       "conclusion": "La multa por infracción a reglamentos gubernativos y de policía para un trabajador no puede exceder el salario de un día.",
+       "sostenida": "parcial",
+       "motivo": "La conclusión generaliza el límite para todos los trabajadores, pero el texto constitucional distingue entre 'jornalero, obrero o trabajador' (cuyo límite es el jornal o salario de un día) y 'trabajadores no asalariados' (cuyo límite es el equivalente a un día de su ingreso)."
+      }
+     ],
+     "objeciones": [
+      {
+       "donde": "razonamiento.respuesta_corta y razonamiento.reglas",
+       "problema": "Omisión de una categoría de trabajadores con un límite normativo específico.",
+       "correccion": "Se debe distinguir que, si el infractor es jornalero, obrero o trabajador, la multa no podrá ser mayor al importe de su jornal o salario de un día; pero si se trata de trabajadores no asalariados, la multa no excederá del equivalente a un día de su ingreso."
+      },
+      {
+       "donde": "escenas.lista.items",
+       "problema": "Reducción incompleta de los supuestos de hecho.",
+       "correccion": "Los ítems de la lista deben reflejar que la regla aplica para jornaleros, obreros, trabajadores o trabajadores no asalariados, según corresponda al tipo de ingreso."
+      }
+     ]
+    }
+   },
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "errores_esquema": [
+     "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    ],
+    "visible": "  \n ¿De cuánto puede ser la multa por una falta administrativa si eres trabajador? \n MULTA POR FALTA \n ADMINISTRATIVA \n No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador. \n LÍMITE DE \n MULTA \n La Constitución establece lo siguiente sobre la sanción: \"Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.\" \n Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día. \n Reglas aplicables segú"
+   },
+   {
+    "etapa": "reparacion_puntual",
+    "intento": 1,
+    "errores": [
+     "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    ]
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 1,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Si el infractor es jornalero, obrero o trabajador, la multa por infracción de reglamentos gubernativos y de policía no podrá ser mayor al importe de su jornal o salario de un día.",
+       "sostenida": "si",
+       "motivo": "La conclusión es una transcripción exacta de la limitación establecida en el artículo 21 de la Constitución para este grupo específico de trabajadores."
+      },
+      {
+       "conclusion": "Tratándose de trabajadores no asalariados, la multa por infracción de los reglamentos gubernativos y de policía no excederá del equivalente a un día de su ingreso.",
+       "sostenida": "si",
+       "motivo": "La conclusión refleja fielmente la distinción que hace la norma para los trabajadores no asalariados respecto al límite de la multa."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": true
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-03",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "etiqueta de la cita corregida («Constitución, artículo 21»; decía «Ley, artículo 21»); se quita la lista con elementos vagos («Trabajador no asalariado», «Reglamentos de policía») que no se narraban; la regla de los no asalariados pasa a una escena de excepción con su cita literal (F2); sin repetir la respuesta; narración en segunda persona; texto de publicación con las dos citas"
+  }
+ ]
 }

@@ -1,5 +1,5 @@
 {
- "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse.",
+ "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse. Lote 5 (14 al 27-12): cada pieza entra al aprobarse; 3-11: imágenes del 14-12 y 15-12 (aprobación delegada).",
  "zona": "America/Mexico_City",
  "dias": [
   {
@@ -527,6 +527,36 @@
     "aprobada": "2026-11-02T12:27:28+00:00",
     "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "SIMULADO"
+   }
+  },
+  {
+   "fecha": "2026-12-14",
+   "imagen": {
+    "pieza": "I20261214-T108",
+    "version": "a439aaf737940f53",
+    "hora": "09:00",
+    "archivo": "I20261214-T108.png",
+    "sha256": "ce30375014940959e64a1f407d602a3f26640f57652de79705fcee6cee0c5a22",
+    "asset_id": 705455167,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-03T12:08:39+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-12-15",
+   "imagen": {
+    "pieza": "I20261215-T109",
+    "version": "eead259454ba3674",
+    "hora": "09:00",
+    "archivo": "I20261215-T109.png",
+    "sha256": "93e9491dc8f2c6e00e1a383189746ca26f752ddc36cc23e1e9b6b5771066343b",
+    "asset_id": 705458067,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-03T12:08:40+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
    }
   }
  ]
