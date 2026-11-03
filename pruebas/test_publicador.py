@@ -15,6 +15,7 @@ CAL = json.loads((Path(__file__).resolve().parent.parent / "data" / "calendario_
 def ent(tmp_path, monkeypatch):
     monkeypatch.setattr(publicador, "PAUSA", tmp_path / "pausa.json")
     monkeypatch.setattr(publicar, "LIBRO", tmp_path / "ops.jsonl")
+    monkeypatch.setattr(publicador, "VERSIONES_IG", tmp_path / "versiones_ig.json")   # sin versiones cortas salvo que la prueba las cree
     archivos = {}
     def bajar(e, carpeta, env):
         f = tmp_path / e["archivo"]
