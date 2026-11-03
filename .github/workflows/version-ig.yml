@@ -1,0 +1,39 @@
+# Versiones cortas para Instagram (opción c del responsable, 3-11-2026): verifica, produce y respalda piezas/*-IG.
+# No publica nada y no usa IA. Quedan pendientes de la aprobación del responsable.
+name: version-ig
+on: { workflow_dispatch: {} }
+concurrency: { group: ciclo-produccion, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  producir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - name: ffmpeg estático (caché)
+        uses: actions/cache@v4
+        with: { path: ~/ffmpeg-static, key: ffmpeg-btbn-v1 }
+      - name: Dependencias
+        timeout-minutes: 14
+        run: |
+          bash sistema/apt.sh
+          pip install -q -r requirements.txt
+      - name: Modelos de voz (caché)
+        uses: actions/cache@v4
+        with: { path: models, key: modelos-v0.2-kokoro1.0-piper-claude }
+      - run: bash sistema/descargar_modelos.sh
+      - name: Copias de respaldo de fuentes oficiales (caché)
+        uses: actions/cache@v4
+        with: { path: cache_fuentes, key: "fuentes-${{ github.run_id }}", restore-keys: fuentes- }
+      - name: Producir versiones cortas
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: python sistema/version_ig.py
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add -A estado piezas/*-IG/salida/*.json registro || true
+          git diff --cached --quiet || (git commit -m "versiones IG ${{ github.run_id }}" && git pull --rebase -q && git push)

@@ -1,0 +1,188 @@
+{
+  "id": "R20261127-T010-IG",
+  "formato": "reel",
+  "titulo": "¿Tienes derecho a guardar silencio si te detienen?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T010",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes qué derechos tienes si te detienen?",
+      "titulo": [
+        "DERECHOS",
+        "AL SER",
+        "DETENIDO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí. Tienes derecho a declarar o a guardar silencio, y tu silencio no puede usarse en tu contra.",
+      "titulo": [
+        "SÍ TIENES",
+        "DERECHO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Toda persona imputada tiene derecho a declarar o a guardar silencio desde el momento de su detención.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 20 de la Constitución dice: \"A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.\"",
+      "etiqueta": "Constitución, artículo 20",
+      "cita": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho a guardar silencio si te detienen?",
+    "concepto_central": "derecho a guardar silencio",
+    "respuesta_corta": "Sí, tienes derecho a declarar o a guardar silencio desde el momento de tu detención, sin que este sea utilizado en tu perjuicio.",
+    "reglas": [
+      {
+        "conclusion": "Toda persona imputada tiene derecho a declarar o a guardar silencio desde el momento de su detención, el cual no podrá ser usado en su perjuicio.",
+        "fuente": "F1",
+        "cita_literal": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+        "condiciones": [
+          "Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "20"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El derecho a declarar o a guardar silencio, el cual no puede ser utilizado en perjuicio de la persona detenida.",
+        "fuente": "F1",
+        "cita_literal": "A declarar o a guardar silencio. Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio, el cual no podrá ser utilizado en su perjuicio.",
+        "motivo": ""
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Se deben informar los motivos de la detención y el derecho a guardar silencio desde el momento en que se efectúa la detención.",
+        "fuente": "F1",
+        "cita_literal": "Desde el momento de su detención se le harán saber los motivos de la misma y su derecho a guardar silencio",
+        "motivo": ""
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "El texto no prevé excepciones para este derecho.",
+        "fuente": "F1",
+        "cita_literal": "",
+        "motivo": "El artículo no contempla excepciones aplicables al derecho a guardar silencio."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla protocolos adicionales de actuación policial más allá de la obligación de informar los motivos y el derecho al momento de la detención."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T18:08:09+00:00",
+    "solicitud": "2026-11-27_reel_T010-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho a guardar silencio si te detienen?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Tienes derecho a guardar silencio si te detienen?\n\nSí, tienes derecho a declarar o a guardar silencio desde el momento de tu detención, sin que este sea utilizado en tu perjuicio.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona imputada tiene derecho a declarar o a guardar silencio desde el momento de su detención, el cual no podrá ser usado en su perjuicio.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la Fracción II del inciso B del artículo 20 constitucional, la cual establece el derecho al silencio y la prohibición de usarlo en perjuicio del imputado."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "gancho sin «en la vía pública» (el texto no lo limita); «La ley» → «La Constitución»"
+    }
+  ],
+  "version_instagram": {
+    "de": "R20261127-T010",
+    "version_original": "9e4c409f295c9ea6",
+    "motivo": "Instagram por API rechaza Reels de más de ~45 s; versión condensada solo para Instagram (opción c del responsable, 3-11-2026). Mismas fuentes y citas literales; el original no cambia.",
+    "estado": "pendiente de aprobación del responsable"
+  }
+}

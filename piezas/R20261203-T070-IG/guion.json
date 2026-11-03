@@ -1,0 +1,227 @@
+{
+  "id": "R20261203-T070-IG",
+  "formato": "reel",
+  "titulo": "¿La empresa debe pagarte luz e internet?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T070",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-E",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+      "cita": "Ley Federal del Trabajo, artículo 330-E",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora bajo la modalidad de teletrabajo, o en el domicilio elegido por ésta. No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica.",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-10-29"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Trabajas desde casa? ¿Tu empresa debe pagarte la luz y el internet?",
+      "titulo": [
+        "¿HOME OFFICE?",
+        "¿QUIÉN PAGA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Ley Federal del Trabajo dice que el patrón debe «Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 330-E",
+      "cita": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+      "afirmaciones": [
+        {
+          "id": "A40",
+          "tipo": "hecho_normativo",
+          "texto": "El capítulo de teletrabajo se aplica cuando la relación laboral se desarrolla más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora o en el que elija; el trabajo ocasional o esporádico no es teletrabajo.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Ojo: es teletrabajo si trabajas más del cuarenta por ciento del tiempo en tu domicilio o el que elijas; no si es ocasional.",
+      "items": [
+        "Más del 40 % en tu domicilio",
+        "No si es ocasional"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
+    "concepto_central": "pago de servicios de telecomunicación y electricidad en teletrabajo",
+    "respuesta_corta": "Sí: la empresa debe asumir los costos derivados del teletrabajo, incluyendo las telecomunicaciones y la parte proporcional de electricidad.",
+    "reglas": [
+      {
+        "conclusion": "Los patrones deben asumir los costos derivados del teletrabajo, lo que incluye en su caso el pago de internet y la parte proporcional de electricidad.",
+        "fuente": "F1",
+        "cita_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+        "condiciones": [
+          "en su caso"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "330-E"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La empresa tiene la obligación de cubrir el pago de servicios de telecomunicación y la parte proporcional de electricidad.",
+        "fuente": "F1",
+        "cita_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+        "motivo": ""
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación aplica según el caso de la modalidad de teletrabajo.",
+        "fuente": "F1",
+        "cita_literal": "incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad;",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla montos, porcentajes específicos ni fórmulas para calcular la parte proporcional de la electricidad o el internet."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-29T14:35:29+00:00",
+    "solicitud": "2026-12-03_reel_T070-lote-3.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Tu empresa debe pagarte la luz y el internet si trabajas desde casa?\n\nSí, si es teletrabajo: el patrón debe asumir los costos, incluido el pago de servicios de telecomunicación y la parte proporcional de electricidad. Para la ley es teletrabajo cuando trabajas más del cuarenta por ciento del tiempo en tu domicilio o en el que elijas; no cuenta el trabajo ocasional o esporádico.\n\nFuente: Ley Federal del Trabajo, artículos 330-A y 330-E.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La distinción jurídica entre trabajar desde casa de forma ocasional y estar bajo la 'modalidad de teletrabajo' regulada por la ley."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los patrones deben asumir los costos derivados del teletrabajo, lo que incluye en su caso el pago de internet y la parte proporcional de electricidad.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una derivación directa de la fracción III del artículo 330-E de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Titular y respuesta corta",
+              "problema": "La pieza responde con un 'Sí' rotundo a la pregunta de si deben pagar la luz por 'trabajar desde casa', lo cual es jurídicamente impreciso. La obligación del artículo 330-E no surge por el simple hecho de realizar labores en el hogar, sino exclusivamente cuando el trabajador está bajo la 'modalidad de teletrabajo'.",
+              "correccion": "La respuesta debe condicionarse a la modalidad legal: 'Sí, siempre que la relación laboral se encuentre bajo la modalidad de teletrabajo'."
+            },
+            {
+              "donde": "Gancho y Titular",
+              "problema": "Uso de terminología no contenida en el texto oficial. La pieza utiliza 'home office', mientras que la norma se refiere estrictamente a la 'modalidad de teletrabajo'.",
+              "correccion": "Sustituir 'home office' por 'teletrabajo' para mantener la exactitud jurídica del texto oficial."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los patrones deben asumir los costos derivados del teletrabajo, lo que incluye en su caso el pago de internet y la parte proporcional de electricidad.",
+              "sostenida": "si",
+              "motivo": "La conclusión es jurídicamente válida ya que se deriva directamente de la fracción III del artículo 330-E, respetando la condición 'en su caso' y vinculando correctamente los servicios de telecomunicación (interpretados como internet en el contexto de teletrabajo) y la electricidad proporcional."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "se agrega la condición del art. 330-A (más del 40 % del tiempo en el domicilio; no el trabajo ocasional), sin la cual el «Sí» era una generalización; escena final vaga sustituida; etiqueta «Ley» → «Ley Federal del Trabajo»; doble «::» eliminado"
+    },
+    {
+      "fecha": "2026-10-29",
+      "por": "Claude (director editorial)",
+      "que": "la escena de la condición (art. 330-A) ya no mezcla el punto del art. 330-E, para que su fuente visible sea la correcta"
+    }
+  ],
+  "version_instagram": {
+    "de": "R20261203-T070",
+    "version_original": "51574e0e6910bdfd",
+    "motivo": "Instagram por API rechaza Reels de más de ~45 s; versión condensada solo para Instagram (opción c del responsable, 3-11-2026). Mismas fuentes y citas literales; el original no cambia.",
+    "estado": "pendiente de aprobación del responsable"
+  }
+}

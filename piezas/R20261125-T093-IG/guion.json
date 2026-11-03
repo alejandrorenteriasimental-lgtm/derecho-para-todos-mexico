@@ -1,0 +1,204 @@
+{
+  "id": "R20261125-T093-IG",
+  "formato": "reel",
+  "titulo": "¿Puedes hacerte justicia por tu propia mano?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T093",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Toda persona tiene derecho a que se le adm inistre justicia por tribunales que estarán expeditos para impartirla en los plazos y términos que fijen las leyes",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Puedes hacerte justicia por tu propia mano?",
+      "titulo": [
+        "¿JUSTICIA",
+        "POR TU",
+        "CUENTA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "No. El artículo 17 de la Constitución dice: \"Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.\"",
+      "etiqueta": "Constitución, artículo 17",
+      "cita": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "El camino es acudir a los tribunales, que deben impartir justicia en los plazos y términos que fijen las leyes.",
+      "titulo": [
+        "USA LOS",
+        "TRIBUNALES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar su derecho.",
+          "fuente": "F1",
+          "comparar_literal": true
+        },
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Toda persona tiene derecho a que se le administre justicia por tribunales en los plazos y términos que fijen las leyes.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes hacerte justicia por tu propia mano?",
+    "concepto_central": "justicia por propia mano",
+    "respuesta_corta": "No: ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar su derecho.",
+    "reglas": [
+      {
+        "conclusion": "Está prohibido hacerse justicia por propia mano o usar la violencia para reclamar derechos.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "17"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Hacerse justicia por propia mano está prohibido y no se puede ejercer violencia.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna persona podrá hacerse justicia por sí misma, ni ejercer violencia para reclamar su derecho."
+      },
+      {
+        "elemento": "ante_quien",
+        "estado": "cubierto",
+        "respuesta": "La justicia debe solicitarse ante los tribunales expeditos para impartirla.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho a que se le adm inistre justicia por tribunales que estarán expeditos para impartirla en los plazos y términos que fijen las leyes"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no señala las sanciones penales o administrativas específicas por infringir la prohibición de hacerse justicia por propia mano."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T11:34:58+00:00",
+    "solicitud": "2026-11-25_reel_T093-piloto-1.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 1,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 2,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Puedes hacerte justicia por tu propia mano?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Puedes hacerte justicia por tu propia mano?\n\nNo: ninguna persona puede hacerse justicia por sí misma ni ejercer violencia para reclamar su derecho.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 17.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Está prohibido hacerse justicia por propia mano o usar la violencia para reclamar derechos.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la prohibición establecida en el primer párrafo del artículo 17 de la Constitución."
+            },
+            {
+              "conclusion": "La justicia debe solicitarse ante los tribunales expeditos para impartirla.",
+              "sostenida": "si",
+              "motivo": "Se deriva correctamente del derecho constitucional a la administración de justicia a través de tribunales que deben estar expeditos para ello."
+            },
+            {
+              "conclusion": "Hacerse justicia por propia mano está prohibido y no se puede ejercer violencia.",
+              "sostenida": "si",
+              "motivo": "La afirmación coincide plenamente con el texto constitucional que prohíbe tanto la autotutela como el uso de la violencia para reclamar derechos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "lista: «condiciones obligatorias» presentaba garantías del art. 17 como requisitos de la persona; ahora «el artículo 17 garantiza»; «no rotundo» → «no»; «autoridades» → «tribunales»; texto de publicación sin IA"
+    }
+  ],
+  "version_instagram": {
+    "de": "R20261125-T093",
+    "version_original": "0e6c0e51c6b1b1d1",
+    "motivo": "Instagram por API rechaza Reels de más de ~45 s; versión condensada solo para Instagram (opción c del responsable, 3-11-2026). Mismas fuentes y citas literales; el original no cambia.",
+    "estado": "pendiente de aprobación del responsable"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "R20261126-T061-IG",
+  "formato": "reel",
+  "titulo": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T061",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "16",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 16",
+      "jurisdiccion": "federal",
+      "consultado": "2026-10-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes cuánto tiempo puede retenerte el Ministerio Público?",
+      "titulo": [
+        "¿CUÁNTO TIEMPO",
+        "PUEDEN RETENERTE?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución dice: Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial.",
+      "etiqueta": "Constitución, artículo 16",
+      "cita": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El Ministerio Público no puede retener a un indiciado por más de cuarenta y ocho horas sin ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Las cuarenta y ocho horas podrán duplicarse en aquellos casos que la ley prevea como delincuencia organizada.",
+      "encabezado": "Excepción por delincuencia",
+      "detalle": "El plazo podrá duplicarse",
+      "fuente_corta": "Constitución, art. 16",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+    "concepto_central": "retención por el Ministerio Público",
+    "respuesta_corta": "Por un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada.",
+    "reglas": [
+      {
+        "conclusion": "El Ministerio Público no puede retener a un indiciado por más de cuarenta y ocho horas, debiendo ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+        "fuente": "F1",
+        "cita_literal": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial",
+        "condiciones": [
+          "tratarse de un indiciado retenido por el Ministerio Público"
+        ],
+        "excepciones": [
+          "el plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "16"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El Ministerio Público puede retener a un indiciado hasta por cuarenta y ocho horas, plazo en el cual debe ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+        "fuente": "F1",
+        "cita_literal": "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas, plazo en que deberá ordenarse su libertad o ponérsele a disposición de la autoridad judicial"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "no_aplica",
+        "motivo": "la norma fija el plazo general de retención sin condicionantes previas de procedencia aparte de la calidad de indiciado"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "El plazo de retención puede duplicarse en los casos que la ley prevea como delincuencia organizada.",
+        "fuente": "F1",
+        "cita_literal": "este plazo podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no detalla cuáles leyes específicas prevén la delincuencia organizada ni los mecanismos operativos de la duplicidad del plazo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-10-28T19:26:29+00:00",
+    "solicitud": "2026-11-26_reel_T061-piloto-2.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 1,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Cuánto tiempo puede retenerte el Ministerio Público?\n\nPor un máximo de cuarenta y ocho horas, plazo que podrá duplicarse en aquellos casos que la ley prevea como delincuencia organizada.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 16.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El Ministerio Público no puede retener a un indiciado por más de cuarenta y ocho horas, debiendo ordenar su libertad o ponerlo a disposición de la autoridad judicial.",
+              "sostenida": "si",
+              "motivo": "La afirmación es una transcripción directa y correcta del mandato constitucional contenido en el artículo 16."
+            },
+            {
+              "conclusion": "El plazo de retención puede duplicarse en los casos que la ley prevea como delincuencia organizada.",
+              "sostenida": "si",
+              "motivo": "La pieza identifica correctamente la excepción prevista en el mismo artículo 16 de la Constitución."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-10-28",
+      "por": "Claude (director editorial)",
+      "que": "excepción vaga («normatividad aplicable») → texto literal del art. 16; lista sin «cumplir plazo legal»; gancho sin «exacto»"
+    }
+  ],
+  "version_instagram": {
+    "de": "R20261126-T061",
+    "version_original": "c8b101816816cdb0",
+    "motivo": "Instagram por API rechaza Reels de más de ~45 s; versión condensada solo para Instagram (opción c del responsable, 3-11-2026). Mismas fuentes y citas literales; el original no cambia.",
+    "estado": "pendiente de aprobación del responsable"
+  }
+}
