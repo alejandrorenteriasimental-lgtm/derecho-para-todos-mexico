@@ -1,0 +1,51 @@
+{
+ "tema_id": "T116",
+ "pregunta": "¿Te deben informar tus derechos cuando te detienen?",
+ "fecha": "2026-11-03T22:11:12+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben informar tus derechos cuando te detienen?",
+  "concepto_central": "derechos que asisten al detenido",
+  "respuesta_corta": "Sí: las autoridades que ejecuten una detención por flagrancia o caso urgente deben asegurar que conozcas tus derechos.",
+  "reglas": [
+   {
+    "conclusion": "Las autoridades que ejecuten una detención por flagrancia o caso urgente deben asegurar que conozcas tus derechos en cualquier etapa del período de custodia.",
+    "fuente": "F1",
+    "cita_literal": "Las autoridades que ejecuten una detención por flagrancia o caso urgente deberán asegurarse de que la persona tenga pleno y claro conocimiento del ejercicio de los derechos citados a continuación",
+    "condiciones": [
+     "La detención debe ser por flagrancia o caso urgente"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe asegurar el conocimiento pleno y claro de los derechos durante cualquier etapa del periodo de custodia.",
+    "fuente": "F1",
+    "cita_literal": "deberán asegurarse de que la persona tenga pleno y claro conocimiento del ejercicio de los derechos citados a continuación, en cualquier etapa del período de custodia"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación aplica cuando la detención se realiza por flagrancia o caso urgente.",
+    "fuente": "F1",
+    "cita_literal": "Las autoridades que ejecuten una detención por flagrancia o caso urgente deberán asegurarse"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones a esta obligación."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto solo regula esta obligación para detenciones por flagrancia o caso urgente y no menciona supuestos distintos ni consecuencias por omitirlo.",
+  "fuentes_irrelevantes": []
+ }
+}

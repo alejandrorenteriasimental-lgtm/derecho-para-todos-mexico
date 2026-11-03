@@ -1,0 +1,51 @@
+{
+ "tema_id": "T114",
+ "pregunta": "¿La educación pública debe ser gratuita?",
+ "fecha": "2026-11-03T22:06:25+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La educación pública debe ser gratuita?",
+  "concepto_central": "educación gratuita",
+  "respuesta_corta": "Sí, toda la educación que el Estado imparta debe ser gratuita en los términos establecidos por la Constitución.",
+  "reglas": [
+   {
+    "conclusion": "La educación que imparte el Estado tiene la característica de ser gratuita.",
+    "fuente": "F1",
+    "cita_literal": "Toda la educación que el Estado imparta será gratuita;",
+    "condiciones": [
+     "Que sea impartida por el Estado"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La norma establece la obligación de que toda la educación impartida por el Estado sea gratuita.",
+    "fuente": "F1",
+    "cita_literal": "Toda la educación que el Estado imparta será gratuita;"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La gratuidad aplica específicamente a los servicios educativos que son impartidos por el Estado.",
+    "fuente": "F1",
+    "cita_literal": "la impartida por éste, además de obligatoria, será universal, inclusiva, pública, gratuita y laica."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones a la gratuidad de la educación impartida por el Estado."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla reglas específicas sobre cuotas voluntarias, materiales o servicios adicionales fuera de la gratuidad de la educación impartida por el Estado.",
+  "fuentes_irrelevantes": []
+ }
+}

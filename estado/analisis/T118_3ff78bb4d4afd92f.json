@@ -1,0 +1,65 @@
+{
+ "tema_id": "T118",
+ "pregunta": "¿Qué es la prima de antigüedad?",
+ "fecha": "2026-11-03T22:18:23+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué es la prima de antigüedad?",
+  "concepto_central": "prima de antigüedad",
+  "respuesta_corta": "Es el importe de doce días de salario por cada año de servicios al que tienen derecho los trabajadores de planta bajo determinadas condiciones de separación o muerte.",
+  "reglas": [
+   {
+    "conclusion": "La prima de antigüedad consiste en doce días de salario por cada año de servicios para los trabajadores de planta.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores de planta tienen derecho a una prima de antigüedad, de conformidad con las normas siguientes: I. La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios;",
+    "condiciones": [
+     "Ser trabajador de planta"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Se paga a los trabajadores que se separen voluntariamente cumpliendo al menos quince años de servicios, a los que se separen por causa justificada, y a los separados por despido.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.",
+    "condiciones": [
+     "Haber cumplido quince años de servicios, por lo menos, en caso de separación voluntaria"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Consiste en el importe de doce días de salario por cada año de servicios.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios;"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica a los trabajadores de planta y, en caso de retiro voluntario, requiere un mínimo de quince años de servicios.",
+    "fuente": "F1",
+    "cita_literal": "siempre que hayan cumplido quince años de servicios, por lo menos."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "En caso de muerte del trabajador, la prima se paga sin importar la antigüedad.",
+    "fuente": "F1",
+    "cita_literal": "En caso de muerte del trabajador, cualquiera que sea su antigüedad, la prima que corresponda se pagará a las personas mencionadas en el artículo 501;"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "renuncia",
+    "b": "despido",
+    "diferencia": "La renuncia es la separación decidida por la persona trabajadora, mientras que el despido es la separación decidida por el patrón."
+   }
+  ],
+  "limites": "Los textos no detallan las reglas específicas para determinar el monto del salario base más allá de remitir a los artículos 485 y 486.",
+  "fuentes_irrelevantes": []
+ }
+}

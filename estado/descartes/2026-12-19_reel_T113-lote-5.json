@@ -1,0 +1,99 @@
+{
+ "solicitud": "2026-12-19_reel_T113-lote-5.json",
+ "fecha": "2026-11-03T22:06:04+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 750 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Te pueden obligar a trabajar sin pagarte? \\n ¿TE PUEDEN \\n OBLIGAR A \\n TRABAJAR? \\n No, nadie puede ser obligado a prestar trabajos personales sin justa retribución y sin su pleno consentimiento. \\n RESPUESTA \\n OFICIAL \\",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La distinción entre las funciones que son obligatorias y gratuitas (electorales y censales) y los servicios profesionales de índole social que, aunque obligatorios, son retribuidos."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser obligado a prestar trabajos personales sin justa retribución y sin su consentimiento, salvo las excepciones previstas como penas judiciales u obligaciones públicas.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión es imprecisa al agrupar todas las 'obligaciones públicas' como excepciones a la regla de la retribución. El texto oficial distingue que los servicios profesionales de índole social son obligatorios pero también 'retribuidos en los términos de la ley', por lo que no todos los servicios públicos son una excepción al pago."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Lista de excepciones y respuesta corta",
+      "problema": "Se presenta una generalización incorrecta al sugerir que las obligaciones públicas en su totalidad son una excepción a la justa retribución.",
+      "correccion": "Debe aclararse que la excepción de gratuidad (trabajo sin pago) aplica específicamente a las funciones electorales y censales, mientras que otros servicios públicos o profesionales de índole social mantienen el carácter de retribuidos."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 707 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+   ],
+   "visible": "  \n ¿Te pueden obligar a trabajar sin recibir pago? \n ¿TE PUEDEN \n OBLIGAR A \n TRABAJAR? \n No, nadie puede ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento. \n NO, NADIE \n PUEDE \n La Constitución señala de forma directa que ninguna persona puede ser forzada a laborar sin pago:: Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial \n Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial \n Requisitos básicos: \n P"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 707 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La mención de los servicios públicos obligatorios (armas, jurados, cargos concejiles y de elección popular) como excepciones adicionales a la regla general de no trabajo forzado."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Nadie puede ser obligado a prestar trabajos personales sin justa retribución y consentimiento, salvo por pena judicial.",
+      "sostenida": "si",
+      "motivo": "El artículo 5 establece explícitamente esta prohibición y la excepción de la pena judicial."
+     },
+     {
+      "conclusion": "Las funciones electorales y censales son obligatorias y gratuitas, excepto cuando se realicen de forma profesional.",
+      "sostenida": "si",
+      "motivo": "El artículo 5 señala que estas funciones son obligatorias y gratuitas, salvo las retribuidas profesionalmente."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena de lista (Requisitos básicos) y sección de excepciones",
+      "problema": "La pieza presenta una lista de excepciones incompleta al omitir los servicios públicos obligatorios (armas, jurados, cargos concejiles y de elección popular) que el artículo 5 contempla como excepciones a la libertad de trabajo.",
+      "correccion": "Añadir en la sección de excepciones que, además de la pena judicial y las funciones electorales/censales, existen servicios públicos obligatorios (armas, jurados, cargos concejiles y de elección popular) en los términos de las leyes respectivas."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 750 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+   ],
+   "visible": "  \n ¿Te pueden obligar a trabajar sin pagarte? \n ¿TE PUEDEN \n OBLIGAR A \n TRABAJAR? \n No, nadie puede ser obligado a prestar trabajos personales sin justa retribución y sin su pleno consentimiento. \n RESPUESTA \n OFICIAL \n La Constitución protege tus derechos laborales fundamentales de la siguiente manera:: Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial \n Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial \n Condiciones y reglas generales: \n Se requi"
+  }
+ ]
+}
