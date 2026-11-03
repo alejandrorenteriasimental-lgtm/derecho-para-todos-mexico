@@ -11,3 +11,6 @@
 4. **Token de página (no caduca):** de vuelta en el Explorer, con el token largo, consultar `me/accounts` y copiar el `access_token` de la Página 1359758353893509.
 5. **Guardarlo:** GitHub → repositorio → Settings → Secrets and variables → Actions → META_PAGE_TOKEN → Update → pegar → Save. No pegarlo en el chat.
 6. Avisar «listo» a Claude: corre `meta-prueba` en modo lectura (no publica nada) y confirma que lee la Página, que Instagram sigue vinculado y que las publicaciones programadas siguen ahí.
+
+## Decisión del responsable (3-11-2026)
+«No importa que la clave haya sido expuesta.» No se rota el token de Meta ni se cambia la contraseña. El procedimiento queda documentado por si cambia de opinión.
