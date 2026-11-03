@@ -1,0 +1,65 @@
+{
+ "tema_id": "T110",
+ "pregunta": "¿Necesitas un permiso para viajar dentro de México?",
+ "fecha": "2026-11-03T10:12:14+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Necesitas un permiso para viajar dentro de México?",
+  "concepto_central": "derecho para viajar por su territorio",
+  "respuesta_corta": "No, puedes viajar por el país sin pasaporte, carta de seguridad o requisitos similares, aunque este derecho está sujeto a facultades judiciales o de salud.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona puede desplazarse por el territorio nacional sin que se le exijan documentos de seguridad o salvoconductos.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho para entrar en la República, salir de ella, viajar por su territorio y mudar de residencia, sin necesidad de carta de seguridad, pasaporte, salvoconducto u otros requisitos semejantes.",
+    "condiciones": [
+     "Que no existan limitaciones impuestas por leyes de salubridad general",
+     "Que no existan limitaciones por leyes de emigración o inmigración"
+    ],
+    "excepciones": [
+     "Casos de responsabilidad criminal o civil determinados por autoridad judicial",
+     "Limitaciones administrativas sobre extranjeros perniciosos residentes en el país"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se garantiza el derecho a viajar por el territorio nacional sin necesidad de permisos como cartas de seguridad o pasaportes.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho para entrar en la República, salir de ella, viajar por su territorio y mudar de residencia, sin necesidad de carta de seguridad, pasaporte, salvoconducto u otros requisitos semejantes."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El libre tránsito no requiere de requisitos previos, pero su ejercicio queda subordinado a lo que dicten autoridades judiciales o administrativas en materias específicas.",
+    "fuente": "F1",
+    "cita_literal": "El ejercicio de este derecho estará subordinado a las facultades de la autoridad judicial, en los casos de responsabilidad criminal o civil, y a las de la autoridad administrativa"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "El derecho a viajar puede limitarse por razones de salubridad general o por mandatos judiciales en procesos civiles o criminales.",
+    "fuente": "F1",
+    "cita_literal": "limitaciones que impongan las leyes sobre emigración, inmigración y salubridad general de la República, o sobre extranjeros perniciosos residentes en el país."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Una persona podría ver restringido su derecho a viajar si existe un proceso judicial en su contra.",
+    "condicion": "Si la autoridad judicial determina que existe responsabilidad criminal o civil.",
+    "base": "F1: \"subordinado a las facultades de la autoridad judicial, en los casos de responsabilidad criminal o civil\""
+   },
+   {
+    "afirmacion": "El tránsito por el país puede limitarse por motivos de salud pública.",
+    "condicion": "Si las leyes de salubridad general imponen limitaciones administrativas.",
+    "base": "F1: \"limitaciones que impongan las leyes sobre [...] salubridad general de la República\""
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto oficial no menciona requisitos para el uso de vehículos, identificaciones comerciales para abordar transportes privados, ni permisos específicos para zonas restringidas.",
+  "fuentes_irrelevantes": []
+ }
+}

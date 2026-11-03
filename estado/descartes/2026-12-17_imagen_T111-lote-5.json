@@ -1,0 +1,57 @@
+{
+ "solicitud": "2026-12-17_imagen_T111-lote-5.json",
+ "fecha": "2026-11-03T10:15:28+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (66 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Sí, tienes derecho a dos reposos de 30 minutos o, si la empresa no puede asignar un lugar adecuado, a reducir una hora tu jornada previo acuerdo. \\n tendrán dos reposos extraord",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «contenido» («Se garantizan dos reposos extraordinarios de media hora cada») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si la empresa no puede asignar un lugar adecuado, la jornada de trabajo se reducirá en una hora previo acuerdo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a dos reposos de 30 minutos o a reducir una hora tu jornada por hasta seis meses. \n tendrán dos reposos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos \n Aplica por un periodo máximo de seis meses."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si la empresa no puede asignar un lugar adecuado, la jornada de trabajo se reducirá en una hora previo acuerdo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si la empresa no puede asignar un lugar adecuado, la jornada de trabajo se reducirá en una hora previo acuerdo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a dos reposos de 30 minutos o a reducir una hora tu jornada por hasta seis meses. \n tendrán dos reposos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos \n Aplica por un periodo máximo de seis meses."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si la empresa no puede asignar un lugar adecuado, la jornada de trabajo se reducirá en una hora previo acuerdo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (66 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a dos reposos de 30 minutos o, si la empresa no puede asignar un lugar adecuado, a reducir una hora tu jornada previo acuerdo. \n tendrán dos reposos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos \n Aplica por un periodo máximo de seis meses."
+  }
+ ]
+}

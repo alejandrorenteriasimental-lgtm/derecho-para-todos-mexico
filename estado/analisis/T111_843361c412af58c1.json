@@ -1,0 +1,70 @@
+{
+ "tema_id": "T111",
+ "pregunta": "¿Tienes derecho a pausas para amamantar en el trabajo?",
+ "fecha": "2026-11-03T10:13:51+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes derecho a pausas para amamantar en el trabajo?",
+  "concepto_central": "reposos extraordinarios por lactancia",
+  "respuesta_corta": "Sí, tienes derecho a dos reposos de media hora cada uno o a reducir una hora tu jornada, durante un máximo de seis meses en el período de lactancia.",
+  "reglas": [
+   {
+    "conclusion": "Las madres trabajadoras tienen derecho a dos pausas diarias de media hora cada una para alimentar a sus hijos en un espacio adecuado.",
+    "fuente": "F1",
+    "cita_literal": "tendrán dos reposos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos, en lugar adecuado e higiénico que designe la empresa",
+    "condiciones": [
+     "Durante el período de lactancia",
+     "Hasta por el término máximo de seis meses"
+    ],
+    "excepciones": [
+     "Cuando no sea posible designar un lugar adecuado e higiénico, se reducirá la jornada laboral"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se establecen dos reposos extraordinarios por día de media hora cada uno para la alimentación de los hijos.",
+    "fuente": "F1",
+    "cita_literal": "tendrán dos reposos extraordinarios por día, de media hora cada uno, para alimentar a sus hijos"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Este derecho se garantiza durante el período de lactancia por un tiempo máximo de seis meses.",
+    "fuente": "F1",
+    "cita_literal": "En el período de lactancia hasta por el término máximo de seis meses"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Si la empresa no puede asignar un lugar adecuado, la jornada de trabajo se reducirá en una hora previo acuerdo.",
+    "fuente": "F1",
+    "cita_literal": "cuando esto no sea posible, previo acuerdo con el patrón se reducirá en una hora su jornada de trabajo durante el período señalado"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La reducción de la jornada laboral en una hora es una alternativa legal cuando el centro de trabajo carece de instalaciones adecuadas.",
+    "condicion": "Que no sea posible designar un lugar adecuado e higiénico en la empresa.",
+    "base": "F1, artículo 170, fracción IV"
+   },
+   {
+    "afirmacion": "La reducción de la jornada no es unilateral, requiere una concertación entre la trabajadora y el empleador.",
+    "condicion": "Previo acuerdo con el patrón.",
+    "base": "F1, artículo 170, fracción IV"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Descanso por maternidad",
+    "b": "Reposos por lactancia",
+    "diferencia": "El descanso por maternidad es un periodo de semanas previo y posterior al parto, mientras que los reposos por lactancia son pausas diarias durante la jornada laboral."
+   }
+  ],
+  "limites": "Los textos no establecen si el periodo de seis meses puede prorrogarse por causas médicas, ni especifican las sanciones para el patrón que niegue estos reposos.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "tema_id": "T112",
+ "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
+ "fecha": "2026-11-03T10:17:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
+  "concepto_central": "garantía",
+  "respuesta_corta": "Al menos noventa días contados a partir de la entrega del bien o la prestación del servicio, cuando el producto o servicio se ofrezca con garantía.",
+  "reglas": [
+   {
+    "conclusion": "Cuando un bien o servicio se ofrece con garantía, su duración no puede ser inferior a noventa días.",
+    "fuente": "F1",
+    "cita_literal": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+    "condiciones": [
+     "Aplica a todo bien o servicio que se ofrezca con garantía",
+     "El plazo se cuenta a partir de la entrega del bien o la prestación del servicio"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La ley establece que la garantía no puede ser inferior a noventa días contados desde que se entrega el bien o se presta el servicio.",
+    "fuente": "F1",
+    "cita_literal": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.",
+    "fuente": "F1",
+    "cita_literal": "Todo bien o servicio que se ofrezca con garantía deberá sujetarse a lo dispuesto por esta ley y a lo pactado entre proveedor y consumidor."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala sanciones por incumplimiento, procedimientos ni plazos de reclamación, por lo que no deben afirmarse en la pieza.",
+  "fuentes_irrelevantes": []
+ }
+}
