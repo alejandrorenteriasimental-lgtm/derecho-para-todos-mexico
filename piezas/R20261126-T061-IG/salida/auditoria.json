@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "feaae30936d399b0"
+      "detalle": "bcdc118b31b7fdc1"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,24 +118,24 @@
   "registro": {
     "id": "R20261126-T061-IG",
     "titulo": "¿Cuánto tiempo puede retenerte el Ministerio Público?",
-    "fecha": "2026-11-03T10:23:03+00:00",
-    "sha256": "feaae30936d399b0ecce68a9dfaf7de4818600af96ae2392d18fa8c3e853d546",
+    "fecha": "2026-11-03T00:56:00+00:00",
+    "sha256": "bcdc118b31b7fdc1b47dae9bf8be20b255f22a6b8880321754013bc4b23f60fe",
     "duracion_s": 32.4,
     "estado": "APTO",
     "huella_guion": "02f3169ed694d5753fee7a3b0114ef69e2efed6e3dcf77e7cb31925dc37d0c94",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 19.2,
+      "narracion": 19.5,
       "musica": 1.6,
-      "render_video": 42.5,
+      "render_video": 42.7,
       "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.3
+      "auditoria_tecnica": 8.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.22,
-      "computo_equivalente_runner_usd": 0.0073,
+      "computo_minutos": 1.23,
+      "computo_equivalente_runner_usd": 0.0074,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 971,

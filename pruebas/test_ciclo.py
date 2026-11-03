@@ -205,3 +205,18 @@ def test_sin_red_no_quema_temas(raiz_vacia):
     r = ciclo.ciclo("t", fuentes_caidas, env={}, simulador=_sim_dos_formatos())
     sols = [json.loads(f.read_text()) for f in (raiz_vacia / "estado" / "solicitudes").glob("*.json")]
     assert r["descartadas"] == [] and all(s["estado"] == "PENDIENTE_GUION" for s in sols)
+
+
+def test_version_corta_ig_no_entra_a_la_cola_ni_se_reproduce(raiz):
+    """Regresión 3-11-2026: piezas/<ID>-IG las gestiona version_ig.py; el ciclo no debe encolarlas, re-producirlas ni sobrescribir su salida."""
+    g = copy.deepcopy(GUION); g["id"] = "X1-IG"
+    (raiz / "piezas" / "X1-IG").mkdir(); (raiz / "piezas/X1-IG/guion.json").write_text(json.dumps(g, ensure_ascii=False))
+    ciclo.ciclo("t", fuentes_ok, env={})
+    assert "X1-IG" not in cola.cargar()["trabajos"] and "X1-IG" not in raiz.producidas
+    assert not (raiz / "piezas/X1-IG/salida").exists()
+
+
+def test_version_corta_ig_ya_encolada_sale_de_la_cola(raiz):
+    c = cola.cargar(); cola.encolar(c, "X1-IG"); cola.guardar(c)
+    ciclo.ciclo("t", fuentes_ok, env={})
+    assert "X1-IG" not in cola.cargar()["trabajos"]
