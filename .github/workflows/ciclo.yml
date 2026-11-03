@@ -72,7 +72,7 @@ jobs:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
     if: needs.pruebas.outputs.continuar == 'true'     # tope propio de minutos del mes alcanzado: no se ejecuta
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }      # siempre el estado más reciente (una ejecución en fila no parte de un commit viejo)
@@ -114,6 +114,8 @@ jobs:
           PUBLICAR: ${{ vars.PUBLICAR }}                              # "1" solo tras la autorización de lanzamiento
           LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}  # "SI" solo por decisión expresa del responsable
           TOPE_MXN_MES: ${{ vars.TOPE_MXN_MES }}                      # vacío = 0 MXN
+          REDACCIONES_POR_FORMATO: "2"                                # 3-11: inventario de 90 días
+          PRODUCCIONES_POR_FORMATO: "2"
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}                 # bot de revisión (el chat se vincula con código; ver sistema/revision.py)

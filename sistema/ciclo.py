@@ -127,16 +127,18 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
     lote = planificador.lote_activo()
     for formato in ("reel", "imagen"):
         if sin_cuota: break                                   # cuota agotada: no se intenta ningún otro formato en este ciclo
-        if any(t.get("formato", "reel") == formato and t["estado"] in ACTIVOS and not _reproduccion(t) for t in c["trabajos"].values()):
-            continue                                          # ya hay un guion nuevo de este formato esperando producción
-        intentos = 0
+        cupo = int((env or {}).get("REDACCIONES_POR_FORMATO") or 1)    # 3-11: inventario de 90 días; ciclo.yml fija 2
+        cupo -= sum(1 for t in c["trabajos"].values() if t.get("formato", "reel") == formato and t["estado"] in ACTIVOS and not _reproduccion(t))
+        if cupo <= 0:
+            continue                                          # ya hay guiones nuevos de este formato esperando producción
+        intentos = 0; hechas = 0
         for f in sorted(planificador.SOLICITUDES.glob(f"*_{formato}_*.json")):
             if intentos >= INTENTOS_REDACCION: break
             if _t.time() - t0 > limite:                      # tope de minutos de Actions por ciclo
                 cola.log({"evento": "redaccion_pospuesta", "motivo": f"presupuesto de redacción agotado ({limite} s)"}); break
             sol = json.loads(f.read_text())
             if sol["estado"] != "PENDIENTE_GUION": continue   # en orden de fecha; si un tema falla se adelanta el siguiente
-            if lote and sol.get("lote") != lote["id"]: continue  # lote piloto activo: las demás solicitudes esperan
+            if lote and sol.get("lote") not in {lote["id"], *lote.get("arrastre", [])}: continue  # lote activo (+ pendientes arrastrados): las demás esperan
             sol["pieza_id"] = f'{"R" if formato == "reel" else "I"}{sol["fecha"].replace("-", "")}-{sol["tema_id"]}'
             sol["archivo"] = f.name; intentos += 1
             try:
@@ -161,7 +163,9 @@ def redactar_pendientes(c, resumen, transporte, env, simulador=None):
             sol["estado"] = "GUION_LISTO"; sol["pieza"] = sol["pieza_id"]; f.write_text(json.dumps(sol, ensure_ascii=False, indent=2))
             metrica({"solicitud": f.name, "tema_id": sol.get("tema_id"), "lote": sol.get("lote"), "pieza": sol["pieza_id"], "resultado": "redactada", **((g.get("generacion") or {}).get("metricas") or {})})
             resumen["redactadas"].append(sol["pieza_id"]); cola.log({"evento": "redactada", "pieza": sol["pieza_id"], "solicitud": f.name})
-            break
+            hechas += 1
+            if hechas >= cupo: break
+            intentos = 0
 
 
 def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_meta=publicar.http_real, env=os.environ, por_formato=1, simulador=None):
@@ -308,4 +312,4 @@ def _publicar(c, t, modo, env, http_meta, resumen, retomar=False):
 
 
 if __name__ == "__main__":
-    print(json.dumps(ciclo(os.environ.get("GITHUB_RUN_ID", "local")), ensure_ascii=False, indent=2))
+    print(json.dumps(ciclo(os.environ.get("GITHUB_RUN_ID", "local"), por_formato=int(os.environ.get("PRODUCCIONES_POR_FORMATO") or 1)), ensure_ascii=False, indent=2))

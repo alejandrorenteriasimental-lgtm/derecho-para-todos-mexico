@@ -1,6 +1,6 @@
 {
  "id": "lote-5",
- "estado": "PROPUESTA (no activa)",
+ "estado": "ACTIVADO en data/lote_piloto.json el 3-11 (ver ahí)",
  "creado": "2026-11-03",
  "max_por_formato": 7,
  "nota": "Semana 4 (14-12 al 20-12-2026). Propuesta preparada el 3-11 para la continuidad editorial; se activa (data/lote_piloto.json) cuando el lote 4 esté completo y en el calendario, según docs/operacion_autonoma.md paso 6. Misma metodología: pregunta con respuesta literal en un artículo federal, sin jurisprudencia; no repite temas del 23-11 al 13-12. Los Reels se producen de 30 a 42 s (regla «opción B» del 2-11) para salir también en Instagram. Aprobación delegada con 72 h de veto.",
@@ -137,6 +137,139 @@
    "fuentes_sugeridas": "CPEUM art. 9",
    "motivo_seleccion": "Art. 9 CPEUM: no se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito.",
    "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-21",
+   "tema_id": "T115",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Tu patrón está obligado a inscribirte en el IMSS?",
+   "fuentes_sugeridas": "LSS art. 15",
+   "motivo_seleccion": "Art. 15 fr. I LSS: los patrones están obligados a registrarse e inscribir a sus trabajadores en el Instituto, dentro de plazos no mayores de cinco días hábiles."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-21",
+   "tema_id": "T115",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes tener un arma en tu casa?",
+   "fuentes_sugeridas": "CPEUM art. 10",
+   "motivo_seleccion": "Art. 10 CPEUM: derecho a poseer armas en el domicilio para seguridad y legítima defensa, con excepción de las prohibidas por la ley federal y las reservadas al Ejército; la ley federal fija casos, condiciones y requisitos.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-22",
+   "tema_id": "T116",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Te deben informar tus derechos cuando te detienen?",
+   "fuentes_sugeridas": "CNPP art. 152",
+   "motivo_seleccion": "Art. 152 CNPP: las autoridades que ejecuten una detención deben asegurarse de que la persona tenga pleno y claro conocimiento de los derechos que le asisten."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-22",
+   "tema_id": "T116",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Es legal la publicidad engañosa?",
+   "fuentes_sugeridas": "LFPC art. 32",
+   "motivo_seleccion": "Art. 32 LFPC: la información o publicidad sobre bienes y servicios debe ser veraz, comprobable y exenta de textos que induzcan o puedan inducir a error o confusión por engañosos o abusivos.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-23",
+   "tema_id": "T117",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+   "fuentes_sugeridas": "LFT art. 47",
+   "motivo_seleccion": "Art. 47 LFT: el patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-23",
+   "tema_id": "T117",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una tienda puede negarse a venderte lo que ofrece?",
+   "fuentes_sugeridas": "LFPC art. 7",
+   "motivo_seleccion": "Art. 7 LFPC: todo proveedor está obligado a respetar las condiciones ofrecidas, y bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-24",
+   "tema_id": "T118",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Cuánto puede durar la prisión preventiva?",
+   "fuentes_sugeridas": "CPEUM art. 20",
+   "motivo_seleccion": "Art. 20 apartado B fr. IX CPEUM: la prisión preventiva no podrá exceder del tiempo máximo de pena que fije la ley al delito y en ningún caso será superior a dos años, salvo que la prolongación se deba al ejercicio del derecho de defensa del imputado."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-24",
+   "tema_id": "T118",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué es la prima de antigüedad?",
+   "fuentes_sugeridas": "LFT art. 162",
+   "motivo_seleccion": "Art. 162 LFT: los trabajadores de planta tienen derecho a una prima de antigüedad de doce días de salario por cada año de servicios, en los supuestos que el propio artículo señala.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-25",
+   "tema_id": "T119",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿La víctima de un delito tiene derecho a la reparación del daño?",
+   "fuentes_sugeridas": "CPEUM art. 20",
+   "motivo_seleccion": "Art. 20 apartado C fr. IV CPEUM: derecho de la víctima a que se le repare el daño."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-25",
+   "tema_id": "T119",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden obligar a practicar una religión?",
+   "fuentes_sugeridas": "CPEUM art. 24",
+   "motivo_seleccion": "Art. 24 CPEUM: toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-26",
+   "tema_id": "T120",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
+   "fuentes_sugeridas": "CPEUM art. 2",
+   "motivo_seleccion": "Art. 2 apartado A fr. VIII CPEUM: los indígenas tienen en todo tiempo el derecho a ser asistidos por intérpretes y defensores que tengan conocimiento de su lengua y cultura."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-26",
+   "tema_id": "T120",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Pueden censurar lo que publicas antes de que lo publiques?",
+   "fuentes_sugeridas": "CPEUM art. 7",
+   "motivo_seleccion": "Art. 7 CPEUM: ninguna ley ni autoridad puede establecer la previa censura.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-27",
+   "tema_id": "T121",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Qué debe informarte una tienda en línea antes de comprar?",
+   "fuentes_sugeridas": "LFPC art. 76 Bis",
+   "motivo_seleccion": "Art. 76 Bis LFPC: en transacciones por medios electrónicos, el proveedor debe informar su domicilio físico, teléfonos y medios de contacto, términos, condiciones, costos y formas de pago, entre otras obligaciones."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-27",
+   "tema_id": "T121",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+   "fuentes_sugeridas": "LFT art. 132",
+   "motivo_seleccion": "Art. 132 fr. VII LFT: obligación del patrón de expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido.",
+   "plantilla": "dato"
   }
  ]
 }

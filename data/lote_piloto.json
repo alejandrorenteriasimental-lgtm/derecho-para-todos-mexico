@@ -1,142 +1,278 @@
 {
- "id": "lote-4",
+ "id": "lote-5",
  "activo": true,
- "creado": "2026-10-29",
- "max_por_formato": 7,
- "nota": "Semana 3 (07-12 al 13-12-2026). Misma metodología: pregunta con respuesta literal en un artículo federal verificado, sin jurisprudencia. Aprobación DELEGADA en Claude con 72 h de veto del responsable (decisión del 29-10-2026; ver data/lanzamiento.json).",
+ "creado": "2026-11-03",
+ "max_por_formato": 14,
+ "arrastre": [
+  "lote-4"
+ ],
+ "nota": "Semanas 4 y 5 (14-12 al 27-12-2026), activado el 3-11 por la instrucción del responsable de completar 90 días cuanto antes. Misma metodología: pregunta con respuesta literal en un artículo federal o nacional, sin jurisprudencia; Reels de 30 a 42 s. Arrastra la solicitud pendiente del lote 4 (Reel del 12-12). Aprobación delegada con 72 h de veto; publicación solo dentro de PUBLICAR_HASTA.",
  "temas": [
   {
    "formato": "reel",
-   "fecha": "2026-12-07",
-   "tema_id": "T101",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Cuántos días de descanso a la semana te corresponden?",
-   "fuentes_sugeridas": "LFT art. 69",
-   "motivo_seleccion": "Art. 69 LFT: por cada seis días de trabajo, un día de descanso por lo menos, con goce de salario íntegro."
+   "fecha": "2026-12-14",
+   "tema_id": "T108",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cada cuánto te deben pagar tu sueldo?",
+   "fuentes_sugeridas": "LFT art. 88",
+   "motivo_seleccion": "Art. 88 LFT: los plazos para el pago del salario nunca podrán ser mayores de una semana para quienes desempeñan un trabajo material y de quince días para los demás."
   },
   {
    "formato": "imagen",
-   "fecha": "2026-12-07",
-   "tema_id": "T101",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Te deben pagar extra si trabajas en domingo?",
-   "fuentes_sugeridas": "LFT art. 71",
-   "motivo_seleccion": "Art. 71 LFT: prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios.",
+   "fecha": "2026-12-14",
+   "tema_id": "T108",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
+   "fuentes_sugeridas": "LFT art. 101",
+   "motivo_seleccion": "Art. 101 LFT: el salario en efectivo deberá pagarse en moneda de curso legal; no se permite pagarlo en mercancías, vales, fichas u otro signo representativo.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-15",
+   "tema_id": "T109",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
+   "fuentes_sugeridas": "CPEUM art. 21",
+   "motivo_seleccion": "Art. 21 CPEUM: si el infractor fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-15",
+   "tema_id": "T109",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
+   "fuentes_sugeridas": "CPEUM art. 21",
+   "motivo_seleccion": "Art. 21 CPEUM: las sanciones por infracciones a reglamentos gubernativos y de policía consistirán en multa, arresto hasta por treinta y seis horas o trabajo a favor de la comunidad.",
    "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2026-12-08",
-   "tema_id": "T102",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuál es la jornada máxima de trabajo?",
-   "fuentes_sugeridas": "LFT arts. 60, 61",
-   "motivo_seleccion": "Art. 61 LFT: ocho horas la diurna, siete la nocturna y siete horas y media la mixta (art. 60 define cada jornada)."
+   "fecha": "2026-12-16",
+   "tema_id": "T110",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Puedes pedir información al gobierno sin explicar para qué la quieres?",
+   "fuentes_sugeridas": "CPEUM art. 6",
+   "motivo_seleccion": "Art. 6 apartado A fr. III CPEUM: toda persona, sin necesidad de acreditar interés alguno o justificar su utilización, tendrá acceso gratuito a la información pública."
   },
   {
    "formato": "imagen",
-   "fecha": "2026-12-08",
-   "tema_id": "T102",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuántos días de vacaciones te tocan después de tu primer año de trabajo?",
-   "fuentes_sugeridas": "LFT art. 76",
-   "motivo_seleccion": "Sustituye a «¿Cómo te deben pagar las horas extra?» (30-10): el texto oficial vigente de LFT art. 67 trae derogado su párrafo segundo (reforma DOF 01-05-2026), que fijaba el pago doble; la pregunta ya no tiene respuesta literal en ese artículo. Art. 76 LFT: con más de un año de servicios, vacaciones pagadas que en ningún caso podrán ser inferiores a doce días laborables, con aumento de dos días por año hasta veinte. Respuesta literal; no repite temas de las últimas 3 semanas.",
+   "fecha": "2026-12-16",
+   "tema_id": "T110",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Necesitas un permiso para viajar dentro de México?",
+   "fuentes_sugeridas": "CPEUM art. 11",
+   "motivo_seleccion": "Art. 11 CPEUM: toda persona tiene derecho para entrar, salir, viajar por su territorio y mudar de residencia, sin necesidad de carta de seguridad, pasaporte, salvoconducto u otros requisitos semejantes.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-17",
+   "tema_id": "T111",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Cuántas semanas de descanso por maternidad te corresponden?",
+   "fuentes_sugeridas": "LFT art. 170",
+   "motivo_seleccion": "Art. 170 fr. II LFT: descanso de seis semanas anteriores y seis posteriores al parto (con las transferencias que el propio artículo permite)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-17",
+   "tema_id": "T111",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tienes derecho a pausas para amamantar en el trabajo?",
+   "fuentes_sugeridas": "LFT art. 170",
+   "motivo_seleccion": "Art. 170 fr. IV LFT: en el periodo de lactancia, hasta por seis meses, dos reposos extraordinarios por día, de media hora cada uno, o reducción de una hora de la jornada si se acuerda.",
    "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2026-12-09",
-   "tema_id": "T103",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Qué días son de descanso obligatorio en México?",
-   "fuentes_sugeridas": "LFT art. 74",
-   "motivo_seleccion": "Art. 74 LFT: lista de días de descanso obligatorio (incluye 1 de enero y 25 de diciembre). Oportuno para diciembre."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-09",
-   "tema_id": "T103",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto te deben pagar si trabajas el 25 de diciembre?",
-   "fuentes_sugeridas": "LFT art. 75",
-   "motivo_seleccion": "Art. 75 LFT: además del salario del descanso obligatorio, un salario doble por el servicio prestado.",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2026-12-10",
-   "tema_id": "T104",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿La autoridad tiene que responderte si le haces una petición por escrito?",
-   "fuentes_sugeridas": "CPEUM art. 8",
-   "motivo_seleccion": "Art. 8 CPEUM: a toda petición debe recaer un acuerdo escrito de la autoridad, que debe hacerlo conocer en breve término. Condiciones: por escrito, de manera pacífica y respetuosa."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-10",
-   "tema_id": "T104",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden cobrar la primera copia de tu acta de nacimiento?",
-   "fuentes_sugeridas": "CPEUM art. 4",
-   "motivo_seleccion": "Art. 4 CPEUM: la autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2026-12-11",
-   "tema_id": "T105",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuándo te deben pagar las utilidades?",
-   "fuentes_sugeridas": "LFT art. 122",
-   "motivo_seleccion": "Art. 122 LFT: el reparto se efectúa dentro de los sesenta días siguientes a la fecha en que deba pagarse el impuesto anual."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2026-12-11",
-   "tema_id": "T105",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Todos los trabajadores reciben utilidades?",
-   "fuentes_sugeridas": "LFT art. 127",
-   "motivo_seleccion": "Art. 127 LFT: los directores, administradores y gerentes generales de las empresas no participan en las utilidades.",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2026-12-12",
-   "tema_id": "T106",
+   "fecha": "2026-12-18",
+   "tema_id": "T112",
    "tipo_pregunta": "derecho",
-   "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
-   "fuentes_sugeridas": "LFPC arts. 92, 92 Ter",
-   "motivo_seleccion": "Sustituye a «¿Cuánto tiempo tienes para reclamar si te despiden?» (LFT 518) tras dos descartes jurídicos el 02-11: el control de sustento no encuentra «despido» en el art. 518 («separados del trabajo») y el redactor no usó el art. 48. Art. 92 fr. I LFPC (texto vigente; última reforma de la ley DOF 12-12-2025, consultado 26-10-2026): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» cuando «el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque», considerados los límites de tolerancia; art. 92 Ter: la bonificación no podrá ser menor al veinte por ciento del precio pagado. Respuesta literal con su condición; consumo, no tratado en las últimas 3 semanas."
+   "pregunta": "¿Puedes cancelar una compra que te vendieron en tu casa?",
+   "fuentes_sugeridas": "LFPC arts. 51, 56",
+   "motivo_seleccion": "Art. 56 LFPC: en ventas a domicilio el contrato se perfecciona a los cinco días hábiles; durante ese lapso el consumidor puede revocar su consentimiento sin responsabilidad alguna (costos de flete y seguro a su cargo)."
   },
   {
    "formato": "imagen",
-   "fecha": "2026-12-12",
-   "tema_id": "T106",
+   "fecha": "2026-12-18",
+   "tema_id": "T112",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
+   "fuentes_sugeridas": "LFPC art. 77",
+   "motivo_seleccion": "Art. 77 LFPC: la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-19",
+   "tema_id": "T113",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Una tienda puede retenerte con el pretexto de revisarte?",
-   "fuentes_sugeridas": "LFPC art. 10",
-   "motivo_seleccion": "Sustituye a «¿Te pueden negar un empleo por tu edad?» (LFT 133 fr. I) tras dos descartes jurídicos (31-10 y 01-11): el análisis exigió sanciones, denuncia y prescripción que el artículo no trae. Art. 10 LFPC (texto vigente; última reforma de la ley DOF 12-12-2025): «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación»; si hay delito flagrante, solo pueden poner sin demora al presunto infractor a disposición de la autoridad competente. Respuesta literal con su excepción; tema de consumo, no repite temas de las últimas 3 semanas.",
+   "pregunta": "¿Te pueden obligar a trabajar sin pagarte?",
+   "fuentes_sugeridas": "CPEUM art. 5",
+   "motivo_seleccion": "Art. 5 CPEUM: nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento (salvo el trabajo impuesto como pena por la autoridad judicial)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-19",
+   "tema_id": "T113",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden negar un servicio por tu religión?",
+   "fuentes_sugeridas": "CPEUM art. 1",
+   "motivo_seleccion": "Art. 1 último párrafo CPEUM: queda prohibida toda discriminación motivada por origen étnico o nacional, género, edad, discapacidades, condición social, de salud, religión, opiniones, preferencias sexuales, estado civil o cualquier otra que atente contra la dignidad humana.",
    "plantilla": "mito_realidad"
   },
   {
    "formato": "reel",
-   "fecha": "2026-12-13",
-   "tema_id": "T107",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿La policía puede entrar a tu casa sin orden de un juez?",
-   "fuentes_sugeridas": "CPEUM art. 16",
-   "motivo_seleccion": "Art. 16 CPEUM: la orden de cateo solo puede expedirla la autoridad judicial, a solicitud del Ministerio Público, expresando el lugar, las personas y los objetos; al concluir se levanta acta."
+   "fecha": "2026-12-20",
+   "tema_id": "T114",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿La educación pública debe ser gratuita?",
+   "fuentes_sugeridas": "CPEUM art. 3",
+   "motivo_seleccion": "Art. 3 CPEUM: toda la educación que el Estado imparta será gratuita (además de obligatoria, universal, inclusiva, pública y laica)."
   },
   {
    "formato": "imagen",
-   "fecha": "2026-12-13",
-   "tema_id": "T107",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Vale firmar que renuncias a un salario que ya ganaste?",
-   "fuentes_sugeridas": "LFT art. 33",
-   "motivo_seleccion": "Sustituye a «¿Pueden abrir tu correspondencia?» (CPEUM 16) tras dos descartes jurídicos (01-11, dos veces; el del 31-10 fue técnico): el auditor exigió las excepciones del art. 16 sobre comunicaciones privadas (autorización judicial federal) que exceden una imagen. Art. 33 LFT (texto vigente; última reforma de la ley DOF 14-05-2026, consultado 27-10-2026): «Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados, cualquiera que sea la forma o denominación que se le dé»; los convenios o liquidaciones deben constar por escrito y ratificarse ante el Centro de Conciliación o el Tribunal, que los aprueba si no contienen renuncia de derechos. Respuesta literal; tema laboral no tratado en las últimas 3 semanas.",
+   "fecha": "2026-12-20",
+   "tema_id": "T114",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Necesitas permiso para reunirte pacíficamente?",
+   "fuentes_sugeridas": "CPEUM art. 9",
+   "motivo_seleccion": "Art. 9 CPEUM: no se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito.",
    "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-21",
+   "tema_id": "T115",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Tu patrón está obligado a inscribirte en el IMSS?",
+   "fuentes_sugeridas": "LSS art. 15",
+   "motivo_seleccion": "Art. 15 fr. I LSS: los patrones están obligados a registrarse e inscribir a sus trabajadores en el Instituto, dentro de plazos no mayores de cinco días hábiles."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-21",
+   "tema_id": "T115",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes tener un arma en tu casa?",
+   "fuentes_sugeridas": "CPEUM art. 10",
+   "motivo_seleccion": "Art. 10 CPEUM: derecho a poseer armas en el domicilio para seguridad y legítima defensa, con excepción de las prohibidas por la ley federal y las reservadas al Ejército; la ley federal fija casos, condiciones y requisitos.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-22",
+   "tema_id": "T116",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Te deben informar tus derechos cuando te detienen?",
+   "fuentes_sugeridas": "CNPP art. 152",
+   "motivo_seleccion": "Art. 152 CNPP: las autoridades que ejecuten una detención deben asegurarse de que la persona tenga pleno y claro conocimiento de los derechos que le asisten."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-22",
+   "tema_id": "T116",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Es legal la publicidad engañosa?",
+   "fuentes_sugeridas": "LFPC art. 32",
+   "motivo_seleccion": "Art. 32 LFPC: la información o publicidad sobre bienes y servicios debe ser veraz, comprobable y exenta de textos que induzcan o puedan inducir a error o confusión por engañosos o abusivos.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-23",
+   "tema_id": "T117",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+   "fuentes_sugeridas": "LFT art. 47",
+   "motivo_seleccion": "Art. 47 LFT: el patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-23",
+   "tema_id": "T117",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una tienda puede negarse a venderte lo que ofrece?",
+   "fuentes_sugeridas": "LFPC art. 7",
+   "motivo_seleccion": "Art. 7 LFPC: todo proveedor está obligado a respetar las condiciones ofrecidas, y bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-24",
+   "tema_id": "T118",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Cuánto puede durar la prisión preventiva?",
+   "fuentes_sugeridas": "CPEUM art. 20",
+   "motivo_seleccion": "Art. 20 apartado B fr. IX CPEUM: la prisión preventiva no podrá exceder del tiempo máximo de pena que fije la ley al delito y en ningún caso será superior a dos años, salvo que la prolongación se deba al ejercicio del derecho de defensa del imputado."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-24",
+   "tema_id": "T118",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué es la prima de antigüedad?",
+   "fuentes_sugeridas": "LFT art. 162",
+   "motivo_seleccion": "Art. 162 LFT: los trabajadores de planta tienen derecho a una prima de antigüedad de doce días de salario por cada año de servicios, en los supuestos que el propio artículo señala.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-25",
+   "tema_id": "T119",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿La víctima de un delito tiene derecho a la reparación del daño?",
+   "fuentes_sugeridas": "CPEUM art. 20",
+   "motivo_seleccion": "Art. 20 apartado C fr. IV CPEUM: derecho de la víctima a que se le repare el daño."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-25",
+   "tema_id": "T119",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden obligar a practicar una religión?",
+   "fuentes_sugeridas": "CPEUM art. 24",
+   "motivo_seleccion": "Art. 24 CPEUM: toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-26",
+   "tema_id": "T120",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
+   "fuentes_sugeridas": "CPEUM art. 2",
+   "motivo_seleccion": "Art. 2 apartado A fr. VIII CPEUM: los indígenas tienen en todo tiempo el derecho a ser asistidos por intérpretes y defensores que tengan conocimiento de su lengua y cultura."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-26",
+   "tema_id": "T120",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Pueden censurar lo que publicas antes de que lo publiques?",
+   "fuentes_sugeridas": "CPEUM art. 7",
+   "motivo_seleccion": "Art. 7 CPEUM: ninguna ley ni autoridad puede establecer la previa censura.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-27",
+   "tema_id": "T121",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Qué debe informarte una tienda en línea antes de comprar?",
+   "fuentes_sugeridas": "LFPC art. 76 Bis",
+   "motivo_seleccion": "Art. 76 Bis LFPC: en transacciones por medios electrónicos, el proveedor debe informar su domicilio físico, teléfonos y medios de contacto, términos, condiciones, costos y formas de pago, entre otras obligaciones."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-27",
+   "tema_id": "T121",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+   "fuentes_sugeridas": "LFT art. 132",
+   "motivo_seleccion": "Art. 132 fr. VII LFT: obligación del patrón de expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido.",
+   "plantilla": "dato"
   }
  ],
  "lotes_anteriores": [
@@ -154,6 +290,11 @@
    "id": "lote-3",
    "cerrado": "2026-10-29",
    "resultado": "14/14 aprobadas por el responsable (aprobación directa); en el calendario 30-11 al 06-12. Sustituciones: T089→T070 (teletrabajo); imágenes 30-11 (LFT 133 XV) y 2-12 (CPEUM 14, analogía)."
+  },
+  {
+   "id": "lote-4",
+   "cerrado": null,
+   "resultado": "13 de 14 aprobadas al 3-11; el Reel del 12-12 sigue en producción (arrastre)"
   }
  ]
 }
