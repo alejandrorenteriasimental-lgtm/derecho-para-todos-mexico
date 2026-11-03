@@ -1,0 +1,36 @@
+{
+ "tema_id": "T108",
+ "pregunta": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
+ "fecha": "2026-11-03T02:27:06+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden pagar tu sueldo con vales en lugar de dinero?",
+  "concepto_central": "pago del salario",
+  "respuesta_corta": "No, el salario en efectivo deberá pagarse precisamente en moneda de curso legal, no estando permitido hacerlo en vales.",
+  "reglas": [
+   {
+    "conclusion": "No se permite pagar el salario en vales, ya que debe hacerse precisamente en moneda de curso legal.",
+    "fuente": "F1",
+    "cita_literal": "El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo",
+    "condiciones": [
+     "El pago debe ser en moneda de curso legal"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "No está permitido pagar el salario con vales, fichas u otro signo representativo que pretenda sustituir la moneda.",
+    "fuente": "F1",
+    "cita_literal": "no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos oficiales no mencionan sanciones específicas ni procedimientos para denunciar el pago en vales, solo establecen la prohibición.",
+  "fuentes_irrelevantes": []
+ }
+}

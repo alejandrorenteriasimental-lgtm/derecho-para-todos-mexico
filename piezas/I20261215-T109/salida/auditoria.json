@@ -1,0 +1,120 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1160 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Constitución Pol»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1015"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "44 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "91% de 35 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261215-T109",
+    "formato": "imagen",
+    "titulo": "¿Cuántas horas te pueden arrestar?",
+    "plantilla": "dato",
+    "archivo": "I20261215-T109.png",
+    "sha256": "091d8661c6f8980616500a7bb9764248de79c9540e5c2bb40b03d56677cb34d0",
+    "ahash": "1000011111111111110011111111111111111111111111111111111111111111100000000000011110000000000011111111111111111111111111111111111111101001111111111000000000000001100000000000000110000000000000111111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "501512831e83c8e4d8f1e82d50b6c14d0e612bc7166d317fb1c4cd289ca72dfe",
+    "texto_alternativo": "Pieza gráfica que explica la duración máxima del arresto por infracciones administrativas según la Constitución.",
+    "copy": "La Constitución Política de los Estados Unidos Mexicanos señala que la autoridad administrativa tiene la facultad de aplicar sanciones cuando se infringen los reglamentos gubernativos y de policía.\n\nDe acuerdo con el artículo 21, estas medidas pueden consistir en multa, trabajo comunitario o «arresto hasta por treinta y seis horas», estableciendo un límite estricto para esta clase de medidas.\n\nGuarda esta información y compártela para conocer los límites de las sanciones administrativas según la ley.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "21",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-03T02:35:28+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

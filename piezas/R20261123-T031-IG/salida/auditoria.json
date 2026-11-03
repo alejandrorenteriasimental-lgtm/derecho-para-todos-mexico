@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "29.4 s"
+      "detalle": "29.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "29.4 s"
+      "detalle": "29.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "455a242067a74435"
+      "detalle": "0c063dd2f5b794fe"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261123-T031-IG",
     "titulo": "¿Te pueden volver a juzgar por el mismo delito?",
-    "fecha": "2026-11-03T00:48:23+00:00",
-    "sha256": "455a242067a7443580f1a99f0254b75a6937822e59132f9c2687f2b97ae96486",
-    "duracion_s": 29.4,
+    "fecha": "2026-11-03T02:31:47+00:00",
+    "sha256": "0c063dd2f5b794fecd06babfea7ee2d10e8187a6bae388e4a7a8ce2acd6e6be6",
+    "duracion_s": 29.3,
     "estado": "APTO",
     "huella_guion": "43a48cbff1dea683440f6d249a9b677aa4ed24032735521262f8cefd8950badf",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 17.6,
-      "musica": 1.4,
-      "render_video": 38.0,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 7.5
+      "narracion": 14.0,
+      "musica": 1.3,
+      "render_video": 29.6,
+      "mezcla_audio": 1.2,
+      "auditoria_tecnica": 5.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.1,
-      "computo_equivalente_runner_usd": 0.0066,
+      "computo_minutos": 0.87,
+      "computo_equivalente_runner_usd": 0.0052,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 880,
+    "frames": 877,
     "caracteres_narrados": 402
   }
 }

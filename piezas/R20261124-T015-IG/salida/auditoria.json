@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "90a47a1288f25733"
+      "detalle": "7e402752ad8feb91"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,24 +118,24 @@
   "registro": {
     "id": "R20261124-T015-IG",
     "titulo": "¿Cuándo y cuánto te deben pagar de aguinaldo según la ley?",
-    "fecha": "2026-11-03T00:51:26+00:00",
-    "sha256": "90a47a1288f25733c4c9aca5b5167a98a30fce8a090cf2463a48d0d80c495ebf",
+    "fecha": "2026-11-03T02:34:04+00:00",
+    "sha256": "7e402752ad8feb91ea90d74ceb8cde14fb53830d16f54cb0901df4c601883ec8",
     "duracion_s": 32.2,
     "estado": "APTO",
     "huella_guion": "45546b3c24d325cca96627efce46ff8f817686a9c9c1474d2f53b884c3bc434c",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 19.1,
-      "musica": 1.6,
-      "render_video": 41.7,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.4
+      "narracion": 14.5,
+      "musica": 1.4,
+      "render_video": 32.6,
+      "mezcla_audio": 1.3,
+      "auditoria_tecnica": 6.6
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.21,
-      "computo_equivalente_runner_usd": 0.0072,
+      "computo_minutos": 0.94,
+      "computo_equivalente_runner_usd": 0.0056,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 964,

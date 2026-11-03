@@ -1,0 +1,47 @@
+{
+ "tema_id": "T109",
+ "pregunta": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
+ "fecha": "2026-11-03T02:25:03+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿De cuánto puede ser la multa por una falta administrativa si eres trabajador?",
+  "concepto_central": "multa por falta administrativa",
+  "respuesta_corta": "No podrá ser mayor al importe de su jornal o salario de un día si eres jornalero, obrero o trabajador.",
+  "reglas": [
+   {
+    "conclusion": "Si el infractor es jornalero, obrero o trabajador, la multa por infracción de reglamentos gubernativos y de policía no podrá ser mayor al importe de su jornal o salario de un día.",
+    "fuente": "F1",
+    "cita_literal": "Si el infractor de los reglamentos gubernativos y de policía fuese jornalero, obrero o trabajador, no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día.",
+    "condiciones": [
+     "que el infractor sea jornalero, obrero o trabajador",
+     "que se trate de una infracción de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Tratándose de trabajadores no asalariados, la multa por infracción de los reglamentos gubernativos y de policía no excederá del equivalente a un día de su ingreso.",
+    "fuente": "F1",
+    "cita_literal": "Tratándose de trabajadores no asalariados, la multa que se imponga por infracción de los reglamentos gubernativos y de policía, no excederá del equivalente a un día de su ingreso.",
+    "condiciones": [
+     "que se trate de trabajadores no asalariados",
+     "que sea por infracción de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La multa por una infracción a los reglamentos gubernativos y de policía tiene un límite máximo equivalente a un día de salario o ingreso, según se trate de trabajadores o no asalariados.",
+    "fuente": "F1",
+    "cita_literal": "no podrá ser sancionado con multa mayor del importe de su jornal o salario de un día."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial solo regula el límite máximo de la sanción económica para infracciones a los reglamentos gubernativos y de policía.",
+  "fuentes_irrelevantes": []
+ }
+}

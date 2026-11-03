@@ -1,0 +1,37 @@
+{
+ "tema_id": "T109",
+ "pregunta": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
+ "fecha": "2026-11-03T02:28:44+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas horas te pueden arrestar por una falta administrativa?",
+  "concepto_central": "arresto por infracciones administrativas",
+  "respuesta_corta": "Depende, el arresto por infracciones a los reglamentos gubernativos y de policía es hasta por treinta y seis horas.",
+  "reglas": [
+   {
+    "conclusion": "La autoridad administrativa puede aplicar un arresto de hasta treinta y seis horas por cometer infracciones a los reglamentos gubernativos y de policía.",
+    "fuente": "F1",
+    "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
+    "condiciones": [
+     "infracciones de los reglamentos gubernativos y de policía"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El arresto administrativo es una sanción válida impuesta por la autoridad administrativa con un límite de hasta treinta y seis horas.",
+    "fuente": "F1",
+    "cita_literal": "las que únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla el procedimiento operativo de detención ni los requisitos específicos de los reglamentos locales.",
+  "fuentes_irrelevantes": []
+ }
+}

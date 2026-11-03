@@ -862,3 +862,40 @@
 {"ts": "2026-11-02T23:38:40+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
 {"ts": "2026-11-02T23:42:17+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-12_reel_T106-lote-4.json", "categoria": "tecnico", "transitoria": true, "motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"}
 {"ts": "2026-11-02T23:42:17+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0}
+{"ts": "2026-11-03T02:22:25+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-03T02:23:06+00:00", "evento": "redaccion_descartada", "solicitud": "2026-12-12_reel_T106-lote-4.json", "categoria": "redaccion", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si el empaque trae menos pro"}
+{"ts": "2026-11-03T02:24:16+00:00", "evento": "redactada", "pieza": "R20261214-T108", "solicitud": "2026-12-14_reel_T108-lote-5.json"}
+{"ts": "2026-11-03T02:26:44+00:00", "evento": "redactada", "pieza": "R20261215-T109", "solicitud": "2026-12-15_reel_T109-lote-5.json"}
+{"ts": "2026-11-03T02:28:18+00:00", "evento": "redactada", "pieza": "I20261214-T108", "solicitud": "2026-12-14_imagen_T108-lote-5.json"}
+{"ts": "2026-11-03T02:29:52+00:00", "evento": "redactada", "pieza": "I20261215-T109", "solicitud": "2026-12-15_imagen_T109-lote-5.json"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "I20261214-T108", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "I20261215-T109", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261123-T031-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261124-T015-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261125-T093-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261126-T061-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261127-T010-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261130-T014-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261203-T070-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261204-T061-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261207-T101-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261208-T102-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261209-T103-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261210-T104-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261211-T105-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261213-T107-IG", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261214-T108", "evento": "encolado"}
+{"ts": "2026-11-03T02:29:52+00:00", "pieza": "R20261215-T109", "evento": "encolado"}
+{"ts": "2026-11-03T02:31:47+00:00", "pieza": "R20261123-T031-IG", "evento": "transicion", "a": "PRODUCIDO", "motivo": "29.3"}
+{"ts": "2026-11-03T02:31:51+00:00", "pieza": "R20261123-T031-IG", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T02:31:51+00:00", "evento": "revision_preparada", "pieza": "R20261123-T031-IG", "version": "2775bb2f6ac8d575", "canal": "chat"}
+{"ts": "2026-11-03T02:34:04+00:00", "pieza": "R20261124-T015-IG", "evento": "transicion", "a": "PRODUCIDO", "motivo": "32.2"}
+{"ts": "2026-11-03T02:34:08+00:00", "pieza": "R20261124-T015-IG", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T02:34:08+00:00", "evento": "revision_preparada", "pieza": "R20261124-T015-IG", "version": "43985e29c90bf459", "canal": "chat"}
+{"ts": "2026-11-03T02:34:50+00:00", "pieza": "I20261214-T108", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T02:34:53+00:00", "pieza": "I20261214-T108", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T02:34:53+00:00", "evento": "revision_preparada", "pieza": "I20261214-T108", "version": "331f961ec12e6634", "canal": "chat"}
+{"ts": "2026-11-03T02:35:28+00:00", "pieza": "I20261215-T109", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T02:35:32+00:00", "pieza": "I20261215-T109", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T02:35:32+00:00", "evento": "revision_preparada", "pieza": "I20261215-T109", "version": "2d4cd3f4e39fd969", "canal": "chat"}
+{"ts": "2026-11-03T02:35:32+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 1, "producidas": 4, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 4}

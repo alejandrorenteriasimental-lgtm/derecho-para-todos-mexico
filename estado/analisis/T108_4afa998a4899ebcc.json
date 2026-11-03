@@ -1,0 +1,43 @@
+{
+ "tema_id": "T108",
+ "pregunta": "¿Cada cuánto te deben pagar tu sueldo?",
+ "fecha": "2026-11-03T02:23:29+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cada cuánto te deben pagar tu sueldo?",
+  "concepto_central": "plazos para el pago del salario",
+  "respuesta_corta": "Como máximo cada semana para personas que desempeñan un trabajo material y cada quince días para los demás trabajadores.",
+  "reglas": [
+   {
+    "conclusion": "Los plazos máximos de pago de salario dependen de si el trabajo es material o de otro tipo.",
+    "fuente": "F1",
+    "cita_literal": "Los plazos para el pago del salario nunca podrán ser mayores de una semana para las personas que desempeñan un trabajo material y de quince días para los demás trabajadores.",
+    "condiciones": [
+     "El plazo depende de la naturaleza del trabajo desempeñado (trabajo material o los demás trabajadores)"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Establece que el pago del salario no puede superar una semana para trabajo material ni quince días para los demás trabajadores.",
+    "fuente": "F1",
+    "cita_literal": "Los plazos para el pago del salario nunca podrán ser mayores de una semana para las personas que desempeñan un trabajo material y de quince días para los demás trabajadores."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica según el tipo de actividad que realiza la persona trabajadora: trabajo material u otros trabajadores.",
+    "fuente": "F1",
+    "cita_literal": "Los plazos para el pago del salario nunca podrán ser mayores de una semana para las personas que desempeñan un trabajo material y de quince días para los demás trabajadores."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala sanciones específicas por exceder estos plazos ni detalla otros supuestos.",
+  "fuentes_irrelevantes": []
+ }
+}
