@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1150 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1008"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "36 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "97% de 37 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261216-T110",
+    "formato": "imagen",
+    "titulo": "¿Necesitas permiso para viajar en México?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20261216-T110.png",
+    "sha256": "819a3a506c2c2f30f324c7e1af2917545398b23c959c6b15abcd312262ea688b",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100111111111111110000000011111111000111111111111100000000000001110001111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "76a467028f5fb134863fa3d0e1937188a11ce110c67340fbdf4c73f407af3860",
+    "texto_alternativo": "Imagen informativa de mito y realidad sobre si se requiere permiso para viajar en México. Aclara que no se exige pasaporte o salvoconducto para el tránsito nacional, sujeto a facultades judiciales o administrativas de salubridad.",
+    "copy": "El derecho a desplazarse libremente por el territorio nacional está respaldado por la norma fundamental. La Constitución Política de los Estados Unidos Mexicanos, en su artículo 11, establece que toda persona puede viajar por el país sin necesidad de carta de seguridad, pasaporte, salvoconducto u otros requisitos semejantes.\n\nSin embargo, este derecho no carece de límites. La misma norma señala que su ejercicio queda subordinado a las facultades de la autoridad judicial en casos de responsabilidad criminal o civil, así como a las limitaciones de las autoridades administrativas en materia de salubridad general, emigración, inmigración o sobre extranjeros perniciosos.\n\nEn resumen, no requieres un permiso general o salvoconducto para trasladarte dentro del país, salvo las restricciones legales específicas impuestas por autoridades judiciales o de salud pública.\n\nGuarda esta publicación para tener a la mano tus derechos constitucionales y compártela para informara más personas.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "11",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "11",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-03T12:04:25+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

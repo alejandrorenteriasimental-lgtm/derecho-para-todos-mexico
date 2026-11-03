@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1182 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal del »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1107"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "56 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 47 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261217-T111",
+    "formato": "imagen",
+    "titulo": "¿Tienes derecho a pausas para amamantar?",
+    "plantilla": "dato",
+    "archivo": "I20261217-T111.png",
+    "sha256": "77555807958c49b06592e8ffbd28c10a142d5c85b182cf00ee941f1162ca7a40",
+    "ahash": "1101111111111111111111111111111111111111111111111101111111111111100000000111111110000000011111111000000011111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
+    "huella_guion": "9042e0ac93d51fe026c6186a8890aca632f1489e8c1045ab50c5697adf02ce6a",
+    "texto_alternativo": "Imagen sobre el derecho a reposos extraordinarios por lactancia en el trabajo conforme a la Ley Federal del Trabajo en México.",
+    "copy": "La Ley Federal del Trabajo, en su artículo 170, establece que las madres trabajadoras tienen derecho a pausas durante la jornada. En el período de lactancia y hasta por un término máximo de seis meses, cuentan con dos reposos extraordinarios al día, de media hora cada uno, para alimentar a sus hijos en un lugar adecuado e higiénico que determine la empresa.\n\nCuando no sea posible asignar ese lugar, la norma señala una alternativa: previo acuerdo con el patrón, la jornada de trabajo se reducirá en una hora durante el período indicado. Es relevante distinguir estos reposos por lactancia del descanso por maternidad, ya que este último consiste en un periodo de semanas previas y posteriores al parto.\n\nGuarda esta publicación para consultarla después o compártela con quien pueda requerir esta información legal.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "170",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "170",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-03T12:05:39+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

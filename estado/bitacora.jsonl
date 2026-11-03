@@ -928,3 +928,27 @@
 {"ts": "2026-11-03T11:47:04+00:00", "pieza": "R20261213-T107-IG", "evento": "fuera_de_cola", "motivo": "versión corta de Instagram: la gestiona version_ig.py (corrección 3-11)"}
 {"ts": "2026-11-03T11:50:46+00:00", "pieza": "I20261214-T108", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 03-11): «realidad» con la condición del 2.º párrafo del art. 101 LFT (pago electrónico solo con consentimiento, F2 literal) y texto de publicación sin relleno; se vuelve a verificar y producir"}
 {"ts": "2026-11-03T11:50:46+00:00", "pieza": "I20261215-T109", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 03-11): titular acotado a la falta administrativa (no generalizar a toda detención), «OJO» con la permuta de la multa no pagada (art. 21 CPEUM, F2 literal), texto de publicación sin relleno; se vuelve a verificar y producir"}
+{"ts": "2026-11-03T11:54:14+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-03T11:55:56+00:00", "evento": "redactada", "pieza": "I20261216-T110", "solicitud": "2026-12-16_imagen_T110-lote-5.json"}
+{"ts": "2026-11-03T11:58:17+00:00", "evento": "redactada", "pieza": "I20261217-T111", "solicitud": "2026-12-17_imagen_T111-lote-5.json"}
+{"ts": "2026-11-03T11:58:17+00:00", "pieza": "I20261216-T110", "evento": "encolado"}
+{"ts": "2026-11-03T11:58:17+00:00", "pieza": "I20261217-T111", "evento": "encolado"}
+{"ts": "2026-11-03T11:59:43+00:00", "pieza": "R20261214-T108", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.0"}
+{"ts": "2026-11-03T11:59:47+00:00", "pieza": "R20261214-T108", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T11:59:47+00:00", "evento": "revision_preparada", "pieza": "R20261214-T108", "version": "7e3845c439267697", "canal": "chat"}
+{"ts": "2026-11-03T12:01:11+00:00", "pieza": "R20261215-T109", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.7"}
+{"ts": "2026-11-03T12:01:14+00:00", "pieza": "R20261215-T109", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T12:01:14+00:00", "evento": "revision_preparada", "pieza": "R20261215-T109", "version": "948a26333921e939", "canal": "chat"}
+{"ts": "2026-11-03T12:02:25+00:00", "pieza": "I20261214-T108", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T12:02:29+00:00", "pieza": "I20261214-T108", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T12:02:29+00:00", "evento": "revision_preparada", "pieza": "I20261214-T108", "version": "a439aaf737940f53", "canal": "chat"}
+{"ts": "2026-11-03T12:03:24+00:00", "pieza": "I20261215-T109", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T12:03:28+00:00", "pieza": "I20261215-T109", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T12:03:28+00:00", "evento": "revision_preparada", "pieza": "I20261215-T109", "version": "eead259454ba3674", "canal": "chat"}
+{"ts": "2026-11-03T12:04:25+00:00", "pieza": "I20261216-T110", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T12:04:29+00:00", "pieza": "I20261216-T110", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T12:04:29+00:00", "evento": "revision_preparada", "pieza": "I20261216-T110", "version": "d5518e27f6c98030", "canal": "chat"}
+{"ts": "2026-11-03T12:05:39+00:00", "pieza": "I20261217-T111", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-03T12:05:43+00:00", "pieza": "I20261217-T111", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-03T12:05:43+00:00", "evento": "revision_preparada", "pieza": "I20261217-T111", "version": "64e28996fb2dcb71", "canal": "chat"}
+{"ts": "2026-11-03T12:05:43+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 6, "retenidas": 0, "simuladas": 0, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 6}

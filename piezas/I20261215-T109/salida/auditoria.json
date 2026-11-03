@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1160 KB"
+      "detalle": "1177 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1015"
+      "detalle": "fin del contenido en y=1104"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "44 palabras sin cabecera ni pie"
+      "detalle": "52 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "91% de 35 palabras reconocidas"
+      "detalle": "93% de 45 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -93,17 +93,23 @@
   "metadatos": {
     "id": "I20261215-T109",
     "formato": "imagen",
-    "titulo": "¿Cuántas horas te pueden arrestar?",
+    "titulo": "¿Cuánto puede durar un arresto por una falta administrativa?",
     "plantilla": "dato",
     "archivo": "I20261215-T109.png",
-    "sha256": "091d8661c6f8980616500a7bb9764248de79c9540e5c2bb40b03d56677cb34d0",
-    "ahash": "1000011111111111110011111111111111111111111111111111111111111111100000000000011110000000000011111111111111111111111111111111111111101001111111111000000000000001100000000000000110000000000000111111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "501512831e83c8e4d8f1e82d50b6c14d0e612bc7166d317fb1c4cd289ca72dfe",
+    "sha256": "93e9491dc8f2c6e00e1a383189746ca26f752ddc36cc23e1e9b6b5771066343b",
+    "ahash": "1000011111111111111111111111111111111111111111111101111110101111100000000000011110000000000001111000000000000011111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "1e62aacdbf0fcc76a925cae91045843cadcdce37dc07915972618deab1d49e47",
     "texto_alternativo": "Pieza gráfica que explica la duración máxima del arresto por infracciones administrativas según la Constitución.",
-    "copy": "La Constitución Política de los Estados Unidos Mexicanos señala que la autoridad administrativa tiene la facultad de aplicar sanciones cuando se infringen los reglamentos gubernativos y de policía.\n\nDe acuerdo con el artículo 21, estas medidas pueden consistir en multa, trabajo comunitario o «arresto hasta por treinta y seis horas», estableciendo un límite estricto para esta clase de medidas.\n\nGuarda esta información y compártela para conocer los límites de las sanciones administrativas según la ley.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "Por una falta a un reglamento gubernativo o de policía, la sanción la pone la autoridad administrativa. El artículo 21 de la Constitución dice que esas sanciones «únicamente consistirán en multa, arresto hasta por treinta y seis horas o en trabajo a favor de la comunidad».\n\nY si no pagas la multa, el mismo artículo dice que «se permutará esta por el arresto correspondiente, que no excederá en ningún caso de treinta y seis horas».\n\nEsta regla es para las faltas administrativas, no para la detención por un delito.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "21",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      },
+      {
+        "id": "F2",
         "documento": "Constitución Política de los Estados Unidos Mexicanos",
         "articulo": "21",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
@@ -111,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-03T02:35:28+00:00",
+    "fecha": "2026-11-03T12:03:24+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
