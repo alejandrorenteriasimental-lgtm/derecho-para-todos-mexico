@@ -1,0 +1,275 @@
+{
+ "id": "lote-6",
+ "estado": "PROPUESTA (no activa)",
+ "creado": "2026-11-03",
+ "max_por_formato": 14,
+ "nota": "Semanas 6 y 7 (28-12-2026 al 10-01-2027), 28 temas. Preparada el 3-11 por la operación diaria para tener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 5 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal o nacional, sin jurisprudencia; no repite temas del 07-12 al 27-12; días consecutivos de materias distintas (laboral, constitucional, ciudadanía, consumidor, privacidad, derechos humanos, historia del derecho). Los 28 fundamentos se cotejaron el 3-11 con el texto oficial (textos.yml → registro/textos/): todos están vigentes con la respuesta literal; LFT 3 Bis no se pudo extraer y su tema se cambió a LFT 133 fr. XII y XIII. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
+ "temas": [
+  {
+   "formato": "reel",
+   "fecha": "2026-12-28",
+   "tema_id": "T122",
+   "tipo_pregunta": "excepcion",
+   "pregunta": "¿Te pueden embargar tu sueldo por una deuda?",
+   "fuentes_sugeridas": "LFT art. 112",
+   "motivo_seleccion": "Art. 112 LFT: los salarios no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente (condición y excepción literales)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-28",
+   "tema_id": "T122",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Tu patrón te puede descontar una multa de tu sueldo?",
+   "fuentes_sugeridas": "LFT art. 5 fr. X",
+   "motivo_seleccion": "Art. 5 fr. X LFT: no produce efecto legal la estipulación que establezca «La facultad del patrón de retener el salario por concepto de multa».",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-29",
+   "tema_id": "T123",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿En México existen los títulos de nobleza?",
+   "fuentes_sugeridas": "CPEUM art. 12",
+   "motivo_seleccion": "Art. 12 CPEUM: en los Estados Unidos Mexicanos no se concederán títulos de nobleza, ni prerrogativas y honores hereditarios, ni se dará efecto alguno a los otorgados por cualquier otro país. Historia del derecho con respuesta literal."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-29",
+   "tema_id": "T123",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una multa puede ser excesiva?",
+   "fuentes_sugeridas": "CPEUM art. 22",
+   "motivo_seleccion": "Art. 22 CPEUM: quedan prohibidas, entre otras penas, «la multa excesiva» y «la confiscación de bienes»; el mismo artículo dice qué no se considera confiscación.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-30",
+   "tema_id": "T124",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Votar es una obligación?",
+   "fuentes_sugeridas": "CPEUM art. 36 fr. III",
+   "motivo_seleccion": "Art. 36 fr. III CPEUM: es obligación de la ciudadanía votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley. Mito frecuente: «votar es solo un derecho»."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-30",
+   "tema_id": "T124",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué necesitas para ser ciudadano mexicano?",
+   "fuentes_sugeridas": "CPEUM art. 34",
+   "motivo_seleccion": "Art. 34 CPEUM: son ciudadanos quienes, teniendo la calidad de mexicanos, hayan cumplido 18 años y tengan un modo honesto de vivir.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2026-12-31",
+   "tema_id": "T125",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Tu patrón tiene prohibido acosarte sexualmente?",
+   "fuentes_sugeridas": "LFT art. 133 fr. XII",
+   "motivo_seleccion": "Art. 133 fr. XII LFT: queda prohibido a los patrones «Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo» (texto oficial confirmado el 3-11)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2026-12-31",
+   "tema_id": "T125",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Tu patrón puede tolerar el acoso sexual en tu trabajo?",
+   "fuentes_sugeridas": "LFT art. 133 fr. XIII",
+   "motivo_seleccion": "Art. 133 fr. XIII LFT: queda prohibido a los patrones «Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo» (texto oficial confirmado el 3-11).",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-01",
+   "tema_id": "T126",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden seguir mandando publicidad si dijiste que no?",
+   "fuentes_sugeridas": "LFPC art. 18 Bis",
+   "motivo_seleccion": "Art. 18 Bis LFPC: queda prohibido enviar publicidad a los consumidores que expresamente hayan manifestado su voluntad de no recibirla o que estén inscritos en el registro del art. 18."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-01",
+   "tema_id": "T126",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Puedes pedir que no te llamen para venderte algo?",
+   "fuentes_sugeridas": "LFPC art. 18",
+   "motivo_seleccion": "Art. 18 LFPC: registro público de consumidores que no desean que su información se use con fines mercadotécnicos o publicitarios (REPEP); los consumidores pueden pedir su inscripción a la Procuraduría.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-02",
+   "tema_id": "T127",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Tu patrón puede decidir en qué gastas tu sueldo?",
+   "fuentes_sugeridas": "LFT art. 98",
+   "motivo_seleccion": "Art. 98 LFT: los trabajadores dispondrán libremente de sus salarios; cualquier disposición o medida que desvirtúe este derecho será nula."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-02",
+   "tema_id": "T127",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
+   "fuentes_sugeridas": "LFT art. 86",
+   "motivo_seleccion": "Art. 86 LFT: a trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual (condiciones literales).",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-03",
+   "tema_id": "T128",
+   "tipo_pregunta": "excepcion",
+   "pregunta": "¿Pueden usar tus conversaciones privadas en tu contra?",
+   "fuentes_sugeridas": "CPEUM art. 16",
+   "motivo_seleccion": "Art. 16 CPEUM: las comunicaciones privadas son inviolables; excepción literal: cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas. Distinto del tema del 13-12 (cateo)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-03",
+   "tema_id": "T128",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tienes derecho a proteger tus datos personales?",
+   "fuentes_sugeridas": "CPEUM art. 16 párr. 2",
+   "motivo_seleccion": "Art. 16 CPEUM, segundo párrafo: toda persona tiene derecho a la protección de sus datos personales, al acceso, rectificación y cancelación de los mismos y a manifestar su oposición, con las excepciones que fije la ley.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-04",
+   "tema_id": "T129",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
+   "fuentes_sugeridas": "LFT art. 22",
+   "motivo_seleccion": "Art. 22 LFT: reglas para mayores de quince y menores de dieciséis años (autorización de padres o tutores y, a falta de ellos, de las autoridades que señala)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-04",
+   "tema_id": "T129",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿A partir de qué edad puedes trabajar?",
+   "fuentes_sugeridas": "LFT art. 22 Bis",
+   "motivo_seleccion": "Art. 22 Bis LFT: queda prohibido el trabajo de menores de quince años, con la regla para quienes tienen entre 15 y 18 años y no han terminado la educación obligatoria.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-05",
+   "tema_id": "T130",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tienes derecho al agua?",
+   "fuentes_sugeridas": "CPEUM art. 4",
+   "motivo_seleccion": "Art. 4 CPEUM: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-05",
+   "tema_id": "T130",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Hombres y mujeres son iguales ante la ley?",
+   "fuentes_sugeridas": "CPEUM art. 4",
+   "motivo_seleccion": "Art. 4 CPEUM: «La mujer y el hombre son iguales ante la ley».",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-06",
+   "tema_id": "T131",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué es la prima vacacional y cuánto es?",
+   "fuentes_sugeridas": "LFT art. 80",
+   "motivo_seleccion": "Art. 80 LFT: «Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones»."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-06",
+   "tema_id": "T131",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden pagar tus vacaciones en lugar de dártelas?",
+   "fuentes_sugeridas": "LFT art. 79",
+   "motivo_seleccion": "Art. 79 LFT: «Las vacaciones no podrán compensarse con una remuneración»; excepción literal: si la relación termina antes del año, remuneración proporcional.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-07",
+   "tema_id": "T132",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
+   "fuentes_sugeridas": "CPEUM art. 31 fr. I",
+   "motivo_seleccion": "Art. 31 fr. I CPEUM: obligación de ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas para recibir la educación obligatoria."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-07",
+   "tema_id": "T132",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Pagar impuestos es una obligación constitucional?",
+   "fuentes_sugeridas": "CPEUM art. 31 fr. IV",
+   "motivo_seleccion": "Art. 31 fr. IV CPEUM: obligación de contribuir para los gastos públicos, de la manera proporcional y equitativa que dispongan las leyes.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-08",
+   "tema_id": "T133",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tu patrón puede despedirte por una falta de hace meses?",
+   "fuentes_sugeridas": "LFT art. 517",
+   "motivo_seleccion": "Art. 517 fr. I LFT: prescriben en un mes las acciones de los patrones para despedir a los trabajadores y para disciplinar sus faltas; corre desde el día siguiente a que se tenga conocimiento de la causa (condición literal; texto en registro/textos/LFT_517.json)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-08",
+   "tema_id": "T133",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué cuenta como parte de tu salario?",
+   "fuentes_sugeridas": "LFT art. 84",
+   "motivo_seleccion": "Art. 84 LFT: el salario se integra con los pagos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquier otra cantidad o prestación que se entregue al trabajador por su trabajo.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-09",
+   "tema_id": "T134",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Te pueden quitar tu casa sin un juicio?",
+   "fuentes_sugeridas": "CPEUM art. 14",
+   "motivo_seleccion": "Art. 14 CPEUM, segundo párrafo: nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio ante tribunales previamente establecidos, con las formalidades esenciales del procedimiento. Distinto del tema del 2-12 (retroactividad)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-09",
+   "tema_id": "T134",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿La esclavitud está prohibida en México?",
+   "fuentes_sugeridas": "CPEUM art. 1",
+   "motivo_seleccion": "Art. 1 CPEUM: «Está prohibida la esclavitud en los Estados Unidos Mexicanos»; quien entre al territorio esclavizado del extranjero alcanzará, por ese solo hecho, su libertad y la protección de las leyes.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-10",
+   "tema_id": "T135",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes terminar tu trabajo de común acuerdo con tu patrón?",
+   "fuentes_sugeridas": "LFT art. 53 fr. I",
+   "motivo_seleccion": "Art. 53 fr. I LFT: es causa de terminación de las relaciones de trabajo «El mutuo consentimiento de las partes» (texto en registro/textos/LFT_53.json); el art. 33 exige que el convenio no contenga renuncia de derechos."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-10",
+   "tema_id": "T135",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+   "fuentes_sugeridas": "CPEUM art. 18",
+   "motivo_seleccion": "Art. 18 CPEUM: las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres.",
+   "plantilla": "dato"
+  }
+ ]
+}
