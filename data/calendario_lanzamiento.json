@@ -1,5 +1,5 @@
 {
- "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse. Lote 5 (14 al 27-12): cada pieza entra al aprobarse; 3-11: imágenes del 14-12 y 15-12 (aprobación delegada). 4-11 (adelanto, primer espacio libre desde el 16-11; candado PUBLICAR_DESDE=2026-11-23): 16-11 imagen I20261216-T110 y Reel R20261214-T108; 17-11 imagen I20261217-T111 y Reel R20261215-T109 (aprobación delegada).",
+ "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse. Lote 5 (14 al 27-12): cada pieza entra al aprobarse; 3-11: imágenes del 14-12 y 15-12 (aprobación delegada). 4-11 (adelanto, primer espacio libre desde el 16-11; candado PUBLICAR_DESDE=2026-11-23): 16-11 imagen I20261216-T110 y Reel R20261214-T108; 17-11 imagen I20261217-T111 y Reel R20261215-T109 (aprobación delegada). 4-11 (2.ª ronda, tras edición editorial): 18-11 imagen I20261219-T113 y Reel R20261216-T110; 19-11 imagen I20261222-T116 y Reel R20261217-T111; 20-11 Reel R20261220-T114; 21-11 Reel R20261222-T116 (aprobación delegada).",
  "zona": "America/Mexico_City",
  "dias": [
   {
@@ -52,6 +52,90 @@
     "asset_id": 706283763,
     "release": "piezas-2026-11",
     "aprobada": "2026-11-04T03:46:17+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-11-18",
+   "imagen": {
+    "pieza": "I20261219-T113",
+    "version": "5b490402e1c93c33",
+    "hora": "09:00",
+    "archivo": "I20261219-T113.png",
+    "sha256": "478c4b5feb5fe4bdda7f5553708bd4cd83de1232ca29fc1892a42146c6f4b450",
+    "asset_id": 708197686,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   },
+   "reel": {
+    "pieza": "R20261216-T110",
+    "version": "166ee72edb13d82c",
+    "hora": "19:00",
+    "archivo": "R20261216-T110_final.mp4",
+    "sha256": "b8d884366f44a9d95dd601c8f3634b6c69f70818627778ea560fc2cd648af350",
+    "asset_id": 708167743,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-11-19",
+   "imagen": {
+    "pieza": "I20261222-T116",
+    "version": "8a1da8f51787d36c",
+    "hora": "09:00",
+    "archivo": "I20261222-T116.png",
+    "sha256": "becda2bb48fa6be5cd592056be913fd3d1698c40510cf92e9673f9b1aa4c5432",
+    "asset_id": 706301973,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   },
+   "reel": {
+    "pieza": "R20261217-T111",
+    "version": "7df7d0c897069037",
+    "hora": "19:00",
+    "archivo": "R20261217-T111_final.mp4",
+    "sha256": "93b076f477eecbee89df75a977496b49e7c7c1325df06ddc549b22cbdd7ce640",
+    "asset_id": 708178786,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-11-20",
+   "reel": {
+    "pieza": "R20261220-T114",
+    "version": "ec0e2f6d9a6a48ce",
+    "hora": "19:00",
+    "archivo": "R20261220-T114_final.mp4",
+    "sha256": "628758e16390b3737515897d580f980cc79415d4e3956cd730ac1cbaa06f9e88",
+    "asset_id": 708188275,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-11-21",
+   "reel": {
+    "pieza": "R20261222-T116",
+    "version": "5c1e08acc56ccb89",
+    "hora": "19:00",
+    "archivo": "R20261222-T116_final.mp4",
+    "sha256": "59ee3a00eee747e8c5f64628c6e9bc59460b6a95b2b9282326b97c8f286c5d7a",
+    "asset_id": 708196689,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T04:23:23+00:00",
     "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "REVISION_HUMANA"
    }
