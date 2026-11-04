@@ -7,17 +7,17 @@
   "pregunta": "¿Te pueden mandar publicidad si pediste no recibirla?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC arts. 18, 18 Bis",
+  "fuentes_sugeridas": "LFPC art. 18 Bis",
   "riesgo_exactitud": "",
   "lote": "lote-4",
   "motivo_seleccion": "Art. 18 Bis LFPC: queda prohibido a los proveedores y a las empresas que usan información de consumidores con fines mercadotécnicos «enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro» del art. 18 (registro público de la Procuraduría, gratuito).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-10-30T03:58:57Z",
   "pieza_id": "R20261212-T106",
   "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden mandar publicidad si pediste no recibirla? \\n ¿TE PUEDEN \\n MA",
   "ultima_categoria": "redaccion",
   "historial_reaperturas": [
@@ -76,8 +76,15 @@
       "motivo": "pregunta sustituida tras el cuarto descarte con LFPC 92 (otra vez por longitud, 684 caracteres, después de la corrección 2ba378d); se había reabierto «por única vez más». Ahora LFPC 18 y 18 Bis (respuesta literal y breve; tema no usado en las últimas 3 semanas)",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 684 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 64: recorta al menos 124 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n"
+    },
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "primer descarte con LFPC 18/18 Bis, por longitud (820 caracteres): el ángulo pedía también el registro y la forma de inscribirse (art. 18). Se reabre con un solo fragmento literal del art. 18 Bis y sin el procedimiento de inscripción; tope de 480 caracteres",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  "
     }
   ],
-  "angulo": "Prohibición de enviar publicidad a quien la rechazó expresamente o está inscrito en el registro de la Procuraduría (LFPC 18 Bis), con la cita literal; el registro es gratuito y la inscripción se pide por escrito o correo electrónico (LFPC 18, literal); narración de 560 caracteres o menos",
-  "huella_entrada": "9a234ae32a89eb29"
+  "angulo": "Solo el art. 18 Bis LFPC. Cita literal ÚNICA y breve: «enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro» (queda prohibido a los proveedores). Respuesta: No. Una condición: que lo hayas pedido expresamente o estés inscrito en el registro de la Procuraduría. Sin explicar cómo inscribirse ni otras partes del artículo. Cuatro escenas más cierre; narración de 480 caracteres o menos",
+  "huella_entrada": "aee952e88cb77fdf"
 }
