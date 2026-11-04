@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.7 s"
+      "detalle": "40.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.7 s"
+      "detalle": "40.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "1986c303f8438ec8"
+      "detalle": "59ee3a00eee747e8"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261222-T116",
     "titulo": "¿Te deben informar tus derechos al detenerte?",
-    "fecha": "2026-11-03T22:26:06+00:00",
-    "sha256": "1986c303f8438ec8b4048aafe5341b3e6874df45b02533771c19badf02105f35",
-    "duracion_s": 42.7,
+    "fecha": "2026-11-04T04:19:43+00:00",
+    "sha256": "59ee3a00eee747e8c5f64628c6e9bc59460b6a95b2b9282326b97c8f286c5d7a",
+    "duracion_s": 40.3,
     "estado": "APTO",
-    "huella_guion": "20abb82b31906939726cd08ea72eced22e485309c30cee6a96cdcb09e8f066f4",
+    "huella_guion": "f3ec4641922111b092f27668c3b3a386f294620ae7e28a9096bdf356e81f397a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.1,
+      "narracion": 23.5,
       "musica": 1.9,
-      "render_video": 38.8,
-      "mezcla_audio": 1.7,
-      "auditoria_tecnica": 8.7
+      "render_video": 53.4,
+      "mezcla_audio": 1.9,
+      "auditoria_tecnica": 10.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.19,
-      "computo_equivalente_runner_usd": 0.0071,
+      "computo_minutos": 1.52,
+      "computo_equivalente_runner_usd": 0.0091,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1278,
-    "caracteres_narrados": 605
+    "frames": 1207,
+    "caracteres_narrados": 595
   }
 }

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "37.9 s"
+      "detalle": "38.2 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "37.9 s"
+      "detalle": "38.2 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "c11ccd8a8e183f0b"
+      "detalle": "b8d884366f44a9d9"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261216-T110",
     "titulo": "¿Puedes pedir información al gobierno sin explicar para qué?",
-    "fecha": "2026-11-03T16:29:54+00:00",
-    "sha256": "c11ccd8a8e183f0b88838f569d593427554bcfd3d5cf9fd84200524a37784130",
-    "duracion_s": 37.9,
+    "fecha": "2026-11-04T04:08:26+00:00",
+    "sha256": "b8d884366f44a9d95dd601c8f3634b6c69f70818627778ea560fc2cd648af350",
+    "duracion_s": 38.2,
     "estado": "APTO",
-    "huella_guion": "71adffc84f74bdb475ead1d4b4a94146f0e8f34092d70527b9183d3ada89cafc",
+    "huella_guion": "d6ee17bf3b19ec887a2926890ef75b5a785ee09332cd527fede4583727fbfa64",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.2,
-      "musica": 1.0,
-      "render_video": 25.9,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 5.9
+      "narracion": 24.0,
+      "musica": 1.9,
+      "render_video": 50.0,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 10.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.72,
-      "computo_equivalente_runner_usd": 0.0043,
+      "computo_minutos": 1.47,
+      "computo_equivalente_runner_usd": 0.0088,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1134,
-    "caracteres_narrados": 537
+    "frames": 1144,
+    "caracteres_narrados": 543
   }
 }

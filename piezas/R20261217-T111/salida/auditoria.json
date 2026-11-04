@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.3 s"
+      "detalle": "39.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.3 s"
+      "detalle": "39.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "1f67facfef6d1c6d"
+      "detalle": "93b076f477eecbee"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261217-T111",
     "titulo": "¿Cuántas semanas de descanso por maternidad corresponden?",
-    "fecha": "2026-11-03T16:31:43+00:00",
-    "sha256": "1f67facfef6d1c6d74a25ba1fa09f4ab77fc22db5d138bbf8d55df8d8154d0d4",
-    "duracion_s": 42.3,
+    "fecha": "2026-11-04T04:12:37+00:00",
+    "sha256": "93b076f477eecbee89df75a977496b49e7c7c1325df06ddc549b22cbdd7ce640",
+    "duracion_s": 39.9,
     "estado": "APTO",
-    "huella_guion": "5f2ade9780021861b6c59d5ea8907f5a2b3b8af232c442c66ac21bd8579d3624",
+    "huella_guion": "cc4abd57fc8ba1b3e8d13d3047d6db435551c194fef0a64dc94abe603377c217",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 10.2,
-      "musica": 1.1,
-      "render_video": 28.3,
-      "mezcla_audio": 1.2,
-      "auditoria_tecnica": 7.4
+      "narracion": 23.5,
+      "musica": 1.9,
+      "render_video": 46.2,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.5
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.8,
-      "computo_equivalente_runner_usd": 0.0048,
+      "computo_minutos": 1.4,
+      "computo_equivalente_runner_usd": 0.0084,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1266,
-    "caracteres_narrados": 592
+    "frames": 1196,
+    "caracteres_narrados": 568
   }
 }

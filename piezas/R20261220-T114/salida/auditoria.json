@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.5 s"
+      "detalle": "36.5 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.5 s"
+      "detalle": "36.5 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "b3d5c82af594fa23"
+      "detalle": "628758e16390b373"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261220-T114",
     "titulo": "¿La educación pública debe ser gratuita en México?",
-    "fecha": "2026-11-03T22:24:37+00:00",
-    "sha256": "b3d5c82af594fa239fe84723cd5a440335f16e66bfb9c4bc44734697791a5b99",
-    "duracion_s": 41.5,
+    "fecha": "2026-11-04T04:16:10+00:00",
+    "sha256": "628758e16390b3737515897d580f980cc79415d4e3956cd730ac1cbaa06f9e88",
+    "duracion_s": 36.5,
     "estado": "APTO",
-    "huella_guion": "66827511433f81ef1e4ece551eacbb575a52d7e26d377973c3485a81e501484d",
+    "huella_guion": "f7e635b81e330019805dbf7f157e33d0a6571c7fc5d35568574a36a9d264f389",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.5,
-      "musica": 1.8,
-      "render_video": 37.8,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 8.5
+      "narracion": 21.5,
+      "musica": 1.7,
+      "render_video": 41.7,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 10.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.17,
-      "computo_equivalente_runner_usd": 0.007,
+      "computo_minutos": 1.29,
+      "computo_equivalente_runner_usd": 0.0077,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1242,
-    "caracteres_narrados": 598
+    "frames": 1092,
+    "caracteres_narrados": 511
   }
 }

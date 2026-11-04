@@ -1,30 +1,29 @@
 {
  "tema_id": "T106",
  "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
- "fecha": "2026-11-03T16:07:09+00:00",
+ "fecha": "2026-11-04T04:00:17+00:00",
  "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
-  "concepto_central": "derecho del consumidor por contenido neto inferior al indicado en el empaque",
-  "respuesta_corta": "Puedes exigir, a tu elección, la reposición del producto o la devolución de lo pagado y, en todo caso, una bonificación no menor al 20% del precio.",
+  "concepto_central": "derecho de opción entre reposición o devolución de dinero más bonificación por contenido menor",
+  "respuesta_corta": "Puedes exigir, a tu elección, la reposición o devolución del dinero contra la entrega del producto, y en todo caso una bonificación no menor al 20% del precio.",
   "reglas": [
    {
-    "conclusion": "Si el contenido neto de un producto o la cantidad entregada es menor a la indicada en el empaque, el consumidor tiene derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, además de una bonificación.",
+    "conclusion": "El consumidor puede exigir, a su elección, la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, además de una bonificación.",
     "fuente": "F1",
     "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación",
     "condiciones": [
-     "Que el contenido neto o cantidad entregada sea menor a la indicada en el envase, recipiente o empaque, considerados los límites de tolerancia permitidos.",
-     "Contra la entrega del producto adquirido."
+     "Que el contenido neto o la cantidad entregada sea menor a la indicada en el empaque o envase, considerados los límites de tolerancia permitidos."
     ],
     "excepciones": []
    },
    {
-    "conclusion": "La bonificación que le corresponde al consumidor en este supuesto no puede ser inferior al veinte por ciento del precio pagado.",
+    "conclusion": "La bonificación compensatoria no podrá ser menor al veinte por ciento del precio pagado.",
     "fuente": "F2",
     "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado.",
     "condiciones": [
-     "Aplica para los supuestos de incumplimiento regulados en los artículos correspondientes."
+     "Que aplique la compensación por incumplimiento en el contenido del producto."
     ],
     "excepciones": []
    }
@@ -33,48 +32,43 @@
    {
     "elemento": "contenido",
     "estado": "cubierto",
-    "respuesta": "El consumidor puede exigir, a su elección, la reposición del producto o la devolución de la cantidad pagada, y en todo caso una bonificación no menor al 20% del precio.",
+    "respuesta": "El consumidor puede exigir la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, más una bonificación que no podrá ser menor al 20% del precio pagado.",
     "fuente": "F1",
-    "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación",
-    "motivo": null
+    "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación"
    },
    {
     "elemento": "condiciones",
     "estado": "cubierto",
-    "respuesta": "Aplica cuando el contenido neto o la cantidad entregada sea menor a la indicada en el empaque, considerando las tolerancias normativas, y contra la entrega del bien.",
+    "respuesta": "Aplica cuando el contenido neto o la cantidad entregada sea menor a la indicada en el empaque, recipiente o envase, o cuando se usen instrumentos de medición fuera de la normatividad.",
     "fuente": "F1",
-    "cita_literal": "Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque o cuando se utilicen instrumentos de medición que no cumplan con las disposiciones aplicables",
-    "motivo": null
+    "cita_literal": "Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque o cuando se utilicen instrumentos de medición que no cumplan con las disposiciones aplicables"
    },
    {
     "elemento": "excepcion",
     "estado": "no_aplica",
-    "respuesta": "no_aplica",
-    "fuente": "",
-    "cita_literal": "",
-    "motivo": "El texto oficial no prevé excepciones para el derecho del consumidor en el supuesto de contenido neto inferior al indicado."
+    "motivo": "La Ley Federal de Protección al Consumidor no prevé excepciones explícitas a este derecho en caso de deficiencia en el contenido neto."
    }
   ],
   "interpretaciones": [
    {
-    "afirmacion": "El cobro de la bonificación del 20% no impide que judicialmente se reclame una indemnización por daños y perjuicios.",
-    "condicion": "Si se demuestra la existencia de daños y perjuicios y la autoridad judicial determina dicha indemnización tomando en cuenta la bonificación pagada.",
-    "base": "El artículo 92 Ter establece que el pago de la bonificación se efectuará sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios."
+    "afirmacion": "La devolución de la cantidad pagada se efectúa en la misma forma de pago de la compra.",
+    "condicion": "Se puede usar una forma de pago distinta si el consumidor lo acepta expresamente al momento de recibir la devolución.",
+    "base": "Artículo 92, párrafo penúltimo de la Ley Federal de Protección al Consumidor."
    }
   ],
   "distinciones": [
    {
     "a": "devolucion dinero",
     "b": "bonificacion",
-    "diferencia": "La devolución implica la restitución del precio pagado por el bien, mientras que la bonificación es un monto compensatorio adicional no menor al 20% del precio."
+    "diferencia": "La devolución reintegra el precio original pagado contra la entrega del bien, mientras que la bonificación es un monto compensatorio adicional no menor al 20%."
    },
    {
     "a": "cambio reposicion",
     "b": "devolucion dinero",
-    "diferencia": "La reposición sustituye el producto entregado por otro, mientras que la devolución reintegra la cantidad monetaria pagada."
+    "diferencia": "La reposición implica la entrega de un nuevo producto, mientras que la devolución reintegra la suma en dinero pagada por el comprador."
    }
   ],
-  "limites": "Los artículos proporcionados no establecen un plazo límite para realizar la reclamación por contenido menor ni señalan el procedimiento de sanción administrativa al proveedor.",
+  "limites": "La ley no señala un plazo de prescripción específico en los artículos analizados (92 y 92 Ter) para reclamar esta bonificación ante el proveedor.",
   "fuentes_irrelevantes": []
  }
 }

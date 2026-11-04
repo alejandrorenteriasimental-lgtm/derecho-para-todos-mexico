@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1156 KB"
+      "detalle": "1144 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "41 palabras sin cabecera ni pie"
+      "detalle": "37 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "97% de 38 palabras reconocidas"
+      "detalle": "94% de 32 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,22 +96,22 @@
     "titulo": "¿Te pueden negar un servicio por tu religión?",
     "plantilla": "mito_realidad",
     "archivo": "I20261219-T113.png",
-    "sha256": "11c3e3ca296613e16fb63f6599b955a0c6ea4cf7b4c086f042bafe40fd0c0b69",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100000000001111110001110100111111000111111111111100000000000001111101111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "1201f15f700364f4df4c41ce02a676db8d14578905d703cf2fe7a2c956604c22",
-    "texto_alternativo": "Imagen gráfica tipo mito y realidad que explica si te pueden negar un servicio por tu religión basándose en la Constitución Política de los Estados Unidos Mexicanos.",
-    "copy": "En la vida diaria, a veces se piensa que los establecimientos o prestadores de servicios pueden elegir libremente a quién atender basándose en las creencias de las personas. Sin embargo, esto no es correcto conforme al marco legal vigente.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 1, «Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,» cuando esta tenga por objeto anular o menoscabar los derechos y libertades de las personas.\n\nEsto significa que la negativa de un servicio basada en motivos religiosos está prohibida si atenta contra la dignidad humana. Guarda y comparte esta información para conocer tus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "sha256": "478c4b5feb5fe4bdda7f5553708bd4cd83de1232ca29fc1892a42146c6f4b450",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000000011001111111111111100000000001111110000110100111111000111111111111100000000000101111011111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "e233464c693624ca749ff52d983de1c56815f49f73e95b3c2a97d93599d67f91",
+    "texto_alternativo": "Imagen de mito y realidad: un proveedor no puede negar ni condicionar un producto o servicio por razones religiosas, según el artículo 58 de la Ley Federal de Protección al Consumidor.",
+    "copy": "No. El artículo 58 de la Ley Federal de Protección al Consumidor dice: «El proveedor de bienes, productos o servicios no podrá negarlos o condicionarlos al consumidor por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
-        "documento": "Constitución Política de los Estados Unidos Mexicanos",
-        "articulo": "1",
-        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "58",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
       }
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-03T16:34:13+00:00",
+    "fecha": "2026-11-04T04:20:04+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

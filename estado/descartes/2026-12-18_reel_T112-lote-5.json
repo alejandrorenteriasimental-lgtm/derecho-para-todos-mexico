@@ -1,20 +1,20 @@
 {
  "solicitud": "2026-12-18_reel_T112-lote-5.json",
- "fecha": "2026-11-03T22:01:47+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La regla no aplica cuando se trata de bienes perecederos rec») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "fecha": "2026-11-04T04:05:10+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La norma no aplica a la compraventa de bienes perecederos re») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
    "errores": [
-    "[cobertura] El elemento «excepcion» («No aplica para bienes perecederos pagados de contado ni para») no trae una cita literal que esté en el texto oficial de su fuente."
+    "[cobertura] El elemento «excepcion» («No aplica a bienes perecederos recibidos y pagados de contad») no trae una cita literal que esté en el texto oficial de su fuente."
    ]
   },
   {
    "etapa": "analisis",
    "intento": 1,
    "errores": [
-    "[cobertura] El elemento «excepcion» («La regla no aplica cuando se trata de bienes perecederos rec») no trae una cita literal que esté en el texto oficial de su fuente."
+    "[cobertura] El elemento «excepcion» («La norma no aplica a la compraventa de bienes perecederos re») no trae una cita literal que esté en el texto oficial de su fuente."
    ]
   }
  ]
