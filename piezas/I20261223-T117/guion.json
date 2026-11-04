@@ -1,0 +1,204 @@
+{
+  "id": "I20261223-T117",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Una tienda puede negarse a venderte?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T117",
+  "pieza": {
+    "titular": "¿Una tienda puede negarse a venderte?",
+    "bajada": "Conoce qué dice la ley sobre la obligación de los proveedores de respetar los bienes y servicios que ofrecen.",
+    "mito": "Las tiendas pueden negarse a venderte cualquier producto si simplemente no quieren.",
+    "realidad": "No, bajo ninguna circunstancia se pueden negar los bienes o servicios que el proveedor hubiera ofrecido, obligado o convenido.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 7"
+  },
+  "copy": "En las transacciones comerciales, las personas consumidoras cuentan con protecciones específicas. La Ley Federal de Protección al Consumidor establece reglas claras sobre la comercialización en su artículo 7.\n\nEs importante precisar que esta prohibición aplica específicamente sobre aquellos bienes, productos o servicios que el proveedor hubiera ofrecido, obligado o convenido previamente con el consumidor.\n\nEl mismo ordenamiento señala con claridad que \"bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna, así como la información de los mismos\". Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que explica si una tienda puede negarse a vender un producto o servicio ofrecido según la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "7",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna, así como la información de los mismos.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 7",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Bajo ninguna circunstancia se pueden negar los bienes, productos o servicios ofrecidos.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una tienda puede negarse a venderte lo que ofrece?",
+    "concepto_central": "negativa de venta de bienes o servicios ofrecidos",
+    "respuesta_corta": "No, bajo ninguna circunstancia se pueden negar los bienes, productos o servicios que el proveedor haya ofrecido, obligado o convenido.",
+    "reglas": [
+      {
+        "conclusion": "Los proveedores tienen prohibido negar a cualquier persona los bienes, productos, servicios o la información que se hubiera ofrecido, obligado o convenido.",
+        "fuente": "F1",
+        "cita_literal": "bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna, así como la información de los mismos.",
+        "condiciones": [
+          "Aplica sobre bienes, productos o servicios que el proveedor hubiera ofrecido, obligado o convenido con el consumidor."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "7"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que existe una prohibición para el proveedor de negar los bienes, productos, servicios o su información.",
+        "fuente": "F1",
+        "cita_literal": "bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna, así como la información de los mismos."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "garantia",
+        "b": "cambio reposicion",
+        "diferencia": "La garantía es un compromiso sobre calidad o funcionamiento, mientras que el cambio o reposición es la sustitución del producto en supuestos específicos."
+      }
+    ],
+    "limites": "El texto oficial no detalla multas, sanciones específicas ni el procedimiento exacto ante una negativa de venta."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T12:05:33+00:00",
+    "solicitud": "2026-12-23_imagen_T117-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Una tienda puede negarse a venderte lo que ofrece?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La pieza no menciona qué puede hacer el consumidor ante una negativa de venta (ej. presentar una queja ante la Profeco), lo cual es esencial para la utilidad práctica de la información."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los proveedores tienen prohibido negar a cualquier persona los bienes, productos, servicios o la información que se hubiera ofrecido, obligado o convenido.",
+              "sostenida": "si",
+              "motivo": "El artículo 7 de la LFPC establece explícitamente la obligación de respetar las condiciones ofrecidas y prohíbe la negativa de venta bajo cualquier circunstancia."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Cuerpo del texto (copy): 'Recuerda distinguir conceptos: la garantía es un compromiso sobre calidad o funcionamiento, mientras que el cambio o reposición es la sustitución del producto en supuestos específicos.'",
+              "problema": "El texto introduce una distinción conceptual (garantía vs. cambio/reposición) que no tiene relación directa con la pregunta sobre la negativa de venta ni con el contenido del artículo 7 citado. Esto distrae al lector y no aporta a la resolución de la duda planteada.",
+              "correccion": "Eliminar el párrafo sobre la distinción de conceptos, ya que no es pertinente para el tema de la negativa de venta."
+            },
+            {
+              "donde": "Cuerpo del texto (copy): Falta de mención a la autoridad competente.",
+              "problema": "La pieza informa sobre la prohibición, pero no indica ante quién puede acudir el consumidor si el proveedor incumple esta obligación (Profeco), dejando al usuario sin una ruta de acción clara.",
+              "correccion": "Agregar una mención breve sobre la posibilidad de presentar una queja ante la Procuraduría Federal del Consumidor (Profeco) en caso de incumplimiento."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La pieza no menciona qué puede hacer el consumidor ante una negativa de venta (ej. presentar una queja ante PROFECO), lo cual es esencial para la utilidad práctica de la información."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los proveedores tienen prohibido negar a cualquier persona los bienes, productos, servicios o la información que se hubiera ofrecido, obligado o convenido.",
+              "sostenida": "si",
+              "motivo": "El artículo 7 de la LFPC establece explícitamente que bajo ninguna circunstancia serán negados estos bienes, productos o servicios a persona alguna."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Sección 'distinciones' del razonamiento",
+              "problema": "La pieza incluye una distinción entre 'garantía' y 'cambio o reposición' que no tiene sustento en el artículo 7 proporcionado, el cual solo habla de la obligación de respetar condiciones ofrecidas.",
+              "correccion": "Eliminar la sección de distinciones, ya que el texto oficial no aborda garantías ni cambios, solo la obligación de respetar lo ofrecido."
+            },
+            {
+              "donde": "Copy, párrafo 2",
+              "problema": "La redacción sugiere que la prohibición de negar bienes es una regla absoluta para cualquier situación, cuando el artículo 7 limita esta obligación a los bienes, productos o servicios que el proveedor 'hubiera ofrecido, obligado o convenido'.",
+              "correccion": "Aclarar que la prohibición aplica específicamente sobre los bienes, productos o servicios que el proveedor ha ofrecido, obligado o convenido con el consumidor."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los proveedores tienen prohibido negar a cualquier persona los bienes, productos, servicios o la información que se hubiera ofrecido, obligado o convenido.",
+              "sostenida": "si",
+              "motivo": "El artículo 7 de la Ley Federal de Protección al Consumidor establece explícitamente la obligación de respetar las condiciones ofrecidas y prohíbe la negativa de venta bajo cualquier circunstancia."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

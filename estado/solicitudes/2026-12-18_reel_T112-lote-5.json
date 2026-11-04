@@ -1,47 +1,48 @@
 {
- "fecha": "2026-12-18",
- "formato": "reel",
- "tema_id": "T112",
- "titulo": "¿Te deben pagar algo extra en tus vacaciones?",
- "gancho": "¿Te deben pagar algo extra en tus vacaciones?",
- "pregunta": "¿Te deben pagar algo extra en tus vacaciones?",
- "tipo_pregunta": "obligacion",
- "carril": "A",
- "fuentes_sugeridas": "LFT art. 80",
- "riesgo_exactitud": "",
- "lote": "lote-5",
- "motivo_seleccion": "Art. 80 LFT: «Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.»",
- "hora_publicacion_mx": "19:00",
- "estado": "PENDIENTE_GUION",
- "instrucciones": "docs/tarea_guionista.md",
- "creada": "2026-11-03T02:22:25Z",
- "pieza_id": "R20261218-T112",
- "archivo": "2026-12-18_reel_T112-lote-5.json",
- "intentos": 0,
- "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el pago para las horas extraordinarias que no superan el límite del artículo 66 ni son por siniestro, ni explican el contenido de los artículos 65 y 66.",
- "ultima_categoria": "juridico",
- "historial_reaperturas": [
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "primer descarte (análisis): la excepción se parafraseó; el texto oficial la trae literal en el LFPC 51 («Lo dispuesto en este capítulo no es aplicable a la compraventa de bienes perecederos recibidos por el consumidor y pagados de contado»)",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La regla no aplica cuando se trata de bienes perecederos rec») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
-  },
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "pregunta sustituida tras el segundo descarte jurídico («¿Puedes cancelar una compra que te vendieron en tu casa?», LFPC 51/56: la excepción de perecederos no quedó con cita literal en el análisis); ahora LFT 67 y 68, horas extra (respuesta literal; tema no usado en las últimas 3 semanas)",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La norma no aplica a la compraventa de bienes perecederos re») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
-  },
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "pregunta sustituida: el primer descarte de «horas extra» mostró que el motivo de selección se apoyaba en el párrafo segundo del art. 67 LFT, derogado por la reforma DOF 01-05-2026 (ahora arts. 66 y 68, con transitorios no verificados); por vigencia se cambia a LFT 80, prima vacacional (respuesta literal; tema no usado en las últimas 3 semanas)",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el pago para las horas extraordinarias que no superan el límite del artículo 66 ni son por siniestro, ni explican el contenido de los artículos 65 y 66."
-  }
- ],
- "angulo": "Prima vacacional de al menos 25 % sobre el salario del periodo de vacaciones (LFT 80), con la cita literal completa; «no menor de» significa mínimo, no tope; narración de 560 caracteres o menos"
+  "fecha": "2026-12-18",
+  "formato": "reel",
+  "tema_id": "T112",
+  "titulo": "¿Te deben pagar algo extra en tus vacaciones?",
+  "gancho": "¿Te deben pagar algo extra en tus vacaciones?",
+  "pregunta": "¿Te deben pagar algo extra en tus vacaciones?",
+  "tipo_pregunta": "obligacion",
+  "carril": "A",
+  "fuentes_sugeridas": "LFT art. 80",
+  "riesgo_exactitud": "",
+  "lote": "lote-5",
+  "motivo_seleccion": "Art. 80 LFT: «Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.»",
+  "hora_publicacion_mx": "19:00",
+  "estado": "GUION_LISTO",
+  "instrucciones": "docs/tarea_guionista.md",
+  "creada": "2026-11-03T02:22:25Z",
+  "pieza_id": "R20261218-T112",
+  "archivo": "2026-12-18_reel_T112-lote-5.json",
+  "intentos": 0,
+  "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el pago para las horas extraordinarias que no superan el límite del artículo 66 ni son por siniestro, ni explican el contenido de los artículos 65 y 66.",
+  "ultima_categoria": "juridico",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "primer descarte (análisis): la excepción se parafraseó; el texto oficial la trae literal en el LFPC 51 («Lo dispuesto en este capítulo no es aplicable a la compraventa de bienes perecederos recibidos por el consumidor y pagados de contado»)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La regla no aplica cuando se trata de bienes perecederos rec») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    },
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico («¿Puedes cancelar una compra que te vendieron en tu casa?», LFPC 51/56: la excepción de perecederos no quedó con cita literal en el análisis); ahora LFT 67 y 68, horas extra (respuesta literal; tema no usado en las últimas 3 semanas)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («La norma no aplica a la compraventa de bienes perecederos re») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    },
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "pregunta sustituida: el primer descarte de «horas extra» mostró que el motivo de selección se apoyaba en el párrafo segundo del art. 67 LFT, derogado por la reforma DOF 01-05-2026 (ahora arts. 66 y 68, con transitorios no verificados); por vigencia se cambia a LFT 80, prima vacacional (respuesta literal; tema no usado en las últimas 3 semanas)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el pago para las horas extraordinarias que no superan el límite del artículo 66 ni son por siniestro, ni explican el contenido de los artículos 65 y 66."
+    }
+  ],
+  "angulo": "Prima vacacional de al menos 25 % sobre el salario del periodo de vacaciones (LFT 80), con la cita literal completa; «no menor de» significa mínimo, no tope; narración de 560 caracteres o menos",
+  "pieza": "R20261218-T112"
 }

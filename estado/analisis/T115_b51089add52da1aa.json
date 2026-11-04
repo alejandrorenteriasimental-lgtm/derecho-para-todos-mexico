@@ -1,0 +1,44 @@
+{
+ "tema_id": "T115",
+ "pregunta": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
+ "fecha": "2026-11-04T12:02:54+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
+  "concepto_central": "salario igual",
+  "respuesta_corta": "No, a trabajo igual desempeñado en puesto, jornada y condiciones de eficiencia también iguales debe corresponder salario igual.",
+  "reglas": [
+   {
+    "conclusion": "A trabajo igual debe corresponder un salario igual si se cumplen las condiciones de puesto, jornada y eficiencia.",
+    "fuente": "F1",
+    "cita_literal": "A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual",
+    "condiciones": [
+     "puesto igual",
+     "jornada igual",
+     "condiciones de eficiencia también iguales"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Corresponde recibir el mismo salario cuando se comparte el mismo trabajo, puesto, jornada y condiciones de eficiencia.",
+    "fuente": "F1",
+    "cita_literal": "A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Se promoverán acciones para erradicar las prácticas retributivas desiguales con el fin de reducir la brecha salarial de género.",
+    "condicion": "en cumplimiento de las obligaciones del Estado conforme a la legislación aplicable",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla multas, sanciones específicas, autoridades ante las cuales demandar ni plazos para exigir el cumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}

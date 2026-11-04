@@ -1,0 +1,43 @@
+{
+ "tema_id": "T112",
+ "pregunta": "¿Te deben pagar algo extra en tus vacaciones?",
+ "fecha": "2026-11-04T12:00:18+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben pagar algo extra en tus vacaciones?",
+  "concepto_central": "prima vacacional",
+  "respuesta_corta": "Sí, te deben pagar una prima de al menos veinticinco por ciento sobre los salarios que te correspondan durante tus vacaciones.",
+  "reglas": [
+   {
+    "conclusion": "Los trabajadores tienen derecho a recibir una prima vacacional equivalente a por lo menos veinticinco por ciento sobre el salario de su período vacacional.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe otorgar una prima de al menos veinticinco por ciento sobre los salarios correspondientes al período de vacaciones.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
+    "motivo": ""
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece requisitos especiales adicionales para este derecho más allá de corresponder al período de vacaciones.",
+    "fuente": "F1",
+    "cita_literal": "Los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
+    "motivo": "El texto oficial no contempla condicionantes o requisitos específicos para acceder a la prima."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala la fecha exacta en la que debe pagarse esta prima ni el procedimiento para reclamarla en caso de omisión.",
+  "fuentes_irrelevantes": []
+ }
+}

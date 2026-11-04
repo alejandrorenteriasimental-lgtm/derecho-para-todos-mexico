@@ -1,0 +1,134 @@
+{
+  "id": "I20261220-T114",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Votar es obligatorio en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T114",
+  "pieza": {
+    "titular": "¿Votar es obligatorio en México?",
+    "bajada": "Conoce lo que establece la Constitución sobre tu participación.",
+    "mito": "Votar es solo un derecho que puedes ejercer si quieres.",
+    "realidad": "Sí, votar es una obligación ciudadana en las elecciones, consultas populares y procesos de revocación de mandato.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 36"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos establece las responsabilidades fundamentales que tenemos como ciudadanos en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, en su artículo 36, fracción III, se dispone textualmente: «III. Votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley;».\n\nEsto significa que la participación en estos procesos electorales es un deber normativo que debe cumplirse en los términos que señale la ley.\n\nComparte esta información para que más personas conozcan sus deberes ciudadanos. ¡Guárdala!\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía que aclara el mito y la realidad sobre la obligatoriedad del voto en México según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "36",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "III. Votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 36",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Votar en las elecciones, consultas populares y procesos de revocación de mandato es una obligación ciudadana en los términos que señale la ley.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Votar es obligatorio en México?",
+    "concepto_central": "obligación de votar",
+    "respuesta_corta": "Sí, votar es una obligación ciudadana en las elecciones, consultas populares y procesos de revocación de mandato.",
+    "reglas": [
+      {
+        "conclusion": "Votar en las elecciones, consultas populares y procesos de revocación de mandato es una obligación de los ciudadanos de la República en los términos que señale la ley.",
+        "fuente": "F1",
+        "cita_literal": "III. Votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley;",
+        "condiciones": [
+          "en los términos que señale la ley"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "36"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Genera una obligación legal para el ciudadano en los procesos electorales, consultas populares y revocación de mandato.",
+        "fuente": "F1",
+        "cita_literal": "III. Votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley;"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla las sanciones específicas por no cumplir con esta obligación, ya que remite a lo que señale la ley."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T12:04:42+00:00",
+    "solicitud": "2026-12-20_imagen_T114-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Votar es obligatorio en México?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Votar en las elecciones, consultas populares y procesos de revocación de mandato es una obligación de los ciudadanos de la República en los términos que señale la ley.",
+              "sostenida": "si",
+              "motivo": "El artículo 36, fracción III, de la Constitución Política de los Estados Unidos Mexicanos incluye explícitamente esta actividad dentro del listado de obligaciones del ciudadano."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

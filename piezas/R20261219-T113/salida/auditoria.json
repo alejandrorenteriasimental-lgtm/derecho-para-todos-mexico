@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.4 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "6d22a89890a7dbd0"
+      "detalle": "355e91726fddf54f"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 9 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261219-T113",
     "titulo": "¿Te pueden obligar a trabajar sin pagarte?",
-    "fecha": "2026-11-04T10:41:10+00:00",
-    "sha256": "6d22a89890a7dbd0fe6ad1dad080f298dbefd0a12ef9a544a9894b639e0c0ca0",
+    "fecha": "2026-11-04T12:09:06+00:00",
+    "sha256": "355e91726fddf54f5ffbf401f1d4d95d06dc6d0b2ae68d3ef8c665aacd01e771",
     "duracion_s": 41.8,
     "estado": "APTO",
-    "huella_guion": "3f22dc82c5c96cbdcce882ae0bf1b42986a1592f11794caa594427c6b574527a",
+    "huella_guion": "7780257d3b9cce8490771b9d3911a7a780c6c198ddff56faf730e3a8188453e3",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 25.7,
-      "musica": 2.0,
-      "render_video": 49.0,
-      "mezcla_audio": 2.0,
-      "auditoria_tecnica": 10.7
+      "narracion": 26.5,
+      "musica": 2.8,
+      "render_video": 58.0,
+      "mezcla_audio": 2.4,
+      "auditoria_tecnica": 11.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.49,
-      "computo_equivalente_runner_usd": 0.0089,
+      "computo_minutos": 1.69,
+      "computo_equivalente_runner_usd": 0.0101,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1251,
-    "caracteres_narrados": 572
+    "frames": 1252,
+    "caracteres_narrados": 582
   }
 }

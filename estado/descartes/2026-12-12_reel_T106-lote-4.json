@@ -1,26 +1,26 @@
 {
  "solicitud": "2026-12-12_reel_T106-lote-4.json",
- "fecha": "2026-11-04T04:04:07+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 684 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 64: recorta al menos 124 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n",
+ "fecha": "2026-11-04T11:59:49+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden mandar publicidad si pediste no recibirla? \\n ¿TE PUEDEN \\n MA",
  "historial": [
   {
    "etapa": "analisis",
-   "reutilizado": true,
+   "intento": 0,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Qué exigir si un producto trae menos de lo indicado? \n ¿CONTENIDO \n INCOMPLETO? \n Puedes exigir, a tu elección, la reposición del producto o la devolución de lo pagado y una bonificación no menor al 20% del precio. \n TUS OPCIONES \n LEGALES \n La norma dice: Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n Ten claras estas opciones: \n Reposición: "
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No. Queda prohibido a proveedores y empresas enviar publicidad a quienes manifestaron expresamente su voluntad de no recibirla o estén en el registro. \n NO ESTÁ \n PERMITIDO \n La norma indica: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n Las opciones para la ins"
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ]
   },
   {
@@ -31,83 +31,31 @@
     "cobertura": {
      "responde_nucleo": true,
      "faltantes": [
-      "El procedimiento específico para el supuesto de contenido neto (fracción I), que permite al consumidor exigir la bonificación directamente al proveedor mediante la presentación de su comprobante o recibo de pago."
+      "No se menciona que la inscripción al registro es un medio para ejercer este derecho, aunque la prohibición también opera por la manifestación expresa de voluntad."
      ]
     },
     "conclusiones": [
      {
-      "conclusion": "Si el contenido neto de un producto o la cantidad entregada es menor a la indicada en el empaque, el consumidor tiene derecho a elegir entre la reposición del producto o la devolución de la cantidad pagada, además de una bonificación.",
-      "sostenida": "parcial",
-      "motivo": "La conclusión omite una condición esencial establecida en el artículo 92: el ejercicio de estos derechos se realiza 'contra la entrega del producto adquirido'."
+      "conclusion": "Está prohibido enviar publicidad a consumidores que hayan manifestado expresamente su voluntad de no recibirla o que estén inscritos en el registro público de la Procuraduría.",
+      "sostenida": "si",
+      "motivo": "La conclusión se deriva directamente del texto del artículo 18 Bis."
      },
      {
-      "conclusion": "La bonificación que le corresponde al consumidor en este supuesto no puede ser inferior al veinte por ciento del precio pagado.",
+      "conclusion": "La Procuraduría puede llevar un registro público y gratuito para consumidores que no deseen que su información se use con fines mercadotécnicos o publicitarios.",
       "sostenida": "si",
-      "motivo": "La afirmación coincide plenamente con lo dispuesto en el artículo 92 Ter."
+      "motivo": "La conclusión es una paráfrasis exacta de las facultades y características del registro descritas en el artículo 18."
      }
     ],
     "objeciones": [
      {
-      "donde": "Conclusión de la primera regla y respuesta corta.",
-      "problema": "Se presenta el derecho de forma incompleta al omitir el requisito de entrega del bien.",
-      "correccion": "Debe precisarse que la reposición o la devolución de la cantidad pagada se efectúan 'contra la entrega del producto adquirido'."
-     }
-    ]
-   }
-  },
-  {
-   "etapa": "analisis",
-   "intento": 0,
-   "errores": []
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 0,
-   "errores_esquema": [
-    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ],
-   "visible": "  \n ¿Qué exige el consumidor si el empaque trae menos producto? \n PRODUCTO CON \n MENOS CONTENIDO \n Puedes elegir reposición o devolución, más una bonificación. \n OPCIONES DEL \n CONSUMIDOR \n La ley prevé que «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación». \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n La reposición da un producto nuevo y la devolución te regresa tu pago. \n Reposición: producto "
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": [
-      "La pieza omite mencionar que el derecho a la bonificación y reposición/devolución está sujeto a los límites de tolerancia permitidos por la normatividad, lo cual es una condición esencial para que proceda la reclamación por contenido neto menor."
-     ]
-    },
-    "conclusiones": [
-     {
-      "conclusion": "El consumidor puede exigir, a su elección, la reposición del producto o la devolución de la cantidad pagada, contra la entrega del producto adquirido, además de una bonificación.",
-      "sostenida": "si",
-      "motivo": "El artículo 92 establece explícitamente este derecho de elección y la procedencia de la bonificación."
+      "donde": "lista",
+      "problema": "La lista de 'opciones para la inscripción' incluye 'Registro en Procuraduría' como un ítem separado, lo cual es redundante y confuso, ya que el registro es el fin, no el medio.",
+      "correccion": "Los ítems deben ser únicamente los medios de comunicación: 'Solicitud por escrito' y 'Correo electrónico'."
      },
      {
-      "conclusion": "La bonificación compensatoria no podrá ser menor al veinte por ciento del precio pagado.",
-      "sostenida": "si",
-      "motivo": "El artículo 92 Ter establece claramente este porcentaje mínimo."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Escena 'cita' y razonamiento general",
-      "problema": "Se presenta el derecho a la bonificación y reposición/devolución como una consecuencia directa de que el contenido sea menor, omitiendo la condición legal de los 'límites de tolerancia permitidos'.",
-      "correccion": "Debe aclararse que el derecho aplica cuando el contenido es menor a lo indicado, 'considerados los límites de tolerancia permitidos por la normatividad'."
-     },
-     {
-      "donde": "Interpretaciones",
-      "problema": "La interpretación sobre la forma de pago (devolución en la misma forma) es correcta, pero se presenta como una nota al margen y no se integra en la explicación principal de las opciones del consumidor.",
-      "correccion": "Integrar esta precisión en el cuerpo del texto para evitar confusiones sobre cómo se recibe el dinero de vuelta."
+      "donde": "titular (segundo)",
+      "problema": "El titular 'No está permitido' es una simplificación que, aunque correcta en el contexto, no especifica que la prohibición recae sobre proveedores y empresas que utilicen información con fines mercadotécnicos o publicitarios.",
+      "correccion": "Asegurar que el cuerpo del texto o la interpretación siempre vincule la prohibición a los sujetos obligados (proveedores y empresas) mencionados en el artículo 18 Bis."
      }
     ]
    }
@@ -116,9 +64,9 @@
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 684 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 64: recorta al menos 124 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \n ¿MENOS CONTENIDO \n EN TU EMPAQUE? \n Puedes exigir la reposición o devolución del dinero, más una bonificación del 20%. \n TUS DERECHOS \n COMO CONSUMIDOR \n La ley dice: Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación \n Considera los límites de tolerancia legal y la forma de pa"
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No. Queda prohibido a proveedores y empresas enviar publicidad a quienes manifestaron expresamente su voluntad de no recibirla o estén en el registro. \n ESTÁ \n PROHIBIDO \n Queda prohibido a los proveedores y empresas enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla \n Puedes solicitar tu inscripción en el regis"
   }
  ]
 }
