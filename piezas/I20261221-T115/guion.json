@@ -8,12 +8,12 @@
   "tema_id": "T115",
   "pieza": {
     "titular": "¿Puedes tener un arma en tu casa?",
-    "bajada": "Conoce lo que establece la Constitución sobre la posesión de armas en el domicilio.",
+    "bajada": "La Constitución reconoce el derecho a poseer armas en el domicilio, con excepciones.",
     "mito": "Cualquier persona puede tener libremente cualquier tipo de arma en su casa.",
-    "realidad": "Sí: puedes poseer armas en tu domicilio para seguridad y legítima defensa, excepto las prohibidas y las de las Fuerzas Armadas.",
+    "realidad": "Tienes derecho a poseer armas en tu domicilio para tu seguridad y legítima defensa, salvo las prohibidas por la ley federal y las de uso exclusivo de la Fuerza Armada permanente y los cuerpos de reserva.",
     "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 10"
   },
-  "copy": "La Constitución Política de los Estados Unidos Mexicanos establece las reglas sobre la posesión de armas en el ámbito doméstico.\n\nEl artículo 10 señala textualmente que \"Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa\".\n\nNo obstante, la norma marca excepciones claras para las armas prohibidas y las reservadas a las Fuerzas Armadas. Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí, pero solo en tu domicilio y con excepciones. El artículo 10 de la Constitución dice: «Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa, con excepción de las prohibidas por la Ley Federal y de las reservadas para el uso exclusivo de la Fuerza Armada permanente y los cuerpos de reserva».\n\nY aclara que «La ley federal determinará los casos, condiciones, requisitos y lugares en que se podrá autorizar a los habitantes la portación de armas».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen fija tipo mito y realidad sobre la posesión de armas en el domicilio según la Constitución.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -23,7 +23,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "10",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa",
+      "texto_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa, con excepción de las prohibidas por la Ley Federal y de las reservadas para el uso exclusivo de la Fuerza Armada permanente y los cuerpos de reserva",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 10",
       "jurisdiccion": "federal",
       "consultado": "2026-11-04"
@@ -41,12 +41,12 @@
     "suficiente": true,
     "pregunta": "¿Puedes tener un arma en tu casa?",
     "concepto_central": "derecho a poseer armas en el domicilio",
-    "respuesta_corta": "Sí, tienes derecho a poseer armas en tu domicilio para tu seguridad y legítima defensa, salvo las prohibidas y las reservadas a las Fuerzas Armadas.",
+    "respuesta_corta": "Sí, tienes derecho a poseer armas en tu domicilio para tu seguridad y legítima defensa, salvo las prohibidas por la ley federal y las reservadas a la Fuerza Armada permanente y los cuerpos de reserva.",
     "reglas": [
       {
         "conclusion": "Los habitantes tienen derecho a poseer armas en su domicilio para su seguridad y legítima defensa, con excepciones de ley.",
         "fuente": "F1",
-        "cita_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa",
+        "cita_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa, con excepción de las prohibidas por la Ley Federal y de las reservadas para el uso exclusivo de la Fuerza Armada permanente y los cuerpos de reserva",
         "condiciones": [
           "para su seguridad y legítima defensa"
         ],
@@ -138,5 +138,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "«REALIDAD» sin el «Sí:» que contradecía al mito y con la excepción tal como la dice el art. 10 (Fuerza Armada permanente y cuerpos de reserva, no «Fuerzas Armadas»); bajada sin relleno; texto de publicación sin relleno y con las citas literales (posesión y remisión a la ley federal para la portación). La retención por «persona real» fue un falso positivo del sistema (corregido con prueba)"
+    }
+  ]
 }

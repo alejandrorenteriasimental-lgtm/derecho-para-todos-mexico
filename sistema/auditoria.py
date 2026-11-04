@@ -7,7 +7,8 @@ from pathlib import Path
 # Primera palabra de una institución o autoridad (no de una persona): «Autoridad Conciliadora», «Tribunal Colegiado»…
 # R20261130-T014, 29-10: «Autoridad Conciliadora» (LFT 48) se marcó como persona real.
 INICIO_INSTITUCION = {"Autoridad", "Autoridades", "Tribunal", "Tribunales", "Centro", "Centros", "Procuraduría", "Secretaría", "Instituto",
-                      "Comisión", "Junta", "Juzgado", "Fiscalía", "Congreso", "Cámara", "Poder", "Consejo", "Defensoría", "Registro"}
+                      "Comisión", "Junta", "Juzgado", "Fiscalía", "Congreso", "Cámara", "Poder", "Consejo", "Defensoría", "Registro",
+                      "Fuerza", "Fuerzas", "Ejército", "Armada", "Guardia", "Marina"}   # I20261221-T115 (4-11): «Fuerzas Armadas» retuvo la pieza
 
 
 def _run(cmd):

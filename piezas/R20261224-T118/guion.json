@@ -13,7 +13,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "20",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+      "texto_literal": "La prisión preventiva no podrá exceder del tiempo que como máximo de pena fije la ley al delito que motivare el proceso y en ningún caso será superior a dos años",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
       "jurisdiccion": "federal",
       "consultado": "2026-11-04"
@@ -24,7 +24,18 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "20",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+      "texto_literal": "salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "20",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 20",
       "jurisdiccion": "federal",
       "consultado": "2026-11-04"
@@ -33,7 +44,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Cuánto dura la prisión preventiva?",
+      "texto": "¿Cuánto puede durar la prisión preventiva?",
       "titulo": [
         "¿CUÁNTO",
         "DURA LA",
@@ -43,59 +54,58 @@
     },
     {
       "tipo": "titular",
-      "texto": "No puede exceder el tiempo máximo de pena ni dos años, salvo por la defensa.",
+      "texto": "Nunca más de dos años, salvo una excepción.",
       "titulo": [
-        "LÍMITE",
-        "MÁXIMO"
+        "DOS AÑOS",
+        "COMO MÁXIMO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley establece que en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
-      "etiqueta": "Constitución, art. 20",
-      "cita": "en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Si no hay sentencia al concluir el plazo, aplican estas reglas procesales:",
-      "items": [
-        "Libertad inmediata",
-        "Sigue el proceso",
-        "Otras medidas cautelares"
-      ],
+      "texto": "La prisión preventiva no podrá exceder del tiempo que como máximo de pena fije la ley al delito que motivare el proceso y en ningún caso será superior a dos años.",
+      "etiqueta": "Constitución, art. 20, apartado B",
+      "cita": "La prisión preventiva no podrá exceder del tiempo que como máximo de pena fije la ley al delito que motivare el proceso y en ningún caso será superior a dos años",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La prisión preventiva no puede exceder de dos años por regla general.",
-          "fuente": "F1"
+          "texto": "La prisión preventiva no puede exceder la pena máxima del delito ni ser superior a dos años.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "La prisión se prolonga por el ejercicio del derecho de defensa del imputado.",
-      "encabezado": "Derecho de defensa",
-      "detalle": "Alarga el plazo legal",
-      "fuente_corta": "Constitución, art. 20",
-      "afirmaciones": []
+      "texto": "La excepción: que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+      "encabezado": "Ejercicio del derecho de defensa",
+      "detalle": "Puede alargar el plazo",
+      "fuente_corta": "Constitución, art. 20 B",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El plazo puede prolongarse si se debe al ejercicio del derecho de defensa del imputado.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "No puede exceder el tiempo máximo de pena ni dos años, salvo por la defensa.",
+      "texto": "Si se cumple el plazo sin sentencia, el imputado queda libre de inmediato mientras sigue el proceso, aunque pueden imponerle otras medidas cautelares.",
       "titulo": [
         "LIBERTAD",
         "INMEDIATA"
       ],
       "afirmaciones": [
         {
-          "id": "A2",
+          "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "La medida se prolonga por el ejercicio de la defensa del imputado.",
-          "fuente": "F2"
+          "texto": "Cumplido el plazo sin sentencia, el imputado es puesto en libertad de inmediato mientras sigue el proceso, sin perjuicio de otras medidas cautelares.",
+          "fuente": "F3"
         }
       ]
     },
@@ -115,7 +125,7 @@
       {
         "conclusion": "La prisión preventiva no podrá exceder el tiempo máximo de pena fijado para el delito ni ser superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
         "fuente": "F1",
-        "cita_literal": "en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+        "cita_literal": "La prisión preventiva no podrá exceder del tiempo que como máximo de pena fije la ley al delito que motivare el proceso y en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado",
         "condiciones": [
           "Que se trate de una medida cautelar de prisión preventiva decretada en un proceso penal"
         ],
@@ -130,7 +140,7 @@
       {
         "conclusion": "Si vence el término máximo de prisión preventiva sin dictarse sentencia, el imputado debe ser puesto en libertad inmediata mientras continúa el proceso.",
         "fuente": "F1",
-        "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares.",
+        "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares",
         "condiciones": [
           "Que haya cumplido el plazo máximo de prisión preventiva sin que se haya pronunciado sentencia"
         ],
@@ -147,7 +157,7 @@
         "estado": "cubierto",
         "respuesta": "Si se cumple el plazo máximo sin que se haya dictado sentencia, el imputado debe ser liberado de inmediato mientras continúa su juicio, pudiendo imponerse otras medidas cautelares.",
         "fuente": "F1",
-        "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares."
+        "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares"
       }
     ],
     "interpretaciones": [
@@ -190,7 +200,7 @@
   "pregunta_original": "¿Cuánto puede durar la prisión preventiva?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Cuánto puede durar la prisión preventiva?\n\nNo puede exceder el tiempo máximo de pena del delito ni dos años, salvo que se prolongue por el ejercicio del derecho de defensa del imputado.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 20.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No puede durar más que la pena máxima del delito ni más de dos años, salvo una excepción.\n\nEl artículo 20, apartado B, de la Constitución dice: «La prisión preventiva no podrá exceder del tiempo que como máximo de pena fije la ley al delito que motivare el proceso y en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado».\n\nY agrega: «Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -316,5 +326,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "se quitan la escena repetida («No puede exceder… salvo por la defensa» dos veces) y la lista «Libertad inmediata / Sigue el proceso / Otras medidas cautelares» que no se narraba; la cita incluye el límite de la pena máxima; la excepción ya no se presenta como hecho («La prisión se prolonga…»); la libertad inmediata al vencer el plazo, con cita literal (F3); «La ley establece» → «La Constitución dice»; texto de publicación con las citas"
+    }
+  ]
 }

@@ -1,36 +1,42 @@
 {
-  "fecha": "2026-12-20",
-  "formato": "imagen",
-  "tema_id": "T114",
-  "titulo": "¿Necesitas permiso para reunirte pacíficamente?",
-  "gancho": "¿Necesitas permiso para reunirte pacíficamente?",
-  "pregunta": "¿Necesitas permiso para reunirte pacíficamente?",
-  "tipo_pregunta": "derecho",
-  "carril": "A",
-  "fuentes_sugeridas": "CPEUM art. 9",
-  "riesgo_exactitud": "",
-  "lote": "lote-5",
-  "motivo_seleccion": "Art. 9 CPEUM: no se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito.",
-  "hora_publicacion_mx": "09:00",
-  "relacion": "independiente",
-  "plantilla": "mito_realidad",
-  "angulo": "No necesitas permiso para reunirte pacíficamente con un objeto lícito (CPEUM 9); la realidad o el «OJO» deben decir la condición literal: sin injurias, violencias ni amenazas para intimidar u obligar a la autoridad",
-  "estado": "DESCARTADA",
-  "instrucciones": "docs/tarea_guionista.md",
-  "creada": "2026-11-03T02:22:25Z",
-  "pieza_id": "I20261220-T114",
-  "archivo": "2026-12-20_imagen_T114-lote-5.json",
-  "intentos": 1,
-  "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial",
-  "ultima_categoria": "juridico",
-  "historial_reaperturas": [
-    {
-      "fecha": "2026-11-04",
-      "por": "Claude",
-      "motivo": "primer descarte (cobertura): la condición del art. 9 CPEUM (sin injurias, violencias ni amenazas) no quedó en lo visible",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Necesitas un permiso de la "
-    }
-  ],
-  "huella_entrada": "27e3a94c55c0c8c1"
+ "fecha": "2026-12-20",
+ "formato": "imagen",
+ "tema_id": "T114",
+ "titulo": "¿Votar es obligatorio en México?",
+ "gancho": "¿Votar es obligatorio en México?",
+ "pregunta": "¿Votar es obligatorio en México?",
+ "tipo_pregunta": "legalidad",
+ "carril": "A",
+ "fuentes_sugeridas": "CPEUM art. 36 fr. III",
+ "riesgo_exactitud": "",
+ "lote": "lote-5",
+ "motivo_seleccion": "Art. 36 CPEUM: «Son obligaciones del ciudadano de la República: … III. Votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley».",
+ "hora_publicacion_mx": "09:00",
+ "relacion": "independiente",
+ "plantilla": "mito_realidad",
+ "angulo": "Mito: votar es solo un derecho. Realidad: la Constitución también lo establece como obligación del ciudadano (CPEUM 36 fr. III, cita literal con «en los términos que señale la ley»); sin afirmar sanciones que no estén en la cita",
+ "estado": "PENDIENTE_GUION",
+ "instrucciones": "docs/tarea_guionista.md",
+ "creada": "2026-11-03T02:22:25Z",
+ "pieza_id": "I20261220-T114",
+ "archivo": "2026-12-20_imagen_T114-lote-5.json",
+ "intentos": 0,
+ "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial",
+ "ultima_categoria": "juridico",
+ "historial_reaperturas": [
+  {
+   "fecha": "2026-11-04",
+   "por": "Claude",
+   "motivo": "primer descarte (cobertura): la condición del art. 9 CPEUM (sin injurias, violencias ni amenazas) no quedó en lo visible",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Para peticiones o protestas ante la autoridad, se condiciona a no proferir injurias, ni usar violencias o amenazas.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Necesitas un permiso de la "
+  },
+  {
+   "fecha": "2026-11-04",
+   "por": "Claude",
+   "motivo": "pregunta sustituida tras el segundo descarte jurídico («¿Necesitas permiso para reunirte pacíficamente?», CPEUM 9: ninguna afirmación anclada en el texto oficial); ahora CPEUM 36 fr. III (respuesta literal; tema no usado en las últimas 3 semanas)",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"
+  }
+ ]
 }

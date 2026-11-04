@@ -13,7 +13,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "5",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+      "texto_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
       "jurisdiccion": "federal",
       "consultado": "2026-11-04"
@@ -35,7 +35,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "5",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie puede ser privado del producto de su trabajo, sino por resolución judicial",
+      "texto_literal": "sólo obligará a éste a la correspondiente responsabilidad civil, sin que en ningún caso pueda hacerse coacción sobre su persona",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
       "jurisdiccion": "federal",
       "consultado": "2026-11-04"
@@ -44,7 +44,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te pueden obligar a trabajar sin pago?",
+      "texto": "¿Te pueden obligar a trabajar sin pagarte?",
       "titulo": [
         "¿TRABAJAR",
         "SIN PAGO?"
@@ -53,65 +53,57 @@
     },
     {
       "tipo": "titular",
-      "texto": "Depende. Casi siempre se requiere pago, pero hay excepciones obligatorias y gratuitas.",
+      "texto": "Por regla general, no.",
       "titulo": [
-        "DEPENDE DE",
-        "LA FUNCIÓN"
+        "REGLA GENERAL:",
+        "NO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
-      "etiqueta": "Constitución, artículo 5",
-      "cita": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Servicios obligatorios:",
-      "items": [
-        "Armas",
-        "Jurados",
-        "Cargos concejiles",
-        "Electorales"
-      ],
+      "texto": "La Constitución dice: nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial.",
+      "etiqueta": "Constitución, art. 5",
+      "cita": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Se requiere pago y consentimiento para trabajos personales.",
-          "fuente": "F1"
+          "texto": "Nadie puede ser obligado a trabajar sin justa retribución y sin su consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente",
+      "texto": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente.",
       "encabezado": "Funciones electorales y censales",
-      "detalle": "Son gratuitas no profesionales",
-      "fuente_corta": "CPEUM, Art. 5",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Solo un juez puede quitarte tu pago. No se puede usar la fuerza para cumplir un contrato.",
-      "titulo": [
-        "TUS DERECHOS",
-        "CONSTITUCIONALES"
-      ],
+      "detalle": "Gratuitas, salvo si son profesionales",
+      "fuente_corta": "Constitución, art. 5",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Las funciones electorales no profesionales son gratuitas.",
-          "fuente": "F2"
-        },
+          "texto": "Las funciones electorales y censales son obligatorias y gratuitas, salvo las que se realizan profesionalmente.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Y si incumples tu contrato de trabajo, solo respondes civilmente, sin coacción sobre tu persona.",
+      "titulo": [
+        "SIN COACCIÓN",
+        "SOBRE TI"
+      ],
+      "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "Solo un juez puede quitarte el producto de tu trabajo.",
+          "texto": "El incumplimiento del contrato de trabajo por el trabajador solo genera responsabilidad civil, sin coacción sobre su persona.",
           "fuente": "F3"
         }
       ]
@@ -127,12 +119,12 @@
     "suficiente": true,
     "pregunta": "¿Te pueden obligar a trabajar sin pagarte?",
     "concepto_central": "trabajos personales y servicios públicos obligatorios",
-    "respuesta_corta": "Depende. Por regla general no, pero la ley establece que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente.",
+    "respuesta_corta": "Depende. Por regla general no; las excepciones son el trabajo impuesto como pena por la autoridad judicial y las funciones electorales y censales que no se realizan profesionalmente.",
     "reglas": [
       {
         "conclusion": "Nadie puede ser forzado a realizar trabajos personales si no existe un pago justo y el consentimiento de la persona.",
         "fuente": "F1",
-        "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+        "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial",
         "condiciones": [
           "Que no se trate de un trabajo impuesto como pena por autoridad judicial"
         ],
@@ -161,11 +153,11 @@
         }
       },
       {
-        "conclusion": "Ciertos cargos y servicios a la sociedad son obligatorios según lo determinen las leyes respectivas.",
-        "fuente": "F1",
-        "cita_literal": "sólo podrán ser obligatorios, en los términos que establezcan las leyes respectivas, el de las armas y los jurados, así como el desempeño de los cargos concejiles",
+        "conclusion": "Si el trabajador incumple su contrato de trabajo, solo responde civilmente y no se puede ejercer coacción sobre su persona.",
+        "fuente": "F3",
+        "cita_literal": "sólo obligará a éste a la correspondiente responsabilidad civil, sin que en ningún caso pueda hacerse coacción sobre su persona",
         "condiciones": [
-          "En los términos que establezcan las leyes respectivas"
+          "Se refiere a la falta de cumplimiento del contrato de trabajo por parte del trabajador"
         ],
         "excepciones": [],
         "ref": {
@@ -178,9 +170,9 @@
       {
         "elemento": "efecto",
         "estado": "cubierto",
-        "respuesta": "Nadie puede ser despojado de lo que gana por su trabajo a menos que exista una orden de un juez.",
+        "respuesta": "Por regla general no: se necesita justa retribución y pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial.",
         "fuente": "F1",
-        "cita_literal": "Nadie puede ser privado del producto de su trabajo, sino por resolución judicial"
+        "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial"
       },
       {
         "elemento": "vía",
@@ -244,7 +236,7 @@
   "pregunta_original": "¿Te pueden obligar a trabajar sin pagarte?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden obligar a trabajar sin pagarte?\n\nDepende. Por regla general no, pero la ley establece que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 5.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Por regla general, no. El artículo 5 de la Constitución dice: «Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial».\n\nTambién establece que «Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente».\n\nY si el trabajador no cumple su contrato de trabajo, este «sólo obligará a éste a la correspondiente responsabilidad civil, sin que en ningún caso pueda hacerse coacción sobre su persona».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -357,5 +349,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "se quita «Solo un juez puede quitarte tu pago» (el art. 5 habla del producto del trabajo, no del pago) y la lista «Armas, Jurados, Cargos concejiles, Electorales» (no se narraba y sugería que esos servicios no se pagan); la cita incluye la excepción del trabajo impuesto como pena judicial; la falta de coacción por incumplir el contrato ahora con cita literal (F3); detalle de la excepción corregido; texto de publicación con las citas"
+    }
+  ]
 }

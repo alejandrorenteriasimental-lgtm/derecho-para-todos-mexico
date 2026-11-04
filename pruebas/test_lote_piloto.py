@@ -445,6 +445,16 @@ def test_autoridad_conciliadora_no_es_persona_real():
     assert [x for x in auditoria.juridica(g2, date(2026, 10, 29))["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
 
 
+def test_fuerzas_armadas_no_es_persona_real():
+    """I20261221-T115 (4-11): «Fuerzas Armadas» (CPEUM 10, en la imagen) se detectó como persona real y retuvo la pieza."""
+    import auditoria
+    g = json.loads((AQUI.parent / "piezas" / "I20261221-T115" / "guion.json").read_text())
+    for r in (auditoria.editorial(g),):
+        assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"], r
+    g2 = {**g, "copy": g["copy"] + " Juan Pérez lo explica."}
+    assert [x for x in auditoria.editorial(g2)["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
+
+
 def test_encabezado_de_excepcion_coincide_con_la_narracion():
     """R20261130-T014 (29-10): tarjeta «Excepción por fallecimiento» con narración sobre salarios vencidos."""
     esc = {"tipo": "excepcion", "texto": "Y si en el juicio el patrón no comprueba la causa del despido, además te deben pagar los salarios vencidos.",
