@@ -453,3 +453,12 @@ def test_encabezado_de_excepcion_coincide_con_la_narracion():
     assert not razonamiento.coherencia_visible({"escenas": [{**esc, "encabezado": "Si el patrón no prueba la causa"}]})
     g = json.loads((AQUI.parent / "piezas" / "R20261130-T014" / "guion.json").read_text())
     assert not razonamiento.coherencia_visible(g)
+
+
+def test_mensaje_de_narracion_larga_dice_cuanto_recortar():
+    """4-11-2026: los Reels se descartaban con 710-750 caracteres porque la corrección no recortaba lo suficiente."""
+    import esquema
+    g = {"formato": "reel", "escenas": [{"tipo": "gancho", "texto": "x" * 700, "titulo": ["A"]},
+                                        {"tipo": "cierre", "texto": "Esto es información general, no asesoría legal."}]}
+    msg = [e for e in esquema.validar(g) if e.startswith("narración de ")]
+    assert msg and "sobran" in msg[0] and "recorta al menos" in msg[0]

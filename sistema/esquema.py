@@ -73,7 +73,11 @@ def validar(g):
         if len(e.get("encabezado", "")) > 44: err.append(f"escena {i}: encabezado demasiado largo")
         if len(e.get("detalle", "")) > 38: err.append(f"escena {i}: detalle demasiado largo")
         if e.get("tipo") == "cita" and len(e.get("cita", "")) > 220: err.append(f"escena {i}: cita demasiado larga para pantalla")
-    if esc and not (300 <= total <= MAX_NARRACION): err.append(f"narración de {total} caracteres (rango 300–{MAX_NARRACION}, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)")
+    if esc and not (300 <= total <= MAX_NARRACION):
+        # 4-11-2026: el redactor «corregía» 710 o 750 caracteres sin recortar lo suficiente; el mensaje dice cuánto quitar
+        ajuste = (f"; sobran {total - MAX_NARRACION}: recorta al menos {total - MAX_NARRACION + 60} caracteres (meta ≤ {MAX_NARRACION - 60}) "
+                  "quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción") if total > MAX_NARRACION else ""
+        err.append(f"narración de {total} caracteres (rango 300–{MAX_NARRACION}, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram){ajuste}")
     if esc and "no asesoría legal" not in esc[-1].get("texto", "").lower() and "no es asesoría legal" not in esc[-1].get("texto", "").lower():
         err.append("el cierre debe decir que es información general, no asesoría legal")
     if not any(e.get("afirmaciones") for e in esc): err.append("sin afirmaciones verificables")
