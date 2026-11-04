@@ -50,3 +50,15 @@ App propia de Aquí Dice la Ley (no la de Cronista Imposible). Claude no ve ni e
 5. De inmediato (el código caduca en minutos): GitHub → Actions → **tiktok-conectar** → Run workflow → pegar la dirección completa.
 
 Desde esa noche, `registro/tiktok.jsonl` muestra `"estado": "EN_BANDEJA"` para el Reel del día siguiente.
+
+## TikTok: estado al 3-11-2026 (19:40)
+
+Hecho por Claude en TikTok for Developers (sesión del responsable ya abierta; la app de Cronista Imposible no se tocó):
+- App **«Aquí Dice la Ley»** creada (id 7704095294446782482, propietario particular, tipo «Otros»).
+- Sandbox **«Publicador ADL»** (id 7704067410088953863) con Login Kit + Content Posting API (subida como borrador), alcances `user.info.basic` y `video.upload`, plataforma Web, URI de redirección `https://www.facebook.com/aquidicelaley/`, categoría Educación, ícono de la marca.
+- Provisional: términos, privacidad y sitio web apuntan a la página de Facebook. Antes de pedir la revisión de producción (que quitaría el modo borrador) hacen falta páginas propias de términos y privacidad.
+
+Falta, del responsable:
+1. Sandbox → Target users → Add account → iniciar sesión con @aquidicelaley.
+2. Copiar Client key y Client secret del Sandbox a GitHub como `TIKTOK_CLIENT_KEY` y `TIKTOK_CLIENT_SECRET`, y crear `TIKTOK_CLAVE` (contraseña larga inventada).
+3. Autorizar con la URL del paso 4 de arriba y correr `tiktok-conectar` con la dirección completa.
