@@ -56,7 +56,7 @@ Ver `docs/operacion_unica.md`. Al iniciar, revisar en `git log` si hay commits d
 
 ## Costos y límites
 
-- **GitHub Actions:** tope propio de 1,700 minutos al mes (`registro/actions_mes.json`).
+- **GitHub Actions:** tope propio de 1,850 minutos al mes para producción (autorizado 3-11 hasta 2,000, cuota gratuita comprobada; 150 reservados a publicación) (`registro/actions_mes.json`).
 - **Gemini:** cuota gratuita. Si aparece «tope propio diario», esperar al siguiente día del Pacífico.
 
 ## Reels en Instagram (decisión del responsable, 2-11-2026: opción B)
@@ -64,3 +64,12 @@ Ver `docs/operacion_unica.md`. Al iniciar, revisar en `git log` si hay commits d
 - En Instagram se publican los Reels aprobados que duran **45 s o menos** (`IG_REELS=corto`, `IG_REEL_MAX_S=45` en `data/lanzamiento.json`). Los más largos salen solo en Facebook.
 - Desde el lote 5 todos los Reels se producen de 45 s o menos: el redactor pide de 30 a 42 s, el esquema limita la narración a 620 caracteres y la auditoría técnica exige de 20 a 45 s.
 - Los Reels ya aprobados no se modifican.
+
+## Adelanto del lanzamiento (decisión del responsable, 3-11-2026)
+
+- **Fecha objetivo provisional: lunes 16-11-2026**, solo si hay 45 Reels + 45 imágenes aprobados y las integraciones funcionan. La fecha original (23-11) sigue vigente mientras el responsable no autorice expresamente el inicio.
+- **Candado:** `PUBLICAR_DESDE="2026-11-23"` en `data/lanzamiento.json`. Los días 16 al 22-11 pueden entrar al calendario, pero no se programan ni publican. **Solo el responsable lo cambia**, después de que Claude le confirme qué plataformas están listas y le pida la autorización concreta.
+- **Prioridad de producción:** completar 25 Reels y 22 imágenes; primero las piezas en REVISION_HUMANA, después las RETENIDAS que se puedan corregir sin rebajar la exactitud jurídica (si la causa es del tema, sustituir el tema). Las fechas de las solicitudes son solo espacios.
+- **Lugar en el calendario de cada pieza nueva aprobada:** el primer espacio libre de su formato desde el 16-11 (imagen 09:00, Reel 19:00), sin el mismo tema en el mismo formato en 7 días y sin la misma pregunta en imagen y Reel el mismo día. No mover nada de lo ya programado en Facebook (23-11 en adelante dentro de 28 días). La meta es la reserva de 45 días consecutivos desde el 16-11 (`registro/avance.md`).
+- **Activación del lote 6:** en cuanto el lote 5 tenga todas sus solicitudes redactadas.
+- **Minutos:** la guardia detiene los ciclos en 1,850 (cuota gratuita de 2,000 comprobada; presupuesto de Actions 0 USD con «Usage blocked»). Si el consumo diario supera 70 min con más de 10 días por delante, quitar el ciclo de las 15:17 hasta que la reserva esté completa o el mes cambie.

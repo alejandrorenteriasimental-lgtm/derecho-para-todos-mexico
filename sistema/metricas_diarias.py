@@ -22,7 +22,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 GRATIS_MES = 2000            # minutos incluidos al mes en repositorios privados (plan gratuito de GitHub)
-TOPE_PROPIO = 1700           # el ciclo se detiene antes de llegar al límite gratuito (margen para correcciones)
+TOPE_PROPIO = 1850           # 3-11: el responsable autorizó hasta 2,000 (cuota gratuita de GitHub Free, presupuesto de Actions en 0 USD con «Usage blocked», comprobado en Billing). El ciclo se detiene en 1,850 para reservar 150 min a la publicación (publicacion.yml y tiktok.yml no tienen guardia)
 META = {"reel": 7, "imagen": 7}
 LANZAMIENTO_OBJETIVO = date(2026, 11, 23)
 MX = timedelta(hours=-6)

@@ -143,7 +143,7 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA", "PUBLICAR_DESDE"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
 
@@ -158,7 +158,10 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
         res["pausa"] = p; return res
     cal = json.loads(CAL.read_text())
     hasta = env.get("PUBLICAR_HASTA")            # 3-11: el responsable autoriza la publicación por tramos de fechas
+    desde = env.get("PUBLICAR_DESDE")            # 3-11: días previos al 23-11 (adelanto) no se programan sin autorización expresa
     for dia in cal["dias"]:
+        if desde and dia["fecha"] < desde:
+            continue
         if hasta and dia["fecha"] > hasta:
             continue                               # en el calendario, aprobada o no, pero sin autorización de publicación todavía
         for fmt in ("imagen", "reel"):

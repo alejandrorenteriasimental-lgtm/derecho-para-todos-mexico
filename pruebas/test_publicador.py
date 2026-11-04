@@ -122,6 +122,20 @@ def test_publicar_hasta_no_programa_fechas_posteriores(ent, monkeypatch):
     assert any(a["fecha"] > "2026-11-25" for a in r2["acciones"])
 
 
+def test_publicar_desde_no_programa_dias_de_adelanto(ent, monkeypatch):
+    # 3-11-2026: los días previos al 23-11 pueden estar en el calendario, pero no se programan sin autorización expresa
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
+    r = publicador.ejecutar(datetime(2026, 11, 20, tzinfo=timezone.utc), env={"PUBLICAR_DESDE": "2026-11-24"}, bajar=ent["bajar"])
+    assert r["acciones"] and all(a["fecha"] >= "2026-11-24" for a in r["acciones"])
+    r2 = publicador.ejecutar(datetime(2026, 11, 20, tzinfo=timezone.utc), env={}, bajar=ent["bajar"])
+    assert any(a["fecha"] < "2026-11-24" for a in r2["acciones"])
+
+
+def test_autorizacion_lee_publicar_desde_del_archivo():
+    env = publicador.con_autorizacion({})
+    assert env.get("PUBLICAR_DESDE") == "2026-11-23"
+
+
 def test_reel_largo_usa_en_instagram_solo_la_version_corta_aprobada(ent, monkeypatch, tmp_path):
     # 3-11-2026, opción c: el original sigue en Facebook; en Instagram va la versión -IG solo si el responsable la aprobó
     monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)

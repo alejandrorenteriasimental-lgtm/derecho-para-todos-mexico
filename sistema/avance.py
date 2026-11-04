@@ -10,6 +10,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 INICIO, FIN, META = date(2026, 11, 23), date(2027, 2, 20), 90
+ADELANTO = date(2026, 11, 16)     # fecha objetivo provisional del responsable (3-11), condicionada a 45 + 45
 
 
 def terminada(e):
@@ -40,13 +41,18 @@ def calcular(calendario, cola, hoy=None):
         if f in cubiertos: seguidos = f
         else: break
     r["cubierto_sin_huecos_hasta"] = str(seguidos) if seguidos >= INICIO else None
+    # 3-11: reserva para el adelanto (objetivo provisional 16-11): días consecutivos completos desde esa fecha
+    adel, n = ADELANTO, 0
+    while all(terminada(dias.get((adel + timedelta(n)).isoformat(), {}).get(x)) for x in ("imagen", "reel")): n += 1
+    r["reserva_desde_adelanto"] = {"desde": str(adel), "dias_consecutivos": n, "meta": 45}
     return r
 
 
 def markdown(r):
     l = [f"# Avance de la primera etapa ({r['periodo']})", "",
          f"**Terminadas: {r['total']}** · imágenes {r['terminadas']['imagen']}/90 · Reels {r['terminadas']['reel']}/90",
-         f"Calendario completo y sin huecos hasta: {r['cubierto_sin_huecos_hasta'] or '—'}", "",
+         f"Calendario completo y sin huecos hasta: {r['cubierto_sin_huecos_hasta'] or '—'}",
+         f"Reserva para lanzar el {r['reserva_desde_adelanto']['desde']}: {r['reserva_desde_adelanto']['dias_consecutivos']}/45 días consecutivos", "",
          "| Quincena | Imágenes | Reels |", "|---|---|---|"]
     l += [f"| {q['del']} al {q['al']} | {q['imagen']}/{q['dias']} | {q['reel']}/{q['dias']} |" for q in r["quincenas"]]
     l += ["", "Próximos huecos: " + (", ".join(r["huecos_proximos"]) or "ninguno"), "",

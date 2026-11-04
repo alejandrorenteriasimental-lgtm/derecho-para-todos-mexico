@@ -23,3 +23,8 @@ def test_cuenta_solo_piezas_completas_y_huecos():
 def test_fuera_del_periodo_no_cuenta():
     r = avance.calcular({"dias": [{"fecha": "2027-02-21", "imagen": OK, "reel": OK}]}, {})
     assert r["total"] == "0/180" and r["cubierto_sin_huecos_hasta"] is None
+
+
+def test_reserva_desde_el_adelanto():
+    cal = {"dias": [{"fecha": f"2026-11-{d}", "imagen": OK, "reel": OK} for d in (16, 17, 19)]}
+    assert avance.calcular(cal, {})["reserva_desde_adelanto"]["dias_consecutivos"] == 2
