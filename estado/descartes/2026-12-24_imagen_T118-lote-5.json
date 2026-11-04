@@ -1,50 +1,120 @@
 {
  "solicitud": "2026-12-24_imagen_T118-lote-5.json",
- "fecha": "2026-11-03T22:20:34+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Es el importe de doce días de salario por cada año de servicios al que tienen derecho los trabajadores de planta bajo determinadas condiciones. \\n consistirá en el imp",
+ "fecha": "2026-11-04T20:09:22+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"[minimo] «Importe de doce días de salario por año de servicios, pagadero por separación voluntaria c» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobert",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
-   "errores": [
-    "[condiciones] Ley Federal del Trabajo, art. 162 condiciona la regla («…ajadores de planta tienen derecho a una prima de antiguedad de conformidad con las normas siguientes i la prima de antiguedad consistira en el importe…») y la conclusión «La prima de antigüedad consiste en doce días de salario por » no declara condiciones."
-   ]
-  },
-  {
-   "etapa": "analisis",
-   "intento": 1,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ],
-   "visible": "  \n   \n Es el importe de doce días de salario por cada año de servicios para los trabajadores de planta bajo determinadas condiciones. \n La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios; \n Aplica a trabajadores de planta"
+   "visible": "  \n   \n Es el importe de doce días de salario por cada año de servicios para trabajadores de planta según la Ley Federal del Trabajo. \n La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios; \n Separación voluntaria: al menos 15 años de servicios."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La aplicación de la prima en casos de separación por causa justificada, despido (independientemente de su justificación) y muerte del trabajador.",
+      "La aclaración de que esta prestación se paga independientemente de cualquier otra que corresponda al trabajador."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La prima de antigüedad consiste en doce días de salario por cada año de servicios para los trabajadores de planta.",
+      "sostenida": "si",
+      "motivo": "El artículo 162, fracción I, establece explícitamente esta definición."
+     },
+     {
+      "conclusion": "Se paga a los trabajadores que se separen voluntariamente cumpliendo al menos quince años de servicios, a los que se separen por causa justificada, y a los separados por despido.",
+      "sostenida": "parcial",
+      "motivo": "Aunque el razonamiento interno contempla estos supuestos, el texto visible (copy) omite los casos de separación por causa justificada, despido y muerte, lo cual es una omisión sustancial."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "El texto visible (copy) y la bajada.",
+      "problema": "La pieza presenta la prima de antigüedad enfocándose casi exclusivamente en la separación voluntaria tras 15 años, omitiendo que también procede en casos de despido, separación por causa justificada y muerte.",
+      "correccion": "Incluir en el texto visible que la prima también se paga a quienes se separen por causa justificada, a quienes sean separados de su empleo (despido) y, en caso de muerte, a los beneficiarios sin importar la antigüedad."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
    "errores_esquema": [
-    "[minimo] «Se exigen quince años en separación voluntaria» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+    "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[minimo] «Se paga por separación voluntaria con quince años, separación justificada, despido o muert» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si el retiro voluntario excede del diez por ciento de los trabajadores en un año, el pago a los excedentes puede diferirse para el año siguiente.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n Es el importe de doce días de salario por cada año de servicios para los trabajadores de planta bajo determinadas condiciones. \n La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios; \n Se exigen quince años en separación voluntaria"
+   "visible": "  \n   \n Son doce días de salario por año de servicios. Se paga por separación voluntaria con quince años, separación justificada, despido o muerte. \n La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios \n Separación voluntaria requiere por lo menos quince años."
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La prima de antigüedad consiste en el importe de doce días de salario por cada año de servicios prestados.",
+      "sostenida": "si",
+      "motivo": "El artículo 162, fracción I, establece exactamente esta definición."
+     },
+     {
+      "conclusion": "Esta prestación se otorga por separación voluntaria con quince años de servicios, por lo menos, así como en casos de separación justificada, despido o muerte.",
+      "sostenida": "si",
+      "motivo": "El artículo 162, fracciones III y V, contempla estos supuestos de procedencia."
+     },
+     {
+      "conclusion": "Si el número de personas que se retira voluntariamente excede del diez por ciento en un año, el pago a los excedentes puede diferirse para el año siguiente.",
+      "sostenida": "si",
+      "motivo": "El artículo 162, fracción IV, inciso b, prevé esta posibilidad de diferimiento."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Párrafo tercero: 'Es importante distinguir que la renuncia es la separación decidida por la persona trabajadora, mientras que el despido es la separación decidida por el patrón.'",
+      "problema": "El texto oficial no define los conceptos de 'renuncia' ni 'despido', sino que utiliza los términos 'separen voluntariamente' y 'separados de su empleo'. La pieza agrega definiciones externas que no están en la fuente proporcionada.",
+      "correccion": "Eliminar la distinción conceptual o limitarse a usar los términos exactos que emplea la Ley Federal del Trabajo en el artículo 162."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+    "[minimo] «Importe de doce días de salario por año de servicios, pagadero por separación voluntaria c» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[cobertura] El análisis responde qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) («Si el retiro voluntario excede del diez por ciento de los trabajadores en un año, el pago a los excedentes puede diferirse para el año siguiente.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n Es el importe de doce días de salario por cada año de servicios al que tienen derecho los trabajadores de planta bajo determinadas condiciones. \n consistirá en el importe de doce días de salario, por cada año de servicios \n Aplica a trabajadores de planta."
+   "visible": "  \n   \n Importe de doce días de salario por año de servicios, pagadero por separación voluntaria con quince años, separación justificada, despido o muerte. \n La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios \n Separación voluntaria: al menos quince años"
   }
  ]
 }

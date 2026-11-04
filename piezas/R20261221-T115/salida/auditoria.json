@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.4 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.4 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "2f7006289a5eff39"
+      "detalle": "4bb71a58e461797b"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261221-T115",
     "titulo": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
-    "fecha": "2026-11-04T12:17:16+00:00",
-    "sha256": "2f7006289a5eff39872e7cd3411ea1ca04aee0b7ee9708a66f639463d69ddf6e",
-    "duracion_s": 38.4,
+    "fecha": "2026-11-04T20:13:41+00:00",
+    "sha256": "4bb71a58e461797bfde1922cc24b8ce9a7d4cbc787463ba4e1761483cffc9a69",
+    "duracion_s": 38.0,
     "estado": "APTO",
-    "huella_guion": "f117267a866a15c622446a2c7bc18dceb370b3303b5abefe95bb76cff85326e1",
+    "huella_guion": "2b834f65d0b31644c27e01e1fe16adb6e2427d045ebfe08091217daf7b766b45",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 23.7,
-      "musica": 2.6,
-      "render_video": 45.6,
-      "mezcla_audio": 2.3,
-      "auditoria_tecnica": 10.2
+      "narracion": 9.4,
+      "musica": 1.1,
+      "render_video": 26.0,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 6.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.41,
-      "computo_equivalente_runner_usd": 0.0084,
+      "computo_minutos": 0.73,
+      "computo_equivalente_runner_usd": 0.0044,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1150,
-    "caracteres_narrados": 553
+    "frames": 1137,
+    "caracteres_narrados": 546
   }
 }

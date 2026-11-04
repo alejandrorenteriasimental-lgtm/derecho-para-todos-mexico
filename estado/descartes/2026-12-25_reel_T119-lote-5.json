@@ -1,0 +1,86 @@
+{
+ "solicitud": "2026-12-25_reel_T119-lote-5.json",
+ "fecha": "2026-11-04T20:00:24+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza omite mencionar la limitante fundamental del juez respecto a la reparación del daño: el juzgador solo puede condenar a la reparación si previamente ha emitido una sentencia condenatoria por el delito.\"]}, \"conclusiones\": [{\"conclusion\": \"La víctima tie",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La facultad de la víctima u ofendido para solicitar la reparación del daño de manera directa, sin depender exclusivamente de la actuación del Ministerio Público."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La víctima tiene derecho a la reparación del daño, debiendo el Ministerio Público solicitarla cuando sea procedente y el juez no absolver al sentenciado en caso de condena.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una derivación válida de la fracción IV del inciso C del artículo 20, que establece la obligación del MP y la prohibición de absolver de la reparación en caso de condena."
+     },
+     {
+      "conclusion": "La víctima tiene derecho a que se le repare el daño cuando sea procedente y el Ministerio Público debe solicitarlo.",
+      "sostenida": "si",
+      "motivo": "Se ajusta estrictamente a la redacción de la norma constitucional."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Razonamiento y elementos de la pieza",
+      "problema": "La pieza omite un mecanismo de ejercicio del derecho: la capacidad de la víctima de solicitar la reparación directamente, lo que puede dar la impresión de que el derecho solo se activa vía Ministerio Público.",
+      "correccion": "Incluir que la reparación puede ser solicitada directamente por la víctima u ofendido, sin menoscabo de la obligación del Ministerio Público de hacerlo."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 768 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 148: recorta al menos 208 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿La víctima de un delito tiene derecho a la reparación del daño? \n ¿VÍCTIMA DE DELITO? \n ¿DERECHO A REPARAR? \n DAÑO CAUSADO? \n Sí, la víctima o el ofendido tiene derecho a que se le repare el daño en los casos en que sea procedente. \n DERECHO A LA \n REPARACIÓN \n La ley establece que el Ministerio Público está obligado a solicitar la reparación del daño, sin menoscabo de que la víctima u ofendido lo pueda solicitar directamente: En los casos en que sea procedente, el Ministerio Público estará obligado a solicitar la reparación del daño, sin menoscabo de que la víctima u ofendido lo pueda solicitar directamente \n En los casos en que sea procedente, el Ministerio Público estará obligado a s"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 768 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 148: recorta al menos 208 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza omite mencionar la limitante fundamental del juez respecto a la reparación del daño: el juzgador solo puede condenar a la reparación si previamente ha emitido una sentencia condenatoria por el delito."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La víctima tiene derecho a que se le repare el daño y puede solicitarlo directamente, además de la obligación del Ministerio Público.",
+      "sostenida": "si",
+      "motivo": "El artículo 20, apartado C, fracción IV, establece explícitamente el derecho a la reparación, la obligación del Ministerio Público de solicitarla y la facultad de la víctima de solicitarla directamente."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo 'lista', ítem: 'Juez resuelve condena'",
+      "problema": "La pieza simplifica la actuación del juez omitiendo la condición necesaria establecida en el artículo 20, apartado C, fracción IV: el juzgador no puede absolver de la reparación si ha emitido una sentencia condenatoria, lo que implica que la reparación está vinculada a la existencia de dicha sentencia.",
+      "correccion": "Añadir que el derecho a la reparación del daño está condicionado a que el juzgador emita una sentencia condenatoria, pues el texto señala: 'el juzgador no podrá absolver al sentenciado de dicha reparación si ha emitido una sentencia condenatoria'."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "I20261226-T120",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Pueden censurar antes de publicar?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T120",
+  "pieza": {
+    "titular": "¿Pueden censurar antes de publicar?",
+    "bajada": "Conoce qué dice la Constitución sobre la libertad de difundir ideas.",
+    "mito": "Las autoridades pueden prohibir lo que publicas antes de que salga.",
+    "realidad": "No: ninguna ley ni autoridad puede establecer la previa censura ni coartar la libertad de difusión.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 7"
+  },
+  "copy": "La libertad de difundir opiniones, información e ideas a través de cualquier medio es un derecho protegido en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 7, «Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución».\n\nGuarda esta información y compártela para conocer tus derechos al difundir contenidos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija con el mito de que se puede prohibir una publicación antes de salir y la realidad constitucional que lo prohíbe.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "7",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 7",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Ninguna ley o autoridad puede establecer previa censura ni coartar la libertad de difusión.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Pueden censurar lo que publicas antes de que lo publiques?",
+    "concepto_central": "previa censura",
+    "respuesta_corta": "No: ninguna ley ni autoridad puede establecer la previa censura ni coartar la libertad de difusión de opiniones, información e ideas.",
+    "reglas": [
+      {
+        "conclusion": "Ninguna ley o autoridad puede establecer censura previa ni restringir la libertad de difusión, salvo los límites del artículo 6 constitucional.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o.",
+        "condiciones": [
+          "con los límites previstos en el primer párrafo del artículo 6o. de la Constitución"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "7"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Ninguna ley ni autoridad puede establecer la previa censura ni coartar la libertad de difusión.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla el contenido exacto de los límites previstos en el artículo 6 de la Constitución, limitándose a mencionarlos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T20:10:11+00:00",
+    "solicitud": "2026-12-26_imagen_T120-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Pueden censurar lo que publicas antes de que lo publiques?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Ninguna ley o autoridad puede establecer censura previa ni restringir la libertad de difusión, salvo los límites del artículo 6 constitucional.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente la prohibición absoluta de censura previa establecida en el artículo 7 de la Constitución, reconociendo explícitamente la remisión a los límites del artículo 6."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

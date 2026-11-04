@@ -1,0 +1,165 @@
+{
+  "id": "I20261227-T121",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Tu patrón debe darte constancia?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T121",
+  "pieza": {
+    "titular": "¿Tu patrón debe darte constancia?",
+    "bajada": "Sí, el patrón debe entregarla cada quince días, siempre y cuando el trabajador la solicite.",
+    "cita": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 132",
+    "ojo": "Debe detallar el número de días trabajados y el salario percibido.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 132"
+  },
+  "copy": "De acuerdo con la Ley Federal del Trabajo, las personas empleadoras tienen obligaciones específicas para con quienes laboran en sus empresas o establecimientos.\n\nEl artículo 132 de dicha ley establece que el patrón debe expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido.\n\nComparte o guarda esta información para conocer tus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que responde si el patrón debe entregar constancia de días trabajados y salario según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "132",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido",
+      "cita": "Ley Federal del Trabajo, artículo 132",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El patrón tiene la obligación de expedir una constancia escrita de los días trabajados y el salario percibido cada quince días si el trabajador lo solicita.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+    "concepto_central": "constancia escrita del número de días trabajados y del salario percibido",
+    "respuesta_corta": "Sí, el patrón debe entregarla cada quince días, siempre y cuando el trabajador la solicite.",
+    "reglas": [
+      {
+        "conclusion": "El patrón tiene la obligación de expedir una constancia escrita de los días trabajados y el salario percibido cada quince días si el trabajador lo solicita.",
+        "fuente": "F1",
+        "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido",
+        "condiciones": [
+          "a solicitud de los trabajadores"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "132"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El patrón debe expedir una constancia escrita del número de días trabajados y del salario percibido cada quince días.",
+        "fuente": "F1",
+        "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica cuando el trabajador la solicita y debe entregarse cada quince días.",
+        "fuente": "F1",
+        "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "F1",
+        "cita_literal": "",
+        "motivo": "El texto oficial no prevé excepciones para esta obligación."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no establece el procedimiento ni las consecuencias legales en caso de que el patrón se niegue a entregar la constancia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T20:10:41+00:00",
+    "solicitud": "2026-12-27_imagen_T121-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n Sí, el patrón debe entregarla cada quince días, siempre y cuando el trabajador la solicite. \n Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido \n Debe ser a solicitud."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El patrón tiene la obligación de expedir una constancia escrita de los días trabajados y el salario percibido cada quince días si el trabajador lo solicita.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente la fracción VII del artículo 132 de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

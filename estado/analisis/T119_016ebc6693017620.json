@@ -1,0 +1,51 @@
+{
+ "tema_id": "T119",
+ "pregunta": "¿La víctima de un delito tiene derecho a la reparación del daño?",
+ "fecha": "2026-11-04T19:56:08+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La víctima de un delito tiene derecho a la reparación del daño?",
+  "concepto_central": "reparación del daño",
+  "respuesta_corta": "Sí, la víctima o el ofendido tiene derecho a que se le repare el daño en los casos en que sea procedente.",
+  "reglas": [
+   {
+    "conclusion": "La víctima tiene derecho a la reparación del daño, debiendo el Ministerio Público solicitarla cuando sea procedente y el juez no absolver al sentenciado en caso de condena.",
+    "fuente": "F1",
+    "cita_literal": "Que se le repare el daño. En los casos en que sea procedente, el Ministerio Público estará obligado a solicitar la reparación del daño",
+    "condiciones": [
+     "en los casos en que sea procedente"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La víctima u ofendido tiene derecho a que se le repare el daño ocasionado por el delito.",
+    "fuente": "F1",
+    "cita_literal": "Que se le repare el daño. En los casos en que sea procedente"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica en los supuestos en que la reparación resulte procedente dentro del proceso penal.",
+    "fuente": "F1",
+    "cita_literal": "En los casos en que sea procedente, el Ministerio Público estará obligado a solicitar la reparación del daño"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones específicas a este derecho."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no detallan los métodos de cálculo, los montos específicos ni los procedimientos exactos para fijar la reparación del daño.",
+  "fuentes_irrelevantes": []
+ }
+}

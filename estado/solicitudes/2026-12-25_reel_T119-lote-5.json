@@ -12,13 +12,13 @@
   "lote": "lote-5",
   "motivo_seleccion": "Art. 20 apartado C fr. IV CPEUM: derecho de la víctima a que se le repare el daño.",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-03T02:22:25Z",
   "pieza_id": "R20261225-T119",
   "archivo": "2026-12-25_reel_T119-lote-5.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza omite mencionar la limitante fundamental del juez respecto a la reparación del daño: el juzgador solo puede condenar a la reparación si previamente ha emitido una sentencia condenatoria por el delito.\"]}, \"conclusiones\": [{\"conclusion\": \"La víctima tie",
+  "ultima_categoria": "juridico",
   "huella_entrada": "08eb3262f6bb9c18"
 }

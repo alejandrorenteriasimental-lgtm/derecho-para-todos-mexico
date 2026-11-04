@@ -1,0 +1,68 @@
+{
+ "tema_id": "T121",
+ "pregunta": "¿Qué debe informarte una tienda en línea antes de comprar?",
+ "fecha": "2026-11-04T20:04:34+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué debe informarte una tienda en línea antes de comprar?",
+  "concepto_central": "información previa en transacciones electrónicas",
+  "respuesta_corta": "Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos, términos y elementos de seguridad.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor debe informar previamente las características de los elementos técnicos de seguridad y confidencialidad.",
+    "fuente": "F1",
+    "cita_literal": "informará a éste, previamente a la celebración de la transacción, de las características generales de dichos elementos",
+    "condiciones": [
+     "previo a la celebración de la transacción"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El proveedor debe proporcionar su domicilio físico, números telefónicos y medios para reclamaciones o aclaraciones antes de la transacción.",
+    "fuente": "F1",
+    "cita_literal": "deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones",
+    "condiciones": [
+     "antes de celebrar la transacción"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El consumidor tiene derecho a conocer los términos, condiciones, costos, cargos adicionales y formas de pago.",
+    "fuente": "F1",
+    "cita_literal": "El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveedor",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Se debe informar si el servicio implica cobros automáticos recurrentes, periodicidad, monto y fecha.",
+    "fuente": "F1",
+    "cita_literal": "informar de forma clara, destacada y accesible si el servicio contratado implica cobros automáticos recurrentes, su periodicidad, monto y fecha de cobro.",
+    "condiciones": [
+     "si el servicio contratado implica cobros automáticos recurrentes"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La tienda debe informarte su domicilio, teléfonos, medios de reclamación, características de seguridad, términos, costos, cargos adicionales y si existen cobros automáticos recurrentes.",
+    "fuente": "F1",
+    "cita_literal": "El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveedor"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Toda esta información debe proporcionarse antes de celebrar la transacción.",
+    "fuente": "F1",
+    "cita_literal": "deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos oficiales no detallan las consecuencias específicas o sanciones aplicables si la tienda omite proporcionar esta información antes de la compra.",
+  "fuentes_irrelevantes": []
+ }
+}

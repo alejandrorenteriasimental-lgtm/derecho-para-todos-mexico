@@ -1,0 +1,51 @@
+{
+ "tema_id": "T121",
+ "pregunta": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+ "fecha": "2026-11-04T20:10:31+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tu patrón debe darte una constancia de días trabajados y salario?",
+  "concepto_central": "constancia escrita del número de días trabajados y del salario percibido",
+  "respuesta_corta": "Sí, el patrón debe entregarla cada quince días, siempre y cuando el trabajador la solicite.",
+  "reglas": [
+   {
+    "conclusion": "El patrón tiene la obligación de expedir una constancia escrita de los días trabajados y el salario percibido cada quince días si el trabajador lo solicita.",
+    "fuente": "F1",
+    "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido",
+    "condiciones": [
+     "a solicitud de los trabajadores"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El patrón debe expedir una constancia escrita del número de días trabajados y del salario percibido cada quince días.",
+    "fuente": "F1",
+    "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando el trabajador la solicita y debe entregarse cada quince días.",
+    "fuente": "F1",
+    "cita_literal": "Expedir cada quince días, a solicitud de los trabajadores, una constancia escrita del número de días trabajados y del salario percibido"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones para esta obligación."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no establece el procedimiento ni las consecuencias legales en caso de que el patrón se niegue a entregar la constancia.",
+  "fuentes_irrelevantes": []
+ }
+}

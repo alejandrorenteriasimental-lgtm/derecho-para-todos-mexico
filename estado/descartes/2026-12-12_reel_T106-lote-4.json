@@ -1,26 +1,33 @@
 {
  "solicitud": "2026-12-12_reel_T106-lote-4.json",
- "fecha": "2026-11-04T11:59:49+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden mandar publicidad si pediste no recibirla? \\n ¿TE PUEDEN \\n MA",
+ "fecha": "2026-11-04T19:55:50+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[vaguedad] Referencia vaga: «Consulta la ley.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.\"], \"visible\": \"  \\n ¿Te pueden mandar publicidad si pediste no recibirla? \\n ¿TE PUEDEN \\n MANDAR \\n PUBLICIDAD? \\n No, queda prohibido enviar publicidad a los consumidores que expresamente manifestaron su vo",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «efecto» («El envío de publicidad a quienes manifestaron no querer reci») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 704 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 84: recorta al menos 144 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No. Queda prohibido a proveedores y empresas enviar publicidad a quienes manifestaron expresamente su voluntad de no recibirla o estén en el registro. \n NO ESTÁ \n PERMITIDO \n La norma indica: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n Las opciones para la ins"
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE MANDAN \n PUBLICIDAD? \n No, queda prohibido enviar publicidad a los consumidores que expresamente manifestaron no querer recibirla o estén inscritos en el registro. \n LO QUE \n DICE LA LEY \n La norma establece que se prohíbe así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n Esto aplica bajo los sigu"
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 704 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 84: recorta al menos 144 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ]
   },
   {
@@ -30,43 +37,71 @@
     "veredicto": "con_objeciones",
     "cobertura": {
      "responde_nucleo": true,
-     "faltantes": [
-      "No se menciona que la inscripción al registro es un medio para ejercer este derecho, aunque la prohibición también opera por la manifestación expresa de voluntad."
-     ]
+     "faltantes": []
     },
     "conclusiones": [
      {
-      "conclusion": "Está prohibido enviar publicidad a consumidores que hayan manifestado expresamente su voluntad de no recibirla o que estén inscritos en el registro público de la Procuraduría.",
+      "conclusion": "Está prohibido enviar publicidad a los consumidores que manifestaron su voluntad de no recibirla o que están inscritos en el registro.",
       "sostenida": "si",
-      "motivo": "La conclusión se deriva directamente del texto del artículo 18 Bis."
+      "motivo": "La afirmación se desprende directamente de la prohibición establecida en el artículo 18 Bis."
      },
      {
-      "conclusion": "La Procuraduría puede llevar un registro público y gratuito para consumidores que no deseen que su información se use con fines mercadotécnicos o publicitarios.",
-      "sostenida": "si",
-      "motivo": "La conclusión es una paráfrasis exacta de las facultades y características del registro descritas en el artículo 18."
+      "conclusion": "La consecuencia jurídica es que queda prohibido el envío de publicidad y los proveedores son corresponsables si la envían a través de terceros.",
+      "sostenida": "parcial",
+      "motivo": "La cita literal proporcionada para este elemento solo contiene la parte referente a la prohibición, omitiendo el fragmento que sustenta la corresponsabilidad de los proveedores."
      }
     ],
     "objeciones": [
      {
-      "donde": "lista",
-      "problema": "La lista de 'opciones para la inscripción' incluye 'Registro en Procuraduría' como un ítem separado, lo cual es redundante y confuso, ya que el registro es el fin, no el medio.",
-      "correccion": "Los ítems deben ser únicamente los medios de comunicación: 'Solicitud por escrito' y 'Correo electrónico'."
-     },
-     {
-      "donde": "titular (segundo)",
-      "problema": "El titular 'No está permitido' es una simplificación que, aunque correcta en el contexto, no especifica que la prohibición recae sobre proveedores y empresas que utilicen información con fines mercadotécnicos o publicitarios.",
-      "correccion": "Asegurar que el cuerpo del texto o la interpretación siempre vincule la prohibición a los sujetos obligados (proveedores y empresas) mencionados en el artículo 18 Bis."
+      "donde": "razonamiento.elementos[0]",
+      "problema": "Inconsistencia entre la conclusión del elemento 'efecto' y su cita literal: la cita no menciona la corresponsabilidad.",
+      "correccion": "Añadir al campo 'cita_literal' el fragmento: 'Los proveedores que sean objeto de publicidad son corresponsables del manejo de la información de consumidores cuando dicha publicidad la envíen a través de terceros.'"
      }
     ]
    }
   },
   {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 776 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 156: recorta al menos 216 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No, queda prohibido enviar publicidad a los consumidores que expresamente manifestaron su voluntad de no recibirla. \n NO SE PERMITE \n ESTA PRÁCTICA \n La ley señala que queda prohibido enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manif"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 776 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 156: recorta al menos 216 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[vaguedad] Referencia vaga: «Consulta la ley.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No, queda prohibido enviar publicidad a los consumidores que expresamente manifestaron su voluntad de no recibirla. \n NO SE PERMITE \n ESTA PRÁCTICA \n La ley lo prohíbe:: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n Los proveedores son corresponsables si: \n Enví"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[vaguedad] Referencia vaga: «Consulta la ley.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ]
+  },
+  {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 820 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 200: recorta al menos 260 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "[vaguedad] Referencia vaga: «Consulta la ley.». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ],
-   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No. Queda prohibido a proveedores y empresas enviar publicidad a quienes manifestaron expresamente su voluntad de no recibirla o estén en el registro. \n ESTÁ \n PROHIBIDO \n Queda prohibido a los proveedores y empresas enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla \n Puedes solicitar tu inscripción en el regis"
+   "visible": "  \n ¿Te pueden mandar publicidad si pediste no recibirla? \n ¿TE PUEDEN \n MANDAR \n PUBLICIDAD? \n No, queda prohibido enviar publicidad a los consumidores que expresamente manifestaron su voluntad de no recibirla. \n NO SE PERMITE \n ESTA PRÁCTICA \n La ley lo prohíbe:: así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n así como enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior. \n Consulta la Ley Federal de Protección al Consu"
   }
  ]
 }

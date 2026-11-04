@@ -15,14 +15,14 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "Prima de antigüedad: doce días de salario por cada año de servicios (LFT 162); el «OJO» con un dato distinto: en la separación voluntaria se paga a quienes tengan por lo menos quince años de servicios (decir «por lo menos»)",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-03T02:22:25Z",
   "pieza_id": "I20261224-T118",
   "archivo": "2026-12-24_imagen_T118-lote-5.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: falló repetidamente en este ciclo (no se vuelve a llamar)",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"[minimo] «Importe de doce días de salario por año de servicios, pagadero por separación voluntaria c» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobert",
+  "ultima_categoria": "juridico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-04",

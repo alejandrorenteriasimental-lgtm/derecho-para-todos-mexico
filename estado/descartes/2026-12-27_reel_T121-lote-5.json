@@ -1,0 +1,77 @@
+{
+ "solicitud": "2026-12-27_reel_T121-lote-5.json",
+ "fecha": "2026-11-04T20:06:59+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Sabes qué datos debe darte una tienda digital antes de realizar una compr",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 770 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 150: recorta al menos 210 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Sabes qué información obligatoria debe darte una tienda antes de pagar? \n ¿COMPRAS EN LÍNEA? \n ¡MUCHO OJO! \n Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos, términos y elementos de seguridad. \n ANTES DE \n COMPRAR \n La ley señala que el proveedor tiene obligaciones muy claras sobre los datos de contacto previos: deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones \n deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demá"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 770 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 150: recorta al menos 210 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La lista final de puntos clave omite mencionar la obligación de informar sobre cobros automáticos recurrentes, a pesar de ser un requisito legal explícito en el artículo 76 Bis, fracción VIII."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El proveedor debe informar previamente las características de los elementos técnicos de seguridad y confidencialidad.",
+      "sostenida": "si",
+      "motivo": "El artículo 76 Bis, fracción II, establece explícitamente esta obligación previa."
+     },
+     {
+      "conclusion": "El proveedor debe proporcionar su domicilio físico, números telefónicos y medios para reclamaciones o aclaraciones antes de la transacción.",
+      "sostenida": "si",
+      "motivo": "El artículo 76 Bis, fracción III, impone esta obligación antes de celebrar la transacción."
+     },
+     {
+      "conclusion": "El consumidor tiene derecho a conocer los términos, condiciones, costos, cargos adicionales y formas de pago.",
+      "sostenida": "si",
+      "motivo": "El artículo 76 Bis, fracción V, reconoce este derecho del consumidor."
+     },
+     {
+      "conclusion": "Se debe informar si el servicio implica cobros automáticos recurrentes, periodicidad, monto y fecha.",
+      "sostenida": "si",
+      "motivo": "El artículo 76 Bis, fracción VIII, establece esta obligación de forma clara y destacada."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'lista'",
+      "problema": "La lista de puntos clave es incompleta al omitir la obligación de informar sobre cobros automáticos recurrentes, la cual es una obligación específica del artículo 76 Bis, fracción VIII.",
+      "correccion": "Agregar a la lista: 'Información sobre cobros automáticos recurrentes (si el servicio los implica)'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Sabes qué datos debe darte una tienda digital antes de realizar una compra? \n COMPRAS \n EN LÍNEA \n Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos, términos y elementos de seguridad. \n INFORMACIÓN \n PREVIA \n La ley establece este derecho de la siguiente manera: El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveedor \n El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveed"
+  }
+ ]
+}

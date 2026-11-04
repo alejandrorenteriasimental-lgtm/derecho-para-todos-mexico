@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.5 s"
+      "detalle": "35.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.5 s"
+      "detalle": "35.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "26 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "cea18060127f68f6"
+      "detalle": "2d04fc96985db0f6"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261218-T112",
     "titulo": "¿Te deben pagar algo extra en tus vacaciones?",
-    "fecha": "2026-11-04T12:15:00+00:00",
-    "sha256": "cea18060127f68f620e2ff76ac9f64fc790b72ceda74bafceebd1d21988e321e",
-    "duracion_s": 41.5,
+    "fecha": "2026-11-04T20:11:53+00:00",
+    "sha256": "2d04fc96985db0f696cd3f8c98223c051b04f9820505e85cd2743be5ed81077d",
+    "duracion_s": 35.0,
     "estado": "APTO",
-    "huella_guion": "0afd075454bf04502290b1bc332d6c5f80982c56e96777ddffd57a425ff586cb",
+    "huella_guion": "cec802f88b0eb184cbd446ea463b34f2c0440b213d9caa7cecfb5e86dc923afc",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 25.1,
-      "musica": 2.8,
-      "render_video": 49.8,
-      "mezcla_audio": 2.3,
-      "auditoria_tecnica": 11.0
+      "narracion": 9.4,
+      "musica": 1.0,
+      "render_video": 26.4,
+      "mezcla_audio": 0.9,
+      "auditoria_tecnica": 5.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.52,
-      "computo_equivalente_runner_usd": 0.0091,
+      "computo_minutos": 0.72,
+      "computo_equivalente_runner_usd": 0.0043,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1242,
-    "caracteres_narrados": 608
+    "frames": 1048,
+    "caracteres_narrados": 505
   }
 }
