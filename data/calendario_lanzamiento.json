@@ -1,5 +1,5 @@
 {
- "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse. Lote 5 (14 al 27-12): cada pieza entra al aprobarse; 3-11: imágenes del 14-12 y 15-12 (aprobación delegada). 4-11 (adelanto, primer espacio libre desde el 16-11; candado PUBLICAR_DESDE=2026-11-23): 16-11 imagen I20261216-T110 y Reel R20261214-T108; 17-11 imagen I20261217-T111 y Reel R20261215-T109 (aprobación delegada). 4-11 (2.ª ronda, tras edición editorial): 18-11 imagen I20261219-T113 y Reel R20261216-T110; 19-11 imagen I20261222-T116 y Reel R20261217-T111; 20-11 Reel R20261220-T114; 21-11 Reel R20261222-T116 (aprobación delegada).",
+ "nota": "Calendario de lanzamiento (aprobado por el responsable el 28-10-2026). Solo piezas con aprobación humana de su versión exacta. Horario CDMX (UTC−6): imagen 09:00, Reel 19:00. No se genera contenido nuevo para estas fechas. Semana 2 (30-11 al 06-12-2026, lote-3) agregada el 29-10-2026 tras la aprobación humana de sus 14 piezas, cada una en su versión exacta. Semana 3 (07-12 al 13-12-2026, lote-4, aprobación delegada) agregada el 3-11-2026 por la orden definitiva de lanzamiento del responsable; el Reel del 12-12 se agrega al aprobarse. Lote 5 (14 al 27-12): cada pieza entra al aprobarse; 3-11: imágenes del 14-12 y 15-12 (aprobación delegada). 4-11 (adelanto, primer espacio libre desde el 16-11; candado PUBLICAR_DESDE=2026-11-23): 16-11 imagen I20261216-T110 y Reel R20261214-T108; 17-11 imagen I20261217-T111 y Reel R20261215-T109 (aprobación delegada). 4-11 (2.ª ronda, tras edición editorial): 18-11 imagen I20261219-T113 y Reel R20261216-T110; 19-11 imagen I20261222-T116 y Reel R20261217-T111; 20-11 Reel R20261220-T114; 21-11 Reel R20261222-T116 (aprobación delegada). 4-11 (4.ª ronda): 20-11 imagen I20261218-T112; 21-11 imagen I20261221-T115; 22-11 Reel R20261219-T113; 12-12 Reel R20261224-T118 (primer espacio libre de Reel; el Reel T106 del lote 4 tomará el siguiente al aprobarse) (aprobación delegada).",
  "zona": "America/Mexico_City",
  "dias": [
   {
@@ -123,6 +123,18 @@
     "aprobada": "2026-11-04T04:23:23+00:00",
     "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "REVISION_HUMANA"
+   },
+   "imagen": {
+    "pieza": "I20261218-T112",
+    "version": "6a6e1dcc77d600c4",
+    "hora": "09:00",
+    "archivo": "I20261218-T112.png",
+    "sha256": "aaacdb8ba6031ea87482836f3b6cdfaa564047daa3ca5db314fcf979dabded26",
+    "asset_id": 709144381,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T19:44:54+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
    }
   },
   {
@@ -136,6 +148,33 @@
     "asset_id": 708196689,
     "release": "piezas-2026-11",
     "aprobada": "2026-11-04T04:23:23+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   },
+   "imagen": {
+    "pieza": "I20261221-T115",
+    "version": "2407325cbf8e4e9d",
+    "hora": "09:00",
+    "archivo": "I20261221-T115.png",
+    "sha256": "d9dc40efcffbaf8b7aa9dd7d9086472264063722d197f665c18c05771f8d6940",
+    "asset_id": 709397537,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T19:44:54+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
+   }
+  },
+  {
+   "fecha": "2026-11-22",
+   "reel": {
+    "pieza": "R20261219-T113",
+    "version": "91ec4898e70b5e71",
+    "hora": "19:00",
+    "archivo": "R20261219-T113_final.mp4",
+    "sha256": "355e91726fddf54f5ffbf401f1d4d95d06dc6d0b2ae68d3ef8c665aacd01e771",
+    "asset_id": 709369436,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T19:44:54+00:00",
     "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "REVISION_HUMANA"
    }
@@ -638,6 +677,18 @@
     "aprobada": "2026-11-02T11:43:45+00:00",
     "aprobacion": "delegada (72 h de veto)",
     "estado_cola": "SIMULADO"
+   },
+   "reel": {
+    "pieza": "R20261224-T118",
+    "version": "0059c15d2e865cbc",
+    "hora": "19:00",
+    "archivo": "R20261224-T118_final.mp4",
+    "sha256": "c80d39c0969e500059bd16b0d380c40bd69db4d0290bf9e537c505f5d7a42bda",
+    "asset_id": 709380887,
+    "release": "piezas-2026-11",
+    "aprobada": "2026-11-04T19:44:54+00:00",
+    "aprobacion": "delegada (72 h de veto)",
+    "estado_cola": "REVISION_HUMANA"
    }
   },
   {
