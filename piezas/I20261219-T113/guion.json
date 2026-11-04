@@ -1,135 +1,139 @@
 {
-  "id": "I20261219-T113",
-  "formato": "imagen",
-  "plantilla": "mito_realidad",
-  "titulo": "¿Te pueden negar un servicio por tu religión?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "tema_id": "T113",
-  "pieza": {
-    "titular": "¿Te pueden negar un servicio por tu religión?",
-    "bajada": "Conoce lo que establece la Constitución sobre la discriminación.",
-    "mito": "Sí, los establecimientos pueden negar servicios a personas por sus creencias religiosas.",
-    "realidad": "No, la ley prohíbe la discriminación por religión que atente contra la dignidad humana y busque menoscabar los derechos.",
-    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 1"
-  },
-  "copy": "En la vida diaria, a veces se piensa que los establecimientos o prestadores de servicios pueden elegir libremente a quién atender basándose en las creencias de las personas. Sin embargo, esto no es correcto conforme al marco legal vigente.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 1, «Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,» cuando esta tenga por objeto anular o menoscabar los derechos y libertades de las personas.\n\nEsto significa que la negativa de un servicio basada en motivos religiosos está prohibida si atenta contra la dignidad humana. Guarda y comparte esta información para conocer tus derechos.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Imagen gráfica tipo mito y realidad que explica si te pueden negar un servicio por tu religión basándose en la Constitución Política de los Estados Unidos Mexicanos.",
-  "relacion_reel": "independiente",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "1",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 1",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-03"
-    }
-  },
-  "afirmaciones": [
-    {
-      "id": "A1",
-      "tipo": "hecho_normativo",
-      "texto": "Queda prohibida la discriminación motivada por religión.",
-      "fuente": "F1"
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Te pueden negar un servicio por tu religión?",
-    "concepto_central": "discriminación por religión",
-    "respuesta_corta": "No, la ley prohíbe la discriminación por religión que atente contra la dignidad humana y busque menoscabar los derechos.",
-    "reglas": [
-      {
-        "conclusion": "La norma prohíbe de forma expresa cualquier discriminación basada en la religión.",
-        "fuente": "F1",
-        "cita_literal": "Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,",
-        "condiciones": [
-          "que atente contra la dignidad humana",
-          "que tenga por objeto anular o menoscabar los derechos y libertades"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "1"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "La discriminación motivada por la religión está prohibida por la ley.",
-        "fuente": "F1",
-        "cita_literal": "Queda prohibida toda discriminación motivada por origen étnico o nacional, el género, la edad, las discapacidades, la condición social, las condiciones de salud, la religión,"
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "El artículo no establece las sanciones específicas ni el procedimiento exacto para denunciar la negativa de un servicio particular."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-03T16:20:41+00:00",
-    "solicitud": "2026-12-19_imagen_T113-lote-5.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 2,
-        "auditor": 1
-      },
-      "llamadas_ia_total": 3,
-      "intentos_analisis": 1,
-      "intentos_redaccion": 1,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3.5-flash-lite"
-    }
-  },
-  "pregunta_original": "¿Te pueden negar un servicio por tu religión?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemini-3.1-flash-lite",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "La norma prohíbe de forma expresa cualquier discriminación basada en la religión.",
-              "sostenida": "si",
-              "motivo": "El artículo 1 constitucional establece la prohibición de discriminación por religión, condicionada a que esta atente contra la dignidad humana y menoscabe derechos, lo cual es reflejado correctamente en el texto."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": false
+ "id": "I20261219-T113",
+ "formato": "imagen",
+ "plantilla": "mito_realidad",
+ "titulo": "¿Te pueden negar un servicio por tu religión?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "tema_id": "T113",
+ "pieza": {
+  "titular": "¿Te pueden negar un servicio por tu religión?",
+  "bajada": "La Ley Federal de Protección al Consumidor lo prohíbe expresamente.",
+  "mito": "Sí, los establecimientos pueden negar servicios a personas por sus creencias religiosas.",
+  "realidad": "No. Un proveedor no puede negarte ni condicionarte un producto o servicio por razones religiosas.",
+  "fuente_visible": "Ley Federal de Protección al Consumidor, art. 58"
+ },
+ "copy": "No. El artículo 58 de la Ley Federal de Protección al Consumidor dice: «El proveedor de bienes, productos o servicios no podrá negarlos o condicionarlos al consumidor por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad».\n\nEsto es información general, no es asesoría legal.",
+ "alt": "Imagen de mito y realidad: un proveedor no puede negar ni condicionar un producto o servicio por razones religiosas, según el artículo 58 de la Ley Federal de Protección al Consumidor.",
+ "relacion_reel": "independiente",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal de Protección al Consumidor",
+   "articulo": "58",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+   "texto_literal": "El proveedor de bienes, productos o servicios no podrá negarlos o condicionarlos al consumidor por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad.",
+   "cita": "Ley Federal de Protección al Consumidor, artículo 58",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-04"
   }
+ },
+ "afirmaciones": [
+  {
+   "id": "A1",
+   "tipo": "hecho_normativo",
+   "texto": "El proveedor de bienes, productos o servicios no puede negarlos ni condicionarlos al consumidor por razones religiosas.",
+   "fuente": "F1"
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden negar un servicio por tu religión?",
+  "concepto_central": "discriminación por religión en la venta de bienes y servicios",
+  "respuesta_corta": "No. Un proveedor no puede negarte ni condicionarte un producto o servicio por razones religiosas.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor no puede negar ni condicionar bienes, productos o servicios al consumidor por razones religiosas.",
+    "fuente": "F1",
+    "cita_literal": "El proveedor de bienes, productos o servicios no podrá negarlos o condicionarlos al consumidor por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad.",
+    "condiciones": [],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal de Protección al Consumidor",
+     "articulo": "58"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Un proveedor no puede negar ni condicionar un producto o servicio al consumidor por razones religiosas.",
+    "fuente": "F1",
+    "cita_literal": "no podrá negarlos o condicionarlos al consumidor por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "La pieza se limita a la relación entre proveedor y consumidor (LFPC); no trata sanciones ni el procedimiento de queja ante Profeco."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-03T16:20:41+00:00",
+  "solicitud": "2026-12-19_imagen_T113-lote-5.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 2,
+    "auditor": 1
+   },
+   "llamadas_ia_total": 3,
+   "intentos_analisis": 1,
+   "intentos_redaccion": 1,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3.5-flash-lite"
+  }
+ },
+ "pregunta_original": "¿Te pueden negar un servicio por tu religión?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemini-3.1-flash-lite",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "La norma prohíbe de forma expresa cualquier discriminación basada en la religión.",
+       "sostenida": "si",
+       "motivo": "El artículo 1 constitucional establece la prohibición de discriminación por religión, condicionada a que esta atente contra la dignidad humana y menoscabe derechos, lo cual es reflejado correctamente en el texto."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": false
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-04",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "fundamento cambiado de CPEUM 1 (cita cortada a media enumeración y realidad condicionada a «atente contra la dignidad») a LFPC 58, que responde literalmente la pregunta para proveedores y consumidores; bajada, realidad, fuente visible, alt, análisis y texto de publicación sin relleno con la cita literal"
+  }
+ ]
 }
