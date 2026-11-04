@@ -1,68 +1,74 @@
 {
-  "fecha": "2026-12-12",
-  "formato": "reel",
-  "tema_id": "T106",
-  "titulo": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
-  "gancho": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
-  "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
-  "tipo_pregunta": "derecho",
-  "carril": "A",
-  "fuentes_sugeridas": "LFPC arts. 92, 92 Ter",
-  "riesgo_exactitud": "",
-  "lote": "lote-4",
-  "motivo_seleccion": "Sustituye a «¿Cuánto tiempo tienes para reclamar si te despiden?» (LFT 518) tras dos descartes jurídicos el 02-11: el control de sustento no encuentra «despido» en el art. 518 («separados del trabajo») y el redactor no usó el art. 48. Art. 92 fr. I LFPC (texto vigente; última reforma de la ley DOF 12-12-2025, consultado 26-10-2026): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» cuando «el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque», considerados los límites de tolerancia; art. 92 Ter: la bonificación no podrá ser menor al veinte por ciento del precio pagado. Respuesta literal con su condición; consumo, no tratado en las últimas 3 semanas.",
-  "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
-  "instrucciones": "docs/tarea_guionista.md",
-  "creada": "2026-10-30T03:58:57Z",
-  "pieza_id": "R20261212-T106",
-  "archivo": "2026-12-12_reel_T106-lote-4.json",
-  "intentos": 1,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n ¿QUÉ EXIGIR \\n SI EL EMPAQUE \\n TRAE MENOS? \\n Puedes exigir la reposición del producto o la devolución de lo pagado y una bonificación. \\n DERECHOS",
-  "ultima_categoria": "redaccion",
-  "historial_reaperturas": [
-    {
-      "fecha": "2026-11-02",
-      "por": "Claude",
-      "motivo": "primer descarte (análisis): el elemento «efecto» llevó una cita que no es literal; LFT 133 fr. XIV responde literalmente («Exigir la presentación de certificados médicos de no embarazo para el ingreso, permanencia o ascenso en el empleo»). Falla puntual del modelo, no del tema. Se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («Se trata de una conducta prohibida por la ley para quienes e») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
-    },
-    {
-      "fecha": "2026-11-02",
-      "por": "Claude",
-      "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 133 fr. XIV): ahora LFT 518, plazo para reclamar un despido",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
-    },
-    {
-      "fecha": "2026-11-02",
-      "por": "Claude",
-      "motivo": "primer descarte de la pregunta nueva (LFT 518): el control de sustento no encontró «despido» en los artículos citados (el 518 dice «separados del trabajo»). Se agrega LFT 48 (reinstalación o indemnización del trabajador despedido) a las fuentes sugeridas. Si se descarta otra vez, se sustituye la pregunta",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu"
-    },
-    {
-      "fecha": "2026-11-02",
-      "por": "Claude",
-      "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 518): ahora LFPC art. 92 fr. I y 92 Ter, contenido menor al del empaque",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\""
-    },
-    {
-      "fecha": "2026-11-02",
-      "por": "Claude",
-      "motivo": "primer descarte con LFPC 92: objeciones de redacción del auditor (la bonificación procede «en todo caso», además de la reposición o devolución; la forma de pago es regla de la devolución, no condición del consumidor). Tema con respuesta literal; se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el crite"
-    },
-    {
-      "fecha": "2026-11-03",
-      "por": "Claude",
-      "motivo": "segundo descarte con LFPC 92, pero no del tema: uno fue técnico transitorio y el último solo de longitud (narración de 622 caracteres, tope 620). El contenido jurídico pasó; se reintenta una vez más antes de sustituir la pregunta",
-      "estado_anterior": "DESCARTADA",
-      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si el empaque trae menos producto? \\n ¿TRAE MENOS \\n DE LO INDICADO \\n EN EL EMPAQUE? \\n Puedes exigir la reposición o devolución y una bonificación. \\n DERECHOS \\n DEL CONSUMIDOR \\n Los consumidores tend"
-    }
-  ],
-  "huella_entrada": "29acc0895b5a324e"
+ "fecha": "2026-12-12",
+ "formato": "reel",
+ "tema_id": "T106",
+ "titulo": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+ "gancho": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+ "pregunta": "¿Qué puedes exigir si un producto trae menos de lo que dice el empaque?",
+ "tipo_pregunta": "derecho",
+ "carril": "A",
+ "fuentes_sugeridas": "LFPC arts. 92, 92 Ter",
+ "riesgo_exactitud": "",
+ "lote": "lote-4",
+ "motivo_seleccion": "Sustituye a «¿Cuánto tiempo tienes para reclamar si te despiden?» (LFT 518) tras dos descartes jurídicos el 02-11: el control de sustento no encuentra «despido» en el art. 518 («separados del trabajo») y el redactor no usó el art. 48. Art. 92 fr. I LFPC (texto vigente; última reforma de la ley DOF 12-12-2025, consultado 26-10-2026): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» cuando «el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque», considerados los límites de tolerancia; art. 92 Ter: la bonificación no podrá ser menor al veinte por ciento del precio pagado. Respuesta literal con su condición; consumo, no tratado en las últimas 3 semanas.",
+ "hora_publicacion_mx": "19:00",
+ "estado": "PENDIENTE_GUION",
+ "instrucciones": "docs/tarea_guionista.md",
+ "creada": "2026-10-30T03:58:57Z",
+ "pieza_id": "R20261212-T106",
+ "archivo": "2026-12-12_reel_T106-lote-4.json",
+ "intentos": 0,
+ "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n ¿QUÉ EXIGIR \\n SI EL EMPAQUE \\n TRAE MENOS? \\n Puedes exigir la reposición del producto o la devolución de lo pagado y una bonificación. \\n DERECHOS",
+ "ultima_categoria": "redaccion",
+ "historial_reaperturas": [
+  {
+   "fecha": "2026-11-02",
+   "por": "Claude",
+   "motivo": "primer descarte (análisis): el elemento «efecto» llevó una cita que no es literal; LFT 133 fr. XIV responde literalmente («Exigir la presentación de certificados médicos de no embarazo para el ingreso, permanencia o ascenso en el empleo»). Falla puntual del modelo, no del tema. Se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («Se trata de una conducta prohibida por la ley para quienes e») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+  },
+  {
+   "fecha": "2026-11-02",
+   "por": "Claude",
+   "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 133 fr. XIV): ahora LFT 518, plazo para reclamar un despido",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («La solicitud de este documento es una conducta prohibida por») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+  },
+  {
+   "fecha": "2026-11-02",
+   "por": "Claude",
+   "motivo": "primer descarte de la pregunta nueva (LFT 518): el control de sustento no encontró «despido» en los artículos citados (el 518 dice «separados del trabajo»). Se agrega LFT 48 (reinstalación o indemnización del trabajador despedido) a las fuentes sugeridas. Si se descarta otra vez, se sustituye la pregunta",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Cuánto tiempo tienes para reclamar si te despiden de tu empleo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «UN DESPIDO?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar si te despiden de tu"
+  },
+  {
+   "fecha": "2026-11-02",
+   "por": "Claude",
+   "motivo": "pregunta sustituida tras el segundo descarte jurídico (LFT 518): ahora LFPC art. 92 fr. I y 92 Ter, contenido menor al del empaque",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[sustento] «¿Sabes cuánto tiempo tienes para reclamar si te despiden de tu trabajo?» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\", \"[sustento] «Distingue el despido, decidido por el patrón, de la renuncia decidida por el tra» habla de despido, pero ninguno de los artículos que cita la pieza lo establece.\""
+  },
+  {
+   "fecha": "2026-11-02",
+   "por": "Claude",
+   "motivo": "primer descarte con LFPC 92: objeciones de redacción del auditor (la bonificación procede «en todo caso», además de la reposición o devolución; la forma de pago es regla de la devolución, no condición del consumidor). Tema con respuesta literal; se reintenta una vez; si se descarta otra vez, se sustituye la pregunta",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La mención de que la reposición del producto debe ser un bien nuevo en caso de optar por esta vía (según la fracción III, aunque el usuario pregunta por la fracción I, la pieza omite la precisión técnica de la naturaleza de la reposición si se aplicara el crite"
+  },
+  {
+   "fecha": "2026-11-03",
+   "por": "Claude",
+   "motivo": "segundo descarte con LFPC 92, pero no del tema: uno fue técnico transitorio y el último solo de longitud (narración de 622 caracteres, tope 620). El contenido jurídico pasó; se reintenta una vez más antes de sustituir la pregunta",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si el empaque trae menos producto? \\n ¿TRAE MENOS \\n DE LO INDICADO \\n EN EL EMPAQUE? \\n Puedes exigir la reposición o devolución y una bonificación. \\n DERECHOS \\n DEL CONSUMIDOR \\n Los consumidores tend"
+  },
+  {
+   "fecha": "2026-11-04",
+   "por": "Claude",
+   "motivo": "tercer descarte con LFPC 92, otra vez solo de longitud (710 caracteres) y antes de la corrección 2ba378d (el mensaje ahora dice cuánto recortar, con prueba). Se reabre una última vez; si vuelve a descartarse, se sustituye la pregunta",
+   "estado_anterior": "DESCARTADA",
+   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)\"], \"visible\": \"  \\n ¿Qué puedes exigir si un producto trae menos de lo que dice el empaque? \\n ¿QUÉ EXIGIR \\n SI EL EMPAQUE \\n TRAE MENOS? \\n Puedes exigir la reposición del producto o la devolución de lo pagado y una bonificación. \\n DERECHOS"
+  }
+ ]
 }
