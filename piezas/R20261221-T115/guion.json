@@ -15,7 +15,18 @@
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
       "texto_literal": "A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual",
       "cita": "Ley Federal del Trabajo, artículo 86",
-      "jurisdiccion": "federal (aplica en todo el país)",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "86",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "en cumplimiento de las obligaciones del Estado de reducir la brecha salarial de género se promoverán acciones para erradicar las prácticas retributivas desiguales",
+      "cita": "Ley Federal del Trabajo, artículo 86",
+      "jurisdiccion": "federal",
       "consultado": "2026-11-04"
     }
   },
@@ -24,14 +35,14 @@
       "tipo": "gancho",
       "texto": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
       "titulo": [
-        "¿TE PAGAN MENOS?",
-        "MISMO TRABAJO?"
+        "¿MISMO TRABAJO,",
+        "MENOS PAGO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, a trabajo igual desempeñado en puesto, jornada y condiciones de eficiencia también iguales debe corresponder salario igual.",
+      "texto": "No, si el trabajo es igual en puesto, jornada y eficiencia.",
       "titulo": [
         "SALARIO",
         "IGUAL"
@@ -40,36 +51,50 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley establece que a trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual.",
-      "etiqueta": "Ley Federal del Trabajo, artículo 86",
+      "texto": "La Ley Federal del Trabajo dice: a trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual.",
+      "etiqueta": "Ley Federal del Trabajo, art. 86",
       "cita": "A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Para exigir este derecho se deben cumplir estas condiciones:",
-      "items": [
-        "Puesto igual",
-        "Jornada igual",
-        "Eficiencia igual"
-      ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Corresponde recibir el mismo salario ante igual trabajo, puesto, jornada y eficiencia.",
+          "texto": "A trabajo igual en puesto, jornada y condiciones de eficiencia corresponde salario igual.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Ojo: deben coincidir las tres cosas: puesto, jornada y eficiencia.",
+      "titulo": [
+        "PUESTO, JORNADA",
+        "Y EFICIENCIA"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La igualdad de salario exige igualdad de puesto, jornada y condiciones de eficiencia.",
           "fuente": "F1"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Consulta los procedimientos legales específicos para su reclamación.",
+      "texto": "Y agrega que se promoverán acciones para erradicar los pagos desiguales y reducir la brecha salarial de género.",
       "titulo": [
-        "CONSULTA",
-        "PROCEDIMIENTOS"
+        "BRECHA",
+        "DE GÉNERO"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Para reducir la brecha salarial de género se promoverán acciones para erradicar las prácticas retributivas desiguales.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -149,7 +174,7 @@
   "pregunta_original": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?\n\nNo, a trabajo igual desempeñado en puesto, jornada y condiciones de eficiencia también iguales debe corresponder salario igual.\n\nFuente: Ley Federal del Trabajo, artículo 86.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No, si el trabajo es igual en puesto, jornada y condiciones de eficiencia.\n\nEl artículo 86 de la Ley Federal del Trabajo dice: «A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual».\n\nY agrega que, «en cumplimiento de las obligaciones del Estado de reducir la brecha salarial de género se promoverán acciones para erradicar las prácticas retributivas desiguales».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -232,5 +257,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "se quitan la respuesta que repetía la cita, la lista «estas condiciones» que no se narraba y el cierre vago «Consulta los procedimientos…»; título del gancho con signos correctos; las tres condiciones narradas; se agrega la parte literal sobre la brecha salarial de género; texto de publicación con las citas"
+    }
+  ]
 }

@@ -13,9 +13,20 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "47",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+      "texto_literal": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron",
       "cita": "Ley Federal del Trabajo, artículo 47",
-      "jurisdiccion": "federal (aplica en todo el país)",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "La falta de aviso al trabajador personalmente o por conducto del Tribunal, por sí sola presumirá la separación no justificada, salvo prueba en contrario que acredite que el despido fue justificado",
+      "cita": "Ley Federal del Trabajo, artículo 47",
+      "jurisdiccion": "federal",
       "consultado": "2026-11-04"
     }
   },
@@ -24,61 +35,51 @@
       "tipo": "gancho",
       "texto": "¿Te deben dar por escrito el motivo de tu despido?",
       "titulo": [
-        "¿TE DESPIDIERON?",
-        "MOTIVO POR ESCRITO"
+        "¿EL MOTIVO",
+        "POR ESCRITO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, el patrón debe entregarte un aviso escrito con las conductas y fechas del despido.",
+      "texto": "Sí. El patrón que te despide debe darte un aviso escrito con la conducta y la fecha.",
       "titulo": [
-        "AVISO DE DESPIDO",
-        "OBLIGACIÓN LEGAL"
+        "AVISO",
+        "POR ESCRITO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley indica: El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
-      "etiqueta": "Ley Federal del Trabajo, artículo 47",
-      "cita": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Formas de entrega del aviso:",
-      "items": [
-        "Personal en el despido",
-        "Vía Tribunal competente",
-        "Cinco días hábiles"
-      ],
+      "texto": "La Ley Federal del Trabajo dice: el patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+      "etiqueta": "Ley Federal del Trabajo, art. 47",
+      "cita": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El patrón debe dar aviso por escrito con las conductas y fechas de la rescisión.",
-          "fuente": "F1"
+          "texto": "El patrón que despida a un trabajador debe darle aviso escrito con la conducta que motiva la rescisión y su fecha.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "Si falta el aviso, se presume separación injustificada.",
-      "encabezado": "Falta de aviso",
-      "detalle": "Presume despido injustificado",
-      "fuente_corta": "Ley Federal del Trabajo, art. 47",
-      "afirmaciones": []
-    },
-    {
       "tipo": "titular",
-      "texto": "Sí, el patrón debe darte un aviso escrito con los motivos.",
+      "texto": "Y si no hay aviso, la ley presume que el despido fue injustificado, salvo prueba en contrario.",
       "titulo": [
-        "DERECHO LABORAL",
-        "AVISO OBLIGATORIO"
+        "SIN AVISO,",
+        "SE PRESUME",
+        "INJUSTIFICADO"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La falta de aviso hace presumir que la separación no fue justificada, salvo prueba en contrario.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -182,7 +183,7 @@
   "pregunta_original": "¿Te deben dar por escrito el motivo de tu despido?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Te deben dar por escrito el motivo de tu despido?\n\nSí, el patrón tiene la obligación de entregarte un aviso escrito que explique claramente las conductas que motivan el despido y las fechas en que ocurrieron.\n\nFuente: Ley Federal del Trabajo, artículo 47.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí. El patrón que te despide debe darte un aviso escrito con la conducta y la fecha.\n\nEl artículo 47 de la Ley Federal del Trabajo dice: «El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron».\n\nEl aviso se entrega en el momento mismo del despido o se comunica al Tribunal competente dentro de los cinco días hábiles siguientes. Y la ley agrega: «La falta de aviso al trabajador personalmente o por conducto del Tribunal, por sí sola presumirá la separación no justificada, salvo prueba en contrario que acredite que el despido fue justificado».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -223,5 +224,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "se quitan la lista «Formas de entrega del aviso» que no se narraba (con «Cinco días hábiles» sin contexto) y la escena final repetida; la presunción por falta de aviso con su condición literal «salvo prueba en contrario»; título del gancho más claro; las formas de entrega pasan al texto de publicación"
+    }
+  ]
 }

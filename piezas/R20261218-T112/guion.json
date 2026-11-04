@@ -13,9 +13,9 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "80",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
+      "texto_literal": "Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones",
       "cita": "Ley Federal del Trabajo, artículo 80",
-      "jurisdiccion": "federal (aplica en todo el país)",
+      "jurisdiccion": "federal",
       "consultado": "2026-11-04"
     }
   },
@@ -32,45 +32,43 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, te deben pagar una prima de al menos veinticinco por ciento sobre los salarios que te correspondan durante tus vacaciones.",
+      "texto": "Sí. La ley te da una prima vacacional de al menos veinticinco por ciento.",
       "titulo": [
-        "PRIMA",
+        "SÍ: PRIMA",
         "VACACIONAL"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley establece que los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
-      "etiqueta": "Ley, artículo 80",
-      "cita": "Los trabajadores tendrán derecho a un a prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Considera los siguientes puntos sobre este derecho:",
-      "items": [
-        "Prima de 25 por ciento",
-        "Sobre salarios vacacionales",
-        "Derecho de trabajadores"
-      ],
+      "texto": "La Ley Federal del Trabajo dice: los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones.",
+      "etiqueta": "Ley Federal del Trabajo, art. 80",
+      "cita": "Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Derecho a una prima no menor de veinticinco por ciento durante las vacaciones.",
-          "fuente": "F1"
+          "texto": "Los trabajadores tienen derecho a una prima no menor de veinticinco por ciento sobre los salarios del período de vacaciones.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Sí, se debe otorgar esta prima de al menos veinticinco por ciento sobre los salarios correspondientes al período de vacaciones.",
+      "texto": "Se calcula sobre el salario de tus días de vacaciones, y ese veinticinco por ciento es el mínimo: no puede ser menor.",
       "titulo": [
-        "DERECHO",
-        "ASEGURADO"
+        "25 % COMO",
+        "MÍNIMO"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La prima se calcula sobre los salarios del período de vacaciones y no puede ser menor de veinticinco por ciento.",
+          "fuente": "F1"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -149,7 +147,7 @@
   "pregunta_original": "¿Te deben pagar algo extra en tus vacaciones?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Te deben pagar algo extra en tus vacaciones?\n\nSí, te deben pagar una prima de al menos veinticinco por ciento sobre los salarios que te correspondan durante tus vacaciones.\n\nFuente: Ley Federal del Trabajo, artículo 80.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí. Te corresponde una prima de al menos 25 % sobre el salario de tus días de vacaciones.\n\nEl artículo 80 de la Ley Federal del Trabajo dice: «Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -190,5 +188,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "cita y narración sin el corte «un a prima» del PDF; etiqueta «Ley, artículo 80» → «Ley Federal del Trabajo, art. 80»; se quitan la lista «Considera los siguientes puntos» que no se narraba y la escena final que repetía la respuesta; el 25 % se presenta como mínimo con cita; texto de publicación con la cita literal"
+    }
+  ]
 }
