@@ -1,0 +1,227 @@
+{
+  "id": "R20261223-T117",
+  "formato": "reel",
+  "titulo": "¿Te deben dar por escrito el motivo de tu despido?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T117",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+      "cita": "Ley Federal del Trabajo, artículo 47",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-04"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te deben dar por escrito el motivo de tu despido?",
+      "titulo": [
+        "¿TE DESPIDIERON?",
+        "MOTIVO POR ESCRITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, el patrón debe entregarte un aviso escrito con las conductas y fechas del despido.",
+      "titulo": [
+        "AVISO DE DESPIDO",
+        "OBLIGACIÓN LEGAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica: El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 47",
+      "cita": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Formas de entrega del aviso:",
+      "items": [
+        "Personal en el despido",
+        "Vía Tribunal competente",
+        "Cinco días hábiles"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El patrón debe dar aviso por escrito con las conductas y fechas de la rescisión.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si falta el aviso, se presume separación injustificada.",
+      "encabezado": "Falta de aviso",
+      "detalle": "Presume despido injustificado",
+      "fuente_corta": "Ley Federal del Trabajo, art. 47",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, el patrón debe darte un aviso escrito con los motivos.",
+      "titulo": [
+        "DERECHO LABORAL",
+        "AVISO OBLIGATORIO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+    "concepto_central": "despido",
+    "respuesta_corta": "Sí, el patrón tiene la obligación de entregarte un aviso escrito que explique claramente las conductas que motivan el despido y las fechas en que ocurrieron.",
+    "reglas": [
+      {
+        "conclusion": "El patrón está obligado a entregar un aviso por escrito detallando las causas y fechas de la rescisión laboral.",
+        "fuente": "F1",
+        "cita_literal": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+        "condiciones": [
+          "Que se trate de una rescisión de la relación de trabajo sin responsabilidad para el patrón"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "47"
+        }
+      },
+      {
+        "conclusion": "El aviso debe entregarse directamente al trabajador al momento del despido o a través del Tribunal en un plazo breve.",
+        "fuente": "F1",
+        "cita_literal": "El aviso deberá entregarse personalmente al trabajador en el momento mismo del despido o bien, comunicarlo al Tribunal competente, dentro de los cinco días hábiles siguientes",
+        "condiciones": [
+          "Si se hace vía Tribunal, el patrón debe proporcionar el último domicilio registrado del trabajador"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "47"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El escrito debe contener la descripción clara de las conductas que motivan el despido y las fechas exactas en que se cometieron.",
+        "fuente": "F1",
+        "cita_literal": "aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La entrega debe ser personal en el acto del despido o, si no es posible, notificarse mediante el Tribunal en los cinco días hábiles posteriores.",
+        "fuente": "F1",
+        "cita_literal": "entregarse personalmente al trabajador en el momento mismo del despido o bien, comunicarlo al Tribunal competente, dentro de los cinco días hábiles siguientes"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Si no se entrega el aviso, se presume que el despido no fue justificado.",
+        "condicion": "A menos que el patrón presente pruebas que acrediten que el despido sí tuvo una causa justificada.",
+        "base": "F1: La falta de aviso al trabajador personalmente o por conducto del Tribunal, por sí sola presumirá la separación no justificada, salvo prueba en contrario"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "despido",
+        "b": "renuncia",
+        "difference": "El despido es una separación decidida por el patrón, mientras que la renuncia es una decisión voluntaria de la persona trabajadora."
+      }
+    ],
+    "limites": "Estos textos no establecen el monto de las indemnizaciones ni el procedimiento detallado para impugnar el despido ante el Tribunal, más allá de la notificación del aviso."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T16:14:59+00:00",
+    "solicitud": "2026-12-23_reel_T117-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te deben dar por escrito el motivo de tu despido?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben dar por escrito el motivo de tu despido?\n\nSí, el patrón tiene la obligación de entregarte un aviso escrito que explique claramente las conductas que motivan el despido y las fechas en que ocurrieron.\n\nFuente: Ley Federal del Trabajo, artículo 47.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El patrón está obligado a entregar un aviso por escrito detallando las causas y fechas de la rescisión laboral.",
+              "sostenida": "si",
+              "motivo": "El artículo 47 de la Ley Federal del Trabajo establece explícitamente la obligación del patrón de dar aviso escrito con la conducta y fecha de la rescisión."
+            },
+            {
+              "conclusion": "El aviso debe entregarse directamente al trabajador al momento del despido o a través del Tribunal en un plazo breve.",
+              "sostenida": "si",
+              "motivo": "El artículo 47 detalla las dos vías de entrega: personal en el momento del despido o mediante el Tribunal dentro de los cinco días hábiles siguientes."
+            },
+            {
+              "conclusion": "Si no se entrega el aviso, se presume que el despido no fue justificado.",
+              "sostenida": "si",
+              "motivo": "El artículo 47 señala que la falta de aviso por sí sola presume la separación no justificada, salvo prueba en contrario."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

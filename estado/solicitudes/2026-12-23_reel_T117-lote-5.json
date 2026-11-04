@@ -1,33 +1,34 @@
 {
- "fecha": "2026-12-23",
- "formato": "reel",
- "tema_id": "T117",
- "titulo": "¿Te deben dar por escrito el motivo de tu despido?",
- "gancho": "¿Te deben dar por escrito el motivo de tu despido?",
- "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
- "tipo_pregunta": "obligacion",
- "carril": "A",
- "fuentes_sugeridas": "LFT art. 47",
- "riesgo_exactitud": "",
- "lote": "lote-5",
- "motivo_seleccion": "Art. 47 LFT: el patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
- "hora_publicacion_mx": "19:00",
- "estado": "PENDIENTE_GUION",
- "instrucciones": "docs/tarea_guionista.md",
- "creada": "2026-11-03T02:22:25Z",
- "pieza_id": "R20261223-T117",
- "archivo": "2026-12-23_reel_T117-lote-5.json",
- "intentos": 0,
- "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 703 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 83: recorta al menos 143 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «PRESUNCIÓN POR FALTA DE AVISO» no corresponde",
- "ultima_categoria": "tecnico",
- "historial_reaperturas": [
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "primer descarte (redacción): narración de 703 caracteres y encabezado de excepción que no correspondía a lo narrado; el ángulo pide la regla literal del aviso escrito y una sola consecuencia",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 703 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 83: recorta al menos 143 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «PRESUNCIÓN POR FALTA DE AVISO» no corresponde"
-  }
- ],
- "angulo": "El patrón que despida a un trabajador «deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron» (LFT 47, cita literal) y una sola consecuencia citada literal («La falta de aviso … por sí sola presumirá la separación no justificada, salvo prueba en contrario»); sin escenas de excepción cuyo encabezado no se narre; narración de 520 caracteres o menos"
+  "fecha": "2026-12-23",
+  "formato": "reel",
+  "tema_id": "T117",
+  "titulo": "¿Te deben dar por escrito el motivo de tu despido?",
+  "gancho": "¿Te deben dar por escrito el motivo de tu despido?",
+  "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+  "tipo_pregunta": "obligacion",
+  "carril": "A",
+  "fuentes_sugeridas": "LFT art. 47",
+  "riesgo_exactitud": "",
+  "lote": "lote-5",
+  "motivo_seleccion": "Art. 47 LFT: el patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+  "hora_publicacion_mx": "19:00",
+  "estado": "GUION_LISTO",
+  "instrucciones": "docs/tarea_guionista.md",
+  "creada": "2026-11-03T02:22:25Z",
+  "pieza_id": "R20261223-T117",
+  "archivo": "2026-12-23_reel_T117-lote-5.json",
+  "intentos": 0,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 703 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 83: recorta al menos 143 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «PRESUNCIÓN POR FALTA DE AVISO» no corresponde",
+  "ultima_categoria": "tecnico",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "primer descarte (redacción): narración de 703 caracteres y encabezado de excepción que no correspondía a lo narrado; el ángulo pide la regla literal del aviso escrito y una sola consecuencia",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 703 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 83: recorta al menos 143 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «PRESUNCIÓN POR FALTA DE AVISO» no corresponde"
+    }
+  ],
+  "angulo": "El patrón que despida a un trabajador «deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron» (LFT 47, cita literal) y una sola consecuencia citada literal («La falta de aviso … por sí sola presumirá la separación no justificada, salvo prueba en contrario»); sin escenas de excepción cuyo encabezado no se narre; narración de 520 caracteres o menos",
+  "pieza": "R20261223-T117"
 }
