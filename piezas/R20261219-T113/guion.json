@@ -1,0 +1,361 @@
+{
+  "id": "R20261219-T113",
+  "formato": "reel",
+  "titulo": "¿Te pueden obligar a trabajar sin pagarte?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T113",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser privado del producto de su trabajo, sino por resolución judicial",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden obligar a trabajar sin pago?",
+      "titulo": [
+        "¿TRABAJAR",
+        "SIN PAGO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende. Casi siempre se requiere pago, pero hay excepciones obligatorias y gratuitas.",
+      "titulo": [
+        "DEPENDE DE",
+        "LA FUNCIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+      "etiqueta": "Constitución, artículo 5",
+      "cita": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Servicios obligatorios:",
+      "items": [
+        "Armas",
+        "Jurados",
+        "Cargos concejiles",
+        "Electorales"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Se requiere pago y consentimiento para trabajos personales.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente",
+      "encabezado": "Funciones electorales y censales",
+      "detalle": "Son gratuitas no profesionales",
+      "fuente_corta": "CPEUM, Art. 5",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Solo un juez puede quitarte tu pago. No se puede usar la fuerza para cumplir un contrato.",
+      "titulo": [
+        "TUS DERECHOS",
+        "CONSTITUCIONALES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las funciones electorales no profesionales son gratuitas.",
+          "fuente": "F2"
+        },
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Solo un juez puede quitarte el producto de tu trabajo.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden obligar a trabajar sin pagarte?",
+    "concepto_central": "trabajos personales y servicios públicos obligatorios",
+    "respuesta_corta": "Depende. Por regla general no, pero la ley establece que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente.",
+    "reglas": [
+      {
+        "conclusion": "Nadie puede ser forzado a realizar trabajos personales si no existe un pago justo y el consentimiento de la persona.",
+        "fuente": "F1",
+        "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
+        "condiciones": [
+          "Que no se trate de un trabajo impuesto como pena por autoridad judicial"
+        ],
+        "excepciones": [
+          "Trabajo impuesto como pena por la autoridad judicial",
+          "Funciones electorales y censales no profesionales"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "5"
+        }
+      },
+      {
+        "conclusion": "Existen servicios públicos que la ley define como obligatorios, entre los cuales algunos no conllevan remuneración.",
+        "fuente": "F1",
+        "cita_literal": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente",
+        "condiciones": [
+          "Que las funciones no se realicen de forma profesional"
+        ],
+        "excepciones": [
+          "Funciones electorales y censales realizadas profesionalmente"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "5"
+        }
+      },
+      {
+        "conclusion": "Ciertos cargos y servicios a la sociedad son obligatorios según lo determinen las leyes respectivas.",
+        "fuente": "F1",
+        "cita_literal": "sólo podrán ser obligatorios, en los términos que establezcan las leyes respectivas, el de las armas y los jurados, así como el desempeño de los cargos concejiles",
+        "condiciones": [
+          "En los términos que establezcan las leyes respectivas"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "5"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Nadie puede ser despojado de lo que gana por su trabajo a menos que exista una orden de un juez.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser privado del producto de su trabajo, sino por resolución judicial"
+      },
+      {
+        "elemento": "vía",
+        "estado": "no_cubierto",
+        "motivo": "El texto constitucional no especifica el procedimiento o tribunal ante el cual reclamar el pago de salarios omitidos."
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "no_cubierto",
+        "motivo": "No se menciona la autoridad administrativa o laboral encargada de sancionar el trabajo no remunerado."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El trabajo impuesto como castigo judicial no requiere el consentimiento del trabajador.",
+        "condicion": "Siempre que sea impuesto como pena por autoridad judicial y se ajuste a los límites del artículo 123 constitucional.",
+        "base": "F1: 'salvo el trabajo impuesto como pena por la autoridad judicial'"
+      },
+      {
+        "afirmacion": "Si un trabajador incumple su contrato, no se puede usar la fuerza física para obligarlo a trabajar.",
+        "condicion": "En cualquier caso de falta de cumplimiento de contrato por parte del trabajador.",
+        "base": "F1: 'sin que en ningún caso pueda hacerse coacción sobre su persona'"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "trabajos personales",
+        "b": "servicios públicos obligatorios",
+        "diferencia": "Los trabajos personales requieren pago y consentimiento por regla general, mientras que los servicios públicos (como armas o jurados) pueden ser exigidos por ley."
+      }
+    ],
+    "limites": "Los textos no definen qué se considera una 'justa retribución' ni establecen los plazos para exigir el pago de un trabajo ya realizado."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T10:25:40+00:00",
+    "solicitud": "2026-12-19_reel_T113-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 4
+      },
+      "llamadas_ia_total": 9,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te pueden obligar a trabajar sin pagarte?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden obligar a trabajar sin pagarte?\n\nDepende. Por regla general no, pero la ley establece que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 5.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 704 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 84: recorta al menos 144 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te pueden obligar a trabajar sin pagarte? \n ¿TRABAJO \n SIN PAGO? \n No, nadie debe trabajar sin pago y sin consentimiento, salvo casos electorales o penas judiciales. \n DERECHO \n AL PAGO \n La Constitución dice que: Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial. \n Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial \n La ley exige estas condiciones: \n Justa retribución \n Pleno consentimiento \n Las funciones electorales y censales tendrán carácter"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 704 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 84: recorta al menos 144 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La pieza omite mencionar otros servicios públicos obligatorios previstos en el artículo 5, como el servicio de las armas, jurados, cargos concejiles y de elección popular."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser obligado a realizar trabajos personales sin pago y sin su consentimiento.",
+              "sostenida": "si",
+              "motivo": "El artículo 5 establece explícitamente esta prohibición general."
+            },
+            {
+              "conclusion": "Las funciones electorales y censales son obligatorias y gratuitas si no son profesionales.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional distingue entre funciones obligatorias gratuitas y aquellas que, al ser profesionales, deben ser retribuidas."
+            },
+            {
+              "conclusion": "Nadie trabaja gratis, salvo por pena judicial o electoral.",
+              "sostenida": "parcial",
+              "motivo": "La conclusión es incompleta porque el artículo 5 contempla otros servicios públicos obligatorios adicionales a los electorales y censales."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Escena 'titular': 'Nadie trabaja gratis, salvo por pena judicial o electoral.'",
+              "problema": "La afirmación es incompleta al omitir otros servicios públicos obligatorios que el artículo 5 señala expresamente.",
+              "correccion": "Añadir que, además de las funciones electorales y censales, el artículo 5 establece como obligatorios el servicio de las armas, el de los jurados, así como el desempeño de cargos concejiles y de elección popular."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 792 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 172: recorta al menos 232 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te pueden obligar a trabajar sin recibir un pago? \n ¿TRABAJAR \n SIN PAGO? \n Depende. Por regla general no, pero las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente. \n DEPENDE DE \n LA FUNCIÓN \n La Constitución establece que: \"Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento\", salvo penas judiciales. \n Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento \n Existen servicios que pueden ser obligatorios según la ley: \n Servicio de las armas \n Desempeño de jurados \n Cargos concejiles \n Funciones electorales \n La ley indica"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 792 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 172: recorta al menos 232 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser forzado a realizar trabajos personales si no existe un pago justo y el consentimiento de la persona.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente la prohibición de obligar a prestar trabajos personales sin justa retribución y consentimiento."
+            },
+            {
+              "conclusion": "Existen servicios públicos que la ley define como obligatorios, entre los cuales algunos no conllevan remuneración.",
+              "sostenida": "si",
+              "motivo": "El artículo 5 especifica que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente."
+            },
+            {
+              "conclusion": "Ciertos cargos y servicios a la sociedad son obligatorios según lo determinen las leyes respectivas.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional enumera expresamente el servicio de las armas, jurados y cargos concejiles como servicios públicos obligatorios."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

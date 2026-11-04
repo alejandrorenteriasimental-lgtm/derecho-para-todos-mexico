@@ -1,0 +1,64 @@
+{
+ "tema_id": "T117",
+ "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+ "fecha": "2026-11-04T10:27:03+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben dar por escrito el motivo de tu despido?",
+  "concepto_central": "despido",
+  "respuesta_corta": "Sí, el patrón tiene la obligación de entregarte un aviso escrito que explique claramente las conductas que motivan el despido y las fechas en que ocurrieron.",
+  "reglas": [
+   {
+    "conclusion": "El patrón está obligado a entregar un aviso por escrito detallando las causas y fechas de la rescisión laboral.",
+    "fuente": "F1",
+    "cita_literal": "El patrón que despida a un trabajador deberá darle aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron.",
+    "condiciones": [
+     "Que se trate de una rescisión de la relación de trabajo sin responsabilidad para el patrón"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El aviso debe entregarse directamente al trabajador al momento del despido o a través del Tribunal en un plazo breve.",
+    "fuente": "F1",
+    "cita_literal": "El aviso deberá entregarse personalmente al trabajador en el momento mismo del despido o bien, comunicarlo al Tribunal competente, dentro de los cinco días hábiles siguientes",
+    "condiciones": [
+     "Si se hace vía Tribunal, el patrón debe proporcionar el último domicilio registrado del trabajador"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El escrito debe contener la descripción clara de las conductas que motivan el despido y las fechas exactas en que se cometieron.",
+    "fuente": "F1",
+    "cita_literal": "aviso escrito en el que refiera claramente la conducta o conductas que motivan la rescisión y la fecha o fechas en que se cometieron."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La entrega debe ser personal en el acto del despido o, si no es posible, notificarse mediante el Tribunal en los cinco días hábiles posteriores.",
+    "fuente": "F1",
+    "cita_literal": "entregarse personalmente al trabajador en el momento mismo del despido o bien, comunicarlo al Tribunal competente, dentro de los cinco días hábiles siguientes"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si no se entrega el aviso, se presume que el despido no fue justificado.",
+    "condicion": "A menos que el patrón presente pruebas que acrediten que el despido sí tuvo una causa justificada.",
+    "base": "F1: La falta de aviso al trabajador personalmente o por conducto del Tribunal, por sí sola presumirá la separación no justificada, salvo prueba en contrario"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "difference": "El despido es una separación decidida por el patrón, mientras que la renuncia es una decisión voluntaria de la persona trabajadora."
+   }
+  ],
+  "limites": "Estos textos no establecen el monto de las indemnizaciones ni el procedimiento detallado para impugnar el despido ante el Tribunal, más allá de la notificación del aviso.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,42 +1,43 @@
 {
- "fecha": "2026-12-18",
- "formato": "imagen",
- "tema_id": "T112",
- "titulo": "¿Cuánto debe durar como mínimo una garantía?",
- "gancho": "¿Cuánto debe durar como mínimo una garantía?",
- "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
- "tipo_pregunta": "obligacion",
- "carril": "A",
- "fuentes_sugeridas": "LFPC art. 77",
- "riesgo_exactitud": "",
- "lote": "lote-5",
- "motivo_seleccion": "Art. 77 LFPC: la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
- "hora_publicacion_mx": "09:00",
- "relacion": "independiente",
- "plantilla": "dato",
- "angulo": "Garantía mínima de 90 días desde la entrega del bien o la prestación del servicio (LFPC 77), en 55 palabras visibles o menos: bajada breve, cita corta y sin «OJO» si no agrega una condición distinta",
- "estado": "PENDIENTE_GUION",
- "instrucciones": "docs/tarea_guionista.md",
- "creada": "2026-11-03T02:22:25Z",
- "pieza_id": "I20261218-T112",
- "archivo": "2026-12-18_imagen_T112-lote-5.json",
- "intentos": 0,
- "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Al menos 90 días desde la entrega, si se ofrece con garantía. \\n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del se",
- "ultima_categoria": "redaccion",
- "historial_reaperturas": [
-  {
-   "fecha": "2026-11-03",
-   "por": "Claude",
-   "motivo": "primer descarte (cobertura): la condición del art. 77 LFPC (cuenta desde la entrega del bien o la prestación del servicio) no quedó en lo visible; el ángulo ahora la pide. Si se descarta otra vez, se sustituye la pregunta",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Al"
-  },
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "segundo descarte, pero de longitud (63 palabras visibles, tope 60): causa del sistema, corregida en 2ba378d (los mensajes de longitud dicen cuánto recortar, con prueba). El contenido jurídico (LFPC 77) pasó. Se reabre una vez más",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Al menos 90 días desde la entrega, si se ofrece con garantía. \\n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del se"
-  }
- ]
+  "fecha": "2026-12-18",
+  "formato": "imagen",
+  "tema_id": "T112",
+  "titulo": "¿Cuánto debe durar como mínimo una garantía?",
+  "gancho": "¿Cuánto debe durar como mínimo una garantía?",
+  "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
+  "tipo_pregunta": "obligacion",
+  "carril": "A",
+  "fuentes_sugeridas": "LFPC art. 77",
+  "riesgo_exactitud": "",
+  "lote": "lote-5",
+  "motivo_seleccion": "Art. 77 LFPC: la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+  "hora_publicacion_mx": "09:00",
+  "relacion": "independiente",
+  "plantilla": "dato",
+  "angulo": "Garantía mínima de 90 días desde la entrega del bien o la prestación del servicio (LFPC 77), en 55 palabras visibles o menos: bajada breve, cita corta y sin «OJO» si no agrega una condición distinta",
+  "estado": "GUION_LISTO",
+  "instrucciones": "docs/tarea_guionista.md",
+  "creada": "2026-11-03T02:22:25Z",
+  "pieza_id": "I20261218-T112",
+  "archivo": "2026-12-18_imagen_T112-lote-5.json",
+  "intentos": 0,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Al menos 90 días desde la entrega, si se ofrece con garantía. \\n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del se",
+  "ultima_categoria": "redaccion",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-03",
+      "por": "Claude",
+      "motivo": "primer descarte (cobertura): la condición del art. 77 LFPC (cuenta desde la entrega del bien o la prestación del servicio) no quedó en lo visible; el ángulo ahora la pide. Si se descarta otra vez, se sustituye la pregunta",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Al"
+    },
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "segundo descarte, pero de longitud (63 palabras visibles, tope 60): causa del sistema, corregida en 2ba378d (los mensajes de longitud dicen cuánto recortar, con prueba). El contenido jurídico (LFPC 77) pasó. Se reabre una vez más",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (63 palabras visibles; máximo 60): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Al menos 90 días desde la entrega, si se ofrece con garantía. \\n la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del se"
+    }
+  ],
+  "pieza": "I20261218-T112"
 }

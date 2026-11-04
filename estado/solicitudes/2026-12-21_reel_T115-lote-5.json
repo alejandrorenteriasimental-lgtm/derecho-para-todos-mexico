@@ -1,33 +1,34 @@
 {
- "fecha": "2026-12-21",
- "formato": "reel",
- "tema_id": "T115",
- "titulo": "¿Tu patrón está obligado a inscribirte en el IMSS?",
- "gancho": "¿Tu patrón está obligado a inscribirte en el IMSS?",
- "pregunta": "¿Tu patrón está obligado a inscribirte en el IMSS?",
- "tipo_pregunta": "obligacion",
- "carril": "A",
- "fuentes_sugeridas": "LSS art. 15",
- "riesgo_exactitud": "",
- "lote": "lote-5",
- "motivo_seleccion": "Art. 15 fr. I LSS: los patrones están obligados a registrarse e inscribir a sus trabajadores en el Instituto, dentro de plazos no mayores de cinco días hábiles.",
- "hora_publicacion_mx": "19:00",
- "estado": "PENDIENTE_GUION",
- "instrucciones": "docs/tarea_guionista.md",
- "creada": "2026-11-03T02:22:25Z",
- "pieza_id": "R20261221-T115",
- "archivo": "2026-12-21_reel_T115-lote-5.json",
- "intentos": 0,
- "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la obligación de inscripción también incluye comunicar modificaciones de salario y otros datos, lo cual es parte del núcleo de la obligación patronal según el artículo 15, fracción I.\"]}, \"conclusiones\": [{\"conclusion\": \"El patrón tiene",
- "ultima_categoria": "juridico",
- "historial_reaperturas": [
-  {
-   "fecha": "2026-11-04",
-   "por": "Claude",
-   "motivo": "primer descarte (auditor): faltó que la obligación del art. 15 fr. I LSS incluye comunicar altas, bajas y modificaciones de salario",
-   "estado_anterior": "DESCARTADA",
-   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la obligación de inscripción también incluye comunicar modificaciones de salario y otros datos, lo cual es parte del núcleo de la obligación patronal según el artículo 15, fracción I.\"]}, \"conclusiones\": [{\"conclusion\": \"El patrón tiene"
-  }
- ],
- "angulo": "El patrón debe inscribir a sus trabajadores en el IMSS y comunicar sus altas, bajas y modificaciones de salario (LSS 15 fr. I, cita literal y plazo literal); narración de 600 caracteres o menos"
+  "fecha": "2026-12-21",
+  "formato": "reel",
+  "tema_id": "T115",
+  "titulo": "¿Tu patrón está obligado a inscribirte en el IMSS?",
+  "gancho": "¿Tu patrón está obligado a inscribirte en el IMSS?",
+  "pregunta": "¿Tu patrón está obligado a inscribirte en el IMSS?",
+  "tipo_pregunta": "obligacion",
+  "carril": "A",
+  "fuentes_sugeridas": "LSS art. 15",
+  "riesgo_exactitud": "",
+  "lote": "lote-5",
+  "motivo_seleccion": "Art. 15 fr. I LSS: los patrones están obligados a registrarse e inscribir a sus trabajadores en el Instituto, dentro de plazos no mayores de cinco días hábiles.",
+  "hora_publicacion_mx": "19:00",
+  "estado": "DESCARTADA",
+  "instrucciones": "docs/tarea_guionista.md",
+  "creada": "2026-11-03T02:22:25Z",
+  "pieza_id": "R20261221-T115",
+  "archivo": "2026-12-21_reel_T115-lote-5.json",
+  "intentos": 1,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, las personas empleadoras están obligadas a inscribir a sus trabajadores en el Institut».\", \"[coherencia] Escena 5: el encabezado visible «TRABAJOS PERSONALES» no corresponde a lo que se narra («No aplica si el dueño de la casa hace la obra por sí mismo o es cooper»).\"],",
+  "ultima_categoria": "tecnico",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-04",
+      "por": "Claude",
+      "motivo": "primer descarte (auditor): faltó que la obligación del art. 15 fr. I LSS incluye comunicar altas, bajas y modificaciones de salario",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la obligación de inscripción también incluye comunicar modificaciones de salario y otros datos, lo cual es parte del núcleo de la obligación patronal según el artículo 15, fracción I.\"]}, \"conclusiones\": [{\"conclusion\": \"El patrón tiene"
+    }
+  ],
+  "angulo": "El patrón debe inscribir a sus trabajadores en el IMSS y comunicar sus altas, bajas y modificaciones de salario (LSS 15 fr. I, cita literal y plazo literal); narración de 600 caracteres o menos",
+  "huella_entrada": "26be4982b8238499"
 }

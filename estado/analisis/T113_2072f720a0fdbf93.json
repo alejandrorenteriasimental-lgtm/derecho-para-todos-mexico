@@ -1,49 +1,86 @@
 {
  "tema_id": "T113",
  "pregunta": "¿Te pueden obligar a trabajar sin pagarte?",
- "fecha": "2026-11-04T04:05:31+00:00",
+ "fecha": "2026-11-04T10:23:19+00:00",
  "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Te pueden obligar a trabajar sin pagarte?",
-  "concepto_central": "trabajo personal sin justa retribución",
-  "respuesta_corta": "No, nadie puede ser obligado a prestar trabajos personales sin justa retribución y sin su pleno consentimiento, salvo las funciones electorales y censales.",
+  "concepto_central": "trabajos personales y servicios públicos obligatorios",
+  "respuesta_corta": "Depende. Por regla general no, pero la ley establece que las funciones electorales y censales son obligatorias y gratuitas, salvo que se realicen profesionalmente.",
   "reglas": [
    {
-    "conclusion": "Nadie puede ser obligado a prestar trabajos personales sin justa retribución y consentimiento, salvo por pena judicial.",
+    "conclusion": "Nadie puede ser forzado a realizar trabajos personales si no existe un pago justo y el consentimiento de la persona.",
     "fuente": "F1",
-    "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial",
+    "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento",
     "condiciones": [
-     "Se requiere el pleno consentimiento de la persona y la justa retribución."
+     "Que no se trate de un trabajo impuesto como pena por autoridad judicial"
     ],
     "excepciones": [
-     "El trabajo impuesto como pena por la autoridad judicial."
+     "Trabajo impuesto como pena por la autoridad judicial",
+     "Funciones electorales y censales no profesionales"
     ]
    },
    {
-    "conclusion": "Las funciones electorales y censales son obligatorias y gratuitas, excepto cuando se realicen de forma profesional.",
+    "conclusion": "Existen servicios públicos que la ley define como obligatorios, entre los cuales algunos no conllevan remuneración.",
     "fuente": "F1",
-    "cita_literal": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente en los términos de esta Constitución",
+    "cita_literal": "Las funciones electorales y censales tendrán carácter obligatorio y gratuito, pero serán retribuidas aquéllas que se realicen profesionalmente",
     "condiciones": [
-     "Que no se realicen profesionalmente."
+     "Que las funciones no se realicen de forma profesional"
     ],
     "excepciones": [
-     "Las que se realicen profesionalmente, las cuales serán retribuidas."
+     "Funciones electorales y censales realizadas profesionalmente"
     ]
+   },
+   {
+    "conclusion": "Ciertos cargos y servicios a la sociedad son obligatorios según lo determinen las leyes respectivas.",
+    "fuente": "F1",
+    "cita_literal": "sólo podrán ser obligatorios, en los términos que establezcan las leyes respectivas, el de las armas y los jurados, así como el desempeño de los cargos concejiles",
+    "condiciones": [
+     "En los términos que establezcan las leyes respectivas"
+    ],
+    "excepciones": []
    }
   ],
   "elementos": [
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "La prohibición de prestar trabajos sin justa retribución protege a las personas de ser obligadas, salvo las excepciones constitucionales como el trabajo por pena judicial o las funciones electorales gratuitas.",
+    "respuesta": "Nadie puede ser despojado de lo que gana por su trabajo a menos que exista una orden de un juez.",
     "fuente": "F1",
-    "cita_literal": "Nadie podrá ser obligado a prestar trabajos personales sin la justa retribución y sin su pleno consentimiento, salvo el trabajo impuesto como pena por la autoridad judicial"
+    "cita_literal": "Nadie puede ser privado del producto de su trabajo, sino por resolución judicial"
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "motivo": "El texto constitucional no especifica el procedimiento o tribunal ante el cual reclamar el pago de salarios omitidos."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "motivo": "No se menciona la autoridad administrativa o laboral encargada de sancionar el trabajo no remunerado."
    }
   ],
-  "interpretaciones": [],
-  "distinciones": [],
-  "limites": "El texto oficial no detalla los mecanismos específicos de reclamo ni las vías legales para exigir el pago de un salario retenido.",
+  "interpretaciones": [
+   {
+    "afirmacion": "El trabajo impuesto como castigo judicial no requiere el consentimiento del trabajador.",
+    "condicion": "Siempre que sea impuesto como pena por autoridad judicial y se ajuste a los límites del artículo 123 constitucional.",
+    "base": "F1: 'salvo el trabajo impuesto como pena por la autoridad judicial'"
+   },
+   {
+    "afirmacion": "Si un trabajador incumple su contrato, no se puede usar la fuerza física para obligarlo a trabajar.",
+    "condicion": "En cualquier caso de falta de cumplimiento de contrato por parte del trabajador.",
+    "base": "F1: 'sin que en ningún caso pueda hacerse coacción sobre su persona'"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "trabajos personales",
+    "b": "servicios públicos obligatorios",
+    "diferencia": "Los trabajos personales requieren pago y consentimiento por regla general, mientras que los servicios públicos (como armas o jurados) pueden ser exigidos por ley."
+   }
+  ],
+  "limites": "Los textos no definen qué se considera una 'justa retribución' ni establecen los plazos para exigir el pago de un trabajo ya realizado.",
   "fuentes_irrelevantes": []
  }
 }

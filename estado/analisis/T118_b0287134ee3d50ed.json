@@ -1,0 +1,53 @@
+{
+ "tema_id": "T118",
+ "pregunta": "¿Cuánto puede durar la prisión preventiva?",
+ "fecha": "2026-11-04T10:31:48+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto puede durar la prisión preventiva?",
+  "concepto_central": "prisión preventiva",
+  "respuesta_corta": "No puede exceder el tiempo máximo de pena del delito ni dos años, salvo que se prolongue por el ejercicio del derecho de defensa del imputado.",
+  "reglas": [
+   {
+    "conclusion": "La prisión preventiva no podrá exceder el tiempo máximo de pena fijado para el delito ni ser superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+    "fuente": "F1",
+    "cita_literal": "en ningún caso será superior a dos años, salvo que su prolongación se deba al ejercicio del derecho de defensa del imputado.",
+    "condiciones": [
+     "Que se trate de una medida cautelar de prisión preventiva decretada en un proceso penal"
+    ],
+    "excepciones": [
+     "Que la prolongación del plazo se deba al ejercicio del derecho de defensa del imputado"
+    ]
+   },
+   {
+    "conclusion": "Si vence el término máximo de prisión preventiva sin dictarse sentencia, el imputado debe ser puesto en libertad inmediata mientras continúa el proceso.",
+    "fuente": "F1",
+    "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares.",
+    "condiciones": [
+     "Que haya cumplido el plazo máximo de prisión preventiva sin que se haya pronunciado sentencia"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Si se cumple el plazo máximo sin que se haya dictado sentencia, el imputado debe ser liberado de inmediato mientras continúa su juicio, pudiendo imponerse otras medidas cautelares.",
+    "fuente": "F1",
+    "cita_literal": "Si cumplido este término no se ha pronunciado sentencia, el imputado será puesto en libertad de inmediato mientras se sigue el proceso, sin que ello obste para imponer otras medidas cautelares."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La prórroga de la prisión preventiva más allá de los dos años requiere verificar si los actos procesales de demora derivaron del ejercicio de la defensa del imputado.",
+    "condicion": "Cuando la prisión preventiva exceda el plazo legal de dos años.",
+    "base": "Artículo 20, apartado B, fracción IX de la Constitución."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto del artículo 20 constitucional establece el derecho a la libertad por vencimiento de plazo, pero no detalla el procedimiento específico para solicitarla ni la autoridad encargada de tramitarla, por lo que dichos detalles se rigen por leyes secundarias.",
+  "fuentes_irrelevantes": []
+ }
+}

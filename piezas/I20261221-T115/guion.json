@@ -1,0 +1,142 @@
+{
+  "id": "I20261221-T115",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Puedes tener un arma en tu casa?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T115",
+  "pieza": {
+    "titular": "¿Puedes tener un arma en tu casa?",
+    "bajada": "Conoce lo que establece la Constitución sobre la posesión de armas en el domicilio.",
+    "mito": "Cualquier persona puede tener libremente cualquier tipo de arma en su casa.",
+    "realidad": "Sí: puedes poseer armas en tu domicilio para seguridad y legítima defensa, excepto las prohibidas y las de las Fuerzas Armadas.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 10"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos establece las reglas sobre la posesión de armas en el ámbito doméstico.\n\nEl artículo 10 señala textualmente que \"Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa\".\n\nNo obstante, la norma marca excepciones claras para las armas prohibidas y las reservadas a las Fuerzas Armadas. Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija tipo mito y realidad sobre la posesión de armas en el domicilio según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 10",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los habitantes tienen derecho a poseer armas en su domicilio para su seguridad y legítima defensa, con excepciones.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes tener un arma en tu casa?",
+    "concepto_central": "derecho a poseer armas en el domicilio",
+    "respuesta_corta": "Sí, tienes derecho a poseer armas en tu domicilio para tu seguridad y legítima defensa, salvo las prohibidas y las reservadas a las Fuerzas Armadas.",
+    "reglas": [
+      {
+        "conclusion": "Los habitantes tienen derecho a poseer armas en su domicilio para su seguridad y legítima defensa, con excepciones de ley.",
+        "fuente": "F1",
+        "cita_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa",
+        "condiciones": [
+          "para su seguridad y legítima defensa"
+        ],
+        "excepciones": [
+          "armas prohibidas por la Ley Federal",
+          "armas reservadas para el uso exclusivo de la Fuerza Armada permanente y los cuerpos de reserva"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "10"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Es un derecho legal de los habitantes poseer armas en su domicilio para seguridad y legítima defensa bajo las excepciones señaladas.",
+        "fuente": "F1",
+        "cita_literal": "Los habitantes de los Estados Unidos Mexicanos tienen derecho a poseer armas en su domicilio, para su seguridad y legítima defensa"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla cuáles son específicamente las armas prohibidas ni el contenido de la ley federal que determina los casos, condiciones y requisitos de portación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T10:37:24+00:00",
+    "solicitud": "2026-12-21_imagen_T115-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 1,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 2,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Puedes tener un arma en tu casa?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los habitantes tienen derecho a poseer armas en su domicilio para su seguridad y legítima defensa, con excepciones de ley.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una síntesis exacta del derecho reconocido en el artículo 10 constitucional, incluyendo las excepciones de prohibición y reserva."
+            },
+            {
+              "conclusion": "Es un derecho legal de los habitantes poseer armas en su domicilio para seguridad y legítima defensa bajo las excepciones señaladas.",
+              "sostenida": "si",
+              "motivo": "La afirmación se desprende directamente del texto oficial, respetando la finalidad (seguridad y legítima defensa) y el ámbito (domicilio)."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

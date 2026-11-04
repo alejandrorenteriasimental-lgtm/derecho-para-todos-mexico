@@ -1,0 +1,152 @@
+{
+  "id": "I20261218-T112",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuánto dura la garantía?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T112",
+  "pieza": {
+    "titular": "¿Cuánto dura la garantía?",
+    "bajada": "Al menos noventa días contados desde la entrega del bien o la prestación del servicio, si se ofrece con garantía.",
+    "cita": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 77",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 77"
+  },
+  "copy": "La Ley Federal de Protección al Consumidor establece reglas claras para los productos y servicios que cuentan con un respaldo comercial.\n\nDe acuerdo con el artículo 77 de la Ley Federal de Protección al Consumidor, todo bien o servicio que se ofrezca con garantía deberá sujetarse a lo dispuesto por esta ley y a lo pactado entre proveedor y consumidor.\n\nLa norma dispone que la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.\n\nGuarda y comparte esta información para que más personas conozcan sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen gráfica que explica la duración mínima de noventa días para garantías según la Ley Federal de Protección al Consumidor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "77",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 77",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-04"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La garantía no puede ser inferior a noventa días desde la entrega del bien o la prestación del servicio.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto debe durar como mínimo una garantía?",
+    "concepto_central": "garantía",
+    "respuesta_corta": "Al menos noventa días contados a partir de la entrega del bien o la prestación del servicio, cuando el producto o servicio se ofrezca con garantía.",
+    "reglas": [
+      {
+        "conclusion": "Cuando un bien o servicio se ofrece con garantía, su duración no puede ser inferior a noventa días.",
+        "fuente": "F1",
+        "cita_literal": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio.",
+        "condiciones": [
+          "Aplica a todo bien o servicio que se ofrezca con garantía",
+          "El plazo se cuenta a partir de la entrega del bien o la prestación del servicio"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "77"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La ley establece que la garantía no puede ser inferior a noventa días contados desde que se entrega el bien o se presta el servicio.",
+        "fuente": "F1",
+        "cita_literal": "la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien o la prestación del servicio."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La regla aplica a todo bien o servicio que se ofrezca con garantía, debiendo sujetarse a la ley y a lo pactado entre proveedor y consumidor.",
+        "fuente": "F1",
+        "cita_literal": "Todo bien o servicio que se ofrezca con garantía deberá sujetarse a lo dispuesto por esta ley y a lo pactado entre proveedor y consumidor."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala sanciones por incumplimiento, procedimientos ni plazos de reclamación, por lo que no deben afirmarse en la pieza."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-04T10:35:30+00:00",
+    "solicitud": "2026-12-18_imagen_T112-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 1,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 2,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cuánto debe durar como mínimo una garantía?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Cuando un bien o servicio se ofrece con garantía, su duración no puede ser inferior a noventa días.",
+              "sostenida": "si",
+              "motivo": "El artículo 77 de la Ley Federal de Protección al Consumidor establece explícitamente que la garantía no podrá ser inferior a noventa días."
+            },
+            {
+              "conclusion": "La garantía debe sujetarse tanto a la ley como a lo pactado entre el proveedor y el consumidor.",
+              "sostenida": "si",
+              "motivo": "El texto oficial señala que todo bien o servicio con garantía deberá sujetarse a lo dispuesto por la ley y a lo pactado entre las partes."
+            },
+            {
+              "conclusion": "El plazo de la garantía se cuenta a partir de la entrega del bien o la prestación del servicio.",
+              "sostenida": "si",
+              "motivo": "La norma especifica que los noventa días se cuentan a partir de la entrega del bien o la prestación del servicio."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

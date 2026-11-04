@@ -1,72 +1,45 @@
 {
  "solicitud": "2026-12-21_reel_T115-lote-5.json",
- "fecha": "2026-11-03T22:09:41+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la obligación de inscripción también incluye comunicar modificaciones de salario y otros datos, lo cual es parte del núcleo de la obligación patronal según el artículo 15, fracción I.\"]}, \"conclusiones\": [{\"conclusion\": \"El patrón tiene",
+ "fecha": "2026-11-04T10:26:24+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, las personas empleadoras están obligadas a inscribir a sus trabajadores en el Institut».\", \"[coherencia] Escena 5: el encabezado visible «TRABAJOS PERSONALES» no corresponde a lo que se narra («No aplica si el dueño de la casa hace la obra por sí mismo o es cooper»).\"],",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 714 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
+    "narración de 777 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 157: recorta al menos 217 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Excepción en obras de construcción» no corresponde a lo que se narra («Esta regla no aplica si el dueño de una casa hace la obra personalment»)."
    ],
-   "visible": "  \n ¿Sabías que tu empleador debe registrarte ante el Instituto? \n ¿PATRÓN OBLIGADO \n A DARTE IMSS? \n Sí, las personas empleadoras están obligadas a inscribir a sus trabajadores en el Instituto en un plazo no mayor a cinco días hábiles. \n SÍ, ES OBLIGACIÓN \n DEL PATRÓN \n La norma indica la obligación patronal: Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario. \n Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario \n Acciones exigidas al empleador: \n Inscribir a trabajadores \n Comunicar altas y bajas \n Modificaciones salariales \n La regla no aplica en lo"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 714 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram)"
-   ]
+   "visible": "  \n ¿Tu patrón tiene la obligación legal de inscribirte en el IMSS? \n ¿OBLIGADO A \n INSCRIBIRTE \n AL IMSS? \n Sí. Las personas empleadoras deben inscribir a sus trabajadores en el Instituto en un plazo no mayor a cinco días hábiles. \n SÍ, ES UNA \n OBLIGACIÓN \n La Ley del Seguro Social establece que los patrones deben: \"Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles\". \n Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días há"
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, las personas empleadoras están obligadas a inscribir a sus trabajadores en el Institut»."
+    "narración de 727 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 107: recorta al menos 167 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Tu empleador debe registrarte? \n ¿PATRÓN OBLIGADO \n A DARTE IMSS? \n Sí, en un plazo no mayor a cinco días hábiles. \n SÍ, ES OBLIGACIÓN \n DEL PATRÓN \n La norma indica la obligación patronal: Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario. \n Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario \n Acciones exigidas al empleador: \n Inscribir a trabajadores \n Comunicar altas y bajas \n Modificaciones salariales \n La regla no aplica en los casos de construcción, ampliación o reparación de inmuebles, cuando los trabajos se realicen en forma personal por "
+   "visible": "  \n ¿Tu patrón tiene la obligación de darte de alta en el IMSS? \n ¿OBLIGACIÓN \n DE INSCRIBIRTE \n AL IMSS? \n Sí, las personas empleadoras deben inscribirte en el Instituto en un plazo máximo de cinco días hábiles. \n PLAZO DE \n 5 DÍAS \n La Ley del Seguro Social obliga a los patrones a \"Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles\". \n Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles \n El empleador debe cumplir c"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 727 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 107: recorta al menos 167 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": [
-      "La pieza no menciona que la obligación de inscripción también incluye comunicar modificaciones de salario y otros datos, lo cual es parte del núcleo de la obligación patronal según el artículo 15, fracción I."
-     ]
-    },
-    "conclusiones": [
-     {
-      "conclusion": "El patrón tiene la obligación de inscribir a sus trabajadores en el Instituto y comunicar sus altas dentro de un plazo determinado.",
-      "sostenida": "si",
-      "motivo": "El artículo 15, fracción I, establece explícitamente esta obligación y el plazo de cinco días hábiles."
-     },
-     {
-      "conclusion": "No aplica cuando la construcción o reparación se realice en forma personal por el propietario o por cooperación comunitaria.",
-      "sostenida": "si",
-      "motivo": "El último párrafo del artículo 15 establece esta excepción específica para las fracciones I, II, III y VI."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Escena 'lista'",
-      "problema": "La lista simplifica excesivamente las obligaciones patronales al omitir la comunicación de modificaciones de salario y otros datos, los cuales son parte integral de la fracción I del artículo 15.",
-      "correccion": "Incluir en la lista: 'Comunicar modificaciones de salario y otros datos'."
-     },
-     {
-      "donde": "Escena 'excepcion'",
-      "problema": "La redacción sugiere que la excepción es general para la 'construcción', cuando el texto legal es específico sobre qué fracciones (I, II, III y VI) no aplican y bajo qué condiciones (comprobar el hecho en términos del reglamento).",
-      "correccion": "Aclarar que la excepción aplica específicamente a las obligaciones de registro, nóminas, determinación de cuotas y constancias de obra, y que debe comprobarse conforme al reglamento."
-     }
-    ]
-   }
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, las personas empleadoras están obligadas a inscribir a sus trabajadores en el Institut».",
+    "[coherencia] Escena 5: el encabezado visible «TRABAJOS PERSONALES» no corresponde a lo que se narra («No aplica si el dueño de la casa hace la obra por sí mismo o es cooper»)."
+   ],
+   "visible": "  \n ¿Tu patrón debe darte de alta en el IMSS? \n ¿OBLIGACIÓN \n DE INSCRIBIRTE \n AL IMSS? \n Sí, deben inscribirte en un plazo máximo de cinco días hábiles. \n PLAZO DE \n 5 DÍAS \n La ley obliga a: \"Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles\". \n Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles \n El patrón debe: \n Inscribir al trabajador \n Reportar el salario \n Avisar altas y bajas \n No aplica si el dueño de la c"
   }
  ]
 }
