@@ -5740,7 +5740,7 @@
       "id": "R20261225-T119",
       "formato": "reel",
       "huella": "63958cbc99d6640535e23450a2ae9ec8e991e3585a71c16c369d937a8eb9acf8",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-05T04:19:24+00:00",
@@ -5756,6 +5756,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-05T04:25:49+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-05T04:31:21+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 05-11): narración y textos visibles corregidos, art. 24 LFT como F2; se vuelve a verificar y producir"
         }
       ],
       "error": null,

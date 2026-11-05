@@ -2,26 +2,26 @@
   "fecha": "2026-12-27",
   "formato": "reel",
   "tema_id": "T121",
-  "titulo": "¿Qué debe informarte una tienda en línea antes de comprar?",
-  "gancho": "¿Qué debe informarte una tienda en línea antes de comprar?",
-  "pregunta": "¿Qué debe informarte una tienda en línea antes de comprar?",
+  "titulo": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+  "gancho": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+  "pregunta": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
   "tipo_pregunta": "obligacion",
   "carril": "A",
   "fuentes_sugeridas": "LFPC art. 76 Bis fr. III",
   "riesgo_exactitud": "",
   "lote": "lote-5",
-  "motivo_seleccion": "Art. 76 Bis LFPC: en transacciones por medios electrónicos, el proveedor debe informar su domicilio físico, teléfonos y medios de contacto, términos, condiciones, costos y formas de pago, entre otras obligaciones.",
+  "motivo_seleccion": "Art. 76 Bis fr. III LFPC: «El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones».",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-03T02:22:25Z",
   "pieza_id": "R20261227-T121",
   "archivo": "2026-12-27_reel_T121-lote-5.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la información sobre elementos técnicos de seguridad debe ser comunicada 'previamente a la celebración de la transacción' en la sección de lista/items, aunque sí lo hace en el razonamiento.\", \"No se menciona la obligación de informar so",
   "ultima_categoria": "juridico",
-  "huella_entrada": "a97e1717790adc20",
-  "angulo": "Solo la fracción III del art. 76 Bis LFPC. Respuesta: su domicilio físico, sus teléfonos y los demás medios para reclamar o pedir aclaraciones, antes de que compres. Cita literal ÚNICA: «El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones». Sin enumerar las demás fracciones. Cuatro escenas más cierre; narración de 480 caracteres o menos.",
+  "huella_entrada": "3214d87680e63871",
+  "angulo": "Solo la fracción III del art. 76 Bis LFPC (transacciones por medios electrónicos). Respuesta: Sí, antes de celebrar la transacción. Cita literal ÚNICA: «El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones». Sin listas ni otras fracciones. Cuatro escenas más cierre; narración de 480 caracteres o menos.",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-05",
@@ -29,6 +29,14 @@
       "motivo": "primer descarte por longitud (719 caracteres): el ángulo pedía varias fracciones del art. 76 Bis. Se reabre con una sola fracción (III) y una cita literal; tope de 480 caracteres",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\"
+    },
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte: la pregunta abierta («¿Qué debe informarte…?») hacía que la auditoría exigiera todas las fracciones del art. 76 Bis. Ahora una pregunta cerrada con respuesta literal en la fracción III",
+      "estado_anterior": "DESCARTADA",
+      "pregunta_anterior": "¿Qué debe informarte una tienda en línea antes de comprar?",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la información sobre elementos técnicos de seguridad debe ser comunicada 'previamente a la celebración de la transacción' en la sección de lista/items, aunque s"
     }
   ]
 }

@@ -13,7 +13,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "26",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados",
+      "texto_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad",
       "cita": "Ley Federal del Trabajo, artículo 26",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-05"
@@ -22,10 +22,10 @@
       "tipo": "ley",
       "nivel": "oficial",
       "documento": "Ley Federal del Trabajo",
-      "articulo": "26",
+      "articulo": "24",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "pues se imputará el patrón la falta de esa formalidad.",
-      "cita": "Ley Federal del Trabajo, artículo 26",
+      "texto_literal": "Las condiciones de trabajo deben hacerse constar por escrito cuando no existan contratos colectivos aplicables",
+      "cita": "Ley Federal del Trabajo, artículo 24",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-05"
     }
@@ -33,16 +33,16 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Trabajas sin haber firmado un contrato de trabajo por escrito?",
+      "texto": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
       "titulo": [
-        "¿SIN CONTRATO?",
-        "DERECHOS"
+        "¿SIN CONTRATO",
+        "FIRMADO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, no los pierdes; la falta de contrato escrito no te priva de ellos y se le imputa al patrón.",
+      "texto": "No. La falta de contrato escrito no te quita tus derechos.",
       "titulo": [
         "NO PIERDES",
         "TUS DERECHOS"
@@ -51,42 +51,35 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley establece lo siguiente respecto a tu empleo: La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados",
-      "etiqueta": "Ley Federal del Trabajo, artículo 26",
-      "cita": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Consecuencias legales de esta situación:",
-      "items": [
-        "Se conservan tus derechos",
-        "Servicios ya prestados",
-        "Se imputa al patrón"
-      ],
+      "texto": "La Ley Federal del Trabajo dice: la falta del escrito no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad.",
+      "etiqueta": "Ley Federal del Trabajo, art. 26",
+      "cita": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La falta de contrato escrito no priva al trabajador de sus derechos.",
-          "fuente": "F1"
-        },
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "La falta de la formalidad escrita se imputa al patrón.",
-          "fuente": "F2"
+          "texto": "La falta del escrito no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados; la falta de esa formalidad se imputa al patrón.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "No, no los pierdes; la falta de contrato escrito no te priva de ellos y se le imputa al patrón.",
+      "texto": "Y la ley pide que las condiciones de trabajo consten por escrito cuando no haya un contrato colectivo aplicable.",
       "titulo": [
-        "FALTA ESCRITA",
-        "CULPA PATRONAL"
+        "POR ESCRITO,",
+        "SI NO HAY",
+        "CONTRATO COLECTIVO"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las condiciones de trabajo deben hacerse constar por escrito cuando no existan contratos colectivos aplicables.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -99,19 +92,30 @@
     "suficiente": true,
     "pregunta": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
     "concepto_central": "derechos laborales",
-    "respuesta_corta": "No, no los pierdes; la falta de contrato escrito no te priva de ellos y se le imputa al patrón.",
+    "respuesta_corta": "No. La falta del contrato escrito no priva al trabajador de sus derechos; esa falta se imputa al patrón.",
     "reglas": [
       {
-        "conclusion": "La falta de contrato por escrito no priva al trabajador de sus derechos derivados de las normas de trabajo y de los servicios prestados.",
-        "fuente": "F2",
-        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados",
-        "condiciones": [
-          "falta del escrito a que se refieren los artículos 24 y 25"
-        ],
+        "conclusion": "La falta del escrito no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados; se imputa al patrón.",
+        "fuente": "F1",
+        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad",
+        "condiciones": [],
         "excepciones": [],
         "ref": {
           "documento": "Ley Federal del Trabajo",
           "articulo": "26"
+        }
+      },
+      {
+        "conclusion": "Las condiciones de trabajo deben constar por escrito cuando no existan contratos colectivos aplicables.",
+        "fuente": "F2",
+        "cita_literal": "Las condiciones de trabajo deben hacerse constar por escrito cuando no existan contratos colectivos aplicables",
+        "condiciones": [
+          "cuando no existan contratos colectivos aplicables"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "24"
         }
       }
     ],
@@ -120,22 +124,22 @@
         "elemento": "contenido",
         "estado": "cubierto",
         "respuesta": "Se conservan los derechos derivados de las normas de trabajo y de los servicios prestados.",
-        "fuente": "F2",
-        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados"
+        "fuente": "F1",
+        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad"
       },
       {
         "elemento": "condiciones",
         "estado": "cubierto",
         "respuesta": "La falta de la formalidad escrita se le imputa al patrón.",
-        "fuente": "F2",
-        "cita_literal": "pues se imputará el patrón la falta de esa formalidad."
+        "fuente": "F1",
+        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad"
       },
       {
         "elemento": "excepcion",
         "estado": "no_aplica",
         "respuesta": "No aplica",
-        "fuente": "F2",
-        "cita_literal": "",
+        "fuente": "F1",
+        "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad",
         "motivo": "El texto oficial no prevé excepciones a esta regla."
       }
     ],
@@ -173,7 +177,7 @@
   "pregunta_original": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Si no firmaste contrato, pierdes tus derechos laborales?\n\nNo, no los pierdes; la falta de contrato escrito no te priva de ellos y se le imputa al patrón.\n\nFuente: Ley Federal del Trabajo, artículo 26.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No. El artículo 26 de la Ley Federal del Trabajo dice: «La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad».\n\nEl artículo 24 establece: «Las condiciones de trabajo deben hacerse constar por escrito cuando no existan contratos colectivos aplicables».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -209,5 +213,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Reel rehecho: sin titular repetido, sin «La ley establece lo siguiente respecto a tu empleo», sin lista sin narrar ni «FALTA ESCRITA / CULPA PATRONAL»; cita literal completa del art. 26 LFT (incluida la imputación al patrón) y la condición literal del art. 24 (por escrito cuando no existan contratos colectivos aplicables) como F2; texto de publicación con ambas citas y sin repetir la pregunta"
+    }
+  ]
 }
