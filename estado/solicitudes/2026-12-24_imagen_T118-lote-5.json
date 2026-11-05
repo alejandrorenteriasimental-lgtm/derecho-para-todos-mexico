@@ -2,25 +2,25 @@
   "fecha": "2026-12-24",
   "formato": "imagen",
   "tema_id": "T118",
-  "titulo": "¿Qué es la prima de antigüedad?",
-  "gancho": "¿Qué es la prima de antigüedad?",
-  "pregunta": "¿Qué es la prima de antigüedad?",
+  "titulo": "¿Si naces en México eres mexicano aunque tus papás sean extranjeros?",
+  "gancho": "¿Si naces en México eres mexicano aunque tus papás sean extranjeros?",
+  "pregunta": "¿Si naces en México eres mexicano aunque tus papás sean extranjeros?",
   "tipo_pregunta": "derecho",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 162",
+  "fuentes_sugeridas": "CPEUM art. 30",
   "riesgo_exactitud": "",
   "lote": "lote-5",
-  "motivo_seleccion": "Art. 162 LFT: los trabajadores de planta tienen derecho a una prima de antigüedad de doce días de salario por cada año de servicios, en los supuestos que el propio artículo señala.",
+  "motivo_seleccion": "Art. 30, apartado A, fr. I CPEUM: son mexicanos por nacimiento «Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres».",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "Prima de antigüedad: doce días de salario por cada año de servicios (LFT 162); el «OJO» con un dato distinto: en la separación voluntaria se paga a quienes tengan por lo menos quince años de servicios (decir «por lo menos»)",
-  "estado": "DESCARTADA",
+  "angulo": "Solo el art. 30, apartado A, fracción I de la Constitución. Respuesta: Sí. Cita literal ÚNICA: «Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres» (son mexicanos por nacimiento). Sin hablar de naturalización ni de las demás fracciones. Sin «OJO» que repita la respuesta.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-03T02:22:25Z",
   "pieza_id": "I20261224-T118",
   "archivo": "2026-12-24_imagen_T118-lote-5.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"[minimo] «Importe de doce días de salario por año de servicios, pagadero por separación voluntaria c» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[cobert",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -30,7 +30,15 @@
       "motivo": "primer descarte (redacción): el «OJO» repetía la respuesta",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Es el importe de doce días de salario por cada año de servicios al que tienen derecho los trabajadores de planta bajo determinadas condiciones. \\n consistirá en el imp"
+    },
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el tercer descarte con LFT 162 (prima de antigüedad: cifra mínima presentada como exacta, «OJO» repetido, cobertura); ahora CPEUM 30 A I, respuesta literal y breve, tema no usado en las últimas 3 semanas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"[minimo] «Importe de doce días de salario por año de servicios, pagadero por separación voluntaria c» presenta co",
+      "pregunta_anterior": "¿Qué es la prima de antigüedad?"
     }
   ],
-  "huella_entrada": "1d048b9465a82d03"
+  "huella_entrada": "1ce470036c835d5f"
 }

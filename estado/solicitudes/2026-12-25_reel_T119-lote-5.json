@@ -2,23 +2,34 @@
   "fecha": "2026-12-25",
   "formato": "reel",
   "tema_id": "T119",
-  "titulo": "¿La víctima de un delito tiene derecho a la reparación del daño?",
-  "gancho": "¿La víctima de un delito tiene derecho a la reparación del daño?",
-  "pregunta": "¿La víctima de un delito tiene derecho a la reparación del daño?",
+  "titulo": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
+  "gancho": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
+  "pregunta": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
   "tipo_pregunta": "derecho",
   "carril": "A",
-  "fuentes_sugeridas": "CPEUM art. 20",
+  "fuentes_sugeridas": "LFT arts. 24, 26",
   "riesgo_exactitud": "",
   "lote": "lote-5",
-  "motivo_seleccion": "Art. 20 apartado C fr. IV CPEUM: derecho de la víctima a que se le repare el daño.",
+  "motivo_seleccion": "Art. 26 LFT: «La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad»; art. 24: las condiciones de trabajo deben constar por escrito cuando no existan contratos colectivos aplicables.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-03T02:22:25Z",
   "pieza_id": "R20261225-T119",
   "archivo": "2026-12-25_reel_T119-lote-5.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza omite mencionar la limitante fundamental del juez respecto a la reparación del daño: el juzgador solo puede condenar a la reparación si previamente ha emitido una sentencia condenatoria por el delito.\"]}, \"conclusiones\": [{\"conclusion\": \"La víctima tie",
   "ultima_categoria": "juridico",
-  "huella_entrada": "08eb3262f6bb9c18"
+  "huella_entrada": "f62de4e377bb8ec5",
+  "angulo": "Respuesta: No. Cita literal principal del art. 26 LFT («La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados, pues se imputará el patrón la falta de esa formalidad»). Una condición del art. 24, literal: las condiciones de trabajo «deben hacerse constar por escrito cuando no existan contratos colectivos aplicables». Cuatro escenas más cierre; narración de 520 caracteres o menos; sin listas.",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte jurídico con CPEUM 20 C IV (reparación del daño: faltaba la condición de la sentencia condenatoria); ahora LFT 24 y 26, respuesta literal, tema no usado en las últimas 3 semanas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza omite mencionar la limitante fundamental del juez respecto a la reparación del daño: el juzgador solo puede condenar a la reparación si previamente ha emitido una sentencia con",
+      "pregunta_anterior": "¿La víctima de un delito tiene derecho a la reparación del daño?"
+    }
+  ]
 }
