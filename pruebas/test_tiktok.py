@@ -60,7 +60,8 @@ def test_renueva_y_guarda_la_clave_nueva_cifrada(ent):
     h = Http(); tiktok.enviar_a_bandeja("R1", ent, "v1", env=REAL, http=h, ahora=AHORA + timedelta(hours=9, minutes=30), dormir=lambda s: None)
     assert h.llamadas[0][1] == tiktok.TOKEN_URL and b"refresh_token=R1" in h.llamadas[0][3]
     t = tiktok.leer_tokens("clave-secreta"); assert t["refresh_token"] == "R2" and t["access_token"] == "A2"
-    assert b"R2" not in tiktok.TOKENS.read_bytes()                      # nunca en claro
+    cifrado = tiktok.TOKENS.read_bytes()                                # nunca en claro: se busca el JSON en claro, no
+    assert b'"R2"' not in cifrado and b"refresh_token" not in cifrado  # «R2» suelto (un token Fernet en base64 puede contenerlo por azar: ciclo 41964418538, 5-11)
 
 
 def test_envio_sin_confirmacion_no_se_repite(ent):
