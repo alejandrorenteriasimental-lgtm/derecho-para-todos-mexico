@@ -1,0 +1,57 @@
+{
+ "tema_id": "T118",
+ "pregunta": "¿Si naces en México eres mexicano aunque tus papás sean extranjeros?",
+ "fecha": "2026-11-05T10:20:58+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si naces en México eres mexicano aunque tus papás sean extranjeros?",
+  "concepto_central": "nacionalidad mexicana por nacimiento",
+  "respuesta_corta": "Sí. La Constitución establece que son mexicanos por nacimiento quienes nazcan en territorio de la República, sin importar la nacionalidad de sus padres.",
+  "reglas": [
+   {
+    "conclusion": "Las personas que nacen dentro del territorio de la República Mexicana adquieren la nacionalidad mexicana por nacimiento, independientemente del origen o nacionalidad de sus progenitores.",
+    "fuente": "F1",
+    "cita_literal": "Son mexicanos por nacimiento: I. Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres.",
+    "condiciones": [
+     "Nacer en territorio de la República"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se garantiza la nacionalidad mexicana por nacimiento a toda persona que nazca en territorio nacional.",
+    "fuente": "F1",
+    "cita_literal": "Son mexicanos por nacimiento: I. Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El único requisito establecido para este supuesto es que el nacimiento ocurra dentro del territorio de la República.",
+    "fuente": "F1",
+    "cita_literal": "Son mexicanos por nacimiento: I. Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La norma no establece excepciones para quienes nacen en territorio nacional en función de la nacionalidad de sus padres.",
+    "fuente": "F1",
+    "cita_literal": "Son mexicanos por nacimiento: I. Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres.",
+    "motivo": "El texto constitucional no prevé supuestos en los que se niegue la nacionalidad por nacimiento a quien nace en territorio de la República."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "mexicanos por nacimiento",
+    "b": "mexicanos por naturalización",
+    "diferencia": "Los primeros obtienen la nacionalidad por nacer en territorio o por filiación, mientras que los segundos son extranjeros que obtienen una carta de naturalización o por matrimonio."
+   }
+  ],
+  "limites": "El texto no menciona los trámites administrativos ante el Registro Civil ni excepciones para hijos de personal diplomático extranjero que no están contempladas en este artículo.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "tema_id": "T119",
+ "pregunta": "¿Tienes derecho a un descanso durante tu jornada de trabajo?",
+ "fecha": "2026-11-05T10:22:19+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes derecho a un descanso durante tu jornada de trabajo?",
+  "concepto_central": "descanso durante la jornada continua de trabajo",
+  "respuesta_corta": "Sí, si tu jornada de trabajo es continua, tienes derecho a que se te conceda un descanso de al menos media hora.",
+  "reglas": [
+   {
+    "conclusion": "En las jornadas de trabajo que se realizan de forma continua, es obligatorio otorgar un periodo de descanso mínimo de treinta minutos.",
+    "fuente": "F1",
+    "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos.",
+    "condiciones": [
+     "Que la jornada de trabajo sea de tipo continua"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe otorgar un periodo de descanso que debe durar, como mínimo, media hora.",
+    "fuente": "F1",
+    "cita_literal": "se concederá al trabajador un descanso de media hora, por lo menos."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Este derecho aplica específicamente cuando el trabajador desempeña una jornada de trabajo continua.",
+    "fuente": "F1",
+    "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones para este descanso mínimo en jornadas continuas.",
+    "fuente": "F1",
+    "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos.",
+    "motivo": "El texto normativo no prevé supuestos en los que se pueda omitir este descanso."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmación": "El tiempo de descanso puede ser superior a los treinta minutos.",
+    "condicion": "Siempre que así se acuerde o se establezca, ya que la norma fija solo el límite mínimo.",
+    "base": "F1 (uso de la frase \"por lo menos\")"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no aclara si este tiempo de descanso debe ser remunerado, si el trabajador puede salir del centro de trabajo, ni qué reglas aplican para jornadas que no sean continuas.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "I20261225-T119",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Tienes derecho a un descanso en tu jornada?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T119",
+  "pieza": {
+    "titular": "¿Tienes derecho a un descanso en tu jornada?",
+    "bajada": "Sí. Si la jornada es continua, el descanso mínimo es de media hora.",
+    "cita": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos».",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 63",
+    "ojo": "Es el mínimo legal permitido.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 63"
+  },
+  "copy": "Según el artículo 63 de la Ley Federal del Trabajo, las personas que laboran en una jornada continua tienen derecho a una pausa obligatoria.\n\nEl texto legal establece que se debe conceder un descanso de media hora, por lo menos. Al indicar que es un mínimo, el periodo podría ser superior si se establece así en el centro de trabajo.\n\nEsta regla aplica bajo la condición de que la jornada sea de tipo continua.\n\nGuarda esta información para conocer tus derechos y compártela con tus compañeros.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica el derecho al descanso en la jornada laboral según la Ley Federal del Trabajo. Indica que en jornadas continuas se debe otorgar al menos media hora de descanso.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "63",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos.",
+      "cita": "Ley Federal del Trabajo, artículo 63",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-05"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "63",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "se concederá al trabajador un descanso de media hora, por lo menos.",
+      "cita": "Ley Federal del Trabajo, artículo 63",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-05"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "En las jornadas de trabajo que se realizan de forma continua, es obligatorio otorgar un periodo de descanso mínimo de treinta minutos.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "interpretacion",
+      "texto": "El tiempo de descanso puede ser superior a los treinta minutos siempre que así se acuerde, ya que la norma fija solo el límite mínimo.",
+      "fuente": "F2",
+      "nota": "La ley no aclara si este tiempo de descanso debe ser remunerado o si el trabajador puede salir del centro de trabajo."
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho a un descanso durante tu jornada de trabajo?",
+    "concepto_central": "descanso durante la jornada continua de trabajo",
+    "respuesta_corta": "Sí, si tu jornada de trabajo es continua, tienes derecho a que se te conceda un descanso de al menos media hora.",
+    "reglas": [
+      {
+        "conclusion": "En las jornadas de trabajo que se realizan de forma continua, es obligatorio otorgar un periodo de descanso mínimo de treinta minutos.",
+        "fuente": "F1",
+        "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos.",
+        "condiciones": [
+          "Que la jornada de trabajo sea de tipo continua"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "63"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se debe otorgar un periodo de descanso que debe durar, como mínimo, media hora.",
+        "fuente": "F1",
+        "cita_literal": "se concederá al trabajador un descanso de media hora, por lo menos."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Este derecho aplica específicamente cuando el trabajador desempeña una jornada de trabajo continua.",
+        "fuente": "F1",
+        "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La ley no establece excepciones para este descanso mínimo en jornadas continuas.",
+        "fuente": "F1",
+        "cita_literal": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos.",
+        "motivo": "El texto normativo no prevé supuestos en los que se pueda omitir este descanso."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmación": "El tiempo de descanso puede ser superior a los treinta minutos.",
+        "condicion": "Siempre que así se acuerde o se establezca, ya que la norma fija solo el límite mínimo.",
+        "base": "F1 (uso de la frase \"por lo menos\")"
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no aclara si este tiempo de descanso debe ser remunerado, si el trabajador puede salir del centro de trabajo, ni qué reglas aplican para jornadas que no sean continuas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-05T10:22:50+00:00",
+    "solicitud": "2026-12-25_imagen_T119-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho a un descanso durante tu jornada de trabajo?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí. Si tu jornada de trabajo es continua, tienes derecho a un descanso de al menos media hora. \n Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos». \n La media hora es el mínimo legal, no el máximo."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas que laboran en una jornada continua tienen derecho a una pausa obligatoria.",
+              "sostenida": "si",
+              "motivo": "El artículo 63 de la LFT establece explícitamente el derecho al descanso durante la jornada continua."
+            },
+            {
+              "conclusion": "El periodo de descanso debe ser de media hora, por lo menos.",
+              "sostenida": "si",
+              "motivo": "La cita literal 'se concederá al trabajador un descanso de media hora, por lo menos' respalda directamente esta afirmación."
+            },
+            {
+              "conclusion": "El periodo de descanso podría ser superior si se establece así en el centro de trabajo.",
+              "sostenida": "si",
+              "motivo": "La interpretación es válida al derivarse de la frase 'por lo menos', que establece un mínimo legal, permitiendo implícitamente periodos mayores."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

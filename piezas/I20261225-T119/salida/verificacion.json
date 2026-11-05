@@ -1,0 +1,52 @@
+{
+  "decision": "RETENER",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-05T10:26:54+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 62017,
+      "extracto": "- durante la jornada continua de trabajo se concedera al trabajador un descanso de media hora, por lo menos.",
+      "huella_articulo": "28821b6a292f45226962372ed8b12dda810b0a82df6bb73919544e5f06dce5c1",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-05T10:27:10+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 62017,
+      "extracto": "- durante la jornada continua de trabajo se concedera al trabajador un descanso de media hora, por lo menos.",
+      "huella_articulo": "28821b6a292f45226962372ed8b12dda810b0a82df6bb73919544e5f06dce5c1",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "RETENER",
+      "duda": "La ley no aclara si este tiempo de descanso debe ser remunerado o si el trabajador puede salir del centro de trabajo."
+    }
+  ],
+  "razonamiento": []
+}

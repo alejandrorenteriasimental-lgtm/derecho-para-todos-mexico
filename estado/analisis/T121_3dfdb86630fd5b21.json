@@ -1,0 +1,50 @@
+{
+ "tema_id": "T121",
+ "pregunta": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+ "fecha": "2026-11-05T10:19:56+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+  "conceptos_centrales": "transacciones efectuadas a través del uso de medios electrónicos",
+  "respuesta_corta": "Sí, el proveedor debe proporcionar su domicilio físico y números telefónicos antes de que realices la compra para atender reclamaciones o aclaraciones.",
+  "reglas": [
+   {
+    "conclusion": "En las compras por internet o medios tecnológicos, el vendedor tiene la obligación legal de mostrar su ubicación física y contacto telefónico previo al pago.",
+    "fuente": "F1",
+    "cita_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor",
+    "condiciones": [
+     "Aplica a transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología",
+     "La información debe entregarse antes de celebrar la transacción"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El proveedor debe entregar su domicilio físico, números telefónicos y otros medios para presentar reclamaciones o solicitar aclaraciones.",
+    "fuente": "F1",
+    "cita_literal": "su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta obligación debe cumplirse obligatoriamente antes de que se concrete la operación de compra.",
+    "fuente": "F1",
+    "cita_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La tienda debe facilitar canales de contacto directo más allá del correo electrónico.",
+    "condicion": "Cuando el texto menciona 'demás medios', se entiende como una apertura a otras tecnologías de comunicación.",
+    "base": "F1, fracción III: 'y demás medios a los que pueda acudir el propio consumidor'"
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos proporcionados no establecen las sanciones específicas por no mostrar estos datos, ni el procedimiento de denuncia ante la autoridad.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "R20261227-T121",
+  "formato": "reel",
+  "titulo": "¿Una tienda en línea debe darte su domicilio y teléfono?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T121",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-05"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-05"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Las disposiciones del presente Capítulo aplican a las relaciones entre proveedores y consumidores en las transacciones efectuadas a través del uso de medios electrónicos",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-05"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿La tienda debe darte su dirección y teléfono antes de comprar?",
+      "titulo": [
+        "¿DOMICILIO",
+        "Y TELÉFONO",
+        "AL COMPRAR?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, el vendedor debe dar su domicilio y teléfonos antes de la compra para atender reclamos.",
+      "titulo": [
+        "SÍ, ES",
+        "OBLIGATORIO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica: \"El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor\".",
+      "etiqueta": "Ley, artículo 76 Bis",
+      "cita": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El vendedor debe dar su domicilio y teléfonos antes de la compra.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Deben incluir:",
+      "items": [
+        "Domicilio físico",
+        "Teléfonos de contacto",
+        "Medios para reclamos"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La ley obliga a dar medios de contacto para reclamaciones antes de la transacción.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Esta regla aplica en compras por medios electrónicos u ópticos.",
+      "encabezado": "Aplica en compras digitales",
+      "detalle": "Por medios electrónicos u ópticos",
+      "fuente_corta": "Ley, art. 76 Bis",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Antes de pagar, revisa que la tienda muestre su ubicación y teléfono para aclaraciones.",
+      "titulo": [
+        "REVISA LOS",
+        "DATOS ANTES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Esta obligación aplica a transacciones efectuadas a través de medios electrónicos u ópticos.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+    "conceptos_centrales": "transacciones efectuadas a través del uso de medios electrónicos",
+    "respuesta_corta": "Sí, el proveedor debe proporcionar su domicilio físico y números telefónicos antes de que realices la compra para atender reclamaciones o aclaraciones.",
+    "reglas": [
+      {
+        "conclusion": "En las compras por internet o medios tecnológicos, el vendedor tiene la obligación legal de mostrar su ubicación física y contacto telefónico previo al pago.",
+        "fuente": "F1",
+        "cita_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor",
+        "condiciones": [
+          "Aplica a transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología",
+          "La información debe entregarse antes de celebrar la transacción"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "76 Bis"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El proveedor debe entregar su domicilio físico, números telefónicos y otros medios para presentar reclamaciones o solicitar aclaraciones.",
+        "fuente": "F1",
+        "cita_literal": "su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Esta obligación debe cumplirse obligatoriamente antes de que se concrete la operación de compra.",
+        "fuente": "F1",
+        "cita_literal": "El proveedor deberá proporcionar al consumidor, antes de celebrar la transacción"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La tienda debe facilitar canales de contacto directo más allá del correo electrónico.",
+        "condicion": "Cuando el texto menciona 'demás medios', se entiende como una apertura a otras tecnologías de comunicación.",
+        "base": "F1, fracción III: 'y demás medios a los que pueda acudir el propio consumidor'"
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos proporcionados no establecen las sanciones específicas por no mostrar estos datos, ni el procedimiento de denuncia ante la autoridad."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-05T10:20:36+00:00",
+    "solicitud": "2026-12-27_reel_T121-lote-5.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Una tienda en línea debe darte su domicilio y teléfono antes de que compres?\n\nSí, el proveedor debe proporcionar su domicilio físico y números telefónicos antes de que realices la compra para atender reclamaciones o aclaraciones.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 76 Bis.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "En las compras por internet o medios tecnológicos, el vendedor tiene la obligación legal de mostrar su ubicación física y contacto telefónico previo al pago.",
+              "sostenida": "si",
+              "motivo": "El artículo 76 Bis, fracción III, establece explícitamente la obligación del proveedor de proporcionar domicilio físico y números telefónicos antes de celebrar la transacción."
+            },
+            {
+              "conclusion": "La tienda debe facilitar canales de contacto directo más allá del correo electrónico.",
+              "sostenida": "si",
+              "motivo": "La interpretación es válida al citar 'demás medios' del artículo 76 Bis, fracción III, lo cual implica una obligación de proporcionar canales efectivos para reclamaciones o aclaraciones."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

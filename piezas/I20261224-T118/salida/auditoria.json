@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1204 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Constitución Pol»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1109"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "55 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "93% de 43 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20261224-T118",
+    "formato": "imagen",
+    "titulo": "¿Eres mexicano si naces en México con padres extranjeros?",
+    "plantilla": "dato",
+    "archivo": "I20261224-T118.png",
+    "sha256": "2ed32ff8150e9291e7412bfcd3b9758a63ca70e2bfc440cd93bf011312d74945",
+    "ahash": "1000011111111111111111111111111111111111111111111101111111111111100000000000011110000000000000111000010000010111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
+    "huella_guion": "4c4d347d51a45a08d059c702da3d9073b190294382af82e47e41e69fb349e059",
+    "texto_alternativo": "Placa informativa que explica que nacer en México otorga la nacionalidad mexicana por nacimiento, citando el artículo 30 de la Constitución, el cual indica que esto ocurre independientemente de la nacionalidad de los padres.",
+    "copy": "La Constitución Política de los Estados Unidos Mexicanos define las bases de nuestra identidad nacional. En su artículo 30, apartado A, se establecen los criterios claros para obtener la nacionalidad por nacimiento.\n\nEl texto oficial señala que son mexicanos por nacimiento «los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres». Esto garantiza el derecho a la nacionalidad por el simple hecho de nacer en suelo mexicano.\n\nDe esta forma, el origen o la nacionalidad de los progenitores no impide que una persona nacida en territorio nacional sea reconocida como mexicana desde su nacimiento. Te invitamos a guardar esta información para conocer mejor tus derechos y a compartirla con quien pueda resultarle de utilidad.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "30",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "30",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-05T10:26:49+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

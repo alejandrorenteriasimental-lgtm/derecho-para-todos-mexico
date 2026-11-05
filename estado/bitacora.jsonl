@@ -1220,3 +1220,27 @@
 {"ts": "2026-11-05T04:28:23+00:00", "pieza": "R20261224-T118", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-05T04:28:23+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 4, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 5, "en_revision": 4}
 {"ts": "2026-11-05T04:31:21+00:00", "pieza": "R20261225-T119", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 05-11): narración y textos visibles corregidos, art. 24 LFT como F2; se vuelve a verificar y producir"}
+{"ts": "2026-11-05T10:19:46+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-05T10:20:36+00:00", "evento": "redactada", "pieza": "R20261227-T121", "solicitud": "2026-12-27_reel_T121-lote-5.json"}
+{"ts": "2026-11-05T10:21:56+00:00", "evento": "redactada", "pieza": "I20261224-T118", "solicitud": "2026-12-24_imagen_T118-lote-5.json"}
+{"ts": "2026-11-05T10:22:50+00:00", "evento": "redactada", "pieza": "I20261225-T119", "solicitud": "2026-12-25_imagen_T119-lote-5.json"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "I20261226-T120", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-05T04:31:21+00:00 versión dbc2eb70a9078c86 (delegada)"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "I20261227-T121", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-05T04:31:21+00:00 versión a12c34bbd0ae14a6 (delegada)"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "R20261226-T120", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-05T04:31:21+00:00 versión 27c22293d802923b (delegada)"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "I20261224-T118", "evento": "encolado"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "I20261225-T119", "evento": "encolado"}
+{"ts": "2026-11-05T10:22:50+00:00", "pieza": "R20261227-T121", "evento": "encolado"}
+{"ts": "2026-11-05T10:24:38+00:00", "pieza": "R20261225-T119", "evento": "transicion", "a": "PRODUCIDO", "motivo": "36.6"}
+{"ts": "2026-11-05T10:24:42+00:00", "pieza": "R20261225-T119", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-05T10:24:42+00:00", "evento": "revision_preparada", "pieza": "R20261225-T119", "version": "9b087fd6cde24c0f", "canal": "chat"}
+{"ts": "2026-11-05T10:25:54+00:00", "pieza": "R20261227-T121", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.6"}
+{"ts": "2026-11-05T10:26:00+00:00", "pieza": "R20261227-T121", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-05T10:26:00+00:00", "evento": "revision_preparada", "pieza": "R20261227-T121", "version": "5d7b5e1d7d9c3fe4", "canal": "chat"}
+{"ts": "2026-11-05T10:26:49+00:00", "pieza": "I20261224-T118", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-05T10:26:54+00:00", "pieza": "I20261224-T118", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-05T10:26:54+00:00", "evento": "revision_preparada", "pieza": "I20261224-T118", "version": "b841dd9f1e9ac3bd", "canal": "chat"}
+{"ts": "2026-11-05T10:27:56+00:00", "pieza": "I20261225-T119", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-11-05T10:27:56+00:00", "evento": "alerta", "mensaje": "I20261225-T119 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-05T10:27:56+00:00", "pieza": "I20261220-T114", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-05T10:27:56+00:00", "pieza": "I20261223-T117", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-05T10:27:56+00:00", "evento": "fin_ciclo", "redactadas": 3, "descartadas": 0, "producidas": 3, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 3}
