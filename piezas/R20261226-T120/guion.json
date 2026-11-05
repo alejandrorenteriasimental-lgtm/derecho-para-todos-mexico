@@ -13,63 +13,73 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras , defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística.",
+      "texto_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-04"
+      "consultado": "2026-11-05"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "en todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de esta Constitución",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-05"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Derecho a intérprete en juicio?",
+      "texto": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
       "titulo": [
-        "INTÉRPRETE",
-        "EN JUICIO"
+        "¿INTÉRPRETE",
+        "EN UN JUICIO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, tienen derecho a ser asistidas en juicios.",
+      "texto": "Sí. La Constitución le reconoce ese derecho en todo tiempo.",
       "titulo": [
-        "DERECHO",
-        "INDÍGENA"
+        "SÍ, EN",
+        "TODO TIEMPO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "El texto oficial señala: \"Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras , defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística.\"",
-      "etiqueta": "Constitución, artículo 2",
-      "cita": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras , defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, …",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Aplica en:",
-      "items": [
-        "Todos los juicios",
-        "Procedimientos legales",
-        "Individual o colectiva"
-      ],
+      "texto": "La Constitución dice: las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas.",
+      "etiqueta": "Constitución, art. 2",
+      "cita": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Derecho a ser asistidos por intérpretes y especialistas en juicios",
-          "fuente": "F1"
+          "texto": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Aplica en juicios donde sean parte.",
+      "texto": "Y en todos los juicios y procedimientos en que sean parte, se deben tomar en cuenta sus sistemas normativos y especificidades culturales, con respeto a la Constitución.",
       "titulo": [
-        "ASISTENCIA",
-        "EN JUICIOS"
+        "SU CULTURA",
+        "CUENTA EN",
+        "EL JUICIO"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "En todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de la Constitución.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -82,14 +92,25 @@
     "suficiente": true,
     "pregunta": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
     "concepto_central": "derecho a intérpretes, traductores, defensores y peritos especializados en juicios y procedimientos",
-    "respuesta_corta": "Sí, las personas indígenas tienen derecho a ser asistidas y asesoradas por intérpretes y otros especialistas en todos los juicios y procedimientos en que sean parte.",
+    "respuesta_corta": "Sí: la Constitución reconoce a las personas indígenas, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas.",
     "reglas": [
       {
-        "conclusion": "Las personas indígenas tienen derecho en todo tiempo a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en los juicios y procedimientos en que sean parte.",
+        "conclusion": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas.",
         "fuente": "F1",
-        "cita_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras , defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística.",
+        "cita_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "2"
+        }
+      },
+      {
+        "conclusion": "En todos los juicios y procedimientos en que sean parte se deben tomar en cuenta sus sistemas normativos y especificidades culturales, con respeto a la Constitución.",
+        "fuente": "F2",
+        "cita_literal": "en todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de esta Constitución",
         "condiciones": [
-          "en todos los juicios y procedimientos en que sean parte, individual o colectivamente"
+          "con respeto a los preceptos de esta Constitución"
         ],
         "excepciones": [],
         "ref": {
@@ -104,14 +125,14 @@
         "estado": "cubierto",
         "respuesta": "Se garantiza el derecho a la asistencia y asesoría de intérpretes, traductores, defensores y peritos especializados en los juicios y procedimientos.",
         "fuente": "F1",
-        "cita_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras , defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística."
+        "cita_literal": "Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística"
       },
       {
         "elemento": "condiciones",
         "estado": "cubierto",
         "respuesta": "Aplica en todos los juicios y procedimientos en que las personas indígenas sean parte, individual o colectivamente.",
-        "fuente": "F1",
-        "cita_literal": "en todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de esta Constitución."
+        "fuente": "F2",
+        "cita_literal": "en todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de esta Constitución"
       },
       {
         "elemento": "excepcion",
@@ -156,7 +177,7 @@
   "pregunta_original": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Una persona indígena tiene derecho a un intérprete en un juicio?\n\nSí, las personas indígenas tienen derecho a ser asistidas y asesoradas por intérpretes y otros especialistas en todos los juicios y procedimientos en que sean parte.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 2.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí. El artículo 2 de la Constitución dice: «Las personas indígenas tienen, en todo tiempo, el derecho a ser asistidas y asesoradas por personas intérpretes, traductoras, defensoras y peritas especializadas en derechos indígenas, pluralismo jurídico, perspectiva de género, y diversidad cultural y lingüística».\n\nY agrega que, «en todos los juicios y procedimientos en que sean parte, individual o colectivamente, se deberán tomar en cuenta sus sistemas normativos y especificidades culturales con respeto a los preceptos de esta Constitución».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -264,5 +285,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Reel rehecho sobre el texto oficial del art. 2 CPEUM (fr. XI): sin comillas narradas («El texto oficial señala: \"…\"»), sin «traductoras ,», sin lista sin narrar («Individual o colectiva») ni afirmación sin cita («Aplica en juicios donde sean parte»); el derecho a intérprete «en todo tiempo» con cita literal y, aparte, la regla de los juicios (sistemas normativos y especificidades culturales, con respeto a la Constitución) como F2; texto de publicación con ambas citas literales"
+    }
+  ]
 }

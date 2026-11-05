@@ -8,12 +8,12 @@
   "tema_id": "T120",
   "pieza": {
     "titular": "¿Pueden censurar antes de publicar?",
-    "bajada": "Conoce qué dice la Constitución sobre la libertad de difundir ideas.",
+    "bajada": "La Constitución prohíbe la censura previa; la difusión solo tiene los límites del art. 6.",
     "mito": "Las autoridades pueden prohibir lo que publicas antes de que salga.",
-    "realidad": "No: ninguna ley ni autoridad puede establecer la previa censura ni coartar la libertad de difusión.",
-    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 7"
+    "realidad": "No. Ninguna ley ni autoridad puede establecer la previa censura. La libertad de difusión solo tiene los límites del art. 6 constitucional.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, arts. 6 y 7"
   },
-  "copy": "La libertad de difundir opiniones, información e ideas a través de cualquier medio es un derecho protegido en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 7, «Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución».\n\nGuarda esta información y compártela para conocer tus derechos al difundir contenidos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No. El artículo 7 de la Constitución dice: «Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución».\n\nEse párrafo del artículo 6 dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen fija con el mito de que se puede prohibir una publicación antes de salir y la realidad constitucional que lo prohíbe.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -26,7 +26,18 @@
       "texto_literal": "Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 7",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-04"
+      "consultado": "2026-11-05"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 6",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-05"
     }
   },
   "afirmaciones": [
@@ -35,13 +46,19 @@
       "tipo": "hecho_normativo",
       "texto": "Ninguna ley o autoridad puede establecer previa censura ni coartar la libertad de difusión.",
       "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La manifestación de las ideas solo puede ser objeto de inquisición judicial o administrativa si ataca a la moral, la vida privada o los derechos de terceros, provoca algún delito o perturba el orden público.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
     "suficiente": true,
     "pregunta": "¿Pueden censurar lo que publicas antes de que lo publiques?",
     "concepto_central": "previa censura",
-    "respuesta_corta": "No: ninguna ley ni autoridad puede establecer la previa censura ni coartar la libertad de difusión de opiniones, información e ideas.",
+    "respuesta_corta": "No: ninguna ley ni autoridad puede establecer la previa censura; la libertad de difusión solo tiene los límites del primer párrafo del artículo 6 constitucional.",
     "reglas": [
       {
         "conclusion": "Ninguna ley o autoridad puede establecer censura previa ni restringir la libertad de difusión, salvo los límites del artículo 6 constitucional.",
@@ -54,6 +71,17 @@
         "ref": {
           "documento": "Constitución Política de los Estados Unidos Mexicanos",
           "articulo": "7"
+        }
+      },
+      {
+        "conclusion": "Los límites del primer párrafo del artículo 6 son los casos en que la manifestación de las ideas ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito o perturbe el orden público.",
+        "fuente": "F2",
+        "cita_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "6"
         }
       }
     ],
@@ -68,7 +96,7 @@
     ],
     "interpretaciones": [],
     "distinciones": [],
-    "limites": "El texto oficial no detalla el contenido exacto de los límites previstos en el artículo 6 de la Constitución, limitándose a mencionarlos."
+    "limites": "El texto oficial no detalla cómo se aplican esos límites en cada caso concreto."
   },
   "generacion": {
     "afirmaciones_eliminadas_sin_ancla": [],
@@ -130,5 +158,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "realidad con la condición literal omitida (la difusión solo tiene los límites del primer párrafo del art. 6); bajada sin relleno («Conoce qué dice…»); fuente visible arts. 6 y 7; texto de publicación sin relleno («Guarda… compártela»), con respuesta directa y las citas literales de los arts. 7 y 6 (F2)"
+    }
+  ]
 }
