@@ -1,0 +1,51 @@
+{
+ "tema_id": "T119",
+ "pregunta": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
+ "fecha": "2026-11-05T04:15:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si no firmaste contrato, pierdes tus derechos laborales?",
+  "concepto_central": "derechos laborales",
+  "respuesta_corta": "No, no los pierdes; la falta de contrato escrito no te priva de ellos y se le imputa al patrón.",
+  "reglas": [
+   {
+    "conclusion": "La falta de contrato por escrito no priva al trabajador de sus derechos derivados de las normas de trabajo y de los servicios prestados.",
+    "fuente": "F2",
+    "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados",
+    "condiciones": [
+     "falta del escrito a que se refieren los artículos 24 y 25"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se conservan los derechos derivados de las normas de trabajo y de los servicios prestados.",
+    "fuente": "F2",
+    "cita_literal": "La falta del escrito a que se refieren los artículos 24 y 25 no priva al trabajador de los derechos que deriven de las normas de trabajo y de los servicios prestados"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La falta de la formalidad escrita se le imputa al patrón.",
+    "fuente": "F2",
+    "cita_literal": "pues se imputará el patrón la falta de esa formalidad."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "No aplica",
+    "fuente": "F2",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones a esta regla."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos oficiales no detallan el procedimiento, la vía o los plazos para exigir los derechos ante la falta de contrato escrito.",
+  "fuentes_irrelevantes": []
+ }
+}

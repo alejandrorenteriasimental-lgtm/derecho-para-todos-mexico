@@ -1,77 +1,122 @@
 {
  "solicitud": "2026-12-27_reel_T121-lote-5.json",
- "fecha": "2026-11-04T20:06:59+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Sabes qué datos debe darte una tienda digital antes de realizar una compr",
+ "fecha": "2026-11-05T04:19:02+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza no menciona que la información sobre elementos técnicos de seguridad debe ser comunicada 'previamente a la celebración de la transacción' en la sección de lista/items, aunque sí lo hace en el razonamiento.\", \"No se menciona la obligación de informar so",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "narración de 770 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 150: recorta al menos 210 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ],
-   "visible": "  \n ¿Sabes qué información obligatoria debe darte una tienda antes de pagar? \n ¿COMPRAS EN LÍNEA? \n ¡MUCHO OJO! \n Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos, términos y elementos de seguridad. \n ANTES DE \n COMPRAR \n La ley señala que el proveedor tiene obligaciones muy claras sobre los datos de contacto previos: deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones \n deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demá"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 770 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 150: recorta al menos 210 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 1,
    "auditoria_ia": {
     "veredicto": "con_objeciones",
     "cobertura": {
      "responde_nucleo": true,
      "faltantes": [
-      "La lista final de puntos clave omite mencionar la obligación de informar sobre cobros automáticos recurrentes, a pesar de ser un requisito legal explícito en el artículo 76 Bis, fracción VIII."
+      "La pieza omite mencionar que, además de la Ley Federal de Protección al Consumidor, el proveedor debe guiarse por la Norma Mexicana expedida por la Secretaría de Economía, según lo establece el artículo 76 Bis 1, lo cual es relevante para la seguridad y transparencia en transacciones electrónicas."
      ]
     },
     "conclusiones": [
      {
       "conclusion": "El proveedor debe informar previamente las características de los elementos técnicos de seguridad y confidencialidad.",
       "sostenida": "si",
-      "motivo": "El artículo 76 Bis, fracción II, establece explícitamente esta obligación previa."
+      "motivo": "El artículo 76 Bis, fracción II, establece explícitamente esta obligación."
      },
      {
       "conclusion": "El proveedor debe proporcionar su domicilio físico, números telefónicos y medios para reclamaciones o aclaraciones antes de la transacción.",
       "sostenida": "si",
-      "motivo": "El artículo 76 Bis, fracción III, impone esta obligación antes de celebrar la transacción."
+      "motivo": "El artículo 76 Bis, fracción III, establece esta obligación de forma clara."
      },
      {
       "conclusion": "El consumidor tiene derecho a conocer los términos, condiciones, costos, cargos adicionales y formas de pago.",
       "sostenida": "si",
-      "motivo": "El artículo 76 Bis, fracción V, reconoce este derecho del consumidor."
+      "motivo": "El artículo 76 Bis, fracción V, respalda esta afirmación."
      },
      {
       "conclusion": "Se debe informar si el servicio implica cobros automáticos recurrentes, periodicidad, monto y fecha.",
       "sostenida": "si",
-      "motivo": "El artículo 76 Bis, fracción VIII, establece esta obligación de forma clara y destacada."
+      "motivo": "El artículo 76 Bis, fracción VIII, establece esta obligación de información clara, destacada y accesible."
      }
     ],
     "objeciones": [
      {
-      "donde": "Escena 'lista'",
-      "problema": "La lista de puntos clave es incompleta al omitir la obligación de informar sobre cobros automáticos recurrentes, la cual es una obligación específica del artículo 76 Bis, fracción VIII.",
-      "correccion": "Agregar a la lista: 'Información sobre cobros automáticos recurrentes (si el servicio los implica)'."
+      "donde": "Escena 3 (Cita)",
+      "problema": "La redacción de la escena es confusa y gramaticalmente incorrecta al intentar integrar la cita legal, lo que dificulta la comprensión del lector.",
+      "correccion": "Reescribir la escena para que la cita sea una referencia clara y no una oración incompleta. Ejemplo: 'La ley exige que te brinden datos precisos antes de la compra: el proveedor debe informarte, previamente a la celebración de la transacción, de las características generales de dichos elementos técnicos de seguridad'."
+     },
+     {
+      "donde": "Límites (en el razonamiento)",
+      "problema": "El redactor menciona que 'los textos oficiales no detallan las consecuencias específicas o sanciones aplicables', pero ignora que el artículo 76 Bis 1 establece la obligación de seguir la Norma Mexicana, la cual contiene mecanismos de soporte y seguridad, cuya omisión tiene implicaciones legales en el marco de la LFPC.",
+      "correccion": "Incluir la referencia al artículo 76 Bis 1 para dar un panorama completo de las obligaciones del proveedor en transacciones electrónicas."
      }
     ]
    }
   },
   {
    "etapa": "redaccion",
-   "intento": 2,
+   "intento": 1,
    "errores_esquema": [
-    "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 707 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 87: recorta al menos 147 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Sabes qué datos debe darte una tienda digital antes de realizar una compra? \n COMPRAS \n EN LÍNEA \n Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos, términos y elementos de seguridad. \n INFORMACIÓN \n PREVIA \n La ley establece este derecho de la siguiente manera: El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveedor \n El consumidor tendrá derecho a conocer toda la información sobre los términos, condiciones, costos, cargos adicionales, en su caso, form as de pago de los bienes y servicios ofrecidos por el proveed"
+   "visible": "  \n ¿Qué debe informarte una tienda antes de comprar? \n ¿QUÉ TE DEBE \n INFORMAR UNA \n TIENDA EN LÍNEA? \n Antes de comprar, la tienda debe informarte sobre sus datos de contacto, costos y términos. \n DATOS, COSTOS Y \n TÉRMINOS \n La ley exige que te brinden datos precisos antes de la transacción: el proveedor deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones. \n deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 707 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 87: recorta al menos 147 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza no menciona que la información sobre elementos técnicos de seguridad debe ser comunicada 'previamente a la celebración de la transacción' en la sección de lista/items, aunque sí lo hace en el razonamiento.",
+      "No se menciona la obligación de informar sobre la seguridad y confidencialidad de la información personal en la sección de lista/items."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El proveedor debe informar previamente las características de los elementos técnicos de seguridad y confidencialidad.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la fracción II del artículo 76 Bis."
+     },
+     {
+      "conclusion": "El proveedor debe proporcionar su domicilio físico, números telefónicos y medios para reclamaciones o aclaraciones antes de la transacción.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la fracción III del artículo 76 Bis."
+     },
+     {
+      "conclusion": "El consumidor tiene derecho a conocer los términos, condiciones, costos, cargos adicionales y formas de pago.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la fracción V del artículo 76 Bis."
+     },
+     {
+      "conclusion": "Se debe informar si el servicio implica cobros automáticos recurrentes, periodicidad, monto y fecha.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la fracción VIII del artículo 76 Bis."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo 'cita'",
+      "problema": "La cita literal está truncada con puntos suspensivos ('...'), lo cual rompe la regla de usar fragmentos copiados exactamente del texto oficial para mantener la integridad de la norma.",
+      "correccion": "Utilizar el fragmento completo sin omitir palabras intermedias: 'deberá proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones o solicitarle aclaraciones'."
+     },
+     {
+      "donde": "Escena tipo 'lista'",
+      "problema": "La lista de 'Revisa esto antes de pagar' es incompleta respecto a la información que la ley exige informar 'antes de la transacción' (omite seguridad y confidencialidad de datos), lo que reduce la utilidad de la respuesta al usuario.",
+      "correccion": "Incluir en los items: 'Seguridad de tus datos' o 'Medios de seguridad técnica'."
+     }
+    ]
+   }
   }
  ]
 }

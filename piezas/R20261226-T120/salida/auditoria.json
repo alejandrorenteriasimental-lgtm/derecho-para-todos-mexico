@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "36.3 s"
+      "detalle": "40.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "36.3 s"
+      "detalle": "40.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.3 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "25 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "a0bdfc90d7033b82"
+      "detalle": "e1e25c8caee74588"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261226-T120",
     "titulo": "¿Una persona indígena tiene derecho a un intérprete en un juicio?",
-    "fecha": "2026-11-04T20:16:42+00:00",
-    "sha256": "a0bdfc90d7033b828f124fb9560594ddc73d9e08450be773f518bdfaf803e456",
-    "duracion_s": 36.3,
+    "fecha": "2026-11-05T04:22:25+00:00",
+    "sha256": "e1e25c8caee7458843291b916682741a821e11dedc0b491bee242750b11e1e32",
+    "duracion_s": 40.8,
     "estado": "APTO",
-    "huella_guion": "3f2eac927b7caebb940fa0ce0173bf160f7c161933e6362bb8e9a3196ab4a34f",
+    "huella_guion": "cdf564a8ad7dca9af81ddbf5b771c003c754c05ca69fd5717c39b9e42202ef00",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.0,
-      "musica": 1.0,
-      "render_video": 28.0,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 6.1
+      "narracion": 25.4,
+      "musica": 2.0,
+      "render_video": 54.7,
+      "mezcla_audio": 1.9,
+      "auditoria_tecnica": 10.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.75,
-      "computo_equivalente_runner_usd": 0.0045,
+      "computo_minutos": 1.57,
+      "computo_equivalente_runner_usd": 0.0094,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1086,
-    "caracteres_narrados": 500
+    "frames": 1221,
+    "caracteres_narrados": 582
   }
 }

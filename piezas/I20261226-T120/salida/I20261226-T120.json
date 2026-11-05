@@ -4,22 +4,28 @@
   "titulo": "¿Pueden censurar antes de publicar?",
   "plantilla": "mito_realidad",
   "archivo": "I20261226-T120.png",
-  "sha256": "63305a5275a9d72bc56137819d77bc8ed48d75be2170d7c43f8dd769c76114ef",
-  "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000001111001111111111111100111111111111110000011111111111000111111111111100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-  "huella_guion": "ca3af41831dd0fc0f16e8494c5bd9da747b77618e67a385feb8432a94b96f240",
+  "sha256": "24190cc0eab21482c3820c271980cda0f92571d9ef0e408c6a1e6aaa1cfd4116",
+  "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000011110000000000001111001111111111111100111111111111110000011111111111000111111111111100000000000001110000000000111111111111111111111111111111111111111111111111111011000000011111001",
+  "huella_guion": "402f58a3b0a9841396eed3301d44d3ff3e6571f099ed481499a7f263c9611629",
   "texto_alternativo": "Imagen fija con el mito de que se puede prohibir una publicación antes de salir y la realidad constitucional que lo prohíbe.",
-  "copy": "La libertad de difundir opiniones, información e ideas a través de cualquier medio es un derecho protegido en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 7, «Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución».\n\nGuarda esta información y compártela para conocer tus derechos al difundir contenidos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No. El artículo 7 de la Constitución dice: «Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites que los previstos en el primer párrafo del artículo 6o. de esta Constitución».\n\nEse párrafo del artículo 6 dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público».\n\nEsto es información general, no es asesoría legal.",
   "fuentes": [
     {
       "id": "F1",
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "7",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+    },
+    {
+      "id": "F2",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
     }
   ],
   "relacion_reel": "independiente",
   "estado": "APTO",
-  "fecha": "2026-11-04T20:17:56+00:00",
+  "fecha": "2026-11-05T04:27:20+00:00",
   "costo": {
     "apis_de_pago_usd": 0.0,
     "nota": "Pillow + tesseract, locales y gratuitos"
