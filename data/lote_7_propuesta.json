@@ -1,0 +1,275 @@
+{
+ "id": "lote-7",
+ "estado": "PROPUESTA (no activa)",
+ "creado": "2026-11-05",
+ "max_por_formato": 14,
+ "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 6 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
+ "temas": [
+  {
+   "formato": "reel",
+   "fecha": "2027-01-11",
+   "tema_id": "T136",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+   "fuentes_sugeridas": "LFT art. 516",
+   "motivo_seleccion": "LFT art. 516 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_516.json): «Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible, con las excepciones que se consignan en los artículos siguientes». Regla general de prescripción de un año, con la condición (desde que la obligación es exigible) y la remisión literal a las excepciones (arts. 517 a 519)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-11",
+   "tema_id": "T136",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Si estás embarazada te pueden poner a hacer trabajo peligroso?",
+   "fuentes_sugeridas": "LFT art. 166",
+   "motivo_seleccion": "LFT art. 166 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_166.json): «no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial, en establecimientos comerciales o de servicio después de las diez de la noche, así como en horas extraordinarias». Condición literal: cuando se ponga en peligro la salud de la mujer o del producto, en gestación o lactancia, y sin perjuicio en su salario, prestaciones y derechos.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-12",
+   "tema_id": "T137",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
+   "fuentes_sugeridas": "CPEUM art. 19",
+   "motivo_seleccion": "CPEUM art. 19 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_19.json): «Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición, sin que se justifique con un auto de vinculación a proceso». 72 horas desde que la persona es puesta a disposición del juez; distinto de las 48 h ante el Ministerio Público (CPEUM 16), ya publicado en noviembre."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-12",
+   "tema_id": "T137",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Estás obligado a denunciar un delito que presenciaste?",
+   "fuentes_sugeridas": "CNPP art. 222",
+   "motivo_seleccion": "CNPP art. 222 (texto oficial cotejado el 5-11-2026, registro/textos/CNPP_222.json): «Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público». Excepción literal del mismo artículo: no están obligados el tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado y ciertos parientes.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-13",
+   "tema_id": "T138",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?",
+   "fuentes_sugeridas": "LFPC art. 82",
+   "motivo_seleccion": "LFPC art. 82 (texto oficial cotejado el 5-11-2026, registro/textos/LFPC_82.json): «El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación, cuando la cosa u objeto del contrato tenga defectos o vicios ocultos». Opciones literales del consumidor y condición (defectos que la hagan impropia para su uso, disminuyan su calidad o no ofrezca la seguridad esperada)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-13",
+   "tema_id": "T138",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes presentar una queja ante Profeco por teléfono?",
+   "fuentes_sugeridas": "LFPC art. 99",
+   "motivo_seleccion": "LFPC art. 99 (texto oficial cotejado el 5-11-2026, registro/textos/LFPC_99.json): «las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio». Requisitos literales de la queja (nombre y domicilio del reclamante, descripción del bien o servicio, datos del proveedor).",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-14",
+   "tema_id": "T139",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿El Registro Civil puede negar un acta a una persona migrante sin papeles?",
+   "fuentes_sugeridas": "Ley de Migración art. 9",
+   "motivo_seleccion": "Ley de Migración art. 9 (texto oficial cotejado el 5-11-2026, registro/textos/LMigra_9.json): «Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento, reconocimiento de hijos, matrimonio, divorcio y muerte». Respuesta literal y completa en un solo párrafo."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-14",
+   "tema_id": "T139",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+   "fuentes_sugeridas": "Ley de Migración art. 8",
+   "motivo_seleccion": "Ley de Migración art. 8 (texto oficial cotejado el 5-11-2026, registro/textos/LMigra_8.json): «Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médica urgente que resulte necesaria para preservar su vida». Condición literal: urgente y necesaria para preservar la vida.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-15",
+   "tema_id": "T140",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿A qué edad puedes casarte en México?",
+   "fuentes_sugeridas": "LGDNNA art. 45",
+   "motivo_seleccion": "LGDNNA art. 45 (texto oficial cotejado el 5-11-2026, registro/textos/LGDNNA_45.json): «establecerán como edad mínima para contraer matrimonio los 18 años». Ley general: obliga a las leyes federales y de las entidades federativas a fijar 18 años como edad mínima; se explica que es un mandato a todas las legislaturas."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-15",
+   "tema_id": "T140",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Un medio puede publicar la foto de un menor que lo identifique?",
+   "fuentes_sugeridas": "LGDNNA art. 77",
+   "motivo_seleccion": "LGDNNA art. 77 (texto oficial cotejado el 5-11-2026, registro/textos/LGDNNA_77.json): «Se considerará violación a la intimidad de niñas, niños o adolescentes cualquier manejo directo de su imagen, nombre, datos personales o referencias que permitan su identificación en los medios de comunicación». Condición literal: que menoscabe su honra o reputación, sea contrario a sus derechos o los ponga en riesgo; alcance: medios concesionados, impresos o electrónicos de esos medios.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-16",
+   "tema_id": "T141",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
+   "fuentes_sugeridas": "LSS art. 96",
+   "motivo_seleccion": "LSS art. 96 (texto oficial cotejado el 5-11-2026, registro/textos/LSS_96.json): «El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el término de cincuenta y dos semanas». Condición literal: enfermedad no profesional que incapacite para el trabajo; prórroga de hasta 26 semanas previo dictamen."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-16",
+   "tema_id": "T141",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto te paga el IMSS por una incapacidad por enfermedad?",
+   "fuentes_sugeridas": "LSS art. 98",
+   "motivo_seleccion": "LSS art. 98 (texto oficial cotejado el 5-11-2026, registro/textos/LSS_98.json): «El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización». Cifra literal; pago por periodos vencidos no mayores de una semana.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-17",
+   "tema_id": "T142",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+   "fuentes_sugeridas": "LFDA art. 148",
+   "motivo_seleccion": "LFDA art. 148 (texto oficial cotejado el 5-11-2026, registro/textos/LFDA_148.json): «Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración, citando invariablemente la fuente y sin alterar la obra». Condiciones literales: obra divulgada, citar la fuente, sin alterarla y fr. I (cita que no sea reproducción simulada y sustancial)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-17",
+   "tema_id": "T142",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto tiempo duran los derechos de autor sobre una obra?",
+   "fuentes_sugeridas": "LFDA art. 29",
+   "motivo_seleccion": "LFDA art. 29 (texto oficial cotejado el 5-11-2026, registro/textos/LFDA_29.json): «La vida del autor y, a partir de su muerte, cien años más». Regla literal y caso de coautores (desde la muerte del último).",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-18",
+   "tema_id": "T143",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Están prohibidos los monopolios en México?",
+   "fuentes_sugeridas": "CPEUM art. 28",
+   "motivo_seleccion": "CPEUM art. 28 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_28.json): «En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes». Condición literal: en los términos y condiciones que fijan las leyes."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-18",
+   "tema_id": "T143",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿De quién son originalmente las tierras y aguas de México?",
+   "fuentes_sugeridas": "CPEUM art. 27",
+   "motivo_seleccion": "CPEUM art. 27 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_27.json): «La propiedad de las tierras y aguas comprendidas dentro de los límites del territorio nacional, corresponde originariamente a la Nación, la cual ha tenido y tiene el derecho de transmitir el dominio de ellas a los particulares, constituyendo la propiedad privada». Respuesta literal del primer párrafo; explica el origen constitucional de la propiedad privada.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-19",
+   "tema_id": "T144",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
+   "fuentes_sugeridas": "LFT art. 110",
+   "motivo_seleccion": "LFT art. 110 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_110.json): «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Regla y excepciones literales (fracciones I a VII); se narra la regla y la primera excepción con su tope."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-19",
+   "tema_id": "T144",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Le pueden pagar tu sueldo a otra persona?",
+   "fuentes_sugeridas": "LFT art. 100",
+   "motivo_seleccion": "LFT art. 100 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_100.json): «El salario se pagará directamente al trabajador». Excepción literal: si está imposibilitado para cobrar, a quien designe como apoderado mediante carta poder suscrita por dos testigos.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-20",
+   "tema_id": "T145",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+   "fuentes_sugeridas": "CPEUM art. 33",
+   "motivo_seleccion": "CPEUM art. 33 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_33.json): «gozarán de los derechos humanos y garantías que reconoce esta Constitución». Límite literal del mismo artículo: no pueden inmiscuirse en los asuntos políticos del país; expulsión previa audiencia."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-20",
+   "tema_id": "T145",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Un extranjero puede participar en la política de México?",
+   "fuentes_sugeridas": "CPEUM art. 33",
+   "motivo_seleccion": "CPEUM art. 33 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_33.json): «Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país». Respuesta literal; distinta pregunta que el Reel del mismo día.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-21",
+   "tema_id": "T146",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿Qué es la violencia económica según la ley?",
+   "fuentes_sugeridas": "LGAMVLV art. 6 fr. IV",
+   "motivo_seleccion": "LGAMVLV art. 6 fr. IV (texto oficial cotejado el 5-11-2026, registro/textos/LGAMVLV_6.json): «Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima». Definición literal y manifestaciones (control del ingreso, salario menor por igual trabajo)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-21",
+   "tema_id": "T146",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿Qué es la violencia patrimonial?",
+   "fuentes_sugeridas": "LGAMVLV art. 6 fr. III",
+   "motivo_seleccion": "LGAMVLV art. 6 fr. III (texto oficial cotejado el 5-11-2026, registro/textos/LGAMVLV_6.json): «Es cualquier acto u omisión que afecta la supervivencia de la víctima». Definición literal y manifestaciones (sustracción, retención o destrucción de documentos, bienes o recursos).",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-22",
+   "tema_id": "T147",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+   "fuentes_sugeridas": "Ley de Amparo art. 17",
+   "motivo_seleccion": "Ley de Amparo art. 17 (texto oficial cotejado el 5-11-2026, registro/textos/LAmp_17.json): «El plazo para presentar la demanda de amparo es de quince días». Regla y excepciones literales (30 días norma autoaplicativa o extradición; hasta 8 años contra sentencia condenatoria de prisión; otras)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-22",
+   "tema_id": "T147",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Otra persona puede pedir un amparo por ti?",
+   "fuentes_sugeridas": "Ley de Amparo art. 15",
+   "motivo_seleccion": "Ley de Amparo art. 15 (texto oficial cotejado el 5-11-2026, registro/textos/LAmp_15.json): «podrá hacerlo cualquiera otra persona en su nombre, aunque sea menor de edad». Condición literal: actos como peligro de privación de la vida, ataques a la libertad fuera de procedimiento, incomunicación, desaparición forzada, entre otros, y la persona agraviada imposibilitada para promoverlo.",
+   "plantilla": "mito_realidad"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-23",
+   "tema_id": "T148",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
+   "fuentes_sugeridas": "CNPP art. 109 fr. VII",
+   "motivo_seleccion": "CNPP art. 109 fr. VII (texto oficial cotejado el 5-11-2026, registro/textos/CNPP_109.json): «A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable». Derecho literal de la víctima u ofendido; condición: en los términos de la legislación aplicable."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-23",
+   "tema_id": "T148",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Las personas en prisión conservan sus derechos?",
+   "fuentes_sugeridas": "LNEP art. 9",
+   "motivo_seleccion": "LNEP art. 9 (texto oficial cotejado el 5-11-2026, registro/textos/LNEP_9.json): «gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte, siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia». Condición literal: salvo los restringidos por la resolución o sentencia o incompatibles con su objeto.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-01-24",
+   "tema_id": "T149",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿En home office tienes derecho a desconectarte al terminar tu jornada?",
+   "fuentes_sugeridas": "LFT art. 330-E fr. VI",
+   "motivo_seleccion": "LFT art. 330-E fr. VI (texto oficial cotejado el 5-11-2026, registro/textos/LFT_330-E.json): «Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral». Obligación literal del patrón en la modalidad de teletrabajo."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-01-24",
+   "tema_id": "T149",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo según la ley?",
+   "fuentes_sugeridas": "LFT art. 330-A",
+   "motivo_seleccion": "LFT art. 330-A (texto oficial cotejado el 5-11-2026, registro/textos/LFT_330-A.json): «Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora». Excepción literal: no es teletrabajo el que se realice de forma ocasional o esporádica.",
+   "plantilla": "dato"
+  }
+ ]
+}

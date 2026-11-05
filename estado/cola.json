@@ -5861,7 +5861,7 @@
       "id": "I20261224-T118",
       "formato": "imagen",
       "huella": "4c4d347d51a45a08d059c702da3d9073b190294382af82e47e41e69fb349e059",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-05T10:22:50+00:00",
@@ -5877,6 +5877,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-05T10:26:54+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-05T11:49:43+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 05-11, 3.ª ronda): «OJO» con la fr. II del apartado A del art. 30 (F2 literal) y texto de publicación sin relleno; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -5895,7 +5901,7 @@
       "id": "I20261225-T119",
       "formato": "imagen",
       "huella": "b75d14b7ee929915511d88c37e6709efc36a8c7be02251c6edf0eaf1002536b6",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-05T10:22:50+00:00",
@@ -5905,6 +5911,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-05T10:27:56+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-05T11:55:18+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 05-11, 3.ª ronda): la afirmación retenida (interpretación sin sustento) se sustituye por el art. 64 LFT con cita literal; cita destacada corregida; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -5920,7 +5932,7 @@
       "id": "R20261227-T121",
       "formato": "reel",
       "huella": "e55e83eedd5b9f45394764b918488ba8be4e79a5970ffea4f344fef5ed2cb258",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-05T10:22:50+00:00",
@@ -5936,6 +5948,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-05T10:26:00+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-05T11:49:43+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 05-11, 3.ª ronda): gancho y respuesta acotados a compras por medios electrónicos, sin lista sin narrar, etiqueta completa de la LFPC, cita completa de la fr. III; se vuelve a verificar y producir"
         }
       ],
       "error": null,

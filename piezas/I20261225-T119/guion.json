@@ -9,12 +9,12 @@
   "pieza": {
     "titular": "¿Tienes derecho a un descanso en tu jornada?",
     "bajada": "Sí. Si la jornada es continua, el descanso mínimo es de media hora.",
-    "cita": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos».",
+    "cita": "Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 63",
-    "ojo": "Es el mínimo legal permitido.",
-    "fuente_visible": "Ley Federal del Trabajo, art. 63"
+    "ojo": "Si no puedes salir del trabajo en ese descanso, cuenta como jornada.",
+    "fuente_visible": "Ley Federal del Trabajo, arts. 63 y 64"
   },
-  "copy": "Según el artículo 63 de la Ley Federal del Trabajo, las personas que laboran en una jornada continua tienen derecho a una pausa obligatoria.\n\nEl texto legal establece que se debe conceder un descanso de media hora, por lo menos. Al indicar que es un mínimo, el periodo podría ser superior si se establece así en el centro de trabajo.\n\nEsta regla aplica bajo la condición de que la jornada sea de tipo continua.\n\nGuarda esta información para conocer tus derechos y compártela con tus compañeros.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí, si tu jornada es continua. El artículo 63 de la Ley Federal del Trabajo dice: «Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos».\n\nY el artículo 64 agrega: «Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa que explica el derecho al descanso en la jornada laboral según la Ley Federal del Trabajo. Indica que en jornadas continuas se debe otorgar al menos media hora de descanso.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -33,10 +33,10 @@
       "tipo": "ley",
       "nivel": "oficial",
       "documento": "Ley Federal del Trabajo",
-      "articulo": "63",
+      "articulo": "64",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "se concederá al trabajador un descanso de media hora, por lo menos.",
-      "cita": "Ley Federal del Trabajo, artículo 63",
+      "texto_literal": "Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo",
+      "cita": "Ley Federal del Trabajo, artículo 64",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-05"
     }
@@ -50,10 +50,9 @@
     },
     {
       "id": "A2",
-      "tipo": "interpretacion",
-      "texto": "El tiempo de descanso puede ser superior a los treinta minutos siempre que así se acuerde, ya que la norma fija solo el límite mínimo.",
-      "fuente": "F2",
-      "nota": "La ley no aclara si este tiempo de descanso debe ser remunerado o si el trabajador puede salir del centro de trabajo."
+      "tipo": "hecho_normativo",
+      "texto": "Si el trabajador no puede salir del lugar de trabajo durante el reposo o las comidas, ese tiempo se computa como tiempo efectivo de la jornada.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
@@ -195,5 +194,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-05",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenida por la verificación (A2 era una interpretación sin sustento: descanso mayor por acuerdo). Se sustituye A2 por el art. 64 LFT (F2 literal: si no se puede salir, el descanso cuenta como jornada), el «OJO» repetitivo («Es el mínimo legal permitido») por esa precisión, se corrige la cita destacada (llevaba «» sobrante) y el texto de publicación queda sin relleno y con ambas citas"
+    }
+  ]
 }

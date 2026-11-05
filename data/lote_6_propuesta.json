@@ -1,6 +1,6 @@
 {
  "id": "lote-6",
- "estado": "PROPUESTA (no activa)",
+ "estado": "ACTIVADO en data/lote_piloto.json el 5-11 (ver ahí; 3 preguntas sustituidas al activar)",
  "creado": "2026-11-03",
  "max_por_formato": 14,
  "nota": "Semanas 6 y 7 (28-12-2026 al 10-01-2027), 28 temas. Preparada el 3-11 por la operación diaria para tener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 5 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal o nacional, sin jurisprudencia; no repite temas del 07-12 al 27-12; días consecutivos de materias distintas (laboral, constitucional, ciudadanía, consumidor, privacidad, derechos humanos, historia del derecho). Los 28 fundamentos se cotejaron el 3-11 con el texto oficial (textos.yml → registro/textos/): todos están vigentes con la respuesta literal; LFT 3 Bis no se pudo extraer y su tema se cambió a LFT 133 fr. XII y XIII. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
@@ -47,10 +47,10 @@
    "formato": "reel",
    "fecha": "2026-12-30",
    "tema_id": "T124",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Votar es una obligación?",
-   "fuentes_sugeridas": "CPEUM art. 36 fr. III",
-   "motivo_seleccion": "Art. 36 fr. III CPEUM: es obligación de la ciudadanía votar en las elecciones, las consultas populares y los procesos de revocación de mandato, en los términos que señale la ley. Mito frecuente: «votar es solo un derecho»."
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden juzgar con un tribunal especial creado para tu caso?",
+   "fuentes_sugeridas": "CPEUM art. 13",
+   "motivo_seleccion": "Sustituye «¿Votar es una obligación?» (CPEUM 36 fr. III ya va el 20-12 en el lote 5). Art. 13 CPEUM (texto oficial cotejado el 5-11, reforma DOF 30-09-2024): «Nadie puede ser juzgado por leyes privativas ni por tribunales especiales»; excepción literal: subsiste el fuero de guerra para los delitos y faltas contra la disciplina militar, sin extenderse a quienes no pertenezcan al Ejército, Fuerza Aérea, Armada y Guardia Nacional."
   },
   {
    "formato": "imagen",
@@ -114,9 +114,9 @@
    "fecha": "2027-01-02",
    "tema_id": "T127",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden pagar menos que a un compañero que hace el mismo trabajo?",
-   "fuentes_sugeridas": "LFT art. 86",
-   "motivo_seleccion": "Art. 86 LFT: a trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual (condiciones literales).",
+   "pregunta": "¿Puedes ceder tu sueldo a tu patrón o a otra persona?",
+   "fuentes_sugeridas": "LFT art. 104",
+   "motivo_seleccion": "Sustituye «¿Te pueden pagar menos que a un compañero…?» (LFT 86 ya va el 21-12 en el lote 5). Art. 104 LFT (texto oficial cotejado el 5-11): «Es nula la cesión de los salarios en favor del patrón o de terceras personas, cualquiera que sea la denominación o forma que se le dé».",
    "plantilla": "mito_realidad"
   },
   {
@@ -180,10 +180,10 @@
    "formato": "reel",
    "fecha": "2027-01-06",
    "tema_id": "T131",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Qué es la prima vacacional y cuánto es?",
-   "fuentes_sugeridas": "LFT art. 80",
-   "motivo_seleccion": "Art. 80 LFT: «Los trabajadores tendrán derecho a una prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones»."
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿En cuánto tiempo te deben dar tus vacaciones?",
+   "fuentes_sugeridas": "LFT art. 81",
+   "motivo_seleccion": "Sustituye la prima vacacional (LFT 80 ya va el 18-12 en el lote 5). Art. 81 LFT (texto oficial cotejado el 5-11): «Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios»; además, constancia anual de antigüedad, periodo y fecha de disfrute."
   },
   {
    "formato": "imagen",
