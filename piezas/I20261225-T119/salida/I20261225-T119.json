@@ -1,0 +1,33 @@
+{
+  "id": "I20261225-T119",
+  "formato": "imagen",
+  "titulo": "¿Tienes derecho a un descanso en tu jornada?",
+  "plantilla": "dato",
+  "archivo": "I20261225-T119.png",
+  "sha256": "992063d37659642591789c4720cc705544f0a91d0e241d8a19a1e6bfee2913ea",
+  "ahash": "1101111111111111111111111111111111111111111111111000000000000011100000000011111110000011111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+  "huella_guion": "fea8b50f75cd4be6aaf3efba637cf629bb59d7db6ffb3fa863dd4c208256243a",
+  "texto_alternativo": "Imagen informativa que explica el derecho al descanso en la jornada laboral según la Ley Federal del Trabajo. Indica que en jornadas continuas se debe otorgar al menos media hora de descanso.",
+  "copy": "Sí, si tu jornada es continua. El artículo 63 de la Ley Federal del Trabajo dice: «Durante la jornada continua de trabajo se concederá al trabajador un descanso de media hora, por lo menos».\n\nY el artículo 64 agrega: «Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo».\n\nEsto es información general, no es asesoría legal.",
+  "fuentes": [
+    {
+      "id": "F1",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "63",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+    },
+    {
+      "id": "F2",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "64",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+    }
+  ],
+  "relacion_reel": "independiente",
+  "estado": "APTO",
+  "fecha": "2026-11-05T16:28:59+00:00",
+  "costo": {
+    "apis_de_pago_usd": 0.0,
+    "nota": "Pillow + tesseract, locales y gratuitos"
+  }
+}

@@ -1,0 +1,51 @@
+{
+ "tema_id": "T122",
+ "pregunta": "¿Te pueden embargar tu sueldo por una deuda?",
+ "fecha": "2026-11-05T16:21:26+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden embargar tu sueldo por una deuda?",
+  "concepto_central": "embargo de salarios",
+  "respuesta_corta": "No, los salarios no pueden ser embargados, excepto por pensiones alimenticias decretadas por autoridad competente para los beneficiarios que marca la ley.",
+  "reglas": [
+   {
+    "conclusion": "Existe una prohibición general de embargar el salario de los trabajadores, protegiendo este ingreso frente a cobros judiciales o administrativos.",
+    "fuente": "F1",
+    "cita_literal": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V.",
+    "condiciones": [
+     "Que se trate de salarios de trabajadores"
+    ],
+    "exceptions": [
+     "Pensiones alimenticias decretadas por autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "El embargo del sueldo solo se permite para el pago de pensiones alimenticias ordenadas por un juez para los beneficiarios legales.",
+    "fuente": "F1",
+    "cita_literal": "salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
+   },
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Los empleadores no tienen el deber legal de acatar mandatos de embargo sobre el salario que no correspondan a pensiones alimenticias.",
+    "fuente": "F1",
+    "cita_literal": "Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si un acreedor civil (como un banco o una tienda) obtiene una orden de embargo contra el sueldo, el patrón tiene fundamento legal para no ejecutarla.",
+    "condicion": "Siempre que la orden no provenga de un juicio de alimentos para los beneficiarios que marca la ley.",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no define quiénes son las personas mencionadas en el artículo 110, fracción V, ni establece el procedimiento para que un trabajador reclame si su patrón sí ejecuta un embargo indebido.",
+  "fuentes_irrelevantes": []
+ }
+}

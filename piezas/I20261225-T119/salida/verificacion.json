@@ -1,10 +1,10 @@
 {
-  "decision": "RETENER",
+  "decision": "APTA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-05T10:26:54+00:00",
+      "consultado": "2026-11-05T16:27:15+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -18,14 +18,14 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-05T10:27:10+00:00",
+      "consultado": "2026-11-05T16:27:41+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
       "ultima_reforma_documento": "2026-05-14",
-      "posicion_articulo": 62017,
-      "extracto": "- durante la jornada continua de trabajo se concedera al trabajador un descanso de media hora, por lo menos.",
-      "huella_articulo": "28821b6a292f45226962372ed8b12dda810b0a82df6bb73919544e5f06dce5c1",
+      "posicion_articulo": 62139,
+      "extracto": "- cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo co rrespondiente le sera computado como tiempo efectivo de la jornada de trabajo.",
+      "huella_articulo": "a9f6f81edb929751bd3c916ab31930ae47ce6e06544758e1357b125fa0826c37",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
@@ -44,8 +44,8 @@
       "fuentes": [
         "F2"
       ],
-      "dictamen": "RETENER",
-      "duda": "La ley no aclara si este tiempo de descanso debe ser remunerado o si el trabajador puede salir del centro de trabajo."
+      "dictamen": "VERIFICADA",
+      "duda": null
     }
   ],
   "razonamiento": []

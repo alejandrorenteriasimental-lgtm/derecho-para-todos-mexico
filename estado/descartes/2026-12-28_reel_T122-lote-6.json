@@ -1,0 +1,138 @@
+{
+ "solicitud": "2026-12-28_reel_T122-lote-6.json",
+ "fecha": "2026-11-05T16:21:47+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 621 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 1: recorta al menos 61 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden quitar sueldo por una deuda? \\n ¿SUELDO \\n EMBARGADO? \\n Por regl",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 701 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 81: recorta al menos 141 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te pueden embargar tu sueldo por una deuda? \n ¿EMBARGO \n DE SUELDO? \n Depende. Por regla general, tu salario está protegido y no puede ser embargado por deudas comunes. \n REGLA \n GENERAL \n La Ley Federal del Trabajo establece que: \"Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas\". \n Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas \n Esto significa que no aplica para deudas de este tipo: \n Deudas civiles \n Deudas bancarias \n Deudas mer"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 701 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 81: recorta al menos 141 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona que la excepción de pensión alimenticia debe ser en beneficio de las personas señaladas en el artículo 110, fracción V, lo cual es un límite al alcance de la excepción."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El salario de los trabajadores cuenta con una protección legal que impide su embargo para el pago de deudas generales.",
+      "sostenida": "si",
+      "motivo": "El texto establece la prohibición de embargo y la excepción específica, lo que permite inferir que para deudas generales no procede."
+     },
+     {
+      "conclusion": "La única excepción que permite el embargo del sueldo es el pago de pensiones alimenticias ordenadas judicialmente.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite un requisito de fondo del texto oficial: que dicha pensión sea en beneficio de las personas señaladas en el artículo 110, fracción V."
+     },
+     {
+      "conclusion": "Los centros de trabajo no tienen el deber legal de acatar mandatos de embargo que no correspondan a pensiones alimenticias.",
+      "sostenida": "si",
+      "motivo": "Se alinea con la prohibición expresa para los patrones de cumplir otras órdenes de embargo."
+     },
+     {
+      "conclusion": "Las deudas de carácter civil, mercantil o bancario no pueden cobrarse mediante el embargo directo del salario ante el patrón.",
+      "sostenida": "si",
+      "motivo": "Se deriva de la prohibición general y la limitación de la excepción únicamente a pensiones alimenticias."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento.elementos[0].respuesta",
+      "problema": "La respuesta afirma que la única excepción es el pago de pensiones alimenticias, pero omite el límite de beneficiarios que impone la norma.",
+      "correccion": "La única excepción que permite el embargo del sueldo es el pago de pensiones alimenticias decretadas por autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
+     },
+     {
+      "donde": "escenas[3].afirmaciones[0].texto",
+      "problema": "La afirmación simplifica la excepción al omitir la condición de los beneficiarios establecida en el texto oficial.",
+      "correccion": "El embargo solo se permite para pensiones alimenticias decretadas por autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 753 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 133: recorta al menos 193 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «ÚNICA EXCEPCIÓN ADMITIDA» no corresponde a lo que se narra («El embargo del sueldo solo se permite para el pago de pensiones alimen»)."
+   ],
+   "visible": "  \n ¿Te pueden embargar tu sueldo por una deuda? \n ¿EMBARGO \n DE SUELDO? \n No, los salarios no pueden ser embargados, excepto por pensiones alimenticias decretadas por autoridad competente. \n SALARIO \n PROTEGIDO \n La ley es clara: \"Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V.\" \n Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V. \n Esto es lo que dice la norma sobre tu pago: \n"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza no menciona que la excepción de pensiones alimenticias está limitada específicamente a las personas señaladas en el artículo 110, fracción V, lo cual es un requisito esencial para la validez del embargo."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Existe una prohibición general de embargar el salario de los trabajadores, protegiendo este ingreso frente a cobros judiciales o administrativos.",
+      "sostenida": "si",
+      "motivo": "El texto oficial establece explícitamente que los salarios no podrán ser embargados, salvo la excepción de pensiones alimenticias."
+     },
+     {
+      "conclusion": "El embargo del sueldo solo se permite para el pago de pensiones alimenticias ordenadas por un juez para los beneficiarios legales.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite el requisito de que los beneficiarios deben ser específicamente las personas señaladas en el artículo 110, fracción V de la Ley Federal del Trabajo."
+     },
+     {
+      "conclusion": "Los empleadores no tienen el deber legal de acatar mandatos de embargo sobre el salario que no correspondan a pensiones alimenticias.",
+      "sostenida": "si",
+      "motivo": "El artículo 112 señala textualmente que los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo."
+     },
+     {
+      "conclusion": "Se permite el embargo de sueldo exclusivamente para el pago de pensiones alimenticias.",
+      "sostenida": "parcial",
+      "motivo": "La palabra 'exclusivamente' sin la precisión de los beneficiarios del artículo 110, fracción V, hace que la regla sea incompleta según el texto oficial."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Sección de elementos (excepción) y sección de titular (A2)",
+      "problema": "Se presenta la excepción de pensiones alimenticias de forma genérica, omitiendo el límite de los beneficiarios legales definidos en la ley.",
+      "correccion": "Debe especificarse que el embargo por pensión alimenticia solo es válido cuando es en beneficio de las personas señaladas en el artículo 110, fracción V."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 621 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 1: recorta al menos 61 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te pueden quitar sueldo por una deuda? \n ¿SUELDO \n EMBARGADO? \n Por regla general no, tu salario está protegido, salvo por alimentos para beneficiarios legales. \n REGLA \n GENERAL \n La ley dice: \"Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V.\" \n Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V. \n Esto implica que: \n No acatar deudas civiles \n Solo pagar alimentos \n El emba"
+  }
+ ]
+}

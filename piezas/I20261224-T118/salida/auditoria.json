@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1204 KB"
+      "detalle": "1209 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "55 palabras sin cabecera ni pie"
+      "detalle": "60 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "93% de 43 palabras reconocidas"
+      "detalle": "94% de 47 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Eres mexicano si naces en México con padres extranjeros?",
     "plantilla": "dato",
     "archivo": "I20261224-T118.png",
-    "sha256": "2ed32ff8150e9291e7412bfcd3b9758a63ca70e2bfc440cd93bf011312d74945",
-    "ahash": "1000011111111111111111111111111111111111111111111101111111111111100000000000011110000000000000111000010000010111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
-    "huella_guion": "4c4d347d51a45a08d059c702da3d9073b190294382af82e47e41e69fb349e059",
+    "sha256": "1e87feb254002301eec4f04fefd39015a8e270de90b8587d96bf313a286b5439",
+    "ahash": "1001111111111111111111111111111111111111111111111000000000001111100000000000001110000000000000111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "f159cdec565569e6f3979d1024a284b57ac80c837c38e6c16efc9af4789f0e17",
     "texto_alternativo": "Placa informativa que explica que nacer en México otorga la nacionalidad mexicana por nacimiento, citando el artículo 30 de la Constitución, el cual indica que esto ocurre independientemente de la nacionalidad de los padres.",
-    "copy": "La Constitución Política de los Estados Unidos Mexicanos define las bases de nuestra identidad nacional. En su artículo 30, apartado A, se establecen los criterios claros para obtener la nacionalidad por nacimiento.\n\nEl texto oficial señala que son mexicanos por nacimiento «los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres». Esto garantiza el derecho a la nacionalidad por el simple hecho de nacer en suelo mexicano.\n\nDe esta forma, el origen o la nacionalidad de los progenitores no impide que una persona nacida en territorio nacional sea reconocida como mexicana desde su nacimiento. Te invitamos a guardar esta información para conocer mejor tus derechos y a compartirla con quien pueda resultarle de utilidad.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "Sí. El artículo 30, apartado A, fracción I, de la Constitución dice que son mexicanos por nacimiento «los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres».\n\nLa fracción II agrega a «los que nazcan en el extranjero, hijos de padres mexicanos, de madre mexicana o de padre mexicano».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-05T10:26:49+00:00",
+    "fecha": "2026-11-05T16:27:10+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
