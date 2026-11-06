@@ -17,31 +17,42 @@
       "cita": "Ley Federal del Trabajo, artículo 98",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "133",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Exigir que los trabajadores compren sus artículos de consumo en tienda o lugar determinado;",
+      "cita": "Ley Federal del Trabajo, artículo 133, fracción II",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Tu patrón intenta controlar en qué gastas tu dinero?",
+      "texto": "¿Tu patrón puede decidir en qué gastas tu sueldo?",
       "titulo": [
-        "¿PATRÓN CONTROLA",
-        "TU DINERO?"
+        "¿TU PATRÓN DECIDE",
+        "EN QUÉ GASTAS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No puede hacerlo. La ley establece que tú tienes el control total sobre tu sueldo y cualquier medida que afecte este derecho es nula.",
+      "texto": "No. La ley dice que tú dispones libremente de tu salario.",
       "titulo": [
-        "TÚ TIENES",
-        "EL CONTROL"
+        "NO, ES",
+        "TU SALARIO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
       "texto": "El artículo 98 de la Ley Federal del Trabajo dice: «Los trabajadores dispondrán libremente de sus salarios. Cualquier disposición o medida que desvirtúe este derecho será nula».",
-      "etiqueta": "Ley Federal del Trabajo, artículo 98",
+      "etiqueta": "Ley Federal del Trabajo, art. 98",
       "cita": "Los trabajadores dispondrán libremente de sus salarios. Cualquier disposición o medida que desvirtúe este derecho será nula.",
       "afirmaciones": [
         {
@@ -54,23 +65,20 @@
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Esto implica que tienes libertad sobre tu dinero:",
-      "items": [
-        "Tú decides qué comprar",
-        "Tú eliges dónde gastar",
-        "Reglas de control nulas"
-      ],
-      "afirmaciones": []
-    },
-    {
       "tipo": "titular",
-      "texto": "Así, ninguna instrucción del patrón para controlar tu gasto tiene validez legal. Dispones libremente de tu dinero.",
+      "texto": "Y el artículo 133 le prohíbe exigir que compres tus artículos de consumo en una tienda o lugar determinado.",
       "titulo": [
-        "LIBERTAD",
-        "FINANCIERA"
+        "NI TIENDA",
+        "OBLIGADA"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Queda prohibido a las personas empleadoras exigir que los trabajadores compren sus artículos de consumo en tienda o lugar determinado.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -83,10 +91,10 @@
     "suficiente": true,
     "pregunta": "¿Tu patrón puede decidir en qué gastas tu sueldo?",
     "concepto_central": "disposición libre del salario",
-    "respuesta_corta": "No. La ley establece que los trabajadores disponen libremente de sus salarios y cualquier medida que afecte este derecho se considera nula.",
+    "respuesta_corta": "No. Los trabajadores dispondrán libremente de sus salarios y cualquier disposición o medida que desvirtúe ese derecho será nula; además, el patrón no puede exigir que compren sus artículos de consumo en tienda o lugar determinado.",
     "reglas": [
       {
-        "conclusion": "El trabajador tiene el derecho legal de decidir el uso de su salario sin que el patrón pueda imponer medidas que lo limiten.",
+        "conclusion": "Los trabajadores dispondrán libremente de sus salarios; cualquier disposición o medida que desvirtúe este derecho será nula.",
         "fuente": "F1",
         "cita_literal": "Los trabajadores dispondrán libremente de sus salarios. Cualquier disposición o medida que desvirtúe este derecho será nula.",
         "condiciones": [
@@ -96,6 +104,19 @@
         "ref": {
           "documento": "Ley Federal del Trabajo",
           "articulo": "98"
+        }
+      },
+      {
+        "conclusion": "Queda prohibido a las personas empleadoras o a sus representantes exigir que los trabajadores compren sus artículos de consumo en tienda o lugar determinado.",
+        "fuente": "F2",
+        "cita_literal": "Exigir que los trabajadores compren sus artículos de consumo en tienda o lugar determinado;",
+        "condiciones": [
+          "Aplica a las personas empleadoras o a sus representantes"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "133"
         }
       }
     ],
@@ -149,7 +170,7 @@
   "pregunta_original": "¿Tu patrón puede decidir en qué gastas tu sueldo?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Tu patrón puede decidir en qué gastas tu sueldo?\n\nNo. La ley establece que los trabajadores disponen libremente de sus salarios y cualquier medida que afecte este derecho se considera nula.\n\nFuente: Ley Federal del Trabajo, artículo 98.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tu patrón puede decidir en qué gastas tu sueldo?\n\nNo. El artículo 98 de la Ley Federal del Trabajo dice: «Los trabajadores dispondrán libremente de sus salarios. Cualquier disposición o medida que desvirtúe este derecho será nula». Y el artículo 133 prohíbe a las personas empleadoras o a sus representantes «Exigir que los trabajadores compren sus artículos de consumo en tienda o lugar determinado» (fracción II).\n\nFuente: Ley Federal del Trabajo, artículos 98 y 133, fracción II.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -185,5 +206,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Sin generalización («control total sobre tu sueldo»: el art. 98 habla de disponer libremente, y la ley permite ciertos descuentos); gancho con la pregunta; la lista sin narrar y el titular de relleno «LIBERTAD FINANCIERA» se sustituyen por un titular anclado en el art. 133 fr. II (no exigir compras en tienda o lugar determinado, F2); texto de publicación con ambas citas literales"
+    }
+  ]
 }

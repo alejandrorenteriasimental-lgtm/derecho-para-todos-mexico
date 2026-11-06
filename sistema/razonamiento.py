@@ -134,7 +134,23 @@ def _temas(texto):
         if any(r in p for r in raices): out.add(clave)
     vac = {"puede", "puede", "tiene", "sobre", "cuand", "donde", "quien", "cuant", "porqu", "derec", "legal", "hacer", "sabes", "saber", "pasa ", "puede"}
     out |= {w[:5] for w in p.split() if len(w) > 4 and w[:5] not in vac}
+    if not out:
+        # 6-11-2026: «¿Tienes derecho al agua?» no tenía ninguna raíz de 5 letras («agua» tiene 4) y el control de
+        # tema descartaba la pieza aunque respondiera exactamente esa pregunta (R20270105-T130). Si la pregunta no deja
+        # raíces largas, se usan sus palabras de 4 letras que no sean de relleno.
+        cortas = {"para", "como", "pero", "este", "esta", "esto", "eso", "tus", "sus", "algo", "cual", "todo", "toda",
+                  "solo", "aqui", "otra", "otro", "debe", "hace", "dice", "ante", "sino", "pued"}
+        out |= {w for w in p.split() if len(w) == 4 and w not in cortas}
     return out
+
+
+def tema_comun(plan, propio):
+    """¿Comparten tema la pregunta del plan y el texto propio? Raíces comunes; o, si la pregunta solo deja palabras de
+    4 letras («agua»), que esas palabras estén en el texto propio."""
+    a = _temas(plan)
+    if a & _temas(propio): return True
+    cortas = {w for w in a if len(w) == 4}
+    return bool(cortas) and bool(cortas & set(plano(propio).split()))
 
 
 def _es_absoluta(frase):
@@ -180,7 +196,7 @@ def revisar(g, textos, ia=None):
     original = g.get("pregunta_original") or ""
     if original and ia:
         pieza_txt = titulo + " " + (rz.get("pregunta") or "") + " " + (rz.get("respuesta_corta") or "")
-        if not (_temas(original) & _temas(pieza_txt)) and not ({g2 for g2, _ in conceptos_en(original)} & {g2 for g2, _ in conceptos_en(pieza_txt)}):
+        if not tema_comun(original, pieza_txt) and not ({g2 for g2, _ in conceptos_en(original)} & {g2 for g2, _ in conceptos_en(pieza_txt)}):
             h("tema", "bloqueante", f"La pieza no responde la pregunta del plan editorial («{original[:80]}»): trata «{titulo[:80]}».")
 
     # 2. CONCEPTOS del título frente a los del cuerpo
@@ -468,6 +484,13 @@ def _plazos_pos(p, base=False):
             if base: out.append((m.start(), m.end(), (v, u)))
         else:
             out.append((m.start(), m.end(), (v, u)))
+    if base:
+        # Edad con la unidad sobreentendida: LFT 22 «Los mayores de quince y menores de dieciséis necesitan…» (el «años»
+        # va solo con el primer número). La pieza puede decir «menores de dieciséis años» (R20270104-T129, 6-11-2026).
+        edad = r"\b(?:mayores|menores) de (\d{1,3}|" + "|".join(_NUM) + r")\b(?!\s+(?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b)"
+        for m in re.finditer(edad, p):
+            n = m.group(1); v = _NUM[n] if n in _NUM else int(n)
+            out.append((m.start(), m.end(), (v, _UNIDAD.get("anos", "ano"))))
     return out
 
 

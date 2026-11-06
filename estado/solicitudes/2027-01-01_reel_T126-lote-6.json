@@ -2,23 +2,34 @@
   "fecha": "2027-01-01",
   "formato": "reel",
   "tema_id": "T126",
-  "titulo": "¿Te pueden seguir mandando publicidad si dijiste que no?",
-  "gancho": "¿Te pueden seguir mandando publicidad si dijiste que no?",
-  "pregunta": "¿Te pueden seguir mandando publicidad si dijiste que no?",
+  "titulo": "¿Te pueden impedir reunirte pacíficamente?",
+  "gancho": "¿Te pueden impedir reunirte pacíficamente?",
+  "pregunta": "¿Te pueden impedir reunirte pacíficamente?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 18 Bis",
+  "fuentes_sugeridas": "CPEUM art. 9",
   "riesgo_exactitud": "",
   "lote": "lote-6",
-  "motivo_seleccion": "Art. 18 Bis LFPC: queda prohibido enviar publicidad a los consumidores que expresamente hayan manifestado su voluntad de no recibirla o que estén inscritos en el registro del art. 18.",
+  "motivo_seleccion": "Art. 9 CPEUM: «No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país».",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270101-T126",
   "archivo": "2027-01-01_reel_T126-lote-6.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan sanciones económicas, el nombre de la autoridad encargada del registro ni el proceso para denunciar el incumplimiento.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "ba3fc98b0a806e22"
+  "huella_entrada": "79a386055bb965a5",
+  "angulo": "Respuesta: No. Cita literal ÚNICA y breve del art. 9 CPEUM: «No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito». Condiciones literales: que sea pacíficamente y con cualquier objeto lícito. Una precisión literal del mismo artículo: «solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país». Sin hablar de protestas ante autoridades ni de otras partes del artículo. Cuatro escenas más cierre; narración de 480 caracteres o menos; sin listas.",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude",
+      "motivo": "pregunta sustituida: el tema LFPC 18 Bis acumula descartes (lote 4, 12-12, y este del 01-01: «los textos no bastan») y la imagen del mismo día ya trata el registro del art. 18 LFPC (misma familia de tema el mismo día). Ahora CPEUM art. 9 (reunión pacífica), respuesta literal, no usado en las últimas 3 semanas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan sanciones económicas, el nombre de la autoridad encargada del registro ni el proceso para denunciar el incumplimiento.",
+      "pregunta_anterior": "¿Te pueden seguir mandando publicidad si dijiste que no?"
+    }
+  ]
 }

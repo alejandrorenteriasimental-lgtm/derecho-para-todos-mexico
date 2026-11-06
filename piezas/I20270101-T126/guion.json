@@ -2,20 +2,20 @@
   "id": "I20270101-T126",
   "formato": "imagen",
   "plantilla": "dato",
-  "titulo": "¿Puedes pedir que no te llamen para venderte algo?",
+  "titulo": "¿Puedes pedir que no usen tus datos para publicidad?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T126",
   "pieza": {
-    "titular": "¿Puedes pedir que no te llamen para venderte algo?",
-    "bajada": "Depende; la ley permite solicitar que tu información no se use para publicidad.",
-    "cita": "La Procuraduría podrá llevar, en su caso, un registro público de consumidores",
+    "titular": "¿Puedes pedir que no usen tus datos para publicidad?",
+    "bajada": "Sí, con un registro público y gratuito.",
+    "cita": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito",
     "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 18",
-    "ojo": "Solicítalo por escrito o correo electrónico.",
+    "ojo": "La Procuraduría «podrá llevar, en su caso» ese registro.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 18"
   },
-  "copy": "La Ley Federal de Protección al Consumidor establece en su artículo 18 que puedes solicitar que tu información personal no sea utilizada con propósitos de publicidad o mercadotecnia.\n\nDe acuerdo con la norma, la Procuraduría podrá llevar un registro público para estos fines, al cual puedes inscribirte de forma totalmente gratuita.\n\nPara realizar este trámite, la ley indica que puedes comunicar tu solicitud directamente a la Procuraduría por escrito o por correo electrónico. Guarda y comparte esta información para que más personas la conozcan.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Imagen gráfica con la pregunta sobre si se puede evitar que usen tu información para publicidad según la ley.",
+  "copy": "¿Puedes pedir que no usen tus datos para publicidad?\n\nSí. El artículo 18 de la Ley Federal de Protección al Consumidor dice: «La Procuraduría podrá llevar, en su caso, un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios». Y agrega: «Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 18.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa: explica que, según el artículo 18 de la Ley Federal de Protección al Consumidor, puedes solicitar gratis, por escrito o por correo electrónico, tu inscripción en el registro de la Procuraduría para que tu información no se use con fines publicitarios.",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -57,9 +57,9 @@
   ],
   "razonamiento": {
     "suficiente": true,
-    "pregunta": "¿Puedes pedir que no te llamen para venderte algo?",
+    "pregunta": "¿Puedes pedir que no usen tus datos para publicidad?",
     "concepto_central": "uso de información para fines mercadotécnicos o publicitarios",
-    "respuesta_corta": "Depende de la autoridad; la ley permite solicitar que tu información no se use para fines publicitarios o mercadotécnicos mediante un registro gratuito.",
+    "respuesta_corta": "Sí: la ley prevé que la Procuraduría pueda llevar un registro público de consumidores que no quieren que su información se use con fines mercadotécnicos o publicitarios, y la inscripción se pide por escrito o por correo electrónico y es gratuita.",
     "reglas": [
       {
         "conclusion": "La Procuraduría tiene la facultad de contar con un registro para las personas que no quieran que su información se utilice con propósitos de publicidad o mercadotecnia.",
@@ -264,5 +264,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Título alineado con lo que regula el art. 18 (uso de la información con fines publicitarios, no las llamadas en general); bajada sin «Depende» y con la respuesta; cita completa sobre cómo inscribirse (F2, gratuita, por escrito o correo); OJO con la condición literal «podrá llevar, en su caso»; texto de publicación sin relleno y con ambas citas literales"
+    }
+  ]
 }

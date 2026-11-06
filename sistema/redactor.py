@@ -630,7 +630,7 @@ def validar_mapa(mapa, sol, fuentes):
     # el análisis debe responder la MISMA pregunta del plan (la prueba de arriba usa la pregunta del plan como título)
     plan = pregunta_plan(sol)
     propio = " ".join([str(mapa.get("pregunta", "")), str(mapa.get("respuesta_corta", ""))] + [str(r.get("conclusion", "")) for r in reglas])
-    if not (razonamiento._temas(plan) & razonamiento._temas(propio)) and \
+    if not razonamiento.tema_comun(plan, propio) and \
        not ({g for g, _ in razonamiento.conceptos_en(plan)} & {g for g, _ in razonamiento.conceptos_en(propio)}):
         err.append(f"[tema] El análisis no responde la pregunta del plan editorial («{plan[:80]}»): trata «{str(mapa.get('pregunta', ''))[:80]}».")
     return err

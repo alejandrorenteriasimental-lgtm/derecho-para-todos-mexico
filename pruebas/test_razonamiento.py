@@ -132,3 +132,26 @@ def test_renuncia_de_derechos_no_activa_el_glosario_de_terminacion_laboral():
     for t in nada: assert ("terminacion_laboral", "renuncia") not in r.conceptos_en(t), t
     for t in ["¿Si renuncias pierdes tu aguinaldo?", "presentó su renuncia voluntaria", "renunciar a tu trabajo"]:
         assert ("terminacion_laboral", "renuncia") in r.conceptos_en(t), t
+
+
+def test_T130_pregunta_sin_raices_largas_no_se_toma_como_deriva_de_tema():
+    # 6-11-2026: «¿Tienes derecho al agua?» solo tiene palabras cortas o de relleno; el control de tema la descartaba
+    # aunque la pieza respondiera exactamente esa pregunta (R20270105-T130).
+    q = "¿Tienes derecho al agua?"
+    assert R._temas(q)
+    g = {"titulo": q, "pregunta_original": q,
+         "razonamiento": {"pregunta": q, "respuesta_corta": "Sí: toda persona tiene derecho al acceso al agua."}}
+    assert "tema" not in {x["regla"] for x in R.revisar(g, {}, ia=True)}
+    # y sigue bloqueando una pieza que habla de otra cosa
+    g2 = {"titulo": "¿Te pueden cobrar la luz?", "pregunta_original": q,
+          "razonamiento": {"pregunta": "¿Te pueden cobrar la luz?", "respuesta_corta": "Sí, conforme a la tarifa."}}
+    assert "tema" in {x["regla"] for x in R.revisar(g2, {}, ia=True)}
+
+
+def test_T129_edad_con_la_unidad_sobreentendida_en_la_ley():
+    # LFT 22: «Los mayores de quince y menores de dieciséis necesitan autorización…» (sin repetir «años»). La pieza
+    # que dice «menores de dieciséis años» no inventa un plazo (R20270104-T129, 6-11-2026); otra edad sí se bloquea.
+    ley = ("Los mayores de quince años pueden prestar libremente sus servicios con las limitaciones establecidas en esta Ley. "
+           "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores")
+    assert R.consecuencias_sin_sustento("Si eres mayor de quince y menor de dieciséis años, necesitas autorización.", [ley]) == []
+    assert R.consecuencias_sin_sustento("Si tienes diecisiete años, necesitas autorización.", [ley])

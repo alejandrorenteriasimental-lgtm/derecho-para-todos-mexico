@@ -12,13 +12,22 @@
   "lote": "lote-6",
   "motivo_seleccion": "Art. 22 LFT: reglas para mayores de quince y menores de dieciséis años (autorización de padres o tutores y, a falta de ellos, de las autoridades que señala).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270104-T129",
   "archivo": "2027-01-04_reel_T129-lote-6.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «si eres mayor de quince y menor de dieciséis años, necesitas autorización de tus» menciona un plazo (16 ano) que no aparece en los artículos citados.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "e244c61faae4795b"
+  "huella_entrada": "e244c61faae4795b",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude",
+      "motivo": "primer descarte por causa del sistema: el control de plazos no reconocía «menores de dieciséis» (LFT 22 omite «años» en el segundo número) y bloqueaba «menores de dieciséis años». Corregido en razonamiento._plazos_pos con prueba de regresión (test_T129); se reabre sin cambiar el tema",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «si eres mayor de quince y menor de dieciséis años, necesitas autorización de tus» menciona un plazo (16 ano) que no aparece en los artículos citados.\"]}"
+    }
+  ]
 }

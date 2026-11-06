@@ -12,13 +12,22 @@
   "lote": "lote-6",
   "motivo_seleccion": "Art. 4 CPEUM: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270105-T130",
   "archivo": "2027-01-05_reel_T130-lote-6.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[tema] La pieza no responde la pregunta del plan editorial («¿Tienes derecho al agua?»): trata «¿Tienes derecho al agua?».\", \"[tema] El análisis no responde la pregunta del plan editorial («¿Tienes derecho al agua?»): trata «¿Tienes derecho al agua?».\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "f954015d2f2bc146"
+  "huella_entrada": "f954015d2f2bc146",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude",
+      "motivo": "primer descarte por causa del sistema: el control de tema no hallaba raíces en «¿Tienes derecho al agua?» («agua» tiene 4 letras) y descartaba la pieza aunque respondiera esa misma pregunta. Corregido con razonamiento.tema_comun y prueba de regresión (test_T130); se reabre sin cambiar el tema",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[tema] La pieza no responde la pregunta del plan editorial («¿Tienes derecho al agua?»): trata «¿Tienes derecho al agua?».\", \"[tema] El análisis no responde la pregunta del plan editorial («¿Tienes derecho al agua?»): trata «¿Tienes derecho al agua?».\"]}"
+    }
+  ]
 }

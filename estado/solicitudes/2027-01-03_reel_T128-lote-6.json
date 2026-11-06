@@ -12,13 +12,23 @@
   "lote": "lote-6",
   "motivo_seleccion": "Art. 16 CPEUM: las comunicaciones privadas son inviolables; excepción literal: cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas. Distinto del tema del 13-12 (cateo).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270103-T128",
   "archivo": "2027-01-03_reel_T128-lote-6.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: pueden usarse si uno de los participantes las entrega voluntariamente o si un jue».\"], \"visible\": \"  \\n ¿Tus chats privados sirven como prueba? \\n CHATS COMO \\n PRUEBA \\n Depende: si un participante los da o un juez los autoriza. \\n ¿TIENEN VALOR \\n EN JUICIO? \\n L",
   "ultima_categoria": "juridico",
-  "huella_entrada": "543f517a518b05d1"
+  "huella_entrada": "8e1cc41417ebe200",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude",
+      "motivo": "primer descarte con CPEUM 16 por redacción: la respuesta corta mezclaba dos vías (aportación voluntaria e intervención autorizada por juez federal) y no quedó visible. Se reabre con un solo fragmento literal (aportación voluntaria) y tope de 480 caracteres",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: pueden usarse si uno de los participantes las entrega voluntariamente o si un jue».\"], \"visible\": \"  \\n ¿Tus chats privados sirven como prueba? \\n CHATS COMO \\n PRUEBA \\n Depende: si un par"
+    }
+  ],
+  "angulo": "Solo el párrafo del art. 16 CPEUM sobre comunicaciones privadas. Cita literal ÚNICA y breve (unos 200 caracteres; máximo 220): «La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas». Respuesta: Depende. Una condición: que alguien que participó en la conversación la aporte voluntariamente. Sin hablar de intervención judicial ni de otras partes del artículo. Cuatro escenas más cierre; narración de 480 caracteres o menos"
 }
