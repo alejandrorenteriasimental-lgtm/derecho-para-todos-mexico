@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.3 s"
+      "detalle": "38.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.3 s"
+      "detalle": "38.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "28 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "f97706e5da3c3365"
+      "detalle": "395fbec1790c56c5"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261229-T123",
     "titulo": "¿En México existen los títulos de nobleza?",
-    "fecha": "2026-11-06T04:04:23+00:00",
-    "sha256": "f97706e5da3c336511a7344c32041156f2fdb4905af8e3717ec809658c711cf0",
-    "duracion_s": 38.3,
+    "fecha": "2026-11-06T04:30:43+00:00",
+    "sha256": "395fbec1790c56c50591c8bfcad968f9af3c69de819c0c324dbb22027e6491bb",
+    "duracion_s": 38.1,
     "estado": "APTO",
-    "huella_guion": "f3d670a2bd2db7fa2973e6815ba83464068aa985970a755f64b7e02bd85b3e02",
+    "huella_guion": "35af132212f0de8280405dd03772dc0a3fbb8181bc7e23a83e5b362f1eb4505a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.2,
-      "musica": 1.8,
-      "render_video": 38.8,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.3
+      "narracion": 9.4,
+      "musica": 1.1,
+      "render_video": 26.5,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 5.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.14,
-      "computo_equivalente_runner_usd": 0.0069,
+      "computo_minutos": 0.73,
+      "computo_equivalente_runner_usd": 0.0044,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1148,
-    "caracteres_narrados": 553
+    "frames": 1140,
+    "caracteres_narrados": 534
   }
 }

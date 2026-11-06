@@ -1,0 +1,240 @@
+{
+  "id": "R20261230-T124",
+  "formato": "reel",
+  "titulo": "¿Te pueden juzgar con un tribunal especial creado para tu caso?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T124",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Alguna vez te has preguntado si pueden crear un tribunal solo para juzgar un caso?",
+      "titulo": [
+        "¿TRIBUNAL ESPECIAL",
+        "PARA UN CASO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No: la Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.",
+      "titulo": [
+        "RESPUESTA:",
+        "NO ES POSIBLE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El texto oficial indica que: Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "etiqueta": "Constitución, art. 13",
+      "cita": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esta norma protectora de los derechos de las personas establece lo siguiente:",
+      "items": [
+        "Sin leyes privativas",
+        "Sin tribunales especiales"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Así, la ley impide que cualquier persona sea juzgada con un tribunal especial creado para su caso.",
+      "titulo": [
+        "REGLA DE LA",
+        "CONSTITUCIÓN"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Se prohíbe el juzgamiento mediante leyes privativas y tribunales especiales.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Ninguna persona puede ser juzgada mediante tribunales especiales.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden juzgar con un tribunal especial creado para tu caso?",
+    "concepto_central": "tribunales especiales",
+    "respuesta_corta": "No: la Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.",
+    "reglas": [
+      {
+        "conclusion": "Existe una prohibición para que cualquier persona sea juzgada mediante leyes privativas o por tribunales especiales.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+        "condiciones": [
+          "Aplica de forma general a toda persona"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "13"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que ninguna persona puede ser juzgada por tribunales especiales ni por leyes privativas.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no menciona qué medio de impugnación o recurso procesal específico se debe interponer si se violara esta regla."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T04:17:17+00:00",
+    "solicitud": "2026-12-30_reel_T124-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Te pueden juzgar con un tribunal especial creado para tu caso?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden juzgar con un tribunal especial creado para tu caso?\n\nNo: la Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 13.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Existe una prohibición para que cualquier persona sea juzgada mediante leyes privativas o por tribunales especiales.",
+              "sostenida": "si",
+              "motivo": "La conclusión se desprende directamente de la primera frase del artículo 13 de la Constitución."
+            },
+            {
+              "conclusion": "La consecuencia jurídica es que ninguna persona puede ser juzgada por tribunales especiales ni por leyes privativas.",
+              "sostenida": "si",
+              "motivo": "El texto oficial establece la prohibición de forma general para 'nadie', lo que valida la consecuencia para cualquier persona."
+            },
+            {
+              "conclusion": "Se prohíbe el juzgamiento mediante leyes privativas y tribunales especiales.",
+              "sostenida": "si",
+              "motivo": "Es una paráfrasis exacta de la prohibición contenida en el primer enunciado del artículo 13."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

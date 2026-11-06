@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.9 s"
+      "detalle": "36.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.9 s"
+      "detalle": "36.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "33 bloques"
+      "detalle": "27 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "c3bc61ab36df9fa1"
+      "detalle": "78798f5205e68b0c"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 9 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261228-T122",
     "titulo": "¿Te pueden embargar tu sueldo por una deuda?",
-    "fecha": "2026-11-06T04:02:03+00:00",
-    "sha256": "c3bc61ab36df9fa1898d25e13b7de576aaa9a35cb3ea3427dedfcf9b7cd48cfe",
-    "duracion_s": 42.9,
+    "fecha": "2026-11-06T04:29:10+00:00",
+    "sha256": "78798f5205e68b0ca299fdc91833ef848b24cfd440ccded22113d0866b4b9ab6",
+    "duracion_s": 36.4,
     "estado": "APTO",
-    "huella_guion": "d1209fbb947597a63a0d0d8fc31b7c110fccd17ef61b4a21821830570570b540",
+    "huella_guion": "4400d1cf2a0392719f37ea0efbfd133827e024c24b388fc09c3328d948f79187",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 21.7,
-      "musica": 2.1,
-      "render_video": 40.1,
-      "mezcla_audio": 1.7,
-      "auditoria_tecnica": 9.3
+      "narracion": 8.9,
+      "musica": 1.0,
+      "render_video": 25.9,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 5.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.25,
-      "computo_equivalente_runner_usd": 0.0075,
+      "computo_minutos": 0.71,
+      "computo_equivalente_runner_usd": 0.0043,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1285,
-    "caracteres_narrados": 602
+    "frames": 1089,
+    "caracteres_narrados": 517
   }
 }

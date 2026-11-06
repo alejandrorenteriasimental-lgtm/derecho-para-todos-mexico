@@ -1,0 +1,167 @@
+{
+  "id": "I20261231-T125",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Tu patrón tolera el hostigamiento y/o acoso sexual?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T125",
+  "pieza": {
+    "titular": "¿Tu patrón tolera el hostigamiento y/o acoso sexual?",
+    "bajada": "La Ley Federal del Trabajo regula las prohibiciones patronales.",
+    "mito": "El patrón puede tolerar el hostigamiento o acoso sexual en el trabajo.",
+    "realidad": "No, se prohíbe «Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo».",
+    "fuente_visible": "Ley Federal del Trabajo, art. 133"
+  },
+  "copy": "Conforme a la Ley Federal del Trabajo, artículo 133, se establecen prohibiciones directas para las personas empleadoras en los centros laborales.\n\nEspecíficamente, la norma señala que queda prohibido «XIII.- Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;».\n\nEl texto oficial establece esta prohibición explícita, aunque no detalla sanciones específicas en este apartado. Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen tipo mito y realidad sobre la prohibición de tolerar el hostigamiento y acoso sexual en el trabajo según la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "133",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "XIII.- Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;",
+      "cita": "Ley Federal del Trabajo, artículo 133",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las personas empleadoras tienen prohibido permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tu patrón puede tolerar el acoso sexual en tu trabajo?",
+    "concepto_central": "tolerar el acoso sexual en el centro de trabajo",
+    "respuesta_corta": "No, la ley prohíbe expresamente a las personas empleadoras permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo.",
+    "reglas": [
+      {
+        "conclusion": "Las personas empleadoras tienen prohibido permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
+        "fuente": "F1",
+        "cita_literal": "XIII.- Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "133"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La conducta de tolerar el acoso está prohibida expresamente para las personas empleadoras.",
+        "fuente": "F1",
+        "cita_literal": "XIII.- Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial establece la prohibición pero no menciona sanciones específicas, multas ni procedimientos de denuncia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T04:27:56+00:00",
+    "solicitud": "2026-12-31_imagen_T125-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tu patrón puede tolerar el acoso sexual en tu trabajo?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "consecuencias jurídicas o sanciones para el empleador",
+              "autoridad ante la cual se debe presentar la denuncia",
+              "acciones o pasos que puede seguir la persona trabajadora"
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas empleadoras tienen prohibido permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una reproducción exacta de la prohibición contenida en la fracción XIII del artículo 133 de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Título",
+              "problema": "Imprecisión terminológica",
+              "correccion": "El título pregunta por 'el acoso' de forma genérica, pero la norma citada se refiere específicamente a 'hostigamiento y/o acoso sexual'. Se recomienda precisar el tipo de acoso en el título para evitar que el usuario lo confunda con otras formas de acoso laboral (mobbing) que no están reguladas bajo esa fracción específica."
+            },
+            {
+              "donde": "Pieza completa",
+              "problema": "Cobertura insuficiente para la utilidad práctica",
+              "correccion": "Aunque la pieza responde directamente si la conducta es permitida o no, no cumple con informar lo esencial para el usuario: qué consecuencias tiene para el patrón dicha falta y ante qué autoridad o vía puede la persona trabajadora actuar. La información es correcta pero incompleta para la resolución de un conflicto real."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas empleadoras tienen prohibido permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la prohibición establecida en la fracción XIII del artículo 133 de la Ley Federal del Trabajo."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

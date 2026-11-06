@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1184 KB"
+      "detalle": "1187 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1085"
+      "detalle": "fin del contenido en y=1083"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "47 palabras sin cabecera ni pie"
+      "detalle": "54 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "91% de 34 palabras reconocidas"
+      "detalle": "98% de 42 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Una multa puede ser excesiva?",
     "plantilla": "dato",
     "archivo": "I20261229-T123.png",
-    "sha256": "82db52667d9d13fff296b550037c2ce73cfc0bee983364b041131e6e2b4f75cd",
-    "ahash": "1001111111111111111111111111111111111111111111111111111111111111100000000000101110000001111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "98bef39c2560b01142304064966ebaf33c34f848e9a6b72d61e933a380ed1d60",
+    "sha256": "0adaa1fe55a6630d97696de04165c04f2cecd95444f427bce5f1d266ad85a8eb",
+    "ahash": "1111111111111111111111111111111111111111111111111111111111111111100000000000101110000001111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "94f843595d33830d6a6bf8218df53071941f761d4637fa6b246e3d75ee487cfc",
     "texto_alternativo": "Pieza gráfica que responde si una multa puede ser excesiva citando el artículo 22 de la Constitución Política de los Estados Unidos Mexicanos.",
-    "copy": "La Constitución Política de los Estados Unidos Mexicanos establece límites claros a las sanciones que puede imponer el Estado a las personas.\n\nEn su artículo 22 se señala de forma directa que \"la multa excesiva, la confiscación de bienes y cualesquiera otras penas inusitadas y trascendentales\" quedan prohibidas.\n\nGuarda esta información y compártela para conocer lo que dice la ley sobre tus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Una multa puede ser excesiva? No: la Constitución lo prohíbe.\n\nEl artículo 22 dice: «Quedan prohibidas las penas de muerte, de mutilación, de infamia, la marca, los azotes, los palos, el tormento de cualquier especie, la multa excesiva…». El artículo no fija montos ni porcentajes para decir cuándo una multa es excesiva.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 22.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-06T04:05:04+00:00",
+    "fecha": "2026-11-06T04:36:30+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
