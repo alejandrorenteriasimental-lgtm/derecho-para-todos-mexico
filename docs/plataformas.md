@@ -67,3 +67,10 @@ Falta, del responsable:
 - Nombre visible: cambio a «Aquí Dice la Ley» guardado y confirmado en tiktok.com (TikTok fija el siguiente cambio posible para el 13-11). El perfil todavía muestra «aquidicelaley»: TikTok puede tardar o revisar el apodo. La operación diaria lo verifica.
 - Usuario de prueba del Sandbox: el botón «Add account» abre una ventana de TikTok que el navegador solo permite abrir con un clic del responsable.
 - Secretos `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `TIKTOK_CLAVE`: los escribe el responsable (Claude no introduce claves).
+
+## TikTok: CONECTADO (6-11-2026, 18:00)
+- Secretos del Sandbox actualizados por el responsable (los del 3-11 eran de otra clave: «Client key does not match authorization record»).
+- Autorización de @aquidicelaley («Aquí Dice la Ley») con `user.info.basic` y `video.upload`; `tiktok-conectar` exitoso (run 42315228684), tokens cifrados en `estado/tiktok_token.enc`.
+- Prueba real: el Reel del 23-11 (R20261123-T031) quedó **EN_BANDEJA** como borrador (run 42315270922). El ciclo nocturno no lo vuelve a enviar (libro de operaciones).
+- Modo Sandbox/sin auditoría: TikTok solo recibe borradores; el responsable los publica desde la app.
+- Nombre visible «Aquí Dice la Ley»: confirmado en la pantalla de autorización de TikTok.
