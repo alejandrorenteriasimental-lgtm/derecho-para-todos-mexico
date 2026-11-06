@@ -1,0 +1,53 @@
+{
+ "tema_id": "T124",
+ "pregunta": "¿Qué necesitas para ser ciudadano mexicano?",
+ "fecha": "2026-11-06T03:58:23+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué necesitas para ser ciudadano mexicano?",
+  "concepto_central": "ciudadano mexicano",
+  "respuesta_corta": "Depende: tener calidad de mexicanos, haber cumplido 18 años y tener un modo honesto de vivir.",
+  "reglas": [
+   {
+    "conclusion": "Para ser ciudadano de la República se requiere tener la calidad de mexicano, haber cumplido 18 años y tener un modo honesto de vivir.",
+    "fuente": "F1",
+    "cita_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+    "condiciones": [
+     "Tener la calidad de mexicanos",
+     "Haber cumplido 18 años",
+     "Tener un modo honesto de vivir"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La norma establece los requisitos necesarios para ostentar la calidad de ciudadano de la República.",
+    "fuente": "F1",
+    "cita_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Se exige tener la calidad de mexicano, contar con 18 años cumplidos y un modo honesto de vivir.",
+    "fuente": "F1",
+    "cita_literal": "teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones para este supuesto."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla los mecanismos ni pruebas para acreditar la calidad de mexicano o el modo honesto de vivir.",
+  "fuentes_irrelevantes": []
+ }
+}

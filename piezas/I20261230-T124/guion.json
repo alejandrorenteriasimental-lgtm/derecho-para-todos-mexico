@@ -1,0 +1,152 @@
+{
+  "id": "I20261230-T124",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Qué necesitas para ser ciudadano mexicano?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T124",
+  "pieza": {
+    "titular": "¿Qué necesitas para ser ciudadano mexicano?",
+    "bajada": "Depende: tener calidad de mexicanos, haber cumplido 18 años y tener un modo honesto de vivir.",
+    "cita": "I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 34",
+    "ojo": "Requisitos constitucionales",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 34"
+  },
+  "copy": "Para ostentar la ciudadanía en el país, la Constitución Política de los Estados Unidos Mexicanos establece lineamientos específicos en su artículo 34.\n\nLa norma señala que se requiere contar con la calidad de mexicanos, además de cumplir con dos condiciones indispensables.\n\nEs necesario haber cumplido 18 años y contar con un modo honesto de vivir, según lo dispuesto por la ley.\n\nGuarda y comparte esta información para que más personas conozcan lo que dice la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa con los requisitos para ser ciudadano mexicano según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "34",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 34",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Para ser ciudadano de la República se requiere tener la calidad de mexicano, 18 años cumplidos y un modo honesto de vivir.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué necesitas para ser ciudadano mexicano?",
+    "concepto_central": "ciudadano mexicano",
+    "respuesta_corta": "Depende: tener calidad de mexicanos, haber cumplido 18 años y tener un modo honesto de vivir.",
+    "reglas": [
+      {
+        "conclusion": "Para ser ciudadano de la República se requiere tener la calidad de mexicano, haber cumplido 18 años y tener un modo honesto de vivir.",
+        "fuente": "F1",
+        "cita_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+        "condiciones": [
+          "Tener la calidad de mexicanos",
+          "Haber cumplido 18 años",
+          "Tener un modo honesto de vivir"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "34"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma establece los requisitos necesarios para ostentar la calidad de ciudadano de la República.",
+        "fuente": "F1",
+        "cita_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Se exige tener la calidad de mexicano, contar con 18 años cumplidos y un modo honesto de vivir.",
+        "fuente": "F1",
+        "cita_literal": "teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no prevé excepciones para este supuesto."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla los mecanismos ni pruebas para acreditar la calidad de mexicano o el modo honesto de vivir."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T04:00:07+00:00",
+    "solicitud": "2026-12-30_imagen_T124-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Qué necesitas para ser ciudadano mexicano?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Para ser ciudadano de la República se requiere tener la calidad de mexicano, haber cumplido 18 años y tener un modo honesto de vivir.",
+              "sostenida": "si",
+              "motivo": "El artículo 34 de la Constitución establece explícitamente estos tres requisitos acumulativos para ostentar la calidad de ciudadano."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

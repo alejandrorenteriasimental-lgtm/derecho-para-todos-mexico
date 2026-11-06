@@ -1,51 +1,45 @@
 {
  "tema_id": "T122",
  "pregunta": "¿Te pueden embargar tu sueldo por una deuda?",
- "fecha": "2026-11-05T16:21:26+00:00",
- "objetado": true,
+ "fecha": "2026-11-06T03:50:53+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Te pueden embargar tu sueldo por una deuda?",
-  "concepto_central": "embargo de salarios",
-  "respuesta_corta": "No, los salarios no pueden ser embargados, excepto por pensiones alimenticias decretadas por autoridad competente para los beneficiarios que marca la ley.",
+  "concepto_central": "embargo del salario",
+  "respuesta_corta": "Depende: por regla general el salario no se puede embargar, salvo que se trate de pensiones alimenticias decretadas por la autoridad competente.",
   "reglas": [
    {
-    "conclusion": "Existe una prohibición general de embargar el salario de los trabajadores, protegiendo este ingreso frente a cobros judiciales o administrativos.",
+    "conclusion": "El salario de los trabajadores no puede ser embargado, salvo en el supuesto de pensiones alimenticias dictadas por la autoridad competente.",
     "fuente": "F1",
     "cita_literal": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V.",
     "condiciones": [
-     "Que se trate de salarios de trabajadores"
+     "Aplica a los salarios de los trabajadores."
     ],
-    "exceptions": [
-     "Pensiones alimenticias decretadas por autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V"
+    "excepciones": [
+     "El caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
     ]
    }
   ],
   "elementos": [
    {
-    "elemento": "excepcion",
-    "estado": "cubierto",
-    "respuesta": "El embargo del sueldo solo se permite para el pago de pensiones alimenticias ordenadas por un juez para los beneficiarios legales.",
-    "fuente": "F1",
-    "cita_literal": "salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
-   },
-   {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "Los empleadores no tienen el deber legal de acatar mandatos de embargo sobre el salario que no correspondan a pensiones alimenticias.",
+    "respuesta": "El salario de los trabajadores no se puede embargar y el patrón no tiene obligación de acatar órdenes de embargo distintas a las de pensión alimenticia.",
     "fuente": "F1",
     "cita_literal": "Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo."
-   }
-  ],
-  "interpretaciones": [
+   },
    {
-    "afirmacion": "Si un acreedor civil (como un banco o una tienda) obtiene una orden de embargo contra el sueldo, el patrón tiene fundamento legal para no ejecutarla.",
-    "condicion": "Siempre que la orden no provenga de un juicio de alimentos para los beneficiarios que marca la ley.",
-    "base": "F1"
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "La excepción al embargo del salario es la existencia de una pensión alimenticia decretada por la autoridad competente.",
+    "fuente": "F1",
+    "cita_literal": "salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V."
    }
   ],
+  "interpretaciones": [],
   "distinciones": [],
-  "limites": "El texto no define quiénes son las personas mencionadas en el artículo 110, fracción V, ni establece el procedimiento para que un trabajador reclame si su patrón sí ejecuta un embargo indebido.",
+  "limites": "El texto oficial no prevé otros supuestos de embargabilidad fuera de las pensiones alimenticias ni detalla porcentajes ni trámites específicos.",
   "fuentes_irrelevantes": []
  }
 }
