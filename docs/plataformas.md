@@ -62,3 +62,8 @@ Falta, del responsable:
 1. Sandbox → Target users → Add account → iniciar sesión con @aquidicelaley.
 2. Copiar Client key y Client secret del Sandbox a GitHub como `TIKTOK_CLIENT_KEY` y `TIKTOK_CLIENT_SECRET`, y crear `TIKTOK_CLAVE` (contraseña larga inventada).
 3. Autorizar con la URL del paso 4 de arriba y correr `tiktok-conectar` con la dirección completa.
+
+## TikTok: 6-11-2026 (17:40)
+- Nombre visible: cambio a «Aquí Dice la Ley» guardado y confirmado en tiktok.com (TikTok fija el siguiente cambio posible para el 13-11). El perfil todavía muestra «aquidicelaley»: TikTok puede tardar o revisar el apodo. La operación diaria lo verifica.
+- Usuario de prueba del Sandbox: el botón «Add account» abre una ventana de TikTok que el navegador solo permite abrir con un clic del responsable.
+- Secretos `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `TIKTOK_CLAVE`: los escribe el responsable (Claude no introduce claves).
