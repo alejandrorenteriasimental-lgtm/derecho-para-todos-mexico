@@ -24,29 +24,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "13",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-06"
-    },
-    "F3": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "13",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-06"
-    },
-    "F4": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "13",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "texto_literal": "pero los tribunales militares en ningún caso y por ningún motivo podrán extender su jurisdicción sobre personas que no pertenezcan al Ejército, Fuerza Aérea, Armada y Guardia Nacional.",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 13",
       "jurisdiccion": "federal",
       "consultado": "2026-11-06"
@@ -55,7 +33,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Alguna vez te has preguntado si pueden crear un tribunal solo para juzgar un caso?",
+      "texto": "¿Pueden crear un tribunal solo para juzgar tu caso?",
       "titulo": [
         "¿TRIBUNAL ESPECIAL",
         "PARA UN CASO?"
@@ -64,16 +42,16 @@
     },
     {
       "tipo": "titular",
-      "texto": "No: la Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.",
+      "texto": "No. La Constitución dice que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.",
       "titulo": [
-        "RESPUESTA:",
-        "NO ES POSIBLE"
+        "NO, ESTÁ",
+        "PROHIBIDO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "El texto oficial indica que: Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+      "texto": "Así lo dice el artículo 13: Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
       "etiqueta": "Constitución, art. 13",
       "cita": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
       "afirmaciones": [
@@ -87,40 +65,18 @@
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Esta norma protectora de los derechos de las personas establece lo siguiente:",
-      "items": [
-        "Sin leyes privativas",
-        "Sin tribunales especiales"
+      "tipo": "titular",
+      "texto": "Y si eres civil, tampoco te puede juzgar un tribunal militar: en ningún caso pueden extender su jurisdicción a quien no pertenezca al Ejército, Fuerza Aérea, Armada o Guardia Nacional.",
+      "titulo": [
+        "NI TRIBUNALES",
+        "MILITARES"
       ],
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Nadie puede ser juzgado por leyes privativas ni por tribunales especiales.",
+          "texto": "Los tribunales militares en ningún caso podrán extender su jurisdicción sobre personas que no pertenezcan al Ejército, Fuerza Aérea, Armada y Guardia Nacional.",
           "fuente": "F2"
-        }
-      ]
-    },
-    {
-      "tipo": "titular",
-      "texto": "Así, la ley impide que cualquier persona sea juzgada con un tribunal especial creado para su caso.",
-      "titulo": [
-        "REGLA DE LA",
-        "CONSTITUCIÓN"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A3",
-          "tipo": "hecho_normativo",
-          "texto": "Se prohíbe el juzgamiento mediante leyes privativas y tribunales especiales.",
-          "fuente": "F3"
-        },
-        {
-          "id": "A4",
-          "tipo": "hecho_normativo",
-          "texto": "Ninguna persona puede ser juzgada mediante tribunales especiales.",
-          "fuente": "F4"
         }
       ]
     },
@@ -195,7 +151,7 @@
   "pregunta_original": "¿Te pueden juzgar con un tribunal especial creado para tu caso?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden juzgar con un tribunal especial creado para tu caso?\n\nNo: la Constitución establece explícitamente que nadie puede ser juzgado por tribunales especiales ni por leyes privativas.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 13.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden juzgar con un tribunal especial creado para tu caso?\n\nNo. El artículo 13 de la Constitución dice: «Nadie puede ser juzgado por leyes privativas ni por tribunales especiales». Y agrega que «los tribunales militares en ningún caso y por ningún motivo podrán extender su jurisdicción sobre personas que no pertenezcan al Ejército, Fuerza Aérea, Armada y Guardia Nacional».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 13.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -236,5 +192,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Reel depurado: sin lista sin narrar ni titulares de relleno («RESPUESTA: NO ES POSIBLE», «REGLA DE LA CONSTITUCIÓN»); fuentes duplicadas F2–F4 reducidas; se agrega el dato literal del mismo art. 13 sobre tribunales militares y civiles (F2); texto de publicación con ambas citas"
+    }
+  ]
 }

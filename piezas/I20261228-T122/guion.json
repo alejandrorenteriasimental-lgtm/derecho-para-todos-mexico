@@ -8,12 +8,12 @@
   "tema_id": "T122",
   "pieza": {
     "titular": "¿Tu patrón puede descontarte una multa del sueldo?",
-    "bajada": "Te explicamos lo que establece la legislación laboral al respecto.",
+    "bajada": "Una regla así no produce efecto legal, aunque se haya pactado por escrito o de palabra.",
     "mito": "El patrón puede aplicar multas y descontarlas del sueldo.",
-    "realidad": "No: no produce efecto legal la estipulación para retener el salario por concepto de multa.",
-    "fuente_visible": "Ley Federal del Trabajo, art. 5"
+    "realidad": "No. Una regla que le dé la facultad de retener tu salario por una multa no produce efecto legal.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 5, fr. X"
   },
-  "copy": "La legislación laboral de México protege el pago de los salarios. En el artículo 5 de la Ley Federal del Trabajo se enumeran las condiciones que no producen efectos jurídicos, sin importar que se hayan pactado de forma escrita o verbal.\n\nEn la fracción X del artículo 5 de la Ley Federal del Trabajo se precisa que no producirá efecto legal la estipulación que establezca la facultad del patrón de retener el salario por concepto de multa.\n\nPor lo tanto, cualquier convenio o regla interna que pretenda autorizar al patrón a aplicar descuentos por multas sobre el salario carece de validez legal.\n\nGuarda esta información para tenerla a la mano y compártela para que más personas conozcan sus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tu patrón puede descontarte una multa del sueldo?\n\nNo. Según el artículo 5 de la Ley Federal del Trabajo, «no producirá efecto legal», «sea escrita o verbal», la estipulación que establezca «La facultad del patrón de retener el salario por concepto de multa» (fracción X).\n\nFuente: Ley Federal del Trabajo, artículo 5, fracción X.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa tipo mito y realidad sobre descuentos salariales. Explica que es falso que el patrón pueda retener el sueldo por multas, señalando que dicha estipulación no produce efecto legal conforme a la Ley Federal del Trabajo.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -27,6 +27,17 @@
       "cita": "Ley Federal del Trabajo, artículo 5",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las disposiciones de esta Ley son de orden público por lo que no producirá efecto legal, ni impedirá el goce y el ejercicio de los derechos, sea escrita o verbal, la estipulación que establezca:",
+      "cita": "Ley Federal del Trabajo, artículo 5",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
     }
   },
   "afirmaciones": [
@@ -35,6 +46,12 @@
       "tipo": "hecho_normativo",
       "texto": "No produce efecto legal la estipulación que establezca la facultad del patrón de retener el salario por concepto de multa.",
       "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "No produce efecto legal la estipulación, sea escrita o verbal.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
@@ -133,5 +150,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Realidad en lenguaje llano (sin «la estipulación para…»); fuente visible con la fracción X; bajada sin relleno y con «escrita o verbal» (encabezado del art. 5 como F2); texto de publicación sin relleno y con las citas literales"
+    }
+  ]
 }

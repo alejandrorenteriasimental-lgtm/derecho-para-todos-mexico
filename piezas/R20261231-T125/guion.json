@@ -24,29 +24,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "133",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo;",
-      "cita": "Ley Federal del Trabajo, artículo 133",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-06"
-    },
-    "F3": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "133",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
       "texto_literal": "Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;",
-      "cita": "Ley Federal del Trabajo, artículo 133",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-06"
-    },
-    "F4": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "133",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo;",
       "cita": "Ley Federal del Trabajo, artículo 133",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-06"
@@ -55,74 +33,50 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes si tu patrón tiene prohibido acosarte sexualmente?",
+      "texto": "¿Tu patrón tiene prohibido acosarte sexualmente en el trabajo?",
       "titulo": [
-        "PROHIBICIÓN A",
-        "PATRONES Y JEFES"
+        "¿ACOSO EN",
+        "EL TRABAJO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí. Los empleadores y sus representantes tienen prohibido el hostigamiento y acoso sexual en el trabajo.",
+      "texto": "Sí. La ley se lo prohíbe a las personas empleadoras y a sus representantes.",
       "titulo": [
         "SÍ, ESTÁ",
         "PROHIBIDO"
       ],
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "Las personas empleadoras y sus representantes tienen prohibido realizar, permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
-          "fuente": "F1"
-        }
-      ]
+      "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley prohíbe a empleadores o representantes Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo;",
-      "etiqueta": "Ley Federal del Trabajo, art. 133",
+      "texto": "La Ley Federal del Trabajo les prohíbe realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo.",
+      "etiqueta": "Ley Federal del Trabajo, art. 133, fr. XII",
       "cita": "Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo;",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
           "texto": "Está prohibido a empleadores o sus representantes realizar actos de hostigamiento y acoso sexual en el lugar de trabajo.",
-          "fuente": "F2",
+          "fuente": "F1",
           "comparar_literal": true
         }
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Tampoco pueden permitir estos actos:",
-      "items": [
-        "No realizar acoso",
-        "No permitir el acoso",
-        "No tolerar el acoso"
+      "tipo": "titular",
+      "texto": "Y tampoco pueden permitirlo ni tolerarlo: la fracción trece les prohíbe permitir o tolerar el hostigamiento y el acoso sexual en el centro de trabajo.",
+      "titulo": [
+        "NI PERMITIRLO",
+        "NI TOLERARLO"
       ],
       "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
           "texto": "Queda prohibido permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.",
-          "fuente": "F3"
-        }
-      ]
-    },
-    {
-      "tipo": "titular",
-      "texto": "En resumen, la ley prohíbe realizar, permitir o tolerar el acoso en el trabajo.",
-      "titulo": [
-        "REGLA",
-        "OFICIAL"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A4",
-          "tipo": "hecho_normativo",
-          "texto": "Las personas empleadoras y sus representantes tienen prohibido realizar, permitir o tolerar estos actos en el centro de trabajo.",
-          "fuente": "F4"
+          "fuente": "F2"
         }
       ]
     },
@@ -211,7 +165,7 @@
   "pregunta_original": "¿Tu patrón tiene prohibido acosarte sexualmente?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Tu patrón tiene prohibido acosarte sexualmente?\n\nSí. Las personas empleadoras y sus representantes tienen prohibido realizar, permitir o tolerar actos de hostigamiento y acoso sexual en el centro de trabajo.\n\nFuente: Ley Federal del Trabajo, artículo 133.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tu patrón tiene prohibido acosarte sexualmente?\n\nSí. El artículo 133 de la Ley Federal del Trabajo prohíbe a las personas empleadoras o a sus representantes «Realizar actos de hostigamiento y/o acoso sexual contra cualquier persona en el lugar de trabajo» (fracción XII) y «Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo» (fracción XIII).\n\nFuente: Ley Federal del Trabajo, artículo 133, fracciones XII y XIII.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -314,5 +268,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho con pregunta visible («¿ACOSO EN EL TRABAJO?», no «PROHIBICIÓN A PATRONES Y JEFES»); cita con su fracción (XII) y sin «Realizar» en mayúscula a media frase; la lista sin narrar y el titular «REGLA OFICIAL» se sustituyen por un titular anclado en la fr. XIII (permitir o tolerar); fuentes duplicadas reducidas a F1 (XII) y F2 (XIII)"
+    }
+  ]
 }
