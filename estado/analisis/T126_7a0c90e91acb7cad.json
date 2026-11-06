@@ -1,0 +1,58 @@
+{
+ "tema_id": "T126",
+ "pregunta": "¿Puedes pedir que no te llamen para venderte algo?",
+ "fecha": "2026-11-06T10:27:36+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Puedes pedir que no te llamen para venderte algo?",
+  "concepto_central": "uso de información para fines mercadotécnicos o publicitarios",
+  "respuesta_corta": "Depende de la autoridad; la ley permite solicitar que tu información no se use para fines publicitarios o mercadotécnicos mediante un registro gratuito.",
+  "reglas": [
+   {
+    "conclusion": "La Procuraduría tiene la facultad de contar con un registro para las personas que no quieran que su información se utilice con propósitos de publicidad o mercadotecnia.",
+    "fuente": "F1",
+    "cita_literal": "La Procuraduría podrá llevar, en su caso, un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios.",
+    "condiciones": [
+     "Que la Procuraduría decida llevar dicho registro",
+     "Que el consumidor solicite su inscripción"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se puede solicitar la inscripción gratuita en un registro para evitar que la información personal se use en publicidad.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La solicitud de inscripción debe realizarse formalmente por medios escritos o electrónicos.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones al derecho de solicitar la inscripción en el registro mencionado.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito.",
+    "motivo": "El texto no prevé supuestos en los que no se pueda solicitar la inscripción."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La norma no establece explícitamente que la inscripción en el registro impida la realización de llamadas telefónicas.",
+    "condicion": "El texto se limita a regular el uso de la información para fines mercadotécnicos o publicitarios.",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no garantiza que las llamadas cesen de forma absoluta, ya que solo regula el uso de la información; tampoco establece plazos de respuesta de la autoridad ni sanciones específicas para quienes ignoren el registro.",
+  "fuentes_irrelevantes": []
+ }
+}

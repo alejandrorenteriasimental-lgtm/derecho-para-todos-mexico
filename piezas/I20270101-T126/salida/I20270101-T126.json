@@ -1,0 +1,33 @@
+{
+  "id": "I20270101-T126",
+  "formato": "imagen",
+  "titulo": "¿Puedes pedir que no te llamen para venderte algo?",
+  "plantilla": "dato",
+  "archivo": "I20270101-T126.png",
+  "sha256": "a9afb799245842ba8f0585fe8062634bcca2fd9eacd4d8a310365adef3199a39",
+  "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000001110000000001111111000000000111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+  "huella_guion": "4ad3dc0e32c355f898360dc41f94cc084b77ab31d4672bc4763a14c076ea74f5",
+  "texto_alternativo": "Imagen gráfica con la pregunta sobre si se puede evitar que usen tu información para publicidad según la ley.",
+  "copy": "La Ley Federal de Protección al Consumidor establece en su artículo 18 que puedes solicitar que tu información personal no sea utilizada con propósitos de publicidad o mercadotecnia.\n\nDe acuerdo con la norma, la Procuraduría podrá llevar un registro público para estos fines, al cual puedes inscribirte de forma totalmente gratuita.\n\nPara realizar este trámite, la ley indica que puedes comunicar tu solicitud directamente a la Procuraduría por escrito o por correo electrónico. Guarda y comparte esta información para que más personas la conozcan.\n\nEsto es información general, no es asesoría legal.",
+  "fuentes": [
+    {
+      "id": "F1",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "18",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+    },
+    {
+      "id": "F2",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "18",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+    }
+  ],
+  "relacion_reel": "independiente",
+  "estado": "APTO",
+  "fecha": "2026-11-06T10:43:02+00:00",
+  "costo": {
+    "apis_de_pago_usd": 0.0,
+    "nota": "Pillow + tesseract, locales y gratuitos"
+  }
+}

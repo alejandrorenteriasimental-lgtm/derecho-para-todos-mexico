@@ -1,0 +1,268 @@
+{
+  "id": "I20270101-T126",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Puedes pedir que no te llamen para venderte algo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T126",
+  "pieza": {
+    "titular": "¿Puedes pedir que no te llamen para venderte algo?",
+    "bajada": "Depende; la ley permite solicitar que tu información no se use para publicidad.",
+    "cita": "La Procuraduría podrá llevar, en su caso, un registro público de consumidores",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 18",
+    "ojo": "Solicítalo por escrito o correo electrónico.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 18"
+  },
+  "copy": "La Ley Federal de Protección al Consumidor establece en su artículo 18 que puedes solicitar que tu información personal no sea utilizada con propósitos de publicidad o mercadotecnia.\n\nDe acuerdo con la norma, la Procuraduría podrá llevar un registro público para estos fines, al cual puedes inscribirte de forma totalmente gratuita.\n\nPara realizar este trámite, la ley indica que puedes comunicar tu solicitud directamente a la Procuraduría por escrito o por correo electrónico. Guarda y comparte esta información para que más personas la conozcan.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen gráfica con la pregunta sobre si se puede evitar que usen tu información para publicidad según la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "18",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La Procuraduría podrá llevar, en su caso, un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 18",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "18",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 18",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La Procuraduría puede llevar un registro público para consumidores que no deseen que su información se use con fines publicitarios.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Los consumidores pueden solicitar su inscripción al registro de forma gratuita por escrito o correo electrónico.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes pedir que no te llamen para venderte algo?",
+    "concepto_central": "uso de información para fines mercadotécnicos o publicitarios",
+    "respuesta_corta": "Depende de la autoridad; la ley permite solicitar que tu información no se use para fines publicitarios o mercadotécnicos mediante un registro gratuito.",
+    "reglas": [
+      {
+        "conclusion": "La Procuraduría tiene la facultad de contar con un registro para las personas que no quieran que su información se utilice con propósitos de publicidad o mercadotecnia.",
+        "fuente": "F1",
+        "cita_literal": "La Procuraduría podrá llevar, en su caso, un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios.",
+        "condiciones": [
+          "Que la Procuraduría decida llevar dicho registro",
+          "Que el consumidor solicite su inscripción"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "18"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se puede solicitar la inscripción gratuita en un registro para evitar que la información personal se use en publicidad.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La solicitud de inscripción debe realizarse formalmente por medios escritos o electrónicos.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La ley no establece excepciones al derecho de solicitar la inscripción en el registro mencionado.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro, el cual será gratuito.",
+        "motivo": "El texto no prevé supuestos en los que no se pueda solicitar la inscripción."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La norma no establece explícitamente que la inscripción en el registro impida la realización de llamadas telefónicas.",
+        "condicion": "El texto se limita a regular el uso de la información para fines mercadotécnicos o publicitarios.",
+        "base": "F1"
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no garantiza que las llamadas cesen de forma absoluta, ya que solo regula el uso de la información; tampoco establece plazos de respuesta de la autoridad ni sanciones específicas para quienes ignoren el registro."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T10:29:17+00:00",
+    "solicitud": "2027-01-01_imagen_T126-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Puedes pedir que no te llamen para venderte algo?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La persona interesada debe enviar su solicitud a la Procuraduría ya sea de forma escrita o mediante correo electrónico.»), pero la pieza no lo dice: agrégalo al texto visible."
+        ],
+        "visible": "  \n   \n Sí, puedes pedir a la Procuraduría inscribirte en un registro para que tu información no se use en publicidad. \n La Procuraduría podrá llevar, en su caso, un registro público de consumidores que no deseen que su información sea utilizada \n La inscripción en el registro es gratuita."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («La persona interesada debe enviar su solicitud a la Procuraduría ya sea de forma escrita o mediante correo electrónico.»), pero la pieza no lo dice: agrégalo al texto visible."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": false,
+            "faltantes": [
+              "La distinción entre el uso de la información y el medio de contacto (llamadas)",
+              "La naturaleza facultativa de la Procuraduría para llevar el registro"
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los consumidores pueden solicitar su inscripción en un registro para evitar que su información se utilice con fines publicitarios o mercadotécnicos.",
+              "sostenida": "si",
+              "motivo": "El texto oficial permite que los consumidores comuniquen su solicitud de inscripción para que su información no sea utilizada con esos fines."
+            },
+            {
+              "conclusion": "Esta protección es aplicable siempre que el contacto telefónico se base en el uso de la información del consumidor para fines mercadotécnicos o publicitarios.",
+              "sostenida": "no",
+              "motivo": "El texto oficial no menciona llamadas telefónicas ni ningún medio de contacto específico; solo regula el uso de la información para fines mercadotécnicos o publicitarios."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "copy / interpretaciones",
+              "problema": "Se afirma que la protección incluye las llamadas telefónicas, lo cual es una inferencia que el texto oficial no contiene.",
+              "correccion": "Aclarar que la norma regula el uso de la información para fines mercadotécnicos o publicitarios, sin especificar si esto impide o no las llamadas telefónicas."
+            },
+            {
+              "donde": "título / respuesta corta",
+              "problema": "La pieza responde 'Sí' a la pregunta sobre si se puede pedir que no llamen, pero la ley no garantiza la prohibición de llamadas, sino el cese del uso de la información para fines publicitarios.",
+              "correccion": "La respuesta debe centrarse en la limitación del uso de la información para fines mercadotécnicos, no en la prohibición de un medio de contacto como la llamada."
+            },
+            {
+              "donde": "copy",
+              "problema": "Se presenta la inscripción como un derecho de ejercicio inmediato, omitiendo que la Procuraduría 'podrá' llevar el registro (es una facultad, no una obligación establecida en el texto).",
+              "correccion": "Mencionar que la Procuraduría tiene la facultad de llevar dicho registro."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Depende de la autoridad; la ley permite solicitar que tu información no se use para fines publicitarios mediante un registro gratuito. \n Los consumidores podrán comunicar por escrito o por correo electrónico a la Procuraduría su solicitud de inscripción en dicho registro \n Registro gratuito en la Procuraduría."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La Procuraduría tiene la facultad de contar con un registro para las personas que no quieran que su información se utilice con propósitos de publicidad o mercadotecnia.",
+              "sostenida": "si",
+              "motivo": "El artículo 18 establece que la Procuraduría 'podrá llevar, en su caso, un registro público' para este fin, lo que implica una facultad y no una obligación absoluta."
+            },
+            {
+              "conclusion": "Se puede solicitar la inscripción gratuita en un registro para evitar que la información personal se use en publicidad.",
+              "sostenida": "si",
+              "motivo": "El texto oficial señala que los consumidores pueden solicitar la inscripción y que dicho registro 'será gratuito'."
+            },
+            {
+              "conclusion": "La solicitud de inscripción debe realizarse por escrito o por correo electrónico.",
+              "sostenida": "si",
+              "motivo": "La norma indica explícitamente que los consumidores podrán comunicar su solicitud 'por escrito o por correo electrónico'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

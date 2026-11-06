@@ -1,0 +1,137 @@
+{
+  "id": "I20270102-T127",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Puedes ceder tu sueldo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T127",
+  "pieza": {
+    "titular": "¿Puedes ceder tu sueldo?",
+    "bajada": "Conoce lo que establece la normatividad laboral sobre la transferencia de tus ingresos al patrón o a terceros.",
+    "mito": "Sí se puede ceder el sueldo si estás de acuerdo.",
+    "realidad": "No, cualquier cesión de salarios a favor del patrón o de terceras personas es nula.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 104"
+  },
+  "copy": "En el ámbito laboral, en ocasiones se piensa que es posible transferir o ceder el pago de los ingresos a otras personas o al propio empleador mediante algún acuerdo. No obstante, las disposiciones legales protegen directamente el salario del trabajador frente a este tipo de prácticas.\n\nAl respecto, la Ley Federal del Trabajo establece de manera directa en su artículo 104 que \"Es nula la cesión de los salarios en favor del patrón o de terceras personas, cualquiera que sea la denominación o forma que se le dé.\"\n\nEsto significa que la ley no reconoce validez jurídica a ninguna forma o nombre que se le intente dar a la cesión del salario. Guarda esta publicación y compártela para que más personas conozcan sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa con el mito y la realidad sobre la imposibilidad de ceder el sueldo a patrones o terceras personas según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "104",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Es nula la cesión de los salarios en favor del patrón o de terceras personas, cualquiera que sea la denominación o forma que se le dé.",
+      "cita": "Ley Federal del Trabajo, artículo 104",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La ley determina la nulidad absoluta de cualquier intento de ceder el salario a favor del patrón o de terceros.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes ceder tu sueldo a tu patrón o a otra persona?",
+    "concepto_central": "cesión de salarios",
+    "respuesta_corta": "No, cualquier cesión de salarios a favor del patrón o de terceras personas es nula.",
+    "reglas": [
+      {
+        "conclusion": "La cesión de salarios al patrón o a terceros carece de validez jurídica, sin importar la forma en que se intente realizar.",
+        "fuente": "F1",
+        "cita_literal": "Es nula la cesión de los salarios en favor del patrón o de terceras personas, cualquiera que sea la denominación o forma que se le dé.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "104"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que la cesión de los salarios es nula.",
+        "fuente": "F1",
+        "cita_literal": "Es nula la cesión de los salarios en favor del patrón o de terceras personas, cualquiera que sea la denominación o forma que se le dé."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial indica el efecto de la nulidad, pero no detalla plazos, autoridades competentes ni vías específicas para su aplicación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T10:30:41+00:00",
+    "solicitud": "2027-01-02_imagen_T127-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Puedes ceder tu sueldo a tu patrón o a otra persona?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La cesión de salarios al patrón o a terceros carece de validez jurídica, sin importar la forma en que se intente realizar.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una interpretación exacta de la nulidad establecida y de la cláusula que invalida cualquier denominación o forma de la cesión en el artículo 104."
+            },
+            {
+              "conclusion": "La consecuencia jurídica es que la cesión de los salarios es nula.",
+              "sostenida": "si",
+              "motivo": "Es la consecuencia directa y literal que dicta el texto oficial."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+ "tema_id": "T128",
+ "pregunta": "¿Pueden usar tus conversaciones privadas en tu contra?",
+ "fecha": "2026-11-06T10:20:14+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pueden usar tus conversaciones privadas en tu contra?",
+  "concepto_central": "inviolabilidad de las comunicaciones privadas",
+  "respuesta_corta": "Depende: pueden usarse si uno de los participantes las entrega voluntariamente o si un juez federal autoriza su intervención para investigar un delito.",
+  "reglas": [
+   {
+    "conclusion": "Las comunicaciones privadas son inviolables, pero se permite su uso si uno de los participantes las entrega por voluntad propia.",
+    "fuente": "F1",
+    "cita_literal": "Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas.",
+    "condiciones": [
+     "Que la aportación sea voluntaria",
+     "Que quien las aporte sea uno de los particulares que participan en la comunicación"
+    ],
+    "excepciones": [
+     "Comunicaciones que violen el deber de confidencialidad que establezca la ley"
+    ]
+   },
+   {
+    "conclusion": "La autoridad judicial federal puede autorizar la intervención de comunicaciones privadas bajo requisitos estrictos.",
+    "fuente": "F1",
+    "cita_literal": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente, podrá autorizar la intervención de cualquier comunicación privada.",
+    "condiciones": [
+     "Petición de autoridad federal facultada o titular del Ministerio Público local",
+     "Fundar y motivar las causas legales de la solicitud",
+     "Expresar el tipo de intervención, sujetos y duración"
+    ],
+    "excepciones": [
+     "Materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo",
+     "Comunicaciones del detenido con su defensor"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Si la intervención de la comunicación no cumple con los requisitos y límites legales, los resultados no tendrán ningún valor como prueba.",
+    "fuente": "F1",
+    "cita_literal": "Los resultados de las intervenciones que no cumplan con éstos, carecerán de todo valor probatorio.",
+    "motivo": null
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "No se puede autorizar la intervención de conversaciones en asuntos de trabajo, comercio, impuestos, familia o entre un detenido y su abogado.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad judicial federal no podrá otorgar estas autorizaciones cuando se trate de materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo, ni en el caso de las comunicaciones del detenido con su defensor.",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El uso de las conversaciones en un proceso legal está condicionado a que la información ayude a esclarecer un posible ilícito.",
+    "condicion": "Que las comunicaciones contengan información relacionada con la comisión de un delito",
+    "base": "El juez valorará el alcance de éstas, siempre y cuando contengan información relacionada con la comisión de un delito."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "intervención de comunicaciones",
+    "b": "aportación voluntaria",
+    "diferencia": "La intervención requiere una orden de un juez federal, mientras que la aportación voluntaria la realiza uno de los participantes sin necesidad de dicha orden."
+   }
+  ],
+  "limites": "El texto no define qué se considera legalmente como 'voluntario' ni especifica qué leyes determinan el 'deber de confidencialidad'. Tampoco detalla las sanciones penales específicas por violar la privacidad.",
+  "fuentes_irrelevantes": []
+ }
+}

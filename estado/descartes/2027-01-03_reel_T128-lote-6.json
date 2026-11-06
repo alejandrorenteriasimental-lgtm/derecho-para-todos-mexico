@@ -1,0 +1,44 @@
+{
+ "solicitud": "2027-01-03_reel_T128-lote-6.json",
+ "fecha": "2026-11-06T10:23:22+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: pueden usarse si uno de los participantes las entrega voluntariamente o si un jue».\"], \"visible\": \"  \\n ¿Tus chats privados sirven como prueba? \\n CHATS COMO \\n PRUEBA \\n Depende: si un participante los da o un juez los autoriza. \\n ¿TIENEN VALOR \\n EN JUICIO? \\n L",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 683 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 63: recorta al menos 123 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 4: el encabezado visible «Excepciones a la intervención» no corresponde a lo que se narra («No se autorizarán en materia civil, laboral, mercantil, fiscal o elect»)."
+   ],
+   "visible": "  \n ¿Pueden usar tus conversaciones privadas en tu contra? \n ¿USARÁN TUS \n CHATS EN \n TU CONTRA? \n Depende: aplican si un participante las entrega voluntariamente o si un juez federal autoriza la intervención. \n REGLAS DE \n PRIVACIDAD \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas. \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de l"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 663 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 43: recorta al menos 103 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Pueden usar tus conversaciones privadas en tu contra? \n CONVERSACIONES \n PRIVADAS EN JUICIO \n Depende: si un participante las entrega voluntariamente o un juez autoriza la intervención. \n ¿SE PUEDEN \n USAR EN TU CONTRA? \n La ley indica: «Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas.» \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por algu"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 663 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 43: recorta al menos 103 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: pueden usarse si uno de los participantes las entrega voluntariamente o si un jue»."
+   ],
+   "visible": "  \n ¿Tus chats privados sirven como prueba? \n CHATS COMO \n PRUEBA \n Depende: si un participante los da o un juez los autoriza. \n ¿TIENEN VALOR \n EN JUICIO? \n La ley indica: «Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares que participen en ellas.» \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los … \n No aplica en materias civil, laboral, fiscal o con el d"
+  }
+ ]
+}

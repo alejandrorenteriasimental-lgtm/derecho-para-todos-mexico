@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1116 KB"
+      "detalle": "1117 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,7 +33,7 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "34 palabras sin cabecera ni pie"
+      "detalle": "38 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
@@ -96,14 +96,20 @@
     "titulo": "¿Tu patrón puede descontarte una multa del sueldo?",
     "plantilla": "mito_realidad",
     "archivo": "I20261228-T122.png",
-    "sha256": "7b07dc5f2cc83a3e7a3dbe11dbd20b9a50db68c9409330a5349980374aeef436",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000111111001111111111111100100010100001110001111111111111000000000000011111100100000111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "5fe12e47d6394fa950c119f1043392303ac501c79575552008227f72a60e2f89",
+    "sha256": "37e0691511d9d29327bc6464bca5e09c421e532349ef89e5c27271564c53699e",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000111111001111111111111100100010100001110001111111111111000000000000011111100010010011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "8e36d34a5c420616cc18eb4c005e5e8ff2ecf7bc2e3d3628810bbf98eccc5540",
     "texto_alternativo": "Imagen informativa tipo mito y realidad sobre descuentos salariales. Explica que es falso que el patrón pueda retener el sueldo por multas, señalando que dicha estipulación no produce efecto legal conforme a la Ley Federal del Trabajo.",
-    "copy": "La legislación laboral de México protege el pago de los salarios. En el artículo 5 de la Ley Federal del Trabajo se enumeran las condiciones que no producen efectos jurídicos, sin importar que se hayan pactado de forma escrita o verbal.\n\nEn la fracción X del artículo 5 de la Ley Federal del Trabajo se precisa que no producirá efecto legal la estipulación que establezca la facultad del patrón de retener el salario por concepto de multa.\n\nPor lo tanto, cualquier convenio o regla interna que pretenda autorizar al patrón a aplicar descuentos por multas sobre el salario carece de validez legal.\n\nGuarda esta información para tenerla a la mano y compártela para que más personas conozcan sus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Tu patrón puede descontarte una multa del sueldo?\n\nNo. Según el artículo 5 de la Ley Federal del Trabajo, «no producirá efecto legal», «sea escrita o verbal», la estipulación que establezca «La facultad del patrón de retener el salario por concepto de multa» (fracción X).\n\nFuente: Ley Federal del Trabajo, artículo 5, fracción X.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "5",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
         "documento": "Ley Federal del Trabajo",
         "articulo": "5",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
@@ -111,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-06T04:37:43+00:00",
+    "fecha": "2026-11-06T10:41:26+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "36.5 s"
+      "detalle": "35.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "36.5 s"
+      "detalle": "35.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "88a9fc061018e873"
+      "detalle": "3c5a442fece219f9"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20261231-T125",
     "titulo": "¿Tu patrón tiene prohibido acosarte sexualmente en el trabajo?",
-    "fecha": "2026-11-06T04:35:58+00:00",
-    "sha256": "88a9fc061018e873ef0ad60ba783bd385712b15406828619dc1dddd7334cd7b6",
-    "duracion_s": 36.5,
+    "fecha": "2026-11-06T10:36:54+00:00",
+    "sha256": "3c5a442fece219f9ae68305a11c171b37965e014d33045e799ee2bebf9b9ba42",
+    "duracion_s": 35.9,
     "estado": "APTO",
-    "huella_guion": "2f8492b380076cc52315215e718fb226be4fd1a27a30eaee087e15e878c0c927",
+    "huella_guion": "d55118ad75a63f5d087c0016cff10d25a5b76bf6f38e8fc1b2192cb01793a326",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.4,
-      "musica": 1.0,
-      "render_video": 26.3,
-      "mezcla_audio": 1.1,
-      "auditoria_tecnica": 6.8
+      "narracion": 21.4,
+      "musica": 1.7,
+      "render_video": 43.3,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 9.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.74,
-      "computo_equivalente_runner_usd": 0.0045,
+      "computo_minutos": 1.29,
+      "computo_equivalente_runner_usd": 0.0077,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1093,
-    "caracteres_narrados": 503
+    "frames": 1076,
+    "caracteres_narrados": 507
   }
 }

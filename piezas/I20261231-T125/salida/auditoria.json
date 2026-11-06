@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1133 KB"
+      "detalle": "1136 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,12 +28,12 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1019"
+      "detalle": "fin del contenido en y=978"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "39 palabras sin cabecera ni pie"
+      "detalle": "43 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
@@ -93,14 +93,14 @@
   "metadatos": {
     "id": "I20261231-T125",
     "formato": "imagen",
-    "titulo": "¿Tu patrón tolera el hostigamiento y/o acoso sexual?",
+    "titulo": "¿Tu patrón puede tolerar el acoso sexual en el trabajo?",
     "plantilla": "mito_realidad",
     "archivo": "I20261231-T125.png",
-    "sha256": "7717d4baec041df3ff7a3a46df530503299f647e46ce9834fe1a90fd4c1d1f37",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000111110000000000011111001111111111111100111111111111110000001111111111000111111111111100000000000011110011111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "fe744f55702612a73017c619aef1895086aff88406856b7e515c7dc28fcc5ec8",
+    "sha256": "e70d3eb71a2e9c29800bb73ab1ec36e523b00379c8149478a90ccb40e537c6b3",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000010000101110001111111111111000111111111111100000000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "f8f2b5db85ad1a4ed34ac957a849f0ae71f802be64079ba00def253359f68eee",
     "texto_alternativo": "Imagen tipo mito y realidad sobre la prohibición de tolerar el hostigamiento y acoso sexual en el trabajo según la ley.",
-    "copy": "Conforme a la Ley Federal del Trabajo, artículo 133, se establecen prohibiciones directas para las personas empleadoras en los centros laborales.\n\nEspecíficamente, la norma señala que queda prohibido «XIII.- Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo;».\n\nEl texto oficial establece esta prohibición explícita, aunque no detalla sanciones específicas en este apartado. Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Tu patrón puede tolerar el acoso sexual en el trabajo?\n\nNo. El artículo 133 de la Ley Federal del Trabajo prohíbe a las personas empleadoras o a sus representantes «Permitir o tolerar actos de hostigamiento y/o acoso sexual en el centro de trabajo» (fracción XIII).\n\nFuente: Ley Federal del Trabajo, artículo 133, fracción XIII.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-06T04:38:22+00:00",
+    "fecha": "2026-11-06T10:42:28+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
