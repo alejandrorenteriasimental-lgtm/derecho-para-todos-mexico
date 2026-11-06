@@ -143,9 +143,22 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA", "PUBLICAR_DESDE"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA", "PUBLICAR_DESDE", "ADELANTO_AUTORIZADO", "ADELANTO_RESERVA"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
+
+
+def desde_efectivo(env, cal):
+    """6-11: el responsable autorizó iniciar el 16-11 (ADELANTO_AUTORIZADO) solo con la reserva completa: días consecutivos
+    desde esa fecha con imagen y Reel aprobados (versión, huella y respaldo) ≥ ADELANTO_RESERVA (45). Si no, PUBLICAR_DESDE."""
+    adel = env.get("ADELANTO_AUTORIZADO")
+    if adel:
+        dias = {d["fecha"]: d for d in cal.get("dias", [])}
+        ok = lambda e: bool(e and e.get("version") and e.get("sha256") and e.get("asset_id"))
+        f, n = datetime.fromisoformat(adel).date(), 0
+        while all(ok(dias.get((f + timedelta(n)).isoformat(), {}).get(x)) for x in ("imagen", "reel")): n += 1
+        if n >= int(env.get("ADELANTO_RESERVA") or 45): return adel
+    return env.get("PUBLICAR_DESDE")
 
 
 def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descargar, carpeta="/tmp/publicacion", http_yt=None):
@@ -158,7 +171,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
         res["pausa"] = p; return res
     cal = json.loads(CAL.read_text())
     hasta = env.get("PUBLICAR_HASTA")            # 3-11: el responsable autoriza la publicación por tramos de fechas
-    desde = env.get("PUBLICAR_DESDE")            # 3-11: días previos al 23-11 (adelanto) no se programan sin autorización expresa
+    desde = desde_efectivo(env, cal)             # 3-11 candado; 6-11 adelanto autorizado condicionado a la reserva de 45 días
     for dia in cal["dias"]:
         if desde and dia["fecha"] < desde:
             continue

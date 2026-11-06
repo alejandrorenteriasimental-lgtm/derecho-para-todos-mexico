@@ -151,3 +151,15 @@ def test_reel_largo_usa_en_instagram_solo_la_version_corta_aprobada(ent, monkeyp
     vig.write_text(json.dumps({f"{pid}-IG": {"estado": "APROBADA", "sha256": "a" * 64, "asset_id": 1}}))
     r = publicador.ejecutar(cuando + timedelta(minutes=5), env={"IG_REELS": "corto"}, bajar=ent["bajar"])
     assert vistos == [f"{pid}-IG"] and "versión corta" in [a["instagram"] for a in r["acciones"] if a.get("instagram")][0]
+
+
+def test_adelanto_autorizado_solo_con_reserva_completa():
+    ok = {"version": "v", "sha256": "s", "asset_id": 1}
+    from datetime import date, timedelta as td
+    cal = {"dias": [{"fecha": str(date(2026, 11, 16) + td(i)), "imagen": ok, "reel": ok} for i in range(44)]}
+    env = {"PUBLICAR_DESDE": "2026-11-23", "ADELANTO_AUTORIZADO": "2026-11-16", "ADELANTO_RESERVA": "45"}
+    assert publicador.desde_efectivo(env, cal) == "2026-11-23"          # 44 días: no basta
+    cal["dias"].append({"fecha": "2026-12-30", "imagen": ok, "reel": ok})
+    assert publicador.desde_efectivo(env, cal) == "2026-11-16"
+    cal["dias"][3]["reel"] = {"version": "v"}                              # una pieza sin huella rompe la reserva
+    assert publicador.desde_efectivo(env, cal) == "2026-11-23"
