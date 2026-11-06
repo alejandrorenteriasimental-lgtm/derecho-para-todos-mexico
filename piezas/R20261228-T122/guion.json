@@ -13,7 +13,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "112",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente",
+      "texto_literal": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente en beneficio de las personas señaladas en el artículo 110, fracción V. Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo.",
       "cita": "Ley Federal del Trabajo, artículo 112",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-06"
@@ -31,7 +31,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "No, el salario no puede ser embargado por deudas. La única excepción es la pensión alimenticia decretada por la autoridad competente.",
+      "texto": "Por regla general, no: tu salario no puede ser embargado. La única excepción es la pensión alimenticia decretada por la autoridad competente.",
       "titulo": [
         "NO POR",
         "DEUDAS"
@@ -43,42 +43,30 @@
       "texto": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente.",
       "etiqueta": "Ley Federal del Trabajo, artículo 112",
       "cita": "Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Considera lo siguiente:",
-      "items": [
-        "Salarios protegidos",
-        "Excepción de alimentos",
-        "Límite a patrones"
-      ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Los salarios no pueden ser embargados salvo por pensión alimenticia.",
+          "texto": "Los salarios no pueden ser embargados salvo por pensión alimenticia decretada por la autoridad competente.",
           "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo.",
-      "encabezado": "Obligaciones del patrón",
-      "detalle": "Otras órdenes de embargo",
-      "fuente_corta": "Ley Federal del Trabajo, art. 112",
-      "afirmaciones": []
-    },
-    {
       "tipo": "titular",
-      "texto": "El salario de los trabajadores está protegido contra embargos de deudas.",
+      "texto": "Y si llega otra orden de embargo, judicial o administrativa, el patrón no está obligado a cumplirla.",
       "titulo": [
-        "SALARIO",
-        "PROTEGIDO"
+        "OTRAS ÓRDENES",
+        "NO OBLIGAN"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo.",
+          "fuente": "F1"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -159,7 +147,7 @@
   "pregunta_original": "¿Te pueden embargar tu sueldo por una deuda?",
   "tipo_pregunta": "excepcion",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden embargar tu sueldo por una deuda?\n\nDepende: por regla general el salario no se puede embargar, salvo que se trate de pensiones alimenticias decretadas por la autoridad competente.\n\nFuente: Ley Federal del Trabajo, artículo 112.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden embargar tu sueldo por una deuda?\n\nPor regla general, no. La Ley Federal del Trabajo dice: «Los salarios de los trabajadores no podrán ser embargados, salvo el caso de pensiones alimenticias decretadas por la autoridad competente». Y agrega: «Los patrones no están obligados a cumplir ninguna otra orden judicial o administrativa de embargo».\n\nFuente: Ley Federal del Trabajo, artículo 112.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -250,5 +238,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Reel depurado: sin lista sin narrar («Considera lo siguiente») ni titular final repetido («SALARIO PROTEGIDO»); el segundo párrafo del art. 112 LFT (el patrón no está obligado a cumplir otras órdenes de embargo) pasa de una «excepción» numerada a un titular anclado en F1, que ahora tiene el artículo completo; respuesta con «por regla general»; texto de publicación con ambas citas literales"
+    }
+  ]
 }

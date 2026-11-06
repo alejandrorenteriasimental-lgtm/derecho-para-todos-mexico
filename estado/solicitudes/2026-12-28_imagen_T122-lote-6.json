@@ -7,7 +7,7 @@
   "pregunta": "¿Tu patrón te puede descontar una multa de tu sueldo?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 5 fr. X",
+  "fuentes_sugeridas": "LFT art. 5, encabezado y fr. X (solo esos dos fragmentos literales)",
   "riesgo_exactitud": "",
   "lote": "lote-6",
   "motivo_seleccion": "Art. 5 fr. X LFT: no produce efecto legal la estipulación que establezca «La facultad del patrón de retener el salario por concepto de multa».",
@@ -15,13 +15,22 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "¿Tu patrón te puede descontar una multa de tu sueldo?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "I20261228-T122",
   "archivo": "2026-12-28_imagen_T122-lote-6.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial",
   "ultima_categoria": "juridico",
-  "huella_entrada": "d2defaffee82aabc"
+  "huella_entrada": "d2defaffee82aabc",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude",
+      "motivo": "primer descarte jurídico (el de las 16:23 del 05-11 fue transitorio, HTTP 503): ninguna afirmación anclada en el texto oficial del art. 5 LFT, que es muy largo. Se reabre indicando los dos fragmentos literales que responden: el encabezado («no producirá efecto legal… la estipulación que establezca») y la fracción X («La facultad del patrón de retener el salario por concepto de multa»)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "ninguna afirmación de la imagen está anclada en el texto oficial"
+    }
+  ]
 }

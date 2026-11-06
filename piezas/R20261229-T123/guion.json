@@ -13,7 +13,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "12",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "En los Estados Unidos Mexicanos no se concederán títulos de nobleza",
+      "texto_literal": "En los Estados Unidos Mexicanos no se concederán títulos de nobleza, ni prerrogativas y honores hereditarios, ni se dará efecto alguno a los otorgados por cualquier otro país.",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 12",
       "jurisdiccion": "federal",
       "consultado": "2026-11-06"
@@ -33,20 +33,19 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabías que la ley prohíbe los títulos de nobleza?",
+      "texto": "¿En México existen los títulos de nobleza?",
       "titulo": [
-        "¿EXISTEN",
-        "TÍTULOS DE",
+        "¿TÍTULOS DE",
         "NOBLEZA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, en México no se conceden títulos de nobleza ni se da efecto alguno a los otorgados por cualquier otro país.",
+      "texto": "No. En México no se conceden títulos de nobleza, y los que otorgue cualquier otro país no tienen efecto alguno.",
       "titulo": [
-        "NO EXISTEN",
-        "EN MÉXICO"
+        "NO SE",
+        "CONCEDEN"
       ],
       "afirmaciones": []
     },
@@ -67,17 +66,17 @@
     },
     {
       "tipo": "titular",
-      "texto": "Por lo tanto, no se reconoce ningún valor legal a los títulos extranjeros ni se otorgan honores hereditarios.",
+      "texto": "Y no solo títulos: la Constitución tampoco permite conceder prerrogativas ni honores hereditarios.",
       "titulo": [
-        "SIN VALOR",
-        "LEGAL"
+        "NI HONORES",
+        "HEREDITARIOS"
       ],
       "afirmaciones": [
         {
-          "id": "A2",
+          "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "No se da efecto a títulos otorgados por otros países.",
-          "fuente": "F2"
+          "texto": "No se conceden prerrogativas y honores hereditarios.",
+          "fuente": "F1"
         }
       ]
     },
@@ -150,7 +149,7 @@
   "pregunta_original": "¿En México existen los títulos de nobleza?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿En México existen los títulos de nobleza?\n\nNo, en México no se conceden títulos de nobleza ni se da efecto alguno a los otorgados por cualquier otro país.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 12.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿En México existen los títulos de nobleza?\n\nNo. El artículo 12 de la Constitución dice: «En los Estados Unidos Mexicanos no se concederán títulos de nobleza, ni prerrogativas y honores hereditarios, ni se dará efecto alguno a los otorgados por cualquier otro país».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 12.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -201,5 +200,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-06",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho con la pregunta (no «la ley prohíbe») y título en dos líneas; titular «NO SE CONCEDEN»; el cierre «SIN VALOR LEGAL… títulos extranjeros» (ambiguo: podía leerse como títulos académicos) se sustituye por el dato literal faltante (prerrogativas y honores hereditarios), con F1 completo; texto de publicación con la cita completa"
+    }
+  ]
 }
