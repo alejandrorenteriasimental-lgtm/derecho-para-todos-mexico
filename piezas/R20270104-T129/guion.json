@@ -1,0 +1,242 @@
+{
+  "id": "R20270104-T129",
+  "formato": "reel",
+  "titulo": "¿Necesitas permiso de tus papás para trabajar a los 15 años?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T129",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "22",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores",
+      "cita": "Ley Federal del Trabajo, artículo 22",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Trabajar a los 15 años requiere autorización?",
+      "titulo": [
+        "¿NECESITAS",
+        "PERMISO?",
+        "A LOS 15?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, los mayores de 15 y menores de 16 años requieren autorización de sus padres o tutores.",
+      "titulo": [
+        "SÍ, CON",
+        "AUTORIZACIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley señala que los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 22",
+      "cita": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Aspectos laborales:",
+      "items": [
+        "Edad: 15 a 16 años",
+        "Requieren padres o tutores",
+        "Salario directo al menor"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Los mayores de quince y menores de dieciséis años necesitan autorización de sus padres o tutores.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "A falta de padres o tutores, la autorización la otorga el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+      "encabezado": "A falta de padres o tutores",
+      "detalle": "Autoriza sindicato o tribunal",
+      "fuente_corta": "Ley Federal del Trabajo, art. 22",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Los menores trabajadores deben percibir el pago de sus salarios directamente.",
+      "titulo": [
+        "PAGO DE",
+        "SALARIOS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
+    "concepto_central": "autorización de los padres o tutores para el trabajo de menores",
+    "respuesta_corta": "Sí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios.",
+    "reglas": [
+      {
+        "conclusion": "Las personas mayores de quince y menores de dieciséis años necesitan autorización para prestar sus servicios laborales.",
+        "fuente": "F1",
+        "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política.",
+        "condiciones": [
+          "Tener más de quince y menos de dieciséis años de edad"
+        ],
+        "excepciones": [
+          "A falta de padres o tutores, la autorización la otorga el sindicato al que pertenezcan, el Tribunal, el Inspector del Trabajo o la Autoridad Política"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "22"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para trabajar.",
+        "fuente": "F1",
+        "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La regla exige ser mayor de quince y menor de dieciséis años de edad.",
+        "fuente": "F1",
+        "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "Si no hay padres ni tutores, la autorización la da el sindicato al que pertenezcan, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+        "fuente": "F1",
+        "cita_literal": "y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El salario debe ser entregado directamente al menor trabajador y este puede promover las acciones legales que le correspondan.",
+        "condicion": "En el caso de los menores que presten servicios laborales.",
+        "base": "Los menores trabajadores deben percibir el pago de sus salarios y ejercitar, en su caso, las acciones que les correspondan."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto oficial disponible no señala los requisitos formales de la autorización ni las actividades prohibidas para menores."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T19:58:52+00:00",
+    "solicitud": "2027-01-04_reel_T129-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Necesitas permiso de tus papás para trabajar a los quince años?\n\nSí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios.\n\nFuente: Ley Federal del Trabajo, artículo 22.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 677 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 57: recorta al menos 117 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[coherencia] Escena 5: el encabezado visible «A falta de padres o tutores» no corresponde a lo que se narra («Y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del»)."
+        ],
+        "visible": "  \n ¿Necesitas permiso de tus papás para trabajar a los quince años? \n ¿TRABAJAR A LOS \n QUINCE AÑOS? \n Sí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios. \n AUTORIZACIÓN \n DE PADRES \n La ley establece que los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores. \n Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores \n Aspectos importantes de la norma: \n Mayores de 15 años \n Menores de 16 años \n Piden autorización \n Y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Políti"
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "narración de 643 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 23: recorta al menos 83 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Trabajar a los quince años requiere la autorización de tus papás? \n ¿NECESITAS \n PERMISO? \n A LOS 15? \n Sí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios. \n SÍ, CON \n AUTORIZACIÓN \n La ley señala que los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores. \n Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores \n Considera estos aspectos laborales: \n Edad: 15 a 16 años \n Requieren padres o tutores \n Salario directo al menor \n A falta de padres o tutores, la autorización la otorga el sindicato, el Tribunal, el Inspector del Tr"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "narración de 643 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 23: recorta al menos 83 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas mayores de quince y menores de dieciséis años necesitan autorización para prestar sus servicios laborales.",
+              "sostenida": "si",
+              "motivo": "El artículo 22 de la Ley Federal del Trabajo establece explícitamente este requisito de autorización para dicho rango de edad."
+            },
+            {
+              "conclusion": "A falta de padres o tutores, la autorización la otorga el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+              "sostenida": "si",
+              "motivo": "El texto legal prevé expresamente estas alternativas en caso de ausencia de los padres o tutores."
+            },
+            {
+              "conclusion": "Los menores trabajadores deben percibir el pago de sus salarios directamente y pueden ejercitar acciones legales.",
+              "sostenida": "si",
+              "motivo": "El artículo 22 de la Ley Federal del Trabajo reconoce expresamente el derecho al cobro del salario y a la capacidad de ejercicio de acciones por parte del menor."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

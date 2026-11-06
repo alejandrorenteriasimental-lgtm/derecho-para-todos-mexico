@@ -1,0 +1,23 @@
+{
+ "solicitud": "2027-01-04_imagen_T129-lote-6.json",
+ "fecha": "2026-11-06T20:00:54+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 22 Bis condiciona la regla («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…») y la conclusión «El trabajo está prohibido para los menores de quince años.» no declara condiciones.\", \"[condiciones] Generalización: «Depende: está prohibido para menores de 15 años, y entre ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[condiciones] Ley Federal del Trabajo, art. 22 Bis condiciona la regla («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…») y la conclusión «El trabajo está prohibido para los menores de quince años.» no declara condiciones.",
+    "[condiciones] Generalización: «Depende: el trabajo está prohibido para menores de quince años, y entre los quince y dieci» se presenta sin la condición que impone Ley Federal del Trabajo, art. 22 Bis («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…»)."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[condiciones] Ley Federal del Trabajo, art. 22 Bis condiciona la regla («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…») y la conclusión «El trabajo está prohibido para los menores de quince años.» no declara condiciones.",
+    "[condiciones] Generalización: «Depende: está prohibido para menores de 15 años, y entre 15 y 18 se requiere haber conclui» se presenta sin la condición que impone Ley Federal del Trabajo, art. 22 Bis («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…»)."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+  "id": "R20270101-T126",
+  "formato": "reel",
+  "titulo": "¿Te pueden impedir reunirte pacíficamente en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T126",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 9",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 9",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ninguna reunión armada, tiene derecho de deliberar.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 9",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se considerará ilegal, y no podrá ser disuelta una asamblea o reunión que tenga por objeto hacer una petición o presentar una protesta por algún acto, a una autoridad",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 9",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden impedir reunirte pacíficamente?",
+      "titulo": [
+        "¿TE PUEDEN",
+        "IMPEDIR REUNIRTE",
+        "PACÍFICAMENTE?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. La Constitución protege el derecho a reunirte pacíficamente con un objeto lícito.",
+      "titulo": [
+        "DERECHO A",
+        "REUNIRSE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 9 dice: «No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.»",
+      "etiqueta": "Constitución Política, art. 9",
+      "cita": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "No se puede coartar el derecho a reunirse pacíficamente con un objeto lícito.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Las reuniones armadas no tienen derecho a deliberar.",
+      "encabezado": "Reuniones armadas",
+      "detalle": "No tienen derecho a deliberar",
+      "fuente_corta": "CPEUM, art. 9",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Se garantiza el derecho de reunión pacífica con objeto lícito, reservando los asuntos políticos del país a ciudadanos.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Una protesta no es ilegal ni se disolverá si no se usan injurias, violencia o amenazas ante la autoridad.",
+      "titulo": [
+        "PROTESTA",
+        "PACÍFICA"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Las reuniones armadas no tienen derecho de deliberar.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "No se considera ilegal ni se disolverá una asamblea o protesta ante la autoridad si no hay injurias, violencia ni amenazas.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden impedir reunirte pacíficamente?",
+    "concepto_central": "reunirse pacíficamente",
+    "respuesta_corta": "No, no se podrá coartar el derecho a reunirte pacíficamente con cualquier objeto lícito, sujetándose a las condiciones establecidas en la Constitución.",
+    "reglas": [
+      {
+        "conclusion": "No se puede coartar el derecho a reunirse pacíficamente si tiene un objeto lícito, reservándose la participación en asuntos políticos del país exclusivamente a ciudadanos.",
+        "fuente": "F1",
+        "cita_literal": "No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.",
+        "condiciones": [
+          "Que la reunión sea pacífica.",
+          "Que el objeto de la reunión sea lícito.",
+          "Para asuntos políticos del país, contar con la ciudadanía de la República."
+        ],
+        "excepciones": [
+          "Las reuniones armadas no tienen derecho a deliberar."
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "9"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "No se considerará ilegal ni podrá ser disuelta una asamblea o protesta ante la autoridad si no se emplean injurias, violencia ni amenazas.",
+        "fuente": "F1",
+        "cita_literal": "No se considerará ilegal, y no podrá ser disuelta una asamblea o reunión que tenga por objeto hacer una petición o presentar una protesta por algún acto, a una autoridad"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no establece el procedimiento ni los requisitos de avisos previos o permisos ante autoridades locales, ni señala las sanciones administrativas o penales para la autoridad que coarte este derecho."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T19:52:46+00:00",
+    "solicitud": "2027-01-01_reel_T126-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Te pueden impedir reunirte pacíficamente?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden impedir reunirte pacíficamente?\n\nNo, no se podrá coartar el derecho a reunirte pacíficamente con cualquier objeto lícito, sujetándose a las condiciones establecidas en la Constitución.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 9.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 640 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 20: recorta al menos 80 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te pueden impedir reunirte pacíficamente? \n ¿TE PUEDEN \n IMPEDIR REUNIRTE \n PACÍFICAMENTE? \n No, no se podrá coartar tu derecho a reunirte pacíficamente con un objeto lícito, según la Constitución. \n DERECHO A \n REUNIRSE \n El artículo 9 señala: «No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país.» \n No se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito; pero solamente los ciudadanos de la República podrán hacerlo para tomar parte en los asuntos políticos del país. \n Toma en cuenta que las"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 640 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 20: recorta al menos 80 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "No se puede coartar el derecho a reunirse pacíficamente con un objeto lícito.",
+              "sostenida": "si",
+              "motivo": "El artículo 9 de la Constitución establece explícitamente que no se podrá coartar el derecho de asociarse o reunirse pacíficamente con cualquier objeto lícito."
+            },
+            {
+              "conclusion": "Las reuniones armadas no tienen derecho a deliberar.",
+              "sostenida": "si",
+              "motivo": "El texto oficial señala textualmente que ninguna reunión armada tiene derecho de deliberar."
+            },
+            {
+              "conclusion": "No se considera ilegal ni se disolverá una asamblea o protesta ante la autoridad si no hay injurias, violencia ni amenazas.",
+              "sostenida": "si",
+              "motivo": "El artículo 9 establece las condiciones específicas bajo las cuales una asamblea o protesta no puede ser disuelta ni considerada ilegal."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

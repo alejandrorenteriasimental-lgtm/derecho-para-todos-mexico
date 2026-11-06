@@ -1397,3 +1397,32 @@
 {"ts": "2026-11-06T16:11:16+00:00", "pieza": "I20261225-T119", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-06T16:11:16+00:00", "pieza": "R20261227-T121", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-06T16:11:16+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 3, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 4, "en_revision": 3}
+{"ts": "2026-11-06T19:49:57+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-06T19:52:46+00:00", "evento": "redactada", "pieza": "R20270101-T126", "solicitud": "2027-01-01_reel_T126-lote-6.json"}
+{"ts": "2026-11-06T19:54:32+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-03_reel_T128-lote-6.json", "categoria": "redaccion", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 667 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 47: recorta al menos 107 caracteres (meta ≤ 560) quitando f"}
+{"ts": "2026-11-06T19:58:52+00:00", "evento": "redactada", "pieza": "R20270104-T129", "solicitud": "2027-01-04_reel_T129-lote-6.json"}
+{"ts": "2026-11-06T19:59:45+00:00", "evento": "redactada", "pieza": "I20270103-T128", "solicitud": "2027-01-03_imagen_T128-lote-6.json"}
+{"ts": "2026-11-06T20:00:54+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-04_imagen_T129-lote-6.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 22 Bis condiciona la regla («…anos que no hayan terminado su educacion basica obligatoria salvo los casos que a…») y la conclusión «El trab"}
+{"ts": "2026-11-06T20:02:07+00:00", "evento": "redactada", "pieza": "I20270105-T130", "solicitud": "2027-01-05_imagen_T130-lote-6.json"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "I20270101-T126", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-06T19:44:31+00:00 versión 3035a85b703ad09b (delegada)"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "I20270102-T127", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-06T19:44:31+00:00 versión 567f66a7bbe0e225 (delegada)"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "R20270102-T127", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-06T19:44:31+00:00 versión e5b4837a18a05a29 (delegada)"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "I20270103-T128", "evento": "encolado"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "I20270105-T130", "evento": "encolado"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "R20270101-T126", "evento": "encolado"}
+{"ts": "2026-11-06T20:02:07+00:00", "pieza": "R20270104-T129", "evento": "encolado"}
+{"ts": "2026-11-06T20:06:52+00:00", "pieza": "R20270101-T126", "evento": "transicion", "a": "PRODUCIDO", "motivo": "43.2"}
+{"ts": "2026-11-06T20:06:56+00:00", "pieza": "R20270101-T126", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-06T20:06:56+00:00", "evento": "revision_preparada", "pieza": "R20270101-T126", "version": "03c420e8c608119c", "canal": "chat"}
+{"ts": "2026-11-06T20:09:17+00:00", "pieza": "R20270104-T129", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.9"}
+{"ts": "2026-11-06T20:09:22+00:00", "pieza": "R20270104-T129", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-06T20:09:22+00:00", "evento": "revision_preparada", "pieza": "R20270104-T129", "version": "3cdf7159ed34cb4d", "canal": "chat"}
+{"ts": "2026-11-06T20:10:12+00:00", "pieza": "I20270103-T128", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-06T20:10:16+00:00", "pieza": "I20270103-T128", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-06T20:10:16+00:00", "evento": "revision_preparada", "pieza": "I20270103-T128", "version": "eec01f4edcd4460f", "canal": "chat"}
+{"ts": "2026-11-06T20:11:52+00:00", "pieza": "I20270105-T130", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-06T20:11:56+00:00", "pieza": "I20270105-T130", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-06T20:11:56+00:00", "evento": "revision_preparada", "pieza": "I20270105-T130", "version": "cc3926c669cd37d1", "canal": "chat"}
+{"ts": "2026-11-06T20:11:56+00:00", "pieza": "I20261229-T123", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-06T20:11:56+00:00", "pieza": "I20261230-T124", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-06T20:11:56+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 2, "producidas": 4, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 4}

@@ -1,0 +1,58 @@
+{
+ "tema_id": "T129",
+ "pregunta": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
+ "fecha": "2026-11-06T19:55:36+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
+  "concepto_central": "autorización de los padres o tutores para el trabajo de menores",
+  "respuesta_corta": "Sí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios.",
+  "reglas": [
+   {
+    "conclusion": "Las personas mayores de quince y menores de dieciséis años necesitan autorización para prestar sus servicios laborales.",
+    "fuente": "F1",
+    "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política.",
+    "condiciones": [
+     "Tener más de quince y menos de dieciséis años de edad"
+    ],
+    "excepciones": [
+     "A falta de padres o tutores, la autorización la otorga el sindicato al que pertenezcan, el Tribunal, el Inspector del Trabajo o la Autoridad Política"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para trabajar.",
+    "fuente": "F1",
+    "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La regla exige ser mayor de quince y menor de dieciséis años de edad.",
+    "fuente": "F1",
+    "cita_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Si no hay padres ni tutores, la autorización la da el sindicato al que pertenezcan, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+    "fuente": "F1",
+    "cita_literal": "y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El salario debe ser entregado directamente al menor trabajador y este puede promover las acciones legales que le correspondan.",
+    "condicion": "En el caso de los menores que presten servicios laborales.",
+    "base": "Los menores trabajadores deben percibir el pago de sus salarios y ejercitar, en su caso, las acciones que les correspondan."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto oficial disponible no señala los requisitos formales de la autorización ni las actividades prohibidas para menores.",
+  "fuentes_irrelevantes": []
+ }
+}

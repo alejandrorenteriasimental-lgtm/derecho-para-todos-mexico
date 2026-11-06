@@ -1,0 +1,165 @@
+{
+  "id": "I20270105-T130",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Hombres y mujeres son iguales ante la ley?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T130",
+  "pieza": {
+    "titular": "¿Hombres y mujeres son iguales ante la ley?",
+    "bajada": "Conoce lo que establece la Constitución Política de los Estados Unidos Mexicanos sobre la igualdad jurídica.",
+    "mito": "La ley no define la igualdad entre hombres y mujeres.",
+    "realidad": "Sí, la mujer y el hombre son iguales ante la ley y el Estado garantizará la igualdad sustantiva de las mujeres.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 4"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos establece de manera clara el principio fundamental de igualdad jurídica entre géneros en el ámbito nacional.\n\nDe acuerdo con el artículo 4, se dispone de forma expresa que «La mujer y el hombre son iguales ante la ley».\n\nAsimismo, el texto constitucional señala que «El Estado garantizará el goce y ejercicio del derecho a la igualdad sustantiva de las mujeres».\n\nGuarda y comparte esta información para conocer más sobre tus derechos consagrados en la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que explica el mito y la realidad sobre la igualdad entre hombres y mujeres ante la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La mujer y el hombre son iguales ante la ley.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 4",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "El Estado garantizará el goce y ejercicio del derecho a la igualdad sustantiva de las mujeres.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 4",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-06"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La mujer y el hombre son iguales ante la ley.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El Estado garantizará el goce y ejercicio de la igualdad sustantiva.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Hombres y mujeres son iguales ante la ley?",
+    "concepto_central": "igualdad entre hombres y mujeres ante la ley",
+    "respuesta_corta": "Sí, la mujer y el hombre son iguales ante la ley y el Estado debe garantizar el derecho a la igualdad sustantiva de las mujeres.",
+    "reglas": [
+      {
+        "conclusion": "La ley establece expresamente que hombres y mujeres tienen el mismo estatus de igualdad.",
+        "fuente": "F1",
+        "cita_literal": "La mujer y el hombre son iguales ante la ley.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "4"
+        }
+      },
+      {
+        "conclusion": "El Estado tiene la obligación de garantizar el goce y ejercicio de la igualdad sustantiva de las mujeres.",
+        "fuente": "F1",
+        "cita_literal": "El Estado garantizará el goce y ejercicio del derecho a la igualdad sustantiva de las mujeres.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "4"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es el reconocimiento expreso de la igualdad entre hombres y mujeres y la obligación estatal de garantizar la igualdad sustantiva.",
+        "fuente": "F1",
+        "cita_literal": "La mujer y el hombre son iguales ante la ley. Ésta protegerá la organización y el desarrollo de las familias. El Estado garantizará el goce y ejercicio del derecho a la igualdad sustantiva de las mujeres."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla mecanismos procesales específicos ni sanciones particulares para el incumplimiento de este principio de igualdad."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-06T20:02:07+00:00",
+    "solicitud": "2027-01-05_imagen_T130-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Hombres y mujeres son iguales ante la ley?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La ley establece expresamente que hombres y mujeres tienen el mismo estatus de igualdad.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente de la cita literal 'La mujer y el hombre son iguales ante la ley' contenida en el artículo 4."
+            },
+            {
+              "conclusion": "El Estado tiene la obligación de garantizar el goce y ejercicio de la igualdad sustantiva de las mujeres.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la obligación establecida en el texto: 'El Estado garantizará el goce y ejercicio del derecho a la igualdad sustantiva de las mujeres'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

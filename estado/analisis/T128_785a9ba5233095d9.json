@@ -1,0 +1,54 @@
+{
+ "tema_id": "T128",
+ "pregunta": "¿Tienes derecho a proteger tus datos personales?",
+ "fecha": "2026-11-06T19:59:25+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes derecho a proteger tus datos personales?",
+  "concepto_central": "derecho a la protección de datos personales",
+  "respuesta_corta": "Sí, toda persona tiene derecho a proteger sus datos personales, acceder a ellos, rectificarlos, cancelarlos y oponerse a su tratamiento.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona tiene derecho a la protección de sus datos personales, al acceso, rectificación, cancelación y oposición, en los términos que fije la ley.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho a la protección de sus datos personales, al acceso, rectificación y cancelación de los mismos, así como a manifestar su oposición, en los términos que fije la ley",
+    "condiciones": [
+     "en los términos que fije la ley"
+    ],
+    "excepciones": [
+     "por razones de seguridad nacional, disposiciones de orden público, seguridad y salud públicas o para proteger los derechos de terceros"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se garantiza el derecho a la protección de datos personales, así como el acceso, rectificación, cancelación y oposición.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho a la protección de sus datos personales, al acceso, rectificación y cancelación de los mismos, así como a manifestar su oposición, en los términos que fije la ley"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El ejercicio de estos derechos se realiza en los términos que fije la ley.",
+    "fuente": "F1",
+    "cita_literal": "en los términos que fije la ley, la cual establecerá los supuestos de excepción a los principios que rijan el tratamiento de datos"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "La ley establece supuestos de excepción por seguridad nacional, orden público, seguridad y salud públicas o para proteger derechos de terceros.",
+    "fuente": "F1",
+    "cita_literal": "por razones de seguridad nacional, disposiciones de orden público, seguridad y salud públicas o para proteger los derechos de terceros."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no detallan los plazos, autoridades u obligaciones operativas específicas de las leyes secundarias para ejercer dichos derechos.",
+  "fuentes_irrelevantes": [
+   "F2"
+  ]
+ }
+}
