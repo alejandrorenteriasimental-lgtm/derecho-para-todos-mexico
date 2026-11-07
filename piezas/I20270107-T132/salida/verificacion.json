@@ -1,0 +1,52 @@
+{
+  "decision": "RETENER",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "consultado": "2026-11-07T10:23:14+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 154602,
+      "extracto": "son obligaciones de los mexicanos: i. ser responsables de que sus hijas, hijos o pup ilos menores de dieciocho anos concurran a las escuelas, para recibir la educacion obligatoria y, en su caso, reciban la militar, en los terminos que establezca la ley, asi como participar en su proceso educativo, al revisar su progreso y desempeno, velando siempre por su bienestar y desarrollo; fraccion reformada dof 05-03-1993, 12-11-2002, 09-02-2012, 15-05-2019 ii. asistir en los dias y horas designados por el ayuntamiento del lugar en que residan, para recibir instruccion civica y militar que los mant enga",
+      "huella_articulo": "cfb73a03d3a37904b199e4dda68a4e58df33c0341492350c4cad94b6907de02b",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "consultado": "2026-11-07T10:23:37+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 154602,
+      "extracto": "son obligaciones de los mexicanos: i. ser responsables de que sus hijas, hijos o pup ilos menores de dieciocho anos concurran a las escuelas, para recibir la educacion obligatoria y, en su caso, reciban la militar, en los terminos que establezca la ley, asi como participar en su proceso educativo, al revisar su progreso y desempeno, velando siempre por su bienestar y desarrollo; fraccion reformada dof 05-03-1993, 12-11-2002, 09-02-2012, 15-05-2019 ii. asistir en los dias y horas designados por el ayuntamiento del lugar en que residan, para recibir instruccion civica y militar que los mant enga",
+      "huella_articulo": "cfb73a03d3a37904b199e4dda68a4e58df33c0341492350c4cad94b6907de02b",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "RETENER",
+      "duda": "La ley no define de forma general qué se entiende por proporcionalidad o equidad."
+    }
+  ],
+  "razonamiento": []
+}

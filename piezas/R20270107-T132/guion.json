@@ -1,0 +1,261 @@
+{
+  "id": "R20270107-T132",
+  "formato": "reel",
+  "titulo": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T132",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Son obligaciones de los mexicanos: I. Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "participar en su proceso educativo, al revisar su progreso y desempeño, velando siempre por su bienestar y desarrollo",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "participar en su proceso educativo, al revisar su progreso y desempeño, velando siempre por su bienestar y desarrollo",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Es obligatorio llevar a tus hijos a la escuela?",
+      "titulo": [
+        "¿ES OBLIGATORIO",
+        "LLEVARLOS A",
+        "LA ESCUELA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, los mexicanos deben asegurar que los menores de dieciocho años a su cargo asistan a clases.",
+      "titulo": [
+        "ES UNA",
+        "OBLIGACIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución obliga a: Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria.",
+      "etiqueta": "Constitución, art. 31",
+      "cita": "Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Los mexicanos tienen la obligación constitucional de que sus hijos asistan a la escuela.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "La responsabilidad también incluye:",
+      "items": [
+        "Revisar su progreso",
+        "Velar por su bienestar",
+        "Participar en el proceso"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La educación obligatoria es una responsabilidad de los padres para con los menores de dieciocho años.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, la responsabilidad no termina al enviarlos; requiere un seguimiento continuo de su progreso y bienestar.",
+      "titulo": [
+        "RESPONSABILIDAD",
+        "DE LOS PADRES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Los padres deben involucrarse activamente en la educación de los menores.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "La obligación incluye vigilar el bienestar y desarrollo del menor en su entorno escolar.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
+    "concepto_central": "obligación de los mexicanos",
+    "respuesta_corta": "Sí, los mexicanos tienen la obligación de que sus hijos o pupilos menores de dieciocho años asistan a las escuelas para recibir la educación obligatoria.",
+    "reglas": [
+      {
+        "conclusion": "Los padres o tutores mexicanos son responsables de que los menores a su cargo asistan a la escuela para cursar la educación obligatoria.",
+        "fuente": "F1",
+        "cita_literal": "Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria",
+        "condiciones": [
+          "Que se trate de hijas, hijos o pupilos menores de dieciocho años",
+          "En los términos que establezca la ley"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "31"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Los padres deben asegurar la asistencia escolar de los menores y participar activamente en su proceso educativo revisando su desempeño.",
+        "fuente": "F1",
+        "cita_literal": "participar en su proceso educativo, al revisar su progreso y desempeño, velando siempre por su bienestar y desarrollo"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación recae sobre los mexicanos que tengan bajo su cuidado a menores de dieciocho años.",
+        "fuente": "F1",
+        "cita_literal": "Son obligaciones de los mexicanos: I. Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La responsabilidad de los padres no termina con enviar al menor al plantel, sino que requiere un seguimiento continuo.",
+        "condicion": "Para cumplir con la revisión del progreso y desempeño escolar",
+        "base": "participar en su proceso educativo, al revisar su progreso y desempeño"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "educación obligatoria para menores",
+        "b": "instrucción cívica y militar para ciudadanos",
+        "diferencia": "La primera es una responsabilidad de los padres hacia sus hijos menores, mientras que la segunda es una obligación personal de los ciudadanos ante el Ayuntamiento."
+      }
+    ],
+    "limites": "El texto no establece sanciones específicas por incumplimiento, no define qué niveles educativos integran la 'educación obligatoria' ni menciona plazos de inscripción."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T10:05:24+00:00",
+    "solicitud": "2027-01-07_reel_T132-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Los papás están obligados a mandar a sus hijos a la escuela?\n\nSí, los mexicanos tienen la obligación de que sus hijos o pupilos menores de dieciocho años asistan a las escuelas para recibir la educación obligatoria.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 31.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los padres o tutores mexicanos son responsables de que los menores a su cargo asistan a la escuela para cursar la educación obligatoria.",
+              "sostenida": "si",
+              "motivo": "El artículo 31, fracción I, establece explícitamente la obligación de los mexicanos de ser responsables de que sus hijas, hijos o pupilos concurran a las escuelas para recibir la educación obligatoria."
+            },
+            {
+              "conclusion": "La responsabilidad de los padres no termina con enviar al menor al plantel, sino que requiere un seguimiento continuo.",
+              "sostenida": "si",
+              "motivo": "La norma constitucional exige no solo la asistencia, sino también 'participar en su proceso educativo, al revisar su progreso y desempeño'."
+            },
+            {
+              "conclusion": "La obligación incluye vigilar el bienestar y desarrollo del menor en su entorno escolar.",
+              "sostenida": "si",
+              "motivo": "El texto vincula la participación en el proceso educativo con la acción de 'velar siempre por su bienestar y desarrollo'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

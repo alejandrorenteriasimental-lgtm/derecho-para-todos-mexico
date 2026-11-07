@@ -1,0 +1,65 @@
+{
+ "solicitud": "2027-01-08_imagen_T133-lote-6.json",
+ "fecha": "2026-11-07T10:13:21+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo. \\n El salario se integra ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ],
+   "visible": "  \n   \n Se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo. \n El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas... \n Debe entregarse al trabajador por su trabajo."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El salario no se limita al pago en efectivo, sino que abarca diversas prestaciones y percepciones adicionales que el trabajador recibe como contraprestación por su labor.",
+      "sostenida": "si",
+      "motivo": "El artículo 84 enumera explícitamente que el salario se integra no solo con pagos en efectivo, sino también con gratificaciones, percepciones, habitación, primas, comisiones y prestaciones en especie."
+     },
+     {
+      "conclusion": "Para que una cantidad o prestación sea considerada parte del salario, debe ser entregada al trabajador como consecuencia de su trabajo.",
+      "sostenida": "si",
+      "motivo": "El texto establece como condición que la integración incluye 'cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "pieza.cita",
+      "problema": "La cita textual presentada en la sección visible de la pieza utiliza puntos suspensivos ('...'), lo cual incumple la regla de usar fragmentos COPIADOS EXACTAMENTE del texto oficial.",
+      "correccion": "Se debe incluir el texto íntegro del artículo 84 sin truncamientos para cumplir con la regla de exactitud de la cita."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ],
+   "visible": "  \n   \n Se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo. \n El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones \n Solo cuentan las prestaciones entregadas por tu trabajo."
+  }
+ ]
+}

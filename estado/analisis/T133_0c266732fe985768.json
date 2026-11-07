@@ -1,0 +1,51 @@
+{
+ "tema_id": "T133",
+ "pregunta": "¿Qué cuenta como parte de tu salario?",
+ "fecha": "2026-11-07T10:11:57+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué cuenta como parte de tu salario?",
+  "concepto_central": "salario",
+  "respuesta_corta": "El salario se integra por los pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo.",
+  "reglas": [
+   {
+    "conclusion": "El salario no se limita al pago en efectivo, sino que abarca diversas prestaciones y percepciones adicionales que el trabajador recibe como contraprestación por su labor.",
+    "fuente": "F1",
+    "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo.",
+    "condiciones": [
+     "Que la cantidad o prestación se entregue al trabajador por su trabajo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Tu salario se compone de los pagos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones y prestaciones en especie.",
+    "fuente": "F1",
+    "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Para que una cantidad o prestación sea considerada parte del salario, debe ser entregada al trabajador como consecuencia de su trabajo.",
+    "fuente": "F1",
+    "cita_literal": "cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece en este artículo conceptos que queden excluidos de la integración del salario.",
+    "fuente": "F1",
+    "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación",
+    "motivo": "El texto define de forma amplia la integración sin listar exclusiones."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no especifica qué conceptos NO forman parte del salario (como herramientas de trabajo o gastos de representación), por lo que no se deben inventar exclusiones. Tampoco menciona periodicidad de pago ni impuestos.",
+  "fuentes_irrelevantes": []
+ }
+}

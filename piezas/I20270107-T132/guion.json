@@ -1,0 +1,249 @@
+{
+  "id": "I20270107-T132",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Pagar impuestos es una obligación constitucional?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T132",
+  "pieza": {
+    "titular": "¿Pagar impuestos es una obligación constitucional?",
+    "bajada": "Sí, los mexicanos deben contribuir al gasto público de forma proporcional y equitativa.",
+    "cita": "Contribuir para los gastos públicos, así de la Federación, como de los Estados",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+    "ojo": "Según dispongan las leyes.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 31"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos, en su artículo 31, establece que es deber de los mexicanos aportar recursos para el gasto público. Esta obligación abarca a la Federación, los Estados, la Ciudad de México y el Municipio donde se resida.\n\nDe acuerdo con el texto oficial, esta contribución debe realizarse de forma proporcional y equitativa. Esto significa que el fundamento para el pago de impuestos existe a nivel constitucional, siempre que estos se encuentren previstos en una ley formal.\n\nEs importante notar que esta responsabilidad recae sobre los «mexicanos». A diferencia de otros deberes exclusivos de la ciudadanía, la obligación de contribuir al gasto público no distingue si se cumplen o no los requisitos adicionales para ser considerado ciudadano.\n\n¿Te resultó útil esta información? Guarda esta publicación para consultarla después o compártela con quien necesite conocer sus obligaciones básicas.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre la obligación constitucional de los mexicanos de pagar impuestos según el artículo 31 de la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "31",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "de la manera proporcional y equitativa que dispongan las leyes",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los mexicanos tienen el deber de aportar recursos económicos para sufragar el gasto público en todos los niveles de gobierno.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La obligación de contribuir debe realizarse bajo los principios de proporcionalidad y equidad que establezca la ley.",
+      "fuente": "F2",
+      "nota": "La ley no define de forma general qué se entiende por proporcionalidad o equidad."
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Pagar impuestos es una obligación constitucional?",
+    "concepto_central": "obligación de los mexicanos de contribuir para los gastos públicos",
+    "respuesta_corta": "Sí, es una obligación de los mexicanos contribuir a los gastos públicos de la Federación, estados y municipios de forma proporcional y equitativa.",
+    "reglas": [
+      {
+        "conclusion": "La Constitución establece que los mexicanos tienen el deber de aportar recursos económicos para sufragar el gasto público en todos los niveles de gobierno.",
+        "fuente": "F1",
+        "cita_literal": "Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan",
+        "condiciones": [
+          "Tener la calidad de mexicano",
+          "Que la aportación se destine a gastos públicos",
+          "Que se realice en el lugar de residencia (para el caso de municipios)"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "31"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Los mexicanos deben aportar recursos para los gastos de la Federación, los Estados, la Ciudad de México y el Municipio donde vivan.",
+        "fuente": "F1",
+        "cita_literal": "Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Esta obligación debe cumplirse bajo los principios de proporcionalidad y equidad, conforme a lo que establezcan las leyes.",
+        "fuente": "F1",
+        "cita_literal": "de la manera proporcional y equitativa que dispongan las leyes"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La expresión 'contribuir para los gastos públicos' es el fundamento constitucional que incluye el pago de impuestos.",
+        "condicion": "siempre que dichos impuestos estén previstos en una ley formal",
+        "base": "F1 indica que la contribución debe ser de la manera que dispongan las leyes."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "mexicanos",
+        "b": "ciudadanos",
+        "diferencia": "La obligación constitucional de contribuir al gasto público recae sobre todos los mexicanos, independientemente de si cumplen los requisitos adicionales para ser ciudadanos."
+      }
+    ],
+    "limites": "El texto oficial no define qué se entiende por proporcionalidad o equidad, ni establece montos específicos, tipos de impuestos o sanciones por incumplimiento."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T10:11:22+00:00",
+    "solicitud": "2027-01-07_imagen_T132-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 4
+      },
+      "llamadas_ia_total": 10,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Pagar impuestos es una obligación constitucional?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí. Es obligación de los mexicanos contribuir a los gastos públicos de la Federación, Estados, CDMX y Municipios según las leyes. \n Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio \n Debe ser de forma proporcional y equitativa."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Es un deber de los ciudadanos mexicanos aportar recursos para el gasto público.",
+              "sostenida": "parcial",
+              "motivo": "El artículo 31 establece la obligación para los «mexicanos», no para los «ciudadanos». En el derecho constitucional mexicano, estos conceptos tienen definiciones distintas."
+            },
+            {
+              "conclusion": "La obligación abarca los tres niveles de gobierno: la Federación, los Estados, la Ciudad de México y el Municipio.",
+              "sostenida": "si",
+              "motivo": "El texto oficial enumera explícitamente estos niveles de gobierno."
+            },
+            {
+              "conclusion": "La contribución debe realizarse de manera proporcional y equitativa según las leyes.",
+              "sostenida": "si",
+              "motivo": "La cita literal coincide con la fracción IV del artículo 31."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Primer párrafo: «es un deber de los ciudadanos mexicanos aportar recursos para el gasto público»",
+              "problema": "La pieza utiliza el término «ciudadanos», mientras que el artículo 31 de la Constitución establece la obligación para los «mexicanos». Son categorías jurídicas distintas.",
+              "correccion": "Sustituir «ciudadanos mexicanos» por «mexicanos», para mantener la precisión del texto constitucional."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, los mexicanos deben contribuir al gasto público de la Federación, estados y municipios de forma proporcional y equitativa. \n Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan \n Debe ser según dispongan las leyes."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La Constitución establece que los mexicanos tienen el deber de aportar recursos económicos para sufragar el gasto público en todos los niveles de gobierno.",
+              "sostenida": "si",
+              "motivo": "El artículo 31, fracción IV, establece explícitamente la obligación de contribuir a los gastos públicos de la Federación, Estados, Ciudad de México y Municipio."
+            },
+            {
+              "conclusion": "La obligación de contribuir al gasto público recae sobre todos los mexicanos, independientemente de si cumplen los requisitos adicionales para ser ciudadanos.",
+              "sostenida": "si",
+              "motivo": "El artículo 31 comienza con 'Son obligaciones de los mexicanos', diferenciándose de otros artículos constitucionales que especifican 'ciudadanos' para derechos u obligaciones políticas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

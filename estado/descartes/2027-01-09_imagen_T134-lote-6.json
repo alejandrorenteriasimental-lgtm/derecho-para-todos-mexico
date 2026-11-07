@@ -1,0 +1,22 @@
+{
+ "solicitud": "2027-01-09_imagen_T134-lote-6.json",
+ "fecha": "2026-11-07T10:14:02+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Constitución Política de los Estados Unidos Mexicanos, art. 1 condiciona la regla («…sancionar y reparar las violaciones a los derechos humanos en los terminos que establezca la ley parrafo adicionado dof 10 06 2011 esta prohibida la…») y la conclusión «La esclavitud está prohibida en el territorio nacional.» no declara condiciones.\", ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[condiciones] Constitución Política de los Estados Unidos Mexicanos, art. 1 condiciona la regla («…sancionar y reparar las violaciones a los derechos humanos en los terminos que establezca la ley parrafo adicionado dof 10 06 2011 esta prohibida la…») y la conclusión «La esclavitud está prohibida en el territorio mexicano y los» no declara condiciones."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[condiciones] Constitución Política de los Estados Unidos Mexicanos, art. 1 condiciona la regla («…sancionar y reparar las violaciones a los derechos humanos en los terminos que establezca la ley parrafo adicionado dof 10 06 2011 esta prohibida la…») y la conclusión «La esclavitud está prohibida en el territorio nacional.» no declara condiciones.",
+    "[condiciones] Generalización: «Sí, la esclavitud está prohibida en los Estados Unidos Mexicanos y las personas esclavas d» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 1 («…sancionar y reparar las violaciones a los derechos humanos en los terminos que establezca la ley parrafo adicionado dof 10 06 2011 esta prohibida la…»)."
+   ]
+  }
+ ]
+}

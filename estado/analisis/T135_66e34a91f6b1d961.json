@@ -1,0 +1,45 @@
+{
+ "tema_id": "T135",
+ "pregunta": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+ "fecha": "2026-11-07T10:14:43+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+  "concepto_central": "compurgación de penas en lugares separados por género",
+  "respuesta_corta": "No: la ley establece que las mujeres deben cumplir sus penas en lugares separados de los destinados a los hombres.",
+  "reglas": [
+   {
+    "conclusion": "Las mujeres deben compurgar sus penas en espacios separados de los que se destinan a los hombres.",
+    "fuente": "F1",
+    "cita_literal": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Las mujeres compurgarán sus penas en lugares separados de los que se destinen a los hombres.",
+    "fuente": "F1",
+    "cita_literal": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "no_aplica",
+    "motivo": "El texto constitucional no establece condiciones ni requisitos previos para que aplique la separación entre hombres y mujeres."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "prisión preventiva",
+    "b": "extinción de las penas",
+    "diferencia": "La prisión preventiva aplica durante el proceso y la extinción de penas ocurre tras una condena; la ley ordena que el sitio de prisión preventiva sea distinto y esté completamente separado del de extinción de penas."
+   }
+  ],
+  "limites": "El texto oficial no especifica las características arquitectónicas de los lugares separados ni regula excepciones para esta regla.",
+  "fuentes_irrelevantes": []
+ }
+}

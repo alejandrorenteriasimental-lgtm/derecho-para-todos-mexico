@@ -1,0 +1,57 @@
+{
+ "tema_id": "T132",
+ "pregunta": "¿Pagar impuestos es una obligación constitucional?",
+ "fecha": "2026-11-07T10:08:35+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pagar impuestos es una obligación constitucional?",
+  "concepto_central": "obligación de los mexicanos de contribuir para los gastos públicos",
+  "respuesta_corta": "Sí, es una obligación de los mexicanos contribuir a los gastos públicos de la Federación, estados y municipios de forma proporcional y equitativa.",
+  "reglas": [
+   {
+    "conclusion": "La Constitución establece que los mexicanos tienen el deber de aportar recursos económicos para sufragar el gasto público en todos los niveles de gobierno.",
+    "fuente": "F1",
+    "cita_literal": "Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan",
+    "condiciones": [
+     "Tener la calidad de mexicano",
+     "Que la aportación se destine a gastos públicos",
+     "Que se realice en el lugar de residencia (para el caso de municipios)"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Los mexicanos deben aportar recursos para los gastos de la Federación, los Estados, la Ciudad de México y el Municipio donde vivan.",
+    "fuente": "F1",
+    "cita_literal": "Contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta obligación debe cumplirse bajo los principios de proporcionalidad y equidad, conforme a lo que establezcan las leyes.",
+    "fuente": "F1",
+    "cita_literal": "de la manera proporcional y equitativa que dispongan las leyes"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La expresión 'contribuir para los gastos públicos' es el fundamento constitucional que incluye el pago de impuestos.",
+    "condicion": "siempre que dichos impuestos estén previstos en una ley formal",
+    "base": "F1 indica que la contribución debe ser de la manera que dispongan las leyes."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "mexicanos",
+    "b": "ciudadanos",
+    "diferencia": "La obligación constitucional de contribuir al gasto público recae sobre todos los mexicanos, independientemente de si cumplen los requisitos adicionales para ser ciudadanos."
+   }
+  ],
+  "limites": "El texto oficial no define qué se entiende por proporcionalidad o equidad, ni establece montos específicos, tipos de impuestos o sanciones por incumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}

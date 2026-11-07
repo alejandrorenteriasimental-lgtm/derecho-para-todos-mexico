@@ -1,0 +1,49 @@
+{
+ "tema_id": "T131",
+ "pregunta": "¿En cuánto tiempo te deben dar tus vacaciones?",
+ "fecha": "2026-11-07T10:01:34+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿En cuánto tiempo te deben dar tus vacaciones?",
+  "concepto_central": "vacaciones",
+  "respuesta_corta": "Dentro de los seis meses siguientes a que cumplas tu año de servicios.",
+  "reglas": [
+   {
+    "conclusion": "El plazo legal para que se otorguen las vacaciones es de seis meses posteriores al aniversario laboral del trabajador.",
+    "fuente": "F1",
+    "cita_literal": "Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios",
+    "condiciones": [
+     "Cumplimiento del año de servicios"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se deben conceder dentro de los seis meses posteriores a que el trabajador cumpla su año de servicios.",
+    "fuente": "F1",
+    "cita_literal": "Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El derecho al plazo de concesión se activa una vez que se ha cumplido el año de servicios.",
+    "fuente": "F1",
+    "cita_literal": "Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El patrón tiene la facultad de señalar la fecha específica en la que el trabajador disfrutará su descanso.",
+    "condicion": "Al momento de entregar la constancia anual de antigüedad.",
+    "base": "Los patrones entregarán anualmente a sus trabajadores una constancia que contenga su antigüedad y de acuerdo con ella el período de vacaciones que les corresponda y la fecha en que deberán disfrutarlo."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no establece consecuencias legales inmediatas ni sanciones específicas si el patrón excede el plazo de seis meses, ni menciona si el trabajador puede elegir la fecha de forma unilateral.",
+  "fuentes_irrelevantes": []
+ }
+}

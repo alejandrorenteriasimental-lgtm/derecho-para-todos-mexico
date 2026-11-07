@@ -1,0 +1,164 @@
+{
+  "id": "I20270110-T135",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T135",
+  "pieza": {
+    "titular": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+    "bajada": "No: las mujeres deben cumplir sus penas en lugares separados.",
+    "cita": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 18",
+    "ojo": "Mandato constitucional.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 18"
+  },
+  "copy": "En el sistema penitenciario mexicano, la norma constitucional establece reglas claras sobre el internamiento. De acuerdo con el artículo 18 de la Constitución Política de los Estados Unidos Mexicanos, las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto.\n\nAdemás, existe una distinción en el texto constitucional entre la prisión preventiva (que aplica durante el proceso) y la extinción de las penas (que ocurre tras la condena), señalando que el sitio de la primera debe ser distinto y estar completamente separado del destinado para las penas.\n\nGuarda o comparte esta publicación para que más personas conozcan lo que dice la ley sobre la organización penitenciaria en México.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa tipo dato. Pregunta si hombres y mujeres cumplen sus penas en el mismo lugar. Responde que no, citando la Constitución Política de los Estados Unidos Mexicanos sobre la separación de espacios por género.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "18",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 18",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+    "concepto_central": "compurgación de penas en lugares separados por género",
+    "respuesta_corta": "No: la ley establece que las mujeres deben cumplir sus penas en lugares separados de los destinados a los hombres.",
+    "reglas": [
+      {
+        "conclusion": "Las mujeres deben compurgar sus penas en espacios separados de los que se destinan a los hombres.",
+        "fuente": "F1",
+        "cita_literal": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "18"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Las mujeres compurgarán sus penas en lugares separados de los que se destinen a los hombres.",
+        "fuente": "F1",
+        "cita_literal": "Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "no_aplica",
+        "motivo": "El texto constitucional no establece condiciones ni requisitos previos para que aplique la separación entre hombres y mujeres."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "prisión preventiva",
+        "b": "extinción de las penas",
+        "diferencia": "La prisión preventiva aplica durante el proceso y la extinción de penas ocurre tras una condena; la ley ordena que el sitio de prisión preventiva sea distinto y esté completamente separado del de extinción de penas."
+      }
+    ],
+    "limites": "El texto oficial no especifica las características arquitectónicas de los lugares separados ni regula excepciones para esta regla."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T10:16:15+00:00",
+    "solicitud": "2027-01-10_imagen_T135-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Hombres y mujeres cumplen sus penas en el mismo lugar?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n No: la ley establece que las mujeres deben cumplir sus penas en lugares separados de los destinados a los hombres. \n Las mujeres compurgarán sus penas en lugares separados de los destinados a los hombres para tal efecto. \n La separación por género está en la Constitución."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las mujeres deben compurgar sus penas en lugares separados de los destinados a los hombres.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel del mandato contenido en el artículo 18 de la Constitución Política de los Estados Unidos Mexicanos."
+            },
+            {
+              "conclusion": "El sitio de la prisión preventiva debe ser distinto y estar completamente separado del destinado para la extinción de las penas.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente la obligación de que el sitio de la prisión preventiva sea distinto y esté completamente separado del de la extinción de las penas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

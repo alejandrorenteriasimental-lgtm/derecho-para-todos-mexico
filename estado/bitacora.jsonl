@@ -1460,3 +1460,28 @@
 {"ts": "2026-11-07T04:07:18+00:00", "pieza": "R20261228-T122", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-07T04:07:18+00:00", "pieza": "R20261229-T123", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-07T04:07:18+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 0, "producidas": 6, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 6}
+{"ts": "2026-11-07T10:00:59+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-07T10:03:08+00:00", "evento": "redactada", "pieza": "R20270106-T131", "solicitud": "2027-01-06_reel_T131-lote-6.json"}
+{"ts": "2026-11-07T10:05:24+00:00", "evento": "redactada", "pieza": "R20270107-T132", "solicitud": "2027-01-07_reel_T132-lote-6.json"}
+{"ts": "2026-11-07T10:11:22+00:00", "evento": "redactada", "pieza": "I20270107-T132", "solicitud": "2027-01-07_imagen_T132-lote-6.json"}
+{"ts": "2026-11-07T10:13:21+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-08_imagen_T133-lote-6.json", "categoria": "redaccion", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \" "}
+{"ts": "2026-11-07T10:14:02+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-09_imagen_T134-lote-6.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Constitución Política de los Estados Unidos Mexicanos, art. 1 condiciona la regla («…sancionar y reparar las violaciones a los derechos humanos en los terminos que estab"}
+{"ts": "2026-11-07T10:16:15+00:00", "evento": "redactada", "pieza": "I20270110-T135", "solicitud": "2027-01-10_imagen_T135-lote-6.json"}
+{"ts": "2026-11-07T10:16:15+00:00", "pieza": "I20270107-T132", "evento": "encolado"}
+{"ts": "2026-11-07T10:16:15+00:00", "pieza": "I20270110-T135", "evento": "encolado"}
+{"ts": "2026-11-07T10:16:15+00:00", "pieza": "R20270106-T131", "evento": "encolado"}
+{"ts": "2026-11-07T10:16:15+00:00", "pieza": "R20270107-T132", "evento": "encolado"}
+{"ts": "2026-11-07T10:18:43+00:00", "pieza": "R20270106-T131", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.7"}
+{"ts": "2026-11-07T10:18:47+00:00", "pieza": "R20270106-T131", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-07T10:18:47+00:00", "evento": "revision_preparada", "pieza": "R20270106-T131", "version": "93e5b918753c3cbb", "canal": "chat"}
+{"ts": "2026-11-07T10:23:11+00:00", "pieza": "R20270107-T132", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.7"}
+{"ts": "2026-11-07T10:23:14+00:00", "pieza": "R20270107-T132", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-07T10:23:14+00:00", "evento": "revision_preparada", "pieza": "R20270107-T132", "version": "541db683a11fd502", "canal": "chat"}
+{"ts": "2026-11-07T10:24:44+00:00", "pieza": "I20270107-T132", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-11-07T10:24:44+00:00", "evento": "alerta", "mensaje": "I20270107-T132 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-07T10:25:34+00:00", "pieza": "I20270110-T135", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-07T10:25:37+00:00", "pieza": "I20270110-T135", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-07T10:25:37+00:00", "evento": "revision_preparada", "pieza": "I20270110-T135", "version": "9f8c2c2ea7191753", "canal": "chat"}
+{"ts": "2026-11-07T10:25:37+00:00", "pieza": "I20261228-T122", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-07T10:25:37+00:00", "pieza": "I20261231-T125", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-07T10:25:37+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 2, "producidas": 3, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 3}
