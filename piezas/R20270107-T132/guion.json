@@ -55,74 +55,51 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Es obligatorio llevar a tus hijos a la escuela?",
+      "texto": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
       "titulo": [
         "¿ES OBLIGATORIO",
-        "LLEVARLOS A",
+        "MANDARLOS A",
         "LA ESCUELA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, los mexicanos deben asegurar que los menores de dieciocho años a su cargo asistan a clases.",
+      "texto": "Sí. La Constitución lo pone entre las obligaciones de los mexicanos.",
       "titulo": [
-        "ES UNA",
+        "SÍ, ES UNA",
         "OBLIGACIÓN"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La Constitución obliga a: Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria.",
-      "etiqueta": "Constitución, art. 31",
-      "cita": "Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Los mexicanos tienen la obligación constitucional de que sus hijos asistan a la escuela.",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "La responsabilidad también incluye:",
-      "items": [
-        "Revisar su progreso",
-        "Velar por su bienestar",
-        "Participar en el proceso"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "La educación obligatoria es una responsabilidad de los padres para con los menores de dieciocho años.",
+          "texto": "Los mexicanos deben ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas para recibir la educación obligatoria.",
           "fuente": "F2"
         }
       ]
     },
     {
-      "tipo": "titular",
-      "texto": "En resumen, la responsabilidad no termina al enviarlos; requiere un seguimiento continuo de su progreso y bienestar.",
-      "titulo": [
-        "RESPONSABILIDAD",
-        "DE LOS PADRES"
+      "tipo": "cita",
+      "texto": "El artículo 31 dice que deben ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria.",
+      "etiqueta": "Constitución mexicana, artículo 31",
+      "cita": "Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Y no basta con mandarlos: deben participar en su proceso educativo, revisar su progreso y desempeño, y velar por su bienestar y desarrollo.",
+      "items": [
+        "Participar en su educación",
+        "Revisar su progreso",
+        "Velar por su bienestar"
       ],
       "afirmaciones": [
         {
-          "id": "A3",
+          "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Los padres deben involucrarse activamente en la educación de los menores.",
+          "texto": "Los mexicanos deben participar en el proceso educativo de sus hijas, hijos o pupilos, revisar su progreso y desempeño y velar por su bienestar y desarrollo.",
           "fuente": "F3"
-        },
-        {
-          "id": "A4",
-          "tipo": "hecho_normativo",
-          "texto": "La obligación incluye vigilar el bienestar y desarrollo del menor en su entorno escolar.",
-          "fuente": "F4"
         }
       ]
     },
@@ -137,7 +114,7 @@
     "suficiente": true,
     "pregunta": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
     "concepto_central": "obligación de los mexicanos",
-    "respuesta_corta": "Sí, los mexicanos tienen la obligación de que sus hijos o pupilos menores de dieciocho años asistan a las escuelas para recibir la educación obligatoria.",
+    "respuesta_corta": "Sí: los mexicanos deben ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años asistan a la escuela para recibir la educación obligatoria.",
     "reglas": [
       {
         "conclusion": "Los padres o tutores mexicanos son responsables de que los menores a su cargo asistan a la escuela para cursar la educación obligatoria.",
@@ -216,7 +193,7 @@
   "pregunta_original": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Los papás están obligados a mandar a sus hijos a la escuela?\n\nSí, los mexicanos tienen la obligación de que sus hijos o pupilos menores de dieciocho años asistan a las escuelas para recibir la educación obligatoria.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 31.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Los papás están obligados a mandar a sus hijos a la escuela? Sí.\n\nEl artículo 31 de la Constitución dice que es obligación de los mexicanos: «Ser responsables de que sus hijas, hijos o pupilos menores de dieciocho años concurran a las escuelas, para recibir la educación obligatoria».\n\nTambién deben «participar en su proceso educativo, al revisar su progreso y desempeño, velando siempre por su bienestar y desarrollo».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 31.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -257,5 +234,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Lista narrada (antes «La responsabilidad también incluye:» sin narrar los elementos); fuera el titular final que agregaba lo que el art. 31 no dice («seguimiento continuo»); gancho narrado igual que la pantalla; etiqueta de la cita con el nombre completo; texto de publicación con la cita literal"
+    }
+  ]
 }

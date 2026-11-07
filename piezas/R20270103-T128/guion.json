@@ -17,59 +17,66 @@
       "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 45",
       "jurisdiccion": "general",
       "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "45",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "deberán adoptar medidas integrales para la protección de niñas, niños y adolescentes contra las prácticas nocivas de cesión a título oneroso o gratuito con fines de unión formal e informal o consuetudinaria",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 45",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-07"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Cuál es la edad mínima para casarse?",
+      "texto": "¿Cuál es la edad mínima para casarse en México?",
       "titulo": [
-        "EDAD MÍNIMA",
-        "PARA CASARSE"
+        "¿EDAD MÍNIMA",
+        "PARA CASARSE?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Son 18 años, de acuerdo con la obligación de las leyes federales y estatales.",
+      "texto": "18 años. Una ley general obliga a que las leyes federales y las de cada estado fijen esa edad.",
       "titulo": [
-        "EDAD",
-        "OFICIAL"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "Las leyes federales y de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán como edad mínima para contraer matrimonio los 18 años.",
-      "etiqueta": "Ley, artículo 45",
-      "cita": "Las leyes federales y de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán como edad mínima para contraer matrimonio los 18 años.",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Se deben adoptar medidas de protección integrales.",
-      "items": [
-        "Ámbito federal y estatal",
-        "Protección a menores",
-        "Acciones afirmativas"
+        "18 AÑOS"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Se establece la edad mínima de 18 años para contraer matrimonio en las leyes federales y estatales.",
+          "texto": "Las leyes federales y de las entidades federativas establecerán como edad mínima para contraer matrimonio los 18 años.",
           "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "titular",
-      "texto": "Son 18 años, de acuerdo con la obligación de las leyes federales y estatales de establecer esta edad mínima.",
-      "titulo": [
-        "REGLA",
-        "GENERAL"
-      ],
+      "tipo": "cita",
+      "texto": "La Ley General de los Derechos de Niñas, Niños y Adolescentes dice que las leyes federales y de las entidades federativas establecerán como edad mínima para contraer matrimonio los 18 años.",
+      "etiqueta": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 45",
+      "cita": "Las leyes federales y de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán como edad mínima para contraer matrimonio los 18 años.",
       "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Ojo: las autoridades también deben proteger a niñas, niños y adolescentes de ser entregados, con o sin pago, para una unión formal o informal.",
+      "encabezado": "También uniones informales",
+      "detalle": "Protección contra la cesión de menores",
+      "fuente_corta": "Ley General de Derechos de NNA, art. 45",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las autoridades deben adoptar medidas integrales para proteger a niñas, niños y adolescentes contra su cesión, onerosa o gratuita, con fines de unión formal o informal.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -82,7 +89,7 @@
     "suficiente": true,
     "pregunta": "¿Cuál es la edad mínima para casarse en México?",
     "concepto_central": "edad mínima para contraer matrimonio",
-    "respuesta_corta": "18 años, de acuerdo con la obligación de las leyes federales y estatales de establecer esta edad mínima.",
+    "respuesta_corta": "18 años: las leyes federales y de las entidades federativas deben establecer esa edad mínima para contraer matrimonio.",
     "reglas": [
       {
         "conclusion": "Las leyes federales y de las entidades federativas deben fijar los 18 años como la edad mínima para contraer matrimonio.",
@@ -156,7 +163,7 @@
   "pregunta_original": "¿Cuál es la edad mínima para casarse en México?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Cuál es la edad mínima para casarse en México?\n\n18 años, de acuerdo con la obligación de las leyes federales y estatales de establecer esta edad mínima.\n\nFuente: Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 45.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuál es la edad mínima para casarse en México? 18 años.\n\nEl artículo 45 de la Ley General de los Derechos de Niñas, Niños y Adolescentes dice: «Las leyes federales y de las entidades federativas, en el ámbito de sus respectivas competencias, establecerán como edad mínima para contraer matrimonio los 18 años».\n\nAdemás, las autoridades deben proteger a niñas, niños y adolescentes contra su cesión, con o sin pago, «con fines de unión formal e informal o consuetudinaria».\n\nFuente: Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 45.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -192,5 +199,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Etiqueta de la cita sin el nombre de la ley («Ley, artículo 45»); fuera la lista sin narrar («Acciones afirmativas»…) y el titular repetido; «EDAD OFICIAL» cambiado por «18 AÑOS»; agregada la protección contra la cesión de menores para uniones formales e informales (2.º párrafo del art. 45); texto de publicación con la cita literal"
+    }
+  ]
 }

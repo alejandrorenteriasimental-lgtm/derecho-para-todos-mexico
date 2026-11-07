@@ -2,18 +2,18 @@
   "id": "I20270104-T129",
   "formato": "imagen",
   "plantilla": "mito_realidad",
-  "titulo": "¿El Registro Civil puede negarse a registrar a tu bebé?",
+  "titulo": "¿Te pueden negar el registro de tu bebé por ser migrante?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T129",
   "pieza": {
-    "titular": "¿El Registro Civil puede negarse a registrar a tu bebé?",
-    "bajada": "Conoce tus derechos en el Registro Civil según la legislación vigente en México.",
-    "mito": "El Registro Civil puede negarse a registrar a tu bebé si eres migrante sin papeles.",
-    "realidad": "No, el Registro Civil no puede negarse a registrar a tu bebé ni expedir su acta por tu situación migratoria.",
+    "titular": "¿Te pueden negar el registro de tu bebé por ser migrante?",
+    "bajada": "Lo que dice el artículo 9 de la Ley de Migración.",
+    "mito": "Si no tienes papeles, el Registro Civil puede negarse a registrar a tu bebé.",
+    "realidad": "El Registro Civil no puede negar el registro ni el acta de nacimiento por tu situación migratoria.",
     "fuente_visible": "Ley de Migración, art. 9"
   },
-  "copy": "Si eres una persona migrante en México, es fundamental que conozcas las protecciones legales con las que cuentas al momento de realizar trámites familiares esenciales.\n\nDe acuerdo con la Ley de Migración, artículo 9, «los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento».\n\nGuarda esta información y compártela para que más personas conozcan sus derechos y la obligación de las autoridades.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden negar el registro de tu bebé por ser migrante? No.\n\nEl artículo 9 de la Ley de Migración dice: «Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento», entre otras.\n\nFuente: Ley de Migración, artículo 9.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen fija con plantilla mito y realidad que aclara que el Registro Civil no puede negar el registro de nacimiento de un bebé por la situación migratoria de los padres.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -41,7 +41,7 @@
     "suficiente": true,
     "pregunta": "¿El Registro Civil puede negarse a registrar a tu bebé por tu situación migratoria?",
     "concepto_central": "registro de nacimiento de migrantes",
-    "respuesta_corta": "No, el Registro Civil no puede negarse a registrar a tu bebé ni expedir su acta por tu situación migratoria.",
+    "respuesta_corta": "No: el Registro Civil no puede negar el registro de tu bebé ni su acta de nacimiento por tu situación migratoria.",
     "reglas": [
       {
         "conclusion": "Los jueces u oficiales del Registro Civil no pueden negar el registro de nacimiento ni la expedición de su acta a los migrantes, sin importar su situación migratoria.",
@@ -129,5 +129,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Título que generalizaba («¿El Registro Civil puede negarse a registrar a tu bebé?»: sí puede por otras causas) acotado a la situación migratoria, como pedía la pregunta del plan; mito y realidad sin «No,» que contestaba al título; bajada concreta (art. 9); texto de publicación sin relleno"
+    }
+  ]
 }

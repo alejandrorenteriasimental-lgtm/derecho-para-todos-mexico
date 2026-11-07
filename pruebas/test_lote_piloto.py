@@ -472,3 +472,17 @@ def test_mensaje_de_narracion_larga_dice_cuanto_recortar():
                                         {"tipo": "cierre", "texto": "Esto es información general, no asesoría legal."}]}
     msg = [e for e in esquema.validar(g) if e.startswith("narración de ")]
     assert msg and "sobran" in msg[0] and "recorta al menos" in msg[0]
+
+
+def test_nota_de_reforma_cierra_el_parrafo_y_no_trae_condiciones_del_anterior():
+    """7-11-2026: «Párrafo adicionado DOF …» separa párrafos. La oración anterior a la nota es de otro párrafo:
+    CPEUM 1 descartó la imagen de la esclavitud por «en los términos que establezca la ley» (I20270109-T134) y
+    CPEUM 4 bloqueaba el derecho al agua por la condición del párrafo de los animales (R20270105-T130)."""
+    t1 = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_1.json").read_text())["texto"]
+    assert razonamiento.contexto_omitido(t1, "Está prohibida la esclavitud en los Estados Unidos Mexicanos.") == []
+    t4 = json.loads((AQUI.parent / "registro" / "textos" / "CPEUM_4.json").read_text())["texto"]
+    cita = "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico"
+    assert razonamiento.contexto_omitido(t4, cita) == []
+    # dentro del mismo párrafo la condición se sigue exigiendo
+    t = "Las personas tendrán este derecho en los términos que establezca la ley. Toda persona puede pedirlo."
+    assert razonamiento.contexto_omitido(t, "Toda persona puede pedirlo.")

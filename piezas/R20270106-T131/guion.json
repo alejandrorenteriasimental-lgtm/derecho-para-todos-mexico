@@ -17,68 +17,84 @@
       "cita": "Ley Federal del Trabajo, artículo 81",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "81",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los patrones entregarán anualmente a sus trabajadores una constancia que contenga su antigüedad y de acuerdo con ella el período de vacaciones que les corresponda y la fecha en que deberán disfrutarlo.",
+      "cita": "Ley Federal del Trabajo, artículo 81",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-07"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabes en qué plazo deben darte tus vacaciones?",
+      "texto": "¿En cuánto tiempo te deben dar tus vacaciones?",
       "titulo": [
         "¿CUÁNDO TE DAN",
-        "VACACIONES?"
+        "TUS VACACIONES?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Deben concederse dentro de los seis meses siguientes a que cumplas tu año de servicios.",
+      "texto": "Dentro de los seis meses siguientes a que cumplas tu año de servicios.",
       "titulo": [
-        "PLAZO LEGAL"
+        "DENTRO DE",
+        "SEIS MESES"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La Ley Federal del Trabajo señala que: \"Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios\".",
-      "etiqueta": "Ley Federal del Trabajo, art. 81",
-      "cita": "Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Las vacaciones deben otorgarse en un plazo de seis meses tras cumplir el año de servicios.",
-          "fuente": "F1",
-          "comparar_literal": true
+          "texto": "Las vacaciones deben concederse dentro de los seis meses siguientes al cumplimiento del año de servicios.",
+          "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Al respecto, el patrón debe:",
-      "items": [
-        "Entregar constancia anual",
-        "Indicar tu antigüedad",
-        "Señalar fecha de descanso"
-      ],
+      "tipo": "cita",
+      "texto": "La Ley Federal del Trabajo dice: las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 81",
+      "cita": "Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios",
       "afirmaciones": []
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "El patrón tiene la facultad de señalar la fecha específica en la que el trabajador disfrutará su descanso.",
-      "encabezado": "Sobre la fecha de descanso",
-      "detalle": "Se indica en la constancia anual",
-      "fuente_corta": "Ley, art. 81",
-      "afirmaciones": []
+      "tipo": "lista",
+      "texto": "Además, cada año el patrón te debe entregar una constancia con tu antigüedad, el periodo de vacaciones que te toca y la fecha en que lo vas a disfrutar.",
+      "items": [
+        "Tu antigüedad",
+        "Tus días de vacaciones",
+        "La fecha para disfrutarlos"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Los patrones entregarán anualmente a sus trabajadores una constancia con su antigüedad, el período de vacaciones que les corresponda y la fecha en que deberán disfrutarlo.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "Tus vacaciones deben otorgarse en los seis meses posteriores a tu aniversario laboral.",
+      "texto": "Es decir: al cumplir tu año de servicios, tu patrón tiene seis meses para dártelas.",
       "titulo": [
-        "DENTRO DE LOS",
-        "SEIS MESES"
+        "SEIS MESES",
+        "PARA DÁRTELAS"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Las vacaciones deben concederse dentro de los seis meses siguientes al cumplimiento del año de servicios.",
+          "fuente": "F1"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -163,7 +179,7 @@
   "pregunta_original": "¿En cuánto tiempo te deben dar tus vacaciones?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿En cuánto tiempo te deben dar tus vacaciones?\n\nDentro de los seis meses siguientes a que cumplas tu año de servicios.\n\nFuente: Ley Federal del Trabajo, artículo 81.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿En cuánto tiempo te deben dar tus vacaciones? Dentro de los seis meses siguientes a que cumplas tu año de servicios.\n\nEl artículo 81 de la Ley Federal del Trabajo dice: «Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios».\n\nAdemás, cada año el patrón debe entregarte una constancia con tu antigüedad, el periodo de vacaciones que te corresponde y la fecha en que debes disfrutarlo.\n\nFuente: Ley Federal del Trabajo, artículo 81.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -207,5 +223,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Lista narrada y fiel al art. 81 (antes «Al respecto, el patrón debe:» sin narrar; «Indicar tu antigüedad» como obligación aparte); fuera la «excepción» que no lo era («facultad» del patrón para fijar la fecha, que el art. 81 no dice) con fuente «Ley, art. 81»; gancho narrado igual que la pantalla; texto de publicación con la cita literal"
+    }
+  ]
 }

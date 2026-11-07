@@ -86,20 +86,29 @@ def _ubicar(pa, pc):
     return mapa[j], mapa[j + len(cc) - 1] + 1
 
 
+PARRAFO_DOF = r"((?:P[áa]rrafo|Fracci[óo]n|Inciso|Apartado|Art[íi]culo)\s+(?:reformad|adicionad|derogad)[oa]s?\b[^.]{0,40}?\bDOF\b)"
+
+
 def _oraciones_previas(texto_articulo, pa, i):
     """Texto (normalizado) de la oración anterior y del inicio de la actual, sin cruzar a oraciones más lejanas.
     Antes se tomaban 420 caracteres fijos y entraban condiciones de otro párrafo (28-10, CPEUM 16: la prórroga del
     arraigo «siempre y cuando…» se exigía como condición de la retención de 48 horas)."""
-    marc = plano(re.sub(r"[.;](?=\s|$)", " zzfinzz ", texto_articulo or "")).split()
+    # 7-11-2026: la nota de reforma («Párrafo adicionado DOF 10-06-2011») cierra un párrafo; la oración anterior a ella
+    # es de otro párrafo y no condiciona la cita (CPEUM 1: «en los términos que establezca la ley» se exigía como
+    # condición de «Está prohibida la esclavitud»; CPEUM 4: la de los animales, como condición del derecho al agua).
+    t = re.sub(PARRAFO_DOF, r" zzparrzz \1", texto_articulo or "")
+    marc = plano(re.sub(r"[.;](?=\s|$)", " zzfinzz ", t)).split()
     ti = pa[:i].count(" ") if i > 0 else 0          # índice de la palabra donde empieza la cita
     k = n = 0
     for k, w in enumerate(marc):
-        if w == "zzfinzz": continue
+        if w in ("zzfinzz", "zzparrzz"): continue
         if n == ti: break
         n += 1
     fines = [j for j, w in enumerate(marc[:k]) if w == "zzfinzz"]
     desde = fines[-2] + 1 if len(fines) >= 2 else 0
-    return " ".join(w for w in marc[desde:k] if w != "zzfinzz")
+    parr = [j for j, w in enumerate(marc[:k]) if w == "zzparrzz"]
+    if parr: desde = max(desde, parr[-1] + 1)
+    return " ".join(w for w in marc[desde:k] if w not in ("zzfinzz", "zzparrzz"))
 
 
 def _cita_textual(frase, txt):

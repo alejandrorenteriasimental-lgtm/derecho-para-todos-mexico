@@ -15,7 +15,7 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿La esclavitud está prohibida en México?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "I20270109-T134",
@@ -23,5 +23,13 @@
   "intentos": 1,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Constitución Política de los Estados Unidos Mexicanos, art. 1 condiciona la regla («…sancionar y reparar las violaciones a los derechos humanos en los terminos que establezca la ley parrafo adicionado dof 10 06 2011 esta prohibida la…») y la conclusión «La esclavitud está prohibida en el territorio nacional.» no declara condiciones.\", ",
   "ultima_categoria": "juridico",
-  "huella_entrada": "069ae31d869a462b"
+  "huella_entrada": "069ae31d869a462b",
+  "historial": [
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-11-07",
+      "motivo": "reabierta tras corregir la causa del sistema (7-11): la nota de reforma «Párrafo adicionado DOF» no cerraba el párrafo y se exigía «en los términos que establezca la ley» (párrafo anterior del art. 1) como condición de la prohibición de la esclavitud; prueba de regresión"
+    }
+  ]
 }

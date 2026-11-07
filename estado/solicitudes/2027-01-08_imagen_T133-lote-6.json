@@ -15,7 +15,7 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "¿Qué cuenta como parte de tu salario?",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "I20270108-T133",
@@ -23,5 +23,13 @@
   "intentos": 1,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo. \\n El salario se integra ",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "8232efc27dab4532"
+  "huella_entrada": "8232efc27dab4532",
+  "historial": [
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-11-07",
+      "motivo": "reabierta (7-11): primer descarte, del tema (el «OJO» repetía la respuesta); segunda oportunidad antes de sustituir la pregunta"
+    }
+  ]
 }

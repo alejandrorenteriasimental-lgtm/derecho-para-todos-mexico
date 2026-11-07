@@ -8,13 +8,13 @@
   "tema_id": "T132",
   "pieza": {
     "titular": "¿Pagar impuestos es una obligación constitucional?",
-    "bajada": "Sí, los mexicanos deben contribuir al gasto público de forma proporcional y equitativa.",
+    "bajada": "Sí: los mexicanos deben contribuir al gasto público de la manera proporcional y equitativa que dispongan las leyes.",
     "cita": "Contribuir para los gastos públicos, así de la Federación, como de los Estados",
     "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 31",
-    "ojo": "Según dispongan las leyes.",
+    "ojo": "Incluye el gasto de tu estado y de tu municipio.",
     "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 31"
   },
-  "copy": "La Constitución Política de los Estados Unidos Mexicanos, en su artículo 31, establece que es deber de los mexicanos aportar recursos para el gasto público. Esta obligación abarca a la Federación, los Estados, la Ciudad de México y el Municipio donde se resida.\n\nDe acuerdo con el texto oficial, esta contribución debe realizarse de forma proporcional y equitativa. Esto significa que el fundamento para el pago de impuestos existe a nivel constitucional, siempre que estos se encuentren previstos en una ley formal.\n\nEs importante notar que esta responsabilidad recae sobre los «mexicanos». A diferencia de otros deberes exclusivos de la ciudadanía, la obligación de contribuir al gasto público no distingue si se cumplen o no los requisitos adicionales para ser considerado ciudadano.\n\n¿Te resultó útil esta información? Guarda esta publicación para consultarla después o compártela con quien necesite conocer sus obligaciones básicas.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Pagar impuestos es una obligación constitucional? Sí.\n\nEl artículo 31 de la Constitución dice que es obligación de los mexicanos «contribuir para los gastos públicos, así de la Federación, como de los Estados, de la Ciudad de México y del Municipio en que residan, de la manera proporcional y equitativa que dispongan las leyes».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 31.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Infografía sobre la obligación constitucional de los mexicanos de pagar impuestos según el artículo 31 de la Constitución.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -51,16 +51,15 @@
     {
       "id": "A2",
       "tipo": "hecho_normativo",
-      "texto": "La obligación de contribuir debe realizarse bajo los principios de proporcionalidad y equidad que establezca la ley.",
-      "fuente": "F2",
-      "nota": "La ley no define de forma general qué se entiende por proporcionalidad o equidad."
+      "texto": "La contribución al gasto público es de la manera proporcional y equitativa que dispongan las leyes.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
     "suficiente": true,
     "pregunta": "¿Pagar impuestos es una obligación constitucional?",
     "concepto_central": "obligación de los mexicanos de contribuir para los gastos públicos",
-    "respuesta_corta": "Sí, es una obligación de los mexicanos contribuir a los gastos públicos de la Federación, estados y municipios de forma proporcional y equitativa.",
+    "respuesta_corta": "Sí: es obligación de los mexicanos contribuir para los gastos públicos de la Federación, de los estados y del municipio, de la manera proporcional y equitativa que dispongan las leyes.",
     "reglas": [
       {
         "conclusion": "La Constitución establece que los mexicanos tienen el deber de aportar recursos económicos para sufragar el gasto público en todos los niveles de gobierno.",
@@ -245,5 +244,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenida por la nota de A2 («la ley no define proporcionalidad o equidad»): la pieza ya no explica esos conceptos, solo los cita tal cual («de la manera proporcional y equitativa que dispongan las leyes»); «OJO» con una precisión real (estado y municipio) en lugar de «Según dispongan las leyes»; texto de publicación sin interpretaciones no sustentadas en la cita («ley formal», «no distingue ciudadanía») ni relleno"
+    }
+  ]
 }
