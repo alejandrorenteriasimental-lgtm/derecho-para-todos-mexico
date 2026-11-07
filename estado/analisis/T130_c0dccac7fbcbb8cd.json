@@ -1,0 +1,52 @@
+{
+ "tema_id": "T130",
+ "pregunta": "¿Tienes derecho al agua?",
+ "fecha": "2026-11-07T03:55:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes derecho al agua?",
+  "concepto_central": "derecho al agua",
+  "respuesta_corta": "Sí: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+    "condiciones": [
+     "para consumo personal y doméstico",
+     "en forma suficiente, salubre, aceptable y asequible"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica para consumo personal y doméstico bajo las bases, apoyos y modalidades que defina la ley.",
+    "fuente": "F1",
+    "cita_literal": "para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible. El Estado garantizará este derecho y la ley definirá las bases, apoyos y modalidades"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones para este derecho."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no detallan plazos específicos ni procedimientos particulares para exigir este derecho ante autoridades concretas.",
+  "fuentes_irrelevantes": []
+ }
+}

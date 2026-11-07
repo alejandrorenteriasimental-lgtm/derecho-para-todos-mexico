@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-06T20:06:56+00:00",
+      "consultado": "2026-11-07T03:57:42+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -14,6 +14,20 @@
       "huella_articulo": "32bc276b0875c9557c4c13b6d107e6b5f207ec42a093e3946eba19d476adaa8c",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-07T03:58:04+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 17619,
+      "extracto": "queda prohibido el trabajo de menores de quince anos; no podra utilizarse el trabajo de mayores de esta edad y menores de dieciocho anos que no hayan terminado su educacion basica obligatoria, salvo los casos que apruebe la autoridad laboral correspondiente en que a su juicio haya compatibilidad entre los estudios y el trabajo. articulo adicionado dof 30-11-2012. reformado dof 12-06-2015",
+      "huella_articulo": "f8b6625f972cfa767c7ad401938afa775150d868a4258850eec5ec41001ea8f6",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
   },
   "afirmaciones": [
@@ -21,6 +35,22 @@
       "id": "A1",
       "fuentes": [
         "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F2"
       ],
       "dictamen": "VERIFICADA",
       "duda": null

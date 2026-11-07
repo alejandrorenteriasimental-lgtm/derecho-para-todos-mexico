@@ -1,0 +1,245 @@
+{
+  "id": "R20270105-T130",
+  "formato": "reel",
+  "titulo": "¿Tienes derecho al acceso y disposición del agua en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T130",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 4",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabías que la ley protege tu acceso al agua?",
+      "titulo": [
+        "¿TIENES",
+        "DERECHO",
+        "AL AGUA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+      "titulo": [
+        "SÍ TIENES",
+        "DERECHO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución establece que el agua debe ser suficiente, salubre, aceptable y asequible para todos: Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+      "etiqueta": "Constitución, artículo 4",
+      "cita": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Condiciones que establece la ley:",
+      "items": [
+        "Para consumo personal",
+        "Para consumo doméstico",
+        "Uso equitativo y sustentable"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Derecho al acceso, disposición y saneamiento del agua",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "El Estado garantizará este derecho bajo las bases y modalidades que la ley defina.",
+      "titulo": [
+        "GARANTÍA",
+        "DEL ESTADO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho al agua?",
+    "concepto_central": "derecho al agua",
+    "respuesta_corta": "Sí: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+    "reglas": [
+      {
+        "conclusion": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible.",
+        "condiciones": [
+          "para consumo personal y doméstico",
+          "en forma suficiente, salubre, aceptable y asequible"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "4"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica para consumo personal y doméstico bajo las bases, apoyos y modalidades que defina la ley.",
+        "fuente": "F1",
+        "cita_literal": "para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible. El Estado garantizará este derecho y la ley definirá las bases, apoyos y modalidades"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto oficial no prevé excepciones para este derecho."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "Los textos no detallan plazos específicos ni procedimientos particulares para exigir este derecho ante autoridades concretas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T03:56:47+00:00",
+    "solicitud": "2027-01-05_reel_T130-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho al agua?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Tienes derecho al agua?\n\nSí: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 4.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 686 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 66: recorta al menos 126 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Sabías que la ley protege el agua en tu casa? \n ¿TIENES \n DERECHO \n AL AGUA? \n Sí: toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico. \n DERECHO \n HUMANO \n La Constitución señala que toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico: Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible. \n Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico en forma suficiente, salubre, aceptable y asequible. \n Las condiciones que establec"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 686 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 66: recorta al menos 126 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La pieza omite mencionar que la ley definirá la participación de la ciudadanía y de los distintos niveles de gobierno (Federación, entidades federativas y municipios) en la gestión de este derecho, lo cual es parte integral del mandato constitucional."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente este derecho con las condiciones de suficiencia, salubridad, aceptabilidad y asequibilidad."
+            },
+            {
+              "conclusion": "El Estado garantizará este derecho bajo las bases y modalidades que defina la ley.",
+              "sostenida": "si",
+              "motivo": "El artículo 4 establece que 'El Estado garantizará este derecho y la ley definirá las bases, apoyos y modalidades para el acceso y uso equitativo y sustentable'."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Escena de cierre",
+              "problema": "La frase 'Síguenos para entender tus derechos' roza la prohibición de no ofrecer asesoría personalizada o captación de clientes, aunque es un llamado a la acción genérico, debe evitarse cualquier lenguaje que sugiera una relación de asesoría o seguimiento.",
+              "correccion": "Eliminar la invitación a seguir el medio para 'entender tus derechos' y mantener únicamente la advertencia de que es información general."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona tiene derecho al acceso, disposición y saneamiento de agua para consumo personal y doméstico.",
+              "sostenida": "si",
+              "motivo": "El artículo 4 de la Constitución establece explícitamente este derecho bajo las condiciones de suficiencia, salubridad, aceptabilidad y asequibilidad."
+            },
+            {
+              "conclusion": "El Estado garantiza este derecho bajo las bases y modalidades que la ley defina.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional señala que el Estado garantizará el derecho y que la ley definirá las bases, apoyos y modalidades para el acceso y uso equitativo y sustentable."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

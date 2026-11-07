@@ -1,0 +1,167 @@
+{
+  "id": "I20270106-T131",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden pagar tus vacaciones?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T131",
+  "pieza": {
+    "titular": "¿Te pueden pagar tus vacaciones?",
+    "bajada": "Conoce lo que dice la ley sobre cambiar tus días de descanso por dinero en efectivo.",
+    "mito": "Las vacaciones se pueden cambiar por dinero si el patrón quiere.",
+    "realidad": "No, las vacaciones no podrán compensarse con una remuneración, salvo al terminar la relación laboral antes del año.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 79"
+  },
+  "copy": "Existe la creencia de que los días de descanso obligatorio pueden cambiarse por dinero extra en cualquier momento. Sin embargo, esto no está permitido de forma ordinaria.\n\nDe acuerdo con la Ley Federal del Trabajo, artículo 79, \"Las vacaciones no podrán compensarse con una remuneración\". Su propósito es garantizar el descanso efectivo del trabajador.\n\nLa única excepción ocurre cuando el vínculo laboral concluye antes de cumplir el año de servicio. En ese escenario, según la misma fuente, el trabajador tiene derecho a una \"remuneración proporcionada al tiempo de servicios prestados\".\n\nGuarda esta información y compártela para que más personas conozcan sus derechos laborales básicos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que aclara si las vacaciones pueden pagarse en dinero en lugar de disfrutarse, según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las vacaciones no podrán compensarse con una remuneración.",
+      "cita": "Ley Federal del Trabajo, artículo 79",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcionada al tiempo de servicios prestados.",
+      "cita": "Ley Federal del Trabajo, artículo 79",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-07"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las vacaciones no se pueden cambiar por dinero.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Si el empleo termina antes del año, hay pago proporcional.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden pagar tus vacaciones en lugar de dártelas?",
+    "concepto_central": "compensación de vacaciones con remuneración",
+    "respuesta_corta": "No, las vacaciones no podrán compensarse con una remuneración, salvo que la relación de trabajo termine antes de cumplir el año.",
+    "reglas": [
+      {
+        "conclusion": "Las vacaciones no pueden pagarse en dinero en lugar de disfrutarse.",
+        "fuente": "F1",
+        "cita_literal": "Las vacaciones no podrán compensarse con una remuneración.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "79"
+        }
+      },
+      {
+        "conclusion": "Si el empleo termina antes de cumplir el año, procede una remuneración proporcional.",
+        "fuente": "F1",
+        "cita_literal": "Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcionada al tiempo de servicios prestados.",
+        "condiciones": [
+          "que la relación de trabajo termine antes de que se cumpla el año de servicios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "79"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La prohibición de compensar las vacaciones con dinero, excepto al terminar la relación de trabajo antes del año.",
+        "fuente": "F1",
+        "cita_literal": "Las vacaciones no podrán compensarse con una remuneración."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no menciona multas, sanciones ni plazos específicos para entregar la remuneración proporcional."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T03:57:42+00:00",
+    "solicitud": "2027-01-06_imagen_T131-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te pueden pagar tus vacaciones en lugar de dártelas?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las vacaciones no pueden pagarse en dinero en lugar de disfrutarse.",
+              "sostenida": "si",
+              "motivo": "El texto del artículo 79 de la Ley Federal del Trabajo establece explícitamente la prohibición de compensar las vacaciones con remuneración."
+            },
+            {
+              "conclusion": "Si el empleo termina antes de cumplir el año, procede una remuneración proporcional.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 de la Ley Federal del Trabajo contempla expresamente este supuesto como excepción a la regla general."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

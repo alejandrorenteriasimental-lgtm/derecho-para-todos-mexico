@@ -1,0 +1,133 @@
+{
+  "id": "I20270104-T129",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿El Registro Civil puede negarse a registrar a tu bebé?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T129",
+  "pieza": {
+    "titular": "¿El Registro Civil puede negarse a registrar a tu bebé?",
+    "bajada": "Conoce tus derechos en el Registro Civil según la legislación vigente en México.",
+    "mito": "El Registro Civil puede negarse a registrar a tu bebé si eres migrante sin papeles.",
+    "realidad": "No, el Registro Civil no puede negarse a registrar a tu bebé ni expedir su acta por tu situación migratoria.",
+    "fuente_visible": "Ley de Migración, art. 9"
+  },
+  "copy": "Si eres una persona migrante en México, es fundamental que conozcas las protecciones legales con las que cuentas al momento de realizar trámites familiares esenciales.\n\nDe acuerdo con la Ley de Migración, artículo 9, «los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento».\n\nGuarda esta información y compártela para que más personas conozcan sus derechos y la obligación de las autoridades.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija con plantilla mito y realidad que aclara que el Registro Civil no puede negar el registro de nacimiento de un bebé por la situación migratoria de los padres.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Migración",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
+      "texto_literal": "Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento",
+      "cita": "Ley de Migración, artículo 9",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El Registro Civil tiene prohibido negar la autorización y expedición de actas de nacimiento a migrantes sin importar su situación migratoria.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿El Registro Civil puede negarse a registrar a tu bebé por tu situación migratoria?",
+    "concepto_central": "registro de nacimiento de migrantes",
+    "respuesta_corta": "No, el Registro Civil no puede negarse a registrar a tu bebé ni expedir su acta por tu situación migratoria.",
+    "reglas": [
+      {
+        "conclusion": "Los jueces u oficiales del Registro Civil no pueden negar el registro de nacimiento ni la expedición de su acta a los migrantes, sin importar su situación migratoria.",
+        "fuente": "F1",
+        "cita_literal": "Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley de Migración",
+          "articulo": "9"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La autoridad tiene prohibido negar la autorización del acto y la expedición del acta de nacimiento sin importar la situación migratoria.",
+        "fuente": "F1",
+        "cita_literal": "Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no establece las sanciones aplicables a los oficiales del Registro Civil en caso de que incumplan esta disposición."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T03:57:09+00:00",
+    "solicitud": "2027-01-04_imagen_T129-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿El Registro Civil puede negarse a registrar a tu bebé por tu situación migratoria?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los jueces u oficiales del Registro Civil no pueden negar el registro de nacimiento ni la expedición de su acta a los migrantes, sin importar su situación migratoria.",
+              "sostenida": "si",
+              "motivo": "El artículo 9 de la Ley de Migración establece explícitamente la prohibición de negar la autorización de actos del estado civil y la expedición de actas de nacimiento a migrantes, independientemente de su situación migratoria."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
