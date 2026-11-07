@@ -241,3 +241,12 @@ def test_el_pedido_no_invita_a_inventar_distinciones_ajenas_al_texto():
     # renuncia vs. mutuo consentimiento, conceptos que el art. 33 no trae; el campo debe poder quedar vacío
     for p in (redactor.PEDIR_REEL, redactor.PEDIR_IMAGEN):
         assert "si no hay, []" in p
+
+
+def test_fuentes_sugeridas_respeta_siglas_con_minusculas():
+    """7-11-2026: «LMigra art. 9» no se reconocía (se buscaba «LMIGRA» en ORDEN) y la solicitud quedaba sin fuente sugerida."""
+    class Biblio:
+        def articulo(self, sigla, num): return f"texto de {sigla} {num}"
+    f = redactor.fuentes_sugeridas({"fuentes_sugeridas": "LMigra art. 9; LGDNNA art. 45; cpeum art. 17"}, Biblio())
+    assert [(x["sigla"], x["articulo"]) for x in f.values()] == [("LMigra", "9"), ("LGDNNA", "45"), ("CPEUM", "17")]
+    assert f["F1"]["documento"] == "Ley de Migración"

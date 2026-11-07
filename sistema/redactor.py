@@ -546,8 +546,10 @@ def fuentes_sugeridas(sol, biblio, maximo=6):
     fuentes = {}
     for grupo in re.split(r"[;\n]", sol.get("fuentes_sugeridas") or ""):
         m = re.match(r"\s*([A-Za-zÁÉÍÓÚ]{2,10})\b\.?\s*(?:arts?\.?|artículos?)?\s*(.*)", grupo.strip())
-        if not m or m.group(1).upper() not in ORDEN: continue
-        sigla = m.group(1).upper()
+        # 7-11-2026: las siglas con minúsculas («LMigra», «LAmp», «LAgra») nunca coincidían porque se comparaba
+        # m.group(1).upper() con las claves originales de ORDEN; la fuente sugerida se perdía en silencio.
+        sigla = {k.upper(): k for k in ORDEN}.get(m.group(1).upper()) if m else None
+        if not sigla: continue
         for num in re.findall(r"\d{1,4}(?:o|°|º)?(?: (?:Bis|Ter|Quater))?(?:-[A-Z])?", m.group(2)):
             if len(fuentes) >= maximo: break
             try:

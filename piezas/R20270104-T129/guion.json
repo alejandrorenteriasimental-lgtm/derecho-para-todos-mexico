@@ -13,8 +13,19 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "22",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores",
+      "texto_literal": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política.",
       "cita": "Ley Federal del Trabajo, artículo 22",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-06"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "22 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "no podrá utilizarse el trabajo de mayores de esta edad y menores de dieciocho años que no hayan terminado su educación básica obligatoria, salvo los casos que apruebe la autoridad laboral correspondiente en que a su juicio haya compatibilidad entre los estudios y el trabajo.",
+      "cita": "Ley Federal del Trabajo, artículo 22 Bis",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-06"
     }
@@ -22,37 +33,20 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Trabajar a los 15 años requiere autorización?",
+      "texto": "¿Necesitas permiso de tus papás para trabajar a los 15 años?",
       "titulo": [
-        "¿NECESITAS",
-        "PERMISO?",
+        "¿NECESITAS PERMISO",
+        "PARA TRABAJAR",
         "A LOS 15?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, los mayores de 15 y menores de 16 años requieren autorización de sus padres o tutores.",
+      "texto": "Sí. Si tienes 15 años, necesitas autorización de tus padres o tutores.",
       "titulo": [
         "SÍ, CON",
         "AUTORIZACIÓN"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley señala que los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores.",
-      "etiqueta": "Ley Federal del Trabajo, artículo 22",
-      "cita": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Aspectos laborales:",
-      "items": [
-        "Edad: 15 a 16 años",
-        "Requieren padres o tutores",
-        "Salario directo al menor"
       ],
       "afirmaciones": [
         {
@@ -64,22 +58,43 @@
       ]
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "A falta de padres o tutores, la autorización la otorga el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
-      "encabezado": "A falta de padres o tutores",
-      "detalle": "Autoriza sindicato o tribunal",
-      "fuente_corta": "Ley Federal del Trabajo, art. 22",
+      "tipo": "cita",
+      "texto": "La ley señala que los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 22",
+      "cita": "Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores",
       "afirmaciones": []
     },
     {
-      "tipo": "titular",
-      "texto": "Los menores trabajadores deben percibir el pago de sus salarios directamente.",
-      "titulo": [
-        "PAGO DE",
-        "SALARIOS"
-      ],
-      "afirmaciones": []
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "A falta de padres o tutores, la autorización la otorga el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+      "encabezado": "Sin padres o tutores",
+      "detalle": "Autoriza sindicato o tribunal",
+      "fuente_corta": "Ley Federal del Trabajo, art. 22",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "A falta de padres o tutores, la autorización la da el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 2,
+      "texto": "Ojo: si no has terminado la educación básica obligatoria, no puedes trabajar, salvo que la autoridad laboral lo apruebe por ser compatible con tus estudios.",
+      "encabezado": "Sin educación básica",
+      "detalle": "Salvo aprobación de autoridad laboral",
+      "fuente_corta": "Ley Federal del Trabajo, art. 22 Bis",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Los mayores de quince y menores de dieciocho años que no hayan terminado su educación básica obligatoria no pueden trabajar, salvo que la autoridad laboral apruebe que es compatible con sus estudios.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -108,6 +123,21 @@
           "documento": "Ley Federal del Trabajo",
           "articulo": "22"
         }
+      },
+      {
+        "conclusion": "Quien es mayor de quince y menor de dieciocho años y no ha terminado la educación básica obligatoria no puede trabajar, salvo aprobación de la autoridad laboral por compatibilidad entre estudios y trabajo.",
+        "fuente": "F2",
+        "cita_literal": "no podrá utilizarse el trabajo de mayores de esta edad y menores de dieciocho años que no hayan terminado su educación básica obligatoria, salvo los casos que apruebe la autoridad laboral correspondiente en que a su juicio haya compatibilidad entre los estudios y el trabajo.",
+        "condiciones": [
+          "No haber terminado la educación básica obligatoria"
+        ],
+        "excepciones": [
+          "Casos que apruebe la autoridad laboral por compatibilidad entre los estudios y el trabajo"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "22 Bis"
+        }
       }
     ],
     "elementos": [
@@ -133,13 +163,7 @@
         "cita_literal": "y a falta de ellos, del sindicato a que pertenezcan, del Tribunal, del Inspector del Trabajo o de la Autoridad Política."
       }
     ],
-    "interpretaciones": [
-      {
-        "afirmacion": "El salario debe ser entregado directamente al menor trabajador y este puede promover las acciones legales que le correspondan.",
-        "condicion": "En el caso de los menores que presten servicios laborales.",
-        "base": "Los menores trabajadores deben percibir el pago de sus salarios y ejercitar, en su caso, las acciones que les correspondan."
-      }
-    ],
+    "interpretaciones": [],
     "distinciones": [],
     "limites": "El texto oficial disponible no señala los requisitos formales de la autorización ni las actividades prohibidas para menores."
   },
@@ -173,7 +197,7 @@
   "pregunta_original": "¿Necesitas permiso de tus papás para trabajar a los quince años?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Necesitas permiso de tus papás para trabajar a los quince años?\n\nSí, las personas mayores de quince y menores de dieciséis años requieren la autorización de sus padres o tutores para prestar sus servicios.\n\nFuente: Ley Federal del Trabajo, artículo 22.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Necesitas permiso de tus papás para trabajar a los 15 años?\n\nSí. La Ley Federal del Trabajo dice: «Los mayores de quince y menores de dieciséis necesitan autorización de sus padres o tutores». A falta de ellos, la da el sindicato, el Tribunal, el Inspector del Trabajo o la Autoridad Política.\n\nOjo: si eres menor de dieciocho años y no has terminado la educación básica obligatoria, no puedes trabajar, salvo los casos que apruebe la autoridad laboral por ser compatible con tus estudios.\n\nFuente: Ley Federal del Trabajo, artículos 22 y 22 Bis.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -238,5 +262,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-07",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho con la pregunta completa y signos de apertura («¿NECESITAS PERMISO / PARA TRABAJAR / A LOS 15?»; antes «A LOS 15?» sin «¿»); quitada la lista «Aspectos laborales» (1.9 s en pantalla sin narrar sus puntos; «15 a 16 años» impreciso; «salario directo» no está en el art. 22); agregada la condición del art. 22 Bis LFT (sin educación básica obligatoria no se puede trabajar, salvo aprobación de la autoridad laboral), que la pieza omitía; quitada la escena del salario para que la narración quepa en 45 s; F1 con el párrafo completo de la autorización; texto de publicación con la condición del art. 22 Bis"
+    }
+  ]
 }
