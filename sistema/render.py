@@ -32,6 +32,18 @@ def a(c, al):
     return (*c, int(max(0, min(1, al)) * 255))
 
 
+DETALLE_MAX = 940   # ancho máximo de la cápsula de detalle (con márgenes laterales de 70 px)
+
+
+def font_detalle(texto, tam=54, minimo=36):
+    """Fuente de la cápsula de detalle reducida hasta caber en pantalla (R20270103-T128, 7-11: con 38 caracteres
+    a 54 px la cápsula medía más de 1080 px y quedaba cortada en los bordes)."""
+    f = font("bold", tam)
+    while tam > minimo and f.getlength(texto) + 70 > DETALLE_MAX:
+        tam -= 2; f = font("bold", tam)
+    return f
+
+
 def wrap(texto, f, ancho):
     lineas, actual = [], ""
     for w in texto.split():
@@ -214,9 +226,9 @@ def escena(d, esc, p, tl, fuentes):
             e2 = ease((tl - 0.2) / 0.5)
             d.text(((W - fe.getlength(ln)) / 2, y + (1 - e2) * 40), ln, font=fe, fill=a(C["txt"], e2)); y += 92
         e3 = ease((p - 0.45) / 0.15)
-        fd = font("bold", 54); w = fd.getlength(esc["detalle"]) + 70
+        fd = font_detalle(esc["detalle"]); w = fd.getlength(esc["detalle"]) + 70
         d.rounded_rectangle([(W - w) / 2, y + 40, (W + w) / 2, y + 150], 55, fill=a(C["red"], 0.25 * e3), outline=a(C["red"], e3), width=4)
-        d.text(((W - w) / 2 + 35, y + 64), esc["detalle"], font=fd, fill=a(C["txt"], e3))
+        d.text(((W - w) / 2 + 35, y + 64 + (54 - fd.size) / 2), esc["detalle"], font=fd, fill=a(C["txt"], e3))
     elif tipo == "cierre":
         e = ease(tl / 0.6)
         fw = font("black", 112); y = 520

@@ -7332,7 +7332,7 @@
       "id": "R20270103-T128",
       "formato": "reel",
       "huella": "d8aaa9b79bea322f609ad0de39c081c8100ffaf11603bbfd59c572058c55f7ed",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T03:57:42+00:00",
@@ -7366,6 +7366,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-07T16:06:08+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-07T19:45:46+00:00",
+          "motivo": "revisión editorial delegada (Claude, 07-11, 3.ª ronda): contenido correcto, pero la cápsula «Protección contra la cesión de menores» se salía de los bordes del cuadro; causa del sistema (render.font_detalle, con prueba); se vuelve a producir sin cambiar el guion"
         }
       ],
       "error": null,
