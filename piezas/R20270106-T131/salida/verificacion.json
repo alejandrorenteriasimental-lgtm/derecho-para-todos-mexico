@@ -4,7 +4,21 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-07T10:16:15+00:00",
+      "consultado": "2026-11-07T16:08:32+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 67787,
+      "extracto": "- las vacaciones deberan concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del ano de servicio s. los patrones entregaran anualmente a sus trabajadores una constancia que contenga su antiguedad y de acuerdo con ella el periodo de vacaciones que les corresponda y la fecha en que deberan disfrutarlo. capitulo v salario",
+      "huella_articulo": "2f5ed5f1f21dfe65a60b735458c36a9a4019957d3f4e9b66d74f37ed3035b8ad",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-07T16:08:55+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -19,6 +33,22 @@
   "afirmaciones": [
     {
       "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
       "fuentes": [
         "F1"
       ],

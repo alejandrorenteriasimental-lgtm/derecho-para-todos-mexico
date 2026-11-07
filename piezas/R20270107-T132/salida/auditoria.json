@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.7 s"
+      "detalle": "37.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.7 s"
+      "detalle": "37.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "c9bb62dd41c3383c"
+      "detalle": "6b5e02d2d401b0cb"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270107-T132",
     "titulo": "¿Los papás están obligados a mandar a sus hijos a la escuela?",
-    "fecha": "2026-11-07T10:23:11+00:00",
-    "sha256": "c9bb62dd41c3383cf5c18787d29ddc1e81727847554cff40c35d4ac1e4f9356d",
-    "duracion_s": 38.7,
+    "fecha": "2026-11-07T16:14:30+00:00",
+    "sha256": "6b5e02d2d401b0cb1df53f715d03e054f3ae77102e90db745047e5dd29fdb754",
+    "duracion_s": 37.3,
     "estado": "APTO",
-    "huella_guion": "53f74ad0537d834de817151591dc2ba33ca406b158f8b21c15312d152bf8d85d",
+    "huella_guion": "b0272d15a36b8037ba0ed401534c72dee47ad4731d4aaf4d8a86d637b6f6a9c1",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 22.9,
-      "musica": 1.9,
-      "render_video": 46.6,
-      "mezcla_audio": 2.0,
-      "auditoria_tecnica": 10.9
+      "narracion": 17.3,
+      "musica": 1.6,
+      "render_video": 36.0,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 7.5
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.41,
-      "computo_equivalente_runner_usd": 0.0084,
+      "computo_minutos": 1.06,
+      "computo_equivalente_runner_usd": 0.0064,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1158,
-    "caracteres_narrados": 545
+    "frames": 1117,
+    "caracteres_narrados": 523
   }
 }

@@ -1,0 +1,262 @@
+{
+  "id": "R20270109-T134",
+  "formato": "reel",
+  "titulo": "¿Te pueden quitar tu casa sin un juicio?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T134",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "14",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-07"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden quitar tu casa sin un juicio previo?",
+      "titulo": [
+        "¿TE PUEDEN",
+        "QUITAR TU CASA",
+        "SIN UN JUICIO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. La Constitución prohíbe privarte de tus propiedades sin un juicio previo ante tribunales.",
+      "titulo": [
+        "PROTECCIÓN",
+        "CONSTITUCIONAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 14 manda: «Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos».",
+      "etiqueta": "Constitución, art. 14",
+      "cita": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Nadie puede ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "El procedimiento debe cumplir con estas condiciones esenciales:",
+      "items": [
+        "Tribunal previo",
+        "Formalidades esenciales",
+        "Leyes anteriores"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La norma constitucional exige un juicio antes de privar a alguien de sus propiedades o posesiones.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Por ello, un juicio previo es indispensable ante cualquier intento de privación.",
+      "titulo": [
+        "JUICIO PREVIO",
+        "OBLIGATORIO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Se requiere de un juicio previo ante tribunales previamente establecidos para la privación de una propiedad o posesión.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden quitar tu casa sin un juicio?",
+    "concepto_central": "privación de propiedades o posesiones",
+    "respuesta_corta": "No. La Constitución establece que nadie podrá ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.",
+    "reglas": [
+      {
+        "conclusion": "Nadie puede ser privado de sus propiedades, posesiones o derechos sino a través de un juicio seguido ante tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las leyes aplicables.",
+        "fuente": "F1",
+        "cita_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+        "condiciones": [
+          "El juicio debe seguirse ante tribunales previamente establecidos.",
+          "Se deben cumplir las formalidades esenciales del procedimiento.",
+          "Debe realizarse conforme a las Leyes expedidas con anterioridad al hecho."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "14"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma prohíbe privar a una persona de sus propiedades, posesiones o derechos si no es mediante un juicio.",
+        "fuente": "F1",
+        "cita_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El juicio debe realizarse ante tribunales previamente establecidos, cumpliendo las formalidades esenciales del procedimiento y conforme a leyes expedidas antes del hecho.",
+        "fuente": "F1",
+        "cita_literal": "en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "No aplica, el texto no prevé excepciones a la regla de privación mediante juicio.",
+        "fuente": "F1",
+        "cita_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+        "motivo": "El artículo 14 de la Constitución no contempla ninguna excepción que permita la privación de propiedades sin un juicio previo."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La protección constitucional frente a la privación de propiedades o posesiones sin juicio aplica al inmueble destinado a vivienda (casa).",
+        "condicion": "Siempre que la casa constituya una propiedad o posesión legítima del gobernado.",
+        "base": "El artículo 14 protege genéricamente las propiedades, posesiones o derechos de las personas."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto del artículo 14 constitucional no aborda procedimientos específicos de desalojo, medidas cautelares ni trámites administrativos particulares."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T16:00:33+00:00",
+    "solicitud": "2027-01-09_reel_T134-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Te pueden quitar tu casa sin un juicio?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden quitar tu casa sin un juicio?\n\nNo. La Constitución establece que nadie podrá ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 14.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 647 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 27: recorta al menos 87 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te pueden quitar tu casa sin un juicio previo? \n ¿TE PUEDEN \n QUITAR TU CASA \n SIN UN JUICIO? \n No. La Constitución establece que nadie podrá ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos. \n PROTECCIÓN \n CONSTITUCIONAL \n El artículo 14 manda: «Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos». \n Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos \n El procedimiento debe cumplir con estas condiciones esenciales: \n "
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 647 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 27: recorta al menos 87 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser privado de sus propiedades, posesiones o derechos sino a través de un juicio seguido ante tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las leyes aplicables.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una síntesis exacta de la regla de privación contenida en el artículo 14 constitucional, respetando los requisitos de tribunales establecidos, formalidades esenciales y leyes anteriores."
+            },
+            {
+              "conclusion": "La norma constitucional exige un juicio antes de privar a alguien de sus propiedades o posesiones.",
+              "sostenida": "si",
+              "motivo": "Se deriva directamente de la prohibición de privar de propiedades 'sino mediante juicio'."
+            },
+            {
+              "conclusion": "Se requiere de un juicio previo ante tribunales previamente establecidos para la privación de una propiedad o posesión.",
+              "sostenida": "si",
+              "motivo": "La conclusión reproduce fielmente la condición de procedencia de la privación de derechos y propiedades según el texto oficial."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

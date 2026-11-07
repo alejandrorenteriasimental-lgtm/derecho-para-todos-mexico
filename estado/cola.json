@@ -6613,7 +6613,7 @@
       "id": "R20261230-T124",
       "formato": "reel",
       "huella": "6987b9a678e2026a60b2bb165f61722d7269dd74d6f97262048355e8721bfced",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-06T04:27:56+00:00",
@@ -6653,6 +6653,12 @@
           "a": "APROBADO",
           "ts": "2026-11-06T16:08:38+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-06T11:45:50+00:00 versión 4b54dd09ae7c3fcf (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-07T16:17:59+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -6684,7 +6690,7 @@
       "id": "R20261231-T125",
       "formato": "reel",
       "huella": "2f8492b380076cc52315215e718fb226be4fd1a27a30eaee087e15e878c0c927",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-06T04:27:56+00:00",
@@ -6724,6 +6730,12 @@
           "a": "APROBADO",
           "ts": "2026-11-06T16:08:38+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-06T11:45:50+00:00 versión c69ed7cc98aa0e1b (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-07T16:17:59+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -7021,7 +7033,7 @@
       "id": "I20270105-T130",
       "formato": "imagen",
       "huella": "7781f6cd2c7c33691fced6e11217ba4aad19f8635638baf55df6126017aae98e",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-06T20:02:07+00:00",
@@ -7055,6 +7067,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-07T04:05:33+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-07T16:04:34+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T11:48:07+00:00 versión 1e18ea5d7d9f8e25 (delegada)"
         }
       ],
       "error": null,
@@ -7067,6 +7085,19 @@
         "huella_archivo": "3214b17c4f8cd38392a324da90140f59c787a25c26b176fa6199d9e15bd69b4d",
         "preparada": "2026-11-07T04:05:33+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "I20270105-T130",
+        "decision": "APROBADA",
+        "version": "1e18ea5d7d9f8e25",
+        "huella_guion": "dc764618945c8f2610fb442f149eeca8bcf498caab70f1da03ef4f3409b5dd09",
+        "huella_archivo": "3214b17c4f8cd38392a324da90140f59c787a25c26b176fa6199d9e15bd69b4d",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-07T11:48:07+00:00",
+        "canal": "delegada",
+        "nota": ""
       }
     },
     "R20270101-T126": {
@@ -7126,7 +7157,7 @@
       "id": "R20270104-T129",
       "formato": "reel",
       "huella": "b7ab79099ac69bc4d128dbd10d3a93dee2d9cffc9cdfa0ef7507d33bb68fc980",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-06T20:02:07+00:00",
@@ -7160,6 +7191,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-07T04:00:39+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-07T16:04:34+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T11:48:07+00:00 versión 39de3fddff758c73 (delegada)"
         }
       ],
       "error": null,
@@ -7172,13 +7209,26 @@
         "huella_archivo": "e2a6d784c7275a1668b85f993a41f35aba1a7fc58c175b38dd330b76d383a6af",
         "preparada": "2026-11-07T04:00:39+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20270104-T129",
+        "decision": "APROBADA",
+        "version": "39de3fddff758c73",
+        "huella_guion": "61694c53b3031ede071d86364e63af03a0ef0cfec951d33546289377976e9468",
+        "huella_archivo": "e2a6d784c7275a1668b85f993a41f35aba1a7fc58c175b38dd330b76d383a6af",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-07T11:48:07+00:00",
+        "canal": "delegada",
+        "nota": ""
       }
     },
     "I20270104-T129": {
       "id": "I20270104-T129",
       "formato": "imagen",
       "huella": "1170604bc549aeeda02fda41a32a7f0f18cb41885453c198a05cc8ce89f193e5",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T03:57:42+00:00",
@@ -7200,6 +7250,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Título que generalizaba («¿El Registro Civil puede negarse a registrar a tu bebé?»: sí puede por otras causas) acotado a la situación migratoria, como pedía la pregunta del plan; mito y realidad sin «No,» que contestaba al título; bajada concreta (art. 9); texto de publicación sin relleno; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:14:42+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:14:45+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7207,10 +7269,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "e7e603f77dbf2d8a",
-        "huella_guion": "a4f6f5569f8322188f7a0fe27252b84328e1e66bf0406cbb87766e5e9e35b286",
-        "huella_archivo": "f1399394235ed98aa737f32d12e88fd5dae80f983b55d52c14b54eca66dff82f",
-        "preparada": "2026-11-07T04:05:45+00:00",
+        "version": "be0d2baa5feb2c74",
+        "huella_guion": "47043e42f79982e98d44114fd1d63b56c83fee2633b18c3db4f7e9f4e478bfc8",
+        "huella_archivo": "21809f643ded8e6a96203a3c5078e582646d27a6fb904c75a307300cf469396b",
+        "preparada": "2026-11-07T16:14:45+00:00",
         "canal": "chat"
       }
     },
@@ -7218,7 +7280,7 @@
       "id": "I20270106-T131",
       "formato": "imagen",
       "huella": "1955e4a206b92d84c32b45f879eb63f7dcf49600cd84d00447d1e20cd20d9058",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T03:57:42+00:00",
@@ -7240,6 +7302,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Título ambiguo («¿Te pueden pagar tus vacaciones?»: las vacaciones sí se pagan) acotado a la pregunta del plan («en lugar de dártelas»); realidad sin «salvo…» que hacía del pago proporcional la única excepción; texto de publicación sin el error «días de descanso obligatorio» (art. 74, otro concepto), sin «la única excepción» y sin relleno; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:16:06+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:16:09+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7247,10 +7321,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "9c82552e14cd8434",
-        "huella_guion": "42bd7aa045d6a58e933d5bdd49125aca82223114f324d626bde8937a2fb02b6f",
-        "huella_archivo": "6ba274c1a12f5aa038930c95072884cda863328472ed7a1deb8916383d3efcab",
-        "preparada": "2026-11-07T04:07:18+00:00",
+        "version": "53af44ad1dfce563",
+        "huella_guion": "91c55c446f6c299ff62838f8022c9a88941dcb26120d5ed50bc62ead02680435",
+        "huella_archivo": "400c65490515bb51db28c2e59e34ac3a6366e1fbf5f5ac8df7553cac1dea239a",
+        "preparada": "2026-11-07T16:16:09+00:00",
         "canal": "chat"
       }
     },
@@ -7258,7 +7332,7 @@
       "id": "R20270103-T128",
       "formato": "reel",
       "huella": "d8aaa9b79bea322f609ad0de39c081c8100ffaf11603bbfd59c572058c55f7ed",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T03:57:42+00:00",
@@ -7280,6 +7354,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Etiqueta de la cita sin el nombre de la ley («Ley, artículo 45»); fuera la lista sin narrar («Acciones afirmativas»…) y el titular repetido; «EDAD OFICIAL» cambiado por «18 AÑOS»; agregada la protección contra la cesión de menores para uniones formales e informales (2.º párrafo del art. 45); texto de publicación con la cita literal; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:06:05+00:00",
+          "motivo": "39.7"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:06:08+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7287,10 +7373,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "f00bf68a5e006d60",
-        "huella_guion": "d7c1ddf72581cbe611eed5ac0925a0c83d85c0c855d80808d0e68acd69554fd4",
-        "huella_archivo": "6f1b10d5b9076baa808ae194b257c94c1f51bc81e3d4aff3b1d857aee2df4f12",
-        "preparada": "2026-11-07T04:02:10+00:00",
+        "version": "315d1a5dafdd2e3b",
+        "huella_guion": "c16f56a1b8b27c293167a1f2f01e7042aa65838cfb10b1d22bf187a7871fc3ed",
+        "huella_archivo": "232f91d7c497b98b2beb54cf1f76aeb85825bd6d2f223f38b379247db6404af9",
+        "preparada": "2026-11-07T16:06:08+00:00",
         "canal": "chat"
       }
     },
@@ -7298,7 +7384,7 @@
       "id": "R20270105-T130",
       "formato": "reel",
       "huella": "c7d2d464cd43b4fc2b055d7ce4ab2f0708623f7f6387122cf740de4be8e89e76",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T03:57:42+00:00",
@@ -7320,6 +7406,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Gancho narrado igual que el texto en pantalla («¿Tienes derecho al agua?»); lista narrada con las cuatro condiciones literales (antes «Condiciones que establece la ley:» sin narrar los elementos); titular final con su fuente (2.ª oración del párrafo); título sin «acceso y disposición… en México»; texto de publicación con la cita literal; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:08:29+00:00",
+          "motivo": "41.1"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:08:32+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7327,10 +7425,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "31dbf4f6bf31e815",
-        "huella_guion": "98d0b09e96fbee01ba86c4b2beedb5d7d24d4a6dafde690027d3f5bb9bec4476",
-        "huella_archivo": "d3e4fe7e460894fc4b05c54d066abd8bce1f296093462f638871d321d4a51f62",
-        "preparada": "2026-11-07T04:04:16+00:00",
+        "version": "96aab119b15f5a24",
+        "huella_guion": "79d63e7904d9fdcdfb8a3f96aebe1f80a1ed1a45b8eeb608c0af1dae32e6c21c",
+        "huella_archivo": "d201609ef19d77f3e6c4bb698acd540ff514b34187519a044b120a8e09f78fb5",
+        "preparada": "2026-11-07T16:08:32+00:00",
         "canal": "chat"
       }
     },
@@ -7338,7 +7436,7 @@
       "id": "I20270107-T132",
       "formato": "imagen",
       "huella": "278fcb0a8e7bbccaf20bf2040178c4fb9ee8fa3c2b82d9f3522d5fe309c88880",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T10:16:15+00:00",
@@ -7354,6 +7452,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:50:37+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Retenida por la nota de A2 («la ley no define proporcionalidad o equidad»): la pieza ya no explica esos conceptos, solo los cita tal cual («de la manera proporcional y equitativa que dispongan las leyes»); «OJO» con una precisión real (estado y municipio) en lugar de «Según dispongan las leyes»; texto de publicación sin interpretaciones no sustentadas en la cita («ley formal», «no distingue ciudadanía») ni relleno; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:17:17+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:17:20+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7363,13 +7473,20 @@
         "tipo": "sustantivo",
         "desde": "2026-11-07T10:24:44+00:00",
         "verificador": "0.5.7"
+      },
+      "revision": {
+        "version": "a1a939bf3ecd511f",
+        "huella_guion": "5792264cd576c2437724c58dc1020e619f17ed747944d806240b079c99df1e30",
+        "huella_archivo": "a68f6d45972e20b39d486ba1771d8e344d169cfe03af260c53c7e50f261fff3d",
+        "preparada": "2026-11-07T16:17:20+00:00",
+        "canal": "chat"
       }
     },
     "I20270110-T135": {
       "id": "I20270110-T135",
       "formato": "imagen",
       "huella": "57d6345210c4a60c0621a59f1be256f4cf354fd3449ca890068b52805b68b9a3",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T10:16:15+00:00",
@@ -7391,6 +7508,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Texto de publicación sin relleno («establece reglas claras…», «Guarda o comparte…») y sin el párrafo de la prisión preventiva, que no responde la pregunta; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:17:57+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:17:59+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7398,10 +7527,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "9f8c2c2ea7191753",
-        "huella_guion": "6a100a95723af0dd863d5c33ee5b71f9a548b2733e84f619bc3f29ef082f2fec",
+        "version": "739cc615126496f8",
+        "huella_guion": "b867b1a99db5bd62e59f24552a270288afe80a5a00ab289c6a414eaed2cf386f",
         "huella_archivo": "936d33479d1d2a9e0dcdce6640cbc56660fc0fa9d2a2ddc30945fd4213122de5",
-        "preparada": "2026-11-07T10:25:37+00:00",
+        "preparada": "2026-11-07T16:17:59+00:00",
         "canal": "chat"
       }
     },
@@ -7409,7 +7538,7 @@
       "id": "R20270106-T131",
       "formato": "reel",
       "huella": "5a8ab8d1b3ab33972796233527514382e9bc1cf0dca3f9f0b0a38864a13f6a46",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T10:16:15+00:00",
@@ -7431,6 +7560,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Lista narrada y fiel al art. 81 (antes «Al respecto, el patrón debe:» sin narrar; «Indicar tu antigüedad» como obligación aparte); fuera la «excepción» que no lo era («facultad» del patrón para fijar la fecha, que el art. 81 no dice) con fuente «Ley, art. 81»; gancho narrado igual que la pantalla; texto de publicación con la cita literal; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:11:09+00:00",
+          "motivo": "41.1"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:11:11+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7438,10 +7579,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "93e5b918753c3cbb",
-        "huella_guion": "7e21d235d2ec1cac2d20070f0ce46c4036838951c80e35b36fd373a83c3b5af1",
-        "huella_archivo": "40bb9374dbba769e4ef01d476bc568c3137100ec46caa956c8e093083d41ee4c",
-        "preparada": "2026-11-07T10:18:47+00:00",
+        "version": "ef19b1d415739365",
+        "huella_guion": "388ca0119dfbbb564e188c6255d1087043fef23ce5008ef5ae9368e3efcbe624",
+        "huella_archivo": "b3e5bea2a78623dd16fff2ca860650c05eca7c60a2e2670ba191c33a32755b57",
+        "preparada": "2026-11-07T16:11:11+00:00",
         "canal": "chat"
       }
     },
@@ -7449,7 +7590,7 @@
       "id": "R20270107-T132",
       "formato": "reel",
       "huella": "53f74ad0537d834de817151591dc2ba33ca406b158f8b21c15312d152bf8d85d",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-07T10:16:15+00:00",
@@ -7471,6 +7612,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-07T11:48:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 07-11): Lista narrada (antes «La responsabilidad también incluye:» sin narrar los elementos); fuera el titular final que agregaba lo que el art. 31 no dice («seguimiento continuo»); gancho narrado igual que la pantalla; etiqueta de la cita con el nombre completo; texto de publicación con la cita literal; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-07T16:14:30+00:00",
+          "motivo": "37.3"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-07T16:14:33+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -7478,12 +7631,54 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "541db683a11fd502",
-        "huella_guion": "1485ee2b6903af86d6e2c7ded596fb1698e276b53e52ef28f3345d3af8b99943",
-        "huella_archivo": "c9bb62dd41c3383cf5c18787d29ddc1e81727847554cff40c35d4ac1e4f9356d",
-        "preparada": "2026-11-07T10:23:14+00:00",
+        "version": "0277032c73149cff",
+        "huella_guion": "f337ad535016f00ac672da6c4b566b751b791443dff47de5f49f35f6c7608f4a",
+        "huella_archivo": "6b5e02d2d401b0cb1df53f715d03e054f3ae77102e90db745047e5dd29fdb754",
+        "preparada": "2026-11-07T16:14:33+00:00",
         "canal": "chat"
       }
+    },
+    "I20270108-T133": {
+      "id": "I20270108-T133",
+      "formato": "imagen",
+      "huella": "0fa5ec3216f9f092869b2175c341c0d73cdf26861399b3090f7aff9f0f287976",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-07T16:04:34+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
+    },
+    "R20270109-T134": {
+      "id": "R20270109-T134",
+      "formato": "reel",
+      "huella": "97d2bf09a8cd43e3f42f980bbddc840d5b310ded3e9a0d918ea23ce244318711",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-07T16:04:34+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
+    },
+    "R20270110-T135": {
+      "id": "R20270110-T135",
+      "formato": "reel",
+      "huella": "76212c9e7bacc1f7b84efa0e9199015c8de28908e5182775f91fd93246a27562",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-07T16:04:34+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }

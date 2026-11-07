@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.7 s"
+      "detalle": "41.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.7 s"
+      "detalle": "41.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.6 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "40bb9374dbba769e"
+      "detalle": "b3e5bea2a78623dd"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270106-T131",
     "titulo": "¿En cuánto tiempo te deben dar tus vacaciones?",
-    "fecha": "2026-11-07T10:18:43+00:00",
-    "sha256": "40bb9374dbba769e4ef01d476bc568c3137100ec46caa956c8e093083d41ee4c",
-    "duracion_s": 42.7,
+    "fecha": "2026-11-07T16:11:09+00:00",
+    "sha256": "b3e5bea2a78623dd16fff2ca860650c05eca7c60a2e2670ba191c33a32755b57",
+    "duracion_s": 41.1,
     "estado": "APTO",
-    "huella_guion": "5a8ab8d1b3ab33972796233527514382e9bc1cf0dca3f9f0b0a38864a13f6a46",
+    "huella_guion": "74210ec4044d10ee02f8f99218b4cedbad4fd750cc23dd9cfac5eb8ba1f7b349",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 25.9,
-      "musica": 2.1,
-      "render_video": 51.1,
-      "mezcla_audio": 2.0,
-      "auditoria_tecnica": 10.8
+      "narracion": 19.5,
+      "musica": 1.8,
+      "render_video": 38.4,
+      "mezcla_audio": 1.6,
+      "auditoria_tecnica": 8.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.53,
-      "computo_equivalente_runner_usd": 0.0092,
+      "computo_minutos": 1.17,
+      "computo_equivalente_runner_usd": 0.007,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1280,
-    "caracteres_narrados": 605
+    "frames": 1231,
+    "caracteres_narrados": 594
   }
 }

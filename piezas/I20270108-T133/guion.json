@@ -1,0 +1,180 @@
+{
+  "id": "I20270108-T133",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Qué cuenta como salario?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T133",
+  "pieza": {
+    "titular": "¿Qué cuenta como salario?",
+    "bajada": "El salario se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad por tu trabajo.",
+    "cita": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas...",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 84",
+    "ojo": "Condición: debe entregarse al trabajador por su trabajo.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 84"
+  },
+  "copy": "¿Sabes qué elementos forman parte de tus percepciones laborales? De acuerdo con la Ley Federal del Trabajo en su artículo 84, el salario abarca mucho más que solo el pago básico diario que recibes.\n\nLa norma establece que se compone de pagos en efectivo, gratificaciones, primas, comisiones, habitación y prestaciones en especie, siempre que se entreguen como contraprestación por tu labor.\n\nConocer esto te ayuda a identificar tus derechos laborales con precisión. Guarda esta información y compártela con quienes puedan necesitarla.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica qué se incluye en el salario según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "84",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo.",
+      "cita": "Ley Federal del Trabajo, artículo 84",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-07"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El salario incluye pagos en efectivo, gratificaciones, primas, comisiones y prestaciones entregadas por el trabajo.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué cuenta como parte de tu salario?",
+    "concepto_central": "salario",
+    "respuesta_corta": "El salario se integra por los pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad entregada por tu trabajo.",
+    "reglas": [
+      {
+        "conclusion": "El salario no se limita al pago en efectivo, sino que abarca diversas prestaciones y percepciones adicionales que el trabajador recibe como contraprestación por su labor.",
+        "fuente": "F1",
+        "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo.",
+        "condiciones": [
+          "Que la cantidad o prestación se entregue al trabajador por su trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "84"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Tu salario se compone de los pagos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones y prestaciones en especie.",
+        "fuente": "F1",
+        "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Para que una cantidad o prestación sea considerada parte del salario, debe ser entregada al trabajador como consecuencia de su trabajo.",
+        "fuente": "F1",
+        "cita_literal": "cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La ley no establece en este artículo conceptos que queden excluidos de la integración del salario.",
+        "fuente": "F1",
+        "cita_literal": "El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación",
+        "motivo": "El texto define de forma amplia la integración sin listar exclusiones."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no especifica qué conceptos NO forman parte del salario (como herramientas de trabajo o gastos de representación), por lo que no se deben inventar exclusiones. Tampoco menciona periodicidad de pago ni impuestos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-07T16:04:34+00:00",
+    "solicitud": "2027-01-08_imagen_T133-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Qué cuenta como parte de tu salario?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n El salario se integra por pagos en efectivo, gratificaciones, primas, comisiones, prestaciones en especie y cualquier cantidad por tu trabajo. \n El salario se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas... \n Todo lo que te entregan por tu trabajo."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El salario no se limita al pago en efectivo, sino que abarca diversas prestaciones y percepciones adicionales que el trabajador recibe como contraprestación por su labor.",
+              "sostenida": "si",
+              "motivo": "El artículo 84 enumera explícitamente diversos conceptos (gratificaciones, percepciones, habitación, primas, comisiones, etc.) además de los pagos en efectivo."
+            },
+            {
+              "conclusion": "Tu salario se compone de los pagos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones y prestaciones en especie.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de los elementos integrantes mencionados en el texto oficial."
+            },
+            {
+              "conclusion": "Para que una cantidad o prestación sea considerada parte del salario, debe ser entregada al trabajador como consecuencia de su trabajo.",
+              "sostenida": "si",
+              "motivo": "El texto establece como condición que la cantidad o prestación sea la que 'se entregue al trabajador por su trabajo'."
+            },
+            {
+              "conclusion": "La ley no establece en este artículo conceptos que queden excluidos de la integración del salario.",
+              "sostenida": "si",
+              "motivo": "El artículo 84 es de carácter integrativo y no contiene cláusulas de exclusión o excepciones."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

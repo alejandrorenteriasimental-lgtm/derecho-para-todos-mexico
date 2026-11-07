@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1136 KB"
+      "detalle": "1130 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=964"
+      "detalle": "fin del contenido en y=920"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "47 palabras sin cabecera ni pie"
+      "detalle": "44 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "93% de 27 palabras reconocidas"
+      "detalle": "93% de 29 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -93,14 +93,14 @@
   "metadatos": {
     "id": "I20270104-T129",
     "formato": "imagen",
-    "titulo": "¿El Registro Civil puede negarse a registrar a tu bebé?",
+    "titulo": "¿Te pueden negar el registro de tu bebé por ser migrante?",
     "plantilla": "mito_realidad",
     "archivo": "I20270104-T129.png",
-    "sha256": "f1399394235ed98aa737f32d12e88fd5dae80f983b55d52c14b54eca66dff82f",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000000000111110001111111111111000000000000011100000100000011111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "1170604bc549aeeda02fda41a32a7f0f18cb41885453c198a05cc8ce89f193e5",
+    "sha256": "21809f643ded8e6a96203a3c5078e582646d27a6fb904c75a307300cf469396b",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100000000110011110001111111111111000000000000011110100000000001111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "a6ff1329ee43db0c886089217c26553b782f9b21cf2b2c783912865c7a0c8c35",
     "texto_alternativo": "Imagen fija con plantilla mito y realidad que aclara que el Registro Civil no puede negar el registro de nacimiento de un bebé por la situación migratoria de los padres.",
-    "copy": "Si eres una persona migrante en México, es fundamental que conozcas las protecciones legales con las que cuentas al momento de realizar trámites familiares esenciales.\n\nDe acuerdo con la Ley de Migración, artículo 9, «los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento».\n\nGuarda esta información y compártela para que más personas conozcan sus derechos y la obligación de las autoridades.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Te pueden negar el registro de tu bebé por ser migrante? No.\n\nEl artículo 9 de la Ley de Migración dice: «Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento», entre otras.\n\nFuente: Ley de Migración, artículo 9.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-07T04:05:42+00:00",
+    "fecha": "2026-11-07T16:14:42+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.9 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.9 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "6f1b10d5b9076baa"
+      "detalle": "232f91d7c497b98b"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270103-T128",
     "titulo": "¿Cuál es la edad mínima para casarse en México?",
-    "fecha": "2026-11-07T04:02:06+00:00",
-    "sha256": "6f1b10d5b9076baa808ae194b257c94c1f51bc81e3d4aff3b1d857aee2df4f12",
-    "duracion_s": 38.9,
+    "fecha": "2026-11-07T16:06:05+00:00",
+    "sha256": "232f91d7c497b98b2beb54cf1f76aeb85825bd6d2f223f38b379247db6404af9",
+    "duracion_s": 39.7,
     "estado": "APTO",
-    "huella_guion": "d8aaa9b79bea322f609ad0de39c081c8100ffaf11603bbfd59c572058c55f7ed",
+    "huella_guion": "33e99ced6f4177c66f3b1fb4fef8a2e0e283cd9c7b2bcb5fbc4b25ac4cf67d73",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 22.2,
-      "musica": 2.2,
-      "render_video": 43.3,
-      "mezcla_audio": 1.7,
-      "auditoria_tecnica": 8.8
+      "narracion": 20.3,
+      "musica": 1.8,
+      "render_video": 42.3,
+      "mezcla_audio": 1.6,
+      "auditoria_tecnica": 8.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.3,
-      "computo_equivalente_runner_usd": 0.0078,
+      "computo_minutos": 1.24,
+      "computo_equivalente_runner_usd": 0.0074,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1164,
-    "caracteres_narrados": 521
+    "frames": 1188,
+    "caracteres_narrados": 556
   }
 }

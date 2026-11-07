@@ -1,0 +1,77 @@
+{
+ "tema_id": "T133",
+ "pregunta": "¿Tu patrón puede despedirte por una falta de hace meses?",
+ "fecha": "2026-11-07T15:58:18+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tu patrón puede despedirte por una falta de hace meses?",
+  "concepto_central": "despido y prescripción de la acción patronal",
+  "respuesta_corta": "Depende: el plazo de un mes para despedir no corre desde que ocurrió la falta, sino desde que el patrón la conoce o comprueba los errores.",
+  "reglas": [
+   {
+    "conclusion": "Las acciones del patrón para despedir a un trabajador prescriben en un mes, contado desde que tiene conocimiento de la falta o comprueba los errores.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios;",
+    "condiciones": [
+     "El plazo corre a partir del día siguiente a la fecha en que el patrón tenga conocimiento de la falta o desde el momento en que se comprueben los errores, pérdidas o averías."
+    ],
+    "excepciones": [
+     "no_aplica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Las acciones de los patrones para despedir a los trabajadores prescriben en el plazo de un mes.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios;",
+    "motivo": null
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La prescripción de un mes aplica y comienza a contar a partir del día siguiente a que el patrón conoce la falta o desde que se comprueban los errores o averías.",
+    "fuente": "F1",
+    "cita_literal": "la prescripción corre a partir, respectivamente, del día siguiente a la fecha en que se tenga conocimiento de la causa de la separación o de la falta, desde el momento en que se comprueben los errores cometidos",
+    "motivo": null
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": null,
+    "fuente": null,
+    "cita_literal": null,
+    "motivo": "El artículo 517 de la Ley Federal del Trabajo no establece excepciones al plazo de prescripción señalado."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Un despido basado en una falta ocurrida hace meses es procedente si el patrón tuvo conocimiento o comprobó los errores en el último mes.",
+    "condicion": "Que la fecha de conocimiento o comprobación por parte del patrón haya ocurrido dentro del mes anterior al despido.",
+    "base": "Artículo 517, fracción I, de la Ley Federal del Trabajo."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es la decisión tomada por la parte patronal para separar al trabajador, mientras que la renuncia es la separación decidida por la persona trabajadora."
+   },
+   {
+    "a": "despido",
+    "b": "mutuo consentimiento",
+    "diferencia": "El despido es una separación decidida unilateralmente por el patrón, a diferencia de la terminación por mutuo consentimiento acordada por ambas partes."
+   },
+   {
+    "a": "despido",
+    "b": "rescision trabajador",
+    "diferencia": "El despido lo inicia el patrón contra el trabajador, mientras que la rescisión por el trabajador es la terminación iniciada por la persona trabajadora ante faltas del patrón."
+   }
+  ],
+  "limites": "El texto oficial no señala qué medios de prueba se requieren para demostrar la fecha en que el patrón tuvo conocimiento de la falta o de los errores.",
+  "fuentes_irrelevantes": []
+ }
+}
