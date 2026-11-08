@@ -16,7 +16,7 @@
       "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-07"
+      "consultado": "2026-11-08"
     },
     "F2": {
       "tipo": "ley",
@@ -24,27 +24,27 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "14",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "texto_literal": "en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-07"
+      "consultado": "2026-11-08"
     },
     "F3": {
       "tipo": "ley",
       "nivel": "oficial",
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "14",
+      "articulo": "27",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 14",
+      "texto_literal": "Las expropiaciones sólo podrán hacerse por causa de utilidad pública y mediante indemnización.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 27",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-07"
+      "consultado": "2026-11-08"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te pueden quitar tu casa sin un juicio previo?",
+      "texto": "¿Te pueden quitar tu casa sin un juicio?",
       "titulo": [
         "¿TE PUEDEN",
         "QUITAR TU CASA",
@@ -54,23 +54,30 @@
     },
     {
       "tipo": "titular",
-      "texto": "No. La Constitución prohíbe privarte de tus propiedades sin un juicio previo ante tribunales.",
+      "texto": "Por regla general, no. La Constitución exige un juicio para privarte de tus propiedades o posesiones.",
       "titulo": [
-        "PROTECCIÓN",
-        "CONSTITUCIONAL"
+        "SE NECESITA",
+        "UN JUICIO"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "El artículo 14 manda: «Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos».",
-      "etiqueta": "Constitución, art. 14",
-      "cita": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Nadie puede ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.",
+          "texto": "Nadie puede ser privado de sus propiedades o posesiones sino mediante juicio seguido ante los tribunales previamente establecidos.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 14 dice: «Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio».",
+      "etiqueta": "Constitución, art. 14",
+      "cita": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
           "fuente": "F1",
           "comparar_literal": true
         }
@@ -78,33 +85,33 @@
     },
     {
       "tipo": "lista",
-      "texto": "El procedimiento debe cumplir con estas condiciones esenciales:",
+      "texto": "Ante tribunales ya establecidos, con las formalidades esenciales del procedimiento y con leyes anteriores al hecho.",
       "items": [
-        "Tribunal previo",
+        "Tribunales ya establecidos",
         "Formalidades esenciales",
-        "Leyes anteriores"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "La norma constitucional exige un juicio antes de privar a alguien de sus propiedades o posesiones.",
-          "fuente": "F2"
-        }
-      ]
-    },
-    {
-      "tipo": "titular",
-      "texto": "Por ello, un juicio previo es indispensable ante cualquier intento de privación.",
-      "titulo": [
-        "JUICIO PREVIO",
-        "OBLIGATORIO"
+        "Leyes anteriores al hecho"
       ],
       "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "Se requiere de un juicio previo ante tribunales previamente establecidos para la privación de una propiedad o posesión.",
+          "texto": "El juicio debe cumplir las formalidades esenciales del procedimiento y seguirse conforme a las leyes expedidas con anterioridad al hecho.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Ojo: también existe la expropiación, que solo puede hacerse por causa de utilidad pública y mediante indemnización.",
+      "encabezado": "Expropiación",
+      "detalle": "Utilidad pública e indemnización",
+      "fuente_corta": "Constitución, art. 27",
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Las expropiaciones sólo pueden hacerse por causa de utilidad pública y mediante indemnización.",
           "fuente": "F3"
         }
       ]
@@ -120,21 +127,45 @@
     "suficiente": true,
     "pregunta": "¿Te pueden quitar tu casa sin un juicio?",
     "concepto_central": "privación de propiedades o posesiones",
-    "respuesta_corta": "No. La Constitución establece que nadie podrá ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.",
+    "respuesta_corta": "Por regla general, no: la Constitución exige un juicio ante tribunales previamente establecidos para privarte de tus propiedades o posesiones.",
     "reglas": [
       {
-        "conclusion": "Nadie puede ser privado de sus propiedades, posesiones o derechos sino a través de un juicio seguido ante tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las leyes aplicables.",
+        "conclusion": "Nadie puede ser privado de sus propiedades o posesiones sino mediante juicio seguido ante los tribunales previamente establecidos.",
         "fuente": "F1",
         "cita_literal": "Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos",
         "condiciones": [
-          "El juicio debe seguirse ante tribunales previamente establecidos.",
-          "Se deben cumplir las formalidades esenciales del procedimiento.",
-          "Debe realizarse conforme a las Leyes expedidas con anterioridad al hecho."
+          "Que se cumplan las formalidades esenciales del procedimiento",
+          "Conforme a las leyes expedidas con anterioridad al hecho"
         ],
         "excepciones": [],
         "ref": {
           "documento": "Constitución Política de los Estados Unidos Mexicanos",
           "articulo": "14"
+        }
+      },
+      {
+        "conclusion": "El juicio debe cumplir las formalidades esenciales del procedimiento y aplicar leyes expedidas con anterioridad al hecho.",
+        "fuente": "F2",
+        "cita_literal": "en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "14"
+        }
+      },
+      {
+        "conclusion": "Las expropiaciones sólo pueden hacerse por causa de utilidad pública y mediante indemnización.",
+        "fuente": "F3",
+        "cita_literal": "Las expropiaciones sólo podrán hacerse por causa de utilidad pública y mediante indemnización.",
+        "condiciones": [
+          "Causa de utilidad pública",
+          "Indemnización"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "27"
         }
       }
     ],
@@ -202,7 +233,7 @@
   "pregunta_original": "¿Te pueden quitar tu casa sin un juicio?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden quitar tu casa sin un juicio?\n\nNo. La Constitución establece que nadie podrá ser privado de sus propiedades o posesiones sino mediante un juicio ante tribunales previamente establecidos.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 14.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden quitar tu casa sin un juicio? Por regla general, no.\n\nEl artículo 14 de la Constitución dice: «Nadie podrá ser privado de la libertad o de sus propiedades, posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos, en el que se cumplan las formalidades esenciales del procedimiento y conforme a las Leyes expedidas con anterioridad al hecho».\n\nOjo: también existe la expropiación. El artículo 27 dice: «Las expropiaciones sólo podrán hacerse por causa de utilidad pública y mediante indemnización».\n\nFuentes: Constitución Política de los Estados Unidos Mexicanos, artículos 14 y 27.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -258,5 +289,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-08",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "El «No» absoluto y el «juicio previo obligatorio ante cualquier intento de privación» generalizaban: se agrega la expropiación (CPEUM 27, utilidad pública e indemnización) y la respuesta pasa a «por regla general»; la lista (tribunal, formalidades, leyes anteriores) ahora se narra y tiene su fuente literal (resto del párrafo del art. 14); fuera el titular final repetido; texto de publicación con las citas literales"
+    }
+  ]
 }

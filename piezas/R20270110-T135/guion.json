@@ -16,7 +16,29 @@
       "texto_literal": "Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes;",
       "cita": "Ley Federal del Trabajo, artículo 53",
       "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-07"
+      "consultado": "2026-11-08"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Todo convenio o liquidación, para ser válido, deberá hacerse por escrito",
+      "cita": "Ley Federal del Trabajo, artículo 33",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
     }
   },
   "escenas": [
@@ -26,51 +48,54 @@
       "titulo": [
         "¿TERMINAR TU",
         "TRABAJO DE",
-        "MÚTUO ACUERDO?"
+        "COMÚN ACUERDO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, el mutuo consentimiento de las partes es una causa legal de terminación de la relación de trabajo.",
+      "texto": "Sí. El mutuo consentimiento de las partes es una causa de terminación de la relación de trabajo.",
       "titulo": [
-        "SÍ ES POSIBLE",
-        "POR ACUERDO"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley señala que el mutuo consentimiento de las partes termina la relación de trabajo: Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes;",
-      "etiqueta": "Ley Federal del Trabajo, artículo 53",
-      "cita": "Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes;",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Aspectos de esta causa de terminación:",
-      "items": [
-        "Ambas partes de acuerdo",
-        "Termina la relación",
-        "Previsto en la ley"
+        "SÍ, ES UNA",
+        "CAUSA LEGAL"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El mutuo consentimiento de las partes es una causa de terminación de la relación de trabajo.",
+          "texto": "El mutuo consentimiento de las partes es una causa de terminación de las relaciones de trabajo.",
           "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "titular",
-      "texto": "Recuerda que el mutuo consentimiento de las partes es una causa legal de terminación de la relación de trabajo.",
-      "titulo": [
-        "TERMINACIÓN",
-        "LEGAL"
-      ],
+      "tipo": "cita",
+      "texto": "El artículo 53 dice: son causas de terminación de las relaciones de trabajo: uno, el mutuo consentimiento de las partes.",
+      "etiqueta": "Ley Federal del Trabajo, artículo 53",
+      "cita": "Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes;",
       "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Ojo: el convenio debe hacerse por escrito para ser válido, y es nula la renuncia a tus salarios devengados, indemnizaciones y demás prestaciones.",
+      "encabezado": "Sin renunciar a tus derechos",
+      "detalle": "Convenio por escrito",
+      "fuente_corta": "Ley Federal del Trabajo, art. 33",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados.",
+          "fuente": "F2"
+        },
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Todo convenio o liquidación, para ser válido, deberá hacerse por escrito.",
+          "fuente": "F3"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -94,6 +119,30 @@
         "ref": {
           "documento": "Ley Federal del Trabajo",
           "articulo": "53"
+        }
+      },
+      {
+        "conclusion": "Es nula la renuncia a salarios devengados, indemnizaciones y demás prestaciones que hagan los trabajadores.",
+        "fuente": "F2",
+        "cita_literal": "Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "33"
+        }
+      },
+      {
+        "conclusion": "Todo convenio o liquidación, para ser válido, debe hacerse por escrito.",
+        "fuente": "F3",
+        "cita_literal": "Todo convenio o liquidación, para ser válido, deberá hacerse por escrito",
+        "condiciones": [
+          "Por escrito"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "33"
         }
       }
     ],
@@ -120,7 +169,7 @@
         "diferencia": "El mutuo consentimiento requiere el acuerdo mutuo, mientras que el despido es una separación decidida por el patrón."
       }
     ],
-    "limites": "El texto oficial no detalla procedimientos, formalidades o plazos específicos para llevar a cabo el mutuo consentimiento."
+    "limites": "La pieza no explica la ratificación del convenio ante el Centro de Conciliación o el Tribunal ni el cálculo de lo que corresponde al trabajador."
   },
   "generacion": {
     "afirmaciones_eliminadas_sin_ancla": [],
@@ -152,7 +201,7 @@
   "pregunta_original": "¿Puedes terminar tu trabajo de común acuerdo con tu patrón?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Puedes terminar tu trabajo de común acuerdo con tu patrón?\n\nSí, el mutuo consentimiento de las partes es una causa legal de terminación de la relación de trabajo.\n\nFuente: Ley Federal del Trabajo, artículo 53.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Puedes terminar tu trabajo de común acuerdo con tu patrón? Sí.\n\nEl artículo 53 de la Ley Federal del Trabajo dice: «Son causas de terminación de las relaciones de trabajo: I. El mutuo consentimiento de las partes».\n\nOjo: el artículo 33 dice que «es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados» y que «todo convenio o liquidación, para ser válido, deberá hacerse por escrito».\n\nFuente: Ley Federal del Trabajo, artículos 53 y 33.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -192,5 +241,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-08",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Título en pantalla con falta de ortografía («MÚTUO») y distinto de lo narrado: ahora «¿TERMINAR TU TRABAJO DE COMÚN ACUERDO?»; fuera la lista sin narrar y el titular final que repetía la respuesta; se agrega la protección del art. 33 LFT (convenio por escrito; nula la renuncia a salarios devengados, indemnizaciones y prestaciones); texto de publicación con las citas literales"
+    }
+  ]
 }
