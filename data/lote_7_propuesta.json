@@ -1,6 +1,6 @@
 {
  "id": "lote-7",
- "estado": "PROPUESTA (no activa)",
+ "estado": "ACTIVADO el 8-11-2026 (ver data/lote_piloto.json)",
  "creado": "2026-11-05",
  "max_por_formato": 14,
  "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 6 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
@@ -66,10 +66,10 @@
    "formato": "reel",
    "fecha": "2027-01-14",
    "tema_id": "T139",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿El Registro Civil puede negar un acta a una persona migrante sin papeles?",
-   "fuentes_sugeridas": "Ley de Migración art. 9",
-   "motivo_seleccion": "Ley de Migración art. 9 (texto oficial cotejado el 5-11-2026, registro/textos/LMigra_9.json): «Los jueces u oficiales del Registro Civil no podrán negar a los migrantes, independientemente de su situación migratoria, la autorización de los actos del estado civil ni la expedición de las actas relativas a nacimiento, reconocimiento de hijos, matrimonio, divorcio y muerte». Respuesta literal y completa en un solo párrafo."
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Desde qué hora tu jornada de trabajo cuenta como nocturna?",
+   "fuentes_sugeridas": "LFT art. 60",
+   "motivo_seleccion": "Art. 60 LFT: «Jornada nocturna es la comprendida entre las veinte y las seis horas»; condición literal de la jornada mixta (período nocturno menor de tres horas y media). Texto en registro/textos/LFT_60.json. Sustituye a Ley de Migración 9 (ya usado en la imagen del 04-01)."
   },
   {
    "formato": "imagen",
@@ -86,9 +86,9 @@
    "fecha": "2027-01-15",
    "tema_id": "T140",
    "tipo_pregunta": "obligacion",
-   "pregunta": "¿A qué edad puedes casarte en México?",
-   "fuentes_sugeridas": "LGDNNA art. 45",
-   "motivo_seleccion": "LGDNNA art. 45 (texto oficial cotejado el 5-11-2026, registro/textos/LGDNNA_45.json): «establecerán como edad mínima para contraer matrimonio los 18 años». Ley general: obliga a las leyes federales y de las entidades federativas a fijar 18 años como edad mínima; se explica que es un mandato a todas las legislaturas."
+   "pregunta": "¿La autoridad está obligada a responderte si le haces una petición por escrito?",
+   "fuentes_sugeridas": "CPEUM art. 8",
+   "motivo_seleccion": "Art. 8 CPEUM: «A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario»; condición literal: que se formule por escrito, de manera pacífica y respetuosa (en materia política, solo la ciudadanía). Sustituye a LGDNNA 45 (ya usado en el Reel del 03-01)."
   },
   {
    "formato": "imagen",
