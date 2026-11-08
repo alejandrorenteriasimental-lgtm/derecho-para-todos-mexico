@@ -486,3 +486,17 @@ def test_nota_de_reforma_cierra_el_parrafo_y_no_trae_condiciones_del_anterior():
     # dentro del mismo párrafo la condición se sigue exigiendo
     t = "Las personas tendrán este derecho en los términos que establezca la ley. Toda persona puede pedirlo."
     assert razonamiento.contexto_omitido(t, "Toda persona puede pedirlo.")
+
+
+def test_plazos_con_numeros_compuestos_en_letra():
+    """R20270112-T137 (8-11-2026): CPEUM 19 dice «setenta y dos horas»; se leía «dos horas» y la pieza con «72 horas» se
+    bloqueaba. Un plazo distinto sigue bloqueándose."""
+    cpeum19 = ("Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el "
+               "indiciado sea puesto a su disposición, sin que se justifique con un auto de vinculación a proceso")
+    assert razonamiento.consecuencias_sin_sustento("Hasta 72 horas desde que estás a disposición del juez.", [cpeum19]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta setenta y dos horas.", [cpeum19]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta 2 horas.", [cpeum19])
+    assert razonamiento.consecuencias_sin_sustento("Hasta 96 horas.", [cpeum19])
+    cpeum16 = "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas"
+    assert razonamiento.consecuencias_sin_sustento("Hasta 48 horas.", [cpeum16]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta 8 horas.", [cpeum16])

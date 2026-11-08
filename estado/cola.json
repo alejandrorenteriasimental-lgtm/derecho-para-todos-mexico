@@ -8157,7 +8157,7 @@
       "id": "I20270111-T136",
       "formato": "imagen",
       "huella": "6d6e5ba4f5eef994ce5d2f0b31bf83fbd7f815727d30625f8ec5aa77dc500d5a",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-08T16:00:04+00:00",
@@ -8167,22 +8167,24 @@
           "a": "RETENIDO",
           "ts": "2026-11-08T16:01:05+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-08T19:49:06+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 08-11): bajada con la condición literal del art. 166 LFT (sin «labores nocturnas» generalizado); fuera la nota de A1 que retenía sin ser duda sobre lo afirmado; texto sin relleno; se vuelve a verificar y producir"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": {
-        "tipo": "sustantivo",
-        "desde": "2026-11-08T16:01:05+00:00",
-        "verificador": "0.5.7"
-      }
+      "retencion": null
     },
     "I20270112-T137": {
       "id": "I20270112-T137",
       "formato": "imagen",
       "huella": "cc1d563a7ec2a89f7c17682e7837f99e9015b044bdca83f0a090eab64df58582",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-08T16:00:04+00:00",
@@ -8198,6 +8200,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-08T16:01:42+00:00",
           "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-08T19:49:06+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 08-11): «REALIDAD» con «Sí, por regla general» y «ciertos parientes» (grados del art. 222 CNPP); texto de publicación sin relleno con las citas literales; se vuelve a verificar y producir"
         }
       ],
       "error": null,

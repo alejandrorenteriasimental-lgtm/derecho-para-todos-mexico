@@ -466,7 +466,14 @@ CONSECUENCIAS = {
 _NUM = {"un": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10,
         "once": 11, "doce": 12, "trece": 13, "catorce": 14, "quince": 15, "dieciseis": 16, "diecisiete": 17, "dieciocho": 18,
         "diecinueve": 19, "veinte": 20, "veintiun": 21, "veintiuno": 21, "veintidos": 22, "veinticinco": 25, "treinta": 30,
-        "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "noventa": 90, "cien": 100}   # la ley escribe los números con letra
+        "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "setenta": 70, "ochenta": 80, "noventa": 90, "cien": 100}   # la ley escribe los números con letra
+
+# Números compuestos con letra («setenta y dos horas», «cuarenta y ocho horas»). Sin esto «setenta y dos horas» se leía
+# como «dos horas» y la pieza que decía «72 horas» se bloqueaba (R20270112-T137, CPEUM 19, 8-11-2026).
+_DECENAS = {"treinta": 30, "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "setenta": 70, "ochenta": 80, "noventa": 90}
+_UNIDADES = {"un": 1, "una": 1, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8,
+             "nueve": 9}
+_COMPUESTO = r"(?:" + "|".join(_DECENAS) + r") y (?:" + "|".join(_UNIDADES) + r")"
 
 
 _UNIDAD = {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}
@@ -480,11 +487,12 @@ def _plazos_pos(p, base=False):
       horas y media la mixta» y la pieza puede decir «siete horas» para la nocturna."""
     out = []
     nums = dict(_NUM, **({"el": 1} if base else {}))
-    patron = (r"\b(\d{1,3}(?: \d(?= (?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b))?|" + "|".join(nums) +
+    patron = (r"\b(" + _COMPUESTO + r"|\d{1,3}(?: \d(?= (?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b))?|" + "|".join(nums) +
               r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b( y media\b)?")
     for m in re.finditer(patron, p):
         n, u, media = m.group(1), m.group(2), m.group(3)
         if n in nums: v = nums[n]
+        elif " y " in n: a, b = n.split(" y "); v = _DECENAS[a] + _UNIDADES[b]
         elif " " in n: a, b = n.split(); v = float(f"{a}.{b}")
         else: v = int(n)
         u = _UNIDAD.get(u, u)

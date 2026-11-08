@@ -10,10 +10,10 @@
     "titular": "¿Estás obligado a denunciar un delito que presenciaste?",
     "bajada": "Conoce las condiciones legales y sus excepciones.",
     "mito": "Denunciar un delito presenciado siempre es voluntario para la ciudadanía.",
-    "realidad": "Depende: estás obligado si te consta la comisión de un probable delito, salvo que seas cónyuge, concubino, tutor, conviviente o familiar cercano del imputado.",
+    "realidad": "Sí, por regla general: si te consta un probable delito, debes denunciarlo. No están obligados el cónyuge, concubino, tutor, conviviente y ciertos parientes del imputado.",
     "fuente_visible": "Código Nacional de Procedimientos Penales, art. 222"
   },
-  "copy": "El Código Nacional de Procedimientos Penales, en su artículo 222, establece que toda persona a quien le conste la comisión de un hecho probablemente constitutivo de un delito tiene la obligación de denunciarlo ante el Ministerio Público, o en casos de urgencia, ante cualquier agente de la Policía.\n\nSin embargo, la ley prevé excepciones puntuales. No tienen el deber de denunciar quienes al momento de la comisión del hecho sean tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, o sus parientes por consanguinidad o afinidad en los grados fijados por la norma. Por otro lado, si se tiene el deber jurídico de denunciar y se omite hacerlo, la persona será acreedora a las sanciones correspondientes.\n\nGuarda esta información para consultar tus deberes legales cuando lo necesites y compártela para que más personas conozcan qué dice la ley en México.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Viste un delito? El artículo 222 del Código Nacional de Procedimientos Penales dice: «Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía».\n\nLa misma norma fija excepciones: no están obligados a denunciar quienes, al momento del delito, sean tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, ni sus parientes por consanguinidad o afinidad en línea recta hasta el cuarto grado y en línea colateral hasta el segundo grado.\n\nTambién dice: «Quien tenga el deber jurídico de denunciar y no lo haga, será acreedor a las sanciones correspondientes».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa sobre si existe obligación de denunciar un delito presenciado en México, basada en el artículo 222 del Código Nacional de Procedimientos Penales.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -75,7 +75,7 @@
     "suficiente": true,
     "pregunta": "¿Estás obligado a denunciar un delito que presenciaste?",
     "concepto_central": "deber de denunciar un delito",
-    "respuesta_corta": "Depende: estás obligado si te consta la comisión de un probable delito, salvo que seas cónyuge, concubino, tutor, conviviente o familiar cercano del imputado.",
+    "respuesta_corta": "Sí, por regla general: si te consta un probable delito, debes denunciarlo. No están obligados el cónyuge, concubino, tutor, conviviente y ciertos parientes del imputado.",
     "reglas": [
       {
         "conclusion": "Toda persona a quien le conste la comisión de un hecho probablemente constitutivo de delito está obligada a denunciarlo ante el Ministerio Público o ante la Policía en urgencias.",
@@ -189,5 +189,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-08",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "«REALIDAD» empezaba con «Depende» aunque la regla general es la obligación: ahora «Sí, por regla general…» y «ciertos parientes» en vez de «familiar cercano» (la ley fija grados: línea recta hasta el cuarto, colateral hasta el segundo); texto de publicación sin relleno, con las citas literales del art. 222 CNPP y los grados exactos"
+    }
+  ]
 }

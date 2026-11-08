@@ -12,7 +12,7 @@
   "lote": "lote-6",
   "motivo_seleccion": "Art. 162 fr. III LFT: «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos»; el encabezado limita el derecho a los trabajadores de planta. Condición literal; texto en registro/textos/LFT_162.json. Sustituye a LFT 517 (dos fallas: longitud y verificación jurídica).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270108-T133",
@@ -36,8 +36,15 @@
       "motivo": "pregunta sustituida tras la segunda falla con LFT 517 (7-11 descarte por longitud; 8-11 RETENER de la verificación jurídica: el inicio del plazo depende de cuándo el patrón conoce la falta, hecho que la ley no permite responder en corto). Ahora LFT 162 fr. III, respuesta literal, alcance federal, tema no usado en las últimas 3 semanas",
       "pregunta_anterior": "¿Tu patrón puede despedirte por una falta de hace meses?",
       "pieza_anterior_estado": "RETENIDO"
+    },
+    {
+      "estado": "DESCARTADA",
+      "a": "PENDIENTE_GUION",
+      "fecha_cambio": "2026-11-08",
+      "por": "Claude",
+      "motivo": "reabierta (8-11, primer descarte de la pregunta nueva): causa de redacción (narración de 652 a 696 caracteres y «15 AÑOS» visible sin «por lo menos»), no del tema. Se precisa el ángulo. Si vuelve a descartarse, se sustituye la pregunta"
     }
   ],
   "pieza": "R20270108-T133",
-  "angulo": "Respuesta: Sí, si eres trabajador de planta y cumpliste por lo menos quince años de servicios. Cita literal única: «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Ojo (misma fracción III): también se paga a los que sean separados de su empleo, independientemente de la justificación o injustificación del despido. No hablar del monto (doce días por año) ni de topes de salario. Cuatro escenas más cierre; narración de 480 caracteres o menos; sin listas."
+  "angulo": "Respuesta: Sí, si eres trabajador de planta y cumpliste por lo menos quince años de servicios. Cita literal única: «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Ojo (misma fracción III): también se paga a los que sean separados de su empleo, independientemente de la justificación o injustificación del despido. Todo texto visible con la cifra debe decir «15 AÑOS O MÁS» o «MÍNIMO 15 AÑOS», nunca «15 AÑOS» solo. No hablar del monto, de topes de salario ni del pago diferido por renuncias masivas. Cuatro escenas más cierre; narración de 450 caracteres o menos (la cita ya ocupa unos 170); sin listas ni frases de transición."
 }
