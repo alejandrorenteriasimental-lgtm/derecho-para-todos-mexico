@@ -1,0 +1,193 @@
+{
+  "id": "I20270112-T137",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Estás obligado a denunciar un delito que presenciaste?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T137",
+  "pieza": {
+    "titular": "¿Estás obligado a denunciar un delito que presenciaste?",
+    "bajada": "Conoce las condiciones legales y sus excepciones.",
+    "mito": "Denunciar un delito presenciado siempre es voluntario para la ciudadanía.",
+    "realidad": "Depende: estás obligado si te consta la comisión de un probable delito, salvo que seas cónyuge, concubino, tutor, conviviente o familiar cercano del imputado.",
+    "fuente_visible": "Código Nacional de Procedimientos Penales, art. 222"
+  },
+  "copy": "El Código Nacional de Procedimientos Penales, en su artículo 222, establece que toda persona a quien le conste la comisión de un hecho probablemente constitutivo de un delito tiene la obligación de denunciarlo ante el Ministerio Público, o en casos de urgencia, ante cualquier agente de la Policía.\n\nSin embargo, la ley prevé excepciones puntuales. No tienen el deber de denunciar quienes al momento de la comisión del hecho sean tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, o sus parientes por consanguinidad o afinidad en los grados fijados por la norma. Por otro lado, si se tiene el deber jurídico de denunciar y se omite hacerlo, la persona será acreedora a las sanciones correspondientes.\n\nGuarda esta información para consultar tus deberes legales cuando lo necesites y compártela para que más personas conozcan qué dice la ley en México.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre si existe obligación de denunciar un delito presenciado en México, basada en el artículo 222 del Código Nacional de Procedimientos Penales.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "222",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía.",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 222",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-08"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "222",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "No estarán obligados a denunciar quienes al momento de la comisión del delito detenten el carácter de tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, los parientes por consanguinidad o por afinidad",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 222",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-08"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "222",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "Quien tenga el deber jurídico de denunciar y no lo haga, será acreedor a las sanciones correspondientes.",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 222",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-08"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Toda persona a la que le conste un hecho probablemente delictivo debe denunciarlo ante el Ministerio Público o ante la Policía en urgencias.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Ciertos familiares, tutores, cónyuges o convivientes del imputado están exentos de la obligación de denunciar.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "interpretacion",
+      "texto": "Si una persona tiene el deber jurídico de denunciar y omite hacerlo, se le aplicarán las sanciones previstas por la ley.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Estás obligado a denunciar un delito que presenciaste?",
+    "concepto_central": "deber de denunciar un delito",
+    "respuesta_corta": "Depende: estás obligado si te consta la comisión de un probable delito, salvo que seas cónyuge, concubino, tutor, conviviente o familiar cercano del imputado.",
+    "reglas": [
+      {
+        "conclusion": "Toda persona a quien le conste la comisión de un hecho probablemente constitutivo de delito está obligada a denunciarlo ante el Ministerio Público o ante la Policía en urgencias.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía.",
+        "condiciones": [
+          "Que a la persona le conste la comisión de un hecho probablemente constitutivo de un delito."
+        ],
+        "excepciones": [
+          "No están obligados quienes al momento del delito sean tutor, curador, pupilo, cónyuge, concubina, concubinario, conviviente del imputado, o parientes por consanguinidad o afinidad en línea recta hasta el cuarto grado y colateral hasta el segundo grado."
+        ],
+        "ref": {
+          "documento": "Código Nacional de Procedimientos Penales",
+          "articulo": "222"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La persona que presencie o le conste un hecho probablemente delictivo debe denunciarlo ante el Ministerio Público o, en urgencias, ante la Policía.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación aplica a toda persona a quien le conste el hecho, exceptuando a familiares cercanos, cónyuges, concubinos, convivientes, tutores, curadores o pupilos del imputado.",
+        "fuente": "F1",
+        "cita_literal": "No estarán obligados a denunciar quienes al momento de la comisión del delito detenten el carácter de tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, los parientes por consanguinidad o por afinidad"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La omisión de denunciar por parte de quien tiene la obligación legal genera las sanciones correspondientes que determine la ley.",
+        "condicion": "Tener el deber jurídico de denunciar y omitir hacerlo.",
+        "base": "Quien tenga el deber jurídico de denunciar y no lo haga, será acreedor a las sanciones correspondientes."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto oficial no especifica el tipo ni la cuantía de las sanciones aplicables por omitir la denuncia, ni fija un plazo en días u horas para que la ciudadanía en general presente la denuncia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-08T16:00:04+00:00",
+    "solicitud": "2027-01-12_imagen_T137-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Estás obligado a denunciar un delito que presenciaste?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona a quien le conste la comisión de un hecho probablemente constitutivo de delito está obligada a denunciarlo ante el Ministerio Público o ante la Policía en urgencias.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la obligación general establecida en el primer párrafo del artículo 222."
+            },
+            {
+              "conclusion": "La obligación aplica a toda persona a quien le conste el hecho, exceptuando a familiares cercanos, cónyuges, concubinos, convivientes, tutores, curadores o pupilos del imputado.",
+              "sostenida": "si",
+              "motivo": "La conclusión identifica correctamente el grupo de personas exentas de la obligación según el último párrafo del artículo 222."
+            },
+            {
+              "conclusion": "La omisión de denunciar por parte de quien tiene la obligación legal genera las sanciones correspondientes que determine la ley.",
+              "sostenida": "si",
+              "motivo": "Se deriva directamente del tercer párrafo del artículo 222, que establece la consecuencia jurídica por el incumplimiento del deber."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

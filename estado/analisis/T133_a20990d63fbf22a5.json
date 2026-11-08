@@ -1,0 +1,65 @@
+{
+ "tema_id": "T133",
+ "pregunta": "¿Te pagan prima de antigüedad si renuncias?",
+ "fecha": "2026-11-08T15:53:46+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pagan prima de antigüedad si renuncias?",
+  "concepto_central": "renuncia (separación voluntaria)",
+  "respuesta_corta": "Depende de tu antigüedad: si renuncias voluntariamente, tienes derecho a este pago solo si has cumplido al menos quince años de servicio en la empresa.",
+  "reglas": [
+   {
+    "conclusion": "En caso de renuncia voluntaria, el pago de la prima de antigüedad está condicionado a que el trabajador tenga un tiempo mínimo de servicios de quince años.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.",
+    "condiciones": [
+     "Haber cumplido al menos quince años de servicios"
+    ],
+    "exceptions": [
+     "No aplica para el caso de separación voluntaria"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El pago consiste en doce días de salario por cada año que hayas trabajado en la empresa.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Para recibirla al renunciar, es obligatorio haber acumulado un mínimo de quince años de servicio.",
+    "fuente": "F1",
+    "cita_literal": "siempre que hayan cumplido quince años de servicios, por lo menos."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones al requisito de los quince años para quienes renuncian voluntariamente.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.",
+    "motivo": "El texto es tajante al condicionar el pago en retiros voluntarios a la antigüedad mínima."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El pago de tu prima podría no ser inmediato al momento de tu renuncia.",
+    "condicion": "Si el número de personas que renuncian en el mismo año supera el diez por ciento del total de trabajadores de la empresa.",
+    "base": "F1, artículo 162, fracción IV, inciso b."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "renuncia (separación voluntaria)",
+    "b": "despido (separación del empleo)",
+    "diferencia": "En la renuncia se exigen 15 años de servicio para cobrar la prima, mientras que en el despido se paga sin importar la antigüedad."
+   }
+  ],
+  "limites": "Estos textos no especifican los topes salariales máximos para el cálculo (referidos en los artículos 485 y 486) ni el plazo legal para reclamar el pago.",
+  "fuentes_irrelevantes": []
+ }
+}

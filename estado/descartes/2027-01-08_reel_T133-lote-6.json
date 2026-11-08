@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-01-08_reel_T133-lote-6.json",
- "fecha": "2026-11-07T15:58:40+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 636 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 16: recorta al menos 76 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[vaguedad] Referencia vaga: «La norma precisa el inicio del cómputo para este plazo:». Nombr",
+ "fecha": "2026-11-08T15:54:32+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,105 +12,30 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 662 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 42: recorta al menos 102 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 696 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 76: recorta al menos 136 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «En la renuncia se exigen 15 años de servicio, a diferencia del despido donde se paga sin i» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[coherencia] Escena 5: el encabezado visible «Retraso en el pago» no corresponde a lo que se narra («El pago podría no ser inmediato si quienes renuncian superan el diez p»)."
    ],
-   "visible": "  \n ¿Tu patrón te puede despedir hoy por una falta de hace meses? \n ¿DESPIDO POR \n FALTAS DE HACE \n MESES? \n No, porque las acciones de los patrones para despedir a los trabajadores prescriben en un mes a partir de que tienen conocimiento de la falta o de su comprobación. \n PRESCRIBE EN \n UN MES \n La norma indica: Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios. \n Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios \n La prescripción para el patrón inicia en estos supuestos: \n D"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 662 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 42: recorta al menos 102 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
+   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu trabajo? \n ¿TE PAGAN \n PRIMA POR \n RENUNCIAR? \n Depende. En la renuncia se exigen 15 años de servicio, a diferencia del despido donde se paga sin importar la antigüedad. \n DEPENDE DE \n TUS AÑOS \n La ley es clara: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Si cumples con el tiempo, esto es lo que debes saber: \n 12 días por año laborado \n Mínimo 15 años de "
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": []
-    },
-    "conclusiones": [
-     {
-      "conclusion": "Las acciones de los patrones para despedir a las personas trabajadoras o sancionar sus faltas prescriben en el plazo de un mes.",
-      "sostenida": "si",
-      "motivo": "El artículo 517, fracción I, establece claramente que las acciones de los patrones para despedir y disciplinar faltas prescriben en un mes."
-     },
-     {
-      "conclusion": "La prescripción corre a partir del día siguiente a la fecha de conocimiento de la falta o de la comprobación de errores.",
-      "sostenida": "si",
-      "motivo": "La cita literal del artículo 517 coincide con la interpretación de cuándo inicia el cómputo del plazo."
-     },
-     {
-      "conclusion": "No, las acciones del patrón para despedirte prescriben en un mes desde que conoce la falta o la comprueba.",
-      "sostenida": "parcial",
-      "motivo": "La conclusión es contradictoria. Aunque explica correctamente el inicio del plazo, responde con un 'No' absoluto a la pregunta del título. Si el patrón conoció la falta de hace meses apenas ayer, la acción no ha prescrito y sí puede despedir."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Título y respuesta corta",
-      "problema": "Uso de lenguaje absoluto y respuesta errónea al núcleo de la pregunta. La pieza responde 'No' a la pregunta '¿Tu patrón puede despedirte por una falta de hace meses?', pero la ley no establece que la antigüedad de la falta determine la prescripción, sino el momento del conocimiento o la comprobación. Una falta de hace meses puede ser causal de despido si el patrón la conoció recientemente.",
-      "correccion": "La respuesta debe ser 'Depende' o 'No necesariamente'. Se debe aclarar que el plazo de un mes no cuenta desde que ocurrió la falta, sino desde que el patrón tiene conocimiento de ella o comprueba los errores, pérdidas o averías."
-     }
-    ]
-   }
-  },
-  {
-   "etapa": "analisis",
-   "intento": 0,
-   "errores": []
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 0,
    "errores_esquema": [
-    "narración de 673 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 53: recorta al menos 113 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 695 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 75: recorta al menos 135 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
    ],
-   "visible": "  \n ¿Tu patrón puede despedirte por una falta de hace meses? \n ¿TE PUEDEN DESPEDIR \n POR UNA FALTA \n DE HACE MESES? \n Depende: el plazo de un mes para despedir no corre desde que ocurrió la falta, sino desde que el patrón la conoce o comprueba los errores. \n ¿CUÁNDO CORRE \n EL PLAZO? \n La Ley indica: Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios; \n Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios; \n El plazo corre desde el día siguiente a que se conoce la falta o se compru"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 673 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 53: recorta al menos 113 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": []
-    },
-    "conclusiones": [
-     {
-      "conclusion": "Las acciones del patrón para despedir a un trabajador prescriben en un mes, contado desde que tiene conocimiento de la falta o comprueba los errores.",
-      "sostenida": "parcial",
-      "motivo": "La conclusión es imprecisa respecto al inicio del cómputo; el artículo 517 establece que la prescripción corre a partir del día siguiente a la fecha en que se tenga conocimiento o se comprueben los errores, no desde el mismo momento del conocimiento."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Regla 1",
-      "problema": "Imprecisión técnica en el inicio del plazo de prescripción.",
-      "correccion": "Cambiar 'contado desde que tiene conocimiento' por 'contado a partir del día siguiente a la fecha en que se tenga conocimiento o se comprueben los errores'."
-     }
-    ]
-   }
+   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu empleo? \n ¿PRIMA POR \n RENUNCIA? \n Depende. Si renuncias, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU ANTIGÜEDAD \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Son 12 días por año. En renuncia se exigen al menos 15 años; en despido se paga sin importar el tiempo. \n 12 días por año \n Mínimo"
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 636 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 16: recorta al menos 76 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[vaguedad] Referencia vaga: «La norma precisa el inicio del cómputo para este plazo:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+    "narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
    ],
-   "visible": "  \n ¿Tu patrón puede despedirte por una falta de hace meses? \n ¿DESPIDO POR \n FALTA DE HACE \n MESES? \n Depende: el plazo de un mes para despedir no corre desde que ocurrió la falta, sino desde que el patrón la conoce o comprueba los errores. \n ¿CUÁNDO CORRE \n EL PLAZO? \n La ley señala que: Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios; \n Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios; \n La norma precisa el inicio del cómputo para este plazo: \n Desde el día siguiente \n Al"
+   "visible": "  \n ¿Te pagan la prima de antigüedad si renuncias? \n ¿TE PAGAN \n LA PRIMA \n AL RENUNCIAR? \n Depende: si renuncias voluntariamente, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU ANTIGÜEDAD \n La ley señala: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Para este derecho se considera lo siguiente: \n 12 días por año \n Mínimo 15 años \n El pago puede diferirse s"
   }
  ]
 }

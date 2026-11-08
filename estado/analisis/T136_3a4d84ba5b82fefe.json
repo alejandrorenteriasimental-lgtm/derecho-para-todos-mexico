@@ -1,0 +1,52 @@
+{
+ "tema_id": "T136",
+ "pregunta": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+ "fecha": "2026-11-08T15:54:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+  "concepto_central": "prescripción de las acciones de trabajo",
+  "respuesta_corta": "Por regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse.",
+  "reglas": [
+   {
+    "conclusion": "El plazo general para ejercer acciones legales por falta de pago es de un año.",
+    "fuente": "F1",
+    "cita_literal": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible",
+    "condiciones": [
+     "Que la obligación sea exigible",
+     "Que el plazo se cuente a partir del día siguiente a dicha exigibilidad"
+    ],
+    "excepciones": [
+     "Las excepciones que se consignan en los artículos siguientes de la ley"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El tiempo para reclamar un pago es de un año.",
+    "fuente": "F1",
+    "cita_literal": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El conteo del año inicia el día posterior a que el patrón tenía la obligación de pagar.",
+    "fuente": "F1",
+    "cita_literal": "contado a partir del día siguiente a la fecha en que la obligación sea exigible"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La exigibilidad del pago marca el inicio del plazo.",
+    "condicion": "Depende de la fecha en que, por contrato o ley, el patrón debió entregar el dinero y no lo hizo.",
+    "base": "F1 menciona que el conteo inicia cuando la obligación es exigible."
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos proporcionados no detallan cuáles son las excepciones específicas al plazo de un año ni el procedimiento para interrumpir la prescripción.",
+  "fuentes_irrelevantes": []
+ }
+}

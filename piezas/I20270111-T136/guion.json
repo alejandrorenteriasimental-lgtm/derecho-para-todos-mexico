@@ -1,0 +1,197 @@
+{
+  "id": "I20270111-T136",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Te pueden pedir trabajo peligroso si estás embarazada?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T136",
+  "pieza": {
+    "titular": "¿Te pueden pedir trabajo peligroso si estás embarazada?",
+    "bajada": "No. Si hay peligro para la salud o la del producto, se prohíben las labores peligrosas, insalubres o nocturnas.",
+    "cita": "no se podrá utilizar su trabajo en labores insalubres o peligrosas",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 166",
+    "ojo": "Tu salario y prestaciones no deben verse afectados.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 166"
+  },
+  "copy": "De acuerdo con el artículo 166 de la Ley Federal del Trabajo, cuando se ponga en peligro la salud de la mujer o la del producto durante la gestación o lactancia, queda prohibido el uso de su trabajo en labores insalubres o peligrosas.\n\nEsta protección también incluye la prohibición de realizar trabajo nocturno industrial, laborar en establecimientos comerciales o de servicio después de las diez de la noche y trabajar horas extraordinarias.\n\nLa norma establece que estas medidas deben aplicarse «sin que sufra perjuicio en su salario, prestaciones y derechos», asegurando que la estabilidad económica de la trabajadora se mantenga intacta mientras se protege su salud.\n\n¿Conocías este derecho? Guarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre el trabajo peligroso durante el embarazo. Explica que la ley prohíbe labores insalubres, peligrosas o nocturnas si hay riesgo para la salud, sin afectar el salario.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "166",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas",
+      "cita": "Ley Federal del Trabajo, artículo 166",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "166",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "sin que sufra perjuicio en su salario, prestaciones y derechos",
+      "cita": "Ley Federal del Trabajo, artículo 166",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Se prohíbe el trabajo en labores insalubres o peligrosas si existe riesgo para la salud durante el embarazo o lactancia.",
+      "fuente": "F1",
+      "nota": "La ley no define qué actividades específicas se consideran labores insalubres o peligrosas."
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La trabajadora debe conservar sus ingresos íntegros aunque se restrinjan sus labores por seguridad.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Si estás embarazada te pueden poner a hacer trabajo peligroso?",
+    "concepto_central": "labores insalubres o peligrosas durante la gestación",
+    "respuesta_corta": "No, cuando se ponga en peligro tu salud o la del producto, no se podrá utilizar tu trabajo en labores peligrosas, insalubres o en horarios nocturnos.",
+    "reglas": [
+      {
+        "conclusion": "Se prohíbe el uso del trabajo de mujeres embarazadas en labores peligrosas o insalubres si existe riesgo para su salud o la del producto.",
+        "fuente": "F1",
+        "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial, en establecimientos comerciales o de servicio después de las diez de la noche",
+        "condiciones": [
+          "Cuando se ponga en peligro la salud de la mujer, o la del producto",
+          "Durante el estado de gestación o el de lactancia"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "166"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se prohíbe el trabajo en labores insalubres, peligrosas, nocturnas industriales o después de las diez de la noche en servicios, además de horas extraordinarias.",
+        "fuente": "F1",
+        "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial, en establecimientos comerciales o de servicio después de las diez de la noche, así como en horas extraordinarias"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La restricción aplica cuando el trabajo represente un peligro para la salud de la mujer o del producto durante el embarazo o la lactancia.",
+        "fuente": "F1",
+        "cita_literal": "Cuando se ponga en peligro la salud de la mujer, o la del producto, ya sea durante el estado de gestación o el de lactancia"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La ley no prevé excepciones que permitan el trabajo peligroso bajo riesgo.",
+        "fuente": "F1",
+        "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas",
+        "motivo": "El texto establece una prohibición directa basada en la protección de la salud sin supuestos de excepción."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La trabajadora debe conservar sus ingresos íntegros aunque se restrinjan sus labores por seguridad.",
+        "condicion": "Cuando se aplique la prohibición de labores peligrosas o insalubres por embarazo o lactancia.",
+        "base": "sin que sufra perjuicio en su salario, prestaciones y derechos"
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no define qué actividades específicas se consideran labores insalubres o peligrosas, ni menciona el procedimiento médico para determinar el peligro."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-08T15:57:55+00:00",
+    "solicitud": "2027-01-11_imagen_T136-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Si estás embarazada te pueden poner a hacer trabajo peligroso?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "imagen: contenido demasiado largo: invade el pie de la ficha"
+        ],
+        "visible": "  \n   \n No. Si hay peligro para tu salud o la del producto, no se podrá utilizar tu trabajo en labores peligrosas, insalubres o en horarios nocturnos. \n no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial \n Tu salario y prestaciones no deben verse afectados."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "imagen: contenido demasiado largo: invade el pie de la ficha"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Se prohíbe el uso del trabajo de mujeres embarazadas en labores peligrosas o insalubres si existe riesgo para su salud o la del producto.",
+              "sostenida": "si",
+              "motivo": "La conclusión es jurídicamente válida porque condiciona la prohibición a la existencia de un riesgo para la salud de la mujer o del producto, tal como lo establece el artículo 166 de la LFT."
+            },
+            {
+              "conclusion": "La trabajadora debe conservar sus ingresos íntegros aunque se restrinjan sus labores por seguridad.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación correcta de la norma, que exige que la restricción de labores se realice 'sin que sufra perjuicio en su salario, prestaciones y derechos'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

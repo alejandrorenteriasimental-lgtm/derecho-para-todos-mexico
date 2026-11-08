@@ -1,0 +1,51 @@
+{
+ "tema_id": "T137",
+ "pregunta": "¿Estás obligado a denunciar un delito que presenciaste?",
+ "fecha": "2026-11-08T15:58:15+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Estás obligado a denunciar un delito que presenciaste?",
+  "concepto_central": "deber de denunciar un delito",
+  "respuesta_corta": "Depende: estás obligado si te consta la comisión de un probable delito, salvo que seas cónyuge, concubino, tutor, conviviente o familiar cercano del imputado.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona a quien le conste la comisión de un hecho probablemente constitutivo de delito está obligada a denunciarlo ante el Ministerio Público o ante la Policía en urgencias.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía.",
+    "condiciones": [
+     "Que a la persona le conste la comisión de un hecho probablemente constitutivo de un delito."
+    ],
+    "excepciones": [
+     "No están obligados quienes al momento del delito sean tutor, curador, pupilo, cónyuge, concubina, concubinario, conviviente del imputado, o parientes por consanguinidad o afinidad en línea recta hasta el cuarto grado y colateral hasta el segundo grado."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La persona que presencie o le conste un hecho probablemente delictivo debe denunciarlo ante el Ministerio Público o, en urgencias, ante la Policía.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona a quien le conste que se ha cometido un hecho probablemente constitutivo de un delito está obligada a denunciarlo ante el Ministerio Público y en caso de urgencia ante cualquier agente de la Policía."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación aplica a toda persona a quien le conste el hecho, exceptuando a familiares cercanos, cónyuges, concubinos, convivientes, tutores, curadores o pupilos del imputado.",
+    "fuente": "F1",
+    "cita_literal": "No estarán obligados a denunciar quienes al momento de la comisión del delito detenten el carácter de tutor, curador, pupilo, cónyuge, concubina o concubinario, conviviente del imputado, los parientes por consanguinidad o por afinidad"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La omisión de denunciar por parte de quien tiene la obligación legal genera las sanciones correspondientes que determine la ley.",
+    "condicion": "Tener el deber jurídico de denunciar y omitir hacerlo.",
+    "base": "Quien tenga el deber jurídico de denunciar y no lo haga, será acreedor a las sanciones correspondientes."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto oficial no especifica el tipo ni la cuantía de las sanciones aplicables por omitir la denuncia, ni fija un plazo en días u horas para que la ciudadanía en general presente la denuncia.",
+  "fuentes_irrelevantes": []
+ }
+}

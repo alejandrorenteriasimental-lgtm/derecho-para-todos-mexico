@@ -1,0 +1,58 @@
+{
+ "tema_id": "T136",
+ "pregunta": "¿Si estás embarazada te pueden poner a hacer trabajo peligroso?",
+ "fecha": "2026-11-08T15:56:12+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si estás embarazada te pueden poner a hacer trabajo peligroso?",
+  "concepto_central": "labores insalubres o peligrosas durante la gestación",
+  "respuesta_corta": "No, cuando se ponga en peligro tu salud o la del producto, no se podrá utilizar tu trabajo en labores peligrosas, insalubres o en horarios nocturnos.",
+  "reglas": [
+   {
+    "conclusion": "Se prohíbe el uso del trabajo de mujeres embarazadas en labores peligrosas o insalubres si existe riesgo para su salud o la del producto.",
+    "fuente": "F1",
+    "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial, en establecimientos comerciales o de servicio después de las diez de la noche",
+    "condiciones": [
+     "Cuando se ponga en peligro la salud de la mujer, o la del producto",
+     "Durante el estado de gestación o el de lactancia"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se prohíbe el trabajo en labores insalubres, peligrosas, nocturnas industriales o después de las diez de la noche en servicios, además de horas extraordinarias.",
+    "fuente": "F1",
+    "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas, trabajo nocturno industrial, en establecimientos comerciales o de servicio después de las diez de la noche, así como en horas extraordinarias"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La restricción aplica cuando el trabajo represente un peligro para la salud de la mujer o del producto durante el embarazo o la lactancia.",
+    "fuente": "F1",
+    "cita_literal": "Cuando se ponga en peligro la salud de la mujer, o la del producto, ya sea durante el estado de gestación o el de lactancia"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no prevé excepciones que permitan el trabajo peligroso bajo riesgo.",
+    "fuente": "F1",
+    "cita_literal": "no se podrá utilizar su trabajo en labores insalubres o peligrosas",
+    "motivo": "El texto establece una prohibición directa basada en la protección de la salud sin supuestos de excepción."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La trabajadora debe conservar sus ingresos íntegros aunque se restrinjan sus labores por seguridad.",
+    "condicion": "Cuando se aplique la prohibición de labores peligrosas o insalubres por embarazo o lactancia.",
+    "base": "sin que sufra perjuicio en su salario, prestaciones y derechos"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no define qué actividades específicas se consideran labores insalubres o peligrosas, ni menciona el procedimiento médico para determinar el peligro.",
+  "fuentes_irrelevantes": []
+ }
+}

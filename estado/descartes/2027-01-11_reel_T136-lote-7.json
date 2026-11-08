@@ -1,0 +1,52 @@
+{
+ "solicitud": "2027-01-11_reel_T136-lote-7.json",
+ "fecha": "2026-11-08T15:55:18+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 625 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 5: recorta al menos 65 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para reclamar un pago a tu patrón? \\n ¿CUÁNTO TIEMPO \\",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[vaguedad] Referencia vaga: «Sobre este plazo debes considerar lo siguiente:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n ¿Sabes cuánto tiempo tienes para reclamar un pago a tu patrón? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR PAGO? \n Por regla general, tienes un año para reclamar, contado desde el día siguiente a que el pago debió realizarse. \n PLAZO \n GENERAL \n La Ley Federal del Trabajo establece que: \"Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible\". \n Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible \n Sobre este plazo debes considerar lo siguiente: \n Inicia al ser exigible \n Cuenta un año natural \n Día siguiente al adeudo \n Hay casos distintos. La le"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[vaguedad] Referencia vaga: «Sobre este plazo debes considerar lo siguiente:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[vaguedad] Referencia vaga: «Para este plazo de prescripción laboral considera:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para reclamar un pago a tu patrón? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR PAGO? \n Por regla general, tienes un año contado desde el día siguiente a que el pago sea exigible. \n PLAZO \n GENERAL \n La Ley Federal del Trabajo indica: \"Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible\". \n Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible \n Para este plazo de prescripción laboral considera: \n Inicia al ser exigible \n Cuenta un año natural \n Día siguiente al adeudo \n Existen excepciones legales consignadas en los artículo"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[vaguedad] Referencia vaga: «Para este plazo de prescripción laboral considera:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 625 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 5: recorta al menos 65 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para reclamar un pago a tu patrón? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR PAGO? \n Por regla general, tienes un año contado desde el día siguiente a que el pago sea exigible. \n PLAZO \n GENERAL \n La Ley Federal del Trabajo indica: \"Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible\". \n Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible \n Sobre la prescripción de las acciones de trabajo según la Ley Federal del Trabajo, considera: \n Inicia al ser exigible \n Cuenta un año natural \n Día siguiente al adeudo \n Existen exce"
+  }
+ ]
+}
