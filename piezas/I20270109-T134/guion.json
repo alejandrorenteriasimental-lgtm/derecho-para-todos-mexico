@@ -1,0 +1,136 @@
+{
+  "id": "I20270109-T134",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿La esclavitud está prohibida en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T134",
+  "pieza": {
+    "titular": "¿La esclavitud está prohibida en México?",
+    "bajada": "Sí, la esclavitud está prohibida y los esclavos del extranjero que ingresen al país alcanzan su libertad y protección legal.",
+    "cita": "Está prohibida la esclavitud en los Estados Unidos Mexicanos.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 1",
+    "ojo": "Derechos Humanos",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 1"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos establece las disposiciones fundamentales sobre los derechos humanos en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 1, se indica que: «Está prohibida la esclavitud en los Estados Unidos Mexicanos».\n\nAsimismo, la norma señala que los esclavos extranjeros que ingresen al territorio nacional adquieren automáticamente su libertad y protección legal.\n\nGuarda y comparte esta publicación para conocer más sobre lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre la prohibición de la esclavitud en México según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Está prohibida la esclavitud en los Estados Unidos Mexicanos. Los esclavos del extranjero que entren al territorio nacional alcanzarán, por este solo hecho, su libertad y la protección de las leyes.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 1",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-08"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La esclavitud está prohibida y los esclavos extranjeros obtienen su libertad al ingresar al país.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿La esclavitud está prohibida en México?",
+    "concepto_central": "esclavitud",
+    "respuesta_corta": "Sí, la esclavitud está prohibida y los esclavos del extranjero que ingresen al país alcanzan su libertad y protección legal.",
+    "reglas": [
+      {
+        "conclusion": "La esclavitud está prohibida en el país y los esclavos extranjeros que ingresan al territorio nacional obtienen automáticamente su libertad y protección de las leyes.",
+        "fuente": "F1",
+        "cita_literal": "Está prohibida la esclavitud en los Estados Unidos Mexicanos. Los esclavos del extranjero que entren al territorio nacional alcanzarán, por este solo hecho, su libertad y la protección de las leyes.",
+        "condiciones": [
+          "Entrar al territorio nacional (aplicable a los esclavos del extranjero)"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "1"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La esclavitud está prohibida de forma absoluta y los esclavos extranjeros adquieren su libertad y protección legal al ingresar al país.",
+        "fuente": "F1",
+        "cita_literal": "Está prohibida la esclavitud en los Estados Unidos Mexicanos. Los esclavos del extranjero que entren al territorio nacional alcanzarán, por este solo hecho, su libertad y la protección de las leyes.",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla sanciones penales específicas ni procedimientos para garantizar esta disposición, limitándose a establecer la prohibición constitucional y la consecuencia para los esclavos extranjeros."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-08T03:47:55+00:00",
+    "solicitud": "2027-01-09_imagen_T134-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿La esclavitud está prohibida en México?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La esclavitud está prohibida en el país y los esclavos extranjeros que ingresan al territorio nacional obtienen automáticamente su libertad y protección de las leyes.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente de las dos oraciones del artículo 1 que abordan el tema: la prohibición expresa y la consecuencia jurídica inmediata para los esclavos del extranjero al entrar al territorio nacional ('por este solo hecho')."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

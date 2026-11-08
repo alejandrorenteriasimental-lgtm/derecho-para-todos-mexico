@@ -1533,3 +1533,31 @@
 {"ts": "2026-11-07T16:17:59+00:00", "pieza": "R20261231-T125", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-07T16:17:59+00:00", "evento": "fin_ciclo", "redactadas": 3, "descartadas": 1, "producidas": 8, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 8}
 {"ts": "2026-11-07T19:45:46+00:00", "pieza": "R20270103-T128", "evento": "transicion", "a": "PENDIENTE", "motivo": "revisión editorial delegada (Claude, 07-11, 3.ª ronda): contenido correcto, pero la cápsula «Protección contra la cesión de menores» se salía de los bordes del cuadro; causa del sistema (render.font_detalle, con prueba); se vuelve a producir sin cambiar el guion"}
+{"ts": "2026-11-08T03:46:53+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-08T03:47:55+00:00", "evento": "redactada", "pieza": "I20270109-T134", "solicitud": "2027-01-09_imagen_T134-lote-6.json"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "I20270104-T129", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión be0d2baa5feb2c74 (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "I20270106-T131", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión 53af44ad1dfce563 (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "R20270105-T130", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión 96aab119b15f5a24 (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "I20270107-T132", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión a1a939bf3ecd511f (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "I20270110-T135", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión 739cc615126496f8 (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "R20270106-T131", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión ef19b1d415739365 (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "R20270107-T132", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-07T19:44:33+00:00 versión 0277032c73149cff (delegada)"}
+{"ts": "2026-11-08T03:47:55+00:00", "pieza": "I20270109-T134", "evento": "encolado"}
+{"ts": "2026-11-08T03:48:59+00:00", "pieza": "R20270103-T128", "evento": "transicion", "a": "PRODUCIDO", "motivo": "39.7"}
+{"ts": "2026-11-08T03:49:02+00:00", "pieza": "R20270103-T128", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T03:49:02+00:00", "evento": "revision_preparada", "pieza": "R20270103-T128", "version": "b6125f37202dbc7d", "canal": "chat"}
+{"ts": "2026-11-08T03:51:01+00:00", "pieza": "R20270109-T134", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.4"}
+{"ts": "2026-11-08T03:51:05+00:00", "pieza": "R20270109-T134", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T03:51:05+00:00", "evento": "revision_preparada", "pieza": "R20270109-T134", "version": "5b65e564ced2ae55", "canal": "chat"}
+{"ts": "2026-11-08T03:52:25+00:00", "pieza": "R20270110-T135", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.4"}
+{"ts": "2026-11-08T03:52:28+00:00", "pieza": "R20270110-T135", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T03:52:28+00:00", "evento": "revision_preparada", "pieza": "R20270110-T135", "version": "83df022aa41c000d", "canal": "chat"}
+{"ts": "2026-11-08T03:53:03+00:00", "pieza": "I20270108-T133", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-08T03:53:07+00:00", "pieza": "I20270108-T133", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T03:53:07+00:00", "evento": "revision_preparada", "pieza": "I20270108-T133", "version": "f878929d955d7049", "canal": "chat"}
+{"ts": "2026-11-08T03:53:35+00:00", "pieza": "I20270109-T134", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-08T03:53:39+00:00", "pieza": "I20270109-T134", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T03:53:39+00:00", "evento": "revision_preparada", "pieza": "I20270109-T134", "version": "2ffb9e4381194ae2", "canal": "chat"}
+{"ts": "2026-11-08T03:53:39+00:00", "pieza": "I20270101-T126", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-08T03:53:39+00:00", "pieza": "I20270102-T127", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-08T03:53:39+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 5, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 7, "en_revision": 5}

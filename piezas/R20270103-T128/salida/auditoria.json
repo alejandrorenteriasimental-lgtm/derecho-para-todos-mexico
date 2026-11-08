@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "232f91d7c497b98b"
+      "detalle": "0ffd96a1a690041d"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,24 +118,24 @@
   "registro": {
     "id": "R20270103-T128",
     "titulo": "¿Cuál es la edad mínima para casarse en México?",
-    "fecha": "2026-11-07T16:06:05+00:00",
-    "sha256": "232f91d7c497b98b2beb54cf1f76aeb85825bd6d2f223f38b379247db6404af9",
+    "fecha": "2026-11-08T03:48:59+00:00",
+    "sha256": "0ffd96a1a690041d0b254579bf97cbc9a0c2a1e9be0bf1ea07fed88ae1e2c46a",
     "duracion_s": 39.7,
     "estado": "APTO",
     "huella_guion": "33e99ced6f4177c66f3b1fb4fef8a2e0e283cd9c7b2bcb5fbc4b25ac4cf67d73",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.3,
-      "musica": 1.8,
-      "render_video": 42.3,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 8.4
+      "narracion": 11.2,
+      "musica": 1.1,
+      "render_video": 31.6,
+      "mezcla_audio": 1.1,
+      "auditoria_tecnica": 6.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.24,
-      "computo_equivalente_runner_usd": 0.0074,
+      "computo_minutos": 0.86,
+      "computo_equivalente_runner_usd": 0.0052,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 1188,
