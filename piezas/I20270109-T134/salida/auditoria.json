@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1177 KB"
+      "detalle": "1171 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,7 +28,7 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1058"
+      "detalle": "fin del contenido en y=1051"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
@@ -38,7 +38,7 @@
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "91% de 34 palabras reconocidas"
+      "detalle": "92% de 37 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿La esclavitud está prohibida en México?",
     "plantilla": "dato",
     "archivo": "I20270109-T134.png",
-    "sha256": "6593a35f67c91c4ccf316f774916f6adbcac559a1fc3e61754cc936f31093357",
-    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000011110000000000000111111111111111111111111111111111111010110111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "a8c896d6146d39f6c41b06445518b7e9fb298fa36eb9ca44b588f0bef618099f",
+    "sha256": "f94635afe3d918a033484031e578e6c66e1bdbfbb54f352fc95616da1fb6248f",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000011110000000000000111111111111111111111111111111111110000000000000011000000000000001100000000000000111000000000000111111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "d878c4a15678d7d2d21d49572ee5cdb14e144afff5ba6babfe75c17e008250dd",
     "texto_alternativo": "Infografía sobre la prohibición de la esclavitud en México según la Constitución.",
-    "copy": "La Constitución Política de los Estados Unidos Mexicanos establece las disposiciones fundamentales sobre los derechos humanos en el país.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 1, se indica que: «Está prohibida la esclavitud en los Estados Unidos Mexicanos».\n\nAsimismo, la norma señala que los esclavos extranjeros que ingresen al territorio nacional adquieren automáticamente su libertad y protección legal.\n\nGuarda y comparte esta publicación para conocer más sobre lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿La esclavitud está prohibida en México? Sí.\n\nEl artículo 1 de la Constitución dice: «Está prohibida la esclavitud en los Estados Unidos Mexicanos. Los esclavos del extranjero que entren al territorio nacional alcanzarán, por este solo hecho, su libertad y la protección de las leyes».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 1.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-08T03:53:35+00:00",
+    "fecha": "2026-11-08T10:12:16+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

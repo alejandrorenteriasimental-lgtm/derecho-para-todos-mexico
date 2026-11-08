@@ -1,0 +1,288 @@
+{
+  "id": "R20270108-T133",
+  "formato": "reel",
+  "titulo": "¿Tu patrón puede despedirte por una falta de hace meses?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T133",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "517",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores",
+      "cita": "Ley Federal del Trabajo, artículo 517",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "517",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas",
+      "cita": "Ley Federal del Trabajo, artículo 517",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "517",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "la prescripción corre a partir, respectivamente, del día siguiente a la fecha en que se tenga conocimiento de la causa",
+      "cita": "Ley Federal del Trabajo, artículo 517",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "517",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "desde el momento en que se comprueben los errores cometidos, o las pérdidas o averías imputables al trabajador",
+      "cita": "Ley Federal del Trabajo, artículo 517",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-08"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te pueden despedir por algo que pasó hace meses?",
+      "titulo": [
+        "¿DESPIDO POR",
+        "FALTA ANTIGUA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende de cuándo se enteró el patrón. Tiene un mes para despedir al conocer la falta o el error.",
+      "titulo": [
+        "DEPENDE DEL",
+        "CONOCIMIENTO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 517 establece: \"Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios\".",
+      "etiqueta": "Ley, artículo 517",
+      "cita": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El patrón tiene un mes para despedir a partir de que conoce la falta.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "El mes para despedir inicia:",
+      "items": [
+        "Día tras conocer la causa",
+        "Al comprobarse el error",
+        "Al saber de la falta"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las acciones para disciplinar faltas prescriben en un mes.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si el patrón demuestra que apenas comprobó los errores, el mes para despedir inicia en ese momento.",
+      "encabezado": "SOBRE COMPROBACIÓN DE ERRORES",
+      "detalle": "El mes inicia tras la comprobación",
+      "fuente_corta": "Ley, art. 517",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El plazo inicia al día siguiente de conocer la causa.",
+          "fuente": "F3",
+          "nota": "La ley no especifica qué medios de prueba se requieren para acreditar la fecha exacta del conocimiento."
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "El patrón solo tiene un mes para despedir tras conocer la causa.",
+      "titulo": [
+        "PLAZO DE",
+        "UN MES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "interpretacion",
+          "texto": "Si el error se comprueba después, el mes inicia en ese momento.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tu patrón puede despedirte por una falta de hace meses?",
+    "concepto_central": "despido",
+    "respuesta_corta": "Depende de cuándo se enteró: el patrón tiene un mes para despedir a partir del día siguiente a que conozca la falta o se comprueben los errores cometidos.",
+    "reglas": [
+      {
+        "conclusion": "El derecho del patrón para despedir a un trabajador o disciplinar sus faltas tiene una vigencia de un mes.",
+        "fuente": "F1",
+        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios",
+        "condiciones": [
+          "Que se trate de una acción de despido, disciplina o descuento salarial."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "517"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La ley establece que las facultades del patrón para dar por terminada la relación laboral por una falta prescriben en un mes.",
+        "fuente": "F1",
+        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El plazo de un mes comienza a contar desde el día siguiente a que el patrón tenga conocimiento de la falta o se comprueben los errores.",
+        "fuente": "F1",
+        "cita_literal": "la prescripción corre a partir, respectivamente, del día siguiente a la fecha en que se tenga conocimiento de la causa de la separación o de la falta"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La norma no establece excepciones que amplíen o reduzcan este plazo de un mes para el caso de despidos.",
+        "fuente": "F1",
+        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores",
+        "motivo": "El texto oficial no prevé supuestos de excepción para el plazo de prescripción del despido."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Si la falta ocurrió hace varios meses pero el patrón apenas se enteró o apenas pudo comprobar el error, el mes para despedir empieza a contar desde ese nuevo momento.",
+        "condicion": "Que el patrón pueda demostrar que el conocimiento de la causa o la comprobación del error ocurrió recientemente.",
+        "base": "F1 (la prescripción corre a partir... del día siguiente a la fecha en que se tenga conocimiento de la causa)"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "despido",
+        "b": "renuncia",
+        "diferencia": "El despido es una separación decidida por el patrón, mientras que la renuncia es una separación decidida por la persona trabajadora."
+      }
+    ],
+    "limites": "El texto no especifica qué medios de prueba son necesarios para acreditar la fecha exacta en que el patrón tuvo conocimiento de la falta."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-08T10:05:28+00:00",
+    "solicitud": "2027-01-08_reel_T133-lote-6.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Tu patrón puede despedirte por una falta de hace meses?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Tu patrón puede despedirte por una falta de hace meses?\n\nDepende de cuándo se enteró: el patrón tiene un mes para despedir a partir del día siguiente a que conozca la falta o se comprueben los errores cometidos.\n\nFuente: Ley Federal del Trabajo, artículo 517.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 712 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 92: recorta al menos 152 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[vaguedad] Referencia vaga: «Este plazo de un mes inicia al día siguiente de:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+          "[coherencia] Escena 5: el encabezado visible «Sobre el conocimiento de la falta» no corresponde a lo que se narra («Si la falta fue hace tiempo, pero apenas se comprueban los errores, el»)."
+        ],
+        "visible": "  \n ¿Te pueden despedir hoy por algo que pasó hace meses? \n ¿DESPIDO POR \n FALTAS VIEJAS? \n Depende de cuándo se enteró tu patrón. La ley establece un límite de tiempo para que tomen esa decisión. \n DEPENDE DE \n LA FECHA \n La Ley Federal del Trabajo indica que: \"Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios\". \n Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios \n Este plazo de un mes inicia al día siguiente de: \n Tener conocimiento \n Comprobar errores \n Comprobar pérdidas \n "
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El derecho del patrón para despedir a un trabajador o disciplinar sus faltas tiene una vigencia de un mes.",
+              "sostenida": "si",
+              "motivo": "Se basa directamente en la fracción I del artículo 517, que establece la prescripción de un mes para dichas acciones."
+            },
+            {
+              "conclusion": "El plazo de un mes comienza a contar desde el día siguiente a que el patrón tenga conocimiento de la falta o se comprueben los errores.",
+              "sostenida": "si",
+              "motivo": "La cita literal del artículo 517 confirma que la prescripción corre a partir del día siguiente al conocimiento de la causa o de la comprobación de errores."
+            },
+            {
+              "conclusion": "Si la falta ocurrió hace varios meses pero el patrón apenas se enteró o apenas pudo comprobar el error, el mes para despedir empieza a contar desde ese nuevo momento.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación jurídica correcta de la regla de prescripción que supedita el inicio del plazo al conocimiento o a la comprobación, no a la fecha de la falta en sí."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

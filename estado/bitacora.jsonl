@@ -1565,3 +1565,24 @@
 {"ts": "2026-11-08T04:07:17+00:00", "pieza": "I20270109-T134", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 08-11): «OJO» sin información («Derechos Humanos») sustituido por la libertad «por este solo hecho» (CPEUM 1, 2.ª oración); bajada y texto de publicación sin relleno; se vuelve a verificar y producir"}
 {"ts": "2026-11-08T04:07:17+00:00", "pieza": "R20270109-T134", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 08-11): Respuesta absoluta («No», «juicio previo obligatorio ante cualquier intento») acotada a «por regla general» con la expropiación (CPEUM 27); lista narrada con su fuente literal (CPEUM 14); fuera el titular repetido; se vuelve a verificar y producir"}
 {"ts": "2026-11-08T04:07:17+00:00", "pieza": "R20270110-T135", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 08-11): «MÚTUO» mal escrito y distinto de lo narrado; lista sin narrar y titular repetido fuera; se agrega LFT 33 (convenio por escrito; nula la renuncia a salarios devengados, indemnizaciones y prestaciones); se vuelve a verificar y producir"}
+{"ts": "2026-11-08T10:03:06+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-08T10:05:28+00:00", "evento": "redactada", "pieza": "R20270108-T133", "solicitud": "2027-01-08_reel_T133-lote-6.json"}
+{"ts": "2026-11-08T10:05:28+00:00", "pieza": "R20270103-T128", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-08T04:07:17+00:00 versión b6125f37202dbc7d (delegada)"}
+{"ts": "2026-11-08T10:05:28+00:00", "pieza": "R20270108-T133", "evento": "encolado"}
+{"ts": "2026-11-08T10:07:20+00:00", "pieza": "R20270109-T134", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.0"}
+{"ts": "2026-11-08T10:07:24+00:00", "pieza": "R20270109-T134", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T10:07:24+00:00", "evento": "revision_preparada", "pieza": "R20270109-T134", "version": "1e47ff618af72a4b", "canal": "chat"}
+{"ts": "2026-11-08T10:09:27+00:00", "pieza": "R20270110-T135", "evento": "transicion", "a": "PRODUCIDO", "motivo": "36.3"}
+{"ts": "2026-11-08T10:09:31+00:00", "pieza": "R20270110-T135", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T10:09:31+00:00", "evento": "revision_preparada", "pieza": "R20270110-T135", "version": "45c1ba96afa7c329", "canal": "chat"}
+{"ts": "2026-11-08T10:11:19+00:00", "pieza": "R20270108-T133", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-11-08T10:11:19+00:00", "evento": "alerta", "mensaje": "R20270108-T133 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-08T10:11:48+00:00", "pieza": "I20270108-T133", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-08T10:11:51+00:00", "pieza": "I20270108-T133", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T10:11:51+00:00", "evento": "revision_preparada", "pieza": "I20270108-T133", "version": "98ed8a358454d0cf", "canal": "chat"}
+{"ts": "2026-11-08T10:12:16+00:00", "pieza": "I20270109-T134", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-08T10:12:20+00:00", "pieza": "I20270109-T134", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-08T10:12:20+00:00", "evento": "revision_preparada", "pieza": "I20270109-T134", "version": "10833c73a286ef9b", "canal": "chat"}
+{"ts": "2026-11-08T10:12:20+00:00", "pieza": "R20270102-T127", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-08T10:12:20+00:00", "pieza": "I20270103-T128", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-08T10:12:20+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 4, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 4}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.4 s"
+      "detalle": "41.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.4 s"
+      "detalle": "41.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.6 dBTP"
+      "detalle": "-1.4 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "450fea2d9fde6512"
+      "detalle": "4a1d44815cc76317"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270109-T134",
     "titulo": "¿Te pueden quitar tu casa sin un juicio?",
-    "fecha": "2026-11-08T03:51:01+00:00",
-    "sha256": "450fea2d9fde65129f18e5ac6101730b5992ad39038975fa47bbd116a6a4c0ff",
-    "duracion_s": 38.4,
+    "fecha": "2026-11-08T10:07:20+00:00",
+    "sha256": "4a1d44815cc763179f0358da177def974872a9c8a6aec04c47a29ab00df32c26",
+    "duracion_s": 41.0,
     "estado": "APTO",
-    "huella_guion": "97d2bf09a8cd43e3f42f980bbddc840d5b310ded3e9a0d918ea23ce244318711",
+    "huella_guion": "17b41bd89a2141a2d7dabb5d50d18fc73aac5f69c4e73bff24a8eadbab83f828",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.2,
-      "musica": 1.0,
-      "render_video": 27.8,
-      "mezcla_audio": 1.1,
-      "auditoria_tecnica": 6.4
+      "narracion": 9.9,
+      "musica": 1.1,
+      "render_video": 29.1,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 6.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.76,
-      "computo_equivalente_runner_usd": 0.0046,
+      "computo_minutos": 0.79,
+      "computo_equivalente_runner_usd": 0.0047,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1151,
-    "caracteres_narrados": 549
+    "frames": 1228,
+    "caracteres_narrados": 583
   }
 }
