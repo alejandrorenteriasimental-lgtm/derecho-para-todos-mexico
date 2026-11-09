@@ -13,7 +13,51 @@
       "documento": "Ley del Seguro Social",
       "articulo": "96",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "texto_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
+      "texto_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el término de cincuenta y dos semanas",
+      "cita": "Ley del Seguro Social, artículo 96",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "96",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "En caso de enfermedad no profesional, el asegurado tendrá derecho a un subsidio en dinero que se otorgará cuando la enfermedad lo incapacite para el trabajo",
+      "cita": "Ley del Seguro Social, artículo 96",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "97",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "El asegurado sólo percibirá el subsidio que se establece en el artículo anterior, cuando tenga cubiertas por lo menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad",
+      "cita": "Ley del Seguro Social, artículo 97",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "97",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "Los trabajadores eventuales percibirán el subsidio cuando tengan cubiertas seis cotizaciones semanales en los últimos cuatro meses anteriores a la enfermedad",
+      "cita": "Ley del Seguro Social, artículo 97",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F5": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "96",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "Si al concluir dicho período el asegurado continuare incapacitado, previo dictamen del Instituto, se podrá prorrogar el pago del subsidio hasta por veintiséis semanas más",
       "cita": "Ley del Seguro Social, artículo 96",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
@@ -32,46 +76,72 @@
     },
     {
       "tipo": "titular",
-      "texto": "A partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.",
+      "texto": "Desde el cuarto día de la incapacidad por enfermedad no profesional.",
       "titulo": [
-        "PAGO DE",
-        "INCAPACIDAD"
+        "DESDE EL",
+        "CUARTO DÍA"
       ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley señala:: El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
-      "etiqueta": "Ley del Seguro Social, artículo 96",
-      "cita": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El subsidio se paga a partir del cuarto día del inicio de la incapacidad.",
+          "texto": "En enfermedad no profesional que incapacite para el trabajo, el asegurado tiene derecho a un subsidio en dinero.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el término de cincuenta y dos semanas».",
+      "etiqueta": "Ley del Seguro Social, artículo 96",
+      "cita": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el término de cincuenta y dos semanas",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El subsidio se paga desde el cuarto día de la incapacidad, mientras dure y hasta 52 semanas.",
           "fuente": "F1",
           "comparar_literal": true
         }
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Requisitos:",
-      "items": [
-        "Enfermedad no profesional",
-        "Incapacidad para el trabajo",
-        "Previo dictamen del IMSS"
-      ],
-      "afirmaciones": []
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Ojo: necesitas cuatro cotizaciones semanales justo antes de enfermarte; si eres eventual, seis en los últimos cuatro meses.",
+      "encabezado": "Cuatro cotizaciones semanales previas",
+      "detalle": "Eventuales: seis en cuatro meses",
+      "fuente_corta": "Ley del Seguro Social, art. 97",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Solo se percibe el subsidio con al menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Los trabajadores eventuales necesitan seis cotizaciones semanales en los cuatro meses anteriores a la enfermedad.",
+          "fuente": "F4"
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "Si continúas incapacitado al concluir el periodo, se podrá prorrogar el pago hasta por veintiséis semanas más.",
+      "texto": "Si sigues incapacitado al terminar, con dictamen del IMSS el pago puede prorrogarse hasta veintiséis semanas más.",
       "titulo": [
-        "DURACIÓN Y",
-        "PRÓRROGA"
+        "¿SIGUES",
+        "INCAPACITADO?"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A5",
+          "tipo": "hecho_normativo",
+          "texto": "Si al concluir el periodo continúa la incapacidad, previo dictamen del Instituto, se puede prorrogar el pago hasta 26 semanas más.",
+          "fuente": "F5"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -165,7 +235,7 @@
   "pregunta_original": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?\n\nA partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.\n\nFuente: Ley del Seguro Social, artículo 96.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad no profesional?\n\nDesde el cuarto día. El artículo 96 de la Ley del Seguro Social dice: «El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el término de cincuenta y dos semanas». Si al terminar ese periodo sigues incapacitado, «previo dictamen del Instituto, se podrá prorrogar el pago del subsidio hasta por veintiséis semanas más».\n\nOjo, el artículo 97 pide cotizaciones previas: «cuando tenga cubiertas por lo menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad». Si eres trabajador eventual, «seis cotizaciones semanales en los últimos cuatro meses anteriores a la enfermedad».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -268,5 +338,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "cita en pantalla y en voz con error de extracción del PDF («términod e») y «señala::»; la lista «Requisitos» no se narraba y ponía «previo dictamen del IMSS» como requisito del pago inicial (en la ley es requisito de la prórroga); faltaba la condición del art. 97 (cuatro cotizaciones semanales previas; eventuales, seis en cuatro meses), traída del texto oficial con textos.yml. Ahora: titular sin la prórroga, cita corregida una vez, requisito del art. 97 como «Ojo» con fuente, prórroga con su condición literal; texto de publicación con las citas"
+    }
+  ]
 }

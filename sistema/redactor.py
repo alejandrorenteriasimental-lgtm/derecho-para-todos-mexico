@@ -23,6 +23,12 @@ import esquema, modelos, verificador, razonamiento
 RAIZ = Path(__file__).resolve().parent.parent
 ORDEN = {o["sigla"]: o for o in json.loads((RAIZ / "data" / "ordenamientos.json").read_text())["ordenamientos"]}
 RIESGO_CARRIL = {"A": "bajo", "B": "medio", "C": "alto"}
+def nombre_doc(d):
+    """Nombre del ordenamiento para lo visible. Solo se quita un sufijo «, artículo …»/«, art. …»: hay leyes con coma
+    en el nombre (Ley General de los Derechos de Niñas, Niños y Adolescentes) que no deben cortarse."""
+    return re.split(r",\s*(?:art[íi]culos?|arts?\.)\s", d or "", maxsplit=1, flags=re.I)[0].strip()
+
+
 LOCALES = ("CPF", "CCF")  # tienen equivalentes estatales distintos → leyenda de jurisdicción obligatoria
 
 
@@ -402,9 +408,14 @@ def construir_reel(sol, borrador, fuentes):
             if not (f and verificador.contiene(f["texto_oficial"], cita)):
                 continue                                         # una cita no verificable no se muestra en pantalla
             e["cita"] = cita if len(cita) <= 220 else cita[:214].rsplit(" ", 1)[0] + " …"   # en pantalla, fragmento literal; la voz dice la cita completa
-            e.setdefault("etiqueta", f'{f["documento"].split(",")[0]}, artículo {f["articulo"]}')
+            e.setdefault("etiqueta", f'{nombre_doc(f["documento"])}, artículo {f["articulo"]}')
             if not verificador.contiene(e.get("texto", ""), cita):
-                e["texto"] = (e.get("texto", "").rstrip(". ") + ": " + cita).strip(": ")
+                # La voz dice la cita UNA vez. Si el modelo parafraseó en lugar de citar, la paráfrasis se cambia por una
+                # entrada breve: antes se le pegaba la cita y se narraba dos veces (R20270113-T138, 09-11), lo que además
+                # alargaba los Reels por encima de 620 caracteres (descartes por longitud del 8 y 9-11).
+                entrada = e.get("texto", "").strip().rstrip(".:; ")
+                if len(entrada) > 40: entrada = "La ley dice"
+                e["texto"] = (entrada + ": «" + cita + "».").lstrip(": ")
             e["_src"] = (f["documento"], str(f["articulo"]))
         e["afirmaciones"] = [{"id": f"A{j + 1}", "tipo": a.get("tipo", "interpretacion"), "texto": a.get("texto", ""), "fuente": mapa[j],
                               **({"nota": a["duda"]} if a.get("duda") else {}), **({"comparar_literal": True} if e.get("tipo") == "cita" else {})}
@@ -448,7 +459,7 @@ def construir_imagen(sol, borrador, fuentes):
     if pl in ("concepto", "dato"):
         f = fuentes.get(borrador.get("fuente_cita")); cita = (borrador.get("cita_literal_destacada") or "").strip().strip("«»\"")
         if f and verificador.contiene(f["texto_oficial"], cita):
-            pieza.update(cita=cita, etiqueta_cita=f'{f["documento"].split(",")[0]}, artículo {f["articulo"]}')
+            pieza.update(cita=cita, etiqueta_cita=f'{nombre_doc(f["documento"])}, artículo {f["articulo"]}')
         if borrador.get("ojo"): pieza["ojo"] = borrador["ojo"][:70]
     elif pl == "tres_claves":
         pieza["puntos"] = [p[:70] for p in borrador.get("puntos", [])[:3]]
@@ -459,7 +470,7 @@ def construir_imagen(sol, borrador, fuentes):
     usados = {}
     for a in afs: usados.setdefault((fuentes[a["fuente"]]["documento"], fuentes[a["fuente"]]["articulo"]), 1)
     por_doc = {}
-    for d, n in usados: por_doc.setdefault(d.split(",")[0], []).append(n)
+    for d, n in usados: por_doc.setdefault(nombre_doc(d), []).append(n)
     y = lambda ns: ns[0] if len(ns) == 1 else ", ".join(ns[:-1]) + " y " + ns[-1]
     pieza["fuente_visible"] = " · ".join(f'{d}, art{"s" if len(ns) > 1 else ""}. {y(ns)}' for d, ns in por_doc.items())
     locales = any(f["sigla"] in LOCALES for f in fuentes.values())

@@ -56,3 +56,15 @@ def test_imagen_duplicada_se_detecta(tmp_path):
 def test_fichas_invalidas(cambio, error):
     g = copy.deepcopy(BASE); cambio(g)
     assert any(error in e for e in esquema.validar(g)), esquema.validar(g)
+
+
+def test_pie_con_nombre_largo_cabe_en_una_linea(tmp_path):
+    # Regresión 09-11-2026 (I20270115-T140): la fuente de la LGDNNA se partía en dos líneas pegadas al aviso.
+    import imagen
+    g = {"id": "I1", "formato": "imagen", "plantilla": "mito_realidad", "titulo": "¿Un medio puede publicar la foto de un menor?",
+         "pieza": {"titular": "¿Un medio puede publicar la foto de un menor?", "mito": "Los medios pueden publicar la imagen de un menor sin restricciones.",
+                   "realidad": "Hay límites: es violación a su intimidad si menoscaba su honra o reputación.",
+                   "fuente_visible": "Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 77"}}
+    textos, _ = imagen.dibujar(g, tmp_path / "p.png")
+    pie = [t for t in textos if t["texto"].startswith("Fuente:")]
+    assert len(pie) == 1 and pie[0]["texto"].endswith("art. 77") and pie[0]["px"] >= 24

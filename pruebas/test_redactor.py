@@ -250,3 +250,32 @@ def test_fuentes_sugeridas_respeta_siglas_con_minusculas():
     f = redactor.fuentes_sugeridas({"fuentes_sugeridas": "LMigra art. 9; LGDNNA art. 45; cpeum art. 17"}, Biblio())
     assert [(x["sigla"], x["articulo"]) for x in f.values()] == [("LMigra", "9"), ("LGDNNA", "45"), ("CPEUM", "17")]
     assert f["F1"]["documento"] == "Ley de Migración"
+
+
+def test_nombre_de_ley_con_coma_no_se_corta():
+    # Regresión 09-11-2026: I20270115-T140 mostraba «Ley General de los Derechos de Niñas, art. 77».
+    ley = "Ley General de los Derechos de Niñas, Niños y Adolescentes"
+    assert redactor.nombre_doc(ley) == ley
+    assert redactor.nombre_doc("Ley Federal del Trabajo, artículo 80") == "Ley Federal del Trabajo"
+    assert redactor.nombre_doc("Código Penal Federal, arts. 1 y 2") == "Código Penal Federal"
+    lit = "Se considerará violación a la intimidad de niñas, niños o adolescentes"
+    fuentes = {"F1": {"sigla": "LGDNNA", "documento": ley, "articulo": "77", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+                      "ambito": "general", "texto_oficial": lit + " cualquier manejo directo de su imagen"}}
+    sol = {"pieza_id": "I1", "tema_id": "T1", "plantilla": "dato", "carril": "A"}
+    borr = {"titular": "t", "bajada": "b", "fuente_cita": "F1", "cita_literal_destacada": lit,
+            "afirmaciones": [{"tipo": "hecho_normativo", "texto": "Es violación a la intimidad.", "fuente": "F1", "cita_literal": lit}]}
+    g = redactor.construir_imagen(sol, borr, fuentes)
+    assert g["pieza"]["fuente_visible"] == f"{ley}, art. 77"
+    assert g["pieza"]["etiqueta_cita"] == f"{ley}, artículo 77"
+
+
+def test_cita_parafraseada_se_narra_una_sola_vez(uso):
+    # Regresión 09-11-2026 (R20270113-T138): la voz decía la paráfrasis y después la cita completa.
+    b = copy.deepcopy(BORRADOR)
+    b["escenas"][2]["texto"] = "La Constitución prohíbe que te encarcelen por una deuda civil, sin importar el monto que debas."
+    g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
+    cita = next(e for e in g["escenas"] if e["tipo"] == "cita")
+    assert cita["texto"] == "La ley dice: «Nadie puede ser aprisionado por deudas de carácter puramente civil»."
+    b["escenas"][2]["texto"] = "Dice la Constitución:"
+    g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
+    assert next(e for e in g["escenas"] if e["tipo"] == "cita")["texto"].startswith("Dice la Constitución: «Nadie puede")

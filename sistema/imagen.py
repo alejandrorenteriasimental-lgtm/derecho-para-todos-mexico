@@ -79,7 +79,9 @@ def _pie(L, g):
     d = L.d; y = H - 150
     d.line([(M, y), (W - M, y)], fill=C["linea"], width=2)
     fuente = g["pieza"].get("fuente_visible", "")
-    L.parrafo(M, y + 22, "Fuente: " + fuente, "med", 26, C["gris"], C["papel"], W - 2 * M, max_lineas=2, tam_min=24)
+    t = "Fuente: " + fuente                         # una línea si cabe a ≥ 24 px (I20270115-T140: «art. 77» se partía junto al aviso)
+    una = len(render.wrap(t, render.font("med", 24), W - 2 * M - 8)) == 1
+    L.parrafo(M, y + 22, t, "med", 26, C["gris"], C["papel"], W - 2 * M, max_lineas=1 if una else 2, tam_min=24)
     L.texto((M, H - 62), "Información general, no asesoría legal.", render.font("semi", 26), C["tinta"], C["papel"])
     import marca                                   # símbolo oficial de la marca (marca/tokens.json)
     sim = marca.simbolo(72, "noche", "cempasuchil", cola=True)

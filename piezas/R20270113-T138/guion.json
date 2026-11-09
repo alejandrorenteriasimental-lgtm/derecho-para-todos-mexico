@@ -18,24 +18,13 @@
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
     },
-    "F2": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal de Protección al Consumidor",
-      "articulo": "82",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
-      "texto_literal": "El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación",
-      "cita": "Ley Federal de Protección al Consumidor, artículo 82",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-09"
-    },
     "F3": {
       "tipo": "ley",
       "nivel": "oficial",
       "documento": "Ley Federal de Protección al Consumidor",
       "articulo": "82",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
-      "texto_literal": "cuando la cosa u objeto del contrato tenga defectos o vicios ocultos que la hagan impropia para los usos a que habitualmente se destine, que disminuyan su calidad",
+      "texto_literal": "cuando la cosa u objeto del contrato tenga defectos o vicios ocultos que la hagan impropia para los usos a que habitualmente se destine, que disminuyan su calidad o la posibilidad de su uso, o no ofrezca la seguridad que dada su naturaleza normalmente se espere de ella",
       "cita": "Ley Federal de Protección al Consumidor, artículo 82",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
@@ -46,7 +35,7 @@
       "documento": "Ley Federal de Protección al Consumidor",
       "articulo": "82",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
-      "texto_literal": "El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación",
+      "texto_literal": "Cuando el consumidor opte por la rescisión, el proveedor tiene la obligación de reintegrarle el precio pagado",
       "cita": "Ley Federal de Protección al Consumidor, artículo 82",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
@@ -64,64 +53,64 @@
     },
     {
       "tipo": "titular",
-      "texto": "Puedes pedir restitución, rescisión o reducción del precio.",
+      "texto": "Tienes tres opciones y, en cualquier caso, bonificación o compensación.",
       "titulo": [
-        "OPCIONES POR",
-        "DEFECTOS"
+        "TRES OPCIONES",
+        "Y BONIFICACIÓN"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El consumidor puede pedir la restitución, rescisión del contrato o reducción del precio, además de bonificación.",
+          "texto": "El consumidor puede pedir la restitución, la rescisión del contrato o la reducción del precio, y en cualquier caso la bonificación o compensación.",
           "fuente": "F1"
         }
       ]
     },
     {
       "tipo": "cita",
-      "texto": "El consumidor puede optar por la restitución, la rescisión o la reducción, más bonificación: El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación",
-      "etiqueta": "Ley Federal de Protección al Consumidor, art. 82",
+      "texto": "La ley dice: «El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 82",
       "cita": "El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
           "texto": "La norma contempla las alternativas del consumidor cuando existen vicios ocultos.",
-          "fuente": "F2",
+          "fuente": "F1",
           "comparar_literal": true
         }
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Procede si la cosa tiene defectos ocultos que la hagan impropia para su uso habitual.",
-      "items": [
-        "Restitución del bien",
-        "Rescisión del contrato",
-        "Reducción del precio"
+      "tipo": "titular",
+      "texto": "Aplica si el defecto oculto la hace impropia para su uso habitual, reduce su calidad o uso, o no da la seguridad esperada.",
+      "titulo": [
+        "SI EL DEFECTO",
+        "ERA OCULTO"
       ],
       "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "Aplica si el bien tiene defectos ocultos que afecten su calidad o uso habitual.",
+          "texto": "Procede cuando el defecto o vicio oculto hace impropio el bien para su uso habitual, disminuye su calidad o uso, o no ofrece la seguridad esperada.",
           "fuente": "F3"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Puedes pedir restitución, rescisión o reducción.",
+      "texto": "Si eliges la rescisión, deben devolverte el precio pagado.",
       "titulo": [
-        "CONOCE TUS",
-        "DERECHOS"
+        "RESCISIÓN:",
+        "TE DEVUELVEN",
+        "EL PRECIO"
       ],
       "afirmaciones": [
         {
           "id": "A4",
           "tipo": "hecho_normativo",
-          "texto": "El consumidor elige entre restitución, rescisión del contrato o reducción del precio.",
+          "texto": "Si el consumidor opta por la rescisión, el proveedor debe reintegrarle el precio pagado.",
           "fuente": "F4"
         }
       ]
@@ -225,7 +214,7 @@
   "pregunta_original": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?\n\nPuedes pedir la restitución del bien, la rescisión del contrato o la reducción del precio, además de una bonificación o compensación.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 82.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?\n\nEl artículo 82 de la Ley Federal de Protección al Consumidor dice: «El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación, cuando la cosa u objeto del contrato tenga defectos o vicios ocultos que la hagan impropia para los usos a que habitualmente se destine, que disminuyan su calidad o la posibilidad de su uso, o no ofrezca la seguridad que dada su naturaleza normalmente se espere de ella y de su uso razonable».\n\nSi eliges la rescisión, el proveedor debe reintegrarte el precio pagado y, en su caso, intereses. Todo esto, sin perjuicio de la indemnización por daños y perjuicios que corresponda.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -276,5 +265,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "la cita se narraba dos veces (paráfrasis + cita); la lista mostraba las tres opciones mientras la voz decía la condición (lo visible no coincidía con lo narrado); titular final repetido («CONOCE TUS DERECHOS»). Ahora: titular con bonificación, cita una vez, condición completa del art. 82 en su propia escena con fuente, y la obligación de devolver el precio si se elige la rescisión (cita literal). Texto de publicación con la cita completa"
+    }
+  ]
 }

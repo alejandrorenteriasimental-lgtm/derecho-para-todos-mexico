@@ -12,15 +12,15 @@
   "lote": "lote-6",
   "motivo_seleccion": "Art. 58, párrafo segundo, LFPC: los proveedores que ofrezcan bienes o servicios al público en general «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión…», salvo causas de seguridad o tranquilidad del establecimiento, de sus clientes o de las personas con discapacidad, o disposición expresa de otra ley. Condición y excepción literales; texto en registro/textos/LFPC_58.json. Sustituye a LFT 162 (dos descartes).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-05T16:18:52Z",
   "pieza_id": "R20270108-T133",
   "archivo": "2027-01-08_reel_T133-lote-6.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 720 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 100: recorta al menos 160 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Un negocio puede negarte la entrada por «derecho de admisión»? \\n ¿DEREC",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "4bf2dc74b42453e5",
+  "huella_entrada": "838c6ac5be26d931",
   "historial": [
     {
       "estado": "DESCARTADA",
@@ -55,5 +55,14 @@
     }
   ],
   "pieza": "R20270108-T133",
-  "angulo": "Respuesta: No, por regla general. Cita literal única (art. 58, párrafo segundo, LFPC): «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión». Ojo, excepción literal de la misma oración: «salvo por causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas discapacitadas, o se funden en disposiciones expresas de otros ordenamientos legales». Aplica a quienes ofrecen bienes o servicios al público en general. No hablar de multas, de Profeco ni de cómo quejarse (el artículo no lo dice). Todo texto visible debe corresponder a lo narrado en esa escena. Cuatro escenas más cierre; narración de 450 caracteres o menos (la cita ya ocupa unos 190); sin listas ni frases de transición."
+  "angulo": "Respuesta: No, por regla general. Cita literal única (art. 58, párrafo segundo, LFPC): «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión». Ojo, excepción literal de la misma oración: «salvo por causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas discapacitadas, o se funden en disposiciones expresas de otros ordenamientos legales». Aplica a quienes ofrecen bienes o servicios al público en general. No hablar de multas, de Profeco ni de cómo quejarse (el artículo no lo dice). Todo texto visible debe corresponder a lo narrado en esa escena. Cuatro escenas más cierre; narración de 450 caracteres o menos (la cita ya ocupa unos 190); sin listas ni frases de transición. La escena de cita dice solo «La ley dice:» y la cita.",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude",
+      "motivo": "primer descarte con LFPC 58, por longitud (720 caracteres). Causa del sistema: si la voz de la escena de cita parafraseaba, el redactor le pegaba la cita completa y se narraba dos veces (≈190 caracteres de más); corregido hoy con prueba (redactor.construir_reel). Se reabre con el mismo ángulo y la cita una sola vez",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 720 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 100: recorta al menos 160 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  "
+    }
+  ]
 }

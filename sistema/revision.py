@@ -11,7 +11,7 @@ Seguridad: el token del bot es un secreto del repositorio (TELEGRAM_TOKEN); solo
 persona vinculada; el vínculo se hace una sola vez con un código de un solo uso cuya huella (no el código) está en
 estado/telegram.json. Telegram conserva los mensajes pendientes 24 h: el flujo «revision» los recoge cada 4 h.
 """
-import hashlib, json, os, sys, time, uuid, urllib.error, urllib.parse, urllib.request
+import hashlib, json, os, re, sys, time, uuid, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,6 +22,11 @@ RAIZ = Path(__file__).resolve().parent.parent
 ESTADO_TG = RAIZ / "estado" / "telegram.json"
 REGISTRO = RAIZ / "estado" / "aprobaciones.jsonl"
 API = "https://api.telegram.org/bot{tok}/{metodo}"
+
+
+def _nombre_doc(d):
+    """Nombre visible del ordenamiento sin cortar leyes con coma (igual que redactor.nombre_doc)."""
+    return re.split(r",\s*(?:art[íi]culos?|arts?\.)\s", d or "", maxsplit=1, flags=re.I)[0].strip()
 
 
 def _ahora(): return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -79,7 +84,7 @@ def nuevo_codigo(vigencia_h=72):
 
 def _texto_pieza(pid, t, g, ver):
     rz = g.get("razonamiento") or {}
-    fuentes = sorted({f'{f.get("documento", "").split(",")[0]}, art. {f.get("articulo")}' for f in (g.get("fuentes") or {}).values()})
+    fuentes = sorted({f'{_nombre_doc(f.get("documento", ""))}, art. {f.get("articulo")}' for f in (g.get("fuentes") or {}).values()})
     fmt = "Reel" if t.get("formato", "reel") == "reel" else "Imagen"
     return (f"🧾 {fmt} para revisión · {pid}\n\n{g.get('titulo', '')}\n\nRespuesta: {rz.get('respuesta_corta', '—')}\n\n"
             f"Fuentes: {'; '.join(fuentes)[:300]}\nVersión: {ver}\n\nRevisa el contenido y la exactitud jurídica antes de decidir.")[:1000]
