@@ -1,0 +1,179 @@
+{
+  "id": "I20270117-T142",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuánto duran los derechos de autor?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T142",
+  "pieza": {
+    "titular": "¿Cuánto duran los derechos de autor?",
+    "bajada": "Depende del supuesto: la vida del autor y cien años más, o cien años después de divulgadas.",
+    "cita": "Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más.",
+    "etiqueta_cita": "Ley Federal del Derecho de Autor, artículo 29",
+    "ojo": "Cien años tras la muerte del último coautor.",
+    "fuente_visible": "Ley Federal del Derecho de Autor, art. 29"
+  },
+  "copy": "De acuerdo con la Ley Federal del Derecho de Autor, artículo 29, la vigencia comprende «La vida del autor y, a partir de su muerte, cien años más». Si la obra pertenece a varios coautores, el plazo se cuenta desde la muerte del último.\n\nAsimismo, la ley señala que los derechos duran «Cien años después de divulgadas». Guarda esta publicación y compártela con quien le pueda interesar.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Pieza gráfica que detalla la vigencia de los derechos patrimoniales según la Ley Federal del Derecho de Autor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más.",
+      "cita": "Ley Federal del Derecho de Autor, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Cuando la obra le pertenezca a varios coautores los cien años se contarán a partir de la muerte del último",
+      "cita": "Ley Federal del Derecho de Autor, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los derechos patrimoniales duran la vida del autor y cien años más, o cien años después de divulgadas.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "En obras con varios coautores, los cien años se cuentan a partir de la muerte del último.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto tiempo duran los derechos de autor sobre una obra?",
+    "concepto_central": "vigencia de los derechos patrimoniales",
+    "respuesta_corta": "Depende del supuesto: la vida del autor y cien años más, o cien años después de divulgadas.",
+    "reglas": [
+      {
+        "conclusion": "Los derechos patrimoniales vigentes duran la vida del autor y cien años más a partir de su muerte.",
+        "fuente": "F1",
+        "cita_literal": "Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más.",
+        "condiciones": [
+          "Cuando la obra pertenezca a varios coautores, los cien años se cuentan a partir de la muerte del último."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Derecho de Autor",
+          "articulo": "29"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Los derechos patrimoniales duran la vida del autor y cien años más, o cien años después de divulgadas.",
+        "fuente": "F1",
+        "cita_literal": "Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "En obras con coautores, el plazo de cien años se cuenta desde la muerte del último.",
+        "fuente": "F1",
+        "cita_literal": "Cuando la obra le pertenezca a varios coautores los cien años se contarán a partir de la muerte del último"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no especifica plazos para otros supuestos distintos a la vida del autor, coautores o divulgación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T20:02:49+00:00",
+    "solicitud": "2027-01-17_imagen_T142-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cuánto tiempo duran los derechos de autor sobre una obra?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[vaguedad] Referencia vaga: «Los derechos patrimoniales sobre una obra tienen una vigencia específica establecida en la». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ],
+        "visible": "  \n   \n Depende del supuesto: la vida del autor y cien años más, o cien años después de divulgadas. \n Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más. \n Cien años tras la muerte del último coautor."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[vaguedad] Referencia vaga: «Los derechos patrimoniales sobre una obra tienen una vigencia específica establecida en la». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los derechos patrimoniales duran la vida del autor y cien años más, o cien años después de divulgadas.",
+              "sostenida": "si",
+              "motivo": "La pieza refleja correctamente las dos fracciones del artículo 29 de la Ley Federal del Derecho de Autor."
+            },
+            {
+              "conclusion": "En obras con coautores, el plazo de cien años se cuenta desde la muerte del último.",
+              "sostenida": "si",
+              "motivo": "La pieza cita y explica correctamente la regla específica para coautorías contenida en el artículo 29, fracción I."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

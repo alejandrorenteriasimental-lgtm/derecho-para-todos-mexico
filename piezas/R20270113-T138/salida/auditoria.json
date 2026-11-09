@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "40.9 s"
+      "detalle": "40.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "40.9 s"
+      "detalle": "40.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.7 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "32 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "09dcffd55ed9295a"
+      "detalle": "2d79ca36b0627bee"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270113-T138",
     "titulo": "¿Qué pedir si tu compra tiene defectos ocultos?",
-    "fecha": "2026-11-09T16:37:40+00:00",
-    "sha256": "09dcffd55ed9295ac9949fe6f5baf9a7230fd6a5cad29801999b0985b1d1e65a",
-    "duracion_s": 40.9,
+    "fecha": "2026-11-09T20:06:46+00:00",
+    "sha256": "2d79ca36b0627bee43b4916ec87cf8e16771799484f1edb6047d86fbec9bd6cd",
+    "duracion_s": 40.3,
     "estado": "APTO",
-    "huella_guion": "56735457610efa2fb29ab3b8a450a9efdd2bd1528248094eee236b0b8f3c5b09",
+    "huella_guion": "29b09f447b6cb8efe9d03be95a7f93ea5928071cbe6efd4eff19f6f81e2aee8b",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.6,
-      "musica": 1.6,
-      "render_video": 41.3,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 7.6
+      "narracion": 25.0,
+      "musica": 2.2,
+      "render_video": 51.8,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.6
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.18,
-      "computo_equivalente_runner_usd": 0.0071,
+      "computo_minutos": 1.53,
+      "computo_equivalente_runner_usd": 0.0092,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1224,
-    "caracteres_narrados": 592
+    "frames": 1206,
+    "caracteres_narrados": 574
   }
 }

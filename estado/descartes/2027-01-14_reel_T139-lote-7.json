@@ -1,21 +1,22 @@
 {
  "solicitud": "2027-01-14_reel_T139-lote-7.json",
- "fecha": "2026-11-09T16:25:45+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada nocturna comprende el horario que va de las veint» no declara condiciones.\", \"[condiciones] Generalización: «La jornad",
+ "fecha": "2026-11-09T20:00:20+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada de trabajo se considera nocturna cuando se encuen» no declara condiciones.\", \"[condiciones] Generalización: «La jornad",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
    "errores": [
-    "[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada nocturna comprende el horario de las veinte a las» no declara condiciones."
+    "[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada nocturna es la comprendida en el horario de las v» no declara condiciones.",
+    "[condiciones] Generalización: «Inicia a partir de las veinte horas y concluye a las seis horas.» se presenta sin la condición que impone Ley Federal del Trabajo, art. 60 («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…»)."
    ]
   },
   {
    "etapa": "analisis",
    "intento": 1,
    "errores": [
-    "[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada nocturna comprende el horario que va de las veint» no declara condiciones.",
-    "[condiciones] Generalización: «La jornada nocturna cuenta a partir de las veinte horas y se extiende hasta las seis horas» se presenta sin la condición que impone Ley Federal del Trabajo, art. 60 («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…»)."
+    "[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada de trabajo se considera nocturna cuando se encuen» no declara condiciones.",
+    "[condiciones] Generalización: «La jornada nocturna comprende de las veinte a las seis horas, o la mixta si el período noc» se presenta sin la condición que impone Ley Federal del Trabajo, art. 60 («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…»)."
    ]
   }
  ]

@@ -1,7 +1,7 @@
 {
   "id": "R20270108-T133",
   "formato": "reel",
-  "titulo": "¿Tu patrón puede despedirte por una falta de hace meses?",
+  "titulo": "¿Un negocio puede negarte la entrada por derecho de admisión?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "carril_inicial": "A",
@@ -10,131 +10,75 @@
     "F1": {
       "tipo": "ley",
       "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "517",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores",
-      "cita": "Ley Federal del Trabajo, artículo 517",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-08"
-    },
-    "F2": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "517",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas",
-      "cita": "Ley Federal del Trabajo, artículo 517",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-08"
-    },
-    "F3": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "517",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "la prescripción corre a partir, respectivamente, del día siguiente a la fecha en que se tenga conocimiento de la causa",
-      "cita": "Ley Federal del Trabajo, artículo 517",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-08"
-    },
-    "F4": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "517",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "desde el momento en que se comprueben los errores cometidos, o las pérdidas o averías imputables al trabajador",
-      "cita": "Ley Federal del Trabajo, artículo 517",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-08"
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "58",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 58",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te pueden despedir por algo que pasó hace meses?",
+      "texto": "¿Un negocio puede negarte la entrada por derecho de admisión?",
       "titulo": [
-        "¿DESPIDO POR",
-        "FALTA ANTIGUA?"
+        "¿TE NEGARON",
+        "LA ENTRADA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Depende de cuándo se enteró el patrón. Tiene un mes para despedir al conocer la falta o el error.",
+      "texto": "No, salvo por seguridad.",
       "titulo": [
-        "DEPENDE DEL",
-        "CONOCIMIENTO"
+        "DERECHO DE",
+        "ADMISIÓN"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "El artículo 517 establece: \"Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios\".",
-      "etiqueta": "Ley, artículo 517",
-      "cita": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios",
+      "texto": "La ley prohíbe esta práctica: «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión».",
+      "etiqueta": "Ley, artículo 58",
+      "cita": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Las únicas excepciones permitidas son las siguientes:",
+      "items": [
+        "Seguridad del lugar",
+        "Tranquilidad de clientes",
+        "Disposición legal"
+      ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El patrón tiene un mes para despedir a partir de que conoce la falta.",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "El mes para despedir inicia:",
-      "items": [
-        "Día tras conocer la causa",
-        "Al comprobarse el error",
-        "Al saber de la falta"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "Las acciones para disciplinar faltas prescriben en un mes.",
-          "fuente": "F2"
+          "texto": "Prohibición de la reserva del derecho de admisión en servicios al público.",
+          "fuente": "F1"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Si el patrón demuestra que apenas comprobó los errores, el mes para despedir inicia en ese momento.",
-      "encabezado": "SOBRE COMPROBACIÓN DE ERRORES",
-      "detalle": "El mes inicia tras la comprobación",
-      "fuente_corta": "Ley, art. 517",
-      "afirmaciones": [
-        {
-          "id": "A3",
-          "tipo": "hecho_normativo",
-          "texto": "El plazo inicia al día siguiente de conocer la causa.",
-          "fuente": "F3",
-          "nota": "La ley no especifica qué medios de prueba se requieren para acreditar la fecha exacta del conocimiento."
-        }
-      ]
+      "texto": "Salvo por causas que afecten la seguridad o tranquilidad.",
+      "encabezado": "Excepción por seguridad",
+      "detalle": "Seguridad del establecimiento",
+      "fuente_corta": "Ley, art. 58",
+      "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "El patrón solo tiene un mes para despedir tras conocer la causa.",
+      "texto": "La regla general es su prohibición.",
       "titulo": [
-        "PLAZO DE",
-        "UN MES"
+        "REGLA",
+        "GENERAL"
       ],
-      "afirmaciones": [
-        {
-          "id": "A4",
-          "tipo": "interpretacion",
-          "texto": "Si el error se comprueba después, el mes inicia en ese momento.",
-          "fuente": "F4"
-        }
-      ]
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -145,68 +89,44 @@
   ],
   "razonamiento": {
     "suficiente": true,
-    "pregunta": "¿Tu patrón puede despedirte por una falta de hace meses?",
-    "concepto_central": "despido",
-    "respuesta_corta": "Depende de cuándo se enteró: el patrón tiene un mes para despedir a partir del día siguiente a que conozca la falta o se comprueben los errores cometidos.",
+    "pregunta": "¿Un negocio puede negarte la entrada por «derecho de admisión»?",
+    "concepto_central": "reserva del derecho de admisión",
+    "respuesta_corta": "No, los proveedores no pueden reservarse el derecho de admisión, salvo por causas que afecten la seguridad o tranquilidad del lugar o por disposición legal.",
     "reglas": [
       {
-        "conclusion": "El derecho del patrón para despedir a un trabajador o disciplinar sus faltas tiene una vigencia de un mes.",
+        "conclusion": "Los proveedores de bienes y servicios no pueden reservarse el derecho de admisión ni negar o condicionar el servicio al consumidor por alguna particularidad o discriminación.",
         "fuente": "F1",
-        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios",
+        "cita_literal": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión",
         "condiciones": [
-          "Que se trate de una acción de despido, disciplina o descuento salarial."
+          "Que el proveedor ofrezca bienes o servicios al público en general"
         ],
-        "excepciones": [],
+        "excepciones": [
+          "Causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas discapacitadas",
+          "Disposiciones expresas de otros ordenamientos legales"
+        ],
         "ref": {
-          "documento": "Ley Federal del Trabajo",
-          "articulo": "517"
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "58"
         }
       }
     ],
     "elementos": [
       {
-        "elemento": "contenido",
+        "elemento": "efecto",
         "estado": "cubierto",
-        "respuesta": "La ley establece que las facultades del patrón para dar por terminada la relación laboral por una falta prescriben en un mes.",
+        "respuesta": "La reserva del derecho de admisión y la selección de clientela están prohibidas para los proveedores de servicios al público en general, salvo por razones de seguridad, tranquilidad o mandatos legales expresos.",
         "fuente": "F1",
-        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas"
-      },
-      {
-        "elemento": "condiciones",
-        "estado": "cubierto",
-        "respuesta": "El plazo de un mes comienza a contar desde el día siguiente a que el patrón tenga conocimiento de la falta o se comprueben los errores.",
-        "fuente": "F1",
-        "cita_literal": "la prescripción corre a partir, respectivamente, del día siguiente a la fecha en que se tenga conocimiento de la causa de la separación o de la falta"
-      },
-      {
-        "elemento": "excepcion",
-        "estado": "no_aplica",
-        "respuesta": "La norma no establece excepciones que amplíen o reduzcan este plazo de un mes para el caso de despidos.",
-        "fuente": "F1",
-        "cita_literal": "Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores",
-        "motivo": "El texto oficial no prevé supuestos de excepción para el plazo de prescripción del despido."
+        "cita_literal": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión"
       }
     ],
-    "interpretaciones": [
-      {
-        "afirmacion": "Si la falta ocurrió hace varios meses pero el patrón apenas se enteró o apenas pudo comprobar el error, el mes para despedir empieza a contar desde ese nuevo momento.",
-        "condicion": "Que el patrón pueda demostrar que el conocimiento de la causa o la comprobación del error ocurrió recientemente.",
-        "base": "F1 (la prescripción corre a partir... del día siguiente a la fecha en que se tenga conocimiento de la causa)"
-      }
-    ],
-    "distinciones": [
-      {
-        "a": "despido",
-        "b": "renuncia",
-        "diferencia": "El despido es una separación decidida por el patrón, mientras que la renuncia es una separación decidida por la persona trabajadora."
-      }
-    ],
-    "limites": "El texto no especifica qué medios de prueba son necesarios para acreditar la fecha exacta en que el patrón tuvo conocimiento de la falta."
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "La Ley Federal de Protección al Consumidor en este artículo establece la prohibición de la reserva del derecho de admisión, pero el texto proporcionado no detalla las sanciones aplicables, multas ni las autoridades ante las cuales denunciar dicha conducta."
   },
   "generacion": {
     "afirmaciones_eliminadas_sin_ancla": [],
     "fuentes_descartadas": [],
-    "fecha": "2026-11-08T10:05:28+00:00",
+    "fecha": "2026-11-09T19:59:44+00:00",
     "solicitud": "2027-01-08_reel_T133-lote-6.json",
     "metodo": "analisis_previo_v2_cobertura",
     "metricas": {
@@ -216,7 +136,7 @@
         "auditor": 1
       },
       "llamadas_ia_total": 4,
-      "intentos_analisis": 1,
+      "intentos_analisis": 0,
       "intentos_redaccion": 2,
       "investigacion_complementaria": false
     },
@@ -227,31 +147,36 @@
         "gemini:gemini-3.1-flash-lite",
         "gemini:gemini-3.6-flash"
       ],
-      "redactor": "gemini-3-flash-preview"
+      "redactor": "gemini-3.5-flash-lite"
     }
   },
-  "pregunta_original": "¿Tu patrón puede despedirte por una falta de hace meses?",
-  "tipo_pregunta": "derecho",
+  "pregunta_original": "¿Un negocio puede negarte la entrada por «derecho de admisión»?",
+  "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Tu patrón puede despedirte por una falta de hace meses?\n\nDepende de cuándo se enteró: el patrón tiene un mes para despedir a partir del día siguiente a que conozca la falta o se comprueben los errores cometidos.\n\nFuente: Ley Federal del Trabajo, artículo 517.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Un negocio puede negarte la entrada por «derecho de admisión»?\n\nNo, los proveedores no pueden reservarse el derecho de admisión, salvo por causas que afecten la seguridad o tranquilidad del lugar o por disposición legal.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 58.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
     "historial": [
       {
         "etapa": "analisis",
-        "intento": 0,
+        "reutilizado": true,
         "errores": []
       },
       {
         "etapa": "redaccion",
         "intento": 0,
         "errores_esquema": [
-          "narración de 712 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 92: recorta al menos 152 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-          "[vaguedad] Referencia vaga: «Este plazo de un mes inicia al día siguiente de:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
-          "[coherencia] Escena 5: el encabezado visible «Sobre el conocimiento de la falta» no corresponde a lo que se narra («Si la falta fue hace tiempo, pero apenas se comprueban los errores, el»)."
+          "narración de 740 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 120: recorta al menos 180 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
         ],
-        "visible": "  \n ¿Te pueden despedir hoy por algo que pasó hace meses? \n ¿DESPIDO POR \n FALTAS VIEJAS? \n Depende de cuándo se enteró tu patrón. La ley establece un límite de tiempo para que tomen esa decisión. \n DEPENDE DE \n LA FECHA \n La Ley Federal del Trabajo indica que: \"Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios\". \n Prescriben en un mes: I. Las acciones de los patrones para despedir a los trabajadores, para disciplinar sus faltas y para efectuar descuentos en sus salarios \n Este plazo de un mes inicia al día siguiente de: \n Tener conocimiento \n Comprobar errores \n Comprobar pérdidas \n "
+        "visible": "  \n ¿Un negocio puede negarte la entrada por derecho de admisión? \n ¿TE NEGARON \n LA ENTRADA? \n No, los proveedores no pueden reservarse el derecho de admisión, salvo por causas que afecten la seguridad del lugar. \n DERECHO DE \n ADMISIÓN \n La ley dice: «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión». \n no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión \n Las únicas excepciones permitidas son las sigu"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 740 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 120: recorta al menos 180 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
       },
       {
         "etapa": "redaccion",
@@ -264,19 +189,14 @@
           },
           "conclusiones": [
             {
-              "conclusion": "El derecho del patrón para despedir a un trabajador o disciplinar sus faltas tiene una vigencia de un mes.",
+              "conclusion": "Los proveedores de bienes y servicios no pueden reservarse el derecho de admisión ni negar o condicionar el servicio al consumidor por alguna particularidad o discriminación.",
               "sostenida": "si",
-              "motivo": "Se basa directamente en la fracción I del artículo 517, que establece la prescripción de un mes para dichas acciones."
+              "motivo": "El artículo 58 prohíbe explícitamente la reserva del derecho de admisión y establece que no se pueden negar servicios por razones de género, nacionalidad, etnia, preferencia sexual, religiosas o cualquier otra particularidad."
             },
             {
-              "conclusion": "El plazo de un mes comienza a contar desde el día siguiente a que el patrón tenga conocimiento de la falta o se comprueben los errores.",
+              "conclusion": "La reserva del derecho de admisión y la selección de clientela están prohibidas para los proveedores de servicios al público en general, salvo por razones de seguridad, tranquilidad o mandatos legales expresos.",
               "sostenida": "si",
-              "motivo": "La cita literal del artículo 517 confirma que la prescripción corre a partir del día siguiente al conocimiento de la causa o de la comprobación de errores."
-            },
-            {
-              "conclusion": "Si la falta ocurrió hace varios meses pero el patrón apenas se enteró o apenas pudo comprobar el error, el mes para despedir empieza a contar desde ese nuevo momento.",
-              "sostenida": "si",
-              "motivo": "Es una interpretación jurídica correcta de la regla de prescripción que supedita el inicio del plazo al conocimiento o a la comprobación, no a la fecha de la falta en sí."
+              "motivo": "La conclusión integra correctamente la prohibición y las excepciones exactas que señala la norma: causas que afecten la seguridad o tranquilidad o disposiciones de otros ordenamientos legales."
             }
           ],
           "objeciones": []

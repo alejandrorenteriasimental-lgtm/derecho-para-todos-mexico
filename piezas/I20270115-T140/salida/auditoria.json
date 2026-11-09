@@ -8,12 +8,12 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1133 KB"
+      "detalle": "1149 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
       "resultado": "APROBADO",
-      "detalle": "mínimo 26 px"
+      "detalle": "mínimo 24 px"
     },
     {
       "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=982"
+      "detalle": "fin del contenido en y=955"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "43 palabras sin cabecera ni pie"
+      "detalle": "55 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "94% de 32 palabras reconocidas"
+      "detalle": "95% de 43 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Un medio puede publicar la foto de un menor?",
     "plantilla": "mito_realidad",
     "archivo": "I20270115-T140.png",
-    "sha256": "ec0b8937afbb143090f13ebd4be94fe7d2e63523a23d2e0810238008187a21a9",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000011111001111111111111100000000100011110001111111111111000111111111111100000000000000111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "7fea308846a58b7ec07cf78cc901051df6a06e09c4a2e3585f715eb99d31da2c",
+    "sha256": "79675526e330b99940c1c3fc666e294bacb8dca93aeb373bcd259a95edcf0a49",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000011111001111111111111100000001101111110001111111111111000111101011111100000000000000111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "cbe149e310997f50ee98b3bff68b64be013c339f225d75a300dd929ca645e0f0",
     "texto_alternativo": "Pieza gráfica que explica si los medios pueden publicar la foto de un menor de edad identificable según la ley.",
-    "copy": "La Ley General de los Derechos de Niñas, Niños y Adolescentes establece reglas claras sobre la difusión de la imagen de menores de edad en medios de comunicación con concesión de radiodifusión y telecomunicaciones, así como medios impresos o electrónicos bajo su control.\n\nConforme al artículo 77, se considera violación a la intimidad si esto menoscaba su honra, es contrario a sus derechos o los pone en riesgo conforme al interés superior de la niñez.\n\nGuarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Un medio de comunicación puede publicar la foto de un niño, niña o adolescente sin límites? No. El artículo 77 de la Ley General de los Derechos de Niñas, Niños y Adolescentes dice:\n\n«Se considerará violación a la intimidad de niñas, niños o adolescentes cualquier manejo directo de su imagen, nombre, datos personales o referencias que permitan su identificación en los medios de comunicación que cuenten con concesión para prestar el servicio de radiodifusión y telecomunicaciones, así como medios impresos, o en medios electrónicos de los que tenga control el concesionario o medio impreso del que se trate, que menoscabe su honra o reputación, sea contrario a sus derechos o que los ponga en riesgo, conforme al principio de interés superior de la niñez».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-09T16:40:07+00:00",
+    "fecha": "2026-11-09T20:13:18+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

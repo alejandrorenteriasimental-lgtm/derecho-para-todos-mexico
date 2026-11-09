@@ -1,0 +1,44 @@
+{
+ "tema_id": "T141",
+ "pregunta": "¿Cuánto te paga el IMSS por una incapacidad por enfermedad?",
+ "fecha": "2026-11-09T20:01:35+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto te paga el IMSS por una incapacidad por enfermedad?",
+  "concepto_central": "subsidio en dinero por incapacidad",
+  "respuesta_corta": "El IMSS te paga el sesenta por ciento del último salario diario de cotización, en periodos vencidos que no exceden de una semana.",
+  "reglas": [
+   {
+    "conclusion": "El IMSS paga un subsidio equivalente al sesenta por ciento del último salario diario de cotización, entregado por períodos vencidos de máximo una semana.",
+    "fuente": "F1",
+    "cita_literal": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización. El subsidio se pagará por períodos vencidos que no excederán de una semana",
+    "condiciones": [
+     "Se paga por períodos vencidos que no excederán de una semana",
+     "Se entrega directamente al asegurado o a su representante debidamente acreditado"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El IMSS otorga el sesenta por ciento del último salario diario de cotización en periodos vencidos que no exceden de una semana.",
+    "fuente": "F1",
+    "cita_literal": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización. El subsidio se pagará por períodos vencidos que no excederán de una semana"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El pago se realiza de forma directa al asegurado o a su representante debidamente acreditado.",
+    "fuente": "F1",
+    "cita_literal": "directamente al asegurado o a su representante debidamente acreditado."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla cómo se calcula el último salario diario de cotización ni los requisitos médicos previos para acceder a dicha incapacidad.",
+  "fuentes_irrelevantes": []
+ }
+}

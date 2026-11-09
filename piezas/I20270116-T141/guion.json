@@ -1,0 +1,160 @@
+{
+  "id": "I20270116-T141",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuánto te paga el IMSS?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T141",
+  "pieza": {
+    "titular": "¿Cuánto te paga el IMSS?",
+    "bajada": "El IMSS paga el 60% del último salario diario de cotización, en periodos vencidos de máximo una semana.",
+    "cita": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización.",
+    "etiqueta_cita": "Ley del Seguro Social, artículo 98",
+    "ojo": "Pago semanal directo al asegurado",
+    "fuente_visible": "Ley del Seguro Social, art. 98"
+  },
+  "copy": "¿Te has preguntado cuánto dinero recibes durante una incapacidad por enfermedad? Conforme a la Ley del Seguro Social, artículo 98, el subsidio equivale al sesenta por ciento de tu último salario diario de cotización.\n\nEste apoyo se paga por períodos vencidos que no exceden de una semana, entregándose de forma directa al asegurado o a su representante debidamente acreditado.\n\nGuarda y comparte esta información para que más personas conozcan lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre el monto que paga el IMSS por incapacidad por enfermedad.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "98",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización.",
+      "cita": "Ley del Seguro Social, artículo 98",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "98",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "El subsidio se pagará por períodos vencidos que no excederán de una semana, directamente al asegurado o a su representante debidamente acreditado.",
+      "cita": "Ley del Seguro Social, artículo 98",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El subsidio por incapacidad equivale al sesenta por ciento del último salario diario de cotización.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El pago se realiza por periodos vencidos de máximo una semana al asegurado o a su representante.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto te paga el IMSS por una incapacidad por enfermedad?",
+    "concepto_central": "subsidio en dinero por incapacidad",
+    "respuesta_corta": "El IMSS te paga el sesenta por ciento del último salario diario de cotización, en periodos vencidos que no exceden de una semana.",
+    "reglas": [
+      {
+        "conclusion": "El IMSS paga un subsidio equivalente al sesenta por ciento del último salario diario de cotización, entregado por períodos vencidos de máximo una semana.",
+        "fuente": "F1",
+        "cita_literal": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización. El subsidio se pagará por períodos vencidos que no excederán de una semana",
+        "condiciones": [
+          "Se paga por períodos vencidos que no excederán de una semana",
+          "Se entrega directamente al asegurado o a su representante debidamente acreditado"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "98"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El IMSS otorga el sesenta por ciento del último salario diario de cotización en periodos vencidos que no exceden de una semana.",
+        "fuente": "F1",
+        "cita_literal": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización. El subsidio se pagará por períodos vencidos que no excederán de una semana"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El pago se realiza de forma directa al asegurado o a su representante debidamente acreditado.",
+        "fuente": "F1",
+        "cita_literal": "directamente al asegurado o a su representante debidamente acreditado."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla cómo se calcula el último salario diario de cotización ni los requisitos médicos previos para acceder a dicha incapacidad."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T20:01:44+00:00",
+    "solicitud": "2027-01-16_imagen_T141-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Cuánto te paga el IMSS por una incapacidad por enfermedad?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El IMSS paga un subsidio equivalente al sesenta por ciento del último salario diario de cotización, entregado por períodos vencidos de máximo una semana.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente lo dispuesto en el artículo 98 de la Ley del Seguro Social, tanto en el porcentaje del subsidio como en la periodicidad del pago."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

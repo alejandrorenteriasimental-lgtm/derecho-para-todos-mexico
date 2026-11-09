@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "39.6 s"
+      "detalle": "40.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "39.6 s"
+      "detalle": "40.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "b0b698dbbde0bb5f"
+      "detalle": "7b3d54fa4bfd4757"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270116-T141",
     "titulo": "¿Desde qué día te paga el IMSS tu incapacidad?",
-    "fecha": "2026-11-09T16:39:05+00:00",
-    "sha256": "b0b698dbbde0bb5f1102aeeb603c249a8c91fef19566f4caf273d881041320fa",
-    "duracion_s": 39.6,
+    "fecha": "2026-11-09T20:09:53+00:00",
+    "sha256": "7b3d54fa4bfd4757bf0259d8d6ceda14d6bf3c6430b23518144af685011a1ef3",
+    "duracion_s": 40.8,
     "estado": "APTO",
-    "huella_guion": "0160a1b35c9963bb96e987c03044dd0b8430de97523b2f7f7a70a084536f526d",
+    "huella_guion": "c83e4980ff559f5ffb1628ac28df1b43e1e3fd0c665df5440e4f53181861a3e0",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 17.6,
-      "musica": 1.9,
-      "render_video": 35.3,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 7.4
+      "narracion": 25.2,
+      "musica": 2.2,
+      "render_video": 49.3,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.6
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.06,
-      "computo_equivalente_runner_usd": 0.0064,
+      "computo_minutos": 1.49,
+      "computo_equivalente_runner_usd": 0.0089,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1186,
-    "caracteres_narrados": 544
+    "frames": 1222,
+    "caracteres_narrados": 591
   }
 }
