@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1209 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal de P»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1085"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "58 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 50 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270113-T138",
+    "formato": "imagen",
+    "titulo": "¿Quejas ante Profeco por teléfono?",
+    "plantilla": "dato",
+    "archivo": "I20270113-T138.png",
+    "sha256": "31642a6cb549c03e73bcaa6aa5fb5cdae5a783e2c53721a0fe6c258fa1b4d4a6",
+    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000010001110010000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "c41a25060b299a0fd37e45a608b44541b5579c81a1c7fdd5d098947cc90377c2",
+    "texto_alternativo": "Infografía que explica que es posible presentar quejas ante Profeco por teléfono según el artículo 99 de la Ley Federal de Protección al Consumidor, detallando los requisitos necesarios como datos del reclamante y del proveedor.",
+    "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, tienes el derecho de presentar tus quejas o reclamaciones ante la Procuraduría por diversas vías, incluyendo la telefónica.\n\nPara que tu queja sea recibida, el artículo 99 establece que debes proporcionar tu nombre, domicilio y una descripción sucinta de los hechos. También es necesario identificar al proveedor con los datos de tu comprobante.\n\nRecuerda que la ley exige señalar la forma en que solicitas que se desahogue tu reclamación. Si cumples con estos puntos, la Procuraduría debe recibir tu trámite.\n\nGuarda esta información para cuando necesites defender tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "99",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "99",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-09T10:29:11+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

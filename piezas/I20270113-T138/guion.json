@@ -1,0 +1,157 @@
+{
+  "id": "I20270113-T138",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Quejas ante Profeco por teléfono?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T138",
+  "pieza": {
+    "titular": "¿Quejas ante Profeco por teléfono?",
+    "bajada": "Sí, puedes presentar quejas o reclamaciones vía telefónica si cumples los requisitos legales de identificación y descripción.",
+    "cita": "podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio cumpliendo con los siguientes requisitos",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 99",
+    "ojo": "Debes dar los datos del proveedor y del servicio.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 99"
+  },
+  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, tienes el derecho de presentar tus quejas o reclamaciones ante la Procuraduría por diversas vías, incluyendo la telefónica.\n\nPara que tu queja sea recibida, el artículo 99 establece que debes proporcionar tu nombre, domicilio y una descripción sucinta de los hechos. También es necesario identificar al proveedor con los datos de tu comprobante.\n\nRecuerda que la ley exige señalar la forma en que solicitas que se desahogue tu reclamación. Si cumples con estos puntos, la Procuraduría debe recibir tu trámite.\n\nGuarda esta información para cuando necesites defender tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía que explica que es posible presentar quejas ante Profeco por teléfono según el artículo 99 de la Ley Federal de Protección al Consumidor, detallando los requisitos necesarios como datos del reclamante y del proveedor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "99",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La Procuraduría recibirá las quejas o reclamaciones de los consumidores de manera individual o grupal con base en esta ley, las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 99",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "99",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio cumpliendo con los siguientes requisitos:",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 99",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La Procuraduría tiene la obligación de recibir las quejas de los consumidores que se realicen por vía telefónica.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Para presentar la queja se debe cumplir con requisitos como el nombre del reclamante y la descripción del bien reclamado.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes presentar una queja ante Profeco por teléfono?",
+    "concepto_central": "presentación de queja o reclamación telefónica ante la Procuraduría",
+    "respuesta_corta": "Sí, las quejas o reclamaciones pueden presentarse por vía telefónica ante la Procuraduría, siempre que se cumpla con los requisitos fijados en la ley.",
+    "reglas": [
+      {
+        "conclusion": "Las quejas o reclamaciones de los consumidores pueden presentarse de forma telefónica cumpliendo con los requisitos legales.",
+        "fuente": "F1",
+        "cita_literal": "las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio cumpliendo con los siguientes requisitos:",
+        "condiciones": [
+          "Cumplir con los requisitos establecidos en las fracciones del artículo (datos del reclamante, del proveedor, descripción del servicio/bien y forma de desahogo)."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "99"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La Procuraduría recibirá la queja o reclamación efectuada por vía telefónica si reúne los requisitos requeridos.",
+        "fuente": "F1",
+        "cita_literal": "La Procuraduría recibirá las quejas o reclamaciones de los consumidores de manera individual o grupal con base en esta ley, las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "Los textos oficiales disponibles no proporcionan un número telefónico específico ni describen el trámite operativo durante la llamada."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T10:22:51+00:00",
+    "solicitud": "2027-01-13_imagen_T138-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Puedes presentar una queja ante Profeco por teléfono?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las quejas o reclamaciones ante la Procuraduría pueden presentarse por vía telefónica.",
+              "sostenida": "si",
+              "motivo": "El artículo 99 de la Ley Federal de Protección al Consumidor establece explícitamente que las quejas podrán presentarse en forma telefónica."
+            },
+            {
+              "conclusion": "Para que la queja sea recibida, se deben cumplir requisitos específicos como datos del reclamante, del proveedor y descripción de los hechos.",
+              "sostenida": "si",
+              "motivo": "El artículo 99 enumera las fracciones I, II, III y IV como requisitos necesarios para la presentación de la queja."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

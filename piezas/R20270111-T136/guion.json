@@ -1,0 +1,226 @@
+{
+  "id": "R20270111-T136",
+  "formato": "reel",
+  "titulo": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T136",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "516",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible",
+      "cita": "Ley Federal del Trabajo, artículo 516",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-09"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Cuánto tiempo tienes para reclamar un pago?",
+      "titulo": [
+        "¿TIEMPO LÍMITE",
+        "PARA COBRAR",
+        "TU PAGO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Por regla general, tienes un año para reclamar, contado desde el día siguiente a que el pago debió hacerse.",
+      "titulo": [
+        "PLAZO DE",
+        "UN AÑO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 516",
+      "cita": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El plazo general para ejercer acciones legales por falta de pago es de un año.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Puntos clave sobre el plazo:",
+      "items": [
+        "Un año para reclamar",
+        "Inicia al día siguiente",
+        "Cuando es exigible"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "La norma aclara que existen excepciones consignadas en los artículos siguientes de la ley.",
+      "encabezado": "Excepciones en la ley",
+      "detalle": "Existen plazos diferentes",
+      "fuente_corta": "Ley Federal del Trabajo, art. 516",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "El año para reclamar inicia el día posterior a que el patrón tenía la obligación de pagarte.",
+      "titulo": [
+        "REVISA TU",
+        "FECHA DE PAGO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+    "concepto_central": "prescripción de las acciones de trabajo",
+    "respuesta_corta": "Por regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse.",
+    "reglas": [
+      {
+        "conclusion": "El plazo general para ejercer acciones legales por falta de pago es de un año.",
+        "fuente": "F1",
+        "cita_literal": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible",
+        "condiciones": [
+          "Que la obligación sea exigible",
+          "Que el plazo se cuente a partir del día siguiente a dicha exigibilidad"
+        ],
+        "excepciones": [
+          "Las excepciones que se consignan en los artículos siguientes de la ley"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "516"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El tiempo para reclamar un pago es de un año.",
+        "fuente": "F1",
+        "cita_literal": "Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El conteo del año inicia el día posterior a que el patrón tenía la obligación de pagar.",
+        "fuente": "F1",
+        "cita_literal": "contado a partir del día siguiente a la fecha en que la obligación sea exigible"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La exigibilidad del pago marca el inicio del plazo.",
+        "condicion": "Depende de la fecha en que, por contrato o ley, el patrón debió entregar el dinero y no lo hizo.",
+        "base": "F1 menciona que el conteo inicia cuando la obligación es exigible."
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos proporcionados no detallan cuáles son las excepciones específicas al plazo de un año ni el procedimiento para interrumpir la prescripción."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T10:20:34+00:00",
+    "solicitud": "2027-01-11_reel_T136-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?\n\nPor regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse.\n\nFuente: Ley Federal del Trabajo, artículo 516.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 716 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 96: recorta al menos 156 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[vaguedad] Referencia vaga: «Para que este plazo de un año comience a correr, deben cumplirse estos puntos:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+          "[coherencia] Escena 5: el encabezado visible «Excepciones legales» no corresponde a lo que se narra («Sin embargo, la ley aclara que existen casos distintos.»)."
+        ],
+        "visible": "  \n ¿Sabes cuánto tiempo tienes para reclamar un pago que tu patrón te debe? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR PAGOS? \n Por regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse. \n TIENES UN AÑO \n DE PLAZO \n La Ley Federal del Trabajo, en su artículo 516, señala que \"Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible\". \n Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible \n Para que este plazo de un año comience a correr, deben cumplirse estos puntos: \n Desde el día sigu"
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[coherencia] Escena 5: el encabezado visible «Excepciones legales» no corresponde a lo que se narra («La norma aclara que existen excepciones consignadas en los artículos s»)."
+        ],
+        "visible": "  \n ¿Sabes cuánto tiempo tienes para reclamar un pago a tu patrón? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n RECLAMAR? \n Por regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse. \n TIENES \n UN AÑO \n La ley indica que «Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible». \n Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible \n Para que el año cuente: \n El pago debe ser exigible \n Inicia al día siguiente \n La norma aclara que existen excepciones consignadas en los artículos siguientes. \n E"
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El plazo general para ejercer acciones legales por falta de pago es de un año.",
+              "sostenida": "si",
+              "motivo": "El artículo 516 de la Ley Federal del Trabajo establece explícitamente que las acciones de trabajo prescriben en un año."
+            },
+            {
+              "conclusion": "El año para reclamar inicia el día posterior a que el patrón tenía la obligación de pagarte.",
+              "sostenida": "si",
+              "motivo": "La pieza interpreta correctamente la frase 'contado a partir del día siguiente a la fecha en que la obligación sea exigible' del artículo 516."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

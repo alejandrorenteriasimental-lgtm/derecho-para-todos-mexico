@@ -1,0 +1,51 @@
+{
+ "tema_id": "T137",
+ "pregunta": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
+ "fecha": "2026-11-09T10:21:00+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
+  "concepto_central": "plazo de detención ante autoridad judicial",
+  "respuesta_corta": "Hasta 72 horas a partir de que quedas a disposición del juez; este plazo solo puede extenderse si tú, como indiciado, solicitas una prórroga.",
+  "reglas": [
+   {
+    "conclusion": "La detención ante un juez no puede pasar de las 72 horas sin que se dicte un auto de vinculación a proceso.",
+    "fuente": "F1",
+    "cita_literal": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
+    "condiciones": [
+     "El plazo comienza a contar desde que la persona es puesta a disposición de la autoridad judicial."
+    ],
+    "excepciones": [
+     "El plazo puede prorrogarse si el indiciado lo solicita."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El límite máximo es de 72 horas para que el juez justifique la detención con un auto de vinculación a proceso.",
+    "fuente": "F1",
+    "cita_literal": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Para que el plazo se extienda más allá de las 72 horas, es requisito indispensable que el propio detenido lo pida.",
+    "fuente": "F1",
+    "cita_literal": "El plazo para dictar el auto de vinculación a proceso podrá prorrogarse únicamente a petición del indiciado, en la forma que señale la ley."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si el plazo vence y el encargado de la prisión no recibe el auto de vinculación o la prórroga, debe liberar al detenido tras avisar al juez.",
+    "condicion": "Que pasen tres horas después de avisar al juez sin recibir la constancia correspondiente.",
+    "base": "F1: «si no recibe la constancia mencionada dentro de las tres horas siguientes, pondrá al indiciado en libertad.»"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no especifica la duración exacta de la prórroga (remite a lo que señale la ley) ni define el contenido detallado del auto de vinculación más allá de los requisitos generales.",
+  "fuentes_irrelevantes": []
+ }
+}

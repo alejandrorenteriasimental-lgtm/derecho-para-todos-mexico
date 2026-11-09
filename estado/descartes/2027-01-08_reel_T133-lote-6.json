@@ -1,41 +1,40 @@
 {
  "solicitud": "2027-01-08_reel_T133-lote-6.json",
- "fecha": "2026-11-08T15:54:32+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos",
+ "fecha": "2026-11-09T10:19:09+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[coherencia] Escena 5: el encabezado visible «¿Pago inmediato?» no corresponde a lo que se narra («El pago podría retrasarse si más del diez por ciento del personal renu»).\"], \"visible\": \"  \\n ¿Te vas de tu empleo y esperas tu prima de antigüe",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 696 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 76: recorta al menos 136 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «En la renuncia se exigen 15 años de servicio, a diferencia del despido donde se paga sin i» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[coherencia] Escena 5: el encabezado visible «Retraso en el pago» no corresponde a lo que se narra («El pago podría no ser inmediato si quienes renuncian superan el diez p»)."
+    "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «En renuncia se exigen 15 años;» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «LOS 15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[coherencia] Escena 5: el encabezado visible «Sobre el tiempo de pago» no corresponde a lo que se narra («Tu pago podría retrasarse si renuncia más del diez por ciento del pers»)."
    ],
-   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu trabajo? \n ¿TE PAGAN \n PRIMA POR \n RENUNCIAR? \n Depende. En la renuncia se exigen 15 años de servicio, a diferencia del despido donde se paga sin importar la antigüedad. \n DEPENDE DE \n TUS AÑOS \n La ley es clara: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Si cumples con el tiempo, esto es lo que debes saber: \n 12 días por año laborado \n Mínimo 15 años de "
+   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias? \n ¿TE PAGAN PRIMA \n SI RENUNCIAS? \n Depende. Si es renuncia voluntaria, tienes derecho solo si has cumplido al menos quince años de servicio en la empresa. \n DEPENDE DEL \n TIEMPO LABORADO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Para recibirla al renunciar, es obligatorio cumplir con esto: \n 12 días por año laborado \n Mínimo 15 años de servic"
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "narración de 695 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 75: recorta al menos 135 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
     "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
    ],
-   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu empleo? \n ¿PRIMA POR \n RENUNCIA? \n Depende. Si renuncias, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU ANTIGÜEDAD \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Son 12 días por año. En renuncia se exigen al menos 15 años; en despido se paga sin importar el tiempo. \n 12 días por año \n Mínimo"
+   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu empleo? \n ¿TE PAGAN \n LA PRIMA \n AL RENUNCIAR? \n Depende. Al renunciar, te toca este pago solo si cumpliste al menos quince años de servicio. \n DEPENDE \n DE TU TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Esto es lo que dice la ley: \n 12 días por cada año \n Mínimo 15 años de servicio \n Despido: No requiere mínimo \n Tu pago podría retra"
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 652 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 32: recorta al menos 92 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[coherencia] Escena 5: el encabezado visible «¿Pago inmediato?» no corresponde a lo que se narra («El pago podría retrasarse si más del diez por ciento del personal renu»)."
    ],
-   "visible": "  \n ¿Te pagan la prima de antigüedad si renuncias? \n ¿TE PAGAN \n LA PRIMA \n AL RENUNCIAR? \n Depende: si renuncias voluntariamente, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU ANTIGÜEDAD \n La ley señala: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Para este derecho se considera lo siguiente: \n 12 días por año \n Mínimo 15 años \n El pago puede diferirse s"
+   "visible": "  \n ¿Te vas de tu empleo y esperas tu prima de antigüedad? \n ¿TE TOCA \n PRIMA DE \n ANTIGÜEDAD? \n Depende: si renuncias, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Considera esto sobre el pago: \n 12 días por cada año \n Mínimo 15 años laborados \n En despido no hay mínimo \n El pago podría "
   }
  ]
 }

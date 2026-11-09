@@ -12,7 +12,7 @@
   "lote": "lote-7",
   "motivo_seleccion": "CPEUM art. 19 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_19.json): «Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición, sin que se justifique con un auto de vinculación a proceso». 72 horas desde que la persona es puesta a disposición del juez; distinto de las 48 h ante el Ministerio Público (CPEUM 16), ya publicado en noviembre.",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "GUION_LISTO",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270112-T137",
@@ -29,5 +29,6 @@
       "por": "Claude",
       "motivo": "reabierta (8-11, causa del sistema): el verificador leía «setenta y dos horas» de CPEUM 19 como «dos horas» y bloqueaba «72 horas». Corregido en razonamiento._plazos_pos (números compuestos con letra) con prueba de regresión."
     }
-  ]
+  ],
+  "pieza": "R20270112-T137"
 }

@@ -1,0 +1,244 @@
+{
+  "id": "R20270112-T137",
+  "formato": "reel",
+  "titulo": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T137",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "19",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 19",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "19",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "El plazo para dictar el auto de vinculación a proceso podrá prorrogarse únicamente a petición del indiciado",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 19",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Cuánto tiempo puede tenerte un juez sin vincularte a proceso?",
+      "titulo": [
+        "¿CUÁNTO TIEMPO",
+        "PUEDES ESTAR",
+        "DETENIDO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "El límite es de 72 horas tras quedar a disposición del juez.",
+      "titulo": [
+        "PLAZO DE",
+        "72 HORAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dicta: \"Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición\".",
+      "etiqueta": "Constitución, Art. 19",
+      "cita": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "El auto debe expresar:",
+      "items": [
+        "Delito imputado",
+        "Lugar y circunstancias",
+        "Probabilidad de autoría"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La detención ante autoridad judicial no puede exceder las 72 horas sin auto de vinculación.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Solo tú pides prórroga: \"El plazo para dictar el auto de vinculación a proceso podrá prorrogarse únicamente a petición del indiciado\".",
+      "encabezado": "Prórroga del plazo",
+      "detalle": "El indiciado debe solicitarlo",
+      "fuente_corta": "CPEUM, Art. 19",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sin auto o prórroga, deben liberarte tres horas tras avisar al juez del vencimiento.",
+      "titulo": [
+        "LIBERTAD POR",
+        "VENCIMIENTO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El plazo de vinculación solo se prorroga si el indiciado lo solicita.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
+    "concepto_central": "plazo de detención ante autoridad judicial",
+    "respuesta_corta": "Hasta 72 horas a partir de que quedas a disposición del juez; este plazo solo puede extenderse si tú, como indiciado, solicitas una prórroga.",
+    "reglas": [
+      {
+        "conclusion": "La detención ante un juez no puede pasar de las 72 horas sin que se dicte un auto de vinculación a proceso.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
+        "condiciones": [
+          "El plazo comienza a contar desde que la persona es puesta a disposición de la autoridad judicial."
+        ],
+        "excepciones": [
+          "El plazo puede prorrogarse si el indiciado lo solicita."
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "19"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El límite máximo es de 72 horas para que el juez justifique la detención con un auto de vinculación a proceso.",
+        "fuente": "F1",
+        "cita_literal": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Para que el plazo se extienda más allá de las 72 horas, es requisito indispensable que el propio detenido lo pida.",
+        "fuente": "F1",
+        "cita_literal": "El plazo para dictar el auto de vinculación a proceso podrá prorrogarse únicamente a petición del indiciado, en la forma que señale la ley."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Si el plazo vence y el encargado de la prisión no recibe el auto de vinculación o la prórroga, debe liberar al detenido tras avisar al juez.",
+        "condicion": "Que pasen tres horas después de avisar al juez sin recibir la constancia correspondiente.",
+        "base": "F1: «si no recibe la constancia mencionada dentro de las tres horas siguientes, pondrá al indiciado en libertad.»"
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no especifica la duración exacta de la prórroga (remite a lo que señale la ley) ni define el contenido detallado del auto de vinculación más allá de los requisitos generales."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T10:21:53+00:00",
+    "solicitud": "2027-01-12_reel_T137-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?\n\nHasta 72 horas a partir de que quedas a disposición del juez; este plazo solo puede extenderse si tú, como indiciado, solicitas una prórroga.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 19.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso? \n ¿CUÁNTO TIEMPO \n PUEDES ESTAR \n DETENIDO? \n El límite es de 72 horas desde que quedas a disposición del juez para resolver tu situación jurídica. \n PLAZO DE \n 72 HORAS \n La Constitución señala: \"Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición\". \n Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición \n El auto debe expresar: \n Delito imputado \n Lugar y circunstancias \n Probabilidad de autoría \n Solo tú puedes pedir más tiempo: "
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La detención ante un juez no puede pasar de las 72 horas sin que se dicte un auto de vinculación a proceso.",
+              "sostenida": "si",
+              "motivo": "El artículo 19 constitucional establece explícitamente el límite temporal de 72 horas para la detención ante autoridad judicial."
+            },
+            {
+              "conclusion": "El plazo de vinculación solo se prorroga si el indiciado lo solicita.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional señala que la prórroga es una facultad exclusiva del indiciado al indicar que podrá hacerse «únicamente a petición del indiciado»."
+            },
+            {
+              "conclusion": "Si el plazo vence y el encargado de la prisión no recibe el auto de vinculación o la prórroga, debe liberar al detenido tras avisar al juez.",
+              "sostenida": "si",
+              "motivo": "La pieza refleja correctamente el procedimiento de liberación previsto en el artículo 19, que obliga a la autoridad del establecimiento a notificar al juez y, de no recibir respuesta en tres horas, liberar al detenido."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
