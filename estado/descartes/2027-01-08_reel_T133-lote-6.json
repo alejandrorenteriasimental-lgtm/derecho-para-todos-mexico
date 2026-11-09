@@ -1,40 +1,77 @@
 {
  "solicitud": "2027-01-08_reel_T133-lote-6.json",
- "fecha": "2026-11-09T10:19:09+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\", \"[coherencia] Escena 5: el encabezado visible «¿Pago inmediato?» no corresponde a lo que se narra («El pago podría retrasarse si más del diez por ciento del personal renu»).\"], \"visible\": \"  \\n ¿Te vas de tu empleo y esperas tu prima de antigüe",
+ "fecha": "2026-11-09T16:21:44+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 720 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 100: recorta al menos 160 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Un negocio puede negarte la entrada por «derecho de admisión»? \\n ¿DEREC",
  "historial": [
   {
    "etapa": "analisis",
-   "reutilizado": true,
+   "intento": 0,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «En renuncia se exigen 15 años;» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[minimo] «LOS 15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[coherencia] Escena 5: el encabezado visible «Sobre el tiempo de pago» no corresponde a lo que se narra («Tu pago podría retrasarse si renuncia más del diez por ciento del pers»)."
+    "narración de 748 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 128: recorta al menos 188 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias? \n ¿TE PAGAN PRIMA \n SI RENUNCIAS? \n Depende. Si es renuncia voluntaria, tienes derecho solo si has cumplido al menos quince años de servicio en la empresa. \n DEPENDE DEL \n TIEMPO LABORADO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Para recibirla al renunciar, es obligatorio cumplir con esto: \n 12 días por año laborado \n Mínimo 15 años de servic"
+   "visible": "  \n ¿Te han negado la entrada a un negocio por el famoso «derecho de admisión»? \n ¿PUEDEN \n NEGARTE \n LA ENTRADA? \n No, los negocios no pueden reservarse este derecho libremente si ofrecen servicios al público en general. \n DERECHO \n DE ADMISIÓN \n La ley establece que los proveedores \"no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión\". \n no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión \n Esto significa"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 748 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 128: recorta al menos 188 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "errores_esquema": [
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
-   ],
-   "visible": "  \n ¿Te pagan prima de antigüedad si renuncias a tu empleo? \n ¿TE PAGAN \n LA PRIMA \n AL RENUNCIAR? \n Depende. Al renunciar, te toca este pago solo si cumpliste al menos quince años de servicio. \n DEPENDE \n DE TU TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Esto es lo que dice la ley: \n 12 días por cada año \n Mínimo 15 años de servicio \n Despido: No requiere mínimo \n Tu pago podría retra"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La autoridad ante la cual se puede acudir para denunciar estas prácticas."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los proveedores de bienes y servicios no pueden reservarse el derecho de admisión ni negar o condicionar el servicio al consumidor por alguna particularidad o discriminación.",
+      "sostenida": "si",
+      "motivo": "La conclusión se deriva directamente del texto que prohíbe establecer preferencias o discriminación, incluyendo la reserva del derecho de admisión."
+     },
+     {
+      "conclusion": "La reserva del derecho de admisión y la selección de clientela están prohibidas para los proveedores de servicios al público en general, salvo por razones de seguridad, tranquilidad o mandatos legales expresos.",
+      "sostenida": "si",
+      "motivo": "El texto oficial establece explícitamente la prohibición y las excepciones por seguridad, tranquilidad o disposiciones legales."
+     },
+     {
+      "conclusion": "Se puede negar el acceso por causas que afecten la seguridad o tranquilidad del establecimiento.",
+      "sostenida": "si",
+      "motivo": "Es una excepción literal del artículo 58."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "escenas -> tipo: lista",
+      "problema": "La lista de motivos por los que no pueden negarte el servicio ('Género', 'Preferencia sexual', 'Religión o discapacidad') es incompleta según el texto oficial.",
+      "correccion": "Debe incluirse 'nacionalidad' y 'étnicas', ya que el artículo 58 menciona: 'por razones de género, nacionalidad, étnicas, preferencia sexual, religiosas o cualquiera otra particularidad'."
+     },
+     {
+      "donde": "cobertura general",
+      "problema": "La pieza responde qué no pueden hacer los negocios, pero no le dice al usuario qué puede hacer o ante quién acudir (falta la autoridad competente).",
+      "correccion": "Aunque el texto proporcionado no menciona a la autoridad, para cumplir con la cobertura de 'lo esencial' en una pieza de divulgación, se debería aclarar que la ley no detalla la autoridad en este artículo específico o, si se tuviera la información, mencionarla."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[coherencia] Escena 5: el encabezado visible «¿Pago inmediato?» no corresponde a lo que se narra («El pago podría retrasarse si más del diez por ciento del personal renu»)."
+    "narración de 720 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 100: recorta al menos 160 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Te vas de tu empleo y esperas tu prima de antigüedad? \n ¿TE TOCA \n PRIMA DE \n ANTIGÜEDAD? \n Depende: si renuncias, tienes derecho a este pago solo si has cumplido al menos quince años de servicio. \n DEPENDE DE \n TU TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Considera esto sobre el pago: \n 12 días por cada año \n Mínimo 15 años laborados \n En despido no hay mínimo \n El pago podría "
+   "visible": "  \n ¿Un negocio puede negarte la entrada por «derecho de admisión»? \n ¿DERECHO DE \n ADMISIÓN EN \n MÉXICO? \n No, los comercios no pueden reservarse ese derecho, salvo por seguridad o por disposición legal. \n NO ES \n DISCRECIONAL \n La ley dicta que los proveedores \"no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión\". \n no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión \n No se admite excluir por estas razon"
   }
  ]
 }

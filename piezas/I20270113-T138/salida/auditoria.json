@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1209 KB"
+      "detalle": "1194 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,7 +28,7 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1085"
+      "detalle": "fin del contenido en y=1080"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
@@ -38,7 +38,7 @@
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 50 palabras reconocidas"
+      "detalle": "96% de 48 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Quejas ante Profeco por teléfono?",
     "plantilla": "dato",
     "archivo": "I20270113-T138.png",
-    "sha256": "31642a6cb549c03e73bcaa6aa5fb5cdae5a783e2c53721a0fe6c258fa1b4d4a6",
-    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000010001110010000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "c41a25060b299a0fd37e45a608b44541b5579c81a1c7fdd5d098947cc90377c2",
-    "texto_alternativo": "Infografía que explica que es posible presentar quejas ante Profeco por teléfono según el artículo 99 de la Ley Federal de Protección al Consumidor, detallando los requisitos necesarios como datos del reclamante y del proveedor.",
-    "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, tienes el derecho de presentar tus quejas o reclamaciones ante la Procuraduría por diversas vías, incluyendo la telefónica.\n\nPara que tu queja sea recibida, el artículo 99 establece que debes proporcionar tu nombre, domicilio y una descripción sucinta de los hechos. También es necesario identificar al proveedor con los datos de tu comprobante.\n\nRecuerda que la ley exige señalar la forma en que solicitas que se desahogue tu reclamación. Si cumples con estos puntos, la Procuraduría debe recibir tu trámite.\n\nGuarda esta información para cuando necesites defender tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
+    "sha256": "742dea6aa760d1edd887b6d530c96486734860b0c8686187a7e01bb269006ea7",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000001110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "97bc88a105ed3db6aa017237a3c63a5c61505621c006d668ce857b4e7f2c67f9",
+    "texto_alternativo": "Ficha informativa: según el artículo 99 de la Ley Federal de Protección al Consumidor, las quejas ante Profeco pueden presentarse por teléfono si se dan los datos del reclamante, del bien o servicio, de los hechos, del proveedor y la forma de atención solicitada.",
+    "copy": "¿Puedes presentar una queja por teléfono ante la Procuraduría? Sí. El artículo 99 de la Ley Federal de Protección al Consumidor dice que la Procuraduría recibirá las quejas o reclamaciones, que «podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio», con estos requisitos:\n\n1. Tu nombre y domicilio.\n2. La descripción del bien o servicio que reclamas y una relación breve de los hechos.\n3. El nombre y domicilio del proveedor que aparezcan en el comprobante o recibo; si no lo tienes, los que tú proporciones.\n4. El lugar o la forma en que pides que se atienda tu reclamación.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -113,11 +113,17 @@
         "documento": "Ley Federal de Protección al Consumidor",
         "articulo": "99",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "99",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
       }
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-09T10:29:11+00:00",
+    "fecha": "2026-11-09T16:39:38+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

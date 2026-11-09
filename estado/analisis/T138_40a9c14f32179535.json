@@ -1,0 +1,65 @@
+{
+ "tema_id": "T138",
+ "pregunta": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?",
+ "fecha": "2026-11-09T16:22:04+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué puedes pedir si lo que compraste tiene defectos ocultos?",
+  "concepto_central": "defectos o vicios ocultos",
+  "respuesta_corta": "Puedes pedir la restitución del bien, la rescisión del contrato o la reducción del precio, además de una bonificación o compensación.",
+  "reglas": [
+   {
+    "conclusion": "Si el producto o servicio tiene defectos o vicios ocultos, el consumidor puede elegir entre la restitución, la rescisión del contrato o la reducción del precio, con derecho adicional a bonificación o compensación e indemnización si aplican daños y perjuicios.",
+    "fuente": "F1",
+    "cita_literal": "El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación",
+    "condiciones": [
+     "Que la cosa u objeto del contrato tenga defectos o vicios ocultos que la hagan impropia para los usos a que habitualmente se destine, que disminuyan su calidad o uso, o que no ofrezca la seguridad esperada."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El consumidor puede pedir la restitución del producto o servicio, la rescisión del contrato (con reintegro del precio e intereses) o la reducción del precio, además de una bonificación o compensación y, si corresponde, indemnización por daños y perjuicios.",
+    "fuente": "F1",
+    "cita_literal": "El consumidor puede optar por pedir la restitución del bien o servicio, la rescisión del contrato o la reducción del precio, y en cualquier caso, la bonificación o compensación"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando el bien u objeto del contrato presenta defectos o vicios ocultos que disminuyen su calidad, uso o seguridad, o la hacen impropia para sus usos habituales.",
+    "fuente": "F1",
+    "cita_literal": "cuando la cosa u objeto del contrato tenga defectos o vicios ocultos que la hagan impropia para los usos a que habitualmente se destine, que disminuyan su calidad"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "motivo": "El artículo 82 de la Ley Federal de Protección al Consumidor no señala excepciones expresas a estos derechos."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La devolución de intereses y el pago de daños y perjuicios no son automáticos en todos los reclamos, sino que dependen de la opción ejercida y de la comprobación de afectaciones.",
+    "condicion": "Que el consumidor elija la rescisión o pruebe la existencia de daños y perjuicios.",
+    "base": "Artículo 82 de la LFPC al condicionar el reintegro de intereses a la opción de rescisión y la indemnización a que en su caso corresponda."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "rescision",
+    "b": "devolucion dinero",
+    "diferencia": "La rescisión es la terminación del contrato por incumplimiento derivado de vicios ocultos, mientras que el reintegro o devolución del dinero es la consecuencia económica que debe cumplir el proveedor al rescindirse el contrato."
+   },
+   {
+    "a": "bonificacion",
+    "b": "devolucion dinero",
+    "diferencia": "La bonificación es un monto compensatorio adicional previsto por la ley que se otorga además de la restitución, rescisión o reducción del precio, y no debe confundirse con el mero reintegro del costo del producto."
+   }
+  ],
+  "limites": "Los textos oficiales disponibles no señalan el plazo máximo para reclamar por defectos ocultos ni el procedimiento o autoridades ante las cuales tramitar la reclamación.",
+  "fuentes_irrelevantes": []
+ }
+}

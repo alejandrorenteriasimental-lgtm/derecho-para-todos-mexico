@@ -1,0 +1,48 @@
+{
+ "tema_id": "T139",
+ "pregunta": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+ "fecha": "2026-11-09T16:29:53+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+  "concepto_central": "atención médica urgente",
+  "respuesta_corta": "Sí, tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción, independientemente de su situación migratoria.",
+  "reglas": [
+   {
+    "conclusion": "Los migrantes tienen derecho a recibir atención médica urgente de forma gratuita y sin restricciones, sin importar su situación migratoria, cuando sea necesaria para preservar la vida.",
+    "fuente": "F1",
+    "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida.",
+    "condiciones": [
+     "que resulte necesaria para preservar su vida"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se establece el derecho a recibir atención médica urgente de manera gratuita y sin restricción para preservar la vida.",
+    "fuente": "F1",
+    "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica independientemente de la situación migratoria de la persona y cuando la atención sea necesaria para preservar su vida.",
+    "fuente": "F1",
+    "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "motivo": "El texto oficial no prevé excepciones para la prestación de este servicio."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla los procedimientos internos de los hospitales ni las disposiciones reglamentarias generales aplicables.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "solicitud": "2027-01-15_reel_T140-lote-7.json",
+ "fecha": "2026-11-09T16:27:46+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 802 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 182: recorta al menos 242 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿La autoridad está obligada a responderte si le haces una petición por es",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿La autoridad está obligada a responderte si le haces una petición por escrito? \n ¿TE DEBE \n RESPONDER \n LA AUTORIDAD? \n Sí, siempre que la petición se formule por escrito, de manera pacífica y respetuosa, la autoridad debe emitir un acuerdo. \n SÍ, DEBE \n RESPONDER \n La norma indica con precisión: A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario. \n A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario. \n Las condiciones obligatorias para que se respete este d"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La restricción específica para asuntos en materia política, donde el derecho está reservado únicamente a los ciudadanos de la República."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La autoridad debe emitir un acuerdo escrito.",
+      "sostenida": "si",
+      "motivo": "El artículo 8 establece explícitamente la obligación de que recaiga un acuerdo escrito sobre toda petición."
+     },
+     {
+      "conclusion": "Las condiciones obligatorias para que se respete este derecho son: Formularse por escrito, De manera pacífica, De manera respetuosa.",
+      "sostenida": "parcial",
+      "motivo": "El texto oficial incluye una condición adicional: en materia política, el derecho está reservado exclusivamente a los ciudadanos de la República."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "En la sección de condiciones obligatorias",
+      "problema": "La pieza omite la restricción legal sobre la materia política, la cual es una condición explícita en el artículo 8.",
+      "correccion": "Agregar que, en materia política, el derecho de petición es exclusivo para los ciudadanos de la República."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿La autoridad está obligada a responderte si le haces una petición por escrito? \n ¿TE IGNORA \n LA AUTORIDAD? \n Sí, siempre que la petición se formule por escrito, de manera pacífica y respetuosa. \n SÍ \n OBLIGADA \n La norma dispone lo siguiente: A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario. \n A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario. \n Para que exista esta obligación, debes cumplir con las siguientes condiciones necesarias: \n Formularlo por es"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La autoridad tiene la obligación de emitir un acuerdo escrito y darlo a conocer al peticionario en breve término.",
+      "sostenida": "si",
+      "motivo": "El artículo 8 constitucional establece explícitamente esta obligación."
+     },
+     {
+      "conclusion": "La petición debe formularse por escrito, de manera pacífica y respetuosa.",
+      "sostenida": "si",
+      "motivo": "El artículo 8 constitucional condiciona el ejercicio del derecho a estas formas."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena tipo 'titular': 'Sí, siempre que la petición se formule por escrito, de manera pacífica y respetuosa.'",
+      "problema": "La pieza utiliza el término 'siempre' para describir las condiciones, lo cual es una generalización absoluta que omite la restricción específica del artículo 8 sobre la materia política.",
+      "correccion": "Eliminar el 'siempre' o añadir la salvedad: 'Sí, siempre que la petición se formule por escrito, de manera pacífica y respetuosa; en materia política, solo si eres ciudadano de la República'."
+     },
+     {
+      "donde": "Escena tipo 'lista': 'De manera pacífica', 'De manera respetuosa'",
+      "problema": "La pieza omite mencionar la restricción específica para materia política que contiene el artículo 8, la cual es una condición esencial para el ejercicio del derecho en ese ámbito.",
+      "correccion": "Incluir un punto adicional en la lista que especifique: 'En materia política, ser ciudadano de la República'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 802 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 182: recorta al menos 242 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿La autoridad está obligada a responderte si le haces una petición por escrito? \n ¿LA AUTORIDAD \n TE RESPONDE \n POR ESCRITO? \n Sí, la petición se formula por escrito, de manera pacífica y respetuosa; en materia política, solo ciudadanos de la República. \n RESPUESTA \n OFICIAL \n La Constitución señala que a toda petición debe recaer un acuerdo escrito que la autoridad debe hacer conocer al peticionario en breve término: A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario. \n A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tien"
+  }
+ ]
+}

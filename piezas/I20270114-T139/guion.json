@@ -1,0 +1,177 @@
+{
+  "id": "I20270114-T139",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T139",
+  "pieza": {
+    "titular": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+    "bajada": "Sí, tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción, cuando sea necesaria para preservar su vida.",
+    "cita": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna",
+    "etiqueta_cita": "Ley de Migración, artículo 8",
+    "ojo": "Aplica sin importar la situación migratoria",
+    "fuente_visible": "Ley de Migración, art. 8"
+  },
+  "copy": "La Ley de Migración establece disposiciones claras sobre el acceso a servicios de salud para las personas extranjeras que se encuentran en el país.\n\nEspecíficamente, el artículo 8 de la Ley de Migración señala que los migrantes tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción, siempre que sea necesaria para preservar su vida.\n\nEsta garantía legal se otorga con independencia absoluta de la situación migratoria en la que se encuentre la persona interesada.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Gráfica informativa que detalla el derecho de los migrantes a recibir atención médica urgente para preservar la vida.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Migración",
+      "articulo": "8",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
+      "texto_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida.",
+      "cita": "Ley de Migración, artículo 8",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los migrantes tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción cuando resulte necesaria para preservar su vida.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+    "concepto_central": "atención médica urgente",
+    "respuesta_corta": "Sí, tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción, independientemente de su situación migratoria.",
+    "reglas": [
+      {
+        "conclusion": "Los migrantes tienen derecho a recibir atención médica urgente de forma gratuita y sin restricciones, sin importar su situación migratoria, cuando sea necesaria para preservar la vida.",
+        "fuente": "F1",
+        "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida.",
+        "condiciones": [
+          "que resulte necesaria para preservar su vida"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley de Migración",
+          "articulo": "8"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se establece el derecho a recibir atención médica urgente de manera gratuita y sin restricción para preservar la vida.",
+        "fuente": "F1",
+        "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica independientemente de la situación migratoria de la persona y cuando la atención sea necesaria para preservar su vida.",
+        "fuente": "F1",
+        "cita_literal": "Los migrantes independientemente de su situación migratoria, tendrán derecho a recibir de manera gratuita y sin restricción alguna, cualquier tipo de atención médicaurgente que resulte necesaria para preservar su vida."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "motivo": "El texto oficial no prevé excepciones para la prestación de este servicio."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla los procedimientos internos de los hospitales ni las disposiciones reglamentarias generales aplicables."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T16:30:17+00:00",
+    "solicitud": "2027-01-14_imagen_T139-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 1,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Un migrante sin papeles puede recibir atención médica urgente?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los migrantes tienen derecho a recibir atención médica urgente de forma gratuita y sin restricciones, sin importar su situación migratoria, cuando sea necesaria para preservar la vida.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 de la Ley de Migración establece explícitamente este derecho bajo esas condiciones."
+            },
+            {
+              "conclusion": "Los migrantes pueden acceder a los servicios de salud provistos por los sectores público y privado.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 menciona que los migrantes tendrán derecho a recibir cualquier tipo de atención médica provista por los sectores público y privado."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Copy: 'Guarda esta información y compártela para difundir los derechos vigentes. Esto es información general, no es asesoría legal.'",
+              "problema": "El copy incluye una invitación a compartir y una cláusula de exención de responsabilidad ('no es asesoría legal') que no fueron solicitadas ni forman parte del contenido jurídico objetivo requerido por las instrucciones de la marca.",
+              "correccion": "Eliminar la invitación a compartir y la cláusula de exención de responsabilidad, ya que las instrucciones prohíben explícitamente la asesoría personalizada y el tono debe ser de divulgación jurídica directa, no de un servicio de asesoría que requiera deslindes."
+            },
+            {
+              "donde": "Copy: 'Específicamente, la norma señala que los migrantes tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción.'",
+              "problema": "La redacción omite la condición esencial de que la atención debe ser 'necesaria para preservar la vida' en esa oración específica, lo cual es un requisito limitativo del artículo 8.",
+              "correccion": "Asegurar que la frase incluya la condición: '...tienen derecho a recibir atención médica urgente de manera gratuita y sin restricción, siempre que sea necesaria para preservar la vida'."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los migrantes tienen derecho a recibir atención médica urgente de forma gratuita y sin restricciones, sin importar su situación migratoria, cuando sea necesaria para preservar la vida.",
+              "sostenida": "si",
+              "motivo": "El artículo 8 de la Ley de Migración establece explícitamente este derecho bajo la condición de que sea atención urgente para preservar la vida, lo cual es reflejado fielmente en la pieza."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

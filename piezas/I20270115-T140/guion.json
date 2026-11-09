@@ -1,0 +1,161 @@
+{
+  "id": "I20270115-T140",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Un medio puede publicar la foto de un menor?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T140",
+  "pieza": {
+    "titular": "¿Un medio puede publicar la foto de un menor?",
+    "bajada": "Esto dice la Ley General de los Derechos de Niñas, Niños y Adolescentes sobre la imagen de menores.",
+    "mito": "Los medios pueden publicar la imagen de un menor sin restricciones.",
+    "realidad": "Depende: es violación a la intimidad si el manejo de su imagen menoscaba su honra, derechos o los pone en riesgo.",
+    "fuente_visible": "Ley General de los Derechos de Niñas, art. 77"
+  },
+  "copy": "La Ley General de los Derechos de Niñas, Niños y Adolescentes establece reglas claras sobre la difusión de la imagen de menores de edad en medios de comunicación con concesión de radiodifusión y telecomunicaciones, así como medios impresos o electrónicos bajo su control.\n\nConforme al artículo 77, se considera violación a la intimidad si esto menoscaba su honra, es contrario a sus derechos o los pone en riesgo conforme al interés superior de la niñez.\n\nGuarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Pieza gráfica que explica si los medios pueden publicar la foto de un menor de edad identificable según la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "77",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "Se considerará violación a la intimidad de niñas, niños o adolescentes cualquier manejo directo de su imagen, nombre, datos personales o referencias que permitan su identificación",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 77",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-09"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El manejo directo de la imagen de un menor que permita su identificación se considera violación a la intimidad bajo determinadas condiciones.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un medio puede publicar la foto de un menor que lo identifique?",
+    "concepto_central": "violación a la intimidad",
+    "respuesta_corta": "Depende: se considera violación a la intimidad si el manejo de su imagen menoscaba su honra, sus derechos o los pone en riesgo.",
+    "reglas": [
+      {
+        "conclusion": "El manejo de la imagen de un menor en medios que permita su identificación se considera violación a la intimidad si afecta su honra, derechos o los pone en riesgo.",
+        "fuente": "F1",
+        "cita_literal": "Se considerará violación a la intimidad de niñas, niños o adolescentes cualquier manejo directo de su imagen, nombre, datos personales o referencias que permitan su identificación",
+        "condiciones": [
+          "que menoscabe su honra o reputación",
+          "sea contrario a sus derechos",
+          "que los ponga en riesgo, conforme al principio de interés superior de la niñez"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+          "articulo": "77"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El manejo de la imagen que permita la identificación del menor y cumpla con las condiciones señaladas se considera una violación a su intimidad.",
+        "fuente": "F1",
+        "cita_literal": "Se considerará violación a la intimidad de niñas, niños o adolescentes cualquier manejo directo de su imagen, nombre, datos personales o referencias que permitan su identificación"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla sanciones específicas ni procedimientos para sancionar o denunciar esta conducta."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T16:30:57+00:00",
+    "solicitud": "2027-01-15_imagen_T140-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Un medio puede publicar la foto de un menor que lo identifique?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El manejo de la imagen de un menor en medios que permita su identificación se considera violación a la intimidad si afecta su honra, derechos o los pone en riesgo.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja fielmente el supuesto normativo del artículo 77, que condiciona la violación a la intimidad a que el manejo de la imagen menoscabe la honra, sea contrario a derechos o ponga en riesgo al menor."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Copy, segundo párrafo",
+              "problema": "La redacción sugiere que la violación a la intimidad ocurre 'siempre que esto afecte su honra...', lo cual es correcto, pero la cita literal está incompleta al omitir el contexto de los medios de comunicación específicos (radiodifusión, telecomunicaciones, impresos) que menciona la ley.",
+              "correccion": "Incluir en la cita literal o en la explicación que la norma aplica específicamente a medios de comunicación con concesión de radiodifusión y telecomunicaciones, así como medios impresos o electrónicos bajo su control, para no generalizar la prohibición a cualquier ámbito."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El manejo de la imagen de un menor en medios que permita su identificación se considera violación a la intimidad si afecta su honra, derechos o los pone en riesgo.",
+              "sostenida": "si",
+              "motivo": "El artículo 77 de la Ley General de los Derechos de Niñas, Niños y Adolescentes establece que se considerará violación a la intimidad cualquier manejo directo de su imagen que permita su identificación cuando esto 'menoscabe su honra o reputación, sea contrario a sus derechos o que los ponga en riesgo, conforme al principio de interés superior de la niñez'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "id": "R20270116-T141",
+  "formato": "reel",
+  "titulo": "¿Desde qué día te paga el IMSS tu incapacidad?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T141",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "96",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
+      "cita": "Ley del Seguro Social, artículo 96",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Desde qué día paga el IMSS la incapacidad?",
+      "titulo": [
+        "¿DESDE QUÉ DÍA",
+        "TE PAGA EL IMSS",
+        "LA INCAPACIDAD?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "A partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.",
+      "titulo": [
+        "PAGO DE",
+        "INCAPACIDAD"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley señala:: El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
+      "etiqueta": "Ley del Seguro Social, artículo 96",
+      "cita": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El subsidio se paga a partir del cuarto día del inicio de la incapacidad.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Requisitos:",
+      "items": [
+        "Enfermedad no profesional",
+        "Incapacidad para el trabajo",
+        "Previo dictamen del IMSS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Si continúas incapacitado al concluir el periodo, se podrá prorrogar el pago hasta por veintiséis semanas más.",
+      "titulo": [
+        "DURACIÓN Y",
+        "PRÓRROGA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
+    "concepto_central": "subsidio por enfermedad no profesional",
+    "respuesta_corta": "A partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.",
+    "reglas": [
+      {
+        "conclusion": "El subsidio por enfermedad no profesional se paga a partir del cuarto día del inicio de la incapacidad.",
+        "fuente": "F1",
+        "cita_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta",
+        "condiciones": [
+          "enfermedad no profesional",
+          "que la enfermedad incapacite para el trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "96"
+        }
+      },
+      {
+        "conclusion": "El subsidio se otorga hasta por cincuenta y dos semanas, con posibilidad de prórroga por veintiséis semanas más previo dictamen del Instituto.",
+        "fuente": "F1",
+        "cita_literal": "y hasta por el términod e cincuenta y dos semanas. Si al concluir dicho período el asegurado continuare incapacitado, previo dictamen del Instituto, se podrá prorrogar",
+        "condiciones": [
+          "que el asegurado continúe incapacitado al concluir el período",
+          "previo dictamen del Instituto"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "96"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El IMSS paga un subsidio en dinero a partir del cuarto día de incapacidad, hasta por 52 semanas, prorrogables por 26 semanas más.",
+        "fuente": "F1",
+        "cita_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica en casos de enfermedad no profesional que incapacite para el trabajo y, para la prórroga, se requiere dictamen del Instituto.",
+        "fuente": "F1",
+        "cita_literal": "En caso de enfermedad no profesional, el asegurado tendrá derecho a un subsidio en dinero que se otorgará cuando la enfermedad lo incapacite para el trabajo."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla el porcentaje del salario que se paga como subsidio ni los trámites específicos ante ventanilla."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-09T16:29:45+00:00",
+    "solicitud": "2027-01-16_reel_T141-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 4,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?\n\nA partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.\n\nFuente: Ley del Seguro Social, artículo 96.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 674 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 54: recorta al menos 114 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Sabes desde qué día te paga el IMSS una incapacidad por enfermedad no profesional? \n ¿CUÁNDO PAGA \n EL IMSS \n INCAPACIDAD? \n A partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por cincuenta y dos semanas. \n PLAZO DE \n PAGO \n La ley señala que el subsidio se otorga cuando la enfermedad lo incapacite para el trabajo. El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas. \n El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas. \n Las condiciones para recibir este apoyo son las sigu"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 674 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 54: recorta al menos 114 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La posibilidad de prorrogar el pago del subsidio por 26 semanas adicionales si la incapacidad persiste después de las 52 semanas iniciales."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El IMSS paga el subsidio por enfermedad no profesional a partir del cuarto día de la incapacidad.",
+              "sostenida": "si",
+              "motivo": "El artículo 96 establece explícitamente que el subsidio se paga a partir del cuarto día."
+            },
+            {
+              "conclusion": "El subsidio se paga hasta por 52 semanas.",
+              "sostenida": "parcial",
+              "motivo": "El artículo 96 prevé una prórroga de hasta 26 semanas adicionales, por lo que presentar las 52 semanas como el límite único es incompleto."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "En la sección de 'titular' y 'lista' que menciona el plazo de 52 semanas.",
+              "problema": "Se presenta el límite de 52 semanas como un tope definitivo, omitiendo la posibilidad legal de una prórroga de 26 semanas adicionales prevista en el mismo artículo.",
+              "corrección": "Añadir que el subsidio se otorga hasta por 52 semanas y que, si la incapacidad continúa, se puede prorrogar hasta por 26 semanas más previo dictamen del Instituto."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 733 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 113: recorta al menos 173 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Desde qué día te paga el IMSS una incapacidad por enfermedad? \n ¿DESDE QUÉ DÍA \n TE PAGA EL IMSS \n LA INCAPACIDAD? \n A partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga. \n PAGO DE \n INCAPACIDAD \n La ley establece claramente cuándo inicia este apoyo económico para los trabajadores asegurados: El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas. \n El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas. \n Para recibir este subsi"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 733 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 113: recorta al menos 173 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El subsidio por enfermedad no profesional se paga a partir del cuarto día del inicio de la incapacidad.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una interpretación directa y fiel del artículo 96 de la Ley del Seguro Social."
+            },
+            {
+              "conclusion": "El subsidio se otorga hasta por cincuenta y dos semanas, con posibilidad de prórroga por veintiséis semanas más previo dictamen del Instituto.",
+              "sostenida": "si",
+              "motivo": "La conclusión refleja con exactitud los plazos y la condición de dictamen médico establecidos en el artículo 96 de la Ley del Seguro Social."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

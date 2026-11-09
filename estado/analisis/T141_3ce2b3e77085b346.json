@@ -1,0 +1,54 @@
+{
+ "tema_id": "T141",
+ "pregunta": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
+ "fecha": "2026-11-09T16:28:47+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Desde qué día te paga el IMSS una incapacidad por enfermedad?",
+  "concepto_central": "subsidio por enfermedad no profesional",
+  "respuesta_corta": "A partir del cuarto día del inicio de la incapacidad por enfermedad no profesional, hasta por 52 semanas y con posibilidad de prórroga.",
+  "reglas": [
+   {
+    "conclusion": "El subsidio por enfermedad no profesional se paga a partir del cuarto día del inicio de la incapacidad.",
+    "fuente": "F1",
+    "cita_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta",
+    "condiciones": [
+     "enfermedad no profesional",
+     "que la enfermedad incapacite para el trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El subsidio se otorga hasta por cincuenta y dos semanas, con posibilidad de prórroga por veintiséis semanas más previo dictamen del Instituto.",
+    "fuente": "F1",
+    "cita_literal": "y hasta por el términod e cincuenta y dos semanas. Si al concluir dicho período el asegurado continuare incapacitado, previo dictamen del Instituto, se podrá prorrogar",
+    "condiciones": [
+     "que el asegurado continúe incapacitado al concluir el período",
+     "previo dictamen del Instituto"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El IMSS paga un subsidio en dinero a partir del cuarto día de incapacidad, hasta por 52 semanas, prorrogables por 26 semanas más.",
+    "fuente": "F1",
+    "cita_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad, mientras dure ésta y hasta por el términod e cincuenta y dos semanas."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica en casos de enfermedad no profesional que incapacite para el trabajo y, para la prórroga, se requiere dictamen del Instituto.",
+    "fuente": "F1",
+    "cita_literal": "En caso de enfermedad no profesional, el asegurado tendrá derecho a un subsidio en dinero que se otorgará cuando la enfermedad lo incapacite para el trabajo."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla el porcentaje del salario que se paga como subsidio ni los trámites específicos ante ventanilla.",
+  "fuentes_irrelevantes": []
+ }
+}
