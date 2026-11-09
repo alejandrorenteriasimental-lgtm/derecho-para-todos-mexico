@@ -28,42 +28,36 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 19",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "19",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "si no recibe la constancia mencionada dentro de las tres horas siguientes, pondrá al indiciado en libertad",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 19",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Cuánto tiempo puede tenerte un juez sin vincularte a proceso?",
+      "texto": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
       "titulo": [
         "¿CUÁNTO TIEMPO",
-        "PUEDES ESTAR",
-        "DETENIDO?"
+        "ANTE EL JUEZ",
+        "SIN VINCULARTE?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "El límite es de 72 horas tras quedar a disposición del juez.",
+      "texto": "Hasta 72 horas desde que quedas a disposición del juez.",
       "titulo": [
         "PLAZO DE",
         "72 HORAS"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley dicta: \"Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición\".",
-      "etiqueta": "Constitución, Art. 19",
-      "cita": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "El auto debe expresar:",
-      "items": [
-        "Delito imputado",
-        "Lugar y circunstancias",
-        "Probabilidad de autoría"
       ],
       "afirmaciones": [
         {
@@ -75,27 +69,41 @@
       ]
     },
     {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "Solo tú pides prórroga: \"El plazo para dictar el auto de vinculación a proceso podrá prorrogarse únicamente a petición del indiciado\".",
-      "encabezado": "Prórroga del plazo",
-      "detalle": "El indiciado debe solicitarlo",
-      "fuente_corta": "CPEUM, Art. 19",
+      "tipo": "cita",
+      "texto": "Dice la Constitución: «Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición».",
+      "etiqueta": "Constitución, artículo 19",
+      "cita": "Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición",
       "afirmaciones": []
     },
     {
-      "tipo": "titular",
-      "texto": "Sin auto o prórroga, deben liberarte tres horas tras avisar al juez del vencimiento.",
-      "titulo": [
-        "LIBERTAD POR",
-        "VENCIMIENTO"
-      ],
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Solo tú puedes pedir que se amplíe: «podrá prorrogarse únicamente a petición del indiciado».",
+      "encabezado": "Prórroga solo si tú la pides",
+      "detalle": "A petición del indiciado",
+      "fuente_corta": "Constitución, art. 19",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
           "texto": "El plazo de vinculación solo se prorroga si el indiciado lo solicita.",
           "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Si vence sin auto ni prórroga, se avisa al juez y, si en tres horas no llega la constancia, deben liberarte.",
+      "titulo": [
+        "SIN AUTO:",
+        "LIBERTAD"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Si la autoridad del establecimiento no recibe la constancia dentro de las tres horas siguientes, pondrá al indiciado en libertad.",
+          "fuente": "F3"
         }
       ]
     },
@@ -184,7 +192,7 @@
   "pregunta_original": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?\n\nHasta 72 horas a partir de que quedas a disposición del juez; este plazo solo puede extenderse si tú, como indiciado, solicitas una prórroga.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 19.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuánto tiempo puede tenerte detenido un juez sin vincularte a proceso?\n\nHasta 72 horas. El artículo 19 de la Constitución dice: «Ninguna detención ante autoridad judicial podrá exceder del plazo de setenta y dos horas, a partir de que el indiciado sea puesto a su disposición, sin que se justifique con un auto de vinculación a proceso».\n\nEl plazo «podrá prorrogarse únicamente a petición del indiciado». Y si al concluir el plazo la autoridad del lugar de detención no recibe el auto o la solicitud de prórroga, debe avisar al juez; «si no recibe la constancia mencionada dentro de las tres horas siguientes, pondrá al indiciado en libertad».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -240,5 +248,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "título en pantalla «¿Cuánto tiempo puedes estar detenido?» generalizaba (la detención ante el Ministerio Público tiene otro plazo): ahora «¿Cuánto tiempo ante el juez sin vincularte?»; fuera la lista no narrada («El auto debe expresar») con «probabilidad de autoría» (la ley dice que lo cometió o participó); la liberación tras el vencimiento ahora con su condición literal (la autoridad del establecimiento avisa al juez y libera si en tres horas no recibe la constancia), con fuente; citas con comillas latinas; «CPEUM» → «Constitución»; texto de publicación con las citas literales"
+    }
+  ]
 }

@@ -8,14 +8,14 @@
   "tema_id": "T138",
   "pieza": {
     "titular": "¿Quejas ante Profeco por teléfono?",
-    "bajada": "Sí, puedes presentar quejas o reclamaciones vía telefónica si cumples los requisitos legales de identificación y descripción.",
-    "cita": "podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio cumpliendo con los siguientes requisitos",
+    "bajada": "Sí. La Procuraduría recibirá tus quejas o reclamaciones por teléfono si cumples los requisitos del artículo 99.",
+    "cita": "podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio",
     "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 99",
-    "ojo": "Debes dar los datos del proveedor y del servicio.",
+    "ojo": "Debes dar tus datos, los hechos, el proveedor y cómo quieres que se atienda.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 99"
   },
-  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, tienes el derecho de presentar tus quejas o reclamaciones ante la Procuraduría por diversas vías, incluyendo la telefónica.\n\nPara que tu queja sea recibida, el artículo 99 establece que debes proporcionar tu nombre, domicilio y una descripción sucinta de los hechos. También es necesario identificar al proveedor con los datos de tu comprobante.\n\nRecuerda que la ley exige señalar la forma en que solicitas que se desahogue tu reclamación. Si cumples con estos puntos, la Procuraduría debe recibir tu trámite.\n\nGuarda esta información para cuando necesites defender tus derechos como consumidor.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Infografía que explica que es posible presentar quejas ante Profeco por teléfono según el artículo 99 de la Ley Federal de Protección al Consumidor, detallando los requisitos necesarios como datos del reclamante y del proveedor.",
+  "copy": "¿Puedes presentar una queja por teléfono ante la Procuraduría? Sí. El artículo 99 de la Ley Federal de Protección al Consumidor dice que la Procuraduría recibirá las quejas o reclamaciones, que «podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio», con estos requisitos:\n\n1. Tu nombre y domicilio.\n2. La descripción del bien o servicio que reclamas y una relación breve de los hechos.\n3. El nombre y domicilio del proveedor que aparezcan en el comprobante o recibo; si no lo tienes, los que tú proporciones.\n4. El lugar o la forma en que pides que se atienda tu reclamación.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Ficha informativa: según el artículo 99 de la Ley Federal de Protección al Consumidor, las quejas ante Profeco pueden presentarse por teléfono si se dan los datos del reclamante, del bien o servicio, de los hechos, del proveedor y la forma de atención solicitada.",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -36,6 +36,17 @@
       "articulo": "99",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
       "texto_literal": "las cuales podrán presentarse en forma escrita, oral, telefónica, electrónica o por cualquier otro medio cumpliendo con los siguientes requisitos:",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 99",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "99",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Señalar nombre y domicilio del proveedor que se contenga en el comprobante o recibo que ampare la operación materia de la reclamación o, en su defecto, el que proporcione el reclamante",
       "cita": "Ley Federal de Protección al Consumidor, artículo 99",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
@@ -153,5 +164,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "bajada con «requisitos de identificación y descripción» omitía la fracción IV (forma de desahogo): ahora dice que la Procuraduría recibirá la queja por teléfono si se cumplen los requisitos del art. 99, y el «OJO» los resume (datos, hechos, proveedor y forma de atención) en lugar de repetir la bajada; cita destacada sin el arranque de la lista; texto de publicación sin relleno («Guarda esta información…») con los cuatro requisitos tal como los fija la ley, incluida la alternativa de la fr. III cuando no hay comprobante"
+    }
+  ]
 }

@@ -17,22 +17,33 @@
       "cita": "Ley Federal del Trabajo, artículo 516",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "518",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+      "cita": "Ley Federal del Trabajo, artículo 518",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-09"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Cuánto tiempo tienes para reclamar un pago?",
+      "texto": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
       "titulo": [
-        "¿TIEMPO LÍMITE",
-        "PARA COBRAR",
-        "TU PAGO?"
+        "¿CUÁNTO TIEMPO",
+        "PARA RECLAMAR",
+        "UN PAGO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Por regla general, tienes un año para reclamar, contado desde el día siguiente a que el pago debió hacerse.",
+      "texto": "Por regla general, un año, contado desde el día siguiente a la fecha en que debieron pagarte.",
       "titulo": [
         "PLAZO DE",
         "UN AÑO"
@@ -55,32 +66,20 @@
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Puntos clave sobre el plazo:",
-      "items": [
-        "Un año para reclamar",
-        "Inicia al día siguiente",
-        "Cuando es exigible"
-      ],
-      "afirmaciones": []
-    },
-    {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "La norma aclara que existen excepciones consignadas en los artículos siguientes de la ley.",
-      "encabezado": "Excepciones en la ley",
-      "detalle": "Existen plazos diferentes",
-      "fuente_corta": "Ley Federal del Trabajo, art. 516",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "El año para reclamar inicia el día posterior a que el patrón tenía la obligación de pagarte.",
-      "titulo": [
-        "REVISA TU",
-        "FECHA DE PAGO"
-      ],
-      "afirmaciones": []
+      "texto": "Ojo: si te separaron del trabajo, para reclamar por la separación tienes dos meses, contados desde el día siguiente.",
+      "encabezado": "Si te separaron del trabajo",
+      "detalle": "Dos meses para reclamar",
+      "fuente_corta": "Ley Federal del Trabajo, art. 518",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las acciones de los trabajadores separados del trabajo prescriben en dos meses, desde el día siguiente a la separación.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -104,7 +103,7 @@
           "Que el plazo se cuente a partir del día siguiente a dicha exigibilidad"
         ],
         "excepciones": [
-          "Las excepciones que se consignan en los artículos siguientes de la ley"
+          "Las acciones de los trabajadores separados del trabajo prescriben en dos meses (art. 518 LFT)."
         ],
         "ref": {
           "documento": "Ley Federal del Trabajo",
@@ -168,7 +167,7 @@
   "pregunta_original": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?\n\nPor regla general, tienes un año para reclamar, contado a partir del día siguiente a la fecha en que el pago debió realizarse.\n\nFuente: Ley Federal del Trabajo, artículo 516.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuánto tiempo tienes para reclamarle a tu patrón un pago?\n\nPor regla general, un año. El artículo 516 de la Ley Federal del Trabajo dice: «Las acciones de trabajo prescriben en un año, contado a partir del día siguiente a la fecha en que la obligación sea exigible, con las excepciones que se consignan en los artículos siguientes».\n\nUna de esas excepciones: si te separaron del trabajo, el artículo 518 dice que «prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo», contados a partir del día siguiente a la separación.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -222,5 +221,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-09",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "la excepción era vaga («existen plazos diferentes» en «los artículos siguientes»): ahora nombra la principal (art. 518 LFT: dos meses para las acciones de quien fue separado del trabajo, desde el día siguiente a la separación), con su fuente; fuera la lista no narrada (en pantalla solo dos de tres puntos) y el titular final que repetía la respuesta; título en pantalla igual a la pregunta narrada; texto de publicación con las citas literales"
+    }
+  ]
 }
