@@ -1,274 +1,280 @@
 {
-  "id": "R20270117-T142",
-  "formato": "reel",
-  "titulo": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "carril_inicial": "A",
-  "tema_id": "T142",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Derecho de Autor",
-      "articulo": "148",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "texto_literal": "Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
-      "cita": "Ley Federal del Derecho de Autor, artículo 148",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-10"
-    },
-    "F2": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Derecho de Autor",
-      "articulo": "148",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "texto_literal": "siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra",
-      "cita": "Ley Federal del Derecho de Autor, artículo 148",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-10"
-    }
+ "id": "R20270117-T142",
+ "formato": "reel",
+ "titulo": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "carril_inicial": "A",
+ "tema_id": "T142",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Derecho de Autor",
+   "articulo": "148",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+   "texto_literal": "Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
+   "cita": "Ley Federal del Derecho de Autor, artículo 148",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-10"
   },
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "texto": "¿Quieres citar un libro sin permiso?",
-      "titulo": [
-        "¿CITAR LIBROS",
-        "SIN PERMISO?"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Es posible sin permiso ni pago si la obra ya es pública.",
-      "titulo": [
-        "SÍ ES POSIBLE",
-        "SIN PAGAR"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley: \"podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración\".",
-      "etiqueta": "Ley Federal del Derecho de Autor, art. 148",
-      "cita": "podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago si la obra ya fue divulgada.",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "Reglas para citar:",
-      "items": [
-        "Citar la fuente siempre",
-        "No alterar la obra",
-        "Obra ya divulgada"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "Límite: \"siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra\".",
-      "encabezado": "Límite de extensión",
-      "detalle": "No debe ser copia sustancial",
-      "fuente_corta": "Ley, art. 148",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Cita mencionando la fuente, sin alterar el texto ni copiar fragmentos largos.",
-      "titulo": [
-        "RESPETA LA",
-        "FUENTE SIEMPRE"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "La cantidad de texto citado no debe ser tan grande que se considere una reproducción del contenido original.",
-          "fuente": "F2"
-        }
-      ]
-    },
-    {
-      "tipo": "cierre",
-      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
-      "aviso": "Información general, no asesoría legal.",
-      "afirmaciones": []
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
-    "concepto_central": "cita de textos",
-    "respuesta_corta": "Sí, siempre que la obra esté divulgada, se cite la fuente, no se altere y la cantidad no sea una reproducción simulada y sustancial del contenido original.",
-    "reglas": [
-      {
-        "conclusion": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago, bajo condiciones específicas de respeto a la obra y su origen.",
-        "fuente": "F1",
-        "cita_literal": "Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
-        "condiciones": [
-          "La obra debe estar ya divulgada",
-          "No debe afectarse la explotación normal de la obra",
-          "Se debe citar invariablemente la fuente",
-          "No se debe alterar la obra"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Ley Federal del Derecho de Autor",
-          "articulo": "148"
-        }
-      },
-      {
-        "conclusion": "La extensión de la cita tiene un límite legal: no debe equivaler a copiar la obra de forma encubierta.",
-        "fuente": "F1",
-        "cita_literal": "siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra",
-        "condiciones": [
-          "La cantidad tomada no debe ser sustancial"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Ley Federal del Derecho de Autor",
-          "articulo": "148"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "El uso de fragmentos es válido y legal sin necesidad de permiso o pago al titular de los derechos patrimoniales.",
-        "fuente": "F1",
-        "cita_literal": "podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración"
-      },
-      {
-        "elemento": "vía",
-        "estado": "no_cubierto",
-        "respuesta": "El texto no establece el procedimiento legal a seguir en caso de que un autor intente impedir una cita permitida por ley.",
-        "fuente": "F1",
-        "cita_literal": "N/A"
-      },
-      {
-        "elemento": "autoridad",
-        "estado": "no_cubierto",
-        "respuesta": "La norma no menciona ante qué autoridad se debe acudir para validar el derecho a la cita.",
-        "fuente": "F1",
-        "cita_literal": "N/A"
-      },
-      {
-        "elemento": "plazo",
-        "estado": "no_aplica",
-        "motivo": "La ley no establece un plazo de tiempo para ejercer el derecho de cita; este es permanente mientras se cumplan las condiciones legales.",
-        "respuesta": "N/A",
-        "fuente": "F1",
-        "cita_literal": "N/A"
-      }
-    ],
-    "interpretaciones": [
-      {
-        "afirmacion": "La determinación de qué cantidad es 'sustancial' depende de la proporción del fragmento respecto a la totalidad del libro.",
-        "condicion": "Si el fragmento citado permite al lector evitar la compra o consulta de la obra original.",
-        "base": "F1, fracción I: 'siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial'."
-      }
-    ],
-    "distinciones": [
-      {
-        "a": "Cita de textos",
-        "b": "Reproducción para uso personal",
-        "diferencia": "La cita de textos permite el uso público mencionando la fuente, mientras que la reproducción para uso personal es privada, por una sola vez y sin fines de lucro."
-      }
-    ],
-    "limites": "Estos textos no definen un porcentaje exacto de palabras o páginas para determinar qué es una 'reproducción sustancial', ni mencionan las sanciones por omitir la fuente."
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Derecho de Autor",
+   "articulo": "148",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+   "texto_literal": "siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra",
+   "cita": "Ley Federal del Derecho de Autor, artículo 148",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-10"
   },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-10T10:14:17+00:00",
-    "solicitud": "2027-01-17_reel_T142-lote-7.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 3,
-        "auditor": 1
-      },
-      "llamadas_ia_total": 4,
-      "intentos_analisis": 1,
-      "intentos_redaccion": 2,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3-flash-preview"
-    }
-  },
-  "pregunta_original": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "copy": "¿Puedes citar parte de un libro sin pedir permiso al autor?\n\nSí, siempre que la obra esté divulgada, se cite la fuente, no se altere y la cantidad no sea una reproducción simulada y sustancial del contenido original.\n\nFuente: Ley Federal del Derecho de Autor, artículo 148.\n\nEsto es información general, no es asesoría legal.",
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemma-4-26b-a4b-it",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "errores_esquema": [
-          "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-        ],
-        "visible": "  \n ¿Quieres citar un libro sin pedir permiso? \n ¿CITAR LIBROS \n SIN PERMISO? \n Sí es posible sin pagar ni pedir permiso si la obra ya es pública y sigues estas reglas. \n SÍ ES POSIBLE \n SIN PAGAR \n La ley establece que las obras \"podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración\". \n podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración \n Reglas para citar: \n Citar la fuente siempre \n No alterar la obra \n Obra ya divulgada \n Sobre la extensión, se permite \"siempre que la cantidad tomada no pueda con"
-      },
-      {
-        "etapa": "reparacion_puntual",
-        "intento": 1,
-        "errores": [
-          "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-        ]
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 1,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago, bajo condiciones específicas de respeto a la obra y su origen.",
-              "sostenida": "si",
-              "motivo": "La conclusión se deriva directamente del artículo 148, que permite el uso de obras divulgadas sin autorización ni remuneración, siempre que se cite la fuente y no se altere la obra."
-            },
-            {
-              "conclusion": "La extensión de la cita tiene un límite legal: no debe equivaler a copiar la obra de forma encubierta.",
-              "sostenida": "si",
-              "motivo": "La conclusión es una paráfrasis válida de la fracción I del artículo 148, que prohíbe que la cantidad tomada sea una 'reproducción simulada y sustancial'."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": true
+  "F3": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Derecho de Autor",
+   "articulo": "148",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+   "texto_literal": "citando invariablemente la fuente y sin alterar la obra",
+   "cita": "Ley Federal del Derecho de Autor, artículo 148",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-10"
   }
+ },
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "texto": "¿Puedes citar un libro sin pedir permiso?",
+   "titulo": [
+    "¿CITAR UN LIBRO",
+    "SIN PERMISO?"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "titular",
+   "texto": "Sí, si la obra ya fue divulgada, citas la fuente y no la alteras.",
+   "titulo": [
+    "SÍ, CON",
+    "CONDICIONES"
+   ],
+   "afirmaciones": [
+    {
+     "id": "A1",
+     "tipo": "hecho_normativo",
+     "texto": "Las obras ya divulgadas pueden citarse sin autorización citando invariablemente la fuente y sin alterar la obra.",
+     "fuente": "F3"
+    }
+   ]
+  },
+  {
+   "tipo": "cita",
+   "texto": "La Ley Federal del Derecho de Autor dice que las obras ya divulgadas «podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración».",
+   "etiqueta": "Ley Federal del Derecho de Autor, artículo 148",
+   "cita": "podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
+   "afirmaciones": [
+    {
+     "id": "A2",
+     "tipo": "hecho_normativo",
+     "texto": "Las obras literarias y artísticas ya divulgadas pueden utilizarse sin autorización y sin remuneración si no se afecta su explotación normal.",
+     "fuente": "F1",
+     "comparar_literal": true
+    }
+   ]
+  },
+  {
+   "tipo": "excepcion",
+   "numero": 1,
+   "texto": "Ojo: lo citado no puede ser «una reproducción simulada y sustancial del contenido de la obra».",
+   "encabezado": "Sin reproducción sustancial",
+   "detalle": "Ni simulada",
+   "fuente_corta": "LFDA, art. 148",
+   "afirmaciones": [
+    {
+     "id": "A3",
+     "tipo": "hecho_normativo",
+     "texto": "La cita de textos procede siempre que la cantidad tomada no pueda considerarse una reproducción simulada y sustancial del contenido de la obra.",
+     "fuente": "F2"
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+   "aviso": "Información general, no asesoría legal.",
+   "afirmaciones": []
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+  "concepto_central": "cita de textos",
+  "respuesta_corta": "Sí, siempre que la obra esté divulgada, se cite la fuente, no se altere y la cantidad no sea una reproducción simulada y sustancial del contenido original.",
+  "reglas": [
+   {
+    "conclusion": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago, bajo condiciones específicas de respeto a la obra y su origen.",
+    "fuente": "F1",
+    "cita_literal": "Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
+    "condiciones": [
+     "La obra debe estar ya divulgada",
+     "No debe afectarse la explotación normal de la obra",
+     "Se debe citar invariablemente la fuente",
+     "No se debe alterar la obra"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Derecho de Autor",
+     "articulo": "148"
+    }
+   },
+   {
+    "conclusion": "La extensión de la cita tiene un límite legal: no debe equivaler a copiar la obra de forma encubierta.",
+    "fuente": "F1",
+    "cita_literal": "siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra",
+    "condiciones": [
+     "La cantidad tomada no debe ser sustancial"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Derecho de Autor",
+     "articulo": "148"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El uso de fragmentos es válido y legal sin necesidad de permiso o pago al titular de los derechos patrimoniales.",
+    "fuente": "F1",
+    "cita_literal": "podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración"
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "respuesta": "El texto no establece el procedimiento legal a seguir en caso de que un autor intente impedir una cita permitida por ley.",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "respuesta": "La norma no menciona ante qué autoridad se debe acudir para validar el derecho a la cita.",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_aplica",
+    "motivo": "La ley no establece un plazo de tiempo para ejercer el derecho de cita; este es permanente mientras se cumplan las condiciones legales.",
+    "respuesta": "N/A",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La determinación de qué cantidad es 'sustancial' depende de la proporción del fragmento respecto a la totalidad del libro.",
+    "condicion": "Si el fragmento citado permite al lector evitar la compra o consulta de la obra original.",
+    "base": "F1, fracción I: 'siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial'."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Cita de textos",
+    "b": "Reproducción para uso personal",
+    "diferencia": "La cita de textos permite el uso público mencionando la fuente, mientras que la reproducción para uso personal es privada, por una sola vez y sin fines de lucro."
+   }
+  ],
+  "limites": "Estos textos no definen un porcentaje exacto de palabras o páginas para determinar qué es una 'reproducción sustancial', ni mencionan las sanciones por omitir la fuente."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-10T10:14:17+00:00",
+  "solicitud": "2027-01-17_reel_T142-lote-7.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 3,
+    "auditor": 1
+   },
+   "llamadas_ia_total": 4,
+   "intentos_analisis": 1,
+   "intentos_redaccion": 2,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3-flash-preview"
+  }
+ },
+ "pregunta_original": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "copy": "¿Puedes citar parte de un libro sin pedir permiso al autor?\n\nSí, con condiciones. El artículo 148 de la Ley Federal del Derecho de Autor dice que las obras literarias y artísticas ya divulgadas «podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración, citando invariablemente la fuente y sin alterar la obra».\n\nOjo: en la cita de textos, «siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra».\n\nEsto es información general, no es asesoría legal.",
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemma-4-26b-a4b-it",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "errores_esquema": [
+     "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    ],
+    "visible": "  \n ¿Quieres citar un libro sin pedir permiso? \n ¿CITAR LIBROS \n SIN PERMISO? \n Sí es posible sin pagar ni pedir permiso si la obra ya es pública y sigues estas reglas. \n SÍ ES POSIBLE \n SIN PAGAR \n La ley establece que las obras \"podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración\". \n podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración \n Reglas para citar: \n Citar la fuente siempre \n No alterar la obra \n Obra ya divulgada \n Sobre la extensión, se permite \"siempre que la cantidad tomada no pueda con"
+   },
+   {
+    "etapa": "reparacion_puntual",
+    "intento": 1,
+    "errores": [
+     "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    ]
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 1,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago, bajo condiciones específicas de respeto a la obra y su origen.",
+       "sostenida": "si",
+       "motivo": "La conclusión se deriva directamente del artículo 148, que permite el uso de obras divulgadas sin autorización ni remuneración, siempre que se cite la fuente y no se altere la obra."
+      },
+      {
+       "conclusion": "La extensión de la cita tiene un límite legal: no debe equivaler a copiar la obra de forma encubierta.",
+       "sostenida": "si",
+       "motivo": "La conclusión es una paráfrasis válida de la fracción I del artículo 148, que prohíbe que la cantidad tomada sea una 'reproducción simulada y sustancial'."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": true
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-10",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "«si la obra ya es pública» confundía obra divulgada con obra pública o de dominio público; la lista «Reglas para citar» no se narraba; «ni copiar fragmentos largos» no está en el art. 148 LFDA (el límite es la reproducción simulada y sustancial); la narración decía «La ley» sin nombrarla y la tarjeta «Ley, art. 148»; titular final repetido; texto de publicación sin citas. Ahora: condiciones literales (divulgada, citar la fuente, sin alterar) en el titular, cita con su ley, límite literal en el «ojo», texto con las citas"
+  }
+ ]
 }

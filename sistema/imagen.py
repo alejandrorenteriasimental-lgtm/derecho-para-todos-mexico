@@ -225,10 +225,18 @@ def _mismo_tema(g, otro_id):
     misma plantilla, dos piezas distintas dan huellas visuales cercanas (I20261204-T031 vs. I20261126-T025, 29-10:
     distancia 11/256 con contenido totalmente distinto)."""
     if g.get("tema_id") and otro_id.endswith("-" + g["tema_id"]): return True
-    try: t2 = json.loads((RAIZ / "piezas" / otro_id / "guion.json").read_text()).get("titulo", "")
+    try: g2 = json.loads((RAIZ / "piezas" / otro_id / "guion.json").read_text())
     except (OSError, ValueError): return True          # sin datos: se compara (criterio conservador)
+    t2 = g2.get("titulo", "")
     a = {w for w in _palabras(g.get("titulo", "")) if len(w) > 3}; b = {w for w in _palabras(t2) if len(w) > 3}
-    return bool(a and b) and len(a & b) / len(a | b) >= 0.5
+    if not (bool(a and b) and len(a & b) / len(a | b) >= 0.5): return False
+    # Titulares parecidos con fundamentos distintos no son el mismo tema: «¿Le pueden pagar tu sueldo a otra persona?»
+    # (LFT 100) y «¿Te pueden pagar el sueldo con vales?» (LFT 101) comparten «pueden pagar sueldo» (I20270119-T144,
+    # 10-11: retenida a distancia 12/256 de I20261214-T108). Si ambos guiones citan artículos y no comparten ninguno,
+    # no se comparan; sin fuentes en alguno de los dos, se compara (criterio conservador).
+    def arts(x): return {(f.get("documento"), str(f.get("articulo"))) for f in (x.get("fuentes") or {}).values() if f.get("articulo")}
+    fa, fb = arts(g), arts(g2)
+    return not (fa and fb) or bool(fa & fb)
 
 
 def auditar(png, textos, y_fin, previos_hash=()):
