@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "consultado": "2026-11-10T10:22:51+00:00",
+      "consultado": "2026-11-10T16:07:58+00:00",
       "http": 200,
       "bytes": 969098,
       "sha256": "1844f4e56b279c17061db90f4ab7970df3794e3a5ae10d74a0aec1f12641e7a5",
@@ -18,7 +18,21 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "consultado": "2026-11-10T10:22:54+00:00",
+      "consultado": "2026-11-10T16:08:02+00:00",
+      "http": 200,
+      "bytes": 969098,
+      "sha256": "1844f4e56b279c17061db90f4ab7970df3794e3a5ae10d74a0aec1f12641e7a5",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 91545,
+      "extracto": "- las obras literarias y artisticas ya divulg adas podran utilizarse, siempre que no se afecte la explotacion normal de la obra, sin autorizacion del titular del derecho patrimonial y sin remuneracion, citando invariablemente la fuente y sin alterar la obra, solo en los siguientes casos: i. cita de textos, siempre que la cantidad tomada no pueda considerarse como una reproduccion simulada y sustancial del contenido de la obra; ii. reproduccion de articulos, fotografias, ilustraciones y comentarios referentes a acontecimientos de actualidad, publicados por la prensa o difundidos por la radio o ",
+      "huella_articulo": "5f7e114d1e9da4f537c52f22927653f6ec4cc029f45fbde701adaa3c2689aedd",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "consultado": "2026-11-10T16:08:06+00:00",
       "http": 200,
       "bytes": 969098,
       "sha256": "1844f4e56b279c17061db90f4ab7970df3794e3a5ae10d74a0aec1f12641e7a5",
@@ -34,13 +48,21 @@
     {
       "id": "A1",
       "fuentes": [
-        "F1"
+        "F3"
       ],
       "dictamen": "VERIFICADA",
       "duda": null
     },
     {
       "id": "A2",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
       "fuentes": [
         "F2"
       ],

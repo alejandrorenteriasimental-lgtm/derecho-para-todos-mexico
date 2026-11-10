@@ -1,10 +1,10 @@
 {
-  "decision": "RETENER",
+  "decision": "APTA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-11-10T10:24:56+00:00",
+      "consultado": "2026-11-10T16:09:27+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
@@ -18,7 +18,21 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-11-10T10:25:09+00:00",
+      "consultado": "2026-11-10T16:09:48+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 110544,
+      "extracto": "la propiedad de las tierras y aguas comprendidas dentro de los limites del territorio nacional, corresponde originariamente a la nacion, la cual ha tenido y tiene el derecho de transmitir el dominio de ellas a los particulares, constituyendo la propiedad privada. las expropiaciones solo podran hacerse por causa de utilidad publica y mediante indemnizacion. la nacion tendra en todo tiempo el derecho de imponer a la propiedad privada las modalidades que dicte el interes publico, asi como el de regular, en beneficio social, el aprovechamiento de los elementos naturales susceptibles de apropiacion",
+      "huella_articulo": "593fcf936723bbc0ea267312e73328f752eaab2629f6ef56511a47607fbb29a7",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "consultado": "2026-11-10T16:10:06+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
@@ -36,13 +50,21 @@
       "fuentes": [
         "F1"
       ],
-      "dictamen": "RETENER",
-      "duda": "La ley no establece de forma general los límites geográficos exactos del territorio nacional en este artículo."
+      "dictamen": "VERIFICADA",
+      "duda": null
     },
     {
       "id": "A2",
       "fuentes": [
         "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F3"
       ],
       "dictamen": "VERIFICADA",
       "duda": null

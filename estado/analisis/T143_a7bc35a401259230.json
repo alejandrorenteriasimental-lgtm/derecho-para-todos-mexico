@@ -1,0 +1,70 @@
+{
+ "tema_id": "T143",
+ "pregunta": "¿Están prohibidos los monopolios en México?",
+ "fecha": "2026-11-10T16:04:06+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Están prohibidos los monopolios en México?",
+  "concepto_central": "monopolios",
+  "respuesta_corta": "Sí, están prohibidos por la Constitución, aunque existen excepciones específicas para áreas estratégicas del Estado, asociaciones de trabajadores y patentes.",
+  "reglas": [
+   {
+    "conclusion": "En México existe una prohibición general contra los monopolios y las prácticas que limitan la libre competencia.",
+    "fuente": "F1",
+    "cita_literal": "En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes.",
+    "condiciones": [
+     "En los términos y condiciones que fijen las leyes"
+    ],
+    "excepciones": [
+     "Funciones exclusivas del Estado en áreas estratégicas",
+     "Asociaciones de trabajadores para proteger sus intereses",
+     "Sociedades cooperativas de productores que vendan directamente al extranjero productos que sean principal fuente de riqueza regional",
+     "Privilegios temporales a autores, artistas e inventores"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La ley castigará y las autoridades perseguirán cualquier concentración de artículos de consumo necesario que busque subir precios o evitar la libre competencia.",
+    "fuente": "F1",
+    "cita_literal": "la ley castigará severamente, y las autoridades perseguirán con eficacia, toda concentración o acaparamiento en una o pocas manos de artículos de consumo necesario y que tenga por objeto obtener el alza de los precios"
+   },
+   {
+    "elemento": "vía",
+    "estado": "cubierto",
+    "respuesta": "El Ejecutivo Federal, mediante la autoridad de competencia, tiene facultades para investigar, combatir y ordenar la desincorporación de activos para eliminar efectos anticompetitivos.",
+    "fuente": "F1",
+    "cita_literal": "El Ejecutivo Federal, a través de la autoridad en materia de libre competencia y concurrencia deberá prevenir, investigar y combatir los monopolios, las prácticas monopólicas, las concentraciones y demás restricciones"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "motivo": "El texto constitucional no establece plazos para las investigaciones o la duración de las sanciones en materia de monopolios."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El Estado puede ser el único prestador de ciertos servicios sin que esto se considere un monopolio prohibido.",
+    "condicion": "Siempre que se trate de áreas estratégicas como correos, litio, petróleo o electricidad, o funciones del banco central.",
+    "base": "F1: 'No constituirán monopolios las funciones que el Estado ejerza de manera exclusiva en las siguientes áreas estratégicas...'"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "monopolio",
+    "b": "áreas estratégicas",
+    "diferencia": "El monopolio es una concentración prohibida, mientras que las áreas estratégicas son funciones exclusivas del Estado que la ley no considera monopolios."
+   },
+   {
+    "a": "monopolio",
+    "b": "privilegios de autor o inventor",
+    "diferencia": "Los derechos exclusivos sobre obras o inventos son protecciones temporales legales que no constituyen un monopolio prohibido."
+   }
+  ],
+  "limites": "Los textos no especifican el nombre de la autoridad de competencia (como COFECE), ni detallan los montos de las multas o los procedimientos judiciales específicos más allá del amparo indirecto.",
+  "fuentes_irrelevantes": []
+ }
+}

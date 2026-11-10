@@ -1,0 +1,61 @@
+{
+ "tema_id": "T145",
+ "pregunta": "¿Un extranjero puede participar en la política de México?",
+ "fecha": "2026-11-10T16:06:00+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Un extranjero puede participar en la política de México?",
+  "conceptos_centrales": "inmiscuirse en los asuntos políticos",
+  "respuesta_corta": "No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, involucrarse en los asuntos políticos del país.",
+  "reglas": [
+   {
+    "conclusion": "Existe una prohibición constitucional absoluta para que las personas extranjeras intervengan en la vida política mexicana.",
+    "fuente": "F1",
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+    "condiciones": [
+     "Ser una persona que no posea las calidades determinadas en el artículo 30 constitucional"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La persona extranjera que intervenga en política puede ser expulsada del territorio nacional por el Ejecutivo.",
+    "fuente": "F1",
+    "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras con fundamento en la ley"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "El Ejecutivo de la Unión es quien tiene la facultad de determinar la expulsión.",
+    "fuente": "F1",
+    "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras"
+   },
+   {
+    "elemento": "vía",
+    "estado": "cubierto",
+    "respuesta": "La expulsión debe realizarse mediante un procedimiento administrativo que garantice una audiencia previa.",
+    "fuente": "F1",
+    "cita_literal": "la cual regulará el procedimiento administrativo, así como el lugar y tiempo que dure la detención."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "motivo": "El texto constitucional no establece plazos específicos, delegando esta regulación a la ley secundaria."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La expulsión de un extranjero no es un acto discrecional inmediato.",
+    "condicion": "Requiere que se respete el derecho de audiencia previa y se siga un procedimiento administrativo legal.",
+    "base": "F1 indica que el Ejecutivo podrá expulsar 'previa audiencia' y 'con fundamento en la ley'."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no define qué actividades específicas se consideran como 'inmiscuirse' ni detalla las sanciones penales o multas, limitándose a la sanción administrativa de expulsión.",
+  "fuentes_irrelevantes": []
+ }
+}
