@@ -279,3 +279,15 @@ def test_cita_parafraseada_se_narra_una_sola_vez(uso):
     b["escenas"][2]["texto"] = "Dice la Constitución:"
     g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
     assert next(e for e in g["escenas"] if e["tipo"] == "cita")["texto"].startswith("Dice la Constitución: «Nadie puede")
+
+
+def test_etiqueta_generica_de_la_cita_se_reemplaza(uso):
+    # Regresión 10-11-2026 (R20270108-T133): el modelo copió el ejemplo «Ley, artículo N» y la tarjeta decía «LEY, ARTÍCULO 58».
+    assert redactor.etiqueta_generica("Ley, artículo 58") and redactor.etiqueta_generica("Código, art. 3")
+    assert not redactor.etiqueta_generica("Ley Federal del Trabajo, artículo 60")
+    assert not redactor.etiqueta_generica("Constitución, artículo 8")
+    b = copy.deepcopy(BORRADOR)
+    b["escenas"][2]["etiqueta"] = "Ley, artículo 17"
+    g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
+    et = next(e for e in g["escenas"] if e["tipo"] == "cita")["etiqueta"]
+    assert not redactor.etiqueta_generica(et) and et.endswith(", artículo 17")

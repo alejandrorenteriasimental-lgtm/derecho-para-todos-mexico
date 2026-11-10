@@ -2,22 +2,22 @@
   "fecha": "2027-01-14",
   "formato": "reel",
   "tema_id": "T139",
-  "titulo": "¿Desde qué hora tu jornada de trabajo cuenta como nocturna?",
-  "gancho": "¿Desde qué hora tu jornada de trabajo cuenta como nocturna?",
-  "pregunta": "¿Desde qué hora tu jornada de trabajo cuenta como nocturna?",
+  "titulo": "¿Cuenta como jornada tu hora de comida si no puedes salir del trabajo?",
+  "gancho": "¿Cuenta como jornada tu hora de comida si no puedes salir del trabajo?",
+  "pregunta": "¿Cuenta como jornada tu hora de comida si no puedes salir del trabajo?",
   "tipo_pregunta": "derecho",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 60",
+  "fuentes_sugeridas": "LFT art. 64",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "Art. 60 LFT: «Jornada nocturna es la comprendida entre las veinte y las seis horas»; condición literal de la jornada mixta (período nocturno menor de tres horas y media). Texto en registro/textos/LFT_60.json. Sustituye a Ley de Migración 9 (ya usado en la imagen del 04-01).",
+  "motivo_seleccion": "Art. 64 LFT (texto oficial cotejado el 5-11-2026, registro/textos/LFT_64.json): «Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo». Respuesta y condición literales en una sola oración; alcance federal; sin uso en las últimas 3 semanas (LFT 63 salió el 20-12). Sustituye a LFT 60 (dos descartes en el análisis, 9-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270114-T139",
   "archivo": "2027-01-14_reel_T139-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada de trabajo se considera nocturna cuando se encuen» no declara condiciones.\", \"[condiciones] Generalización: «La jornad",
   "ultima_categoria": "juridico",
   "huella_entrada": "fbfb48ba6631b1ef",
@@ -28,7 +28,15 @@
       "motivo": "primer descarte con LFT 60, en el análisis: la conclusión sobre la jornada nocturna no declaraba la condición de la jornada mixta. Se reabre con el ángulo apuntando a la regla y su condición literales",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres horas y media pues si…») y la conclusión «La jornada nocturna comprende el horario que va de las veint»"
+    },
+    {
+      "fecha": "2026-11-10",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFT 60 (9-11, dos veces en el análisis: la conclusión sobre la jornada nocturna no declaraba la condición de la jornada mixta). Ahora LFT 64, respuesta y condición literales, alcance federal, sin uso en las últimas 3 semanas",
+      "estado_anterior": "DESCARTADA",
+      "pregunta_anterior": "¿Desde qué hora tu jornada de trabajo cuenta como nocturna?",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Ley Federal del Trabajo, art. 60 condiciona la regla («…prende periodos de tiempo de las jornadas diurna y nocturna siempre que el periodo nocturno sea menor de tres hor"
     }
   ],
-  "angulo": "Solo el art. 60 LFT. Respuesta: de las 20:00 a las 6:00. Cita literal ÚNICA: «Jornada nocturna es la comprendida entre las veinte y las seis horas». Condición literal (declararla en el análisis y narrarla como «Ojo»): si tu jornada combina horas diurnas y nocturnas es mixta «siempre que el período nocturno sea menor de tres horas y media, pues si comprende tres y media o más, se reputará jornada nocturna». No hablar de duración máxima de la jornada ni de pagos (no están en este artículo). Todo texto visible debe corresponder a lo narrado en esa escena. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
+  "angulo": "Solo el art. 64 LFT. Respuesta: Sí, si no puedes salir del lugar donde trabajas durante el reposo o la comida. Cita literal ÚNICA: «Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo». La condición es «no pueda salir del lugar»: declararla en el análisis y en el titular. No hablar de cuánto dura el descanso, de pagos ni de horas extra (no están en este artículo). Todo texto visible debe corresponder a lo narrado en esa escena. Cuatro escenas más cierre; narración de 450 caracteres o menos; sin listas; la escena de cita dice solo «La ley dice:» y la cita."
 }

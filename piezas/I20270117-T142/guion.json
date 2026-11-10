@@ -2,19 +2,19 @@
   "id": "I20270117-T142",
   "formato": "imagen",
   "plantilla": "dato",
-  "titulo": "¿Cuánto duran los derechos de autor?",
+  "titulo": "¿Cuánto duran los derechos patrimoniales de autor?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T142",
   "pieza": {
-    "titular": "¿Cuánto duran los derechos de autor?",
+    "titular": "¿Cuánto duran los derechos patrimoniales de autor?",
     "bajada": "Depende del supuesto: la vida del autor y cien años más, o cien años después de divulgadas.",
-    "cita": "Los derechos patrimoniales estarán vigentes durante: I. La vida del autor y, a partir de su muerte, cien años más.",
+    "cita": "La vida del autor y, a partir de su muerte, cien años más.",
     "etiqueta_cita": "Ley Federal del Derecho de Autor, artículo 29",
-    "ojo": "Cien años tras la muerte del último coautor.",
+    "ojo": "Con coautores, los cien años corren desde la muerte del último.",
     "fuente_visible": "Ley Federal del Derecho de Autor, art. 29"
   },
-  "copy": "De acuerdo con la Ley Federal del Derecho de Autor, artículo 29, la vigencia comprende «La vida del autor y, a partir de su muerte, cien años más». Si la obra pertenece a varios coautores, el plazo se cuenta desde la muerte del último.\n\nAsimismo, la ley señala que los derechos duran «Cien años después de divulgadas». Guarda esta publicación y compártela con quien le pueda interesar.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuánto duran los derechos patrimoniales de autor? El artículo 29 de la Ley Federal del Derecho de Autor dice que estarán vigentes durante «La vida del autor y, a partir de su muerte, cien años más». Si la obra es de varios coautores, «los cien años se contarán a partir de la muerte del último». La fracción II del mismo artículo prevé otro plazo: «Cien años después de divulgadas».\n\nY agrega: «Pasados los términos previstos en las fracciones de este artículo, la obra pasará al dominio público».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Pieza gráfica que detalla la vigencia de los derechos patrimoniales según la Ley Federal del Derecho de Autor.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -39,13 +39,24 @@
       "cita": "Ley Federal del Derecho de Autor, artículo 29",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Pasados los términos previstos en las fracciones de este artículo, la obra pasará al dominio público.",
+      "cita": "Ley Federal del Derecho de Autor, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10"
     }
   },
   "afirmaciones": [
     {
       "id": "A1",
       "tipo": "hecho_normativo",
-      "texto": "Los derechos patrimoniales duran la vida del autor y cien años más, o cien años después de divulgadas.",
+      "texto": "Los derechos patrimoniales están vigentes durante la vida del autor y, a partir de su muerte, cien años más; la fracción II prevé cien años después de divulgadas.",
       "fuente": "F1"
     },
     {
@@ -53,6 +64,12 @@
       "tipo": "hecho_normativo",
       "texto": "En obras con varios coautores, los cien años se cuentan a partir de la muerte del último.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "Pasados esos plazos, la obra pasa al dominio público.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
@@ -175,5 +192,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-10",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "el título «¿Cuánto duran los derechos de autor?» generalizaba: el art. 29 LFDA regula los derechos patrimoniales, no todos los derechos de autor; el texto de publicación presentaba los dos plazos como si se sumaran y tenía relleno («Guarda esta publicación…»). Ahora: título con «derechos patrimoniales», bajada que separa los dos supuestos, «ojo» completo y texto con las citas literales y el paso al dominio público"
+    }
+  ]
 }

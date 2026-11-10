@@ -29,6 +29,11 @@ def nombre_doc(d):
     return re.split(r",\s*(?:art[íi]culos?|arts?\.)\s", d or "", maxsplit=1, flags=re.I)[0].strip()
 
 
+def etiqueta_generica(t):
+    """«Ley, artículo 58», «Código, art. 3»: la etiqueta no nombra el ordenamiento (la Constitución sí es identificable)."""
+    return bool(re.match(r"^\s*(ley|c[óo]digo|reglamento|norma|ordenamiento)\s*(,|$)", t or "", flags=re.I))
+
+
 LOCALES = ("CPF", "CCF")  # tienen equivalentes estatales distintos → leyenda de jurisdicción obligatoria
 
 
@@ -408,7 +413,10 @@ def construir_reel(sol, borrador, fuentes):
             if not (f and verificador.contiene(f["texto_oficial"], cita)):
                 continue                                         # una cita no verificable no se muestra en pantalla
             e["cita"] = cita if len(cita) <= 220 else cita[:214].rsplit(" ", 1)[0] + " …"   # en pantalla, fragmento literal; la voz dice la cita completa
-            e.setdefault("etiqueta", f'{nombre_doc(f["documento"])}, artículo {f["articulo"]}')
+            if not e.get("etiqueta") or etiqueta_generica(e["etiqueta"]):
+                # el modelo copia el ejemplo del formato («Ley, artículo N») y la tarjeta no decía de qué ley era la cita
+                # (R20270108-T133, 10-11: «LEY, ARTÍCULO 58» en lugar de la Ley Federal de Protección al Consumidor)
+                e["etiqueta"] = f'{nombre_doc(f["documento"])}, artículo {f["articulo"]}'
             if not verificador.contiene(e.get("texto", ""), cita):
                 # La voz dice la cita UNA vez. Si el modelo parafraseó en lugar de citar, la paráfrasis se cambia por una
                 # entrada breve: antes se le pegaba la cita y se narraba dos veces (R20270113-T138, 09-11), lo que además

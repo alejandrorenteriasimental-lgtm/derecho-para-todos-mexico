@@ -2,20 +2,20 @@
   "id": "I20270116-T141",
   "formato": "imagen",
   "plantilla": "dato",
-  "titulo": "¿Cuánto te paga el IMSS?",
+  "titulo": "¿Cuánto te paga el IMSS si una enfermedad te incapacita?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T141",
   "pieza": {
-    "titular": "¿Cuánto te paga el IMSS?",
-    "bajada": "El IMSS paga el 60% del último salario diario de cotización, en periodos vencidos de máximo una semana.",
-    "cita": "El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización.",
+    "titular": "¿Cuánto te paga el IMSS si una enfermedad te incapacita?",
+    "bajada": "El 60% de tu último salario diario de cotización; se paga a ti o a tu representante acreditado.",
+    "cita": "será igual al sesenta por ciento del último salario diario de cotización",
     "etiqueta_cita": "Ley del Seguro Social, artículo 98",
-    "ojo": "Pago semanal directo al asegurado",
-    "fuente_visible": "Ley del Seguro Social, art. 98"
+    "ojo": "Enfermedad no profesional; se paga desde el cuarto día.",
+    "fuente_visible": "Ley del Seguro Social, arts. 96 y 98"
   },
-  "copy": "¿Te has preguntado cuánto dinero recibes durante una incapacidad por enfermedad? Conforme a la Ley del Seguro Social, artículo 98, el subsidio equivale al sesenta por ciento de tu último salario diario de cotización.\n\nEste apoyo se paga por períodos vencidos que no exceden de una semana, entregándose de forma directa al asegurado o a su representante debidamente acreditado.\n\nGuarda y comparte esta información para que más personas conozcan lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Imagen informativa sobre el monto que paga el IMSS por incapacidad por enfermedad.",
+  "copy": "¿Cuánto te paga el IMSS si una enfermedad no profesional te incapacita para trabajar? El artículo 98 de la Ley del Seguro Social dice: «El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización». Y agrega: «El subsidio se pagará por períodos vencidos que no excederán de una semana, directamente al asegurado o a su representante debidamente acreditado».\n\nOjo: según el artículo 96, «El subsidio se pagará a partir del cuarto día del inicio de la incapacidad», y el artículo 97 pide «por lo menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad» (si eres trabajador eventual, seis en los últimos cuatro meses).\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Gráfica informativa sobre cuánto paga el IMSS de subsidio cuando una enfermedad no profesional incapacita para trabajar.",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -39,6 +39,28 @@
       "cita": "Ley del Seguro Social, artículo 98",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10",
+      "articulo": "96",
+      "texto_literal": "En caso de enfermedad no profesional, el asegurado tendrá derecho a un subsidio en dinero que se otorgará cuando la enfermedad lo incapacite para el trabajo. El subsidio se pagará a partir del cuarto día del inicio de la incapacidad",
+      "cita": "Ley del Seguro Social, artículo 96"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10",
+      "articulo": "97",
+      "texto_literal": "cuando tenga cubiertas por lo menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad",
+      "cita": "Ley del Seguro Social, artículo 97"
     }
   },
   "afirmaciones": [
@@ -53,6 +75,18 @@
       "tipo": "hecho_normativo",
       "texto": "El pago se realiza por periodos vencidos de máximo una semana al asegurado o a su representante.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "En enfermedad no profesional, el subsidio se paga a partir del cuarto día del inicio de la incapacidad.",
+      "fuente": "F3"
+    },
+    {
+      "id": "A4",
+      "tipo": "hecho_normativo",
+      "texto": "Para recibir el subsidio se requieren al menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad.",
+      "fuente": "F4"
     }
   ],
   "razonamiento": {
@@ -73,6 +107,20 @@
         "ref": {
           "documento": "Ley del Seguro Social",
           "articulo": "98"
+        }
+      },
+      {
+        "conclusion": "En caso de enfermedad no profesional que incapacite para el trabajo, el subsidio se paga a partir del cuarto día del inicio de la incapacidad.",
+        "fuente": "F3",
+        "cita_literal": "El subsidio se pagará a partir del cuarto día del inicio de la incapacidad",
+        "condiciones": [
+          "enfermedad no profesional que incapacite para el trabajo",
+          "al menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad (art. 97)"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "96"
         }
       }
     ],
@@ -156,5 +204,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-10",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "el título «¿Cuánto te paga el IMSS?» generalizaba (el 60 % del art. 98 LSS es el subsidio por enfermedad no profesional, no todo lo que paga el IMSS); el «ojo» decía «pago semanal» (la ley: periodos vencidos que no excedan de una semana) y omitía desde cuándo se paga. Ahora: título acotado a la incapacidad por enfermedad, «ojo» con el cuarto día (art. 96, texto oficial en registro/textos) y texto de publicación con las citas de los arts. 98, 96 y 97, sin relleno"
+    }
+  ]
 }

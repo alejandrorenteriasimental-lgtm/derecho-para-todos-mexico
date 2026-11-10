@@ -28,6 +28,17 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 8",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "8",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 8",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10",
+      "texto_literal": "siempre que ésta se formule por escrito, de manera pacífica y respetuosa"
     }
   },
   "escenas": [
@@ -43,56 +54,45 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, si es por escrito, pacífica y respetuosa.",
+      "texto": "Sí, si se la haces por escrito, de manera pacífica y respetuosa.",
       "titulo": [
         "PETICIÓN",
         "POR ESCRITO"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La Constitución establece que a toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
-      "etiqueta": "Constitución, artículo 8",
-      "cita": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Condiciones para hacer la petición:",
-      "items": [
-        "Debe ser por escrito",
-        "De manera pacífica",
-        "De manera respetuosa"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La autoridad tiene la obligación de emitir un acuerdo escrito y notificarlo en breve término.",
-          "fuente": "F1"
+          "texto": "El derecho de petición se respeta siempre que la petición se formule por escrito, de manera pacífica y respetuosa.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución dice: «A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario».",
+      "etiqueta": "Constitución, artículo 8",
+      "cita": "A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario.",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La autoridad tiene la obligación de emitir un acuerdo escrito y hacerlo conocer en breve término.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "En materia política solo los ciudadanos de la República pueden hacer uso de ese derecho.",
+      "texto": "Ojo: en materia política, solo los ciudadanos de la República pueden hacer uso de este derecho.",
       "encabezado": "MATERIA POLÍTICA",
       "detalle": "Solo ciudadanos",
       "fuente_corta": "Constitución, art. 8",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Sí, debe emitir acuerdo en breve término.",
-      "titulo": [
-        "RESPUESTA",
-        "OBLIGATORIA"
-      ],
       "afirmaciones": [
         {
-          "id": "A2",
+          "id": "A3",
           "tipo": "hecho_normativo",
           "texto": "En materia política solo los ciudadanos de la República pueden hacer uso de este derecho.",
           "fuente": "F2"
@@ -178,7 +178,7 @@
   "pregunta_original": "¿La autoridad está obligada a responderte si le haces una petición por escrito?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿La autoridad está obligada a responderte si le haces una petición por escrito?\n\nSí, siempre que la petición se formule por escrito, de manera pacífica y respetuosa.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 8.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿La autoridad está obligada a responderte si le haces una petición?\n\nSí, siempre que la hagas por escrito, de manera pacífica y respetuosa. El artículo 8 de la Constitución dice: «A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido, la cual tiene obligación de hacerlo conocer en breve término al peticionario».\n\nOjo: «en materia política sólo podrán hacer uso de ese derecho los ciudadanos de la República».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -234,5 +234,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-10",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "la lista de condiciones aparecía en pantalla sin narrarse (la voz solo decía «Condiciones para hacer la petición:») y el titular final repetía la respuesta («RESPUESTA OBLIGATORIA»); afirmación de la materia política en la escena equivocada. Ahora: condiciones en el titular (voz y fuente), cita una vez, excepción de la materia política y texto de publicación con las citas literales del art. 8"
+    }
+  ]
 }

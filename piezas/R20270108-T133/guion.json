@@ -17,12 +17,34 @@
       "cita": "Ley Federal de Protección al Consumidor, artículo 58",
       "jurisdiccion": "federal",
       "consultado": "2026-11-09"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "58",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 58",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10",
+      "texto_literal": "salvo por causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas discapacitadas, o se funden en disposiciones expresas de otros ordenamientos legales"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "58",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 58",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-10",
+      "texto_literal": "Los proveedores de bienes y servicios que ofrezcan éstos al público en general, no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Un negocio puede negarte la entrada por derecho de admisión?",
+      "texto": "¿Un negocio puede negarte la entrada por «derecho de admisión»?",
       "titulo": [
         "¿TE NEGARON",
         "LA ENTRADA?"
@@ -31,54 +53,66 @@
     },
     {
       "tipo": "titular",
-      "texto": "No, salvo por seguridad.",
+      "texto": "Por regla, no, si atiende al público en general.",
       "titulo": [
         "DERECHO DE",
         "ADMISIÓN"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley prohíbe esta práctica: «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión».",
-      "etiqueta": "Ley, artículo 58",
-      "cita": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Las únicas excepciones permitidas son las siguientes:",
-      "items": [
-        "Seguridad del lugar",
-        "Tranquilidad de clientes",
-        "Disposición legal"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Prohibición de la reserva del derecho de admisión en servicios al público.",
-          "fuente": "F1"
+          "texto": "Los proveedores que ofrecen bienes o servicios al público en general no pueden establecer preferencias o discriminación respecto a los solicitantes del servicio.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 58",
+      "cita": "no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La reserva del derecho de admisión es una de las prácticas prohibidas.",
+          "fuente": "F1",
+          "comparar_literal": true
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Salvo por causas que afecten la seguridad o tranquilidad.",
-      "encabezado": "Excepción por seguridad",
-      "detalle": "Seguridad del establecimiento",
-      "fuente_corta": "Ley, art. 58",
-      "afirmaciones": []
+      "texto": "Salvo por causas que afecten la seguridad o tranquilidad del lugar, de sus clientes o de personas con discapacidad.",
+      "encabezado": "Seguridad o tranquilidad",
+      "detalle": "Del lugar o de sus clientes",
+      "fuente_corta": "LFPC, art. 58",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La excepción procede por causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas con discapacidad.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
-      "tipo": "titular",
-      "texto": "La regla general es su prohibición.",
-      "titulo": [
-        "REGLA",
-        "GENERAL"
-      ],
-      "afirmaciones": []
+      "tipo": "excepcion",
+      "numero": 2,
+      "texto": "O si otra ley lo permite expresamente.",
+      "encabezado": "Otra ley lo permite",
+      "detalle": "Disposición expresa",
+      "fuente_corta": "LFPC, art. 58",
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "También procede cuando se funde en disposiciones expresas de otros ordenamientos legales.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -153,7 +187,7 @@
   "pregunta_original": "¿Un negocio puede negarte la entrada por «derecho de admisión»?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Un negocio puede negarte la entrada por «derecho de admisión»?\n\nNo, los proveedores no pueden reservarse el derecho de admisión, salvo por causas que afecten la seguridad o tranquilidad del lugar o por disposición legal.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 58.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Un negocio puede negarte la entrada por «derecho de admisión»?\n\nPor regla, no. El artículo 58 de la Ley Federal de Protección al Consumidor dice que los proveedores que ofrezcan bienes y servicios al público en general «no podrán establecer preferencias o discriminación alguna respecto a los solicitantes del servicio, tales como selección de clientela, condicionamiento del consumo, reserva del derecho de admisión».\n\nLas excepciones: «salvo por causas que afecten la seguridad o tranquilidad del establecimiento, de sus clientes o de las personas discapacitadas, o se funden en disposiciones expresas de otros ordenamientos legales».\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -204,5 +238,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-10",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "la tarjeta de la cita decía «LEY, ARTÍCULO 58» sin nombrar la ley (el sistema conservaba la etiqueta genérica del modelo; corregido en redactor.construir_reel con prueba); la lista de excepciones aparecía en pantalla sin narrarse; la excepción de seguridad se repetía y el titular «REGLA GENERAL» era relleno; «No, salvo por seguridad» omitía la tranquilidad y la disposición expresa de otra ley. Ahora: titular con el alcance (público en general), cita con su ley, las dos excepciones del art. 58 narradas y en pantalla, texto de publicación con las citas literales"
+    }
+  ]
 }
