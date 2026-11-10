@@ -1,0 +1,144 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
+      "resultado": "APROBADO",
+      "detalle": "40.0 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "40.0 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.3 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.8 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "30 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "d5cdbe8148f16fad"
+    },
+    {
+      "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
+      "resultado": "APROBADO",
+      "detalle": "desfase máximo 30 ms en 8 oraciones"
+    },
+    {
+      "control": "Subtítulos sin tapar citas ni contenido",
+      "resultado": "APROBADO",
+      "detalle": "0 cuadros con solape"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "registro": {
+    "id": "R20270117-T142",
+    "titulo": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+    "fecha": "2026-11-10T10:23:45+00:00",
+    "sha256": "d5cdbe8148f16fad2b1e8814821b22f2f0f83cc6b6cd7c3230f9ceb2116e17ae",
+    "duracion_s": 40.0,
+    "estado": "APTO",
+    "huella_guion": "99d808a5bbcc35aeab08dc31f2b4dd9f0577a33eb9ec827a0b96cf7689d85237",
+    "carril": "A",
+    "tiempos_s": {
+      "auditoria_juridica": 0.0,
+      "narracion": 9.2,
+      "musica": 1.0,
+      "render_video": 26.8,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 6.2
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 0.74,
+      "computo_equivalente_runner_usd": 0.0044,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1198,
+    "caracteres_narrados": 563
+  }
+}

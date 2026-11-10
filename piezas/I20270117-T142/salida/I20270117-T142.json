@@ -1,14 +1,14 @@
 {
   "id": "I20270117-T142",
   "formato": "imagen",
-  "titulo": "¿Cuánto duran los derechos de autor?",
+  "titulo": "¿Cuánto duran los derechos patrimoniales de autor?",
   "plantilla": "dato",
   "archivo": "I20270117-T142.png",
-  "sha256": "94af19b751406f974c99b3f26471d10bcf585a3c308fc6432d4937857395a954",
-  "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000000111110000000000001111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-  "huella_guion": "93ac26678cf848b3311bdcfc23d30f5b104a4af732468290da70eb14b35e352e",
+  "sha256": "7427c5f36f2c4d96df3186dc469778730e032488a192b4796c4fc5d19c80f145",
+  "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000111110000000111000111011011111111111111111111111111110000000000000111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+  "huella_guion": "929f09a7a7b1ca44eff00e7e628ffe04c89659390d0d9a9be9797b87c71b7635",
   "texto_alternativo": "Pieza gráfica que detalla la vigencia de los derechos patrimoniales según la Ley Federal del Derecho de Autor.",
-  "copy": "De acuerdo con la Ley Federal del Derecho de Autor, artículo 29, la vigencia comprende «La vida del autor y, a partir de su muerte, cien años más». Si la obra pertenece a varios coautores, el plazo se cuenta desde la muerte del último.\n\nAsimismo, la ley señala que los derechos duran «Cien años después de divulgadas». Guarda esta publicación y compártela con quien le pueda interesar.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuánto duran los derechos patrimoniales de autor? El artículo 29 de la Ley Federal del Derecho de Autor dice que estarán vigentes durante «La vida del autor y, a partir de su muerte, cien años más». Si la obra es de varios coautores, «los cien años se contarán a partir de la muerte del último». La fracción II del mismo artículo prevé otro plazo: «Cien años después de divulgadas».\n\nY agrega: «Pasados los términos previstos en las fracciones de este artículo, la obra pasará al dominio público».\n\nEsto es información general, no es asesoría legal.",
   "fuentes": [
     {
       "id": "F1",
@@ -21,11 +21,17 @@
       "documento": "Ley Federal del Derecho de Autor",
       "articulo": "29",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf"
+    },
+    {
+      "id": "F3",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf"
     }
   ],
   "relacion_reel": "independiente",
   "estado": "APTO",
-  "fecha": "2026-11-09T20:14:28+00:00",
+  "fecha": "2026-11-10T10:24:52+00:00",
   "costo": {
     "apis_de_pago_usd": 0.0,
     "nota": "Pillow + tesseract, locales y gratuitos"

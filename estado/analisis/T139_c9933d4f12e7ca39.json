@@ -1,0 +1,53 @@
+{
+ "tema_id": "T139",
+ "pregunta": "¿Cuenta como jornada tu hora de comida si no puedes salir del trabajo?",
+ "fecha": "2026-11-10T10:10:27+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuenta como jornada tu hora de comida si no puedes salir del trabajo?",
+  "concepto_central": "tiempo efectivo de la jornada de trabajo",
+  "respuesta_corta": "Sí, se computa como tiempo efectivo de la jornada de trabajo cuando el trabajador no puede salir del lugar donde presta sus servicios para comer.",
+  "reglas": [
+   {
+    "conclusion": "El tiempo destinado a la comida o al reposo se considera parte de la jornada laboral si existe una restricción para salir del centro de trabajo.",
+    "fuente": "F1",
+    "cita_literal": "Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo.",
+    "condiciones": [
+     "Que el trabajador no pueda salir del lugar donde presta sus servicios"
+    ],
+    "excepciones": [
+     "no_aplica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El tiempo de comida se computa como tiempo efectivo de la jornada de trabajo.",
+    "fuente": "F1",
+    "cita_literal": "el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta regla aplica cuando el trabajador no puede salir del lugar donde presta sus servicios durante dicho periodo.",
+    "fuente": "F1",
+    "cita_literal": "Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones para este supuesto en el texto analizado.",
+    "fuente": "F1",
+    "cita_literal": "Cuando el trabajador no pueda salir del lugar donde presta sus servicios durante las horas de reposo o de comidas, el tiempo correspondiente le será computado como tiempo efectivo de la jornada de trabajo.",
+    "motivo": "El artículo no prevé casos en los que, no pudiendo salir, el tiempo no se compute como jornada."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no especifica qué ocurre si el trabajador decide permanecer en el lugar por voluntad propia ni establece consecuencias para el patrón que no realice este cómputo.",
+  "fuentes_irrelevantes": []
+ }
+}

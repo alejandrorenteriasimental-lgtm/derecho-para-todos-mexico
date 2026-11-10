@@ -1,0 +1,176 @@
+{
+  "id": "I20270119-T144",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Le pueden pagar tu sueldo a otra persona?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T144",
+  "pieza": {
+    "titular": "¿Le pueden pagar tu sueldo a otra persona?",
+    "bajada": "Entérate de lo que dice la Ley Federal del Trabajo sobre quién debe recibir tu salario y en qué casos excepcionales puede cobrarlo alguien más.",
+    "mito": "El patrón puede entregarle mi sueldo a cualquier familiar si yo no puedo ir.",
+    "realidad": "Depende: el salario debe pagarse directamente a ti, salvo que estés imposibilitado y nombres a un apoderado mediante una carta poder con dos testigos.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 100"
+  },
+  "copy": "De acuerdo con la Ley Federal del Trabajo, en su artículo 100, la regla general es que el pago debe ser personal. La norma indica que «el salario se pagará directamente al trabajador. Sólo en los casos en que esté imposibilitado para efectuar personalmente el cobro, el pago se hará a la persona que designe» (F1).\n\nPara que otra persona cobre por ti, es necesario que exista una imposibilidad real y que nombres a un apoderado mediante una carta poder suscrita por dos testigos. Si el patrón entrega el dinero sin cumplir estos requisitos, no queda libre de su obligación.\n\nEsto significa que, si el pago se realiza a un tercero sin la carta poder debidamente firmada o sin que exista una imposibilidad de cobro, el patrón podría verse obligado a realizar el pago nuevamente, pues según la ley: «El pago hecho en contravención a lo dispuesto en el párrafo anterior no libera de responsabilidad al patrón» (F1).\n\nGuarda esta información y compártela con quien necesite conocer sus derechos laborales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre el pago del salario. Presenta el mito de que cualquier familiar puede cobrar el sueldo y la realidad legal: el pago es directo al trabajador, salvo imposibilidad y uso de carta poder con dos testigos.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "100",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El salario se pagará directamente al trabajador. Sólo en los casos en que esté imposibilitado para efectuar personalmente el cobro, el pago se hará a la persona que designe",
+      "cita": "Ley Federal del Trabajo, artículo 100",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-10"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "100",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El pago hecho en contravención a lo dispuesto en el párrafo anterior no libera de responsabilidad al patrón.",
+      "cita": "Ley Federal del Trabajo, artículo 100",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-10"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El salario debe entregarse de forma directa al trabajador, permitiendo un apoderado solo por imposibilidad de cobro personal y mediante carta poder con testigos.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Si el patrón paga a un tercero sin cumplir los requisitos legales, sigue siendo responsable de la deuda con el trabajador.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Le pueden pagar tu sueldo a otra persona?",
+    "concepto_central": "pago del salario",
+    "respuesta_corta": "Depende: el salario debe pagarse directamente a ti, salvo que estés imposibilitado y nombres a un apoderado mediante una carta poder con dos testigos.",
+    "reglas": [
+      {
+        "conclusion": "La norma establece que el salario es de cobro personal y directo por parte del trabajador, permitiendo la intervención de un tercero solo bajo condiciones específicas de representación.",
+        "fuente": "F1",
+        "cita_literal": "El salario se pagará directamente al trabajador. Sólo en los casos en que esté imposibilitado para efectuar personalmente el cobro, el pago se hará a la persona que designe",
+        "condiciones": [
+          "Que el trabajador esté imposibilitado para efectuar personalmente el cobro",
+          "Que se designe a un apoderado",
+          "Que la designación sea mediante carta poder",
+          "Que la carta poder esté suscrita por dos testigos"
+        ],
+        "excepciones": [
+          "Imposibilidad para efectuar personalmente el cobro"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "100"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Si el patrón entrega el sueldo a alguien más sin cumplir con los requisitos de la carta poder y la imposibilidad del trabajador, no se considera cumplida su obligación.",
+        "fuente": "F1",
+        "cita_literal": "El pago hecho en contravención a lo dispuesto en el párrafo anterior no libera de responsabilidad al patrón.",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El patrón podría verse obligado a realizar el pago nuevamente al trabajador.",
+        "condicion": "Si el pago inicial se realizó a un tercero sin contar con la carta poder firmada ante dos testigos o sin que existiera una imposibilidad real de cobro.",
+        "base": "F1 (no libera de responsabilidad al patrón)"
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos no definen qué situaciones específicas califican como «imposibilidad» para cobrar, ni mencionan multas administrativas adicionales para el patrón."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-10T10:18:12+00:00",
+    "solicitud": "2027-01-19_imagen_T144-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Le pueden pagar tu sueldo a otra persona?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: el salario debe pagarse directamente a ti, salvo que estés imposibilitado y nombr»."
+        ],
+        "visible": "  \n   \n El patrón puede entregar mi sueldo a cualquier familiar si yo no puedo ir. \n Depende: solo por imposibilidad y con carta poder firmada ante dos testigos."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La norma establece que el salario es de cobro personal y directo por parte del trabajador, permitiendo la intervención de un tercero solo bajo condiciones específicas de representación.",
+              "sostenida": "si",
+              "motivo": "El texto oficial establece la regla de pago directo y detalla las condiciones excepcionales (imposibilidad, apoderado, carta poder y testigos) para la intervención de un tercero."
+            },
+            {
+              "conclusion": "Si el patrón entrega el sueldo a alguien más sin cumplir con los requisitos de la carta poder y la imposibilidad del trabajador, no se considera cumplida su obligación.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una interpretación jurídica válida de la frase 'El pago hecho en contravención a lo dispuesto en el párrafo anterior no libera de responsabilidad al patrón', lo que implica que la obligación de pago persiste."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

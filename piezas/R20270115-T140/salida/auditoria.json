@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.3 s"
+      "detalle": "34.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.3 s"
+      "detalle": "34.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "26 bloques"
+      "detalle": "25 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "e6a92761a2595665"
+      "detalle": "7333da51c5951ce6"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 6 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270115-T140",
     "titulo": "¿La autoridad debe responder a tus peticiones por escrito?",
-    "fecha": "2026-11-09T20:12:46+00:00",
-    "sha256": "e6a92761a2595665d97d569be414fff5e709009c1953a1d94f753ac41406d2d1",
-    "duracion_s": 38.3,
+    "fecha": "2026-11-10T10:21:24+00:00",
+    "sha256": "7333da51c5951ce631cf3b8ff497f202248522af98434420c4a50e2a55cde48c",
+    "duracion_s": 34.0,
     "estado": "APTO",
-    "huella_guion": "ccb91b7fe4e19cd52383d5259624d3a6f20b1bd7d485eee2c54e3c095317bad8",
+    "huella_guion": "f9f1858539815df298c3dc5e25fa42b5fec067154b2925b65782579524dddd9f",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 23.3,
-      "musica": 2.1,
-      "render_video": 47.5,
-      "mezcla_audio": 1.9,
-      "auditoria_tecnica": 9.9
+      "narracion": 8.4,
+      "musica": 0.9,
+      "render_video": 25.2,
+      "mezcla_audio": 0.9,
+      "auditoria_tecnica": 5.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.41,
-      "computo_equivalente_runner_usd": 0.0085,
+      "computo_minutos": 0.69,
+      "computo_equivalente_runner_usd": 0.0041,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1147,
-    "caracteres_narrados": 533
+    "frames": 1017,
+    "caracteres_narrados": 477
   }
 }

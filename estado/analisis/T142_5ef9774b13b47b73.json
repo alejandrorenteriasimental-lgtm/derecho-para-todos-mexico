@@ -1,0 +1,82 @@
+{
+ "tema_id": "T142",
+ "pregunta": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+ "fecha": "2026-11-10T10:12:10+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Puedes citar parte de un libro sin pedir permiso al autor?",
+  "concepto_central": "cita de textos",
+  "respuesta_corta": "Sí, siempre que la obra esté divulgada, se cite la fuente, no se altere y la cantidad no sea una reproducción simulada y sustancial del contenido original.",
+  "reglas": [
+   {
+    "conclusion": "Es permitido utilizar fragmentos de obras literarias sin autorización del titular ni pago, bajo condiciones específicas de respeto a la obra y su origen.",
+    "fuente": "F1",
+    "cita_literal": "Las obras literarias y artísticas ya divulgadas podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración",
+    "condiciones": [
+     "La obra debe estar ya divulgada",
+     "No debe afectarse la explotación normal de la obra",
+     "Se debe citar invariablemente la fuente",
+     "No se debe alterar la obra"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "La extensión de la cita tiene un límite legal: no debe equivaler a copiar la obra de forma encubierta.",
+    "fuente": "F1",
+    "cita_literal": "siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial del contenido de la obra",
+    "condiciones": [
+     "La cantidad tomada no debe ser sustancial"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El uso de fragmentos es válido y legal sin necesidad de permiso o pago al titular de los derechos patrimoniales.",
+    "fuente": "F1",
+    "cita_literal": "podrán utilizarse, siempre que no se afecte la explotación normal de la obra, sin autorización del titular del derecho patrimonial y sin remuneración"
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "respuesta": "El texto no establece el procedimiento legal a seguir en caso de que un autor intente impedir una cita permitida por ley.",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "respuesta": "La norma no menciona ante qué autoridad se debe acudir para validar el derecho a la cita.",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_aplica",
+    "motivo": "La ley no establece un plazo de tiempo para ejercer el derecho de cita; este es permanente mientras se cumplan las condiciones legales.",
+    "respuesta": "N/A",
+    "fuente": "F1",
+    "cita_literal": "N/A"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La determinación de qué cantidad es 'sustancial' depende de la proporción del fragmento respecto a la totalidad del libro.",
+    "condicion": "Si el fragmento citado permite al lector evitar la compra o consulta de la obra original.",
+    "base": "F1, fracción I: 'siempre que la cantidad tomada no pueda considerarse como una reproducción simulada y sustancial'."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Cita de textos",
+    "b": "Reproducción para uso personal",
+    "diferencia": "La cita de textos permite el uso público mencionando la fuente, mientras que la reproducción para uso personal es privada, por una sola vez y sin fines de lucro."
+   }
+  ],
+  "limites": "Estos textos no definen un porcentaje exacto de palabras o páginas para determinar qué es una 'reproducción sustancial', ni mencionan las sanciones por omitir la fuente.",
+  "fuentes_irrelevantes": []
+ }
+}

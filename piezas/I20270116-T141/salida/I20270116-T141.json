@@ -1,14 +1,14 @@
 {
   "id": "I20270116-T141",
   "formato": "imagen",
-  "titulo": "¿Cuánto te paga el IMSS?",
+  "titulo": "¿Cuánto te paga el IMSS si una enfermedad te incapacita?",
   "plantilla": "dato",
   "archivo": "I20270116-T141.png",
-  "sha256": "2ad184f921875781a2aa6275a8b75d3756454d9e413a7088e374bb6d4ef7feba",
-  "ahash": "1001111111111111111111111111111111111111111111111111111111111111100000100000011110000111111111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-  "huella_guion": "4e330a1255ec10d2dbea1e27589a2e7d74940ae3a276573c83b655880c150b45",
-  "texto_alternativo": "Imagen informativa sobre el monto que paga el IMSS por incapacidad por enfermedad.",
-  "copy": "¿Te has preguntado cuánto dinero recibes durante una incapacidad por enfermedad? Conforme a la Ley del Seguro Social, artículo 98, el subsidio equivale al sesenta por ciento de tu último salario diario de cotización.\n\nEste apoyo se paga por períodos vencidos que no exceden de una semana, entregándose de forma directa al asegurado o a su representante debidamente acreditado.\n\nGuarda y comparte esta información para que más personas conozcan lo que establece la ley.\n\nEsto es información general, no es asesoría legal.",
+  "sha256": "c671646caf426df40f6b8ca6b5465f2d27f68c57f9fc21168c0d24ea175b890f",
+  "ahash": "1000011111111111111111111111111111111111111111111100011100100001100000000000011110000000111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+  "huella_guion": "5325b2b08076fe478d7af26b103398248e3f4c845807c5917ebca1ca72e69e64",
+  "texto_alternativo": "Gráfica informativa sobre cuánto paga el IMSS de subsidio cuando una enfermedad no profesional incapacita para trabajar.",
+  "copy": "¿Cuánto te paga el IMSS si una enfermedad no profesional te incapacita para trabajar? El artículo 98 de la Ley del Seguro Social dice: «El subsidio en dinero que se otorgue a los asegurados será igual al sesenta por ciento del último salario diario de cotización». Y agrega: «El subsidio se pagará por períodos vencidos que no excederán de una semana, directamente al asegurado o a su representante debidamente acreditado».\n\nOjo: según el artículo 96, «El subsidio se pagará a partir del cuarto día del inicio de la incapacidad», y el artículo 97 pide «por lo menos cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad» (si eres trabajador eventual, seis en los últimos cuatro meses).\n\nEsto es información general, no es asesoría legal.",
   "fuentes": [
     {
       "id": "F1",
@@ -21,11 +21,23 @@
       "documento": "Ley del Seguro Social",
       "articulo": "98",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf"
+    },
+    {
+      "id": "F3",
+      "documento": "Ley del Seguro Social",
+      "articulo": "96",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf"
+    },
+    {
+      "id": "F4",
+      "documento": "Ley del Seguro Social",
+      "articulo": "97",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf"
     }
   ],
   "relacion_reel": "independiente",
   "estado": "APTO",
-  "fecha": "2026-11-09T20:14:03+00:00",
+  "fecha": "2026-11-10T10:24:32+00:00",
   "costo": {
     "apis_de_pago_usd": 0.0,
     "nota": "Pillow + tesseract, locales y gratuitos"

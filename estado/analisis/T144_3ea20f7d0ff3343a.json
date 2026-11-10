@@ -1,0 +1,48 @@
+{
+ "tema_id": "T144",
+ "pregunta": "¿Le pueden pagar tu sueldo a otra persona?",
+ "fecha": "2026-11-10T10:16:37+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Le pueden pagar tu sueldo a otra persona?",
+  "concepto_central": "pago del salario",
+  "respuesta_corta": "Depende: el salario debe pagarse directamente a ti, salvo que estés imposibilitado y nombres a un apoderado mediante una carta poder con dos testigos.",
+  "reglas": [
+   {
+    "conclusion": "La norma establece que el salario es de cobro personal y directo por parte del trabajador, permitiendo la intervención de un tercero solo bajo condiciones específicas de representación.",
+    "fuente": "F1",
+    "cita_literal": "El salario se pagará directamente al trabajador. Sólo en los casos en que esté imposibilitado para efectuar personalmente el cobro, el pago se hará a la persona que designe",
+    "condiciones": [
+     "Que el trabajador esté imposibilitado para efectuar personalmente el cobro",
+     "Que se designe a un apoderado",
+     "Que la designación sea mediante carta poder",
+     "Que la carta poder esté suscrita por dos testigos"
+    ],
+    "excepciones": [
+     "Imposibilidad para efectuar personalmente el cobro"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Si el patrón entrega el sueldo a alguien más sin cumplir con los requisitos de la carta poder y la imposibilidad del trabajador, no se considera cumplida su obligación.",
+    "fuente": "F1",
+    "cita_literal": "El pago hecho en contravención a lo dispuesto en el párrafo anterior no libera de responsabilidad al patrón.",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El patrón podría verse obligado a realizar el pago nuevamente al trabajador.",
+    "condicion": "Si el pago inicial se realizó a un tercero sin contar con la carta poder firmada ante dos testigos o sin que existiera una imposibilidad real de cobro.",
+    "base": "F1 (no libera de responsabilidad al patrón)"
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos no definen qué situaciones específicas califican como «imposibilidad» para cobrar, ni mencionan multas administrativas adicionales para el patrón.",
+  "fuentes_irrelevantes": []
+ }
+}
