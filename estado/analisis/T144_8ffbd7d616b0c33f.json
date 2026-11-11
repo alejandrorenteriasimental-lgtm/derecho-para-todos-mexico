@@ -1,0 +1,54 @@
+{
+ "tema_id": "T144",
+ "pregunta": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
+ "fecha": "2026-11-11T03:55:04+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
+  "concepto_central": "descuento en el salario",
+  "respuesta_corta": "No. Los descuentos en los salarios están prohibidos como regla general, salvo en los casos y con los requisitos específicos fijados por la ley.",
+  "reglas": [
+   {
+    "conclusion": "Los descuentos en el salario de los trabajadores están prohibidos, a menos que encuadren en los casos y cumplan los requisitos previstos por la ley.",
+    "fuente": "F1",
+    "cita_literal": "Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes",
+    "condiciones": [
+     "debe encuadrar estrictamente en alguno de los supuestos expresamente autorizados por la ley",
+     "deben cumplirse los requisitos específicos establecidos para cada tipo de descuento"
+    ],
+    "excepciones": [
+     "deudas con el patrón por anticipos, pagos en exceso, errores, pérdidas, averías o compra de artículos de la empresa",
+     "pago de renta de vivienda",
+     "abonos para préstamos o rentas del Infonavit",
+     "cuotas para cooperativas y cajas de ahorro",
+     "pensiones alimenticias decretadas por autoridad competente",
+     "cuotas sindicales ordinarias",
+     "abonos para créditos garantizados Fonacot"
+    ]
+   },
+   {
+    "conclusion": "En caso de deudas con el patrón, el monto total exigible no puede superar un mes de salario y la retención pactada no puede ser mayor al treinta por ciento del excedente del salario mínimo.",
+    "fuente": "F1",
+    "cita_literal": "La cantidad exigible en ningún caso podrá ser mayor del importe de los salarios de un mes y el descuento será al que convengan el trabajador y el patrón, sin que pueda ser mayor del treinta por ciento del excedente del salario mínimo",
+    "condiciones": [
+     "aplica únicamente para deudas contraídas con el patrón por anticipo de salarios, pagos hechos con exceso, errores, pérdidas, averías o adquisición de artículos producidos por la empresa"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Los descuentos aplicados al salario fuera de los casos y requisitos de ley están prohibidos.",
+    "fuente": "F1",
+    "cita_literal": "Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no menciona sanciones específicas, multas, consecuencias penales ni procedimientos judiciales o administrativos para reclamar descuentos indebidos, por lo que no deben inventarse ni afirmarse.",
+  "fuentes_irrelevantes": []
+ }
+}

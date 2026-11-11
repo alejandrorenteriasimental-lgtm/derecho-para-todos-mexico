@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "35.3 s"
+      "detalle": "36.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "35.3 s"
+      "detalle": "36.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "58c8be8777bcaa23"
+      "detalle": "20ec154ddb0ff96b"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270114-T139",
     "titulo": "¿Cuenta como jornada tu hora de comida si no puedes salir?",
-    "fecha": "2026-11-10T16:07:54+00:00",
-    "sha256": "58c8be8777bcaa234c44a543ba6fd3dc4c2f5a83cb62590991ab28daab14e2a8",
-    "duracion_s": 35.3,
+    "fecha": "2026-11-11T04:08:20+00:00",
+    "sha256": "20ec154ddb0ff96bcb1847d3c28f6decd108188278d2727143d11b8b7cb584ca",
+    "duracion_s": 36.4,
     "estado": "APTO",
-    "huella_guion": "6f777db8b0e7af23e386319df51154fde3ac328b5612de998f0edcc349cdac0d",
+    "huella_guion": "cd6d889ef05db48c1bb68b325eb54c016388efa94b8497052c4eefbadf394ab1",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.5,
-      "musica": 1.6,
-      "render_video": 41.6,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 7.8
+      "narracion": 8.9,
+      "musica": 1.0,
+      "render_video": 28.6,
+      "mezcla_audio": 0.9,
+      "auditoria_tecnica": 5.5
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.18,
-      "computo_equivalente_runner_usd": 0.0071,
+      "computo_minutos": 0.75,
+      "computo_equivalente_runner_usd": 0.0045,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1056,
-    "caracteres_narrados": 517
+    "frames": 1090,
+    "caracteres_narrados": 537
   }
 }

@@ -1,0 +1,159 @@
+{
+  "id": "I20270123-T148",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Las personas en prisión conservan sus derechos?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T148",
+  "pieza": {
+    "titular": "¿Las personas en prisión conservan sus derechos?",
+    "bajada": "Sí, gozan de todos los derechos de la Constitución y Tratados Internacionales, siempre que no hayan sido restringidos por resolución o sentencia.",
+    "cita": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales",
+    "etiqueta_cita": "Ley Nacional de Ejecución Penal, artículo 9",
+    "ojo": "Aplica con límites de seguridad",
+    "fuente_visible": "Ley Nacional de Ejecución Penal, art. 9"
+  },
+  "copy": "De acuerdo con la Ley Nacional de Ejecución Penal, artículo 9, las personas privadas de la libertad conservan las prerrogativas previstas en la Constitución y en los Tratados Internacionales.\n\nEsto aplica siempre y cuando tales derechos no hayan sido restringidos por resolución o sentencia, o su ejercicio sea incompatible con su objeto.\n\nGuarda y comparte esta publicación para conocer más sobre los derechos en centros penitenciarios.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre si las personas en prisión conservan sus derechos según la Ley Nacional de Ejecución Penal.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Nacional de Ejecución Penal",
+      "articulo": "9",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "texto_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte, siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia",
+      "cita": "Ley Nacional de Ejecución Penal, artículo 9",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-11"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las personas en prisión conservan sus derechos constitucionales e internacionales si no han sido restringidos.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Las personas en prisión conservan sus derechos?",
+    "concepto_central": "derechos de las personas privadas de su libertad",
+    "respuesta_corta": "Sí, gozan de todos los derechos de la Constitución y Tratados Internacionales, siempre que no hayan sido restringidos por resolución o sentencia.",
+    "reglas": [
+      {
+        "conclusion": "Las personas en prisión conservan sus derechos previstos en la Constitución y Tratados Internacionales, salvo restricción o incompatibilidad con su sentencia o resolución.",
+        "fuente": "F1",
+        "cita_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte, siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia",
+        "condiciones": [
+          "que los derechos no hubieren sido restringidos por la resolución o la sentencia",
+          "que su ejercicio no fuese incompatible con el objeto de la resolución o sentencia"
+        ],
+        "excepciones": [
+          "limitación de derechos cuando tenga como objetivo garantizar condiciones de internamiento dignas y seguras bajo principios de necesidad, proporcionalidad e idoneidad"
+        ],
+        "ref": {
+          "documento": "Ley Nacional de Ejecución Penal",
+          "articulo": "9"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Gozan de todos los derechos previstos en la Constitución y en los Tratados Internacionales del Estado mexicano.",
+        "fuente": "F1",
+        "cita_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica siempre y cuando los derechos no hayan sido restringidos por sentencia o resolución y su ejercicio sea compatible.",
+        "fuente": "F1",
+        "cita_literal": "siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia, o su ejercicio fuese incompatible con el objeto de éstas."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "Se pueden limitar derechos para garantizar internamiento digno y seguro mediante principios de necesidad, proporcionalidad e idoneidad.",
+        "fuente": "F1",
+        "cita_literal": "Toda limitación de derechos sólo podrá imponerse cuando tenga como objetivo garantizar condiciones de internamiento dignas y seguras, en su caso, la limitación se regirá por los principios de necesidad, proporcionalidad e idoneidad."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto establece la regla general y los derechos específicos garantizados, pero no detalla los supuestos particulares de restricción para cada derecho individual."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-11T04:07:08+00:00",
+    "solicitud": "2027-01-23_imagen_T148-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Las personas en prisión conservan sus derechos?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas privadas de la libertad conservan los derechos previstos en la Constitución y en los Tratados Internacionales.",
+              "sostenida": "si",
+              "motivo": "El artículo 9 de la Ley Nacional de Ejecución Penal establece explícitamente que las personas privadas de su libertad gozarán de dichos derechos.",
+              "cita_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte"
+            },
+            {
+              "conclusion": "El ejercicio de estos derechos puede restringirse si la resolución o sentencia lo determina o si es incompatible con el objeto de estas.",
+              "sostenida": "si",
+              "motivo": "El artículo 9 condiciona el goce de los derechos a que no hayan sido restringidos por la resolución o sentencia, o que su ejercicio no sea incompatible con el objeto de las mismas.",
+              "cita_literal": "siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia, o su ejercicio fuese incompatible con el objeto de éstas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

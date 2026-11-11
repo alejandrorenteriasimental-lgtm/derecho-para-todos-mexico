@@ -12,13 +12,13 @@
   "lote": "lote-7",
   "motivo_seleccion": "CPEUM art. 28 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_28.json): «En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes». Condición literal: en los términos y condiciones que fijan las leyes.",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"En México existe una prohibición general contra los monopolios y las prácticas que limitan la libre competencia.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 28 establece la prohibición expresa de monopolios y prácticas monopó",
+  "ultima_categoria": "juridico",
   "huella_entrada": "38778bb270878fc5"
 }

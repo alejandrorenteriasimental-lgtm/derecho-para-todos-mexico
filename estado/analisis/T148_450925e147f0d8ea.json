@@ -1,0 +1,53 @@
+{
+ "tema_id": "T148",
+ "pregunta": "¿Las personas en prisión conservan sus derechos?",
+ "fecha": "2026-11-11T04:06:40+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Las personas en prisión conservan sus derechos?",
+  "concepto_central": "derechos de las personas privadas de su libertad",
+  "respuesta_corta": "Sí, gozan de todos los derechos de la Constitución y Tratados Internacionales, siempre que no hayan sido restringidos por resolución o sentencia.",
+  "reglas": [
+   {
+    "conclusion": "Las personas en prisión conservan sus derechos previstos en la Constitución y Tratados Internacionales, salvo restricción o incompatibilidad con su sentencia o resolución.",
+    "fuente": "F1",
+    "cita_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte, siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia",
+    "condiciones": [
+     "que los derechos no hubieren sido restringidos por la resolución o la sentencia",
+     "que su ejercicio no fuese incompatible con el objeto de la resolución o sentencia"
+    ],
+    "excepciones": [
+     "limitación de derechos cuando tenga como objetivo garantizar condiciones de internamiento dignas y seguras bajo principios de necesidad, proporcionalidad e idoneidad"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Gozan de todos los derechos previstos en la Constitución y en los Tratados Internacionales del Estado mexicano.",
+    "fuente": "F1",
+    "cita_literal": "gozarán de todos los derechos previstos por la Constitución y los Tratados Internacionales de los que el Estado mexicano sea parte"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica siempre y cuando los derechos no hayan sido restringidos por sentencia o resolución y su ejercicio sea compatible.",
+    "fuente": "F1",
+    "cita_literal": "siempre y cuando estos no hubieren sido restringidos por la resolución o la sentencia, o su ejercicio fuese incompatible con el objeto de éstas."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Se pueden limitar derechos para garantizar internamiento digno y seguro mediante principios de necesidad, proporcionalidad e idoneidad.",
+    "fuente": "F1",
+    "cita_literal": "Toda limitación de derechos sólo podrá imponerse cuando tenga como objetivo garantizar condiciones de internamiento dignas y seguras, en su caso, la limitación se regirá por los principios de necesidad, proporcionalidad e idoneidad."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto establece la regla general y los derechos específicos garantizados, pero no detalla los supuestos particulares de restricción para cada derecho individual.",
+  "fuentes_irrelevantes": []
+ }
+}

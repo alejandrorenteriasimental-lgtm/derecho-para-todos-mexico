@@ -1,0 +1,65 @@
+{
+ "solicitud": "2027-01-21_imagen_T146-lote-7.json",
+ "fecha": "2026-11-11T04:05:54+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, recursos y derechos. \\n Es cualquier acto u omisión ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ],
+   "visible": "  \n   \n Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, recursos y derechos. \n Es cualquier acto u omisión que afecta la supervivencia de la víctima. \n Afecta la supervivencia"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La violencia patrimonial consiste en actos u omisiones que afectan la supervivencia de la víctima a través de la afectación de sus bienes, valores, documentos o recursos económicos.",
+      "sostenida": "si",
+      "motivo": "La definición es consistente con el artículo 6, fracción III de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy: 'Esto es información general, no es asesoría legal.'",
+      "problema": "El redactor incluyó una cláusula de exención de responsabilidad ('disclaimer') que no fue solicitada y que contraviene la instrucción de no incluir asesoría personalizada ni lenguaje de ese tipo, además de no estar en los textos oficiales.",
+      "correccion": "Eliminar la frase 'Esto es información general, no es asesoría legal.'."
+     },
+     {
+      "donde": "Copy: 'La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, en su artículo 6, establece los diferentes tipos de agresiones reconocidos legalmente.'",
+      "problema": "Aunque es cierto, la pieza editorial debe centrarse estrictamente en la pregunta del título. La introducción es innecesaria y distrae del núcleo.",
+      "correccion": "Ir directo al punto: definir la violencia patrimonial según el artículo 6."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ],
+   "visible": "  \n   \n Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, recursos y derechos. \n Es cualquier acto u omisión que afecta la supervivencia de la víctima. \n Afecta la supervivencia"
+  }
+ ]
+}

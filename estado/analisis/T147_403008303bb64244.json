@@ -1,0 +1,37 @@
+{
+ "tema_id": "T147",
+ "pregunta": "¿Otra persona puede pedir un amparo por ti?",
+ "fecha": "2026-11-11T04:06:05+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Otra persona puede pedir un amparo por ti?",
+  "concepto_central": "promoción del amparo por otra persona",
+  "respuesta_corta": "Sí, cuando se trate de actos graves como peligro de vida o libertad y la persona esté imposibilitada.",
+  "reglas": [
+   {
+    "conclusion": "Otra persona puede promover el amparo en nombre del agraviado si este se encuentra imposibilitado y se trata de actos específicos como peligro de vida, libertad o desaparición.",
+    "fuente": "F1",
+    "cita_literal": "y la persona agraviada se encuentre imposibilitada para promover el amparo, podrá hacerlo cualquiera otra persona en su nombre",
+    "condiciones": [
+     "actos que importen peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, deportación o expulsión, proscripción o destierro, extradición, desaparición forzada de personas o prohibidos por el artículo 22 de la Constitución, así como incorporación forzosa",
+     "la persona agraviada se encuentre imposibilitada para promover el amparo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El juez decreta la suspensión de los actos y ordena medidas para lograr la comparecencia de la persona agraviada a ratificar la demanda.",
+    "fuente": "F1",
+    "cita_literal": "el órgano jurisdiccional de amparo decretará la suspensión de los actos reclamados, y dictará todas las medidas necesarias para lograr la comparecencia de la persona agraviada."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "La norma solo aplica para los actos graves expresamente enlistados en el artículo y cuando existe imposibilidad de la persona agraviada.",
+  "fuentes_irrelevantes": []
+ }
+}

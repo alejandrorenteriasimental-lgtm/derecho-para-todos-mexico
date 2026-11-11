@@ -1,0 +1,68 @@
+{
+ "solicitud": "2027-01-19_reel_T144-lote-7.json",
+ "fecha": "2026-11-11T03:57:59+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: más de 4 elementos en la lista\", \"narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Tu patrón puede descontarte lo",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 647 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 27: recorta al menos 87 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \n ¿TE PUEDEN \n DESCONTAR LO \n QUE QUIERAN? \n No. Los descuentos en los salarios están prohibidos como regla general, salvo en los casos fijados por la ley. \n PROHIBIDO POR \n REGLA GENERAL \n La ley indica que los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes. \n Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes \n En deudas con el patrón, la cantidad exigible en ningún caso podrá ser mayor del importe de los salarios de un mes y el descuento será al que convengan el trabajador y el patrón, sin que"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 647 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 27: recorta al menos 87 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza menciona en el titular que existen excepciones legales, pero en el contenido visible solo desarrolla la relativa a deudas con el patrón. Al omitir mencionar las otras causas autorizadas (renta, Infonavit, cooperativas, pensiones alimenticias, cuotas sindicales y créditos Fonacot), el lector podría asumir erróneamente que solo los descuentos por deudas son legales."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los descuentos en los salarios de los trabajadores están prohibidos, a menos que encuadren en los casos y cumplan los requisitos previstos por la ley.",
+      "sostenida": "si",
+      "motivo": "El artículo 110 de la Ley Federal del Trabajo establece la prohibición general y la salvedad de los casos y requisitos legales."
+     },
+     {
+      "conclusion": "En caso de deudas con el patrón, el monto total exigible no puede superar un mes de salario y la retención pactada no puede ser mayor al treinta por ciento del excedente del salario mínimo.",
+      "sostenida": "si",
+      "motivo": "La fracción I del artículo 110 de la Ley Federal del Trabajo establece explícitamente estos límites para los descuentos por deudas contraídas con el patrón."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 4 (Excepción)",
+      "problema": "La pieza presenta la excepción de deudas con el patrón como si fuera la única, sin listar o mencionar brevemente las otras excepciones legales que el propio razonamiento reconoce.",
+      "correccion": "Incluir una mención o lista breve de las otras excepciones legales (renta, Infonavit, cooperativas, pensiones alimenticias, cuotas sindicales y créditos Fonacot) para que el lector tenga el panorama completo de los descuentos permitidos."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "escena 3: más de 4 elementos en la lista",
+    "narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \n ¿DESCUENTOS EN \n TU SALARIO? \n No. Los descuentos en los salarios están prohibidos como regla general, salvo en los casos y requisitos fijados por la ley. \n ESTÁ \n PROHIBIDO \n La ley señala que: «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». \n Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes \n Entre ellos están: deudas con el patrón, renta, Infonavit, cooperativas, pensiones alimenticias, cuotas sindicales y Fonacot. \n Deudas con el patrón \n Renta e Infonavit \n Cajas de ahorro \n Pensió"
+  }
+ ]
+}

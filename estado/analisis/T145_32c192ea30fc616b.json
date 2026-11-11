@@ -1,20 +1,28 @@
 {
  "tema_id": "T145",
  "pregunta": "¿Un extranjero puede participar en la política de México?",
- "fecha": "2026-11-10T16:06:00+00:00",
- "objetado": false,
+ "fecha": "2026-11-11T04:03:52+00:00",
+ "objetado": true,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Un extranjero puede participar en la política de México?",
-  "conceptos_centrales": "inmiscuirse en los asuntos políticos",
-  "respuesta_corta": "No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, involucrarse en los asuntos políticos del país.",
+  "concepto_central": "participación en asuntos políticos",
+  "respuesta_corta": "No, la Constitución establece que los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
   "reglas": [
    {
-    "conclusion": "Existe una prohibición constitucional absoluta para que las personas extranjeras intervengan en la vida política mexicana.",
+    "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
     "fuente": "F1",
     "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
+    "fuente": "F1",
+    "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras con fundamento en la ley",
     "condiciones": [
-     "Ser una persona que no posea las calidades determinadas en el artículo 30 constitucional"
+     "previa audiencia",
+     "con fundamento en la ley"
     ],
     "excepciones": []
    }
@@ -23,39 +31,14 @@
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "La persona extranjera que intervenga en política puede ser expulsada del territorio nacional por el Ejecutivo.",
+    "respuesta": "La consecuencia jurídica es la prohibición expresa de que los extranjeros se inmiscuyan en los asuntos políticos del país.",
     "fuente": "F1",
-    "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras con fundamento en la ley"
-   },
-   {
-    "elemento": "autoridad",
-    "estado": "cubierto",
-    "respuesta": "El Ejecutivo de la Unión es quien tiene la facultad de determinar la expulsión.",
-    "fuente": "F1",
-    "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras"
-   },
-   {
-    "elemento": "vía",
-    "estado": "cubierto",
-    "respuesta": "La expulsión debe realizarse mediante un procedimiento administrativo que garantice una audiencia previa.",
-    "fuente": "F1",
-    "cita_literal": "la cual regulará el procedimiento administrativo, así como el lugar y tiempo que dure la detención."
-   },
-   {
-    "elemento": "plazo",
-    "estado": "no_cubierto",
-    "motivo": "El texto constitucional no establece plazos específicos, delegando esta regulación a la ley secundaria."
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país."
    }
   ],
-  "interpretaciones": [
-   {
-    "afirmacion": "La expulsión de un extranjero no es un acto discrecional inmediato.",
-    "condicion": "Requiere que se respete el derecho de audiencia previa y se siga un procedimiento administrativo legal.",
-    "base": "F1 indica que el Ejecutivo podrá expulsar 'previa audiencia' y 'con fundamento en la ley'."
-   }
-  ],
+  "interpretaciones": [],
   "distinciones": [],
-  "limites": "El texto no define qué actividades específicas se consideran como 'inmiscuirse' ni detalla las sanciones penales o multas, limitándose a la sanción administrativa de expulsión.",
+  "limites": "El texto oficial no detalla qué actos específicos constituyen inmiscuirse en los asuntos políticos ni establece una sanción directa por dicha conducta en este artículo.",
   "fuentes_irrelevantes": []
  }
 }

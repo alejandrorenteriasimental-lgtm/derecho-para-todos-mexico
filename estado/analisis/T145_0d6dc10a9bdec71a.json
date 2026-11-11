@@ -1,0 +1,57 @@
+{
+ "tema_id": "T145",
+ "pregunta": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+ "fecha": "2026-11-11T03:58:24+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+  "concepto_central": "derechos humanos de las personas extranjeras",
+  "respuesta_corta": "Depende: gozan de los derechos humanos y garantías reconocidos por la Constitución, pero no pueden inmiscuirse en los asuntos políticos del país.",
+  "reglas": [
+   {
+    "conclusion": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos en la Constitución mexicana.",
+    "fuente": "F1",
+    "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+    "condiciones": [
+     "no poseer las calidades determinadas en el artículo 30 constitucional"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Las personas extranjeras tienen prohibido inmiscuirse en los asuntos políticos del país.",
+    "fuente": "F1",
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos en la Constitución.",
+    "fuente": "F1",
+    "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica para quienes no posean las calidades determinadas en el artículo 30 constitucional.",
+    "fuente": "F1",
+    "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Las personas extranjeras no pueden inmiscuirse de ninguna manera en los asuntos políticos del país.",
+    "fuente": "F1",
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "No se debe afirmar que los extranjeros tienen derecho a participar en la vida política del país ni inventar sanciones, procedimientos detallados ni fechas o reformas que no aparezcan expresamente en el texto oficial.",
+  "fuentes_irrelevantes": []
+ }
+}

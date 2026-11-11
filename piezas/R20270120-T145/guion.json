@@ -1,0 +1,239 @@
+{
+  "id": "R20270120-T145",
+  "formato": "reel",
+  "titulo": "¿Las personas extranjeras tienen los mismos derechos humanos?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T145",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-11"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "33",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-11"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+      "titulo": [
+        "¿DERECHOS HUMANOS",
+        "PARA EXTRANJEROS?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende: gozan de derechos constitucionales, pero no pueden inmiscuirse en asuntos políticos.",
+      "titulo": [
+        "LO QUE DICE",
+        "LA CONSTITUCIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El texto dicta: \"Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.\"",
+      "etiqueta": "Constitución Política, art. 33",
+      "cita": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos por la Constitución",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Sin embargo, no pueden inmiscuirse en los asuntos políticos del país.",
+      "encabezado": "Asuntos políticos",
+      "detalle": "Prohibido inmiscuirse en ellos",
+      "fuente_corta": "Constitución, art. 33",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Los extranjeros no pueden inmiscuirse en los asuntos políticos del país",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Así, gozan de derechos reconocidos, salvo inmiscuirse en la política.",
+      "titulo": [
+        "REGLA GENERAL Y",
+        "SU EXCEPCIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+    "concepto_central": "derechos humanos de las personas extranjeras",
+    "respuesta_corta": "Depende: gozan de los derechos humanos y garantías reconocidos por la Constitución, pero no pueden inmiscuirse en los asuntos políticos del país.",
+    "reglas": [
+      {
+        "conclusion": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos en la Constitución mexicana.",
+        "fuente": "F1",
+        "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+        "condiciones": [
+          "no poseer las calidades determinadas en el artículo 30 constitucional"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "33"
+        }
+      },
+      {
+        "conclusion": "Las personas extranjeras tienen prohibido inmiscuirse en los asuntos políticos del país.",
+        "fuente": "F1",
+        "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "33"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos en la Constitución.",
+        "fuente": "F1",
+        "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica para quienes no posean las calidades determinadas en el artículo 30 constitucional.",
+        "fuente": "F1",
+        "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "Las personas extranjeras no pueden inmiscuirse de ninguna manera en los asuntos políticos del país.",
+        "fuente": "F1",
+        "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "No se debe afirmar que los extranjeros tienen derecho a participar en la vida política del país ni inventar sanciones, procedimientos detallados ni fechas o reformas que no aparezcan expresamente en el texto oficial."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-11T03:59:44+00:00",
+    "solicitud": "2027-01-20_reel_T145-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Las personas extranjeras tienen los mismos derechos humanos en México?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Las personas extranjeras tienen los mismos derechos humanos en México?\n\nDepende: gozan de los derechos humanos y garantías reconocidos por la Constitución, pero no pueden inmiscuirse en los asuntos políticos del país.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 33.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 667 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 47: recorta al menos 107 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Las personas extranjeras tienen los mismos derechos humanos en México? \n ¿DERECHOS HUMANOS \n PARA EXTRANJEROS? \n Depende: gozan de los derechos y garantías de la Constitución, pero no pueden inmiscuirse en los asuntos políticos del país. \n LO QUE DICE \n LA CONSTITUCIÓN \n El texto dicta: \"Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.\" \n Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución. \n Sin embargo, tienen prohibición de inmi"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 667 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 47: recorta al menos 107 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas extranjeras gozan de los derechos humanos y garantías reconocidos en la Constitución mexicana.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente del primer párrafo del artículo 33, que establece que los extranjeros gozarán de los derechos humanos y garantías que reconoce la Constitución."
+            },
+            {
+              "conclusion": "Las personas extranjeras tienen prohibido inmiscuirse en los asuntos políticos del país.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la prohibición establecida en el último párrafo del artículo 33."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "id": "R20270121-T146",
+  "formato": "reel",
+  "titulo": "¿Qué es la violencia económica según la ley en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T146",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima.",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-11"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-11"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima.",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-11"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes qué es la violencia económica según la ley?",
+      "titulo": [
+        "¿QUÉ ES LA",
+        "VIOLENCIA",
+        "ECONÓMICA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima.",
+      "titulo": [
+        "DEFINICIÓN",
+        "LEGAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas».",
+      "etiqueta": "Ley de Acceso, art. 6",
+      "cita": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La violencia económica es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, abarca limitar ingresos o percibir un salario menor por igual trabajo.",
+      "titulo": [
+        "CONCLUSIÓN",
+        "OFICIAL"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de las percepciones económicas de la víctima.",
+          "fuente": "F2"
+        },
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La violencia económica abarca limitar ingresos o percibir un salario menor por igual trabajo dentro de un mismo centro laboral.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué es la violencia económica según la ley?",
+    "concepto_central": "violencia económica",
+    "respuesta_corta": "Es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima, como controlar sus ingresos o pagarle menos por igual trabajo.",
+    "reglas": [
+      {
+        "conclusion": "La ley establece que la violencia económica consiste en cualquier acción u omisión del agresor que afecte la supervivencia económica de la víctima, manifestándose mediante limitaciones para controlar sus ingresos o al percibir un salario menor por igual trabajo en el mismo centro laboral.",
+        "fuente": "F1",
+        "cita_literal": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas",
+        "condiciones": [
+          "Que sea una acción u omisión imputable a la persona agresora",
+          "Que afecte la supervivencia económica de la víctima"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+          "articulo": "6"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "La violencia económica es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima, a través del control de sus percepciones financieras o por disparidad salarial en un mismo trabajo.",
+        "fuente": "F1",
+        "cita_literal": "Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "Violencia económica",
+        "b": "La violencia patrimonial",
+        "diferencia": "La violencia económica afecta la supervivencia económica mediante el control de ingresos o desigualdad salarial, mientras que la violencia patrimonial afecta la supervivencia al transformar, sustraer, destruir o retener bienes, documentos o recursos."
+      }
+    ],
+    "limites": "El texto oficial no señala vías legales de denuncia, autoridades ante las cuales acudir, penas ni sanciones específicas para esta conducta."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-11T04:01:07+00:00",
+    "solicitud": "2027-01-21_reel_T146-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Qué es la violencia económica según la ley?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "copy": "¿Qué es la violencia económica según la ley?\n\nEs toda acción u omisión del agresor que afecta la supervivencia económica de la víctima, como controlar sus ingresos o pagarle menos por igual trabajo.\n\nFuente: Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 674 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 54: recorta al menos 114 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Sabes qué es la violencia económica según la ley? \n ¿QUÉ ES LA \n VIOLENCIA \n ECONÓMICA? \n Es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima, como controlar sus ingresos o pagarle menos por igual trabajo. \n DEFINICIÓN \n LEGAL \n La ley establece que 'Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas'. \n Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas \n En conclusi"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 674 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 54: recorta al menos 114 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Sabes qué es la violencia económica según la ley? \n ¿QUÉ ES LA \n VIOLENCIA \n ECONÓMICA? \n Es toda acción u omisión del agresor que afecta la supervivencia económica de la víctima, como controlar sus ingresos o pagarle menos por igual trabajo. \n DEFINICIÓN \n LEGAL \n La ley dice: «Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas». \n Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas \n En conclusión, impl"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La ley establece que la violencia económica consiste en cualquier acción u omisión del agresor que afecte la supervivencia económica de la víctima, manifestándose mediante limitaciones para controlar sus ingresos o al percibir un salario menor por igual trabajo en el mismo centro laboral.",
+              "sostenida": "si",
+              "motivo": "La conclusión integra fielmente los elementos de la fracción IV del artículo 6: la naturaleza de la conducta (acción u omisión), el sujeto (agresor), el efecto (afectar supervivencia económica) y las manifestaciones (control de ingresos y disparidad salarial en el mismo centro laboral)."
+            },
+            {
+              "conclusion": "Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de las percepciones económicas de la víctima.",
+              "sostenida": "si",
+              "motivo": "Es una transcripción exacta de la manifestación descrita en la fracción IV del artículo 6."
+            },
+            {
+              "conclusion": "La violencia económica abarca limitar ingresos o percibir un salario menor por igual trabajo dentro de un mismo centro laboral.",
+              "sostenida": "si",
+              "motivo": "La conclusión resume correctamente las dos manifestaciones específicas mencionadas en el texto oficial para la violencia económica."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+ "solicitud": "2027-01-22_imagen_T147-lote-7.json",
+ "fecha": "2026-11-11T04:06:27+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).\", \"[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[condiciones] Generalización: «Cualquiera puede promover un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
+    "[condiciones] Frase absoluta «Cualquiera puede promover un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
+   ],
+   "visible": "  \n   \n Cualquiera puede promover un amparo por ti en cualquier situación. \n Sí, cuando se trate de actos graves como peligro de vida o libertad y la persona esté imposibilitada."
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
+    "[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
+   ],
+   "visible": "  \n   \n Cualquiera puede pedir un amparo por ti en cualquier situación. \n Solo si estás imposibilitado y se trata de actos graves como peligro de vida o libertad, según la Ley de Amparo."
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
+    "[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
+   ],
+   "visible": "  \n   \n Cualquiera puede pedir un amparo por ti en cualquier situación. \n Sí, pero solo ante actos graves —como peligro de vida o libertad— si estás imposibilitado para promoverlo."
+  }
+ ]
+}
