@@ -1,0 +1,66 @@
+{
+ "tema_id": "T148",
+ "pregunta": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
+ "fecha": "2026-11-11T10:17:47+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
+  "concepto_central": "Asesor jurídico gratuito",
+  "respuesta_corta": "Sí, tienes derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal, conforme a lo que establezca la legislación aplicable.",
+  "reglas": [
+   {
+    "conclusion": "La víctima u ofendido tiene el derecho reconocido de recibir asistencia legal sin costo durante el proceso penal.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+    "condiciones": [
+     "En cualquier etapa del procedimiento",
+     "En los términos de la legislación aplicable"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se garantiza a la víctima el derecho a recibir asistencia jurídica a través de un Asesor jurídico sin costo alguno.",
+    "fuente": "F1",
+    "cita_literal": "recibir desde la comisión del delito atención médica y psicológica de urgencia, así como asistencia jurídica a través de un Asesor jurídico"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Este derecho puede ejercerse en cualquier etapa del procedimiento penal y bajo los términos que fijen las leyes correspondientes.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto legal no establece supuestos en los que se le niegue este derecho de asistencia gratuita a la víctima.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+    "motivo": "La norma redacta el derecho de forma general para la víctima u ofendido sin prever exclusiones en el texto proporcionado."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmación": "La víctima puede elegir ser asistida por personal de un sexo específico.",
+    "condicion": "Cuando así lo requiera la víctima.",
+    "base": "F1, fracción III: «ser atendidos por personal del mismo sexo, o del sexo que la víctima elija, cuando así lo requieran»"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Asesor jurídico",
+    "b": "Ministerio Público",
+    "diferencia": "El Asesor jurídico brinda asistencia directa y representación a la víctima, mientras que el Ministerio Público es la autoridad que facilita el acceso a la justicia y dirige la investigación."
+   }
+  ],
+  "limites": "Los textos no especifican el nombre de la institución encargada de proveer al asesor, ni los requisitos de nivel de ingresos para acceder al servicio gratuito.",
+  "fuentes_irrelevantes": [
+   "F2"
+  ]
+ }
+}

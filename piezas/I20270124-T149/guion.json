@@ -1,0 +1,210 @@
+{
+  "id": "I20270124-T149",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuándo tu trabajo cuenta como teletrabajo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T149",
+  "pieza": {
+    "titular": "¿Cuándo tu trabajo cuenta como teletrabajo?",
+    "bajada": "Es teletrabajo si realizas más del 40% de tus labores fuera de la empresa usando tecnologías.",
+    "cita": "las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 330-A",
+    "ojo": "No aplica si es ocasional.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 330-A"
+  },
+  "copy": "Para que tu labor a distancia sea reconocida como teletrabajo por la Ley Federal del Trabajo, deben cumplirse condiciones de tiempo y herramientas. Según el artículo 330-A, esta modalidad requiere que realices tus actividades fuera de las instalaciones del patrón más del 40% del tiempo.\n\nEs indispensable el uso de tecnologías de la información para el contacto y mando. Estas incluyen servicios, redes y dispositivos que facilitan tus tareas, siempre que se usen para la gestión de la información entre tú y el patrón.\n\nTen en cuenta que, si trabajas desde casa solo de forma ocasional o esporádica, la ley no lo clasifica bajo esta modalidad. Identificar estas reglas ayuda a entender cómo se organiza tu relación laboral subordinada.\n\nGuarda esta información o compártela con quien trabaje desde casa.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre los requisitos legales del teletrabajo en México. Explica que se requiere trabajar más del 40% del tiempo fuera de la empresa usando tecnologías de información para ser considerado como tal, excluyendo el trabajo ocasional.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-11"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El teletrabajo es una forma de organización laboral subordinada que consiste en el desempeño de actividades remuneradas, en lugares distintos al establecimiento",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-11"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "330-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica",
+      "cita": "Ley Federal del Trabajo, artículo 330-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-11"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El teletrabajo requiere que la labor se realice fuera de la empresa más del 40% del tiempo.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Es una forma de organización laboral subordinada con actividades remuneradas en lugares distintos al establecimiento.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "No se considera teletrabajo si la actividad es ocasional o esporádica.",
+      "fuente": "F3"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo según la ley?",
+    "concepto_central": "teletrabajo",
+    "respuesta_corta": "Depende del tiempo: se considera teletrabajo si realizas más del 40% de tus actividades laborales fuera del centro de trabajo usando tecnologías de información.",
+    "reglas": [
+      {
+        "conclusion": "Para que una relación laboral se considere legalmente como teletrabajo, las actividades deben realizarse fuera de la empresa durante la mayor parte de la jornada.",
+        "fuente": "F1",
+        "cita_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora",
+        "condiciones": [
+          "Que exista una relación laboral subordinada",
+          "Que se utilicen primordialmente tecnologías de la información y comunicación",
+          "Que el tiempo en el domicilio sea superior al 40%"
+        ],
+        "excepciones": [
+          "No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "330-A"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Es una forma de organización laboral donde se realizan actividades remuneradas en lugares distintos a la empresa sin requerir presencia física.",
+        "fuente": "F1",
+        "cita_literal": "El teletrabajo es una forma de organización laboral subordinada que consiste en el desempeño de actividades remuneradas, en lugares distintos al establecimiento o establecimientos del patrón"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmación": "El uso de herramientas digitales es un requisito indispensable para que la labor a distancia sea clasificada como teletrabajo.",
+        "condicion": "Siempre que dichas tecnologías se utilicen para el contacto y mando entre el trabajador y el patrón.",
+        "base": "F1 define las tecnologías de la información como el conjunto de servicios y dispositivos que facilitan las tareas y la gestión de información."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "teletrabajo",
+        "b": "trabajo ocasional o esporádico",
+        "diferencia": "El teletrabajo es una modalidad regular que excede el 40% del tiempo laboral, mientras que lo ocasional no se rige por estas normas especiales."
+      }
+    ],
+    "limites": "Los textos proporcionados no mencionan las obligaciones específicas de pago de servicios (luz o internet), ni los procedimientos para solicitar el cambio de modalidad presencial a teletrabajo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-11T10:23:44+00:00",
+    "solicitud": "2027-01-24_imagen_T149-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo según la ley?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Depende del tiempo: se considera teletrabajo si realizas más del 40% de tus actividades laborales fuera de la empresa usando tecnologías. \n las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora \n No cuenta si es ocasional o esporádico."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Para que una relación laboral se considere legalmente como teletrabajo, las actividades deben realizarse fuera de la empresa durante la mayor parte de la jornada (más del 40%).",
+              "sostenida": "si",
+              "motivo": "El artículo 330-A establece explícitamente que se rigen por este capítulo las relaciones que se desarrollen más del 40% del tiempo fuera del centro de trabajo."
+            },
+            {
+              "conclusion": "El uso de tecnologías de la información es un requisito indispensable para el teletrabajo.",
+              "sostenida": "si",
+              "motivo": "El artículo 330-A define el teletrabajo como una modalidad que utiliza primordialmente las tecnologías de la información y comunicación para el contacto y mando."
+            },
+            {
+              "conclusion": "El trabajo ocasional o esporádico no se considera teletrabajo.",
+              "sostenida": "si",
+              "motivo": "El artículo 330-A señala expresamente: 'No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

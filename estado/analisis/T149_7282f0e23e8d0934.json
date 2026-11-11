@@ -1,0 +1,52 @@
+{
+ "tema_id": "T149",
+ "pregunta": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo según la ley?",
+ "fecha": "2026-11-11T10:23:03+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo según la ley?",
+  "concepto_central": "teletrabajo",
+  "respuesta_corta": "Depende del tiempo: se considera teletrabajo si realizas más del 40% de tus actividades laborales fuera del centro de trabajo usando tecnologías de información.",
+  "reglas": [
+   {
+    "conclusion": "Para que una relación laboral se considere legalmente como teletrabajo, las actividades deben realizarse fuera de la empresa durante la mayor parte de la jornada.",
+    "fuente": "F1",
+    "cita_literal": "Se regirán por las disposiciones del presente Capítulo las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora",
+    "condiciones": [
+     "Que exista una relación laboral subordinada",
+     "Que se utilicen primordialmente tecnologías de la información y comunicación",
+     "Que el tiempo en el domicilio sea superior al 40%"
+    ],
+    "excepciones": [
+     "No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "definicion",
+    "estado": "cubierto",
+    "respuesta": "Es una forma de organización laboral donde se realizan actividades remuneradas en lugares distintos a la empresa sin requerir presencia física.",
+    "fuente": "F1",
+    "cita_literal": "El teletrabajo es una forma de organización laboral subordinada que consiste en el desempeño de actividades remuneradas, en lugares distintos al establecimiento o establecimientos del patrón"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmación": "El uso de herramientas digitales es un requisito indispensable para que la labor a distancia sea clasificada como teletrabajo.",
+    "condicion": "Siempre que dichas tecnologías se utilicen para el contacto y mando entre el trabajador y el patrón.",
+    "base": "F1 define las tecnologías de la información como el conjunto de servicios y dispositivos que facilitan las tareas y la gestión de información."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "teletrabajo",
+    "b": "trabajo ocasional o esporádico",
+    "diferencia": "El teletrabajo es una modalidad regular que excede el 40% del tiempo laboral, mientras que lo ocasional no se rige por estas normas especiales."
+   }
+  ],
+  "limites": "Los textos proporcionados no mencionan las obligaciones específicas de pago de servicios (luz o internet), ni los procedimientos para solicitar el cambio de modalidad presencial a teletrabajo.",
+  "fuentes_irrelevantes": []
+ }
+}

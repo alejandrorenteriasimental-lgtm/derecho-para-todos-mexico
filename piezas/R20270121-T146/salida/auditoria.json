@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "36.4 s"
+      "detalle": "40.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "36.4 s"
+      "detalle": "40.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.7 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "27 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "95db0628a9c4e540"
+      "detalle": "4906c40a2f68a292"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270121-T146",
     "titulo": "¿Qué es la violencia económica según la ley en México?",
-    "fecha": "2026-11-11T04:11:50+00:00",
-    "sha256": "95db0628a9c4e540e04b921031579e3a39ce3f2ac53ff7ed0aee12d9ee66a0c0",
-    "duracion_s": 36.4,
+    "fecha": "2026-11-11T10:27:52+00:00",
+    "sha256": "4906c40a2f68a29205f710d945b49e8a8097360cf6333d34571698a31d09346f",
+    "duracion_s": 40.0,
     "estado": "APTO",
-    "huella_guion": "f2870d688d9498cd36a567008838712cd0f79849807fcbef3c4b655cae2b3f21",
+    "huella_guion": "95bc451d7caa8822a44fe72eac4b7cba7fd426ac7cbaf7280f74091706f4125a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 8.0,
-      "musica": 1.0,
-      "render_video": 26.0,
-      "mezcla_audio": 0.9,
-      "auditoria_tecnica": 5.5
+      "narracion": 19.4,
+      "musica": 1.8,
+      "render_video": 42.7,
+      "mezcla_audio": 1.6,
+      "auditoria_tecnica": 9.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.69,
-      "computo_equivalente_runner_usd": 0.0041,
+      "computo_minutos": 1.24,
+      "computo_equivalente_runner_usd": 0.0075,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1089,
-    "caracteres_narrados": 518
+    "frames": 1199,
+    "caracteres_narrados": 587
   }
 }

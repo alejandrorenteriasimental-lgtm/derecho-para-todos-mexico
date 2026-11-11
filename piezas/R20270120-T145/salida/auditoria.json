@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.3 s"
+      "detalle": "43.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.3 s"
+      "detalle": "43.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "ad9c3b6fa1db8a19"
+      "detalle": "c6a1249b246d4fd0"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270120-T145",
     "titulo": "¿Las personas extranjeras tienen los mismos derechos humanos?",
-    "fecha": "2026-11-11T04:10:50+00:00",
-    "sha256": "ad9c3b6fa1db8a1942fd6ab8b3b696e2eda708c12f936abe36c87af23d8d6ce4",
-    "duracion_s": 41.3,
+    "fecha": "2026-11-11T10:26:11+00:00",
+    "sha256": "c6a1249b246d4fd0857afa99c16cf3aead8c7ad269e8e3dd83e4327e54b14ab0",
+    "duracion_s": 43.3,
     "estado": "APTO",
-    "huella_guion": "ac0f76f5b86033662a9d75b96fd6729a3e22e300c055ea41c3ca52012e2e5a01",
+    "huella_guion": "c6b8c7925115b0f1f6136ace59de430a2a3dab7d63e482e9f71eb45caad039d7",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.2,
-      "musica": 1.1,
-      "render_video": 28.3,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 6.2
+      "narracion": 21.3,
+      "musica": 1.9,
+      "render_video": 46.1,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 9.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.76,
-      "computo_equivalente_runner_usd": 0.0046,
+      "computo_minutos": 1.34,
+      "computo_equivalente_runner_usd": 0.008,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1237,
-    "caracteres_narrados": 584
+    "frames": 1298,
+    "caracteres_narrados": 608
   }
 }

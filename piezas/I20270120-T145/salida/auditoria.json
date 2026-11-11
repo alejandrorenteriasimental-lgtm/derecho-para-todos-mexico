@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1186 KB"
+      "detalle": "1203 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1087"
+      "detalle": "fin del contenido en y=1110"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "52 palabras sin cabecera ni pie"
+      "detalle": "60 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "91% de 32 palabras reconocidas"
+      "detalle": "91% de 34 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Extranjeros en la política?",
     "plantilla": "dato",
     "archivo": "I20270120-T145.png",
-    "sha256": "9b5a055dfc73893a78b3d1e2a450a8e66e2355f96117e33df003a427346fcf91",
-    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000111110000011111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111101111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "086f083a94e8ef069421f3a8eead1eca46dd8f403b2e4de74b12a6ff298d0019",
+    "sha256": "c9c05644ec9e5b1d4ae085de5bd023cedc0eb376cd4185c666a6786ac608c1f8",
+    "ahash": "1000011111111111111111111111111111111111111111111101100101001111100000011111111110000111111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "e3259f5a08b163f361cdefdc3d77a6676f8ea3c28c89280b7f3940f0411e3f68",
     "texto_alternativo": "Infografía que explica mediante el artículo 33 de la Constitución si un extranjero puede participar en la política de México.",
-    "copy": "La Constitución Política de los Estados Unidos Mexicanos señala en su artículo 33 las disposiciones aplicables a las personas extranjeras que se encuentran en el territorio nacional. El texto oficial indica de forma clara la prohibición en esta materia.\n\nEspecíficamente, la norma señala: \"Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.\"\n\nAsimismo, el ordenamiento prevé que el Ejecutivo de la Unión, previa audiencia y con fundamento en la ley, podrá expulsar del territorio nacional a personas extranjeras.\n\nSi esta información te resulta útil, guárdala o compártela.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Una persona extranjera puede participar en la política de México? No. El artículo 33 de la Constitución dice: «Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.»\n\nOjo: el mismo artículo dice que las personas extranjeras «gozarán de los derechos humanos y garantías que reconoce esta Constitución».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-11T04:12:40+00:00",
+    "fecha": "2026-11-11T10:33:02+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
