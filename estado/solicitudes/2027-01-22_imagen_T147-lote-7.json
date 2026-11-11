@@ -14,14 +14,23 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "mito_realidad",
-  "angulo": "¿Otra persona puede pedir un amparo por ti?",
-  "estado": "DESCARTADA",
+  "angulo": "Solo el art. 15 de la Ley de Amparo. Mito: «Solo tú puedes pedir tu propio amparo.» (no escribir el mito como regla absoluta a favor de terceros). Realidad: en casos graves y si estás imposibilitado, otra persona puede pedirlo en tu nombre, aunque sea menor de edad. Cita literal: «podrá hacerlo cualquiera otra persona en su nombre, aunque sea menor de edad». Condiciones literales que deben aparecer en la realidad o el «ojo»: actos que importen peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación o desaparición forzada de personas, entre otros, y que la persona agraviada se encuentre imposibilitada para promover el amparo. No decir «en cualquier situación» ni «cualquiera puede» sin esas condiciones.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "I20270122-T147",
   "archivo": "2027-01-22_imagen_T147-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).\", \"[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier",
   "ultima_categoria": "juridico",
-  "huella_entrada": "b7ae79e2060632d2"
+  "huella_entrada": "b7ae79e2060632d2",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-11",
+      "por": "Claude",
+      "motivo": "primer descarte con Ley de Amparo 15, en la redacción: el mito redactado («Cualquiera puede pedir un amparo por ti en cualquier situación») activaba el control de generalización. Se reabre con el mito inverso, que es la creencia común, sin relajar el control",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).\", \"[condi"
+    }
+  ]
 }

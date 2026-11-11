@@ -7,7 +7,7 @@
  "arrastre": [
   "lote-6"
  ],
- "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días).  Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. Activado el 8-11 por la operación diaria: el lote 6 tenía todas sus solicitudes redactadas (la del Reel 08-01 se reabrió el mismo día con otra pregunta y se arrastra). Al activarlo se sustituyeron 2 preguntas que repetían fundamentos del lote 6: Reel 14-01 Ley de Migración 9 → LFT 60 (jornada nocturna); Reel 15-01 LGDNNA 45 → CPEUM 8 (derecho de petición).",
+ "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días).  Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. Activado el 8-11 por la operación diaria: el lote 6 tenía todas sus solicitudes redactadas (la del Reel 08-01 se reabrió el mismo día con otra pregunta y se arrastra). Al activarlo se sustituyeron 2 preguntas que repetían fundamentos del lote 6: Reel 14-01 Ley de Migración 9 → LFT 60 (jornada nocturna); Reel 15-01 LGDNNA 45 → CPEUM 8 (derecho de petición). El 11-11 se sustituyó la pregunta del Reel 18-01 (CPEUM 28, dos descartes) por LFPC 18 Bis (publicidad no deseada).",
  "temas": [
   {
    "formato": "reel",
@@ -147,9 +147,9 @@
    "fecha": "2027-01-18",
    "tema_id": "T143",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Están prohibidos los monopolios en México?",
-   "fuentes_sugeridas": "CPEUM art. 28",
-   "motivo_seleccion": "CPEUM art. 28 (texto oficial cotejado el 5-11-2026, registro/textos/CPEUM_28.json): «En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes». Condición literal: en los términos y condiciones que fijan las leyes."
+   "pregunta": "¿Te pueden seguir mandando publicidad si dijiste que no?",
+   "fuentes_sugeridas": "LFPC art. 18 Bis; LFPC art. 18",
+   "motivo_seleccion": "LFPC art. 18 Bis (texto oficial en registro/textos/LFPC_18_Bis.json, consultado el 3-11-2026): «Queda prohibido a los proveedores […] enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». Condiciones literales: voluntad expresa o inscripción en el registro del art. 18 (gratuito). Sustituye a CPEUM 28 (dos descartes en la redacción, 11-11)."
   },
   {
    "formato": "imagen",

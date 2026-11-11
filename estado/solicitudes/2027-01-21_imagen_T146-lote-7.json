@@ -14,14 +14,23 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "¿Qué es la violencia patrimonial?",
-  "estado": "DESCARTADA",
+  "angulo": "Solo el art. 6, fr. III, LGAMVLV. Bajada: la definición («Es cualquier acto u omisión que afecta la supervivencia de la víctima»). Cita destacada: «Es cualquier acto u omisión que afecta la supervivencia de la víctima». El «OJO» NO repite la definición: di una manifestación literal del mismo texto, por ejemplo «Incluye retener tus documentos personales o tus bienes» (la ley: «la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos»). No hablar de violencia económica (fr. IV) ni de sanciones.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "I20270121-T146",
   "archivo": "2027-01-21_imagen_T146-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, recursos y derechos. \\n Es cualquier acto u omisión ",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "f977ca903b187f73"
+  "huella_entrada": "f977ca903b187f73",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-11",
+      "por": "Claude",
+      "motivo": "primer descarte con LGAMVLV 6 fr. III, en la redacción: el «OJO» repetía la definición. Se reabre con el ángulo que pide un «ojo» con las manifestaciones literales",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\"], \"visible\": \"  \\n   \\n Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la af"
+    }
+  ]
 }

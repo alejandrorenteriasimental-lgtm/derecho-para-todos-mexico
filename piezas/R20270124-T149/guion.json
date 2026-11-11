@@ -1,200 +1,268 @@
 {
-  "id": "R20270124-T149",
-  "formato": "reel",
-  "titulo": "¿En home office tienes derecho a desconectarte?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "carril_inicial": "A",
-  "tema_id": "T149",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Ley Federal del Trabajo",
-      "articulo": "330-E",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
-      "cita": "Ley Federal del Trabajo, artículo 330-E",
-      "jurisdiccion": "federal (aplica en todo el país)",
-      "consultado": "2026-11-11"
-    }
+ "id": "R20270124-T149",
+ "formato": "reel",
+ "titulo": "¿En home office tienes derecho a desconectarte?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "carril_inicial": "A",
+ "tema_id": "T149",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Trabajo",
+   "articulo": "330-E",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "texto_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
+   "cita": "Ley Federal del Trabajo, artículo 330-E",
+   "jurisdiccion": "federal (aplica en todo el país)",
+   "consultado": "2026-11-11"
   },
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "texto": "¿Te siguen llegando mensajes de trabajo fuera de tu horario?",
-      "titulo": [
-        "¿MENSAJES",
-        "FUERA DE",
-        "HORARIO?"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Si estás en teletrabajo, sí tienes derecho a desconectarte al terminar tu jornada laboral.",
-      "titulo": [
-        "SÍ TIENES",
-        "DERECHO"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley obliga al patrón a «Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral».",
-      "etiqueta": "Ley Federal del Trabajo, artículo 330-E",
-      "cita": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "El patrón tiene la obligación de respetar el derecho a la desconexión al finalizar la jornada laboral.",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "Otras obligaciones del patrón en esta modalidad son:",
-      "items": [
-        "Pagar luz e internet",
-        "Proporcionar equipo",
-        "Mantenimiento de equipo"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Recuerda: en la modalidad de teletrabajo, se debe respetar tu derecho a desconectarte al término de la jornada.",
-      "titulo": [
-        "RESPETA TU",
-        "DESCONEXIÓN"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cierre",
-      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
-      "aviso": "Información general, no asesoría legal.",
-      "afirmaciones": []
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿En home office tienes derecho a desconectarte al terminar tu jornada?",
-    "concepto_central": "derecho a la desconexión",
-    "respuesta_corta": "Sí: en la modalidad de teletrabajo, se debe respetar tu derecho a desconectarte al término de la jornada laboral.",
-    "reglas": [
-      {
-        "conclusion": "Los patrones tienen la obligación de respetar el derecho a la desconexión de quienes realizan teletrabajo al finalizar su jornada.",
-        "fuente": "F1",
-        "cita_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
-        "condiciones": [
-          "Estar bajo la modalidad de teletrabajo"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Ley Federal del Trabajo",
-          "articulo": "330-E"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "contenido",
-        "estado": "cubierto",
-        "respuesta": "El patrón tiene la obligación de respetar el derecho a la desconexión al finalizar la jornada laboral.",
-        "fuente": "F1",
-        "cita_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral"
-      },
-      {
-        "elemento": "condiciones",
-        "estado": "cubierto",
-        "respuesta": "Esta obligación aplica específicamente para quienes laboran bajo la modalidad de teletrabajo.",
-        "fuente": "F1",
-        "cita_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes"
-      },
-      {
-        "elemento": "excepcion",
-        "estado": "no_aplica",
-        "respuesta": "No se contemplan excepciones en el texto oficial.",
-        "fuente": "F1",
-        "cita_literal": "",
-        "motivo": "El texto oficial no prevé excepciones para el derecho a la desconexión."
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "El texto oficial no establece sanciones específicas por incumplir esta obligación ni detalla procedimientos para reclamarla."
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Trabajo",
+   "articulo": "330-E",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "texto_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros",
+   "cita": "Ley Federal del Trabajo, artículo 330-E",
+   "jurisdiccion": "federal (aplica en todo el país)",
+   "consultado": "2026-11-11"
   },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-11T10:22:34+00:00",
-    "solicitud": "2027-01-24_reel_T149-lote-7.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 5,
-        "auditor": 2
-      },
-      "llamadas_ia_total": 7,
-      "intentos_analisis": 2,
-      "intentos_redaccion": 1,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3-flash-preview"
-    }
-  },
-  "pregunta_original": "¿En home office tienes derecho a desconectarte al terminar tu jornada?",
-  "tipo_pregunta": "derecho",
-  "revision_razonamiento": [],
-  "copy": "¿En home office tienes derecho a desconectarte al terminar tu jornada?\n\nSí: en la modalidad de teletrabajo, se debe respetar tu derecho a desconectarte al término de la jornada laboral.\n\nFuente: Ley Federal del Trabajo, artículo 330-E.\n\nEsto es información general, no es asesoría legal.",
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemini-3.1-flash-lite",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": [
-          "[cobertura] El elemento «condiciones» («Este derecho aplica específicamente para quienes se desempeñ») no trae una cita literal que esté en el texto oficial de su fuente."
-        ]
-      },
-      {
-        "etapa": "analisis",
-        "intento": 1,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Los patrones tienen la obligación de respetar el derecho a la desconexión de quienes realizan teletrabajo al finalizar su jornada.",
-              "sostenida": "si",
-              "motivo": "El artículo 330-E, fracción VI, de la Ley Federal del Trabajo establece expresamente esta obligación para los patrones en la modalidad de teletrabajo."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": false
+  "F3": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Ley Federal del Trabajo",
+   "articulo": "330-E",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+   "texto_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad",
+   "cita": "Ley Federal del Trabajo, artículo 330-E",
+   "jurisdiccion": "federal (aplica en todo el país)",
+   "consultado": "2026-11-11"
   }
+ },
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "texto": "¿Te siguen llegando mensajes de trabajo fuera de tu horario?",
+   "titulo": [
+    "¿MENSAJES",
+    "FUERA DE",
+    "HORARIO?"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "titular",
+   "texto": "Si estás en teletrabajo, sí tienes derecho a desconectarte al terminar tu jornada laboral.",
+   "titulo": [
+    "SÍ TIENES",
+    "DERECHO"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cita",
+   "texto": "La ley obliga al patrón a «Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral».",
+   "etiqueta": "Ley Federal del Trabajo, artículo 330-E",
+   "cita": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
+   "afirmaciones": [
+    {
+     "id": "A1",
+     "tipo": "hecho_normativo",
+     "texto": "El patrón tiene la obligación de respetar el derecho a la desconexión al finalizar la jornada laboral.",
+     "fuente": "F1",
+     "comparar_literal": true
+    }
+   ]
+  },
+  {
+   "tipo": "lista",
+   "texto": "Además, debe darte y mantener el equipo, y asumir los costos, incluida, en su caso, la parte proporcional de la luz.",
+   "items": [
+    "Dar y mantener el equipo",
+    "Asumir los costos",
+    "Parte proporcional de luz"
+   ],
+   "afirmaciones": [
+    {
+     "id": "A2",
+     "tipo": "hecho_normativo",
+     "texto": "En teletrabajo, el patrón debe proporcionar, instalar y dar mantenimiento a los equipos necesarios.",
+     "fuente": "F2"
+    },
+    {
+     "id": "A3",
+     "tipo": "hecho_normativo",
+     "texto": "En teletrabajo, el patrón asume los costos, incluyendo, en su caso, telecomunicación y la parte proporcional de electricidad.",
+     "fuente": "F3"
+    }
+   ]
+  },
+  {
+   "tipo": "titular",
+   "texto": "Recuerda: en teletrabajo, al terminar tu jornada, tienes derecho a desconectarte.",
+   "titulo": [
+    "RESPETA TU",
+    "DESCONEXIÓN"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cierre",
+   "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+   "aviso": "Información general, no asesoría legal.",
+   "afirmaciones": []
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿En home office tienes derecho a desconectarte al terminar tu jornada?",
+  "concepto_central": "derecho a la desconexión",
+  "respuesta_corta": "Sí: en la modalidad de teletrabajo, se debe respetar tu derecho a desconectarte al término de la jornada laboral.",
+  "reglas": [
+   {
+    "conclusion": "Los patrones tienen la obligación de respetar el derecho a la desconexión de quienes realizan teletrabajo al finalizar su jornada.",
+    "fuente": "F1",
+    "cita_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral",
+    "condiciones": [
+     "Estar bajo la modalidad de teletrabajo"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Trabajo",
+     "articulo": "330-E"
+    }
+   },
+   {
+    "conclusion": "En teletrabajo, el patrón debe proporcionar, instalar y mantener los equipos necesarios.",
+    "fuente": "F2",
+    "cita_literal": "Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros",
+    "condiciones": [
+     "Estar bajo la modalidad de teletrabajo"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Trabajo",
+     "articulo": "330-E"
+    }
+   },
+   {
+    "conclusion": "En teletrabajo, el patrón asume los costos derivados, incluyendo, en su caso, telecomunicación y la parte proporcional de electricidad.",
+    "fuente": "F3",
+    "cita_literal": "Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad",
+    "condiciones": [
+     "Estar bajo la modalidad de teletrabajo"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Ley Federal del Trabajo",
+     "articulo": "330-E"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El patrón tiene la obligación de respetar el derecho a la desconexión al finalizar la jornada laboral.",
+    "fuente": "F1",
+    "cita_literal": "Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta obligación aplica específicamente para quienes laboran bajo la modalidad de teletrabajo.",
+    "fuente": "F1",
+    "cita_literal": "En modalidad de teletrabajo, los patrones tendrán las obligaciones especiales siguientes"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "No se contemplan excepciones en el texto oficial.",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones para el derecho a la desconexión."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no establece sanciones específicas por incumplir esta obligación ni detalla procedimientos para reclamarla."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-11T10:22:34+00:00",
+  "solicitud": "2027-01-24_reel_T149-lote-7.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 5,
+    "auditor": 2
+   },
+   "llamadas_ia_total": 7,
+   "intentos_analisis": 2,
+   "intentos_redaccion": 1,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3-flash-preview"
+  }
+ },
+ "pregunta_original": "¿En home office tienes derecho a desconectarte al terminar tu jornada?",
+ "tipo_pregunta": "derecho",
+ "revision_razonamiento": [],
+ "copy": "¿En home office tienes derecho a desconectarte al terminar tu jornada? Sí, si trabajas en la modalidad de teletrabajo. El artículo 330-E de la Ley Federal del Trabajo obliga al patrón a «Respetar el derecho a la desconexión de las personas trabajadoras en la modalidad de teletrabajo al término de la jornada laboral».\n\nEl mismo artículo lo obliga a «Proporcionar, instalar y encargarse del mantenimiento de los equipos necesarios para el teletrabajo como equipo de cómputo, sillas ergonómicas, impresoras, entre otros» y a «Asumir los costos derivados del trabajo a través de la modalidad de teletrabajo, incluyendo, en su caso, el pago de servicios de telecomunicación y la parte proporcional de electricidad».\n\nFuente: Ley Federal del Trabajo, artículo 330-E, fracciones I, III y VI.\n\nEsto es información general, no es asesoría legal.",
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemini-3.1-flash-lite",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": [
+     "[cobertura] El elemento «condiciones» («Este derecho aplica específicamente para quienes se desempeñ») no trae una cita literal que esté en el texto oficial de su fuente."
+    ]
+   },
+   {
+    "etapa": "analisis",
+    "intento": 1,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Los patrones tienen la obligación de respetar el derecho a la desconexión de quienes realizan teletrabajo al finalizar su jornada.",
+       "sostenida": "si",
+       "motivo": "El artículo 330-E, fracción VI, de la Ley Federal del Trabajo establece expresamente esta obligación para los patrones en la modalidad de teletrabajo."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": false
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-11",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "La lista mostraba «Pagar luz e internet», «Proporcionar equipo» y «Mantenimiento de equipo» sin fuente ni afirmación; «pagar luz» generalizaba (la fr. III dice «la parte proporcional de electricidad», «en su caso»). Ahora: lista con las fracciones I y III del art. 330-E como F2 y F3 (citas literales), afirmaciones y reglas en el análisis; cierre más breve para mantener la duración; texto con las tres citas literales."
+  }
+ ]
 }

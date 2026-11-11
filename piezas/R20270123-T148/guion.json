@@ -1,261 +1,244 @@
 {
-  "id": "R20270123-T148",
-  "formato": "reel",
-  "titulo": "¿Tienes derecho a un abogado gratuito si eres víctima?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "carril_inicial": "A",
-  "tema_id": "T148",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Código Nacional de Procedimientos Penales",
-      "articulo": "109",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "texto_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
-      "cita": "Código Nacional de Procedimientos Penales, artículo 109",
-      "jurisdiccion": "nacional",
-      "consultado": "2026-11-11"
-    },
-    "F2": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Código Nacional de Procedimientos Penales",
-      "articulo": "109",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "texto_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
-      "cita": "Código Nacional de Procedimientos Penales, artículo 109",
-      "jurisdiccion": "nacional",
-      "consultado": "2026-11-11"
-    },
-    "F3": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Código Nacional de Procedimientos Penales",
-      "articulo": "109",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "texto_literal": "ser atendidos por personal del mismo sexo, o del sexo que la víctima elija, cuando así lo requieran",
-      "cita": "Código Nacional de Procedimientos Penales, artículo 109",
-      "jurisdiccion": "nacional",
-      "consultado": "2026-11-11"
-    }
+ "id": "R20270123-T148",
+ "formato": "reel",
+ "titulo": "¿Tienes derecho a un abogado gratuito si eres víctima?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "carril_inicial": "A",
+ "tema_id": "T148",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Código Nacional de Procedimientos Penales",
+   "articulo": "109",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+   "texto_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+   "cita": "Código Nacional de Procedimientos Penales, artículo 109",
+   "jurisdiccion": "nacional",
+   "consultado": "2026-11-11"
   },
-  "escenas": [
-    {
-      "tipo": "gancho",
-      "texto": "¿Sabías que si eres víctima de un delito no tienes que pagar por defensa?",
-      "titulo": [
-        "DERECHO A",
-        "ABOGADO GRATIS"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Sí, tienes derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal, conforme a la legislación aplicable.",
-      "titulo": [
-        "ASESOR",
-        "JURÍDICO"
-      ],
-      "afirmaciones": []
-    },
-    {
-      "tipo": "cita",
-      "texto": "La ley reconoce tu derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable.",
-      "etiqueta": "Código Nacional, art. 109",
-      "cita": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "La víctima tiene derecho a un asesor jurídico sin costo en el proceso penal.",
-          "fuente": "F1",
-          "comparar_literal": true
-        }
-      ]
-    },
-    {
-      "tipo": "lista",
-      "texto": "Puntos clave de este derecho:",
-      "items": [
-        "Asesor jurídico gratuito",
-        "En cualquier etapa",
-        "Elegir sexo del personal"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A2",
-          "tipo": "hecho_normativo",
-          "texto": "El derecho a la asistencia gratuita es válido en todas las etapas del procedimiento.",
-          "fuente": "F2"
-        }
-      ]
-    },
-    {
-      "tipo": "titular",
-      "texto": "Se garantiza tu derecho a recibir asistencia jurídica gratuita a través de un Asesor jurídico durante el proceso penal.",
-      "titulo": [
-        "TU DERECHO",
-        "ES GRATUITO"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A3",
-          "tipo": "interpretacion",
-          "texto": "La víctima puede elegir ser asistida por personal de un sexo específico si lo requiere.",
-          "fuente": "F3"
-        }
-      ]
-    },
-    {
-      "tipo": "cierre",
-      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
-      "aviso": "Información general, no asesoría legal.",
-      "afirmaciones": []
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
-    "concepto_central": "Asesor jurídico gratuito",
-    "respuesta_corta": "Sí, tienes derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal, conforme a lo que establezca la legislación aplicable.",
-    "reglas": [
-      {
-        "conclusion": "La víctima u ofendido tiene el derecho reconocido de recibir asistencia legal sin costo durante el proceso penal.",
-        "fuente": "F1",
-        "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
-        "condiciones": [
-          "En cualquier etapa del procedimiento",
-          "En los términos de la legislación aplicable"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Código Nacional de Procedimientos Penales",
-          "articulo": "109"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "contenido",
-        "estado": "cubierto",
-        "respuesta": "Se garantiza a la víctima el derecho a recibir asistencia jurídica a través de un Asesor jurídico sin costo alguno.",
-        "fuente": "F1",
-        "cita_literal": "recibir desde la comisión del delito atención médica y psicológica de urgencia, así como asistencia jurídica a través de un Asesor jurídico"
-      },
-      {
-        "elemento": "condiciones",
-        "estado": "cubierto",
-        "respuesta": "Este derecho puede ejercerse en cualquier etapa del procedimiento penal y bajo los términos que fijen las leyes correspondientes.",
-        "fuente": "F1",
-        "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable"
-      },
-      {
-        "elemento": "excepcion",
-        "estado": "no_aplica",
-        "respuesta": "El texto legal no establece supuestos en los que se le niegue este derecho de asistencia gratuita a la víctima.",
-        "fuente": "F1",
-        "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
-        "motivo": "La norma redacta el derecho de forma general para la víctima u ofendido sin prever exclusiones en el texto proporcionado."
-      }
-    ],
-    "interpretaciones": [
-      {
-        "afirmación": "La víctima puede elegir ser asistida por personal de un sexo específico.",
-        "condicion": "Cuando así lo requiera la víctima.",
-        "base": "F1, fracción III: «ser atendidos por personal del mismo sexo, o del sexo que la víctima elija, cuando así lo requieran»"
-      }
-    ],
-    "distinciones": [
-      {
-        "a": "Asesor jurídico",
-        "b": "Ministerio Público",
-        "diferencia": "El Asesor jurídico brinda asistencia directa y representación a la víctima, mientras que el Ministerio Público es la autoridad que facilita el acceso a la justicia y dirige la investigación."
-      }
-    ],
-    "limites": "Los textos no especifican el nombre de la institución encargada de proveer al asesor, ni los requisitos de nivel de ingresos para acceder al servicio gratuito."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-11T10:19:50+00:00",
-    "solicitud": "2027-01-23_reel_T148-lote-7.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 1,
-        "redactor": 3,
-        "auditor": 2
-      },
-      "llamadas_ia_total": 6,
-      "intentos_analisis": 2,
-      "intentos_redaccion": 1,
-      "investigacion_complementaria": true
-    },
-    "modelos": {
-      "investigador": "gemini-3.5-flash-lite",
-      "redactor": "gemini-3-flash-preview"
-    }
-  },
-  "pregunta_original": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
-  "tipo_pregunta": "derecho",
-  "revision_razonamiento": [],
-  "copy": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?\n\nSí, tienes derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal, conforme a lo que establezca la legislación aplicable.\n\nFuente: Código Nacional de Procedimientos Penales, artículo 109.\n\nEsto es información general, no es asesoría legal.",
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemini-3.1-flash-lite",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": [
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe (elemento «contenido»).",
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»).",
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»)."
-        ]
-      },
-      {
-        "etapa": "investigacion_complementaria",
-        "faltan": [
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe (elemento «contenido»).",
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»).",
-          "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»)."
-        ],
-        "agregadas": [
-          "LGV 68"
-        ]
-      },
-      {
-        "etapa": "analisis",
-        "intento": 1,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "La víctima u ofendido tiene el derecho reconocido de recibir asistencia legal sin costo durante el proceso penal.",
-              "sostenida": "si",
-              "motivo": "El artículo 109, fracción VII, establece explícitamente el derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento."
-            },
-            {
-              "conclusion": "La víctima puede elegir ser asistida por personal de un sexo específico si lo requiere.",
-              "sostenida": "si",
-              "motivo": "El artículo 109, fracción III, prevé expresamente el derecho a ser atendidos por personal del sexo que la víctima elija cuando así lo requieran."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": false
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Código Nacional de Procedimientos Penales",
+   "articulo": "109",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+   "texto_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+   "cita": "Código Nacional de Procedimientos Penales, artículo 109",
+   "jurisdiccion": "nacional",
+   "consultado": "2026-11-11"
   }
+ },
+ "escenas": [
+  {
+   "tipo": "gancho",
+   "texto": "¿Si eres víctima de un delito, tienes derecho a un abogado gratis?",
+   "titulo": [
+    "¿ABOGADO GRATIS",
+    "PARA LA VÍCTIMA?"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "titular",
+   "texto": "Sí: tienes derecho a un Asesor jurídico gratuito.",
+   "titulo": [
+    "SÍ: ASESOR",
+    "JURÍDICO GRATUITO"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cita",
+   "texto": "El artículo 109 del Código Nacional de Procedimientos Penales dice: «A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable».",
+   "etiqueta": "Código Nacional de Procedimientos Penales, art. 109",
+   "cita": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+   "afirmaciones": [
+    {
+     "id": "A1",
+     "tipo": "hecho_normativo",
+     "texto": "La víctima u ofendido tiene derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal.",
+     "fuente": "F1",
+     "comparar_literal": true
+    }
+   ]
+  },
+  {
+   "tipo": "lista",
+   "texto": "Gratuito, en cualquier etapa y según la ley aplicable.",
+   "items": [
+    "Gratuito",
+    "En cualquier etapa",
+    "Según la ley aplicable"
+   ],
+   "afirmaciones": [
+    {
+     "id": "A2",
+     "tipo": "hecho_normativo",
+     "texto": "El Asesor jurídico gratuito se garantiza en cualquier etapa del procedimiento, en los términos de la legislación aplicable.",
+     "fuente": "F2"
+    }
+   ]
+  },
+  {
+   "tipo": "titular",
+   "texto": "La regla: como víctima, tu asesor jurídico es gratuito.",
+   "titulo": [
+    "TU ASESOR",
+    "ES GRATUITO"
+   ],
+   "afirmaciones": []
+  },
+  {
+   "tipo": "cierre",
+   "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+   "aviso": "Información general, no asesoría legal.",
+   "afirmaciones": []
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
+  "concepto_central": "Asesor jurídico gratuito",
+  "respuesta_corta": "Sí, tienes derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento penal, conforme a lo que establezca la legislación aplicable.",
+  "reglas": [
+   {
+    "conclusion": "La víctima u ofendido tiene el derecho reconocido de recibir asistencia legal sin costo durante el proceso penal.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+    "condiciones": [
+     "En cualquier etapa del procedimiento",
+     "En los términos de la legislación aplicable"
+    ],
+    "excepciones": [],
+    "ref": {
+     "documento": "Código Nacional de Procedimientos Penales",
+     "articulo": "109"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La víctima u ofendido tiene derecho a contar con un Asesor jurídico gratuito.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Este derecho puede ejercerse en cualquier etapa del procedimiento penal y bajo los términos que fijen las leyes correspondientes.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto legal no establece supuestos en los que se le niegue este derecho de asistencia gratuita a la víctima.",
+    "fuente": "F1",
+    "cita_literal": "A contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable",
+    "motivo": "La norma redacta el derecho de forma general para la víctima u ofendido sin prever exclusiones en el texto proporcionado."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "Asesor jurídico",
+    "b": "Ministerio Público",
+    "diferencia": "El Asesor jurídico brinda asistencia directa y representación a la víctima, mientras que el Ministerio Público es la autoridad que facilita el acceso a la justicia y dirige la investigación."
+   }
+  ],
+  "limites": "Los textos no especifican el nombre de la institución encargada de proveer al asesor, ni los requisitos de nivel de ingresos para acceder al servicio gratuito."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-11T10:19:50+00:00",
+  "solicitud": "2027-01-23_reel_T148-lote-7.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 1,
+    "redactor": 3,
+    "auditor": 2
+   },
+   "llamadas_ia_total": 6,
+   "intentos_analisis": 2,
+   "intentos_redaccion": 1,
+   "investigacion_complementaria": true
+  },
+  "modelos": {
+   "investigador": "gemini-3.5-flash-lite",
+   "redactor": "gemini-3-flash-preview"
+  }
+ },
+ "pregunta_original": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito?",
+ "tipo_pregunta": "derecho",
+ "revision_razonamiento": [],
+ "copy": "¿Si eres víctima de un delito, tienes derecho a un abogado gratuito? Sí. El artículo 109, fracción VII, del Código Nacional de Procedimientos Penales reconoce a la víctima u ofendido el derecho «a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento, en los términos de la legislación aplicable».\n\nFuente: Código Nacional de Procedimientos Penales, artículo 109, fracción VII.\n\nEsto es información general, no es asesoría legal.",
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemini-3.1-flash-lite",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": [
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe (elemento «contenido»).",
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»).",
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»)."
+    ]
+   },
+   {
+    "etapa": "investigacion_complementaria",
+    "faltan": [
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué establece la norma como respuesta directa: qué se debe dar o hacer (cuánto y cuándo), qué se garantiza o qué se prohíbe (elemento «contenido»).",
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) (elemento «condiciones»).",
+     "[cobertura] La pregunta es de tipo «derecho» y el análisis no dice qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»)."
+    ],
+    "agregadas": [
+     "LGV 68"
+    ]
+   },
+   {
+    "etapa": "analisis",
+    "intento": 1,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "La víctima u ofendido tiene el derecho reconocido de recibir asistencia legal sin costo durante el proceso penal.",
+       "sostenida": "si",
+       "motivo": "El artículo 109, fracción VII, establece explícitamente el derecho a contar con un Asesor jurídico gratuito en cualquier etapa del procedimiento."
+      },
+      {
+       "conclusion": "La víctima puede elegir ser asistida por personal de un sexo específico si lo requiere.",
+       "sostenida": "si",
+       "motivo": "El artículo 109, fracción III, prevé expresamente el derecho a ser atendidos por personal del sexo que la víctima elija cuando así lo requieran."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": false
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-11",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "El gancho decía «no tienes que pagar por defensa» (la defensa es del imputado; a la víctima le corresponde un Asesor jurídico); la lista incluía «Elegir sexo del personal» (fr. III, ajeno a la pregunta) y la escena final mostraba «TU DERECHO ES GRATUITO» con una afirmación sobre el sexo del personal (incoherencia visible/narrada); la etiqueta «Código Nacional» no nombraba el código. Ahora: gancho con la pregunta, lista con las tres condiciones literales de la fr. VII, cierre coherente, etiqueta con el nombre completo, F3 retirada y texto con la cita literal."
+  }
+ ]
 }

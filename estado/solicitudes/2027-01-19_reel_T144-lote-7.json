@@ -12,13 +12,23 @@
   "lote": "lote-7",
   "motivo_seleccion": "LFT art. 110 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_110.json): «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Regla y excepciones literales (fracciones I a VII); se narra la regla y la primera excepción con su tope.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270119-T144",
   "archivo": "2027-01-19_reel_T144-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: más de 4 elementos en la lista\", \"narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Tu patrón puede descontarte lo",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "3b7cedba0d1c3fe4"
+  "huella_entrada": "3b7cedba0d1c3fe4",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-11",
+      "por": "Claude",
+      "motivo": "primer descarte con LFT 110, en la redacción: narración de más de 620 caracteres y lista de más de 4 elementos (el artículo tiene siete fracciones). Se reabre con el ángulo acotado a la regla y la fracción I",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: más de 4 elementos en la lista\", \"narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la c"
+    }
+  ],
+  "angulo": "Solo el art. 110 LFT, párrafo inicial y fracción I. Respuesta: No; los descuentos al salario están prohibidos salvo en los casos y con los requisitos que fija la ley. Cita literal ÚNICA: «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Un solo ejemplo (fr. I): deudas con el patrón por anticipo de salarios, pagos hechos en exceso, errores, pérdidas, averías o compra de artículos de la empresa; la cantidad exigible no puede ser mayor que el importe de un mes de salario y el descuento, el que convengan trabajador y patrón, no puede ser mayor del treinta por ciento del excedente del salario mínimo. Decir que la ley prevé otros casos, sin enumerarlos. Sin listas. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
 }
