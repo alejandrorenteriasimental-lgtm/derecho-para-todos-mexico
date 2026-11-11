@@ -1,282 +1,286 @@
 {
-  "id": "I20270120-T145",
-  "formato": "imagen",
-  "plantilla": "dato",
-  "titulo": "¿Extranjeros en la política?",
-  "version_esquema": "0.3",
-  "riesgo": "bajo",
-  "tema_id": "T145",
-  "pieza": {
-    "titular": "¿Extranjeros en la política?",
-    "bajada": "No, la Constitución Política de los Estados Unidos Mexicanos establece que los extranjeros no podrán inmiscuirse en los asuntos políticos del país.",
-    "cita": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
-    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
-    "ojo": "Previa audiencia",
-    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 33"
+ "id": "I20270120-T145",
+ "formato": "imagen",
+ "plantilla": "dato",
+ "titulo": "¿Extranjeros en la política?",
+ "version_esquema": "0.3",
+ "riesgo": "bajo",
+ "tema_id": "T145",
+ "pieza": {
+  "titular": "¿Extranjeros en la política?",
+  "bajada": "No, la Constitución Política de los Estados Unidos Mexicanos establece que los extranjeros no podrán inmiscuirse en los asuntos políticos del país.",
+  "cita": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+  "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
+  "ojo": "Sí gozan de los derechos humanos que reconoce la Constitución",
+  "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 33"
+ },
+ "copy": "¿Una persona extranjera puede participar en la política de México? No. El artículo 33 de la Constitución dice: «Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.»\n\nOjo: el mismo artículo dice que las personas extranjeras «gozarán de los derechos humanos y garantías que reconoce esta Constitución».\n\nEsto es información general, no es asesoría legal.",
+ "alt": "Infografía que explica mediante el artículo 33 de la Constitución si un extranjero puede participar en la política de México.",
+ "relacion_reel": "independiente",
+ "fuentes": {
+  "F1": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "33",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-11"
   },
-  "copy": "La Constitución Política de los Estados Unidos Mexicanos señala en su artículo 33 las disposiciones aplicables a las personas extranjeras que se encuentran en el territorio nacional. El texto oficial indica de forma clara la prohibición en esta materia.\n\nEspecíficamente, la norma señala: \"Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.\"\n\nAsimismo, el ordenamiento prevé que el Ejecutivo de la Unión, previa audiencia y con fundamento en la ley, podrá expulsar del territorio nacional a personas extranjeras.\n\nSi esta información te resulta útil, guárdala o compártela.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Infografía que explica mediante el artículo 33 de la Constitución si un extranjero puede participar en la política de México.",
-  "relacion_reel": "independiente",
-  "fuentes": {
-    "F1": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "33",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-11"
-    },
-    "F2": {
-      "tipo": "ley",
-      "nivel": "oficial",
-      "documento": "Constitución Política de los Estados Unidos Mexicanos",
-      "articulo": "33",
-      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras con fundamento en la ley",
-      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
-      "jurisdiccion": "federal",
-      "consultado": "2026-11-11"
-    }
-  },
-  "afirmaciones": [
-    {
-      "id": "A1",
-      "tipo": "hecho_normativo",
-      "texto": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos del país.",
-      "fuente": "F1"
-    },
-    {
-      "id": "A2",
-      "tipo": "hecho_normativo",
-      "texto": "El Ejecutivo de la Unión podrá expulsar del territorio nacional a personas extranjeras cumpliendo con previa audiencia y con fundamento en la ley.",
-      "fuente": "F2"
-    }
-  ],
-  "razonamiento": {
-    "suficiente": true,
-    "pregunta": "¿Un extranjero puede participar en la política de México?",
-    "concepto_central": "participación en asuntos políticos",
-    "respuesta_corta": "No, la Constitución establece que los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
-    "reglas": [
-      {
-        "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
-        "fuente": "F1",
-        "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
-        "condiciones": [],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "33"
-        }
-      },
-      {
-        "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
-        "fuente": "F1",
-        "cita_literal": "El Ejecutivo de la Unión, previa audiencia, podrá expulsar del territorio nacional a personas extranjeras con fundamento en la ley",
-        "condiciones": [
-          "previa audiencia",
-          "con fundamento en la ley"
-        ],
-        "excepciones": [],
-        "ref": {
-          "documento": "Constitución Política de los Estados Unidos Mexicanos",
-          "articulo": "33"
-        }
-      }
-    ],
-    "elementos": [
-      {
-        "elemento": "efecto",
-        "estado": "cubierto",
-        "respuesta": "La consecuencia jurídica es la prohibición expresa de que los extranjeros se inmiscuyan en los asuntos políticos del país.",
-        "fuente": "F1",
-        "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país."
-      }
-    ],
-    "interpretaciones": [],
-    "distinciones": [],
-    "limites": "El texto oficial no detalla qué actos específicos constituyen inmiscuirse en los asuntos políticos ni establece una sanción directa por dicha conducta en este artículo."
-  },
-  "generacion": {
-    "afirmaciones_eliminadas_sin_ancla": [],
-    "fuentes_descartadas": [],
-    "fecha": "2026-11-11T04:05:04+00:00",
-    "solicitud": "2027-01-20_imagen_T145-lote-7.json",
-    "metodo": "analisis_previo_v2_cobertura",
-    "metricas": {
-      "llamadas_ia": {
-        "investigador": 0,
-        "redactor": 7,
-        "auditor": 4
-      },
-      "llamadas_ia_total": 11,
-      "intentos_analisis": 1,
-      "intentos_redaccion": 6,
-      "investigacion_complementaria": false
-    },
-    "modelos": {
-      "investigador": [
-        "gemini:gemini-3.5-flash-lite",
-        "gemini:gemini-3-flash-preview",
-        "gemini:gemini-3.1-flash-lite",
-        "gemini:gemini-3.6-flash"
-      ],
-      "redactor": "gemini-3.5-flash-lite"
-    }
-  },
-  "pregunta_original": "¿Un extranjero puede participar en la política de México?",
-  "tipo_pregunta": "legalidad",
-  "revision_razonamiento": [],
-  "auditoria_ia": {
-    "veredicto": "sin_objeciones",
-    "modelo_auditor": "gemini-3.1-flash-lite",
-    "historial": [
-      {
-        "etapa": "analisis",
-        "reutilizado": true,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "errores_esquema": [
-          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
-        ],
-        "visible": "  \n   \n No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, involucrarse en los asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n El Ejecutivo de la Unión puede expulsar previa audiencia."
-      },
-      {
-        "etapa": "reparacion_puntual",
-        "intento": 1,
-        "errores": [
-          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
-        ]
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 1,
-        "errores_esquema": [
-          "[respuesta] La respuesta corta no aparece en el contenido visible: «No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, i»."
-        ],
-        "visible": "  \n   \n No. La Constitución prohíbe a los extranjeros involucrarse en asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n El Ejecutivo puede expulsar previa audiencia."
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 2,
-        "auditoria_ia": {
-          "veredicto": "con_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Existe una prohibición constitucional absoluta para que las personas extranjeras intervengan en la vida política mexicana.",
-              "sostenida": "si",
-              "motivo": "El texto utiliza la expresión 'no podrán de ninguna manera', lo cual respalda la idea de una prohibición absoluta para inmiscuirse en asuntos políticos."
-            },
-            {
-              "conclusion": "La persona extranjera que intervenga en política puede ser expulsada del territorio nacional por el Ejecutivo.",
-              "sostenida": "parcial",
-              "motivo": "Si bien el texto faculta al Ejecutivo para expulsar extranjeros con fundamento en la ley, no establece explícitamente que la inmiscusión en asuntos políticos sea la causa o el fundamento de dicha expulsión; son párrafos con disposiciones distintas."
-            },
-            {
-              "conclusion": "El Ejecutivo de la Unión es quien tiene la facultad de determinar la expulsión.",
-              "sostenida": "si",
-              "motivo": "El texto señala directamente que 'El Ejecutivo de la Unión... podrá expulsar del territorio nacional a personas extranjeras'."
-            },
-            {
-              "conclusion": "La expulsión debe realizarse mediante un procedimiento administrativo que garantice una audiencia previa.",
-              "sostenida": "si",
-              "motivo": "El texto exige que la expulsión sea 'previa audiencia' y que la ley regulará el 'procedimiento administrativo'."
-            }
-          ],
-          "objeciones": [
-            {
-              "donde": "elementos (efecto) y copy",
-              "problema": "Se establece una relación de causalidad directa entre la inmiscusión política y la expulsión que el texto oficial no contiene. El artículo 33 menciona la prohibición política y la facultad de expulsión en párrafos separados, sin vincular textualmente la primera como motivo de la segunda.",
-              "correccion": "Se debe aclarar que el Ejecutivo tiene la facultad de expulsar extranjeros conforme a la ley, pero evitar afirmar que la expulsión es la consecuencia directa de la inmiscusión política, ya que el texto no establece ese nexo causal."
-            }
-          ]
-        }
-      },
-      {
-        "etapa": "analisis",
-        "intento": 0,
-        "errores": []
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 0,
-        "auditoria_ia": {
-          "veredicto": "con_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
-              "sostenida": "si",
-              "motivo": "La conclusión es una derivación directa y exacta de la prohibición establecida en el artículo 33."
-            },
-            {
-              "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
-              "sostenida": "parcial",
-              "motivo": "La conclusión omite las condiciones de procedibilidad que la norma exige para el ejercicio de esa facultad: la previa audiencia y el fundamento en la ley."
-            }
-          ],
-          "objeciones": [
-            {
-              "donde": "Conclusión sobre la facultad de expulsión",
-              "problema": "La conclusión presenta la facultad de expulsión de forma absoluta, omitiendo los requisitos de 'previa audiencia' y 'con fundamento en la ley' que establece el texto constitucional.",
-              "correccion": "El Ejecutivo de la Unión, previa audiencia y con fundamento en la ley, podrá expulsar del territorio nacional a personas extranjeras."
-            }
-          ]
-        }
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 1,
-        "errores_esquema": [
-          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
-        ],
-        "visible": "  \n   \n No, la Constitución Política de los Estados Unidos Mexicanos establece que los extranjeros no podrán inmiscuirse en los asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n Artículo 33 constitucional"
-      },
-      {
-        "etapa": "reparacion_puntual",
-        "intento": 2,
-        "errores": [
-          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
-        ]
-      },
-      {
-        "etapa": "redaccion",
-        "intento": 2,
-        "auditoria_ia": {
-          "veredicto": "sin_objeciones",
-          "cobertura": {
-            "responde_nucleo": true,
-            "faltantes": []
-          },
-          "conclusiones": [
-            {
-              "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
-              "sostenida": "si",
-              "motivo": "El artículo 33 de la Constitución establece de forma expresa y literal esta prohibición."
-            },
-            {
-              "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
-              "sostenida": "si",
-              "motivo": "El artículo 33 de la Constitución faculta al Ejecutivo para realizar esta acción, condicionada a una previa audiencia y fundamento legal."
-            }
-          ],
-          "objeciones": []
-        }
-      }
-    ],
-    "familia_distinta": false
+  "F2": {
+   "tipo": "ley",
+   "nivel": "oficial",
+   "documento": "Constitución Política de los Estados Unidos Mexicanos",
+   "articulo": "33",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+   "texto_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+   "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 33",
+   "jurisdiccion": "federal",
+   "consultado": "2026-11-11"
   }
+ },
+ "afirmaciones": [
+  {
+   "id": "A1",
+   "tipo": "hecho_normativo",
+   "texto": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos del país.",
+   "fuente": "F1"
+  },
+  {
+   "id": "A2",
+   "tipo": "hecho_normativo",
+   "texto": "Las personas extranjeras gozan de los derechos humanos y garantías que reconoce la Constitución.",
+   "fuente": "F2"
+  }
+ ],
+ "razonamiento": {
+  "suficiente": true,
+  "pregunta": "¿Un extranjero puede participar en la política de México?",
+  "concepto_central": "participación en asuntos políticos",
+  "respuesta_corta": "No, la Constitución establece que los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+  "reglas": [
+   {
+    "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
+    "fuente": "F1",
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país.",
+    "condiciones": [],
+    "excepciones": [],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "33"
+    }
+   },
+   {
+    "conclusion": "Las personas extranjeras gozan de los derechos humanos y garantías que reconoce la Constitución.",
+    "fuente": "F2",
+    "cita_literal": "Son personas extranjeras las que no posean las calidades determinadas en el artículo 30 constitucional y gozarán de los derechos humanos y garantías que reconoce esta Constitución.",
+    "condiciones": [],
+    "excepciones": [],
+    "ref": {
+     "documento": "Constitución Política de los Estados Unidos Mexicanos",
+     "articulo": "33"
+    }
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La consecuencia jurídica es la prohibición expresa de que los extranjeros se inmiscuyan en los asuntos políticos del país.",
+    "fuente": "F1",
+    "cita_literal": "Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla qué actos específicos constituyen inmiscuirse en los asuntos políticos ni establece una sanción directa por dicha conducta en este artículo."
+ },
+ "generacion": {
+  "afirmaciones_eliminadas_sin_ancla": [],
+  "fuentes_descartadas": [],
+  "fecha": "2026-11-11T04:05:04+00:00",
+  "solicitud": "2027-01-20_imagen_T145-lote-7.json",
+  "metodo": "analisis_previo_v2_cobertura",
+  "metricas": {
+   "llamadas_ia": {
+    "investigador": 0,
+    "redactor": 7,
+    "auditor": 4
+   },
+   "llamadas_ia_total": 11,
+   "intentos_analisis": 1,
+   "intentos_redaccion": 6,
+   "investigacion_complementaria": false
+  },
+  "modelos": {
+   "investigador": [
+    "gemini:gemini-3.5-flash-lite",
+    "gemini:gemini-3-flash-preview",
+    "gemini:gemini-3.1-flash-lite",
+    "gemini:gemini-3.6-flash"
+   ],
+   "redactor": "gemini-3.5-flash-lite"
+  }
+ },
+ "pregunta_original": "¿Un extranjero puede participar en la política de México?",
+ "tipo_pregunta": "legalidad",
+ "revision_razonamiento": [],
+ "auditoria_ia": {
+  "veredicto": "sin_objeciones",
+  "modelo_auditor": "gemini-3.1-flash-lite",
+  "historial": [
+   {
+    "etapa": "analisis",
+    "reutilizado": true,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "errores_esquema": [
+     "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    ],
+    "visible": "  \n   \n No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, involucrarse en los asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n El Ejecutivo de la Unión puede expulsar previa audiencia."
+   },
+   {
+    "etapa": "reparacion_puntual",
+    "intento": 1,
+    "errores": [
+     "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    ]
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 1,
+    "errores_esquema": [
+     "[respuesta] La respuesta corta no aparece en el contenido visible: «No. La Constitución establece que las personas extranjeras no pueden, de ninguna manera, i»."
+    ],
+    "visible": "  \n   \n No. La Constitución prohíbe a los extranjeros involucrarse en asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n El Ejecutivo puede expulsar previa audiencia."
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 2,
+    "auditoria_ia": {
+     "veredicto": "con_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Existe una prohibición constitucional absoluta para que las personas extranjeras intervengan en la vida política mexicana.",
+       "sostenida": "si",
+       "motivo": "El texto utiliza la expresión 'no podrán de ninguna manera', lo cual respalda la idea de una prohibición absoluta para inmiscuirse en asuntos políticos."
+      },
+      {
+       "conclusion": "La persona extranjera que intervenga en política puede ser expulsada del territorio nacional por el Ejecutivo.",
+       "sostenida": "parcial",
+       "motivo": "Si bien el texto faculta al Ejecutivo para expulsar extranjeros con fundamento en la ley, no establece explícitamente que la inmiscusión en asuntos políticos sea la causa o el fundamento de dicha expulsión; son párrafos con disposiciones distintas."
+      },
+      {
+       "conclusion": "El Ejecutivo de la Unión es quien tiene la facultad de determinar la expulsión.",
+       "sostenida": "si",
+       "motivo": "El texto señala directamente que 'El Ejecutivo de la Unión... podrá expulsar del territorio nacional a personas extranjeras'."
+      },
+      {
+       "conclusion": "La expulsión debe realizarse mediante un procedimiento administrativo que garantice una audiencia previa.",
+       "sostenida": "si",
+       "motivo": "El texto exige que la expulsión sea 'previa audiencia' y que la ley regulará el 'procedimiento administrativo'."
+      }
+     ],
+     "objeciones": [
+      {
+       "donde": "elementos (efecto) y copy",
+       "problema": "Se establece una relación de causalidad directa entre la inmiscusión política y la expulsión que el texto oficial no contiene. El artículo 33 menciona la prohibición política y la facultad de expulsión en párrafos separados, sin vincular textualmente la primera como motivo de la segunda.",
+       "correccion": "Se debe aclarar que el Ejecutivo tiene la facultad de expulsar extranjeros conforme a la ley, pero evitar afirmar que la expulsión es la consecuencia directa de la inmiscusión política, ya que el texto no establece ese nexo causal."
+      }
+     ]
+    }
+   },
+   {
+    "etapa": "analisis",
+    "intento": 0,
+    "errores": []
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 0,
+    "auditoria_ia": {
+     "veredicto": "con_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
+       "sostenida": "si",
+       "motivo": "La conclusión es una derivación directa y exacta de la prohibición establecida en el artículo 33."
+      },
+      {
+       "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
+       "sostenida": "parcial",
+       "motivo": "La conclusión omite las condiciones de procedibilidad que la norma exige para el ejercicio de esa facultad: la previa audiencia y el fundamento en la ley."
+      }
+     ],
+     "objeciones": [
+      {
+       "donde": "Conclusión sobre la facultad de expulsión",
+       "problema": "La conclusión presenta la facultad de expulsión de forma absoluta, omitiendo los requisitos de 'previa audiencia' y 'con fundamento en la ley' que establece el texto constitucional.",
+       "correccion": "El Ejecutivo de la Unión, previa audiencia y con fundamento en la ley, podrá expulsar del territorio nacional a personas extranjeras."
+      }
+     ]
+    }
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 1,
+    "errores_esquema": [
+     "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    ],
+    "visible": "  \n   \n No, la Constitución Política de los Estados Unidos Mexicanos establece que los extranjeros no podrán inmiscuirse en los asuntos políticos del país. \n Los extranjeros no podrán de ninguna manera inmiscuirse en los asuntos políticos del país. \n Artículo 33 constitucional"
+   },
+   {
+    "etapa": "reparacion_puntual",
+    "intento": 2,
+    "errores": [
+     "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    ]
+   },
+   {
+    "etapa": "redaccion",
+    "intento": 2,
+    "auditoria_ia": {
+     "veredicto": "sin_objeciones",
+     "cobertura": {
+      "responde_nucleo": true,
+      "faltantes": []
+     },
+     "conclusiones": [
+      {
+       "conclusion": "Los extranjeros tienen prohibido inmiscuirse en los asuntos políticos de México.",
+       "sostenida": "si",
+       "motivo": "El artículo 33 de la Constitución establece de forma expresa y literal esta prohibición."
+      },
+      {
+       "conclusion": "El Ejecutivo de la Unión puede expulsar a personas extranjeras del territorio nacional.",
+       "sostenida": "si",
+       "motivo": "El artículo 33 de la Constitución faculta al Ejecutivo para realizar esta acción, condicionada a una previa audiencia y fundamento legal."
+      }
+     ],
+     "objeciones": []
+    }
+   }
+  ],
+  "familia_distinta": false
+ },
+ "ediciones": [
+  {
+   "fecha": "2026-11-11",
+   "por": "Claude (revisión editorial delegada)",
+   "que": "«OJO: Previa audiencia» suelto: hablaba de la expulsión (otro párrafo del art. 33) sin decirlo y no aportaba nada a la pregunta. Ahora el «ojo» dice el primer párrafo del mismo artículo (gozan de los derechos humanos y garantías que reconoce la Constitución), con su fuente literal (F2) y su regla en el análisis. Texto de publicación sin relleno («El texto oficial indica de forma clara…», «Si esta información te resulta útil…») y con citas literales."
+  }
+ ]
 }
