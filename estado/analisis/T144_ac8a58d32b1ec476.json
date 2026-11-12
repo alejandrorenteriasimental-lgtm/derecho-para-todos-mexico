@@ -1,0 +1,77 @@
+{
+ "tema_id": "T144",
+ "pregunta": "¿Si renuncias, te deben pagar prima de antigüedad?",
+ "fecha": "2026-11-12T16:24:36+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si renuncias, te deben pagar prima de antigüedad?",
+  "concepto_central": "separación voluntaria",
+  "respuesta_corta": "Depende: si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de servicio en la empresa.",
+  "reglas": [
+   {
+    "conclusion": "En caso de renuncia (separación voluntaria), el pago de la prima de antigüedad está condicionado a un tiempo mínimo de servicios.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.",
+    "condiciones": [
+     "Ser trabajador de planta",
+     "Que la separación sea voluntaria",
+     "Haber cumplido al menos quince años de servicios"
+    ],
+    "excepciones": [
+     "Muerte del trabajador (se paga sin importar la antigüedad)",
+     "Despido o separación justificada (no requieren los 15 años)"
+    ]
+   },
+   {
+    "conclusion": "El monto de esta prestación se calcula con base en los días laborados por año.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios",
+    "condiciones": [
+     "El cálculo del salario base debe seguir los límites de los artículos 485 y 486"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El trabajador tiene derecho a recibir el pago de doce días de salario por cada año de servicios prestados.",
+    "fuente": "F1",
+    "cita_literal": "La prima de antigüedad consistirá en el importe de doce días de salario, por cada año de servicios"
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "motivo": "El artículo 162 no establece el procedimiento legal ni el formato para reclamar el pago."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "motivo": "El texto no menciona ante qué instancia (Tribunal o Centro de Conciliación) se debe acudir en caso de falta de pago."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "motivo": "La ley no señala en este artículo el tiempo límite (prescripción) que tiene el trabajador para exigir la prima tras su renuncia."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Si una persona renuncia antes de cumplir los 15 años de servicio, no se genera la obligación legal de pagarle la prima de antigüedad bajo el concepto de retiro voluntario.",
+    "condicion": "Que la causa de terminación sea exclusivamente la voluntad del trabajador y no un despido o causa justificada de rescisión.",
+    "base": "F1, fracción III"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "renuncia (separación voluntaria)",
+    "b": "despido (separación por el patrón)",
+    "diferencia": "Para la renuncia se exigen 15 años de antigüedad para cobrar la prima, mientras que en el despido se paga independientemente de los años laborados o la justificación."
+   }
+  ],
+  "limites": "Los textos no definen el monto máximo del salario base para el cálculo (topes), ni el proceso para demandar el pago si el patrón se niega.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.9 s"
+      "detalle": "42.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.9 s"
+      "detalle": "42.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "33 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "d6f31d05bd29b519"
+      "detalle": "68b11defe5ad5bd9"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 9 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270122-T147",
     "titulo": "¿Puedes renunciar a tus derechos de consumidor?",
-    "fecha": "2026-11-12T10:37:25+00:00",
-    "sha256": "d6f31d05bd29b5193df7949ec044d32bd3f4bc8f4c73bb1c8071757c135b50f6",
-    "duracion_s": 38.9,
+    "fecha": "2026-11-12T16:28:29+00:00",
+    "sha256": "68b11defe5ad5bd9e94747624e2c1c5a6f0c8eed09dce9f9e98b3ab9c2aa8305",
+    "duracion_s": 42.4,
     "estado": "APTO",
-    "huella_guion": "8abee172b70f82560b11e06614e25ed96fc554605390808b95760696e4b93ec6",
+    "huella_guion": "c7643dcfab3d540cbba589a827a505e3c2eb135c5fb66f82760ad659d9b96bb3",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 17.9,
+      "narracion": 21.7,
       "musica": 1.8,
-      "render_video": 37.3,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.3
+      "render_video": 40.9,
+      "mezcla_audio": 1.4,
+      "auditoria_tecnica": 6.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.11,
-      "computo_equivalente_runner_usd": 0.0067,
+      "computo_minutos": 1.21,
+      "computo_equivalente_runner_usd": 0.0073,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1165,
-    "caracteres_narrados": 530
+    "frames": 1271,
+    "caracteres_narrados": 606
   }
 }

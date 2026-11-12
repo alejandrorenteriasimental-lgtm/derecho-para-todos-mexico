@@ -1,0 +1,53 @@
+{
+ "tema_id": "T143",
+ "pregunta": "¿Una tienda puede retenerte para revisarte?",
+ "fecha": "2026-11-12T16:22:15+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Una tienda puede retenerte para revisarte?",
+  "concepto_central": "libertad personal bajo pretexto de registro o averiguación",
+  "respuesta_corta": "No, los proveedores tienen prohibido realizar acciones que atenten contra la libertad o seguridad de los consumidores bajo pretexto de registro o averiguación.",
+  "reglas": [
+   {
+    "conclusion": "Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de los clientes con el fin de registrarlos o investigarlos.",
+    "fuente": "F1",
+    "cita_literal": "Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.",
+    "condiciones": [],
+    "excepciones": [
+     "En el caso de que alguien sea sorprendido en la comisión flagrante de un delito"
+    ]
+   },
+   {
+    "conclusion": "Si existe un delito flagrante, el personal de la tienda solo puede entregar a la persona a la autoridad correspondiente de manera inmediata.",
+    "fuente": "F1",
+    "cita_literal": "los proveedores, sus agentes o empleados se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente.",
+    "condiciones": [
+     "bajo su responsabilidad",
+     "sin demora"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.",
+    "fuente": "F1",
+    "cita_literal": "La infracción de esta disposición se sancionará de acuerdo con lo previsto en esta ley, independientemente de la reparación del daño moral y la indemnización por los daños y perjuicios ocasionados",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La tienda asume la responsabilidad civil por los daños causados si detiene a alguien y no logra demostrar que se cometió un delito.",
+    "condicion": "en caso de no comprobarse el delito imputado",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos no definen qué acciones específicas constituyen un atentado a la integridad, ni establecen el procedimiento ante la autoridad competente o los montos de las sanciones.",
+  "fuentes_irrelevantes": []
+ }
+}
