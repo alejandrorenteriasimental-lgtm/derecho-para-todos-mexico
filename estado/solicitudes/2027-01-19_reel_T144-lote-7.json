@@ -12,12 +12,12 @@
   "lote": "lote-7",
   "motivo_seleccion": "LFT art. 162 fr. III (texto oficial cotejado el 5-11-2026, registro/textos/LFT_162.json): «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Condición literal: quince años de servicios; también se paga a quienes se separen por causa justificada y a quienes sean separados, «independientemente de la justificación o injustificación del despido». Sustituye a LFT 110 (dos descartes, 12-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270119-T144",
   "archivo": "2027-01-19_reel_T144-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el monto máximo del salario base para el cálculo ni los plazos procesales para su reclamo.",
   "ultima_categoria": "juridico",
   "huella_entrada": "3bd2de77f2b00cd4",
@@ -36,7 +36,14 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n",
       "pregunta_anterior": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "primer descarte con LFT 162, en el análisis: concluyó que los textos no bastaban porque no definen el salario base máximo ni plazos de reclamo, que no forman parte de la pregunta. Se reabre con el ángulo que excluye monto, cálculo y plazos (la pregunta es solo si se paga al renunciar y con qué condición)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no definen el monto máximo del salario base para el cálculo ni los plazos procesales para su reclamo."
     }
   ],
-  "angulo": "Solo el art. 162 LFT (encabezado y fracciones I y III). Respuesta: Depende: si renuncias, solo si cumpliste por lo menos quince años de servicios; si te despiden, con o sin causa, sí. Cita literal ÚNICA: «se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Decir que es para trabajadores de planta («Los trabajadores de planta tienen derecho a una prima de antigüedad») y que equivale a doce días de salario por cada año de servicios (fr. I), sin explicar cómo se calcula el salario (arts. 485 y 486, no se tratan). Sin listas. No hablar de la fracción IV (retiros masivos) ni de muerte del trabajador. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
+  "angulo": "Solo el art. 162 LFT (encabezado y fracciones I y III). Respuesta: Depende: si renuncias, solo si cumpliste por lo menos quince años de servicios; si te despiden, con o sin causa, sí. Cita literal ÚNICA: «se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Decir que es para trabajadores de planta («Los trabajadores de planta tienen derecho a una prima de antigüedad») y que equivale a doce días de salario por cada año de servicios (fr. I), sin explicar cómo se calcula el salario (arts. 485 y 486, no se tratan). Sin listas. No hablar de la fracción IV (retiros masivos) ni de muerte del trabajador. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita. Fuera de la pregunta (no son límites que impidan responder): monto, salario base del cálculo, topes y plazos para reclamar; no mencionarlos."
 }

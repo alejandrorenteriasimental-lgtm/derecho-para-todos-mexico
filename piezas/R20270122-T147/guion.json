@@ -24,7 +24,29 @@
       "documento": "Ley Federal de Protección al Consumidor",
       "articulo": "1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
-      "texto_literal": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
+      "texto_literal": "La protección contra la publicidad engañosa y abusiva, métodos comerciales coercitivos y desleales, así como contra prácticas y cláusulas abusivas o impuestas en el abastecimiento de productos y servicios",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 1",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-12"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La información adecuada y clara sobre los diferentes productos y servicios",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 1",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-12"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La protección de la vida, salud y seguridad del consumidor",
       "cita": "Ley Federal de Protección al Consumidor, artículo 1",
       "jurisdiccion": "federal",
       "consultado": "2026-11-12"
@@ -35,15 +57,15 @@
       "tipo": "gancho",
       "texto": "¿Te dijeron que por firmar ya no puedes reclamar?",
       "titulo": [
-        "¿YA FIRMASTE?",
-        "Y NO TE DEJAN",
+        "¿FIRMASTE",
+        "Y YA NO PUEDES",
         "RECLAMAR?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Tus derechos son irrenunciables. La ley es obligatoria y te protege.",
+      "texto": "Sus disposiciones son irrenunciables y se aplican en toda la República.",
       "titulo": [
         "DERECHOS",
         "IRRENUNCIABLES"
@@ -52,7 +74,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "El artículo 1 dicta: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, con-venios o estipulaciones en contrario».",
+      "texto": "El artículo 1 dicta: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario».",
       "etiqueta": "Ley Federal de Protección al Consumidor, artículo 1",
       "cita": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
       "afirmaciones": [
@@ -67,29 +89,49 @@
     },
     {
       "tipo": "lista",
-      "texto": "Tienes derecho a información clara, seguridad y protección contra abusos.",
+      "texto": "Y entre sus principios básicos están la información adecuada y clara, tu seguridad y la protección contra cláusulas abusivas o impuestas.",
       "items": [
-        "Información clara",
-        "Protección vs abusos",
-        "Seguridad en consumo"
+        "Información adecuada y clara",
+        "Protección de tu seguridad",
+        "Contra cláusulas abusivas"
       ],
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Contra la observancia de la ley no pueden alegarse convenios o estipulaciones en contrario.",
+          "texto": "Es principio básico la información adecuada y clara sobre los diferentes productos y servicios.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Es principio básico la protección de la vida, salud y seguridad del consumidor.",
+          "fuente": "F4"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Es principio básico la protección contra prácticas y cláusulas abusivas o impuestas.",
           "fuente": "F2"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Ninguna firma te quita tus garantías legales. Si el contrato viola la ley, no vale.",
+      "texto": "Aunque firmes un convenio en contrario, no puede alegarse contra el cumplimiento de esta ley.",
       "titulo": [
-        "LA LEY",
-        "TE PROTEGE"
+        "FIRMAR NO TE",
+        "QUITA ESTOS",
+        "DERECHOS"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A5",
+          "tipo": "hecho_normativo",
+          "texto": "Contra la observancia de la ley no pueden alegarse convenios o estipulaciones en contrario.",
+          "fuente": "F1"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -102,7 +144,7 @@
     "suficiente": true,
     "pregunta": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
     "concepto_central": "irrenunciabilidad de los derechos del consumidor",
-    "respuesta_corta": "No. Las disposiciones de la ley son irrenunciables, por lo que no se pueden alegar convenios o estipulaciones en contrato que vayan en su contra.",
+    "respuesta_corta": "No. Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse convenios o estipulaciones en contrario.",
     "reglas": [
       {
         "conclusion": "Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.",
@@ -110,6 +152,45 @@
         "cita_literal": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
         "condiciones": [
           "Que se trate de disposiciones contenidas en la Ley Federal de Protección al Consumidor"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "1"
+        }
+      },
+      {
+        "conclusion": "Es principio básico en las relaciones de consumo la información adecuada y clara sobre productos y servicios.",
+        "fuente": "F3",
+        "cita_literal": "La información adecuada y clara sobre los diferentes productos y servicios",
+        "condiciones": [
+          "Que se trate de relaciones de consumo reguladas por la Ley Federal de Protección al Consumidor"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "1"
+        }
+      },
+      {
+        "conclusion": "Es principio básico en las relaciones de consumo la protección de la vida, salud y seguridad del consumidor.",
+        "fuente": "F4",
+        "cita_literal": "La protección de la vida, salud y seguridad del consumidor",
+        "condiciones": [
+          "Que se trate de relaciones de consumo reguladas por la Ley Federal de Protección al Consumidor"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "1"
+        }
+      },
+      {
+        "conclusion": "Es principio básico en las relaciones de consumo la protección contra prácticas y cláusulas abusivas o impuestas.",
+        "fuente": "F2",
+        "cita_literal": "La protección contra la publicidad engañosa y abusiva, métodos comerciales coercitivos y desleales, así como contra prácticas y cláusulas abusivas o impuestas en el abastecimiento de productos y servicios",
+        "condiciones": [
+          "Que se trate de relaciones de consumo reguladas por la Ley Federal de Protección al Consumidor"
         ],
         "excepciones": [],
         "ref": {
@@ -134,13 +215,7 @@
         "base": "El carácter de orden público e interés social de la norma establecido en el artículo 1."
       }
     ],
-    "distinciones": [
-      {
-        "a": "renuncia",
-        "b": "mutuo consentimiento",
-        "diferencia": "La renuncia es la separación decidida por una persona, mientras que el mutuo consentimiento es una terminación acordada por ambas partes."
-      }
-    ],
+    "distinciones": [],
     "limites": "El texto no detalla el proceso administrativo ante la autoridad para denunciar estas cláusulas ni los plazos específicos para hacerlo."
   },
   "generacion": {
@@ -173,7 +248,7 @@
   "pregunta_original": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Puedes renunciar a tus derechos de consumidor en un contrato?\n\nNo. Las disposiciones de la ley son irrenunciables, por lo que no se pueden alegar convenios o estipulaciones en contrato que vayan en su contra.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 1.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Puedes renunciar a tus derechos de consumidor en un contrato?\n\nNo. El artículo 1 de la Ley Federal de Protección al Consumidor dice: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario».\n\nEntre los principios básicos de las relaciones de consumo, el mismo artículo incluye «La información adecuada y clara sobre los diferentes productos y servicios» y la protección «contra prácticas y cláusulas abusivas o impuestas en el abastecimiento de productos y servicios».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 1.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -231,5 +306,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 1: gancho «¿YA FIRMASTE? Y NO TE DEJAN RECLAMAR?» con signos desbalanceados → «¿FIRMASTE Y YA NO PUEDES RECLAMAR?». Escena 2: «Tus derechos son irrenunciables. La ley es obligatoria y te protege» → «Sus disposiciones son irrenunciables y se aplican en toda la República» (art. 1). Escena 3: la narración y los subtítulos decían «con-venios» (guion intruso) → «convenios». Escena 4: la lista decía «Tienes derecho a…» con elementos sin fuente propia (A2 anclada al párrafo de irrenunciabilidad); ahora son principios básicos del art. 1 con fracciones III, I y VII como F3, F4 y F2 (citas literales), afirmaciones y reglas. Escena 5: «Ninguna firma te quita tus garantías legales. Si el contrato viola la ley, no vale» generalizaba (el art. 1 no habla de nulidad ni de garantías) → «Aunque firmes un convenio en contrario, no puede alegarse contra el cumplimiento de esta ley». Respuesta corta y texto con cita literal."
+    }
+  ]
 }

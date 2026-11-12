@@ -2,22 +2,22 @@
   "fecha": "2027-01-18",
   "formato": "reel",
   "tema_id": "T143",
-  "titulo": "¿Te pueden seguir mandando publicidad si dijiste que no?",
-  "gancho": "¿Te pueden seguir mandando publicidad si dijiste que no?",
-  "pregunta": "¿Te pueden seguir mandando publicidad si dijiste que no?",
+  "titulo": "¿Una tienda puede retenerte para revisarte?",
+  "gancho": "¿Una tienda puede retenerte para revisarte?",
+  "pregunta": "¿Una tienda puede retenerte para revisarte?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 18 Bis; LFPC art. 18",
+  "fuentes_sugeridas": "LFPC art. 10",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "LFPC art. 18 Bis (texto oficial en registro/textos/LFPC_18_Bis.json, consultado el 3-11-2026): «Queda prohibido a los proveedores […] enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». Condiciones literales: voluntad expresa o inscripción en el registro del art. 18 (gratuito). Sustituye a CPEUM 28 (dos descartes, 11-11).",
+  "motivo_seleccion": "LFPC art. 10 (texto oficial en registro/textos/LFPC_10.json, consultado el 26-10-2026; última reforma de la ley 12-12-2025): «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción literal: flagrancia, en la que solo pueden poner sin demora al presunto infractor a disposición de la autoridad competente. Sustituye a LFPC 18 Bis (dos descartes, 11 y 12-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
   "ultima_categoria": "juridico",
   "huella_entrada": "166ce9ce81bed81a",
@@ -36,7 +36,15 @@
       "motivo": "primer descarte con LFPC 18 Bis, en el análisis: el elemento «efecto» parafraseaba («es un…») sin cita literal del texto oficial. Se reabre con el efecto fijado en la cita literal «Queda prohibido a los proveedores»",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFPC 18 Bis (12-11: otra vez el elemento «efecto» parafraseado sin cita literal). Ahora LFPC 10, respuesta, excepción y efecto literales, alcance federal, sin uso en los lotes 4 a 8",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+      "pregunta_anterior": "¿Te pueden seguir mandando publicidad si dijiste que no?"
     }
   ],
-  "angulo": "Solo los arts. 18 Bis y 18 LFPC. Respuesta: No; está prohibido enviarte publicidad si dijiste expresamente que no la quieres o si estás inscrito en el registro público de consumidores. En el análisis, el elemento «efecto» (la consecuencia jurídica) es la prohibición y se respalda SOLO con la cita literal «Queda prohibido a los proveedores»; no describirlo como infracción, sanción o falta (eso no está en estos artículos). Cita literal de la condición (art. 18 Bis): «enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». El registro es el del art. 18: «un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios»; la inscripción es gratuita. No hablar de multas, de llamadas telefónicas específicas, de plazos ni de nombres comerciales del registro. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
+  "angulo": "Solo el primer y segundo párrafos del art. 10 LFPC. Respuesta: No; queda prohibido a cualquier proveedor llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. Efecto y cita literal ÚNICA de la regla: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción literal: «En el caso de que alguien sea sorprendido en la comisión flagrante de un delito, los proveedores, sus agentes o empleados se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente». No afirmar que nunca pueden revisar una bolsa ni hablar de multas o montos."
 }

@@ -500,3 +500,16 @@ def test_plazos_con_numeros_compuestos_en_letra():
     cpeum16 = "Ningún indiciado podrá ser retenido por el Ministerio Público por más de cuarenta y ocho horas"
     assert razonamiento.consecuencias_sin_sustento("Hasta 48 horas.", [cpeum16]) == []
     assert razonamiento.consecuencias_sin_sustento("Hasta 8 horas.", [cpeum16])
+
+
+def test_guion_dentro_de_palabra_en_la_narracion_se_rechaza():
+    """12-11-2026: R20270122-T147 narró y subtituló «con-venios»; las referencias como «330-E» siguen permitidas."""
+    import esquema
+    base = [{"tipo": "gancho", "texto": "¿Firmaste y ya no puedes reclamar? " + "y" * 300, "titulo": ["A"]},
+            {"tipo": "cierre", "texto": "Esto es información general, no asesoría legal.", "aviso": "Información general."}]
+    mal = {"formato": "reel", "escenas": [{**base[0], "texto": base[0]["texto"] + " usos, prácticas, con-venios o estipulaciones"}, base[1]]}
+    assert [e for e in esquema.validar(mal) if "con-venios" in e]
+    bien = {"formato": "reel", "escenas": [{**base[0], "texto": base[0]["texto"] + " artículo 330-E, convenios"}, base[1]]}
+    assert not [e for e in esquema.validar(bien) if "guion dentro" in e]
+    for f in sorted((AQUI.parent / "piezas").glob("R*/guion.json")):   # ningún Reel aprobado se ve afectado
+        assert not [e for e in esquema.validar(json.loads(f.read_text())) if "guion dentro" in e], f

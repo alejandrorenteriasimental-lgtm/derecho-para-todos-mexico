@@ -1,11 +1,14 @@
 """Validación estructural de guiones (Reel) y fichas (imagen fija) antes de cualquier verificación o producción.
 Un guion incompleto nunca llega a producirse: queda RETENIDO con la lista exacta de lo que falta."""
+import re
+
 MAX_NARRACION = 620   # ≈ 14.5 caracteres/s con pausas → ≤ 43 s (Reels de Instagram por API: ≤ 45 s, comprobado el 2-11-2026)
 TIPOS_ESCENA = {"gancho": ["titulo"], "titular": ["titulo"], "cita": ["cita", "etiqueta"], "lista": ["items"],
                 "excepcion": ["numero", "encabezado", "detalle", "fuente_corta"], "cierre": ["aviso"]}
 CAMPOS_FUENTE = ["url", "nivel", "documento", "articulo"]
 PLANTILLAS = {"concepto", "tres_claves", "mito_realidad", "diferencia", "dato"}
 LIMITES_IMAGEN = {"titular": 70, "bajada": 160, "punto": 70}
+GUION_INTERNO = re.compile(r"(?<![\w-])[a-záéíóúüñ]+-[a-záéíóúüñ]+(?![\w-])")
 
 
 def _fuentes(g, err):
@@ -61,6 +64,9 @@ def validar(g):
         if e.get("tipo") not in TIPOS_ESCENA: err.append(f"escena {i}: tipo desconocido «{e.get('tipo')}»"); continue
         if not (e.get("texto") or "").strip(): err.append(f"escena {i}: sin texto de narración")
         total += len(e.get("texto", ""))
+        # 12-11-2026: R20270122-T147 narró y subtituló «con-venios» (guion de partición dentro de la palabra)
+        for m in GUION_INTERNO.finditer(e.get("texto") or ""):
+            err.append(f"escena {i}: guion dentro de la palabra «{m.group(0)}» en la narración; escríbela completa y sin guion")
         for c in TIPOS_ESCENA[e["tipo"]]:
             if e.get(c) in (None, "", []): err.append(f"escena {i} ({e['tipo']}): falta «{c}»")
         _afirmaciones(e.get("afirmaciones", []), fu, err, f"escena {i}")
