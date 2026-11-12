@@ -1,0 +1,235 @@
+{
+  "id": "R20270122-T147",
+  "formato": "reel",
+  "titulo": "¿Puedes renunciar a tus derechos de consumidor?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T147",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 1",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-12"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 1",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-12"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te dijeron que por firmar ya no puedes reclamar?",
+      "titulo": [
+        "¿YA FIRMASTE?",
+        "Y NO TE DEJAN",
+        "RECLAMAR?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Tus derechos son irrenunciables. La ley es obligatoria y te protege.",
+      "titulo": [
+        "DERECHOS",
+        "IRRENUNCIABLES"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 1 dicta: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, con-venios o estipulaciones en contrario».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 1",
+      "cita": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Tienes derecho a información clara, seguridad y protección contra abusos.",
+      "items": [
+        "Información clara",
+        "Protección vs abusos",
+        "Seguridad en consumo"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Contra la observancia de la ley no pueden alegarse convenios o estipulaciones en contrario.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Ninguna firma te quita tus garantías legales. Si el contrato viola la ley, no vale.",
+      "titulo": [
+        "LA LEY",
+        "TE PROTEGE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+    "concepto_central": "irrenunciabilidad de los derechos del consumidor",
+    "respuesta_corta": "No. Las disposiciones de la ley son irrenunciables, por lo que no se pueden alegar convenios o estipulaciones en contrato que vayan en su contra.",
+    "reglas": [
+      {
+        "conclusion": "Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.",
+        "fuente": "F1",
+        "cita_literal": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
+        "condiciones": [
+          "Que se trate de disposiciones contenidas en la Ley Federal de Protección al Consumidor"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "1"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Cualquier acuerdo o cláusula en un contrato que intente eliminar estos derechos no podrá ser utilizado para evitar que se cumpla la ley.",
+        "fuente": "F1",
+        "cita_literal": "contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Un proveedor no puede validar legalmente una cláusula que elimine derechos del consumidor, incluso si este la firmó.",
+        "condicion": "Siempre que la cláusula sea contraria a lo dispuesto por la ley.",
+        "base": "El carácter de orden público e interés social de la norma establecido en el artículo 1."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "renuncia",
+        "b": "mutuo consentimiento",
+        "diferencia": "La renuncia es la separación decidida por una persona, mientras que el mutuo consentimiento es una terminación acordada por ambas partes."
+      }
+    ],
+    "limites": "El texto no detalla el proceso administrativo ante la autoridad para denunciar estas cláusulas ni los plazos específicos para hacerlo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-12T10:29:10+00:00",
+    "solicitud": "2027-01-22_reel_T147-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Puedes renunciar a tus derechos de consumidor en un contrato?\n\nNo. Las disposiciones de la ley son irrenunciables, por lo que no se pueden alegar convenios o estipulaciones en contrato que vayan en su contra.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 1.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[sustento] La conclusión «Las disposiciones protectoras del consumidor no se pueden renunciar ni» trata «renuncia», pero Ley Federal de Protección al Consumidor, art. 1 no regula ese concepto (no aparece en su texto)."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 665 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 45: recorta al menos 105 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te dijeron que ya no puedes reclamar porque firmaste un contrato? \n ¿YA FIRMASTE? \n Y NO TE DEJAN \n RECLAMAR? \n No puedes renunciar a tus derechos de consumidor. La ley es de orden público y sus beneficios son obligatorios. \n DERECHOS \n IRRENUNCIABLES \n El artículo 1 establece que: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario». \n Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario. \n Principios que te protegen: información clara y veraz, protección contra abusos y seguridad en el consumo."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 665 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 45: recorta al menos 105 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.",
+              "sostenida": "si",
+              "motivo": "El artículo 1 establece textualmente que las disposiciones de la ley son irrenunciables."
+            },
+            {
+              "conclusion": "No se pueden alegar convenios o estipulaciones en contrario para evitar el cumplimiento de la ley.",
+              "sostenida": "si",
+              "motivo": "El artículo 1 señala que contra la observancia de la ley no podrán alegarse convenios o estipulaciones en contrario."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

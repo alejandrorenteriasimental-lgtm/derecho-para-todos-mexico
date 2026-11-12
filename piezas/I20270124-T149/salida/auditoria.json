@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1182 KB"
+      "detalle": "1194 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1107"
+      "detalle": "fin del contenido en y=1109"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "56 palabras sin cabecera ni pie"
+      "detalle": "57 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 38 palabras reconocidas"
+      "detalle": "92% de 39 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,9 +96,9 @@
     "titulo": "¿Cuándo tu trabajo cuenta como teletrabajo?",
     "plantilla": "dato",
     "archivo": "I20270124-T149.png",
-    "sha256": "cded72d1f3068e49391d498f003df00f4a3f9c6c58c2b49233396ebd6e72e486",
-    "ahash": "1101111111111111111111111111111111111111111111111111111111011111100000000111011110000000011111111000100011111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000011111111111111111111111111111111111111111111111101",
-    "huella_guion": "54fe34187f6e9246493fbd31edbf7931f818cd7fc9f334351c13fae36acf5d0c",
+    "sha256": "ad54ad6d74c9c82efc57a9768882a4537dd99900be8651d6e4efd981397dfc10",
+    "ahash": "1000011111111111111111111111111111111111111111111101101111000111100000000010011110000000011111111000000011111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "2c91f0ca112e800e56386f756e8382b676ab624f7cae8c97936857170bf1d53f",
     "texto_alternativo": "Infografía que explica, con el artículo 330-A de la Ley Federal del Trabajo, que es teletrabajo cuando se trabaja más del 40% del tiempo en el domicilio propio o en el elegido, y que no lo es si es ocasional o esporádico.",
     "copy": "¿Cuándo tu trabajo desde casa cuenta como teletrabajo? El artículo 330-A de la Ley Federal del Trabajo dice que las reglas del teletrabajo se aplican a «las relaciones laborales que se desarrollen más del cuarenta por ciento del tiempo en el domicilio de la persona trabajadora bajo la modalidad de teletrabajo, o en el domicilio elegido por ésta».\n\nEl mismo artículo lo define como trabajo subordinado y remunerado fuera del establecimiento del patrón, «utilizando primordialmente las tecnologías de la información y comunicación».\n\nOjo: «No será considerado teletrabajo aquel que se realice de forma ocasional o esporádica».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
@@ -123,7 +123,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-12T04:14:41+00:00",
+    "fecha": "2026-11-12T10:39:35+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

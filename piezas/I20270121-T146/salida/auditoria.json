@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1181 KB"
+      "detalle": "1179 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -22,23 +22,23 @@
     },
     {
       "control": "Todo el texto dentro de márgenes seguros",
-      "resultado": "FALLA",
-      "detalle": "Ley General de Acces"
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
     },
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1051"
+      "detalle": "fin del contenido en y=1069"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "56 palabras sin cabecera ni pie"
+      "detalle": "59 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "92% de 38 palabras reconocidas"
+      "detalle": "93% de 41 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -57,11 +57,9 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "falla técnica de la imagen"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -98,11 +96,11 @@
     "titulo": "¿Qué es la violencia patrimonial?",
     "plantilla": "dato",
     "archivo": "I20270121-T146.png",
-    "sha256": "f2ded3f5702dc8e90c656dcb8381e9700201fefcb7f73b614c0ad6a59d7bb948",
-    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000011110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000111000000000000111111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "211812118b49a0dc3ddce284c7ec9e98f5a4e376e5e8b71e2190d3717b1f5e49",
+    "sha256": "b959e5641fb2f8d68a15cd1f6727d40c54cc78f76bf208c79e0da7ff359fcba9",
+    "ahash": "1001111111111111111111111111111111111111111111111111111111111111100000000000011110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "51749681cbbf0daf1cd1ec450c4593e4edde1af3a15083f87a4c32d698ecd00f",
     "texto_alternativo": "Imagen informativa que define la violencia patrimonial según el artículo 6, fracción III, de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.",
-    "copy": "La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, en su artículo 6, fracción III, establece la definición oficial de la violencia patrimonial.\n\nDe acuerdo con el texto legal, consiste en cualquier acto u omisión que afecta la supervivencia de la víctima. Esta conducta se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades.\n\nAsimismo, la norma prevé que esta modalidad de violencia puede abarcar los daños causados a los bienes comunes o propios de la víctima.\n\nGuarda esta publicación para tener a la mano lo que señala la ley o compártela con quien necesite esta información.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿Qué es la violencia patrimonial? La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia (art. 6, fracción III) la define así: «Es cualquier acto u omisión que afecta la supervivencia de la víctima».\n\nEl mismo artículo dice que se manifiesta en «la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades» y que puede abarcar los daños a los bienes comunes o propios de la víctima.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -115,11 +113,17 @@
         "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
         "articulo": "6",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+        "articulo": "6",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf"
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "RETENIDO",
-    "fecha": "2026-11-12T04:15:08+00:00",
+    "estado": "APTO",
+    "fecha": "2026-11-12T10:40:02+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

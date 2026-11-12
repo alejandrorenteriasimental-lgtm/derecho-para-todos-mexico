@@ -15,14 +15,14 @@
   "relacion": "independiente",
   "plantilla": "mito_realidad",
   "angulo": "Solo el art. 15 de la Ley de Amparo. Mito: «Solo tú puedes pedir tu propio amparo.» (no escribir el mito como regla absoluta a favor de terceros). Realidad: en casos graves y si estás imposibilitado, otra persona puede pedirlo en tu nombre, aunque sea menor de edad. Cita literal: «podrá hacerlo cualquiera otra persona en su nombre, aunque sea menor de edad». Condiciones literales que deben aparecer en la realidad o el «ojo»: actos que importen peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación o desaparición forzada de personas, entre otros, y que la persona agraviada se encuentre imposibilitada para promover el amparo. No decir «en cualquier situación» ni «cualquiera puede» sin esas condiciones.",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "I20270122-T147",
   "archivo": "2027-01-22_imagen_T147-lote-7.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Otra persona puede promover el amparo en nombre del agraviado si este se encuentra imposibilitado y se trata de actos específicos como peligro de vida, libertad o desaparición.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 15 d",
+  "ultima_categoria": "juridico",
   "huella_entrada": "6927f59f77dea8e9",
   "historial_reaperturas": [
     {

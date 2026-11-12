@@ -1,39 +1,88 @@
 {
  "solicitud": "2027-01-22_imagen_T147-lote-7.json",
- "fecha": "2026-11-11T04:06:27+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).\", \"[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier",
+ "fecha": "2026-11-12T10:32:42+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"Otra persona puede promover el amparo en nombre del agraviado si este se encuentra imposibilitado y se trata de actos específicos como peligro de vida, libertad o desaparición.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 15 d",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "[condiciones] Generalización: «Cualquiera puede promover un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
-    "[condiciones] Frase absoluta «Cualquiera puede promover un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
-   ],
-   "visible": "  \n   \n Cualquiera puede promover un amparo por ti en cualquier situación. \n Sí, cuando se trate de actos graves como peligro de vida o libertad y la persona esté imposibilitada."
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "El requisito de que la persona agraviada debe ratificar la demanda dentro de los tres días siguientes a su comparecencia para que el juicio se tramite; de lo contrario, la demanda se tendrá por no presentada y las medidas quedarán sin efecto."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Otra persona puede promover el amparo en nombre del agraviado si este se encuentra imposibilitado y se trata de actos específicos como peligro de vida, libertad o desaparición.",
+      "sostenida": "si",
+      "motivo": "La conclusión es jurídicamente válida y se ajusta estrictamente a las condiciones de procedencia (actos específicos e imposibilidad) señaladas en el artículo 15 de la Ley de Amparo."
+     },
+     {
+      "conclusion": "El juez decreta la suspensión de los actos y ordena medidas para lograr la comparecencia de la persona agraviada a ratificar la demanda.",
+      "sostenida": "si",
+      "motivo": "El texto oficial establece la obligación del órgano jurisdiccional de decretar la suspensión y dictar medidas para lograr la comparecencia con el fin de la ratificación."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy / Pieza",
+      "problema": "La pieza omite un límite procedimental esencial: la naturaleza provisional de la promoción por tercero. No menciona que la validez del juicio depende de la ratificación posterior de la persona agraviada.",
+      "correccion": "Se debe añadir que, una vez que la persona comparece, cuenta con un plazo de tres días para ratificar la demanda; si no lo hace, la demanda se tendrá por no presentada y las medidas dictadas perderán su efecto."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
-    "[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, cuando se trate de actos graves como peligro de vida o libertad y la persona esté impo».",
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («El juez decreta la suspensión de los actos y ordena medidas para lograr la comparecencia de la persona agraviada a ratificar la demanda.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n Cualquiera puede pedir un amparo por ti en cualquier situación. \n Solo si estás imposibilitado y se trata de actos graves como peligro de vida o libertad, según la Ley de Amparo."
+   "visible": "  \n   \n «Solo tú puedes pedir tu propio amparo.» \n Sí. Ante peligro de vida o libertad e imposibilidad, cualquiera puede pedirlo en tu nombre, incluso menores de edad."
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "errores_esquema": [
-    "[condiciones] Generalización: «Cualquiera puede pedir un amparo por ti en cualquier situación.» se presenta sin la condición que impone Ley de Amparo, art. 15 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»).",
-    "[condiciones] Frase absoluta «Cualquiera puede pedir un amparo por ti en cualquier situación.» sobre una regla condicionada de F1 («…cuando se trate de actos que importen peligro de privacion de la vida ataques a la liberta…»)."
-   ],
-   "visible": "  \n   \n Cualquiera puede pedir un amparo por ti en cualquier situación. \n Sí, pero solo ante actos graves —como peligro de vida o libertad— si estás imposibilitado para promoverlo."
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Otra persona puede promover el amparo en nombre del agraviado si este se encuentra imposibilitado y se trata de actos específicos como peligro de vida, libertad o desaparición.",
+      "sostenida": "si",
+      "motivo": "El artículo 15 de la Ley de Amparo establece explícitamente esta posibilidad bajo las condiciones de imposibilidad del agraviado y la naturaleza de los actos reclamados."
+     },
+     {
+      "conclusion": "El juez decreta la suspensión de los actos y ordena medidas para lograr la comparecencia de la persona agraviada a ratificar la demanda.",
+      "sostenida": "si",
+      "motivo": "El texto legal respalda esta consecuencia procesal inmediata."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy, párrafo 1",
+      "problema": "La redacción omite mencionar que la posibilidad de que un tercero promueva el amparo está condicionada a que la persona agraviada se encuentre imposibilitada para hacerlo por sí misma. Al listar los actos graves sin enfatizar la condición de 'imposibilidad', se podría interpretar erróneamente que cualquier persona puede promover un amparo por otra en estos casos, incluso si el agraviado está en pleno uso de sus facultades y capacidad para hacerlo él mismo.",
+      "correccion": "Aclarar explícitamente que la intervención de un tercero procede únicamente cuando la persona agraviada se encuentra imposibilitada para promover el amparo por sí misma."
+     },
+     {
+      "donde": "Copy, párrafo 3",
+      "problema": "La pieza afirma que el juez 'detiene el acto de autoridad de inmediato', lo cual es una simplificación que puede inducir a error. El texto legal dice que el juez 'decretará la suspensión de los actos reclamados', pero el proceso de ratificación posterior es crucial. Si la persona no ratifica, la demanda se tiene por no presentada y las providencias quedan sin efecto.",
+      "correccion": "Precisar que la suspensión es una medida provisional sujeta a la ratificación posterior de la demanda por parte del agraviado o su representante, y que de no ocurrir, la demanda se tiene por no presentada."
+     }
+    ]
+   }
   }
  ]
 }
