@@ -33,3 +33,7 @@ Actualizado: 26-10-2026. Este documento no contiene contraseñas ni claves; solo
 - 26-10-2026 19:28: el usuario confirma que **@aquidicelaley en TikTok es suya y la abrió él personalmente**; se conserva tal como está. No cambiar el nombre visible ni publicar sin su autorización.
 - 27-10-2026 07:10: TikTok @aquidicelaley: verificación en dos pasos **activada** (confirmado por el usuario).
 - 27-10-2026 07:11: TikTok: el correo y el teléfono de la cuenta son del usuario (confirmado). **Autoriza cambiar el nombre visible a «Aquí Dice la Ley» el 2-11-2026** (recordatorio programado); el usuario @aquidicelaley no cambia.
+
+## Monetización (12-11-2026)
+- Facebook · Monetización de contenido: la Página «Aquí Dice la Ley» quedó **en la lista de espera** («Notificarme», autorizado por el responsable el 12-11). Programa por invitación; estar en la lista no garantiza acceso.
+- Primera revisión de monetización de las cuatro redes: alrededor del 04-01-2027, con 6 semanas de datos reales.
