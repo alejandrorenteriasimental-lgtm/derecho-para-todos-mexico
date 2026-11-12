@@ -1,0 +1,128 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1181 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley General de A»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "FALLA",
+      "detalle": "Ley General de Acces"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1051"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "56 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "92% de 38 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "RETENIDO",
+    "tipo_retencion": "sustantivo",
+    "motivos": [
+      "falla técnica de la imagen"
+    ],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270121-T146",
+    "formato": "imagen",
+    "titulo": "¿Qué es la violencia patrimonial?",
+    "plantilla": "dato",
+    "archivo": "I20270121-T146.png",
+    "sha256": "f2ded3f5702dc8e90c656dcb8381e9700201fefcb7f73b614c0ad6a59d7bb948",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000011110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000111000000000000111111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "211812118b49a0dc3ddce284c7ec9e98f5a4e376e5e8b71e2190d3717b1f5e49",
+    "texto_alternativo": "Imagen informativa que define la violencia patrimonial según el artículo 6, fracción III, de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.",
+    "copy": "La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, en su artículo 6, fracción III, establece la definición oficial de la violencia patrimonial.\n\nDe acuerdo con el texto legal, consiste en cualquier acto u omisión que afecta la supervivencia de la víctima. Esta conducta se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades.\n\nAsimismo, la norma prevé que esta modalidad de violencia puede abarcar los daños causados a los bienes comunes o propios de la víctima.\n\nGuarda esta publicación para tener a la mano lo que señala la ley o compártela con quien necesite esta información.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+        "articulo": "6",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+        "articulo": "6",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "RETENIDO",
+    "fecha": "2026-11-12T04:15:08+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

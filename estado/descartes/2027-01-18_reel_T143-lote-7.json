@@ -1,89 +1,21 @@
 {
  "solicitud": "2027-01-18_reel_T143-lote-7.json",
- "fecha": "2026-11-11T03:54:40+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"En México existe una prohibición general contra los monopolios y las prácticas que limitan la libre competencia.\", \"sostenida\": \"si\", \"motivo\": \"El artículo 28 establece la prohibición expresa de monopolios y prácticas monopó",
+ "fecha": "2026-11-12T03:55:10+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
  "historial": [
   {
    "etapa": "analisis",
-   "reutilizado": true,
-   "errores": []
-  },
-  {
-   "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "narración de 662 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 42: recorta al menos 102 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La ley castigará y las autoridades perseguirán cualquier concentración de artículos de consumo necesario que busque subir precios o evitar la libre competencia.»), pero la pieza no lo dice: agrégalo al texto visible."
-   ],
-   "visible": "  \n ¿Están prohibidos los monopolios en México? \n ¿MONOPOLIOS \n PROHIBIDOS \n EN MÉXICO? \n Sí, están prohibidos por la Constitución, aunque hay excepciones para áreas estratégicas, trabajadores y patentes. \n RESPUESTA \n CONSTITUCIONAL \n El artículo 28 dice: En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes. \n En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes. \n N"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
    "errores": [
-    "narración de 662 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 42: recorta al menos 102 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La ley castigará y las autoridades perseguirán cualquier concentración de artículos de consumo necesario que busque subir precios o evitar la libre competencia.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor const») no trae una cita literal que esté en el texto oficial de su fuente."
    ]
   },
   {
-   "etapa": "redaccion",
+   "etapa": "analisis",
    "intento": 1,
-   "errores_esquema": [
-    "narración de 635 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 15: recorta al menos 75 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ],
-   "visible": "  \n ¿Están prohibidos los monopolios en México? \n ¿MONOPOLIOS \n PROHIBIDOS \n EN MÉXICO? \n Sí, la Constitución los prohíbe, con excepciones fijadas por la ley. \n RESPUESTA \n CONSTITUCIONAL \n En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes. \n En los Estados Unidos Mexicanos quedan prohibidos los monopolios, las prácticas monopólicas, los estancos, las condonaciones de impuestos y las exenciones de impuestos en los términos y condiciones que fijan las leyes. \n Se exceptúan las áreas estratégicas del Estado y las patentes. \n Áre"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 2,
    "errores": [
-    "narración de 635 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 15: recorta al menos 75 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente."
    ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 2,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": []
-    },
-    "conclusiones": [
-     {
-      "conclusion": "En México existe una prohibición general contra los monopolios y las prácticas que limitan la libre competencia.",
-      "sostenida": "si",
-      "motivo": "El artículo 28 establece la prohibición expresa de monopolios y prácticas monopólicas."
-     },
-     {
-      "conclusion": "El Estado puede ser el único prestador de ciertos servicios sin que esto se considere un monopolio prohibido.",
-      "sostenida": "si",
-      "motivo": "El texto constitucional enumera explícitamente áreas estratégicas que no constituyen monopolios."
-     },
-     {
-      "conclusion": "La ley castiga acaparar artículos de consumo para evitar alzar precios.",
-      "sostenida": "si",
-      "motivo": "El artículo 28 señala que la ley castigará la concentración o acaparamiento de artículos de consumo necesario con el objeto de alzar precios."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Escena 3 (Cita)",
-      "problema": "La afirmación A1 dice: 'En México quedan prohibidos los monopolios en los términos que fijan las leyes'. Esto es impreciso porque la Constitución no solo dice que se prohíben en los términos de la ley, sino que la propia Constitución establece la prohibición y las excepciones.",
-      "correccion": "Ajustar la afirmación para reflejar que la prohibición emana de la Constitución misma, y que las leyes fijan los términos y condiciones de dicha prohibición y sus excepciones."
-     },
-     {
-      "donde": "Escena 4 (Excepción)",
-      "problema": "La afirmación A2 dice: 'La norma constitucional establece explícitamente la prohibición de monopolios'. Aunque es correcta, es redundante y no explica la excepción mencionada en el texto de la escena (áreas estratégicas y patentes).",
-      "correccion": "La afirmación debe vincularse directamente con la excepción, por ejemplo: 'La Constitución exceptúa de la prohibición de monopolios a las áreas estratégicas del Estado y a los privilegios temporales para autores e inventores'."
-     },
-     {
-      "donde": "Escena 5 (Titular)",
-      "problema": "La afirmación A3 dice: 'Las funciones del Estado en áreas estratégicas no constituyen monopolios'. Es correcta, pero el texto de la escena menciona 'En resumen, regla y excepciones', y la afirmación A3 solo menciona la excepción, omitiendo la regla general de prohibición.",
-      "correccion": "Complementar la afirmación para que sea equilibrada: 'Si bien los monopolios están prohibidos, las funciones que el Estado ejerce en áreas estratégicas no se consideran como tales'."
-     }
-    ]
-   }
   }
  ]
 }

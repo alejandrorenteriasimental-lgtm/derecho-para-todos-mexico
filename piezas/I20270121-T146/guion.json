@@ -1,0 +1,180 @@
+{
+  "id": "I20270121-T146",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Qué es la violencia patrimonial?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T146",
+  "pieza": {
+    "titular": "¿Qué es la violencia patrimonial?",
+    "bajada": "Es la conducta que afecta la supervivencia de la víctima mediante sus bienes o recursos.",
+    "cita": "Es cualquier acto u omisión que afecta la supervivencia de la víctima.",
+    "etiqueta_cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+    "ojo": "Se manifiesta en la transformación, sustracción, destrucción, retenció",
+    "fuente_visible": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 6"
+  },
+  "copy": "La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, en su artículo 6, fracción III, establece la definición oficial de la violencia patrimonial.\n\nDe acuerdo con el texto legal, consiste en cualquier acto u omisión que afecta la supervivencia de la víctima. Esta conducta se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades.\n\nAsimismo, la norma prevé que esta modalidad de violencia puede abarcar los daños causados a los bienes comunes o propios de la víctima.\n\nGuarda esta publicación para tener a la mano lo que señala la ley o compártela con quien necesite esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que define la violencia patrimonial según el artículo 6, fracción III, de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "Es cualquier acto u omisión que afecta la supervivencia de la víctima.",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-12"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-12"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La violencia patrimonial se define como cualquier acto u omisión que afecta la supervivencia de la víctima.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La violencia patrimonial se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer necesidades.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué es la violencia patrimonial?",
+    "concepto_central": "violencia patrimonial",
+    "respuesta_corta": "Significa cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, recursos y derechos.",
+    "reglas": [
+      {
+        "conclusion": "La violencia patrimonial consiste en actos u omisiones que afectan la supervivencia de la víctima a través de la afectación de sus bienes, valores, documentos o recursos económicos.",
+        "fuente": "F1",
+        "cita_literal": "Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores,",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+          "articulo": "6"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Es cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, documentos o recursos.",
+        "fuente": "F1",
+        "cita_literal": "Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores,"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial define qué es la violencia patrimonial y cómo se manifiesta, pero no detalla sanciones, autoridades competentes ni procedimientos para su denuncia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-12T04:04:19+00:00",
+    "solicitud": "2027-01-21_imagen_T146-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Qué es la violencia patrimonial?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Es cualquier acto u omisión que afecta la supervivencia de la víctima mediante la afectación de sus bienes, documentos o recursos. \n Es cualquier acto u omisión que afecta la supervivencia de la víctima. \n Incluye la retención o sustracción de documentos y bienes."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n Es la conducta que afecta la supervivencia de la víctima mediante sus bienes o recursos. \n Es cualquier acto u omisión que afecta la supervivencia de la víctima. \n Afecta bienes, documentos o recursos."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La violencia patrimonial consiste en cualquier acto u omisión que afecta la supervivencia de la víctima, manifestándose en la afectación de bienes, documentos, valores o recursos económicos.",
+              "sostenida": "si",
+              "motivo": "El artículo 6, fracción III, define explícitamente la violencia patrimonial como cualquier acto u omisión que afecta la supervivencia de la víctima y enumera las formas en que se manifiesta, coincidiendo con lo expuesto en la pieza."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

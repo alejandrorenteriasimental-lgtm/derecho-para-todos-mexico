@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.6 s"
+      "detalle": "35.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.6 s"
+      "detalle": "35.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "28 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "6fb64bcd1ec53811"
+      "detalle": "e9aedebf8f13065c"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -82,12 +82,10 @@
     }
   ],
   "juridica": {
-    "decision": "APTO_CON_CRITERIO",
+    "decision": "APTO",
     "tipo_retencion": null,
-    "motivos": [
-      "A3: REQUIERE_CRITERIO"
-    ],
-    "verificacion": "APTA_CON_CRITERIO",
+    "motivos": [],
+    "verificacion": "APTA",
     "carril": "A",
     "reglas": [
       {
@@ -120,27 +118,27 @@
   "registro": {
     "id": "R20270123-T148",
     "titulo": "¿Tienes derecho a un abogado gratuito si eres víctima?",
-    "fecha": "2026-11-11T10:29:50+00:00",
-    "sha256": "6fb64bcd1ec5381182a67b1ead09c3e117cfbbc93b94888dca77ce6e13f3c133",
-    "duracion_s": 41.6,
-    "estado": "APTO_CON_CRITERIO",
-    "huella_guion": "55340ca8d53a7f71a3b1a1a088a296a383168bfec373dd8903266ab5973e203b",
+    "fecha": "2026-11-12T04:07:24+00:00",
+    "sha256": "e9aedebf8f13065c711e34a2b340de28ffba54a01a76bd15c1ea8b245018a76b",
+    "duracion_s": 35.9,
+    "estado": "APTO",
+    "huella_guion": "7a3a700b76c51190b5a97d7a056426f4301fe221d99890166e61124c5bd588f1",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 19.8,
-      "musica": 1.8,
-      "render_video": 38.3,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 9.0
+      "narracion": 22.9,
+      "musica": 1.7,
+      "render_video": 47.3,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 9.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.18,
-      "computo_equivalente_runner_usd": 0.0071,
+      "computo_minutos": 1.38,
+      "computo_equivalente_runner_usd": 0.0083,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1246,
-    "caracteres_narrados": 595
+    "frames": 1076,
+    "caracteres_narrados": 501
   }
 }

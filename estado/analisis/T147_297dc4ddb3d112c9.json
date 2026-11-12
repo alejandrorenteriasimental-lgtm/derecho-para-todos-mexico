@@ -1,0 +1,48 @@
+{
+ "tema_id": "T147",
+ "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+ "fecha": "2026-11-12T03:59:34+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+  "concepto_central": "plazo para presentar la demanda de amparo",
+  "respuesta_corta": "Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones de treinta días, siete u ocho años, o en cualquier tiempo.",
+  "reglas": [
+   {
+    "conclusion": "El plazo ordinario para interponer una demanda de amparo es de quince días.",
+    "fuente": "F1",
+    "cita_literal": "El plazo para presentar la demanda de amparo es de quince días, salvo",
+    "condiciones": [
+     "Aplica salvo que el acto reclamado se encuentre en alguna de las excepciones expresas de la ley."
+    ],
+    "excepciones": [
+     "Reclamación de normas generales autoaplicativas o extradición (30 días).",
+     "Sentencia definitiva condenatoria en proceso penal que imponga pena de prisión (hasta 8 años).",
+     "Privación total o parcial de derechos agrarios a núcleos ejidales o comunales (7 años).",
+     "Actos que impliquen peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, desaparición forzada u otros prohibidos por el artículo 22 constitucional (en cualquier tiempo)."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La norma establece un plazo general de quince días para presentar la demanda de amparo.",
+    "fuente": "F1",
+    "cita_literal": "El plazo para presentar la demanda de amparo es de quince días, salvo"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El plazo aplicable se determina en función de la naturaleza del acto reclamado o del derecho afectado.",
+    "fuente": "F1",
+    "cita_literal": "Cuando se reclame una norma general autoaplicativa, o el procedimiento de extradición, en que será de treinta días"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Este artículo no establece las reglas sobre qué días se consideran hábiles o inhábiles para el cómputo del plazo.",
+  "fuentes_irrelevantes": []
+ }
+}

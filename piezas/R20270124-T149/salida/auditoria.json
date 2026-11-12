@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.7 s"
+      "detalle": "40.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.7 s"
+      "detalle": "40.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "de89ab2850ac81ed"
+      "detalle": "43b80793208113ed"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270124-T149",
     "titulo": "¿En home office tienes derecho a desconectarte?",
-    "fecha": "2026-11-11T10:31:44+00:00",
-    "sha256": "de89ab2850ac81ed8624e7c5255ffa6cefaaaa466ab94a4268d3f7b664b17efd",
-    "duracion_s": 38.7,
+    "fecha": "2026-11-12T04:11:43+00:00",
+    "sha256": "43b80793208113ed5f46d34d2bfe7ad5cee587a7957bf01bc1348e96130bd248",
+    "duracion_s": 40.7,
     "estado": "APTO",
-    "huella_guion": "b39c8b477408423d6e5ffa088997e6e9a7cd46bfe8c368bc5ce8a1b9bbaf3166",
+    "huella_guion": "0ad04f89b215b3fc29296bb53d5a63928be8198c43710d2a02ef7df6120fe733",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.5,
-      "musica": 1.7,
-      "render_video": 36.2,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.6
+      "narracion": 23.5,
+      "musica": 2.0,
+      "render_video": 47.6,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.5
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.11,
-      "computo_equivalente_runner_usd": 0.0067,
+      "computo_minutos": 1.43,
+      "computo_equivalente_runner_usd": 0.0086,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1158,
-    "caracteres_narrados": 555
+    "frames": 1218,
+    "caracteres_narrados": 589
   }
 }

@@ -1,22 +1,44 @@
 {
  "solicitud": "2027-01-22_reel_T147-lote-7.json",
- "fecha": "2026-11-11T10:17:10+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Generalización: «Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones q» se presenta sin la condición que impone Ley de Amparo, art. 17 («…ra presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradicion en qu…»).\", \"[sus",
+ "fecha": "2026-11-12T04:00:52+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 5: el encabezado visible «Peligro de privación de la vida» no corresponde a lo que se narra («Los plazos varían según el acto reclamado.»).\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para presentar un amparo? \\n ¿CUÁNTO TIEMPO \\n TIENES PARA \\n UN AMPARO? \\n Depende del acto reclamado: el plazo general es de quince días, ",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 674 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 54: recorta al menos 114 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[condiciones] Frase absoluta «Depende del acto reclamado: el plazo general es de quince días, pero existen exc» sobre una regla condicionada de F3 («…plazo para presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradici…»)."
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para presentar un amparo? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n UN AMPARO? \n Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones de treinta días, siete u ocho años, o en cualquier tiempo. \n PLAZO GENERAL Y \n EXCEPCIONES \n La norma señala: El plazo para presentar la demanda de amparo es de quince días, salvo sus excepciones. \n El plazo para presentar la demanda de amparo es de quince días, salvo \n Son treinta días en extradición, siete años en derechos agrarios y ocho años en sentencias de prisión. \n 30 días: extradición \n 8 años: pena de prisión \n 7 años: derechos agrarios \n Ante peligro de privación de la vida o ataques a la libertad"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 633 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 13: recorta al menos 73 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para presentar un amparo? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n UN AMPARO? \n Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones específicas. \n PLAZO GENERAL \n Y EXCEPCIONES \n La norma establece que El plazo para presentar la demanda de amparo es de quince días, salvo supuestos previstos. \n El plazo para presentar la demanda de amparo es de quince días, salvo \n Los plazos varían según el acto reclamado y el derecho afectado en cada situación. \n Norma autoaplicativa \n Sentencia penal \n Derechos agrarios \n En actos de peligro de privación de la vida o ataques a la libertad, puede presentarse en cualquier tiempo. \n Peligro de privación d"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
    "errores": [
-    "[sustento] La cita de la conclusión «No existe un plazo límite para presentar el amparo cuando se» no está en Ley de Amparo, art. 17."
+    "narración de 633 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 13: recorta al menos 73 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ]
   },
   {
-   "etapa": "analisis",
-   "intento": 1,
-   "errores": [
-    "[condiciones] Generalización: «Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones q» se presenta sin la condición que impone Ley de Amparo, art. 17 («…ra presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradicion en qu…»).",
-    "[sustento] La cita de la conclusión «No existe un límite de tiempo cuando el acto pone en riesgo » no está en Ley de Amparo, art. 17."
-   ]
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[coherencia] Escena 5: el encabezado visible «Peligro de privación de la vida» no corresponde a lo que se narra («Los plazos varían según el acto reclamado.»)."
+   ],
+   "visible": "  \n ¿Cuánto tiempo tienes para presentar un amparo? \n ¿CUÁNTO TIEMPO \n TIENES PARA \n UN AMPARO? \n Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones específicas. \n PLAZO GENERAL \n Y EXCEPCIONES \n La norma establece que El plazo para presentar la demanda de amparo es de quince días, salvo supuestos previstos. \n El plazo para presentar la demanda de amparo es de quince días, salvo \n El plazo para presentar la demanda de amparo es de quince días, salvo supuestos previstos. \n Norma autoaplicativa \n Sentencia penal \n Derechos agrarios \n Los plazos varían según el acto reclamado. \n Peligro de privación de la vida \n Presentación en cualquier tiempo \n Por ello, "
   }
  ]
 }
