@@ -17,10 +17,19 @@ instalar() {
   timeout 150 sudo apt-get "${OPC[@]}" update -q && \
   timeout 240 sudo DEBIAN_FRONTEND=noninteractive apt-get "${OPC[@]}" install -y -q --no-install-recommends tesseract-ocr tesseract-ocr-spa
 }
+# 12-11-2026: el cambio de espejo borraba /etc/apt/apt-mirrors.txt, pero en ubuntu-latest (26.04) las fuentes apuntan a
+# «mirror+file:/etc/apt/apt-mirrors.txt»; sin el archivo, apt quedaba sin repositorios (ciclo 43053554282 falló así).
+# Ahora el archivo se reescribe con el espejo principal y las fuentes «mirror+file:» se reemplazan por él.
+ESPEJO="http://archive.ubuntu.com/ubuntu/"
+cambiar_espejo() {
+  echo "cambiando de espejo a $ESPEJO"
+  echo "$ESPEJO" | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+  sudo sed -i -E "s#mirror\+file:/etc/apt/apt-mirrors\.txt/?#${ESPEJO}#g; s#https?://[a-z.]*archive\.ubuntu\.com/ubuntu/?#${ESPEJO}#g" \
+    /etc/apt/sources.list /etc/apt/sources.list.d/*.sources /etc/apt/sources.list.d/*.list 2>/dev/null || true
+}
 for i in 1 2 3; do
   echo "intento $i (tesseract)"; date -u +%T
   if instalar; then tesseract --list-langs 2>&1 | grep -q '^spa$' && { echo "tesseract spa OK"; exit 0; }; fi
-  echo "cambiando de espejo"; sudo sed -i -E 's#https?://[a-z.]*archive\.ubuntu\.com#http://archive.ubuntu.com#g; s#http://azure\.archive\.ubuntu\.com#http://archive.ubuntu.com#g' /etc/apt/sources.list /etc/apt/sources.list.d/*.sources 2>/dev/null
-  sudo rm -f /etc/apt/apt-mirrors.txt 2>/dev/null; sleep 5
+  cambiar_espejo; sleep 5
 done
 echo "No se pudo instalar tesseract tras 3 intentos"; exit 1
