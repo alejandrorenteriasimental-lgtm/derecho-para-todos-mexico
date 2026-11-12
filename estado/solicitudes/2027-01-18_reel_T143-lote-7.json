@@ -12,12 +12,12 @@
   "lote": "lote-7",
   "motivo_seleccion": "LFPC art. 10 (texto oficial en registro/textos/LFPC_10.json, consultado el 26-10-2026; última reforma de la ley 12-12-2025): «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción literal: flagrancia, en la que solo pueden poner sin demora al presunto infractor a disposición de la autoridad competente. Sustituye a LFPC 18 Bis (dos descartes, 11 y 12-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se especifica ante qué autoridad se debe poner al presunto infractor (la ley solo menciona 'autoridad competente').\"]}, \"conclusiones\": [{\"conclusion\": \"Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de lo",
   "ultima_categoria": "juridico",
   "huella_entrada": "d0aa0bf51d6984bb",
@@ -44,7 +44,14 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
       "pregunta_anterior": "¿Te pueden seguir mandando publicidad si dijiste que no?"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "primer descarte con LFPC 10, en la redacción: narración larga (774 y 640 caracteres) y auditoría con objeción en la excepción (faltaba que la entrega es «bajo su responsabilidad» de proveedores, agentes o empleados). Se reabre con ángulo más corto: sin el párrafo de sanciones, la excepción con su cita literal completa y «autoridad competente» sin precisar cuál",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se especifica ante qué autoridad se debe poner al presunto infractor (la ley solo menciona 'autoridad competente').\"]}, \"conclusiones\": [{\"conclusion\": \"Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de lo"
     }
   ],
-  "angulo": "Solo el primer y segundo párrafos del art. 10 LFPC. Respuesta: No; queda prohibido a cualquier proveedor llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. Efecto y cita literal ÚNICA de la regla: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción literal: «En el caso de que alguien sea sorprendido en la comisión flagrante de un delito, los proveedores, sus agentes o empleados se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente». No afirmar que nunca pueden revisar una bolsa ni hablar de multas o montos."
+  "angulo": "Solo los dos primeros enunciados del art. 10 LFPC. Respuesta: No; queda prohibido a cualquier proveedor llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. Cita literal ÚNICA de la regla: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción, dicha completa y con su cita literal: «En el caso de que alguien sea sorprendido en la comisión flagrante de un delito, los proveedores, sus agentes o empleados se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente». Fuera de la pregunta (no son faltantes): qué autoridad concreta es la competente, sanciones, multas, reparación del daño e indemnización; no mencionarlos. No afirmar que nunca pueden revisar una bolsa. Sin listas. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita; no repetir la cita en otra escena."
 }

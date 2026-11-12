@@ -65,7 +65,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sus disposiciones son irrenunciables y se aplican en toda la República.",
+      "texto": "Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.",
       "titulo": [
         "DERECHOS",
         "IRRENUNCIABLES"
@@ -74,7 +74,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "El artículo 1 dicta: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario».",
+      "texto": "La ley dice: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario».",
       "etiqueta": "Ley Federal de Protección al Consumidor, artículo 1",
       "cita": "Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario.",
       "afirmaciones": [
@@ -312,6 +312,11 @@
       "fecha": "2026-11-12",
       "por": "Claude (revisión editorial delegada)",
       "que": "Escena 1: gancho «¿YA FIRMASTE? Y NO TE DEJAN RECLAMAR?» con signos desbalanceados → «¿FIRMASTE Y YA NO PUEDES RECLAMAR?». Escena 2: «Tus derechos son irrenunciables. La ley es obligatoria y te protege» → «Sus disposiciones son irrenunciables y se aplican en toda la República» (art. 1). Escena 3: la narración y los subtítulos decían «con-venios» (guion intruso) → «convenios». Escena 4: la lista decía «Tienes derecho a…» con elementos sin fuente propia (A2 anclada al párrafo de irrenunciabilidad); ahora son principios básicos del art. 1 con fracciones III, I y VII como F3, F4 y F2 (citas literales), afirmaciones y reglas. Escena 5: «Ninguna firma te quita tus garantías legales. Si el contrato viola la ley, no vale» generalizaba (el art. 1 no habla de nulidad ni de garantías) → «Aunque firmes un convenio en contrario, no puede alegarse contra el cumplimiento de esta ley». Respuesta corta y texto con cita literal."
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 2: la narración empezaba «Sus disposiciones son irrenunciables y se aplican en toda la República» justo después del gancho, sin decir de qué ley (posesivo sin antecedente para quien escucha) → «Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables.» Escena 3: «El artículo 1 dicta:» → «La ley dice:» (para mantener la narración ≤ 620 caracteres; la etiqueta visible conserva ley y artículo). Lo visible no cambia."
     }
   ]
 }

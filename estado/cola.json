@@ -10113,7 +10113,7 @@
       "id": "R20270122-T147",
       "formato": "reel",
       "huella": "8abee172b70f82560b11e06614e25ed96fc554605390808b95760696e4b93ec6",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-12T10:32:42+00:00",
@@ -10147,6 +10147,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-12T16:28:34+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-12T19:43:52+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 12-11, 3.ª ronda): la narración de la escena 2 decía «Sus disposiciones…» sin nombrar la ley (posesivo sin antecedente al oído) → «Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables»; escena 3 «El artículo 1 dicta:» → «La ley dice:»; lo visible no cambia; se vuelve a verificar y producir"
         }
       ],
       "error": null,
