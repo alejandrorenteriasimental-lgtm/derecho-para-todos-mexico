@@ -104,14 +104,18 @@ def plantilla_concepto(L, g, y):
         x0, x1 = M, W - M; alto_max = H - 190 - y
         caja = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dc = ImageDraw.Draw(caja)
         f = render.font("serif_it", 36); lineas = render.wrap("«" + p["cita"] + "»", f, x1 - x0 - 100)
-        alto = 70 + len(lineas) * 50 + 60
+        # 12-11-2026 (I20270121-T146): una etiqueta larga («Ley General de Acceso de las Mujeres a una Vida Libre de
+        # Violencia, artículo 6») salía del margen derecho. Si no cabe en una línea se parte; si cabe, nada cambia.
+        fe = render.font("semi", 26); et = render.wrap(p.get("etiqueta_cita", ""), fe, x1 - x0 - 100) or [""]
+        alto = 70 + len(lineas) * 50 + 60 + (len(et) - 1) * 34
         dc.rounded_rectangle([x0, y, x1, y + alto], 28, fill=C["tinta"] + (255,))
         L.img.alpha_composite(caja); L.d = ImageDraw.Draw(L.img)
         L.d.rectangle([x0 + 40, y + 40, x0 + 48, y + alto - 40], fill=C["acc"])
         yy = y + 40
         for ln in lineas:
             L.texto((x0 + 76, yy), ln, f, C["txt"], C["tinta"]); yy += 50
-        L.texto((x0 + 76, yy + 6), p.get("etiqueta_cita", ""), render.font("semi", 26), C["acc"], C["tinta"])
+        for i, ln in enumerate(et):
+            L.texto((x0 + 76, yy + 6 + i * 34), ln, fe, C["acc"], C["tinta"])
         y += alto + 34
     if p.get("ojo"):
         fo = render.font("black", 34); L.texto((M, y), "OJO:", fo, C["rojo_texto"], C["papel"])

@@ -2,22 +2,22 @@
   "fecha": "2027-01-19",
   "formato": "reel",
   "tema_id": "T144",
-  "titulo": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
-  "gancho": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
-  "pregunta": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
+  "titulo": "¿Si renuncias, te deben pagar prima de antigüedad?",
+  "gancho": "¿Si renuncias, te deben pagar prima de antigüedad?",
+  "pregunta": "¿Si renuncias, te deben pagar prima de antigüedad?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 110",
+  "fuentes_sugeridas": "LFT art. 162",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "LFT art. 110 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_110.json): «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Regla y excepciones literales (fracciones I a VII); se narra la regla y la primera excepción con su tope.",
+  "motivo_seleccion": "LFT art. 162 fr. III (texto oficial cotejado el 5-11-2026, registro/textos/LFT_162.json): «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Condición literal: quince años de servicios; también se paga a quienes se separen por causa justificada y a quienes sean separados, «independientemente de la justificación o injustificación del despido». Sustituye a LFT 110 (dos descartes, 12-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270119-T144",
   "archivo": "2027-01-19_reel_T144-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \\n ¿PUEDEN DESCONT",
   "ultima_categoria": "redaccion",
   "huella_entrada": "d880aa66275ec471",
@@ -28,7 +28,15 @@
       "motivo": "primer descarte con LFT 110, en la redacción: narración de más de 620 caracteres y lista de más de 4 elementos (el artículo tiene siete fracciones). Se reabre con el ángulo acotado a la regla y la fracción I",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: más de 4 elementos en la lista\", \"narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la c"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFT 110 (12-11: narración de 644 caracteres otra vez; el tope de la fr. I alarga la narración). Ahora LFT 162 fr. III, respuesta y condición literales, alcance federal, sin uso en los lotes 4 a 8",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n",
+      "pregunta_anterior": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?"
     }
   ],
-  "angulo": "Solo el art. 110 LFT, párrafo inicial y fracción I. Respuesta: No; los descuentos al salario están prohibidos salvo en los casos y con los requisitos que fija la ley. Cita literal ÚNICA: «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Un solo ejemplo (fr. I): deudas con el patrón por anticipo de salarios, pagos hechos en exceso, errores, pérdidas, averías o compra de artículos de la empresa; la cantidad exigible no puede ser mayor que el importe de un mes de salario y el descuento, el que convengan trabajador y patrón, no puede ser mayor del treinta por ciento del excedente del salario mínimo. Decir que la ley prevé otros casos, sin enumerarlos. Sin listas. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
+  "angulo": "Solo el art. 162 LFT (encabezado y fracciones I y III). Respuesta: Depende: si renuncias, solo si cumpliste por lo menos quince años de servicios; si te despiden, con o sin causa, sí. Cita literal ÚNICA: «se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Decir que es para trabajadores de planta («Los trabajadores de planta tienen derecho a una prima de antigüedad») y que equivale a doce días de salario por cada año de servicios (fr. I), sin explicar cómo se calcula el salario (arts. 485 y 486, no se tratan). Sin listas. No hablar de la fracción IV (retiros masivos) ni de muerte del trabajador. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
 }

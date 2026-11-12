@@ -68,3 +68,17 @@ def test_pie_con_nombre_largo_cabe_en_una_linea(tmp_path):
     textos, _ = imagen.dibujar(g, tmp_path / "p.png")
     pie = [t for t in textos if t["texto"].startswith("Fuente:")]
     assert len(pie) == 1 and pie[0]["texto"].endswith("art. 77") and pie[0]["px"] >= 24
+
+
+def test_etiqueta_de_cita_larga_no_sale_del_margen(tmp_path):
+    """Regresión 12-11-2026 (I20270121-T146): «Ley General de Acceso de las Mujeres a una Vida Libre de Violencia,
+    artículo 6» no cabía en una línea dentro del recuadro de la cita y salía del margen derecho; ahora se parte."""
+    g = copy.deepcopy(BASE); g["plantilla"] = "dato"
+    g["pieza"] = {"titular": "¿Qué es la violencia patrimonial?", "bajada": "Una definición de la ley.",
+                  "cita": "Es cualquier acto u omisión que afecta la supervivencia de la víctima.",
+                  "etiqueta_cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+                  "fuente_visible": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 6"}
+    png = tmp_path / "x.png"; textos, y_fin = imagen.dibujar(g, png)
+    fuera = [t["texto"] for t in textos if t["caja"][2] > imagen.W - imagen.M + 8]
+    assert not fuera, fuera
+    assert any(t["texto"].endswith("artículo 6") and not t["texto"].startswith("Ley") for t in textos)   # 2.ª línea

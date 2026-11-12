@@ -8,13 +8,13 @@
   "tema_id": "T146",
   "pieza": {
     "titular": "¿Qué es la violencia patrimonial?",
-    "bajada": "Es la conducta que afecta la supervivencia de la víctima mediante sus bienes o recursos.",
+    "bajada": "Recae sobre objetos, documentos, bienes o recursos que la víctima necesita.",
     "cita": "Es cualquier acto u omisión que afecta la supervivencia de la víctima.",
-    "etiqueta_cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
-    "ojo": "Se manifiesta en la transformación, sustracción, destrucción, retenció",
-    "fuente_visible": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 6"
+    "etiqueta_cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 6, fr. III",
+    "ojo": "Puede abarcar los daños a los bienes comunes o propios de la víctima.",
+    "fuente_visible": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 6, fr. III"
   },
-  "copy": "La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, en su artículo 6, fracción III, establece la definición oficial de la violencia patrimonial.\n\nDe acuerdo con el texto legal, consiste en cualquier acto u omisión que afecta la supervivencia de la víctima. Esta conducta se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades.\n\nAsimismo, la norma prevé que esta modalidad de violencia puede abarcar los daños causados a los bienes comunes o propios de la víctima.\n\nGuarda esta publicación para tener a la mano lo que señala la ley o compártela con quien necesite esta información.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué es la violencia patrimonial? La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia (art. 6, fracción III) la define así: «Es cualquier acto u omisión que afecta la supervivencia de la víctima».\n\nEl mismo artículo dice que se manifiesta en «la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades» y que puede abarcar los daños a los bienes comunes o propios de la víctima.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa que define la violencia patrimonial según el artículo 6, fracción III, de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -25,7 +25,7 @@
       "articulo": "6",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
       "texto_literal": "Es cualquier acto u omisión que afecta la supervivencia de la víctima.",
-      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6, fracción III",
       "jurisdiccion": "general",
       "consultado": "2026-11-12"
     },
@@ -36,7 +36,18 @@
       "articulo": "6",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
       "texto_literal": "Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades",
-      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6, fracción III",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-12"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "puede abarcar los daños a los bienes comunes o propios de la víctima",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 6, fracción III",
       "jurisdiccion": "general",
       "consultado": "2026-11-12"
     }
@@ -53,6 +64,12 @@
       "tipo": "hecho_normativo",
       "texto": "La violencia patrimonial se manifiesta en la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer necesidades.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "La violencia patrimonial puede abarcar los daños a los bienes comunes o propios de la víctima.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
@@ -176,5 +193,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenida por falla técnica: la etiqueta de la cita (nombre completo de la ley) salía del margen derecho; corregido en el sistema (imagen.plantilla_concepto parte la etiqueta larga, con prueba). Además: el «ojo» estaba truncado a media palabra («retenció»); la bajada parafraseaba («mediante sus bienes o recursos») — ahora con los objetos del texto legal; etiqueta y fuente con la fracción III; «ojo» con el último inciso literal (F3); texto sin relleno y con cita literal."
+    }
+  ]
 }

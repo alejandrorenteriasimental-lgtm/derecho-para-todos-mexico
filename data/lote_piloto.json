@@ -7,7 +7,7 @@
  "arrastre": [
   "lote-6"
  ],
- "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días).  Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. Activado el 8-11 por la operación diaria: el lote 6 tenía todas sus solicitudes redactadas (la del Reel 08-01 se reabrió el mismo día con otra pregunta y se arrastra). Al activarlo se sustituyeron 2 preguntas que repetían fundamentos del lote 6: Reel 14-01 Ley de Migración 9 → LFT 60 (jornada nocturna); Reel 15-01 LGDNNA 45 → CPEUM 8 (derecho de petición). El 11-11 se sustituyó la pregunta del Reel 18-01 (CPEUM 28, dos descartes) por LFPC 18 Bis (publicidad no deseada).",
+ "nota": "Semanas 8 y 9 (11-01 al 24-01-2027), 28 temas. Preparada el 5-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días).  Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de los lotes 4 a 6; días consecutivos de materias distintas (laboral, constitucional y proceso penal, consumidor, migración, niñez, seguridad social, derechos de autor, economía constitucional, violencia contra las mujeres, amparo, víctimas y prisión, teletrabajo). Los 28 fundamentos se cotejaron el 5-11 con el texto oficial (textos.yml → registro/textos/): la respuesta literal de cada uno está en el texto vigente. Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. Activado el 8-11 por la operación diaria: el lote 6 tenía todas sus solicitudes redactadas (la del Reel 08-01 se reabrió el mismo día con otra pregunta y se arrastra). Al activarlo se sustituyeron 2 preguntas que repetían fundamentos del lote 6: Reel 14-01 Ley de Migración 9 → LFT 60 (jornada nocturna); Reel 15-01 LGDNNA 45 → CPEUM 8 (derecho de petición). El 11-11 se sustituyó la pregunta del Reel 18-01 (CPEUM 28, dos descartes) por LFPC 18 Bis (publicidad no deseada). El 12-11 se sustituyeron las preguntas del Reel 19-01 (LFT 110, dos descartes) por LFT 162 (prima de antigüedad al renunciar) y del Reel 22-01 (Ley de Amparo 17, dos descartes) por LFPC 1 (derechos del consumidor irrenunciables).",
  "temas": [
   {
    "formato": "reel",
@@ -166,9 +166,9 @@
    "fecha": "2027-01-19",
    "tema_id": "T144",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Tu patrón puede descontarte lo que quiera de tu sueldo?",
-   "fuentes_sugeridas": "LFT art. 110",
-   "motivo_seleccion": "LFT art. 110 (texto oficial cotejado el 5-11-2026, registro/textos/LFT_110.json): «Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes». Regla y excepciones literales (fracciones I a VII); se narra la regla y la primera excepción con su tope."
+   "pregunta": "¿Si renuncias, te deben pagar prima de antigüedad?",
+   "fuentes_sugeridas": "LFT art. 162",
+   "motivo_seleccion": "LFT art. 162 fr. III (texto oficial cotejado el 5-11-2026, registro/textos/LFT_162.json): «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Condición literal: quince años de servicios; también se paga a quienes se separen por causa justificada y a quienes sean separados, «independientemente de la justificación o injustificación del despido». Sustituye a LFT 110 (dos descartes, 12-11)."
   },
   {
    "formato": "imagen",
@@ -222,10 +222,10 @@
    "formato": "reel",
    "fecha": "2027-01-22",
    "tema_id": "T147",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
-   "fuentes_sugeridas": "Ley de Amparo art. 17",
-   "motivo_seleccion": "Ley de Amparo art. 17 (texto oficial cotejado el 5-11-2026, registro/textos/LAmp_17.json): «El plazo para presentar la demanda de amparo es de quince días». Regla y excepciones literales (30 días norma autoaplicativa o extradición; hasta 8 años contra sentencia condenatoria de prisión; otras)."
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+   "fuentes_sugeridas": "LFPC art. 1",
+   "motivo_seleccion": "LFPC art. 1 (texto oficial cotejado el 26-10-2026; última reforma de la ley 12-12-2025, la misma vigente el 3-11; registro/textos/LFPC_1.json): «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario». Respuesta literal: no. Sustituye a Ley de Amparo 17 (dos descartes, 12-11)."
   },
   {
    "formato": "imagen",

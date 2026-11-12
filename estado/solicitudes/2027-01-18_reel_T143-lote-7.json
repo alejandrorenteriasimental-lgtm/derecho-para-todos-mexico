@@ -12,12 +12,12 @@
   "lote": "lote-7",
   "motivo_seleccion": "LFPC art. 18 Bis (texto oficial en registro/textos/LFPC_18_Bis.json, consultado el 3-11-2026): «Queda prohibido a los proveedores […] enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». Condiciones literales: voluntad expresa o inscripción en el registro del art. 18 (gratuito). Sustituye a CPEUM 28 (dos descartes, 11-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
   "ultima_categoria": "juridico",
   "huella_entrada": "c5cfd7bb76c737bf",
@@ -29,7 +29,14 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"En México existe una prohibición general contra los monopolios y las prácticas que limitan la libre competencia.\", \"sostenida\": \"si\", \"motivo\": \"El a",
       "pregunta_anterior": "¿Están prohibidos los monopolios en México?"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "primer descarte con LFPC 18 Bis, en el análisis: el elemento «efecto» parafraseaba («es un…») sin cita literal del texto oficial. Se reabre con el efecto fijado en la cita literal «Queda prohibido a los proveedores»",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «efecto» («El envío de publicidad tras la negativa del consumidor es un») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
     }
   ],
-  "angulo": "Solo los arts. 18 Bis y 18 LFPC. Respuesta: No; está prohibido enviarte publicidad si dijiste expresamente que no la quieres o si estás inscrito en el registro público de consumidores de la Procuraduría. Cita literal ÚNICA (art. 18 Bis): «enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». El registro es el del art. 18: «un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios»; la inscripción se pide por escrito o por correo electrónico a la Procuraduría y es gratuita. No hablar de multas, de llamadas telefónicas específicas, de plazos ni de nombres comerciales del registro (no están en estos artículos). Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
+  "angulo": "Solo los arts. 18 Bis y 18 LFPC. Respuesta: No; está prohibido enviarte publicidad si dijiste expresamente que no la quieres o si estás inscrito en el registro público de consumidores. En el análisis, el elemento «efecto» (la consecuencia jurídica) es la prohibición y se respalda SOLO con la cita literal «Queda prohibido a los proveedores»; no describirlo como infracción, sanción o falta (eso no está en estos artículos). Cita literal de la condición (art. 18 Bis): «enviar publicidad a los consumidores que expresamente les hubieren manifestado su voluntad de no recibirla o que estén inscritos en el registro a que se refiere el artículo anterior». El registro es el del art. 18: «un registro público de consumidores que no deseen que su información sea utilizada para fines mercadotécnicos o publicitarios»; la inscripción es gratuita. No hablar de multas, de llamadas telefónicas específicas, de plazos ni de nombres comerciales del registro. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
 }

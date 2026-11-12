@@ -2,22 +2,22 @@
   "fecha": "2027-01-22",
   "formato": "reel",
   "tema_id": "T147",
-  "titulo": "¿Cuánto tiempo tienes para presentar un amparo?",
-  "gancho": "¿Cuánto tiempo tienes para presentar un amparo?",
-  "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
-  "tipo_pregunta": "obligacion",
+  "titulo": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+  "gancho": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+  "pregunta": "¿Puedes renunciar a tus derechos de consumidor en un contrato?",
+  "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "Ley de Amparo art. 17",
+  "fuentes_sugeridas": "LFPC art. 1",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "Ley de Amparo art. 17 (texto oficial cotejado el 5-11-2026, registro/textos/LAmp_17.json): «El plazo para presentar la demanda de amparo es de quince días». Regla y excepciones literales (30 días norma autoaplicativa o extradición; hasta 8 años contra sentencia condenatoria de prisión; otras).",
+  "motivo_seleccion": "LFPC art. 1 (texto oficial cotejado el 26-10-2026; última reforma de la ley 12-12-2025, la misma vigente el 3-11; registro/textos/LFPC_1.json): «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario». Respuesta literal: no. Sustituye a Ley de Amparo 17 (dos descartes, 12-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270122-T147",
   "archivo": "2027-01-22_reel_T147-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 5: el encabezado visible «Peligro de privación de la vida» no corresponde a lo que se narra («Los plazos varían según el acto reclamado.»).\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para presentar un amparo? \\n ¿CUÁNTO TIEMPO \\n TIENES PARA \\n UN AMPARO? \\n Depende del acto reclamado: el plazo general es de quince días, ",
   "ultima_categoria": "tecnico",
   "huella_entrada": "9495d84bf5047b36",
@@ -28,7 +28,15 @@
       "motivo": "primer descarte con Ley de Amparo 17, en el análisis: la conclusión decía «no existe un plazo límite» (la ley dice «en cualquier tiempo») y omitía la condición de las excepciones. Se reabre con el ángulo acotado a la regla y dos excepciones literales",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Generalización: «Depende del acto reclamado: el plazo general es de quince días, pero existen excepciones q» se presenta sin la condición que impone Ley de Amparo, art. 17 («…ra presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma genera"
+    },
+    {
+      "fecha": "2026-11-12",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con Ley de Amparo 17 (12-11: encabezado de la excepción «Peligro de privación de la vida» incoherente con la narración; el artículo tiene cuatro excepciones extensas). Ahora LFPC 1, respuesta literal, alcance federal, sin uso en los lotes 4 a 8 (la imagen del mismo día sigue con amparo, LAmp 15)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 5: el encabezado visible «Peligro de privación de la vida» no corresponde a lo que se narra («Los plazos varían según el acto reclamado.»).\"], \"visible\": \"  \\n ¿Cuánto tiempo tienes para presentar un amparo? \\n ¿CUÁNTO TIEMPO \\n TIENES PARA \\n UN",
+      "pregunta_anterior": "¿Cuánto tiempo tienes para presentar un amparo?"
     }
   ],
-  "angulo": "Solo el art. 17 de la Ley de Amparo. Respuesta: Depende: la regla general es de quince días, salvo excepciones. Cita literal ÚNICA: «El plazo para presentar la demanda de amparo es de quince días, salvo:». Dos excepciones literales, declaradas en el análisis como excepciones: fr. I, treinta días cuando se reclame una norma general autoaplicativa o el procedimiento de extradición; fr. IV, «en cualquier tiempo» cuando el acto implique peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación o desaparición forzada de personas, entre otros. Usar las palabras «en cualquier tiempo»; nunca «no hay límite». Decir que hay otras excepciones (fr. II y III) sin detallarlas. No hablar de cómo se cuenta el plazo (art. 18). Cuatro escenas más cierre; narración de 500 caracteres o menos."
+  "angulo": "Solo el párrafo primero del art. 1 LFPC. Respuesta: No; las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables. Cita literal ÚNICA: «Sus disposiciones son irrenunciables y contra su observancia no podrán alegarse costumbres, usos, prácticas, convenios o estipulaciones en contrario». Ejemplo: una cláusula de un contrato en la que «renuncias» a reclamar no puede oponerse a lo que esta ley dispone. Decir que la ley es de observancia en toda la República (literal). No hablar de nulidad de contratos, de multas ni de otros artículos (no están en este párrafo). Sin listas. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita."
 }

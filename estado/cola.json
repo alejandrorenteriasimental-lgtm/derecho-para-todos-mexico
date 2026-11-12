@@ -9766,7 +9766,7 @@
       "id": "I20270124-T149",
       "formato": "imagen",
       "huella": "b5846407e82b3ce07c8a14fb5126542d64fcbdc91639150aa5c5fc84c7e9bbc7",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T10:23:44+00:00",
@@ -9800,6 +9800,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-12T04:14:45+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-12T04:27:44+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 12-11): la bajada respondía solo con el 40% del tiempo en el domicilio; faltaba el uso primordial de las tecnologías de la información (art. 330-A LFT, F2); cita destacada acortada (literal) para no pasar de 60 palabras; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -9870,7 +9876,7 @@
       "id": "R20270124-T149",
       "formato": "reel",
       "huella": "b39c8b477408423d6e5ffa088997e6e9a7cd46bfe8c368bc5ce8a1b9bbaf3166",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T10:23:44+00:00",
@@ -9904,6 +9910,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-12T04:11:47+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-12T04:27:44+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 12-11): lista visible «Parte proporcional de luz» sin «en su caso» (fr. III del art. 330-E LFT, que sí se narra) → «En su caso, parte de la luz»; titular final «RESPETA TU DESCONEXIÓN» incoherente con lo narrado → «DERECHO A DESCONECTARTE»; narración sin cambios; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -9922,7 +9934,7 @@
       "id": "I20270121-T146",
       "formato": "imagen",
       "huella": "211812118b49a0dc3ddce284c7ec9e98f5a4e376e5e8b71e2190d3717b1f5e49",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-12T04:05:23+00:00",
@@ -9938,6 +9950,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-12T04:15:12+00:00",
           "motivo": "RETENIDO: falla técnica de la imagen"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-12T04:23:20+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 12-11): retenida porque la etiqueta de la cita (nombre completo de la LGAMVLV) salía del margen; corregido en imagen.plantilla_concepto con prueba. Además «ojo» truncado («retenció») → último inciso literal de la fr. III; bajada sin paráfrasis; etiqueta y fuente con fr. III; texto sin relleno; se vuelve a verificar y producir"
         }
       ],
       "error": null,
