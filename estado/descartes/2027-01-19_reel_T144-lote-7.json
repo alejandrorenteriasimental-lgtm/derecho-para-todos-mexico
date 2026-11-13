@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-01-19_reel_T144-lote-7.json",
- "fecha": "2026-11-12T03:59:14+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \\n ¿PUEDEN DESCONT",
+ "fecha": "2026-11-13T03:49:39+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «15 años mínimos» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\"], \"visible\": \"  \\n ¿Si renuncias, te deben pagar prima de antigüedad? \\n ¿RENUNCIAS? \\n PRIMA DE \\n ANTIGÜEDAD \\n Depende: si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de se",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,56 +12,28 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 622 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 2: recorta al menos 62 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «En caso de muerte o despido, no se exigen los quince años.» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «Muerte o despido sin 15 años» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
    ],
-   "visible": "  \n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \n ¿DESCUENTOS \n EN TU SUELDO? \n No. Los descuentos están prohibidos, salvo casos y requisitos específicos fijados por la ley. \n REGLA \n GENERAL \n La ley dice: \"Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes\". \n Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes \n Se permiten para pensiones, cuotas sindicales, créditos de vivienda o deudas con el patrón. \n Pensiones alimenticias \n Cuotas sindicales \n Créditos Infonavit \n Deudas con el patrón \n En deudas con el patrón, \"la cantidad exigible en "
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
+   "visible": "  \n ¿Renuncias a tu empleo? \n ¿RENUNCIAS \n A TU \n EMPLEO? \n Depende: si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de servicio. \n LA PRIMA \n DE ANTIGÜEDAD \n La norma precisa: La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Las condiciones: \n Trabajador de planta \n Separación voluntaria \n Mínimo 15 años \n En caso de muerte o despido, no se exigen los q"
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": [
-      "La pieza omite requisitos esenciales para la validez de los descuentos, como la aceptación libre del trabajador en créditos (Infonavit/Fonacot), el derecho a no pagar cuotas sindicales y la necesidad de que las pensiones sean decretadas por autoridad competente."
-     ]
-    },
-    "conclusiones": [
-     {
-      "conclusion": "Los descuentos en el salario de los trabajadores están prohibidos, a menos que encuadren en los casos y cumplan los requisitos previstos por la ley.",
-      "sostenida": "si",
-      "motivo": "El artículo 110 establece la prohibición general y la excepción condicionada a casos y requisitos."
-     },
-     {
-      "conclusion": "En caso de deudas con el patrón, el monto total exigible no puede superar un mes de salario y la retención pactada no puede ser mayor al treinta por ciento del excedente del salario mínimo.",
-      "sostenida": "si",
-      "motivo": "El artículo 110, fracción I, establece explícitamente estos límites cuantitativos."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Escena de lista: 'Se permiten para pensiones, cuotas, vivienda o deudas con el patrón.'",
-      "problema": "Presenta las excepciones como si fueran automáticas, omitiendo los requisitos legales que las validan (ej. la aceptación libre del trabajador o la orden de autoridad).",
-      "correccion": "Añadir que cada excepción tiene requisitos específicos, como la aceptación libre del trabajador para créditos o el derecho a no pagar cuotas sindicales."
-     }
-    ]
-   }
+   "errores_esquema": [
+    "[minimo] «Si hay muerte o despido, no se exigen los quince años.» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «Se paga sin los quince años» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Te vas y quieres saber si te toca prima? \n ¿RENUNCIAS? \n ¿TE TOCA \n PRIMA? \n Depende: si renuncias, debes cumplir por lo menos quince años de servicio. \n SÍ, PERO \n CON REQUISITO \n La ley dice: La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Requisitos: \n Trabajador de planta \n Separación voluntaria \n Por lo menos 15 años \n Si hay muerte o despido, no se exigen los quince años. \n Excepción por despido o muer"
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "[minimo] «15 años mínimos» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
    ],
-   "visible": "  \n ¿Tu patrón puede descontarte lo que quiera de tu sueldo? \n ¿PUEDEN DESCONTARTE \n LO QUE SEA DE \n TU SUELDO? \n No. Los descuentos en salarios están prohibidos como regla general, salvo en casos y requisitos específicos fijados por la ley. \n DESCUENTOS \n PROHIBIDOS \n La ley señala: 'Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes'. \n Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes \n Cada excepción tiene requisitos: deudas patronales no superan un mes de sueldo y créditos requieren tu aceptación libre. \n Requisitos específicos \n Límite de un mes sue"
+   "visible": "  \n ¿Si renuncias, te deben pagar prima de antigüedad? \n ¿RENUNCIAS? \n PRIMA DE \n ANTIGÜEDAD \n Depende: si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de servicio. \n SÍ \n DEPENDE \n La ley dice: «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.». \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Requisitos que marca la ley: \n Trabajador de planta \n Separación voluntaria \n 15 años mínimos \n En caso de mu"
   }
  ]
 }

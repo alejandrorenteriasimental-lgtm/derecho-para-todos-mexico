@@ -1,0 +1,120 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1122 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=964"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "32 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "94% de 32 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270122-T147",
+    "formato": "imagen",
+    "titulo": "¿Te pueden meter a la cárcel por una deuda?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20270122-T147.png",
+    "sha256": "947c7d354fef9f4f5b719b3c63c60a2aa74460b6057438071fd14f4c4216ef04",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000000011001111111111111100111111111111110001111111111111000111111111111100000001110111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "0365f8ffeb330fcc1ebe4f54d245b88ea71926187a4626fda2f44fd527eba46c",
+    "texto_alternativo": "Imagen informativa que desmiente el encarcelamiento por deudas civiles.",
+    "copy": "Existe la creencia de que cualquier falta de pago de dinero conlleva la privación de la libertad personal. Sin embargo, la Constitución Política de los Estados Unidos Mexicanos, en su artículo 17, establece un límite claro para estas situaciones.\n\nEl texto oficial dispone textualmente que «Nadie puede ser aprisionado por deudas de carácter puramente civil». Esto significa que la protección aplica exclusivamente a las obligaciones que tienen esta naturaleza jurídica específica.\n\nGuarda y comparte esta información para conocer lo que dice la ley.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "17",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-13T03:54:07+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

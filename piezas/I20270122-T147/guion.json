@@ -1,0 +1,181 @@
+{
+  "id": "I20270122-T147",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden meter a la cárcel por una deuda?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T147",
+  "pieza": {
+    "titular": "¿Te pueden meter a la cárcel por una deuda?",
+    "bajada": "La Constitución protege a las personas bajo ciertas condiciones.",
+    "mito": "Si no pagas una deuda, te pueden meter a la cárcel.",
+    "realidad": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 17"
+  },
+  "copy": "Existe la creencia de que cualquier falta de pago de dinero conlleva la privación de la libertad personal. Sin embargo, la Constitución Política de los Estados Unidos Mexicanos, en su artículo 17, establece un límite claro para estas situaciones.\n\nEl texto oficial dispone textualmente que «Nadie puede ser aprisionado por deudas de carácter puramente civil». Esto significa que la protección aplica exclusivamente a las obligaciones que tienen esta naturaleza jurídica específica.\n\nGuarda y comparte esta información para conocer lo que dice la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que desmiente el encarcelamiento por deudas civiles.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-13"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La norma prohíbe el encarcelamiento por deudas de carácter puramente civil.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden meter a la cárcel por una deuda?",
+    "concepto_central": "deuda civil",
+    "respuesta_corta": "No, nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "reglas": [
+      {
+        "conclusion": "Nadie puede ser encarcelado por una deuda de carácter puramente civil.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+        "condiciones": [
+          "Que la deuda sea de carácter puramente civil"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "17"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El encarcelamiento por deudas puramente civiles está prohibido.",
+        "fuente": "F1",
+        "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La protección aplica exclusivamente a las deudas de naturaleza civil, dejando fuera otras obligaciones de distinta naturaleza.",
+        "condicion": "que la deuda sea de carácter puramente civil",
+        "base": "F1"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "deuda civil",
+        "b": "fraude",
+        "diferencia": "La deuda civil es una obligación de pago que no lleva a prisión, mientras que el fraude implica engaño para obtener un lucro indebido."
+      },
+      {
+        "a": "deuda civil",
+        "b": "abandono familiar",
+        "diferencia": "La deuda civil no amerita prisión, a diferencia del delito por dejar sin recursos a quienes se tiene obligación de mantener."
+      }
+    ],
+    "limites": "El texto oficial solo protege frente a deudas de carácter puramente civil y no detalla otros supuestos ni consecuencias de obligaciones distintas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-13T03:51:42+00:00",
+    "solicitud": "2027-01-22_imagen_T147-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te pueden meter a la cárcel por una deuda?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser encarcelado por una deuda de carácter puramente civil.",
+              "sostenida": "si",
+              "motivo": "El texto del artículo 17 de la Constitución establece textualmente que nadie puede ser aprisionado por deudas de carácter puramente civil."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Sección de distinciones y cuerpo del copy",
+              "problema": "La pieza introduce comparaciones con el 'fraude' y el 'abandono familiar' para explicar la norma, pero estos conceptos y sus implicaciones jurídicas no están contenidos en el texto oficial proporcionado.",
+              "corrección": "Eliminar las referencias a fraude y abandono familiar, limitando la explicación a la distinción que la norma sí hace: la naturaleza 'puramente civil' de la deuda."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Nadie puede ser encarcelado por una deuda de carácter puramente civil.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una paráfrasis exacta de la prohibición establecida en el último párrafo del artículo 17 de la Constitución."
+            },
+            {
+              "conclusion": "La protección aplica exclusivamente a las obligaciones que tienen esta naturaleza jurídica específica (civil).",
+              "sostenida": "si",
+              "motivo": "La norma utiliza el adjetivo 'puramente' para delimitar el alcance de la prohibición, lo cual valida la interpretación de que la regla no es universal para cualquier tipo de deuda o compromiso."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.7 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "68b11defe5ad5bd9"
+      "detalle": "dafd4b3122965a6c"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270122-T147",
     "titulo": "¿Puedes renunciar a tus derechos de consumidor?",
-    "fecha": "2026-11-12T16:28:29+00:00",
-    "sha256": "68b11defe5ad5bd9e94747624e2c1c5a6f0c8eed09dce9f9e98b3ab9c2aa8305",
+    "fecha": "2026-11-13T03:53:30+00:00",
+    "sha256": "dafd4b3122965a6ca0892d5bd28c31c29baf8e1d84fd766a4acacfa22256ab9d",
     "duracion_s": 42.4,
     "estado": "APTO",
-    "huella_guion": "c7643dcfab3d540cbba589a827a505e3c2eb135c5fb66f82760ad659d9b96bb3",
+    "huella_guion": "4401644540484ff1197138d0cbbaa41051badff1cd0eae0b893d0f8f57a976a7",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 21.7,
-      "musica": 1.8,
-      "render_video": 40.9,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 6.9
+      "narracion": 20.2,
+      "musica": 2.1,
+      "render_video": 42.1,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 8.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.21,
-      "computo_equivalente_runner_usd": 0.0073,
+      "computo_minutos": 1.23,
+      "computo_equivalente_runner_usd": 0.0074,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1271,
-    "caracteres_narrados": 606
+    "frames": 1269,
+    "caracteres_narrados": 610
   }
 }

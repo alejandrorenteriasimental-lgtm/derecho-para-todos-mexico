@@ -8759,7 +8759,7 @@
       "id": "I20270115-T140",
       "formato": "imagen",
       "huella": "7fea308846a58b7ec07cf78cc901051df6a06e09c4a2e3585f715eb99d31da2c",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-09T16:30:57+00:00",
@@ -8799,6 +8799,12 @@
           "a": "APROBADO",
           "ts": "2026-11-10T10:18:12+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-10T03:47:47+00:00 versión 72978c83a5f8de24 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-13T03:54:10+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -8830,7 +8836,7 @@
       "id": "R20270113-T138",
       "formato": "reel",
       "huella": "56735457610efa2fb29ab3b8a450a9efdd2bd1528248094eee236b0b8f3c5b09",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-09T16:30:57+00:00",
@@ -8870,6 +8876,12 @@
           "a": "APROBADO",
           "ts": "2026-11-10T10:18:12+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-10T03:47:47+00:00 versión 3c626412a8061439 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-13T03:54:10+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -10113,7 +10125,7 @@
       "id": "R20270122-T147",
       "formato": "reel",
       "huella": "8abee172b70f82560b11e06614e25ed96fc554605390808b95760696e4b93ec6",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-12T10:32:42+00:00",
@@ -10153,6 +10165,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-12T19:43:52+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 12-11, 3.ª ronda): la narración de la escena 2 decía «Sus disposiciones…» sin nombrar la ley (posesivo sin antecedente al oído) → «Las disposiciones de la Ley Federal de Protección al Consumidor son irrenunciables»; escena 3 «El artículo 1 dicta:» → «La ley dice:»; lo visible no cambia; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-13T03:53:30+00:00",
+          "motivo": "42.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-13T03:53:34+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -10160,10 +10184,44 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "69139006f0dd97cd",
-        "huella_guion": "5fa1484c07fcf496ec7fdc6a69e3832117c4fbbf44331d6b9811317bbbf27de4",
-        "huella_archivo": "68b11defe5ad5bd9e94747624e2c1c5a6f0c8eed09dce9f9e98b3ab9c2aa8305",
-        "preparada": "2026-11-12T16:28:34+00:00",
+        "version": "43cb4fb0b810cead",
+        "huella_guion": "9d79a4550773ca1144e9cb9bb92894308a5a77b11c5d4494b16f41b9054d7deb",
+        "huella_archivo": "dafd4b3122965a6ca0892d5bd28c31c29baf8e1d84fd766a4acacfa22256ab9d",
+        "preparada": "2026-11-13T03:53:34+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20270122-T147": {
+      "id": "I20270122-T147",
+      "formato": "imagen",
+      "huella": "0365f8ffeb330fcc1ebe4f54d245b88ea71926187a4626fda2f44fd527eba46c",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-13T03:51:42+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-13T03:54:07+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-13T03:54:10+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "f1fbfafa834526b6",
+        "huella_guion": "6f0a003ff09e8c39f81af11616deaf64feb5d80d4006de9f4537706a78f14d3d",
+        "huella_archivo": "947c7d354fef9f4f5b719b3c63c60a2aa74460b6057438071fd14f4c4216ef04",
+        "preparada": "2026-11-13T03:54:10+00:00",
         "canal": "chat"
       }
     }

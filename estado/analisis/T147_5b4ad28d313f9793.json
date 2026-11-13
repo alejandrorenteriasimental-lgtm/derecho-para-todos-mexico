@@ -1,0 +1,53 @@
+{
+ "tema_id": "T147",
+ "pregunta": "¿Te pueden meter a la cárcel por una deuda?",
+ "fecha": "2026-11-13T03:49:59+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden meter a la cárcel por una deuda?",
+  "concepto_central": "deuda civil",
+  "respuesta_corta": "No, nadie puede ser aprisionado por deudas de carácter puramente civil.",
+  "reglas": [
+   {
+    "conclusion": "Nadie puede ser encarcelado por una deuda de carácter puramente civil.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil.",
+    "condiciones": [
+     "Que la deuda sea de carácter puramente civil"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El encarcelamiento por deudas puramente civiles está prohibido.",
+    "fuente": "F1",
+    "cita_literal": "Nadie puede ser aprisionado por deudas de carácter puramente civil."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La protección aplica exclusivamente a las deudas de naturaleza civil, dejando fuera otras obligaciones de distinta naturaleza.",
+    "condicion": "que la deuda sea de carácter puramente civil",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "deuda civil",
+    "b": "fraude",
+    "diferencia": "La deuda civil es una obligación de pago que no lleva a prisión, mientras que el fraude implica engaño para obtener un lucro indebido."
+   },
+   {
+    "a": "deuda civil",
+    "b": "abandono familiar",
+    "diferencia": "La deuda civil no amerita prisión, a diferencia del delito por dejar sin recursos a quienes se tiene obligación de mantener."
+   }
+  ],
+  "limites": "El texto oficial solo protege frente a deudas de carácter puramente civil y no detalla otros supuestos ni consecuencias de obligaciones distintas.",
+  "fuentes_irrelevantes": []
+ }
+}

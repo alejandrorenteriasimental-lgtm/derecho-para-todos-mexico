@@ -1,79 +1,52 @@
 {
  "solicitud": "2027-01-18_reel_T143-lote-7.json",
- "fecha": "2026-11-12T16:24:08+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se especifica ante qué autoridad se debe poner al presunto infractor (la ley solo menciona 'autoridad competente').\"]}, \"conclusiones\": [{\"conclusion\": \"Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de lo",
+ "fecha": "2026-11-13T03:48:54+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Una tienda puede retenerte para revisarte? \\n ¿PUEDEN \\n RETENERTE? \\n ¿Un",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 774 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 154: recorta al menos 214 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 651 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 31: recorta al menos 91 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n ¿Te han detenido en una tienda para revisarte? \n ¿TE HAN \n REVISADO EN \n LA TIENDA? \n No. Los proveedores no pueden atentar contra tu libertad o seguridad bajo pretexto de registro. \n ESTÁ \n PROHIBIDO \n El artículo 10 establece: \"Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.\" \n Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. \n No pueden retenerte. No pueden regist"
+   "visible": "  \n ¿Una tienda puede retenerte para revisarte? \n ¿PUEDEN \n RETENERTE? \n No. Los proveedores tienen prohibido realizar acciones que atenten contra la libertad o seguridad de los consumidores para registrar o averiguar. \n PROHIBIDO \n REVISARTE \n La ley señala: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.» \n Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. \n Si hay del"
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "narración de 774 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 154: recorta al menos 214 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "narración de 651 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 31: recorta al menos 91 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.»), pero la pieza no lo dice: agrégalo al texto visible."
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "narración de 640 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 20: recorta al menos 80 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n ¿Te han detenido para revisarte? \n ¿TE HAN \n REVISADO EN \n LA TIENDA? \n No. El proveedor no puede restringir tu libertad. \n ESTÁ \n PROHIBIDO \n La ley: \"Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.\" \n Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. \n No pueden retenerte ni registrarte. \n No pueden retenerte \n No pueden registrarte \n En flagrancia: \"los proveedores"
+   "visible": "  \n ¿Una tienda puede retenerte para revisarte? \n ¿PUEDEN \n RETENERTE? \n ¿Una tienda puede retenerte? \n PROHIBIDO \n REVISARTE \n La ley dice: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.». \n Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. \n Si hay delito flagrante, solo se limitarán a poner sin demora al presunto infractor ante la autoridad competente, o responderán "
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 2,
    "errores": [
-    "narración de 640 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 20: recorta al menos 80 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.»), pero la pieza no lo dice: agrégalo al texto visible."
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "auditoria_ia": {
-    "veredicto": "con_objeciones",
-    "cobertura": {
-     "responde_nucleo": true,
-     "faltantes": [
-      "No se especifica ante qué autoridad se debe poner al presunto infractor (la ley solo menciona 'autoridad competente')."
-     ]
-    },
-    "conclusiones": [
-     {
-      "conclusion": "Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de los clientes con el fin de registrarlos o investigarlos.",
-      "sostenida": "si",
-      "motivo": "La cita literal del artículo 10 prohíbe acciones que atenten contra la libertad, seguridad o integridad bajo pretexto de registro o averiguación."
-     },
-     {
-      "conclusion": "Si existe un delito flagrante, el personal de la tienda solo puede entregar a la persona a la autoridad correspondiente de manera inmediata.",
-      "sostenida": "si",
-      "motivo": "El texto establece que en comisión flagrante deben limitarse a poner al presunto infractor a disposición de la autoridad competente sin demora."
-     },
-     {
-      "conclusion": "Incumplir esta prohibición conlleva sanciones legales y la posible obligación de pagar una indemnización y reparar el daño moral si no se acredita el delito.",
-      "sostenida": "si",
-      "motivo": "El artículo 10 menciona explícitamente la sanción según la ley y la reparación del daño moral e indemnización por daños y perjuicios si no se comprueba el delito."
-     }
-    ],
-    "objeciones": [
-     {
-      "donde": "Escena de tipo 'excepción'",
-      "problema": "La pieza presenta la excepción de la flagrancia de forma incompleta al no mencionar que la responsabilidad de la entrega recae sobre los proveedores, sus agentes o empleados.",
-      "correccion": "Aclarar que la obligación de poner al infractor a disposición de la autoridad recae bajo la responsabilidad de los proveedores, sus agentes o empleados."
-     }
-    ]
-   }
+   "errores_esquema": [
+    "narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Una tienda puede retenerte para revisarte? \n ¿PUEDEN \n RETENERTE? \n ¿Una tienda puede retenerte? \n PROHIBIDO \n REVISARTE \n La ley dice: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación.». \n Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. \n Si hay delito flagrante, solo se limitarán a poner sin demora al presunto infractor ante la autoridad competente. Incumplir esta"
   }
  ]
 }
