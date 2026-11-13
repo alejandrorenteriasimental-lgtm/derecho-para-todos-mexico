@@ -1,40 +1,80 @@
 {
  "solicitud": "2027-01-19_reel_T144-lote-7.json",
- "fecha": "2026-11-13T10:18:55+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «Si renuncias antes de los 15 años, la ley no obliga al patrón a pagarte esta prima",
+ "fecha": "2026-11-13T16:09:28+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La prohibición expresa de intervenir comunicaciones entre el detenido y su defensor\", \"La aclaración de que las aportaciones voluntarias sí tienen valor probatorio (siempre que se relacionen con un delito) sin necesidad de orden judicial previa\"]}, \"conclusione",
  "historial": [
   {
    "etapa": "analisis",
-   "reutilizado": true,
+   "intento": 0,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 673 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 53: recorta al menos 113 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «Así que, si renuncias antes de los 15 años, la ley no obliga al patrón a pagarte esta prim» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+    "narración de 756 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 136: recorta al menos 196 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Vas a renunciar y quieres saber si te toca prima de antigüedad? \n ¿VAS A \n RENUNCIAR? \n ESTO TE TOCA \n Depende: si renuncias voluntariamente, la recibes siempre que hayas cumplido por lo menos quince años de servicio. \n DEPENDE DEL \n TIEMPO \n La ley dice que «la prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Si cumples, te corresponde: \n 12 días de salario \n Por cada año trabajado \n Solo personal de planta \n "
+   "visible": "  \n ¿Pueden intervenir tus llamadas o mensajes sin orden de un juez? \n ¿INTERVIENEN \n TUS LLAMADAS \n SIN UN JUEZ? \n No. Se requiere orden de un juez federal, salvo que un participante la entregue por voluntad propia. \n REGLA \n GENERAL \n La ley dice: \"Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares\". \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los … \n Re"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 756 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 136: recorta al menos 196 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "narración de 698 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 78: recorta al menos 138 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+    "narración de 648 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 28: recorta al menos 88 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Si renuncias a tu trabajo te toca recibir la prima de antigüedad? \n ¿ME TOCA \n PRIMA DE \n ANTIGÜEDAD? \n Depende. Si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de servicio. \n DEPENDE DEL \n TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n Esta prestación consiste en lo siguiente: \n 12 días de sueldo por año \n Para empleados d"
+   "visible": "  \n ¿Pueden intervenir tus llamadas sin un juez? \n ¿INTERVIENEN \n TUS LLAMADAS \n SIN UN JUEZ? \n No. Requiere orden de juez federal, salvo que un participante la aporte voluntariamente. \n REGLA \n GENERAL \n \"Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares\". \n Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los … \n El juez debe fundar la causa y fijar sujetos y "
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 648 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 28: recorta al menos 88 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "errores_esquema": [
-    "narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[minimo] «Si renuncias antes de los 15 años, la ley no obliga al patrón a pagarte esta prima por ret» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
-    "[minimo] «15 AÑOS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
-   ],
-   "visible": "  \n ¿Si renuncias te deben pagar la prima de antigüedad? \n ¿PAGAN PRIMA \n POR RENUNCIA? \n Depende. Si renuncias voluntariamente, tienes derecho si cumpliste por lo menos quince años de servicio. \n DEPENDE DEL \n TIEMPO \n La ley dice: \"La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos.\" \n La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos. \n El pago consiste en lo siguiente: \n 12 días de sueldo por año \n Para personal de planta \n Mínimo 15 años laborados \n Si hay despido, "
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La prohibición expresa de intervenir comunicaciones entre el detenido y su defensor",
+      "La aclaración de que las aportaciones voluntarias sí tienen valor probatorio (siempre que se relacionen con un delito) sin necesidad de orden judicial previa"
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Las comunicaciones privadas no pueden ser violadas, a menos que uno de los participantes decida entregarlas por su propia voluntad.",
+      "sostenida": "si",
+      "motivo": "El artículo 16 establece la inviolabilidad y la excepción de aportación voluntaria."
+     },
+     {
+      "conclusion": "Solo un juez federal tiene la facultad de autorizar que se interfiera una comunicación privada bajo requisitos específicos.",
+      "sostenida": "si",
+      "motivo": "El artículo 16 reserva esta facultad exclusivamente a la autoridad judicial federal."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 5 (Materias prohibidas)",
+      "problema": "La pieza omite una de las prohibiciones constitucionales más importantes: la intervención de las comunicaciones entre el detenido y su defensor.",
+      "correccion": "Incluir que la autoridad judicial federal no puede autorizar intervenciones en las comunicaciones del detenido con su defensor."
+     },
+     {
+      "donde": "Escena 6 (Valor probatorio)",
+      "problema": "La afirmación 'Sin orden judicial, no tiene valor probatorio' es demasiado amplia y confunde al usuario, pues las aportaciones voluntarias (que no requieren orden judicial previa) sí pueden tener valor probatorio si se relacionan con un delito.",
+      "correccion": "Precisar que la falta de valor probatorio aplica a las intervenciones que no cumplen con los requisitos legales, diferenciándolo de las aportaciones voluntarias que sí son admitidas bajo las condiciones del artículo 16."
+     }
+    ]
+   }
   }
  ]
 }

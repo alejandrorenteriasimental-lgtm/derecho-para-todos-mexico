@@ -1,0 +1,72 @@
+{
+ "tema_id": "T144",
+ "pregunta": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
+ "fecha": "2026-11-13T16:05:57+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
+  "concepto_central": "intervención de comunicaciones privadas",
+  "respuesta_corta": "No, por regla general se requiere orden de un juez federal, salvo que uno de los participantes en la comunicación la entregue de manera voluntaria.",
+  "reglas": [
+   {
+    "conclusion": "Las comunicaciones privadas no pueden ser violadas, a menos que uno de los participantes decida entregarlas por su propia voluntad.",
+    "fuente": "F1",
+    "cita_literal": "Las comunicaciones privadas son inviolables. La ley sancionará penalmente cualquier acto que atente contra la libertad y privacía de las mismas, excepto cuando sean aportadas de forma voluntaria por alguno de los particulares",
+    "condiciones": [
+     "Que la aportación sea voluntaria",
+     "Que quien la aporte sea uno de los particulares que participen en ellas"
+    ],
+    "excepciones": [
+     "Aportación voluntaria por un participante"
+    ]
+   },
+   {
+    "conclusion": "Solo un juez federal tiene la facultad de autorizar que se interfiera una comunicación privada bajo requisitos específicos.",
+    "fuente": "F1",
+    "cita_literal": "Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente, podrá autorizar la intervención de cualquier comunicación privada.",
+    "condiciones": [
+     "Petición de autoridad federal facultada o titular del Ministerio Público estatal",
+     "La autoridad debe fundar y motivar las causas legales",
+     "Se debe expresar el tipo de intervención, sujetos y duración"
+    ],
+    "excepciones": [
+     "Materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo",
+     "Comunicaciones del detenido con su defensor"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Cualquier intervención que no respete los requisitos y límites legales no tendrá validez como prueba.",
+    "fuente": "F1",
+    "cita_literal": "Los resultados de las intervenciones que no cumplan con éstos, carecerán de todo valor probatorio."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "La única autoridad con facultad para emitir esta autorización es la judicial federal.",
+    "fuente": "F1",
+    "cita_literal": "Exclusivamente la autoridad judicial federal... podrá autorizar la intervención de cualquier comunicación privada."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La entrega voluntaria de una comunicación por un participante no requiere orden judicial para ser valorada.",
+    "condicion": "Siempre que la información esté relacionada con la comisión de un delito.",
+    "base": "El juez valorará el alcance de éstas, siempre y cuando contengan información relacionada con la comisión de un delito."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "intervención de comunicación",
+    "b": "aportación voluntaria",
+    "diferencia": "La intervención es un acto de autoridad que requiere control judicial, mientras que la aportación voluntaria es un acto de un particular participante que no requiere orden previa."
+   }
+  ],
+  "limites": "El texto no especifica las penas exactas por violar la privacía ni establece un catálogo de delitos específicos para los cuales proceda la intervención, más allá de la mención general a la comisión de un delito.",
+  "fuentes_irrelevantes": []
+ }
+}
