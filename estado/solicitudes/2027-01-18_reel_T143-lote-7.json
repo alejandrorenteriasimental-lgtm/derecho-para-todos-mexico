@@ -12,12 +12,12 @@
   "lote": "lote-7",
   "motivo_seleccion": "LGDNNA art. 105 fr. IV y último párrafo (texto oficial en registro/textos/LGDNNA_105.json, consultado el 13-11-2026; última reforma de la ley 15-01-2026; fracción reformada DOF 11-01-2021): «Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante». Condición literal del último párrafo: tienen derecho a recibir orientación, educación, cuidado y disciplina «sin que, en modo alguno, se autorice a estos el uso del castigo corporal ni el trato humillante». Ley general (alcance nacional). Sustituye a LFPC 10 (dos descartes en la redacción, 12 y 13-11: narración larga).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 804 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 184: recorta al menos 244 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Disciplina sin violencia» no corresponde a l",
   "ultima_categoria": "tecnico",
   "huella_entrada": "37f698a230ed7bc2",
@@ -59,7 +59,14 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Una tienda puede retenerte para revisarte? \\n ¿PUEDEN \\n RETENERTE? \\n ¿Un",
       "pregunta_anterior": "¿Una tienda puede retenerte para revisarte?"
+    },
+    {
+      "fecha": "2026-11-13",
+      "por": "Claude",
+      "motivo": "primer descarte con LGDNNA 105, en la redacción y por forma, no por el tema: narración de 656, 683 y 804 caracteres porque repetía la cita (en texto y en escena), añadía una lista de obligados («Padres y tutores / Escuelas…», no está en el ángulo) y el encabezado de la escena 5 no coincidía con la condición narrada. Se reabre con escenas y encabezados fijados, una sola cita y sin lista",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 804 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 184: recorta al menos 244 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Disciplina sin violencia» no corresponde a l"
     }
   ],
-  "angulo": "Solo el art. 105 LGDNNA, fracción IV y último párrafo. Respuesta: No; la ley prohíbe que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante. Cita literal ÚNICA de la regla: «Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante». Condición, dicha con sus palabras literales: tienen derecho a recibir orientación, educación, cuidado y disciplina de su madre, su padre o de quienes ejerzan la patria potestad, «sin que, en modo alguno, se autorice a estos el uso del castigo corporal ni el trato humillante». Es una ley general, de alcance nacional. Fuera de la pregunta (no son faltantes): sanciones, delitos, qué autoridad interviene, cómo denunciar y las leyes de cada estado; no mencionarlos. No decir que los padres no pueden poner límites o disciplina: la ley reconoce el derecho a la disciplina sin castigo corporal ni trato humillante. Sin listas. Cuatro escenas más cierre; narración de 450 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita; no repetir la cita en otra escena."
+  "angulo": "Solo el art. 105 LGDNNA, fracción IV y último párrafo. Respuesta: No; la ley prohíbe el castigo corporal y humillante contra niñas, niños y adolescentes. Cita literal ÚNICA (una sola vez, en una sola escena): «Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante». Condición, dicha con palabras sencillas y SIN otra cita: la ley reconoce su derecho a recibir disciplina de su madre, su padre o quien ejerza la patria potestad, pero sin castigo corporal ni trato humillante. Es una ley general, de alcance nacional. Estructura fija: escena 1 pregunta (encabezado «¿GOLPES PARA DISCIPLINAR?»); escena 2 respuesta corta (encabezado «NO: ESTÁ PROHIBIDO»); escena 3 «La ley dice:» y la cita (encabezado «LA LEY DICE»); escena 4 la condición (encabezado «DISCIPLINA, SÍ; GOLPES, NO»); cierre. Sin listas de personas o instituciones obligadas. No repetir la cita ni leerla dos veces. Fuera de la pregunta (no son faltantes): sanciones, delitos, qué autoridad interviene, cómo denunciar y las leyes de cada estado; no mencionarlos. No decir que los padres no pueden poner límites o disciplina. Narración de 420 caracteres o menos (la cita ocupa unos 165)."
 }

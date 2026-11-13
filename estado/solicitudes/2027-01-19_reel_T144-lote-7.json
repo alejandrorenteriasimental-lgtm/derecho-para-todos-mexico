@@ -2,22 +2,22 @@
   "fecha": "2027-01-19",
   "formato": "reel",
   "tema_id": "T144",
-  "titulo": "¿Si renuncias, te deben pagar prima de antigüedad?",
-  "gancho": "¿Si renuncias, te deben pagar prima de antigüedad?",
-  "pregunta": "¿Si renuncias, te deben pagar prima de antigüedad?",
+  "titulo": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
+  "gancho": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
+  "pregunta": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 162",
+  "fuentes_sugeridas": "CPEUM art. 16",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "LFT art. 162 fr. III (texto oficial cotejado el 5-11-2026, registro/textos/LFT_162.json): «La prima de antigüedad se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Condición literal: quince años de servicios; también se paga a quienes se separen por causa justificada y a quienes sean separados, «independientemente de la justificación o injustificación del despido». Sustituye a LFT 110 (dos descartes, 12-11).",
+  "motivo_seleccion": "CPEUM art. 16, párrafo sobre comunicaciones privadas (texto oficial en registro/textos/CPEUM_16.json, consultado el 3-11-2026; última reforma de la Constitución 07-10-2026): «Las comunicaciones privadas son inviolables». Condición literal: «Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente, podrá autorizar la intervención de cualquier comunicación privada». Límite literal: la autoridad judicial federal «no podrá otorgar estas autorizaciones cuando se trate de materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo, ni en el caso de las comunicaciones del detenido con su defensor». Alcance nacional. Tema distinto de los de las últimas 3 semanas (el art. 16 salió el 03-01 en imagen sobre datos personales y el 13-12 sobre cateo: otros párrafos). Sustituye a LFT 162 (tres descartes: análisis el 12-11; forma «mínimos» y narración de 631 caracteres el 13-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270119-T144",
   "archivo": "2027-01-19_reel_T144-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «Si renuncias antes de los 15 años, la ley no obliga al patrón a pagarte esta prima",
   "ultima_categoria": "redaccion",
   "huella_entrada": "c0739422d71c9574",
@@ -50,7 +50,15 @@
       "motivo": "segundo descarte con LFT 162, en la redacción, por forma y no por el tema: el texto visible decía «15 años mínimos» y la revisión de mínimos legales solo reconoce «por lo menos / al menos / mínimo» en singular. Se reabre con la misma pregunta y la instrucción de decir siempre «por lo menos quince años» (sin «mínimos»)",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[minimo] «15 años mínimos» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).\"], \"visible\": \"  \\n ¿Si renuncias, te deben pagar prima de antigüedad? \\n ¿RENUNCIAS? \\n PRIMA DE \\n ANTIGÜEDAD \\n Depende: si renuncias voluntariamente, tienes derecho a recibirla siempre que hayas cumplido por lo menos quince años de se"
+    },
+    {
+      "fecha": "2026-11-13",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el tercer descarte con LFT 162 (13-11, 10:17: narración de 631 caracteres y otra vez el filtro de mínimos con «antes de los 15 años»). Ahora CPEUM 16 (comunicaciones privadas), respuesta, condición y límite literales, alcance nacional, tema sin uso en las últimas 3 semanas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 631 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 11: recorta al menos 71 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «Si renuncias antes de los 15 años, la ley no obliga al patrón a pagarte esta prima",
+      "pregunta_anterior": "¿Si renuncias, te deben pagar prima de antigüedad?"
     }
   ],
-  "angulo": "Solo el art. 162 LFT (encabezado y fracciones I y III). Respuesta: Depende: si renuncias, solo si cumpliste por lo menos quince años de servicios; si te despiden, con o sin causa, sí. Cita literal ÚNICA: «se pagará a los trabajadores que se separen voluntariamente de su empleo, siempre que hayan cumplido quince años de servicios, por lo menos». Decir que es para trabajadores de planta («Los trabajadores de planta tienen derecho a una prima de antigüedad») y que equivale a doce días de salario por cada año de servicios (fr. I), sin explicar cómo se calcula el salario (arts. 485 y 486, no se tratan). Sin listas. No hablar de la fracción IV (retiros masivos) ni de muerte del trabajador. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita. Fuera de la pregunta (no son límites que impidan responder): monto, salario base del cálculo, topes y plazos para reclamar; no mencionarlos. En todo lo visible y lo narrado, la cifra va siempre con la fórmula literal «por lo menos quince años de servicios» (o «por lo menos 15 años»); no escribir «15 años mínimos», «mínimo 15 años» ni la cifra sola."
+  "angulo": "Solo el párrafo del art. 16 CPEUM sobre comunicaciones privadas y el que le sigue (autorización judicial federal). Respuesta: No; las comunicaciones privadas son inviolables y solo la autoridad judicial federal puede autorizar que se intervengan. Cita literal ÚNICA: «Las comunicaciones privadas son inviolables». Condición, dicha con sus palabras: exclusivamente la autoridad judicial federal, a petición de la autoridad que faculte la ley o del Ministerio Público, puede autorizar la intervención. Límite, dicho en una frase: no puede autorizarla en asuntos electorales, fiscales, mercantiles, civiles, laborales o administrativos, ni en las comunicaciones de una persona detenida con su defensor. Fuera de la pregunta (no son faltantes): las comunicaciones que aporta voluntariamente quien participó en ellas, cómo las valora el juez, el deber de confidencialidad, sanciones penales, jueces de control y cateos; no mencionarlos. No decir que nadie puede nunca revisarlas ni que basta cualquier juez: es la autoridad judicial federal. Sin listas. Cuatro escenas más cierre; narración de 450 caracteres o menos; la escena de cita dice solo «La Constitución dice:» y la cita; no repetir la cita en otra escena. Cada encabezado visible resume lo que se narra en su escena."
 }
