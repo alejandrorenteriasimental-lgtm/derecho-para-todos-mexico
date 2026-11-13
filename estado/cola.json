@@ -10195,7 +10195,7 @@
       "id": "I20270122-T147",
       "formato": "imagen",
       "huella": "0365f8ffeb330fcc1ebe4f54d245b88ea71926187a4626fda2f44fd527eba46c",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-13T03:51:42+00:00",
@@ -10211,6 +10211,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-13T03:54:10+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-13T04:07:58+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 13-11): texto de la publicación con relleno y sin respuesta clara → pregunta, cita literal del art. 17 CPEUM y condición «de carácter puramente civil»; bajada vaga → «La Constitución lo prohíbe cuando la deuda es de carácter puramente civil»; la ficha visible no cambia; se vuelve a verificar y producir"
         }
       ],
       "error": null,

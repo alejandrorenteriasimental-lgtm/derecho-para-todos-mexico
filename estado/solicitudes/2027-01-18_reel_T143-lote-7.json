@@ -2,22 +2,22 @@
   "fecha": "2027-01-18",
   "formato": "reel",
   "tema_id": "T143",
-  "titulo": "¿Una tienda puede retenerte para revisarte?",
-  "gancho": "¿Una tienda puede retenerte para revisarte?",
-  "pregunta": "¿Una tienda puede retenerte para revisarte?",
+  "titulo": "¿Pueden pegarle a un niño para disciplinarlo?",
+  "gancho": "¿Pueden pegarle a un niño para disciplinarlo?",
+  "pregunta": "¿Pueden pegarle a un niño para disciplinarlo?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 10",
+  "fuentes_sugeridas": "LGDNNA art. 105 fr. IV",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "LFPC art. 10 (texto oficial en registro/textos/LFPC_10.json, consultado el 26-10-2026; última reforma de la ley 12-12-2025): «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción literal: flagrancia, en la que solo pueden poner sin demora al presunto infractor a disposición de la autoridad competente. Sustituye a LFPC 18 Bis (dos descartes, 11 y 12-11).",
+  "motivo_seleccion": "LGDNNA art. 105 fr. IV y último párrafo (texto oficial en registro/textos/LGDNNA_105.json, consultado el 13-11-2026; última reforma de la ley 15-01-2026; fracción reformada DOF 11-01-2021): «Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante». Condición literal del último párrafo: tienen derecho a recibir orientación, educación, cuidado y disciplina «sin que, en modo alguno, se autorice a estos el uso del castigo corporal ni el trato humillante». Ley general (alcance nacional). Sustituye a LFPC 10 (dos descartes en la redacción, 12 y 13-11: narración larga).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270118-T143",
   "archivo": "2027-01-18_reel_T143-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Una tienda puede retenerte para revisarte? \\n ¿PUEDEN \\n RETENERTE? \\n ¿Un",
   "ultima_categoria": "redaccion",
   "huella_entrada": "0ca58bfc943797cd",
@@ -51,7 +51,15 @@
       "motivo": "primer descarte con LFPC 10, en la redacción: narración larga (774 y 640 caracteres) y auditoría con objeción en la excepción (faltaba que la entrega es «bajo su responsabilidad» de proveedores, agentes o empleados). Se reabre con ángulo más corto: sin el párrafo de sanciones, la excepción con su cita literal completa y «autoridad competente» sin precisar cuál",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se especifica ante qué autoridad se debe poner al presunto infractor (la ley solo menciona 'autoridad competente').\"]}, \"conclusiones\": [{\"conclusion\": \"Los proveedores de bienes o servicios no pueden realizar actos que afecten la libertad o integridad de lo"
+    },
+    {
+      "fecha": "2026-11-13",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFPC 10 (13-11: narración de 653 caracteres pese al tope de 480 del ángulo; el art. 10 obliga a decir la regla y una excepción larga). Ahora LGDNNA 105 fr. IV, respuesta y condición literales, alcance nacional, sin uso en los lotes 1 a 8",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Una tienda puede retenerte para revisarte? \\n ¿PUEDEN \\n RETENERTE? \\n ¿Un",
+      "pregunta_anterior": "¿Una tienda puede retenerte para revisarte?"
     }
   ],
-  "angulo": "Solo los dos primeros enunciados del art. 10 LFPC. Respuesta: No; queda prohibido a cualquier proveedor llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación. Cita literal ÚNICA de la regla: «Queda prohibido a cualquier proveedor de bienes o servicios llevar a cabo acciones que atenten contra la libertad o seguridad o integridad personales de los consumidores bajo pretexto de registro o averiguación». Excepción, dicha completa y con su cita literal: «En el caso de que alguien sea sorprendido en la comisión flagrante de un delito, los proveedores, sus agentes o empleados se limitarán, bajo su responsabilidad, a poner sin demora al presunto infractor a disposición de la autoridad competente». Fuera de la pregunta (no son faltantes): qué autoridad concreta es la competente, sanciones, multas, reparación del daño e indemnización; no mencionarlos. No afirmar que nunca pueden revisar una bolsa. Sin listas. Cuatro escenas más cierre; narración de 480 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita; no repetir la cita en otra escena."
+  "angulo": "Solo el art. 105 LGDNNA, fracción IV y último párrafo. Respuesta: No; la ley prohíbe que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante. Cita literal ÚNICA de la regla: «Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante». Condición, dicha con sus palabras literales: tienen derecho a recibir orientación, educación, cuidado y disciplina de su madre, su padre o de quienes ejerzan la patria potestad, «sin que, en modo alguno, se autorice a estos el uso del castigo corporal ni el trato humillante». Es una ley general, de alcance nacional. Fuera de la pregunta (no son faltantes): sanciones, delitos, qué autoridad interviene, cómo denunciar y las leyes de cada estado; no mencionarlos. No decir que los padres no pueden poner límites o disciplina: la ley reconoce el derecho a la disciplina sin castigo corporal ni trato humillante. Sin listas. Cuatro escenas más cierre; narración de 450 caracteres o menos; la escena de cita dice solo «La ley dice:» y la cita; no repetir la cita en otra escena."
 }
