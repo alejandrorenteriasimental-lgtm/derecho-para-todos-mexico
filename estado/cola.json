@@ -10333,7 +10333,7 @@
       "id": "R20270118-T143",
       "formato": "reel",
       "huella": "adfdcbf88e65f331fc99690ff360ed23fc93fcbe31eb8dc55bf57795fd0d82a2",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T04:04:57+00:00",
@@ -10349,6 +10349,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-14T04:06:18+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-14T04:12:01+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 14-11): el gancho narrado («¿…solo de palabra?») contradecía el «Sí» y el encabezado; la escena de lista terminaba en «lo siguiente:» sin leer los elementos → pregunta y encabezados alineados, los cuatro elementos narrados con «por lo menos»; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -10367,7 +10373,7 @@
       "id": "R20270119-T144",
       "formato": "reel",
       "huella": "3beb7e5d4fd795fee2f7f645638f13b9af6197a07fb00006797da4d528887081",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T04:04:57+00:00",
@@ -10383,6 +10389,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-14T04:08:34+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-14T04:12:01+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 14-11): la escena 4 omitía la condición literal «en el país donde cometieron el delito» → añadida; escena 5 «prohíbe explícitamente» → «no autoriza»; lo visible no cambia; se vuelve a verificar y producir"
         }
       ],
       "error": null,

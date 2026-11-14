@@ -55,18 +55,18 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te dieron la garantía de un bien o servicio solo de palabra?",
+      "texto": "¿Te deben dar la garantía de un bien o servicio por escrito?",
       "titulo": [
-        "¿GARANTÍA DE",
-        "PALABRA?"
+        "¿GARANTÍA",
+        "POR ESCRITO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí. Al ofrecerse una garantía, la póliza debe expedirse por escrito por el proveedor y entregarse al consumidor al recibir el bien o servicio.",
+      "texto": "Sí. Si hay garantía, el proveedor debe expedir la póliza por escrito y entregártela al recibir el bien o servicio.",
       "titulo": [
-        "POR ESCRITO"
+        "SÍ, POR ESCRITO"
       ],
       "afirmaciones": []
     },
@@ -87,7 +87,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Al recibir el bien o servicio, el documento escrito debe señalar de forma clara por lo menos lo siguiente:",
+      "texto": "La póliza debe decir de forma clara, por lo menos, su alcance, duración y condiciones, cómo hacerla efectiva, dónde reclamar y los talleres de servicio.",
       "items": [
         "Alcance, duración y condiciones",
         "Cómo hacerla efectiva",
@@ -105,7 +105,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "En conclusión, cuando se ofrece garantía sobre un bien o servicio, la póliza debe expedirse por escrito y entregarse al recibirlo.",
+      "texto": "Recuerda: la póliza va por escrito y se entrega al recibir el bien o servicio.",
       "titulo": [
         "ENTREGA AL",
         "RECIBIRLO"
@@ -269,5 +269,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 1: el gancho narrado preguntaba «¿Te dieron la garantía… solo de palabra?» y la respuesta era «Sí» (contradicción al oído) y el encabezado «¿GARANTÍA DE PALABRA?» → pregunta y encabezado alineados con el título: «¿Te deben dar la garantía de un bien o servicio por escrito?» / «¿GARANTÍA POR ESCRITO?». Escena 2: encabezado «SÍ, POR ESCRITO» y narración más directa («Si hay garantía, el proveedor debe expedir la póliza por escrito y entregártela al recibir el bien o servicio»). Escena 4: la narración terminaba en «lo siguiente:» sin leer la lista y mezclaba el momento de entrega con el contenido → narra los cuatro elementos de la lista con «por lo menos» (art. 78 LFPC). Escena 5: conclusión acortada para no pasar de 620 caracteres («Recuerda: la póliza va por escrito y se entrega al recibir el bien o servicio.»)."
+    }
+  ]
 }
