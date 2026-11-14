@@ -1,0 +1,134 @@
+{
+  "id": "I20270129-T154",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿La educación del Estado puede ser religiosa?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T154",
+  "pieza": {
+    "titular": "¿La educación del Estado puede ser religiosa?",
+    "bajada": "Conoce lo que establece la Constitución sobre el carácter laico de la educación que imparten las autoridades en México.",
+    "mito": "Las escuelas del Estado pueden incluir doctrinas religiosas en sus clases.",
+    "realidad": "No, la educación que imparte el Estado debe ser laica y mantenerse por completo ajena a cualquier doctrina religiosa.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 3"
+  },
+  "copy": "Existen dudas frecuentes sobre si las escuelas públicas pueden adoptar enseñanzas de tipo religioso en sus programas de estudio.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, en su artículo 3, la enseñanza que brindan las autoridades tiene normas específicas sobre su neutralidad.\n\nEl texto constitucional establece textualmente que «dicha educación será laica y, por tanto, se mantendrá por completo ajena a cualquier doctrina religiosa;», garantizando así la libertad de creencias.\n\nComparte esta información y guarda la publicación para consultarla después.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija que explica mediante mito y realidad si la educación del Estado puede ser religiosa según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "dicha educación será laica y, por tanto, se mantendrá por completo ajena a cualquier doctrina religiosa;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 3",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La educación impartida por el Estado debe mantenerse completamente ajena a cualquier doctrina religiosa.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿La educación que da el Estado puede ser religiosa?",
+    "concepto_central": "educación laica",
+    "respuesta_corta": "No, la educación que imparte el Estado debe ser laica y mantenerse por completo ajena a cualquier doctrina religiosa.",
+    "reglas": [
+      {
+        "conclusion": "La educación impartida por el Estado debe ser laica y mantenerse por completo ajena a cualquier doctrina religiosa.",
+        "fuente": "F1",
+        "cita_literal": "dicha educación será laica y, por tanto, se mantendrá por completo ajena a cualquier doctrina religiosa;",
+        "condiciones": [
+          "Garantizada por el artículo 24 la libertad de creencias"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "3"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que la educación impartida por el Estado es laica y ajena a cualquier doctrina religiosa.",
+        "fuente": "F1",
+        "cita_literal": "dicha educación será laica y, por tanto, se mantendrá por completo ajena a cualquier doctrina religiosa;"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "Los textos oficiales no detallan sanciones específicas aplicables en caso de vulnerar el carácter laico de la educación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T20:06:44+00:00",
+    "solicitud": "2027-01-29_imagen_T154-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿La educación que da el Estado puede ser religiosa?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La educación que imparte el Estado debe ser laica y mantenerse por completo ajena a cualquier doctrina religiosa.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel del mandato contenido en la fracción I del artículo 3 de la Constitución Política de los Estados Unidos Mexicanos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

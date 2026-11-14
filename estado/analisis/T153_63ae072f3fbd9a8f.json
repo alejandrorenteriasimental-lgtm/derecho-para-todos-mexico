@@ -1,0 +1,53 @@
+{
+ "tema_id": "T153",
+ "pregunta": "¿Hasta qué edad eres niña o niño según la ley?",
+ "fecha": "2026-11-14T20:00:54+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Hasta qué edad eres niña o niño según la ley?",
+  "concepto_central": "niña o niño",
+  "respuesta_corta": "Son menores de doce años, aunque para efectos de tratados internacionales y mayoría de edad se consideran niños los menores de dieciocho años.",
+  "reglas": [
+   {
+    "conclusion": "La regla general establece que son niñas y niños los menores de doce años.",
+    "fuente": "F1",
+    "cita_literal": "Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad.",
+    "condiciones": [],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Para efectos de tratados internacionales y la mayoría de edad, son considerados niños los menores de dieciocho años.",
+    "fuente": "F1",
+    "cita_literal": "Para efectos de los tratados internacionales y la mayoría de edad, son niños los menores de dieciocho años de edad.",
+    "condiciones": [
+     "Para efectos de los tratados internacionales y la mayoría de edad"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Cuando exista la duda sobre la edad de doce años, la ley establece que se presumirá que se trata de una niña o un niño.",
+    "fuente": "F1",
+    "cita_literal": "Cuando exista la duda de si se trata de una persona mayor o menor de doce años, se presumirá que es niña o niño.",
+    "condiciones": [
+     "Cuando exista la duda de si se trata de una persona mayor o menor de doce años"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "definicion",
+    "estado": "cubierto",
+    "respuesta": "La ley define como niñas y niños a los menores de doce años, ampliando este límite hasta los dieciocho años para tratados internacionales y la mayoría de edad, con una regla de presunción en caso de duda.",
+    "fuente": "F1",
+    "cita_literal": "Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad.",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no señala otros supuestos o definiciones de edad fuera de los límites de doce y dieciocho años, ni las consecuencias prácticas específicas de la presunción más allá de lo expresado.",
+  "fuentes_irrelevantes": []
+ }
+}

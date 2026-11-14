@@ -37,8 +37,8 @@
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
-      "resultado": "FALLA",
-      "detalle": "86% de 37 palabras reconocidas"
+      "resultado": "APROBADO",
+      "detalle": "97% de 37 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -57,11 +57,9 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "falla técnica de la imagen"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -112,8 +110,8 @@
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "RETENIDO",
-    "fecha": "2026-11-14T16:03:30+00:00",
+    "estado": "APTO",
+    "fecha": "2026-11-14T20:11:06+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

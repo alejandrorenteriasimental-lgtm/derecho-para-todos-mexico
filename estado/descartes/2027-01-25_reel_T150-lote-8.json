@@ -1,22 +1,99 @@
 {
  "solicitud": "2027-01-25_reel_T150-lote-8.json",
- "fecha": "2026-11-14T10:03:57+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados.\"]}",
+ "fecha": "2026-11-14T19:57:06+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario.\"]}, \"conclusiones\": [{\"conclusion\": \"El periodo de prueba no podrá exced",
  "historial": [
   {
    "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
    "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El periodo de prueba no podrá exceder de treinta días en relaciones de trabajo por tiempo indeterminado o que excedan de ciento ochenta días.",
+      "sostenida": "si",
+      "motivo": "La conclusión refleja fielmente el artículo 39-A de la LFT."
+     },
+     {
+      "conclusion": "El periodo de prueba podrá extenderse hasta ciento ochenta días únicamente para puestos de dirección, gerenciales, de administración general o para labores técnicas o profesionales especializadas.",
+      "sostenida": "si",
+      "motivo": "La conclusión es precisa respecto a la excepción establecida en el artículo 39-A."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'excepcion', número 1, afirmación A1",
+      "problema": "La afirmación A1 es correcta, pero la escena omite mencionar la condición esencial de que el periodo de prueba solo aplica en relaciones de trabajo por tiempo indeterminado o superiores a 180 días, lo cual es un requisito de procedencia.",
+      "correccion": "Añadir la condición: 'El periodo de prueba solo puede establecerse en relaciones de trabajo por tiempo indeterminado o que excedan de 180 días'."
+     },
+     {
+      "donde": "Escena 'titular', texto: 'Recuerda que esto solo aplica en relaciones de trabajo por tiempo indeterminado o mayores a 180 días.'",
+      "problema": "Aunque el texto es correcto, la afirmación A2 dentro de esa misma escena ('El periodo de prueba podrá extenderse hasta ciento ochenta días para puestos directivos o especializados') es incompleta porque omite la condición de que esto es una excepción a la regla general de 30 días, pudiendo confundir al lector sobre si el periodo de 180 días es la regla general para esos puestos.",
+      "correccion": "Clarificar que los 180 días son una extensión excepcional a la regla general de 30 días, no el periodo estándar por defecto."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 649 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 29: recorta al menos 89 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Sabes cuánto puede durar tu periodo de prueba en un empleo? \n ¿CUÁNTO DURA \n LA PRUEBA? \n Como regla general, dura hasta 30 días en relaciones de trabajo por tiempo indeterminado o que excedan de 180 días. \n HASTA 30 \n DÍAS \n La ley dice: «el cual no podrá exceder de treinta días». \n el cual no podrá exceder de treinta días \n Excepcionalmente, el periodo de prueba puede extenderse hasta 180 días solo para puestos de dirección, gerenciales o labores especializadas, dentro de relaciones por tiempo indeterminado o mayores a 180 días. \n 180 DÍAS, SOLO ALGUNOS PUESTOS \n Puestos directivos o especializados \n Recuerda que este periodo solo puede establecerse en relaciones de trabajo por tiempo"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
    "errores": [
-    "[cobertura] El elemento «contenido» («La ley establece un plazo de 30 días como regla general y ha») no trae una cita literal que esté en el texto oficial de su fuente.",
-    "[sustento] «el límite general es de 30 días, pero puede extenderse hasta 180 días para cargo» menciona un plazo (180 dia) que no aparece en los artículos citados."
+    "narración de 649 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 29: recorta al menos 89 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ]
   },
   {
-   "etapa": "analisis",
-   "intento": 1,
-   "errores": [
-    "[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados."
-   ]
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El periodo de prueba no podrá exceder de treinta días en relaciones de trabajo por tiempo indeterminado o que excedan de ciento ochenta días.",
+      "sostenida": "si",
+      "motivo": "El texto del artículo 39-A establece claramente esta limitación temporal y las condiciones de la relación laboral."
+     },
+     {
+      "conclusion": "El periodo de prueba podrá extenderse hasta ciento ochenta días únicamente para puestos de dirección, gerenciales, de administración general o para labores técnicas o profesionales especializadas.",
+      "sostenida": "si",
+      "motivo": "El artículo 39-A prevé esta excepción específica para los puestos mencionados."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'cierre'",
+      "problema": "La frase 'Síguenos para entender tus derechos' roza la línea de la asesoría personalizada o la promesa de resolución de dudas específicas, lo cual contraviene la regla de no ofrecer asesoría.",
+      "correccion": "Eliminar la invitación a seguir para 'entender tus derechos' y mantener únicamente el aviso de que es información general."
+     },
+     {
+      "donde": "Razonamiento, elemento 'contenido'",
+      "problema": "La cita literal seleccionada está incompleta y corta la idea central de la norma al omitir el propósito del periodo de prueba.",
+      "correccion": "Incluir la parte de la cita que menciona el fin de verificar los requisitos y conocimientos necesarios para el puesto."
+     }
+    ]
+   }
   }
  ]
 }

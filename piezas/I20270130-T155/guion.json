@@ -1,0 +1,155 @@
+{
+  "id": "I20270130-T155",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Dónde te deben pagar tu sueldo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T155",
+  "pieza": {
+    "titular": "¿Dónde te deben pagar tu sueldo?",
+    "bajada": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios, conforme a la ley.",
+    "cita": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 108",
+    "fuente_visible": "Ley Federal del Trabajo, art. 108"
+  },
+  "copy": "Conforme a la Ley Federal del Trabajo, la legislación establece directrices precisas sobre las obligaciones patronales respecto a las percepciones económicas.\n\nEl artículo 108 de dicha ley señala de manera literal que el pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.\n\nGuarda y comparte esta publicación para conocer con precisión lo que disponen las normas laborales en México.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Gráfica editorial que detalla el lugar donde se debe realizar el pago del sueldo según la ley.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "108",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+      "cita": "Ley Federal del Trabajo, artículo 108",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-14"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El pago del salario se realiza en el sitio donde se prestan los servicios laborales.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Dónde te deben pagar tu sueldo?",
+    "concepto_central": "lugar de pago del salario",
+    "respuesta_corta": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+    "reglas": [
+      {
+        "conclusion": "El salario debe pagarse en el lugar donde los trabajadores presten sus servicios.",
+        "fuente": "F1",
+        "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "108"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El salario se debe pagar en el lugar donde los trabajadores presten sus servicios.",
+        "fuente": "F1",
+        "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "no_aplica",
+        "respuesta": "La ley no establece condiciones o requisitos adicionales para determinar el lugar de pago.",
+        "fuente": "F1",
+        "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+        "motivo": "El artículo no prevé requisitos específicos más allá de indicar que es donde se prestan los servicios."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no menciona sanciones, excepciones específicas ni formas alternativas de pago en este artículo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T20:08:25+00:00",
+    "solicitud": "2027-01-30_imagen_T155-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Dónde te deben pagar tu sueldo?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios, conforme a la ley. \n El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios. \n Lugar de pago"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El salario debe pagarse en el lugar donde los trabajadores presten sus servicios.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción exacta de la regla establecida en el artículo 108 de la Ley Federal del Trabajo proporcionado."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

@@ -1,0 +1,134 @@
+{
+ "solicitud": "2027-01-28_reel_T153-lote-8.json",
+ "fecha": "2026-11-14T20:02:59+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Sabes hasta qué edad eres considerado niña o niño según la ley? \\n ¿HASTA ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «definicion» («Son niñas y niños los menores de doce años, y para efectos d») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 35: recorta al menos 95 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Hasta qué edad eres niña o niño según lo que establece la ley? \n ¿HASTA QUÉ EDAD \n ERES NIÑA O \n NIÑO? \n Significa que son consideradas niñas y niños las personas menores de doce años de edad. \n EDAD LEGAL \n MENORES \n La ley define la infancia indicando con precisión que: Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad. \n Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad. \n Aspectos sobre la edad y la ley. \n Menores de doce años \n De 12 a 18 adolescentes \n Menores de 18 en tratados \n Cuando exista la duda de si se tra"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 655 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 35: recorta al menos 95 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La excepción de presunción en caso de duda sobre la edad de doce años.",
+      "La definición de niños para efectos de tratados internacionales y mayoría de edad (menores de 18 años)."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Son consideradas niñas y niños las personas menores de doce años de edad.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión es incompleta porque omite la regla de presunción (si hay duda sobre si es mayor o menor de 12, se presume niña o niño) y la excepción para tratados internacionales y mayoría de edad (donde se consideran niños a los menores de 18)."
+     },
+     {
+      "conclusion": "Rangos de edad para niñas, niños y adolescentes",
+      "sostenida": "parcial",
+      "motivo": "Aunque menciona los rangos, la pieza no integra la regla de presunción ante la duda, la cual es parte esencial de la definición de los rangos según el artículo 5."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "titular / respuesta_corta",
+      "problema": "La pieza presenta como una regla absoluta que los niños son solo los menores de doce años, omitiendo que para tratados internacionales y mayoría de edad el límite es de dieciocho años.",
+      "correccion": "Debe aclararse que, si bien la regla general es menores de doce años, para efectos de tratados internacionales y mayoría de edad, se consideran niños a los menores de dieciocho años."
+     },
+     {
+      "donde": "escenas (tipo: lista)",
+      "problema": "La lista menciona 'Menores de 18 en tratados' pero no explica la consecuencia jurídica de esa distinción en relación con la pregunta original.",
+      "correccion": "Integrar que, bajo el supuesto de tratados internacionales o mayoría de edad, la categoría de 'niño' se extiende hasta los dieciocho años."
+     },
+     {
+      "donde": "cobertura general",
+      "problema": "La pieza ignora la regla de presunción establecida en el artículo 5 para resolver dudas sobre la edad de doce años.",
+      "correccion": "Incluir que, ante la duda de si una persona es mayor o menor de doce años, la ley establece que se presumirá que es niña o niño."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La regla general establece que son niñas y niños los menores de doce años.",
+      "sostenida": "si",
+      "motivo": "El artículo 5 define explícitamente a las niñas y niños como los menores de doce años."
+     },
+     {
+      "conclusion": "Para efectos de tratados internacionales y la mayoría de edad, son considerados niños los menores de dieciocho años.",
+      "sostenida": "si",
+      "motivo": "El artículo 5 establece esta distinción específica para esos supuestos legales."
+     },
+     {
+      "conclusion": "Cuando exista la duda sobre la edad de doce años, la ley establece que se presumirá que se trata de una niña o un niño.",
+      "sostenida": "si",
+      "motivo": "El artículo 5 contempla expresamente la presunción en caso de duda sobre si la persona es mayor o menor de doce años."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'titular' (segunda aparición) y razonamiento general",
+      "problema": "La pieza omite mencionar la presunción legal para adolescentes cuando hay duda sobre si una persona es mayor de dieciocho años, enfocándose solo en la duda sobre los doce años.",
+      "correccion": "Debe incluirse que, además de la presunción para niñas y niños, la ley establece: 'Cuando exista la duda de si se trata de una persona mayor de dieciocho años de edad, se presumirá que es adolescente'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 683 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 63: recorta al menos 123 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Duda sobre la mayoría de edad» no corresponde a lo que se narra («Cuando exista la duda de si se trata de una persona mayor de dieciocho»)."
+   ],
+   "visible": "  \n ¿Hasta qué edad eres menor? \n ¿HASTA QUÉ EDAD \n ERES NIÑA O NIÑO? \n Son menores de doce años, aunque para efectos de tratados internacionales y mayoría de edad se consideran niños los menores de dieciocho años. \n EDAD SEGÚN \n LA LEY \n La ley indica: Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad. \n Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad. \n Reglas de presunción: \n Menores de doce años \n Tratados internacionales \n Reglas de presunción \n Cuando exista la duda de si se trata de una persona mayor de dieciocho añ"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Sabes hasta qué edad eres considerado niña o niño según la ley? \n ¿HASTA QUÉ EDAD \n ERES NIÑO? \n Son menores de doce años, aunque para tratados internacionales y mayoría de edad son menores de dieciocho. \n REGLA GENERAL \n Y TRATADOS \n La ley dice: «Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad.». \n Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad. \n Los límites de edad son los siguientes: \n Menores de doce años \n Menores de 18 (tratados) \n Cuando exista la duda de si se trata de una persona mayor o menor de doce añ"
+  }
+ ]
+}

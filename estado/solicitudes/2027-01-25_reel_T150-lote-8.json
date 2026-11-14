@@ -12,14 +12,14 @@
   "lote": "lote-8",
   "motivo_seleccion": "LFT art. 39-A (texto oficial cotejado el 8-11-2026, registro/textos/LFT_39-A.json): «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Condición literal: relaciones por tiempo indeterminado o que excedan de ciento ochenta días; excepción literal del mismo artículo: puede extenderse hasta ciento ochenta días para puestos de dirección, gerenciales y de administración general o labores técnicas o profesionales especializadas.",
   "hora_publicacion_mx": "19:00",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270125-T150",
   "archivo": "2027-01-25_reel_T150-lote-8.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario.\"]}, \"conclusiones\": [{\"conclusion\": \"El periodo de prueba no podrá exced",
+  "ultima_categoria": "juridico",
   "huella_entrada": "12627d05eada1525",
   "historial_reaperturas": [
     {

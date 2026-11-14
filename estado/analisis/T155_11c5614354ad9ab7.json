@@ -1,0 +1,42 @@
+{
+ "tema_id": "T155",
+ "pregunta": "¿Dónde te deben pagar tu sueldo?",
+ "fecha": "2026-11-14T20:07:05+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Dónde te deben pagar tu sueldo?",
+  "concepto_central": "lugar de pago del salario",
+  "respuesta_corta": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+  "reglas": [
+   {
+    "conclusion": "El salario debe pagarse en el lugar donde los trabajadores presten sus servicios.",
+    "fuente": "F1",
+    "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El salario se debe pagar en el lugar donde los trabajadores presten sus servicios.",
+    "fuente": "F1",
+    "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece condiciones o requisitos adicionales para determinar el lugar de pago.",
+    "fuente": "F1",
+    "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
+    "motivo": "El artículo no prevé requisitos específicos más allá de indicar que es donde se prestan los servicios."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no menciona sanciones, excepciones específicas ni formas alternativas de pago en este artículo.",
+  "fuentes_irrelevantes": []
+ }
+}

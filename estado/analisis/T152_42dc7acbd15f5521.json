@@ -1,0 +1,60 @@
+{
+ "tema_id": "T152",
+ "pregunta": "¿Cuánto te deben bonificar si el producto no es como te lo ofrecieron?",
+ "fecha": "2026-11-14T20:05:12+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto te deben bonificar si el producto no es como te lo ofrecieron?",
+  "concepto_central": "bonificacion",
+  "respuesta_corta": "Te deben bonificar al menos el veinte por ciento del precio pagado cuando el producto no corresponda a la calidad, marca o especificaciones ofrecidas.",
+  "reglas": [
+   {
+    "conclusion": "La bonificación no puede ser menor al veinte por ciento del precio pagado en los casos previstos por la ley.",
+    "fuente": "F2",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado.",
+    "condiciones": [
+     "cuando se actualicen los supuestos de incumplimiento establecidos en el artículo 92"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Tienes derecho a una bonificación si el bien no cumple con las características bajo las cuales se ofreció.",
+    "fuente": "F1",
+    "cita_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido",
+    "condiciones": [
+     "a elección del consumidor entre la reposición del producto o la devolución de la cantidad pagada"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La bonificación obligatoria debe ser de al menos el veinte por ciento del precio pagado.",
+    "fuente": "F2",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado.",
+    "motivo": ""
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.",
+    "fuente": "F1",
+    "cita_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "bonificacion",
+    "b": "devolucion dinero",
+    "diferencia": "La bonificación es una compensación económica adicional que no puede ser menor al 20 por ciento, mientras que la devolución es la restitución del precio pagado por el producto."
+   }
+  ],
+  "limites": "Los textos oficiales no establecen el procedimiento ni los plazos específicos que tiene el consumidor para presentar la reclamación ante el proveedor.",
+  "fuentes_irrelevantes": []
+ }
+}

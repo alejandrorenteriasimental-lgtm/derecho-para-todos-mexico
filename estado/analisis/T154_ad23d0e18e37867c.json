@@ -1,0 +1,52 @@
+{
+ "tema_id": "T154",
+ "pregunta": "¿Puedes elegir tu religión?",
+ "fecha": "2026-11-14T20:03:17+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Puedes elegir tu religión?",
+  "concepto_central": "libertad de religión",
+  "respuesta_corta": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado.",
+  "reglas": [
+   {
+    "conclusion": "Toda persona tiene derecho a elegir y adoptar la religión de su agrado.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+    "condiciones": [
+     "siempre que no constituyan un delito o falta penados por la ley",
+     "nadie podrá utilizar los actos públicos de expresión de esta libertad con fines políticos, de proselitismo o de propaganda política"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Sí, tienes derecho a tener o adoptar la religión de tu agrado.",
+    "fuente": "F1",
+    "cita_literal": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Los actos de culto no deben constituir un delito o falta, ni usarse con fines políticos o de propaganda.",
+    "fuente": "F1",
+    "cita_literal": "siempre que no constituyan un delito o falta penados por la ley. Nadie podrá utilizar los actos públicos de expresión de esta libertad con fines políticos, de proselitismo o de propaganda política."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "el texto oficial no prevé excepciones a la libertad de adoptar una religión, sino límites en la práctica de cultos y actos públicos"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no detalla procedimientos administrativos ni sanciones específicas para quienes violen las restricciones de culto público.",
+  "fuentes_irrelevantes": []
+ }
+}

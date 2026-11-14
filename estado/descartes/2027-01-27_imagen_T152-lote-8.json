@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-01-27_imagen_T152-lote-8.json",
- "fecha": "2026-11-14T10:11:54+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\", \"[sustento] «Además, en caso de que el consumidor demande judicialmente una indemnización por» habla de demanda, pero ninguno de los artículos que cita la pieza lo estable",
+ "fecha": "2026-11-14T20:05:30+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n No menos del 20 % del precio paga",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,28 +12,39 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[sustento] «Asimismo, si se demanda judicialmente una indemnización por daños y perjuicios, » habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n No podrá ser menor al veinte por ciento del precio pagado. \n La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado. \n Aplica en supuestos del artículo 92 y 92 Bis."
+   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "[conceptos] La respuesta habla de «devolucion_dinero», no de «bonificacion», que es lo que pregunta el título.",
-    "[conceptos] El título trata «bonificacion», pero el contenido visible responde con «devolucion_dinero» del mismo grupo (consumo_postventa) sin hablar de «bonificacion»."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n En los supuestos legales, no podrá ser menor al veinte por ciento del precio pagado. \n Es diferente a la devolución del dinero."
+   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[sustento] «Además, en caso de que el consumidor demande judicialmente una indemnización por» habla de demanda, pero ninguno de los artículos que cita la pieza lo establece."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
    ],
-   "visible": "  \n   \n No podrá ser menor al veinte por ciento del precio pagado en los supuestos de los artículos 92 y 92 Bis. \n La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado. \n Compensación distinta a la devolución."
+   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
   }
  ]
 }

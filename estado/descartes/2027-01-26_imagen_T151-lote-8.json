@@ -1,50 +1,36 @@
 {
  "solicitud": "2027-01-26_imagen_T151-lote-8.json",
- "fecha": "2026-11-14T10:10:53+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo: invade el pie de la ficha\"], \"visible\": \"  \\n   \\n No, la Constitución establece que son no vinculatorias, aunque las autoridades deben responderlas y fundar públicamente su negativa. \\n formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. \\n Si la aut",
+ "fecha": "2026-11-14T20:05:02+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
    ],
-   "visible": "  \n   \n No, la Constitución establece que son no vinculatorias, aunque las autoridades deben responderlas y fundar públicamente su negativa. \n formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. \n La autoridad debe fundar y motivar su negativa."
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
-   "errores": [
-    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
-   ]
+   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta, debe fundar, motivar y hacer pública su"
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "imagen: contenido demasiado largo: invade el pie de la ficha"
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
    ],
-   "visible": "  \n   \n No, la Constitución establece que son no vinculatorias, aunque las autoridades deben responderlas y fundar públicamente su negativa. \n formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. \n Si la autoridad rechaza la recomendación, el Senado o las legislaturas"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 2,
-   "errores": [
-    "imagen: contenido demasiado largo: invade el pie de la ficha"
-   ]
+   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta o no la cumple, debe fundar, motivar y h"
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "imagen: contenido demasiado largo: invade el pie de la ficha"
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
    ],
-   "visible": "  \n   \n No, la Constitución establece que son no vinculatorias, aunque las autoridades deben responderlas y fundar públicamente su negativa. \n formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. \n Si la autoridad rechaza la recomendación, el Senado o las legislaturas"
+   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta, debe fundar, motivar y hacer pública su"
   }
  ]
 }

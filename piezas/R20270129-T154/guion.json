@@ -1,0 +1,203 @@
+{
+  "id": "R20270129-T154",
+  "formato": "reel",
+  "titulo": "¿Puedes elegir libremente tu religión según la ley?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T154",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "24",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 24",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabías que la ley protege tu derecho a elegir tus creencias?",
+      "titulo": [
+        "¿PUEDES",
+        "ELEGIR TU",
+        "RELIGIÓN?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado.",
+      "titulo": [
+        "DERECHO A",
+        "ELEGIR"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución establece claramente que: Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+      "etiqueta": "Constitución, artículo 24",
+      "cita": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Eso sí, debes cumplir con estas condiciones al practicarlo:",
+      "items": [
+        "Sin delitos ni faltas",
+        "Sin fines políticos",
+        "Sin propaganda"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Derecho a elegir la religión de su agrado",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado, respetando los límites legales de culto.",
+      "titulo": [
+        "CONCLUSIÓN",
+        "LEGAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes elegir tu religión?",
+    "concepto_central": "libertad de religión",
+    "respuesta_corta": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado.",
+    "reglas": [
+      {
+        "conclusion": "Toda persona tiene derecho a elegir y adoptar la religión de su agrado.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+        "condiciones": [
+          "siempre que no constituyan un delito o falta penados por la ley",
+          "nadie podrá utilizar los actos públicos de expresión de esta libertad con fines políticos, de proselitismo o de propaganda política"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "24"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Sí, tienes derecho a tener o adoptar la religión de tu agrado.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Los actos de culto no deben constituir un delito o falta, ni usarse con fines políticos o de propaganda.",
+        "fuente": "F1",
+        "cita_literal": "siempre que no constituyan un delito o falta penados por la ley. Nadie podrá utilizar los actos públicos de expresión de esta libertad con fines políticos, de proselitismo o de propaganda política."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "F1",
+        "cita_literal": "",
+        "motivo": "el texto oficial no prevé excepciones a la libertad de adoptar una religión, sino límites en la práctica de cultos y actos públicos"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no detalla procedimientos administrativos ni sanciones específicas para quienes violen las restricciones de culto público."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T20:04:27+00:00",
+    "solicitud": "2027-01-29_reel_T154-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Puedes elegir tu religión?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Puedes elegir tu religión?\n\nSí, toda persona tiene derecho a tener o adoptar la religión de su agrado.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 24.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona tiene derecho a elegir y adoptar la religión de su agrado.",
+              "sostenida": "si",
+              "motivo": "El texto oficial establece el derecho a 'tener o adoptar, en su caso, la de su agrado', lo cual valida la conclusión de elección y adopción."
+            },
+            {
+              "conclusion": "Los actos de culto no deben constituir un delito o falta, ni usarse con fines políticos o de propaganda.",
+              "sostenida": "si",
+              "motivo": "La conclusión sintetiza correctamente las restricciones del artículo 24 sobre la realización de actos de culto y el uso de la expresión de esta libertad."
+            },
+            {
+              "conclusion": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado, respetando los límites legales de culto.",
+              "sostenida": "si",
+              "motivo": "Es una síntesis jurídica válida que combina el derecho subjetivo con las limitaciones expresas en la norma para el ejercicio de actos públicos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
