@@ -8,13 +8,14 @@
   "tema_id": "T155",
   "pieza": {
     "titular": "¿Dónde te deben pagar tu sueldo?",
-    "bajada": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios, conforme a la ley.",
+    "bajada": "En el lugar donde trabajas. Así lo dice la Ley Federal del Trabajo.",
     "cita": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 108",
-    "fuente_visible": "Ley Federal del Trabajo, art. 108"
+    "fuente_visible": "Ley Federal del Trabajo, arts. 108 y 101",
+    "ojo": "Si das tu consentimiento, también pueden pagarte por depósito, tarjeta de débito o transferencia (art. 101)."
   },
-  "copy": "Conforme a la Ley Federal del Trabajo, la legislación establece directrices precisas sobre las obligaciones patronales respecto a las percepciones económicas.\n\nEl artículo 108 de dicha ley señala de manera literal que el pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.\n\nGuarda y comparte esta publicación para conocer con precisión lo que disponen las normas laborales en México.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Gráfica editorial que detalla el lugar donde se debe realizar el pago del sueldo según la ley.",
+  "copy": "En el lugar donde trabajas. El artículo 108 de la Ley Federal del Trabajo dice: «El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios».\n\nY el artículo 109 agrega: «El pago deberá efectuarse en día laborable, fijado por convenio entre el trabajador y el patrón, durante las horas de trabajo o inmediatamente después de su terminación».\n\nOjo: según el artículo 101, «previo consentimiento del trabajador», el pago también puede hacerse por depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico, y los gastos de esos medios los cubre el patrón.\n\nGuarda esta publicación y compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa: según el artículo 108 de la Ley Federal del Trabajo, el salario se paga en el lugar donde se trabaja; con consentimiento del trabajador también puede pagarse por depósito, tarjeta o transferencia (artículo 101).",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -27,6 +28,28 @@
       "cita": "Ley Federal del Trabajo, artículo 108",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-14"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "101",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico.",
+      "cita": "Ley Federal del Trabajo, artículo 101",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-14"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "109",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El pago deberá efectuarse en día laborable, fijado por convenio entre el trabajador y el patrón, durante las horas de trabajo o inmediatamente después de su terminación.",
+      "cita": "Ley Federal del Trabajo, artículo 109",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-14"
     }
   },
   "afirmaciones": [
@@ -35,6 +58,18 @@
       "tipo": "hecho_normativo",
       "texto": "El pago del salario se realiza en el sitio donde se prestan los servicios laborales.",
       "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Con el consentimiento previo del trabajador, el salario puede pagarse por depósito en cuenta bancaria, tarjeta de débito, transferencias u otro medio electrónico.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El pago debe hacerse en día laborable, fijado por convenio, durante las horas de trabajo o inmediatamente después de su terminación.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
@@ -53,6 +88,19 @@
           "documento": "Ley Federal del Trabajo",
           "articulo": "108"
         }
+      },
+      {
+        "conclusion": "Con el consentimiento previo del trabajador, el salario puede pagarse por depósito en cuenta bancaria, tarjeta de débito, transferencias u otro medio electrónico.",
+        "fuente": "F2",
+        "cita_literal": "Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico.",
+        "condiciones": [
+          "previo consentimiento del trabajador"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "101"
+        }
       }
     ],
     "elementos": [
@@ -65,16 +113,16 @@
       },
       {
         "elemento": "condiciones",
-        "estado": "no_aplica",
-        "respuesta": "La ley no establece condiciones o requisitos adicionales para determinar el lugar de pago.",
-        "fuente": "F1",
-        "cita_literal": "El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios.",
-        "motivo": "El artículo no prevé requisitos específicos más allá de indicar que es donde se prestan los servicios."
+        "estado": "cubierto",
+        "respuesta": "Con el consentimiento previo del trabajador, el pago puede hacerse por depósito, tarjeta de débito o transferencia.",
+        "fuente": "F2",
+        "cita_literal": "Previo consentimiento del trabajador, el pago del salario podrá efectuarse por medio de depósito en cuenta bancaria, tarjeta de débito, transferencias o cualquier otro medio electrónico.",
+        "motivo": ""
       }
     ],
     "interpretaciones": [],
     "distinciones": [],
-    "limites": "El texto no menciona sanciones, excepciones específicas ni formas alternativas de pago en este artículo."
+    "limites": "El artículo 108 fija el lugar de pago; el 101 permite, con consentimiento previo del trabajador, medios electrónicos de pago."
   },
   "generacion": {
     "afirmaciones_eliminadas_sin_ancla": [],
@@ -151,5 +199,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La respuesta se presentaba sin la alternativa del art. 101 LFT (con consentimiento previo del trabajador, pago por depósito, tarjeta de débito o transferencias), que es como cobra mucha gente → OJO visible con esa condición, fuente F2 (LFT 101, texto oficial de registro/textos) y regla en el análisis. Bajada «…, conforme a la ley» repetía la cita → respuesta directa «En el lugar donde trabajas». Copy con relleno («directrices precisas…», «de manera literal» sin comillas) → citas literales de los arts. 108, 109 y 101. Fuente F3 (LFT 109) para la cita del copy. Pie: «arts. 108 y 101»."
+    }
+  ]
 }

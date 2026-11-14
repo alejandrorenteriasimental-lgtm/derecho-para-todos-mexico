@@ -31,14 +31,14 @@
     },
     {
       "tipo": "cita",
-      "texto": "La Constitución dice: «La investigación de los delitos corresponde al Ministerio Público».",
+      "texto": "La Constitución empieza así: «La investigación de los delitos corresponde al Ministerio Público»… y la frase sigue.",
       "etiqueta": "Constitución, artículo 21",
       "cita": "La investigación de los delitos corresponde al Ministerio Público",
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Participan la secretaría del ramo de seguridad pública, la Guardia Nacional y las policías en su competencia.",
+      "texto": "También a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías, en el ámbito de su competencia.",
       "titulo": [
         "Y",
         "TAMBIÉN..."
@@ -54,19 +54,20 @@
     },
     {
       "tipo": "titular",
-      "texto": "Todas estas instituciones actúan bajo la conducción y mando del Ministerio Público.",
+      "texto": "Todas actúan bajo la conducción y mando del Ministerio Público en esta función.",
       "titulo": [
-        "EL MP",
-        "CONDUCE"
+        "MANDA EL",
+        "MINISTERIO",
+        "PÚBLICO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "La investigación se realiza de forma coordinada.",
+      "texto": "En resumen: en la investigación participan varias instituciones, pero quien la conduce y manda es el Ministerio Público.",
       "titulo": [
-        "FUNCIÓN",
-        "DEL ESTADO"
+        "EN",
+        "RESUMEN"
       ],
       "afirmaciones": []
     },
@@ -81,7 +82,7 @@
     "suficiente": true,
     "pregunta": "¿Quién investiga los delitos en México?",
     "concepto_central": "investigación de los delitos",
-    "respuesta_corta": "La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública, a la Guardia Nacional y a las policías.",
+    "respuesta_corta": "La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías, en el ámbito de su competencia, bajo la conducción y mando del Ministerio Público.",
     "reglas": [
       {
         "conclusion": "La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías, en el ámbito de su competencia, actuando bajo la conducción y mando del Ministerio Público.",
@@ -142,7 +143,7 @@
   "pregunta_original": "¿Quién investiga los delitos en México?",
   "tipo_pregunta": "definicion",
   "revision_razonamiento": [],
-  "copy": "¿Quién investiga los delitos en México?\n\nLa investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública, a la Guardia Nacional y a las policías.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 21.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Quién investiga los delitos en México?\n\nEl artículo 21 de la Constitución dice: «La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías, en el ámbito de su competencia, las cuales actuarán bajo la conducción y mando de aquél en el ejercicio de esta función».\n\nEs decir: participan varias instituciones, pero el Ministerio Público conduce y manda la investigación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 21.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -225,5 +226,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 2: la cita se cortaba en «…al Ministerio Público» y se narraba con punto final, como si fuera exclusivo → «La Constitución empieza así: «…» … y la frase sigue». Escena 3: omitía «del Ejecutivo Federal» y decía «participan» → continuación literal del párrafo con «en el ámbito de su competencia». Escena 4: encabezado «EL MP» (sigla) → «MANDA EL MINISTERIO PÚBLICO». Escena 5: «La investigación se realiza de forma coordinada» no está en el art. 21 → resumen con la conducción y mando del Ministerio Público. Copy: lista incompleta (sin «del Ejecutivo Federal», la competencia ni el mando) → cita literal completa del primer párrafo del art. 21. Respuesta corta del análisis alineada."
+    }
+  ]
 }

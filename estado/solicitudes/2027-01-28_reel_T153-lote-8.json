@@ -12,13 +12,23 @@
   "lote": "lote-8",
   "motivo_seleccion": "LGDNNA art. 5 (texto oficial cotejado el 8-11-2026, registro/textos/LGDNNA_5.json): «Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad». Ley general (alcance nacional). Matiz literal: si hay duda de si es mayor de dieciocho, se presume adolescente.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270128-T153",
   "archivo": "2027-01-28_reel_T153-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Sabes hasta qué edad eres considerado niña o niño según la ley? \\n ¿HASTA ",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "527ab6218e27065a"
+  "huella_entrada": "527ab6218e27065a",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude",
+      "motivo": "primer descarte, por forma: narración de 644 caracteres (máximo 620). Se reabre con ángulo y extensión fijos",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 644 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 24: recorta al menos 84 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Sabes hasta qué edad eres considerado niña o niño según la ley? \\n ¿HASTA "
+    }
+  ],
+  "angulo": "Solo el art. 5 LGDNNA. Respuesta: eres niña o niño hasta antes de cumplir doce años; de los doce cumplidos a antes de los dieciocho eres adolescente. Cita literal ÚNICA (una sola vez): «Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad». Matiz en una frase, con palabras sencillas: si hay duda de si alguien es mayor de dieciocho, se presume adolescente; si hay duda de si es mayor o menor de doce, se presume niña o niño. Estructura fija: escena 1 pregunta (encabezado «¿HASTA QUÉ EDAD?»); escena 2 respuesta (encabezado «HASTA LOS 12»); escena 3 «La ley dice:» y la cita (encabezado «LA LEY DICE»); escena 4 el matiz de la duda (encabezado «SI HAY DUDA»); cierre. Fuera de la pregunta (no son faltantes): tratados internacionales, mayoría de edad para votar o contratar, responsabilidad penal; no mencionarlos. Sin listas con viñetas. Narración de 480 caracteres o menos."
 }

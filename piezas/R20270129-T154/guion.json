@@ -22,7 +22,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabías que la ley protege tu derecho a elegir tus creencias?",
+      "texto": "¿Puedes elegir tu religión?",
       "titulo": [
         "¿PUEDES",
         "ELEGIR TU",
@@ -32,7 +32,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado.",
+      "texto": "Sí: es un derecho de toda persona.",
       "titulo": [
         "DERECHO A",
         "ELEGIR"
@@ -41,18 +41,18 @@
     },
     {
       "tipo": "cita",
-      "texto": "La Constitución establece claramente que: Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
+      "texto": "La Constitución dice: «Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado».",
       "etiqueta": "Constitución, artículo 24",
       "cita": "Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado.",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Eso sí, debes cumplir con estas condiciones al practicarlo:",
+      "texto": "Eso sí, los actos de culto no deben constituir un delito o falta, y los actos públicos de esta libertad no pueden usarse con fines políticos, de proselitismo o de propaganda política.",
       "items": [
-        "Sin delitos ni faltas",
+        "Sin delito ni falta",
         "Sin fines políticos",
-        "Sin propaganda"
+        "Sin propaganda política"
       ],
       "afirmaciones": [
         {
@@ -65,7 +65,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, toda persona tiene derecho a tener o adoptar la religión de su agrado, respetando los límites legales de culto.",
+      "texto": "Así que sí: puedes tener o adoptar la religión de tu agrado, dentro de esos límites.",
       "titulo": [
         "CONCLUSIÓN",
         "LEGAL"
@@ -158,7 +158,7 @@
   "pregunta_original": "¿Puedes elegir tu religión?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Puedes elegir tu religión?\n\nSí, toda persona tiene derecho a tener o adoptar la religión de su agrado.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 24.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Puedes elegir tu religión?\n\nSí. El artículo 24 de la Constitución dice: «Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado».\n\nLos límites están en la práctica: participar en ceremonias y actos de culto es libre «siempre que no constituyan un delito o falta penados por la ley», y «nadie podrá utilizar los actos públicos de expresión de esta libertad con fines políticos, de proselitismo o de propaganda política».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 24.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -199,5 +199,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 4: «debes cumplir con estas condiciones al practicarlo» y «Sin propaganda» generalizaban: el límite del delito o falta es para los actos de culto y el de fines políticos, proselitismo o propaganda política es para los actos públicos de expresión de esta libertad (art. 24) → narración con ambas condiciones literales y elemento «Sin propaganda política». Escena 3: fuera «claramente». Escena 5: conclusión acortada. Copy: no decía los límites → citas literales del art. 24. Escenas 1 y 2 acortadas para no pasar de 620 caracteres (gancho igual al título: «¿Puedes elegir tu religión?»; «Sí: es un derecho de toda persona.»)."
+    }
+  ]
 }

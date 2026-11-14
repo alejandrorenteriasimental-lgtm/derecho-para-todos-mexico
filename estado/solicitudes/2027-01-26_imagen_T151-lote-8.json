@@ -14,13 +14,13 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "Plantilla dato. Solo el art. 102, apartado B, CPEUM. Bajada (respuesta, máximo 14 palabras): «No. La Constitución dice que no son vinculatorias, pero deben responderse.» Cita destacada literal y corta: «formularán recomendaciones públicas, no vinculatorias». OJO (máximo 18 palabras, distinto de la respuesta): si una autoridad no la acepta o no la cumple, debe fundar, motivar y hacer pública su negativa. Aplica a la CNDH y a las comisiones de los estados. Fuera de la pregunta: comparecencias ante el Senado, quejas, competencias y casos; no mencionarlos en lo visible. No decir que las recomendaciones «no sirven» ni que pueden ignorarse. Contenido visible total de 45 palabras o menos.",
-  "estado": "DESCARTADA",
+  "angulo": "Plantilla dato. Solo el art. 102, apartado B, CPEUM. Bajada (respuesta, máximo 14 palabras): «No. La Constitución dice que no son vinculatorias, pero deben responderse.» Cita destacada literal y corta: «formularán recomendaciones públicas, no vinculatorias». OJO (máximo 18 palabras, distinto de la respuesta): si una autoridad no la acepta o no la cumple, debe fundar, motivar y hacer pública su negativa. Aplica a la CNDH y a las comisiones de los estados. Fuera de la pregunta: comparecencias ante el Senado, quejas, competencias y casos; no mencionarlos en lo visible. No decir que las recomendaciones «no sirven» ni que pueden ignorarse. Contenido visible total de 45 palabras o menos. En el análisis, la respuesta corta debe ser exactamente la bajada: «No. La Constitución dice que no son vinculatorias, pero deben responderse.»",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270126-T151",
   "archivo": "2027-01-26_imagen_T151-lote-8.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l",
   "ultima_categoria": "juridico",
   "huella_entrada": "4c36d81eed06e161",
@@ -31,6 +31,13 @@
       "motivo": "primer descarte, por forma: la ficha invadía el pie (bajada larga y cita con «denuncias y quejas»). Se reabre con textos breves fijados",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo: invade el pie de la ficha\"], \"visible\": \"  \\n   \\n No, la Constitución establece que son no vinculatorias, aunque las autoridades deben responderlas y fundar públicamente su negativa. \\n formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas. \\n Si la aut"
+    },
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude",
+      "motivo": "segundo descarte, por forma: la respuesta corta del análisis («…establece que son no vinculatorias, aunque las autoridades tienen la obligación…») no coincidía con la bajada que pedía el ángulo, aunque lo visible responde. Causa del ángulo, no del tema: se pide que la respuesta corta sea la bajada",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l"
     }
   ]
 }
