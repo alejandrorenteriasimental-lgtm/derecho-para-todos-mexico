@@ -39,6 +39,22 @@ def test_texto_ilegible_falla_el_ocr(tmp_path):
     assert any(x["control"].startswith("OCR") and x["resultado"] == "FALLA" for x in r)
 
 
+def test_ocr_lee_la_etiqueta_clara_sobre_el_recuadro_oscuro(tmp_path):
+    """Regresión 14-11-2026 (I20270128-T153): la etiqueta amarilla de la cita sobre el azul marino no se leía."""
+    g = copy.deepcopy(BASE); g["plantilla"] = "dato"
+    g["pieza"] = {"titular": "¿Niñas, niños y adolescentes tienen derecho a la identidad?",
+                  "bajada": "Sí. La Ley General reconoce expresamente el derecho a la identidad en su lista de derechos.",
+                  "cita": "Derecho a la identidad",
+                  "etiqueta_cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 13, fracción III",
+                  "ojo": "Todas las autoridades, en su competencia, deben adoptar medidas para garantizarlo sin discriminación.",
+                  "fuente_visible": "Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 13"}
+    png = tmp_path / "x.png"; textos, y_fin = imagen.dibujar(g, png)
+    leido = set(imagen._palabras(imagen.ocr(png)))
+    assert {"articulo", "fraccion"} <= leido
+    r, _, _ = imagen.auditar(png, textos, y_fin)
+    assert [x for x in r if x["control"].startswith("OCR")][0]["resultado"] == "APROBADO"
+
+
 def test_imagen_duplicada_se_detecta(tmp_path):
     png = tmp_path / "a.png"; textos, y = imagen.dibujar(BASE, png)
     r, h, _ = imagen.auditar(png, textos, y, previos_hash=[imagen.ahash(png)])

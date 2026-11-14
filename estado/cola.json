@@ -10563,7 +10563,7 @@
       "id": "I20270128-T153",
       "formato": "imagen",
       "huella": "b0afe49cf837d9c32dd1758ab1ff0ef0b7ce072c13c8c907f24fbb445b960bd4",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T10:13:28+00:00",
@@ -10597,6 +10597,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-14T16:03:33+00:00",
           "motivo": "RETENIDO: falla técnica de la imagen"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-14T19:46:32+00:00",
+          "motivo": "OCR de la auditoría técnica no leía la etiqueta amarilla de la cita sobre el recuadro azul marino (86 %; la imagen es legible) → imagen.ocr agrega una vista invertida (umbral del 90 % sin cambio), con prueba test_ocr_lee_la_etiqueta_clara_sobre_el_recuadro_oscuro (Claude, operación diaria 14-11); guion sin cambios; se vuelve a producir"
         }
       ],
       "error": null,

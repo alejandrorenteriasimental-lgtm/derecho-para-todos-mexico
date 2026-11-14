@@ -198,8 +198,12 @@ def ocr_disponible():
 
 
 def ocr(png):
-    """OCR en dos vistas (original y binarizada por luminancia local) para leer también etiquetas sobre color."""
+    """OCR en tres vistas (original, binarizada por luminancia local e invertida) para leer también etiquetas sobre color
+    y texto claro sobre fondo oscuro. La vista invertida se agregó el 14-11-2026: la etiqueta amarilla de la cita sobre
+    el recuadro azul marino no la leía ninguna de las otras dos (I20270128-T153 retenida con 86 % aunque la imagen es
+    legible). El umbral del 90 % no cambia: cada palabra esperada tiene que leerse en alguna vista."""
     import tempfile
+    from PIL import ImageOps
     td = OCR_DIR; textos = []
     g = Image.open(png).convert("L"); a = np.asarray(g).astype(np.float32)
     from PIL import ImageFilter as IF
@@ -207,7 +211,8 @@ def ocr(png):
     bin_ = Image.fromarray(np.where(np.abs(a - loc) > 18, 0, 255).astype(np.uint8))
     with tempfile.TemporaryDirectory() as d:
         bp = Path(d) / "b.png"; bin_.save(bp)
-        for src in (png, bp):
+        ip = Path(d) / "i.png"; ImageOps.invert(g).save(ip)
+        for src in (png, bp, ip):
             cmd = ["tesseract", str(src), "-", "-l", "spa", "--psm", "3"]
             if (td / "spa.traineddata").exists(): cmd[1:1] = ["--tessdata-dir", str(td)]
             textos.append(subprocess.run(cmd, capture_output=True, text=True).stdout)
