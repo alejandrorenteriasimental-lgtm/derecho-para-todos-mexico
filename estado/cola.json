@@ -9566,7 +9566,7 @@
       "id": "I20270120-T145",
       "formato": "imagen",
       "huella": "086f083a94e8ef069421f3a8eead1eca46dd8f403b2e4de74b12a6ff298d0019",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T04:07:08+00:00",
@@ -9606,6 +9606,12 @@
           "a": "APROBADO",
           "ts": "2026-11-12T04:05:23+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-11T11:44:35+00:00 versión ecd47daff3f33e62 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-14T04:20:37+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -9637,7 +9643,7 @@
       "id": "I20270123-T148",
       "formato": "imagen",
       "huella": "46cdd552a3f7f993eb86d6640515b57b555782f49916890c60b9e70e5d5f5391",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T04:07:08+00:00",
@@ -9677,6 +9683,12 @@
           "a": "APROBADO",
           "ts": "2026-11-12T04:05:23+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-11T11:44:35+00:00 versión 2602001160578139 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-14T04:20:37+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -10333,7 +10345,7 @@
       "id": "R20270118-T143",
       "formato": "reel",
       "huella": "adfdcbf88e65f331fc99690ff360ed23fc93fcbe31eb8dc55bf57795fd0d82a2",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T04:04:57+00:00",
@@ -10355,6 +10367,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-14T04:12:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 14-11): el gancho narrado («¿…solo de palabra?») contradecía el «Sí» y el encabezado; la escena de lista terminaba en «lo siguiente:» sin leer los elementos → pregunta y encabezados alineados, los cuatro elementos narrados con «por lo menos»; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-14T04:18:19+00:00",
+          "motivo": "39.7"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-14T04:18:23+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -10362,10 +10386,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "1e0ce0c3befacac0",
-        "huella_guion": "4d23f07fc2f2561c0797219bc9d2187c6d79a32dfbd456ce3aae4d080c7c5839",
-        "huella_archivo": "9a6cf73cdf14f162cfe1ce146229ce9a196d80fd513e199540f2d9ab01450980",
-        "preparada": "2026-11-14T04:06:18+00:00",
+        "version": "c3899479de591f40",
+        "huella_guion": "11e702a8aff07cb78a053efbdd4cd800269289fbfcb741333f5393fde7c8049b",
+        "huella_archivo": "f0717e74b6e22d60133da69bb5b026353fa57a0bde6bcd7e14d048470fb58059",
+        "preparada": "2026-11-14T04:18:23+00:00",
         "canal": "chat"
       }
     },
@@ -10373,7 +10397,7 @@
       "id": "R20270119-T144",
       "formato": "reel",
       "huella": "3beb7e5d4fd795fee2f7f645638f13b9af6197a07fb00006797da4d528887081",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T04:04:57+00:00",
@@ -10395,6 +10419,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-14T04:12:01+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 14-11): la escena 4 omitía la condición literal «en el país donde cometieron el delito» → añadida; escena 5 «prohíbe explícitamente» → «no autoriza»; lo visible no cambia; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-14T04:20:33+00:00",
+          "motivo": "40.5"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-14T04:20:37+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -10402,10 +10438,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "b43832bdaa373cfc",
-        "huella_guion": "f1bde76a32fdc62b48c7f9e2acb93de313abae0adabf5c1f7d5cc3266ddbcf23",
-        "huella_archivo": "3533970512d575ab8baa6093ab24580cc6ca2c2e1396d1821eb4ede05f2fa8f0",
-        "preparada": "2026-11-14T04:08:34+00:00",
+        "version": "13e5d91877ee723a",
+        "huella_guion": "afda82d8dcd9cb1abff1b1de1b38801f6c064bfabb0c876d463510e34dd9824e",
+        "huella_archivo": "4352b6b863ed249c29f3cf1241e6a82c0be675bb9172529bb42d1d7b765c5336",
+        "preparada": "2026-11-14T04:20:37+00:00",
         "canal": "chat"
       }
     }

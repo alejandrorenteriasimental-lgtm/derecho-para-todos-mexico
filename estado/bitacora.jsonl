@@ -1986,3 +1986,13 @@
 {"ts": "2026-11-14T04:08:34+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
 {"ts": "2026-11-14T04:12:01+00:00", "pieza": "R20270118-T143", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 14-11): el gancho narrado («¿…solo de palabra?») contradecía el «Sí» y el encabezado; la escena de lista terminaba en «lo siguiente:» sin leer los elementos → pregunta y encabezados alineados, los cuatro elementos narrados con «por lo menos»; se vuelve a verificar y producir"}
 {"ts": "2026-11-14T04:12:01+00:00", "pieza": "R20270119-T144", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 14-11): la escena 4 omitía la condición literal «en el país donde cometieron el delito» → añadida; escena 5 «prohíbe explícitamente» → «no autoriza»; lo visible no cambia; se vuelve a verificar y producir"}
+{"ts": "2026-11-14T04:17:05+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-14T04:18:19+00:00", "pieza": "R20270118-T143", "evento": "transicion", "a": "PRODUCIDO", "motivo": "39.7"}
+{"ts": "2026-11-14T04:18:23+00:00", "pieza": "R20270118-T143", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-14T04:18:23+00:00", "evento": "revision_preparada", "pieza": "R20270118-T143", "version": "c3899479de591f40", "canal": "chat"}
+{"ts": "2026-11-14T04:20:33+00:00", "pieza": "R20270119-T144", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.5"}
+{"ts": "2026-11-14T04:20:37+00:00", "pieza": "R20270119-T144", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-14T04:20:37+00:00", "evento": "revision_preparada", "pieza": "R20270119-T144", "version": "13e5d91877ee723a", "canal": "chat"}
+{"ts": "2026-11-14T04:20:37+00:00", "pieza": "I20270120-T145", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-14T04:20:37+00:00", "pieza": "I20270123-T148", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-14T04:20:37+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}

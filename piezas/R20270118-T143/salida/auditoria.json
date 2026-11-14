@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.4 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.4 s"
+      "detalle": "39.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.0 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "9a6cf73cdf14f162"
+      "detalle": "f0717e74b6e22d60"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270118-T143",
     "titulo": "¿Te deben dar la garantía por escrito?",
-    "fecha": "2026-11-14T04:06:14+00:00",
-    "sha256": "9a6cf73cdf14f162cfe1ce146229ce9a196d80fd513e199540f2d9ab01450980",
-    "duracion_s": 42.4,
+    "fecha": "2026-11-14T04:18:19+00:00",
+    "sha256": "f0717e74b6e22d60133da69bb5b026353fa57a0bde6bcd7e14d048470fb58059",
+    "duracion_s": 39.7,
     "estado": "APTO",
-    "huella_guion": "adfdcbf88e65f331fc99690ff360ed23fc93fcbe31eb8dc55bf57795fd0d82a2",
+    "huella_guion": "1259f68b401503d20462f360bba81e2905547a43ac68d3963c20df27173bff13",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 11.2,
-      "musica": 1.2,
-      "render_video": 30.0,
+      "narracion": 11.6,
+      "musica": 1.1,
+      "render_video": 28.8,
       "mezcla_audio": 1.1,
-      "auditoria_tecnica": 7.3
+      "auditoria_tecnica": 6.4
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.85,
-      "computo_equivalente_runner_usd": 0.0051,
+      "computo_minutos": 0.82,
+      "computo_equivalente_runner_usd": 0.0049,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1270,
-    "caracteres_narrados": 611
+    "frames": 1190,
+    "caracteres_narrados": 576
   }
 }
