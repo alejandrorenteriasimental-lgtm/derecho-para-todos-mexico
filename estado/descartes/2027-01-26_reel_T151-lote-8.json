@@ -1,0 +1,114 @@
+{
+ "solicitud": "2027-01-26_reel_T151-lote-8.json",
+ "fecha": "2026-11-14T10:07:11+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 629 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 9: recorta al menos 69 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Castigar es distinto» no corresponde a lo que s",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[coherencia] Escena 5: el encabezado visible «Bajo conducción y mando» no corresponde a lo que se narra («Estas autoridades deben seguir una dirección específica.»)."
+   ],
+   "visible": "  \n ¿Quién debe investigar un delito en México? \n ¿QUIÉN \n INVESTIGA \n DELITOS? \n Corresponde al Ministerio Público, a la secretaría de seguridad federal, a la Guardia Nacional y a las policías, en su competencia. \n RESPUESTA \n CONSTITUCIONAL \n La ley dice: \"La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías\". \n La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías \n Instituciones encargadas: \n Ministerio Público \n Secretaría de Seguridad \n Guardia Na"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 692 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 72: recorta al menos 132 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Quién investiga los delitos en México? \n ¿QUIÉN \n INVESTIGA \n DELITOS? \n Corresponde al Ministerio Público, a la secretaría de seguridad pública federal, a la Guardia Nacional y a las policías. \n AUTORIDADES \n RESPONSABLES \n La ley indica: \"La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías\". \n La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías \n Autoridades encargadas: Ministerio Público, Guardia Nacional y policías. \n Ministerio Público \n Gu"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "narración de 692 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 72: recorta al menos 132 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona explícitamente que la investigación debe realizarse en el ámbito de competencia de cada institución, lo cual es una condición necesaria según el texto."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La función de investigar delitos está asignada al Ministerio Público, a la secretaría de seguridad pública federal, a la Guardia Nacional y a las corporaciones policiales.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite la condición de que estas instituciones deben actuar 'en el ámbito de su competencia' y 'bajo la conducción y mando' del Ministerio Público."
+     },
+     {
+      "conclusion": "La investigación es una de las funciones que integran la seguridad pública a cargo del Estado, junto con la prevención y la persecución.",
+      "sostenida": "si",
+      "motivo": "El texto oficial establece que la seguridad pública comprende la prevención, investigación y persecución de los delitos."
+     },
+     {
+      "conclusion": "La secretaría de seguridad pública federal tiene facultades para requerir datos a otras dependencias para aclarar posibles delitos.",
+      "sostenida": "si",
+      "motivo": "El texto indica que la secretaría podrá solicitar información a las instituciones y dependencias del Estado para el esclarecimiento de hechos presuntamente constitutivos de delitos."
+     },
+     {
+      "conclusion": "Las policías y la Guardia Nacional investigan bajo el mando del Ministerio Público.",
+      "sostenida": "parcial",
+      "motivo": "Si bien el texto menciona que las policías actúan bajo la conducción y mando del Ministerio Público, para la Guardia Nacional el texto especifica que es una fuerza de seguridad pública para ejecutar la Estrategia Nacional de Seguridad Pública, y aunque se menciona la coordinación, la atribución de mando directo en la investigación se vincula textualmente a las policías y la secretaría en el primer párrafo."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Regla principal (conclusión de la sección 'reglas')",
+      "problema": "Omisión de condiciones de competencia y mando.",
+      "correccion": "Debe especificarse que la investigación corresponde a dichas autoridades 'en el ámbito de su competencia' y que las policías y la secretaría actuarán 'bajo la conducción y mando' del Ministerio Público."
+     },
+     {
+      "donde": "Sección 'lista'",
+      "problema": "Reducción de la respuesta.",
+      "correccion": "La lista dice 'Ellos son: Ministerio Público, Guardia Nacional y policías', omitiendo a la 'secretaría del ramo de seguridad pública del Ejecutivo Federal', que es un sujeto expresamente mencionado en el texto para la investigación."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 698 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 78: recorta al menos 138 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Investigar no es imponer penas» no corresponde a lo que se narra («Pero ojo: \"La imposición de las penas, su modificación y duración son »)."
+   ],
+   "visible": "  \n ¿Quién debe investigar los delitos en México? \n ¿QUIÉN INVESTIGA? \n LOS DELITOS \n Es una labor compartida entre el Ministerio Público, la secretaría de seguridad federal, la Guardia Nacional y las policías. \n LABOR \n COMPARTIDA \n La Constitución dicta: \"La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías\". \n La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías \n Estas autoridades deben: \n Seguir el mando del MP \n Respetar su competencia \n Esclarec"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 780 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 160: recorta al menos 220 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Jueces imponen las penas» no corresponde a lo que se narra («La investigación corresponde al Ministerio Público y las policías, mie»)."
+   ],
+   "visible": "  \n ¿Sabes quién debe investigar los delitos en México? \n ¿QUIÉN INVESTIGA \n LOS DELITOS? \n Corresponde al Ministerio Público, a la secretaría de seguridad federal, a la Guardia Nacional y a las policías, bajo la conducción del primero. \n AUTORIDADES \n RESPONSABLES \n La Constitución señala que: \"La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías\". \n La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías \n Estas autoridades deben: \n Seguir el mando del "
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 629 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 9: recorta al menos 69 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Castigar es distinto» no corresponde a lo que se narra («Pero: \"La imposición de las penas, su modificación y duración son prop»)."
+   ],
+   "visible": "  \n ¿Quién investiga los delitos en México? \n ¿QUIÉN INVESTIGA \n LOS DELITOS? \n Corresponde al Ministerio Público, la Guardia Nacional y las policías, bajo mando del primero. \n MANDO \n CENTRAL \n La ley dice: \"La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías\". \n La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías \n Actúan bajo estas reglas: \n Bajo mando del M.P. \n En su competencia \n Recabar información \n Pero: \"La imposición de las penas, su modif"
+  }
+ ]
+}

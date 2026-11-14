@@ -1,0 +1,73 @@
+{
+ "tema_id": "T151",
+ "pregunta": "¿Las recomendaciones de la CNDH son obligatorias?",
+ "fecha": "2026-11-14T10:10:01+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Las recomendaciones de la CNDH son obligatorias?",
+  "concepto_central": "recomendaciones de la CNDH",
+  "respuesta_corta": "No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la obligación de responderlas y justificar públicamente si no las aceptan.",
+  "reglas": [
+   {
+    "conclusion": "Las recomendaciones emitidas por los organismos de protección de derechos humanos no tienen carácter obligatorio o vinculante.",
+    "fuente": "F1",
+    "cita_literal": "Los organismos a que se refiere el párrafo anterior, formularán recomendaciones públicas, no vinculatorias, denuncias y quejas ante las autoridades respectivas.",
+    "condiciones": [
+     "Que provengan de organismos de protección de los derechos humanos que ampara el orden jurídico mexicano"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "A pesar de no ser vinculatorias, las autoridades tienen el deber legal de dar una respuesta a las recomendaciones recibidas.",
+    "fuente": "F1",
+    "cita_literal": "Todo servidor público está obligado a responder las recomendaciones que les presenten estos organismos.",
+    "condiciones": [
+     "Que la recomendación sea presentada por los organismos de protección de derechos humanos"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Las recomendaciones no son vinculatorias, pero si no se aceptan, la autoridad debe justificar su decisión de forma pública.",
+    "fuente": "F1",
+    "cita_literal": "Cuando las recomendaciones emitidas no sean aceptadas o cumplidas por las autoridades o servidores públicos, éstos deberán fundar, motivar y hacer pública su negativa"
+   },
+   {
+    "elemento": "vía",
+    "estado": "cubierto",
+    "respuesta": "Existe una vía de control legislativo donde se puede llamar a comparecer a la autoridad que rechace la recomendación.",
+    "fuente": "F1",
+    "cita_literal": "podrán llamar, a solicitud de estos organismos, a las autoridades o servidores públicos responsables para que comparezcan ante dichos órganos legislativos, a efecto de que expliquen el motivo de su negativa."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "La Cámara de Senadores, la Comisión Permanente o las legislaturas estatales son las encargadas de citar a comparecer a quienes rechacen las recomendaciones.",
+    "fuente": "F1",
+    "cita_literal": "la Cámara de Senadores o en sus recesos la Comisión Permanente, o las legislaturas de las entidades federativas, según corresponda"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "respuesta": "El texto constitucional no establece un plazo específico en días o meses para responder a la recomendación o para realizar la comparecencia.",
+    "fuente": "F1",
+    "cita_literal": "no aplica",
+    "motivo": "El artículo 102 constitucional no señala términos temporales para estas acciones."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El carácter 'no vinculatorio' significa que la autoridad no puede ser forzada legalmente a ejecutar las acciones de la recomendación como si fuera una sentencia judicial.",
+    "condicion": "Siempre que la autoridad cumpla con la obligación de fundar y motivar su negativa.",
+    "base": "F1, párrafo segundo del apartado B del artículo 102."
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos proporcionados no mencionan sanciones administrativas o penales directas por el simple hecho de no aceptar una recomendación, limitándose a la responsabilidad de fundar la negativa y la comparecencia política.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "I20270125-T150",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Si no firmaste duración, tu trabajo es temporal?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T150",
+  "pieza": {
+    "titular": "¿Si no firmaste duración, tu trabajo es temporal?",
+    "bajada": "Conoce qué sucede con tu estabilidad laboral cuando no se define por cuánto tiempo estarás en tu empleo según la Ley Federal del Trabajo.",
+    "mito": "Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal.",
+    "realidad": "No. Si no se pactó expresamente la duración, la ley establece que la relación de trabajo es por tiempo indeterminado.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 35"
+  },
+  "copy": "En México, la estabilidad en el empleo es un principio clave. Si al iniciar tu relación laboral no se definió una fecha de término, la ley protege tu permanencia.\n\nDe acuerdo con el artículo 35 de la Ley Federal del Trabajo, «a falta de estipulaciones expresas, la relación será por tiempo indeterminado». Esto significa que el empleo se considera permanente a menos que se demuestre un acuerdo previo para obra, tiempo determinado o por temporada.\n\nEs fundamental entender la diferencia: una relación por tiempo determinado tiene una duración pactada de antemano, mientras que la de tiempo indeterminado es la regla general cuando no se fija un plazo. La ley favorece esta última siempre que no exista un acuerdo explícito de temporalidad.\n\n¿Conocías este derecho? Guarda esta información y compártela con quien necesite conocer sus condiciones laborales.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre la duración de los contratos laborales. Presenta el mito de que sin firma de duración el trabajo es temporal, y la realidad legal de que se considera por tiempo indeterminado según el artículo 35 de la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "35",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "A falta de estipulaciones expresas, la relación será por tiempo indeterminado.",
+      "cita": "Ley Federal del Trabajo, artículo 35",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-14"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Si no existe un acuerdo explícito sobre la duración del empleo, la relación se considera por tiempo indeterminado.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal?",
+    "concepto_central": "relación de trabajo por tiempo indeterminado",
+    "respuesta_corta": "No. Si no se pactó expresamente la duración del contrato, la ley establece que la relación de trabajo es por tiempo indeterminado.",
+    "reglas": [
+      {
+        "conclusion": "Cuando no existe un acuerdo explícito sobre la duración del empleo, la ley determina que la relación laboral no tiene una fecha de finalización establecida.",
+        "fuente": "F1",
+        "cita_literal": "A falta de estipulaciones expresas, la relación será por tiempo indeterminado.",
+        "condiciones": [
+          "Que no existan estipulaciones expresas sobre la duración de la relación de trabajo"
+        ],
+        "excepciones": [
+          "Que la relación sea para obra o tiempo determinado o por temporada"
+        ],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "35"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica de no establecer la duración es que el empleo se considera permanente o por tiempo indeterminado.",
+        "fuente": "F1",
+        "cita_literal": "A falta de estipulaciones expresas, la relación será por tiempo indeterminado.",
+        "motivo": null
+      },
+      {
+        "elemento": "vía",
+        "estado": "no_cubierto",
+        "respuesta": null,
+        "fuente": null,
+        "cita_literal": null,
+        "motivo": "El texto oficial no menciona el procedimiento legal para reclamar este carácter de la relación laboral."
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "no_cubierto",
+        "respuesta": null,
+        "fuente": null,
+        "cita_literal": null,
+        "motivo": "El artículo citado no especifica ante qué autoridad se debe acudir para validar la naturaleza del contrato."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "respuesta": null,
+        "fuente": null,
+        "cita_literal": null,
+        "motivo": "La norma no establece un plazo para que opere esta presunción de tiempo indeterminado."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La ley favorece la estabilidad en el empleo ante la ausencia de un contrato escrito o cláusulas de temporalidad.",
+        "condicion": "Siempre que no se pueda demostrar un acuerdo previo para obra o tiempo determinado.",
+        "base": "F1"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "relación por tiempo determinado",
+        "b": "relación por tiempo indeterminado",
+        "diferencia": "La primera tiene una duración pactada de antemano, mientras que la segunda es la regla general cuando no se fija un plazo."
+      }
+    ],
+    "limites": "Los textos proporcionados no mencionan sanciones para el patrón por no especificar la duración, ni los medios de prueba para demostrar la falta de estipulaciones."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T10:09:29+00:00",
+    "solicitud": "2027-01-25_imagen_T150-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Cuando no existe un acuerdo explícito sobre la duración del empleo, la ley determina que la relación laboral no tiene una fecha de finalización establecida.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una derivación directa de la regla supletoria del artículo 35 que establece la indeterminación ante la falta de estipulaciones expresas."
+            },
+            {
+              "conclusion": "La consecuencia jurídica de no establecer la duración es que el empleo se considera permanente o por tiempo indeterminado.",
+              "sostenida": "si",
+              "motivo": "El texto oficial prescribe que, ante la ausencia de pactos, la naturaleza de la relación será por tiempo indeterminado."
+            },
+            {
+              "conclusion": "La ley favorece la estabilidad en el empleo ante la ausencia de un contrato escrito o cláusulas de temporalidad.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación válida de la consecuencia jurídica de la norma, la cual establece la indeterminación como regla general para evitar la precariedad por falta de formalidad."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

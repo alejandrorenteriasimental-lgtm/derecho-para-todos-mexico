@@ -1,0 +1,75 @@
+{
+ "tema_id": "T150",
+ "pregunta": "¿Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal?",
+ "fecha": "2026-11-14T10:08:05+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal?",
+  "concepto_central": "relación de trabajo por tiempo indeterminado",
+  "respuesta_corta": "No. Si no se pactó expresamente la duración del contrato, la ley establece que la relación de trabajo es por tiempo indeterminado.",
+  "reglas": [
+   {
+    "conclusion": "Cuando no existe un acuerdo explícito sobre la duración del empleo, la ley determina que la relación laboral no tiene una fecha de finalización establecida.",
+    "fuente": "F1",
+    "cita_literal": "A falta de estipulaciones expresas, la relación será por tiempo indeterminado.",
+    "condiciones": [
+     "Que no existan estipulaciones expresas sobre la duración de la relación de trabajo"
+    ],
+    "excepciones": [
+     "Que la relación sea para obra o tiempo determinado o por temporada"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La consecuencia jurídica de no establecer la duración es que el empleo se considera permanente o por tiempo indeterminado.",
+    "fuente": "F1",
+    "cita_literal": "A falta de estipulaciones expresas, la relación será por tiempo indeterminado.",
+    "motivo": null
+   },
+   {
+    "elemento": "vía",
+    "estado": "no_cubierto",
+    "respuesta": null,
+    "fuente": null,
+    "cita_literal": null,
+    "motivo": "El texto oficial no menciona el procedimiento legal para reclamar este carácter de la relación laboral."
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "no_cubierto",
+    "respuesta": null,
+    "fuente": null,
+    "cita_literal": null,
+    "motivo": "El artículo citado no especifica ante qué autoridad se debe acudir para validar la naturaleza del contrato."
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "respuesta": null,
+    "fuente": null,
+    "cita_literal": null,
+    "motivo": "La norma no establece un plazo para que opere esta presunción de tiempo indeterminado."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La ley favorece la estabilidad en el empleo ante la ausencia de un contrato escrito o cláusulas de temporalidad.",
+    "condicion": "Siempre que no se pueda demostrar un acuerdo previo para obra o tiempo determinado.",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "relación por tiempo determinado",
+    "b": "relación por tiempo indeterminado",
+    "diferencia": "La primera tiene una duración pactada de antemano, mientras que la segunda es la regla general cuando no se fija un plazo."
+   }
+  ],
+  "limites": "Los textos proporcionados no mencionan sanciones para el patrón por no especificar la duración, ni los medios de prueba para demostrar la falta de estipulaciones.",
+  "fuentes_irrelevantes": []
+ }
+}

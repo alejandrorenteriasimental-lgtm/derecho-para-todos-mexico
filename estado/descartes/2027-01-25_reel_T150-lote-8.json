@@ -1,0 +1,22 @@
+{
+ "solicitud": "2027-01-25_reel_T150-lote-8.json",
+ "fecha": "2026-11-14T10:03:57+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «contenido» («La ley establece un plazo de 30 días como regla general y ha») no trae una cita literal que esté en el texto oficial de su fuente.",
+    "[sustento] «el límite general es de 30 días, pero puede extenderse hasta 180 días para cargo» menciona un plazo (180 dia) que no aparece en los artículos citados."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "tema_id": "T152",
+ "pregunta": "¿De cuánto es la bonificación mínima si un producto te sale defectuoso?",
+ "fecha": "2026-11-14T10:11:08+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿De cuánto es la bonificación mínima si un producto te sale defectuoso?",
+  "concepto_central": "bonificación",
+  "respuesta_corta": "No podrá ser menor al veinte por ciento del precio pagado por el producto o servicio.",
+  "reglas": [
+   {
+    "conclusion": "La bonificación a la que tiene derecho el consumidor no puede ser inferior al veinte por ciento del precio pagado.",
+    "fuente": "F1",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado.",
+    "condiciones": [
+     "Aplica para los supuestos de bonificación previstos en los artículos 92 y 92 Bis de la ley."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La norma establece que la bonificación no podrá ser menor al veinte por ciento del precio pagado.",
+    "fuente": "F1",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica para los casos de bonificación contemplados en los artículos 92 y 92 Bis de la Ley Federal de Protección al Consumidor.",
+    "fuente": "F1",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La bonificación recibida se tomará en cuenta si se reclama judicialmente una indemnización por daños y perjuicios.",
+    "condicion": "En caso de que el consumidor demande judicialmente la indemnización por daños y perjuicios.",
+    "base": "Para la determinación del pago de daños y perjuicios la autoridad judicial considerará el pago de la bonificación que en su caso hubiese hecho el proveedor."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "bonificacion",
+    "b": "devolucion dinero",
+    "diferencia": "La bonificación es un pago o compensación adicional que no puede ser menor al 20% del precio pagado, mientras que la devolución es la restitución del costo del bien o servicio."
+   }
+  ],
+  "limites": "Los textos provistos no detallan las causales específicas del artículo 92 y 92 Bis ni los plazos para solicitar la bonificación, únicamente el porcentaje mínimo aplicable y su relación con daños y perjuicios.",
+  "fuentes_irrelevantes": []
+ }
+}
