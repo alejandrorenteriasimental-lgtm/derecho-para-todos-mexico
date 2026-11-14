@@ -474,6 +474,20 @@ _DECENAS = {"treinta": 30, "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "sete
 _UNIDADES = {"un": 1, "una": 1, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8,
              "nueve": 9}
 _COMPUESTO = r"(?:" + "|".join(_DECENAS) + r") y (?:" + "|".join(_UNIDADES) + r")"
+# Centenas con letra («ciento ochenta días», LFT 39-A): «ciento ochenta» se leía «ochenta» y la pieza con «180 días» se
+# bloqueaba (R20270125-T150, 14-11-2026).
+_CENTENAS = {"ciento": 100, "doscientos": 200, "doscientas": 200, "trescientos": 300, "trescientas": 300,
+             "cuatrocientos": 400, "cuatrocientas": 400, "quinientos": 500, "quinientas": 500, "seiscientos": 600,
+             "seiscientas": 600, "setecientos": 700, "setecientas": 700, "ochocientos": 800, "ochocientas": 800,
+             "novecientos": 900, "novecientas": 900}
+
+
+def _valor_letra(n, nums):
+    """Valor de un número escrito con letra o con cifras (sin centenas)."""
+    if n in nums: return nums[n]
+    if " y " in n: a, b = n.split(" y "); return _DECENAS[a] + _UNIDADES[b]
+    if " " in n: a, b = n.split(); return float(f"{a}.{b}")
+    return int(n)
 
 
 _UNIDAD = {"dias": "dia", "meses": "mes", "anos": "ano", "semanas": "semana", "horas": "hora"}
@@ -487,14 +501,14 @@ def _plazos_pos(p, base=False):
       horas y media la mixta» y la pieza puede decir «siete horas» para la nocturna."""
     out = []
     nums = dict(_NUM, **({"el": 1} if base else {}))
-    patron = (r"\b(" + _COMPUESTO + r"|\d{1,3}(?: \d(?= (?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b))?|" + "|".join(nums) +
+    simple = r"(?:" + _COMPUESTO + r"|" + "|".join(nums) + r")"
+    patron = (r"\b(" + r"(?:" + "|".join(_CENTENAS) + r")(?: " + simple + r")?" + r"|" + _COMPUESTO + r"|\d{1,3}(?: \d(?= (?:dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b))?|" + "|".join(nums) +
               r")\s+(dia|dias|mes|meses|ano|anos|semana|semanas|hora|horas)\b( y media\b)?")
     for m in re.finditer(patron, p):
         n, u, media = m.group(1), m.group(2), m.group(3)
-        if n in nums: v = nums[n]
-        elif " y " in n: a, b = n.split(" y "); v = _DECENAS[a] + _UNIDADES[b]
-        elif " " in n: a, b = n.split(); v = float(f"{a}.{b}")
-        else: v = int(n)
+        c, _, resto = n.partition(" ")
+        if c in _CENTENAS: v = _CENTENAS[c] + (_valor_letra(resto, nums) if resto else 0)
+        else: v = _valor_letra(n, nums)
         u = _UNIDAD.get(u, u)
         if media:
             out.append((m.start(), m.end(), (v + 0.5, u)))

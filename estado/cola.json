@@ -10499,7 +10499,7 @@
       "id": "I20270125-T150",
       "formato": "imagen",
       "huella": "a2c607ba0f0faa96aafe429036cba808648f4788c7c91410ff5564511b9b5f3e",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T10:13:28+00:00",
@@ -10515,6 +10515,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-14T10:14:22+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-14T11:44:44+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 14-11): el copy generalizaba («la ley protege tu permanencia», «a menos que se demuestre un acuerdo») y traía relleno → copy con la cita literal del art. 35 LFT y la condición; lo visible no cambia; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -10533,7 +10539,7 @@
       "id": "I20270128-T153",
       "formato": "imagen",
       "huella": "b0afe49cf837d9c32dd1758ab1ff0ef0b7ce072c13c8c907f24fbb445b960bd4",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T10:13:28+00:00",
@@ -10549,6 +10555,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-14T10:14:38+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-14T11:44:44+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 14-11): la cita destacada no contenía la respuesta y el OJO era jerga («enunciativo, no limitativo») → cita «Derecho a la identidad» (art. 13 fr. III), OJO con el deber de las autoridades y copy sin jerga ni condición falsa; se vuelve a verificar y producir"
         }
       ],
       "error": null,

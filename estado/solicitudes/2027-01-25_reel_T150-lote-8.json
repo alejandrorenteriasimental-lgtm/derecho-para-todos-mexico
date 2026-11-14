@@ -12,13 +12,23 @@
   "lote": "lote-8",
   "motivo_seleccion": "LFT art. 39-A (texto oficial cotejado el 8-11-2026, registro/textos/LFT_39-A.json): «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Condición literal: relaciones por tiempo indeterminado o que excedan de ciento ochenta días; excepción literal del mismo artículo: puede extenderse hasta ciento ochenta días para puestos de dirección, gerenciales y de administración general o labores técnicas o profesionales especializadas.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270125-T150",
   "archivo": "2027-01-25_reel_T150-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "7892b13c46cf4844"
+  "huella_entrada": "7892b13c46cf4844",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude",
+      "motivo": "primer descarte por causa del sistema: el detector de plazos leía «ciento ochenta días» (LFT 39-A) como «ochenta días» y bloqueó un análisis correcto con «180 días»; corregido en razonamiento._plazos_pos con prueba de regresión (test_plazos_con_centenas_en_letra). Se reabre con escenas fijas",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] «Hasta 30 días como regla general, o hasta 180 días en puestos de dirección, gere» menciona un plazo (180 dia) que no aparece en los artículos citados.\"]}"
+    }
+  ],
+  "angulo": "Solo el art. 39-A LFT. Respuesta: como regla, hasta 30 días; puede extenderse hasta 180 días solo en puestos de dirección, gerenciales o de administración general, o para labores técnicas o profesionales especializadas. Condición literal: solo en relaciones por tiempo indeterminado o que excedan de 180 días. Cita literal ÚNICA (una sola vez, en una sola escena): «el cual no podrá exceder de treinta días». Lo demás, con palabras sencillas y SIN otra cita. Estructura fija: escena 1 pregunta (encabezado «¿CUÁNTO DURA LA PRUEBA?»); escena 2 respuesta corta (encabezado «HASTA 30 DÍAS»); escena 3 «La ley dice:» y la cita (encabezado «LA LEY DICE»); escena 4 la extensión a 180 días y para quién (encabezado «180 DÍAS, SOLO ALGUNOS PUESTOS»); cierre con la condición (relaciones por tiempo indeterminado o de más de 180 días). Fuera de la pregunta (no son faltantes): qué pasa al terminar el periodo, la Comisión Mixta, el despido, la capacitación inicial y cómo reclamar; no mencionarlos. No decir que todo trabajo tiene periodo de prueba: «podrá establecerse». Sin listas con viñetas. Narración de 450 caracteres o menos."
 }

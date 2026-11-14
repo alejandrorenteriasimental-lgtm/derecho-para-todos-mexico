@@ -502,6 +502,19 @@ def test_plazos_con_numeros_compuestos_en_letra():
     assert razonamiento.consecuencias_sin_sustento("Hasta 8 horas.", [cpeum16])
 
 
+def test_plazos_con_centenas_en_letra():
+    """R20270125-T150 (14-11-2026): LFT 39-A dice «hasta ciento ochenta días»; se leía «ochenta días» y el análisis con
+    «180 días» se descartaba. Un plazo distinto sigue bloqueándose."""
+    lft39a = ("podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días. El periodo de prueba "
+              "podrá extenderse hasta ciento ochenta días, sólo cuando se trate de trabajadores para puestos de dirección")
+    assert razonamiento.consecuencias_sin_sustento("Hasta 30 días, o hasta 180 días en puestos de dirección.", [lft39a]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta ciento ochenta días.", [lft39a]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta 80 días.", [lft39a])
+    assert razonamiento.consecuencias_sin_sustento("Hasta 100 días.", [lft39a])
+    assert razonamiento.consecuencias_sin_sustento("Hasta 365 días.", ["un plazo de trescientos sesenta y cinco días"]) == []
+    assert razonamiento.consecuencias_sin_sustento("Hasta 100 días.", ["un plazo de cien días"]) == []
+
+
 def test_guion_dentro_de_palabra_en_la_narracion_se_rechaza():
     """12-11-2026: R20270122-T147 narró y subtituló «con-venios»; las referencias como «330-E» siguen permitidas."""
     import esquema
