@@ -1,0 +1,49 @@
+{
+ "tema_id": "T143",
+ "pregunta": "¿Te deben dar la garantía por escrito?",
+ "fecha": "2026-11-14T03:47:15+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben dar la garantía por escrito?",
+  "concepto_central": "garantía",
+  "respuesta_corta": "Sí, el proveedor debe expedir la póliza de garantía por escrito y entregártela al momento en que recibas el bien o servicio contratado.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor tiene la obligación legal de entregar un documento escrito que contenga los términos de la garantía de forma clara.",
+    "fuente": "F1",
+    "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones",
+    "condiciones": [
+     "Debe entregarse al momento de recibir el bien o servicio"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La póliza debe incluir por escrito el alcance, duración, condiciones, mecanismos para hacerla efectiva, domicilio para reclamaciones y talleres de servicio.",
+    "fuente": "F1",
+    "cita_literal": "expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La entrega del documento debe realizarse precisamente cuando el consumidor recibe el producto o servicio.",
+    "fuente": "F1",
+    "cita_literal": "La póliza debe ser entregada al consumidor al momento de recibir éste el bien o servicio de que se trate"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "garantía",
+    "b": "devolución dinero",
+    "diferencia": "La garantía es el compromiso sobre la calidad del bien, mientras que la devolución es la restitución del precio pagado en supuestos específicos de incumplimiento."
+   }
+  ],
+  "limites": "Los textos proporcionados no mencionan sanciones por no entregar la póliza, ni el procedimiento de queja ante autoridades si el proveedor se niega a darla.",
+  "fuentes_irrelevantes": []
+ }
+}

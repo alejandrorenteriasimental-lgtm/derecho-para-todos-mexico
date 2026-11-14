@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-01-18_reel_T143-lote-7.json",
- "fecha": "2026-11-13T10:17:29+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 804 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 184: recorta al menos 244 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Disciplina sin violencia» no corresponde a l",
+ "fecha": "2026-11-14T03:48:13+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": []}, \"conclusiones\": [{\"conclusion\": \"El proveedor tiene la obligación legal de entregar un documento escrito que contenga los términos de la garantía de forma clara.\", \"sostenida\": \"si\", \"motivo\": \"La cita literal del artículo 78 respalda que la póliza debe expe",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,28 +12,93 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[coherencia] Escena 5: el encabezado visible «Derecho a la disciplina» no corresponde a lo que se narra («Al educar, no se autoriza \"en modo alguno, se autorice a estos el uso »)."
+    "narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 90: recorta al menos 150 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ],
-   "visible": "  \n ¿Es legal pegarle a un niño para educarlo? \n ¿GOLPES PARA \n DISCIPLINAR? \n No. La ley prohíbe el castigo corporal y el trato humillante por parte de padres, tutores o personal de instituciones. \n PROHIBIDO EL \n CASTIGO FÍSICO \n La norma dice: \"Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante.\" \n Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante. \n Esta prohibición obliga a: \n Padres y tutores \n Personal de escuelas \n Instituciones de salud \n Al educar"
+   "visible": "  \n ¿Te han dicho que la garantía de un producto es solo de palabra? \n ¿GARANTÍA \n DE PALABRA? \n Sí, el proveedor debe darte la póliza por escrito al recibir el bien o servicio contratado. \n SÍ, POR \n ESCRITO \n La Ley Federal de Protección al Consumidor indica que: «La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones». \n La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones \n El documento debe contener por escrito: \n Alcance y duración \n Domicilio de reclamos \n Talleres de servicio \n La ley "
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 710 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 90: recorta al menos 150 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
-   "errores_esquema": [
-    "narración de 683 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 63: recorta al menos 123 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[coherencia] Escena 5: el encabezado visible «Límites de la crianza» no corresponde a lo que se narra («Al educar, la norma aclara: \"sin que, en modo alguno, se autorice a es»)."
-   ],
-   "visible": "  \n ¿Se puede usar la fuerza física para disciplinar? \n ¿GOLPES \n PARA \n DISCIPLINAR? \n No. La ley prohíbe el castigo corporal y el trato humillante por parte de padres o personal de instituciones. \n PROHIBICIÓN \n DE CASTIGOS \n La ley dice: \"Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante.\" \n Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante. \n Esta prohibición aplica para: \n Padres y tutores \n Escuelas e iglesias \n Centros de salud \n Al educar, la norma"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona que la póliza debe expresar los mecanismos para hacer efectivas las garantías, lo cual es un requisito esencial de su contenido según el texto oficial."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El proveedor tiene la obligación legal de entregar un documento escrito que contenga los términos de la garantía de forma clara.",
+      "sostenida": "si",
+      "motivo": "La cita literal respalda que la póliza debe expedirse por escrito y de manera clara y precisa."
+     },
+     {
+      "conclusion": "La entrega del documento debe realizarse precisamente cuando el consumidor recibe el producto o servicio.",
+      "sostenida": "si",
+      "motivo": "El texto oficial establece explícitamente que la póliza debe entregarse al momento de recibir el bien o servicio."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "elementos -> contenido",
+      "problema": "La respuesta sobre el contenido de la póliza es incompleta respecto a lo que exige la norma.",
+      "correccion": "Debe incluirse que la póliza debe expresar, además de lo mencionado, los 'mecanismos para hacerlas efectivas'."
+     },
+     {
+      "donde": "lista -> items",
+      "problema": "La lista de elementos que debe incluir la póliza omite un requisito contenido en el texto oficial.",
+      "correccion": "Agregar 'Mecanismos para hacerlas efectivas' a la lista de elementos obligatorios."
+     },
+     {
+      "donde": "distinciones",
+      "problema": "Se introduce una distinción entre 'garantía' y 'devolución de dinero' que no está contenida en el texto oficial proporcionado.",
+      "correccion": "Eliminar la distinción, ya que el texto de la Ley Federal de Protección al Consumidor (art. 78) entregado no define ni menciona la devolución de dinero."
+     }
+    ]
+   }
   },
   {
    "etapa": "redaccion",
    "intento": 2,
-   "errores_esquema": [
-    "narración de 804 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 184: recorta al menos 244 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
-    "[coherencia] Escena 5: el encabezado visible «Disciplina sin violencia» no corresponde a lo que se narra («Al educar, la norma aclara: \"sin que, en modo alguno, se autorice a es»)."
-   ],
-   "visible": "  \n ¿Se puede usar el castigo físico para educar? \n ¿GOLPES PARA \n DISCIPLINAR? \n No. La ley prohíbe el uso del castigo corporal y el trato humillante como método de disciplina por parte de padres, tutores o personal de instituciones. \n NO SE \n AUTORIZA \n La Ley General de los Derechos de Niñas, Niños y Adolescentes establece: \"Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante.\" \n Queda prohibido que quienes tengan trato con niñas, niños y adolescentes ejerzan cualquier tipo de violencia en su contra, en particular el castigo corporal y humillante. \n Esta prohibición aplica"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El proveedor tiene la obligación legal de entregar un documento escrito que contenga los términos de la garantía de forma clara.",
+      "sostenida": "si",
+      "motivo": "La cita literal del artículo 78 respalda que la póliza debe expedirse por escrito, de manera clara y precisa."
+     },
+     {
+      "conclusion": "La póliza debe incluir por escrito el alcance, duración, condiciones, mecanismos para hacerla efectiva, domicilio para reclamaciones y talleres de servicio.",
+      "sostenida": "si",
+      "motivo": "El texto oficial enumera explícitamente estos elementos como requisitos mínimos de la póliza."
+     },
+     {
+      "conclusion": "La entrega del documento debe realizarse precisamente cuando el consumidor recibe el producto o servicio.",
+      "sostenida": "si",
+      "motivo": "El artículo 78 establece que la entrega debe ser al momento de recibir el bien o servicio."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento.distinciones",
+      "problema": "El redactor introduce una distinción entre 'garantía' y 'devolución de dinero' que no está contenida en el texto oficial proporcionado.",
+      "correccion": "Eliminar la sección de 'distinciones' o limitarla exclusivamente a lo que el texto oficial mencione, para evitar incluir conceptos ajenos a la fuente."
+     }
+    ]
+   }
   }
  ]
 }
