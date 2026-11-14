@@ -1,0 +1,60 @@
+{
+ "tema_id": "T150",
+ "pregunta": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
+ "fecha": "2026-11-14T16:01:32+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
+  "concepto_central": "periodo de prueba",
+  "respuesta_corta": "Hasta 30 días en general, o hasta 180 días en puestos de dirección, gerenciales o de labores técnicas o profesionales especializadas.",
+  "reglas": [
+   {
+    "conclusion": "El periodo de prueba no podrá exceder de treinta días en relaciones de trabajo por tiempo indeterminado o que excedan de ciento ochenta días.",
+    "fuente": "F1",
+    "cita_literal": "podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días, con el único fin de verificar que el trabajador cumple con los requisitos y conocimientos necesarios",
+    "condiciones": [
+     "Aplica en relaciones de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días."
+    ],
+    "excepciones": [
+     "Puede extenderse hasta ciento ochenta días para puestos directivos, gerenciales o especializados."
+    ]
+   },
+   {
+    "conclusion": "El periodo de prueba podrá extenderse hasta ciento ochenta días únicamente para puestos de dirección, gerenciales, de administración general o para labores técnicas o profesionales especializadas.",
+    "fuente": "F1",
+    "cita_literal": "podrá extenderse hasta ciento ochenta días, sólo cuando se trate de trabajadores para puestos de dirección, gerenciales y demás personas que ejerzan funciones de dirección o administración",
+    "condiciones": [
+     "Tratarse de trabajadores para puestos de dirección, gerenciales, personas que ejerzan funciones de dirección o administración general, o labores técnicas o profesionales especializadas."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La ley establece que el periodo de prueba no puede exceder de 30 días, con opción de extenderse hasta 180 días para cargos directivos, gerenciales o especializados.",
+    "fuente": "F1",
+    "cita_literal": "el cual no podrá exceder de treinta días, con el único fin de verificar que el trabajador cumple"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El periodo de prueba solo puede establecerse en relaciones de trabajo por tiempo indeterminado o que excedan de 180 días.",
+    "fuente": "F1",
+    "cita_literal": "En las relaciones de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días, podrá establecerse un periodo a prueba"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La relación laboral puede darse por terminada sin responsabilidad para el patrón si el trabajador no acredita satisfacer los requisitos y conocimientos necesarios al término del periodo de prueba.",
+    "condicion": "Ocurre a juicio del patrón, tomando en cuenta la opinión de la Comisión Mixta de Productividad, Capacitación y Adiestramiento y la naturaleza de la categoría o puesto.",
+    "base": "F1 — Ley Federal del Trabajo, artículo 39-A"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto oficial no prevé sanciones específicas, procedimientos de impugnación ni plazos para demandar en caso de incumplimiento de estas normas.",
+  "fuentes_irrelevantes": []
+ }
+}

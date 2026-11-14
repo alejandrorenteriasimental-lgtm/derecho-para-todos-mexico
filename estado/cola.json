@@ -9874,7 +9874,7 @@
       "id": "I20270124-T149",
       "formato": "imagen",
       "huella": "b5846407e82b3ce07c8a14fb5126542d64fcbdc91639150aa5c5fc84c7e9bbc7",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T10:23:44+00:00",
@@ -9932,6 +9932,12 @@
           "a": "APROBADO",
           "ts": "2026-11-12T16:26:46+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-12T11:44:54+00:00 versión b74be74a599322fe (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-14T16:03:33+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -9963,7 +9969,7 @@
       "id": "R20270123-T148",
       "formato": "reel",
       "huella": "55340ca8d53a7f71a3b1a1a088a296a383168bfec373dd8903266ab5973e203b",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-11T10:23:44+00:00",
@@ -10003,6 +10009,12 @@
           "a": "APROBADO",
           "ts": "2026-11-12T10:32:42+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-12T04:27:26+00:00 versión ba16dc014e68e6d5 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-14T16:03:33+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -10499,7 +10511,7 @@
       "id": "I20270125-T150",
       "formato": "imagen",
       "huella": "a2c607ba0f0faa96aafe429036cba808648f4788c7c91410ff5564511b9b5f3e",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T10:13:28+00:00",
@@ -10521,6 +10533,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-14T11:44:44+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 14-11): el copy generalizaba («la ley protege tu permanencia», «a menos que se demuestre un acuerdo») y traía relleno → copy con la cita literal del art. 35 LFT y la condición; lo visible no cambia; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-14T16:03:14+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-14T16:03:17+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -10528,10 +10552,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "5131208fe7bc530d",
-        "huella_guion": "77a0c318e3b8b95e1f1a5c85ff1b47acc1795ed0ddeeccd055fa8cf4698fc33c",
+        "version": "de73503a2ae807c9",
+        "huella_guion": "6263a5f8da163dd12936d8606b5883018f96f058ddd39e12561f970c0a94b0d5",
         "huella_archivo": "1beffb98e2c6973cc9337f56eb336e794286f48b087cff5028f93fb620e4460a",
-        "preparada": "2026-11-14T10:14:22+00:00",
+        "preparada": "2026-11-14T16:03:17+00:00",
         "canal": "chat"
       }
     },
@@ -10539,7 +10563,7 @@
       "id": "I20270128-T153",
       "formato": "imagen",
       "huella": "b0afe49cf837d9c32dd1758ab1ff0ef0b7ce072c13c8c907f24fbb445b960bd4",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-14T10:13:28+00:00",
@@ -10561,12 +10585,27 @@
           "a": "PENDIENTE",
           "ts": "2026-11-14T11:44:44+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 14-11): la cita destacada no contenía la respuesta y el OJO era jerga («enunciativo, no limitativo») → cita «Derecho a la identidad» (art. 13 fr. III), OJO con el deber de las autoridades y copy sin jerga ni condición falsa; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-14T16:03:30+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "RETENIDO",
+          "ts": "2026-11-14T16:03:33+00:00",
+          "motivo": "RETENIDO: falla técnica de la imagen"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-11-14T16:03:33+00:00"
+      },
       "revision": {
         "version": "fbdacec0c839e070",
         "huella_guion": "57f67124c502b3942731a350475c6365d3d88eb4145a507dab561b09b8da899e",
