@@ -291,3 +291,24 @@ def test_etiqueta_generica_de_la_cita_se_reemplaza(uso):
     g = redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, simulador_con(redactar=b), env={}, archivo_uso=uso)
     et = next(e for e in g["escenas"] if e["tipo"] == "cita")["etiqueta"]
     assert not redactor.etiqueta_generica(et) and et.endswith(", artículo 17")
+
+
+def test_el_angulo_de_la_solicitud_llega_al_redactor_de_reels(uso):
+    """14-11: las instrucciones de alcance, cita única y extensión de una solicitud reabierta no llegaban al Reel."""
+    sim = simulador_con()
+    redactor.generar({**SOL, "fuentes_sugeridas": "", "angulo": "Cita literal ÚNICA; narración de 430 caracteres o menos."}, transporte, sim, env={}, archivo_uso=uso)
+    assert "narración de 430 caracteres o menos" in sim.llamadas["redactor"][0]
+    sim2 = simulador_con()
+    redactor.generar({**SOL, "fuentes_sugeridas": ""}, transporte, sim2, env={}, archivo_uso=uso)
+    assert "sin indicaciones adicionales" in sim2.llamadas["redactor"][0]
+
+
+def test_objecion_a_una_distincion_del_analisis_obliga_a_rehacerlo():
+    """14-11: el auditor objetó dos veces una distinción del análisis congelado («garantía / devolución») que el redactor
+    no podía quitar; ahora cuenta como objeción al análisis y se rehace."""
+    mapa = {**copy.deepcopy(ANALISIS), "distinciones": [{"a": "garantía", "b": "devolución dinero", "diferencia": "…"}]}
+    a = {"veredicto": "con_objeciones", "conclusiones": [{"conclusion": "otra cosa", "sostenida": "si"}],
+         "objeciones": [{"donde": "razonamiento.distinciones", "problema": "distinción ajena al texto", "correccion": "elimínala"}]}
+    assert redactor._objeta_mapa(a, mapa)
+    assert not redactor._objeta_mapa(a, {**mapa, "distinciones": []})
+    assert not redactor._objeta_mapa({**a, "objeciones": [{"donde": "escena 3", "problema": "texto largo"}]}, mapa)

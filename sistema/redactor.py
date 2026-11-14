@@ -138,6 +138,7 @@ Usa solo siglas de la lista. El número de artículo sin la palabra «artículo�
 PEDIR_REEL = """Escribe el guion de un Reel vertical de 30 a 42 segundos (420 a 600 caracteres de narración en total; Instagram por API no acepta nuestros Reels de más de 45 s) sobre:
 Tema: {titulo}
 Pregunta que DEBE responder: {gancho}
+Ángulo editorial (alcance, estructura y extensión; obligatorio, no cambia el análisis): {angulo}
 Textos oficiales disponibles (fuente → texto):
 {textos}
 
@@ -731,6 +732,14 @@ DONDE_RESPUESTA = {"reel": "en la escena «titular» que sigue al gancho, y otra
                    "mito_realidad": "en «realidad»"}
 
 
+def _angulo_reel(sol):
+    """El ángulo de la solicitud también llega al redactor de Reels (antes solo al de imágenes): al reabrir una solicitud,
+    las instrucciones de alcance, cita única, estructura y extensión no se veían y el Reel se descartaba igual
+    (14-11: R 18-01 y R 19-01 de lote-7, varios descartes por narración larga y citas no pedidas)."""
+    ang = str(sol.get("angulo") or "").strip()
+    return ang if ang and ang != pregunta_plan(sol) else "sin indicaciones adicionales"
+
+
 def _objeta_mapa(a, mapa):
     """¿El auditor declara no sostenida (total o parcialmente) una conclusión del análisis? Entonces el error está en la
     etapa 1 y se corrige el análisis, no solo la redacción. Se compara contra todo lo que el análisis afirma (reglas,
@@ -742,6 +751,11 @@ def _objeta_mapa(a, mapa):
     for x in a.get("conclusiones", []) or []:
         if str(x.get("sostenida", "si")).lower() != "si" and any(razonamiento._coincide(str(x.get("conclusion", "")), c) for c in concl):
             return True
+    # Las distinciones también viajan congeladas con el análisis: si el auditor las objeta, el redactor no puede quitarlas
+    # y cada reintento repetía la objeción (14-11: R 18-01 lote-7, «garantía / devolución de dinero» ajena al art. 78 LFPC).
+    if mapa.get("distinciones") and any("distincion" in razonamiento.plano(str(o.get("donde", "")) + " " + str(o.get("problema", "")))
+                                        for o in a.get("objeciones", []) or [] if isinstance(o, dict)):
+        return True
     return False
 
 
@@ -844,7 +858,7 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
             fijo = PLAN_FIJO.format(mapa=json.dumps({k: v for k, v in mapa.items() if k != "fuentes_irrelevantes"}, ensure_ascii=False, indent=1),
                                     donde_respuesta=DONDE_RESPUESTA.get("reel" if sol["formato"] == "reel" else sol.get("plantilla", "concepto"), "en la bajada"))
             if sol["formato"] == "reel":
-                pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=pregunta_plan(sol), textos=textos, glosario=glosario) + fijo + extra, simulador)
+                pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_REEL.format(titulo=sol["titulo"], gancho=pregunta_plan(sol), angulo=_angulo_reel(sol), textos=textos, glosario=glosario) + fijo + extra, simulador)
                 construir = construir_reel
             else:
                 pl = sol.get("plantilla", "concepto")

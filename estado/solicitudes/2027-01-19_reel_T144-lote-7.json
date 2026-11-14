@@ -2,22 +2,22 @@
   "fecha": "2027-01-19",
   "formato": "reel",
   "tema_id": "T144",
-  "titulo": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
-  "gancho": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
-  "pregunta": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?",
+  "titulo": "¿México puede firmar tratados para extraditar a presos políticos?",
+  "gancho": "¿México puede firmar tratados para extraditar a presos políticos?",
+  "pregunta": "¿México puede firmar tratados para extraditar a presos políticos?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "CPEUM art. 16",
+  "fuentes_sugeridas": "CPEUM art. 15",
   "riesgo_exactitud": "",
   "lote": "lote-7",
-  "motivo_seleccion": "CPEUM art. 16, párrafo sobre comunicaciones privadas (texto oficial en registro/textos/CPEUM_16.json, consultado el 3-11-2026; última reforma de la Constitución 07-10-2026): «Las comunicaciones privadas son inviolables». Condición literal: «Exclusivamente la autoridad judicial federal, a petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente, podrá autorizar la intervención de cualquier comunicación privada». Límite literal: la autoridad judicial federal «no podrá otorgar estas autorizaciones cuando se trate de materias de carácter electoral, fiscal, mercantil, civil, laboral o administrativo, ni en el caso de las comunicaciones del detenido con su defensor». Alcance nacional. Tema distinto de los de las últimas 3 semanas (el art. 16 salió el 03-01 en imagen sobre datos personales y el 13-12 sobre cateo: otros párrafos). Sustituye a LFT 162 (tres descartes: análisis el 12-11; forma «mínimos» y narración de 631 caracteres el 13-11).",
+  "motivo_seleccion": "CPEUM art. 15 (texto oficial en registro/textos/CPEUM_15.json, consultado el 13-11-2026; última reforma de la Constitución 07-10-2026; artículo reformado DOF 10-06-2011): «No se autoriza la celebración de tratados para la extradición de reos políticos». El mismo párrafo prohíbe también los tratados para extraditar a delincuentes del orden común que hayan tenido la condición de esclavos en el país donde cometieron el delito, y los convenios o tratados que alteren los derechos humanos reconocidos por la Constitución y los tratados internacionales. Alcance nacional. Artículo sin uso en los lotes 1 a 8. Sustituye a CPEUM 16 (dos descartes por forma, 13 y 14-11).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-08T15:53:21Z",
   "pieza_id": "R20270119-T144",
   "archivo": "2027-01-19_reel_T144-lote-7.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 634 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 14: recorta al menos 74 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Pueden intervenir tus llamadas o mensajes sin orden de un juez? \\n ¿INTERV",
   "ultima_categoria": "redaccion",
   "huella_entrada": "cfe233458540c6c0",
@@ -65,7 +65,15 @@
       "motivo": "primer descarte con CPEUM 16, en la redacción y por forma: citaba la oración completa (con la aportación voluntaria y la sanción penal), la narración salió de 756 y 648 caracteres, omitió el límite del detenido con su defensor y añadió una frase propia sobre valor probatorio. Se reabre con escenas y encabezados fijados, cita de cinco palabras, el límite completo y la excepción voluntaria en una frase",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La prohibición expresa de intervenir comunicaciones entre el detenido y su defensor\", \"La aclaración de que las aportaciones voluntarias sí tienen valor probatorio (siempre que se relacionen con un delito) sin necesidad de orden judicial previa\"]}, \"conclusione"
+    },
+    {
+      "fecha": "2026-11-14",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con CPEUM 16 (13 y 14-11, ambos por forma: narración larga y cita completa del párrafo de intervención). Parte de la causa era del sistema (el ángulo de los Reels no llegaba al redactor; corregido), pero el párrafo es largo y con varias excepciones: se cambia a CPEUM 15, artículo de un solo párrafo con respuesta literal, alcance nacional y sin uso en los lotes 1 a 8",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 634 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 14: recorta al menos 74 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Pueden intervenir tus llamadas o mensajes sin orden de un juez? \\n ¿INTERV",
+      "pregunta_anterior": "¿Pueden intervenir tus llamadas o mensajes sin orden de un juez?"
     }
   ],
-  "angulo": "Solo el art. 16 CPEUM, párrafos de comunicaciones privadas y de su intervención. Respuesta: No; las comunicaciones privadas son inviolables y solo la autoridad judicial federal puede autorizar que se intervengan. Cita literal ÚNICA, solo estas cinco palabras, una vez y en una sola escena: «Las comunicaciones privadas son inviolables» (no citar el resto de esa oración). Estructura fija: escena 1 pregunta (encabezado «¿TE ESPÍAN SIN JUEZ?»); escena 2 respuesta corta (encabezado «NO, SIN JUEZ FEDERAL NO»); escena 3 «La Constitución dice:» y la cita (encabezado «LA CONSTITUCIÓN DICE»); escena 4 condición, con tus palabras: solo la autoridad judicial federal puede autorizarlo, a petición de la autoridad que faculte la ley o del Ministerio Público (encabezado «SOLO UN JUEZ FEDERAL»); escena 5 límite, en una frase y sin viñetas: no puede autorizarlo en asuntos electorales, fiscales, mercantiles, civiles, laborales o administrativos, ni en las comunicaciones de una persona detenida con su defensor (encabezado «NUNCA CON TU DEFENSOR»); cierre. Una frase breve en la escena 2 o 4 basta para la excepción: si alguien que participó en la comunicación la entrega por su voluntad, ya no es una intervención. Fuera de la pregunta (no son faltantes): valor probatorio, cómo valora el juez, confidencialidad, sanciones penales, jueces de control y cateos; no mencionarlos ni afirmar nada sobre valor probatorio. No decir que nadie puede nunca revisarlas ni que basta cualquier juez. Narración de 470 caracteres o menos."
+  "angulo": "Solo el art. 15 CPEUM (un párrafo). Respuesta: No; la Constitución no autoriza celebrar tratados para extraditar a reos políticos. Cita literal ÚNICA (una sola vez, en una sola escena): «No se autoriza la celebración de tratados para la extradición de reos políticos». Las otras dos prohibiciones del mismo artículo, dichas con palabras sencillas y SIN otra cita: tampoco tratados para extraditar a quien haya cometido un delito común y en ese país haya tenido la condición de esclavo, ni tratados o convenios que alteren los derechos humanos que reconocen la Constitución y los tratados internacionales. Estructura fija: escena 1 pregunta (encabezado «¿EXTRADITAR PRESOS POLÍTICOS?»); escena 2 respuesta corta (encabezado «NO HAY TRATADO PARA ESO»); escena 3 «La Constitución dice:» y la cita (encabezado «LA CONSTITUCIÓN DICE»); escena 4 las otras dos prohibiciones (encabezado «TAMPOCO ESTOS TRATADOS»); cierre. Sin listas con viñetas. Fuera de la pregunta (no son faltantes): qué es un delito político, cómo se tramita una extradición, la Ley de Extradición Internacional, el asilo y casos reales; no mencionarlos. No decir que México nunca entrega a nadie a otro país ni que no existe la extradición: la prohibición es para estos tratados. Narración de 430 caracteres o menos (la cita ocupa unos 85)."
 }
