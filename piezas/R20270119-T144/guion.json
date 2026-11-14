@@ -1,0 +1,233 @@
+{
+  "id": "R20270119-T144",
+  "formato": "reel",
+  "titulo": "¿México puede firmar tratados para extraditar a presos políticos?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T144",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "15",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 15",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "15",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 15",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "15",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 15",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "15",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 15",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿México puede firmar tratados para extraditar a presos políticos?",
+      "titulo": [
+        "¿EXTRADITAR PRESOS",
+        "POLÍTICOS?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. La Constitución mexicana no autoriza celebrar tratados para extraditar a estos reos.",
+      "titulo": [
+        "NO HAY TRATADO",
+        "PARA ESO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución dice: «No se autoriza la celebración de tratados para la extradición de reos políticos».",
+      "etiqueta": "CPEUM, art. 15",
+      "cita": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución no autoriza celebrar tratados para extraditar a reos políticos.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Tampoco delincuentes comunes que fueron esclavos, ni acuerdos que alteren derechos humanos.",
+      "titulo": [
+        "TAMPOCO ESTOS",
+        "TRATADOS"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "No se autoriza la celebración de tratados para la extradición de reos políticos.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "La Constitución prohíbe explícitamente la firma de estos convenios.",
+      "titulo": [
+        "PROTECCIÓN",
+        "CONSTITUCIONAL"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Tampoco se autorizan tratados para extraditar a delincuentes comunes que sufrieron esclavitud ni acuerdos que alteren derechos humanos.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "La Carta Magna prohíbe la celebración de estos tratados.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿México puede firmar tratados para extraditar a presos políticos?",
+    "concepto_central": "celebración de tratados para la extradición de reos políticos",
+    "respuesta_corta": "No. La Constitución establece que no se autoriza la celebración de tratados para la extradición de reos políticos.",
+    "reglas": [
+      {
+        "conclusion": "No se autoriza en México la celebración de tratados para extraditar a reos políticos.",
+        "fuente": "F1",
+        "cita_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "15"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica es que la celebración de esos tratados no está autorizada constitucionalmente.",
+        "fuente": "F1",
+        "cita_literal": "No se autoriza la celebración de tratados para la extradición de reos políticos",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto constitucional no define la noción de 'reo político' ni establece procedimientos de extradición; la pieza no debe inventar definiciones ni tipologías de delitos políticos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T04:04:57+00:00",
+    "solicitud": "2027-01-19_reel_T144-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿México puede firmar tratados para extraditar a presos políticos?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿México puede firmar tratados para extraditar a presos políticos?\n\nNo. La Constitución establece que no se autoriza la celebración de tratados para la extradición de reos políticos.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 15.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "No se autoriza la celebración de tratados para la extradición de reos políticos.",
+              "sostenida": "si",
+              "motivo": "El artículo 15 de la Constitución Política de los Estados Unidos Mexicanos establece expresamente esta prohibición."
+            },
+            {
+              "conclusion": "Tampoco se autorizan tratados para extraditar a delincuentes comunes que sufrieron esclavitud ni acuerdos que alteren derechos humanos.",
+              "sostenida": "si",
+              "motivo": "El artículo 15 de la Constitución Política de los Estados Unidos Mexicanos contempla estas dos prohibiciones adicionales de forma explícita."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

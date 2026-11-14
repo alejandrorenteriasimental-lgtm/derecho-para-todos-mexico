@@ -1,0 +1,273 @@
+{
+  "id": "R20270118-T143",
+  "formato": "reel",
+  "titulo": "¿Te deben dar la garantía por escrito?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T143",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "78",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 78",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "78",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 78",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "78",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 78",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "78",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La póliza debe ser entregada al consumidor al momento de recibir éste el bien o servicio de que se trate.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 78",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-14"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te dieron la garantía de un bien o servicio solo de palabra?",
+      "titulo": [
+        "¿GARANTÍA DE",
+        "PALABRA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí. Al ofrecerse una garantía, la póliza debe expedirse por escrito por el proveedor y entregarse al consumidor al recibir el bien o servicio.",
+      "titulo": [
+        "POR ESCRITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley establece: «La póliza de garantía deberá expedirse por el proveedor por escrito».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, art. 78",
+      "cita": "La póliza de garantía deberá expedirse por el proveedor por escrito",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Al ofrecerse una garantía, la póliza debe expedirse por escrito por el proveedor y entregarse al recibir el bien o servicio.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Al recibir el bien o servicio, el documento escrito debe señalar de forma clara por lo menos lo siguiente:",
+      "items": [
+        "Alcance, duración y condiciones",
+        "Cómo hacerla efectiva",
+        "Domicilio para reclamar",
+        "Talleres de servicio"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La póliza de garantía deberá expedirse por el proveedor por escrito.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, cuando se ofrece garantía sobre un bien o servicio, la póliza debe expedirse por escrito y entregarse al recibirlo.",
+      "titulo": [
+        "ENTREGA AL",
+        "RECIBIRLO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La póliza expresará por lo menos su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y talleres de servicio.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "La póliza escrita debe entregarse al consumidor al momento de recibir el bien o servicio.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben dar la garantía por escrito?",
+    "concepto_central": "póliza de garantía por escrito",
+    "respuesta_corta": "Sí, la póliza de garantía debe expedirse por escrito por el proveedor y entregarse al consumidor al recibir el bien o servicio.",
+    "reglas": [
+      {
+        "conclusion": "El proveedor tiene la obligación de expedir la póliza de garantía por escrito de manera clara y precisa, indicando alcance, duración, condiciones, mecanismos de efectividad, domicilio de reclamaciones y talleres.",
+        "fuente": "F1",
+        "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio.",
+        "condiciones": [
+          "Aplica al ofrecerse una garantía sobre un bien o servicio"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "78"
+        }
+      },
+      {
+        "conclusion": "La póliza de garantía escrita debe ser entregada al consumidor al momento de recibir el bien o servicio.",
+        "fuente": "F1",
+        "cita_literal": "La póliza debe ser entregada al consumidor al momento de recibir éste el bien o servicio de que se trate.",
+        "condiciones": [
+          "Al recibir el bien o servicio contratado"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "78"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El proveedor debe expedir por escrito la póliza de garantía de forma clara y precisa, expresando por lo menos su alcance, duración, condiciones, mecanismos de efectividad, domicilio para reclamaciones y talleres de servicio.",
+        "fuente": "F1",
+        "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "no_aplica",
+        "motivo": "El artículo no establece requisitos especiales ni excepciones para condicionar la entrega del escrito al recibir el bien o servicio."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "póliza de garantía",
+        "b": "devolución de dinero",
+        "diferencia": "La póliza de garantía es el escrito que fija alcance, duración y condiciones sobre el bien o servicio, mientras que la devolución de dinero restituye el precio en casos legalmente previstos."
+      },
+      {
+        "a": "póliza de garantía",
+        "b": "cambio o reposición",
+        "diferencia": "La póliza de garantía es el documento donde se detallan las condiciones del compromiso, mientras que el cambio es la sustitución del producto bajo los supuestos previstos en la ley o por política del proveedor."
+      }
+    ],
+    "limites": "El texto del artículo 78 de la LFPC no señala sanciones por la falta de entrega del escrito ni procedimientos específicos de reclamación ante la autoridad."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-14T04:03:41+00:00",
+    "solicitud": "2027-01-18_reel_T143-lote-7.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Te deben dar la garantía por escrito?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben dar la garantía por escrito?\n\nSí, la póliza de garantía debe expedirse por escrito por el proveedor y entregarse al consumidor al recibir el bien o servicio.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 78.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[condiciones] Generalización: «Recuerda que la póliza escrita debe entregarse siempre al recibir el bien o servicio.» se presenta sin la condición que impone Ley Federal de Protección al Consumidor, art. 78 («…proveedor por escrito de manera clara y precisa expresando por lo menos su alcance duracion condiciones mecanismos para hacerlas efectivas domicilio…»).",
+          "[condiciones] Frase absoluta «Recuerda que la póliza escrita debe entregarse siempre al recibir el bien o serv» sobre una regla condicionada de F3 («…proveedor por escrito de manera clara y precisa expresando por lo menos su alcance duracion condiciones mecanismos para hacerlas efectivas domicilio…»)."
+        ],
+        "visible": "  \n ¿Te deben dar la garantía por escrito? \n ¿GARANTÍA DE \n PALABRA? \n Sí. El proveedor debe expedirla por escrito y entregártela al recibir el bien o servicio. \n POR ESCRITO \n La ley establece: «La póliza de garantía deberá expedirse por el proveedor por escrito». \n La póliza de garantía deberá expedirse por el proveedor por escrito \n Debe ser clara y expresar por lo menos lo siguiente al recibir el bien o servicio: \n alcance, duración y condiciones \n cómo hacerla efectiva \n domicilio para reclamar \n talleres de servicio \n Recuerda que la póliza escrita debe entregarse siempre al recibir el bien o servicio. \n CLARA Y AL \n RECIBIRLO \n Esto es información general, no asesoría legal. Síguenos "
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El proveedor tiene la obligación de expedir la póliza de garantía por escrito de manera clara y precisa, indicando alcance, duración, condiciones, mecanismos de efectividad, domicilio de reclamaciones y talleres.",
+              "sostenida": "si",
+              "motivo": "El artículo 78 de la LFPC establece explícitamente la obligación de expedir la póliza por escrito y detalla los elementos mínimos que debe contener."
+            },
+            {
+              "conclusion": "La póliza de garantía escrita debe ser entregada al consumidor al momento de recibir el bien o servicio.",
+              "sostenida": "si",
+              "motivo": "El artículo 78 de la LFPC señala expresamente el momento de la entrega: al recibir el bien o servicio."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

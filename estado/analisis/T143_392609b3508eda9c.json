@@ -1,20 +1,29 @@
 {
  "tema_id": "T143",
  "pregunta": "¿Te deben dar la garantía por escrito?",
- "fecha": "2026-11-14T03:47:15+00:00",
- "objetado": true,
+ "fecha": "2026-11-14T04:02:26+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Te deben dar la garantía por escrito?",
-  "concepto_central": "garantía",
-  "respuesta_corta": "Sí, el proveedor debe expedir la póliza de garantía por escrito y entregártela al momento en que recibas el bien o servicio contratado.",
+  "concepto_central": "póliza de garantía por escrito",
+  "respuesta_corta": "Sí, la póliza de garantía debe expedirse por escrito por el proveedor y entregarse al consumidor al recibir el bien o servicio.",
   "reglas": [
    {
-    "conclusion": "El proveedor tiene la obligación legal de entregar un documento escrito que contenga los términos de la garantía de forma clara.",
+    "conclusion": "El proveedor tiene la obligación de expedir la póliza de garantía por escrito de manera clara y precisa, indicando alcance, duración, condiciones, mecanismos de efectividad, domicilio de reclamaciones y talleres.",
     "fuente": "F1",
-    "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones",
+    "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio.",
     "condiciones": [
-     "Debe entregarse al momento de recibir el bien o servicio"
+     "Aplica al ofrecerse una garantía sobre un bien o servicio"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "La póliza de garantía escrita debe ser entregada al consumidor al momento de recibir el bien o servicio.",
+    "fuente": "F1",
+    "cita_literal": "La póliza debe ser entregada al consumidor al momento de recibir éste el bien o servicio de que se trate.",
+    "condiciones": [
+     "Al recibir el bien o servicio contratado"
     ],
     "excepciones": []
    }
@@ -23,28 +32,30 @@
    {
     "elemento": "contenido",
     "estado": "cubierto",
-    "respuesta": "La póliza debe incluir por escrito el alcance, duración, condiciones, mecanismos para hacerla efectiva, domicilio para reclamaciones y talleres de servicio.",
+    "respuesta": "El proveedor debe expedir por escrito la póliza de garantía de forma clara y precisa, expresando por lo menos su alcance, duración, condiciones, mecanismos de efectividad, domicilio para reclamaciones y talleres de servicio.",
     "fuente": "F1",
-    "cita_literal": "expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio"
+    "cita_literal": "La póliza de garantía deberá expedirse por el proveedor por escrito, de manera clara y precisa expresando, por lo menos, su alcance, duración, condiciones, mecanismos para hacerlas efectivas, domicilio para reclamaciones y establecimientos o talleres de servicio."
    },
    {
     "elemento": "condiciones",
-    "estado": "cubierto",
-    "respuesta": "La entrega del documento debe realizarse precisamente cuando el consumidor recibe el producto o servicio.",
-    "fuente": "F1",
-    "cita_literal": "La póliza debe ser entregada al consumidor al momento de recibir éste el bien o servicio de que se trate"
+    "estado": "no_aplica",
+    "motivo": "El artículo no establece requisitos especiales ni excepciones para condicionar la entrega del escrito al recibir el bien o servicio."
    }
   ],
   "interpretaciones": [],
   "distinciones": [
    {
-    "a": "garantía",
-    "b": "devolución dinero",
-    "diferencia": "La garantía es el compromiso sobre la calidad del bien, mientras que la devolución es la restitución del precio pagado en supuestos específicos de incumplimiento."
+    "a": "póliza de garantía",
+    "b": "devolución de dinero",
+    "diferencia": "La póliza de garantía es el escrito que fija alcance, duración y condiciones sobre el bien o servicio, mientras que la devolución de dinero restituye el precio en casos legalmente previstos."
+   },
+   {
+    "a": "póliza de garantía",
+    "b": "cambio o reposición",
+    "diferencia": "La póliza de garantía es el documento donde se detallan las condiciones del compromiso, mientras que el cambio es la sustitución del producto bajo los supuestos previstos en la ley o por política del proveedor."
    }
   ],
-  "limites": "Los textos proporcionados no mencionan sanciones por no entregar la póliza, ni el procedimiento de queja ante autoridades si el proveedor se niega a darla.",
+  "limites": "El texto del artículo 78 de la LFPC no señala sanciones por la falta de entrega del escrito ni procedimientos específicos de reclamación ante la autoridad.",
   "fuentes_irrelevantes": []
- },
- "nota": "marcado objetado por la operación diaria el 14-11: el auditor objetó dos veces su «distinción» garantía / devolución de dinero, ajena al art. 78 LFPC; se rehace"
+ }
 }
