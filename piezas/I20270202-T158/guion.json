@@ -1,0 +1,138 @@
+{
+  "id": "I20270202-T158",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T158",
+  "pieza": {
+    "titular": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
+    "bajada": "Conoce lo que establece la ley sobre este derecho fundamental.",
+    "mito": "Te pueden quitar la nacionalidad si adquieres otra extranjera.",
+    "realidad": "Ningún mexicano por nacimiento podrá ser privado de su nacionalidad.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 37"
+  },
+  "copy": "Muchas personas temen perder su nacionalidad por diversas circunstancias o trámites en el extranjero. Sin embargo, la legislación mexicana protege este derecho fundamental frente a cualquier situación.\n\nDe acuerdo con la Constitución Política de los Estados Unidos Mexicanos, artículo 37, la ley establece una protección absoluta para este sector de la población frente a la pérdida del vínculo nacional.\n\nEl texto oficial señala de forma clara que «Ningún mexicano por nacimiento podrá ser privado de su nacionalidad». Guarda y comparte esta información para que más personas conozcan lo que dice la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen fija con la pregunta sobre si te pueden quitar la nacionalidad si naciste mexicano, desmintiendo el mito y explicando la realidad jurídica según la Constitución.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "37",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Ningún mexicano por nacimiento podrá ser privado de su nacionalidad.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 37",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "A los mexicanos por nacimiento no se les puede privar de su nacionalidad bajo ninguna circunstancia.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
+    "concepto_central": "nacionalidad mexicana por nacimiento",
+    "respuesta_corta": "No: ningún mexicano por nacimiento puede ser privado de su nacionalidad bajo ninguna circunstancia.",
+    "reglas": [
+      {
+        "conclusion": "A los mexicanos por nacimiento no se les puede privar de su nacionalidad.",
+        "fuente": "F1",
+        "cita_literal": "Ningún mexicano por nacimiento podrá ser privado de su nacionalidad.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "37"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La prohibición de quitar la nacionalidad a los mexicanos por nacimiento es absoluta en la ley.",
+        "fuente": "F1",
+        "cita_literal": "Ningún mexicano por nacimiento podrá ser privado de su nacionalidad."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "mexicano por nacimiento",
+        "b": "mexicano por naturalización",
+        "diferencia": "La ley prevé casos de pérdida de nacionalidad exclusivamente para los naturalizados, protegiendo a los nacidos en México."
+      }
+    ],
+    "limites": "El texto oficial solo establece la prohibición para mexicanos por nacimiento y regula supuestos de pérdida únicamente para naturalizados o ciudadanía, sin detallar procedimientos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-15T16:05:19+00:00",
+    "solicitud": "2027-02-02_imagen_T158-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "A los mexicanos por nacimiento no se les puede privar de su nacionalidad.",
+              "sostenida": "si",
+              "motivo": "El artículo 37, apartado A, de la Constitución establece de forma directa y sin excepciones que ningún mexicano por nacimiento puede ser privado de su nacionalidad."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

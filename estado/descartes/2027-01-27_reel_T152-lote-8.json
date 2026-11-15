@@ -1,21 +1,114 @@
 {
  "solicitud": "2027-01-27_reel_T152-lote-8.json",
- "fecha": "2026-11-15T10:08:47+00:00",
- "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «excepcion» («El derecho de revocación no aplica en la compraventa de bien») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "fecha": "2026-11-15T16:02:22+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza menciona el derecho a exigir gastos y bonificación, pero no explica que esto aplica específicamente cuando las refacciones no cumplen con normas de cumplimiento obligatorio, lo cual es una condición esencial para ese derecho.\"]}, \"conclusiones\": [{\"con",
  "historial": [
   {
    "etapa": "analisis",
    "intento": 0,
-   "errores": [
-    "[cobertura] El elemento «excepcion» («Este derecho no aplica si compras comida u otros perecederos») no trae una cita literal que esté en el texto oficial de su fuente."
-   ]
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "Derechos del consumidor (exigir gastos y bonificación) en el supuesto de que las refacciones no cumplan con las normas de cumplimiento obligatorio."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Quienes reparan productos deben usar refacciones nuevas y apropiadas, excepto si la persona que solicita el servicio autoriza expresamente el uso de refacciones distintas.",
+      "sostenida": "si",
+      "motivo": "La conclusión es una paráfrasis exacta de la regla y la excepción establecidas en el artículo 60."
+     },
+     {
+      "conclusion": "El uso de refacciones que no sean nuevas es legalmente permisible solo si existe autorización expresa de quien solicita el servicio.",
+      "sostenida": "parcial",
+      "motivo": "Aunque la afirmación es correcta según el texto, el redactor la categoriza erróneamente como el 'efecto' de la norma, cuando es una condición de la excepción. Además, omite el efecto jurídico real que prevé el artículo ante el incumplimiento de normas técnicas."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "razonamiento/elementos",
+      "problema": "Error de categorización jurídica. Se identifica como 'efecto' una condición necesaria para la excepción, omitiendo el efecto jurídico real (derecho a gastos y bonificación).",
+      "correccion": "El efecto jurídico de la norma es el derecho del consumidor a exigir los gastos necesarios y la bonificación del artículo 92 TER cuando las refacciones no cumplen con las normas de cumplimiento obligatorio."
+     },
+     {
+      "donde": "razonamiento/distinciones",
+      "problema": "Uso de información externa. La distinción entre 'bonificación' y 'devolución de dinero' incluye conceptos que no están en el texto oficial proporcionado.",
+      "correccion": "Eliminar la mención a la 'devolución de dinero' para cumplir con la regla de usar solo los textos entregados."
+     },
+     {
+      "donde": "razonamiento/cobertura",
+      "problema": "Omisión de un supuesto de hecho esencial. El artículo 60 no solo trata sobre la elección de piezas nuevas o no, sino sobre el cumplimiento de normas obligatorias en las refacciones.",
+      "correccion": "Añadir que si las refacciones están sujetas a normas de cumplimiento obligatorio y no las cumplen, el consumidor tiene derecho a exigir los gastos probados y la bonificación correspondiente."
+     }
+    ]
+   }
   },
   {
    "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: quienes reparan productos deben usar piezas nuevas, salvo que el solicitante del »."
+   ],
+   "visible": "  \n ¿Pueden ponerle piezas usadas a tu producto al repararlo? \n PIEZAS USADAS \n EN REPARACIÓN \n No, deben usar partes y refacciones nuevas, salvo que autorices expresamente otras. \n NO, SALVO \n QUE AUTORICES \n La ley establece que deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras. \n deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras. \n Si aceptas piezas distintas, hazlo de forma expresa y clara. \n Autoriza de forma expresa \n Exige piezas nuevas \n Revi"
+  },
+  {
+   "etapa": "redaccion",
    "intento": 1,
+   "errores_esquema": [
+    "narración de 668 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 48: recorta al menos 108 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Pueden ponerle piezas usadas a tu producto cuando lo reparan? \n PIEZAS USADAS \n EN REPARACIÓN \n Depende: quienes reparan productos deben usar piezas nuevas, salvo que el solicitante del servicio autorice expresamente que se utilicen otras. \n NUEVAS \n O USADAS \n La ley dice: deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras. \n deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras \n Si aceptas otras piezas, que sea de forma expresa. \n AUTORIZA EXPRESA"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
    "errores": [
-    "[cobertura] El elemento «excepcion» («El derecho de revocación no aplica en la compraventa de bien») no trae una cita literal que esté en el texto oficial de su fuente."
+    "narración de 668 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 48: recorta al menos 108 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
    ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza menciona el derecho a exigir gastos y bonificación, pero no explica que esto aplica específicamente cuando las refacciones no cumplen con normas de cumplimiento obligatorio, lo cual es una condición esencial para ese derecho."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Quienes reparan productos deben utilizar refacciones nuevas y apropiadas, a menos que la persona que solicita el servicio autorice expresamente el uso de otras.",
+      "sostenida": "si",
+      "motivo": "El artículo 60 establece claramente esta obligación y la excepción de autorización expresa."
+     },
+     {
+      "conclusion": "Si se usan refacciones sujetas a normas obligatorias que no cumplan con los requisitos, el consumidor puede exigir los gastos necesarios probados y la bonificación legal.",
+      "sostenida": "si",
+      "motivo": "El artículo 60 vincula directamente el incumplimiento de normas obligatorias con el derecho a exigir gastos y la bonificación del artículo 92 TER."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'lista' y razonamiento general",
+      "problema": "La pieza omite explicar que el derecho a exigir gastos y bonificación está condicionado a que las refacciones o partes estén sujetas a normas de cumplimiento obligatorio. Al no mencionarlo, parece que cualquier refacción no nueva da derecho a bonificación, lo cual es incorrecto.",
+      "correccion": "Aclarar que el derecho a exigir gastos y bonificación aplica específicamente cuando las refacciones utilizadas no cumplen con las normas de cumplimiento obligatorio."
+     }
+    ]
+   }
   }
  ]
 }

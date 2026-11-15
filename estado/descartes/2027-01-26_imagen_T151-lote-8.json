@@ -1,36 +1,27 @@
 {
  "solicitud": "2027-01-26_imagen_T151-lote-8.json",
- "fecha": "2026-11-15T10:12:17+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l",
+ "fecha": "2026-11-15T16:03:26+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. 17 («…plazo para presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradici…»).\", \"[con",
  "historial": [
   {
    "etapa": "analisis",
-   "reutilizado": true,
-   "errores": []
-  },
-  {
-   "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
-   ],
-   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta o cumple, debe fundar, motivar y hacer p"
+   "errores": [
+    "[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, pero hay plazos de treinta d» se presenta sin la condición que impone Ley de Amparo, art. 17 («…plazo para presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradici…»).",
+    "[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, pero hay plazos de treinta d» se presenta sin la condición que impone Ley de Amparo, art. 17 («…de treinta dias ii cuando se reclame la sentencia definitiva condenatoria en un proceso penal que imponga pen…»).",
+    "[sustento] La cita de la conclusión «El amparo puede presentarse en cualquier tiempo cuando el ac» no está en Ley de Amparo, art. 17.",
+    "[cobertura] El elemento «condiciones» («Los plazos se computan a partir del día siguiente al que sur») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
   },
   {
-   "etapa": "redaccion",
+   "etapa": "analisis",
    "intento": 1,
-   "errores_esquema": [
-    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
-   ],
-   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta o no la cumple, debe fundar, motivar y h"
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 2,
-   "errores_esquema": [
-    "[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o»."
-   ],
-   "visible": "  \n   \n No. La Constitución dice que no son vinculatorias, pero deben responderse. \n formularán recomendaciones públicas, no vinculatorias \n Si una autoridad no la acepta o no la cumple, debe fundar, motivar y h"
+   "errores": [
+    "[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. 17 («…plazo para presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradici…»).",
+    "[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. 17 («…de treinta dias ii cuando se reclame la sentencia definitiva condenatoria en un proceso penal que imponga pen…»).",
+    "[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. 17 («…able notifique el acto a los grupos agrarios mencionados iv cuando el acto reclamado implique peligro de privacion de la vida ataques a la libertad pe…»).",
+    "[cobertura] El elemento «condiciones» («Los plazos se computan a partir del día siguiente al que sur») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
   }
  ]
 }

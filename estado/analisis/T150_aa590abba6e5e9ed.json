@@ -1,0 +1,54 @@
+{
+ "tema_id": "T150",
+ "pregunta": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+ "fecha": "2026-11-15T15:57:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+  "concepto_central": "prolongación de la jornada de trabajo por siniestro o riesgo inminente",
+  "respuesta_corta": "Sí, la jornada de trabajo podrá prolongarse si hay un siniestro o riesgo inminente que ponga en peligro vidas o la existencia de la empresa.",
+  "reglas": [
+   {
+    "conclusion": "La jornada laboral puede prolongarse únicamente por el tiempo estrictamente necesario en situaciones de siniestro o peligro inminente para las personas o la empresa.",
+    "fuente": "F1",
+    "cita_literal": "En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa, la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males.",
+    "condiciones": [
+     "Que exista un siniestro o riesgo inminente",
+     "Que peligre la vida del trabajador, de sus compañeros, del patrón o la existencia misma de la empresa",
+     "Que la prolongación sea por el tiempo estrictamente indispensable para evitar esos males"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El tiempo trabajado en emergencias o siniestros se retribuye con un pago igual al de las horas ordinarias.",
+    "fuente": "F2",
+    "cita_literal": "Las horas de trabajo a que se refiere el artículo 65, se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada.",
+    "condiciones": [
+     "Que corresponda a las horas laboradas conforme al supuesto del artículo 65"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Es legal prolongar la jornada únicamente durante el tiempo indispensable para evitar el mal y dichas horas se pagarán de manera equivalente a las horas ordinarias.",
+    "fuente": "F1",
+    "cita_literal": "la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males.",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Una sobrecarga habitual de trabajo o una emergencia comercial que no comprometa la vida o la subsistencia de la empresa no entra en este supuesto legal.",
+    "condicion": "Cuando no se configure un siniestro o riesgo inminente para la vida o la existencia de la empresa",
+    "base": "Texto taxativo del artículo 65 de la Ley Federal del Trabajo"
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos proporcionados no detallan consecuencias por incumplimiento en el pago, sanciones administrativas ni procedimientos de impugnación.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -15,13 +15,13 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "Plantilla dato. Solo los arts. 17 y 18 de la Ley de Amparo. Bajada (respuesta con su condición, máximo 22 palabras): por regla general, 15 días, contados desde el día siguiente a que surta efectos la notificación o a que supiste del acto; hay excepciones. Cita destacada literal: «El plazo para presentar la demanda de amparo es de quince días». OJO (frase completa, máximo 18 palabras, distinta de la respuesta): si hay peligro de privación de la vida o desaparición forzada, puede presentarse en cualquier tiempo. No enumerar las demás excepciones en lo visible; en el copy pueden citarse literalmente. En el análisis, la respuesta corta debe ser exactamente la bajada. Contenido visible de 50 palabras o menos. Sin explicar el trámite.",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270126-T151",
   "archivo": "2027-01-26_imagen_T151-lote-8.json",
-  "intentos": 0,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l",
+  "intentos": 1,
+  "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. 17 («…plazo para presentar la demanda de amparo es de quince dias salvo i cuando se reclame una norma general autoaplicativa o el procedimiento de extradici…»).\", \"[con",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
     {
@@ -45,5 +45,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «No, la Constitución establece que son no vinculatorias, aunque las autoridades tienen la o».\"], \"visible\": \"  \\n   \\n No. La Constitución dice que no son vinculatorias, pero deben responderse. \\n formularán recomendaciones públicas, no vinculatorias \\n Si una autoridad no l"
     }
-  ]
+  ],
+  "huella_entrada": "a79fec364f824c25"
 }

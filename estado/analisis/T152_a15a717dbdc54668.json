@@ -1,0 +1,36 @@
+{
+ "tema_id": "T152",
+ "pregunta": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
+ "fecha": "2026-11-15T16:03:34+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
+  "concepto_central": "venta de tiempo compartido",
+  "respuesta_corta": "No, la venta o preventa de un tiempo compartido solo puede iniciar cuando el contrato respectivo está registrado en la Procuraduría.",
+  "reglas": [
+   {
+    "conclusion": "La venta o preventa de un servicio de tiempo compartido requiere obligatoriamente que el contrato esté registrado en la Procuraduría.",
+    "fuente": "F1",
+    "cita_literal": "La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría",
+    "condiciones": [
+     "Que el contrato respectivo esté registrado en la Procuraduría"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La venta o preventa no puede iniciarse si el contrato no está registrado en la Procuraduría.",
+    "fuente": "F1",
+    "cita_literal": "La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto establece la condición de inicio de la venta o preventa, pero no menciona sanciones específicas o multas por iniciarla sin registro.",
+  "fuentes_irrelevantes": []
+ }
+}

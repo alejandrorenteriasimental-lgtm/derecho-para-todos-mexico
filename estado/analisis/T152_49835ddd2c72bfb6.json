@@ -1,0 +1,48 @@
+{
+ "tema_id": "T152",
+ "pregunta": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+ "fecha": "2026-11-15T16:00:55+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+  "concepto_central": "empleo de partes y refacciones nuevas o usadas en la reparación",
+  "respuesta_corta": "Depende: quienes reparan productos deben usar piezas nuevas, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.",
+  "reglas": [
+   {
+    "conclusion": "Quienes reparan productos deben utilizar refacciones nuevas y apropiadas, a menos que la persona que solicita el servicio autorice expresamente el uso de otras.",
+    "fuente": "F1",
+    "cita_literal": "Las personas dedicadas a la reparación de toda clase de productos deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.",
+    "condiciones": [
+     "que se trate de personas dedicadas a la reparación de toda clase de productos"
+    ],
+    "excepciones": [
+     "autorización expresa del solicitante del servicio para utilizar otras partes o refacciones"
+    ]
+   },
+   {
+    "conclusion": "Si se usan refacciones sujetas a normas obligatorias que no cumplan con los requisitos, el consumidor puede exigir los gastos necesarios probados y la bonificación legal.",
+    "fuente": "F1",
+    "cita_literal": "da al consumidor el derecho a exigir los gastos necesarios que pruebe haber efectuado y, en su caso, a la bonificación a que se refiere el artículo 92 TER de esta ley.",
+    "condiciones": [
+     "que las refacciones o partes estén sujetas a normas de cumplimiento obligatorio",
+     "que el consumidor pruebe haber efectuado los gastos necesarios"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La regla exige emplear piezas nuevas salvo autorización expresa; si las refacciones no cumplen normas obligatorias, surge el derecho a exigir gastos probados y la bonificación legal.",
+    "fuente": "F1",
+    "cita_literal": "da al consumidor el derecho a exigir los gastos necesarios que pruebe haber efectuado y, en su caso, a la bonificación a que se refiere el artículo 92 TER de esta ley."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no precisa autoridades, procedimiento de reclamación ni plazos para exigir los gastos o la bonificación.",
+  "fuentes_irrelevantes": []
+ }
+}

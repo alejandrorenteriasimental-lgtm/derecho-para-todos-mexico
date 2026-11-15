@@ -2104,3 +2104,41 @@
 {"ts": "2026-11-15T11:48:23+00:00", "pieza": "I20270131-T156", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 15-11): OJO visible cortado a media frase y copy con interpretación sin fuente → OJO completo y citas literales del art. 39; se vuelve a verificar y producir"}
 {"ts": "2026-11-15T11:48:23+00:00", "pieza": "I20270201-T157", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 15-11): OJO ilegible y cita destacada sin el distribuidor → OJO claro, fragmento literal con el distribuidor y copy con citas literales del art. 79; se vuelve a verificar y producir"}
 {"ts": "2026-11-15T11:48:23+00:00", "pieza": "R20270129-T154", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 15-11): la conclusión atribuía al derecho de elegir religión los límites que el art. 24 pone al culto y a los actos públicos; elementos visibles sin su ámbito → conclusión y lista precisadas; se vuelve a verificar y producir"}
+{"ts": "2026-11-15T15:57:01+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-15T15:57:57+00:00", "evento": "redactada", "pieza": "R20270125-T150", "solicitud": "2027-01-25_reel_T150-lote-8.json"}
+{"ts": "2026-11-15T16:02:22+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-27_reel_T152-lote-8.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"La pieza menciona el derecho a exigir gastos y bonificación, pero no explica que esto"}
+{"ts": "2026-11-15T16:03:05+00:00", "evento": "redactada", "pieza": "R20270128-T153", "solicitud": "2027-01-28_reel_T153-lote-8.json"}
+{"ts": "2026-11-15T16:03:26+00:00", "evento": "redaccion_descartada", "solicitud": "2027-01-26_imagen_T151-lote-8.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[condiciones] Generalización: «Depende del tipo de acto: el plazo general es de quince días, con plazos específicos de tr» se presenta sin la condición que impone Ley de Amparo, art. "}
+{"ts": "2026-11-15T16:04:31+00:00", "evento": "redactada", "pieza": "I20270127-T152", "solicitud": "2027-01-27_imagen_T152-lote-8.json"}
+{"ts": "2026-11-15T16:05:19+00:00", "evento": "redactada", "pieza": "I20270202-T158", "solicitud": "2027-02-02_imagen_T158-lote-8.json"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "I20270129-T154", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-15T11:48:17+00:00 versión 6b744dfe3601678b (delegada)"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "I20270130-T155", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-15T11:48:17+00:00 versión 031a96e79703e27c (delegada)"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "R20270126-T151", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-15T11:48:17+00:00 versión b02ec1f6fd011883 (delegada)"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "I20270127-T152", "evento": "encolado"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "I20270202-T158", "evento": "encolado"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "R20270125-T150", "evento": "encolado"}
+{"ts": "2026-11-15T16:05:19+00:00", "pieza": "R20270128-T153", "evento": "encolado"}
+{"ts": "2026-11-15T16:06:52+00:00", "pieza": "R20270129-T154", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.0"}
+{"ts": "2026-11-15T16:06:55+00:00", "pieza": "R20270129-T154", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:06:55+00:00", "evento": "revision_preparada", "pieza": "R20270129-T154", "version": "f93731d911502ec2", "canal": "chat"}
+{"ts": "2026-11-15T16:08:53+00:00", "pieza": "R20270125-T150", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.7"}
+{"ts": "2026-11-15T16:08:57+00:00", "pieza": "R20270125-T150", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:08:57+00:00", "evento": "revision_preparada", "pieza": "R20270125-T150", "version": "83d6e4e61ef15cde", "canal": "chat"}
+{"ts": "2026-11-15T16:10:03+00:00", "pieza": "R20270128-T153", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.3"}
+{"ts": "2026-11-15T16:10:08+00:00", "pieza": "R20270128-T153", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:10:08+00:00", "evento": "revision_preparada", "pieza": "R20270128-T153", "version": "5a168cc4dc47c20a", "canal": "chat"}
+{"ts": "2026-11-15T16:10:56+00:00", "pieza": "I20270131-T156", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-15T16:11:00+00:00", "pieza": "I20270131-T156", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:11:00+00:00", "evento": "revision_preparada", "pieza": "I20270131-T156", "version": "3d42d19568a9228a", "canal": "chat"}
+{"ts": "2026-11-15T16:11:28+00:00", "pieza": "I20270201-T157", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-15T16:11:32+00:00", "pieza": "I20270201-T157", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:11:32+00:00", "evento": "revision_preparada", "pieza": "I20270201-T157", "version": "3a80afc631d35cfa", "canal": "chat"}
+{"ts": "2026-11-15T16:11:42+00:00", "pieza": "I20270127-T152", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-15T16:11:45+00:00", "pieza": "I20270127-T152", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:11:45+00:00", "evento": "revision_preparada", "pieza": "I20270127-T152", "version": "fcc4e25bec959071", "canal": "chat"}
+{"ts": "2026-11-15T16:12:11+00:00", "pieza": "I20270202-T158", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-15T16:12:15+00:00", "pieza": "I20270202-T158", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-15T16:12:15+00:00", "evento": "revision_preparada", "pieza": "I20270202-T158", "version": "7fe86c4ddc1a7915", "canal": "chat"}
+{"ts": "2026-11-15T16:12:15+00:00", "pieza": "R20270118-T143", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-15T16:12:15+00:00", "pieza": "R20270119-T144", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-15T16:12:15+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 2, "producidas": 7, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 7}
