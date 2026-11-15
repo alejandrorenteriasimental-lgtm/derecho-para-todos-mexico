@@ -2,25 +2,24 @@
   "fecha": "2027-01-25",
   "formato": "reel",
   "tema_id": "T150",
-  "titulo": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
-  "gancho": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
-  "pregunta": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
-  "tipo_pregunta": "obligacion",
+  "titulo": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+  "gancho": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+  "pregunta": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+  "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFT art. 39-A",
+  "fuentes_sugeridas": "LFT arts. 65 y 67",
   "riesgo_exactitud": "",
   "lote": "lote-8",
-  "motivo_seleccion": "LFT art. 39-A (texto oficial cotejado el 8-11-2026, registro/textos/LFT_39-A.json): «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Condición literal: relaciones por tiempo indeterminado o que excedan de ciento ochenta días; excepción literal del mismo artículo: puede extenderse hasta ciento ochenta días para puestos de dirección, gerenciales y de administración general o labores técnicas o profesionales especializadas.",
+  "motivo_seleccion": "LFT art. 65 (texto oficial en registro/textos/LFT_65.json, consultado el 04-11-2026; última reforma de la ley DOF 01-05-2026; el art. 65 no fue reformado): «En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa, la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males». LFT art. 67 (registro/textos/LFT_67.json, traído el 15-11-2026; la reforma de 01-05-2026 derogó su antiguo párrafo segundo): «Las horas de trabajo a que se refiere el artículo 65, se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada». Alcance federal. Artículos sin uso en los lotes 1 a 9. Sustituye a LFT 39-A (tres descartes: plazos, objeción del auditor y encabezado visible).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270125-T150",
   "archivo": "2027-01-25_reel_T150-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 4: el encabezado visible «180 DÍAS, SOLO ALGUNOS PUESTOS» no corresponde a lo que se narra («Puede ser de 180 días solo en cargos directivos, gerenciales o labores»).\"], \"visible\": \"  \\n ¿Cuánto puede durar tu periodo de prueba en un trabajo? \\n ¿CUÁNTO DURA \\n LA PRUEBA? \\n Como regla, dura hasta 30 días en empleos por ",
   "ultima_categoria": "tecnico",
-  "huella_entrada": "52b5acd8db66b73b",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-14",
@@ -35,7 +34,14 @@
       "motivo": "segundo descarte, por objeción del auditor: faltaba que durante el periodo de prueba se tiene salario, seguridad social y prestaciones (párrafo tercero del art. 39-A). La causa fue el ángulo de la reapertura anterior («lo demás SIN otra cita», estructura sin esa escena), no el tema: se reabre con esa escena, sin cita adicional",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario.\"]}, \"conclusiones\": [{\"conclusion\": \"El periodo de prueba no podrá exced"
+    },
+    {
+      "fecha": "2026-11-15",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el tercer descarte con LFT art. 39-A (15-11: no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 4: el ). Ahora LFT arts. 65 y 67, respuesta literal, alcance federal o nacional, sin uso en los lotes recientes",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 4: el encabezado visible «180 DÍAS, SOLO ALGUNOS PUESTOS» no corresponde a lo que se narra («Puede ser de 180 días solo en cargos directivos, gerenciales o labores»).\"], \"visible\": \"  \\n ¿Cuánto puede durar tu periodo de prueba en un trabajo? \\n ¿CUÁNTO DURA \\n LA PRUEBA? \\n Como regla, dura hasta 30 días en empleos por "
     }
   ],
-  "angulo": "Solo el art. 39-A LFT. Respuesta: como regla, hasta 30 días; puede extenderse hasta 180 días solo en puestos de dirección, gerenciales o de administración general, o para labores técnicas o profesionales especializadas. Condición literal: solo en relaciones por tiempo indeterminado o que excedan de 180 días. Cita literal ÚNICA (una sola vez, en una sola escena): «el cual no podrá exceder de treinta días». Lo demás, con palabras sencillas y SIN otra cita. Estructura fija: escena 1 pregunta (encabezado «¿CUÁNTO DURA LA PRUEBA?»); escena 2 respuesta corta (encabezado «HASTA 30 DÍAS»); escena 3 «La ley dice:» y la cita (encabezado «LA LEY DICE»); escena 4 la extensión a 180 días y para quién (encabezado «180 DÍAS, SOLO ALGUNOS PUESTOS»); escena 5: la condición (relaciones por tiempo indeterminado o de más de 180 días) y, con palabras sencillas, que durante la prueba tienes salario, seguridad social y las prestaciones de tu puesto (encabezado «CON SALARIO Y SEGURO»); cierre. Fuera de la pregunta (no son faltantes): qué pasa al terminar el periodo, la Comisión Mixta, el despido, la capacitación inicial y cómo reclamar; no mencionarlos. No decir que todo trabajo tiene periodo de prueba: «podrá establecerse». Sin listas con viñetas. Narración de 500 caracteres o menos."
+  "angulo": "Solo los arts. 65 y 67 LFT. Respuesta: sí, pero solo en caso de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa, y solo por el tiempo estrictamente indispensable para evitar esos males. Esas horas se pagan con una cantidad igual a la de cada hora de la jornada (art. 67). Cita literal ÚNICA del art. 65 (copiar exacto): «la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males». No hablar de horas extra ordinarias (arts. 66 y 68), de la reforma de 2026 ni de sanciones; no decir que se paga doble. Encabezados visibles que repitan palabras de su narración. Sin listas con viñetas. Narración de 520 caracteres o menos."
 }

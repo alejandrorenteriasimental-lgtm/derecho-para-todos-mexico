@@ -11,10 +11,10 @@
    "formato": "reel",
    "fecha": "2027-01-25",
    "tema_id": "T150",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto puede durar tu periodo de prueba en un trabajo?",
-   "fuentes_sugeridas": "LFT art. 39-A",
-   "motivo_seleccion": "LFT art. 39-A (texto oficial cotejado el 8-11-2026, registro/textos/LFT_39-A.json): «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Condición literal: relaciones por tiempo indeterminado o que excedan de ciento ochenta días; excepción literal del mismo artículo: puede extenderse hasta ciento ochenta días para puestos de dirección, gerenciales y de administración general o labores técnicas o profesionales especializadas."
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
+   "fuentes_sugeridas": "LFT arts. 65 y 67",
+   "motivo_seleccion": "LFT art. 65 (texto oficial en registro/textos/LFT_65.json, consultado el 04-11-2026; última reforma de la ley DOF 01-05-2026; el art. 65 no fue reformado): «En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa, la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males». LFT art. 67 (registro/textos/LFT_67.json, traído el 15-11-2026; la reforma de 01-05-2026 derogó su antiguo párrafo segundo): «Las horas de trabajo a que se refiere el artículo 65, se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada». Alcance federal. Artículos sin uso en los lotes 1 a 9. Sustituye a LFT 39-A (tres descartes: plazos, objeción del auditor y encabezado visible)."
   },
   {
    "formato": "imagen",
@@ -39,30 +39,30 @@
    "formato": "imagen",
    "fecha": "2027-01-26",
    "tema_id": "T151",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Las recomendaciones de la CNDH son obligatorias?",
-   "fuentes_sugeridas": "CPEUM art. 102, apartado B",
-   "motivo_seleccion": "CPEUM art. 102, apartado B (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_102.json): «formularán recomendaciones públicas, no vinculatorias». Matiz literal: todo servidor público está obligado a responder las recomendaciones que les presenten estos organismos.",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+   "fuentes_sugeridas": "Ley de Amparo arts. 17 y 18",
+   "motivo_seleccion": "Ley de Amparo art. 17 (texto oficial en registro/textos/LAmp_17.json, consultado el 05-11-2026; última reforma de la ley DOF 16-10-2025): «El plazo para presentar la demanda de amparo es de quince días, salvo:» y sus cuatro excepciones (fr. IV: en cualquier tiempo cuando el acto implique peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, desaparición forzada, entre otros). Art. 18 (registro/textos/LAmp_18.json, traído el 15-11-2026; reformado DOF 13-03-2025): el plazo se computa a partir del día siguiente a aquél en que surta efectos la notificación del acto o en que se tuvo conocimiento de él. Alcance nacional. Sin uso en los lotes 6 a 9 (LAmp 15 se sustituyó en el lote 7 y no se publicó). Sustituye a CPEUM 102 B (tres descartes por forma).",
    "plantilla": "dato"
   },
   {
    "formato": "reel",
    "fecha": "2027-01-27",
    "tema_id": "T152",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Puedes arrepentirte de una compra que te vendieron en tu casa?",
-   "fuentes_sugeridas": "LFPC art. 56",
-   "motivo_seleccion": "LFPC art. 56 (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_56.json): «Durante ese lapso, el consumidor tendrá el derecho de revocar su consentimiento sin responsabilidad alguna». Condición literal: el contrato se perfecciona a los cinco días hábiles contados a partir de la entrega del bien o de la firma del contrato, lo último que suceda; la revocación se hace por aviso o con la entrega del bien. Aplica a ventas a domicilio (LFPC 51)."
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+   "fuentes_sugeridas": "LFPC art. 60",
+   "motivo_seleccion": "LFPC art. 60 (texto oficial en registro/textos/LFPC_60.json, traído el 15-11-2026; última reforma de la ley DOF 12-12-2025; artículo reformado DOF 04-02-2004): «Las personas dedicadas a la reparación de toda clase de productos deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras». Alcance federal. Sin uso en los lotes 1 a 9. Sustituye a LFPC 56 (tres descartes en el análisis por citas parafraseadas)."
   },
   {
    "formato": "imagen",
    "fecha": "2027-01-27",
    "tema_id": "T152",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿De cuánto es la bonificación mínima si un producto te sale defectuoso?",
-   "fuentes_sugeridas": "LFPC art. 92 Ter",
-   "motivo_seleccion": "LFPC art. 92 Ter (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_92_Ter.json): «La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado». Mínimo legal («no podrá ser menor»), no cifra exacta; sin perjuicio de la indemnización por daños y perjuicios.",
-   "plantilla": "dato"
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
+   "fuentes_sugeridas": "LFPC art. 65",
+   "motivo_seleccion": "LFPC art. 65 (texto oficial en registro/textos/LFPC_65.json, consultado el 14-11-2026; última reforma de la ley DOF 12-12-2025; párrafo reformado DOF 04-02-2004): «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría y cuando especifique:» (nombre y domicilio del proveedor, lugar e inmueble, derechos de uso y goce, costo de mantenimiento, entre otros). Alcance federal. Sin uso en los lotes 1 a 9. Sustituye a LFPC 92 y 92 Ter (tres descartes).",
+   "plantilla": "mito_realidad"
   },
   {
    "formato": "reel",
