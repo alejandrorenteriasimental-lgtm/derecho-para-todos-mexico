@@ -1,0 +1,56 @@
+{
+ "tema_id": "T157",
+ "pregunta": "¿A quién puedes exigirle la garantía de un producto?",
+ "fecha": "2026-11-15T10:14:47+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿A quién puedes exigirle la garantía de un producto?",
+  "concepto_central": "garantía",
+  "respuesta_corta": "Indistintamente al productor, importador o distribuidor, salvo que uno de ellos o un tercero asuma por escrito la obligación.",
+  "reglas": [
+   {
+    "conclusion": "El cumplimiento de la garantía se puede exigir indistintamente al productor, al importador o al distribuidor del bien o servicio, excepto si se asumió por escrito por alguno de ellos o por un tercero.",
+    "fuente": "F1",
+    "cita_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor, salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación.",
+    "condiciones": [
+     "Que se trate de una garantía ofrecida sobre un bien o servicio"
+    ],
+    "excepciones": [
+     "Que alguno de ellos o un tercero asuma por escrito la obligación"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se le puede exigir indistintamente al productor, al importador o al distribuidor del bien o servicio.",
+    "fuente": "F1",
+    "cita_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica de forma indistinta salvo en los casos en que uno de ellos o un tercero asuma expresamente la obligación por escrito.",
+    "fuente": "F1",
+    "cita_literal": "salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "garantía",
+    "b": "devolución de dinero",
+    "diferencia": "La garantía es el compromiso sobre la calidad o funcionamiento del bien, mientras que la devolución es la restitución del precio pagado bajo supuestos legales específicos."
+   },
+   {
+    "a": "garantía",
+    "b": "cambio o reposición",
+    "diferencia": "La garantía respalda la calidad o funcionamiento del producto, mientras que el cambio es la sustitución del producto por otro en supuestos previstos por la ley o políticas comerciales."
+   }
+  ],
+  "limites": "El texto no establece plazos de vigencia de las garantías, trámites ante la autoridad ni sanciones aplicables en caso de incumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}

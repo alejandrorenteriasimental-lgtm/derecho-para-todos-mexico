@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-14T20:11:41+00:00",
+      "consultado": "2026-11-15T10:19:16+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -14,6 +14,34 @@
       "huella_articulo": "6ca9de5c9743ff04a073eae92e3da848a0ef26577331e2c734695614c4cfac21",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-15T10:19:29+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 76694,
+      "extracto": "- el salario en efectivo debera pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancias, vales, fichas o cualquier otro signo representativo con que se pretenda substituir la moneda. previo consentimiento del trabajador, el pago del salario podra efectuarse por medio de deposito en cuenta bancaria, tarjeta de debito, transferencias o cualquier otro medio electronico. los gastos o costos que originen estos medios alternativos de pago seran cubiertos por el patron. parrafo adicionado dof 30-11-2012 en todos los casos, el trabajador debera tener acceso a la inform",
+      "huella_articulo": "54bc57cf935a67a65216ee2ce95aefce0d084d97ed99c49bc01a7b38b1951299",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-15T10:19:41+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 80138,
+      "extracto": "- el pago debera efectuarse en dia laborable, fijado por convenio entre el trabajador y el patron, durante las horas de trabajo o inmediatamente despues de su terminacion.",
+      "huella_articulo": "ebeff21a1eb1b7cc2b85ef7904061ef9068d81a04203efb5932f1c50e53b072a",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
   },
   "afirmaciones": [
@@ -21,6 +49,22 @@
       "id": "A1",
       "fuentes": [
         "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
+        "F3"
       ],
       "dictamen": "VERIFICADA",
       "duda": null

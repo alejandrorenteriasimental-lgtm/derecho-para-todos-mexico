@@ -1,0 +1,196 @@
+{
+  "id": "I20270131-T156",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿En quién reside la soberanía de México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T156",
+  "pieza": {
+    "titular": "¿En quién reside la soberanía de México?",
+    "bajada": "Reside esencial y originariamente en el pueblo, de quien emana todo poder público instituido para su beneficio.",
+    "cita": "La soberanía nacional reside esencial y originariamente en el pueblo.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 39",
+    "ojo": "El pueblo conserva en todo tiempo el inalienable derecho de alterar o ",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 39"
+  },
+  "copy": "De acuerdo con la Constitución Política de los Estados Unidos Mexicanos, en su artículo 39, la soberanía nacional reside esencial y originariamente en el pueblo. Esto significa que la soberanía pertenece a la sociedad desde su origen, y no a las autoridades por sí mismas.\n\nEl texto constitucional precisa que todo poder público dimana del pueblo y se instituye para su beneficio. Es importante distinguir la soberanía del poder público: la soberanía reside en el pueblo como su origen, mientras que el poder público es la autoridad que emana de él.\n\nAsimismo, el artículo 39 establece que el pueblo conserva en todo tiempo el derecho inalienable de alterar o modificar la forma de su gobierno. Sin embargo, el texto constitucional no define los procedimientos específicos para ejercer este derecho ni quiénes integran legalmente el concepto de pueblo.\n\nGuarda esta publicación para tener a la mano esta información oficial y compártela para difundir el conocimiento jurídico.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre la soberanía en México según el artículo 39 constitucional. Explica que la soberanía reside en el pueblo y que el poder público emana de él para su beneficio.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "39",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La soberanía nacional reside esencial y originariamente en el pueblo. Todo poder público dimana del pueblo y se instituye para beneficio de éste.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 39",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "39",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "El pueblo tiene en todo tiempo el inalienable derecho de alterar o modificar la forma de su gobierno.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 39",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La soberanía nacional pertenece al pueblo de manera integral y desde su origen, en la medida en que el poder público se instituya para su beneficio.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El pueblo conserva en todo momento el derecho irrenunciable a cambiar o modificar la forma de su gobierno.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿En quién reside la soberanía de México?",
+    "concepto_central": "soberanía nacional",
+    "respuesta_corta": "Reside esencial y originariamente en el pueblo, de quien emana todo poder público instituido para su propio beneficio.",
+    "reglas": [
+      {
+        "conclusion": "La titularidad de la soberanía nacional pertenece al pueblo de manera integral y desde su origen.",
+        "fuente": "F1",
+        "cita_literal": "La soberanía nacional reside esencial y originariamente en el pueblo. Todo poder público dimana del pueblo y se instituye para beneficio de éste.",
+        "condiciones": [
+          "Que el poder público se instituya para beneficio del pueblo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "39"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "La soberanía es un atributo nacional que pertenece al pueblo de forma esencial y original.",
+        "fuente": "F1",
+        "cita_literal": "La soberanía nacional reside esencial y originariamente en el pueblo."
+      },
+      {
+        "elemento": "alcance",
+        "estado": "cubierto",
+        "respuesta": "El pueblo conserva el derecho permanente e irrenunciable de cambiar la manera en que se organiza su gobierno.",
+        "fuente": "F1",
+        "cita_literal": "El pueblo tiene en todo tiempo el inalienable derecho de alterar o modificar la forma de su gobierno."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El poder público no es soberano por sí mismo, sino que es una derivación de la voluntad popular.",
+        "condicion": "Siempre que se analice el origen de las facultades de las autoridades",
+        "base": "F1 establece que el poder público 'dimana del pueblo'."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "soberanía",
+        "b": "poder público",
+        "diferencia": "La soberanía reside en el pueblo como origen, mientras que el poder público es la autoridad que emana de este para su beneficio."
+      }
+    ],
+    "limites": "El texto constitucional citado no define los mecanismos o procedimientos específicos para que el pueblo ejerza su derecho de alterar la forma de gobierno, ni define quiénes integran legalmente el concepto de pueblo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-15T10:14:31+00:00",
+    "solicitud": "2027-01-31_imagen_T156-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿En quién reside la soberanía de México?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ],
+        "visible": "  \n   \n Reside esencial y originariamente en el pueblo, de quien emana todo poder público instituido para su beneficio. \n La soberanía nacional reside esencial y originariamente en el pueblo. \n Todo poder público se instituye para beneficio del pueblo."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La soberanía nacional reside esencial y originariamente en el pueblo.",
+              "sostenida": "si",
+              "motivo": "El texto del artículo 39 establece textualmente esta premisa."
+            },
+            {
+              "conclusion": "El poder público dimana del pueblo y se instituye para su beneficio.",
+              "sostenida": "si",
+              "motivo": "El artículo 39 señala explícitamente que todo poder público emana del pueblo y tiene como fin su beneficio."
+            },
+            {
+              "conclusion": "El pueblo tiene el derecho inalienable de alterar o modificar la forma de su gobierno.",
+              "sostenida": "si",
+              "motivo": "El artículo 39 reconoce expresamente este derecho en todo tiempo."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

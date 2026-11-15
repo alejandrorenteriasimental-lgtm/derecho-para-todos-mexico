@@ -1,0 +1,278 @@
+{
+  "id": "I20270201-T157",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿A quién exiges la garantía de un producto?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T157",
+  "pieza": {
+    "titular": "¿A quién exiges la garantía de un producto?",
+    "bajada": "Al productor, importador o distribuidor, salvo que alguno o un tercero la asuma por escrito.",
+    "cita": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 79",
+    "ojo": "Se cumple en el lugar de compra o póliza.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 79"
+  },
+  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, en su artículo 79, el cumplimiento de las garantías sobre un bien o servicio se puede exigir indistintamente al productor, al importador o al distribuidor. La excepción a esta regla ocurre cuando alguno de ellos o un tercero asume la obligación por escrito.\n\nAsimismo, la ley señala que la garantía debe cumplirse en el domicilio en que se adquirió o contrató el bien o servicio, o en los lugares que indique la póliza. En caso de que se realice en un domicilio distinto, el proveedor debe cubrir al consumidor los gastos necesarios erogados para lograr dicho cumplimiento.\n\nGuarda esta información para hacer valer tus derechos como consumidor o compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Pieza gráfica sobre a quién exigir la garantía de un producto conforme al artículo 79 de la Ley Federal de Protección al Consumidor.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El cumplimiento de las garantías deberá realizarse en el domicilio en que haya sido adquirido o contratado el bien o servicio, o en el lugar o lugares que exprese la propia póliza.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "79",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El proveedor deberá cubrir al consumidor los gastos necesarios erogados para lograr el cumplimiento de la garantía en domicilio diverso al antes señalado.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 79",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El cumplimiento de la garantía es exigible indistintamente al productor, al importador y al distribuidor del bien o servicio.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La exigibilidad indistinta no aplica si alguno de ellos o un tercero asume por escrito la obligación.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El cumplimiento de las garantías debe realizarse en el domicilio de adquisición o contratación, o en los lugares señalados en la póliza.",
+      "fuente": "F3"
+    },
+    {
+      "id": "A4",
+      "tipo": "hecho_normativo",
+      "texto": "El proveedor debe cubrir los gastos necesarios erogados por el consumidor si el cumplimiento se realiza en un domicilio diverso al de compra o póliza.",
+      "fuente": "F4"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿A quién puedes exigirle la garantía de un producto?",
+    "concepto_central": "garantía",
+    "respuesta_corta": "Indistintamente al productor, importador o distribuidor, salvo que uno de ellos o un tercero asuma por escrito la obligación.",
+    "reglas": [
+      {
+        "conclusion": "El cumplimiento de la garantía se puede exigir indistintamente al productor, al importador o al distribuidor del bien o servicio, excepto si se asumió por escrito por alguno de ellos o por un tercero.",
+        "fuente": "F1",
+        "cita_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor, salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación.",
+        "condiciones": [
+          "Que se trate de una garantía ofrecida sobre un bien o servicio"
+        ],
+        "excepciones": [
+          "Que alguno de ellos o un tercero asuma por escrito la obligación"
+        ],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "79"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se le puede exigir indistintamente al productor, al importador o al distribuidor del bien o servicio.",
+        "fuente": "F1",
+        "cita_literal": "El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica de forma indistinta salvo en los casos en que uno de ellos o un tercero asuma expresamente la obligación por escrito.",
+        "fuente": "F1",
+        "cita_literal": "salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "garantía",
+        "b": "devolución de dinero",
+        "diferencia": "La garantía es el compromiso sobre la calidad o funcionamiento del bien, mientras que la devolución es la restitución del precio pagado bajo supuestos legales específicos."
+      },
+      {
+        "a": "garantía",
+        "b": "cambio o reposición",
+        "diferencia": "La garantía respalda la calidad o funcionamiento del producto, mientras que el cambio es la sustitución del producto por otro en supuestos previstos por la ley o políticas comerciales."
+      }
+    ],
+    "limites": "El texto no establece plazos de vigencia de las garantías, trámites ante la autoridad ni sanciones aplicables en caso de incumplimiento."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-15T10:16:35+00:00",
+    "solicitud": "2027-02-01_imagen_T157-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿A quién puedes exigirle la garantía de un producto?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Indistintamente al productor, importador o distribuidor, salvo que uno de ellos o un tercero asuma por escrito la obligación. \n El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio \n Revisa si alguien asumió la obligación por escrito."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "El lugar donde debe cumplirse la garantía (domicilio de compra o lugar expresado en la póliza) y el derecho al reembolso de gastos si se cumple en otro lugar, aspectos que también regula el artículo 79."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El cumplimiento de la garantía es exigible indistintamente al productor, importador o distribuidor.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 establece explícitamente esta exigibilidad indistinta."
+            },
+            {
+              "conclusion": "La responsabilidad puede ser asumida por escrito por un tercero o uno de los obligados, excluyendo a los demás.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 contempla la excepción cuando alguno de ellos o un tercero asume la obligación por escrito."
+            },
+            {
+              "conclusion": "La garantía es distinta a la devolución de dinero o cambio de producto.",
+              "sostenida": "no",
+              "motivo": "El texto oficial proporcionado no define ni menciona la devolución o el cambio; el redactor introduce conceptos ajenos al texto proporcionado."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Segundo párrafo del copy",
+              "problema": "Se introducen definiciones de 'devolución' y 'cambio' que no están en el texto oficial proporcionado, contraviniendo la regla de no agregar información ajena.",
+              "correccion": "Eliminar las definiciones de conceptos ajenos al artículo 79."
+            },
+            {
+              "donde": "Cuerpo del texto",
+              "problema": "Se omite la información sobre el lugar de cumplimiento de la garantía, que es parte esencial del artículo 79 y relevante para el consumidor.",
+              "correccion": "Incluir que el cumplimiento debe realizarse en el domicilio de compra o donde indique la póliza, y mencionar el derecho al reembolso de gastos si se hace en otro lugar."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El cumplimiento de las garantías es exigible indistintamente al productor, importador o distribuidor.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 de la Ley Federal de Protección al Consumidor establece explícitamente esta facultad de exigencia indistinta."
+            },
+            {
+              "conclusion": "La excepción a la exigibilidad indistinta ocurre cuando un tercero o uno de los obligados asume la responsabilidad por escrito.",
+              "sostenida": "si",
+              "motivo": "El texto legal contempla expresamente la salvedad: 'salvo en los casos en que alguno de ellos o algún tercero asuma por escrito la obligación'."
+            },
+            {
+              "conclusion": "El cumplimiento de la garantía debe realizarse en el domicilio de compra o en el lugar señalado en la póliza.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 señala claramente los lugares donde debe cumplirse la garantía."
+            },
+            {
+              "conclusion": "Si la garantía se cumple en un domicilio distinto al de compra o al señalado en la póliza, el proveedor debe cubrir los gastos erogados.",
+              "sostenida": "si",
+              "motivo": "El artículo 79 impone esta obligación al proveedor: 'El proveedor deberá cubrir al consumidor los gastos necesarios erogados para lograr el cumplimiento de la garantía en domicilio diverso al antes señalado'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

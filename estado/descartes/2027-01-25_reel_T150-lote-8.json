@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-01-25_reel_T150-lote-8.json",
- "fecha": "2026-11-14T19:57:06+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"auditoria_ia\": {\"veredicto\": \"con_objeciones\", \"cobertura\": {\"responde_nucleo\": true, \"faltantes\": [\"No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario.\"]}, \"conclusiones\": [{\"conclusion\": \"El periodo de prueba no podrá exced",
+ "fecha": "2026-11-15T10:07:47+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[coherencia] Escena 4: el encabezado visible «180 DÍAS, SOLO ALGUNOS PUESTOS» no corresponde a lo que se narra («Puede ser de 180 días solo en cargos directivos, gerenciales o labores»).\"], \"visible\": \"  \\n ¿Cuánto puede durar tu periodo de prueba en un trabajo? \\n ¿CUÁNTO DURA \\n LA PRUEBA? \\n Como regla, dura hasta 30 días en empleos por ",
  "historial": [
   {
    "etapa": "analisis",
@@ -21,24 +21,24 @@
      {
       "conclusion": "El periodo de prueba no podrá exceder de treinta días en relaciones de trabajo por tiempo indeterminado o que excedan de ciento ochenta días.",
       "sostenida": "si",
-      "motivo": "La conclusión refleja fielmente el artículo 39-A de la LFT."
+      "motivo": "La conclusión es correcta y está respaldada por el artículo 39-A de la LFT."
      },
      {
       "conclusion": "El periodo de prueba podrá extenderse hasta ciento ochenta días únicamente para puestos de dirección, gerenciales, de administración general o para labores técnicas o profesionales especializadas.",
       "sostenida": "si",
-      "motivo": "La conclusión es precisa respecto a la excepción establecida en el artículo 39-A."
+      "motivo": "La conclusión refleja fielmente la excepción prevista en el artículo 39-A de la LFT."
      }
     ],
     "objeciones": [
      {
-      "donde": "Escena 'excepcion', número 1, afirmación A1",
-      "problema": "La afirmación A1 es correcta, pero la escena omite mencionar la condición esencial de que el periodo de prueba solo aplica en relaciones de trabajo por tiempo indeterminado o superiores a 180 días, lo cual es un requisito de procedencia.",
-      "correccion": "Añadir la condición: 'El periodo de prueba solo puede establecerse en relaciones de trabajo por tiempo indeterminado o que excedan de 180 días'."
+      "donde": "Escena 'titular' (segunda escena)",
+      "problema": "La afirmación 'Si se acuerda, la regla general es que este periodo dure máximo 30 días' omite mencionar que el periodo de prueba solo es legalmente posible en relaciones de trabajo por tiempo indeterminado o superiores a 180 días, lo cual es una condición esencial para su validez.",
+      "correccion": "Debe precisarse que el periodo de prueba solo puede establecerse en contratos por tiempo indeterminado o mayores a 180 días."
      },
      {
-      "donde": "Escena 'titular', texto: 'Recuerda que esto solo aplica en relaciones de trabajo por tiempo indeterminado o mayores a 180 días.'",
-      "problema": "Aunque el texto es correcto, la afirmación A2 dentro de esa misma escena ('El periodo de prueba podrá extenderse hasta ciento ochenta días para puestos directivos o especializados') es incompleta porque omite la condición de que esto es una excepción a la regla general de 30 días, pudiendo confundir al lector sobre si el periodo de 180 días es la regla general para esos puestos.",
-      "correccion": "Clarificar que los 180 días son una extensión excepcional a la regla general de 30 días, no el periodo estándar por defecto."
+      "donde": "Escena 'titular' (quinta escena)",
+      "problema": "La afirmación 'Esto aplica en contratos indefinidos o de más de 180 días' es correcta, pero la redacción sugiere que es una nota al pie, cuando es una condición de validez del periodo de prueba.",
+      "correccion": "Integrar esta condición desde el inicio de la explicación para evitar que el lector crea que el periodo de prueba aplica a cualquier tipo de contrato."
      }
     ]
    }
@@ -46,54 +46,52 @@
   {
    "etapa": "redaccion",
    "intento": 1,
-   "errores_esquema": [
-    "narración de 649 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 29: recorta al menos 89 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ],
-   "visible": "  \n ¿Sabes cuánto puede durar tu periodo de prueba en un empleo? \n ¿CUÁNTO DURA \n LA PRUEBA? \n Como regla general, dura hasta 30 días en relaciones de trabajo por tiempo indeterminado o que excedan de 180 días. \n HASTA 30 \n DÍAS \n La ley dice: «el cual no podrá exceder de treinta días». \n el cual no podrá exceder de treinta días \n Excepcionalmente, el periodo de prueba puede extenderse hasta 180 días solo para puestos de dirección, gerenciales o labores especializadas, dentro de relaciones por tiempo indeterminado o mayores a 180 días. \n 180 DÍAS, SOLO ALGUNOS PUESTOS \n Puestos directivos o especializados \n Recuerda que este periodo solo puede establecerse en relaciones de trabajo por tiempo"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 2,
-   "errores": [
-    "narración de 649 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 29: recorta al menos 89 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
-   ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 2,
    "auditoria_ia": {
     "veredicto": "con_objeciones",
     "cobertura": {
      "responde_nucleo": true,
      "faltantes": [
-      "No se menciona explícitamente que durante el periodo de prueba el trabajador tiene derecho a seguridad social y prestaciones, lo cual es un elemento esencial de protección para el usuario."
+      "No se menciona el requisito de la opinión de la Comisión Mixta de Productividad, Capacitación y Adiestramiento para la terminación de la relación laboral al finalizar el periodo de prueba, lo cual es un elemento esencial del procedimiento legal."
      ]
     },
     "conclusiones": [
      {
-      "conclusion": "El periodo de prueba no podrá exceder de treinta días en relaciones de trabajo por tiempo indeterminado o que excedan de ciento ochenta días.",
+      "conclusion": "El periodo de prueba solo puede fijarse en empleos por tiempo indeterminado o mayores a 180 días y su regla general es de máximo 30 días.",
       "sostenida": "si",
-      "motivo": "El texto del artículo 39-A establece claramente esta limitación temporal y las condiciones de la relación laboral."
+      "motivo": "La afirmación refleja correctamente las condiciones de procedencia y el límite temporal general establecidos en el artículo 39-A."
      },
      {
-      "conclusion": "El periodo de prueba podrá extenderse hasta ciento ochenta días únicamente para puestos de dirección, gerenciales, de administración general o para labores técnicas o profesionales especializadas.",
+      "conclusion": "El periodo de prueba no puede exceder de treinta días como regla general.",
       "sostenida": "si",
-      "motivo": "El artículo 39-A prevé esta excepción específica para los puestos mencionados."
+      "motivo": "Es una síntesis correcta del límite temporal general."
+     },
+     {
+      "conclusion": "El periodo de prueba puede extenderse a 180 días en puestos directivos, gerenciales o especializados.",
+      "sostenida": "si",
+      "motivo": "La afirmación es correcta conforme a la excepción prevista en el artículo 39-A."
+     },
+     {
+      "conclusion": "Durante la prueba la persona trabajadora goza de salario, seguridad social y prestaciones del puesto.",
+      "sostenida": "si",
+      "motivo": "La afirmación es fiel al texto legal que garantiza estos derechos durante dicho periodo."
      }
     ],
     "objeciones": [
      {
-      "donde": "Escena 'cierre'",
-      "problema": "La frase 'Síguenos para entender tus derechos' roza la línea de la asesoría personalizada o la promesa de resolución de dudas específicas, lo cual contraviene la regla de no ofrecer asesoría.",
-      "correccion": "Eliminar la invitación a seguir para 'entender tus derechos' y mantener únicamente el aviso de que es información general."
-     },
-     {
-      "donde": "Razonamiento, elemento 'contenido'",
-      "problema": "La cita literal seleccionada está incompleta y corta la idea central de la norma al omitir el propósito del periodo de prueba.",
-      "correccion": "Incluir la parte de la cita que menciona el fin de verificar los requisitos y conocimientos necesarios para el puesto."
+      "donde": "Escena 'cierre' y razonamiento general",
+      "problema": "Se omite mencionar que la terminación de la relación laboral al finalizar el periodo de prueba no es una decisión unilateral absoluta del patrón, sino que requiere considerar la opinión de la Comisión Mixta de Productividad, Capacitación y Adiestramiento.",
+      "correccion": "Incluir que la terminación de la relación laboral al término del periodo de prueba, si el trabajador no acredita los requisitos, se realiza 'a juicio del patrón, tomando en cuenta la opinión de la Comisión Mixta de Productividad, Capacitación y Adiestramiento'."
      }
     ]
    }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[coherencia] Escena 4: el encabezado visible «180 DÍAS, SOLO ALGUNOS PUESTOS» no corresponde a lo que se narra («Puede ser de 180 días solo en cargos directivos, gerenciales o labores»)."
+   ],
+   "visible": "  \n ¿Cuánto puede durar tu periodo de prueba en un trabajo? \n ¿CUÁNTO DURA \n LA PRUEBA? \n Como regla, dura hasta 30 días en empleos por tiempo indeterminado o de más de 180 días. \n HASTA 30 DÍAS \n La ley señala sobre este periodo «el cual no podrá exceder de treinta días». \n el cual no podrá exceder de treinta días \n Puede ser de 180 días solo en cargos directivos, gerenciales o labores técnicas especializadas. \n 180 DÍAS, SOLO ALGUNOS PUESTOS \n Puestos de dirección o técnicos \n Durante la prueba recibes salario, seguridad social y las prestaciones de tu puesto. \n CON SALARIO \n Y SEGURO \n Si no se cumplen requisitos, termina a juicio del patrón oyendo a la Comisión Mixta. \n AL TERMINAR \n Est"
   }
  ]
 }

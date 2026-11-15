@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "33.4 s"
+      "detalle": "40.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "33.4 s"
+      "detalle": "40.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "24 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "5d556e368199a1fd"
+      "detalle": "e3267e870fe1665c"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270126-T151",
     "titulo": "¿Quién investiga los delitos en México?",
-    "fecha": "2026-11-14T20:09:33+00:00",
-    "sha256": "5d556e368199a1fd93219f965f7cdd328de83c94f21fa62d376684214bc1ac94",
-    "duracion_s": 33.4,
+    "fecha": "2026-11-15T10:17:40+00:00",
+    "sha256": "e3267e870fe1665cdaa6211744296c490c5a97f93022c2d274be8d09edef0691",
+    "duracion_s": 40.7,
     "estado": "APTO",
-    "huella_guion": "e6ad46527686bc6ddbc65d625acca6a8d52d4005cd24015792bdcf0637f04e23",
+    "huella_guion": "69709fe8459c4e509cb5d76b26d27be0f6120dd192ca2e35d025daf613ab972a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.4,
-      "musica": 1.0,
-      "render_video": 24.4,
+      "narracion": 9.8,
+      "musica": 1.1,
+      "render_video": 26.3,
       "mezcla_audio": 1.0,
-      "auditoria_tecnica": 6.1
+      "auditoria_tecnica": 6.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.7,
-      "computo_equivalente_runner_usd": 0.0042,
+      "computo_minutos": 0.74,
+      "computo_equivalente_runner_usd": 0.0044,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1000,
-    "caracteres_narrados": 453
+    "frames": 1219,
+    "caracteres_narrados": 585
   }
 }

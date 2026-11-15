@@ -1,50 +1,69 @@
 {
  "solicitud": "2027-01-27_imagen_T152-lote-8.json",
- "fecha": "2026-11-14T20:05:30+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n No menos del 20 % del precio paga",
+ "fecha": "2026-11-15T10:13:05+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] La cita de la conclusión «La bonificación es un derecho adicional que se suma a la rep» no está en Ley Federal de Protección al Consumidor, art. 92.\"]}",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
-   "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
-   ],
-   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se menciona que, en caso de bienes que requieran conocimientos técnicos, la determinación del incumplimiento depende de peritos o laboratorios acreditados.",
+      "No se aclara que la bonificación es un derecho adicional a la reposición o devolución, pero no se explica el procedimiento para hacerla efectiva (ej. si el proveedor se niega, la ley no detalla el mecanismo directo de cobro más allá de la mención a la Procuraduría en el art. 92)."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Si un producto no cumple con la calidad, marca o especificaciones ofrecidas, tienes derecho a elegir entre su reposición o la devolución de lo pagado.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 establece explícitamente este derecho de elección para el consumidor."
+     },
+     {
+      "conclusion": "En cualquiera de esos casos, te corresponde una bonificación que no podrá ser menor al veinte por ciento del precio pagado.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter vincula la bonificación a los supuestos del artículo 92 y establece el porcentaje mínimo."
+     },
+     {
+      "conclusion": "La bonificación es una compensación extra que el proveedor debe entregarte por el incumplimiento.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter aclara que el pago de la bonificación se efectúa sin perjuicio de la indemnización por daños y perjuicios, confirmando su naturaleza compensatoria."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy: 'En cualquiera de esos casos, te corresponde una bonificación...'",
+      "problema": "La redacción sugiere que la bonificación es automática y sencilla de obtener, omitiendo que para bienes que requieren conocimientos técnicos, la ley exige el juicio de peritos o laboratorios acreditados (Art. 92, párrafo 4).",
+      "correccion": "Añadir una nota aclaratoria: 'En bienes que requieren conocimientos técnicos, la verificación del incumplimiento puede requerir el juicio de peritos o laboratorios acreditados'."
+     },
+     {
+      "donde": "Copy: 'Es importante distinguir que la devolución es recuperar tu dinero, mientras que la bonificación es una compensación extra...'",
+      "problema": "Aunque la distinción es correcta, la pieza omite mencionar que la devolución debe hacerse utilizando la misma forma de pago original, salvo acuerdo en contrario (Art. 92, párrafo 3).",
+      "correccion": "Incluir que la devolución se realiza mediante la misma forma de pago utilizada en la compra, a menos que el consumidor acepte otra distinta."
+     }
+    ]
+   }
   },
   {
-   "etapa": "reparacion_puntual",
-   "intento": 1,
+   "etapa": "analisis",
+   "intento": 0,
    "errores": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[cobertura] El elemento «condiciones» («Si eliges la devolución del dinero, esta debe realizarse en ») no trae una cita literal que esté en el texto oficial de su fuente."
    ]
   },
   {
-   "etapa": "redaccion",
+   "etapa": "analisis",
    "intento": 1,
-   "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
-   ],
-   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
-  },
-  {
-   "etapa": "reparacion_puntual",
-   "intento": 2,
    "errores": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[sustento] La cita de la conclusión «La bonificación es un derecho adicional que se suma a la rep» no está en Ley Federal de Protección al Consumidor, art. 92."
    ]
-  },
-  {
-   "etapa": "redaccion",
-   "intento": 2,
-   "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Aplica cuando el bien no corresponde a la calidad, marca o especificaciones bajo las cuales se haya ofrecido.»), pero la pieza no lo dice: agrégalo al texto visible."
-   ],
-   "visible": "  \n   \n No menos del 20 % del precio pagado. \n no podrá ser menor al veinte por ciento del precio pagado \n Además, a tu elección, la reposición del producto o la devolución de l"
   }
  ]
 }
