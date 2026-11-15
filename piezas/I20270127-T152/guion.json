@@ -10,10 +10,10 @@
     "titular": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
     "bajada": "Conoce lo que establece la ley sobre la comercialización de este servicio.",
     "mito": "«Pueden empezar a venderte un tiempo compartido aunque el contrato no esté registrado.»",
-    "realidad": "No, la venta o preventa solo puede iniciar cuando el contrato respectivo está registrado en la Procuraduría.",
+    "realidad": "No. La venta o preventa solo puede iniciarse cuando el contrato está registrado en la Procuraduría Federal del Consumidor.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 65"
   },
-  "copy": "La Ley Federal de Protección al Consumidor establece reglas claras para proteger a quienes adquieren servicios vacacionales. De acuerdo con el artículo 65, «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría».\n\nAdemás, el documento oficial debe especificar datos indispensables como el nombre y domicilio del proveedor, así como una determinación clara de los derechos de uso y goce de los bienes.\n\nGuarda y comparte esta información para tomar decisiones informadas.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "No. El artículo 65 de la Ley Federal de Protección al Consumidor dice: «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría» (la Procuraduría Federal del Consumidor, Profeco).\n\nAdemás, ese contrato debe especificar, entre otros datos, el «Nombre y domicilio del proveedor» y la «Determinación clara de los derechos de uso y goce de bienes que tendrán los compradores».\n\nLa Procuraduría «deberá publicar de forma permanente en su sitio de Internet la lista de los proveedores o prestadores intermediarios que hayan inscrito en el registro su contrato de adhesión».\n\nGuarda esta publicación y compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Infografía tipo mito y realidad que responde si pueden vender un tiempo compartido sin contrato registrado según la ley.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -24,6 +24,17 @@
       "articulo": "65",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
       "texto_literal": "La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 65",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-15"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "65",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "La Procuraduría deberá publicar de forma permanente en su sitio de Internet la lista de los proveedores o prestadores intermediarios que hayan inscrito en el registro su contrato de adhesión.",
       "cita": "Ley Federal de Protección al Consumidor, artículo 65",
       "jurisdiccion": "federal",
       "consultado": "2026-11-15"
@@ -130,5 +141,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-15",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "REALIDAD visible decía solo «la Procuraduría» (ambiguo para el público) → «Procuraduría Federal del Consumidor». Copy con relleno («establece reglas claras…») y «el documento oficial» (es el contrato) → respuesta directa, citas literales del art. 65 (fr. I y III) y la lista pública de la Profeco (último párrafo del art. 65, ficha F2)."
+    }
+  ]
 }

@@ -28,6 +28,17 @@
       "cita": "Ley Federal del Trabajo, artículo 67",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-15"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "65",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa",
+      "cita": "Ley Federal del Trabajo, artículo 65",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-15"
     }
   },
   "escenas": [
@@ -43,7 +54,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, la jornada se prolonga si un siniestro o riesgo inminente amenaza vidas o a la empresa.",
+      "texto": "Sí, si un siniestro o riesgo inminente pone en peligro vidas o la existencia misma de la empresa.",
       "titulo": [
         "SÍ, SI HAY",
         "RIESGO INMINENTE"
@@ -59,11 +70,11 @@
     },
     {
       "tipo": "lista",
-      "texto": "Aplica solo por el tiempo indispensable para evitar dicho mal.",
+      "texto": "Solo ante ese riesgo y solo por el tiempo indispensable.",
       "items": [
-        "Riesgo inminente real",
-        "Tiempo indispensable",
-        "Igual costo por hora"
+        "Siniestro o riesgo inminente",
+        "Solo el tiempo indispensable",
+        "Pago igual por hora"
       ],
       "afirmaciones": [
         {
@@ -81,15 +92,6 @@
       "encabezado": "Pago igual a la jornada ordinaria",
       "detalle": "Misma cantidad por cada hora",
       "fuente_corta": "Ley Federal del Trabajo, art. 67",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "En resumen, sólo se prolonga ante siniestro o riesgo inminente.",
-      "titulo": [
-        "SÓLO EN CASO DE",
-        "RIESGO INMINENTE"
-      ],
       "afirmaciones": [
         {
           "id": "A2",
@@ -98,6 +100,15 @@
           "fuente": "F2"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: solo ante siniestro o riesgo inminente, y por el tiempo indispensable.",
+      "titulo": [
+        "SÓLO EN CASO DE",
+        "RIESGO INMINENTE"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -191,7 +202,7 @@
   "pregunta_original": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?\n\nSí, la jornada de trabajo podrá prolongarse si hay un siniestro o riesgo inminente que ponga en peligro vidas o la existencia de la empresa.\n\nFuente: Ley Federal del Trabajo, artículo 65; Ley Federal del Trabajo, artículo 67.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?\n\nSí, pero solo «En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa», y «por el tiempo estrictamente indispensable para evitar esos males» (art. 65).\n\nEsas horas «se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada» (art. 67).\n\nFuente: Ley Federal del Trabajo, artículos 65 y 67.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -227,5 +238,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-15",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 2: «amenaza vidas o a la empresa» generalizaba; el art. 65 exige que peligre la vida (trabajador, compañeros o patrón) o «la existencia misma de la empresa» → precisado. Escena 4: elementos «Riesgo inminente real»/«Igual costo por hora» → «Siniestro o riesgo inminente», «Solo el tiempo indispensable», «Pago igual por hora». Escena 6 mostraba «Fuente: art. 67» sobre un resumen del art. 65 → la afirmación del pago pasa a la escena del pago. Copy: cita literal del supuesto completo y del pago (art. 67)."
+    }
+  ]
 }
