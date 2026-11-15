@@ -469,7 +469,7 @@ def construir_imagen(sol, borrador, fuentes):
         f = fuentes.get(borrador.get("fuente_cita")); cita = (borrador.get("cita_literal_destacada") or "").strip().strip("«»\"")
         if f and verificador.contiene(f["texto_oficial"], cita):
             pieza.update(cita=cita, etiqueta_cita=f'{nombre_doc(f["documento"])}, artículo {f["articulo"]}')
-        if borrador.get("ojo"): pieza["ojo"] = borrador["ojo"][:70]
+        if borrador.get("ojo"): pieza["ojo"] = borrador["ojo"].strip()   # sin recorte: revision_previa exige frase completa (≤ 110) (I20270131-T156, 15-11: «…de alterar o »)
     elif pl == "tres_claves":
         pieza["puntos"] = [p[:70] for p in borrador.get("puntos", [])[:3]]
     elif pl == "mito_realidad":

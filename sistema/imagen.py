@@ -291,6 +291,11 @@ def revision_previa(g):
     base = {w[:6] for w in _rz.plano(" ".join([pz.get("titular", ""), pz.get("bajada", ""), g.get("titulo", "")])).split() if len(w) > 4}
     if ojo and sum(1 for w in ojo if w in base) >= max(1, round(len(ojo) * 0.7)):
         err.append("[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse")
+    ojo_txt = (pz.get("ojo") or "").strip()
+    if ojo_txt and len(ojo_txt) > 110:
+        err.append(f"[ojo] El «OJO» es demasiado largo ({len(ojo_txt)} caracteres; máximo 110): redáctalo completo y más corto, o quítalo")
+    elif ojo_txt and not ojo_txt.endswith((".", ")", "»", "!", "?")):
+        err.append("[ojo] El «OJO» parece cortado (no termina en punto): redáctalo como frase completa y breve, o quítalo")
     n = sum(len(t["texto"].split()) for t in textos if t.get("zona") == "contenido")
     if n > 60: err.append(f"imagen: contenido demasiado largo ({n} palabras visibles; máximo 60; sobran {n - 60}, quita al menos {n - 55}): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta")
     if y_fin > H - 160: err.append("imagen: contenido demasiado largo: invade el pie de la ficha")

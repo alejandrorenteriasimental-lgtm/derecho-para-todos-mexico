@@ -55,6 +55,19 @@ def test_ocr_lee_la_etiqueta_clara_sobre_el_recuadro_oscuro(tmp_path):
     assert [x for x in r if x["control"].startswith("OCR")][0]["resultado"] == "APROBADO"
 
 
+def test_ojo_cortado_o_largo_se_detecta_antes_de_producir():
+    """Regresión 15-11-2026 (I20270131-T156): el redactor recortaba el «OJO» a 70 caracteres a media frase («…de alterar o »)."""
+    g = copy.deepcopy(BASE); g["plantilla"] = "dato"
+    g["pieza"] = {"titular": "¿En quién reside la soberanía de México?", "bajada": "En el pueblo.",
+                  "ojo": "El pueblo conserva en todo tiempo el inalienable derecho de alterar o",
+                  "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 39"}
+    assert any("parece cortado" in e for e in imagen.revision_previa(g))
+    g["pieza"]["ojo"] = "Palabra " * 20 + "final."
+    assert any("demasiado largo" in e and "OJO" in e for e in imagen.revision_previa(g))
+    g["pieza"]["ojo"] = "El pueblo puede alterar o modificar la forma de su gobierno."
+    assert not [e for e in imagen.revision_previa(g) if "[ojo]" in e and "OJO» parece" in e]
+
+
 def test_imagen_duplicada_se_detecta(tmp_path):
     png = tmp_path / "a.png"; textos, y = imagen.dibujar(BASE, png)
     r, h, _ = imagen.auditar(png, textos, y, previos_hash=[imagen.ahash(png)])
