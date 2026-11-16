@@ -1,0 +1,94 @@
+# Video largo semanal de YouTube (decisión del responsable, 16-11-2026; sistema/youtube_semanal.py).
+#  · Jueves 01:23 CDMX: arma el video de 8 a 10 min con los Reels aprobados y publicados de la semana (un tema por video),
+#    lo audita, lo respalda en el release privado y lo deja en revisión (aprobación delegada con 72 h de veto).
+#  · Domingo 11:07 CDMX: si ya terminó el veto, lo programa en YouTube como video normal (no Short) para las 12:00.
+#    Lunes 11:07: respaldo para un veto que terminó tarde (se programa a las 12:00 de ese día). Nunca se sube dos veces.
+# Empieza solo en YOUTUBE_SEMANAL_DESDE (data/lanzamiento.json, 2026-12-03); antes cada ejecución termina en segundos.
+# Sin PUBLICAR=1, LANZAMIENTO_AUTORIZADO=SI, YOUTUBE=1 y los secretos de YouTube, la programación solo se simula.
+name: youtube-semanal
+on:
+  schedule:
+    - cron: "23 7 * * 4"      # jueves 01:23 CDMX: armar
+    - cron: "7 17 * * 0"      # domingo 11:07 CDMX: programar para las 12:00
+    - cron: "7 17 * * 1"      # lunes 11:07 CDMX: programar si el veto terminó después del domingo 11:07
+  workflow_dispatch:
+    inputs:
+      accion: { description: "armar | programar", required: true, default: "programar" }
+concurrency: { group: youtube-semanal, cancel-in-progress: false }
+permissions:
+  contents: write             # estado/, registro/ y el manifiesto del video
+  actions: read               # guardia de minutos
+jobs:
+  armar:
+    if: (github.event_name == 'schedule' && github.event.schedule == '23 7 * * 4') || (github.event_name == 'workflow_dispatch' && inputs.accion == 'armar')
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: ¿Ya empezó? (YOUTUBE_SEMANAL_DESDE)
+        id: fecha
+        run: python3 sistema/youtube_semanal.py activo
+      - name: Guardia de minutos gratuitos de Actions (1,850 al mes)
+        id: guardia
+        if: steps.fecha.outputs.activo == 'true'
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: python3 sistema/metricas_diarias.py --guardia
+      - uses: actions/setup-python@v5
+        if: steps.guardia.outputs.continuar == 'true'
+        with: { python-version: "3.12" }
+      - name: ffmpeg estático (caché)
+        if: steps.guardia.outputs.continuar == 'true'
+        uses: actions/cache@v4
+        with: { path: ~/ffmpeg-static, key: ffmpeg-btbn-v1 }
+      - name: Dependencias (ffmpeg, Pillow, NumPy, soundfile)
+        if: steps.guardia.outputs.continuar == 'true'
+        timeout-minutes: 8
+        run: |
+          FF="$HOME/ffmpeg-static"
+          if [ ! -x "$FF/bin/ffmpeg" ]; then
+            mkdir -p "$FF" && curl -fL --retry 3 -sS -m 240 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | tar -xJ -C "$FF" --strip-components=1
+          fi
+          echo "$FF/bin" >> "$GITHUB_PATH"
+          pip install -q "pillow>=10" "numpy>=1.26" "soundfile>=0.12"
+      - name: Armar, auditar y respaldar el video de la semana
+        if: steps.guardia.outputs.continuar == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python sistema/youtube_semanal.py armar
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add estado registro semanal/*/manifiesto.json semanal/*/salida/*.json || true
+          git diff --cached --quiet || (git commit -m "youtube semanal ${{ github.run_id }}" && git pull --rebase -q && git push)
+  programar:
+    if: (github.event_name == 'schedule' && github.event.schedule != '23 7 * * 4') || (github.event_name == 'workflow_dispatch' && inputs.accion == 'programar')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: ¿Ya empezó? (YOUTUBE_SEMANAL_DESDE)
+        id: fecha
+        run: python3 sistema/youtube_semanal.py activo
+      - name: Programar en YouTube lo aprobado y fuera de veto
+        if: steps.fecha.outputs.activo == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLICAR: ${{ vars.PUBLICAR }}
+          LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}
+          PAUSA_PUBLICACION: ${{ vars.PAUSA_PUBLICACION }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          YOUTUBE: ${{ vars.YOUTUBE }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 sistema/youtube_semanal.py programar
+      - name: Guardar registros
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add -A registro estado || true
+          git diff --cached --quiet || (git commit -m "youtube semanal ${{ github.run_id }}" && git pull --rebase -q && git push)

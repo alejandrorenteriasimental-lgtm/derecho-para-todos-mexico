@@ -73,11 +73,13 @@ def metadatos(titulo, descripcion, publicar_en):
                        "selfDeclaredMadeForKids": False, "embeddable": True}}
 
 
-def publicar_yt(pieza_id, mp4, titulo, descripcion, huella, publicar_en, modo=None, env=os.environ, http=http_real, libro=None):
+def publicar_yt(pieza_id, mp4, titulo, descripcion, huella, publicar_en, modo=None, env=os.environ, http=http_real, libro=None, formato="reel"):
+    """formato: «reel» (Short vertical del calendario) o «video_largo» (video semanal horizontal, youtube_semanal.py, 16-11-2026);
+    YouTube decide si es Short por el formato del archivo, no por un campo de la API."""
     etiqueta = marca(pieza_id, huella) + "-yt"
     if modo is None: modo, motivo = modo_youtube(env)
     else: motivo = "modo indicado por quien llama"
-    base = {"pieza": pieza_id, "marca": etiqueta, "modo": modo, "formato": "reel", "red": "youtube"}
+    base = {"pieza": pieza_id, "marca": etiqueta, "modo": modo, "formato": formato, "red": "youtube"}
     if modo == "simulacion":
         if (operacion(etiqueta, "simulacion", libro) or {}).get("fase") != "SIMULADA":
             registrar({**base, "fase": "SIMULADA", "motivo": motivo, "publicar_en": publicar_en.isoformat(timespec="minutes")}, libro)
