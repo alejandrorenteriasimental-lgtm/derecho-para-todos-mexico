@@ -787,6 +787,22 @@ def _metricas(inv, red, aud, n_analisis, n_redaccion, complemento=False):
             "investigacion_complementaria": bool(complemento)}
 
 
+def _veredicto(a):
+    """Una auditoría «sin objeciones» que declara una conclusión parcial o no sostenida, o que no responde el núcleo de la
+    pregunta, cuenta como «con objeciones» (misma regla para el Reel, la imagen y la versión larga de TikTok)."""
+    a = a if isinstance(a, dict) else {}
+    if a.get("veredicto") == "sin_objeciones" and any(str(x.get("sostenida", "si")).lower() != "si" for x in a.get("conclusiones", []) or []):
+        a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
+            {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
+            for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
+    cob = a.get("cobertura") or {}
+    if a.get("veredicto") == "sin_objeciones" and cob.get("responde_nucleo") is False:
+        a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
+            {"donde": "respuesta", "problema": "no responde el núcleo de la pregunta: " + "; ".join(map(str, cob.get("faltantes") or [])),
+             "correccion": "explica lo que falta con su fuente o descarta la pieza"}]}
+    return a
+
+
 def generar(sol, transporte=verificador.transporte_http, simulador=None, env=None, archivo_uso=None):
     """Devuelve el guion listo para la cola, o lanza Descartada con el motivo.
     Etapa 1 (analizar): pregunta → regla → condiciones/excepciones → distinciones → respuesta corta, validado de forma
@@ -895,17 +911,8 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
                     historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores,
                                       "visible": razonamiento.cuerpo_visible(g)[:700]})   # para diagnosticar sin repetir la llamada
                     extra = "\n\nTu versión anterior tenía estos problemas; corrígelos respetando el análisis aprobado:\n- " + "\n- ".join(errores[:8]); continue
-                a = auditar_ia(g, fuentes_red, aud, simulador)
+                a = _veredicto(auditar_ia(g, fuentes_red, aud, simulador))
                 historial.append({"etapa": "redaccion", "intento": intento, "auditoria_ia": a})
-                if a.get("veredicto") == "sin_objeciones" and any(str(x.get("sostenida", "si")).lower() != "si" for x in a.get("conclusiones", []) or []):
-                    a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
-                        {"donde": x.get("conclusion", ""), "problema": f'conclusión {x.get("sostenida")} sostenida: {x.get("motivo", "")}', "correccion": "ajústala al texto o elimínala"}
-                        for x in a["conclusiones"] if str(x.get("sostenida", "si")).lower() != "si"]}
-                cob = a.get("cobertura") or {}
-                if a.get("veredicto") == "sin_objeciones" and cob.get("responde_nucleo") is False:
-                    a = {**a, "veredicto": "con_objeciones", "objeciones": (a.get("objeciones") or []) + [
-                        {"donde": "respuesta", "problema": "no responde el núcleo de la pregunta: " + "; ".join(map(str, cob.get("faltantes") or [])),
-                         "correccion": "explica lo que falta con su fuente o descarta la pieza"}]}
                 if a.get("veredicto") == "sin_objeciones":
                     if sol["formato"] == "reel" and not g.get("copy"): g["copy"] = copy_reel(g, mapa)
                     m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
@@ -937,3 +944,178 @@ def generar(sol, transporte=verificador.transporte_http, simulador=None, env=Non
     except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
         raise Descartada(f"modelo no disponible: {e}", transitoria=True, categoria="cuota" if isinstance(e, modelos.CuotaAgotada) else "tecnico",
                          metricas=_metricas(*[x for x in (locals().get("inv"), locals().get("red"), locals().get("aud"))], locals().get("n_analisis", 0), locals().get("n_redaccion", 0)))
+
+
+# ---------------- versión larga SOLO para TikTok (decisión del responsable, 16-11-2026) ----------------
+# El programa de Recompensas de TikTok exige videos de más de 1 minuto. A partir del guion del Reel YA APROBADO se redacta
+# una ampliación de 65 a 72 s: mismo tema, misma pregunta, misma cita oficial literal, más UN ejemplo o UNA condición o
+# excepción adicional que esté en el texto oficial de los MISMOS artículos ya cotejados. Los controles no se relajan: esquema
+# (con su propio rango de duración), razonamiento.revisar (sustento, condiciones, coherencia visible, vaguedades…), auditor
+# independiente y, después, verificador y dictamen como cualquier Reel. El Reel aprobado y su aprobación no se tocan.
+SUFIJO_TIKTOK = "-TT"
+
+
+def es_variante_tiktok(pid):
+    return str(pid).endswith(SUFIJO_TIKTOK)
+
+
+PEDIR_TIKTOK = """VERSIÓN LARGA SOLO PARA TIKTOK de un Reel YA APROBADO (TikTok solo paga videos de más de 1 minuto; las demás redes
+siguen con el Reel corto, que NO se modifica).
+Escribe un guion de 65 a 72 segundos: entre {min_c} y {max_c} caracteres de narración SIN contar el cierre (lo agrega el sistema).
+Pregunta (la MISMA del Reel; no la cambies): {pregunta}
+Reel aprobado (escenas, sin el cierre):
+{reel}
+Análisis jurídico aprobado (no lo cambies; cada regla indica su artículo):
+{mapa}
+Textos oficiales COMPLETOS de los mismos artículos que ya se cotejaron (fuente → texto):
+{textos}
+
+Reglas de la ampliación:
+- Conserva el gancho, la respuesta corta, la escena «cita» con la MISMA cita literal y la misma fuente, y cada condición y excepción
+  que ya dice el Reel.
+- Agrega UNA de estas dos cosas, y nada más:
+  a) un EJEMPLO práctico (escena «lista» o «titular» cuyo texto empiece con «Por ejemplo»), que solo aplique una regla del análisis a
+     una situación cotidiana, sin nombres de personas, sin cifras ni plazos que no estén en el texto oficial y sin ir más allá de su
+     cita; su afirmación es "interpretacion" y lleva la cita literal de esa regla; o
+  b) una EXCEPCIÓN o CONDICIÓN adicional que esté EXPRESAMENTE en los textos oficiales de arriba (escena «excepcion»), con su
+     afirmación "hecho_normativo" y su cita literal copiada exacta (8 a 40 palabras).
+- Usa solo los artículos de arriba (F1, F2…). No agregues sanciones, casos reales, jurisprudencia ni cambios en la ley.
+Devuelve JSON con la misma estructura del Reel:
+{{"titulo": "la pregunta", "ampliacion": {{"tipo": "ejemplo" | "excepcion", "resumen": "qué se agregó y con qué cita"}},
+  "escenas": [{{"tipo": "gancho", …}}, {{"tipo": "titular", …}}, {{"tipo": "cita", "texto": "…", "fuente": "F1", "cita_literal": "copia exacta", "etiqueta": "Ley, artículo N"}}, …],
+  "afirmaciones": [{{"escena": 2, "fuente": "F1", "tipo": "hecho_normativo", "texto": "qué se afirma", "cita_literal": "copia exacta", "duda": null}}]}}
+Tipos de escena y límites de pantalla, iguales al Reel: gancho y titular («titulo»: 2 a 3 líneas de máx. 20 caracteres), cita,
+lista («items»: máx. 4, de máx. 28 caracteres), excepcion («numero», «encabezado» máx. 40, «detalle» máx. 36, «fuente», «fuente_corta»).
+No escribas el cierre."""
+
+
+def _documento_sigla(documento):
+    """Sigla de data/ordenamientos.json para el documento de una ficha (los guiones antiguos pueden variar en mayúsculas)."""
+    p = verificador._plano(documento or "")
+    for s, o in ORDEN.items():
+        if verificador._plano(o["documento"]) == p: return s
+    return None
+
+
+def fuentes_del_reel(base, biblio):
+    """Los artículos que el Reel aprobado ya cotejó, con su texto oficial COMPLETO (para buscar el ejemplo o la condición)."""
+    fuentes = {}
+    fichas = base.get("fuentes") or {}
+    for fi in (fichas.values() if isinstance(fichas, dict) else fichas):
+        sigla = _documento_sigla(fi.get("documento"))
+        if not sigla:
+            raise Descartada(f'el documento «{fi.get("documento")}» del Reel no está en data/ordenamientos.json', categoria="tecnico")
+        num = str(fi.get("articulo")).strip()
+        if (sigla, num) in {(f["sigla"], f["articulo"]) for f in fuentes.values()}: continue
+        texto = biblio.articulo(sigla, num)
+        if not texto:
+            raise Descartada(f"{sigla} {num}: el artículo del Reel no se encontró en el documento oficial vigente", categoria="juridico")
+        fuentes[f"F{len(fuentes) + 1}"] = {"sigla": sigla, "documento": ORDEN[sigla]["documento"], "articulo": num, "url": ORDEN[sigla]["url"],
+                                           "ambito": ORDEN[sigla]["ambito"], "texto_oficial": texto, "para_que": "artículo del Reel aprobado"}
+    if not fuentes:
+        raise Descartada("el Reel aprobado no tiene fuentes", categoria="tecnico")
+    return fuentes
+
+
+def controles_ampliacion(g, base):
+    """Lo que hace que la versión larga sea la MISMA pieza ampliada y no otra: misma cita literal, mismos artículos y algo nuevo."""
+    err = []
+    plano = razonamiento.plano
+    citas_g = [plano(e.get("cita", "")) for e in g.get("escenas", []) if e.get("tipo") == "cita"]
+    for e in base.get("escenas", []):
+        if e.get("tipo") == "cita" and e.get("cita") and plano(e["cita"]) not in citas_g:
+            err.append(f'[ampliación] Falta la escena de cita del Reel aprobado con la misma cita literal: «{e["cita"][:80]}».')
+    fb = base.get("fuentes") or {}
+    arts = {(_documento_sigla(f.get("documento")), str(f.get("articulo")).strip()) for f in (fb.values() if isinstance(fb, dict) else fb)}
+    for fid, f in (g.get("fuentes") or {}).items():
+        if (_documento_sigla(f.get("documento")), str(f.get("articulo")).strip()) not in arts:
+            err.append(f'[ampliación] {fid} ({f.get("documento")}, artículo {f.get("articulo")}) no es un artículo del Reel aprobado; usa solo los ya cotejados.')
+    n = lambda x: sum(len(e.get("afirmaciones") or []) for e in x.get("escenas", []))
+    if n(g) <= n(base):        # lo agregado debe traer su propia afirmación anclada en el texto oficial (ejemplo o condición)
+        err.append("[ampliación] No agrega ningún ejemplo ni condición nueva con su afirmación y su cita literal del texto oficial.")
+    return err
+
+
+def ampliar_tiktok(base, transporte=verificador.transporte_http, simulador=None, env=None, archivo_uso=None):
+    """Guion de la versión larga de TikTok a partir del guion del Reel aprobado, o Descartada con el motivo."""
+    import os, hashlib
+    env = env if env is not None else os.environ
+    if base.get("formato", "reel") != "reel" or base.get("variante"):
+        raise Descartada("solo se amplía un Reel normal aprobado", categoria="tecnico")
+    if base.get("riesgo") == "alto" or base.get("carril_inicial") == "C":
+        raise Descartada("tema de riesgo alto: no se automatiza (requiere revisión humana)")
+    cfg = modelos.config()
+    if simulador: cfg = {**cfg, "proveedor": "simulado"}
+    red, aud = (modelos.Modelo(r, cfg, env, archivo_uso) for r in ("redactor", "auditor"))
+    n_redaccion = 0
+    try:
+        fuentes = fuentes_del_reel(base, Biblioteca(transporte))
+        textos_oficiales = {(f["documento"], f["articulo"]): f["texto_oficial"] for f in fuentes.values()}
+        mapa = copy.deepcopy(base.get("razonamiento") or {})
+        etiq = {(f["documento"], f["articulo"]): fid for fid, f in fuentes.items()}
+        mapa_txt = copy.deepcopy(mapa)       # para el modelo: cada regla con el F del texto de abajo (el análisis numera distinto)
+        for x in [*(mapa_txt.get("reglas") or []), *(mapa_txt.get("elementos") or [])]:
+            ref = x.get("ref") or {}
+            if isinstance(x, dict) and (ref.get("documento"), str(ref.get("articulo"))) in etiq: x["fuente"] = etiq[(ref["documento"], str(ref["articulo"]))]
+        reel = [{k: v for k, v in e.items() if k != "afirmaciones"} for e in base.get("escenas", []) if e.get("tipo") != "cierre"]
+        cierre = len(_cierre(fuentes)["texto"])
+        sol = {"pieza_id": base["id"] + SUFIJO_TIKTOK, "tema_id": base.get("tema_id"), "titulo": base["titulo"], "formato": "reel",
+               "carril": base.get("carril_inicial", "A")}
+        pedir = lambda extra="": red.completar(REGLAS_COMUNES, PEDIR_TIKTOK.format(
+            min_c=esquema.MIN_NARRACION_TIKTOK - cierre + 20, max_c=esquema.MAX_NARRACION_TIKTOK - cierre - 30,
+            pregunta=base.get("pregunta_original") or base["titulo"], reel=json.dumps(reel, ensure_ascii=False, indent=1),
+            mapa=json.dumps({k: v for k, v in mapa_txt.items() if k != "fuentes_irrelevantes"}, ensure_ascii=False, indent=1),
+            textos=_textos(fuentes)) + extra, simulador)
+        historial, extra, previo, errores_previos = [], "", None, []
+        for intento in range(3):
+            n_redaccion += 1
+            if previo is not None and errores_previos and all(any(p in e for p in PUNTUALES) for e in errores_previos):
+                parche = red.completar(REGLAS_COMUNES, REPARAR.format(borrador=json.dumps({k: v for k, v in previo.items() if k != "razonamiento"}, ensure_ascii=False)[:9000],
+                                                                      errores="\n- ".join(errores_previos[:8])), simulador)
+                borrador = aplicar_parche(previo, parche)
+                historial.append({"etapa": "reparacion_puntual", "intento": intento, "errores": errores_previos})
+            else:
+                borrador = pedir(extra)
+            borrador = {**(borrador if isinstance(borrador, dict) else {}), "razonamiento": mapa}
+            previo = copy.deepcopy(borrador)
+            g = construir_reel(sol, borrador, fuentes)
+            # misma pregunta, mismo análisis, mismo gancho y mismo nivel de riesgo que el Reel aprobado
+            g.update(titulo=base["titulo"], razonamiento=copy.deepcopy(mapa), pregunta_original=base.get("pregunta_original") or base["titulo"],
+                     variante=esquema.VARIANTE_TIKTOK, riesgo=base.get("riesgo", g["riesgo"]), carril_inicial=base.get("carril_inicial", "A"))
+            if base.get("tipo_pregunta"): g["tipo_pregunta"] = base["tipo_pregunta"]
+            gb = next((e for e in base.get("escenas", []) if e.get("tipo") == "gancho"), None)
+            if gb and g["escenas"] and g["escenas"][0].get("tipo") == "gancho":
+                g["escenas"][0].update(texto=gb["texto"], titulo=copy.deepcopy(gb.get("titulo")))
+            errores = esquema.validar(g) + controles_ampliacion(g, base)
+            hall = razonamiento.revisar(g, textos_oficiales, ia=True)
+            g["revision_razonamiento"] = hall
+            errores += [f'[{x["regla"]}] {x["detalle"]}' for x in razonamiento.bloqueantes(hall)]
+            errores_previos = errores
+            if errores:
+                historial.append({"etapa": "redaccion", "intento": intento, "errores_esquema": errores, "visible": razonamiento.cuerpo_visible(g)[:900]})
+                extra = "\n\nTu versión anterior tenía estos problemas; corrígelos respetando el Reel y el análisis aprobados:\n- " + "\n- ".join(errores[:8]); continue
+            a = _veredicto(auditar_ia(g, fuentes, aud, simulador))
+            historial.append({"etapa": "redaccion", "intento": intento, "auditoria_ia": a})
+            if a.get("veredicto") == "sin_objeciones":
+                g["copy"] = base.get("copy") or copy_reel(g, mapa)
+                m_aud, m_red = str(getattr(aud, "ultimo_modelo", "")), str(getattr(red, "ultimo_modelo", ""))
+                fam = lambda m: m.split("-")[0].split("/")[-1].lower()
+                g["auditoria_ia"] = {"veredicto": "sin_objeciones", "modelo_auditor": m_aud or aud.modelos, "historial": historial,
+                                     "familia_distinta": bool(m_aud and m_red and fam(m_aud) != fam(m_red))}
+                g["version_tiktok"] = {"de": base["id"], "huella_guion_base": hashlib.sha256(json.dumps(base, ensure_ascii=False, sort_keys=True).encode()).hexdigest(),
+                                       "ampliacion": borrador.get("ampliacion")}
+                g["generacion"].update({"fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"), "metodo": "ampliacion_tiktok_v1",
+                                        "metricas": _metricas(None, red, aud, 0, n_redaccion),
+                                        "modelos": {"redactor": getattr(red, "ultimo_modelo", red.modelos)}})
+                return g
+            extra = ("\n\nUn auditor independiente objetó lo siguiente. Aplica TODAS las correcciones sin salirte del Reel ni del análisis aprobados; "
+                     "si el ejemplo o la condición agregada no puede sustentarse con el texto oficial, cámbiala por otra que sí:\n") + \
+                    json.dumps(a.get("objeciones", []), ensure_ascii=False)[:2500]
+        ult = historial[-1]
+        raise Descartada("la versión larga no superó la validación o la auditoría independiente tras dos correcciones: " +
+                         json.dumps(ult, ensure_ascii=False)[:400], historial=historial,
+                         categoria=categoria_de("", errores=ult.get("errores_esquema") or (["auditor"] if "auditoria_ia" in ult else [])),
+                         metricas=_metricas(None, red, aud, 0, n_redaccion))
+    except (modelos.CuotaAgotada, modelos.FallaModelo) as e:
+        raise Descartada(f"modelo no disponible: {e}", transitoria=True, categoria="cuota" if isinstance(e, modelos.CuotaAgotada) else "tecnico",
+                         metricas=_metricas(None, locals().get("red"), locals().get("aud"), 0, n_redaccion))

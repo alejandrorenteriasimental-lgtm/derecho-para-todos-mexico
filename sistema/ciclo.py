@@ -53,6 +53,12 @@ ACTIVOS = {"PENDIENTE", "PRODUCIDO", "APROBADO", "PUBLICANDO"}
 def es_version_ig(pid): return str(pid).endswith("-IG")
 
 
+def es_derivada(pid):
+    """Piezas derivadas de un Reel aprobado que el ciclo no encola ni publica: versión corta de Instagram (-IG, version_ig.py)
+    y versión larga solo para TikTok (-TT, tiktok_largo.py). Cada una tiene su propio registro y su propia aprobación."""
+    return es_version_ig(pid) or redactor.es_variante_tiktok(pid)
+
+
 def _requiere_revision(pid, env):
     """Toda pieza redactada por IA pasa por aprobación humana (REVISION_HUMANA_OBLIGATORIA=0 la desactiva, solo por
     decisión del responsable tras validar la calidad). Las decisiones llegan por revision.py (Telegram) y quedan en
@@ -192,11 +198,14 @@ def ciclo(dueño, transporte_fuentes=verificador.transporte_resiliente, http_met
         # 2) encolar y detectar guiones modificados
         # Las versiones cortas para Instagram (piezas/<ID>-IG) las produce y aprueba solo version_ig.py; el ciclo no las toca
         # (3-11-2026: el ciclo las re-producía y sobrescribía su salida y su respaldo).
-        for pid in [k for k, x in c["trabajos"].items() if es_version_ig(k) and x["estado"] not in cola.ESTADOS_REALES]:
-            del c["trabajos"][pid]; cola.log({"pieza": pid, "evento": "fuera_de_cola", "motivo": "versión corta de Instagram: la gestiona version_ig.py"})
+        # 16-11: lo mismo con la versión larga de TikTok (piezas/<ID>-TT): la produce y registra tiktok_largo.py; si el ciclo la
+        # encolara, al aprobarse la publicaría como pieza suelta en Facebook.
+        for pid in [k for k, x in c["trabajos"].items() if es_derivada(k) and x["estado"] not in cola.ESTADOS_REALES]:
+            del c["trabajos"][pid]; cola.log({"pieza": pid, "evento": "fuera_de_cola",
+                                              "motivo": "versión corta de Instagram: la gestiona version_ig.py" if es_version_ig(pid) else "versión larga de TikTok: la gestiona tiktok_largo.py"})
         for g_path in sorted((RAIZ / "piezas").glob("*/guion.json")):
             pid = g_path.parent.name
-            if es_version_ig(pid): continue
+            if es_derivada(pid): continue
             try:
                 g = json.loads(g_path.read_text()); errores = esquema.validar(g)
             except ValueError as e:

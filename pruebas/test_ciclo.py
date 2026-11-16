@@ -220,3 +220,16 @@ def test_version_corta_ig_ya_encolada_sale_de_la_cola(raiz):
     c = cola.cargar(); cola.encolar(c, "X1-IG"); cola.guardar(c)
     ciclo.ciclo("t", fuentes_ok, env={})
     assert "X1-IG" not in cola.cargar()["trabajos"]
+
+
+def test_version_larga_tiktok_no_entra_a_la_cola_ni_se_publica(raiz):
+    """16-11-2026: piezas/<ID>-TT las produce y registra tiktok_largo.py; si el ciclo las encolara, al aprobarse las
+    publicaría como pieza suelta en Facebook. No se encolan, no se re-producen y salen de la cola si ya estaban."""
+    g = copy.deepcopy(GUION); g["id"] = "X1-TT"; g["variante"] = "tiktok"
+    (raiz / "piezas" / "X1-TT").mkdir(); (raiz / "piezas/X1-TT/guion.json").write_text(json.dumps(g, ensure_ascii=False))
+    c = cola.cargar(); cola.encolar(c, "X2-TT"); cola.guardar(c)
+    ciclo.ciclo("t", fuentes_ok, env={})
+    trabajos = cola.cargar()["trabajos"]
+    assert "X1-TT" not in trabajos and "X2-TT" not in trabajos and "X1-TT" not in raiz.producidas
+    assert not (raiz / "piezas/X1-TT/salida").exists()
+    assert ciclo.es_derivada("R20261214-T108-TT") and ciclo.es_derivada("R20261123-T031-IG") and not ciclo.es_derivada("R20261214-T108")

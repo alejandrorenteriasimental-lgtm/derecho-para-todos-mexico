@@ -7,6 +7,8 @@ Mismo método que usa Cronista Imposible, pero con app, credenciales y archivos 
 
 Reglas:
   · Solo versiones aprobadas exactas y fuera del plazo de veto (publicador.comprobar), igual que Facebook.
+  · Versión larga (16-11-2026): si el calendario trae dia["reel"]["tiktok"] aprobada, fuera de veto y con su huella, se
+    envía esa (más de 60 s, programa de Recompensas); si no, el Reel normal. Nunca las dos el mismo día.
   · Modo real solo con PUBLICAR=1, LANZAMIENTO_AUTORIZADO=SI, TIKTOK=1, los secretos TIKTOK_CLIENT_KEY,
     TIKTOK_CLIENT_SECRET, TIKTOK_CLAVE y el archivo cifrado de tokens (estado/tiktok_token.enc). Sin eso, simula.
   · Tokens: TikTok puede entregar una clave de renovación nueva en cada renovación. Se guarda CIFRADA (Fernet con una
@@ -156,6 +158,33 @@ def enviar_a_bandeja(pieza_id, mp4, huella, modo=None, env=os.environ, http=publ
     return {"estado": "EN_BANDEJA", "publish_id": pid, "marca": etiqueta, "origen": "inbox"}
 
 
+def _version_larga(e, carpeta, env, bajar, ahora, res):
+    """Versión larga solo para TikTok (16-11-2026, sistema/tiktok_largo.py): se usa si el calendario la tiene para ESTA
+    versión del Reel, está aprobada en su versión exacta, terminó su plazo de veto y el archivo descargado tiene su huella.
+    Si algo no se cumple, se registra el motivo y se envía el Reel normal, como siempre."""
+    v = e.get("tiktok")
+    if not v: return None, None
+    if v.get("de_version") != e.get("version"):
+        res["variante_omitida"] = f'{v.get("pieza")}: deriva de otra versión del Reel ({v.get("de_version")})'; return None, None
+    try:
+        publicador.comprobar_decision(e, ahora)          # la variante hereda el contenido del Reel: si el Reel no vale (veto), ella tampoco
+        f = bajar(v, carpeta, env); publicador.comprobar(v, f, ahora)
+        return v, f
+    except (publicador.EnPlazoDeVeto, publicador.NoAprobada, OSError, KeyError, ValueError) as x:
+        res["variante_omitida"] = f"{v.get('pieza')}: {x}"[:300]
+        return None, None
+
+
+def _ya_enviado(e, env):
+    """Si el Reel o su versión larga ya se envió (o quedó sin confirmación) en modo real, esa es la pieza del día: nunca
+    se mandan las dos a la bandeja ni se reintenta a ciegas un envío ambiguo."""
+    modo = modo_tiktok(env)[0]
+    for x in [y for y in (e.get("tiktok"), e) if y]:
+        op = operacion(marca(x["pieza"], x["version"]) + "-tt", modo) or {}
+        if modo == "real" and op.get("fase") in ("CONFIRMADA", "SUBIENDO", "AMBIGUA"): return x
+    return None
+
+
 def ejecutar(fecha=None, env=os.environ, http=publicar.http_real, bajar=publicador.descargar, carpeta="/tmp/tiktok", ahora=None):
     ahora = ahora or datetime.now(timezone.utc)
     fecha = fecha or (ahora.astimezone(publicador.MX) + timedelta(days=1)).date().isoformat()
@@ -168,12 +197,20 @@ def ejecutar(fecha=None, env=os.environ, http=publicar.http_real, bajar=publicad
     if desde and fecha < desde: return {**res, "estado": "SIN_AUTORIZACION_DE_PUBLICACION"}
     if env.get("PUBLICAR_HASTA") and fecha > env["PUBLICAR_HASTA"]: return {**res, "estado": "SIN_AUTORIZACION_DE_PUBLICACION"}
     if "reel" not in dia: return {**res, "estado": "SIN_REEL_EN_CALENDARIO"}
-    e = dia["reel"]; res.update(pieza=e["pieza"], version=e["version"])
+    e = dia["reel"]; res.update(pieza=e["pieza"], version=e["version"], variante="reel")
     try:
-        f = bajar(e, carpeta, env); publicador.comprobar(e, f, ahora)
-        r = enviar_a_bandeja(e["pieza"], f, e["version"], env=env, http=http, ahora=ahora)
+        previo = _ya_enviado(e, env)
+        if previo:                                    # idempotencia: una sola pieza por día en la bandeja (Reel o versión larga)
+            r = enviar_a_bandeja(previo["pieza"], None, previo["version"], env=env, http=http, ahora=ahora)
+            res.update(pieza=previo["pieza"], version=previo["version"], variante="larga" if previo is not e else "reel")
+        else:
+            elegido, f = _version_larga(e, carpeta, env, bajar, ahora, res)
+            if elegido is None:
+                elegido = e; f = bajar(e, carpeta, env); publicador.comprobar(e, f, ahora)
+            r = enviar_a_bandeja(elegido["pieza"], f, elegido["version"], env=env, http=http, ahora=ahora)
+            res.update(pieza=elegido["pieza"], version=elegido["version"], variante="larga" if elegido is not e else "reel")
         res["estado"] = r["estado"]
-        res["copy"] = publicador.texto(e["pieza"])        # el recordatorio lo entrega al responsable para pegarlo
+        res["copy"] = publicador.texto(e["pieza"])        # el recordatorio lo entrega al responsable para pegarlo (mismo texto del Reel)
     except publicador.EnPlazoDeVeto as x: res["estado"] = "EN_PLAZO_DE_VETO"; res["detalle"] = str(x)
     except publicador.NoAprobada as x: res["estado"] = "NO_APROBADA"; res["error"] = str(x)
     except (ErrorTikTok, TikTokAmbigua, SinRed) as x: res["estado"] = "ERROR"; res["error"] = str(x)

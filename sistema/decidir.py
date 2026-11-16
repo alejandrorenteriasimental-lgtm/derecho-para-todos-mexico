@@ -7,6 +7,10 @@ número de versión. El usuario responde «apruebo» o «rechazo». Claude regis
     python sistema/decidir.py aprobar  <pieza> <versión> --por "Nombre (chat)" [--nota "..."]
     python sistema/decidir.py rechazar <pieza> <versión> --por "Nombre (chat)" --nota "motivo"
 
+Piezas derivadas (16-11-2026), con su propia versión y aprobación (nunca la del Reel del que salen):
+  · <ID>-TT  versión larga solo para TikTok (sistema/tiktok_largo.py; registro estado/tiktok_largo.json).
+  Se aprueban igual: aprobar <pieza> <versión> --por "…" --delegada; el veto de las 72 h es «rechazar … --nota».
+
 El script solo AÑADE una fila a estado/aprobaciones.jsonl (quién, cuándo, versión, huellas) después de comprobar que la
 versión indicada es la que se preparó para revisión y la que resulta hoy del guion y del archivo respaldado. El ciclo
 aplica la decisión al iniciar (revision.aplicar), con la misma doble comprobación; publicar usa ese archivo exacto.
@@ -14,7 +18,7 @@ aplica la decisión al iniciar (revision.aplicar), con la misma doble comprobaci
 import argparse, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import cola, revision
+import cola, revision, tiktok_largo
 
 
 class VersionDistinta(Exception):
@@ -26,6 +30,8 @@ def pendientes(c):
 
 
 def decidir(c, pid, decision, ver, por, nota="", canal="chat"):
+    if tiktok_largo.es_variante(pid):
+        return tiktok_largo.decidir(pid, decision, ver, por, nota, canal)
     t = c["trabajos"].get(pid)
     if not t or t["estado"] != "REVISION_HUMANA":
         raise VersionDistinta(f"{pid} no está en revisión humana")
@@ -52,6 +58,8 @@ if __name__ == "__main__":
             r = t.get("revision") or {}
             print(json.dumps({"pieza": t["id"], "formato": t.get("formato"), "version": r.get("version"), "preparada": r.get("preparada"),
                               "archivo": revision.principal(t["id"], t.get("formato", "reel"))}, ensure_ascii=False))
+        for x in tiktok_largo.pendientes():
+            print(json.dumps(x, ensure_ascii=False))
         sys.exit(0)
     if not (a.pieza and a.version and a.por): ap.error("faltan pieza, versión o --por")
     try:

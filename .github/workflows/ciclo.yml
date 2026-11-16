@@ -72,7 +72,7 @@ jobs:
     needs: pruebas            # si una prueba falla, no se produce ni se publica nada
     if: needs.pruebas.outputs.continuar == 'true'     # tope propio de minutos del mes alcanzado: no se ejecuta
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 75       # 16-11: +15 por la versión larga de TikTok (solo desde el 1-12)
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }      # siempre el estado más reciente (una ejecución en fila no parte de un commit viejo)
@@ -120,6 +120,16 @@ jobs:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}                 # bot de revisión (el chat se vincula con código; ver sistema/revision.py)
         run: python sistema/ciclo.py
+      - name: Versión larga solo para TikTok (16-11; empieza sola en TIKTOK_LARGO_DESDE de data/lanzamiento.json)
+        if: always()
+        continue-on-error: true      # una falla aquí nunca detiene el ciclo ni el guardado del estado
+        timeout-minutes: 20
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                   # respaldo en el release privado
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}               # nivel gratuito, sin facturación
+          TIKTOK_LARGO_POR_CICLO: "2"                                 # las más próximas a publicarse primero
+          TIKTOK_LARGO_PRESUPUESTO_S: "900"                           # no empieza otra después de 15 min
+        run: python sistema/tiktok_largo.py producir
       - name: Conservar piezas producidas (14 días)
         if: always()
         uses: actions/upload-artifact@v4
@@ -166,5 +176,5 @@ jobs:
         if: always()
         run: |
           git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
-          git add estado registro piezas/*/guion.json piezas/*/salida/*.json || true
+          git add estado registro piezas/*/guion.json piezas/*/salida/*.json data/calendario_lanzamiento.json || true
           git diff --cached --quiet || (git commit -m "ciclo ${{ github.run_id }}" && git pull --rebase -q && git push)

@@ -85,14 +85,20 @@ def plazo_de_veto(d, ahora):
     return None
 
 
-def comprobar(entrada, archivo, ahora=None):
-    """Aprobación de la versión exacta + archivo idéntico al aprobado (+ plazo de veto si la aprobación es delegada)."""
+def comprobar_decision(entrada, ahora=None):
+    """La parte de comprobar() que no necesita el archivo: última decisión APROBADA de esa versión y huella, fuera de veto."""
     d = ultima_decision(entrada["pieza"])
     if not d or d.get("decision") != "APROBADA": raise NoAprobada(f'{entrada["pieza"]}: sin aprobación vigente')
     fin = plazo_de_veto(d, ahora or datetime.now(timezone.utc))
     if fin: raise EnPlazoDeVeto(f'{entrada["pieza"]}: aprobación delegada; plazo de veto hasta {fin.isoformat(timespec="minutes")}')
     if d.get("version") != entrada["version"]: raise NoAprobada(f'{entrada["pieza"]}: versión aprobada {d.get("version")} ≠ calendario {entrada["version"]}')
     if d.get("huella_archivo") != entrada["sha256"]: raise NoAprobada(f'{entrada["pieza"]}: huella aprobada distinta del calendario')
+    return d
+
+
+def comprobar(entrada, archivo, ahora=None):
+    """Aprobación de la versión exacta + archivo idéntico al aprobado (+ plazo de veto si la aprobación es delegada)."""
+    comprobar_decision(entrada, ahora)
     sha = hashlib.sha256(Path(archivo).read_bytes()).hexdigest()
     if sha != entrada["sha256"]: raise NoAprobada(f'{entrada["pieza"]}: el archivo descargado no es el aprobado ({sha[:12]})')
     return True
