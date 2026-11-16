@@ -37,3 +37,5 @@ Actualizado: 26-10-2026. Este documento no contiene contraseñas ni claves; solo
 ## Monetización (12-11-2026)
 - Facebook · Monetización de contenido: la Página «Aquí Dice la Ley» quedó **en la lista de espera** («Notificarme», autorizado por el responsable el 12-11). Programa por invitación; estar en la lista no garantiza acceso.
 - Primera revisión de monetización de las cuatro redes: alrededor del 04-01-2027, con 6 semanas de datos reales.
+- 16-11: YouTube Studio · país de residencia del canal = México (faltaba; sin él YouTube no evaluaba la monetización), palabras clave del canal y aviso «Te avisaremos cuando cumplas los requisitos» activado. Requisitos que muestra Studio: 1,000 suscriptores + 4,000 h de visualización (365 días) o 10 M vistas de Shorts (90 días).
+- 16-11: TikTok · Programa de Recompensas: 18+, 10,000 seguidores, 100,000 vistas en 30 días, **cuenta personal** (las de empresa no califican) y videos de **más de 1 minuto**. Pendiente: confirmar que @aquidicelaley es cuenta personal (sesión web cerrada).
