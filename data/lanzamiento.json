@@ -76,6 +76,9 @@
   "fecha": "2026-11-16T12:32-06:00",
   "tiktok_version_larga": "SÍ: desde diciembre, versión de 65-75 s de cada Reel solo para TikTok (programa de Recompensas exige >1 min); demás redes sin cambio",
   "youtube_video_largo_semanal": "SÍ: un video de 8-10 min por semana que reúne los Reels aprobados de la semana en un tema (ruta de 4,000 h de visualización)",
-  "tiktok_cuenta": "verificada 16-11: @aquidicelaley es cuenta personal (commerceUser=false), nombre «Aquí Dice la Ley»"
- }
+  "tiktok_cuenta": "verificada 16-11: @aquidicelaley es cuenta personal (commerceUser=false), nombre «Aquí Dice la Ley»",
+  "implementacion": "16-11: versión larga de TikTok (sistema/tiktok_largo.py, piezas/<ID>-TT, paso del ciclo.yml) desde TIKTOK_LARGO_DESDE; video semanal de YouTube (sistema/youtube_semanal.py, youtube-semanal.yml: arma el jueves, programa el domingo 12:00 CDMX) desde YOUTUBE_SEMANAL_DESDE. Cada pieza derivada tiene su propia versión y aprobación delegada con 72 h de veto; no cambia la autorización de publicación existente. Ver docs/operacion_autonoma.md."
+ },
+ "TIKTOK_LARGO_DESDE": "2026-12-01",
+ "YOUTUBE_SEMANAL_DESDE": "2026-12-03"
 }
