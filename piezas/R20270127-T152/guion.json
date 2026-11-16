@@ -1,0 +1,271 @@
+{
+  "id": "R20270127-T152",
+  "formato": "reel",
+  "titulo": "¿Pueden ponerle piezas usadas a tu producto al repararlo?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T152",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "60",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Las personas dedicadas a la reparación de toda clase de productos deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 60",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "60",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "da al consumidor el derecho a exigir los gastos necesarios que pruebe haber efectuado y, en su caso, a la bonificación a que se refiere el artículo 92 TER de esta ley.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 60",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+      "titulo": [
+        "¿PIEZAS USADAS?",
+        "EN TU PRODUCTO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende. Deben usar piezas nuevas, salvo que autorices expresamente el uso de otras.",
+      "titulo": [
+        "DEPENDE DE",
+        "TU AUTORIZACIÓN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley: «deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 60",
+      "cita": "deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Quienes reparan productos deben usar piezas nuevas salvo autorización expresa del cliente.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Si las refacciones no cumplen normas obligatorias, puedes exigir:",
+      "items": [
+        "Gastos probados",
+        "Bonificación legal"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si aceptas piezas usadas, asegúrate de autorizarlo de forma expresa.",
+      "encabezado": "Autorización expresa",
+      "detalle": "Debe ser clara y directa",
+      "fuente_corta": "Ley, art. 60",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Si las refacciones no cumplen normas obligatorias, el consumidor puede exigir gastos y bonificación.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En reparaciones, las piezas deben ser nuevas, salvo que autorices otras.",
+      "titulo": [
+        "PIEZAS NUEVAS",
+        "Y APROPIADAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+    "concepto_central": "empleo de partes y refacciones nuevas o usadas en la reparación",
+    "respuesta_corta": "Depende: quienes reparan productos deben usar piezas nuevas, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.",
+    "reglas": [
+      {
+        "conclusion": "Quienes reparan productos deben utilizar refacciones nuevas y apropiadas, a menos que la persona que solicita el servicio autorice expresamente el uso de otras.",
+        "fuente": "F1",
+        "cita_literal": "Las personas dedicadas a la reparación de toda clase de productos deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.",
+        "condiciones": [
+          "que se trate de personas dedicadas a la reparación de toda clase de productos"
+        ],
+        "excepciones": [
+          "autorización expresa del solicitante del servicio para utilizar otras partes o refacciones"
+        ],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "60"
+        }
+      },
+      {
+        "conclusion": "Si se usan refacciones sujetas a normas obligatorias que no cumplan con los requisitos, el consumidor puede exigir los gastos necesarios probados y la bonificación legal.",
+        "fuente": "F1",
+        "cita_literal": "da al consumidor el derecho a exigir los gastos necesarios que pruebe haber efectuado y, en su caso, a la bonificación a que se refiere el artículo 92 TER de esta ley.",
+        "condiciones": [
+          "que las refacciones o partes estén sujetas a normas de cumplimiento obligatorio",
+          "que el consumidor pruebe haber efectuado los gastos necesarios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "60"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La regla exige emplear piezas nuevas salvo autorización expresa; si las refacciones no cumplen normas obligatorias, surge el derecho a exigir gastos probados y la bonificación legal.",
+        "fuente": "F1",
+        "cita_literal": "da al consumidor el derecho a exigir los gastos necesarios que pruebe haber efectuado y, en su caso, a la bonificación a que se refiere el artículo 92 TER de esta ley."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no precisa autoridades, procedimiento de reclamación ni plazos para exigir los gastos o la bonificación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-16T10:57:56+00:00",
+    "solicitud": "2027-01-27_reel_T152-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?\n\nDepende: quienes reparan productos deben usar piezas nuevas, salvo que el solicitante del servicio autorice expresamente que se utilicen otras.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 60.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Pueden ponerle piezas usadas a tu producto cuando lo reparan? \n PIEZAS USADAS \n ¿EN MI REPARACIÓN? \n No, quienes reparan toda clase de productos deben usar piezas nuevas, salvo que tú autorices expresamente que se usen otras. \n NO, SALVO QUE \n TÚ LO AUTORICES \n La ley establece que deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras. \n deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras \n Si decides aceptar piezas que no sean nuevas, recuerda que tu"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La consecuencia jurídica ante el uso de refacciones que no cumplen con normas de cumplimiento obligatorio (reembolso de gastos y bonificación)."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Quienes reparan productos deben utilizar refacciones nuevas y apropiadas, a menos que el solicitante autorice expresamente el uso de otras.",
+              "sostenida": "si",
+              "motivo": "El artículo 60 de la LFPC establece explícitamente esta obligación y la excepción por autorización expresa."
+            },
+            {
+              "conclusion": "Si se usan refacciones sujetas a normas obligatorias que no cumplan con los requisitos, el consumidor puede exigir los gastos necesarios probados y la bonificación legal.",
+              "sostenida": "si",
+              "motivo": "El artículo 60 de la LFPC prevé este derecho para el consumidor, aunque esta información no fue incluida en las escenas visibles de la pieza."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Escenas (contenido visible)",
+              "problema": "La pieza omite la información sobre qué puede hacer el consumidor si las refacciones utilizadas no cumplen con las normas de cumplimiento obligatorio, a pesar de que el razonamiento sí lo contemplaba.",
+              "correccion": "Agregar una escena que informe al consumidor sobre su derecho a exigir los gastos necesarios probados y la bonificación legal en caso de que las refacciones no cumplan con las normas obligatorias."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Quienes reparan productos deben utilizar refacciones nuevas y apropiadas, a menos que la persona que solicita el servicio autorice expresamente el uso de otras.",
+              "sostenida": "si",
+              "motivo": "El artículo 60 de la Ley Federal de Protección al Consumidor establece explícitamente esta obligación y la excepción por autorización expresa."
+            },
+            {
+              "conclusion": "Si se usan refacciones sujetas a normas obligatorias que no cumplan con los requisitos, el consumidor puede exigir los gastos necesarios probados y la bonificación legal.",
+              "sostenida": "si",
+              "motivo": "El artículo 60 vincula directamente el incumplimiento de normas obligatorias con el derecho a exigir gastos probados y la bonificación del artículo 92 TER."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

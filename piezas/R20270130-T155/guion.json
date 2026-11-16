@@ -1,0 +1,265 @@
+{
+  "id": "R20270130-T155",
+  "formato": "reel",
+  "titulo": "¿Qué es el salario mínimo según la ley?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T155",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "90",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo.",
+      "cita": "Ley Federal del Trabajo, artículo 90",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-16"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "90",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "La fijación anual de los salarios mínimos, o la revisión de los mismos, nunca estará por debajo de la inflación observada durante el periodo de su vigencia",
+      "cita": "Ley Federal del Trabajo, artículo 90",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-16"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes qué es el salario mínimo para la ley?",
+      "titulo": [
+        "¿QUÉ ES EL",
+        "SALARIO MÍNIMO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Es el pago menor en efectivo por tu jornada laboral.",
+      "titulo": [
+        "PAGO MÍNIMO",
+        "EN EFECTIVO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica que el «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 90",
+      "cita": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "La Ley Federal del Trabajo establece que debe cubrir:",
+      "items": [
+        "Necesidades materiales",
+        "Orden social y cultural",
+        "Educación de los hijos"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Sobre su aumento, su revisión anual nunca estará por debajo de la inflación observada.",
+      "encabezado": "Protección ante la inflación",
+      "detalle": "No será menor a la inflación",
+      "fuente_corta": "Ley, art. 90",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Asegura un nivel de vida digno para el trabajador y su familia.",
+      "titulo": [
+        "NIVEL DE VIDA",
+        "DIGNO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El valor del salario mínimo tiene una protección legal contra el aumento de precios.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué es el salario mínimo según la ley?",
+    "concepto_central": "salario mínimo",
+    "id_analisis": "L-LFT-90-SM",
+    "respuesta_corta": "Es la cantidad menor en efectivo que debe recibir un trabajador por su jornada, la cual debe cubrir las necesidades básicas de su familia y la educación.",
+    "reglas": [
+      {
+        "conclusion": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
+        "fuente": "F1",
+        "cita_literal": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo.",
+        "condiciones": [
+          "Debe pagarse en efectivo",
+          "Corresponde a los servicios prestados en una jornada de trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "90"
+        }
+      },
+      {
+        "conclusion": "El monto debe garantizar un nivel de vida digno para el trabajador y su familia.",
+        "fuente": "F1",
+        "cita_literal": "deberá ser suficiente para satisfacer las necesidades normales de una o un jefe de familia en el orden material, social y cultural, y para proveer a la educación obligatoria",
+        "condiciones": [
+          "Debe cubrir necesidades materiales, sociales y culturales",
+          "Debe proveer para la educación obligatoria de los hijos"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "90"
+        }
+      },
+      {
+        "conclusion": "El valor del salario mínimo tiene una protección legal contra el aumento de precios.",
+        "fuente": "F1",
+        "cita_literal": "La fijación anual de los salarios mínimos, o la revisión de los mismos, nunca estará por debajo de la inflación observada durante el periodo de su vigencia",
+        "condiciones": [
+          "Aplica para la fijación anual o revisiones"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "90"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Es la retribución mínima en efectivo que un empleado recibe por su jornada, diseñada para cubrir gastos familiares y educativos.",
+        "fuente": "F1",
+        "cita_literal": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El poder adquisitivo del salario mínimo cuenta con una garantía de mantenimiento frente al costo de vida.",
+        "condicion": "Cuando se realice la fijación anual o la revisión del salario.",
+        "base": "La fijación anual de los salarios mínimos... nunca estará por debajo de la inflación observada."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no establece el monto exacto en moneda nacional, no define qué autoridades lo fijan ni menciona las sanciones por incumplimiento."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-16T10:59:00+00:00",
+    "solicitud": "2027-01-30_reel_T155-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Qué es el salario mínimo según la ley?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "copy": "¿Qué es el salario mínimo según la ley?\n\nEs la cantidad menor en efectivo que debe recibir un trabajador por su jornada, la cual debe cubrir las necesidades básicas de su familia y la educación.\n\nFuente: Ley Federal del Trabajo, artículo 90.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 621 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 1: recorta al menos 61 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[vaguedad] Referencia vaga: «Este monto debe ser suficiente para cubrir estos rubros familiares:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ],
+        "visible": "  \n ¿Sabes qué es el salario mínimo para la ley? \n ¿QUÉ ES EL \n SALARIO MÍNIMO? \n Es el pago menor en efectivo por tu jornada para cubrir gastos familiares y educación. \n PAGO MÍNIMO \n EN EFECTIVO \n La ley indica que el «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo». \n Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo. \n Este monto debe ser suficiente para cubrir estos rubros familiares: \n Necesidades materiales \n Orden social y cultural \n Educación de los hijos \n Sobre su aumento, su revisión anual nunca "
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 621 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 1: recorta al menos 61 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[vaguedad] Referencia vaga: «Este monto debe ser suficiente para cubrir estos rubros familiares:». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
+              "sostenida": "si",
+              "motivo": "El artículo 90 de la Ley Federal del Trabajo define al salario mínimo como la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo."
+            },
+            {
+              "conclusion": "El monto debe garantizar un nivel de vida digno para el trabajador y su familia.",
+              "sostenida": "si",
+              "motivo": "El artículo 90 establece que el salario debe ser suficiente para satisfacer las necesidades normales en el orden material, social y cultural, y para proveer a la educación obligatoria de las y los hijos."
+            },
+            {
+              "conclusion": "El valor del salario mínimo tiene una protección legal contra el aumento de precios.",
+              "sostenida": "si",
+              "motivo": "El artículo 90 dispone que la fijación anual de los salarios mínimos, o la revisión de los mismos, nunca estará por debajo de la inflación observada durante el periodo de su vigencia."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

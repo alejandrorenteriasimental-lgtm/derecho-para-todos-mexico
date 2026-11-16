@@ -1,0 +1,63 @@
+{
+ "tema_id": "T155",
+ "pregunta": "¿Qué es el salario mínimo según la ley?",
+ "fecha": "2026-11-16T10:58:25+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué es el salario mínimo según la ley?",
+  "concepto_central": "salario mínimo",
+  "id_analisis": "L-LFT-90-SM",
+  "respuesta_corta": "Es la cantidad menor en efectivo que debe recibir un trabajador por su jornada, la cual debe cubrir las necesidades básicas de su familia y la educación.",
+  "reglas": [
+   {
+    "conclusion": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
+    "fuente": "F1",
+    "cita_literal": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo.",
+    "condiciones": [
+     "Debe pagarse en efectivo",
+     "Corresponde a los servicios prestados en una jornada de trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El monto debe garantizar un nivel de vida digno para el trabajador y su familia.",
+    "fuente": "F1",
+    "cita_literal": "deberá ser suficiente para satisfacer las necesidades normales de una o un jefe de familia en el orden material, social y cultural, y para proveer a la educación obligatoria",
+    "condiciones": [
+     "Debe cubrir necesidades materiales, sociales y culturales",
+     "Debe proveer para la educación obligatoria de los hijos"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El valor del salario mínimo tiene una protección legal contra el aumento de precios.",
+    "fuente": "F1",
+    "cita_literal": "La fijación anual de los salarios mínimos, o la revisión de los mismos, nunca estará por debajo de la inflación observada durante el periodo de su vigencia",
+    "condiciones": [
+     "Aplica para la fijación anual o revisiones"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "definicion",
+    "estado": "cubierto",
+    "respuesta": "Es la retribución mínima en efectivo que un empleado recibe por su jornada, diseñada para cubrir gastos familiares y educativos.",
+    "fuente": "F1",
+    "cita_literal": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El poder adquisitivo del salario mínimo cuenta con una garantía de mantenimiento frente al costo de vida.",
+    "condicion": "Cuando se realice la fijación anual o la revisión del salario.",
+    "base": "La fijación anual de los salarios mínimos... nunca estará por debajo de la inflación observada."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no establece el monto exacto en moneda nacional, no define qué autoridades lo fijan ni menciona las sanciones por incumplimiento.",
+  "fuentes_irrelevantes": []
+ }
+}

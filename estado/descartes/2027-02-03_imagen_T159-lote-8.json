@@ -1,0 +1,23 @@
+{
+ "solicitud": "2027-02-03_imagen_T159-lote-8.json",
+ "fecha": "2026-11-16T11:00:06+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] La cita de la conclusión «La reducción del salario por parte del patrón es una causa q» no está en Ley Federal del Trabajo, art. 51.\", \"[cobertura] El elemento «contenido» («La ley establece que reducir el salario es una causa para qu») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[sustento] La cita de la conclusión «La reducción del salario por parte del patrón permite al tra» no está en Ley Federal del Trabajo, art. 51.",
+    "[cobertura] El elemento «contenido» («El trabajador tiene derecho a rescindir su contrato sin resp») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[sustento] La cita de la conclusión «La reducción del salario por parte del patrón es una causa q» no está en Ley Federal del Trabajo, art. 51.",
+    "[cobertura] El elemento «contenido» («La ley establece que reducir el salario es una causa para qu») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  }
+ ]
+}

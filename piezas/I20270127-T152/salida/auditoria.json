@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1152 KB"
+      "detalle": "1157 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,7 +33,7 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "40 palabras sin cabecera ni pie"
+      "detalle": "42 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
@@ -96,14 +96,20 @@
     "titulo": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
     "plantilla": "mito_realidad",
     "archivo": "I20270127-T152.png",
-    "sha256": "8db42735eae21a160914ace4efd61aae11fa3f74f1f1998e6c321426698aee98",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000001110000000000111111001111111111111100111111111111110000000000011111000111111111111100011010010111110000000000001111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "149653c715522d9d87b536f6554044413b88cd751af3596e57f73c59f9137ca0",
+    "sha256": "617f0491c58b98c75795841af79f733c04d3c57c55fc146027d75aaebaa79092",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000001110000000000111111001111111111111100111111111111110000000000011111000111111111111100011111111111110000000000011111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "dcaf6bc2b034baa06b9781898b6b82ccac13215f2e51d5290340efbe65443282",
     "texto_alternativo": "Infografía tipo mito y realidad que responde si pueden vender un tiempo compartido sin contrato registrado según la ley.",
-    "copy": "La Ley Federal de Protección al Consumidor establece reglas claras para proteger a quienes adquieren servicios vacacionales. De acuerdo con el artículo 65, «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría».\n\nAdemás, el documento oficial debe especificar datos indispensables como el nombre y domicilio del proveedor, así como una determinación clara de los derechos de uso y goce de los bienes.\n\nGuarda y comparte esta información para tomar decisiones informadas.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "No. El artículo 65 de la Ley Federal de Protección al Consumidor dice: «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría» (la Procuraduría Federal del Consumidor, Profeco).\n\nAdemás, ese contrato debe especificar, entre otros datos, el «Nombre y domicilio del proveedor» y la «Determinación clara de los derechos de uso y goce de bienes que tendrán los compradores».\n\nLa Procuraduría «deberá publicar de forma permanente en su sitio de Internet la lista de los proveedores o prestadores intermediarios que hayan inscrito en el registro su contrato de adhesión».\n\nGuarda esta publicación y compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "65",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      },
+      {
+        "id": "F2",
         "documento": "Ley Federal de Protección al Consumidor",
         "articulo": "65",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
@@ -111,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-15T16:11:42+00:00",
+    "fecha": "2026-11-16T11:10:59+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

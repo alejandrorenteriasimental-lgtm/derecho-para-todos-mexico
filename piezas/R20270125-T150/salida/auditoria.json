@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.7 s"
+      "detalle": "42.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.7 s"
+      "detalle": "42.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "31 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "02fb00f3694d0606"
+      "detalle": "aec4f9a8b81605bb"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270125-T150",
     "titulo": "¿Te pueden pedir quedarte más tiempo por una emergencia laboral?",
-    "fecha": "2026-11-15T16:08:53+00:00",
-    "sha256": "02fb00f3694d06063fe4aa46fd640945e7db55b4e69c34e0ba70e2d5cfcac74f",
-    "duracion_s": 41.7,
+    "fecha": "2026-11-16T11:04:55+00:00",
+    "sha256": "aec4f9a8b81605bb895379e325ddfd34fa0c0408fd49e4cc73f1b78bea1316b2",
+    "duracion_s": 42.7,
     "estado": "APTO",
-    "huella_guion": "f03965ce215834eeed075d073292181237619f28e0a4e55e6e17f0cf946c2053",
+    "huella_guion": "29387eec44f06474713d9d204a1287c677709abd94da2f7fb67ea8d5f4ad1ab1",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 19.1,
-      "musica": 1.5,
-      "render_video": 33.8,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 6.6
+      "narracion": 20.6,
+      "musica": 1.9,
+      "render_video": 41.7,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 9.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.04,
-      "computo_equivalente_runner_usd": 0.0062,
+      "computo_minutos": 1.25,
+      "computo_equivalente_runner_usd": 0.0075,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1250,
-    "caracteres_narrados": 596
+    "frames": 1278,
+    "caracteres_narrados": 615
   }
 }

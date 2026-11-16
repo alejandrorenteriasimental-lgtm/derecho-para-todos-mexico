@@ -1,0 +1,54 @@
+{
+ "solicitud": "2027-02-04_imagen_T160-lote-8.json",
+ "fecha": "2026-11-16T11:01:52+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Sí. El m",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (74 palabras visibles; máximo 60; sobran 14, quita al menos 19): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Sí, el proveedor debe informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor. \n El monto debe incluir impuestos, comisiones y seguros."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "imagen: contenido demasiado largo (74 palabras visibles; máximo 60; sobran 14, quita al menos 19): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Sí, el monto total debe ser visible, sin importar si pagas al contado o a crédito. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor. \n Incluye impuestos, comisiones y seguros."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Sí. El monto debe ser visible, independientemente de si la operación es al contado o a crédito. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar \n Incluye impuestos y comisiones."
+  }
+ ]
+}

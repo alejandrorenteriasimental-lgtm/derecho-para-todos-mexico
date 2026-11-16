@@ -1,0 +1,43 @@
+{
+ "tema_id": "T160",
+ "pregunta": "¿Te deben informar el precio total antes de comprar?",
+ "fecha": "2026-11-16T11:00:56+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben informar el precio total antes de comprar?",
+  "concepto_central": "informar el monto total a pagar",
+  "respuesta_corta": "Sí, el proveedor debe informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor tiene la obligación de informar de forma notoria y visible el precio total a pagar por los productos o servicios ofrecidos.",
+    "fuente": "F1",
+    "cita_literal": "El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor.",
+    "condiciones": [
+     "Aplica a bienes, productos o servicios ofrecidos al consumidor, ya sea al contado o a crédito."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El proveedor debe informar el monto total a pagar incluyendo impuestos, comisiones, intereses, seguros y cualquier otro gasto adicional.",
+    "fuente": "F1",
+    "cita_literal": "Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional que se requiera cubrir"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.",
+    "fuente": "F1",
+    "cita_literal": "que se requiera cubrir con motivo de la adquisición o contratación respectiva, sea ésta al contado o a crédito."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala sanciones por incumplimiento, autoridades ante las cuales denunciar ni plazos específicos para presentar reclamaciones.",
+  "fuentes_irrelevantes": []
+ }
+}
