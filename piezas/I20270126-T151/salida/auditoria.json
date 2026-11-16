@@ -1,0 +1,132 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1185 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley de Amparo, a»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1109"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "59 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 42 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270126-T151",
+    "formato": "imagen",
+    "titulo": "¿Cuánto tiempo tienes para presentar un amparo?",
+    "plantilla": "dato",
+    "archivo": "I20270126-T151.png",
+    "sha256": "5b5dec88bb733c890880f33d38e4f6eb58204279e891ca1eb03f696892b813af",
+    "ahash": "1000011111111111111111111111111111111111111111111000000000011111100000000000001110000000011111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "36afc626ba0daf7b763fcdea3f9701ecf08711490dade71e5662a98d04351592",
+    "texto_alternativo": "Placa informativa gráfica sobre el tiempo para presentar una demanda de amparo en México conforme a la Ley de Amparo.",
+    "copy": "El plazo ordinario para solicitar la protección de la justicia federal está regulado en la Ley de Amparo.\n\nDe acuerdo con el artículo 17 de la Ley de Amparo, «El plazo para presentar la demanda de amparo es de quince días», salvo las excepciones contempladas en el propio ordenamiento, tales como normas autoaplicativas o extradición (30 días), sentencias condenatorias penales con prisión (hasta 8 años), derechos agrarios ejidales o comunales (7 años), o actos graves como desaparición forzada o peligro de privación de la vida, que permiten su presentación «en cualquier tiempo».\n\nPor su parte, el artículo 18 de la Ley de Amparo precisa cómo se realiza el cómputo: «se computarán a partir del día siguiente a aquél en que surta efectos, conforme a la ley del acto, la notificación a la persona quejosa del acto o resolución que reclame» o desde que se tuvo conocimiento de éste.\n\nGuarda esta información para tenerla a mano o compártela con quien necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley de Amparo",
+        "articulo": "17",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley de Amparo",
+        "articulo": "17",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf"
+      },
+      {
+        "id": "F3",
+        "documento": "Ley de Amparo",
+        "articulo": "18",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-16T17:32:53+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

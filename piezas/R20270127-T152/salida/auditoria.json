@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "43.4 s"
+      "detalle": "43.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "43.4 s"
+      "detalle": "43.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "34 bloques"
+      "detalle": "33 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "a3778b503d736a7f"
+      "detalle": "0c5a7f9bf4e4ce86"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,19 +118,19 @@
   "registro": {
     "id": "R20270127-T152",
     "titulo": "¿Pueden ponerle piezas usadas a tu producto al repararlo?",
-    "fecha": "2026-11-16T11:08:10+00:00",
-    "sha256": "a3778b503d736a7f27cf3490c32d5bbd878a3e40be34017ca353c3115d7daf19",
-    "duracion_s": 43.4,
+    "fecha": "2026-11-16T17:25:26+00:00",
+    "sha256": "0c5a7f9bf4e4ce865bf61fdb6952e5d2b48a5a1841a8ea07adc856799a650c86",
+    "duracion_s": 43.3,
     "estado": "APTO",
-    "huella_guion": "c4dabfca96c40e6a03366b71598a058c1b62710050f93d7ce6cfc7e551ec97ed",
+    "huella_guion": "41fb46be2f53eaa87666684ba0600752aa35b74b780d36f2644c230316adc713",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
       "narracion": 20.3,
-      "musica": 1.9,
-      "render_video": 41.9,
+      "musica": 2.0,
+      "render_video": 42.1,
       "mezcla_audio": 1.7,
-      "auditoria_tecnica": 9.0
+      "auditoria_tecnica": 8.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
@@ -138,7 +138,7 @@
       "computo_equivalente_runner_usd": 0.0075,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1299,
-    "caracteres_narrados": 618
+    "frames": 1297,
+    "caracteres_narrados": 615
   }
 }

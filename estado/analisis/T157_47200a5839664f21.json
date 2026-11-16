@@ -1,0 +1,64 @@
+{
+ "tema_id": "T157",
+ "pregunta": "¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste?",
+ "fecha": "2026-11-16T17:04:20+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste?",
+  "concepto_central": "devolución de la cantidad pagada",
+  "respuesta_corta": "Sí. Tienes derecho a elegir la devolución de la cantidad pagada si la cantidad entregada o el contenido neto es menor al indicado, entregando el producto.",
+  "reglas": [
+   {
+    "conclusion": "El consumidor tiene derecho a su elección a la devolución de la cantidad pagada o a la reposición cuando la cantidad entregada o contenido neto sea menor al indicado.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido",
+    "condiciones": [
+     "Que el contenido neto o la cantidad entregada sea menor a la indicada en el envase, recipiente o empaque",
+     "Contra la entrega del producto adquirido"
+    ],
+    "excepciones": [
+     "Considerando los límites de tolerancia permitidos por la normatividad"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El consumidor puede elegir entre la reposición del producto o la devolución de la cantidad pagada, y en todo caso, a recibir una bonificación.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando la cantidad entregada o el contenido neto sea menor a la indicada en el envase, recipiente o empaque, o se usen instrumentos de medición que no cumplan la norma.",
+    "fuente": "F1",
+    "cita_literal": "Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque o cuando se utilicen instrumentos de medición"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "Deben tomarse en cuenta los límites de tolerancia permitidos por la normatividad.",
+    "fuente": "F1",
+    "cita_literal": "considerados los límites de tolerancia permitidos por la normatividad;"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "devolución de dinero",
+    "b": "reposición",
+    "diferencia": "La devolución de dinero reintegra la cantidad pagada utilizando la misma forma de pago, mientras que la reposición sustituye el producto por otro."
+   },
+   {
+    "a": "devolución de dinero",
+    "b": "bonificación",
+    "diferencia": "La devolución es el reembolso del precio de la compra, mientras que la bonificación es una compensación económica adicional que corresponde en todo caso."
+   }
+  ],
+  "limites": "El texto disponible no establece plazos de prescripción para solicitar la devolución ni el trámite formal de queja ante autoridades.",
+  "fuentes_irrelevantes": []
+ }
+}

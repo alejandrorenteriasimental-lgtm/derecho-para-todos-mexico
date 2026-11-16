@@ -1,0 +1,267 @@
+{
+  "id": "R20270202-T158",
+  "formato": "reel",
+  "titulo": "¿Tienes derecho a pedir asilo en México?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T158",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "11",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 11",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "11",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 11",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "11",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La ley regulará sus procedencias y excepciones.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 11",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Tienes derecho a pedir asilo en México?",
+      "titulo": [
+        "ASILO EN",
+        "MÉXICO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, toda persona tiene derecho a buscar y recibir asilo en México.",
+      "titulo": [
+        "DERECHO A",
+        "PEDIR ASILO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Constitución establece: «Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.»",
+      "etiqueta": "Constitución Política, art. 11",
+      "cita": "Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Toda persona tiene derecho a buscar y recibir asilo en México conforme a los tratados internacionales.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Toma en cuenta que la ley regulará sus procedencias y excepciones.",
+      "encabezado": "Procedencias y excepciones",
+      "detalle": "Reguladas por la ley",
+      "fuente_corta": "Constitución, art. 11",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución reconoce el derecho a buscar y recibir asilo conforme a los tratados internacionales.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, este derecho se ejerce conforme a los tratados y la ley.",
+      "titulo": [
+        "DERECHO",
+        "REGULADO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La ley establece la regulación de procedencias y excepciones.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho a pedir asilo en México?",
+    "concepto_central": "derecho a buscar y recibir asilo",
+    "respuesta_corta": "Sí, toda persona tiene derecho a buscar y recibir asilo en México, de conformidad con los tratados internacionales y las leyes aplicables.",
+    "reglas": [
+      {
+        "conclusion": "Toda persona tiene derecho a buscar y recibir asilo en México.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+        "condiciones": [
+          "El reconocimiento y otorgamiento se realizarán de conformidad con los tratados internacionales."
+        ],
+        "excepciones": [
+          "La ley regulará las procedencias y excepciones correspondientes."
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "11"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma establece de forma clara que toda persona tiene derecho a buscar y recibir asilo en el territorio mexicano.",
+        "fuente": "F1",
+        "cita_literal": "Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+        "motivo": null
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El reconocimiento de la condición de refugiado y la entrega de asilo político se deben llevar a cabo conforme a lo estipulado en los tratados internacionales.",
+        "fuente": "F1",
+        "cita_literal": "El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.",
+        "motivo": null
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "Las causas de procedencia y las excepciones a este derecho son determinadas y reguladas directamente por la ley.",
+        "fuente": "F1",
+        "cita_literal": "El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales. La ley regulará sus procedencias y excepciones.",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto constitucional no detalla el procedimiento específico, los plazos ni los requisitos puntuales de la ley reglamentaria o tratados internacionales específicos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-16T17:14:27+00:00",
+    "solicitud": "2027-02-02_reel_T158-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho a pedir asilo en México?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Tienes derecho a pedir asilo en México?\n\nSí, toda persona tiene derecho a buscar y recibir asilo en México, de conformidad con los tratados internacionales y las leyes aplicables.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 11.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 672 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 52: recorta al menos 112 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+          "[condiciones] Generalización: «Así, toda persona puede buscar y recibir asilo en México conforme a los tratados.» se presenta sin la condición que impone Constitución Política de los Estados Unidos Mexicanos, art. 11 («…stara subordinado a las facultades de la autoridad judicial en los casos de responsabilidad criminal o civil y a las de la autoridad administrativa po…»).",
+          "[condiciones] Frase absoluta «Así, toda persona puede buscar y recibir asilo en México conforme a los tratados» sobre una regla condicionada de F1 («…stara subordinado a las facultades de la autoridad judicial en los casos de responsabilidad criminal o civil y a las de la autoridad administrativa po…»).",
+          "[coherencia] Escena 5: el encabezado visible «Límites legales» no corresponde a lo que se narra («Toma en cuenta que la ley regulará sus procedencias y excepciones.»)."
+        ],
+        "visible": "  \n ¿Tienes derecho a pedir asilo en México? \n ¿DERECHO A PEDIR \n ASILO EN MÉXICO? \n Sí, toda persona tiene derecho a buscar y recibir asilo en México conforme a tratados internacionales. \n DERECHO A \n BUSCAR ASILO \n La norma establece: «Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.» \n Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales. \n El refugio y el asilo político se otorgan conforme a trat"
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "narración de 671 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 51: recorta al menos 111 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Tienes derecho a pedir asilo en México? \n ASILO EN \n MÉXICO \n Sí, toda persona tiene derecho a buscar y recibir asilo en México, conforme a los tratados internacionales. \n DERECHO A \n PEDIR ASILO \n La Constitución establece: «Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales.» \n Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales. \n Toma en cuenta que la ley regulará sus procedencias y excepcione"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "narración de 671 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 51: recorta al menos 111 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Toda persona tiene derecho a buscar y recibir asilo en México.",
+              "sostenida": "si",
+              "motivo": "La cita literal del artículo 11 de la Constitución establece textualmente el derecho de toda persona a buscar y recibir asilo."
+            },
+            {
+              "conclusion": "El reconocimiento y otorgamiento se realizarán de conformidad con los tratados internacionales.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la condición establecida en el texto constitucional respecto al reconocimiento de la condición de refugiado y el asilo político."
+            },
+            {
+              "conclusion": "Las causas de procedencia y las excepciones a este derecho son determinadas y reguladas directamente por la ley.",
+              "sostenida": "si",
+              "motivo": "El texto oficial indica explícitamente que 'La ley regulará sus procedencias y excepciones'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

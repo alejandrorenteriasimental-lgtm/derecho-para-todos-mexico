@@ -1,0 +1,88 @@
+{
+ "solicitud": "2027-02-01_reel_T157-lote-8.json",
+ "fecha": "2026-11-16T17:10:16+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? \n ¿MENOS PRODUCTO? \n PIDE TU DINERO \n Sí, puedes elegir la devolución de la cantidad pagada si la cantidad entregada es menor. \n TIENES DERECHO \n A DEVOLUCIÓN \n La ley establece: Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido \n La devolución reembolsa el precio, la reposición sustituye el bien y la bonificación compensa. \n Devolución: reembolso"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 666 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 46: recorta al menos 106 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La regla sobre la forma de pago (debe ser la misma que la original, salvo acuerdo contrario), la cual es una condición operativa esencial para el consumidor.",
+      "La aclaración de que la bonificación es un derecho adicional al reembolso o reposición, no una alternativa a estos."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El consumidor tiene derecho a elegir la devolución si la cantidad entregada es menor.",
+      "sostenida": "si",
+      "motivo": "El artículo 92, fracción I, establece explícitamente este derecho cuando el contenido neto o cantidad entregada es menor a la indicada."
+     },
+     {
+      "conclusion": "Se establece el derecho a reposición o devolución de lo pagado contra entrega del producto.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 señala que los consumidores tienen derecho a la reposición o devolución contra la entrega del producto adquirido."
+     },
+     {
+      "conclusion": "La norma contempla la reposición, devolución y bonificación en los supuestos previstos.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 enumera estos tres derechos para los casos de incumplimiento."
+     },
+     {
+      "conclusion": "Deben tomarse en cuenta los límites de tolerancia normativos.",
+      "sostenida": "si",
+      "motivo": "El artículo 92, fracción I, condiciona el derecho a los límites de tolerancia permitidos por la normatividad."
+     },
+     {
+      "conclusion": "La devolución procede entregando el producto adquirido.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 condiciona el ejercicio de estos derechos a la entrega del producto adquirido."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 4 (Lista de derechos)",
+      "problema": "Se menciona la bonificación como un elemento separado, pero no se explica que es un derecho adicional que se suma a la elección de reembolso o reposición, lo que puede confundir al consumidor sobre su alcance.",
+      "correccion": "Aclarar que, además de elegir entre reposición o devolución, el consumidor tiene derecho a una bonificación en todo caso."
+     },
+     {
+      "donde": "Cuerpo del texto",
+      "problema": "Se omite la regla sobre la forma de pago (debe ser la misma que la original, salvo acuerdo contrario), la cual es una limitante operativa importante para el consumidor al solicitar su dinero.",
+      "correccion": "Incluir que la devolución de la cantidad pagada se efectuará utilizando la misma forma de pago con la que se realizó la compra, salvo que el consumidor acepte una distinta."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? \n ¿MENOS DE LO QUE \n PAGASTE? \n Sí. Tienes derecho a elegir la devolución si la cantidad entregada es menor a la indicada, entregando el producto. \n DERECHO A \n DEVOLUCIÓN \n Se establece que los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido. \n Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido \n Se devuelve en la misma forma de pago y aplica bonificación en todo caso. \n Misma forma de pago \n Bonifica"
+  }
+ ]
+}

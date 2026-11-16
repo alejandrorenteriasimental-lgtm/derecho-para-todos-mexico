@@ -1,0 +1,68 @@
+{
+ "tema_id": "T151",
+ "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+ "fecha": "2026-11-16T17:15:22+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
+  "concepto_central": "plazo para presentar la demanda de amparo",
+  "respuesta_corta": "El plazo general es de quince días, pero existen excepciones de treinta días, siete u ocho años, o en cualquier tiempo según el acto reclamado.",
+  "reglas": [
+   {
+    "conclusion": "La regla general para presentar la demanda de amparo es de quince días.",
+    "fuente": "F1",
+    "cita_literal": "El plazo para presentar la demanda de amparo es de quince días, salvo:",
+    "condiciones": [
+     "Aplica como regla general cuando no se actualice ninguna de las excepciones previstas en la norma."
+    ],
+    "excepciones": [
+     "Normas generales autoaplicativas o extradición (30 días).",
+     "Sentencia definitiva condenatoria penal con pena de prisión (hasta 8 años).",
+     "Privación o afectación de derechos agrarios a núcleos ejidales o comunales (7 años).",
+     "Actos de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, deportación, expulsión, proscripción, destierro, desaparición forzada, prohibidos por el artículo 22 constitucional e incorporación forzosa a las fuerzas armadas (en cualquier tiempo)."
+    ]
+   },
+   {
+    "conclusion": "En materia penal con pena de prisión sobre sentencia definitiva condenatoria, el plazo para interponer el amparo es de hasta ocho años.",
+    "fuente": "F1",
+    "cita_literal": "II. Cuando se reclame la sentencia definitiva condenatoria en un proceso penal, que imponga pena de prisión, podrá interponerse en un plazo de hasta ocho años;",
+    "condiciones": [
+     "Que el acto reclamado sea una sentencia definitiva condenatoria en un proceso penal que imponga pena de prisión."
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Los plazos se cuentan a partir del día siguiente a aquel en que surta efectos la notificación, se tenga conocimiento o la persona se ostente sabedora del acto.",
+    "fuente": "F2",
+    "cita_literal": "Los plazos a que se refiere el artículo anterior se computarán a partir del día siguiente a aquél en que surta efectos, conforme a la ley del acto, la notificación",
+    "condiciones": [
+     "Conforme a la ley que regule el acto reclamado."
+    ],
+    "excepciones": [
+     "Normas generales autoaplicativas, en cuyo caso el plazo se computa a partir del día de su entrada en vigor."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El plazo ordinario para presentar una demanda de amparo es de quince días, con plazos especiales de treinta días, siete u ocho años, o sin límite de tiempo según el acto reclamado.",
+    "fuente": "F1",
+    "cita_literal": "El plazo para presentar la demanda de amparo es de quince días, salvo:"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El cómputo inicia el día siguiente a aquel en que surta efectos la notificación o se tenga conocimiento del acto, salvo el caso de normas autoaplicativas que inicia con su entrada en vigor.",
+    "fuente": "F2",
+    "cita_literal": "Los plazos a que se refiere el artículo anterior se computarán a partir del día siguiente a aquél en que surta efectos, conforme a la ley del acto, la notificación"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "Los textos no especifican reglas de suspensión de plazos por días inhábiles ni señalan los requisitos de forma de la demanda de amparo.",
+  "fuentes_irrelevantes": []
+ }
+}

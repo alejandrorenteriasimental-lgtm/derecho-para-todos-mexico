@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.9 s"
+      "detalle": "42.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.9 s"
+      "detalle": "42.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "22a1f71233e77f4d"
+      "detalle": "38d204f785c80f27"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270130-T155",
     "titulo": "¿Qué es el salario mínimo según la ley?",
-    "fecha": "2026-11-16T11:10:33+00:00",
-    "sha256": "22a1f71233e77f4d3cae9f87892224a8b76ade5a86a782bb69962044579be460",
-    "duracion_s": 38.9,
+    "fecha": "2026-11-16T17:28:31+00:00",
+    "sha256": "38d204f785c80f27cac211d1902431123d0955c11e9965177e1c997a7cd579c8",
+    "duracion_s": 42.3,
     "estado": "APTO",
-    "huella_guion": "cf84656410fad6d48e5de1282f143a020d2d8cf2ddeb055712300cbd616efe53",
+    "huella_guion": "b0c6cbb269abbb0e90fd79aedf2cd00b43467c49a41d3569418d4d00c9015c6a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.1,
-      "musica": 1.7,
-      "render_video": 36.0,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.2
+      "narracion": 19.7,
+      "musica": 1.8,
+      "render_video": 39.3,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 8.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.09,
-      "computo_equivalente_runner_usd": 0.0065,
+      "computo_minutos": 1.19,
+      "computo_equivalente_runner_usd": 0.0071,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1164,
-    "caracteres_narrados": 547
+    "frames": 1267,
+    "caracteres_narrados": 603
   }
 }

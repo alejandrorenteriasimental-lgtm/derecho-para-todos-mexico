@@ -1,0 +1,249 @@
+{
+  "id": "R20270131-T156",
+  "formato": "reel",
+  "titulo": "¿Qué tipo de país es México según la Constitución?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T156",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "40",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "40",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Qué tipo de país es México según la Carta Magna?",
+      "titulo": [
+        "¿QUÉ PAÍS ES",
+        "MÉXICO SEGÚN LA",
+        "CONSTITUCIÓN?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "México se organiza como una República federal.",
+      "titulo": [
+        "REPÚBLICA",
+        "FEDERAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior.",
+      "etiqueta": "CPEUM, art. 40",
+      "cita": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esta federación comprende:",
+      "items": [
+        "Estados libres y soberanos",
+        "Ciudad de México",
+        "Régimen interior libre"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "México es una República representativa, democrática, laica y federal.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "La soberanía de cada estado se limita exclusivamente a su régimen interior.",
+      "encabezado": "Límite de soberanía estatal",
+      "detalle": "Solo aplica a su régimen interior",
+      "fuente_corta": "CPEUM, art. 40",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Así se establece el modelo de país en la Constitución.",
+      "titulo": [
+        "MÉXICO EN LA",
+        "CONSTITUCIÓN"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La soberanía de las entidades se restringe a su régimen interno.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué tipo de país es México según la Constitución?",
+    "concepto_central": "República representativa, democrática, laica y federal",
+    "respuesta_corta": "México es una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos y la Ciudad de México unidos en una federación.",
+    "reglas": [
+      {
+        "conclusion": "México se define como una república con cuatro características fundamentales y una estructura de federación.",
+        "fuente": "F1",
+        "cita_literal": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
+        "condiciones": [
+          "La soberanía de los estados se limita exclusivamente a su régimen interior"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "40"
+        }
+      },
+      {
+        "conclusion": "El país mantiene una postura de no aceptación ante cualquier acto extranjero que afecte su soberanía o integridad.",
+        "fuente": "F1",
+        "cita_literal": "El pueblo de México, bajo ninguna circunstancia, aceptará intervenciones, intromisiones o cualquier otro acto desde el extranjero, que sea lesivo de la integridad, independencia y soberanía de la Nación",
+        "condiciones": [
+          "Que los actos desde el extranjero sean lesivos de la integridad, independencia o soberanía"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "40"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Se define como una República representativa, democrática, laica y federal, integrada por entidades soberanas en su régimen interno y la Ciudad de México.",
+        "fuente": "F1",
+        "cita_literal": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La participación de agentes o autoridades extranjeras en tareas de justicia penal en territorio mexicano está condicionada.",
+        "condicion": "Requiere la autorización y colaboración expresa del Estado Mexicano y debe ajustarse a las leyes aplicables.",
+        "base": "Tampoco consentirá intervención en investigación y persecución alguna sin la autorización y colaboración expresa del Estado Mexicano, en el marco de las leyes aplicables."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "Soberanía de la Nación",
+        "b": "Soberanía de los Estados",
+        "diferencia": "La soberanía nacional es absoluta frente a intervenciones extranjeras, mientras que la de los estados se limita a su régimen interior."
+      }
+    ],
+    "limites": "El texto no define los conceptos de representatividad, democracia o laicidad, ni establece los mecanismos para la unión de la federación o el funcionamiento de la Ciudad de México."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-16T17:02:47+00:00",
+    "solicitud": "2027-01-31_reel_T156-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Qué tipo de país es México según la Constitución?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "copy": "¿Qué tipo de país es México según la Constitución?\n\nMéxico es una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos y la Ciudad de México unidos en una federación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 40.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Qué tipo de país es México según la Carta Magna? \n ¿QUÉ PAÍS ES \n MÉXICO SEGÚN LA \n CONSTITUCIÓN? \n México es una República representativa, democrática, laica y federal, unida en una federación. \n REPÚBLICA \n FEDERAL \n La Constitución señala que Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior. \n Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior \n Esta federación comprende: \n Estados libres y soberano"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 678 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 58: recorta al menos 118 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "México se define como una república con cuatro características fundamentales y una estructura de federación.",
+              "sostenida": "si",
+              "motivo": "El artículo 40 establece explícitamente la naturaleza de la República y su composición federal."
+            },
+            {
+              "conclusion": "La soberanía de cada estado se limita exclusivamente a su régimen interior.",
+              "sostenida": "si",
+              "motivo": "La cita textual delimita la soberanía de los estados a lo concerniente a su régimen interior, lo cual es consistente con la interpretación jurídica presentada."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

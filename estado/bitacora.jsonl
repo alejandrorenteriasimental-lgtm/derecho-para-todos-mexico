@@ -2182,3 +2182,39 @@
 {"ts": "2026-11-16T11:47:25+00:00", "pieza": "R20270130-T155", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 16-11): «nivel de vida digno»/«asegura» no está en el art. 90 LFT; lista sin narrar y sin «obligatoria»; fuente corta ambigua → corregido con citas literales; se vuelve a verificar y producir"}
 {"ts": "2026-11-16T11:47:25+00:00", "pieza": "R20270127-T152", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 16-11): lista sin narrar ni «en su caso»; detalle «clara y directa» ajeno al art. 60 LFPC; fuente corta ambigua → corregido; se vuelve a verificar y producir"}
 {"ts": "2026-11-16T11:47:25+00:00", "pieza": "R20270125-T150", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 16-11): elemento del art. 67 bajo la fuente del art. 65 → sustituido por elemento del art. 65; se vuelve a verificar y producir"}
+{"ts": "2026-11-16T16:58:29+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-16T17:02:47+00:00", "evento": "redactada", "pieza": "R20270131-T156", "solicitud": "2027-01-31_reel_T156-lote-8.json"}
+{"ts": "2026-11-16T17:10:16+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-01_reel_T157-lote-8.json", "categoria": "redaccion", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando f"}
+{"ts": "2026-11-16T17:14:27+00:00", "evento": "redactada", "pieza": "R20270202-T158", "solicitud": "2027-02-02_reel_T158-lote-8.json"}
+{"ts": "2026-11-16T17:17:09+00:00", "evento": "redactada", "pieza": "I20270126-T151", "solicitud": "2027-01-26_imagen_T151-lote-8.json"}
+{"ts": "2026-11-16T17:20:50+00:00", "evento": "redactada", "pieza": "I20270203-T159", "solicitud": "2027-02-03_imagen_T159-lote-8.json"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "I20270127-T152", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-16T11:45:26+00:00 versión 06b300a4cd3bd7c5 (delegada)"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "R20270128-T153", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-16T11:45:26+00:00 versión d3f8b520a9af9db6 (delegada)"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "I20270126-T151", "evento": "encolado"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "I20270203-T159", "evento": "encolado"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "R20270131-T156", "evento": "encolado"}
+{"ts": "2026-11-16T17:20:50+00:00", "pieza": "R20270202-T158", "evento": "encolado"}
+{"ts": "2026-11-16T17:23:50+00:00", "pieza": "R20270125-T150", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.7"}
+{"ts": "2026-11-16T17:23:54+00:00", "pieza": "R20270125-T150", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:23:54+00:00", "evento": "revision_preparada", "pieza": "R20270125-T150", "version": "8bfb0cde969fa8e4", "canal": "chat"}
+{"ts": "2026-11-16T17:25:26+00:00", "pieza": "R20270127-T152", "evento": "transicion", "a": "PRODUCIDO", "motivo": "43.3"}
+{"ts": "2026-11-16T17:25:31+00:00", "pieza": "R20270127-T152", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:25:31+00:00", "evento": "revision_preparada", "pieza": "R20270127-T152", "version": "a58e67b379edbeaf", "canal": "chat"}
+{"ts": "2026-11-16T17:28:31+00:00", "pieza": "R20270130-T155", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.3"}
+{"ts": "2026-11-16T17:28:35+00:00", "pieza": "R20270130-T155", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:28:35+00:00", "evento": "revision_preparada", "pieza": "R20270130-T155", "version": "21cffaaad3f61c46", "canal": "chat"}
+{"ts": "2026-11-16T17:30:42+00:00", "pieza": "R20270131-T156", "evento": "transicion", "a": "PRODUCIDO", "motivo": "39.0"}
+{"ts": "2026-11-16T17:30:46+00:00", "pieza": "R20270131-T156", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: Regla: Sin personas reales identificables"}
+{"ts": "2026-11-16T17:30:46+00:00", "evento": "alerta", "mensaje": "R20270131-T156 retenido: RETENIDO"}
+{"ts": "2026-11-16T17:32:17+00:00", "pieza": "I20270202-T158", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-16T17:32:21+00:00", "pieza": "I20270202-T158", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:32:21+00:00", "evento": "revision_preparada", "pieza": "I20270202-T158", "version": "f3f7953966c24d80", "canal": "chat"}
+{"ts": "2026-11-16T17:32:53+00:00", "pieza": "I20270126-T151", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-16T17:32:56+00:00", "pieza": "I20270126-T151", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:32:56+00:00", "evento": "revision_preparada", "pieza": "I20270126-T151", "version": "e34a49312020a8d1", "canal": "chat"}
+{"ts": "2026-11-16T17:34:12+00:00", "pieza": "I20270203-T159", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-16T17:34:16+00:00", "pieza": "I20270203-T159", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-16T17:34:16+00:00", "evento": "revision_preparada", "pieza": "I20270203-T159", "version": "108c9d04d5150682", "canal": "chat"}
+{"ts": "2026-11-16T17:34:16+00:00", "pieza": "I20270129-T154", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-16T17:34:16+00:00", "pieza": "I20270130-T155", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-16T17:34:16+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 1, "producidas": 7, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 6}

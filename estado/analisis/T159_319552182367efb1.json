@@ -1,0 +1,60 @@
+{
+ "tema_id": "T159",
+ "pregunta": "¿Puedes dejar tu trabajo por causa del patrón si te reduce el salario?",
+ "fecha": "2026-11-16T17:19:01+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Puedes dejar tu trabajo por causa del patrón si te reduce el salario?",
+  "concepto_central": "rescisión de la relación de trabajo por parte de la persona trabajadora",
+  "respuesta_corta": "Sí, reducir el salario del trabajador es causa de rescisión de la relación de trabajo sin responsabilidad para la persona trabajadora.",
+  "reglas": [
+   {
+    "conclusion": "La reducción del salario por parte del patrón es una causa para que la persona trabajadora rescinda la relación de trabajo sin su responsabilidad.",
+    "fuente": "F1",
+    "cita_literal": "Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:",
+    "condiciones": [
+     "Que el patrón reduzca el salario de la persona trabajadora."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La ley establece que la reducción del salario por parte del patrón es causa de rescisión sin responsabilidad para el trabajador.",
+    "fuente": "F1",
+    "cita_literal": "Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La regla aplica cuando el patrón disminuye el salario pactado de la persona trabajadora.",
+    "fuente": "F1",
+    "cita_literal": "Reducir el patrón el salario del trabajador; V. No recibir el salario correspondiente"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "motivo": "El artículo 51, fracción IV de la Ley Federal del Trabajo no establece excepciones expresas a esta causa de rescisión."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "Al actualizarse la reducción del salario, la persona trabajadora está facultada para terminar la relación laboral sin asumir responsabilidad procesal por dicha separación.",
+    "condicion": "Cuando el patrón reduzca efectivamente el salario pactado.",
+    "base": "Artículo 51, fracción IV de la Ley Federal del Trabajo."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "rescisión por causa del trabajador",
+    "b": "renuncia",
+    "diferencia": "La rescisión imputable al patrón es la terminación justificada por incumplimiento patronal sin responsabilidad para el trabajador, mientras que la renuncia es la separación libremente decidida por el trabajador."
+   }
+  ],
+  "limites": "El texto del artículo 51 no señala el plazo para hacer valer la rescisión, las indemnizaciones a las que se tenga derecho ni ante qué autoridad tramitarla.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1125 KB"
+      "detalle": "1129 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -33,12 +33,12 @@
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "29 palabras sin cabecera ni pie"
+      "detalle": "30 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 31 palabras reconocidas"
+      "detalle": "100% de 32 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,9 +96,9 @@
     "titulo": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
     "plantilla": "mito_realidad",
     "archivo": "I20270202-T158.png",
-    "sha256": "584f108ef59658ba9225253b042eb80f06a460dea3bdf71317ab864ebb18daa5",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000001111110000000000111111001111111111111100111111111111110001111111111111000111111111111100000000000111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "ab711ac56d2d50ddd4fa642da6ceabd035cd5e5e598a7be5214fbd86b74d9acb",
+    "sha256": "552a0311923df157912f788de567e2628ddba3aabacde28e0387cea27e3093b8",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000001111110000000000111111001111111111111100111111111111110000000000111111000111111111111100000000000111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "a3439c73a5ec91c21e5c5c7d87bf5cf7ac6159070b752bc1f2184fa5c1f4ee5a",
     "texto_alternativo": "Imagen fija con la pregunta sobre si te pueden quitar la nacionalidad si naciste mexicano, desmintiendo el mito y explicando la realidad jurídica según la Constitución.",
     "copy": "No, si eres mexicano por nacimiento. El artículo 37 de la Constitución dice: «Ningún mexicano por nacimiento podrá ser privado de su nacionalidad».\n\nOjo: la regla es distinta para la nacionalidad por naturalización, que «se perderá», entre otros casos, «Por adquisición voluntaria de una nacionalidad extranjera» o «Por residir durante cinco años continuos en el extranjero».\n\nY la ciudadanía, que no es lo mismo que la nacionalidad, sí puede perderse en los casos del apartado C del mismo artículo.\n\nGuarda esta publicación y compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
@@ -123,7 +123,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-16T11:12:36+00:00",
+    "fecha": "2026-11-16T17:32:17+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
