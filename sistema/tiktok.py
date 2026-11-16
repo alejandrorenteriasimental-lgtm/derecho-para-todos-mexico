@@ -164,7 +164,8 @@ def ejecutar(fecha=None, env=os.environ, http=publicar.http_real, bajar=publicad
     if p: return {**res, "pausa": p}
     dia = next((d for d in json.loads(publicador.CAL.read_text())["dias"] if d["fecha"] == fecha), None)
     if not dia: return {**res, "estado": "SIN_REEL_EN_CALENDARIO"}
-    if env.get("PUBLICAR_DESDE") and fecha < env["PUBLICAR_DESDE"]: return {**res, "estado": "SIN_AUTORIZACION_DE_PUBLICACION"}  # 6-11: el adelanto no incluye TikTok
+    desde = publicador.desde_efectivo(env, json.loads(publicador.CAL.read_text()))   # 16-11: el responsable incluyó TikTok en el adelanto
+    if desde and fecha < desde: return {**res, "estado": "SIN_AUTORIZACION_DE_PUBLICACION"}
     if env.get("PUBLICAR_HASTA") and fecha > env["PUBLICAR_HASTA"]: return {**res, "estado": "SIN_AUTORIZACION_DE_PUBLICACION"}
     if "reel" not in dia: return {**res, "estado": "SIN_REEL_EN_CALENDARIO"}
     e = dia["reel"]; res.update(pieza=e["pieza"], version=e["version"])
