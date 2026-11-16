@@ -28,6 +28,17 @@
       "cita": "Ley Federal del Trabajo, artículo 90",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-16"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "90",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El salario mínimo deberá ser suficiente para satisfacer las necesidades normales de una o un jefe de familia en el orden material, social y cultural, y para proveer a la educación obligatoria de las y los hijos.",
+      "cita": "Ley Federal del Trabajo, artículo 90",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-16"
     }
   },
   "escenas": [
@@ -51,44 +62,35 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley indica que el «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo».",
+      "texto": "La ley: «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo».",
       "etiqueta": "Ley Federal del Trabajo, artículo 90",
       "cita": "Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo.",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "La Ley Federal del Trabajo establece que debe cubrir:",
+      "texto": "Y debe alcanzar para necesidades materiales, sociales y culturales de un jefe de familia, y la educación obligatoria de los hijos.",
       "items": [
         "Necesidades materiales",
-        "Orden social y cultural",
-        "Educación de los hijos"
+        "Sociales y culturales",
+        "Educación obligatoria de hijos"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
-          "fuente": "F1"
+          "texto": "El salario mínimo deberá ser suficiente para las necesidades normales de un jefe de familia en el orden material, social y cultural, y para la educación obligatoria de los hijos.",
+          "fuente": "F3"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Sobre su aumento, su revisión anual nunca estará por debajo de la inflación observada.",
+      "texto": "Y su fijación anual o su revisión nunca estará por debajo de la inflación observada.",
       "encabezado": "Protección ante la inflación",
-      "detalle": "No será menor a la inflación",
-      "fuente_corta": "Ley, art. 90",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Asegura un nivel de vida digno para el trabajador y su familia.",
-      "titulo": [
-        "NIVEL DE VIDA",
-        "DIGNO"
-      ],
+      "detalle": "Nunca por debajo de la inflación",
+      "fuente_corta": "LFT, art. 90",
       "afirmaciones": [
         {
           "id": "A2",
@@ -97,6 +99,15 @@
           "fuente": "F2"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Es lo menos que debes recibir en efectivo por tu jornada.",
+      "titulo": [
+        "LO MENOS QUE",
+        "DEBES RECIBIR"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -110,7 +121,7 @@
     "pregunta": "¿Qué es el salario mínimo según la ley?",
     "concepto_central": "salario mínimo",
     "id_analisis": "L-LFT-90-SM",
-    "respuesta_corta": "Es la cantidad menor en efectivo que debe recibir un trabajador por su jornada, la cual debe cubrir las necesidades básicas de su familia y la educación.",
+    "respuesta_corta": "Es la cantidad menor que debe recibir en efectivo la persona trabajadora por una jornada; debe ser suficiente para las necesidades normales de un jefe de familia y la educación obligatoria de los hijos.",
     "reglas": [
       {
         "conclusion": "El salario mínimo es el pago base obligatorio en efectivo por una jornada laboral.",
@@ -203,7 +214,7 @@
   "pregunta_original": "¿Qué es el salario mínimo según la ley?",
   "tipo_pregunta": "definicion",
   "revision_razonamiento": [],
-  "copy": "¿Qué es el salario mínimo según la ley?\n\nEs la cantidad menor en efectivo que debe recibir un trabajador por su jornada, la cual debe cubrir las necesidades básicas de su familia y la educación.\n\nFuente: Ley Federal del Trabajo, artículo 90.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué es el salario mínimo según la ley?\n\nEl artículo 90 de la Ley Federal del Trabajo dice: «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo».\n\nAdemás, «deberá ser suficiente para satisfacer las necesidades normales de una o un jefe de familia en el orden material, social y cultural, y para proveer a la educación obligatoria de las y los hijos».\n\nY su fijación anual o su revisión «nunca estará por debajo de la inflación observada durante el periodo de su vigencia transcurrido».\n\nFuente: Ley Federal del Trabajo, artículo 90.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -261,5 +272,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 6 «NIVEL DE VIDA DIGNO / Asegura un nivel de vida digno» no está en el art. 90 y promete un resultado (la ley dice «deberá ser suficiente») → resumen fiel: «LO MENOS QUE DEBES RECIBIR». Escena 4: la narración terminaba en «debe cubrir:» sin decir los elementos y «Educación de los hijos» omitía «obligatoria» → narrados y precisados (ficha F3, cita literal). Escena 5: «fuente_corta» «Ley, art. 90» ambiguo → «LFT, art. 90»; la afirmación de la inflación pasa a esa escena. Copy («necesidades básicas», «la educación») → citas literales del art. 90."
+    }
+  ]
 }

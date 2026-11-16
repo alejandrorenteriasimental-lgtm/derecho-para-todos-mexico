@@ -14,14 +14,22 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "¿Te deben informar el precio total antes de comprar?",
-  "estado": "DESCARTADA",
+  "angulo": "Plantilla dato. Solo LFPC art. 7 Bis. Respuesta corta (empieza con «Sí»): sí, el proveedor debe informar de forma notoria y visible el monto total a pagar, sea al contado o a crédito. Cita destacada literal: «El proveedor deberá informar de forma notoria y visible el monto total a pagar». OJO (frase completa, máximo 18 palabras): incluye impuestos, comisiones, intereses, seguros y cualquier otro costo, al contado o a crédito. La condición «sea ésta al contado o a crédito» debe quedar visible. Contenido visible de 50 palabras o menos.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270204-T160",
   "archivo": "2027-02-04_imagen_T160-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Sí. El m",
   "ultima_categoria": "juridico",
-  "huella_entrada": "e205935385d40f4d"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude",
+      "motivo": "primer descarte de la pregunta vigente (redacción): la condición «al contado o a crédito» estaba en el análisis pero no en lo visible. Causa de redacción; se reabre pidiéndola visible.",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Sí. El m"
+    }
+  ]
 }
