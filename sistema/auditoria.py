@@ -17,7 +17,18 @@ def _run(cmd):
 
 
 # ---------------- TÉCNICA ----------------
-def tecnica(mp4: Path, srt: Path, registro_hashes: set):
+DURACION_REEL = (20, 45)          # Reels de Facebook, Instagram (límite por API comprobado el 2-11-2026) y YouTube Shorts
+DURACION_TIKTOK = (60, 75)        # versión larga solo para TikTok (16-11-2026): más de 60 s y hasta 75 s
+
+
+def control_duracion(dur, variante=None):
+    """(nombre, cumple) del control de duración según la variante. La del Reel normal no cambia."""
+    if variante == "tiktok":
+        return "Duración de más de 60 s y hasta 75 s (versión larga solo para TikTok)", DURACION_TIKTOK[0] < dur <= DURACION_TIKTOK[1]
+    return "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)", DURACION_REEL[0] <= dur <= DURACION_REEL[1]
+
+
+def tecnica(mp4: Path, srt: Path, registro_hashes: set, variante=None):
     res = []
     def ok(nombre, cond, detalle=""):
         res.append({"control": nombre, "resultado": "APROBADO" if cond else "FALLA", "detalle": detalle})
@@ -30,7 +41,7 @@ def tecnica(mp4: Path, srt: Path, registro_hashes: set):
     ok("Códec H.264, yuv420p", v["codec_name"] == "h264" and v["pix_fmt"] == "yuv420p", f'{v["codec_name"]}, {v["pix_fmt"]}')
     fr = eval(v["r_frame_rate"])
     ok("30 cuadros por segundo", abs(fr - 30) < 0.01, f"{fr:.2f} fps")
-    ok("Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)", 20 <= dur <= 45, f"{dur:.1f} s")
+    ok(*control_duracion(dur, variante), f"{dur:.1f} s")
     ok("Duración mayor a 60 s (requisito de TikTok Recompensas)", dur > 60, f"{dur:.1f} s")
     ok("Pista de audio AAC 48 kHz estéreo", bool(au) and au[0]["codec_name"] == "aac" and au[0]["sample_rate"] == "48000" and au[0]["channels"] == 2,
        f'{au[0]["codec_name"]}, {au[0]["sample_rate"]} Hz, {au[0]["channels"]} canales' if au else "sin audio")

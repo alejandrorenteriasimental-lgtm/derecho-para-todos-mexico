@@ -57,7 +57,7 @@ def producir(carpeta: Path, verificacion=None):
     if REGISTRO.exists():
         previos = {json.loads(l)["sha256"] for l in REGISTRO.read_text().splitlines() if l.strip() and json.loads(l)["id"] != guion["id"]}
     with etapa("auditoria_tecnica", tiempos):
-        tec, sha, dur = auditoria.tecnica(final, srt_final, previos)
+        tec, sha, dur = auditoria.tecnica(final, srt_final, previos, variante=guion.get("variante"))
         tec.append(auditoria.sincronia(out))
         tec.append(auditoria.subtitulos_sin_solape(info.get("solapes_subtitulos")))
     seg_total = sum(tiempos.values())
@@ -67,7 +67,8 @@ def producir(carpeta: Path, verificacion=None):
         "computo_equivalente_runner_usd": round(seg_total / 60 * COSTO_MIN_RUNNER, 4),
         "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente).",
     }
-    tec_ok = all(r["resultado"] == "APROBADO" for r in tec if "TikTok" not in r["control"])
+    # El control «más de 60 s (TikTok)» es informativo en el Reel normal; en la versión larga de TikTok es obligatorio.
+    tec_ok = all(r["resultado"] == "APROBADO" for r in tec if guion.get("variante") == "tiktok" or "TikTok" not in r["control"])
     estado = jur["decision"] if tec_ok else "RETENIDO"
     if not tec_ok: jur = {**jur, "motivos": jur["motivos"] + ["falla técnica"], "tipo_retencion": "sustantivo"}
     reg = {"id": guion["id"], "titulo": guion["titulo"], "fecha": datetime.now(timezone.utc).isoformat(timespec="seconds"), "sha256": sha,

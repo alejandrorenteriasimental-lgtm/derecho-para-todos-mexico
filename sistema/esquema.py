@@ -3,6 +3,11 @@ Un guion incompleto nunca llega a producirse: queda RETENIDO con la lista exacta
 import re
 
 MAX_NARRACION = 620   # ≈ 14.5 caracteres/s con pausas → ≤ 43 s (Reels de Instagram por API: ≤ 45 s, comprobado el 2-11-2026)
+# Versión larga SOLO para TikTok (decisión del responsable, 16-11-2026: el programa de Recompensas exige más de 1 minuto).
+# Medido en los Reels producidos (14.4–15.7 caracteres/s + 2.4 s de cierre): 930–1040 caracteres ≈ 61–74 s.
+# No cambia los límites del Reel normal (MAX_NARRACION) que va a Facebook, Instagram y YouTube.
+VARIANTE_TIKTOK = "tiktok"
+MIN_NARRACION_TIKTOK, MAX_NARRACION_TIKTOK = 930, 1040
 TIPOS_ESCENA = {"gancho": ["titulo"], "titular": ["titulo"], "cita": ["cita", "etiqueta"], "lista": ["items"],
                 "excepcion": ["numero", "encabezado", "detalle", "fuente_corta"], "cierre": ["aviso"]}
 CAMPOS_FUENTE = ["url", "nivel", "documento", "articulo"]
@@ -79,7 +84,12 @@ def validar(g):
         if len(e.get("encabezado", "")) > 44: err.append(f"escena {i}: encabezado demasiado largo")
         if len(e.get("detalle", "")) > 38: err.append(f"escena {i}: detalle demasiado largo")
         if e.get("tipo") == "cita" and len(e.get("cita", "")) > 220: err.append(f"escena {i}: cita demasiado larga para pantalla")
-    if esc and not (300 <= total <= MAX_NARRACION):
+    if g.get("variante") == VARIANTE_TIKTOK:
+        if esc and not (MIN_NARRACION_TIKTOK <= total <= MAX_NARRACION_TIKTOK):
+            ajuste = (f"; sobran {total - MAX_NARRACION_TIKTOK}: recorta frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+                      if total > MAX_NARRACION_TIKTOK else f"; faltan {MIN_NARRACION_TIKTOK - total}: amplía el ejemplo o la condición adicional, sin agregar nada que no esté en el texto oficial")
+            err.append(f"narración de {total} caracteres (rango {MIN_NARRACION_TIKTOK}–{MAX_NARRACION_TIKTOK}, ≈61–74 s; la versión larga de TikTok debe durar de 60 a 75 s){ajuste}")
+    elif esc and not (300 <= total <= MAX_NARRACION):
         # 4-11-2026: el redactor «corregía» 710 o 750 caracteres sin recortar lo suficiente; el mensaje dice cuánto quitar
         ajuste = (f"; sobran {total - MAX_NARRACION}: recorta al menos {total - MAX_NARRACION + 60} caracteres (meta ≤ {MAX_NARRACION - 60}) "
                   "quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción") if total > MAX_NARRACION else ""
