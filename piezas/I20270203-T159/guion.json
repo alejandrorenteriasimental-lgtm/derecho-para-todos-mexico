@@ -9,12 +9,12 @@
   "pieza": {
     "titular": "¿Puedes dejar tu trabajo si te reducen el salario?",
     "bajada": "Sí: si el patrón reduce tu salario, es causa para rescindir la relación de trabajo sin responsabilidad para ti.",
-    "cita": "Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:",
-    "etiqueta_cita": "Ley Federal del Trabajo, artículo 51",
-    "ojo": "Aplica cuando el patrón disminuye el salario pactado.",
-    "fuente_visible": "Ley Federal del Trabajo, art. 51"
+    "cita": "Reducir el patrón el salario del trabajador",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 51, fracción IV",
+    "ojo": "Puedes separarte dentro de los 30 días siguientes a la reducción (art. 52).",
+    "fuente_visible": "Ley Federal del Trabajo, arts. 51 y 52"
   },
-  "copy": "El artículo 51 de la Ley Federal del Trabajo establece los supuestos en los que la persona trabajadora puede dar por terminada la relación laboral sin asumir responsabilidad legal.\n\nEspecíficamente, la norma señala como causa justificada: «IV. Reducir el patrón el salario del trabajador;», lo que permite dar por concluida la relación laboral por incumplimiento del patrón.\n\nA diferencia de una renuncia (que es la separación decidida libremente por el trabajador), la rescisión por causa imputable al patrón deriva de una alteración injustificada en las condiciones de trabajo pactadas.\n\nGuarda este dato normativo o compártelo con quien pueda necesitarlo.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí. El artículo 51 de la Ley Federal del Trabajo dice: «Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:», y entre ellas está la fracción «IV. Reducir el patrón el salario del trabajador;».\n\nOjo con el plazo. El artículo 52 dice: «El trabajador podrá separarse de su trabajo dentro de los treinta días siguientes a la fecha en que se dé cualquiera de las causas mencionadas en el artículo anterior y tendrá derecho a que el patrón lo indemnice en los términos del artículo 50».\n\nEsto es información general, no es asesoría legal.",
   "alt": "Infografía sobre la rescisión laboral sin responsabilidad para la persona trabajadora ante la reducción de salario por parte del patrón, según la Ley Federal del Trabajo.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -39,6 +39,17 @@
       "cita": "Ley Federal del Trabajo, artículo 51",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-16"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "52",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El trabajador podrá separarse de su trabajo dentro de los treinta días siguientes a la fecha en que se dé cualquiera de las causas mencionadas en el artículo anterior y tendrá derecho a que el patrón lo indemnice en los términos del artículo 50.",
+      "cita": "Ley Federal del Trabajo, artículo 52",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-16"
     }
   },
   "afirmaciones": [
@@ -53,6 +64,12 @@
       "tipo": "hecho_normativo",
       "texto": "El artículo 51 contempla la disminución salarial como una de las causas que facultan a rescindir la relación de trabajo.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "La persona trabajadora puede separarse dentro de los treinta días siguientes a la fecha en que se dé la causa y tiene derecho a ser indemnizada en los términos del artículo 50.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
@@ -66,12 +83,24 @@
         "fuente": "F1",
         "cita_literal": "Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:",
         "condiciones": [
-          "Que el patrón reduzca el salario de la persona trabajadora."
+          "Que el patrón reduzca el salario de la persona trabajadora.",
+          "Que se separe dentro de los treinta días siguientes a la fecha en que se dé la causa (art. 52)."
         ],
         "excepciones": [],
         "ref": {
           "documento": "Ley Federal del Trabajo",
           "articulo": "51"
+        }
+      },
+      {
+        "conclusion": "La persona trabajadora puede separarse dentro de los treinta días siguientes a la fecha en que se dé la causa, con derecho a indemnización en los términos del artículo 50.",
+        "fuente": "F3",
+        "cita_literal": "podrá separarse de su trabajo dentro de los treinta días siguientes a la fecha en que se dé cualquiera de las causas mencionadas en el artículo anterior",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "52"
         }
       }
     ],
@@ -177,5 +206,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Recuadro de cita: solo mostraba el encabezado del art. 51, sin la causa → fracción IV literal («Reducir el patrón el salario del trabajador»). OJO: «salario pactado» no está en el artículo y faltaba la condición esencial del plazo → art. 52 (separarse dentro de los 30 días siguientes), con texto oficial traído el 16-11 (registro/textos/LFT_52.json), fuente F3, afirmación A3 y regla. Copy: «alteración injustificada en las condiciones pactadas» no está en la ley → copy con citas literales de los arts. 51 y 52."
+    }
+  ]
 }

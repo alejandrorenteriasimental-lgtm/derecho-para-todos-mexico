@@ -44,7 +44,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te pueden pedir quedarte más tiempo por una emergencia laboral?",
+      "texto": "¿Te pueden pedir quedarte más tiempo por una emergencia?",
       "titulo": [
         "¿TE QUEDAS MÁS",
         "TIEMPO POR UNA",
@@ -54,10 +54,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, si un siniestro o riesgo inminente pone en peligro vidas o la existencia misma de la empresa.",
+      "texto": "Sí, si por un siniestro o riesgo inminente peligra tu vida, la de tus compañeros o la del patrón, o la existencia misma de la empresa.",
       "titulo": [
-        "SÍ, SI HAY",
-        "RIESGO INMINENTE"
+        "SÍ, ANTE SINIESTRO",
+        "O RIESGO INMINENTE"
       ],
       "afirmaciones": []
     },
@@ -88,7 +88,7 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Dichas horas se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada.",
+      "texto": "Esas horas se pagan igual que cada hora de la jornada.",
       "encabezado": "Pago igual a la jornada ordinaria",
       "detalle": "Misma cantidad por cada hora",
       "fuente_corta": "Ley Federal del Trabajo, art. 67",
@@ -103,10 +103,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "En resumen: solo ante siniestro o riesgo inminente, y por el tiempo indispensable.",
+      "texto": "En resumen: solo ante siniestro o riesgo inminente.",
       "titulo": [
-        "SÓLO EN CASO DE",
-        "RIESGO INMINENTE"
+        "SOLO ANTE SINIESTRO",
+        "O RIESGO INMINENTE"
       ],
       "afirmaciones": []
     },
@@ -249,6 +249,11 @@
       "fecha": "2026-11-16",
       "por": "Claude (revisión editorial delegada)",
       "que": "Escena 4: el elemento «Pago igual por hora» (art. 67) aparecía bajo «Fuente: LFT, artículo 65» y antes de narrarse → sustituido por «Para evitar esos males» (art. 65); el pago queda solo en la escena 5, con su fuente (art. 67)."
+    },
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena 6: el título final «SÓLO EN CASO DE RIESGO INMINENTE» omitía el siniestro, que el art. 65 también prevé (lo visible contradecía lo narrado) → «SOLO ANTE SINIESTRO O RIESGO INMINENTE». Escena 2: «pone en peligro vidas» generalizaba; el art. 65 dice «peligre la vida del trabajador, de sus compañeros o del patrón» → narrado con esos términos; título «SÍ, ANTE SINIESTRO O RIESGO INMINENTE». Narración acortada para quedar en el rango del Reel (≤ 620 caracteres): gancho sin «laboral», pago del art. 67 narrado como «Esas horas se pagan igual que cada hora de la jornada» (en pantalla sigue la fuente del art. 67) y resumen final igual al título."
     }
   ]
 }

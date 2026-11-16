@@ -12,13 +12,23 @@
   "lote": "lote-8",
   "motivo_seleccion": "LFPC art. 92 fr. I (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_92.json): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación». Condición literal (fr. I): cuando el contenido neto o la cantidad entregada sea menor a la indicada. Solo el encabezado y la fracción I.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270201-T157",
   "archivo": "2027-02-01_reel_T157-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? ",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "3526549f7cdd6651"
+  "huella_entrada": "3526549f7cdd6651",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude",
+      "motivo": "primer descarte de la pregunta vigente (redacción): narración de 669 caracteres, por encima del máximo del Reel (620). Causa de redacción; se reabre con citas literales cortas y tope de narración.",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? "
+    }
+  ],
+  "angulo": "Reel de 30 a 40 s: narración total de 540 caracteres o menos (cuenta todas las escenas, incluido el cierre). Solo LFPC art. 92, encabezado y fracción I. Respuesta corta (empieza con «Sí»): sí, si te entregan menos de lo indicado en el envase puedes elegir reposición o devolución, y en todo caso una bonificación. Citas literales obligatorias, cortas y copiadas al pie de la letra: «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada» y «Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase». La condición «contra la entrega del producto adquirido» debe quedar visible. Nunca pongas entre comillas una frase que no esté en el artículo. No repitas la cita en otras escenas."
 }

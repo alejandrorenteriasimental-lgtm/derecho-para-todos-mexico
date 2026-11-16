@@ -11319,7 +11319,7 @@
       "id": "R20270125-T150",
       "formato": "reel",
       "huella": "f03965ce215834eeed075d073292181237619f28e0a4e55e6e17f0cf946c2053",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-15T16:05:19+00:00",
@@ -11371,6 +11371,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-16T17:23:54+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-16T19:47:15+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 16-11, tarde): el título final omitía el siniestro (art. 65 LFT) y «vidas» generalizaba → precisado; narración ≤ 620; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -11564,7 +11570,7 @@
       "id": "I20270126-T151",
       "formato": "imagen",
       "huella": "36afc626ba0daf7b763fcdea3f9701ecf08711490dade71e5662a98d04351592",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11580,6 +11586,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-16T17:32:56+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-16T19:47:15+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 16-11, tarde): OJO «peligro de vida o desaparición» → «privación de la vida o desaparición forzada» (art. 17, fr. IV, Ley de Amparo); se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -11598,7 +11610,7 @@
       "id": "I20270203-T159",
       "formato": "imagen",
       "huella": "e2ef5a5defd2d09722c0df8fd46843c49a709c1a0c5314b76c0561c1742726c8",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11614,6 +11626,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-16T17:34:16+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-16T19:47:15+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 16-11, tarde): cita sin la fracción IV y sin el plazo de 30 días del art. 52 LFT; «pactado»/«injustificada» ajenos al texto → corregido con citas literales; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -11632,7 +11650,7 @@
       "id": "R20270131-T156",
       "formato": "reel",
       "huella": "9bd846638323e8a905275ff9b4837b30c8177819be89c5ab2f43af3b9d8f54f9",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11648,6 +11666,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-16T17:30:46+00:00",
           "motivo": "RETENIDO: Regla: Sin personas reales identificables"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-16T19:48:54+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 16-11, tarde): retenida por «Carta Magna» (falso positivo de personas reales); además lista sin narrar y «se limita exclusivamente» sin sustento → reescrita con citas literales del art. 40 CPEUM (incl. párrafo DOF 01-04-2025); se vuelve a verificar y producir"
         }
       ],
       "error": null,

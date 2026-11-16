@@ -28,12 +28,34 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
       "jurisdiccion": "federal",
       "consultado": "2026-11-16"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "40",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "y por la Ciudad de México, unidos en una federación establecida según los principios de esta ley fundamental",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "40",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "El pueblo de México, bajo ninguna circunstancia, aceptará intervenciones, intromisiones o cualquier otro acto desde el extranjero, que sea lesivo de la integridad, independencia y soberanía de la Nación",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Qué tipo de país es México según la Carta Magna?",
+      "texto": "¿Qué tipo de país es México, según la Constitución?",
       "titulo": [
         "¿QUÉ PAÍS ES",
         "MÉXICO SEGÚN LA",
@@ -43,7 +65,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "México se organiza como una República federal.",
+      "texto": "Una República representativa, democrática, laica y federal.",
       "titulo": [
         "REPÚBLICA",
         "FEDERAL"
@@ -53,51 +75,51 @@
     {
       "tipo": "cita",
       "texto": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior.",
-      "etiqueta": "CPEUM, art. 40",
+      "etiqueta": "Constitución Política de los Estados Unidos Mexicanos, artículo 40",
       "cita": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Esta federación comprende:",
+      "texto": "La forman estados libres y soberanos en su régimen interior, y la Ciudad de México.",
       "items": [
         "Estados libres y soberanos",
-        "Ciudad de México",
-        "Régimen interior libre"
+        "En su régimen interior",
+        "Y la Ciudad de México"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "México es una República representativa, democrática, laica y federal.",
-          "fuente": "F1"
+          "texto": "La federación se compone de estados libres y soberanos en su régimen interior y de la Ciudad de México.",
+          "fuente": "F3"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "La soberanía de cada estado se limita exclusivamente a su régimen interior.",
-      "encabezado": "Límite de soberanía estatal",
-      "detalle": "Solo aplica a su régimen interior",
-      "fuente_corta": "CPEUM, art. 40",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Así se establece el modelo de país en la Constitución.",
-      "titulo": [
-        "MÉXICO EN LA",
-        "CONSTITUCIÓN"
-      ],
+      "texto": "Desde 2025 también rechaza intervenciones extranjeras que dañen su soberanía.",
+      "encabezado": "Sin intervenciones extranjeras",
+      "detalle": "Párrafo agregado en 2025",
+      "fuente_corta": "Constitución, art. 40",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "La soberanía de las entidades se restringe a su régimen interno.",
-          "fuente": "F2"
+          "texto": "El pueblo de México no aceptará intervenciones desde el extranjero lesivas de la integridad, independencia y soberanía de la Nación.",
+          "fuente": "F4"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: una república federal.",
+      "titulo": [
+        "REPÚBLICA",
+        "FEDERAL"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -117,7 +139,7 @@
         "fuente": "F1",
         "cita_literal": "Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior",
         "condiciones": [
-          "La soberanía de los estados se limita exclusivamente a su régimen interior"
+          "Los estados son libres y soberanos en todo lo concerniente a su régimen interior."
         ],
         "excepciones": [],
         "ref": {
@@ -127,7 +149,7 @@
       },
       {
         "conclusion": "El país mantiene una postura de no aceptación ante cualquier acto extranjero que afecte su soberanía o integridad.",
-        "fuente": "F1",
+        "fuente": "F4",
         "cita_literal": "El pueblo de México, bajo ninguna circunstancia, aceptará intervenciones, intromisiones o cualquier otro acto desde el extranjero, que sea lesivo de la integridad, independencia y soberanía de la Nación",
         "condiciones": [
           "Que los actos desde el extranjero sean lesivos de la integridad, independencia o soberanía"
@@ -194,7 +216,7 @@
   "pregunta_original": "¿Qué tipo de país es México según la Constitución?",
   "tipo_pregunta": "definicion",
   "revision_razonamiento": [],
-  "copy": "¿Qué tipo de país es México según la Constitución?\n\nMéxico es una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos y la Ciudad de México unidos en una federación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 40.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Qué tipo de país es México según la Constitución?\n\nEl artículo 40 dice: «Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal, compuesta por Estados libres y soberanos en todo lo concerniente a su régimen interior, y por la Ciudad de México, unidos en una federación establecida según los principios de esta ley fundamental».\n\nY desde 2025 agrega: «El pueblo de México, bajo ninguna circunstancia, aceptará intervenciones, intromisiones o cualquier otro acto desde el extranjero, que sea lesivo de la integridad, independencia y soberanía de la Nación».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 40.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -245,5 +267,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenida por la auditoría (regla de personas reales: «Carta Magna»). Revisión editorial: gancho con «Constitución»; titular solo decía «República federal» → las cuatro características; lista no narrada y «Régimen interior libre»/«Ciudad de México» sin cita → narrada con la parte del art. 40 sobre la Ciudad de México (F3); «la soberanía se limita exclusivamente» no está en el texto → sustituida por el párrafo agregado el 01-04-2025 (F4, cita literal en el copy); resumen final sin relleno; fuente corta «Constitución, art. 40»."
+    }
+  ]
 }

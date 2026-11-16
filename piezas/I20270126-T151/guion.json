@@ -8,13 +8,13 @@
   "tema_id": "T151",
   "pieza": {
     "titular": "¿Cuánto tiempo tienes para presentar un amparo?",
-    "bajada": "Por regla general, 15 días, contados desde el día siguiente a que surta efectos la notificación o a que supiste del acto; hay excepciones.",
+    "bajada": "Regla general: 15 días desde el día siguiente a que surta efectos la notificación o supiste del acto. Hay excepciones.",
     "cita": "El plazo para presentar la demanda de amparo es de quince días",
     "etiqueta_cita": "Ley de Amparo, artículo 17",
-    "ojo": "Si hay peligro de vida o desaparición, en cualquier tiempo.",
+    "ojo": "Peligro de privación de la vida o desaparición forzada: en cualquier tiempo.",
     "fuente_visible": "Ley de Amparo, arts. 17 y 18"
   },
-  "copy": "El plazo ordinario para solicitar la protección de la justicia federal está regulado en la Ley de Amparo.\n\nDe acuerdo con el artículo 17 de la Ley de Amparo, «El plazo para presentar la demanda de amparo es de quince días», salvo las excepciones contempladas en el propio ordenamiento, tales como normas autoaplicativas o extradición (30 días), sentencias condenatorias penales con prisión (hasta 8 años), derechos agrarios ejidales o comunales (7 años), o actos graves como desaparición forzada o peligro de privación de la vida, que permiten su presentación «en cualquier tiempo».\n\nPor su parte, el artículo 18 de la Ley de Amparo precisa cómo se realiza el cómputo: «se computarán a partir del día siguiente a aquél en que surta efectos, conforme a la ley del acto, la notificación a la persona quejosa del acto o resolución que reclame» o desde que se tuvo conocimiento de éste.\n\nGuarda esta información para tenerla a mano o compártela con quien necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "De acuerdo con el artículo 17 de la Ley de Amparo, «El plazo para presentar la demanda de amparo es de quince días», salvo las excepciones contempladas en el propio ordenamiento, tales como normas autoaplicativas o extradición (30 días), sentencias condenatorias penales con prisión (hasta 8 años), derechos agrarios ejidales o comunales (7 años), o actos graves como desaparición forzada o peligro de privación de la vida, que permiten su presentación «en cualquier tiempo».\n\nPor su parte, el artículo 18 de la Ley de Amparo precisa cómo se realiza el cómputo: «se computarán a partir del día siguiente a aquél en que surta efectos, conforme a la ley del acto, la notificación a la persona quejosa del acto o resolución que reclame» o desde que se tuvo conocimiento de éste.\n\nGuarda esta información para tenerla a mano o compártela con quien necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Placa informativa gráfica sobre el tiempo para presentar una demanda de amparo en México conforme a la Ley de Amparo.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -50,6 +50,17 @@
       "cita": "Ley de Amparo, artículo 18",
       "jurisdiccion": "federal",
       "consultado": "2026-11-16"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Amparo",
+      "articulo": "17",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf",
+      "texto_literal": "IV. Cuando el acto reclamado implique peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, deportación o expulsión, proscripción o destierro, desaparición forzada de personas",
+      "cita": "Ley de Amparo, artículo 17",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-16"
     }
   },
   "afirmaciones": [
@@ -70,6 +81,12 @@
       "tipo": "hecho_normativo",
       "texto": "Los plazos de amparo se computan a partir del día siguiente a aquel en que surta efectos la notificación conforme a la ley del acto.",
       "fuente": "F3"
+    },
+    {
+      "id": "A4",
+      "tipo": "hecho_normativo",
+      "texto": "Si el acto implica peligro de privación de la vida o desaparición forzada de personas, entre otros, el amparo puede presentarse en cualquier tiempo.",
+      "fuente": "F4"
     }
   ],
   "razonamiento": {
@@ -210,5 +227,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-16",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "OJO: «peligro de vida o desaparición» generalizaba; el art. 17, fr. IV, dice «peligro de privación de la vida» y «desaparición forzada de personas» → precisado, con la fracción IV como fuente (F4) y su afirmación (A4). Copy: se quita la primera frase de relleno. Bajada y OJO acortados para el límite de 60 palabras visibles, sin quitar el cómputo (art. 18) ni el aviso de excepciones."
+    }
+  ]
 }
