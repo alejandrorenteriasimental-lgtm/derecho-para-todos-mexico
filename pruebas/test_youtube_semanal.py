@@ -112,7 +112,7 @@ def _reel_sintetico(f, seg=11):
 @pytest.fixture
 def corto(entorno, monkeypatch):
     """Video de prueba de ~45 s en lugar de 8 a 10 min (misma lógica, límites reducidos)."""
-    monkeypatch.setattr(ys, "DUR_MIN", 30.0); monkeypatch.setattr(ys, "DUR_MAX", 60.0); monkeypatch.setattr(ys, "PRESET", "ultrafast")
+    monkeypatch.setattr(ys, "DUR_MIN", 30.0); monkeypatch.setattr(ys, "DUR_MAX", 60.0); monkeypatch.setattr(ys, "PRESET", "ultrafast"); monkeypatch.setattr(ys, "FF_TIMEOUT_S", 240)
     ys.PIEZAS.write_text("".join(json.dumps({"id": d["reel"]["pieza"], "duracion_s": 11.0}) + "\n" for d in json.loads(ys.CAL.read_text())["dias"]))
     fuente = _reel_sintetico(entorno / "base.mp4")
     def bajar(e, carpeta, env):
@@ -232,3 +232,21 @@ def test_falla_al_descargar_queda_registrada_y_se_puede_repetir(entorno, corto):
     assert ys.seleccionar(json.loads(ys.CAL.read_text()), date(2026, 12, 3), {})["segmentos"]           # se puede volver a armar
     def bajar_no_aprobado(e, carpeta, env): raise publicador.NoAprobada("huella distinta")
     assert ys.armar(hoy=date(2026, 12, 3), env={}, bajar=bajar_no_aprobado)["estado"] == "ERROR"      # nunca con un archivo no aprobado
+
+
+def test_ffmpeg_sin_stdin_con_limite_y_fondo_acotado(monkeypatch, tmp_path):
+    """Regresión 17-11-2026 (ciclo 44063222044 colgado en las pruebas): cada ffmpeg corre con -nostdin, sin heredar la
+    entrada estándar y con tiempo límite; el fondo en bucle infinito del segmento queda acotado por trim a la duración."""
+    vistos = []
+    def falso(cmd, **kw):
+        vistos.append((cmd, kw)); return subprocess.CompletedProcess(cmd, 0, "", "")
+    monkeypatch.setattr(ys.subprocess, "run", falso)
+    ys._parte_reel(tmp_path / "f.png", tmp_path / "r.mp4", 12.5, tmp_path / "s.mp4")
+    cmd, kw = vistos[-1]
+    assert cmd[:2] == ["ffmpeg", "-nostdin"] and kw["stdin"] is subprocess.DEVNULL and kw["timeout"] == ys.FF_TIMEOUT_S
+    grafo = cmd[cmd.index("-filter_complex") + 1]
+    assert "loop=loop=-1" in grafo and "trim=duration=12.500[bg]" in grafo
+    def cuelga(cmd, **kw): raise subprocess.TimeoutExpired(cmd, kw.get("timeout"))
+    monkeypatch.setattr(ys.subprocess, "run", cuelga)
+    with pytest.raises(RuntimeError, match="no terminó"):
+        ys._ff(["-i", "x", "y"])

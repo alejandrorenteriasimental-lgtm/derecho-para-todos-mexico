@@ -288,8 +288,17 @@ def controles_metadatos(m, duracion):
 
 
 # ── video ────────────────────────────────────────────────────────────────────────────────────────────────────────
+FF_TIMEOUT_S = 1200          # 17-11: una llamada a ffmpeg que no termina falla con error claro en lugar de agotar el trabajo
+
+
 def _ff(args):
-    r = subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"] + args, capture_output=True, text=True)
+    """ffmpeg sin leer la entrada estándar (-nostdin) y con tiempo límite (17-11-2026: el ciclo 44063222044 quedó colgado
+    23 min en las pruebas con un ffmpeg huérfano tras agregar el video semanal)."""
+    try:
+        r = subprocess.run(["ffmpeg", "-nostdin", "-y", "-hide_banner", "-loglevel", "error"] + args, capture_output=True, text=True,
+                           stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S)
+    except subprocess.TimeoutExpired:
+        raise RuntimeError(f"ffmpeg: no terminó en {FF_TIMEOUT_S} s")
     if r.returncode: raise RuntimeError(f"ffmpeg: {r.stderr.strip()[-400:]}")
 
 
@@ -403,7 +412,7 @@ def _parte_tarjeta(png, dur, salida):
 def _parte_reel(png, reel, dur, salida):
     fv = f"fade=t=in:st=0:d={FUNDIDO_S},fade=t=out:st={dur - FUNDIDO_S:.3f}:d={FUNDIDO_S}"
     _ff(["-i", str(png), "-i", str(reel), "-filter_complex",
-         f"[0:v]format=yuv420p,{FONDO_FIJO}[bg];[1:v]scale=-2:{H},setsar=1,fps={FPS},format=yuv420p[r];"
+         f"[0:v]format=yuv420p,{FONDO_FIJO},trim=duration={dur:.3f}[bg];[1:v]scale=-2:{H},setsar=1,fps={FPS},format=yuv420p[r];"
          f"[bg][r]overlay=(W-w)/2:0:shortest=1:format=yuv420,format=yuv420p,{fv}[v];"
          f"[1:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:st=0:d=0.15,afade=t=out:st={dur - FUNDIDO_S:.3f}:d={FUNDIDO_S}[a]",
          "-map", "[v]", "-map", "[a]", "-t", f"{dur:.3f}"] + _cod_v() + COD_A + [str(salida)])
@@ -411,8 +420,8 @@ def _parte_reel(png, reel, dur, salida):
 
 def _normalizar(entrada, salida):
     """Sonoridad en dos pasadas (loudnorm medido + lineal): −14 LUFS integrados, pico verdadero ≤ −1.5 dBTP."""
-    r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(entrada), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
-                        "-f", "null", "-"], capture_output=True, text=True)
+    r = subprocess.run(["ffmpeg", "-nostdin", "-hide_banner", "-nostats", "-i", str(entrada), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+                        "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S)
     m = json.loads(r.stderr[r.stderr.rfind("{"):r.stderr.rfind("}") + 1])
     filtro = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
               f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,aresample=48000")
@@ -453,17 +462,17 @@ def auditar(mp4, m, dur_min=None, dur_max=None):
     ok(f"Duración entre {dur_min / 60:g} y {dur_max / 60:g} min", dur_min <= dur <= dur_max, f"{dur:.1f} s")
     ok("Pista de audio AAC 48 kHz estéreo", bool(au) and au[0]["codec_name"] == "aac" and au[0]["sample_rate"] == "48000" and au[0]["channels"] == 2,
        f'{au[0]["codec_name"]}, {au[0]["sample_rate"]} Hz, {au[0]["channels"]} canales' if au else "sin audio")
-    r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(mp4), "-f", "null", "-"], capture_output=True, text=True)
+    r = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(mp4), "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S)
     ok("Archivo íntegro (decodificación completa sin errores)", r.returncode == 0 and not r.stderr.strip(), r.stderr.strip()[:200])
-    err = subprocess.run(["ffmpeg", "-nostats", "-i", str(mp4), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
+    err = subprocess.run(["ffmpeg", "-nostdin", "-nostats", "-i", str(mp4), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S).stderr
     li = re.findall(r"I:\s+(-?[\d.]+) LUFS", err); tp = re.findall(r"Peak:\s+(-?[\d.]+) dBFS", err)
     lufs = float(li[-1]) if li else None; pico = float(tp[-1]) if tp else None
     ok("Sonoridad -14 LUFS ±1.5 (audio normalizado)", lufs is not None and abs(lufs + 14) <= 1.5, f"{lufs} LUFS")
     ok("Pico verdadero ≤ -1 dBTP", pico is not None and pico <= -1.0, f"{pico} dBTP")
-    err = subprocess.run(["ffmpeg", "-nostats", "-i", str(mp4), "-af", "silencedetect=n=-45dB:d=2", "-f", "null", "-"], capture_output=True, text=True).stderr
+    err = subprocess.run(["ffmpeg", "-nostdin", "-nostats", "-i", str(mp4), "-af", "silencedetect=n=-45dB:d=2", "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S).stderr
     sil = re.findall(r"silence_duration: ([\d.]+)", err)
     ok("Sin silencios mayores a 2 s", not sil, f"{len(sil)} silencios")
-    err = subprocess.run(["ffmpeg", "-nostats", "-i", str(mp4), "-vf", "blackdetect=d=1:pix_th=0.05", "-an", "-f", "null", "-"], capture_output=True, text=True).stderr
+    err = subprocess.run(["ffmpeg", "-nostdin", "-nostats", "-i", str(mp4), "-vf", "blackdetect=d=1:pix_th=0.05", "-an", "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S).stderr
     neg = re.findall(r"black_duration:([\d.]+)", err)
     ok("Sin pantallas negras mayores a 1 s (los fundidos son de 0.3 s)", not neg, f"{len(neg)} tramos")
     return res + controles_metadatos(m, dur), dur
