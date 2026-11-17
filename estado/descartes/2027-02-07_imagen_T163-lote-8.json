@@ -1,0 +1,127 @@
+{
+ "solicitud": "2027-02-07_imagen_T163-lote-8.json",
+ "fecha": "2026-11-17T12:08:11+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n  ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a la bonificación o compensación si el servicio es deficiente por causas imputables al proveedor. \n Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente \n Revisa las causas del proveedor."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "mencionar que el derecho también aplica cuando el servicio no se preste o no se proporcione por causas imputables al proveedor"
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los consumidores tienen derecho a una bonificación o compensación si la falla en el servicio es responsabilidad del proveedor.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Bis establece el derecho a la bonificación o compensación cuando la prestación sea deficiente por causas imputables al proveedor."
+     },
+     {
+      "conclusion": "La bonificación es distinta a la devolución del dinero, ya que representa una compensación por la deficiencia.",
+      "sostenida": "no",
+      "motivo": "El texto oficial no menciona la 'devolución de dinero' ni establece una distinción entre la bonificación y la restitución de lo pagado."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "distinciones y copy",
+      "problema": "Se introduce el concepto de 'devolución de dinero' y se establece una diferencia técnica que no está contenida en el texto oficial proporcionado.",
+      "correccion": "Eliminar la distinción entre bonificación y devolución de dinero, ya que el artículo 92 Bis no aborda dicho concepto."
+     },
+     {
+      "donde": "pieza (bajada y copy)",
+      "problema": "La pieza presenta de forma incompleta los supuestos del derecho, centrándose solo en la deficiencia y omitiendo los supuestos de que el servicio 'no se preste o proporcione'.",
+      "correccion": "Ajustar la redacción para incluir que el derecho a la bonificación o compensación también surge cuando el servicio no se preste o no se proporcione por causas imputables al proveedor."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a una bonificación o compensación cuando el servicio sea deficiente o no se preste por causas del proveedor. \n Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente \n Aplica si la falla es culpa del proveedor."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "imagen: contenido demasiado largo (63 palabras visibles; máximo 60; sobran 3, quita al menos 8): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La pieza no explica qué se entiende por 'bonificación' o 'compensación', ni cómo se materializan (¿es dinero, es un descuento, es un servicio extra?).",
+      "No menciona que el derecho también aplica a 'los demás casos previstos por la ley', lo cual es parte del núcleo del artículo citado.",
+      "No aclara que el derecho está sujeto a que la causa sea imputable al proveedor, dejando una ambigüedad sobre qué sucede si la falla es por causas ajenas."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los consumidores tienen derecho a una bonificación o compensación cuando el servicio es deficiente o no se presta por causas del proveedor.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Bis establece explícitamente este derecho bajo esas condiciones."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy: 'Esto significa que la ley protege al usuario ante fallas o incumplimientos originados directamente por quien ofrece el servicio.'",
+      "problema": "La redacción es imprecisa. El artículo 92 Bis no habla de 'incumplimientos' en general, sino de 'prestación deficiente' o 'no se preste'. Además, omite la parte final del artículo que menciona 'o por los demás casos previstos por la ley', lo cual limita el alcance de la norma.",
+      "correccion": "Ajustar la redacción para ceñirse estrictamente a los supuestos del artículo: prestación deficiente, no prestación por causas imputables al proveedor o los demás casos previstos por la ley."
+     },
+     {
+      "donde": "Cobertura general",
+      "problema": "La pieza es demasiado escueta. Aunque el artículo 92 Bis es breve, la pieza no advierte al usuario que la ley no define el procedimiento para hacer efectivo este derecho, lo cual es una limitante importante para el consumidor.",
+      "correccion": "Incluir una nota aclaratoria sobre que la ley no establece el procedimiento específico para reclamar esta bonificación o compensación."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+    "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n Sí, tienes derecho a una bonificación o compensación cuando el servicio sea deficiente o no se preste por causas del proveedor. \n Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente \n Aplica si es por causas del proveedor."
+  }
+ ]
+}

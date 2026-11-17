@@ -1,0 +1,55 @@
+{
+ "tema_id": "T162",
+ "pregunta": "¿Un ministro de culto puede ocupar un cargo público?",
+ "fecha": "2026-11-17T12:03:02+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Un ministro de culto puede ocupar un cargo público?",
+  "concepto_central": "desempeño de cargos públicos por ministros de culto",
+  "respuesta_corta": "No. La Constitución establece que los ministros de cultos no podrán desempeñar cargos públicos, aunque pueden ser votados si dejan su ministerio previamente.",
+  "reglas": [
+   {
+    "conclusion": "Los ministros de cultos tienen prohibido desempeñar cargos públicos y no pueden ser votados mientras mantengan ese carácter.",
+    "fuente": "F1",
+    "cita_literal": "En los términos de la ley reglamentaria, los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados.",
+    "condiciones": [
+     "En los términos de la ley reglamentaria"
+    ],
+    "excepciones": [
+     "Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados."
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La persona queda impedida para desempeñar el cargo público y pierde el derecho a ser votada.",
+    "fuente": "F1",
+    "cita_literal": "los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La prohibición de ocupar cargos públicos no es definitiva para la persona, sino que está vinculada a su estatus activo como ministro.",
+    "condicion": "Que la persona deje de ser ministro de culto cumpliendo con los plazos y formas legales.",
+    "base": "F1, inciso d): Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados."
+   },
+   {
+    "afirmacion": "Existe una duda sobre si la excepción de dejar el ministerio aplica para cargos de designación directa.",
+    "condicion": "El texto menciona explícitamente la excepción para 'ser votados', pero no detalla el procedimiento para cargos públicos que no son de elección popular.",
+    "base": "F1, inciso d)"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "Derecho a votar",
+    "b": "Derecho a ser votado",
+    "diferencia": "Los ministros de culto conservan el derecho a emitir su voto como ciudadanos, pero tienen restringido el derecho a ser candidatos a un cargo."
+   }
+  ],
+  "limites": "Los textos proporcionados no definen los plazos exactos de anticipación ni los trámites específicos para dejar de ser ministro de culto, ya que el artículo constitucional delega estos detalles a la ley reglamentaria.",
+  "fuentes_irrelevantes": []
+ }
+}

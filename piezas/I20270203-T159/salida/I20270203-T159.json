@@ -4,11 +4,11 @@
   "titulo": "¿Puedes dejar tu trabajo si te reducen el salario?",
   "plantilla": "dato",
   "archivo": "I20270203-T159.png",
-  "sha256": "7f15bf51f61855ac1ffc076f2833bacd97aa62490aaae3a15dae9f787c8e0d26",
-  "ahash": "1000011111111111111111111111111111111111111111111000000000001111100000000000001110000001111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-  "huella_guion": "e2ef5a5defd2d09722c0df8fd46843c49a709c1a0c5314b76c0561c1742726c8",
+  "sha256": "40efc5ac69910e2e6f6ecd1dbcaa9007029b47945338a62509a812d094566883",
+  "ahash": "1000011111111111111111111111111111111111111111111101001001111111100000000000111110000000100000111000000111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+  "huella_guion": "fada52e209278cce0a73f9f9b0dca875ea705d0978cd7bf3a020b0cf5544ba00",
   "texto_alternativo": "Infografía sobre la rescisión laboral sin responsabilidad para la persona trabajadora ante la reducción de salario por parte del patrón, según la Ley Federal del Trabajo.",
-  "copy": "El artículo 51 de la Ley Federal del Trabajo establece los supuestos en los que la persona trabajadora puede dar por terminada la relación laboral sin asumir responsabilidad legal.\n\nEspecíficamente, la norma señala como causa justificada: «IV. Reducir el patrón el salario del trabajador;», lo que permite dar por concluida la relación laboral por incumplimiento del patrón.\n\nA diferencia de una renuncia (que es la separación decidida libremente por el trabajador), la rescisión por causa imputable al patrón deriva de una alteración injustificada en las condiciones de trabajo pactadas.\n\nGuarda este dato normativo o compártelo con quien pueda necesitarlo.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Sí. El artículo 51 de la Ley Federal del Trabajo dice: «Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador:», y entre ellas está la fracción «IV. Reducir el patrón el salario del trabajador;».\n\nOjo con el plazo. El artículo 52 dice: «El trabajador podrá separarse de su trabajo dentro de los treinta días siguientes a la fecha en que se dé cualquiera de las causas mencionadas en el artículo anterior y tendrá derecho a que el patrón lo indemnice en los términos del artículo 50».\n\nEsto es información general, no es asesoría legal.",
   "fuentes": [
     {
       "id": "F1",
@@ -21,11 +21,17 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "51",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+    },
+    {
+      "id": "F3",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "52",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
     }
   ],
   "relacion_reel": "independiente",
   "estado": "APTO",
-  "fecha": "2026-11-16T17:34:12+00:00",
+  "fecha": "2026-11-17T12:19:12+00:00",
   "costo": {
     "apis_de_pago_usd": 0.0,
     "nota": "Pillow + tesseract, locales y gratuitos"

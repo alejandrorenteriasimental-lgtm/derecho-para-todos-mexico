@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.7 s"
+      "detalle": "39.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.7 s"
+      "detalle": "39.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "32 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "8e5c061dae95cb19"
+      "detalle": "c2318a864c7a8d0f"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270125-T150",
     "titulo": "¿Te pueden pedir quedarte más tiempo por una emergencia laboral?",
-    "fecha": "2026-11-16T17:23:50+00:00",
-    "sha256": "8e5c061dae95cb192b7cbd7ba1a489b42cec40db537597e02497e54daff7dcd0",
-    "duracion_s": 42.7,
+    "fecha": "2026-11-17T12:10:32+00:00",
+    "sha256": "c2318a864c7a8d0f84f5f16de76679a52fded5802847933a5600ac24a968e331",
+    "duracion_s": 39.1,
     "estado": "APTO",
-    "huella_guion": "89b24b898f750b08ccc5f862130fda7371c9919c3e251c1e31ae6eb200bf7b5a",
+    "huella_guion": "eff6eed53360aa1dcea09e79106cc9efadeccd42103c9a0001360e7fd4a26732",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.5,
-      "musica": 1.9,
-      "render_video": 40.9,
-      "mezcla_audio": 1.7,
-      "auditoria_tecnica": 8.7
+      "narracion": 10.9,
+      "musica": 1.1,
+      "render_video": 29.5,
+      "mezcla_audio": 1.1,
+      "auditoria_tecnica": 7.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.23,
-      "computo_equivalente_runner_usd": 0.0074,
+      "computo_minutos": 0.83,
+      "computo_equivalente_runner_usd": 0.005,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1278,
-    "caracteres_narrados": 615
+    "frames": 1172,
+    "caracteres_narrados": 557
   }
 }

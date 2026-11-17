@@ -1,54 +1,55 @@
 {
  "solicitud": "2027-02-04_imagen_T160-lote-8.json",
- "fecha": "2026-11-16T11:01:52+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Sí. El m",
+ "fecha": "2026-11-17T12:02:09+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\", \"[vaguedad] Referencia vaga: «E",
  "historial": [
   {
    "etapa": "analisis",
-   "intento": 0,
+   "reutilizado": true,
    "errores": []
   },
   {
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (74 palabras visibles; máximo 60; sobran 14, quita al menos 19): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.",
+    "[vaguedad] Referencia vaga: «Este monto debe ser visible y notorio, incluyendo impuestos, comisiones, intereses y cualq». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ],
-   "visible": "  \n   \n Sí, el proveedor debe informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor. \n El monto debe incluir impuestos, comisiones y seguros."
+   "visible": "  \n   \n Sí, el proveedor debe informar claramente el monto total a pagar por los bienes o servicios. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar \n incluye impuestos, comisiones, intereses, seguros y cualquier otro costo, al contado o a crédito."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "imagen: contenido demasiado largo (74 palabras visibles; máximo 60; sobran 14, quita al menos 19): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.",
+    "[vaguedad] Referencia vaga: «Este monto debe ser visible y notorio, incluyendo impuestos, comisiones, intereses y cualq». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 1,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[vaguedad] Referencia vaga: «Este monto debe ser visible y notorio conforme al derecho a la información previsto en dic». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ],
-   "visible": "  \n   \n Sí, el monto total debe ser visible, sin importar si pagas al contado o a crédito. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor. \n Incluye impuestos, comisiones y seguros."
+   "visible": "  \n   \n Sí, el proveedor debe informar claramente el monto total a pagar. Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si \n El proveedor deberá informar de forma notoria y visible el monto total a pagar \n incluye impuestos, comisiones, intereses, seguros y cualquier otro costo, al contado o a crédito."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 2,
    "errores": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+    "[vaguedad] Referencia vaga: «Este monto debe ser visible y notorio conforme al derecho a la información previsto en dic». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ]
   },
   {
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.",
+    "[vaguedad] Referencia vaga: «Este monto debe ser visible y notorio conforme al derecho a la información establecido en ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
    ],
-   "visible": "  \n   \n Sí. El monto debe ser visible, independientemente de si la operación es al contado o a crédito. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar \n Incluye impuestos y comisiones."
+   "visible": "  \n   \n Sí, el proveedor debe informar el monto total a pagar, ya sea en operaciones al contado o a crédito. \n El proveedor deberá informar de forma notoria y visible el monto total a pagar \n Incluye impuestos, comisiones, intereses, seguros y cualquier cargo adicional."
   }
  ]
 }

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "39.0 s"
+      "detalle": "43.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "39.0 s"
+      "detalle": "43.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.0 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.4 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "140b7759e0cf6e03"
+      "detalle": "7f9b10fb81526244"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -82,13 +82,11 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "Regla: Sin personas reales identificables"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
-    "carril": "C",
+    "carril": "A",
     "reglas": [
       {
         "control": "Aviso de información general",
@@ -107,8 +105,8 @@
       },
       {
         "control": "Sin personas reales identificables",
-        "resultado": "FALLA",
-        "detalle": "Carta Magna"
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
       },
       {
         "control": "La fuente al pie de cada cita es el artículo citado",
@@ -120,27 +118,27 @@
   "registro": {
     "id": "R20270131-T156",
     "titulo": "¿Qué tipo de país es México según la Constitución?",
-    "fecha": "2026-11-16T17:30:42+00:00",
-    "sha256": "140b7759e0cf6e033f9a8fb8ecec7f94ee9b253995c0890616fb8a87095869f2",
-    "duracion_s": 39.0,
-    "estado": "RETENIDO",
-    "huella_guion": "9bd846638323e8a905275ff9b4837b30c8177819be89c5ab2f43af3b9d8f54f9",
-    "carril": "C",
+    "fecha": "2026-11-17T12:13:01+00:00",
+    "sha256": "7f9b10fb815262440f2c072b4e257d36d58d98c43678fd8e546a327ce3953796",
+    "duracion_s": 43.0,
+    "estado": "APTO",
+    "huella_guion": "18b237a7fbdb9072584ba731b68b889f97b19241526aba1159798aa2bb25bde4",
+    "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 17.8,
-      "musica": 1.7,
-      "render_video": 39.1,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 7.9
+      "narracion": 10.9,
+      "musica": 1.1,
+      "render_video": 31.1,
+      "mezcla_audio": 1.1,
+      "auditoria_tecnica": 7.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.13,
-      "computo_equivalente_runner_usd": 0.0068,
+      "computo_minutos": 0.85,
+      "computo_equivalente_runner_usd": 0.0051,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1168,
-    "caracteres_narrados": 529
+    "frames": 1287,
+    "caracteres_narrados": 583
   }
 }

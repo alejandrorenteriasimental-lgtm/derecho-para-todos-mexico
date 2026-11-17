@@ -1,0 +1,49 @@
+{
+ "tema_id": "T163",
+ "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+ "fecha": "2026-11-17T12:06:14+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+  "concepto_central": "bonificación o compensación por servicio deficiente",
+  "respuesta_corta": "Sí, tienes derecho a una bonificación o compensación cuando el servicio sea deficiente o no se preste por causas del proveedor.",
+  "reglas": [
+   {
+    "conclusion": "Los consumidores tienen derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente o no se preste por causas imputables al proveedor.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor, o por los demás casos previstos por la ley.",
+    "condiciones": [
+     "que la prestación de un servicio sea deficiente",
+     "que el servicio no se preste o proporcione por causas imputables al proveedor"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El consumidor adquiere el derecho a recibir una bonificación o compensación.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando el servicio sea deficiente o no se preste por causas imputables al proveedor.",
+    "fuente": "F1",
+    "cita_literal": "cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "motivo": "El texto oficial no prevé excepciones expresas para este derecho."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no establece montos, porcentajes, plazos específicos ni la autoridad ante la cual se debe exigir la bonificación o compensación.",
+  "fuentes_irrelevantes": []
+ }
+}

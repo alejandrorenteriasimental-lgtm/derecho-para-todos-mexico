@@ -1,0 +1,184 @@
+{
+  "id": "I20270206-T162",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Un ministro de culto puede ocupar un cargo público?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T162",
+  "pieza": {
+    "titular": "¿Un ministro de culto puede ocupar un cargo público?",
+    "bajada": "En México, la separación entre el Estado y las iglesias establece límites claros sobre quiénes pueden acceder a la función pública.",
+    "mito": "Cualquier ciudadano, sin importar su labor religiosa, puede ocupar un cargo público.",
+    "realidad": "No. La Constitución establece que los ministros de cultos no podrán desempeñar cargos públicos, aunque pueden ser votados si dejan su ministerio previamente.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 130"
+  },
+  "copy": "De acuerdo con el artículo 130 de la Constitución Política de los Estados Unidos Mexicanos, existe una restricción para quienes ejercen funciones religiosas. La norma indica que «los ministros de cultos no podrán desempeñar cargos públicos».\n\nAunque conservan su derecho a votar como ciudadanos, tienen restringido el derecho a ser votados. Esta limitación busca mantener el principio de separación entre el Estado y las iglesias.\n\nExiste una excepción: si la persona deja de ser ministro de culto con la anticipación y en la forma que establezca la ley, entonces podrá ser votada. Sin embargo, mientras mantengan su carácter ministerial, el impedimento persiste.\n\nGuarda esta información para conocer las reglas de nuestra democracia y comparte para que más personas entiendan cómo funciona la ley en México.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía de 'Aquí Dice la Ley' sobre si un ministro de culto puede ocupar un cargo público. Explica que la Constitución lo prohíbe mientras sean ministros, pero permite ser votados si dejan el cargo religioso con la anticipación legal.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "130",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "En los términos de la ley reglamentaria, los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 130",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-17"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "130",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 130",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-17"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los ministros de cultos tienen prohibido desempeñar cargos públicos y no pueden ser votados mientras mantengan ese carácter.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Existe una duda sobre si la excepción de dejar el ministerio para ocupar cargos aplica también para nombramientos que no son por elección.",
+      "fuente": "F2",
+      "nota": "El texto menciona explícitamente la excepción para 'ser votados', pero no detalla el procedimiento para cargos públicos que no son de elección popular."
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un ministro de culto puede ocupar un cargo público?",
+    "concepto_central": "desempeño de cargos públicos por ministros de culto",
+    "respuesta_corta": "No. La Constitución establece que los ministros de cultos no podrán desempeñar cargos públicos, aunque pueden ser votados si dejan su ministerio previamente.",
+    "reglas": [
+      {
+        "conclusion": "Los ministros de cultos tienen prohibido desempeñar cargos públicos y no pueden ser votados mientras mantengan ese carácter.",
+        "fuente": "F1",
+        "cita_literal": "En los términos de la ley reglamentaria, los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados.",
+        "condiciones": [
+          "En los términos de la ley reglamentaria"
+        ],
+        "excepciones": [
+          "Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados."
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "130"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La persona queda impedida para desempeñar el cargo público y pierde el derecho a ser votada.",
+        "fuente": "F1",
+        "cita_literal": "los ministros de cultos no podrán desempeñar cargos públicos. Como ciudadanos tendrán derecho a votar, pero no a ser votados."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La prohibición de ocupar cargos públicos no es definitiva para la persona, sino que está vinculada a su estatus activo como ministro.",
+        "condicion": "Que la persona deje de ser ministro de culto cumpliendo con los plazos y formas legales.",
+        "base": "F1, inciso d): Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados."
+      },
+      {
+        "afirmacion": "Existe una duda sobre si la excepción de dejar el ministerio aplica para cargos de designación directa.",
+        "condicion": "El texto menciona explícitamente la excepción para 'ser votados', pero no detalla el procedimiento para cargos públicos que no son de elección popular.",
+        "base": "F1, inciso d)"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "Derecho a votar",
+        "b": "Derecho a ser votado",
+        "diferencia": "Los ministros de culto conservan el derecho a emitir su voto como ciudadanos, pero tienen restringido el derecho a ser candidatos a un cargo."
+      }
+    ],
+    "limites": "Los textos proporcionados no definen los plazos exactos de anticipación ni los trámites específicos para dejar de ser ministro de culto, ya que el artículo constitucional delega estos detalles a la ley reglamentaria."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-17T12:04:36+00:00",
+    "solicitud": "2027-02-06_imagen_T162-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Un ministro de culto puede ocupar un cargo público?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[respuesta] La respuesta corta no aparece en el contenido visible: «No. La Constitución establece que los ministros de cultos no podrán desempeñar cargos públ»."
+        ],
+        "visible": "  \n   \n Cualquier ciudadano puede ocupar un cargo público sin importar si es ministro de culto. \n No. Los ministros no pueden ocupar cargos públicos ni ser votados, a menos que dejen su ministerio según lo marque la ley."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los ministros de cultos tienen prohibido desempeñar cargos públicos y no pueden ser votados mientras mantengan ese carácter.",
+              "sostenida": "si",
+              "motivo": "El artículo 130, inciso d), establece explícitamente que los ministros no podrán desempeñar cargos públicos y que tienen derecho a votar pero no a ser votados, condicionando la posibilidad de ser votados a haber dejado el ministerio bajo los términos de la ley."
+            },
+            {
+              "conclusion": "La prohibición de ocupar cargos públicos no es definitiva, sino que está vinculada al estatus de ministro de culto.",
+              "sostenida": "si",
+              "motivo": "La norma prevé una excepción para quienes dejen de ser ministros de culto con la anticipación y en la forma que la ley establezca, permitiéndoles entonces ser votados."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
