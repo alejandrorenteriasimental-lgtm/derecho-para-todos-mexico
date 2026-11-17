@@ -162,8 +162,9 @@ def _armar_una_vez(entorno, corto):
     """El video se arma una sola vez por sesión de pruebas y se copia a cada entorno (armarlo tarda ~30 s)."""
     import shutil
     if not _CACHE:
-        _CACHE["resultado"] = ys.armar(hoy=date(2026, 12, 3), env={}, bajar=corto)
-        _CACHE.update(dir=entorno / "semanal" / "Y20261206-SEM", reg=ys.REG.read_text(), resp=respaldo.MANIFIESTO.read_text())
+        r = ys.armar(hoy=date(2026, 12, 3), env={}, bajar=corto)
+        assert r["estado"] == "REVISION_HUMANA", r          # 17-11: el motivo del error (p. ej. ffmpeg colgado) queda visible en CI
+        _CACHE.update(resultado=r, dir=entorno / "semanal" / "Y20261206-SEM", reg=ys.REG.read_text(), resp=respaldo.MANIFIESTO.read_text())
         return
     shutil.copytree(_CACHE["dir"], entorno / "semanal" / "Y20261206-SEM")
     ys.REG.write_text(_CACHE["reg"]); respaldo.MANIFIESTO.write_text(_CACHE["resp"])
@@ -250,3 +251,14 @@ def test_ffmpeg_sin_stdin_con_limite_y_fondo_acotado(monkeypatch, tmp_path):
     monkeypatch.setattr(ys.subprocess, "run", cuelga)
     with pytest.raises(RuntimeError, match="no terminó"):
         ys._ff(["-i", "x", "y"])
+
+
+def test_audio_de_tarjeta_con_relleno_acotado(monkeypatch, tmp_path):
+    """17-11-2026: «apad» infinito colgaba ffmpeg (master de BtbN) de forma intermitente; el relleno debe tener duración fija."""
+    llamadas = []
+    monkeypatch.setattr(ys, "_ff", lambda args: llamadas.append(args))
+    import musica
+    monkeypatch.setattr(musica, "pad", lambda dur, salida: Path(salida).write_bytes(b""))
+    ys._parte_tarjeta(tmp_path / "x.png", 5.0, tmp_path / "t.mp4")
+    filtro = llamadas[0][llamadas[0].index("-filter_complex") + 1]
+    assert "apad=whole_dur=5.000" in filtro and "apad," not in filtro

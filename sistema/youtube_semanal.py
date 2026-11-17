@@ -398,6 +398,8 @@ FONDO_FIJO = f"loop=loop=-1:size=1:start=0,setpts=N/{FPS}/TB"   # la imagen se d
 
 def _parte_tarjeta(png, dur, salida):
     """Tarjeta fija con la firma sonora de la marca sobre el pad musical de los Reels (musica.pad, original y sin licencias)."""
+    # 17-11-2026: «apad» sin límite (audio infinito acotado solo por atrim/-t) colgaba ffmpeg de forma intermitente con la
+    # compilación master de BtbN que usa CI (3/20 locales con 2 núcleos; ciclo 44121434570 falló así). Con whole_dur: 0/70.
     import musica
     firma = FIRMA
     pad = Path(salida).with_suffix(".pad.wav"); musica.pad(dur, salida=str(pad))
@@ -405,7 +407,7 @@ def _parte_tarjeta(png, dur, salida):
     _ff(["-i", str(png), "-i", str(firma), "-i", str(pad), "-filter_complex",
          f"[0:v]format=yuv420p,{FONDO_FIJO},trim=duration={dur:.3f},{fv}[v];[1:a]aresample=48000,aformat=channel_layouts=stereo,volume=0.6,adelay=300|300[f];"
          f"[2:a]aresample=48000,aformat=channel_layouts=stereo,volume=0.35[p];[f][p]amix=inputs=2:duration=longest:normalize=0,"
-         f"apad,atrim=0:{dur:.3f},afade=t=out:st={dur - 0.5:.3f}:d=0.5[a]", "-map", "[v]", "-map", "[a]", "-t", f"{dur:.3f}"] + _cod_v() + COD_A + [str(salida)])
+         f"apad=whole_dur={dur:.3f},atrim=0:{dur:.3f},afade=t=out:st={dur - 0.5:.3f}:d=0.5[a]", "-map", "[v]", "-map", "[a]", "-t", f"{dur:.3f}"] + _cod_v() + COD_A + [str(salida)])
     pad.unlink(missing_ok=True)
 
 
