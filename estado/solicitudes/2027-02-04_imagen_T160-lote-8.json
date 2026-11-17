@@ -2,25 +2,25 @@
   "fecha": "2027-02-04",
   "formato": "imagen",
   "tema_id": "T160",
-  "titulo": "¿Te deben informar el precio total antes de comprar?",
-  "gancho": "¿Te deben informar el precio total antes de comprar?",
-  "pregunta": "¿Te deben informar el precio total antes de comprar?",
-  "tipo_pregunta": "obligacion",
+  "titulo": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
+  "gancho": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
+  "pregunta": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
+  "tipo_pregunta": "derecho",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 7 Bis",
+  "fuentes_sugeridas": "LFPC art. 9",
   "riesgo_exactitud": "",
   "lote": "lote-8",
-  "motivo_seleccion": "LFPC art. 7 Bis (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_7_Bis.json): «El proveedor deberá informar de forma notoria y visible el monto total a pagar por los bienes, productos o servicios que ofrezca al consumidor». Contenido literal: incluye impuestos, comisiones, intereses, seguros y cualquier otro costo, al contado o a crédito.",
+  "motivo_seleccion": "LFPC art. 9 (texto oficial en registro/textos/LFPC_9.json, consultado el 14-11-2026; última reforma de la ley DOF 12-12-2025): «Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor y por los de sus colaboradores, subordinados y toda clase de gestores, vigilantes, guardias o personal auxiliar que les presten sus servicios, independientemente de la responsabilidad personal en que incurra el infractor». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC art. 7 Bis (dos descartes: condición fuera de lo visible y cobertura del análisis).",
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "Plantilla dato. Solo LFPC art. 7 Bis. Respuesta corta (empieza con «Sí»): sí, el proveedor debe informar de forma notoria y visible el monto total a pagar, sea al contado o a crédito. Cita destacada literal: «El proveedor deberá informar de forma notoria y visible el monto total a pagar». OJO (frase completa, máximo 18 palabras): incluye impuestos, comisiones, intereses, seguros y cualquier otro costo, al contado o a crédito. La condición «sea ésta al contado o a crédito» debe quedar visible. Contenido visible de 50 palabras o menos.",
-  "estado": "DESCARTADA",
+  "angulo": "Plantilla dato. Solo LFPC art. 9. Respuesta corta (empieza con «Sí»): sí, el proveedor incurre en responsabilidad administrativa también por los actos de sus vigilantes, guardias y demás personal que atenten contra los derechos del consumidor. Cita destacada literal: «Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor». OJO (frase completa, máximo 18 palabras, distinta de la respuesta): eso es independiente de la responsabilidad personal de quien cometió la falta (literal: «independientemente de la responsabilidad personal en que incurra el infractor»). Decir «responsabilidad administrativa», no «la tienda paga» ni «indemniza». Sin delitos ni cómo denunciar. Máximo 50 palabras visibles.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270204-T160",
   "archivo": "2027-02-04_imagen_T160-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\", \"[vaguedad] Referencia vaga: «E",
   "ultima_categoria": "juridico",
   "historial_reaperturas": [
@@ -30,7 +30,13 @@
       "motivo": "primer descarte de la pregunta vigente (redacción): la condición «al contado o a crédito» estaba en el análisis pero no en lo visible. Causa de redacción; se reabre pidiéndola visible.",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o contratación respectiva, independientemente de si la operación es al contado o a crédito.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Sí. El m"
+    },
+    {
+      "fecha": "2026-11-17",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFPC art. 7 Bis (16-11 condición fuera de lo visible; 17-11 cobertura de condiciones). Ahora LFPC art. 9, respuesta literal, alcance federal, sin uso en los lotes recientes",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde bajo qué condiciones o requisitos aplica (o «no_aplica» si la ley no pone ninguna) («Esta obligación aplica para la adquisición o con"
     }
-  ],
-  "huella_entrada": "c2f0b7b1e3105db6"
+  ]
 }

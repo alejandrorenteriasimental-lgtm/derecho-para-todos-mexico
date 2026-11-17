@@ -2,25 +2,24 @@
   "fecha": "2027-02-01",
   "formato": "reel",
   "tema_id": "T157",
-  "titulo": "¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste?",
-  "gancho": "¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste?",
-  "pregunta": "¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste?",
-  "tipo_pregunta": "derecho",
+  "titulo": "¿Te deben decir el precio de contado si compras a crédito?",
+  "gancho": "¿Te deben decir el precio de contado si compras a crédito?",
+  "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
+  "tipo_pregunta": "obligacion",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 92 fr. I",
+  "fuentes_sugeridas": "LFPC art. 66",
   "riesgo_exactitud": "",
   "lote": "lote-8",
-  "motivo_seleccion": "LFPC art. 92 fr. I (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_92.json): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación». Condición literal (fr. I): cuando el contenido neto o la cantidad entregada sea menor a la indicada. Solo el encabezado y la fracción I.",
+  "motivo_seleccion": "LFPC art. 66 fr. I (texto oficial en registro/textos/LFPC_66.json, consultado el 15-11-2026; última reforma de la ley DOF 12-12-2025): «En toda operación a crédito al consumidor, se deberá: I. Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate, el monto y detalle de cualquier cargo si lo hubiera, el número de pagos a realizar, su periodicidad, el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC 92 fr. I (dos descartes: narración larga y cita del análisis no literal).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "R20270201-T157",
   "archivo": "2027-02-01_reel_T157-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «contenido» («Tienes derecho a elegir entre que te devuelvan tu dinero o t») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "a5b2b72007a84a6a",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-16",
@@ -28,7 +27,14 @@
       "motivo": "primer descarte de la pregunta vigente (redacción): narración de 669 caracteres, por encima del máximo del Reel (620). Causa de redacción; se reabre con citas literales cortas y tope de narración.",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 669 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 49: recorta al menos 109 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Puedes pedir tu dinero de vuelta si te entregan menos de lo que pagaste? "
+    },
+    {
+      "fecha": "2026-11-17",
+      "por": "Claude",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFPC art. 92 fr. I (16-11 narración larga; 17-11 cita del análisis no literal). Ahora LFPC art. 66 fr. I, respuesta literal, alcance federal, sin uso en los lotes recientes",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «contenido» («Tienes derecho a elegir entre que te devuelvan tu dinero o t») no trae una cita literal que esté en el texto oficial de su fuente.\"]}"
     }
   ],
-  "angulo": "Reel de 30 a 40 s: narración total de 540 caracteres o menos (cuenta todas las escenas, incluido el cierre). Solo LFPC art. 92, encabezado y fracción I. Respuesta corta (empieza con «Sí»): sí, si te entregan menos de lo indicado en el envase puedes elegir reposición o devolución, y en todo caso una bonificación. Citas literales obligatorias, cortas y copiadas al pie de la letra: «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada» y «Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase». La condición «contra la entrega del producto adquirido» debe quedar visible. Nunca pongas entre comillas una frase que no esté en el artículo. No repitas la cita en otras escenas."
+  "angulo": "Reel de 30 a 40 s: narración total de 540 caracteres o menos (incluido el cierre). Solo LFPC art. 66, encabezado y fracción I. Respuesta corta (empieza con «Sí»): sí, en toda operación a crédito te deben informar antes el precio de contado, los cargos, el número de pagos y su periodicidad. Cita literal ÚNICA (copiar exacto): «Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate». Una escena con el dato adicional, con sus palabras literales: «el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses». Fuera de la pregunta: tasas fijas o variables (fr. II), monto total (fr. III), sanciones; no mencionarlos. Encabezados visibles que repitan palabras de su narración. Sin listas con viñetas."
 }

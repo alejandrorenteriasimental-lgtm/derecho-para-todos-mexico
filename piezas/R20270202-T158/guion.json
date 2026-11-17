@@ -196,7 +196,7 @@
   "pregunta_original": "¿Tienes derecho a pedir asilo en México?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Tienes derecho a pedir asilo en México?\n\nSí, toda persona tiene derecho a buscar y recibir asilo en México, de conformidad con los tratados internacionales y las leyes aplicables.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 11.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tienes derecho a pedir asilo en México?\n\nEl artículo 11 de la Constitución dice: «Toda persona tiene derecho a buscar y recibir asilo. El reconocimiento de la condición de refugiado y el otorgamiento de asilo político, se realizarán de conformidad con los tratados internacionales. La ley regulará sus procedencias y excepciones».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 11.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -263,5 +263,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-17",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Copy: «de conformidad con los tratados internacionales y las leyes aplicables» mezclaba dos reglas (el texto sujeta a los tratados el reconocimiento de la condición de refugiado y el otorgamiento de asilo político, y a la ley sus procedencias y excepciones) → cita literal completa del párrafo del art. 11 (F1 y F3). Escenas sin cambios."
+    }
+  ]
 }

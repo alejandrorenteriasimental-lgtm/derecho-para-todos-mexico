@@ -11810,7 +11810,7 @@
       "id": "R20270202-T158",
       "formato": "reel",
       "huella": "96a759cd350d5c0eccac8f179fcb4292ea78e3cadebaefb16c24975ea721fe0a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11826,6 +11826,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-17T12:15:10+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-17T12:30:43+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 17-11): copy con «tratados internacionales y las leyes aplicables» mezclaba dos reglas del art. 11 → cita literal completa; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -11844,7 +11850,7 @@
       "id": "I20270206-T162",
       "formato": "imagen",
       "huella": "a62452a89d8c0d331e4b57939e6ab68025057826b7ce8d2c96a17d55e4db0a9e",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-17T12:08:11+00:00",
@@ -11854,6 +11860,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-17T12:20:01+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-17T12:32:56+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 17-11): retenida por verificación jurídica (A2 era una duda; faltaba «con la anticipación y en la forma que establezca la ley») → A2, «realidad», bajada y copy con el texto literal del art. 130; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -11869,7 +11881,7 @@
       "id": "R20270203-T159",
       "formato": "reel",
       "huella": "fa1a136f0b8ca26942e656b716e2d0eea7b7a38de252687258c96a2e44248164",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-17T12:08:11+00:00",
@@ -11885,6 +11897,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-17T12:17:17+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-17T12:30:43+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 17-11): gancho/título sin la pregunta, titular que reordenaba el art. 164, lista «Igualdad oportunidades», recuadro que sugería una limitación y «para todos» → reescrito con el texto literal del art. 164 LFT; narración 561; se vuelve a verificar y producir"
         }
       ],
       "error": null,

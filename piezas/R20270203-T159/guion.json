@@ -1,7 +1,7 @@
 {
   "id": "R20270203-T159",
   "formato": "reel",
-  "titulo": "¿Las mujeres tienen los mismos derechos que los hombres?",
+  "titulo": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "carril_inicial": "A",
@@ -44,26 +44,25 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿La ley garantiza igualdad en el empleo?",
+      "texto": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?",
       "titulo": [
-        "IGUALDAD",
-        "EN EL",
-        "TRABAJO"
+        "¿MISMOS DERECHOS",
+        "EN EL TRABAJO?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, las mujeres tienen los mismos derechos y obligaciones que los hombres para asegurar trato igualitario.",
+      "texto": "Sí: los mismos derechos y las mismas obligaciones.",
       "titulo": [
-        "MISMO",
-        "TRATO"
+        "MISMOS DERECHOS",
+        "Y OBLIGACIONES"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley dice: \"Las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres, garantía que se establece en lo general\".",
+      "texto": "El artículo 164 dice: «Las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres, garantía que se establece en lo general».",
       "etiqueta": "Ley Federal del Trabajo, artículo 164",
       "cita": "Las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres, garantía que se establece en lo general",
       "afirmaciones": [
@@ -78,17 +77,17 @@
     },
     {
       "tipo": "lista",
-      "texto": "La norma protege:",
+      "texto": "Mismos derechos, mismas obligaciones: es una garantía general.",
       "items": [
-        "Igualdad de trato",
-        "Igualdad oportunidades",
-        "Responsabilidad familiar"
+        "Mismos derechos",
+        "Mismas obligaciones",
+        "Garantía general"
       ],
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "La ley establece una garantía general de igualdad.",
+          "texto": "La igualdad de derechos y obligaciones de mujeres y hombres es una garantía que se establece en lo general.",
           "fuente": "F2"
         }
       ]
@@ -96,27 +95,27 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Aplica para proteger a quienes tienen responsabilidades familiares.",
-      "encabezado": "Protección por responsabilidades",
-      "detalle": "Asegura igualdad de trato",
-      "fuente_corta": "Ley, art. 164",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Busca asegurar el mismo trato y oportunidades para todos.",
-      "titulo": [
-        "IGUALDAD",
-        "LABORAL"
-      ],
+      "texto": "Y protege en específico a trabajadoras y trabajadores con responsabilidades familiares.",
+      "encabezado": "Responsabilidades familiares",
+      "detalle": "Trabajadoras y trabajadores",
+      "fuente_corta": "Ley Federal del Trabajo, art. 164",
       "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "La ley protege a trabajadores con responsabilidades familiares.",
+          "texto": "La garantía se establece específicamente en función de la protección de las trabajadoras y trabajadores con responsabilidades familiares, asegurando la igualdad de trato.",
           "fuente": "F3"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: mismos derechos, mismas obligaciones.",
+      "titulo": [
+        "MISMOS",
+        "DERECHOS"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -209,7 +208,7 @@
   "pregunta_original": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?\n\nSí, las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres, garantizando la igualdad de trato y oportunidades.\n\nFuente: Ley Federal del Trabajo, artículo 164.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "En el trabajo, ¿las mujeres tienen los mismos derechos que los hombres?\n\nSí. El artículo 164 de la Ley Federal del Trabajo dice: «Las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres, garantía que se establece en lo general y específicamente en función de la protección de las trabajadoras y trabajadores con responsabilidades familiares, asegurando la igualdad de trato y oportunidades».\n\nFuente: Ley Federal del Trabajo, artículo 164.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -265,5 +264,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-17",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho y título no coincidían con la pregunta (decía «igualdad en el empleo»/«IGUALDAD EN EL TRABAJO» sin pregunta) → pregunta explícita; titular reordenaba el texto («para asegurar trato igualitario») → «mismos derechos y mismas obligaciones»; lista «Igualdad oportunidades» (falta «de») y no narrada → tres puntos del texto citado; recuadro «Aplica para proteger a quienes tienen responsabilidades familiares» sugería una limitación → «específicamente protege a trabajadoras y trabajadores con responsabilidades familiares…» (F3, literal); fuente corta «Ley, art. 164» → «Ley Federal del Trabajo, art. 164»; cierre «para todos» generalizaba → resumen literal; copy con la cita literal completa del art. 164; comillas rectas → «»."
+    }
+  ]
 }

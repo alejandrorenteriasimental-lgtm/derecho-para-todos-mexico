@@ -14,14 +14,22 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "dato",
-  "angulo": "¿Tienes derecho a una parte de las utilidades de la empresa?",
-  "estado": "DESCARTADA",
+  "angulo": "Plantilla dato. Solo LFT art. 117. La pregunta es solo si existe el derecho: la respuesta está completa en el texto. Respuesta corta (empieza con «Sí»): sí, los trabajadores participan en las utilidades de las empresas, conforme al porcentaje que determine la Comisión Nacional para la Participación de los Trabajadores en las Utilidades de las Empresas. Cita destacada literal: «Los trabajadores participarán en las utilidades de las empresas». OJO (máximo 18 palabras): el porcentaje lo determina esa Comisión Nacional. Fuera de la pregunta (no son faltantes ni insuficiencia): montos, plazos de pago, empresas exceptuadas y trabajadores de confianza (otros artículos); no mencionarlos ni afirmar que no hay excepciones. Máximo 50 palabras visibles.",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270205-T161",
   "archivo": "2027-02-05_imagen_T161-lote-8.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: El texto no especifica plazos de pago, montos máximos, ni qué empresas (como las de nueva creación) o qué tipos de trabajadores (como los de confianza) podrían estar exentos.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "30bca6852a3d9552"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-17",
+      "por": "Claude",
+      "motivo": "primer descarte (17-11): el análisis pidió plazos, montos y exenciones que no forman parte de la pregunta. Se reabre acotando la pregunta a la existencia del derecho (art. 117, literal) y declarando fuera de alcance lo demás",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: El texto no especifica plazos de pago, montos máximos, ni qué empresas (como las de nueva creación) o qué tipos de trabajadores (como los de confianza) podrían estar exentos."
+    }
+  ]
 }
