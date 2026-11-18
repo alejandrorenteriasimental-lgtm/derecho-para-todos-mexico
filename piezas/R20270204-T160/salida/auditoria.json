@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.0 s"
+      "detalle": "42.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.0 s"
+      "detalle": "42.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "33 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "1ddc809019f32562"
+      "detalle": "cb5fe5a45fb8ec56"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270204-T160",
     "titulo": "¿Pueden impedirte trabajar en lo que quieras?",
-    "fecha": "2026-11-18T10:42:03+00:00",
-    "sha256": "1ddc809019f325622cc6c2e95dafed064e738dfdfc470fd182905b0b24879705",
-    "duracion_s": 42.0,
+    "fecha": "2026-11-18T16:37:09+00:00",
+    "sha256": "cb5fe5a45fb8ec56071bdab8ef18f4fe2939277ccded6f81c972bae2f901a526",
+    "duracion_s": 42.4,
     "estado": "APTO",
-    "huella_guion": "7f93dba6909af3d059f2d0296df4feaa6c50b5e22f202f1c107d72fde284570a",
+    "huella_guion": "4c5a90d127f87b7e77aa022498f9346ccb662437366764e42d1d5ab7a768877d",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 25.9,
+      "narracion": 24.5,
       "musica": 2.0,
-      "render_video": 51.5,
+      "render_video": 48.7,
       "mezcla_audio": 2.0,
-      "auditoria_tecnica": 11.6
+      "auditoria_tecnica": 10.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.55,
-      "computo_equivalente_runner_usd": 0.0093,
+      "computo_minutos": 1.47,
+      "computo_equivalente_runner_usd": 0.0088,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1258,
-    "caracteres_narrados": 604
+    "frames": 1270,
+    "caracteres_narrados": 612
   }
 }

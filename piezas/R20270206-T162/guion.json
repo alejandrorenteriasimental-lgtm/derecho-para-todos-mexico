@@ -1,0 +1,196 @@
+{
+  "id": "R20270206-T162",
+  "formato": "reel",
+  "titulo": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T162",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 4",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabías que no deben cobrarte por tu primera acta de nacimiento?",
+      "titulo": [
+        "¿COBRAN TU",
+        "PRIMERA ACTA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. La Constitución establece que la autoridad competente debe entregarte la primera copia certificada de tu acta de nacimiento de forma gratuita.",
+      "titulo": [
+        "ES GRATIS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "Nuestra ley máxima es clara: \"La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.\"",
+      "etiqueta": "Constitución, art. 4",
+      "cita": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La autoridad competente debe entregar la primera copia certificada del acta de nacimiento sin costo.",
+          "fuente": "F1",
+          "nota": "El texto no define específicamente cuál es la autoridad competente.",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esto es lo que la norma establece sobre tu registro:",
+      "items": [
+        "Derecho a la identidad",
+        "Registro inmediato",
+        "Primera copia sin costo"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Recuerda que el Estado debe garantizar que la primera copia certificada de tu registro se entregue sin costo alguno.",
+      "titulo": [
+        "TU DERECHO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
+    "concepto_central": "expedición gratuita de la primera copia certificada del acta de nacimiento",
+    "respuesta_corta": "No. La Constitución establece que la autoridad competente debe entregarte la primera copia certificada de tu acta de nacimiento de forma gratuita.",
+    "reglas": [
+      {
+        "conclusion": "La autoridad tiene la obligación de entregar la primera copia certificada del acta de nacimiento sin costo para la persona.",
+        "fuente": "F1",
+        "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+        "condiciones": [
+          "Que se trate de la primera copia certificada del acta de registro de nacimiento"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "4"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El Estado tiene la obligación de garantizar que la primera copia certificada del acta de nacimiento se entregue sin costo alguno.",
+        "fuente": "F1",
+        "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El beneficio de gratuidad aplica específicamente para la primera copia certificada que se expida del registro.",
+        "fuente": "F1",
+        "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La norma no establece casos en los que se deba pagar por esta primera copia.",
+        "fuente": "F1",
+        "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+        "motivo": "El texto constitucional no prevé excepciones a la gratuidad de la primera copia."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto no menciona el costo o las reglas para la obtención de una segunda copia o copias subsecuentes, ni define específicamente cuál es la autoridad competente."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-18T16:28:07+00:00",
+    "solicitud": "2027-02-06_reel_T162-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben cobrar la primera copia de tu acta de nacimiento?\n\nNo. La Constitución establece que la autoridad competente debe entregarte la primera copia certificada de tu acta de nacimiento de forma gratuita.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 4.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La autoridad tiene la obligación de entregar la primera copia certificada del acta de nacimiento sin costo para la persona.",
+              "sostenida": "si",
+              "motivo": "La conclusión se deriva directamente de la cita literal del artículo 4 constitucional, que establece la gratuidad para la primera copia certificada."
+            },
+            {
+              "conclusion": "El beneficio de gratuidad aplica específicamente para la primera copia certificada que se expida del registro.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional limita la gratuidad a 'la primera copia certificada', por lo que la interpretación sobre la especificidad es correcta."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

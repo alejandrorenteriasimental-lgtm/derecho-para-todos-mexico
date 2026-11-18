@@ -1,0 +1,51 @@
+{
+ "tema_id": "T162",
+ "pregunta": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
+ "fecha": "2026-11-18T16:27:14+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
+  "concepto_central": "expedición gratuita de la primera copia certificada del acta de nacimiento",
+  "respuesta_corta": "No. La Constitución establece que la autoridad competente debe entregarte la primera copia certificada de tu acta de nacimiento de forma gratuita.",
+  "reglas": [
+   {
+    "conclusion": "La autoridad tiene la obligación de entregar la primera copia certificada del acta de nacimiento sin costo para la persona.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+    "condiciones": [
+     "Que se trate de la primera copia certificada del acta de registro de nacimiento"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El Estado tiene la obligación de garantizar que la primera copia certificada del acta de nacimiento se entregue sin costo alguno.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El beneficio de gratuidad aplica específicamente para la primera copia certificada que se expida del registro.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La norma no establece casos en los que se deba pagar por esta primera copia.",
+    "fuente": "F1",
+    "cita_literal": "La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento.",
+    "motivo": "El texto constitucional no prevé excepciones a la gratuidad de la primera copia."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto no menciona el costo o las reglas para la obtención de una segunda copia o copias subsecuentes, ni define específicamente cuál es la autoridad competente.",
+  "fuentes_irrelevantes": []
+ }
+}

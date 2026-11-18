@@ -1,0 +1,257 @@
+{
+  "id": "R20270205-T161",
+  "formato": "reel",
+  "titulo": "¿Te pueden investigar por expresar tus ideas?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T161",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 6",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 6",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "6",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 6",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te investigan por tus ideas?",
+      "titulo": [
+        "¿TE INVESTIGAN",
+        "POR TUS IDEAS?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Depende. No por regla general, pero la Constitución fija límites.",
+      "titulo": [
+        "DEPENDE",
+        "DE LOS LÍMITES"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros».",
+      "etiqueta": "Constitución, art. 6",
+      "cita": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "No se puede iniciar una investigación oficial por expresar ideas, a menos que se incurra en las excepciones legales.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "No se permite investigarlas salvo en estos casos:",
+      "items": [
+        "Ataque a la moral",
+        "Ataque a la vida privada",
+        "Derechos de terceros"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La manifestación de ideas no será objeto de inquisición judicial salvo ataques a la moral, vida privada o derechos de terceros.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "También si se provoca un delito o se perturba el orden público.",
+      "encabezado": "Delitos y orden público",
+      "detalle": "Si se provoca un delito",
+      "fuente_corta": "Constitución, art. 6",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Puedes difundir ideas, sin dañar a terceros ni provocar delitos.",
+      "titulo": [
+        "LIBERTAD",
+        "CON LÍMITES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La investigación judicial o administrativa procede si la manifestación de ideas provoca un delito o perturba el orden público.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te pueden investigar por expresar tus ideas?",
+    "concepto_central": "manifestación de las ideas",
+    "respuesta_corta": "Depende: por regla general no, salvo que tus expresiones ataquen la vida privada, derechos de terceros, la moral, provoquen un delito o alteren el orden público.",
+    "reglas": [
+      {
+        "conclusion": "La expresión de pensamientos y opiniones está protegida contra investigaciones de autoridades judiciales o administrativas, siempre que no se vulneren límites específicos.",
+        "fuente": "F1",
+        "cita_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros",
+        "condiciones": [],
+        "excepciones": [
+          "ataque a la moral",
+          "ataque a la vida privada",
+          "ataque a los derechos de terceros",
+          "provocación de algún delito",
+          "perturbación del orden público"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "6"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "No se puede iniciar una investigación oficial por expresar ideas, a menos que se incurra en las excepciones legales que protegen a terceros y al orden público.",
+        "fuente": "F1",
+        "cita_literal": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El Estado tiene la obligación de no interferir en la difusión de pensamientos a través de cualquier medio de comunicación o expresión.",
+        "condicion": "Mientras no se actualicen los supuestos de excepción previstos en la Constitución.",
+        "base": "Toda persona tiene derecho al libre acceso a información plural y oportuna, así como a buscar, recibir y difundir información e ideas de toda índole por cualquier medio de expresión."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto oficial no define qué conductas específicas integran un «ataque a la moral» o «perturbación del orden público», ni detalla las sanciones o penas aplicables en esos casos."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-18T16:26:24+00:00",
+    "solicitud": "2027-02-05_reel_T161-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te pueden investigar por expresar tus ideas?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Te pueden investigar por expresar tus ideas?\n\nDepende: por regla general no, salvo que tus expresiones ataquen la vida privada, derechos de terceros, la moral, provoquen un delito o alteren el orden público.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 6.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 645 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 25: recorta al menos 85 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te pueden investigar por expresar tus ideas? \n ¿TE INVESTIGAN \n POR TUS IDEAS? \n Depende. Por regla general no, pero la Constitución pone límites para proteger a otros. \n DEPENDE \n DE LOS LÍMITES \n La ley dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros». \n La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros \n No se permite investigar tus ideas a menos que ocurra lo siguiente: \n Ataque a la moral \n Ataque a la vida privada \n "
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 645 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 25: recorta al menos 85 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "No se puede iniciar una investigación oficial por expresar ideas, a menos que se incurra en las excepciones legales.",
+              "sostenida": "si",
+              "motivo": "El artículo 6 de la Constitución establece la prohibición de inquisición judicial o administrativa como regla general, condicionada a las excepciones expresamente listadas."
+            },
+            {
+              "conclusion": "La manifestación de ideas no será objeto de inquisición judicial salvo ataques a la moral, vida privada o derechos de terceros.",
+              "sostenida": "si",
+              "motivo": "Es una interpretación directa y fiel del texto constitucional que enumera taxativamente dichas excepciones."
+            },
+            {
+              "conclusion": "La investigación judicial o administrativa procede si la manifestación de ideas provoca un delito o perturba el orden público.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional incluye explícitamente la provocación de delitos y la perturbación del orden público como supuestos que permiten la inquisición."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

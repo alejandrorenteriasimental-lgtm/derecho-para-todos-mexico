@@ -2295,3 +2295,32 @@
 {"ts": "2026-11-18T11:48:22+00:00", "pieza": "R20270204-T160", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 18-11): gancho visible distinto de la pregunta; titular mezclaba los dos supuestos del art. 5 (juez: derechos de tercero; resolución gubernativa conforme a la ley: derechos de la sociedad); «Título si aplica» sin fuente; cita del límite cortada → texto literal completo; narración 612; se vuelve a verificar y producir"}
 {"ts": "2026-11-18T11:48:22+00:00", "pieza": "I20270204-T160", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 18-11): la cita visible hablaba de «actos propios» y no de los guardias de la pregunta → fragmento literal del art. 9 LFPC sobre vigilantes y guardias; OJO literal; copy sin agregados; 60 palabras máx.; se vuelve a verificar y producir"}
 {"ts": "2026-11-18T11:48:22+00:00", "pieza": "I20270206-T162", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 18-11): retenida por la duda del mapa de razonamiento (cargos de designación) y una interpretación que extendía la excepción de «ser votados» → duda y nota fuera, interpretación literal de F2; visible y copy sin cambios; se vuelve a verificar y producir"}
+{"ts": "2026-11-18T16:23:02+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-18T16:26:24+00:00", "evento": "redactada", "pieza": "R20270205-T161", "solicitud": "2027-02-05_reel_T161-lote-8.json"}
+{"ts": "2026-11-18T16:28:07+00:00", "evento": "redactada", "pieza": "R20270206-T162", "solicitud": "2027-02-06_reel_T162-lote-8.json"}
+{"ts": "2026-11-18T16:28:43+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-05_imagen_T161-lote-8.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Estos textos no mencionan el plazo de pago (cuándo), el porcentaje actual (cuánto), ni las empresas o empleados que no tienen esta obligación o derecho."}
+{"ts": "2026-11-18T16:31:46+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-07_imagen_T163-lote-8.json", "categoria": "tecnico", "transitoria": true, "motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"}
+{"ts": "2026-11-18T16:31:46+00:00", "pieza": "R20270202-T158", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-18T11:46:03+00:00 versión c172c365600cc8fd (delegada)"}
+{"ts": "2026-11-18T16:31:46+00:00", "pieza": "R20270203-T159", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-18T11:46:03+00:00 versión ac907ada17aec8c9 (delegada)"}
+{"ts": "2026-11-18T16:31:46+00:00", "pieza": "R20270205-T161", "evento": "encolado"}
+{"ts": "2026-11-18T16:31:46+00:00", "pieza": "R20270206-T162", "evento": "encolado"}
+{"ts": "2026-11-18T16:33:35+00:00", "pieza": "R20270201-T157", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.9"}
+{"ts": "2026-11-18T16:33:40+00:00", "pieza": "R20270201-T157", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-18T16:33:40+00:00", "evento": "revision_preparada", "pieza": "R20270201-T157", "version": "3cc72ef6873db269", "canal": "chat"}
+{"ts": "2026-11-18T16:37:09+00:00", "pieza": "R20270204-T160", "evento": "transicion", "a": "PRODUCIDO", "motivo": "42.4"}
+{"ts": "2026-11-18T16:37:14+00:00", "pieza": "R20270204-T160", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-18T16:37:14+00:00", "evento": "revision_preparada", "pieza": "R20270204-T160", "version": "c4bb08a66ef7d699", "canal": "chat"}
+{"ts": "2026-11-18T16:40:40+00:00", "pieza": "R20270205-T161", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.9"}
+{"ts": "2026-11-18T16:40:45+00:00", "pieza": "R20270205-T161", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-18T16:40:45+00:00", "evento": "revision_preparada", "pieza": "R20270205-T161", "version": "25876e2cb3542dd7", "canal": "chat"}
+{"ts": "2026-11-18T16:41:26+00:00", "pieza": "R20270206-T162", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-11-18T16:41:26+00:00", "evento": "alerta", "mensaje": "R20270206-T162 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-18T16:42:54+00:00", "pieza": "I20270206-T162", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-18T16:42:58+00:00", "pieza": "I20270206-T162", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-18T16:42:58+00:00", "evento": "revision_preparada", "pieza": "I20270206-T162", "version": "bf452689a686e346", "canal": "chat"}
+{"ts": "2026-11-18T16:43:27+00:00", "pieza": "I20270204-T160", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-18T16:43:31+00:00", "pieza": "I20270204-T160", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-18T16:43:31+00:00", "evento": "revision_preparada", "pieza": "I20270204-T160", "version": "2ff6d170a7f28abc", "canal": "chat"}
+{"ts": "2026-11-18T16:43:31+00:00", "pieza": "I20270127-T152", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-18T16:43:31+00:00", "pieza": "I20270202-T158", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-18T16:43:31+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 5, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 5}

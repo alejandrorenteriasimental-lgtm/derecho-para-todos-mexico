@@ -20,9 +20,9 @@
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270207-T163",
   "archivo": "2027-02-07_imagen_T163-lote-8.json",
-  "intentos": 0,
-  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n  ",
-  "ultima_categoria": "redaccion",
+  "intentos": 1,
+  "ultimo_motivo": "modelo no disponible: gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
+  "ultima_categoria": "tecnico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-17",
@@ -31,5 +31,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"imagen: conte"
     }
-  ]
+  ],
+  "huella_entrada": "a19ae9ad6908b3ea"
 }
