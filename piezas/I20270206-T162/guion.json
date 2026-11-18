@@ -51,15 +51,14 @@
       "id": "A2",
       "tipo": "hecho_normativo",
       "texto": "Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley podrán ser votados.",
-      "fuente": "F2",
-      "nota": "El texto menciona explícitamente la excepción para 'ser votados', pero no detalla el procedimiento para cargos públicos que no son de elección popular."
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
     "suficiente": true,
     "pregunta": "¿Un ministro de culto puede ocupar un cargo público?",
     "concepto_central": "desempeño de cargos públicos por ministros de culto",
-    "respuesta_corta": "No. La Constitución establece que los ministros de cultos no podrán desempeñar cargos públicos, aunque pueden ser votados si dejan su ministerio previamente.",
+    "respuesta_corta": "No. Los ministros de cultos no podrán desempeñar cargos públicos; como ciudadanos pueden votar, pero no ser votados, salvo quienes hayan dejado de serlo con la anticipación y en la forma que establezca la ley.",
     "reglas": [
       {
         "conclusion": "Los ministros de cultos tienen prohibido desempeñar cargos públicos y no pueden ser votados mientras mantengan ese carácter.",
@@ -88,14 +87,9 @@
     ],
     "interpretaciones": [
       {
-        "afirmacion": "La prohibición de ocupar cargos públicos no es definitiva para la persona, sino que está vinculada a su estatus activo como ministro.",
-        "condicion": "Que la persona deje de ser ministro de culto cumpliendo con los plazos y formas legales.",
-        "base": "F1, inciso d): Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados."
-      },
-      {
-        "afirmacion": "Existe una duda sobre si la excepción de dejar el ministerio aplica para cargos de designación directa.",
-        "condicion": "El texto menciona explícitamente la excepción para 'ser votados', pero no detalla el procedimiento para cargos públicos que no son de elección popular.",
-        "base": "F1, inciso d)"
+        "afirmacion": "La restricción para ser votado no alcanza a quien ya dejó de ser ministro de culto con la anticipación y en la forma que establezca la ley.",
+        "condicion": "Haber dejado de ser ministro de culto con la anticipación y en la forma que establezca la ley.",
+        "base": "F2: «Quienes hubieren dejado de ser ministros de cultos con la anticipación y en la forma que establezca la ley, podrán ser votados.»"
       }
     ],
     "distinciones": [
@@ -186,6 +180,11 @@
       "fecha": "2026-11-17",
       "por": "Claude (revisión editorial delegada)",
       "que": "Retenida por la verificación jurídica (A2 era una duda, no una afirmación; «si dejan su ministerio previamente» omitía «con la anticipación y en la forma que establezca la ley»). A2 reescrita con el texto literal de F2; «realidad» con las palabras del art. 130 (prohibición de cargos públicos y la condición literal para ser votados); bajada sin «límites claros sobre quiénes pueden acceder a la función pública». Copy reducido a las dos citas literales del art. 130, sin relleno."
+    },
+    {
+      "fecha": "2026-11-18",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenida otra vez por la verificación jurídica: la duda venía del mapa de razonamiento (una «interpretación» que era una duda sobre cargos de designación y una nota en A2), y de «la prohibición… no es definitiva», que extendía a los cargos públicos una excepción que el texto da solo para ser votados. Se quitaron la duda y la nota; la interpretación queda acotada al texto literal de F2 y la respuesta corta usa las palabras del art. 130. Contenido visible y copy sin cambios."
     }
   ]
 }

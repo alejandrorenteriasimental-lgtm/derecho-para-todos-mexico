@@ -35,7 +35,7 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "5",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa",
+      "texto_literal": "El ejercicio de esta libertad sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa, dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad.",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
       "jurisdiccion": "federal",
       "consultado": "2026-11-18"
@@ -46,23 +46,24 @@
       "tipo": "gancho",
       "texto": "¿Pueden impedirte trabajar en lo que quieras?",
       "titulo": [
-        "¿PUEDES TRABAJAR",
-        "EN LO QUE SEA?"
+        "¿PUEDEN IMPEDIRTE",
+        "TRABAJAR EN LO",
+        "QUE QUIERAS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No si es lícito, aunque un juez o el gobierno pueden prohibirlo si afecta a terceros.",
+      "texto": "No, si es lícito. Solo puede vedarse en dos casos.",
       "titulo": [
-        "LIBERTAD",
-        "DE TRABAJO"
+        "NO, SI ES",
+        "LÍCITO"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley dice: \"A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos\".",
+      "texto": "La Constitución dice: «A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos».",
       "etiqueta": "Constitución, artículo 5",
       "cita": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos.",
       "afirmaciones": [
@@ -77,45 +78,44 @@
     },
     {
       "tipo": "lista",
-      "texto": "Claves: Licitud, título y no afectar a otros.",
+      "texto": "Por un juez o por resolución gubernativa.",
       "items": [
-        "Actividad lícita",
-        "Título si aplica",
-        "No afectar a terceros"
+        "Determinación judicial",
+        "Resolución gubernativa"
       ],
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "La Constitución protege la libertad de elegir cualquier profesión, industria o comercio lícitos.",
-          "fuente": "F2"
+          "texto": "La libertad de trabajo solo puede vedarse por determinación judicial o por resolución gubernativa.",
+          "fuente": "F3"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Se limita \"sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa\".",
-      "encabezado": "Límites por orden judicial o gobierno",
-      "detalle": "Si se afectan derechos de terceros",
+      "texto": "Solo «por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa, dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad».",
+      "encabezado": "Solo en dos casos",
+      "detalle": "Derechos de tercero o de la sociedad",
       "fuente_corta": "Constitución, art. 5",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Eres libre de trabajar en lo legal, salvo orden judicial o gubernamental.",
-      "titulo": [
-        "TU DERECHO",
-        "AL TRABAJO"
-      ],
       "afirmaciones": [
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "La libertad de trabajo puede limitarse por orden de un juez o por una resolución del gobierno.",
+          "texto": "Por determinación judicial cuando se ataquen derechos de tercero, o por resolución gubernativa dictada conforme a la ley cuando se ofendan derechos de la sociedad.",
           "fuente": "F3"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Fuera de esos casos, nadie puede impedírtelo.",
+      "titulo": [
+        "LIBERTAD",
+        "DE TRABAJO"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -128,7 +128,7 @@
     "suficiente": true,
     "pregunta": "¿Pueden impedirte trabajar en lo que quieras?",
     "concepto_central": "libertad de trabajo",
-    "respuesta_corta": "No, siempre que la actividad sea lícita, aunque una autoridad judicial o gubernamental puede prohibirlo si se afectan derechos de terceros o de la sociedad.",
+    "respuesta_corta": "No, si la actividad es lícita; solo puede vedarse por determinación judicial cuando se ataquen derechos de tercero, o por resolución gubernativa, dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad.",
     "reglas": [
       {
         "conclusion": "Existe libertad para elegir cualquier profesión, industria o comercio siempre que no sean contrarios a la ley.",
@@ -225,7 +225,7 @@
   "pregunta_original": "¿Pueden impedirte trabajar en lo que quieras?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Pueden impedirte trabajar en lo que quieras?\n\nNo, siempre que la actividad sea lícita, aunque una autoridad judicial o gubernamental puede prohibirlo si se afectan derechos de terceros o de la sociedad.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 5.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Pueden impedirte trabajar en lo que quieras?\n\nNo, si la actividad es lícita. El artículo 5 de la Constitución dice: «A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos. El ejercicio de esta libertad sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa, dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad.».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 5.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -276,5 +276,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-18",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho visible «¿PUEDES TRABAJAR EN LO QUE SEA?» no era la pregunta narrada → pregunta literal; titular «el gobierno puede prohibirlo si afecta a terceros» mezclaba los dos supuestos (juez: derechos de tercero; resolución gubernativa conforme a la ley: derechos de la sociedad) → «solo un juez o una resolución gubernativa, y en dos casos»; lista con «Título si aplica» sin fuente citada → las dos vías del texto; recuadro con la cita cortada antes de «dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad» → cita completa (F3 ampliada con el texto oficial); comillas rectas → «»; cierre sin condiciones → resumen; respuesta corta y copy literales."
+    }
+  ]
 }

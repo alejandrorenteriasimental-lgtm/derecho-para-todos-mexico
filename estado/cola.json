@@ -11950,7 +11950,7 @@
       "id": "I20270206-T162",
       "formato": "imagen",
       "huella": "a62452a89d8c0d331e4b57939e6ab68025057826b7ce8d2c96a17d55e4db0a9e",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-17T12:08:11+00:00",
@@ -11972,6 +11972,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-18T10:43:28+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T11:48:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11): retenida por la duda del mapa de razonamiento (cargos de designación) y una interpretación que extendía la excepción de «ser votados» → duda y nota fuera, interpretación literal de F2; visible y copy sin cambios; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12039,7 +12045,7 @@
       "id": "I20270204-T160",
       "formato": "imagen",
       "huella": "0fe333108864a4ea951d105d189a79bb2ba78b73878326c38baf0bc887546355",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T10:28:59+00:00",
@@ -12055,6 +12061,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-18T10:44:02+00:00",
           "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T11:48:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11): la cita visible hablaba de «actos propios» y no de los guardias de la pregunta → fragmento literal del art. 9 LFPC sobre vigilantes y guardias; OJO literal; copy sin agregados; 60 palabras máx.; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12073,7 +12085,7 @@
       "id": "R20270201-T157",
       "formato": "reel",
       "huella": "70426275a91be5421c95d0507e7ad9cc2c71257b54bda2bc703a01eb401b0285",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T10:28:59+00:00",
@@ -12089,6 +12101,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-18T10:38:28+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T11:48:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11): recuadro «Tienes «el derecho que tiene…»» (frase rota; el art. 66 fr. I manda informar ese derecho) → «También deben informarte tu derecho a «liquidar anticipadamente…»»; fuente corta completa; titulares sin repetir la lista; copy literal; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12107,7 +12125,7 @@
       "id": "R20270204-T160",
       "formato": "reel",
       "huella": "7f93dba6909af3d059f2d0296df4feaa6c50b5e22f202f1c107d72fde284570a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T10:28:59+00:00",
@@ -12123,6 +12141,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-18T10:42:06+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T11:48:22+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11): gancho visible distinto de la pregunta; titular mezclaba los dos supuestos del art. 5 (juez: derechos de tercero; resolución gubernativa conforme a la ley: derechos de la sociedad); «Título si aplica» sin fuente; cita del límite cortada → texto literal completo; narración 612; se vuelve a verificar y producir"
         }
       ],
       "error": null,

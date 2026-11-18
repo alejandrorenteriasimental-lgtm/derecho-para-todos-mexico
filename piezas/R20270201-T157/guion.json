@@ -43,7 +43,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, en toda operación a crédito te deben informar el precio de contado, los cargos, el número de pagos y su periodicidad.",
+      "texto": "Sí. En toda operación a crédito te lo deben informar antes de la operación.",
       "titulo": [
         "SÍ, DEBEN",
         "INFORMARTE"
@@ -77,19 +77,10 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Tienes «el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses».",
-      "encabezado": "LIQUIDACIÓN ANTICIPADA",
+      "texto": "También deben informarte tu derecho a «liquidar anticipadamente el crédito con la consiguiente reducción de intereses».",
+      "encabezado": "Liquidación anticipada",
       "detalle": "Con reducción de intereses",
-      "fuente_corta": "Ley, art. 66",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Sí, el proveedor debe darte estos datos antes de la compra.",
-      "titulo": [
-        "DECIDE CON",
-        "INFORMACIÓN"
-      ],
+      "fuente_corta": "Ley Federal de Protección al Consumidor, art. 66",
       "afirmaciones": [
         {
           "id": "A2",
@@ -98,6 +89,15 @@
           "fuente": "F2"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: precio de contado, cargos, número de pagos y periodicidad, antes de la operación.",
+      "titulo": [
+        "DECIDE CON",
+        "INFORMACIÓN"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -110,7 +110,7 @@
     "suficiente": true,
     "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
     "concepto_central": "operación a crédito al consumidor",
-    "respuesta_corta": "Sí, en cualquier compra a crédito el proveedor tiene la obligación de informarte el precio de contado del bien o servicio antes de que realices la operación.",
+    "respuesta_corta": "Sí. En toda operación a crédito te deben informar previamente el precio de contado del bien o servicio.",
     "reglas": [
       {
         "conclusion": "En las ventas a crédito, es obligatorio que el proveedor informe al consumidor el precio de contado de forma previa a la transacción.",
@@ -194,7 +194,7 @@
   "pregunta_original": "¿Te deben decir el precio de contado si compras a crédito?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Te deben decir el precio de contado si compras a crédito?\n\nSí, en cualquier compra a crédito el proveedor tiene la obligación de informarte el precio de contado del bien o servicio antes de que realices la operación.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 66.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te deben decir el precio de contado si compras a crédito?\n\nSí. El artículo 66 de la Ley Federal de Protección al Consumidor dice que en toda operación a crédito al consumidor se deberá «Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate, el monto y detalle de cualquier cargo si lo hubiera, el número de pagos a realizar, su periodicidad, el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 66.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -235,5 +235,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-18",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Recuadro decía «Tienes «el derecho que tiene a liquidar…»» (frase rota y presentaba como derecho autónomo lo que el art. 66 fr. I manda informar) → «También deben informarte tu derecho a «liquidar anticipadamente el crédito con la consiguiente reducción de intereses»»; fuente corta «Ley, art. 66» → nombre completo; titular inicial repetía la lista → «te lo deben informar antes de la operación»; cierre «antes de la compra» → resumen literal «antes de la operación»; A2 pasa a la escena que lo narra; copy con la cita literal de la fr. I."
+    }
+  ]
 }
