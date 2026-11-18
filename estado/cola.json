@@ -12114,7 +12114,7 @@
       "id": "I20270204-T160",
       "formato": "imagen",
       "huella": "0fe333108864a4ea951d105d189a79bb2ba78b73878326c38baf0bc887546355",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T10:28:59+00:00",
@@ -12148,6 +12148,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-18T16:43:31+00:00",
           "motivo": "APTO_CON_CRITERIO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T19:44:42+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11, 2.ª ronda): bajada «contra tus derechos» generalizaba el art. 9 LFPC («derechos del consumidor») → «si sus guardias atentan contra derechos del consumidor»; esquema, razonamiento y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12270,7 +12276,7 @@
       "id": "R20270205-T161",
       "formato": "reel",
       "huella": "0cb7e0d0374736c1bdc0812756b5e1cf1e66d02b678a3e7825be8f5127bd9fa4",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T16:31:46+00:00",
@@ -12286,6 +12292,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-18T16:40:45+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T19:44:42+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11, 2.ª ronda): gancho «¿Te investigan por tus ideas?» → pregunta sobre la manifestación de ideas; excepción con cita literal del art. 6 («provoque algún delito, o perturbe el orden público»); cierre que omitía supuestos → remite a los casos del art. 6; «La ley» → «La Constitución»; copy con cita literal; narración 598; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12304,7 +12316,7 @@
       "id": "R20270206-T162",
       "formato": "reel",
       "huella": "60944d255d14829b169bae5cf253a4b93b12374b0f1b722046a823725039388f",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-18T16:31:46+00:00",
@@ -12314,6 +12326,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-18T16:41:26+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-18T19:47:18+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 18-11, 2.ª ronda): retenida por la duda del auditor sobre A1 parafraseada → A1 literal del art. 4 CPEUM; lista con identidad y registro inmediato anclada en F2 literal; gancho = pregunta; cierre con la condición literal (primera copia certificada); copy literal; narración 579; esquema y razonamiento sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,

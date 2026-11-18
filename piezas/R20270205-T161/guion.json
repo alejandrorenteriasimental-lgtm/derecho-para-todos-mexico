@@ -44,10 +44,11 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Te investigan por tus ideas?",
+      "texto": "¿Pueden investigarte por expresar tus ideas?",
       "titulo": [
-        "¿TE INVESTIGAN",
-        "POR TUS IDEAS?"
+        "¿PUEDEN INVESTIGARTE",
+        "POR EXPRESAR",
+        "TUS IDEAS?"
       ],
       "afirmaciones": []
     },
@@ -62,8 +63,8 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros».",
-      "etiqueta": "Constitución, art. 6",
+      "texto": "La Constitución dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros».",
+      "etiqueta": "Constitución Política de los Estados Unidos Mexicanos, artículo 6",
       "cita": "La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros",
       "afirmaciones": [
         {
@@ -95,19 +96,10 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "También si se provoca un delito o se perturba el orden público.",
+      "texto": "También en el caso de que «provoque algún delito, o perturbe el orden público».",
       "encabezado": "Delitos y orden público",
-      "detalle": "Si se provoca un delito",
-      "fuente_corta": "Constitución, art. 6",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Puedes difundir ideas, sin dañar a terceros ni provocar delitos.",
-      "titulo": [
-        "LIBERTAD",
-        "CON LÍMITES"
-      ],
+      "detalle": "Provocar delito o perturbar el orden",
+      "fuente_corta": "Constitución Política de los Estados Unidos Mexicanos, art. 6",
       "afirmaciones": [
         {
           "id": "A3",
@@ -116,6 +108,15 @@
           "fuente": "F3"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: no por tus ideas, salvo en los casos que fija el artículo 6.",
+      "titulo": [
+        "LIBERTAD",
+        "CON LÍMITES"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -197,7 +198,7 @@
   "pregunta_original": "¿Te pueden investigar por expresar tus ideas?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden investigar por expresar tus ideas?\n\nDepende: por regla general no, salvo que tus expresiones ataquen la vida privada, derechos de terceros, la moral, provoquen un delito o alteren el orden público.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 6.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden investigar por expresar tus ideas?\n\nPor regla general, no. El artículo 6 de la Constitución dice: «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público».\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 6.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -253,5 +254,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-18",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho visible y narrado «¿Te investigan por tus ideas?» (las ideas no se investigan; el art. 6 habla de su manifestación) → pregunta completa; «La ley dice» → «La Constitución dice»; etiqueta y fuente corta con nombre completo; excepción sin cita y con detalle incompleto (omitía el orden público) → cita literal «provoque algún delito, o perturbe el orden público» y A3 pasa a la escena que lo narra; cierre «sin dañar a terceros ni provocar delitos» omitía moral, vida privada y orden público → remite a los casos del art. 6; copy parafraseado («alteren el orden público») → cita literal completa."
+    }
+  ]
 }
