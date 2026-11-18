@@ -1,0 +1,66 @@
+{
+ "tema_id": "T160",
+ "pregunta": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
+ "fecha": "2026-11-18T10:27:25+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
+  "concepto_central": "responsabilidad administrativa del proveedor",
+  "respuesta_corta": "Sí, los proveedores tienen responsabilidad administrativa por los actos de sus guardias o personal de vigilancia que atenten contra los derechos del consumidor.",
+  "reglas": [
+   {
+    "conclusion": "El proveedor de bienes o servicios es legalmente responsable por las acciones de su personal de seguridad que vulneren los derechos de los clientes.",
+    "fuente": "F1",
+    "cita_literal": "Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor y por los de sus colaboradores, subordinados y toda clase de gestores, vigilantes, guardias o personal auxiliar",
+    "condiciones": [
+     "Que el personal preste sus servicios al proveedor",
+     "Que los actos atenten contra los derechos del consumidor"
+    ],
+    "excepciones": [
+     "no_aplica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La ley establece que los proveedores deben responder administrativamente por los actos de sus vigilantes y guardias.",
+    "fuente": "F1",
+    "cita_literal": "incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor y por los de sus colaboradores, subordinados y toda clase de gestores, vigilantes, guardias o personal auxiliar"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Esta responsabilidad aplica para cualquier persona que preste servicios al proveedor, incluyendo guardias y personal auxiliar.",
+    "fuente": "F1",
+    "cita_literal": "toda clase de gestores, vigilantes, guardias o personal auxiliar que les presten sus servicios"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "El texto legal no establece excepciones que liberen al proveedor de esta responsabilidad administrativa.",
+    "fuente": "F1",
+    "cita_literal": "Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa",
+    "motivo": "El artículo no prevé supuestos de exclusión de responsabilidad para el proveedor."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La tienda puede ser sancionada aunque el guardia también tenga que enfrentar consecuencias por su cuenta.",
+    "condicion": "Cuando el acto del guardia genera tanto una falta de la tienda como una falta individual del trabajador.",
+    "base": "independientemente de la responsabilidad personal en que incurra el infractor"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "responsabilidad administrativa del proveedor",
+    "b": "responsabilidad personal del infractor",
+    "diferencia": "La primera es la obligación de la tienda ante la autoridad por los actos de su personal, mientras que la segunda es la que enfrenta el guardia de forma individual."
+   }
+  ],
+  "limites": "Los textos no especifican el tipo de sanción administrativa, el plazo para denunciar ni el procedimiento ante la autoridad.",
+  "fuentes_irrelevantes": []
+ }
+}

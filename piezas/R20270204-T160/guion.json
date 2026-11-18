@@ -1,0 +1,280 @@
+{
+  "id": "R20270204-T160",
+  "formato": "reel",
+  "titulo": "¿Pueden impedirte trabajar en lo que quieras?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T160",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "5",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 5",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Pueden impedirte trabajar en lo que quieras?",
+      "titulo": [
+        "¿PUEDES TRABAJAR",
+        "EN LO QUE SEA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No si es lícito, aunque un juez o el gobierno pueden prohibirlo si afecta a terceros.",
+      "titulo": [
+        "LIBERTAD",
+        "DE TRABAJO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: \"A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos\".",
+      "etiqueta": "Constitución, artículo 5",
+      "cita": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos.",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Se garantiza que nadie puede ser impedido de realizar la actividad que elija si es lícita.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Claves: Licitud, título y no afectar a otros.",
+      "items": [
+        "Actividad lícita",
+        "Título si aplica",
+        "No afectar a terceros"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución protege la libertad de elegir cualquier profesión, industria o comercio lícitos.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Se limita \"sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa\".",
+      "encabezado": "Límites por orden judicial o gobierno",
+      "detalle": "Si se afectan derechos de terceros",
+      "fuente_corta": "Constitución, art. 5",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Eres libre de trabajar en lo legal, salvo orden judicial o gubernamental.",
+      "titulo": [
+        "TU DERECHO",
+        "AL TRABAJO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La libertad de trabajo puede limitarse por orden de un juez o por una resolución del gobierno.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Pueden impedirte trabajar en lo que quieras?",
+    "concepto_central": "libertad de trabajo",
+    "respuesta_corta": "No, siempre que la actividad sea lícita, aunque una autoridad judicial o gubernamental puede prohibirlo si se afectan derechos de terceros o de la sociedad.",
+    "reglas": [
+      {
+        "conclusion": "Existe libertad para elegir cualquier profesión, industria o comercio siempre que no sean contrarios a la ley.",
+        "fuente": "F1",
+        "cita_literal": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos.",
+        "condiciones": [
+          "Que la actividad sea lícita"
+        ],
+        "excepciones": [
+          "Determinación judicial cuando se ataquen derechos de tercero",
+          "Resolución gubernativa cuando se ofendan los derechos de la sociedad"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "5"
+        }
+      },
+      {
+        "conclusion": "No es válido ningún acuerdo donde una persona acepte dejar de trabajar en una actividad específica.",
+        "fuente": "F1",
+        "cita_literal": "Tampoco puede admitirse convenio en que la persona pacte su proscripción o destierro, o en que renuncie temporal o permanentemente a ejercer determinada profesión, industria o comercio.",
+        "condiciones": [
+          "Aplica incluso si hay un convenio o pacto firmado"
+        ],
+        "excepciones": [
+          "no_aplica"
+        ],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "5"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se garantiza que nadie puede ser privado del producto de su trabajo ni impedido de realizar la actividad que elija.",
+        "fuente": "F1",
+        "cita_literal": "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Para ciertas actividades, es necesario cumplir con los requisitos de titulación que establezcan las leyes de cada estado.",
+        "fuente": "F1",
+        "cita_literal": "La ley determinará en cada entidad federativa, cuáles son las profesiones que necesitan título para su ejercicio"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "La libertad de trabajo puede limitarse por orden de un juez o por una resolución del gobierno bajo términos legales específicos.",
+        "fuente": "F1",
+        "cita_literal": "sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El derecho a trabajar no es absoluto y está sujeto al respeto de los derechos de los demás y de la colectividad.",
+        "condicion": "Cuando el ejercicio de la profesión afecte a terceros o a la sociedad.",
+        "base": "El ejercicio de esta libertad sólo podrá vedarse por determinación judicial, cuando se ataquen los derechos de tercero, o por resolución gubernativa, dictada en los términos que marque la ley, cuando se ofendan los derechos de la sociedad."
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto no define qué actividades específicas se consideran ilícitas ni enumera cuáles son las profesiones que requieren título, ya que delega esa facultad a las leyes estatales."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-18T10:27:11+00:00",
+    "solicitud": "2027-02-04_reel_T160-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Pueden impedirte trabajar en lo que quieras?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Pueden impedirte trabajar en lo que quieras?\n\nNo, siempre que la actividad sea lícita, aunque una autoridad judicial o gubernamental puede prohibirlo si se afectan derechos de terceros o de la sociedad.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 5.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 690 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 70: recorta al menos 130 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Pueden impedirte trabajar en lo que quieras? \n ¿PUEDES TRABAJAR \n EN LO QUE SEA? \n No, si es lícito; aunque un juez o el gobierno pueden prohibirlo si se afectan derechos de terceros o de la sociedad. \n LIBERTAD \n DE TRABAJO \n La ley dice: \"A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos\". \n A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos. \n Puntos clave: Actividad lícita. Título si aplica. No afectar a terceros. \n Actividad lícita \n Título si aplica \n No afectar a terceros \n Esta libertad \"sólo podrá vedarse por determinación judici"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 690 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 70: recorta al menos 130 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Existe libertad para elegir cualquier profesión, industria o comercio siempre que no sean contrarios a la ley.",
+              "sostenida": "si",
+              "motivo": "El texto constitucional establece explícitamente la libertad de dedicarse a la profesión, industria, comercio o trabajo que acomode, condicionándolo a que sean lícitos."
+            },
+            {
+              "conclusion": "No es válido ningún acuerdo donde una persona acepte dejar de trabajar en una actividad específica.",
+              "sostenida": "si",
+              "motivo": "El artículo 5 prohíbe expresamente los convenios en los que la persona renuncie temporal o permanentemente a ejercer determinada profesión, industria o comercio."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

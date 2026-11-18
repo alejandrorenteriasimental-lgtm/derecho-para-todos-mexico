@@ -1,0 +1,61 @@
+{
+ "tema_id": "T157",
+ "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
+ "fecha": "2026-11-18T10:23:05+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
+  "concepto_central": "operación a crédito al consumidor",
+  "respuesta_corta": "Sí, en cualquier compra a crédito el proveedor tiene la obligación de informarte el precio de contado del bien o servicio antes de que realices la operación.",
+  "reglas": [
+   {
+    "conclusion": "En las ventas a crédito, es obligatorio que el proveedor informe al consumidor el precio de contado de forma previa a la transacción.",
+    "fuente": "F1",
+    "cita_literal": "En toda operación a crédito al consumidor, se deberá: I. Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate",
+    "condiciones": [
+     "Aplica en operaciones a crédito al consumidor",
+     "La información debe entregarse de forma previa"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El proveedor debe informar el precio de contado, el detalle de cualquier cargo, el número y periodicidad de pagos, y el monto total a pagar incluyendo intereses.",
+    "fuente": "F1",
+    "cita_literal": "Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate, el monto y detalle de cualquier cargo si lo hubiera"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Si el precio a crédito es distinto al de contado por descuentos o bonificaciones, el proveedor debe señalar específicamente esa diferencia.",
+    "fuente": "F1",
+    "cita_literal": "En caso de existir descuentos, bonificaciones o cualquier otro motivo por el cual sean diferentes los pagos a crédito y de contado, dicha diferencia deberá señalarse"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El consumidor tiene derecho a conocer el ahorro potencial de pagar en una sola exhibición frente al esquema de plazos.",
+    "condicion": "Cuando existan descuentos o motivos que generen una diferencia entre ambos tipos de pago.",
+    "base": "F1, fracción II del artículo 66."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "precio de contado",
+    "b": "monto total a pagar",
+    "diferencia": "El precio de contado es el valor base del bien, mientras que el monto total incluye intereses, comisiones y cargos por el financiamiento."
+   },
+   {
+    "a": "bonificación",
+    "b": "descuento",
+    "diferencia": "Ambos son motivos legales que pueden generar una diferencia entre el precio de contado y el de crédito, y deben ser informados al consumidor."
+   }
+  ],
+  "limites": "Los textos no especifican el medio físico o digital obligatorio para entregar esta información, solo que debe ser previa a la operación.",
+  "fuentes_irrelevantes": []
+ }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "R20270201-T157",
+  "formato": "reel",
+  "titulo": "¿Te deben decir el precio de contado si compras a crédito?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T157",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "66",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 66",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "66",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 66",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-18"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te deben decir el precio de contado si compras a crédito?",
+      "titulo": [
+        "¿PRECIO DE",
+        "CONTADO EN",
+        "COMPRAS A CRÉDITO?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, en toda operación a crédito te deben informar el precio de contado, los cargos, el número de pagos y su periodicidad.",
+      "titulo": [
+        "SÍ, DEBEN",
+        "INFORMARTE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley exige «Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 66",
+      "cita": "Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Deben detallar cargos extra, número de pagos y cuándo hacerlos.",
+      "items": [
+        "Cargos adicionales",
+        "Número de pagos",
+        "Periodicidad"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El proveedor debe informar el precio de contado antes de la operación.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Tienes «el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses».",
+      "encabezado": "LIQUIDACIÓN ANTICIPADA",
+      "detalle": "Con reducción de intereses",
+      "fuente_corta": "Ley, art. 66",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, el proveedor debe darte estos datos antes de la compra.",
+      "titulo": [
+        "DECIDE CON",
+        "INFORMACIÓN"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El consumidor puede pagar antes su crédito para reducir intereses.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
+    "concepto_central": "operación a crédito al consumidor",
+    "respuesta_corta": "Sí, en cualquier compra a crédito el proveedor tiene la obligación de informarte el precio de contado del bien o servicio antes de que realices la operación.",
+    "reglas": [
+      {
+        "conclusion": "En las ventas a crédito, es obligatorio que el proveedor informe al consumidor el precio de contado de forma previa a la transacción.",
+        "fuente": "F1",
+        "cita_literal": "En toda operación a crédito al consumidor, se deberá: I. Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate",
+        "condiciones": [
+          "Aplica en operaciones a crédito al consumidor",
+          "La información debe entregarse de forma previa"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "66"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El proveedor debe informar el precio de contado, el detalle de cualquier cargo, el número y periodicidad de pagos, y el monto total a pagar incluyendo intereses.",
+        "fuente": "F1",
+        "cita_literal": "Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate, el monto y detalle de cualquier cargo si lo hubiera"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Si el precio a crédito es distinto al de contado por descuentos o bonificaciones, el proveedor debe señalar específicamente esa diferencia.",
+        "fuente": "F1",
+        "cita_literal": "En caso de existir descuentos, bonificaciones o cualquier otro motivo por el cual sean diferentes los pagos a crédito y de contado, dicha diferencia deberá señalarse"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El consumidor tiene derecho a conocer el ahorro potencial de pagar en una sola exhibición frente al esquema de plazos.",
+        "condicion": "Cuando existan descuentos o motivos que generen una diferencia entre ambos tipos de pago.",
+        "base": "F1, fracción II del artículo 66."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "precio de contado",
+        "b": "monto total a pagar",
+        "diferencia": "El precio de contado es el valor base del bien, mientras que el monto total incluye intereses, comisiones y cargos por el financiamiento."
+      },
+      {
+        "a": "bonificación",
+        "b": "descuento",
+        "diferencia": "Ambos son motivos legales que pueden generar una diferencia entre el precio de contado y el de crédito, y deben ser informados al consumidor."
+      }
+    ],
+    "limites": "Los textos no especifican el medio físico o digital obligatorio para entregar esta información, solo que debe ser previa a la operación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-18T10:25:26+00:00",
+    "solicitud": "2027-02-01_reel_T157-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te deben decir el precio de contado si compras a crédito?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben decir el precio de contado si compras a crédito?\n\nSí, en cualquier compra a crédito el proveedor tiene la obligación de informarte el precio de contado del bien o servicio antes de que realices la operación.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 66.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "En las ventas a crédito, es obligatorio que el proveedor informe al consumidor el precio de contado de forma previa a la transacción.",
+              "sostenida": "si",
+              "motivo": "El artículo 66, fracción I, establece explícitamente la obligación de informar previamente el precio de contado en toda operación a crédito."
+            },
+            {
+              "conclusion": "El consumidor tiene derecho a liquidar anticipadamente el crédito con la consiguiente reducción de intereses.",
+              "sostenida": "si",
+              "motivo": "El artículo 66, fracción I, reconoce expresamente este derecho del consumidor."
+            },
+            {
+              "conclusion": "El proveedor debe informar el monto total a pagar, incluyendo intereses, comisiones y cargos.",
+              "sostenida": "si",
+              "motivo": "El artículo 66, fracción III, obliga a informar el monto total a pagar desglosando intereses, comisiones y cargos."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.8 s"
+      "detalle": "38.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.8 s"
+      "detalle": "38.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.3 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "59d73a9311a043d3"
+      "detalle": "f4026522dc9b6cf4"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270202-T158",
     "titulo": "¿Tienes derecho a pedir asilo en México?",
-    "fecha": "2026-11-17T12:15:06+00:00",
-    "sha256": "59d73a9311a043d3cb78c4088aa8fab84e4385ed19085eb1d23c99b051dc3356",
-    "duracion_s": 38.8,
+    "fecha": "2026-11-18T10:32:30+00:00",
+    "sha256": "f4026522dc9b6cf462bf5209733dab6b59c9ba46900a34804c18effb0ec9ee47",
+    "duracion_s": 38.9,
     "estado": "APTO",
-    "huella_guion": "96a759cd350d5c0eccac8f179fcb4292ea78e3cadebaefb16c24975ea721fe0a",
+    "huella_guion": "bcf8a2060c916c7de62dbae4ec12873479c1d1097757fb37e1a2d76f6cd24106",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.4,
-      "musica": 1.0,
-      "render_video": 28.4,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 6.3
+      "narracion": 23.2,
+      "musica": 1.9,
+      "render_video": 54.3,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 10.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.77,
-      "computo_equivalente_runner_usd": 0.0046,
+      "computo_minutos": 1.52,
+      "computo_equivalente_runner_usd": 0.0091,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1163,
+    "frames": 1166,
     "caracteres_narrados": 552
   }
 }

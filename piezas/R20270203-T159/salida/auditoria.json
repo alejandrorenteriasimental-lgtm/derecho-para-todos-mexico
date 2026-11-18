@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "37.3 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "37.3 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.9 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "7e29005cab5c8c32"
+      "detalle": "b2679e65b4953d3f"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -117,28 +117,28 @@
   },
   "registro": {
     "id": "R20270203-T159",
-    "titulo": "¿Las mujeres tienen los mismos derechos que los hombres?",
-    "fecha": "2026-11-17T12:17:12+00:00",
-    "sha256": "7e29005cab5c8c325b2b4de5aaf655aad4725f213466ad7a8739da38015f0839",
-    "duracion_s": 37.3,
+    "titulo": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?",
+    "fecha": "2026-11-18T10:36:29+00:00",
+    "sha256": "b2679e65b4953d3ff25948f1be58d62557bca07d9b425738b7c731304457c3ce",
+    "duracion_s": 41.4,
     "estado": "APTO",
-    "huella_guion": "fa1a136f0b8ca26942e656b716e2d0eea7b7a38de252687258c96a2e44248164",
+    "huella_guion": "679ffc8f2208a40be98c55e8b1087f2610f1ef4c8a54d2e5498e19bc80bef2dd",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 8.8,
-      "musica": 1.0,
-      "render_video": 24.5,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 5.9
+      "narracion": 24.0,
+      "musica": 2.0,
+      "render_video": 48.9,
+      "mezcla_audio": 2.0,
+      "auditoria_tecnica": 10.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.69,
-      "computo_equivalente_runner_usd": 0.0041,
+      "computo_minutos": 1.46,
+      "computo_equivalente_runner_usd": 0.0088,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1116,
-    "caracteres_narrados": 521
+    "frames": 1239,
+    "caracteres_narrados": 561
   }
 }
