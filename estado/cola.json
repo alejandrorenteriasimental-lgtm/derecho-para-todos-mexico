@@ -12528,7 +12528,7 @@
       "id": "I20270207-T163",
       "formato": "imagen",
       "huella": "7ce12e386728c53230d6ac11e6ccb89c062996b79a2e9e0b5e43feed28607743",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T10:35:27+00:00",
@@ -12562,6 +12562,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-19T16:39:11+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-19T19:43:26+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 19-11, 2.ª ronda): copy «Sí, si la causa es imputable al proveedor» condicionaba el servicio deficiente a la imputabilidad y no coincidía con la bajada → misma formulación de la bajada; esquema, razonamiento y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -12580,7 +12586,7 @@
       "id": "R20270207-T163",
       "formato": "reel",
       "huella": "06f88fe59df5bc557519bf62c2c9bd91fbff6a9780e156cbea6d084238543a93",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T16:36:04+00:00",
@@ -12596,6 +12602,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-19T16:38:34+00:00",
           "motivo": "RETENIDO: Regla: Sin personas reales identificables"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-19T19:48:56+00:00",
+          "motivo": "corrección (Claude, revisión delegada 19-11, 2.ª ronda): retención por falso positivo «Nación Mexicana» como persona real (causa del sistema: «Nación» agregada a INICIO_INSTITUCION, prueba test_nacion_mexicana_no_es_persona_real); además gancho sin redundancia y titular final sin ancla → párrafo primero literal del art. 2 (F3); esquema y razonamiento sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,

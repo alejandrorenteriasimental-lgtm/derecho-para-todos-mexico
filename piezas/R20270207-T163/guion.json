@@ -28,12 +28,23 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
       "jurisdiccion": "federal",
       "consultado": "2026-11-19"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La Nación Mexicana es única e indivisible, basada en la grandeza de sus pueblos y culturas",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿México es un país pluricultural según la Constitución de nuestro país?",
+      "texto": "¿México es un país pluricultural según la Constitución?",
       "titulo": [
         "¿MÉXICO ES",
         "PLURICULTURAL?"
@@ -73,12 +84,19 @@
     },
     {
       "tipo": "titular",
-      "texto": "Así, el estatus constitucional de la Nación se fundamenta de forma originaria en sus pueblos y comunidades indígenas.",
+      "texto": "El mismo artículo agrega que la Nación Mexicana es única e indivisible, basada en la grandeza de sus pueblos y culturas.",
       "titulo": [
-        "BASE EN PUEBLOS",
-        "INDÍGENAS"
+        "ÚNICA E",
+        "INDIVISIBLE"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El artículo 2 dispone que la Nación Mexicana es única e indivisible, basada en la grandeza de sus pueblos y culturas.",
+          "fuente": "F3"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -185,5 +203,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-19",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Gancho «…según la Constitución de nuestro país?» (redundante) → «¿México es un país pluricultural según la Constitución?». Titular final «el estatus constitucional de la Nación se fundamenta de forma originaria en sus pueblos y comunidades indígenas» (sin ancla: el art. 2 no habla de «estatus» y la cita dice «pueblos indígenas», no «pueblos y comunidades») → párrafo primero literal del art. 2: «la Nación Mexicana es única e indivisible, basada en la grandeza de sus pueblos y culturas» (F3, A3); pantalla «ÚNICA E / INDIVISIBLE»."
+    }
+  ]
 }

@@ -8,7 +8,8 @@ from pathlib import Path
 # R20261130-T014, 29-10: «Autoridad Conciliadora» (LFT 48) se marcó como persona real.
 INICIO_INSTITUCION = {"Autoridad", "Autoridades", "Tribunal", "Tribunales", "Centro", "Centros", "Procuraduría", "Secretaría", "Instituto",
                       "Comisión", "Junta", "Juzgado", "Fiscalía", "Congreso", "Cámara", "Poder", "Consejo", "Defensoría", "Registro",
-                      "Fuerza", "Fuerzas", "Ejército", "Armada", "Guardia", "Marina"}   # I20261221-T115 (4-11): «Fuerzas Armadas» retuvo la pieza
+                      "Fuerza", "Fuerzas", "Ejército", "Armada", "Guardia", "Marina",   # I20261221-T115 (4-11): «Fuerzas Armadas» retuvo la pieza
+                      "Nación"}   # R20270207-T163 (19-11): «Nación Mexicana» (CPEUM 2) retuvo la pieza
 
 
 def _run(cmd):

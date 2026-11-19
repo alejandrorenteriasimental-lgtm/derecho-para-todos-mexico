@@ -455,6 +455,24 @@ def test_fuerzas_armadas_no_es_persona_real():
     assert [x for x in auditoria.editorial(g2)["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
 
 
+def test_nacion_mexicana_no_es_persona_real():
+    """R20270207-T163 (19-11): «Nación Mexicana» (CPEUM 2, narrada fuera de la cita literal) se detectó como persona real y retuvo la pieza."""
+    import auditoria
+    from datetime import date
+    f = {"tipo": "ley", "nivel": "oficial", "documento": "Constitución Política de los Estados Unidos Mexicanos", "articulo": "2",
+         "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2", "consultado": "2026-11-19",
+         "texto_literal": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas"}
+    esc = [{"tipo": "titular", "texto": "Sí, la Constitución establece que la Nación Mexicana tiene una composición pluricultural.",
+            "afirmaciones": [{"id": "A1", "tipo": "hecho_normativo", "texto": "x", "fuente": "F1"}]},
+           {"tipo": "cierre", "texto": "Esto es información general, no asesoría legal.", "afirmaciones": []}]
+    g = {"formato": "reel", "fuentes": {"F1": f}, "escenas": esc}
+    for r in (auditoria.juridica(g, date(2026, 11, 19)), auditoria.editorial(g)):
+        assert not [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"], r
+    g2 = {**g, "escenas": [{**esc[0], "texto": esc[0]["texto"] + " Juan Pérez lo explica."}, esc[1]]}
+    for r in (auditoria.juridica(g2, date(2026, 11, 19)), auditoria.editorial(g2)):
+        assert [x for x in r["reglas"] if x["control"] == "Sin personas reales identificables" and x["resultado"] == "FALLA"]
+
+
 def test_encabezado_de_excepcion_coincide_con_la_narracion():
     """R20261130-T014 (29-10): tarjeta «Excepción por fallecimiento» con narración sobre salarios vencidos."""
     esc = {"tipo": "excepcion", "texto": "Y si en el juicio el patrón no comprueba la causa del despido, además te deben pagar los salarios vencidos.",

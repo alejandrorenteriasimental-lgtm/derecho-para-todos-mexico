@@ -14,7 +14,7 @@
     "ojo": "También procede en los demás casos previstos por la ley.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 92 Bis"
   },
-  "copy": "¿Te deben compensar si un servicio que pagaste fue deficiente?\n\nSí, si la causa es imputable al proveedor. El artículo 92 Bis de la Ley Federal de Protección al Consumidor dice: «Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor, o por los demás casos previstos por la ley».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92 Bis.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te deben compensar si un servicio que pagaste fue deficiente?\n\nSí, si el servicio es deficiente o no se presta por causas imputables al proveedor. El artículo 92 Bis de la Ley Federal de Protección al Consumidor dice: «Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor, o por los demás casos previstos por la ley».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92 Bis.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen con fondo sólido y texto que explica el derecho a la compensación por servicios deficientes según la LFPC.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -311,6 +311,11 @@
       "fecha": "2026-11-19",
       "por": "Claude (revisión editorial delegada)",
       "que": "Copy sin cita literal y con generalizaciones y relleno («no cumple con la calidad esperada», «protege tu inversión», «¿Te ha pasado?») → cita literal completa del art. 92 Bis LFPC. Bajada «por responsabilidad del prestador» → condición literal «por causas imputables al proveedor». OJO «Válido por causas imputables al proveedor.» (repetía la bajada) → «También procede en los demás casos previstos por la ley.», anclado en F3 literal (A3). A1 con la condición completa."
+    },
+    {
+      "fecha": "2026-11-19",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Copy «Sí, si la causa es imputable al proveedor.» condicionaba el supuesto de servicio deficiente a la imputabilidad, lectura que el art. 92 Bis no fija de forma expresa (la auditoría IA ya lo objetó) y que no coincidía con la bajada → misma formulación de la bajada: «Sí, si el servicio es deficiente o no se presta por causas imputables al proveedor.»"
     }
   ]
 }
