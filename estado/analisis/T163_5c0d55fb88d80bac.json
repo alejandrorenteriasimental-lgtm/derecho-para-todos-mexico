@@ -1,0 +1,63 @@
+{
+ "tema_id": "T163",
+ "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+ "fecha": "2026-11-19T10:33:06+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+  "concepto_central": "bonificación o compensación",
+  "respuesta_corta": "Sí, tienes derecho a una bonificación o compensación si el servicio es deficiente o no se presta por causas imputables al proveedor.",
+  "reglas": [
+   {
+    "conclusion": "El consumidor tiene derecho legal a ser compensado cuando un servicio no cumple con la calidad debida o no se entrega por culpa del prestador.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor",
+    "condiciones": [
+     "Que la deficiencia o falta de prestación sea imputable al proveedor"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El proveedor debe otorgar una bonificación o compensación al consumidor.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El derecho surge cuando el servicio es deficiente, no se presta o no se proporciona por causas que dependan del proveedor.",
+    "fuente": "F1",
+    "cita_literal": "cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones específicas en los artículos consultados para este derecho.",
+    "fuente": "F1",
+    "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente",
+    "motivo": "Los textos oficiales proporcionados no prevén supuestos en los que el proveedor quede exento de esta obligación si el servicio es deficiente."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La calificación de un servicio como 'deficiente' depende de una valoración de los hechos.",
+    "condicion": "Si el proveedor y el consumidor no coinciden en la falta de calidad",
+    "base": "F1 no define los parámetros técnicos de deficiencia, solo establece el derecho ante tal supuesto."
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "bonificación",
+    "b": "devolución dinero",
+    "diferencia": "La bonificación es una compensación por la falla, mientras que la devolución es el reintegro del monto pagado originalmente."
+   }
+  ],
+  "limites": "Los textos no especifican el monto o porcentaje de la bonificación, ni el plazo máximo para reclamarla.",
+  "fuentes_irrelevantes": []
+ }
+}

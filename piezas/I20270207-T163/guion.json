@@ -1,0 +1,292 @@
+{
+  "id": "I20270207-T163",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Deben compensarte por un servicio deficiente?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T163",
+  "pieza": {
+    "titular": "¿Deben compensarte por un servicio deficiente?",
+    "bajada": "Sí, tienes derecho a bonificación o compensación si el servicio falla o no se entrega por responsabilidad del prestador.",
+    "cita": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
+    "ojo": "Válido por causas imputables al proveedor.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 92 Bis"
+  },
+  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor en su artículo 92 Bis, si pagas por un servicio y este no cumple con la calidad esperada o no se entrega, el prestador debe compensarte.\n\nEste derecho a la bonificación aplica cuando la falla es responsabilidad de quien ofrece el servicio. Si te encuentras en esta situación, la norma protege tu inversión frente a un trabajo mal realizado.\n\n¿Te ha pasado? Guarda esta información o compártela con alguien que necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen con fondo sólido y texto que explica el derecho a la compensación por servicios deficientes según la LFPC.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "no se preste o proporcione por causas imputables al proveedor",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El consumidor tiene derecho a una bonificación si el servicio es deficiente.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La compensación procede cuando el servicio no se proporciona por causas del proveedor.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+    "concepto_central": "bonificación o compensación",
+    "respuesta_corta": "Sí, tienes derecho a una bonificación o compensación si el servicio es deficiente o no se presta por causas imputables al proveedor.",
+    "reglas": [
+      {
+        "conclusion": "El consumidor tiene derecho legal a ser compensado cuando un servicio no cumple con la calidad debida o no se entrega por culpa del prestador.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor",
+        "condiciones": [
+          "Que la deficiencia o falta de prestación sea imputable al proveedor"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "92 Bis"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El proveedor debe otorgar una bonificación o compensación al consumidor.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El derecho surge cuando el servicio es deficiente, no se presta o no se proporciona por causas que dependan del proveedor.",
+        "fuente": "F1",
+        "cita_literal": "cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "La ley no establece excepciones específicas en los artículos consultados para este derecho.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente",
+        "motivo": "Los textos oficiales proporcionados no prevén supuestos en los que el proveedor quede exento de esta obligación si el servicio es deficiente."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La calificación de un servicio como 'deficiente' depende de una valoración de los hechos.",
+        "condicion": "Si el proveedor y el consumidor no coinciden en la falta de calidad",
+        "base": "F1 no define los parámetros técnicos de deficiencia, solo establece el derecho ante tal supuesto."
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "bonificación",
+        "b": "devolución dinero",
+        "diferencia": "La bonificación es una compensación por la falla, mientras que la devolución es el reintegro del monto pagado originalmente."
+      }
+    ],
+    "limites": "Los textos no especifican el monto o porcentaje de la bonificación, ni el plazo máximo para reclamarla."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-19T10:35:27+00:00",
+    "solicitud": "2027-02-07_imagen_T163-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 1,
+        "redactor": 7,
+        "auditor": 5
+      },
+      "llamadas_ia_total": 13,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 5,
+      "investigacion_complementaria": true
+    },
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los consumidores tienen derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente o no se preste por causas imputables al proveedor.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una síntesis exacta de los dos supuestos de hecho principales que establece el artículo 92 Bis."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "pieza (elemento 'ojo') y copy",
+              "problema": "Existe un error de interpretación lógica. El texto legal presenta la 'deficiencia del servicio' y la 'no prestación por causas imputables' como supuestos distintos (separados por una coma). La pieza, mediante el 'ojo' y el uso de la frase 'siempre que' en el copy, fusiona ambos supuestos y condiciona erróneamente el derecho por deficiencia a que exista una responsabilidad directa del proveedor, cuando la norma los trata como escenarios independientes.",
+              "correccion": "Se debe aclarar que el derecho a la bonificación o compensación procede en cualquiera de los dos casos: si el servicio es deficiente O si el servicio no se presta por causas imputables al proveedor, sin que uno sea requisito del otro."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "[ojo] El «OJO» parece cortado (no termina en punto): redáctalo como frase completa y breve, o quítalo"
+        ],
+        "visible": "  \n   \n Sí, tienes derecho a una bonificación o compensación cuando el servicio sea deficiente o no se preste por causas del proveedor. \n Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente \n por causas imputables al proveedor"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "[ojo] El «OJO» parece cortado (no termina en punto): redáctalo como frase completa y breve, o quítalo"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los consumidores tienen derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente o no se preste por causas imputables al proveedor.",
+              "sostenida": "parcial",
+              "motivo": "La conclusión omite la tercera posibilidad establecida en el texto oficial: 'o por los demás casos previstos por la ley', lo que restringe el alcance de la norma a solo dos supuestos."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "copy",
+              "problema": "El texto afirma categóricamente que el derecho se reconoce en 'dos escenarios distintos', lo cual es una interpretación restrictiva y errónea, ya que la ley contempla otros casos previstos legalmente.",
+              "correccion": "Evitar presentar los supuestos como una lista cerrada. Se debe mencionar que el derecho aplica en los casos de deficiencia o falta de prestación por causas del proveedor, así como en otros casos que la ley prevea."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[cobertura] Falta sustento oficial para qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»): hay que buscar el artículo que lo regula o no publicar la pieza."
+        ]
+      },
+      {
+        "etapa": "investigacion_complementaria",
+        "faltan": [
+          "[cobertura] Falta sustento oficial para qué excepciones prevé la ley (o «no_aplica» si el texto no prevé ninguna) (elemento «excepcion»): hay que buscar el artículo que lo regula o no publicar la pieza."
+        ],
+        "agregadas": [
+          "LFPC 92"
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El consumidor tiene derecho legal a ser compensado cuando un servicio no cumple con la calidad debida o no se entrega por culpa del prestador.",
+              "sostenida": "si",
+              "motivo": "El texto oficial establece el derecho a la bonificación o compensación cuando la prestación sea deficiente o no se preste por causas imputables al proveedor."
+            },
+            {
+              "conclusion": "La bonificación es una compensación por la falla, mientras que la devolución es el reintegro del monto pagado originalmente.",
+              "sostenida": "no",
+              "motivo": "El texto oficial proporcionado no menciona el concepto de 'devolución' ni establece una distinción entre bonificación y devolución; el redactor añade información externa."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "distinciones / copy",
+              "problema": "El redactor afirma que 'la ley distingue la bonificación... de la devolución', pero el texto oficial del artículo 92 Bis no contiene ninguna mención a la devolución ni a dicha distinción.",
+              "correccion": "Eliminar la distinción entre bonificación y devolución, así como su mención en el copy, para cumplir con la regla de usar exclusivamente los textos oficiales entregados."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El consumidor tiene derecho a bonificación o compensación ante servicios deficientes o no prestados por causas imputables al proveedor.",
+              "sostenida": "si",
+              "motivo": "El artículo 92 Bis de la Ley Federal de Protección al Consumidor establece explícitamente este derecho bajo la condición de que la falla sea imputable al proveedor."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

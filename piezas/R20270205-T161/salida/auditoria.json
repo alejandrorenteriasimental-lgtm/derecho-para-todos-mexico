@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.9 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.9 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "1351fd94f75c671c"
+      "detalle": "926b319de1008ec6"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270205-T161",
     "titulo": "¿Te pueden investigar por expresar tus ideas?",
-    "fecha": "2026-11-18T16:40:40+00:00",
-    "sha256": "1351fd94f75c671c208ab35f258b201628738ef5811beea53935ba8107e9bc49",
-    "duracion_s": 38.9,
+    "fecha": "2026-11-19T10:37:15+00:00",
+    "sha256": "926b319de1008ec6afe060774e09714eefb6c8ea74ba086bd37d704ed0b642d3",
+    "duracion_s": 41.4,
     "estado": "APTO",
-    "huella_guion": "0cb7e0d0374736c1bdc0812756b5e1cf1e66d02b678a3e7825be8f5127bd9fa4",
+    "huella_guion": "3b7aa3553dbc8a3927ea7e241f60393c24959af4bd6c3378d5fa47a1f9d38a3a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 23.1,
-      "musica": 1.9,
-      "render_video": 48.1,
-      "mezcla_audio": 1.8,
-      "auditoria_tecnica": 9.9
+      "narracion": 9.6,
+      "musica": 1.1,
+      "render_video": 30.5,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 6.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.41,
-      "computo_equivalente_runner_usd": 0.0085,
+      "computo_minutos": 0.8,
+      "computo_equivalente_runner_usd": 0.0048,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1165,
-    "caracteres_narrados": 549
+    "frames": 1241,
+    "caracteres_narrados": 597
   }
 }

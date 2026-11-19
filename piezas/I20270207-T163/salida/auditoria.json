@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1207 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal de P»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1118"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "58 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 41 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270207-T163",
+    "formato": "imagen",
+    "titulo": "¿Deben compensarte por un servicio deficiente?",
+    "plantilla": "dato",
+    "archivo": "I20270207-T163.png",
+    "sha256": "93cebc2f17bfee35f893ee2f3423f98eff85800be9ca0aa98b959dc51c26ea2e",
+    "ahash": "1101111111111111111111111111111111111111111111111000000000000011100100000011111110000000111111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "7ce12e386728c53230d6ac11e6ccb89c062996b79a2e9e0b5e43feed28607743",
+    "texto_alternativo": "Imagen con fondo sólido y texto que explica el derecho a la compensación por servicios deficientes según la LFPC.",
+    "copy": "De acuerdo con la Ley Federal de Protección al Consumidor en su artículo 92 Bis, si pagas por un servicio y este no cumple con la calidad esperada o no se entrega, el prestador debe compensarte.\n\nEste derecho a la bonificación aplica cuando la falla es responsabilidad de quien ofrece el servicio. Si te encuentras en esta situación, la norma protege tu inversión frente a un trabajo mal realizado.\n\n¿Te ha pasado? Guarda esta información o compártela con alguien que necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "92 Bis",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal de Protección al Consumidor",
+        "articulo": "92 Bis",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-19T10:39:26+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}
