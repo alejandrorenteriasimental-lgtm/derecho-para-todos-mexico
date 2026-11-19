@@ -1,0 +1,189 @@
+{
+  "id": "R20270207-T163",
+  "formato": "reel",
+  "titulo": "¿México es un país pluricultural según la Constitución?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T163",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 2",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿México es un país pluricultural según la Constitución de nuestro país?",
+      "titulo": [
+        "¿MÉXICO ES",
+        "PLURICULTURAL?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, la Constitución establece que la Nación Mexicana tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas.",
+      "titulo": [
+        "NACIÓN",
+        "PLURICULTURAL"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La Constitución reconoce que la Nación Mexicana tiene una composición pluricultural y multiétnica sustentada originariamente en sus pueblos indígenas.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "El artículo 2 constitucional señala expresamente que La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas.",
+      "etiqueta": "Constitución, art. 2",
+      "cita": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El artículo 2 establece literalmente la composición pluricultural de la Nación.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Así, el estatus constitucional de la Nación se fundamenta de forma originaria en sus pueblos y comunidades indígenas.",
+      "titulo": [
+        "BASE EN PUEBLOS",
+        "INDÍGENAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿México es un país pluricultural según la Constitución?",
+    "concepto_central": "composición pluricultural",
+    "respuesta_corta": "Sí, la Constitución establece que la Nación Mexicana tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas.",
+    "reglas": [
+      {
+        "conclusion": "La Constitución determina que la Nación Mexicana posee una composición pluricultural y multiétnica sustentada originariamente en sus pueblos indígenas.",
+        "fuente": "F1",
+        "cita_literal": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "2"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El estatus constitucional de la Nación es de composición pluricultural y multiétnica, fundamentada de forma originaria en sus pueblos indígenas.",
+        "fuente": "F1",
+        "cita_literal": "La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "No se deben señalar leyes secundarias ni tratados internacionales que no formen parte del texto oficial proporcionado, ni asumir sanciones o consecuencias no previstas expresamente en la norma."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-19T16:31:26+00:00",
+    "solicitud": "2027-02-07_reel_T163-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿México es un país pluricultural según la Constitución?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿México es un país pluricultural según la Constitución?\n\nSí, la Constitución establece que la Nación Mexicana tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 2.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La Constitución establece que la Nación Mexicana tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas.",
+              "sostenida": "si",
+              "motivo": "El artículo 2 de la Constitución contiene textualmente esta afirmación."
+            },
+            {
+              "conclusion": "El estatus constitucional de la Nación se fundamenta de forma originaria en sus pueblos y comunidades indígenas.",
+              "sostenida": "si",
+              "motivo": "El artículo 2 establece que la composición pluricultural está sustentada originalmente en sus pueblos indígenas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

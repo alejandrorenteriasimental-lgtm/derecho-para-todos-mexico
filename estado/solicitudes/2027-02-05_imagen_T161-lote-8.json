@@ -20,9 +20,9 @@
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270205-T161",
   "archivo": "2027-02-05_imagen_T161-lote-8.json",
-  "intentos": 0,
-  "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan si el maltrato es causa de rescisión de la relación de trabajo sin responsabilidad para el trabajador, ni las multas económicas para el patrón.",
-  "ultima_categoria": "juridico",
+  "intentos": 1,
+  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
+  "ultima_categoria": "tecnico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-17",
@@ -45,5 +45,6 @@
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no mencionan si el maltrato es causa de rescisión de la relación de trabajo sin responsabilidad para el trabajador, ni las multas económicas para el patrón."
     }
-  ]
+  ],
+  "huella_entrada": "c9e5c0c5ba34fd41"
 }
