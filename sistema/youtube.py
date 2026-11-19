@@ -10,6 +10,9 @@ Decisión del responsable (2-11-2026): «quiero que se publique en todos lados, 
   · Idempotencia: libro estado/operaciones.jsonl con la marca «…-yt». Si una carga quedó sin confirmación (AMBIGUA),
     NO se reintenta sola: podría duplicar el video. Se revisa el canal y se resuelve a mano.
   · Un error de YouTube nunca detiene Facebook ni Instagram (lo maneja el publicador).
+  · Miniatura personalizada (19-11-2026, solo el video largo semanal; el canal se verificó por teléfono el 16-11):
+    poner_miniatura() llama thumbnails.set DESPUÉS de videos.insert, con su propia marca «…-yt-min» en el libro. Poner
+    la misma miniatura dos veces no duplica nada, así que un fallo se reintenta (solo la miniatura, nunca el video).
 Costo: 0 MXN (cuota gratuita de la API: 100 cargas al día).
 """
 import json, os, urllib.parse
@@ -21,6 +24,8 @@ from publicar import SinRed, http_real, marca, operacion, registrar
 
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 CARGA_URL = "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status"
+MINIATURA_URL = "https://www.googleapis.com/upload/youtube/v3/thumbnails/set"
+MINIATURA_MAX_BYTES = 2 * 1024 * 1024
 SECRETOS = ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")
 CATEGORIA_EDUCACION = "27"
 
@@ -110,6 +115,37 @@ def publicar_yt(pieza_id, mp4, titulo, descripcion, huella, publicar_en, modo=No
     registrar({**base, "fase": "CONFIRMADA", "video_id": d.get("id"), "estado_remoto": (d.get("status") or {}).get("privacyStatus"),
                "publish_at": (d.get("status") or {}).get("publishAt")}, libro)
     return {"estado": "PROGRAMADO", "video_id": d.get("id"), "marca": etiqueta, "origen": "videos.insert"}
+
+
+def poner_miniatura(pieza_id, video_id, imagen, huella, modo=None, env=os.environ, http=http_real, libro=None):
+    """thumbnails.set (subida simple, Content-Type image/png o image/jpeg) para un video ya subido. Idempotente con el libro:
+    marca «…-yt-min»; si ya quedó CONFIRMADA para ese video no se repite. Un error queda como FALLIDA y se lanza."""
+    etiqueta = marca(pieza_id, huella) + "-yt-min"
+    if modo is None: modo, motivo = modo_youtube(env)
+    else: motivo = "modo indicado por quien llama"
+    base = {"pieza": pieza_id, "marca": etiqueta, "modo": modo, "formato": "miniatura", "red": "youtube", "video_id": video_id}
+    if modo == "simulacion":
+        if (operacion(etiqueta, "simulacion", libro) or {}).get("fase") != "SIMULADA":
+            registrar({**base, "fase": "SIMULADA", "motivo": motivo}, libro)
+        return {"estado": "SIMULADO", "marca": etiqueta, "motivo": motivo}
+    op = operacion(etiqueta, "real", libro) or {}
+    if op.get("fase") == "CONFIRMADA" and op.get("video_id") == video_id:
+        return {"estado": "PUESTA", "video_id": video_id, "marca": etiqueta, "origen": "libro"}
+    if not video_id: raise ErrorYouTube(0, "sin video_id para la miniatura")
+    tipo = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg"}.get(Path(imagen).suffix.lower())
+    datos = Path(imagen).read_bytes()
+    if not tipo or len(datos) >= MINIATURA_MAX_BYTES:
+        registrar({**base, "fase": "FALLIDA", "error": "la miniatura debe ser PNG o JPEG de menos de 2 MB"}, libro)
+        raise ErrorYouTube(0, "la miniatura debe ser PNG o JPEG de menos de 2 MB")
+    try:
+        tok = token_acceso(env, http)
+        url = MINIATURA_URL + "?" + urllib.parse.urlencode({"videoId": video_id, "uploadType": "media"})
+        est, cuerpo = http("POST", url, {"Authorization": f"Bearer {tok}", "Content-Type": tipo, "Content-Length": str(len(datos))}, datos, timeout=120)
+        d = _json(est, cuerpo)
+    except (SinRed, ErrorYouTube) as e:
+        registrar({**base, "fase": "FALLIDA", "error": str(e)[:300]}, libro); raise
+    registrar({**base, "fase": "CONFIRMADA", "bytes": len(datos), "items": len(d.get("items") or [])}, libro)
+    return {"estado": "PUESTA", "video_id": video_id, "marca": etiqueta, "origen": "thumbnails.set"}
 
 
 def _ubicacion(cuerpo):

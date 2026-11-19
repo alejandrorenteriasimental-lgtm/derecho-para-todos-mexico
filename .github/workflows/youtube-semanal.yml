@@ -3,6 +3,8 @@
 #    lo audita, lo respalda en el release privado y lo deja en revisión (aprobación delegada con 72 h de veto).
 #  · Domingo 11:07 CDMX: si ya terminó el veto, lo programa en YouTube como video normal (no Short) para las 12:00.
 #    Lunes 11:07: respaldo para un veto que terminó tarde (se programa a las 12:00 de ese día). Nunca se sube dos veces.
+#  · Miniatura personalizada (19-11-2026): se genera y audita al armar (parte de la versión aprobada) y se pone con
+#    thumbnails.set después de programar; si falla, el domingo/lunes siguientes reintentan solo la miniatura.
 # Empieza solo en YOUTUBE_SEMANAL_DESDE (data/lanzamiento.json, 2026-12-03); antes cada ejecución termina en segundos.
 # Sin PUBLICAR=1, LANZAMIENTO_AUTORIZADO=SI, YOUTUBE=1 y los secretos de YouTube, la programación solo se simula.
 name: youtube-semanal

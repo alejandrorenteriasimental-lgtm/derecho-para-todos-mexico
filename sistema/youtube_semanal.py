@@ -11,13 +11,19 @@ Qué hace (desde YOUTUBE_SEMANAL_DESDE de data/lanzamiento.json; antes no hace n
     cada Reel centrado sobre el fondo de marca con la pregunta y su fuente a los lados, fundidos breves y audio normalizado
     (−14 LUFS, pico ≤ −1 dBTP, dos pasadas). Título, descripción con capítulos y fuentes oficiales de cada segmento, y el
     aviso «Información general, no asesoría legal».
+  · Miniatura personalizada 1280x720 PNG (19-11-2026): fondo, colores, tipografía, símbolo y logotipo de la marca; «N PREGUNTAS»
+    y el tema tomados del título (titular ≤ 6 palabras), sin fotos de terceros. Su SHA-256 va en el manifiesto: es parte de
+    la versión que se aprueba.
   · Auditoría técnica: duración de 8 a 10 min, 1920x1080, H.264, 30 cps, AAC 48 kHz estéreo, sonoridad, integridad, capítulos
-    (≥ 3, el primero en 0:00, ≥ 10 s cada uno) y fuentes presentes. Si falla, queda RETENIDO y no se revisa.
+    (≥ 3, el primero en 0:00, ≥ 10 s cada uno), fuentes presentes y la miniatura (tamaño, peso < 2 MB, márgenes, contraste,
+    texto corto y del título, huella). Si falla, queda RETENIDO y no se revisa.
   · Respaldo en el release privado con su SHA-256; queda en REVISION_HUMANA (estado/youtube_semanal.json). Aprobación
     delegada con 72 h de veto: python sistema/decidir.py aprobar Y<AAAAMMDD>-SEM <versión> --por "…" --delegada
   · DOMINGO 11:07 CDMX («programar»): si está aprobado y el veto terminó, lo sube con youtube.py como video normal (no Short)
     programado (publishAt) para el domingo 12:00 CDMX. Si el veto termina después, la ejecución del lunes 11:07 lo programa
-    para las 12:00 de ese día. Idempotente con el libro de operaciones (marca «…-yt»): nunca se sube dos veces.
+    para las 12:00 de ese día. Idempotente con el libro de operaciones (marca «…-yt»): nunca se sube dos veces. Después pone
+    la miniatura aprobada (thumbnails.set, marca «…-yt-min»); si falla, el video queda programado con la miniatura automática
+    y las siguientes ejecuciones reintentan SOLO la miniatura (hasta MINIATURA_INTENTOS).
 Costo: 0 MXN (minutos de Actions dentro de la guardia; cuota gratuita de la API de YouTube).
 
 Uso:  python sistema/youtube_semanal.py activo | armar | programar | listar
@@ -307,21 +313,157 @@ def duracion(mp4):
     return float(r.stdout.strip())
 
 
-def _fondo():
-    """Fondo de marca 1920x1080 (noche → noche 2, resplandor frío y líneas diagonales tenues), como las portadas y el Reel."""
+def _fondo(w=W, h=H):
+    """Fondo de marca (noche → noche 2, resplandor frío y líneas diagonales tenues), como las portadas y el Reel."""
     import numpy as np
     from PIL import Image, ImageDraw, ImageFilter
     import marca
-    y = np.linspace(0, 1, H)[:, None, None]
+    y = np.linspace(0, 1, h)[:, None, None]
     base = np.array(marca.C["noche"]) * (1 - y) + np.array(marca.C["noche_2"]) * y
-    im = Image.fromarray(np.repeat(base, W, axis=1).astype(np.uint8)).convert("RGBA")
-    capa = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(capa)
-    d.ellipse([W * 0.58, -H * 0.5, W * 1.2, H * 1.0], fill=(70, 110, 160, 70))
-    im.alpha_composite(capa.filter(ImageFilter.GaussianBlur(H * 0.2)))
-    lin = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dl = ImageDraw.Draw(lin)
-    for x in range(-H, W, 120): dl.line([(x, 0), (x + H, H)], fill=(255, 255, 255, 9), width=2)
+    im = Image.fromarray(np.repeat(base, w, axis=1).astype(np.uint8)).convert("RGBA")
+    capa = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(capa)
+    d.ellipse([w * 0.58, -h * 0.5, w * 1.2, h * 1.0], fill=(70, 110, 160, 70))
+    im.alpha_composite(capa.filter(ImageFilter.GaussianBlur(h * 0.2)))
+    lin = Image.new("RGBA", (w, h), (0, 0, 0, 0)); dl = ImageDraw.Draw(lin)
+    for x in range(-h, w, round(120 * w / W)): dl.line([(x, 0), (x + h, h)], fill=(255, 255, 255, 9), width=2)
     im.alpha_composite(lin)
     return im
+
+
+# ── miniatura personalizada (19-11-2026; canal verificado por teléfono el 16-11: la API admite thumbnails.set) ───────
+MW, MH = 1280, 720                       # YouTube: 1280x720 recomendado, JPG/PNG, menos de 2 MB
+MINI_MAX_BYTES = 2 * 1024 * 1024
+MINI_MARGEN = 48                         # el texto no se acerca a los bordes (recortes de la interfaz)
+MINI_ZONA_DURACION = (MW - 250, MH - 100, MW, MH)   # esquina inferior derecha: ahí YouTube pinta la duración del video
+MINI_TITULAR_MAX_PALABRAS, MINI_TOTAL_MAX_PALABRAS = 6, 8
+MINI_TITULAR_MIN_PX = 80                 # a 320x180 (lista de sugeridos) el titular queda de ≥ 20 px
+MINI_CONTRASTE_MIN = 4.5                 # WCAG AA
+# Temas de más de 6 palabras: forma corta hecha solo con palabras del propio tema (sin afirmaciones nuevas).
+TEMA_CORTO = {"familia, niñez y vida libre de violencia": "familia, niñez y violencia"}
+
+
+def miniatura_archivo(pid):
+    return f"{pid}_miniatura.png"
+
+
+def _palabras(t):
+    return re.findall(r"[a-z0-9ñ]+", _plano(t))
+
+
+def textos_miniatura(sel):
+    """(antetítulo, titular): «N PREGUNTAS» y el tema, ambos tomados del título del video; el titular, de 6 palabras o menos.
+    Si el título no dice «N preguntas» (título recortado a 100 caracteres), no hay antetítulo."""
+    tema = sel["tema"]
+    if len(_palabras(tema)) > MINI_TITULAR_MAX_PALABRAS: tema = TEMA_CORTO.get(tema, tema)
+    ante = f'{len(sel["segmentos"])} preguntas'
+    return (ante.upper() if _plano(ante) in _plano(titulo_video(sel)) else ""), tema[:1].upper() + tema[1:]
+
+
+def _hex(c):
+    return "#%02X%02X%02X" % tuple(c[:3])
+
+
+def miniatura(sel, salida):
+    """Miniatura 1280x720 con la identidad aprobada (fondo, colores, Inter Display y el símbolo/logotipo de marca/), sin
+    fotos de terceros. Devuelve la descripción de lo que se pintó (textos, cajas, colores y tamaños) para la auditoría."""
+    from PIL import ImageDraw
+    import marca
+    C, F = marca.C, marca.F
+    im = _fondo(MW, MH); d = ImageDraw.Draw(im)
+    x0, ancho = 76, 700
+    ante, titular = textos_miniatura(sel)
+    textos = []
+    # símbolo de marca (burbuja con §) a la derecha, grande: se reconoce aunque la miniatura se vea a 168x94
+    s = marca.simbolo(330, "cempasuchil", "noche"); sx, sy = MW - 76 - s.width, 150
+    im.alpha_composite(s, (sx, sy))
+    logo = marca.logo_horizontal(72, "oscuro"); ly = MH - MINI_MARGEN - 18 - logo.height
+    fa = F("bold", 46); alto_ante = (46 + 38) if ante else 0
+    arriba, abajo = MINI_MARGEN + 20, ly - 40          # el bloque de texto (con la barra) no invade el logotipo
+    # titular: lo más grande posible, en 3 líneas como máximo, dentro de la columna izquierda y del alto disponible
+    tam = 132
+    while True:
+        f = F("display_black", tam); lineas = _envolver(d, titular, f, ancho); inter = int(tam * 1.04)
+        alto = alto_ante + inter * (len(lineas) - 1) + int(tam * 0.96) + 30 + 9
+        if (len(lineas) <= 3 and all(d.textlength(l, font=f) <= ancho for l in lineas) and alto <= abajo - arriba) or tam <= MINI_TITULAR_MIN_PX: break
+        tam -= 4
+    y = arriba + max(0, (abajo - arriba - alto) // 2)
+    if ante:
+        caja = d.textbbox((x0, y), ante, font=fa); d.text((x0, y), ante, font=fa, fill=C["cempasuchil"])
+        textos.append({"rol": "antetitulo", "texto": ante, "caja": list(caja), "color": _hex(C["cempasuchil"]), "tam": fa.size})
+        y += alto_ante
+    for l in lineas:
+        caja = d.textbbox((x0, y), l, font=f); d.text((x0, y), l, font=f, fill=C["papel"])
+        textos.append({"rol": "titular", "texto": l, "caja": list(caja), "color": _hex(C["papel"]), "tam": f.size}); y += inter
+    yb = max(t["caja"][3] for t in textos) + 30
+    d.rectangle([x0, yb, x0 + 150, yb + 9], fill=C["cempasuchil"])
+    im.alpha_composite(logo, (x0, ly))
+    salida = Path(salida); salida.parent.mkdir(parents=True, exist_ok=True)
+    im.convert("RGB").save(salida, "PNG", optimize=True)
+    return {"archivo": salida.name, "ancho": MW, "alto": MH, "textos": textos,
+            "logotipo": [x0, ly, x0 + logo.width, ly + logo.height], "simbolo": [sx, sy, sx + s.width, sy + s.height]}
+
+
+def _luminancia(c):
+    def canal(v):
+        v = v / 255; return v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4
+    r, g, b = (canal(x) for x in c[:3]); return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+def contraste(a, b):
+    la, lb = sorted((_luminancia(a), _luminancia(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def auditar_miniatura(png, mini, titulo):
+    """Controles de la miniatura: formato, tamaño, peso, texto dentro de márgenes y fuera de la esquina de la duración,
+    contraste medido sobre los píxeles reales, texto corto y tomado del título, titular legible en tamaño pequeño."""
+    import numpy as np
+    from PIL import Image
+    res = []
+    def ok(nombre, cond, detalle=""): res.append({"control": nombre, "resultado": "APROBADO" if cond else "FALLA", "detalle": detalle})
+    png = Path(png)
+    try:
+        im = Image.open(png); fmt = im.format; im = im.convert("RGB")
+    except (OSError, ValueError) as x:
+        ok("Miniatura personalizada legible", False, f"{type(x).__name__}: {x}"[:200]); return res
+    ok(f"Miniatura {MW}x{MH} (16:9)", im.size == (MW, MH), f"{im.size[0]}x{im.size[1]}")
+    peso = png.stat().st_size
+    ok("Miniatura PNG o JPEG de menos de 2 MB", fmt in ("PNG", "JPEG") and peso < MINI_MAX_BYTES, f"{fmt}, {peso / 1024:.0f} KB")
+    textos = mini.get("textos") or []
+    m = MINI_MARGEN; zx0, zy0, zx1, zy1 = MINI_ZONA_DURACION
+    fuera = [t["texto"] for t in textos if not (t["caja"][0] >= m and t["caja"][1] >= m and t["caja"][2] <= MW - m and t["caja"][3] <= MH - m)]
+    tapados = [t["texto"] for t in textos + [{"texto": "logotipo", "caja": mini.get("logotipo") or [0, 0, 0, 0]}]
+               if t["caja"][2] > zx0 and t["caja"][3] > zy0 and t["caja"][0] < zx1 and t["caja"][1] < zy1]
+    ok(f"Texto dentro de márgenes de {m} px y fuera de la esquina de la duración", bool(textos) and not fuera and not tapados,
+       ", ".join(fuera + tapados) or f"{len(textos)} líneas")
+    def cruza(a, b): return a[2] > b[0] and a[3] > b[1] and a[0] < b[2] and a[1] < b[3]
+    graf = [g for g in (mini.get("logotipo"), mini.get("simbolo")) if g]
+    encima = [t["texto"] for t in textos if any(cruza(t["caja"], g) for g in graf)]
+    encima += [f'{a["texto"]} / {b["texto"]}' for i, a in enumerate(textos) for b in textos[i + 1:] if cruza(a["caja"], b["caja"])]
+    ok("Logotipo presente y sin texto encimado", bool(mini.get("logotipo")) and not encima, ", ".join(encima) or "sin cruces")
+    a = np.asarray(im).astype(int); peor, sin_texto = None, []
+    for t in textos:
+        x0, y0, x1, y1 = (int(v) for v in t["caja"]); col = np.array([int(t["color"][i:i + 2], 16) for i in (1, 3, 5)])
+        dentro = a[max(y0, 0):y1, max(x0, 0):x1].reshape(-1, 3)
+        if not len(dentro) or (np.abs(dentro - col).sum(axis=1) < 30).mean() < 0.03:
+            sin_texto.append(t["texto"]); continue
+        anillo = np.concatenate([a[max(y0 - 8, 0):max(y0 - 2, 0), x0:x1].reshape(-1, 3), a[y1 + 2:y1 + 8, x0:x1].reshape(-1, 3),
+                                 a[y0:y1, max(x0 - 8, 0):max(x0 - 2, 0)].reshape(-1, 3), a[y0:y1, x1 + 2:x1 + 8].reshape(-1, 3)])
+        anillo = anillo[np.abs(anillo - col).sum(axis=1) >= 30] if len(anillo) else anillo   # sin el texto vecino
+        if not len(anillo): continue
+        fondo = np.median(anillo, axis=0); cr = contraste(col, fondo)
+        if peor is None or cr < peor[0]: peor = (cr, t["texto"])
+    ok(f"Contraste del texto de {MINI_CONTRASTE_MIN}:1 o más (medido sobre el fondo real)", bool(textos) and not sin_texto and peor is not None and peor[0] >= MINI_CONTRASTE_MIN,
+       (f"sin texto visible: {', '.join(sin_texto)}" if sin_texto else f"mínimo {peor[0]:.1f}:1 ({peor[1]})" if peor else "sin medición"))
+    tit = [w for t in textos if t["rol"] == "titular" for w in _palabras(t["texto"])]
+    todas = [w for t in textos for w in _palabras(t["texto"])]
+    ok(f"Texto corto: titular de {MINI_TITULAR_MAX_PALABRAS} palabras o menos ({MINI_TOTAL_MAX_PALABRAS} en total)",
+       0 < len(tit) <= MINI_TITULAR_MAX_PALABRAS and len(todas) <= MINI_TOTAL_MAX_PALABRAS, f"{len(tit)} + {len(todas) - len(tit)} palabras")
+    ajenas = sorted(set(todas) - set(_palabras(titulo)))
+    ok("Texto tomado del título del video (sin palabras ni afirmaciones nuevas)", not ajenas, ", ".join(ajenas) or "todas del título")
+    tam = min((t["tam"] for t in textos if t["rol"] == "titular"), default=0)
+    ok(f"Titular legible en pequeño ({MINI_TITULAR_MIN_PX} px o más; ≥ 20 px a 320x180)", tam >= MINI_TITULAR_MIN_PX, f"{tam} px")
+    return res
 
 
 def _envolver(d, texto, fuente, ancho):
@@ -477,7 +619,18 @@ def auditar(mp4, m, dur_min=None, dur_max=None):
     err = subprocess.run(["ffmpeg", "-nostdin", "-nostats", "-i", str(mp4), "-vf", "blackdetect=d=1:pix_th=0.05", "-an", "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S).stderr
     neg = re.findall(r"black_duration:([\d.]+)", err)
     ok("Sin pantallas negras mayores a 1 s (los fundidos son de 0.3 s)", not neg, f"{len(neg)} tramos")
-    return res + controles_metadatos(m, dur), dur
+    return res + controles_metadatos(m, dur) + controles_miniatura(Path(mp4).parent, m), dur
+
+
+def controles_miniatura(carpeta, m):
+    """La miniatura forma parte de la versión: debe existir, tener la huella del manifiesto y pasar su auditoría."""
+    mi = m.get("miniatura") or {}
+    f = Path(carpeta) / (mi.get("archivo") or "")
+    if not mi.get("archivo") or not f.is_file():
+        return [{"control": "Miniatura personalizada presente", "resultado": "FALLA", "detalle": "sin miniatura"}]
+    h = hashlib.sha256(f.read_bytes()).hexdigest()
+    return ([{"control": "Miniatura idéntica a la del manifiesto (SHA-256)", "resultado": "APROBADO" if h == mi.get("sha256") else "FALLA", "detalle": h[:12]}]
+            + auditar_miniatura(f, mi, m.get("titulo") or ""))
 
 
 # ── versión, registro y aprobación ───────────────────────────────────────────────────────────────────────────────
@@ -487,13 +640,21 @@ def manifiesto_path(pid):
 
 def version(pid):
     """(versión, huella del manifiesto, huella del MP4 respaldado). Cambia si cambia el título, la descripción, los
-    capítulos, los segmentos o el archivo: una aprobación anterior deja de valer."""
+    capítulos, los segmentos, el archivo o la miniatura: una aprobación anterior deja de valer. La huella SHA-256 de la
+    miniatura va dentro del manifiesto y además debe coincidir con la del respaldo (si no, no hay versión aprobable)."""
     import respaldo
     mp = manifiesto_path(pid)
     hm = hashlib.sha256(mp.read_bytes()).hexdigest() if mp.exists() else ""
-    ha = (respaldo.cargar().get(pid, {}).get(f"{pid}_final.mp4") or {}).get("sha256", "")
+    resp = respaldo.cargar().get(pid, {})
+    ha = (resp.get(f"{pid}_final.mp4") or {}).get("sha256", "")
     if not (hm and ha): return None, hm, ha
-    return hashlib.sha256(f"{hm}:{ha}".encode()).hexdigest()[:16], hm, ha
+    try: mi = json.loads(mp.read_text()).get("miniatura") or {}
+    except ValueError: return None, hm, ha
+    if not mi:                                             # manifiestos anteriores a la miniatura (no hubo ninguno armado)
+        return hashlib.sha256(f"{hm}:{ha}".encode()).hexdigest()[:16], hm, ha
+    hmin = (resp.get(mi.get("archivo") or "") or {}).get("sha256", "")
+    if not hmin or hmin != mi.get("sha256"): return None, hm, ha
+    return hashlib.sha256(f"{hm}:{ha}:{hmin}".encode()).hexdigest()[:16], hm, ha
 
 
 def armar(hoy=None, env=None, bajar=None, ahora=None):
@@ -527,6 +688,7 @@ def armar(hoy=None, env=None, bajar=None, ahora=None):
             e = {k: s[k] for k in ("pieza", "version", "sha256", "asset_id", "archivo")}
             f = bajar(e, carpeta / "reels", env); publicador.comprobar(e, f, ahora); archivos.append(f)
         final, durs, intro = armar_video(sel, archivos, carpeta, pid)
+        mini = miniatura(sel, carpeta / "salida" / miniatura_archivo(pid))
     except Exception as x:                  # queda registrado; se puede repetir con youtube-semanal.yml (accion=armar)
         reg[pid] = {**base, "estado": "ERROR", "motivo": f"{type(x).__name__}: {x}"[:600], "segmentos": [s["pieza"] for s in sel["segmentos"]]}
         guardar(reg)
@@ -535,6 +697,7 @@ def armar(hoy=None, env=None, bajar=None, ahora=None):
     for s, d, c in zip(sel["segmentos"], durs, caps): s.update(duracion_s=round(d, 2), inicio_s=c["inicio_s"])
     m = {"id": pid, **base, "rama": sel["rama"], "tema": sel["tema"], "titulo": titulo_video(sel), "capitulos": caps,
          "descripcion": descripcion_video(sel, caps), "de_la_semana": sel["de_la_semana"], "anteriores": sel["anteriores"],
+         "miniatura": {**mini, "sha256": hashlib.sha256((carpeta / "salida" / mini["archivo"]).read_bytes()).hexdigest()},
          "segmentos": [{k: s.get(k) for k in ("fecha", "pieza", "version", "sha256", "titulo", "tema_id", "rama", "fuentes", "duracion_s", "inicio_s")} for s in sel["segmentos"]]}
     manifiesto_path(pid).write_text(json.dumps(m, ensure_ascii=False, indent=1) + "\n")
     tec, dur = auditar(final, m)
@@ -543,14 +706,18 @@ def armar(hoy=None, env=None, bajar=None, ahora=None):
     import shutil; shutil.rmtree(carpeta / "tmp", ignore_errors=True); shutil.rmtree(carpeta / "reels", ignore_errors=True)
     fallas = [f'{c["control"]} ({c["detalle"]})' for c in tec if c["resultado"] == "FALLA"]
     a = resp.get(f"{pid}_final.mp4") or {}
+    am = resp.get(m["miniatura"]["archivo"]) or {}
     r = {**base, "rama": m["rama"], "titulo": m["titulo"], "segmentos": m["segmentos"],
          "duracion_s": round(dur, 1), "sha256": a.get("sha256"), "asset_id": a.get("asset_id"), "release": a.get("release"),
-         "archivo": f"{pid}_final.mp4", "fallas_tecnicas": fallas}
+         "archivo": f"{pid}_final.mp4", "miniatura": {"archivo": m["miniatura"]["archivo"], "sha256": am.get("sha256"),
+                                                      "asset_id": am.get("asset_id"), "release": am.get("release")},
+         "fallas_tecnicas": fallas}
     if fallas:
         r.update(estado="RETENIDO", motivo="; ".join(fallas)[:600])
     else:
         ver, hm, ha = version(pid)
-        r.update(estado="REVISION_HUMANA" if ver else "RETENIDO", revision={"version": ver, "huella_manifiesto": hm, "huella_archivo": ha, "preparada": ahora_iso()},
+        r.update(estado="REVISION_HUMANA" if ver else "RETENIDO", revision={"version": ver, "huella_manifiesto": hm, "huella_archivo": ha,
+                                                                              "huella_miniatura": m["miniatura"]["sha256"], "preparada": ahora_iso()},
                  **({} if ver else {"motivo": "sin respaldo del archivo"}))
     reg[pid] = r; guardar(reg)
     return {"estado": r["estado"], "pieza": pid, "duracion_s": r["duracion_s"], "segmentos": len(m["segmentos"]), "rama": m["rama"],
@@ -560,6 +727,7 @@ def armar(hoy=None, env=None, bajar=None, ahora=None):
 def pendientes():
     return [{"pieza": k, "formato": "video largo semanal de YouTube", "titulo": v.get("titulo"), "domingo": v.get("domingo"),
              "version": (v.get("revision") or {}).get("version"), "duracion_s": v.get("duracion_s"), "archivo": v.get("archivo"),
+             "miniatura": (v.get("miniatura") or {}).get("archivo"),
              "manifiesto": str(manifiesto_path(k).relative_to(RAIZ))}
             for k, v in sorted(cargar().items()) if v.get("estado") == "REVISION_HUMANA"]
 
@@ -593,6 +761,10 @@ def programar(ahora=None, env=None, http=None, bajar=None, carpeta="/tmp/youtube
     if p: return {**res, "pausa": p}
     reg = cargar()
     for pid, v in sorted(reg.items()):
+        if v.get("estado") == "PROGRAMADO" and _miniatura_pendiente(v):    # solo la miniatura: el video ya está en YouTube
+            acc = {"pieza": pid, "estado": "PROGRAMADO", "reintento": "miniatura"}
+            acc["miniatura"] = _poner_miniatura(pid, v, (v.get("revision") or {}).get("version"), v.get("video_id"), env, http, bajar, carpeta)["estado"]
+            res["acciones"].append(acc); continue
         if v.get("estado") != "APROBADA": continue
         acc = {"pieza": pid}
         ver = (v.get("revision") or {}).get("version")
@@ -615,7 +787,9 @@ def programar(ahora=None, env=None, http=None, bajar=None, carpeta="/tmp/youtube
             acc.update(estado=r["estado"], publicar_en=cuando.isoformat(timespec="minutes"), **({"tarde": True} if cuando != objetivo else {}))
             if r["estado"] == "PROGRAMADO":
                 v.update(estado="PROGRAMADO", video_id=r.get("video_id"), programado_para=cuando.isoformat(timespec="minutes"))
-            else:
+            if r["estado"] in ("PROGRAMADO", "SIMULADO"):
+                acc["miniatura"] = _poner_miniatura(pid, v, ver, r.get("video_id"), env, http, bajar, carpeta)["estado"]
+            if r["estado"] != "PROGRAMADO":
                 v["ultimo_intento"] = {"fecha": ahora_iso(), "estado": r["estado"], "motivo": r.get("motivo")}
         except publicador.EnPlazoDeVeto as x:
             acc.update(estado="EN_PLAZO_DE_VETO", detalle=str(x))
@@ -626,6 +800,37 @@ def programar(ahora=None, env=None, http=None, bajar=None, carpeta="/tmp/youtube
         res["acciones"].append(acc)
     guardar(reg)
     return res
+
+
+MINIATURA_INTENTOS = 6           # domingo y lunes, varias semanas; después queda la miniatura automática y se avisa
+
+
+def _miniatura_pendiente(v):
+    m = v.get("miniatura_yt") or {}
+    return bool((v.get("miniatura") or {}).get("archivo")) and m.get("estado") != "PUESTA" and m.get("intentos", 0) < MINIATURA_INTENTOS
+
+
+def _poner_miniatura(pid, v, ver, video_id, env, http, bajar, carpeta):
+    """Pone la miniatura APROBADA (la de la versión vigente: huella del manifiesto = huella del respaldo = archivo descargado).
+    Nunca vuelve a subir el video. Si falla, queda en v["miniatura_yt"] con el motivo y se reintenta en la siguiente
+    ejecución de «programar»; mientras tanto el video sigue programado con la miniatura automática de YouTube."""
+    import publicador, publicar, respaldo, youtube
+    est = dict(v.get("miniatura_yt") or {})
+    try:
+        actual = version(pid)[0]
+        if not ver or actual != ver: raise publicador.NoAprobada(f"{pid}: la versión vigente ({actual}) no es la aprobada ({ver})")
+        mi = json.loads(manifiesto_path(pid).read_text()).get("miniatura") or {}
+        if not mi.get("sha256"): raise publicador.NoAprobada(f"{pid}: la versión aprobada no tiene miniatura")
+        e = {"pieza": pid, "version": ver, "sha256": mi["sha256"], "asset_id": (v.get("miniatura") or {}).get("asset_id"), "archivo": mi["archivo"]}
+        f = bajar(e, carpeta, env)
+        if respaldo.sha256(f) != mi["sha256"]: raise publicador.NoAprobada(f"{pid}: la miniatura descargada no es la aprobada")
+        r = youtube.poner_miniatura(pid, video_id, f, ver, env=env, http=http)
+        est.update(estado=r["estado"], fecha=ahora_iso()); est.pop("motivo", None)
+        if r["estado"] == "SIMULADO": est.pop("intentos", None)
+    except (publicador.NoAprobada, youtube.ErrorYouTube, publicar.SinRed, OSError, KeyError, ValueError) as x:
+        est.update(estado="ERROR", motivo=f"{type(x).__name__}: {x}"[:300], fecha=ahora_iso(), intentos=est.get("intentos", 0) + 1)
+    v["miniatura_yt"] = est
+    return est
 
 
 if __name__ == "__main__":

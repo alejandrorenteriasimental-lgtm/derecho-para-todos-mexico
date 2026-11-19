@@ -142,10 +142,15 @@ def test_arma_audita_respalda_y_queda_en_revision(entorno, corto):
 
 
 class HttpYT:
-    def __init__(self): self.llamadas = []
+    def __init__(self, fallas_miniatura=0):
+        self.llamadas = []; self.cabeceras = []; self.fallas_miniatura = fallas_miniatura
     def __call__(self, metodo, url, cab=None, datos=None, timeout=60):
-        self.llamadas.append((metodo, url, datos))
+        self.llamadas.append((metodo, url, datos)); self.cabeceras.append(cab or {})
         if url == youtube.TOKEN_URL: return 200, b'{"access_token": "A"}'
+        if url.startswith(youtube.MINIATURA_URL):
+            if self.fallas_miniatura:
+                self.fallas_miniatura -= 1; return 500, b'{"error": {"message": "backendError"}}'
+            return 200, json.dumps({"items": [{"default": {"url": "https://i.ytimg.com/x.jpg"}}]}).encode()
         if metodo == "POST": return 200, json.dumps({"location": "https://subida/1"}).encode()
         return 200, json.dumps({"id": "LARGO1", "status": {"privacyStatus": "private"}}).encode()
 
@@ -160,11 +165,13 @@ _CACHE = {}
 
 def _armar_una_vez(entorno, corto):
     """El video se arma una sola vez por sesión de pruebas y se copia a cada entorno (armarlo tarda ~30 s)."""
-    import shutil
+    import shutil, tempfile
     if not _CACHE:
         r = ys.armar(hoy=date(2026, 12, 3), env={}, bajar=corto)
         assert r["estado"] == "REVISION_HUMANA", r          # 17-11: el motivo del error (p. ej. ffmpeg colgado) queda visible en CI
-        _CACHE.update(resultado=r, dir=entorno / "semanal" / "Y20261206-SEM", reg=ys.REG.read_text(), resp=respaldo.MANIFIESTO.read_text())
+        copia = Path(tempfile.mkdtemp(prefix="ys_cache_")) / "Y20261206-SEM"     # copia aparte: una prueba puede alterar la suya
+        shutil.copytree(entorno / "semanal" / "Y20261206-SEM", copia)
+        _CACHE.update(resultado=r, dir=copia, reg=ys.REG.read_text(), resp=respaldo.MANIFIESTO.read_text())
         return
     shutil.copytree(_CACHE["dir"], entorno / "semanal" / "Y20261206-SEM")
     ys.REG.write_text(_CACHE["reg"]); respaldo.MANIFIESTO.write_text(_CACHE["resp"])
@@ -177,8 +184,8 @@ def _armado_y_aprobado(entorno, corto, monkeypatch, fecha_aprob):
     with pytest.raises(ValueError): decidir.decidir({"trabajos": {}}, pid, "APROBADA", "0" * 16, "Claude")
     decidir.decidir({"trabajos": {}}, pid, "APROBADA", ver, "Claude (revisión editorial delegada)", canal="delegada")
     monkeypatch.setattr(publicador, "comprobar", _comprobar_real)          # programar comprueba aprobación, veto y huella de verdad
-    mp4 = entorno / "semanal" / pid / "salida" / f"{pid}_final.mp4"
-    return pid, ver, (lambda e, carpeta, env: mp4)
+    salida = entorno / "semanal" / pid / "salida"
+    return pid, ver, (lambda e, carpeta, env: salida / e["archivo"])           # el archivo pedido (video o miniatura)
 
 
 def test_programa_el_domingo_a_las_12_despues_del_veto_y_sin_duplicar(entorno, corto, monkeypatch):
@@ -262,3 +269,149 @@ def test_audio_de_tarjeta_con_relleno_acotado(monkeypatch, tmp_path):
     ys._parte_tarjeta(tmp_path / "x.png", 5.0, tmp_path / "t.mp4")
     filtro = llamadas[0][llamadas[0].index("-filter_complex") + 1]
     assert "apad=whole_dur=5.000" in filtro and "apad," not in filtro
+
+
+# ── miniatura personalizada (19-11-2026) ─────────────────────────────────────────────────────────────────────────
+def _sel(tema="derechos laborales", n=8):
+    return {"rama": "laboral", "tema": tema, "segmentos": [{"pieza": f"R{i}"} for i in range(n)]}
+
+
+@pytest.mark.parametrize("tema,n", [("derechos laborales", 8), ("familia, niñez y vida libre de violencia", 12),
+                                    ("derechos constitucionales y justicia penal", 10), ("detenciones y justicia penal", 9)])
+def test_miniatura_de_marca_pasa_su_auditoria(tmp_path, tema, n):
+    sel = _sel(tema, n); f = tmp_path / "Y1_miniatura.png"
+    mi = ys.miniatura(sel, f)
+    from PIL import Image
+    im = Image.open(f); assert im.size == (1280, 720) and im.format == "PNG" and f.stat().st_size < 2 * 1024 * 1024
+    ante, titular = ys.textos_miniatura(sel)
+    assert ante == f"{n} PREGUNTAS" and len(ys._palabras(titular)) <= 6
+    assert set(ys._palabras(ante + " " + titular)) <= set(ys._palabras(ys.titulo_video(sel)))     # nada que no diga el título
+    res = ys.auditar_miniatura(f, mi, ys.titulo_video(sel))
+    assert all(c["resultado"] == "APROBADO" for c in res), res
+    assert len(res) >= 8
+    # colores de la marca: el fondo es «noche» y el titular «papel» (sin rediseño)
+    import marca
+    assert {t["color"] for t in mi["textos"]} <= {ys._hex(marca.C["papel"]), ys._hex(marca.C["cempasuchil"])}
+
+
+def test_auditoria_de_miniatura_detecta_fallas(tmp_path):
+    sel = _sel(); f = tmp_path / "m.png"; mi = ys.miniatura(sel, f); tit = ys.titulo_video(sel)
+    def fallas(png, m, t=tit): return {c["control"].split(" (")[0].split(":")[0] for c in ys.auditar_miniatura(png, m, t) if c["resultado"] == "FALLA"}
+    from PIL import Image
+    chica = tmp_path / "chica.png"; Image.open(f).resize((640, 360)).save(chica)
+    assert any("1280x720" in x for x in fallas(chica, mi))
+    fuera = json.loads(json.dumps(mi)); fuera["textos"][0]["caja"] = [10, 10, 300, 60]
+    assert any("márgenes" in x for x in fallas(f, fuera))
+    esquina = json.loads(json.dumps(mi)); esquina["logotipo"] = [1100, 640, 1250, 700]
+    assert any("márgenes" in x for x in fallas(f, esquina))
+    oscuro = json.loads(json.dumps(mi)); oscuro["textos"][-1]["color"] = "#0B1626"        # texto del color del fondo: ilegible
+    assert any("Contraste" in x for x in fallas(f, oscuro))
+    assert any("tomado del título" in x for x in fallas(f, mi, "Otro título distinto"))
+    larga = json.loads(json.dumps(mi)); larga["textos"].append({**larga["textos"][-1], "texto": "uno dos tres cuatro cinco seis siete"})
+    assert any("Texto corto" in x for x in fallas(f, larga))
+    pegado = json.loads(json.dumps(mi)); pegado["logotipo"] = pegado["textos"][-1]["caja"]
+    assert any("Logotipo" in x for x in fallas(f, pegado))
+    pesada = tmp_path / "p.png"; pesada.write_bytes(f.read_bytes() + b"\0" * (2 * 1024 * 1024))
+    assert any("2 MB" in x for x in fallas(pesada, mi))
+
+
+def test_miniatura_en_el_manifiesto_la_auditoria_y_la_version(entorno, corto):
+    _armar_una_vez(entorno, corto)
+    pid = "Y20261206-SEM"; salida = entorno / "semanal" / pid / "salida"
+    m = json.loads(ys.manifiesto_path(pid).read_text())
+    f = salida / m["miniatura"]["archivo"]
+    assert f.name == f"{pid}_miniatura.png" and respaldo.sha256(f) == m["miniatura"]["sha256"]
+    reg = ys.cargar()[pid]
+    assert reg["miniatura"]["sha256"] == m["miniatura"]["sha256"] and reg["revision"]["huella_miniatura"] == m["miniatura"]["sha256"]
+    assert respaldo.cargar()[pid][f.name]["sha256"] == m["miniatura"]["sha256"]                        # respaldada con el video
+    tec = json.loads((salida / "auditoria.json").read_text())["tecnica"]
+    nombres = [c["control"] for c in tec]
+    assert any("Miniatura 1280x720" in c for c in nombres) and any("Contraste" in c for c in nombres) and any("SHA-256" in c for c in nombres)
+    assert all(c["resultado"] == "APROBADO" for c in tec)
+    assert ys.pendientes()[0]["miniatura"] == f.name
+    ver = ys.version(pid)[0]
+    # otra miniatura en el respaldo (sin cambiar el manifiesto): no hay versión aprobable
+    r = json.loads(respaldo.MANIFIESTO.read_text()); r[pid][f.name]["sha256"] = "0" * 64; respaldo.MANIFIESTO.write_text(json.dumps(r))
+    assert ys.version(pid)[0] is None
+    # otra miniatura declarada en el manifiesto y respaldada: la versión cambia (la aprobación anterior deja de valer)
+    r[pid][f.name]["sha256"] = "1" * 64; respaldo.MANIFIESTO.write_text(json.dumps(r))
+    m["miniatura"]["sha256"] = "1" * 64; ys.manifiesto_path(pid).write_text(json.dumps(m, ensure_ascii=False, indent=1) + "\n")
+    assert ys.version(pid)[0] not in (None, ver)
+    # sin miniatura en la salida, la auditoría falla
+    assert ys.controles_miniatura(entorno / "vacio", m)[0]["resultado"] == "FALLA"
+
+
+def _llamadas_miniatura(h):
+    return [(u, d, c) for (m, u, d), c in zip(h.llamadas, h.cabeceras) if u.startswith(youtube.MINIATURA_URL)]
+
+
+def _cargas_video(h):
+    return [u for m, u, d in h.llamadas if m == "POST" and u.startswith(youtube.CARGA_URL.split("?")[0])]
+
+
+def test_pone_la_miniatura_despues_de_programar_sin_duplicar(entorno, corto, monkeypatch):
+    pid, ver, bajar = _armado_y_aprobado(entorno, corto, monkeypatch, "2026-12-03T14:00:00+00:00")
+    h = HttpYT()
+    r = ys.programar(ahora=datetime(2026, 12, 6, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar)
+    assert r["acciones"][0]["estado"] == "PROGRAMADO" and r["acciones"][0]["miniatura"] == "PUESTA"
+    mins = _llamadas_miniatura(h); assert len(mins) == 1
+    url, datos, cab = mins[0]
+    assert "videoId=LARGO1" in url and cab["Content-Type"] == "image/png" and cab["Authorization"] == "Bearer A"
+    m = json.loads(ys.manifiesto_path(pid).read_text())
+    import hashlib
+    assert hashlib.sha256(datos).hexdigest() == m["miniatura"]["sha256"]                               # la miniatura aprobada
+    assert [i for i, (mt, u, d) in enumerate(h.llamadas) if u.startswith(youtube.MINIATURA_URL)][0] > \
+           [i for i, (mt, u, d) in enumerate(h.llamadas) if u == "https://subida/1"][0]                 # después del video
+    assert ys.cargar()[pid]["miniatura_yt"]["estado"] == "PUESTA"
+    n = len(h.llamadas)
+    ys.programar(ahora=datetime(2026, 12, 7, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar)
+    assert len(h.llamadas) == n
+    op = publicar.operacion(publicar.marca(pid, ver) + "-yt-min", "real")
+    assert op["fase"] == "CONFIRMADA" and op["video_id"] == "LARGO1"
+
+
+def test_si_falla_la_miniatura_solo_se_reintenta_la_miniatura(entorno, corto, monkeypatch):
+    pid, ver, bajar = _armado_y_aprobado(entorno, corto, monkeypatch, "2026-12-03T14:00:00+00:00")
+    h = HttpYT(fallas_miniatura=1)
+    r = ys.programar(ahora=datetime(2026, 12, 6, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar)
+    assert r["acciones"][0]["estado"] == "PROGRAMADO" and r["acciones"][0]["miniatura"] == "ERROR"
+    v = ys.cargar()[pid]
+    assert v["estado"] == "PROGRAMADO" and v["video_id"] == "LARGO1"                                   # el video sigue programado
+    assert v["miniatura_yt"]["estado"] == "ERROR" and v["miniatura_yt"]["intentos"] == 1 and "backendError" in v["miniatura_yt"]["motivo"]
+    assert publicar.operacion(publicar.marca(pid, ver) + "-yt-min", "real")["fase"] == "FALLIDA"
+    cargas = len(_cargas_video(h))
+    r = ys.programar(ahora=datetime(2026, 12, 7, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar)
+    assert r["acciones"][0] == {"pieza": pid, "estado": "PROGRAMADO", "reintento": "miniatura", "miniatura": "PUESTA"}
+    assert len(_cargas_video(h)) == cargas and len(_llamadas_miniatura(h)) == 2                        # no se resubió el video
+    assert ys.cargar()[pid]["miniatura_yt"]["estado"] == "PUESTA"
+    assert publicar.operacion(publicar.marca(pid, ver) + "-yt", "real")["fase"] == "CONFIRMADA"
+    # con los intentos agotados se deja de intentar (queda la miniatura automática y el motivo en el registro)
+    reg = ys.cargar(); reg[pid]["miniatura_yt"] = {"estado": "ERROR", "intentos": ys.MINIATURA_INTENTOS}; ys.guardar(reg)
+    n = len(h.llamadas)
+    assert ys.programar(ahora=datetime(2026, 12, 13, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar)["acciones"] == [] and len(h.llamadas) == n
+
+
+def test_miniatura_distinta_de_la_aprobada_no_se_sube(entorno, corto, monkeypatch, tmp_path):
+    pid, ver, bajar = _armado_y_aprobado(entorno, corto, monkeypatch, "2026-12-03T14:00:00+00:00")
+    otra = tmp_path / f"{pid}_miniatura.png"; ys.miniatura(_sel("derechos del consumidor", 5), otra)
+    def bajar_otra(e, carpeta, env): return otra if e["archivo"].endswith("_miniatura.png") else bajar(e, carpeta, env)
+    h = HttpYT()
+    r = ys.programar(ahora=datetime(2026, 12, 6, 17, 7, tzinfo=timezone.utc), env=REAL, http=h, bajar=bajar_otra)
+    assert r["acciones"][0]["estado"] == "PROGRAMADO" and r["acciones"][0]["miniatura"] == "ERROR"
+    assert not _llamadas_miniatura(h) and "no es la aprobada" in ys.cargar()[pid]["miniatura_yt"]["motivo"]
+
+
+def test_simulacion_de_miniatura_y_limites(tmp_path):
+    libro = tmp_path / "ops.jsonl"; f = tmp_path / "m.png"; ys.miniatura(_sel(), f)
+    r = youtube.poner_miniatura("Y1-SEM", None, f, "abcdef0123456789", env={}, libro=libro)
+    assert r["estado"] == "SIMULADO"
+    youtube.poner_miniatura("Y1-SEM", None, f, "abcdef0123456789", env={}, libro=libro)
+    assert len(libro.read_text().splitlines()) == 1                                                   # una sola marca SIMULADA
+    h = HttpYT()
+    with pytest.raises(youtube.ErrorYouTube):
+        g = tmp_path / "m.gif"; g.write_bytes(b"GIF89a"); youtube.poner_miniatura("Y1-SEM", "V1", g, "abcdef0123456789", env=REAL, http=h, libro=libro)
+    p = tmp_path / "p.png"; p.write_bytes(b"\0" * (2 * 1024 * 1024))
+    with pytest.raises(youtube.ErrorYouTube): youtube.poner_miniatura("Y1-SEM", "V1", p, "abcdef0123456789", env=REAL, http=h, libro=libro)
+    assert not h.llamadas                                                                             # no se llama a la API
+    assert youtube.poner_miniatura("Y1-SEM", "V1", f, "abcdef0123456789", env=REAL, http=h, libro=libro)["estado"] == "PUESTA"
+    assert youtube.poner_miniatura("Y1-SEM", "V1", f, "abcdef0123456789", env=REAL, http=h, libro=libro)["origen"] == "libro"
