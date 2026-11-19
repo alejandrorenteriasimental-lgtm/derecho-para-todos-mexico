@@ -1,26 +1,26 @@
 {
- "generado": "2026-11-19T10:41:11+00:00",
+ "generado": "2026-11-19T11:51:59+00:00",
  "periodo": "2026-11-23 al 2027-02-20",
  "meta_por_formato": 90,
  "terminadas": {
-  "imagen": 67,
-  "reel": 66
+  "imagen": 68,
+  "reel": 68
  },
  "faltan": {
-  "imagen": 23,
-  "reel": 24
+  "imagen": 22,
+  "reel": 22
  },
  "huecos_proximos": [
-  "2027-01-29 imagen",
   "2027-01-30 imagen",
   "2027-01-31 imagen",
   "2027-02-01 imagen",
   "2027-02-02 imagen",
-  "2027-01-28 reel",
-  "2027-01-29 reel",
+  "2027-02-03 imagen",
   "2027-01-30 reel",
   "2027-01-31 reel",
-  "2027-02-01 reel"
+  "2027-02-01 reel",
+  "2027-02-02 reel",
+  "2027-02-03 reel"
  ],
  "quincenas": [
   {
@@ -54,8 +54,8 @@
   {
    "del": "2027-01-22",
    "al": "2027-02-05",
-   "imagen": 7,
-   "reel": 6,
+   "imagen": 8,
+   "reel": 8,
    "dias": 15
   },
   {
@@ -70,13 +70,14 @@
   "SIMULADO": 138,
   "RETENIDO": 7,
   "APROBADO": 10,
-  "REVISION_HUMANA": 4
+  "REVISION_HUMANA": 3,
+  "PENDIENTE": 1
  },
- "total": "133/180",
- "cubierto_sin_huecos_hasta": "2027-01-27",
+ "total": "136/180",
+ "cubierto_sin_huecos_hasta": "2027-01-29",
  "reserva_desde_adelanto": {
   "desde": "2026-11-16",
-  "dias_consecutivos": 73,
+  "dias_consecutivos": 75,
   "meta": 45
  }
 }

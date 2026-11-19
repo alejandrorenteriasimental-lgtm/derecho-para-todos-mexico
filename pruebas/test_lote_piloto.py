@@ -526,3 +526,16 @@ def test_guion_dentro_de_palabra_en_la_narracion_se_rechaza():
     assert not [e for e in esquema.validar(bien) if "guion dentro" in e]
     for f in sorted((AQUI.parent / "piezas").glob("R*/guion.json")):   # ningún Reel aprobado se ve afectado
         assert not [e for e in esquema.validar(json.loads(f.read_text())) if "guion dentro" in e], f
+
+
+def test_pregunta_cerrada_no_se_planifica_como_definicion():
+    """R20270207-T163 (19-11-2026): «¿México es un país pluricultural…?» estaba marcada como «definicion»; la respuesta
+    directa es «Sí» y el control de definiciones (no contestar con Sí/No) la descartaba siempre. Una pregunta de tipo
+    «definicion» debe ser abierta (empezar con un interrogativo), en el lote activo y en las propuestas."""
+    import re
+    abierta = re.compile(r"^¿\s*((a|de|en|hasta|desde|para|por|con) )?(qu[eé]|qui[eé]n(es)?|cu[aá]l(es)?|cu[aá]nd[oa]|cu[aá]nt[oa]s?|c[oó]mo|d[oó]nde)\b", re.I)
+    lotes = [AQUI.parent / "data" / "lote_piloto.json", *sorted((AQUI.parent / "data").glob("lote_*_propuesta.json"))]
+    for f in lotes:
+        for t in json.loads(f.read_text())["temas"]:
+            if t.get("tipo_pregunta") == "definicion":
+                assert abierta.match(t["pregunta"]), f"{f.name} {t['tema_id']} {t['formato']}: «{t['pregunta']}» es cerrada"

@@ -12459,7 +12459,7 @@
       "id": "I20270207-T163",
       "formato": "imagen",
       "huella": "7ce12e386728c53230d6ac11e6ccb89c062996b79a2e9e0b5e43feed28607743",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T10:35:27+00:00",
@@ -12475,6 +12475,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-19T10:39:32+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-19T11:45:50+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 19-11): copy sin cita literal, con generalizaciones y relleno («calidad esperada», «protege tu inversión», «¿Te ha pasado?») → cita literal completa del art. 92 Bis LFPC; bajada con la condición literal «por causas imputables al proveedor»; OJO que repetía la bajada → «demás casos previstos por la ley» (F3 literal, A3); esquema, razonamiento y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,

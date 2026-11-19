@@ -8,13 +8,13 @@
   "tema_id": "T163",
   "pieza": {
     "titular": "¿Deben compensarte por un servicio deficiente?",
-    "bajada": "Sí, tienes derecho a bonificación o compensación si el servicio falla o no se entrega por responsabilidad del prestador.",
+    "bajada": "Sí, si el servicio es deficiente o no se presta por causas imputables al proveedor.",
     "cita": "Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente",
     "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
-    "ojo": "Válido por causas imputables al proveedor.",
+    "ojo": "También procede en los demás casos previstos por la ley.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 92 Bis"
   },
-  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor en su artículo 92 Bis, si pagas por un servicio y este no cumple con la calidad esperada o no se entrega, el prestador debe compensarte.\n\nEste derecho a la bonificación aplica cuando la falla es responsabilidad de quien ofrece el servicio. Si te encuentras en esta situación, la norma protege tu inversión frente a un trabajo mal realizado.\n\n¿Te ha pasado? Guarda esta información o compártela con alguien que necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te deben compensar si un servicio que pagaste fue deficiente?\n\nSí, si la causa es imputable al proveedor. El artículo 92 Bis de la Ley Federal de Protección al Consumidor dice: «Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor, o por los demás casos previstos por la ley».\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92 Bis.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen con fondo sólido y texto que explica el derecho a la compensación por servicios deficientes según la LFPC.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -39,13 +39,24 @@
       "cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
       "jurisdiccion": "federal",
       "consultado": "2026-11-19"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "o por los demás casos previstos por la ley",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-19"
     }
   },
   "afirmaciones": [
     {
       "id": "A1",
       "tipo": "hecho_normativo",
-      "texto": "El consumidor tiene derecho a una bonificación si el servicio es deficiente.",
+      "texto": "El consumidor tiene derecho a bonificación o compensación cuando el servicio sea deficiente, no se preste o no se proporcione por causas imputables al proveedor.",
       "fuente": "F1"
     },
     {
@@ -53,6 +64,12 @@
       "tipo": "hecho_normativo",
       "texto": "La compensación procede cuando el servicio no se proporciona por causas del proveedor.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El derecho a la bonificación o compensación también procede en los demás casos previstos por la ley.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
@@ -288,5 +305,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-19",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Copy sin cita literal y con generalizaciones y relleno («no cumple con la calidad esperada», «protege tu inversión», «¿Te ha pasado?») → cita literal completa del art. 92 Bis LFPC. Bajada «por responsabilidad del prestador» → condición literal «por causas imputables al proveedor». OJO «Válido por causas imputables al proveedor.» (repetía la bajada) → «También procede en los demás casos previstos por la ley.», anclado en F3 literal (A3). A1 con la condición completa."
+    }
+  ]
 }
