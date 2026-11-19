@@ -3,7 +3,7 @@
  "estado": "PROPUESTA (no activa)",
  "creado": "2026-11-14",
  "max_por_formato": 13,
- "nota": "Semanas 12 y 13 (08-02 al 20-02-2027), 26 temas (13 días; última quincena autorizada hasta PUBLICAR_HASTA). Preparada el 14-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 8 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de las 3 semanas previas (lotes 7 y 8, con sus sustituciones); días consecutivos de materias distintas (laboral, proceso penal, consumidor, ciudadanía, violencia contra las mujeres, niñez, víctimas, seguridad social, migración, derechos humanos y prisión, derechos de autor). Los 26 fragmentos literales se cotejaron por programa el 14-11 con el texto oficial (textos.yml → registro/textos/). Se evitaron LFT 66 y 68 (reforma de jornada DOF 01-05-2026: revisar transitorios antes de usarlos) y el Código Civil Federal (los códigos civiles locales rigen la mayoría de los casos). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
+ "nota": "Semanas 12 y 13 (08-02 al 20-02-2027), 26 temas (13 días; última quincena autorizada hasta PUBLICAR_HASTA). Preparada el 14-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 8 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de las 3 semanas previas (lotes 7 y 8, con sus sustituciones); días consecutivos de materias distintas (laboral, proceso penal, consumidor, ciudadanía, violencia contra las mujeres, niñez, víctimas, seguridad social, migración, derechos humanos y prisión, derechos de autor). Los 26 fragmentos literales se cotejaron por programa el 14-11 con el texto oficial (textos.yml → registro/textos/). Se evitaron LFT 66 y 68 (reforma de jornada DOF 01-05-2026: revisar transitorios antes de usarlos) y el Código Civil Federal (los códigos civiles locales rigen la mayoría de los casos). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. 19-11 (operación diaria): Reel del 16-02 cambiado de LFPC 9 a LFPC 62 porque la imagen del 04-02 del lote 8 ya usa LFPC 9 desde su sustitución del 17-11.",
  "temas": [
   {
    "formato": "reel",
@@ -161,10 +161,10 @@
    "formato": "reel",
    "fecha": "2027-02-16",
    "tema_id": "T172",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿La tienda responde por lo que hace su guardia de seguridad?",
-   "fuentes_sugeridas": "LFPC art. 9",
-   "motivo_seleccion": "LFPC art. 9 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_9.json; última reforma de la ley 2025-12-12): «Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor y por los de sus colaboradores, subordinados y toda clase de gestores, vigilantes, guardias». Alcance literal: responsabilidad administrativa, «independientemente de la responsabilidad personal en que incurra el infractor»."
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
+   "fuentes_sugeridas": "LFPC art. 62",
+   "motivo_seleccion": "LFPC art. 62 (texto oficial cotejado el 15-11-2026, registro/textos/LFPC_62.json; última reforma de la ley 2025-12-12): «Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado». Alcance federal. Sustituye el 19-11 a LFPC art. 9, que ya está en la imagen del 04-02 (lote 8, sustitución del 17-11): misma pregunta a 12 días. Distinta del Reel del 27-01 (LFPC 60, piezas usadas)."
   },
   {
    "formato": "imagen",
