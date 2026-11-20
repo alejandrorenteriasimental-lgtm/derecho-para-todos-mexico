@@ -2381,3 +2381,19 @@
 {"ts": "2026-11-20T10:33:06+00:00", "pieza": "I20270203-T159", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-20T10:33:06+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 1, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 2}
 {"ts": "2026-11-20T11:43:55+00:00", "pieza": "R20270207-T163", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 20-11): titular y cita narraban dos veces la misma oración del art. 2 (relleno) y el subtítulo mostraba «que La Nación» con mayúscula a media frase → titular breve y cita narrada una vez, literal (F2); esquema, razonamiento, cobertura y coherencia visible sin hallazgos; se vuelve a verificar y producir"}
+{"ts": "2026-11-20T16:18:39+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-20T16:23:34+00:00", "evento": "redactada", "pieza": "I20270205-T161", "solicitud": "2027-02-05_imagen_T161-lote-8.json"}
+{"ts": "2026-11-20T16:23:34+00:00", "pieza": "I20270207-T163", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-20T11:43:29+00:00 versión 24d21d83252f163b (delegada)"}
+{"ts": "2026-11-20T16:23:34+00:00", "pieza": "I20270205-T161", "evento": "encolado"}
+{"ts": "2026-11-20T16:26:18+00:00", "pieza": "R20270207-T163", "evento": "transicion", "a": "PRODUCIDO", "motivo": "32.6"}
+{"ts": "2026-11-20T16:26:23+00:00", "evento": "alerta", "mensaje": "No se pudo respaldar R20270207-T163: no se pudo respaldar verificacion.json: HTTP 422 {'message': 'Validation Failed', 'request_id': '882A:78ED4:5AC41:7AABE:6B0074AE', 'documentation_url': 'https://docs.github.com/rest', 'errors': [{'resource': 'ReleaseAsset', 'code': 'custom', 'field'"}
+{"ts": "2026-11-20T16:26:23+00:00", "pieza": "R20270207-T163", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-20T16:26:23+00:00", "evento": "revision_preparada", "pieza": "R20270207-T163", "version": "26ca9cdf29914cbe", "canal": "chat"}
+{"ts": "2026-11-20T16:27:45+00:00", "pieza": "I20270205-T161", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-20T16:27:47+00:00", "evento": "alerta", "mensaje": "No se pudo respaldar I20270205-T161: no se pudo respaldar I20270205-T161.png: HTTP 422 {'message': 'Validation Failed', 'request_id': '8828:1378C2:32589:54E54:6B007503', 'documentation_url': 'https://docs.github.com/rest', 'errors': [{'resource': 'ReleaseAsset', 'code': 'custom', 'field"}
+{"ts": "2026-11-20T16:27:47+00:00", "pieza": "I20270205-T161", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-20T16:27:47+00:00", "evento": "revision_sin_enviar", "pieza": "I20270205-T161", "motivo": "sin respaldo"}
+{"ts": "2026-11-20T16:27:47+00:00", "pieza": "R20270131-T156", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-20T16:27:47+00:00", "pieza": "R20270202-T158", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-20T16:27:47+00:00", "evento": "revision_sin_enviar", "pieza": "I20270205-T161", "motivo": "sin respaldo"}
+{"ts": "2026-11-20T16:27:47+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 0, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 2, "decisiones": 1, "en_revision": 2}

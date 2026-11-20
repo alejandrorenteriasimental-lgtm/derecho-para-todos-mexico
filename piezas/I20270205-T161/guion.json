@@ -1,0 +1,207 @@
+{
+  "id": "I20270205-T161",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T161",
+  "pieza": {
+    "titular": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+    "bajada": "Tienes dos meses, contados a partir del día siguiente a la fecha de la separación.",
+    "cita": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo.",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 518",
+    "ojo": "Se suspende al presentar la solicitud de conciliación.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 518"
+  },
+  "copy": "El artículo 518 de la Ley Federal del Trabajo establece que las acciones de las personas trabajadoras que sean separadas del trabajo prescriben en dos meses. El conteo de este plazo inicia a partir del día siguiente a la fecha de la separación.\n\nEl mismo artículo 518 indica que este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de la misma ley.\n\nEsta regla aplica para quienes son separados de su trabajo. Guarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre el plazo de prescripción para reclamar tras ser separado del trabajo según la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "518",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+      "cita": "Ley Federal del Trabajo, artículo 518",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-20"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "518",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+      "cita": "Ley Federal del Trabajo, artículo 518",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-20"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las acciones de las personas trabajadoras separadas del trabajo prescriben en dos meses, a partir del día siguiente a la separación.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El plazo de prescripción se suspende al presentar la solicitud de conciliación a que se refiere el artículo 684-B.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+    "concepto_central": "separación del trabajo",
+    "respuesta_corta": "Tienes dos meses a partir del día siguiente a la separación del trabajo; este plazo se suspende al presentar la solicitud de conciliación.",
+    "reglas": [
+      {
+        "conclusion": "El plazo legal para ejercer acciones tras ser separado del trabajo es de dos meses, contados desde el día posterior al evento.",
+        "fuente": "F1",
+        "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+        "condiciones": [
+          "Que el trabajador haya sido separado del trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "518"
+        }
+      },
+      {
+        "conclusion": "El conteo del plazo de dos meses se detiene cuando el trabajador solicita la conciliación obligatoria.",
+        "fuente": "F1",
+        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+        "condiciones": [
+          "Presentación de la solicitud de conciliación conforme al artículo 684-B"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "518"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se cuenta con un plazo de dos meses para reclamar, iniciando el conteo al día siguiente de la separación.",
+        "fuente": "F1",
+        "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El plazo se suspende al presentar la solicitud de conciliación y se reanuda según los supuestos legales de la ley.",
+        "fuente": "F1",
+        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El término 'separados del trabajo' utilizado por la ley incluye el despido decidido por el patrón.",
+        "condicion": "Cuando la terminación de la relación laboral es por iniciativa del empleador.",
+        "base": "F1"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "despido",
+        "b": "renuncia",
+        "diferencia": "El despido es una separación decidida por el patrón, mientras que la renuncia es decidida por la persona trabajadora."
+      }
+    ],
+    "limites": "Los textos proporcionados no detallan las causas que justifican un despido ni el contenido específico del artículo 521 fracción III para la reanudación del plazo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-20T16:23:34+00:00",
+    "solicitud": "2027-02-05_imagen_T161-lote-8.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[sustento] La conclusión «El tiempo legal para iniciar acciones tras un despido es de dos meses » trata «despido», pero Ley Federal del Trabajo, art. 518 no regula ese concepto (no aparece en su texto)."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "[vaguedad] Referencia vaga: «La Ley Federal del Trabajo establece en su artículo 518 el tiempo límite para ejercer acci». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase.",
+          "[sustento] «El plazo es de dos meses y comienza a contar un día después del evento.» menciona un plazo (1 dia) que no aparece en los artículos citados.",
+          "[sustento] «Es importante distinguir que el despido es la separación decidida por el patrón,» habla de despido, pero ninguno de los artículos que cita la pieza lo establece."
+        ],
+        "visible": "  \n   \n Dos meses desde el día siguiente a la separación; el plazo se suspende al solicitar conciliación. \n Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo \n Se suspende al presentar la solicitud de conciliación."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El plazo legal para ejercer acciones tras ser separado del trabajo es de dos meses, contados desde el día posterior al evento.",
+              "sostenida": "si",
+              "motivo": "El artículo 518 establece explícitamente el plazo de dos meses y el inicio del cómputo al día siguiente de la separación."
+            },
+            {
+              "conclusion": "El conteo del plazo de dos meses se detiene cuando el trabajador solicita la conciliación obligatoria.",
+              "sostenida": "si",
+              "motivo": "El artículo 518 prevé la suspensión del término a partir de la presentación de la solicitud de conciliación."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

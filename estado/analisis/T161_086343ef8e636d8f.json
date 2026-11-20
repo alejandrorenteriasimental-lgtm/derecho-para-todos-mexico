@@ -1,0 +1,64 @@
+{
+ "tema_id": "T161",
+ "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+ "fecha": "2026-11-20T16:19:20+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
+  "concepto_central": "separación del trabajo",
+  "respuesta_corta": "Tienes dos meses a partir del día siguiente a la separación del trabajo; este plazo se suspende al presentar la solicitud de conciliación.",
+  "reglas": [
+   {
+    "conclusion": "El plazo legal para ejercer acciones tras ser separado del trabajo es de dos meses, contados desde el día posterior al evento.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación.",
+    "condiciones": [
+     "Que el trabajador haya sido separado del trabajo"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El conteo del plazo de dos meses se detiene cuando el trabajador solicita la conciliación obligatoria.",
+    "fuente": "F1",
+    "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+    "condiciones": [
+     "Presentación de la solicitud de conciliación conforme al artículo 684-B"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se cuenta con un plazo de dos meses para reclamar, iniciando el conteo al día siguiente de la separación.",
+    "fuente": "F1",
+    "cita_literal": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El plazo se suspende al presentar la solicitud de conciliación y se reanuda según los supuestos legales de la ley.",
+    "fuente": "F1",
+    "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El término 'separados del trabajo' utilizado por la ley incluye el despido decidido por el patrón.",
+    "condicion": "Cuando la terminación de la relación laboral es por iniciativa del empleador.",
+    "base": "F1"
+   }
+  ],
+  "distinciones": [
+   {
+    "a": "despido",
+    "b": "renuncia",
+    "diferencia": "El despido es una separación decidida por el patrón, mientras que la renuncia es decidida por la persona trabajadora."
+   }
+  ],
+  "limites": "Los textos proporcionados no detallan las causas que justifican un despido ni el contenido específico del artículo 521 fracción III para la reanudación del plazo.",
+  "fuentes_irrelevantes": []
+ }
+}

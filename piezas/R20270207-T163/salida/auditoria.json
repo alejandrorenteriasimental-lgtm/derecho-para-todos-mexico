@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "40.5 s"
+      "detalle": "32.6 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "40.5 s"
+      "detalle": "32.6 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.7 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "25 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "f06712975a74b676"
+      "detalle": "779ec5f157ef08a5"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270207-T163",
     "titulo": "¿México es un país pluricultural según la Constitución?",
-    "fecha": "2026-11-20T10:32:35+00:00",
-    "sha256": "f06712975a74b6769add4c0e6e4905c2e0b97657aa5261ac063ab4bdf7349474",
-    "duracion_s": 40.5,
+    "fecha": "2026-11-20T16:26:18+00:00",
+    "sha256": "779ec5f157ef08a5db175c336b377133a52c7b82e6e4765fbf2e1c5f5c7ad279",
+    "duracion_s": 32.6,
     "estado": "APTO",
-    "huella_guion": "189b7ae3b1090e73458474aa24f0981cdfd353fe17a48b6995dcdbd72facf56b",
+    "huella_guion": "459d7520f416f149f7fdef74943900afda54bfa0f812b09ad36606baebc6eae4",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 20.2,
-      "musica": 1.7,
-      "render_video": 36.1,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 6.3
+      "narracion": 18.8,
+      "musica": 1.6,
+      "render_video": 39.8,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 7.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.09,
-      "computo_equivalente_runner_usd": 0.0066,
+      "computo_minutos": 1.16,
+      "computo_equivalente_runner_usd": 0.0069,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1213,
-    "caracteres_narrados": 575
+    "frames": 977,
+    "caracteres_narrados": 452
   }
 }
