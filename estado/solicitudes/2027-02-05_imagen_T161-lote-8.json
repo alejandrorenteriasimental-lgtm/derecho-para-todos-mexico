@@ -15,14 +15,14 @@
   "relacion": "independiente",
   "plantilla": "dato",
   "angulo": "Plantilla dato. Solo LFT art. 132, encabezado y fracción VI. La pregunta es solo si existe la obligación del patrón: la respuesta está completa en el texto del art. 132 fr. VI. No se pregunta por consecuencias, rescisión, multas, denuncias ni procedimientos (están en otros artículos): quedan fuera de alcance y no se mencionan. Respuesta corta (empieza con «Sí»): sí; es obligación de las personas empleadoras guardar a los trabajadores la debida consideración, absteniéndose de mal trato de palabra o de obra. Cita destacada literal: «Guardar a los trabajadores la debida consideración, absteniéndose de mal trato de palabra o de obra». OJO (frase completa, máximo 15 palabras, que NO repita la respuesta): es una de las obligaciones de las personas empleadoras que enumera el artículo 132. Decir «mal trato de palabra o de obra», no «gritos», «insultos» ni «acoso». Bajada de 20 palabras o menos. Máximo 50 palabras visibles en total.",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-14T10:02:43Z",
   "pieza_id": "I20270205-T161",
   "archivo": "2027-02-05_imagen_T161-lote-8.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Esta es una obligación general para todas las personas emple») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+  "ultima_categoria": "juridico",
   "historial_reaperturas": [
     {
       "fecha": "2026-11-17",

@@ -1,0 +1,64 @@
+{
+ "solicitud": "2027-02-05_imagen_T161-lote-8.json",
+ "fecha": "2026-11-20T10:30:18+00:00",
+ "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[cobertura] El elemento «condiciones» («Esta es una obligación general para todas las personas emple») no trae una cita literal que esté en el texto oficial de su fuente.\"]}",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La pieza no menciona qué puede hacer el trabajador si el patrón incumple esta obligación (por ejemplo, la posibilidad de rescindir la relación laboral sin responsabilidad para el trabajador, que es la consecuencia jurídica práctica de este incumplimiento).",
+      "No se indica ante qué autoridad se puede acudir en caso de maltrato."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Es una obligación legal de las personas empleadoras tratar con respeto a su personal y evitar cualquier tipo de agresión física o verbal.",
+      "sostenida": "si",
+      "motivo": "El artículo 132, fracción VI, establece explícitamente la obligación de guardar consideración y abstenerse de maltrato de palabra o de obra."
+     },
+     {
+      "conclusion": "El maltrato de obra se refiere a agresiones físicas, mientras que el maltrato de palabra abarca insultos o lenguaje ofensivo.",
+      "sostenida": "parcial",
+      "motivo": "La pieza admite correctamente que la ley no define estos términos, pero al interpretarlos como 'agresiones físicas o insultos', está añadiendo una interpretación propia que, aunque lógica, no está contenida en el texto oficial."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy, párrafo 2: 'Si bien la ley no define estos términos, se interpretan como agresiones físicas o insultos según el contexto.'",
+      "problema": "La pieza introduce una interpretación propia sobre el significado de 'maltrato de palabra o de obra' que no está en la ley. Aunque es una interpretación razonable, debe presentarse con mayor cautela para no confundir la norma con la interpretación del redactor.",
+      "correccion": "Se debe aclarar que, al no definir la ley estos conceptos, se entiende en el sentido común de las palabras, sin afirmar que 'se interpretan' como algo específico, para evitar dar por hecho una definición legal inexistente."
+     },
+     {
+      "donde": "Copy, párrafo 3: 'Esta disposición protege la integridad y dignidad de las personas trabajadoras frente a conductas ofensivas.'",
+      "problema": "La pieza infiere el propósito de la norma (proteger la integridad y dignidad) sin que el texto oficial lo mencione explícitamente. Aunque es jurídicamente correcto, se debe atribuir a la naturaleza de la norma y no como si fuera parte del texto legal.",
+      "correccion": "Redactar como: 'Esta disposición busca proteger la integridad y dignidad de las personas trabajadoras, al establecer límites claros al comportamiento del patrón'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «condiciones» («Esta obligación es parte de las responsabilidades generales ») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El elemento «condiciones» («Esta es una obligación general para todas las personas emple») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  }
+ ]
+}

@@ -11718,7 +11718,7 @@
       "id": "I20270126-T151",
       "formato": "imagen",
       "huella": "36afc626ba0daf7b763fcdea3f9701ecf08711490dade71e5662a98d04351592",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11758,6 +11758,12 @@
           "a": "APROBADO",
           "ts": "2026-11-18T10:28:59+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-17T12:30:37+00:00 versión f2d51462037f9d9b (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-20T10:33:06+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -11789,7 +11795,7 @@
       "id": "I20270203-T159",
       "formato": "imagen",
       "huella": "e2ef5a5defd2d09722c0df8fd46843c49a709c1a0c5314b76c0561c1742726c8",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-16T17:20:50+00:00",
@@ -11829,6 +11835,12 @@
           "a": "APROBADO",
           "ts": "2026-11-18T10:28:59+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-17T12:30:37+00:00 versión 1af8d0facbaf2d0f (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-20T10:33:06+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -12528,7 +12540,7 @@
       "id": "I20270207-T163",
       "formato": "imagen",
       "huella": "7ce12e386728c53230d6ac11e6ccb89c062996b79a2e9e0b5e43feed28607743",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T10:35:27+00:00",
@@ -12568,6 +12580,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-19T19:43:26+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 19-11, 2.ª ronda): copy «Sí, si la causa es imputable al proveedor» condicionaba el servicio deficiente a la imputabilidad y no coincidía con la bajada → misma formulación de la bajada; esquema, razonamiento y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-20T10:33:03+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-20T10:33:06+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -12575,10 +12599,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "f3b9e118a7329829",
-        "huella_guion": "a084dd0d761af18c4bc526c55abd042c451a226448a478f311a49f96d6c9075a",
+        "version": "24d21d83252f163b",
+        "huella_guion": "4d68e40d8f06c2f5d07389160674b23e4b93824bbd6a42d2cfff3dffae096a17",
         "huella_archivo": "1b6811b9f0e4fa93cfacc2f2d7cb3875d436cc87cf9aaaeed8bec72514ec4f1b",
-        "preparada": "2026-11-19T16:39:11+00:00",
+        "preparada": "2026-11-20T10:33:06+00:00",
         "canal": "chat"
       }
     },
@@ -12586,7 +12610,7 @@
       "id": "R20270207-T163",
       "formato": "reel",
       "huella": "06f88fe59df5bc557519bf62c2c9bd91fbff6a9780e156cbea6d084238543a93",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T16:36:04+00:00",
@@ -12608,6 +12632,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-19T19:48:56+00:00",
           "motivo": "corrección (Claude, revisión delegada 19-11, 2.ª ronda): retención por falso positivo «Nación Mexicana» como persona real (causa del sistema: «Nación» agregada a INICIO_INSTITUCION, prueba test_nacion_mexicana_no_es_persona_real); además gancho sin redundancia y titular final sin ancla → párrafo primero literal del art. 2 (F3); esquema y razonamiento sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-20T10:32:35+00:00",
+          "motivo": "40.5"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-20T10:32:39+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -12616,6 +12652,13 @@
       "retencion": {
         "tipo": "sustantivo",
         "desde": "2026-11-19T16:38:34+00:00"
+      },
+      "revision": {
+        "version": "53449908ebe26424",
+        "huella_guion": "9f8f738cade6f8faaa047b27b806021f1399bd89b651f1b437c3b85392b51327",
+        "huella_archivo": "f06712975a74b6769add4c0e6e4905c2e0b97657aa5261ac063ab4bdf7349474",
+        "preparada": "2026-11-20T10:32:39+00:00",
+        "canal": "chat"
       }
     }
   }
