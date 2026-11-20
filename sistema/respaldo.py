@@ -15,6 +15,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 MANIFIESTO = RAIZ / "estado" / "respaldo.json"
 API = "https://api.github.com"
+LIMITE_ASSETS = 1000          # límite de GitHub por release
+MAX_RELEASES_MES = 9
 PATRONES = ("*_final.mp4", "*_final.srt", "*.png", "verificacion.json", "auditoria.json", "*_copy.txt")
 
 
@@ -74,14 +76,25 @@ def respaldar(pid, carpeta_salida, env=os.environ, http=http_real, etiqueta=None
         for p in arch: reg[p.name] = {**reg.get(p.name, {}), "sha256": sha256(p), "bytes": p.stat().st_size, "asset_id": reg.get(p.name, {}).get("asset_id")}
         guardar(m); return reg
     from datetime import datetime, timezone
-    etiqueta = etiqueta or "piezas-" + datetime.now(timezone.utc).strftime("%Y-%m")
-    rel = _release(repo, token, http, etiqueta)
-    existentes = {a["name"]: a for a in rel.get("assets", [])}
+    base = etiqueta or "piezas-" + datetime.now(timezone.utc).strftime("%Y-%m")
+    # 20-11-2026: GitHub admite como máximo 1,000 assets por release; al llenarse «piezas-2026-11» cada subida
+    # respondía HTTP 422 y las piezas quedaban sin versión aprobable. Si el release está lleno se usa el siguiente
+    # («<base>-2», «<base>-3», …); los assets ya subidos se reconocen en cualquiera de ellos (idempotencia).
+    existentes, etiqueta, rel = {}, None, None
+    for i in range(1, MAX_RELEASES_MES + 1):
+        etq = base if i == 1 else f"{base}-{i}"
+        r = _release(repo, token, http, etq)
+        for a in r.get("assets", []): existentes.setdefault(a["name"], (etq, a))
+        if len(r.get("assets", [])) + len(arch) <= LIMITE_ASSETS:
+            etiqueta, rel = etq, r; break
+    if rel is None: raise RuntimeError(f"los releases {base} a {base}-{MAX_RELEASES_MES} están llenos")
     for p in arch:
         h = sha256(p); nombre = f"{pid}__{h[:12]}__{p.name}"
         if reg.get(p.name, {}).get("sha256") == h and reg[p.name].get("asset_id"): continue
         if nombre in existentes:
-            a = existentes[nombre]
+            etq_a, a = existentes[nombre]
+            reg[p.name] = {"sha256": h, "bytes": p.stat().st_size, "asset_id": a["id"], "asset": nombre, "release": etq_a}
+            continue
         else:
             url = rel["upload_url"].split("{")[0] + "?" + urllib.parse.urlencode({"name": nombre})
             tipo = "video/mp4" if p.suffix == ".mp4" else "image/png" if p.suffix == ".png" else "application/json" if p.suffix == ".json" else "text/plain"

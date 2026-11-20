@@ -12641,7 +12641,7 @@
       "id": "R20270207-T163",
       "formato": "reel",
       "huella": "06f88fe59df5bc557519bf62c2c9bd91fbff6a9780e156cbea6d084238543a93",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T16:36:04+00:00",
@@ -12693,6 +12693,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-20T16:26:23+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-20T19:47:06+00:00",
+          "motivo": "2.ª ronda de revisión delegada (20-11): la versión 26ca9cdf29914cbe no es aprobable: el MP4 producido a las 16:26 no quedó respaldado (release piezas-2026-11 lleno: 1,000 assets, HTTP 422) y la versión combinaba el guion nuevo con el MP4 anterior. Respaldo corregido (release siguiente) con prueba de regresión; ajuste menor de narración («agrega» → «también dice»); se vuelve a producir"
         }
       ],
       "error": null,
@@ -12714,7 +12720,7 @@
       "id": "I20270205-T161",
       "formato": "imagen",
       "huella": "171e45456fa709b9692c78386c2ee95266f97aa36de61d3829ac9e756c4236fc",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-20T16:23:34+00:00",
@@ -12730,6 +12736,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-20T16:27:47+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-20T19:47:06+00:00",
+          "motivo": "2.ª ronda de revisión delegada (20-11): sin respaldo (release piezas-2026-11 lleno, HTTP 422), sin versión aprobable. Edición: «OJO» y copy completaban solo la mitad de la oración del art. 518 (se suspende…) → se agrega «y se reanuda» (art. 521, fr. III), cita literal; sin relleno en el copy; se vuelve a verificar y producir"
         }
       ],
       "error": null,

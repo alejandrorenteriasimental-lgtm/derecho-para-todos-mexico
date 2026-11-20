@@ -101,3 +101,26 @@ def test_respaldo_es_idempotente_y_la_descarga_verifica_la_huella(tmp_path, monk
     assert n == 2 and len(subidas) == 2 and r1["X.png"]["sha256"] == hashlib.sha256(b"png-1").hexdigest()
     (sal / "X.png").write_bytes(b"png-2"); respaldo.respaldar("X", sal, env, gh, "piezas-prueba")
     assert len(subidas) == 3                                        # versión nueva = asset nuevo; el anterior se conserva
+
+
+def test_respaldo_usa_el_siguiente_release_cuando_el_mes_esta_lleno(tmp_path, monkeypatch):
+    """20-11-2026: «piezas-2026-11» llegó a 1,000 assets (límite de GitHub) y cada subida respondía HTTP 422."""
+    monkeypatch.setattr(respaldo, "MANIFIESTO", tmp_path / "respaldo.json")
+    sal = tmp_path / "salida"; sal.mkdir(); (sal / "X.png").write_bytes(b"png-1"); (sal / "auditoria.json").write_text("{}")
+    lleno = [{"id": 10_000 + i, "name": f"otro__{i}"} for i in range(respaldo.LIMITE_ASSETS)]
+    previo = hashlib.sha256(b"{}").hexdigest()[:12]
+    lleno[0] = {"id": 77, "name": f"X__{previo}__auditoria.json"}   # ya respaldado en el release lleno
+    rels = {"piezas-prueba": {"upload_url": "https://lleno/{?name}", "assets": lleno}}
+    subidas = []
+    def gh(metodo, url, token, datos=None, tipo=None):
+        if "/releases/tags/" in url:
+            t = url.rsplit("/", 1)[1]; return (200, rels[t]) if t in rels else (404, {})
+        if url.endswith("/releases"):
+            import json as _j; t = _j.loads(datos)["tag_name"]; rels[t] = {"upload_url": f"https://{t}/{{?name}}", "assets": []}; return 201, rels[t]
+        if url.startswith("https://lleno/"): return 422, {"message": "Validation Failed"}
+        nombre = url.split("name=")[1]; a = {"id": len(subidas) + 1, "name": nombre}; subidas.append(url); return 201, a
+    env = {"GITHUB_REPOSITORY": "o/r", "GITHUB_TOKEN": "t"}
+    r = respaldo.respaldar("X", sal, env, gh, "piezas-prueba")
+    assert r["X.png"]["release"] == "piezas-prueba-2" and subidas and all(u.startswith("https://piezas-prueba-2/") for u in subidas)
+    assert r["auditoria.json"] == {**r["auditoria.json"], "asset_id": 77, "release": "piezas-prueba"}   # no se duplica
+    assert len(subidas) == 1

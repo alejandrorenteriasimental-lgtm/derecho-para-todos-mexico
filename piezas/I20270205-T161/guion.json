@@ -11,10 +11,10 @@
     "bajada": "Tienes dos meses, contados a partir del día siguiente a la fecha de la separación.",
     "cita": "Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo.",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 518",
-    "ojo": "Se suspende al presentar la solicitud de conciliación.",
+    "ojo": "Se suspende con la solicitud de conciliación y se reanuda según el art. 521, fr. III.",
     "fuente_visible": "Ley Federal del Trabajo, art. 518"
   },
-  "copy": "El artículo 518 de la Ley Federal del Trabajo establece que las acciones de las personas trabajadoras que sean separadas del trabajo prescriben en dos meses. El conteo de este plazo inicia a partir del día siguiente a la fecha de la separación.\n\nEl mismo artículo 518 indica que este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de la misma ley.\n\nEsta regla aplica para quienes son separados de su trabajo. Guarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "El artículo 518 de la Ley Federal del Trabajo establece que las acciones de las personas trabajadoras que sean separadas del trabajo prescriben en dos meses. El conteo de este plazo inicia a partir del día siguiente a la fecha de la separación.\n\nEl mismo artículo indica que este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B, «y se reanudará al día siguiente en que se actualice cualquiera de las hipótesis previstas en el artículo 521, fracción III» de esa ley.\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Placa informativa sobre el plazo de prescripción para reclamar tras ser separado del trabajo según la Ley Federal del Trabajo.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -35,7 +35,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "518",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+      "texto_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley, y se reanudará al día siguiente en que se actualice cualquiera de las hipótesis previstas en el artículo 521, fracción III de esta Ley",
       "cita": "Ley Federal del Trabajo, artículo 518",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-20"
@@ -51,7 +51,7 @@
     {
       "id": "A2",
       "tipo": "hecho_normativo",
-      "texto": "El plazo de prescripción se suspende al presentar la solicitud de conciliación a que se refiere el artículo 684-B.",
+      "texto": "El plazo se suspende al presentar la solicitud de conciliación del artículo 684-B y se reanuda al día siguiente en que se actualice alguna de las hipótesis del artículo 521, fracción III.",
       "fuente": "F2"
     }
   ],
@@ -75,9 +75,9 @@
         }
       },
       {
-        "conclusion": "El conteo del plazo de dos meses se detiene cuando el trabajador solicita la conciliación obligatoria.",
+        "conclusion": "El conteo del plazo de dos meses se suspende al presentar la solicitud de conciliación y se reanuda conforme al artículo 521, fracción III.",
         "fuente": "F1",
-        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley",
+        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley, y se reanudará al día siguiente en que se actualice cualquiera de las hipótesis previstas en el artículo 521, fracción III de esta Ley",
         "condiciones": [
           "Presentación de la solicitud de conciliación conforme al artículo 684-B"
         ],
@@ -101,7 +101,7 @@
         "estado": "cubierto",
         "respuesta": "El plazo se suspende al presentar la solicitud de conciliación y se reanuda según los supuestos legales de la ley.",
         "fuente": "F1",
-        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley"
+        "cita_literal": "Este término se suspenderá a partir de la fecha de presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley, y se reanudará al día siguiente en que se actualice cualquiera de las hipótesis previstas en el artículo 521, fracción III de esta Ley"
       }
     ],
     "interpretaciones": [
@@ -203,5 +203,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-20",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "«OJO» y copy decían solo que el plazo «se suspende» con la solicitud de conciliación, sin la otra mitad de la misma oración del art. 518 (se reanuda al día siguiente en que se actualice alguna hipótesis del art. 521, fr. III): podía leerse como si el plazo quedara detenido indefinidamente → «OJO: Se suspende con la solicitud de conciliación y se reanuda según el art. 521, fr. III.»; F2, A2 y la regla 2 con la oración literal completa; copy con la reanudación entre comillas y sin la línea de relleno «Esta regla aplica para quienes son separados de su trabajo». Titular, bajada, cita y fuente sin cambios."
+    }
+  ]
 }
