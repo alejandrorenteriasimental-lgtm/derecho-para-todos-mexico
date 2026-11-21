@@ -1,0 +1,54 @@
+{
+ "tema_id": "T168",
+ "pregunta": "¿Cuál es la diferencia entre hostigamiento y acoso sexual?",
+ "fecha": "2026-11-21T16:09:46+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuál es la diferencia entre hostigamiento y acoso sexual?",
+  "concepto_central": "hostigamiento y acoso sexual",
+  "respuesta_corta": "La diferencia radica en la subordinación: el hostigamiento ocurre en una relación de subordinación real laboral o escolar, mientras que en el acoso no existe tal subordinación.",
+  "reglas": [
+   {
+    "conclusion": "El hostigamiento sexual se define por ocurrir dentro de una relación de subordinación real entre la víctima y el agresor en los ámbitos laboral y/o escolar.",
+    "fuente": "F1",
+    "cita_literal": "El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar.",
+    "condiciones": [
+     "Que exista una relación de subordinación real de la víctima frente al agresor",
+     "Que ocurra en los ámbitos laboral y/o escolar"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "El acoso sexual es una forma de violencia donde no existe subordinación, pero sí un ejercicio abusivo de poder que coloca a la víctima en indefensión y riesgo.",
+    "fuente": "F1",
+    "cita_literal": "El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima",
+    "condiciones": [
+     "Que no exista relación de subordinación",
+     "Que exista un ejercicio abusivo de poder que genere un estado de indefensión y de riesgo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "definicion",
+    "estado": "cubierto",
+    "respuesta": "El hostigamiento exige la existencia de una relación de subordinación real en los ámbitos laboral o escolar, a diferencia del acoso donde no existe dicha subordinación.",
+    "fuente": "F1",
+    "cita_literal": "El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "hostigamiento sexual",
+    "b": "acoso sexual",
+    "diferencia": "El hostigamiento sexual presupone una relación de subordinación real en el ámbito laboral o escolar, mientras que en el acoso sexual no existe subordinación."
+   }
+  ],
+  "limites": "Los textos oficiales disponibles no señalan procedimientos de denuncia, sanciones penales o administrativas, autoridades ante las que se tramita ni plazos legales.",
+  "fuentes_irrelevantes": []
+ }
+}

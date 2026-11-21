@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1168 KB"
+      "detalle": "1174 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1056"
+      "detalle": "fin del contenido en y=1078"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "53 palabras sin cabecera ni pie"
+      "detalle": "56 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 31 palabras reconocidas"
+      "detalle": "100% de 35 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Qué es la jornada de trabajo según la ley?",
     "plantilla": "dato",
     "archivo": "I20270208-T164.png",
-    "sha256": "86cdabc43ee4561aaf6f9229c865d2c963eabf01378c4afb6e4c562eb0271285",
-    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000000001110000000000000111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "6394703a29bcc8559bb3704267f1dc262e44ae9a26252b05853f7e5fcf968b9f",
+    "sha256": "f43b5951436ea285dbbb7c982199297f51bc0812815258f2b837712784c9c3e1",
+    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000000001110000000000001111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "6ddd1e445b246927eaf0ce1392e444b6e96fac6db305b6a442e9265b45cfafa0",
     "texto_alternativo": "Infografía que explica que la jornada de trabajo es el tiempo de disposición del trabajador al patrón y que su distribución se acuerda entre ambas partes.",
-    "copy": "Para la ley, la jornada de trabajo no se define solo por un horario, sino por tu disponibilidad. Según el artículo 58 de la Ley Federal del Trabajo, es el tiempo en el que estás a disposición del patrón para realizar tus labores.\n\nUn punto clave es que este tiempo no tiene que ser rígido. La misma norma establece que la jornada podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras.\n\nEsto implica que la organización de los horarios requiere la voluntad de ambas partes. Si te fue útil esta información, guarda este post o compártelo con alguien a quien le sirva conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "El artículo 58 de la Ley Federal del Trabajo define la jornada de trabajo como «el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo».\n\nEl mismo artículo agrega: «Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-21T10:22:07+00:00",
+    "fecha": "2026-11-21T16:23:16+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

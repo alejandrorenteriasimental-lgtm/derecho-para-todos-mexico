@@ -1,0 +1,164 @@
+{
+  "id": "I20270211-T167",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Tienes derecho a asociarte para participar en la política?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T167",
+  "pieza": {
+    "titular": "¿Tienes derecho a asociarte para participar en la política?",
+    "bajada": "Sí. La ciudadanía tiene derecho a asociarse libre y pacíficamente en los asuntos políticos.",
+    "cita": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 35",
+    "ojo": "Aplica de forma libre y pacífica.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 35"
+  },
+  "copy": "En México, la participación política no se limita al voto individual. La ley reconoce la posibilidad de organizarse colectivamente para intervenir en la vida pública del país.\n\nDe acuerdo con el artículo 35, fracción III, de la Constitución Política de los Estados Unidos Mexicanos, es derecho de la ciudadanía «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;». Para que aplique esta regla, la incorporación debe ser libre y la actuación, pacífica.\n\nEs importante considerar que el texto constitucional define el derecho fundamental y sus condiciones básicas, sin detallar en esta disposición los trámites o registros específicos para cada tipo de agrupación.\n\nGuarda esta publicación para tener presentes tus derechos cívicos y compártela si te resultó útil.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre el derecho de asociación política de la ciudadanía mexicana conforme al artículo 35 constitucional.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "35",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 35",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-21"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La ciudadanía cuenta con el derecho de asociarse libre, individual y pacíficamente para intervenir en la política nacional.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho a asociarte para participar en la política?",
+    "concepto_central": "derecho de asociación política de la ciudadanía",
+    "respuesta_corta": "Sí, la ciudadanía tiene derecho a asociarse individual y libremente para tomar parte de forma pacífica en los asuntos políticos del país.",
+    "reglas": [
+      {
+        "conclusion": "Las personas ciudadanas tienen el derecho de asociarse individual y libremente para participar pacíficamente en los asuntos políticos del país.",
+        "fuente": "F1",
+        "cita_literal": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;",
+        "condiciones": [
+          "Tener la calidad de ciudadanía",
+          "Que la asociación sea de carácter individual y libre",
+          "Que la participación se ejerza en forma pacífica"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "35"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma establece el derecho de la ciudadanía a asociarse libre e individualmente para intervenir en los asuntos políticos del país.",
+        "fuente": "F1",
+        "cita_literal": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El derecho aplica a las personas ciudadanas, siempre que la asociación se realice de forma individual, libre y pacífica.",
+        "fuente": "F1",
+        "cita_literal": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "motivo": "El texto constitucional proporcionado no establece excepciones expresas a este derecho dentro de la fracción analizada."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no especifica los trámites o registros requeridos para constituir organizaciones políticas específicas, ni las consecuencias de no cumplir con la forma pacífica."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-21T16:20:09+00:00",
+    "solicitud": "2027-02-11_imagen_T167-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho a asociarte para participar en la política?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí. La ciudadanía tiene derecho a asociarse individual y libremente para tomar parte de forma pacífica en los asuntos políticos del país. \n Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país; \n Aplica para la ciudadanía de forma libre y pacífica."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La ciudadanía tiene el derecho de asociarse individual y libremente para participar en los asuntos políticos del país de forma pacífica.",
+              "sostenida": "si",
+              "motivo": "El artículo 35, fracción III, de la Constitución Política de los Estados Unidos Mexicanos reconoce expresamente este derecho como una prerrogativa de la ciudadanía."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

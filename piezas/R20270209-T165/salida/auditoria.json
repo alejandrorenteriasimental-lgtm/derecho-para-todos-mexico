@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "42.1 s"
+      "detalle": "40.2 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "42.1 s"
+      "detalle": "40.2 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "32 bloques"
+      "detalle": "33 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "0987b5af27a9308f"
+      "detalle": "9be440c22b2b3c59"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270209-T165",
     "titulo": "¿Si te detienen, tienes derecho a llamar a alguien?",
-    "fecha": "2026-11-21T10:19:12+00:00",
-    "sha256": "0987b5af27a9308feb070b6bdf2f987b98778988d2968eddb3ed7cfbac010251",
-    "duracion_s": 42.1,
+    "fecha": "2026-11-21T16:21:49+00:00",
+    "sha256": "9be440c22b2b3c59a30f8acd95083f4a434aebdd2a37e944b72e31375d8f41d0",
+    "duracion_s": 40.2,
     "estado": "APTO",
-    "huella_guion": "1e6332d647bd5c16a77eabbf1a233b5675aec29f78dbd60f69c2d42105ffa21e",
+    "huella_guion": "cc95ed7b55438edfe1ffe7cf38f48a338a91b3b4e72aec6c329b555761b3884c",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 24.6,
-      "musica": 2.0,
-      "render_video": 48.1,
+      "narracion": 23.9,
+      "musica": 2.3,
+      "render_video": 48.6,
       "mezcla_audio": 1.8,
-      "auditoria_tecnica": 9.7
+      "auditoria_tecnica": 9.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.44,
+      "computo_minutos": 1.43,
       "computo_equivalente_runner_usd": 0.0086,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1260,
-    "caracteres_narrados": 598
+    "frames": 1204,
+    "caracteres_narrados": 581
   }
 }

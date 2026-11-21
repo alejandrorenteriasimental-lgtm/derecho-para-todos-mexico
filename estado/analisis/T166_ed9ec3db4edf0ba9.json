@@ -1,0 +1,53 @@
+{
+ "tema_id": "T166",
+ "pregunta": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
+ "fecha": "2026-11-21T16:15:34+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
+  "concepto_central": "exhibición de tarifas en establecimientos de servicios",
+  "respuesta_corta": "Sí, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos.",
+  "reglas": [
+   {
+    "conclusion": "Los establecimientos de prestación de servicios deben exhibir a la vista del público la tarifa de los principales servicios ofrecidos con caracteres claramente legibles.",
+    "fuente": "F1",
+    "cita_literal": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.",
+    "condiciones": [
+     "Aplica para establecimientos de prestación de servicios",
+     "Aplica para los principales servicios ofrecidos"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Las tarifas de los servicios que no sean los principales deben estar disponibles al público en todo caso.",
+    "fuente": "F1",
+    "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
+    "condiciones": [
+     "Aplica para los servicios distintos a los principales"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "En todo establecimiento de servicios se debe exhibir a la vista del público la tarifa de los principales servicios ofrecidos con letras legibles y tener disponibles las tarifas de los demás.",
+    "fuente": "F1",
+    "cita_literal": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La exhibición a la vista del público es requerida para la tarifa de los principales servicios, mientras que para los demás servicios basta con que sus tarifas estén disponibles al público.",
+    "fuente": "F1",
+    "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala sanciones por incumplimiento, procedimientos de denuncia ni autoridades específicas.",
+  "fuentes_irrelevantes": []
+ }
+}

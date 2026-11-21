@@ -1,0 +1,72 @@
+{
+ "solicitud": "2027-02-12_reel_T168-lote-9.json",
+ "fecha": "2026-11-21T16:14:47+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 675 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 55: recorta al menos 115 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Diferencia entre hostigamiento y acoso sexual? \\n ¿HOSTIGAMIENTO \\n O ACO",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 676 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 56: recorta al menos 116 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Conoces la diferencia entre hostigamiento y acoso sexual? \n HOSTIGAMIENTO \n VS ACOSO \n SEXUAL \n La diferencia radica en la subordinación: el hostigamiento ocurre en una relación de subordinación real laboral o escolar, mientras que en el acoso no existe tal subordinación. \n LA CLAVE: \n SUBORDINACIÓN \n La ley señala que 'El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar.' \n El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar. \n Ten presentes estos puntos: \n Hostigamiento: subordina"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 676 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 56: recorta al menos 116 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "No se mencionan las conductas (verbales, físicas o ambas) ni la connotación lasciva que caracterizan al hostigamiento sexual según el texto oficial."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El hostigamiento sexual se define por ocurrir dentro de una relación de subordinación real entre la víctima y el agresor en los ámbitos laboral y/o escolar.",
+      "sostenida": "si",
+      "motivo": "La cita literal coincide exactamente con la definición de la norma respecto a la subordinación y los ámbitos."
+     },
+     {
+      "conclusion": "El acoso sexual es una forma de violencia donde no existe subordinación, pero sí un ejercicio abusivo de poder que coloca a la víctima en indefensión y riesgo.",
+      "sostenida": "si",
+      "motivo": "La conclusión extrae correctamente los elementos de falta de subordinación, ejercicio abusivo de poder, indefensión y riesgo presentes en el texto."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "elementos -> respuesta",
+      "problema": "La respuesta es incompleta respecto a la definición de hostigamiento, pues omite el modo de expresión de la conducta.",
+      "correccion": "Debe incluir que el hostigamiento se expresa en conductas verbales, físicas o ambas, relacionadas con la sexualidad de connotación lasciva."
+     },
+     {
+      "donde": "escenas -> tipo: lista",
+      "problema": "La afirmación A2 es incompleta al omitir la naturaleza de las conductas.",
+      "correccion": "Para ser exacta según el texto, debe mencionar que el hostigamiento se expresa en conductas verbales, físicas o ambas, relacionadas con la sexualidad de connotación lasciva."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 675 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 55: recorta al menos 115 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Diferencia entre hostigamiento y acoso sexual? \n ¿HOSTIGAMIENTO \n O ACOSO SEXUAL? \n La diferencia radica en la subordinación: el hostigamiento ocurre en una relación de subordinación real laboral o escolar, mientras que en el acoso no existe tal subordinación. \n DIFERENCIA \n CLAVE \n «El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar.» \n El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar. \n Se manifiesta mediante conductas verbales, físicas o ambas de connotación lasciva. \n Conduc"
+  }
+ ]
+}

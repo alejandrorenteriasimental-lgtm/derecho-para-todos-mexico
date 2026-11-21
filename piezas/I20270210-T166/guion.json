@@ -1,0 +1,193 @@
+{
+  "id": "I20270210-T166",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Un negocio debe mostrar sus tarifas a la vista?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T166",
+  "pieza": {
+    "titular": "¿Un negocio debe mostrar sus tarifas a la vista?",
+    "bajada": "Sí, debe exhibirse a la vista del público la tarifa de los servicios principales.",
+    "cita": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
+    "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 57",
+    "ojo": "Las tarifas restantes deben estar disponibles al público.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 57"
+  },
+  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, en su artículo 57, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.\n\nEsta exigencia aplica a los servicios principales del negocio. La misma norma señala una regla distinta para el resto de las tarifas ofertadas.\n\nRespecto a las tarifas de los demás servicios distintos a los principales, la ley establece que, en todo caso, deberán estar disponibles al público.\n\nGuarda esta publicación para consultar la ley cuando lo necesites o compártela con quien tenga un establecimiento de servicios.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa con el título sobre si los negocios deben mostrar tarifas a la vista. Explica que en establecimientos de servicios la tarifa de los servicios principales debe estar a la vista en caracteres legibles, y las de los demás servicios deben estar disponibles al público.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 57",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-21"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 57",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-21"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "En todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos con caracteres claramente legibles.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Las tarifas de los demás servicios que no sean los principales deberán estar disponibles al público en todo caso.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
+    "concepto_central": "exhibición de tarifas en establecimientos de servicios",
+    "respuesta_corta": "Sí, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos.",
+    "reglas": [
+      {
+        "conclusion": "Los establecimientos de prestación de servicios deben exhibir a la vista del público la tarifa de los principales servicios ofrecidos con caracteres claramente legibles.",
+        "fuente": "F1",
+        "cita_literal": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.",
+        "condiciones": [
+          "Aplica para establecimientos de prestación de servicios",
+          "Aplica para los principales servicios ofrecidos"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "57"
+        }
+      },
+      {
+        "conclusion": "Las tarifas de los servicios que no sean los principales deben estar disponibles al público en todo caso.",
+        "fuente": "F1",
+        "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
+        "condiciones": [
+          "Aplica para los servicios distintos a los principales"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "57"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "En todo establecimiento de servicios se debe exhibir a la vista del público la tarifa de los principales servicios ofrecidos con letras legibles y tener disponibles las tarifas de los demás.",
+        "fuente": "F1",
+        "cita_literal": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles."
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La exhibición a la vista del público es requerida para la tarifa de los principales servicios, mientras que para los demás servicios basta con que sus tarifas estén disponibles al público.",
+        "fuente": "F1",
+        "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala sanciones por incumplimiento, procedimientos de denuncia ni autoridades específicas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-21T16:17:40+00:00",
+    "solicitud": "2027-02-10_imagen_T166-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos. \n Las tarifas de los demás, en todo caso, deberán estar disponibles al público. \n Las tarifas restantes deben estar disponibles al público."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los establecimientos de prestación de servicios deben exhibir a la vista del público la tarifa de los principales servicios ofrecidos con caracteres claramente legibles.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 de la Ley Federal de Protección al Consumidor establece explícitamente esta obligación para los servicios principales."
+            },
+            {
+              "conclusion": "Las tarifas de los servicios que no sean los principales deben estar disponibles al público en todo caso.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 de la Ley Federal de Protección al Consumidor diferencia esta obligación para los servicios que no son los principales."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
