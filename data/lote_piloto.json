@@ -1,278 +1,258 @@
 {
- "id": "lote-8",
+ "id": "lote-9",
  "activo": true,
- "creado": "2026-11-08",
- "activado": "2026-11-14",
- "max_por_formato": 14,
+ "creado": "2026-11-14",
+ "activado": "2026-11-20",
+ "max_por_formato": 13,
  "arrastre": [],
- "nota": "Semanas 10 y 11 (25-01 al 07-02-2027), 28 temas. Preparada el 8-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 7 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; no repite fundamentos de las 3 semanas previas (lotes 6 y 7) ni preguntas ya programadas (se cotejó la lista de Facebook del 8-11); días consecutivos de materias distintas (laboral, proceso penal, derechos humanos, consumidor, niñez, libertades, organización del Estado, nacionalidad y asilo, igualdad, identidad). Los 28 fragmentos literales se cotejaron el 8-11 con el texto oficial (textos.yml → registro/textos/). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. Activado el 14-11 por la operación diaria: el lote 7 tenía todas sus solicitudes redactadas y aprobadas (Reels 18 y 19-01 aprobados el 14-11). Al activarlo se cotejó contra las sustituciones del lote 7 posteriores al 8-11 (LFPC 18 Bis, 1, 10, 78; LFT 162; LGDNNA 105; CPEUM 16 y 15): ningún fundamento se repite; la imagen del 01-02 (LFPC 79, a quién exigir la garantía) es de un artículo distinto al del Reel del 16-01 (LFPC 78, póliza por escrito), a 16 días.",
+ "nota": "Semanas 12 y 13 (08-02 al 20-02-2027), 26 temas (13 días; última quincena autorizada hasta PUBLICAR_HASTA). Preparada el 14-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 8 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de las 3 semanas previas (lotes 7 y 8, con sus sustituciones); días consecutivos de materias distintas (laboral, proceso penal, consumidor, ciudadanía, violencia contra las mujeres, niñez, víctimas, seguridad social, migración, derechos humanos y prisión, derechos de autor). Los 26 fragmentos literales se cotejaron por programa el 14-11 con el texto oficial (textos.yml → registro/textos/). Se evitaron LFT 66 y 68 (reforma de jornada DOF 01-05-2026: revisar transitorios antes de usarlos) y el Código Civil Federal (los códigos civiles locales rigen la mayoría de los casos). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. 19-11 (operación diaria): Reel del 16-02 cambiado de LFPC 9 a LFPC 62 porque la imagen del 04-02 del lote 8 ya usa LFPC 9 desde su sustitución del 17-11. Activado el 20-11 por la operación diaria: el lote 8 tenía sus 28 solicitudes redactadas (GUION_LISTO; 26 piezas aprobadas y 2 en re-producción: R20270207-T163 e I20270205-T161, que no dependen de solicitudes). Al activarlo se cotejó contra el lote 8 vigente con sus sustituciones (LFT 518 en la imagen del 05-02; LFPC 9 en la del 04-02) y el lote 7: ningún fundamento se repite. Vigencia de LFT 58, segundo párrafo (adicionado por el decreto DOF 01-05-2026, reducción de la jornada): el transitorio Primero fija la entrada en vigor el 1-05-2026 y ningún transitorio difiere el art. 58 (el Segundo gradúa el art. 59; el Cuarto, el 66; el Quinto, las reglas del art. 132 fr. XXXIV desde el 1-01-2027); arts. 57 y 78 no fueron tocados por ese decreto.",
  "temas": [
   {
    "formato": "reel",
-   "fecha": "2027-01-25",
-   "tema_id": "T150",
+   "fecha": "2027-02-08",
+   "tema_id": "T164",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden pedir quedarte más tiempo si hay una emergencia en tu trabajo?",
-   "fuentes_sugeridas": "LFT arts. 65 y 67",
-   "motivo_seleccion": "LFT art. 65 (texto oficial en registro/textos/LFT_65.json, consultado el 04-11-2026; última reforma de la ley DOF 01-05-2026; el art. 65 no fue reformado): «En los casos de siniestro o riesgo inminente en que peligre la vida del trabajador, de sus compañeros o del patrón, o la existencia misma de la empresa, la jornada de trabajo podrá prolongarse por el tiempo estrictamente indispensable para evitar esos males». LFT art. 67 (registro/textos/LFT_67.json, traído el 15-11-2026; la reforma de 01-05-2026 derogó su antiguo párrafo segundo): «Las horas de trabajo a que se refiere el artículo 65, se retribuirán con una cantidad igual a la que corresponda a cada una de las horas de la jornada». Alcance federal. Artículos sin uso en los lotes 1 a 9. Sustituye a LFT 39-A (tres descartes: plazos, objeción del auditor y encabezado visible)."
+   "pregunta": "¿Te pueden dar tus vacaciones en días sueltos?",
+   "fuentes_sugeridas": "LFT art. 78",
+   "motivo_seleccion": "LFT art. 78 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_78.json; última reforma de la ley 2026-05-14): «la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos». Condición literal: el resto del periodo «a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera». Respuesta: no del todo; al menos doce días deben ser seguidos."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-01-25",
-   "tema_id": "T150",
+   "fecha": "2027-02-08",
+   "tema_id": "T164",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿Qué es la jornada de trabajo según la ley?",
+   "fuentes_sugeridas": "LFT art. 58",
+   "motivo_seleccion": "LFT art. 58 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_58.json; última reforma de la ley 2026-05-14): «Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo». Párrafo adicionado DOF 01-05-2026: «Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras».",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-09",
+   "tema_id": "T165",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Si te detienen, tienes derecho a llamar a alguien?",
+   "fuentes_sugeridas": "CNPP art. 113 fr. II",
+   "motivo_seleccion": "CNPP art. 113 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/CNPP_113.json; última reforma de la ley 2025-11-28): «A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo». Código nacional (aplica en todo el país). Fracción distinta de la III (silencio), usada en una pieza anterior."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-09",
+   "tema_id": "T165",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Si no firmaste por cuánto tiempo te contratan, tu trabajo es temporal?",
-   "fuentes_sugeridas": "LFT art. 35",
-   "motivo_seleccion": "LFT art. 35 (texto oficial cotejado el 8-11-2026, registro/textos/LFT_35.json): «A falta de estipulaciones expresas, la relación será por tiempo indeterminado». Respuesta literal: no; sin estipulación expresa es por tiempo indeterminado.",
+   "pregunta": "¿La policía puede tomarte tu declaración?",
+   "fuentes_sugeridas": "CNPP art. 114",
+   "motivo_seleccion": "CNPP art. 114 (texto oficial cotejado el 14-11-2026, registro/textos/CNPP_114.json; última reforma de la ley 2025-11-28): «En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público». Respuesta literal: no la recibe la policía; debe comunicarlo al Ministerio Público «para que se reciban sus manifestaciones con las formalidades previstas en este Código»; la declaración puede rendirse ante el Ministerio Público o el Órgano jurisdiccional, en presencia del Defensor.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-10",
+   "tema_id": "T166",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una tienda puede negarse a venderte algo que tiene en existencia?",
+   "fuentes_sugeridas": "LFPC art. 43",
+   "motivo_seleccion": "LFPC art. 43 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_43.json; última reforma de la ley 2025-12-12): «ni el proveedor ni sus dependientes podrán negar al consumidor la venta, adquisición, renta o suministro de bienes o servicios que se tengan en existencia». Excepción literal: «Salvo cuando medie mandato judicial o disposición jurídica que exija el cumplimiento de algún requisito». También: «Se presume la existencia de productos o servicios cuando éstos se anuncien como disponibles»."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-10",
+   "tema_id": "T166",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
+   "fuentes_sugeridas": "LFPC art. 57",
+   "motivo_seleccion": "LFPC art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_57.json; última reforma de la ley 2025-12-12): «En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles». Condición literal: «Las tarifas de los demás, en todo caso, deberán estar disponibles al público».",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-11",
+   "tema_id": "T167",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Puedes ser candidato sin un partido político?",
+   "fuentes_sugeridas": "CPEUM art. 35 fr. II",
+   "motivo_seleccion": "CPEUM art. 35 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_35.json; última reforma de la ley 2026-10-07): «así como a los ciudadanos y las ciudadanas que soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación». Respuesta literal: sí, el derecho de solicitar el registro corresponde a los partidos y también a quienes lo soliciten de manera independiente, con los requisitos de la ley."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-11",
+   "tema_id": "T167",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tienes derecho a asociarte para participar en la política?",
+   "fuentes_sugeridas": "CPEUM art. 35 fr. III",
+   "motivo_seleccion": "CPEUM art. 35 fr. III (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_35.json; última reforma de la ley 2026-10-07): «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos». Condición literal: «en forma pacífica». Es un derecho de la ciudadanía.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-12",
+   "tema_id": "T168",
+   "tipo_pregunta": "definicion",
+   "pregunta": "¿Cuál es la diferencia entre hostigamiento y acoso sexual?",
+   "fuentes_sugeridas": "LGAMVLV art. 13",
+   "motivo_seleccion": "LGAMVLV art. 13 (texto oficial cotejado el 14-11-2026, registro/textos/LGAMVLV_13.json; última reforma de la ley 2026-01-15): «El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar». Distinción literal: «El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder». Ley general (alcance nacional)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-12",
+   "tema_id": "T168",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Impedirte la lactancia en el trabajo es violencia laboral?",
+   "fuentes_sugeridas": "LGAMVLV art. 11",
+   "motivo_seleccion": "LGAMVLV art. 11 (texto oficial cotejado el 14-11-2026, registro/textos/LGAMVLV_11.json; última reforma de la ley 2026-01-15): «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley». Respuesta literal: sí, el artículo lo enumera entre lo que «Constituye violencia laboral».",
    "plantilla": "mito_realidad"
   },
   {
    "formato": "reel",
-   "fecha": "2027-01-26",
-   "tema_id": "T151",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿Quién investiga los delitos en México?",
-   "fuentes_sugeridas": "CPEUM art. 21",
-   "motivo_seleccion": "CPEUM art. 21 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_21.json): «La investigación de los delitos corresponde al Ministerio Público, a la secretaría del ramo de seguridad pública del Ejecutivo Federal, a la Guardia Nacional y a las policías, en el ámbito de su competencia». Condición literal: actúan bajo la conducción y mando del Ministerio Público. Solo el primer párrafo."
+   "fecha": "2027-02-13",
+   "tema_id": "T169",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Un niño menor de 15 años puede trabajar?",
+   "fuentes_sugeridas": "LGDNNA art. 47 fr. V",
+   "motivo_seleccion": "LGDNNA art. 47 fr. V (texto oficial cotejado el 14-11-2026, registro/textos/LGDNNA_47.json; última reforma de la ley 2026-01-15): «El trabajo antes de la edad mínima de quince años». Encabezado literal: las autoridades «están obligadas a tomar las medidas necesarias para prevenir, atender y sancionar los casos en que niñas, niños o adolescentes se vean afectados por» (fr. V) el trabajo antes de la edad mínima de quince años prevista en el art. 123 constitucional. Ángulo sugerido: la edad mínima es 15 años; sin sanciones ni procedimientos."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-01-26",
-   "tema_id": "T151",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto tiempo tienes para presentar un amparo?",
-   "fuentes_sugeridas": "Ley de Amparo arts. 17 y 18",
-   "motivo_seleccion": "Ley de Amparo art. 17 (texto oficial en registro/textos/LAmp_17.json, consultado el 05-11-2026; última reforma de la ley DOF 16-10-2025): «El plazo para presentar la demanda de amparo es de quince días, salvo:» y sus cuatro excepciones (fr. IV: en cualquier tiempo cuando el acto implique peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, desaparición forzada, entre otros). Art. 18 (registro/textos/LAmp_18.json, traído el 15-11-2026; reformado DOF 13-03-2025): el plazo se computa a partir del día siguiente a aquél en que surta efectos la notificación del acto o en que se tuvo conocimiento de él. Alcance nacional. Sin uso en los lotes 6 a 9 (LAmp 15 se sustituyó en el lote 7 y no se publicó). Sustituye a CPEUM 102 B (tres descartes por forma).",
+   "fecha": "2027-02-13",
+   "tema_id": "T169",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Los padres tienen derecho a intervenir en la educación de sus hijos?",
+   "fuentes_sugeridas": "LGDNNA art. 57",
+   "motivo_seleccion": "LGDNNA art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LGDNNA_57.json; última reforma de la ley 2026-01-15): «tendrán derecho a intervenir en la educación que habrá de darse a niñas, niños y adolescentes». Sujeto literal: «Quienes ejerzan la patria potestad, tutela o guarda y custodia».",
    "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2027-01-27",
-   "tema_id": "T152",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Pueden ponerle piezas usadas a tu producto cuando lo reparan?",
-   "fuentes_sugeridas": "LFPC art. 60",
-   "motivo_seleccion": "LFPC art. 60 (texto oficial en registro/textos/LFPC_60.json, traído el 15-11-2026; última reforma de la ley DOF 12-12-2025; artículo reformado DOF 04-02-2004): «Las personas dedicadas a la reparación de toda clase de productos deberán emplear partes y refacciones nuevas y apropiadas para el producto de que se trate, salvo que el solicitante del servicio autorice expresamente que se utilicen otras». Alcance federal. Sin uso en los lotes 1 a 9. Sustituye a LFPC 56 (tres descartes en el análisis por citas parafraseadas)."
+   "fecha": "2027-02-14",
+   "tema_id": "T170",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
+   "fuentes_sugeridas": "LGV art. 12 fr. I",
+   "motivo_seleccion": "LGV art. 12 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LGV_12.json; última reforma de la ley 2024-04-01): «A ser informadas de manera clara, precisa y accesible de sus derechos por el Ministerio Público o la primera autoridad con la que tenga contacto o que conozca del hecho delictivo, tan pronto éste ocurra». Condición literal: «con total independencia de que exista o no un probable responsable de los hechos». Ley general (alcance nacional)."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-01-27",
-   "tema_id": "T152",
+   "fecha": "2027-02-14",
+   "tema_id": "T170",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Si eres víctima, tienes derecho a una investigación pronta?",
+   "fuentes_sugeridas": "LGV art. 7 fr. I",
+   "motivo_seleccion": "LGV art. 7 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LGV_7.json; última reforma de la ley 2024-04-01): «A una investigación pronta y eficaz». Fracción I literal completa en el texto oficial; los derechos de la ley «son de carácter enunciativo».",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-15",
+   "tema_id": "T171",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Pueden venderte un tiempo compartido sin contrato registrado?",
-   "fuentes_sugeridas": "LFPC art. 65",
-   "motivo_seleccion": "LFPC art. 65 (texto oficial en registro/textos/LFPC_65.json, consultado el 14-11-2026; última reforma de la ley DOF 12-12-2025; párrafo reformado DOF 04-02-2004): «La venta o preventa de un servicio de tiempo compartido sólo podrá iniciarse cuando el contrato respectivo esté registrado en la Procuraduría y cuando especifique:» (nombre y domicilio del proveedor, lugar e inmueble, derechos de uso y goce, costo de mantenimiento, entre otros). Alcance federal. Sin uso en los lotes 1 a 9. Sustituye a LFPC 92 y 92 Ter (tres descartes).",
+   "pregunta": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
+   "fuentes_sugeridas": "LFT art. 57",
+   "motivo_seleccion": "LFT art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_57.json; última reforma de la ley 2026-05-14): «El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo». Condición literal: se pide «al Tribunal»; también procede «cuando concurran circunstancias económicas que la justifiquen»."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-15",
+   "tema_id": "T171",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
+   "fuentes_sugeridas": "LSS art. 102 fr. I",
+   "motivo_seleccion": "LSS art. 102 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LSS_102.json; última reforma de la ley 2026-01-15): «Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio». Otros requisitos literales: embarazo y fecha probable certificados por el Instituto (fr. II) y no trabajar con retribución en esos periodos (fr. III).",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-16",
+   "tema_id": "T172",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
+   "fuentes_sugeridas": "LFPC art. 62",
+   "motivo_seleccion": "LFPC art. 62 (texto oficial cotejado el 15-11-2026, registro/textos/LFPC_62.json; última reforma de la ley 2025-12-12): «Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado». Alcance federal. Sustituye el 19-11 a LFPC art. 9, que ya está en la imagen del 04-02 (lote 8, sustitución del 17-11): misma pregunta a 12 días. Distinta del Reel del 27-01 (LFPC 60, piezas usadas)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-16",
+   "tema_id": "T172",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una tienda puede negarle la entrada a Profeco?",
+   "fuentes_sugeridas": "LFPC art. 13",
+   "motivo_seleccion": "LFPC art. 13 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_13.json; última reforma de la ley 2025-12-12): «los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación». Condición literal: «personal acreditado».",
    "plantilla": "mito_realidad"
   },
   {
    "formato": "reel",
-   "fecha": "2027-01-28",
-   "tema_id": "T153",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿Hasta qué edad eres niña o niño según la ley?",
-   "fuentes_sugeridas": "LGDNNA art. 5",
-   "motivo_seleccion": "LGDNNA art. 5 (texto oficial cotejado el 8-11-2026, registro/textos/LGDNNA_5.json): «Son niñas y niños los menores de doce años, y adolescentes las personas de entre doce años cumplidos y menos de dieciocho años de edad». Ley general (alcance nacional). Matiz literal: si hay duda de si es mayor de dieciocho, se presume adolescente."
+   "fecha": "2027-02-17",
+   "tema_id": "T173",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Un migrante sin papeles tiene derechos en México?",
+   "fuentes_sugeridas": "Ley de Migración art. 66",
+   "motivo_seleccion": "Ley de Migración art. 66 (texto oficial cotejado el 14-11-2026, registro/textos/LMigra_66.json; última reforma de la ley 2026-01-15): «La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución». También literal: «El Estado mexicano garantizará el derecho a la seguridad personal de los migrantes, con independencia de su situación migratoria». Ley federal."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-01-28",
-   "tema_id": "T153",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Niñas, niños y adolescentes tienen derecho a la identidad?",
-   "fuentes_sugeridas": "LGDNNA art. 13 fr. III",
-   "motivo_seleccion": "LGDNNA art. 13 fr. III (texto oficial cotejado el 8-11-2026, registro/textos/LGDNNA_13.json): «Para efectos de la presente Ley son derechos de niñas, niños y adolescentes, de manera enunciativa más no limitativa, los siguientes: [...] III. Derecho a la identidad». Solo el encabezado y la fracción III.",
+   "fecha": "2027-02-17",
+   "tema_id": "T173",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Un migrante sin papeles puede acudir a la justicia en México?",
+   "fuentes_sugeridas": "Ley de Migración art. 11",
+   "motivo_seleccion": "Ley de Migración art. 11 (texto oficial cotejado el 14-11-2026, registro/textos/LMigra_11.json; última reforma de la ley 2026-01-15): «independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia». Incluye literal: «así como a presentar quejas en materia de derechos humanos».",
    "plantilla": "dato"
   },
   {
    "formato": "reel",
-   "fecha": "2027-01-29",
-   "tema_id": "T154",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Puedes elegir tu religión?",
-   "fuentes_sugeridas": "CPEUM art. 24",
-   "motivo_seleccion": "CPEUM art. 24 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_24.json): «Toda persona tiene derecho a la libertad de convicciones éticas, de conciencia y de religión, y a tener o adoptar, en su caso, la de su agrado». Condición literal: los actos de culto, siempre que no constituyan un delito o falta penados por la ley."
+   "fecha": "2027-02-18",
+   "tema_id": "T174",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?",
+   "fuentes_sugeridas": "CPEUM art. 103 fr. I",
+   "motivo_seleccion": "CPEUM art. 103 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_103.json; última reforma de la ley 2026-10-07): «Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos». Respuesta literal: sí; incluye derechos reconocidos por la Constitución y por los tratados internacionales. Sin explicar el trámite del amparo."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-01-29",
-   "tema_id": "T154",
+   "fecha": "2027-02-18",
+   "tema_id": "T174",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+   "fuentes_sugeridas": "LNEP art. 10 fr. I",
+   "motivo_seleccion": "LNEP art. 10 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LNEP_10.json; última reforma de la ley 2024-04-01): «La maternidad y la lactancia». Encabezado literal: «las mujeres privadas de la libertad tendrán derecho a». Ley nacional.",
+   "plantilla": "dato"
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-19",
+   "tema_id": "T175",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿La educación que da el Estado puede ser religiosa?",
-   "fuentes_sugeridas": "CPEUM art. 3",
-   "motivo_seleccion": "CPEUM art. 3 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_3.json): «la impartida por éste, además de obligatoria, será universal, inclusiva, pública, gratuita y laica». Respuesta: no, debe ser laica. Distinta del Reel del 20-12 (gratuidad).",
+   "pregunta": "¿Puedes exigir que reconozcan que tú creaste una obra?",
+   "fuentes_sugeridas": "LFDA art. 21 fr. II",
+   "motivo_seleccion": "LFDA art. 21 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/LFDA_21.json; última reforma de la ley 2026-05-14): «Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada». Encabezado literal: «Los titulares de los derechos morales podrán en todo tiempo». Complemento del art. 18 (no se cita): el autor es titular perpetuo de los derechos morales."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-19",
+   "tema_id": "T175",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Los programas de cómputo tienen derechos de autor?",
+   "fuentes_sugeridas": "LFDA art. 13 fr. XI",
+   "motivo_seleccion": "LFDA art. 13 fr. XI (texto oficial cotejado el 14-11-2026, registro/textos/LFDA_13.json; última reforma de la ley 2026-05-14): «Programas de cómputo». Encabezado literal: «Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas».",
    "plantilla": "mito_realidad"
   },
   {
    "formato": "reel",
-   "fecha": "2027-01-30",
-   "tema_id": "T155",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿Qué es el salario mínimo según la ley?",
-   "fuentes_sugeridas": "LFT art. 90",
-   "motivo_seleccion": "LFT art. 90 (texto oficial cotejado el 8-11-2026, registro/textos/LFT_90.json): «Salario mínimo es la cantidad menor que debe recibir en efectivo la persona trabajadora por los servicios prestados en una jornada de trabajo». Segundo enunciado literal: deberá ser suficiente para satisfacer las necesidades normales de una o un jefe de familia. Sin cifras del salario vigente."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-01-30",
-   "tema_id": "T155",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Dónde te deben pagar tu sueldo?",
-   "fuentes_sugeridas": "LFT art. 108",
-   "motivo_seleccion": "LFT art. 108 (texto oficial cotejado el 8-11-2026, registro/textos/LFT_108.json): «El pago del salario se efectuará en el lugar donde los trabajadores presten sus servicios».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-01-31",
-   "tema_id": "T156",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿Qué tipo de país es México según la Constitución?",
-   "fuentes_sugeridas": "CPEUM art. 40",
-   "motivo_seleccion": "CPEUM art. 40 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_40.json): «Es voluntad del pueblo mexicano constituirse en una República representativa, democrática, laica y federal». Compuesta por Estados libres y soberanos en su régimen interior y por la Ciudad de México."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-01-31",
-   "tema_id": "T156",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿En quién reside la soberanía de México?",
-   "fuentes_sugeridas": "CPEUM art. 39",
-   "motivo_seleccion": "CPEUM art. 39 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_39.json): «La soberanía nacional reside esencial y originariamente en el pueblo».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-01",
-   "tema_id": "T157",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Te deben decir el precio de contado si compras a crédito?",
-   "fuentes_sugeridas": "LFPC art. 66",
-   "motivo_seleccion": "LFPC art. 66 fr. I (texto oficial en registro/textos/LFPC_66.json, consultado el 15-11-2026; última reforma de la ley DOF 12-12-2025): «En toda operación a crédito al consumidor, se deberá: I. Informar al consumidor previamente sobre el precio de contado del bien o servicio de que se trate, el monto y detalle de cualquier cargo si lo hubiera, el número de pagos a realizar, su periodicidad, el derecho que tiene a liquidar anticipadamente el crédito con la consiguiente reducción de intereses». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC 92 fr. I (dos descartes: narración larga y cita del análisis no literal)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-01",
-   "tema_id": "T157",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿A quién puedes exigirle la garantía de un producto?",
-   "fuentes_sugeridas": "LFPC art. 79",
-   "motivo_seleccion": "LFPC art. 79 (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_79.json): «El cumplimiento de las garantías es exigible, indistintamente, al productor y al importador del bien o servicio, así como al distribuidor». Excepción literal en el mismo párrafo («salvo en los casos en que alguno de ellos…»): cotejarla completa al redactar.",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-02",
-   "tema_id": "T158",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Tienes derecho a pedir asilo en México?",
-   "fuentes_sugeridas": "CPEUM art. 11",
-   "motivo_seleccion": "CPEUM art. 11 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_11.json): «Toda persona tiene derecho a buscar y recibir asilo». Condición literal: el reconocimiento de la condición de refugiado y el asilo político se realizan conforme a los tratados internacionales; la ley regula procedencias y excepciones. Distinto de la imagen del 16-11 (libre tránsito)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-02",
-   "tema_id": "T158",
+   "fecha": "2027-02-20",
+   "tema_id": "T176",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden quitar la nacionalidad si naciste mexicano?",
-   "fuentes_sugeridas": "CPEUM art. 37, apartado A",
-   "motivo_seleccion": "CPEUM art. 37, apartado A (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_37.json): «Ningún mexicano por nacimiento podrá ser privado de su nacionalidad». Distinto de la nacionalidad por naturalización (apartado B).",
+   "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
+   "fuentes_sugeridas": "LSS art. 84 fr. III",
+   "motivo_seleccion": "LSS art. 84 fr. III (texto oficial cotejado el 14-11-2026, registro/textos/LSS_84.json; última reforma de la ley 2026-01-15): «a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos». Condiciones literales (seguro de enfermedades y maternidad): a falta de cónyuge; «siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato»; «Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección». Los cinco años y los hijos van separados por coma en el texto: decirlo con sus palabras, sin afirmar que basta uno u otro. Ángulo: solo la fracción III."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-20",
+   "tema_id": "T176",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿La violencia laboral solo la puede ejercer tu jefe?",
+   "fuentes_sugeridas": "LGAMVLV art. 10",
+   "motivo_seleccion": "LGAMVLV art. 10 (texto oficial cotejado el 14-11-2026, registro/textos/LGAMVLV_10.json; última reforma de la ley 2026-01-15): «Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica». Respuesta literal: no; también incluye «el acoso o el hostigamiento sexual».",
    "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-03",
-   "tema_id": "T159",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Las mujeres tienen los mismos derechos que los hombres en el trabajo?",
-   "fuentes_sugeridas": "LFT art. 164",
-   "motivo_seleccion": "LFT art. 164 (texto oficial cotejado el 8-11-2026, registro/textos/LFT_164.json): «Las mujeres disfrutan de los mismos derechos y tienen las mismas obligaciones que los hombres». Segunda parte literal: protección de las personas trabajadoras con responsabilidades familiares, igualdad de trato y oportunidades."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-03",
-   "tema_id": "T159",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Puedes dejar tu trabajo por causa del patrón si te reduce el salario?",
-   "fuentes_sugeridas": "LFT art. 51 fr. IV",
-   "motivo_seleccion": "LFT art. 51 fr. IV (texto oficial cotejado el 8-11-2026, registro/textos/LFT_51.json): «Son causas de rescisión de la relación de trabajo, sin responsabilidad para el trabajador: [...] IV. Reducir el patrón el salario del trabajador». Solo el encabezado y la fracción IV; sin montos de indemnización.",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-04",
-   "tema_id": "T160",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Pueden impedirte trabajar en lo que quieras?",
-   "fuentes_sugeridas": "CPEUM art. 5",
-   "motivo_seleccion": "CPEUM art. 5 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_5.json): «A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos». Excepción literal: solo por determinación judicial cuando se ataquen derechos de tercero, o por resolución gubernativa cuando se ofendan los derechos de la sociedad. Distinto del Reel del 22-11 (trabajo sin pago)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-04",
-   "tema_id": "T160",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿La tienda responde si su guardia viola tus derechos como consumidor?",
-   "fuentes_sugeridas": "LFPC art. 9",
-   "motivo_seleccion": "LFPC art. 9 (texto oficial en registro/textos/LFPC_9.json, consultado el 14-11-2026; última reforma de la ley DOF 12-12-2025): «Los proveedores de bienes, productos o servicios incurren en responsabilidad administrativa por los actos propios que atenten contra los derechos del consumidor y por los de sus colaboradores, subordinados y toda clase de gestores, vigilantes, guardias o personal auxiliar que les presten sus servicios, independientemente de la responsabilidad personal en que incurra el infractor». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC art. 7 Bis (dos descartes: condición fuera de lo visible y cobertura del análisis).",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-05",
-   "tema_id": "T161",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden investigar por expresar tus ideas?",
-   "fuentes_sugeridas": "CPEUM art. 6",
-   "motivo_seleccion": "CPEUM art. 6 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_6.json): «La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa». Excepciones literales: cuando ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público. Distinto del Reel del 18-11 (acceso a la información)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-05",
-   "tema_id": "T161",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto tiempo tienes para reclamar si te despiden?",
-   "fuentes_sugeridas": "LFT art. 518",
-   "motivo_seleccion": "LFT art. 518 (texto oficial en registro/textos/LFT_518.json, consultado el 27-10-2026; última reforma de la ley DOF 14-05-2026): «Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo. La prescripción corre a partir del día siguiente a la fecha de la separación». Alcance federal. Artículo sin uso en los lotes 1 a 9 (complementa, sin repetirlo, el Reel de LFT 516 programado hace más de 3 semanas). Sustituye a LFT art. 132 fr. VI (dos descartes: el análisis exigió consecuencias —rescisión, multas— que están en otros artículos y forzó una «condición» sin cita literal).",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-06",
-   "tema_id": "T162",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Te deben cobrar la primera copia de tu acta de nacimiento?",
-   "fuentes_sugeridas": "CPEUM art. 4",
-   "motivo_seleccion": "CPEUM art. 4 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_4.json): «La autoridad competente expedirá gratuitamente la primera copia certificada del acta de registro de nacimiento». Contexto literal: toda persona tiene derecho a la identidad y a ser registrado de manera inmediata a su nacimiento."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-06",
-   "tema_id": "T162",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Un ministro de culto puede ocupar un cargo público?",
-   "fuentes_sugeridas": "CPEUM art. 130, inciso d)",
-   "motivo_seleccion": "CPEUM art. 130, inciso d) (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_130.json): «los ministros de cultos no podrán desempeñar cargos públicos». Matiz literal: como ciudadanos tienen derecho a votar, pero no a ser votados; quienes hayan dejado de serlo con la anticipación que fije la ley podrán ser votados.",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-07",
-   "tema_id": "T163",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿México es un país pluricultural según la Constitución?",
-   "fuentes_sugeridas": "CPEUM art. 2",
-   "motivo_seleccion": "CPEUM art. 2 (texto oficial cotejado el 8-11-2026, registro/textos/CPEUM_2.json): «La Nación tiene una composición pluricultural y multiétnica sustentada originalmente en sus pueblos indígenas». Solo ese párrafo; distinto del Reel del 26-12 (intérprete en juicio)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-07",
-   "tema_id": "T163",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Te deben compensar si un servicio que pagaste fue deficiente?",
-   "fuentes_sugeridas": "LFPC art. 92 Bis",
-   "motivo_seleccion": "LFPC art. 92 Bis (texto oficial cotejado el 8-11-2026, registro/textos/LFPC_92_Bis.json): «Los consumidores tendrán derecho a la bonificación o compensación cuando la prestación de un servicio sea deficiente, no se preste o proporcione por causas imputables al proveedor». Condición literal: por causas imputables al proveedor. Distinta de la imagen del 27-01 (productos, mínimo del 20 %).",
-   "plantilla": "dato"
   }
- ],
- "lotes_anteriores": 7
+ ]
 }
