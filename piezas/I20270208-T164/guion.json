@@ -11,10 +11,10 @@
     "bajada": "Es el tiempo en que el trabajador está a disposición del patrón.",
     "cita": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo.",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 58",
-    "ojo": "Se distribuye de común acuerdo.",
+    "ojo": "Puede distribuirse de común acuerdo entre las partes.",
     "fuente_visible": "Ley Federal del Trabajo, art. 58"
   },
-  "copy": "Para la ley, la jornada de trabajo no se define solo por un horario, sino por tu disponibilidad. Según el artículo 58 de la Ley Federal del Trabajo, es el tiempo en el que estás a disposición del patrón para realizar tus labores.\n\nUn punto clave es que este tiempo no tiene que ser rígido. La misma norma establece que la jornada podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras.\n\nEsto implica que la organización de los horarios requiere la voluntad de ambas partes. Si te fue útil esta información, guarda este post o compártelo con alguien a quien le sirva conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "El artículo 58 de la Ley Federal del Trabajo define la jornada de trabajo como «el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo».\n\nEl mismo artículo agrega: «Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Infografía que explica que la jornada de trabajo es el tiempo de disposición del trabajador al patrón y que su distribución se acuerda entre ambas partes.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -88,17 +88,11 @@
         "elemento": "alcance",
         "estado": "cubierto",
         "respuesta": "La forma en que se reparten las horas de este tiempo puede pactarse entre ambas partes.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras."
       }
     ],
-    "interpretaciones": [
-      {
-        "afirmacion": "La organización de los horarios no puede ser impuesta de forma arbitraria por una sola de las partes.",
-        "condicion": "Para que la distribución sea válida según este artículo, debe existir voluntad de ambas partes.",
-        "base": "F1 (distribuida de común acuerdo)"
-      }
-    ],
+    "interpretaciones": [],
     "distinciones": [],
     "limites": "El texto proporcionado no menciona la duración máxima de la jornada (horas diarias o semanales), los tipos de jornada (diurna, nocturna o mixta), ni los periodos de descanso obligatorios."
   },
@@ -187,5 +181,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "«OJO: Se distribuye de común acuerdo.» convertía en regla general lo que el art. 58 (párrafo adicionado DOF 01-05-2026) dice como posibilidad («podrá ser distribuida de común acuerdo») → «OJO: Puede distribuirse de común acuerdo entre las partes.». Copy: quitadas las frases sin ancla «no se define solo por un horario», «no tiene que ser rígido» y «la organización de los horarios requiere la voluntad de ambas partes» (el texto dice «podrá», no «requiere»); ahora cita literalmente las dos oraciones del art. 58. Interpretación sin sustento («no puede ser impuesta de forma arbitraria por una sola de las partes») retirada; elemento «alcance» con su fuente F2. Titular, bajada, cita y fuente sin cambios."
+    }
+  ]
 }

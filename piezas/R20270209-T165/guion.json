@@ -22,7 +22,7 @@
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Sabías que si te detienen no debes estar incomunicado?",
+      "texto": "¿Si te detienen, tienes derecho a llamar a alguien?",
       "titulo": [
         "¿DERECHO A",
         "UNA LLAMADA?"
@@ -31,7 +31,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, al ser detenido tienes derecho a comunicarte con un familiar y tu Defensor; el Ministerio Público debe darte facilidades.",
+      "texto": "Sí. Al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor.",
       "titulo": [
         "TIENES DERECHO",
         "A COMUNICARTE"
@@ -40,8 +40,8 @@
     },
     {
       "tipo": "cita",
-      "texto": "El Código Nacional indica que el imputado tiene derecho «a comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo».",
-      "etiqueta": "CNPP, artículo 113",
+      "texto": "El Código Nacional de Procedimientos Penales lo reconoce así: «A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo».",
+      "etiqueta": "CNPP, artículo 113, fracción II",
       "cita": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo",
       "afirmaciones": [
         {
@@ -54,21 +54,11 @@
       ]
     },
     {
-      "tipo": "lista",
-      "texto": "Esto implica que la autoridad debe:",
-      "items": [
-        "Brindar facilidades",
-        "Permitir avisar a familia",
-        "Contactar al Defensor"
-      ],
-      "afirmaciones": []
-    },
-    {
       "tipo": "titular",
-      "texto": "En conclusión, el Ministerio Público debe darte facilidades para avisar a tu familia y abogado.",
+      "texto": "Ojo: el artículo no menciona una llamada en particular. Habla de comunicarte, y obliga al Ministerio Público a darte todas las facilidades para lograrlo.",
       "titulo": [
-        "DERECHO A",
-        "AVISAR"
+        "TODAS LAS",
+        "FACILIDADES"
       ],
       "afirmaciones": []
     },
@@ -157,7 +147,7 @@
   "pregunta_original": "¿Si te detienen, tienes derecho a llamar a alguien?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Si te detienen, tienes derecho a llamar a alguien?\n\nSí: al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor, y el Ministerio Público debe darte facilidades.\n\nFuente: Código Nacional de Procedimientos Penales, artículo 113.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Si te detienen, tienes derecho a llamar a alguien?\n\nSí: el artículo 113, fracción II, del Código Nacional de Procedimientos Penales reconoce al imputado el derecho «A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo».\n\nEl artículo no se refiere a una llamada en particular: habla de comunicarse.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemma-4-26b-a4b-it",
@@ -208,5 +198,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La escena «lista» narraba «Esto implica que la autoridad debe:» y se cortaba (los puntos solo aparecían en pantalla), y su punto «Contactar al Defensor» no está en el art. 113, fr. II (el MP debe brindar facilidades para que la persona se comunique) → escena retirada. Titular final repetía la respuesta con «avisar a tu familia y abogado» → sustituido por la precisión del texto: no menciona una llamada en particular, habla de comunicarse, y el MP debe dar todas las facilidades. Gancho «¿Sabías que si te detienen no debes estar incomunicado?» respondido con «Sí» (incoherente) → la pregunta de la solicitud. Cita igual y literal; etiqueta con la fracción II; copy con la cita literal completa."
+    }
+  ]
 }

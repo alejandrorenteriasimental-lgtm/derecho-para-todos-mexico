@@ -8,11 +8,13 @@
   "tema_id": "T165",
   "pieza": {
     "titular": "¿La policía puede tomarte tu declaración?",
-    "bajada": "No directamente. Si quieres declarar, la policía debe avisar al Ministerio Público para que se haga formalmente y con un defensor presente.",
-    "ojo": "El imputado también cuenta con el derecho de realizar su declaración ante el Órgano jurisdiccional.",
+    "bajada": "No. La policía debe avisar al Ministerio Público.",
+    "cita": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público",
+    "etiqueta_cita": "Código Nacional de Procedimientos Penales, artículo 114",
+    "ojo": "Puede declarar en cualquier etapa, en presencia de su Defensor.",
     "fuente_visible": "Código Nacional de Procedimientos Penales, art. 114"
   },
-  "copy": "De acuerdo con el Código Nacional de Procedimientos Penales, la policía no recibe declaraciones de forma directa. Si una persona manifiesta su deseo de declarar sobre los hechos investigados, la función de los agentes es comunicar esta situación al Ministerio Público.\n\nEl artículo 114 establece que la declaración debe realizarse ante el Ministerio Público o el Órgano jurisdiccional. Esto garantiza que el proceso se lleve a cabo con las formalidades legales y, obligatoriamente, en presencia de un Defensor.\n\nSi se trata de la declaración formal del imputado, la policía no tiene facultades para realizar el interrogatorio por cuenta propia. Su labor se limita a informar al Ministerio Público para que las manifestaciones se realicen con las formalidades que exige el Código Nacional de Procedimientos Penales.\n\n¿Te resultó útil esta información? Guarda este post o compártelo con quien necesite conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "Si eres imputado y le dices a la policía que quieres declarar sobre los hechos que se investigan, el artículo 114 del Código Nacional de Procedimientos Penales dice que la policía «deberá comunicar dicha situación al Ministerio Público para que se reciban sus manifestaciones con las formalidades previstas en este Código».\n\nEl mismo artículo señala que el imputado tiene derecho a declarar durante cualquier etapa del procedimiento y que «podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional, con pleno respeto a los derechos que lo amparan y en presencia de su Defensor».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Infografía jurídica que explica que la policía no puede recibir declaraciones directamente; su obligación es avisar al Ministerio Público para que se realice ante autoridad y con un defensor.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -33,7 +35,7 @@
       "documento": "Código Nacional de Procedimientos Penales",
       "articulo": "114",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "texto_literal": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público",
+      "texto_literal": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público para que se reciban sus manifestaciones con las formalidades previstas en este Código.",
       "cita": "Código Nacional de Procedimientos Penales, artículo 114",
       "jurisdiccion": "nacional",
       "consultado": "2026-11-21"
@@ -43,13 +45,13 @@
     {
       "id": "A1",
       "tipo": "hecho_normativo",
-      "texto": "La declaración del imputado debe realizarse ante el Ministerio Público o el Órgano jurisdiccional, garantizando la presencia de un defensor.",
+      "texto": "El imputado podrá declarar ante el Ministerio Público o ante el Órgano jurisdiccional, en presencia de su Defensor.",
       "fuente": "F1"
     },
     {
       "id": "A2",
       "tipo": "hecho_normativo",
-      "texto": "Si el imputado quiere declarar ante la policía, esta tiene la obligación de informar al Ministerio Público.",
+      "texto": "Si el imputado manifiesta a la policía su deseo de declarar, la policía debe comunicarlo al Ministerio Público para que se reciban sus manifestaciones con las formalidades del Código.",
       "fuente": "F2"
     }
   ],
@@ -57,10 +59,10 @@
     "suficiente": true,
     "pregunta": "¿La policía puede tomarte tu declaración?",
     "concepto_central": "declaración del imputado",
-    "respuesta_corta": "No directamente. Si quieres declarar ante la policía, esta debe avisar al Ministerio Público para que tu declaración se reciba formalmente y con un defensor.",
+    "respuesta_corta": "No. Si el imputado manifiesta a la policía que quiere declarar, la policía debe comunicarlo al Ministerio Público para que se reciban sus manifestaciones con las formalidades del Código.",
     "reglas": [
       {
-        "conclusion": "La declaración debe realizarse ante el Ministerio Público o un Juez, no ante la policía de forma directa.",
+        "conclusion": "El imputado puede declarar ante el Ministerio Público o ante el Órgano jurisdiccional, con pleno respeto a sus derechos y en presencia de su Defensor.",
         "fuente": "F1",
         "cita_literal": "podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional, con pleno respeto a los derechos que lo amparan y en presencia de su Defensor.",
         "condiciones": [
@@ -74,8 +76,8 @@
         }
       },
       {
-        "conclusion": "Si una persona manifiesta a la policía que quiere declarar, la función de la policía es únicamente informar a la autoridad ministerial.",
-        "fuente": "F1",
+        "conclusion": "Si el imputado manifiesta a la policía que quiere declarar, la policía debe comunicarlo al Ministerio Público.",
+        "fuente": "F2",
         "cita_literal": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público",
         "condiciones": [
           "Que el imputado manifieste expresamente su deseo de declarar"
@@ -92,7 +94,7 @@
         "elemento": "efecto",
         "estado": "cubierto",
         "respuesta": "La policía tiene la obligación de avisar al Ministerio Público para que la declaración se reciba con las formalidades legales.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "ésta deberá comunicar dicha situación al Ministerio Público para que se reciban sus manifestaciones con las formalidades previstas en este Código."
       },
       {
@@ -115,13 +117,7 @@
         "motivo": "El artículo 114 no establece un plazo de tiempo específico (horas o días) para que la policía realice la comunicación al Ministerio Público."
       }
     ],
-    "interpretaciones": [
-      {
-        "afirmacion": "La policía no tiene facultades para realizar el interrogatorio formal de la declaración por cuenta propia.",
-        "condicion": "Siempre que se trate de la declaración formal del imputado sobre los hechos investigados.",
-        "base": "El texto reserva la recepción de la declaración al Ministerio Público o al Órgano jurisdiccional, limitando a la policía a ser un canal de comunicación."
-      }
-    ],
+    "interpretaciones": [],
     "distinciones": [],
     "limites": "Los textos no mencionan qué sucede si la policía toma la declaración sin avisar al Ministerio Público, ni establecen sanciones específicas para los agentes en ese supuesto."
   },
@@ -207,5 +203,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La ficha no tenía cita literal y la bajada se dirigía a cualquier persona («Si quieres declarar»), cuando el art. 114 del CNPP habla del imputado → bajada «No. La policía debe avisar al Ministerio Público.»; cita literal del art. 114 (2.ª oración) con su etiqueta; «OJO: Puede declarar en cualquier etapa, en presencia de su Defensor.» (otra regla del mismo artículo: «durante cualquier etapa del procedimiento… en presencia de su Defensor»; ≤ 60 palabras). Copy: quitadas las generalizaciones sin ancla «la policía no recibe declaraciones de forma directa» y «la policía no tiene facultades para realizar el interrogatorio por cuenta propia» (el art. 114 no lo dice) y el párrafo repetido; ahora con las dos oraciones literales. F2 con la oración completa; reglas, afirmaciones y elementos con su fuente correcta; interpretación sin sustento retirada. Titular y fuente sin cambios."
+    }
+  ]
 }
