@@ -2,19 +2,19 @@
   "id": "I20270210-T166",
   "formato": "imagen",
   "plantilla": "dato",
-  "titulo": "¿Un negocio debe mostrar sus tarifas a la vista?",
+  "titulo": "¿Un negocio de servicios debe mostrar sus tarifas?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T166",
   "pieza": {
-    "titular": "¿Un negocio debe mostrar sus tarifas a la vista?",
-    "bajada": "Sí, debe exhibirse a la vista del público la tarifa de los servicios principales.",
-    "cita": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
+    "titular": "¿Un negocio de servicios debe mostrar sus tarifas?",
+    "bajada": "Sí, la de sus servicios principales.",
+    "cita": "En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.",
     "etiqueta_cita": "Ley Federal de Protección al Consumidor, artículo 57",
-    "ojo": "Las tarifas restantes deben estar disponibles al público.",
+    "ojo": "Las demás tarifas deben estar disponibles al público.",
     "fuente_visible": "Ley Federal de Protección al Consumidor, art. 57"
   },
-  "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, en su artículo 57, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.\n\nEsta exigencia aplica a los servicios principales del negocio. La misma norma señala una regla distinta para el resto de las tarifas ofertadas.\n\nRespecto a las tarifas de los demás servicios distintos a los principales, la ley establece que, en todo caso, deberán estar disponibles al público.\n\nGuarda esta publicación para consultar la ley cuando lo necesites o compártela con quien tenga un establecimiento de servicios.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "El artículo 57 de la Ley Federal de Protección al Consumidor dice: «En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles».\n\nY agrega: «Las tarifas de los demás, en todo caso, deberán estar disponibles al público».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa con el título sobre si los negocios deben mostrar tarifas a la vista. Explica que en establecimientos de servicios la tarifa de los servicios principales debe estar a la vista en caracteres legibles, y las de los demás servicios deben estar disponibles al público.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -77,7 +77,7 @@
       },
       {
         "conclusion": "Las tarifas de los servicios que no sean los principales deben estar disponibles al público en todo caso.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público.",
         "condiciones": [
           "Aplica para los servicios distintos a los principales"
@@ -101,7 +101,7 @@
         "elemento": "condiciones",
         "estado": "cubierto",
         "respuesta": "La exhibición a la vista del público es requerida para la tarifa de los principales servicios, mientras que para los demás servicios basta con que sus tarifas estén disponibles al público.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "Las tarifas de los demás, en todo caso, deberán estar disponibles al público."
       }
     ],
@@ -189,5 +189,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La cita destacada era la 2.ª oración del art. 57 LFPC (tarifas «de los demás») y el OJO la repetía, mientras la regla principal quedaba sin cita; el titular decía «un negocio» cuando el artículo habla de establecimientos de prestación de servicios → titular «¿Un negocio de servicios debe mostrar sus tarifas?», bajada «Sí, la de sus servicios principales.», cita literal de la 1.ª oración, OJO «Las demás tarifas deben estar disponibles al público.» (≤ 60 palabras). Copy sin relleno («Esta exigencia aplica…», «regla distinta»), con las dos oraciones literales. Regla 2 y elemento «condiciones» con su fuente F2."
+    }
+  ]
 }

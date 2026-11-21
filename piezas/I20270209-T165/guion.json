@@ -8,7 +8,7 @@
   "tema_id": "T165",
   "pieza": {
     "titular": "¿La policía puede tomarte tu declaración?",
-    "bajada": "No. La policía debe avisar al Ministerio Público.",
+    "bajada": "Si eres imputado, no: debe avisar al Ministerio Público.",
     "cita": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público",
     "etiqueta_cita": "Código Nacional de Procedimientos Penales, artículo 114",
     "ojo": "Puede declarar en cualquier etapa, en presencia de su Defensor.",
@@ -209,6 +209,11 @@
       "fecha": "2026-11-21",
       "por": "Claude (revisión editorial delegada)",
       "que": "La ficha no tenía cita literal y la bajada se dirigía a cualquier persona («Si quieres declarar»), cuando el art. 114 del CNPP habla del imputado → bajada «No. La policía debe avisar al Ministerio Público.»; cita literal del art. 114 (2.ª oración) con su etiqueta; «OJO: Puede declarar en cualquier etapa, en presencia de su Defensor.» (otra regla del mismo artículo: «durante cualquier etapa del procedimiento… en presencia de su Defensor»; ≤ 60 palabras). Copy: quitadas las generalizaciones sin ancla «la policía no recibe declaraciones de forma directa» y «la policía no tiene facultades para realizar el interrogatorio por cuenta propia» (el art. 114 no lo dice) y el párrafo repetido; ahora con las dos oraciones literales. F2 con la oración completa; reglas, afirmaciones y elementos con su fuente correcta; interpretación sin sustento retirada. Titular y fuente sin cambios."
+    },
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "2.ª revisión: la bajada «No. La policía debe avisar al Ministerio Público.» respondía en general a «¿La policía puede tomarte tu declaración?», pero el art. 114 del CNPP regula solo la declaración del imputado (la policía sí puede entrevistar a otras personas) → «Si eres imputado, no: debe avisar al Ministerio Público.». Cita, OJO, fuente y copy sin cambios."
     }
   ]
 }

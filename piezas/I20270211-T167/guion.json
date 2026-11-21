@@ -8,14 +8,14 @@
   "tema_id": "T167",
   "pieza": {
     "titular": "¿Tienes derecho a asociarte para participar en la política?",
-    "bajada": "Sí. La ciudadanía tiene derecho a asociarse libre y pacíficamente en los asuntos políticos.",
-    "cita": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;",
-    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 35",
-    "ojo": "Aplica de forma libre y pacífica.",
-    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 35"
+    "bajada": "Sí: es un derecho de la ciudadanía.",
+    "cita": "Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 35, fracción III",
+    "ojo": "Ciudadanos: mexicanos de 18 años o más con modo honesto de vivir.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, arts. 34 y 35"
   },
-  "copy": "En México, la participación política no se limita al voto individual. La ley reconoce la posibilidad de organizarse colectivamente para intervenir en la vida pública del país.\n\nDe acuerdo con el artículo 35, fracción III, de la Constitución Política de los Estados Unidos Mexicanos, es derecho de la ciudadanía «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;». Para que aplique esta regla, la incorporación debe ser libre y la actuación, pacífica.\n\nEs importante considerar que el texto constitucional define el derecho fundamental y sus condiciones básicas, sin detallar en esta disposición los trámites o registros específicos para cada tipo de agrupación.\n\nGuarda esta publicación para tener presentes tus derechos cívicos y compártela si te resultó útil.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Placa informativa sobre el derecho de asociación política de la ciudadanía mexicana conforme al artículo 35 constitucional.",
+  "copy": "El artículo 35, fracción III, de la Constitución reconoce como derecho de la ciudadanía: «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país».\n\n¿Quiénes son ciudadanos? El artículo 34 lo dice: los mexicanos que hayan cumplido 18 años y tengan un modo honesto de vivir.\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa: la ciudadanía mexicana tiene derecho a asociarse libre y pacíficamente para tomar parte en los asuntos políticos del país (Constitución, arts. 34 y 35).",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -28,6 +28,17 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 35",
       "jurisdiccion": "federal",
       "consultado": "2026-11-21"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "34",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 34",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-21"
     }
   },
   "afirmaciones": [
@@ -36,6 +47,12 @@
       "tipo": "hecho_normativo",
       "texto": "La ciudadanía cuenta con el derecho de asociarse libre, individual y pacíficamente para intervenir en la política nacional.",
       "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Son ciudadanos los mexicanos que han cumplido 18 años y tienen un modo honesto de vivir.",
+      "fuente": "F2"
     }
   ],
   "razonamiento": {
@@ -57,6 +74,21 @@
         "ref": {
           "documento": "Constitución Política de los Estados Unidos Mexicanos",
           "articulo": "35"
+        }
+      },
+      {
+        "conclusion": "La calidad de ciudadanía la tienen las personas mexicanas que han cumplido 18 años y tienen un modo honesto de vivir.",
+        "fuente": "F2",
+        "cita_literal": "Son ciudadanos de la República los varones y mujeres que, teniendo la calidad de mexicanos, reúnan, además, los siguientes requisitos: I. Haber cumplido 18 años, y II. Tener un modo honesto de vivir.",
+        "condiciones": [
+          "Tener la calidad de mexicano",
+          "Haber cumplido 18 años",
+          "Tener un modo honesto de vivir"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "34"
         }
       }
     ],
@@ -160,5 +192,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "El titular pregunta «¿Tienes derecho…?» y la respuesta depende de ser ciudadano, pero la pieza no decía quién lo es; el OJO «Aplica de forma libre y pacífica» era vago y repetía la bajada; la cita terminaba en «;» → bajada «Sí: es un derecho de la ciudadanía.» (lo libre y pacífico queda en la cita), cita literal de la fr. III sin el punto y coma, etiqueta con la fracción, OJO «Ciudadanos: mexicanos de 18 años o más con modo honesto de vivir.» con el art. 34 CPEUM (fuente F2, texto oficial de registro/textos, regla y afirmación ancladas), fuente visible «arts. 34 y 35». Copy sin relleno sin ancla («no se limita al voto individual», «Es importante considerar…»), con las citas literales."
+    }
+  ]
 }
