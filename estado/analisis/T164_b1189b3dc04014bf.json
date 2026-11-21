@@ -1,0 +1,50 @@
+{
+ "tema_id": "T164",
+ "pregunta": "¿Qué es la jornada de trabajo según la ley?",
+ "fecha": "2026-11-21T10:10:42+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Qué es la jornada de trabajo según la ley?",
+  "concepto_central": "jornada de trabajo",
+  "respuesta_corta": "Es el tiempo durante el cual la persona trabajadora está a disposición del patrón para prestar su trabajo.",
+  "reglas": [
+   {
+    "conclusion": "La ley define la jornada de trabajo basándose en la disponibilidad del trabajador hacia su empleador para realizar sus labores.",
+    "fuente": "F1",
+    "cita_literal": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo.",
+    "condiciones": [
+     "Que el trabajador esté a disposición del patrón",
+     "Que sea para prestar su trabajo"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "definicion",
+    "estado": "cubierto",
+    "respuesta": "Se trata del periodo en el que el empleado se encuentra bajo las órdenes del patrón para cumplir con sus tareas.",
+    "fuente": "F1",
+    "cita_literal": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo."
+   },
+   {
+    "elemento": "alcance",
+    "estado": "cubierto",
+    "respuesta": "La forma en que se reparten las horas de este tiempo puede pactarse entre ambas partes.",
+    "fuente": "F1",
+    "cita_literal": "Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La organización de los horarios no puede ser impuesta de forma arbitraria por una sola de las partes.",
+    "condicion": "Para que la distribución sea válida según este artículo, debe existir voluntad de ambas partes.",
+    "base": "F1 (distribuida de común acuerdo)"
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto proporcionado no menciona la duración máxima de la jornada (horas diarias o semanales), los tipos de jornada (diurna, nocturna o mixta), ni los periodos de descanso obligatorios.",
+  "fuentes_irrelevantes": []
+ }
+}

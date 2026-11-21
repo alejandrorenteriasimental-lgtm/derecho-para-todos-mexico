@@ -1,0 +1,71 @@
+{
+ "tema_id": "T165",
+ "pregunta": "¿La policía puede tomarte tu declaración?",
+ "fecha": "2026-11-21T10:12:45+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La policía puede tomarte tu declaración?",
+  "concepto_central": "declaración del imputado",
+  "respuesta_corta": "No directamente. Si quieres declarar ante la policía, esta debe avisar al Ministerio Público para que tu declaración se reciba formalmente y con un defensor.",
+  "reglas": [
+   {
+    "conclusion": "La declaración debe realizarse ante el Ministerio Público o un Juez, no ante la policía de forma directa.",
+    "fuente": "F1",
+    "cita_literal": "podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional, con pleno respeto a los derechos que lo amparan y en presencia de su Defensor.",
+    "condiciones": [
+     "Debe realizarse en presencia de un Defensor",
+     "Debe respetarse plenamente los derechos que amparan al imputado"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Si una persona manifiesta a la policía que quiere declarar, la función de la policía es únicamente informar a la autoridad ministerial.",
+    "fuente": "F1",
+    "cita_literal": "En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público",
+    "condiciones": [
+     "Que el imputado manifieste expresamente su deseo de declarar"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "La policía tiene la obligación de avisar al Ministerio Público para que la declaración se reciba con las formalidades legales.",
+    "fuente": "F1",
+    "cita_literal": "ésta deberá comunicar dicha situación al Ministerio Público para que se reciban sus manifestaciones con las formalidades previstas en este Código."
+   },
+   {
+    "elemento": "vía",
+    "estado": "cubierto",
+    "respuesta": "La declaración se canaliza a través del Ministerio Público o el Órgano jurisdiccional.",
+    "fuente": "F1",
+    "cita_literal": "podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional"
+   },
+   {
+    "elemento": "autoridad",
+    "estado": "cubierto",
+    "respuesta": "Las autoridades competentes para recibir la declaración son el Ministerio Público o el Órgano jurisdiccional.",
+    "fuente": "F1",
+    "cita_literal": "podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional"
+   },
+   {
+    "elemento": "plazo",
+    "estado": "no_cubierto",
+    "motivo": "El artículo 114 no establece un plazo de tiempo específico (horas o días) para que la policía realice la comunicación al Ministerio Público."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La policía no tiene facultades para realizar el interrogatorio formal de la declaración por cuenta propia.",
+    "condicion": "Siempre que se trate de la declaración formal del imputado sobre los hechos investigados.",
+    "base": "El texto reserva la recepción de la declaración al Ministerio Público o al Órgano jurisdiccional, limitando a la policía a ser un canal de comunicación."
+   }
+  ],
+  "distinciones": [],
+  "limites": "Los textos no mencionan qué sucede si la policía toma la declaración sin avisar al Ministerio Público, ni establecen sanciones específicas para los agentes en ese supuesto.",
+  "fuentes_irrelevantes": []
+ }
+}

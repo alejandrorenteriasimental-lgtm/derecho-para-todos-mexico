@@ -1,0 +1,51 @@
+{
+ "tema_id": "T165",
+ "pregunta": "¿Si te detienen, tienes derecho a llamar a alguien?",
+ "fecha": "2026-11-21T10:08:45+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Si te detienen, tienes derecho a llamar a alguien?",
+  "concepto_central": "derecho a comunicarse con un familiar y con el Defensor al ser detenido",
+  "respuesta_corta": "Sí: al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor, y el Ministerio Público debe darte facilidades.",
+  "reglas": [
+   {
+    "conclusion": "El imputado tiene derecho a comunicarse con un familiar y con su Defensor al ser detenido, debiendo el Ministerio Público otorgar facilidades.",
+    "fuente": "F1",
+    "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo",
+    "condiciones": [
+     "cuando sea detenido"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El imputado tiene derecho a comunicarse con un familiar y con su Defensor, contando con facilidades del Ministerio Público.",
+    "fuente": "F1",
+    "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El derecho aplica en el momento en que la persona es detenida.",
+    "fuente": "F1",
+    "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "",
+    "fuente": "F1",
+    "cita_literal": "",
+    "motivo": "El texto oficial no prevé excepciones para este derecho de comunicación."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla el medio específico de comunicación ni un plazo exacto, más allá de la obligación de brindar facilidades.",
+  "fuentes_irrelevantes": []
+ }
+}

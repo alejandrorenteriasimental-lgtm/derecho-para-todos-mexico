@@ -1,0 +1,212 @@
+{
+  "id": "R20270209-T165",
+  "formato": "reel",
+  "titulo": "¿Si te detienen, tienes derecho a llamar a alguien?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T165",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "113",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 113",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-21"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabías que si te detienen no debes estar incomunicado?",
+      "titulo": [
+        "¿DERECHO A",
+        "UNA LLAMADA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, al ser detenido tienes derecho a comunicarte con un familiar y tu Defensor; el Ministerio Público debe darte facilidades.",
+      "titulo": [
+        "TIENES DERECHO",
+        "A COMUNICARTE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "El Código Nacional indica que el imputado tiene derecho «a comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo».",
+      "etiqueta": "CNPP, artículo 113",
+      "cita": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El imputado tiene derecho a comunicarse con un familiar y con su defensor al ser detenido.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Esto implica que la autoridad debe:",
+      "items": [
+        "Brindar facilidades",
+        "Permitir avisar a familia",
+        "Contactar al Defensor"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, el Ministerio Público debe darte facilidades para avisar a tu familia y abogado.",
+      "titulo": [
+        "DERECHO A",
+        "AVISAR"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Si te detienen, tienes derecho a llamar a alguien?",
+    "concepto_central": "derecho a comunicarse con un familiar y con el Defensor al ser detenido",
+    "respuesta_corta": "Sí: al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor, y el Ministerio Público debe darte facilidades.",
+    "reglas": [
+      {
+        "conclusion": "El imputado tiene derecho a comunicarse con un familiar y con su Defensor al ser detenido, debiendo el Ministerio Público otorgar facilidades.",
+        "fuente": "F1",
+        "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo",
+        "condiciones": [
+          "cuando sea detenido"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Código Nacional de Procedimientos Penales",
+          "articulo": "113"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El imputado tiene derecho a comunicarse con un familiar y con su Defensor, contando con facilidades del Ministerio Público.",
+        "fuente": "F1",
+        "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El derecho aplica en el momento en que la persona es detenida.",
+        "fuente": "F1",
+        "cita_literal": "A comunicarse con un familiar y con su Defensor cuando sea detenido"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "F1",
+        "cita_literal": "",
+        "motivo": "El texto oficial no prevé excepciones para este derecho de comunicación."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla el medio específico de comunicación ni un plazo exacto, más allá de la obligación de brindar facilidades."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-21T10:09:14+00:00",
+    "solicitud": "2027-02-09_reel_T165-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Si te detienen, tienes derecho a llamar a alguien?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Si te detienen, tienes derecho a llamar a alguien?\n\nSí: al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor, y el Ministerio Público debe darte facilidades.\n\nFuente: Código Nacional de Procedimientos Penales, artículo 113.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 695 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 75: recorta al menos 135 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Sabías que si te detienen no tienes por qué estar incomunicado? \n ¿DERECHO A \n UNA LLAMADA? \n Sí, al ser detenido tienes derecho a comunicarte con un familiar y con tu Defensor, y el Ministerio Público debe darte facilidades. \n TIENES DERECHO \n A COMUNICARTE \n El Código Nacional de Procedimientos Penales indica que el imputado tiene derecho «a comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo». \n A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo \n Esto significa que la autoridad tiene las siguientes "
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 695 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 75: recorta al menos 135 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El imputado tiene derecho a comunicarse con un familiar y con su Defensor al ser detenido, debiendo el Ministerio Público otorgar facilidades.",
+              "sostenida": "si",
+              "motivo": "La conclusión es una transcripción fiel de la fracción II del artículo 113 del CNPP, respetando las condiciones (al ser detenido) y la obligación de la autoridad (brindar facilidades)."
+            },
+            {
+              "conclusion": "El imputado tiene derecho a comunicarse con un familiar y con su defensor al ser detenido.",
+              "sostenida": "si",
+              "motivo": "Se ajusta estrictamente al contenido de la fracción II del artículo 113."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

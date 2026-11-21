@@ -1,0 +1,44 @@
+{
+ "solicitud": "2027-02-08_reel_T164-lote-9.json",
+ "fecha": "2026-11-21T10:06:26+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 706 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 86: recorta al menos 146 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «DOCE DÍAS» presenta como exacta una cifra que la ley fija como mínimo («por lo me",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 697 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 77: recorta al menos 137 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te pueden dar tus vacaciones en días sueltos? \n ¿VACACIONES \n EN DÍAS \n SUELTOS? \n Depende: la ley establece doce días continuos por lo menos, pero tú tienes la potestad de distribuirlos en la forma y tiempo que requieras. \n TÚ TIENES \n LA POTESTAD \n El artículo 78 de la Ley Federal del Trabajo señala que la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera. \n la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 697 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 77: recorta al menos 137 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[minimo] «12 días continuos» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Te pueden dar tus vacaciones en días sueltos? \n ¿VACACIONES \n EN DÍAS \n SUELTOS? \n Depende: la ley fija doce días continuos mínimo, pero tú decides si los distribuyes. \n TÚ TIENES \n LA POTESTAD \n El artículo 78 de la LFT dicta: la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera. \n la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera. \n Sobre el reparto: \n 12 días continuos \n Tú decides el repar"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 706 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 86: recorta al menos 146 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «DOCE DÍAS» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Te pueden dar tus vacaciones en días sueltos? \n ¿DÍAS SUELTOS? \n DE VACACIONES \n Depende: la ley establece doce días continuos por lo menos, pero tú tienes la potestad de distribuirlos en la forma y tiempo que requieras. \n TÚ TIENES \n LA POTESTAD \n La Ley Federal del Trabajo indica que \"la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera.\" \n la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos. Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera. "
+  }
+ ]
+}

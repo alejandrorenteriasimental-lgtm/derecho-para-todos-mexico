@@ -15,6 +15,6 @@ Reserva para lanzar el 2026-11-16: 75/45 días consecutivos
 
 Próximos huecos: 2027-01-31 imagen, 2027-02-01 imagen, 2027-02-02 imagen, 2027-02-03 imagen, 2027-02-04 imagen, 2027-01-30 reel, 2027-01-31 reel, 2027-02-01 reel, 2027-02-02 reel, 2027-02-03 reel
 
-Cola: APROBADO 8, PENDIENTE 2, RETENIDO 7, SIMULADO 144
+Cola: APROBADO 6, RETENIDO 7, REVISION_HUMANA 5, SIMULADO 146
 
-_Generado 2026-11-20T19:47:15+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._
+_Generado 2026-11-21T10:23:58+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._

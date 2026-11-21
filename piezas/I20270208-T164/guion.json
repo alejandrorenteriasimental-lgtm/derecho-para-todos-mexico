@@ -1,0 +1,191 @@
+{
+  "id": "I20270208-T164",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Qué es la jornada de trabajo según la ley?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T164",
+  "pieza": {
+    "titular": "¿Qué es la jornada de trabajo según la ley?",
+    "bajada": "Es el tiempo en que el trabajador está a disposición del patrón.",
+    "cita": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo.",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 58",
+    "ojo": "Se distribuye de común acuerdo.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 58"
+  },
+  "copy": "Para la ley, la jornada de trabajo no se define solo por un horario, sino por tu disponibilidad. Según el artículo 58 de la Ley Federal del Trabajo, es el tiempo en el que estás a disposición del patrón para realizar tus labores.\n\nUn punto clave es que este tiempo no tiene que ser rígido. La misma norma establece que la jornada podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras.\n\nEsto implica que la organización de los horarios requiere la voluntad de ambas partes. Si te fue útil esta información, guarda este post o compártelo con alguien a quien le sirva conocer sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía que explica que la jornada de trabajo es el tiempo de disposición del trabajador al patrón y que su distribución se acuerda entre ambas partes.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "58",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo.",
+      "cita": "Ley Federal del Trabajo, artículo 58",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-21"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "58",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras.",
+      "cita": "Ley Federal del Trabajo, artículo 58",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-21"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La jornada se define como el periodo en que el empleado está bajo las órdenes del patrón para cumplir sus tareas.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La repartición de las horas de trabajo puede ser pactada entre la parte empleadora y la trabajadora.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Qué es la jornada de trabajo según la ley?",
+    "concepto_central": "jornada de trabajo",
+    "respuesta_corta": "Es el tiempo durante el cual la persona trabajadora está a disposición del patrón para prestar su trabajo.",
+    "reglas": [
+      {
+        "conclusion": "La ley define la jornada de trabajo basándose en la disponibilidad del trabajador hacia su empleador para realizar sus labores.",
+        "fuente": "F1",
+        "cita_literal": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo.",
+        "condiciones": [
+          "Que el trabajador esté a disposición del patrón",
+          "Que sea para prestar su trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "58"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "definicion",
+        "estado": "cubierto",
+        "respuesta": "Se trata del periodo en el que el empleado se encuentra bajo las órdenes del patrón para cumplir con sus tareas.",
+        "fuente": "F1",
+        "cita_literal": "Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo."
+      },
+      {
+        "elemento": "alcance",
+        "estado": "cubierto",
+        "respuesta": "La forma en que se reparten las horas de este tiempo puede pactarse entre ambas partes.",
+        "fuente": "F1",
+        "cita_literal": "Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La organización de los horarios no puede ser impuesta de forma arbitraria por una sola de las partes.",
+        "condicion": "Para que la distribución sea válida según este artículo, debe existir voluntad de ambas partes.",
+        "base": "F1 (distribuida de común acuerdo)"
+      }
+    ],
+    "distinciones": [],
+    "limites": "El texto proporcionado no menciona la duración máxima de la jornada (horas diarias o semanales), los tipos de jornada (diurna, nocturna o mixta), ni los periodos de descanso obligatorios."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-21T10:12:27+00:00",
+    "solicitud": "2027-02-08_imagen_T164-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Qué es la jornada de trabajo según la ley?",
+  "tipo_pregunta": "definicion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Es el tiempo durante el cual la persona trabajadora está a disposición del patrón para prestar su trabajo. \n Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo. \n Su distribución se pacta de común acuerdo."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La ley define la jornada de trabajo basándose en la disponibilidad del trabajador hacia su empleador para realizar sus labores.",
+              "sostenida": "si",
+              "motivo": "La cita literal establece que la jornada es el tiempo en que el trabajador está a disposición del patrón para prestar su trabajo."
+            },
+            {
+              "conclusion": "La forma en que se reparten las horas de este tiempo puede pactarse entre ambas partes.",
+              "sostenida": "si",
+              "motivo": "El texto oficial indica que la jornada podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras."
+            },
+            {
+              "conclusion": "La organización de los horarios requiere la voluntad de ambas partes.",
+              "sostenida": "si",
+              "motivo": "El concepto de 'común acuerdo' contenido en el artículo 58 exige la concurrencia de la voluntad de ambas partes (empleador y trabajador)."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}
