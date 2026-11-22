@@ -12,13 +12,22 @@
   "lote": "lote-9",
   "motivo_seleccion": "LFT art. 78 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_78.json; última reforma de la ley 2026-05-14): «la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos». Condición literal: el resto del periodo «a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera». Respuesta: no del todo; al menos doce días deben ser seguidos.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-21T10:04:26Z",
   "pieza_id": "R20270208-T164",
   "archivo": "2027-02-08_reel_T164-lote-9.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 706 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 86: recorta al menos 146 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «DOCE DÍAS» presenta como exacta una cifra que la ley fija como mínimo («por lo me",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "ec7f6a4f636b0cbf"
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-21",
+      "por": "Claude (operación diaria)",
+      "motivo": "primer descarte (redacción): narración de 706 caracteres (máximo 620) y «DOCE DÍAS» presentado como cifra exacta cuando la ley dice «por lo menos». Causa de redacción, no del tema; se reabre con una sola cita literal, el mínimo declarado y tope de 520 caracteres",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 706 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 86: recorta al menos 146 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «DOCE DÍAS» presenta como exacta una cifra que la ley fija como mínimo («por lo me"
+    }
+  ],
+  "angulo": "Reel de 30 a 40 s: narración total de 520 caracteres o menos (incluido el cierre). Solo LFT art. 78. Respuesta corta (empieza con «Sí, pero»): sí, pero por lo menos doce días deben ser continuos; el resto del periodo lo distribuye la persona trabajadora. Cita literal ÚNICA (una sola vez, en una sola escena; copiar exacto): «la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos». Dato adicional con palabras del artículo y SIN otra cita: el resto del periodo, a potestad de la persona trabajadora, puede distribuirse en la forma y tiempo que lo requiera. Los doce días son un MÍNIMO: decir siempre «por lo menos doce días» o «al menos doce días», nunca «doce días» como cifra exacta, tampoco en encabezados. No hablar de cuántos días corresponden por antigüedad (art. 76), de prima vacacional ni de pagos. Cuatro escenas más cierre; todo texto visible debe corresponder a lo narrado en esa escena. Sin jurisprudencia."
 }
