@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1175 KB"
+      "detalle": "1204 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1102"
+      "detalle": "fin del contenido en y=1101"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "53 palabras sin cabecera ni pie"
+      "detalle": "56 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 38 palabras reconocidas"
+      "detalle": "100% de 43 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -93,14 +93,14 @@
   "metadatos": {
     "id": "I20270210-T166",
     "formato": "imagen",
-    "titulo": "¿Un negocio debe mostrar sus tarifas a la vista?",
+    "titulo": "¿Un negocio de servicios debe mostrar sus tarifas?",
     "plantilla": "dato",
     "archivo": "I20270210-T166.png",
-    "sha256": "09b2237a7077e99f1d8dc7db96b41c59b348d84f8170ee2303c07ead2ef65db4",
-    "ahash": "1000011111111111111111111111111111111111111111111111111111011111100000000000111110000000100000111000001111111111111111111111111111111110111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "07d8deca68ebd8115d2f0a07a3843d5bf69e710687f152b4ba4cb1ba4ebb9ba4",
+    "sha256": "816d8e2ec6f88fbb0e289ba7a642b11d5f7edb2349bb2ac0d70d567d279d6984",
+    "ahash": "1111111111111111111111111111111111111111111111111101000000111111100000000011111110000010000001111111111111111111110000000001111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "5496421ef8df34bf6a7cb047ac9ba52426556da800e533a6424e0ce03a57fe5f",
     "texto_alternativo": "Imagen informativa con el título sobre si los negocios deben mostrar tarifas a la vista. Explica que en establecimientos de servicios la tarifa de los servicios principales debe estar a la vista en caracteres legibles, y las de los demás servicios deben estar disponibles al público.",
-    "copy": "De acuerdo con la Ley Federal de Protección al Consumidor, en su artículo 57, en todo establecimiento de prestación de servicios debe exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles.\n\nEsta exigencia aplica a los servicios principales del negocio. La misma norma señala una regla distinta para el resto de las tarifas ofertadas.\n\nRespecto a las tarifas de los demás servicios distintos a los principales, la ley establece que, en todo caso, deberán estar disponibles al público.\n\nGuarda esta publicación para consultar la ley cuando lo necesites o compártela con quien tenga un establecimiento de servicios.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "El artículo 57 de la Ley Federal de Protección al Consumidor dice: «En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles».\n\nY agrega: «Las tarifas de los demás, en todo caso, deberán estar disponibles al público».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-21T16:24:18+00:00",
+    "fecha": "2026-11-23T21:40:36+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

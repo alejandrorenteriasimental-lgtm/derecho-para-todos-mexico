@@ -8,12 +8,12 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1196 KB"
+      "detalle": "1188 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
       "resultado": "APROBADO",
-      "detalle": "mínimo 26 px"
+      "detalle": "mínimo 24 px"
     },
     {
       "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1089"
+      "detalle": "fin del contenido en y=1100"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "55 palabras sin cabecera ni pie"
+      "detalle": "56 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 40 palabras reconocidas"
+      "detalle": "98% de 45 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,22 +96,28 @@
     "titulo": "¿Tienes derecho a asociarte para participar en la política?",
     "plantilla": "dato",
     "archivo": "I20270211-T167.png",
-    "sha256": "ef5c811cd1fd7e0a0a354dabce1b104150f042cf3dfec7f28c46f02398f02139",
-    "ahash": "1101111111111111111111111111111111111111111111111111111111111111100000000111111110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "6a1a8d88986dfeb647cb52692fb0679f57ea1cce39c2483028c9d28014ab816a",
-    "texto_alternativo": "Placa informativa sobre el derecho de asociación política de la ciudadanía mexicana conforme al artículo 35 constitucional.",
-    "copy": "En México, la participación política no se limita al voto individual. La ley reconoce la posibilidad de organizarse colectivamente para intervenir en la vida pública del país.\n\nDe acuerdo con el artículo 35, fracción III, de la Constitución Política de los Estados Unidos Mexicanos, es derecho de la ciudadanía «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país;». Para que aplique esta regla, la incorporación debe ser libre y la actuación, pacífica.\n\nEs importante considerar que el texto constitucional define el derecho fundamental y sus condiciones básicas, sin detallar en esta disposición los trámites o registros específicos para cada tipo de agrupación.\n\nGuarda esta publicación para tener presentes tus derechos cívicos y compártela si te resultó útil.\n\nEsto es información general, no es asesoría legal.",
+    "sha256": "c0cf2f4e32ad9e6622fc697cfe79a6d8eff91cf610827377a2b4b138bdd542bc",
+    "ahash": "1111111111111111111111111111111111111111111111111111111111111111100000000111111110000000011011111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "91fed6a7eaf31b3183dd876f4129705d33883908367a9fbaaf284d5b4906954e",
+    "texto_alternativo": "Imagen informativa: la ciudadanía mexicana tiene derecho a asociarse libre y pacíficamente para tomar parte en los asuntos políticos del país (Constitución, arts. 34 y 35).",
+    "copy": "El artículo 35, fracción III, de la Constitución reconoce como derecho de la ciudadanía: «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos del país».\n\n¿Quiénes son ciudadanos? El artículo 34 lo dice: los mexicanos que hayan cumplido 18 años y tengan un modo honesto de vivir.\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
         "documento": "Constitución Política de los Estados Unidos Mexicanos",
         "articulo": "35",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Constitución Política de los Estados Unidos Mexicanos",
+        "articulo": "34",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"
       }
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-21T16:25:00+00:00",
+    "fecha": "2026-11-23T21:41:45+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

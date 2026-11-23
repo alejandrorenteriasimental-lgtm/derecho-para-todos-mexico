@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1201 KB"
+      "detalle": "1207 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1101"
+      "detalle": "fin del contenido en y=1155"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "59 palabras sin cabecera ni pie"
+      "detalle": "60 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 45 palabras reconocidas"
+      "detalle": "100% de 46 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,9 +96,9 @@
     "titulo": "¿La policía puede tomarte tu declaración?",
     "plantilla": "dato",
     "archivo": "I20270209-T165.png",
-    "sha256": "44f6457b1f5d401fe6bfe18190a505d0633503dec49c72666b7aad00cb304d43",
-    "ahash": "1111111111111111111111111111111111111111111111111100000000001111100000001111111110000000011111111111111111111111110000000000001110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "e336e108fd62d5face03049cb53ab96045a8ed8b18a2e7424e6010a3d727d5b4",
+    "sha256": "82924da0ed97e8d847e1e7bc80c8774de4cfd9510d7f28e109e6feeca053e9c5",
+    "ahash": "1111111111111111111111111111111111111111111111111100000000001111100000001111111110000000011111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "aeafd2f1580f059567522add3f21faaddee6a9c0f4bc4915d3eeb1b040979528",
     "texto_alternativo": "Infografía jurídica que explica que la policía no puede recibir declaraciones directamente; su obligación es avisar al Ministerio Público para que se realice ante autoridad y con un defensor.",
     "copy": "Si eres imputado y le dices a la policía que quieres declarar sobre los hechos que se investigan, el artículo 114 del Código Nacional de Procedimientos Penales dice que la policía «deberá comunicar dicha situación al Ministerio Público para que se reciban sus manifestaciones con las formalidades previstas en este Código».\n\nEl mismo artículo señala que el imputado tiene derecho a declarar durante cualquier etapa del procedimiento y que «podrá hacerlo ante el Ministerio Público o ante el Órgano jurisdiccional, con pleno respeto a los derechos que lo amparan y en presencia de su Defensor».\n\nGuarda esta información o compártela a quien le pueda servir.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-21T16:23:51+00:00",
+    "fecha": "2026-11-23T21:40:11+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

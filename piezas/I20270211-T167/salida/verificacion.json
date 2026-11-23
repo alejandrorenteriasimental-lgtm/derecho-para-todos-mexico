@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "consultado": "2026-11-21T16:24:22+00:00",
+      "consultado": "2026-11-23T21:40:42+00:00",
       "http": 200,
       "bytes": 3146661,
       "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
@@ -14,6 +14,20 @@
       "huella_articulo": "563da2b68f70e606c7d86c5b9c7c1e2f9917c2b08520bccfd8e1b1e002f213bf",
       "estado": "VERIFICADA",
       "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "consultado": "2026-11-23T21:40:57+00:00",
+      "http": 200,
+      "bytes": 3146661,
+      "sha256": "cefb525ae8dfc97a7da40597d2ee918fe254d4bfce88301ff3c9959ced9e6e65",
+      "ultima_reforma_documento": "2026-10-07",
+      "posicion_articulo": 157799,
+      "extracto": "son ciudadanos de la republica los varones y mujeres que, teniendo la calidad de mexicanos, reunan, ademas, los siguientes requisitos: i. haber cumplido 18 anos, y ii. tener un modo honesto de vivir. articulo reformado dof 17-10-1953, 22-12-1969",
+      "huella_articulo": "ca8ba2afa72af2d1c8fc91cf3b66b879387f34eaa641fd9d1ea13914080b1836",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
     }
   },
   "afirmaciones": [
@@ -21,6 +35,14 @@
       "id": "A1",
       "fuentes": [
         "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
       ],
       "dictamen": "VERIFICADA",
       "duda": null
