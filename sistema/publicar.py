@@ -123,8 +123,28 @@ def operacion(etiqueta, modo="real", libro=None):
     return op
 
 
+_TOKEN_CACHE = {}
+
+
+def token_pagina(env=os.environ, http=None):
+    """23-11-2026: Meta invalidó el token de página derivado de la sesión personal (subcódigo 460). Si existe
+    META_SYSTEM_TOKEN (usuario del sistema «Publicador ADL» del portafolio, sin caducidad y ajeno a la contraseña
+    personal), el token de página se obtiene en cada ejecución con GET /{page}?fields=access_token. Si no, se usa
+    META_PAGE_TOKEN como antes. Nunca se imprime."""
+    sist, page = env.get("META_SYSTEM_TOKEN"), env.get("META_PAGE_ID")
+    if sist and page:
+        if (sist, page) not in _TOKEN_CACHE:
+            url = f"{GRAPH}/{page}?" + urllib.parse.urlencode({"fields": "access_token", "access_token": sist})
+            d = _json(*(http or http_real)("GET", url))
+            if not d.get("access_token"):
+                raise ErrorGraph(200, None, "el usuario del sistema no tiene acceso a la Página (sin access_token)", False)
+            _TOKEN_CACHE[(sist, page)] = d["access_token"]
+        return _TOKEN_CACHE[(sist, page)]
+    return env.get("META_PAGE_TOKEN")
+
+
 def modo_operacion(env=os.environ):
-    faltan = [k for k in ("META_PAGE_ID", "META_PAGE_TOKEN") if not env.get(k)]
+    faltan = [k for k in ("META_PAGE_ID",) if not env.get(k)] + ([] if env.get("META_PAGE_TOKEN") or env.get("META_SYSTEM_TOKEN") else ["META_PAGE_TOKEN o META_SYSTEM_TOKEN"])
     if env.get("PUBLICAR") != "1":
         return "simulacion", "PUBLICAR distinto de 1"
     if env.get("LANZAMIENTO_AUTORIZADO") != "SI":
@@ -177,7 +197,7 @@ def publicar_reel(pieza_id, mp4, descripcion, huella, programar_unix=None, modo=
         registrar({**base, "fase": "SIMULADA", "motivo": motivo, "programar_unix": programar_unix}, libro)
         return {"estado": "SIMULADO", "marca": etiqueta, "descripcion": texto, "motivo": motivo}
 
-    page, g = env["META_PAGE_ID"], Graph(env["META_PAGE_TOKEN"], http)
+    page, g = env["META_PAGE_ID"], Graph(token_pagina(env, http), http)
     op = operacion(etiqueta, "real", libro) or {}
 
     def confirmar(estado_remoto, vid, origen):
@@ -275,7 +295,7 @@ def publicar_imagen(pieza_id, png, texto, huella, programar_unix=None, modo=None
     if modo == "simulacion":
         registrar({**base, "fase": "SIMULADA", "motivo": motivo, "programar_unix": programar_unix}, libro)
         return {"estado": "SIMULADO", "marca": etiqueta, "descripcion": mensaje, "motivo": motivo}
-    page, g = env["META_PAGE_ID"], Graph(env["META_PAGE_TOKEN"], http)
+    page, g = env["META_PAGE_ID"], Graph(token_pagina(env, http), http)
     op = operacion(etiqueta, "real", libro) or {}
     if op.get("fase") == "CONFIRMADA":
         return {"estado": op["estado_remoto"], "post_id": op["post_id"], "marca": etiqueta, "origen": "libro"}

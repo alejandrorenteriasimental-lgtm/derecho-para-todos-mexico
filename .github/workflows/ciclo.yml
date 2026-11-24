@@ -118,6 +118,7 @@ jobs:
           PRODUCCIONES_POR_FORMATO: "2"
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}                 # bot de revisión (el chat se vincula con código; ver sistema/revision.py)
         run: python sistema/ciclo.py
       - name: Versión larga solo para TikTok (16-11; empieza sola en TIKTOK_LARGO_DESDE de data/lanzamiento.json)

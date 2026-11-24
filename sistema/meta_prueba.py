@@ -49,7 +49,9 @@ def probar(tok, page_id=None, http=get):
 
 
 if __name__ == "__main__":
-    tok = os.environ.get("META_PAGE_TOKEN")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import publicar
+    tok = publicar.token_pagina(os.environ)
     if not tok:
         print("Falta el secreto META_PAGE_TOKEN; no se hizo ninguna llamada."); sys.exit(0)
     r = probar(tok, os.environ.get("META_PAGE_ID"))

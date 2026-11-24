@@ -59,7 +59,7 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
     reel, R["variante"] = variante_ig(reel, env.get("VARIANTE_IG", ""))
     def paso(nombre, ok, detalle=""):
         R["pasos"].append({"paso": nombre, "resultado": "OK" if ok else "FALLA", "detalle": str(detalle)[:400]}); return ok
-    page = env["META_PAGE_ID"]; g = Graph(env["META_PAGE_TOKEN"], http)
+    page = env["META_PAGE_ID"]; g = Graph(publicar.token_pagina(env, http), http)
     try:
         yo = g.get("me", fields="id,name")
         paso("autenticación", str(yo.get("id")) == str(page), f'{yo.get("name")} ({yo.get("id")})')
@@ -111,7 +111,7 @@ def probar(env, imagen, reel, texto_img, texto_reel, http=publicar.http_real, do
 
 if __name__ == "__main__":
     env = os.environ
-    if not env.get("META_PAGE_TOKEN") or not env.get("META_PAGE_ID"):
+    if not (env.get("META_PAGE_TOKEN") or env.get("META_SYSTEM_TOKEN")) or not env.get("META_PAGE_ID"):
         print("Faltan META_PAGE_TOKEN o META_PAGE_ID; no se hizo ninguna llamada."); sys.exit(0)
     img, reel = sys.argv[1], sys.argv[2]
     g_img = json.loads((RAIZ / "piezas" / Path(img).stem / "guion.json").read_text())

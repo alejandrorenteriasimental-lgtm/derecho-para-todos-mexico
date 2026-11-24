@@ -27,6 +27,7 @@ jobs:
           IG_REELS: ${{ vars.IG_REELS }}        # 1 cuando la carga de Reels a Instagram supere la prueba no pública
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
           META_IG_ID: "17841456017575703"
           YOUTUBE: ${{ vars.YOUTUBE }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}

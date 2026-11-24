@@ -138,7 +138,7 @@ def publicar_ig(pieza_id, formato, archivo, texto, huella, modo=None, env=os.env
     if modo == "simulacion":
         registrar({**base, "fase": "SIMULADA", "motivo": motivo}, libro)
         return {"estado": "SIMULADO", "marca": etiqueta, "motivo": motivo}
-    page = env["META_PAGE_ID"]; g = Graph(env["META_PAGE_TOKEN"], http)
+    page = env["META_PAGE_ID"]; g = Graph(publicar.token_pagina(env, http), http)
     ig = env.get("META_IG_ID") or _ig_id(g, page)
     op = operacion(etiqueta, "real", libro) or {}
     if op.get("fase") == "CONFIRMADA":
