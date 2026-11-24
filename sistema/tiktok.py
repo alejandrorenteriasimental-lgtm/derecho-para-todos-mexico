@@ -115,6 +115,7 @@ def modo_tiktok(env=os.environ, archivo=None):
 def enviar_a_bandeja(pieza_id, mp4, huella, modo=None, env=os.environ, http=publicar.http_real, libro=None, archivo=None,
                      dormir=time.sleep, ahora=None):
     etiqueta = marca(pieza_id, huella) + "-tt"
+    if env.get("TIKTOK_REENVIO"): etiqueta += "-r" + env["TIKTOK_REENVIO"]   # 23-11: reenvío manual pedido por el responsable
     if modo is None: modo, motivo = modo_tiktok(env, archivo)
     else: motivo = "modo indicado por quien llama"
     base = {"pieza": pieza_id, "marca": etiqueta, "modo": modo, "formato": "reel", "red": "tiktok"}

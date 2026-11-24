@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       fecha: { description: "fecha del calendario (AAAA-MM-DD); vacío = mañana", required: false, default: "" }
+      reenviar: { description: "texto cualquiera para volver a enviar a la bandeja una pieza ya enviada", required: false, default: "" }
 concurrency: { group: tiktok, cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
@@ -31,6 +32,7 @@ jobs:
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
           TIKTOK_CLAVE: ${{ secrets.TIKTOK_CLAVE }}
           FECHA: ${{ inputs.fecha }}
+          TIKTOK_REENVIO: ${{ inputs.reenviar }}
         run: python sistema/tiktok.py $FECHA
       - name: Guardar registros y tokens cifrados
         if: always()
