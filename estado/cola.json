@@ -13295,7 +13295,7 @@
       "id": "I20270212-T168",
       "formato": "imagen",
       "huella": "da6fd999220c16ccf9bcfc30b62bd81a7fb59368c2a857f2ffceb7ee21a91af6",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13311,6 +13311,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T04:04:38+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-24T11:45:31+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11): mito y realidad repetían la etiqueta («Mito: …», «Realidad: Sí…») y el copy decía «impedir este derecho» sin antecedente y generalizaba («aplica siempre que…») → mito «Impedirte la lactancia en el trabajo no es violencia.», realidad «Sí lo es: constituye violencia laboral «…»» con la cita literal del art. 11 LGAMVLV, copy literal; esquema, razonamiento, coherencia visible y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13329,7 +13335,7 @@
       "id": "I20270213-T169",
       "formato": "imagen",
       "huella": "3b458dff38bc096869564c00555ed00ab5615bb6b634bfa2c5800521dc6bce50",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13345,6 +13351,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T04:04:58+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-24T11:45:31+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11): titular «¿Padres tienen derecho…?» sin artículo, bajada que reducía «guarda y custodia» a «custodia», OJO poco claro y copy con relleno → titular «¿Los padres pueden intervenir en la educación?», bajada con «guarda y custodia», OJO «Se ejerce según el artículo 103 de esa misma ley.», copy con la oración literal del art. 57 LGDNNA; sin hallazgos (57 palabras); se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13363,7 +13375,7 @@
       "id": "R20270211-T167",
       "formato": "reel",
       "huella": "e176250fe217a5c20bd289902b02a4bc7a91bb6541302b1ec77e7c0062a99cff",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13379,6 +13391,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T04:03:27+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-24T11:45:31+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11): la cita narraba «La ley incluye «así como…»» (la fuente es la Constitución), la lista decía «Tener calidades de ley» (no está en las fuentes citadas) y el detalle agregaba «ley electoral» → cita «soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación» (CPEUM 35 fr. II, literal), lista y excepción con esos elementos; esquema, razonamiento y coherencia visible sin hallazgos (561 caracteres); se vuelve a verificar y producir"
         }
       ],
       "error": null,

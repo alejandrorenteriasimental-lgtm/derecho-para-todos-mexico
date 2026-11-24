@@ -61,9 +61,9 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley incluye «así como a los ciudadanos y las ciudadanas que soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación».",
+      "texto": "La Constitución lo reconoce a quienes «soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación».",
       "etiqueta": "CPEUM, art. 35",
-      "cita": "así como a los ciudadanos y las ciudadanas que soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación",
+      "cita": "soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación",
       "afirmaciones": [
         {
           "id": "A1",
@@ -76,10 +76,11 @@
     },
     {
       "tipo": "lista",
-      "texto": "Se requiere: Tener calidades de ley y cumplir términos legales.",
+      "texto": "O sea: pides registro independiente y cumples lo que fije la ley.",
       "items": [
-        "Tener calidades de ley",
-        "Cumplir términos legales"
+        "Pides registro independiente",
+        "Cumples los requisitos",
+        "Y las condiciones y términos"
       ],
       "afirmaciones": [
         {
@@ -93,9 +94,9 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Este derecho se sujeta a lo que determine la legislación electoral.",
-      "encabezado": "Sujeto a la legislación",
-      "detalle": "Se sujeta a la ley electoral",
+      "texto": "Esos requisitos, condiciones y términos los determina la legislación.",
+      "encabezado": "Lo fija la legislación",
+      "detalle": "Requisitos, condiciones y términos",
       "fuente_corta": "CPEUM, art. 35",
       "afirmaciones": []
     },
@@ -228,5 +229,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La escena de cita empezaba con un fragmento («La ley incluye «así como…»»), cuando la fuente es la Constitución; la lista decía «Tener calidades de ley», que no está en las fuentes citadas; y el detalle visible agregaba «ley electoral», que el texto no dice. → cita «soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación» (literal de F2), narrada como «La Constitución lo reconoce a quienes…»; lista con los elementos literales de F2/F3; excepción «Lo fija la legislación». Gancho, titulares, fuentes y copy sin cambios."
+    }
+  ]
 }

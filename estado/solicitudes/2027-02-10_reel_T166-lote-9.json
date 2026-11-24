@@ -2,22 +2,22 @@
   "fecha": "2027-02-10",
   "formato": "reel",
   "tema_id": "T166",
-  "titulo": "¿Una tienda puede negarse a venderte algo que tiene en existencia?",
-  "gancho": "¿Una tienda puede negarse a venderte algo que tiene en existencia?",
-  "pregunta": "¿Una tienda puede negarse a venderte algo que tiene en existencia?",
+  "titulo": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
+  "gancho": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
+  "pregunta": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
   "tipo_pregunta": "legalidad",
   "carril": "A",
-  "fuentes_sugeridas": "LFPC art. 43",
+  "fuentes_sugeridas": "LFPC art. 76 Bis fr. I",
   "riesgo_exactitud": "",
   "lote": "lote-9",
-  "motivo_seleccion": "LFPC art. 43 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_43.json; última reforma de la ley 2025-12-12): «ni el proveedor ni sus dependientes podrán negar al consumidor la venta, adquisición, renta o suministro de bienes o servicios que se tengan en existencia». Excepción literal: «Salvo cuando medie mandato judicial o disposición jurídica que exija el cumplimiento de algún requisito». También: «Se presume la existencia de productos o servicios cuando éstos se anuncien como disponibles».",
+  "motivo_seleccion": "LFPC art. 76 Bis, fr. I (texto oficial en registro/textos/LFPC_76_Bis.json, consultado el 05-11-2026; última reforma de la ley DOF 12-12-2025, que reformó la fr. VI, no la I): «El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente». Ámbito literal del primer párrafo: «transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC art. 43 (dos descartes, 21-11 y 23-11: el análisis exigió multas, Profeco, denuncias y plazos que están en otros artículos). Ningún fundamento de las 3 semanas previas; el día anterior (CNPP) y el siguiente (CPEUM) son de otra materia.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-21T10:04:26Z",
   "pieza_id": "R20270210-T166",
   "archivo": "2027-02-10_reel_T166-lote-9.json",
-  "intentos": 1,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos analizados no especifican las multas o sanciones aplicables a la tienda, ni el proceso de denuncia ante la autoridad de protección al consumidor.",
   "ultima_categoria": "juridico",
   "huella_entrada": "680e3f02c7146fc3",
@@ -28,7 +28,14 @@
       "motivo": "primer descarte con LFPC 43 (21-11): la pregunta de legalidad llevó al análisis a exigir multas, la autoridad para denunciar (Profeco) y plazos, que están en otros artículos. Se reabre con la misma pregunta y el mismo artículo, con la excepción literal obligatoria y las consecuencias declaradas fuera de alcance",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no mencionan multas económicas, el nombre de la autoridad ante la cual denunciar (como Profeco) ni los plazos para iniciar una reclamación."
+    },
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (operación diaria)",
+      "motivo": "pregunta sustituida tras el segundo descarte con LFPC 43 (21-11 y 23-11: el análisis exigió multas, Profeco, denuncias y plazos de otros artículos, aun declarados fuera de alcance). Ahora LFPC art. 76 Bis fr. I, respuesta literal con su excepción, alcance federal, sin uso en los lotes 1 a 9",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos analizados no especifican las multas o sanciones aplicables a la tienda, ni el proceso de denuncia ante la autoridad de protección al consumidor."
     }
   ],
-  "angulo": "Solo LFPC art. 43, primer párrafo. La pregunta es solo si el proveedor puede negarse a vender lo que tiene en existencia: la respuesta está completa en el texto. Respuesta corta: no, salvo cuando medie mandato judicial o disposición jurídica que exija el cumplimiento de algún requisito (excepción literal, obligatoria en la narración). Cita literal: «ni el proveedor ni sus dependientes podrán negar al consumidor la venta, adquisición, renta o suministro de bienes o servicios que se tengan en existencia». Precisión literal del mismo párrafo: «Se presume la existencia de productos o servicios cuando éstos se anuncien como disponibles». Fuera de alcance (no son faltantes ni insuficiencia del texto): multas, sanciones, Profeco, denuncias, quejas, plazos y procedimientos (están en otros artículos); no se mencionan. Narración de 30 a 42 s."
+  "angulo": "Solo LFPC art. 76 Bis, primer párrafo y fracción I. La pregunta es solo si el proveedor que vende por medios electrónicos puede pasar tus datos a otros proveedores: la respuesta está completa en la fracción I. Respuesta corta (empieza con «No»): no puede difundirlos ni transmitirlos a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente (excepción literal, obligatoria en la narración). Cita literal: «El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción». Ámbito literal: «transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología». Fuera de alcance (no son faltantes ni insuficiencia del texto): multas, sanciones, Profeco, denuncias, quejas, plazos, procedimientos y la ley de protección de datos personales (otros ordenamientos); no se mencionan. No decir «nunca» ni «está prohibido en todos los casos». Narración de 30 a 42 s."
 }
