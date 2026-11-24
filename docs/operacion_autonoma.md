@@ -56,7 +56,7 @@ Ver `docs/operacion_unica.md`. Al iniciar, revisar en `git log` si hay commits d
 
 ## Costos y límites
 
-- **GitHub Actions:** tope propio de 1,850 minutos al mes para producción (autorizado 3-11 hasta 2,000, cuota gratuita comprobada; 150 reservados a publicación) (`registro/actions_mes.json`).
+- **GitHub Actions:** sin tope de minutos desde el 23-11: el repositorio es público y los runners estándar son gratuitos.json`).
 - **Gemini:** cuota gratuita. Si aparece «tope propio diario», esperar al siguiente día del Pacífico.
 
 ## Reels en Instagram (decisión del responsable, 2-11-2026: opción B)
