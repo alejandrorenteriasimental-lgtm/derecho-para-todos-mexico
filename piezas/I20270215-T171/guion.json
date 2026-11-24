@@ -1,0 +1,184 @@
+{
+  "id": "I20270215-T171",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Semanas para el subsidio por maternidad IMSS?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T171",
+  "pieza": {
+    "titular": "¿Semanas para el subsidio por maternidad IMSS?",
+    "bajada": "Requiere al menos 30 cotizaciones semanales en los 12 meses previos al pago.",
+    "cita": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha",
+    "etiqueta_cita": "Ley del Seguro Social, artículo 102",
+    "ojo": "Requiere certificación del Instituto y no trabajar pagado.",
+    "fuente_visible": "Ley del Seguro Social, art. 102"
+  },
+  "copy": "La Ley del Seguro Social, en su artículo 102, establece que para tener derecho al subsidio por maternidad del IMSS, la asegurada debe haber cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio.\n\nAdemás, el mismo artículo 102 exige que el Instituto certifique el embarazo y la fecha probable del parto, y que la asegurada no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto. Si la asegurada percibiera otro subsidio, se cancelará el que sea por menor cantidad.\n\nGuarda esta información o compártela con quien necesite conocer los requisitos legales del IMSS.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre el subsidio por maternidad del IMSS donde se indica el requisito de 30 cotizaciones semanales previas.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "102",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio;",
+      "cita": "Ley del Seguro Social, artículo 102",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-24"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "102",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "texto_literal": "Que se haya certificado por el Instituto el embarazo y la fecha probable del parto, y III. Que no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto.",
+      "cita": "Ley del Seguro Social, artículo 102",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-24"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Para recibir el subsidio por maternidad del IMSS se requiere haber cubierto por lo menos treinta cotizaciones semanales en los doce meses anteriores a la fecha de pago.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Se debe contar con certificación del embarazo por el Instituto y no realizar trabajo retribuido en los periodos anteriores y posteriores al parto.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
+    "concepto_central": "subsidio por maternidad del IMSS",
+    "respuesta_corta": "Por lo menos 30 cotizaciones semanales en los 12 meses anteriores a la fecha en que debiera comenzar el pago del subsidio.",
+    "reglas": [
+      {
+        "conclusion": "La asegurada requiere haber cubierto por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores al inicio del pago del subsidio.",
+        "fuente": "F1",
+        "cita_literal": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio;",
+        "condiciones": [
+          "Aplica para los doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "102"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Debes tener cubiertas por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio.",
+        "fuente": "F1",
+        "cita_literal": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio;"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Se requiere que el Instituto certifique el embarazo y la fecha probable del parto, y que la asegurada no ejecute trabajo remunerado en los periodos anteriores y posteriores al parto.",
+        "fuente": "F1",
+        "cita_literal": "Que se haya certificado por el Instituto el embarazo y la fecha probable del parto, y III. Que no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala el monto económico del subsidio ni el procedimiento administrativo detallado para solicitarlo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-24T20:35:51+00:00",
+    "solicitud": "2027-02-15_imagen_T171-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Debes tener por lo menos 30 cotizaciones semanales en los 12 meses anteriores a la fecha de inicio del pago. \n Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha \n Requiere certificación del Instituto y no trabajar pagado."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Para tener derecho al subsidio, la asegurada debe haber cubierto al menos 30 cotizaciones semanales en los 12 meses previos al inicio del pago.",
+              "sostenida": "si",
+              "motivo": "El artículo 102, fracción I, establece este requisito temporal de forma explícita."
+            },
+            {
+              "conclusion": "Es necesario que el IMSS certifique el embarazo y la fecha probable de parto, además de no realizar trabajo remunerado en los periodos pre y postnatales.",
+              "sostenida": "si",
+              "motivo": "El artículo 102, fracciones II y III, condicionan el derecho al subsidio a estos dos supuestos."
+            },
+            {
+              "conclusion": "Si la asegurada recibe otro subsidio, se cancelará el de menor monto.",
+              "sostenida": "si",
+              "motivo": "El último párrafo del artículo 102 establece esta regla de preferencia entre subsidios."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

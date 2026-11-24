@@ -1,0 +1,52 @@
+{
+  "decision": "APTA",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "consultado": "2026-11-24T20:38:07+00:00",
+      "http": 200,
+      "bytes": 2161638,
+      "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
+      "ultima_reforma_documento": "2026-01-15",
+      "posicion_articulo": 103968,
+      "extracto": "para que la asegurada tenga derecho al subsidio que se senala en el articulo anterior, se requiere: i. que haya cubierto por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio; ii. que se haya certificado por el instituto el embarazo y la fecha probable del parto, y iii. que no ejecute trabajo alguno mediante retribucion durante los periodos anteriores y posteriores al parto. si la asegurada estuviera percibiendo otro subsidio, se cancelara el que sea por menor cantidad.",
+      "huella_articulo": "f092897d0e4677a5ddf72b0f44bc72c53ce7fa1e0083aaa1a5d5ec2cafc7d81f",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "consultado": "2026-11-24T20:38:13+00:00",
+      "http": 200,
+      "bytes": 2161638,
+      "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
+      "ultima_reforma_documento": "2026-01-15",
+      "posicion_articulo": 103968,
+      "extracto": "para que la asegurada tenga derecho al subsidio que se senala en el articulo anterior, se requiere: i. que haya cubierto por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio; ii. que se haya certificado por el instituto el embarazo y la fecha probable del parto, y iii. que no ejecute trabajo alguno mediante retribucion durante los periodos anteriores y posteriores al parto. si la asegurada estuviera percibiendo otro subsidio, se cancelara el que sea por menor cantidad.",
+      "huella_articulo": "f092897d0e4677a5ddf72b0f44bc72c53ce7fa1e0083aaa1a5d5ec2cafc7d81f",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    }
+  ],
+  "razonamiento": []
+}

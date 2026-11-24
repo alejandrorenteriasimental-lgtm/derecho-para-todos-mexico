@@ -1,0 +1,272 @@
+{
+  "id": "R20270213-T169",
+  "formato": "reel",
+  "titulo": "¿Un niño menor de 15 años puede trabajar?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T169",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 47",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 47",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "están obligadas a tomar las medidas necesarias para prevenir, atender y sancionar los casos en que niñas, niños o adolescentes se vean afectados por",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 47",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "47",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 47",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Un niño menor de 15 años puede trabajar?",
+      "titulo": [
+        "¿PUEDE TRABAJAR",
+        "UN MENOR DE 15?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad.",
+      "titulo": [
+        "EDAD MÍNIMA:",
+        "15 AÑOS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley dice: «El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;».",
+      "etiqueta": "Ley General NNA, art. 47",
+      "cita": "El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La ley establece que los 15 años son la edad mínima para trabajar e impone a las autoridades deberes de prevención, atención y sanción.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Las autoridades deben prevenir, atender y sancionar este trabajo.",
+      "items": [
+        "Prevenir el trabajo",
+        "Atender las situaciones",
+        "Sancionar infracciones"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El trabajo antes de los 15 años es un supuesto protegido por las autoridades conforme a la Constitución y leyes aplicables.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Esto aplica al trabajo antes de los 15 años conforme a la Constitución.",
+      "titulo": [
+        "PROTECCIÓN A",
+        "MENORES DE 15"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Las autoridades de los tres órdenes de gobierno y de la CDMX están obligadas a tomar medidas de prevención, atención y sanción.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "Un menor de 15 años no puede trabajar legalmente y las autoridades deben prevenir, atender y sancionar dichos casos.",
+          "fuente": "F4"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un niño menor de 15 años puede trabajar?",
+    "concepto_central": "trabajo antes de la edad mínima de quince años",
+    "respuesta_corta": "No: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad.",
+    "reglas": [
+      {
+        "conclusion": "La ley establece que quince años es la edad mínima para trabajar y obliga a las autoridades a tomar medidas para prevenir, atender y sancionar el trabajo realizado antes de esa edad.",
+        "fuente": "F1",
+        "cita_literal": "El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;",
+        "condiciones": [
+          "Aplica para niñas, niños o adolescentes menores de quince años de edad."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+          "articulo": "47"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Las autoridades federales, de las entidades federativas, municipales y de las demarcaciones territoriales de la Ciudad de México están obligadas a prevenir, atender y sancionar los casos de trabajo en menores de quince años.",
+        "fuente": "F1",
+        "cita_literal": "están obligadas a tomar las medidas necesarias para prevenir, atender y sancionar los casos en que niñas, niños o adolescentes se vean afectados por"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto F1 no especifica sanciones laborales o penales concretas, procedimientos administrativos, excepciones de trabajo artístico o familiar, ni plazos de prescripción."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-24T20:29:49+00:00",
+    "solicitud": "2027-02-13_reel_T169-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Un niño menor de 15 años puede trabajar?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Un niño menor de 15 años puede trabajar?\n\nNo: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad.\n\nFuente: Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 47.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[vaguedad] Referencia vaga: «La ley fija los 15 años como edad mínima y obliga a las autoridades a prevenir, atender y ». Nombra la vía, la autoridad o el derecho concreto (con su fuente) o elimina la frase."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 757 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 137: recorta al menos 197 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Un niño menor de 15 años puede trabajar? \n ¿PUEDE TRABAJAR \n UN MENOR DE 15? \n No: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad. \n EDAD MÍNIMA: \n 15 AÑOS \n La norma manda a actuar ante El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables; \n El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables; \n Las autoridades federales, de las entidades federati"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 757 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 137: recorta al menos 197 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "narración de 724 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 104: recorta al menos 164 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Un niño menor de 15 años puede trabajar? \n ¿PUEDE TRABAJAR \n UN MENOR DE 15? \n No: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad. \n EDAD MÍNIMA: \n 15 AÑOS \n La ley dice: «El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables;». \n El trabajo antes de la edad mínima de quince años, prevista en el artículo 123 de la Constitución Política de los Estados Unidos Mexicanos y demás disposiciones aplicables; \n El trabajo antes de la edad mínima de quince años, prevista en el"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "narración de 724 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 104: recorta al menos 164 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La ley establece que quince años es la edad mínima para trabajar y obliga a las autoridades a tomar medidas para prevenir, atender y sancionar el trabajo realizado antes de esa edad.",
+              "sostenida": "si",
+              "motivo": "El artículo 47, fracción V, de la Ley General de los Derechos de Niñas, Niños y Adolescentes señala explícitamente el trabajo antes de los quince años como una conducta que las autoridades deben prevenir, atender y sancionar."
+            },
+            {
+              "conclusion": "Las autoridades de los tres órdenes de gobierno están obligadas a prevenir, atender y sancionar el trabajo infantil antes de los 15 años.",
+              "sostenida": "si",
+              "motivo": "El artículo 47 establece la obligación directa para las autoridades federales, estatales y municipales de tomar medidas necesarias ante los supuestos listados, incluyendo el trabajo antes de la edad mínima."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

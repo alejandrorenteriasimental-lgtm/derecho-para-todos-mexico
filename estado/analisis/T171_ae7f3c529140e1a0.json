@@ -1,0 +1,43 @@
+{
+ "tema_id": "T171",
+ "pregunta": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
+ "fecha": "2026-11-24T20:34:03+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
+  "concepto_central": "subsidio por maternidad del IMSS",
+  "respuesta_corta": "Por lo menos 30 cotizaciones semanales en los 12 meses anteriores a la fecha en que debiera comenzar el pago del subsidio.",
+  "reglas": [
+   {
+    "conclusion": "La asegurada requiere haber cubierto por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores al inicio del pago del subsidio.",
+    "fuente": "F1",
+    "cita_literal": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio;",
+    "condiciones": [
+     "Aplica para los doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Debes tener cubiertas por lo menos treinta cotizaciones semanales en el periodo de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio.",
+    "fuente": "F1",
+    "cita_literal": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio;"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Se requiere que el Instituto certifique el embarazo y la fecha probable del parto, y que la asegurada no ejecute trabajo remunerado en los periodos anteriores y posteriores al parto.",
+    "fuente": "F1",
+    "cita_literal": "Que se haya certificado por el Instituto el embarazo y la fecha probable del parto, y III. Que no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no señala el monto económico del subsidio ni el procedimiento administrativo detallado para solicitarlo.",
+  "fuentes_irrelevantes": []
+ }
+}

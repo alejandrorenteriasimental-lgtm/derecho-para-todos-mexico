@@ -1,0 +1,131 @@
+{
+ "solicitud": "2027-02-10_reel_T166-lote-9.json",
+ "fecha": "2026-11-24T20:24:24+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 685 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 65: recorta al menos 125 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Autorización del consumidor» no corresponde a",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te preocupa que las tiendas vendan tus datos? \n ¿VENDEN \n TUS DATOS? \n No, la tienda debe tratar tus datos como confidenciales y solo compartirlos con tu permiso o por orden judicial. \n NO SIN \n TU PERMISO \n La ley dice: «El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción». \n El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción \n Reglas para tu información: \n Confidencialidad total \n Seguridad técnica \n Excepción: Solo se compart"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 659 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 39: recorta al menos 99 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "Identificación de la autoridad competente que puede requerir la información.",
+      "Mención de la Norma Mexicana que establece los mecanismos técnicos y de seguridad obligatorios según el artículo 76 Bis 1."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El proveedor tiene prohibido difundir o transmitir los datos del consumidor a otros proveedores que no formen parte de la transacción comercial.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión presenta la prohibición como una regla absoluta, omitiendo las excepciones legales establecidas en la misma fracción (autorización expresa del consumidor o requerimiento de autoridad competente)."
+     },
+     {
+      "conclusion": "No se permite transmitir datos a proveedores ajenos a la transacción.",
+      "sostenida": "parcial",
+      "motivo": "Al igual que la conclusión anterior, omite las excepciones de la Fracción I, lo que puede inducir al error de pensar que no existe ninguna posibilidad de transmisión."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Reglas - Conclusión 1",
+      "problema": "La regla se redacta sin considerar las excepciones de la norma, lo que la convierte en una afirmación jurídicamente incompleta.",
+      "correccion": "Redactar la regla incluyendo las salvedades: 'El proveedor no podrá difundir o transmitir los datos a otros proveedores ajenos a la transacción, salvo que el consumidor lo autorice expresamente o una autoridad competente lo requiera'."
+     },
+     {
+      "donde": "Titular",
+      "problema": "El titular utiliza el término 'orden judicial', el cual es un supuesto de 'requerimiento de autoridad competente', pero no es el único, lo que limita el alcance de la norma.",
+      "correccion": "Cambiar 'orden judicial' por 'requerimiento de autoridad competente' para ser exactos con el texto de la Fracción I."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 730 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 110: recorta al menos 170 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Excepciones legales» no corresponde a lo que se narra («Sin embargo, existen casos específicos donde la comunicación de datos »)."
+   ],
+   "visible": "  \n ¿Te has preguntado si una tienda en línea puede pasar tus datos a otras empresas? \n ¿VENDEN \n TUS DATOS \n EN LÍNEA? \n No, el proveedor debe tratar tu información de forma confidencial en las transacciones por internet. \n TU INFO ES \n CONFIDENCIAL \n La ley establece que el proveedor «no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente». \n no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente \n Esto implica que el comercio debe cumplir con lo siguiente: "
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La autoridad específica ante la cual se debe presentar la reclamación o queja (el texto menciona que el proveedor debe informar sus medios para reclamaciones, pero no nombra a la autoridad competente para la denuncia)."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "En transacciones electrónicas, el proveedor tiene prohibido difundir o transmitir la información del consumidor a otros proveedores que no formen parte de la transacción.",
+      "sostenida": "si",
+      "motivo": "La cita literal del artículo 76 Bis, fracción I, establece la prohibición de difundir o transmitir información a proveedores ajenos a la transacción."
+     },
+     {
+      "conclusion": "La tienda puede compartir los datos con empresas que sí formen parte de la transacción (como servicios de paquetería o procesadores de pago).",
+      "sostenida": "si",
+      "motivo": "Se deriva correctamente de la excepción implícita en la fracción I, que prohíbe la transmisión a proveedores 'ajenos a la transacción'."
+     },
+     {
+      "conclusion": "La información proporcionada por el consumidor debe tratarse con confidencialidad.",
+      "sostenida": "si",
+      "motivo": "La fracción I del artículo 76 Bis ordena explícitamente que el proveedor utilizará la información en forma confidencial."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "interpretaciones",
+      "problema": "La interpretación sobre la necesidad de la comunicación para concretar la transacción es una deducción lógica, pero el texto oficial no define qué constituye un proveedor 'parte de la transacción'.",
+      "correccion": "Aclarar que la ley prohíbe la transmisión a proveedores 'ajenos a la transacción', sin especificar taxativamente qué empresas se consideran parte de esta, aunque se infiere por la naturaleza del servicio."
+     },
+     {
+      "donde": "elementos (vía/autoridad)",
+      "problema": "El redactor identifica correctamente que la vía y la autoridad no están en el texto, pero la pieza final (en el cierre) no ofrece una alternativa de acción clara para el consumidor ante el incumplimiento, limitándose a decir que es 'información general'.",
+      "correccion": "Aunque el texto no menciona a la autoridad, la pieza debería señalar que, si bien la ley obliga al proveedor a informar sus medios de reclamación, el texto proporcionado no identifica la autoridad administrativa para denunciar."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 685 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 65: recorta al menos 125 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «Autorización del consumidor» no corresponde a lo que se narra («Solo es posible si otorgas tu consentimiento.»).",
+    "[coherencia] Escena 6: el encabezado visible «Requerimiento de autoridad» no corresponde a lo que se narra («También si existe un mandato oficial.»)."
+   ],
+   "visible": "  \n ¿Tu tienda favorita puede vender tus datos a otras marcas? \n ¿VENDEN \n TUS DATOS? \n No, en compras digitales el proveedor debe tratar tu información con total confidencialidad. \n NO PUEDEN \n COMPARTIRLOS \n La ley establece que el proveedor \"no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente\". \n no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente \n El comercio tiene estas obligaciones: \n Uso confidencial de datos \n Sin envíos a ajenos \n Seguridad téc"
+  }
+ ]
+}

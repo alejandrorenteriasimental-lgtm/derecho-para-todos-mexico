@@ -1,20 +1,20 @@
 {
  "tema_id": "T166",
  "pregunta": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
- "fecha": "2026-11-24T11:57:58+00:00",
+ "fecha": "2026-11-24T20:23:08+00:00",
  "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
   "concepto_central": "transmisión de información del consumidor",
-  "respuesta_corta": "No, la tienda debe tratar tu información como confidencial y solo puede compartirla con terceros si tú lo autorizas expresamente o una autoridad lo solicita.",
+  "respuesta_corta": "Depende: el proveedor no puede transmitir tus datos a terceros ajenos a la compra, salvo que lo autorices expresamente o una autoridad lo requiera.",
   "reglas": [
    {
-    "conclusion": "El proveedor tiene prohibido difundir o transmitir los datos del consumidor a otros proveedores que no formen parte de la transacción comercial.",
+    "conclusion": "En transacciones electrónicas, el proveedor tiene prohibido difundir o transmitir la información del consumidor a otros proveedores que no formen parte de la transacción.",
     "fuente": "F1",
-    "cita_literal": "El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción",
+    "cita_literal": "no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente",
     "condiciones": [
-     "Aplica a transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología"
+     "Que se trate de transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología"
     ],
     "excepciones": [
      "Autorización expresa del propio consumidor",
@@ -26,37 +26,35 @@
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "La información debe mantenerse bajo estricta confidencialidad y el proveedor debe usar elementos técnicos para garantizar su seguridad.",
+    "respuesta": "El proveedor debe mantener la información en forma confidencial y utilizar elementos técnicos para brindar seguridad a los datos proporcionados.",
     "fuente": "F1",
-    "cita_literal": "El proveedor utilizará alguno de los elementos técnicos disponibles para brindar seguridad y confidencialidad a la información proporcionada por el consumidor"
+    "cita_literal": "El proveedor utilizará la información proporcionada por el consumidor en forma confidencial"
    },
    {
     "elemento": "vía",
-    "estado": "cubierto",
-    "respuesta": "El consumidor puede presentar reclamaciones o solicitar aclaraciones directamente a través de los medios de contacto que el proveedor está obligado a proporcionar.",
-    "fuente": "F1",
-    "cita_literal": "proporcionar al consumidor, antes de celebrar la transacción, su domicilio físico, números telefónicos y demás medios a los que pueda acudir el propio consumidor para presentarle sus reclamaciones"
+    "estado": "no_cubierto",
+    "motivo": "El texto menciona que debe haber mecanismos para presentar reclamaciones, pero no especifica la vía legal o administrativa externa."
    },
    {
     "elemento": "autoridad",
     "estado": "no_cubierto",
-    "motivo": "El texto menciona a la 'autoridad competente' como ente que puede requerir información, pero no identifica qué autoridad específica sanciona el incumplimiento de este artículo."
+    "motivo": "El fragmento no identifica a la autoridad específica ante la cual denunciar el incumplimiento de estas obligaciones."
    },
    {
     "elemento": "plazo",
     "estado": "no_cubierto",
-    "motivo": "El artículo 76 Bis no establece plazos para presentar reclamaciones por el uso indebido de datos personales."
+    "motivo": "No se establece un plazo para ejercer acciones legales o administrativas por el mal uso de los datos."
    }
   ],
   "interpretaciones": [
    {
-    "afirmacion": "Si el consumidor otorga su permiso de forma clara y directa, la tienda queda facultada para compartir los datos con otros proveedores.",
-    "condicion": "Que la autorización sea expresa y no derivada de una omisión.",
-    "base": "F1, fracción I: 'salvo autorización expresa del propio consumidor'"
+    "afirmacion": "La tienda puede compartir los datos con empresas que sí formen parte de la transacción (como servicios de paquetería o procesadores de pago).",
+    "condicion": "Siempre que dicha comunicación sea necesaria para concretar la transacción específica.",
+    "base": "La prohibición de la Fracción I del artículo 76 Bis se limita a proveedores «ajenos a la transacción»."
    }
   ],
   "distinciones": [],
-  "limites": "Los textos no especifican las sanciones económicas por incumplir la confidencialidad, ni mencionan el tiempo máximo que la tienda puede conservar los datos en sus sistemas.",
+  "limites": "Los textos proporcionados no establecen multas, sanciones penales ni el procedimiento detallado para presentar una queja ante la Procuraduría Federal del Consumidor.",
   "fuentes_irrelevantes": []
  }
 }

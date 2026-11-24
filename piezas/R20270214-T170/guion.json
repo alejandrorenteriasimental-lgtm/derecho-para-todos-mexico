@@ -1,0 +1,213 @@
+{
+  "id": "R20270214-T170",
+  "formato": "reel",
+  "titulo": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T170",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Víctimas",
+      "articulo": "12",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGV.pdf",
+      "texto_literal": "con total independencia de que exista o no un probable responsable de los hechos",
+      "cita": "Ley General de Víctimas, artículo 12",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Víctimas",
+      "articulo": "12",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGV.pdf",
+      "texto_literal": "El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la carpeta de investigación de este hecho",
+      "cita": "Ley General de Víctimas, artículo 12",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
+      "titulo": [
+        "¿TE INFORMAN",
+        "TUS DERECHOS?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí. El Ministerio Público debe comunicar a la víctima sus derechos, con total independencia de que exista o no un probable responsable.",
+      "titulo": [
+        "SÍ, ES SU",
+        "OBLIGACIÓN"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El Ministerio Público debe comunicar a la víctima sus derechos de forma inmediata sin importar si hay un probable responsable.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "cita",
+      "texto": "El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la carpeta de investigación de este hecho.",
+      "etiqueta": "Ley General de Víctimas, art. 12",
+      "cita": "El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la …",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El Ministerio Público tiene la obligación de comunicar los derechos a la víctima y dejar constancia en la carpeta de investigación.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "Esta información debe brindarse desde el primer contacto.",
+      "titulo": [
+        "REGISTRO EN",
+        "LA CARPETA"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
+    "concepto_central": "obligación del Ministerio Público de informar derechos a la víctima",
+    "respuesta_corta": "Sí. El Ministerio Público debe comunicar a la víctima sus derechos de forma clara y accesible tan pronto ocurra el hecho, sin importar si hay un probable responsable.",
+    "reglas": [
+      {
+        "conclusion": "El Ministerio Público debe comunicar a la víctima los derechos reconocidos en la Constitución, tratados internacionales y la Ley General de Víctimas, y dejar constancia en la carpeta de investigación.",
+        "fuente": "F1",
+        "cita_literal": "El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la carpeta de investigación de este hecho",
+        "condiciones": [
+          "Tan pronto ocurra el hecho delictivo o la autoridad tenga contacto con la víctima",
+          "Con total independencia de que exista o no un probable responsable"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de Víctimas",
+          "articulo": "12"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El Ministerio Público debe informar a la víctima sus derechos de manera clara, precisa y accesible, dejando constancia de dicha comunicación en la carpeta de investigación.",
+        "fuente": "F1",
+        "cita_literal": "El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la carpeta de investigación de este hecho"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La información debe brindarse tan pronto ocurra el hecho y se tenga contacto con la autoridad, sin importar si existe o no un probable responsable identificado.",
+        "fuente": "F1",
+        "cita_literal": "con total independencia de que exista o no un probable responsable de los hechos"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "La Ley General de Víctimas no establece en este artículo las sanciones específicas para el servidor público en caso de omitir esta obligación, ni fija un plazo contado en días u horas."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-24T20:31:54+00:00",
+    "solicitud": "2027-02-14_reel_T170-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿El Ministerio Público debe informarte tus derechos si eres víctima?\n\nSí. El Ministerio Público debe comunicar a la víctima sus derechos de forma clara y accesible tan pronto ocurra el hecho, sin importar si hay un probable responsable.\n\nFuente: Ley General de Víctimas, artículo 12.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 672 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 52: recorta al menos 112 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿El Ministerio Público debe informarte tus derechos si eres víctima? \n ¿TE INFORMAN \n TUS DERECHOS? \n Sí. El Ministerio Público debe comunicar a la víctima sus derechos tan pronto ocurra el hecho, con total independencia de que exista o no un probable responsable. \n SÍ, ES SU \n OBLIGACIÓN \n La ley establece que El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos Mexicanos, los Tratados Internacionales y esta Ley a su favor, dejando constancia en la carpeta de investigación de este hecho. \n El Ministerio Público deberá comunicar a la víctima los derechos que reconocen la Constitución Política de los Estados Unidos M"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 672 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 52: recorta al menos 112 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El Ministerio Público debe comunicar a la víctima sus derechos de forma inmediata sin importar si hay un probable responsable.",
+              "sostenida": "si",
+              "motivo": "El artículo 12, fracción I, establece la obligación de informar los derechos 'tan pronto' ocurra el hecho y especifica que es 'con total independencia de que exista o no un probable responsable'."
+            },
+            {
+              "conclusion": "El Ministerio Público tiene la obligación de comunicar los derechos a la víctima y dejar constancia en la carpeta de investigación.",
+              "sostenida": "si",
+              "motivo": "El artículo 12, fracción I, señala explícitamente la obligación de comunicar los derechos y de dejar constancia de este hecho en la carpeta de investigación."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
