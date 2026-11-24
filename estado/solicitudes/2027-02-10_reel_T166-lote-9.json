@@ -12,13 +12,23 @@
   "lote": "lote-9",
   "motivo_seleccion": "LFPC art. 43 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_43.json; última reforma de la ley 2025-12-12): «ni el proveedor ni sus dependientes podrán negar al consumidor la venta, adquisición, renta o suministro de bienes o servicios que se tengan en existencia». Excepción literal: «Salvo cuando medie mandato judicial o disposición jurídica que exija el cumplimiento de algún requisito». También: «Se presume la existencia de productos o servicios cuando éstos se anuncien como disponibles».",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-21T10:04:26Z",
   "pieza_id": "R20270210-T166",
   "archivo": "2027-02-10_reel_T166-lote-9.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no mencionan multas económicas, el nombre de la autoridad ante la cual denunciar (como Profeco) ni los plazos para iniciar una reclamación.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "5dd6d220760998db"
+  "huella_entrada": "5dd6d220760998db",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-23",
+      "por": "Claude (operación diaria)",
+      "motivo": "primer descarte con LFPC 43 (21-11): la pregunta de legalidad llevó al análisis a exigir multas, la autoridad para denunciar (Profeco) y plazos, que están en otros artículos. Se reabre con la misma pregunta y el mismo artículo, con la excepción literal obligatoria y las consecuencias declaradas fuera de alcance",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos no mencionan multas económicas, el nombre de la autoridad ante la cual denunciar (como Profeco) ni los plazos para iniciar una reclamación."
+    }
+  ],
+  "angulo": "Solo LFPC art. 43, primer párrafo. La pregunta es solo si el proveedor puede negarse a vender lo que tiene en existencia: la respuesta está completa en el texto. Respuesta corta: no, salvo cuando medie mandato judicial o disposición jurídica que exija el cumplimiento de algún requisito (excepción literal, obligatoria en la narración). Cita literal: «ni el proveedor ni sus dependientes podrán negar al consumidor la venta, adquisición, renta o suministro de bienes o servicios que se tengan en existencia». Precisión literal del mismo párrafo: «Se presume la existencia de productos o servicios cuando éstos se anuncien como disponibles». Fuera de alcance (no son faltantes ni insuficiencia del texto): multas, sanciones, Profeco, denuncias, quejas, plazos y procedimientos (están en otros artículos); no se mencionan. Narración de 30 a 42 s."
 }

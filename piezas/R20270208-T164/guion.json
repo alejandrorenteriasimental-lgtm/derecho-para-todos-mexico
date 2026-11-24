@@ -42,9 +42,9 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, pero solo si tú quieres. Por ley, al menos doce días deben ser continuos.",
+      "texto": "Solo si tú lo decides. La regla es de doce días de vacaciones continuos, por lo menos.",
       "titulo": [
-        "SÍ, PERO",
+        "SOLO SI",
         "TÚ DECIDES"
       ],
       "afirmaciones": []
@@ -58,27 +58,11 @@
     },
     {
       "tipo": "lista",
-      "texto": "El resto del periodo, a potestad de la persona trabajadora, puede distribuirse en la forma y tiempo que lo requiera.",
+      "texto": "Y agrega: «Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera».",
       "items": [
-        "Tú decides la forma",
-        "Tú eliges el tiempo",
-        "Según lo que requieras"
-      ],
-      "afirmaciones": [
-        {
-          "id": "A1",
-          "tipo": "hecho_normativo",
-          "texto": "La persona trabajadora tiene derecho a disfrutar de al menos doce días de vacaciones continuos.",
-          "fuente": "F1"
-        }
-      ]
-    },
-    {
-      "tipo": "titular",
-      "texto": "En resumen, tú decides si fraccionas el resto, pero por lo menos doce días deben ser seguidos.",
-      "titulo": [
-        "AL MENOS",
-        "DOCE SEGUIDOS"
+        "Regla: 12 días seguidos o más",
+        "Dividirlas: decisión tuya",
+        "Como tú lo requieras"
       ],
       "afirmaciones": [
         {
@@ -86,6 +70,22 @@
           "tipo": "hecho_normativo",
           "texto": "La distribución de los días restantes es una facultad de la persona trabajadora.",
           "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: la regla son por lo menos doce días seguidos, y repartir tus vacaciones de otra forma es decisión tuya.",
+      "titulo": [
+        "LA DECISIÓN",
+        "ES TUYA"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "La persona trabajadora tiene derecho a disfrutar de al menos doce días de vacaciones continuos.",
+          "fuente": "F1"
         }
       ]
     },
@@ -100,7 +100,7 @@
     "suficiente": true,
     "pregunta": "¿Te pueden dar tus vacaciones en días sueltos?",
     "concepto_central": "distribución del periodo de vacaciones a potestad de la persona trabajadora",
-    "respuesta_corta": "Depende: la ley establece doce días continuos por lo menos, pero la persona trabajadora tiene la potestad de distribuirlos en la forma y tiempo que requiera.",
+    "respuesta_corta": "Solo si la persona trabajadora lo decide: la ley fija doce días de vacaciones continuos, por lo menos, y deja a su potestad distribuir el periodo en la forma y tiempo que así lo requiera.",
     "reglas": [
       {
         "conclusion": "La persona trabajadora tiene derecho a disfrutar de al menos doce días de vacaciones continuos, pero tiene la facultad exclusiva de decidir si los distribuye en otra forma y tiempo.",
@@ -166,7 +166,7 @@
   "pregunta_original": "¿Te pueden dar tus vacaciones en días sueltos?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden dar tus vacaciones en días sueltos?\n\nDepende: la ley establece doce días continuos por lo menos, pero la persona trabajadora tiene la potestad de distribuirlos en la forma y tiempo que requiera.\n\nFuente: Ley Federal del Trabajo, artículo 78.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden dar tus vacaciones en días sueltos?\n\nSolo si tú lo decides. El artículo 78 de la Ley Federal del Trabajo dice que la persona trabajadora «disfrutará de doce días de vacaciones continuos, por lo menos», y agrega: «Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera».\n\nFuente: Ley Federal del Trabajo, artículo 78.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -202,5 +202,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-23",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "El Reel afirmaba «Por ley, al menos doce días deben ser continuos» y narraba «El resto del periodo… puede distribuirse», cuando el art. 78 LFT dice «Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido…» (no dice «el resto» ni prohíbe que la persona trabajadora distribuya los doce días); además el copy decía lo contrario que el video («distribuirlos»). → titular «Solo si tú lo decides. La regla es de doce días de vacaciones continuos, por lo menos.»; escena lista con la 2.ª oración literal del art. 78 y puntos anclados; titular final «la regla son por lo menos doce días seguidos, y repartir tus vacaciones de otra forma es decisión tuya»; copy con las dos oraciones literales; respuesta corta alineada. Gancho, cita (F1) y fuentes sin cambios."
+    }
+  ]
 }
