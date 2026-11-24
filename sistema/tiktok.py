@@ -200,7 +200,7 @@ def ejecutar(fecha=None, env=os.environ, http=publicar.http_real, bajar=publicad
     if "reel" not in dia: return {**res, "estado": "SIN_REEL_EN_CALENDARIO"}
     e = dia["reel"]; res.update(pieza=e["pieza"], version=e["version"], variante="reel")
     try:
-        previo = _ya_enviado(e, env)
+        previo = None if env.get("TIKTOK_REENVIO") else _ya_enviado(e, env)
         if previo:                                    # idempotencia: una sola pieza por día en la bandeja (Reel o versión larga)
             r = enviar_a_bandeja(previo["pieza"], None, previo["version"], env=env, http=http, ahora=ahora)
             res.update(pieza=previo["pieza"], version=previo["version"], variante="larga" if previo is not e else "reel")
