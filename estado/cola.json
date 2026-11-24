@@ -12689,7 +12689,7 @@
       "id": "R20270207-T163",
       "formato": "reel",
       "huella": "06f88fe59df5bc557519bf62c2c9bd91fbff6a9780e156cbea6d084238543a93",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-19T16:36:04+00:00",
@@ -12765,6 +12765,12 @@
           "a": "APROBADO",
           "ts": "2026-11-21T16:20:09+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-21T11:45:26+00:00 versión 4d9a256830b9d07c (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-24T12:03:41+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -12799,7 +12805,7 @@
       "id": "I20270205-T161",
       "formato": "imagen",
       "huella": "171e45456fa709b9692c78386c2ee95266f97aa36de61d3829ac9e756c4236fc",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-20T16:23:34+00:00",
@@ -12839,6 +12845,12 @@
           "a": "APROBADO",
           "ts": "2026-11-21T16:20:09+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-21T11:45:26+00:00 versión a79f02f862204e16 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-24T12:03:41+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -13243,7 +13255,7 @@
       "id": "R20270208-T164",
       "formato": "reel",
       "huella": "e022dbe7a17aa84d9edfe18c9f3a34956547281dc82714bf9bb6423f774ae34a",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-23T21:37:17+00:00",
@@ -13277,6 +13289,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T04:01:22+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-24T11:59:59+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T11:45:49+00:00 versión f1bd4e59ba139fb2 (delegada)"
         }
       ],
       "error": null,
@@ -13289,13 +13307,26 @@
         "huella_archivo": "2dcec6fcde53573266faaabd9508f4b510e01b3c5c12a4cfd5f400fcd015edfa",
         "preparada": "2026-11-24T04:01:22+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20270208-T164",
+        "decision": "APROBADA",
+        "version": "f1bd4e59ba139fb2",
+        "huella_guion": "4aad87fd6b3fbb038015c59719ef9d25b820f03310b0cd7884ae0e3bd8c62838",
+        "huella_archivo": "2dcec6fcde53573266faaabd9508f4b510e01b3c5c12a4cfd5f400fcd015edfa",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-24T11:45:49+00:00",
+        "canal": "delegada",
+        "nota": ""
       }
     },
     "I20270212-T168": {
       "id": "I20270212-T168",
       "formato": "imagen",
       "huella": "da6fd999220c16ccf9bcfc30b62bd81a7fb59368c2a857f2ffceb7ee21a91af6",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13317,6 +13348,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-24T11:45:31+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11): mito y realidad repetían la etiqueta («Mito: …», «Realidad: Sí…») y el copy decía «impedir este derecho» sin antecedente y generalizaba («aplica siempre que…») → mito «Impedirte la lactancia en el trabajo no es violencia.», realidad «Sí lo es: constituye violencia laboral «…»» con la cita literal del art. 11 LGAMVLV, copy literal; esquema, razonamiento, coherencia visible y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-24T12:03:09+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-24T12:03:14+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13324,10 +13367,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "5032e16e7c0a29c9",
-        "huella_guion": "551bbc1a451282629f71e5f50df6961454d2b032f15bd3ad44b868c4b0cc1bde",
-        "huella_archivo": "404e5470979ae6e6c7fa1ff32128df4b164450ad8dfc971e0299f83d149c6f1e",
-        "preparada": "2026-11-24T04:04:38+00:00",
+        "version": "e120a3ccd15b5d74",
+        "huella_guion": "2efa1ab198d744ba670eb1309f064d7cf2b175180faf659b6d1427ff82d06701",
+        "huella_archivo": "31007fad0a5bccaf8c0dc3e400b0d04023e3afdf715ec8e5f0d974b566d55c03",
+        "preparada": "2026-11-24T12:03:14+00:00",
         "canal": "chat"
       }
     },
@@ -13335,7 +13378,7 @@
       "id": "I20270213-T169",
       "formato": "imagen",
       "huella": "3b458dff38bc096869564c00555ed00ab5615bb6b634bfa2c5800521dc6bce50",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13357,6 +13400,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-24T11:45:31+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11): titular «¿Padres tienen derecho…?» sin artículo, bajada que reducía «guarda y custodia» a «custodia», OJO poco claro y copy con relleno → titular «¿Los padres pueden intervenir en la educación?», bajada con «guarda y custodia», OJO «Se ejerce según el artículo 103 de esa misma ley.», copy con la oración literal del art. 57 LGDNNA; sin hallazgos (57 palabras); se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-24T12:03:36+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-24T12:03:41+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13364,10 +13419,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "deb3331a379380e4",
-        "huella_guion": "5cbc2322e8bbfa10142a7c3bc0f8307ea3fe741b53b1811913767df1df734ac3",
-        "huella_archivo": "82b50a6918bc5dace09f108e5f3e68168a814dee48bcf43c69f9e674affdab58",
-        "preparada": "2026-11-24T04:04:58+00:00",
+        "version": "547f19595da9e69f",
+        "huella_guion": "b8241ffe1a37ee7d926b4f17c48f176c13a192657d41e10bf151c751b0d078b6",
+        "huella_archivo": "92fc50d977670c360da28999e45f0974374d3c6a7cbfc6af50ff6ec4a0dc1db7",
+        "preparada": "2026-11-24T12:03:41+00:00",
         "canal": "chat"
       }
     },
@@ -13375,7 +13430,7 @@
       "id": "R20270211-T167",
       "formato": "reel",
       "huella": "e176250fe217a5c20bd289902b02a4bc7a91bb6541302b1ec77e7c0062a99cff",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13397,6 +13452,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-24T11:45:31+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11): la cita narraba «La ley incluye «así como…»» (la fuente es la Constitución), la lista decía «Tener calidades de ley» (no está en las fuentes citadas) y el detalle agregaba «ley electoral» → cita «soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación» (CPEUM 35 fr. II, literal), lista y excepción con esos elementos; esquema, razonamiento y coherencia visible sin hallazgos (561 caracteres); se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-24T12:02:52+00:00",
+          "motivo": "39.6"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-24T12:02:58+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13404,10 +13471,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "58c2204465e2f3cd",
-        "huella_guion": "d097d8c9f6d81afeed7db067d995a81b16335e7496cdb84d85482c39477b3aa1",
-        "huella_archivo": "26676b4ff7d4591a098a891dc5ca436b116b0fa546ae55f93257425010c5cac2",
-        "preparada": "2026-11-24T04:03:27+00:00",
+        "version": "104d7c2e0beba01b",
+        "huella_guion": "43f28e69bc49126651e19f2cdc49609387b35d94a21c2ed98b8ab1ace18bd49b",
+        "huella_archivo": "b7fc195c474db0553904a5ad1af1e86a858ffaf97da3a9100e602151cf212a5f",
+        "preparada": "2026-11-24T12:02:58+00:00",
         "canal": "chat"
       }
     },
@@ -13415,7 +13482,7 @@
       "id": "R20270212-T168",
       "formato": "reel",
       "huella": "79a852893b74170085fe3c9623e628d75146c150d6ac7d573940f22fbcbb7fba",
-      "estado": "REVISION_HUMANA",
+      "estado": "APROBADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T03:59:39+00:00",
@@ -13431,6 +13498,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T04:04:25+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "APROBADO",
+          "ts": "2026-11-24T11:59:59+00:00",
+          "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T11:45:49+00:00 versión 6861039f7be2e400 (delegada)"
         }
       ],
       "error": null,
@@ -13443,6 +13516,19 @@
         "huella_archivo": "fa850fcee0f9b3a3247af71633f2f96c7fffb0ccf9d2a2276a687a7716b367df",
         "preparada": "2026-11-24T04:04:25+00:00",
         "canal": "chat"
+      },
+      "decision_humana": {
+        "pieza": "R20270212-T168",
+        "decision": "APROBADA",
+        "version": "6861039f7be2e400",
+        "huella_guion": "cb760f420a0c34f8a49304e4ed8b386eccd52edbb51c1cc87f5f73af565b3073",
+        "huella_archivo": "fa850fcee0f9b3a3247af71633f2f96c7fffb0ccf9d2a2276a687a7716b367df",
+        "por": {
+          "nombre": "Claude (revisión editorial delegada)"
+        },
+        "fecha": "2026-11-24T11:45:49+00:00",
+        "canal": "delegada",
+        "nota": ""
       }
     }
   }

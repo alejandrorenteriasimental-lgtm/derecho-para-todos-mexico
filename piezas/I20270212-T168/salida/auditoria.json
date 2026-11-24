@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1142 KB"
+      "detalle": "1145 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=954"
+      "detalle": "fin del contenido en y=1002"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "37 palabras sin cabecera ni pie"
+      "detalle": "40 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 27 palabras reconocidas"
+      "detalle": "100% de 28 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Impedirte la lactancia es violencia laboral?",
     "plantilla": "mito_realidad",
     "archivo": "I20270212-T168.png",
-    "sha256": "404e5470979ae6e6c7fa1ff32128df4b164450ad8dfc971e0299f83d149c6f1e",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000001111001111111111111100111111111111110001111111111111000000000000111100000000000111111111111111111111111111111111111111111111111111111111111111111011000000011111001",
-    "huella_guion": "da6fd999220c16ccf9bcfc30b62bd81a7fb59368c2a857f2ffceb7ee21a91af6",
+    "sha256": "31007fad0a5bccaf8c0dc3e400b0d04023e3afdf715ec8e5f0d974b566d55c03",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000001111001111111111111100111111011111110001111111111111000111111111111100000000000011111011111111111111111111111111111111111111111111111111111111111011000000011111001",
+    "huella_guion": "231cc07fe60c230c1464a49ac993a9492c5a1a4dec0f84d5f7f69cfb28a5cf58",
     "texto_alternativo": "Infografía sobre violencia laboral. Presenta el mito de que impedir la lactancia no es violencia, contrastándolo con la realidad legal: la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia lo califica explícitamente como violencia laboral.",
-    "copy": "De acuerdo con la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, impedir este derecho es una forma de agresión en el entorno de trabajo.\n\nEl artículo 11 de esta norma señala que constituye violencia laboral «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley».\n\nEsta protección aplica siempre que el periodo esté reconocido en la legislación. Te invitamos a guardar y compartir esta información.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "Impedir que una mujer lleve a cabo su periodo de lactancia es violencia laboral, según la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.\n\nSu artículo 11 dice que constituye violencia laboral «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley».\n\nOjo: se refiere al periodo de lactancia que prevé la ley; este artículo no fija su duración.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -111,7 +111,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-24T04:04:33+00:00",
+    "fecha": "2026-11-24T12:03:09+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

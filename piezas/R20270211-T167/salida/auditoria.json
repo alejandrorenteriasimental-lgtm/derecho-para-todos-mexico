@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "40.9 s"
+      "detalle": "39.6 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "40.9 s"
+      "detalle": "39.6 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.5 dBTP"
+      "detalle": "-1.6 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "26676b4ff7d4591a"
+      "detalle": "b7fc195c474db055"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270211-T167",
     "titulo": "¿Puedes ser candidato sin un partido político en México?",
-    "fecha": "2026-11-24T04:03:22+00:00",
-    "sha256": "26676b4ff7d4591a098a891dc5ca436b116b0fa546ae55f93257425010c5cac2",
-    "duracion_s": 40.9,
+    "fecha": "2026-11-24T12:02:52+00:00",
+    "sha256": "b7fc195c474db0553904a5ad1af1e86a858ffaf97da3a9100e602151cf212a5f",
+    "duracion_s": 39.6,
     "estado": "APTO",
-    "huella_guion": "e176250fe217a5c20bd289902b02a4bc7a91bb6541302b1ec77e7c0062a99cff",
+    "huella_guion": "477a4458a26b4fc67d5149f63eed010127857ebe248ca2e9b53a8bc670ed4e0b",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 10.0,
-      "musica": 1.1,
-      "render_video": 27.2,
-      "mezcla_audio": 1.3,
-      "auditoria_tecnica": 5.4
+      "narracion": 16.0,
+      "musica": 1.9,
+      "render_video": 31.1,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 5.7
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.75,
-      "computo_equivalente_runner_usd": 0.0045,
+      "computo_minutos": 0.94,
+      "computo_equivalente_runner_usd": 0.0056,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1225,
-    "caracteres_narrados": 581
+    "frames": 1186,
+    "caracteres_narrados": 561
   }
 }
