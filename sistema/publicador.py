@@ -26,7 +26,7 @@ CAL = RAIZ / "data" / "calendario_lanzamiento.json"
 PAUSA = RAIZ / "estado" / "pausa_publicacion.json"
 APROB = RAIZ / "estado" / "aprobaciones.jsonl"
 MX = timezone(timedelta(hours=-6))
-VENTANA_IG = timedelta(hours=3)
+VENTANA_IG = timedelta(hours=3)   # predeterminada; IG_VENTANA_H en data/lanzamiento.json la amplía (23-11: 12 h)
 VETO = timedelta(hours=72)             # aprobación delegada en Claude: el responsable puede vetar durante 72 h (29-10-2026)          # si una ejecución se retrasa, se publica dentro de esta ventana; después, se avisa
 
 
@@ -149,7 +149,7 @@ def con_autorizacion(env, archivo=None):
     try: a = json.loads(Path(archivo).read_text())
     except (OSError, ValueError): return dict(env)
     out = dict(env)
-    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA", "PUBLICAR_DESDE", "ADELANTO_AUTORIZADO", "ADELANTO_RESERVA"):
+    for k in ("PUBLICAR", "LANZAMIENTO_AUTORIZADO", "IG_REELS", "IG_REEL_MAX_S", "YOUTUBE", "TIKTOK", "PUBLICAR_HASTA", "PUBLICAR_DESDE", "ADELANTO_AUTORIZADO", "ADELANTO_RESERVA", "IG_VENTANA_H"):
         if not out.get(k) and a.get(k) is not None: out[k] = str(a[k])
     return out
 
@@ -177,6 +177,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
         res["pausa"] = p; return res
     cal = json.loads(CAL.read_text())
     hasta = env.get("PUBLICAR_HASTA")            # 3-11: el responsable autoriza la publicación por tramos de fechas
+    ventana_ig = timedelta(hours=float(env.get("IG_VENTANA_H") or 0)) or VENTANA_IG   # 23-11: retrasos del cron de GitHub
     desde = desde_efectivo(env, cal)             # 3-11 candado; 6-11 adelanto autorizado condicionado a la reserva de 45 días
     for dia in cal["dias"]:
         if desde and dia["fecha"] < desde:
@@ -204,7 +205,7 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                         except (youtube.ErrorYouTube, youtube.YouTubeAmbigua, publicar.SinRed, KeyError) as x:
                             acc["youtube"] = f"ERROR: {x}"
                 # Instagram: publicar al llegar la hora (sin programación por API)
-                if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= VENTANA_IG and \
+                if fmt == "reel" and env.get("IG_REELS") != "1" and timedelta(0) <= ahora - cuando <= ventana_ig and \
                         not reel_ig_permitido(env, e, bajar(e, carpeta, env) if env.get("IG_REELS") == "corto" else None):
                     ig = version_ig(e["pieza"]) if env.get("IG_REELS") == "corto" else None
                     if ig:                                  # versión corta SOLO para Instagram, aprobada por el responsable (3-11)
@@ -213,11 +214,11 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                         acc["instagram"] = f'{r.get("estado")} (versión corta {ig["pieza"]})'
                     else:
                         acc["instagram"] = "REEL_IG_EN_ESPERA"     # Reel fuera del límite de IG o Reels de IG desactivados; no detiene lo demás
-                elif timedelta(0) <= ahora - cuando <= VENTANA_IG:
+                elif timedelta(0) <= ahora - cuando <= ventana_ig:
                     f = bajar(e, carpeta, env); comprobar(e, f, ahora)
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)
                     acc["instagram"] = r.get("estado")
-                elif ahora - cuando > VENTANA_IG and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") in ("1", "corto")):
+                elif ahora - cuando > ventana_ig and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") in ("1", "corto")):
                     op = publicar.operacion(publicar.marca(e["pieza"], e["version"]) + "-ig", "real") or {}
                     if op.get("fase") != "CONFIRMADA": acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
             except EnPlazoDeVeto as x:

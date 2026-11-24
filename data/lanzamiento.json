@@ -80,5 +80,7 @@
   "implementacion": "16-11: versión larga de TikTok (sistema/tiktok_largo.py, piezas/<ID>-TT, paso del ciclo.yml) desde TIKTOK_LARGO_DESDE; video semanal de YouTube (sistema/youtube_semanal.py, youtube-semanal.yml: arma el jueves, programa el domingo 12:00 CDMX) desde YOUTUBE_SEMANAL_DESDE. Cada pieza derivada tiene su propia versión y aprobación delegada con 72 h de veto; no cambia la autorización de publicación existente. Ver docs/operacion_autonoma.md."
  },
  "TIKTOK_LARGO_DESDE": "2026-12-01",
- "YOUTUBE_SEMANAL_DESDE": "2026-12-03"
+ "YOUTUBE_SEMANAL_DESDE": "2026-12-03",
+ "IG_VENTANA_H": "12",
+ "ig_ventana_nota": "23-11-2026: el cron de GitHub se retrasó hasta 8 h y el Reel del 22-11 no salió en Instagram; la ventana pasa de 3 a 12 h"
 }
