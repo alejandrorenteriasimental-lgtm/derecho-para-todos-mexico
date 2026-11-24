@@ -1,0 +1,142 @@
+{
+  "id": "I20270212-T168",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Impedirte la lactancia es violencia laboral?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T168",
+  "pieza": {
+    "titular": "¿Impedirte la lactancia es violencia laboral?",
+    "bajada": "La ley califica el impedimento de la lactancia como una forma de violencia laboral.",
+    "mito": "Mito: Impedirte la lactancia no es violencia.",
+    "realidad": "Realidad: Sí. Constituye violencia laboral «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley».",
+    "fuente_visible": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, art. 11"
+  },
+  "copy": "De acuerdo con la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, impedir este derecho es una forma de agresión en el entorno de trabajo.\n\nEl artículo 11 de esta norma señala que constituye violencia laboral «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley».\n\nEsta protección aplica siempre que el periodo esté reconocido en la legislación. Te invitamos a guardar y compartir esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre violencia laboral. Presenta el mito de que impedir la lactancia no es violencia, contrastándolo con la realidad legal: la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia lo califica explícitamente como violencia laboral.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "articulo": "11",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "texto_literal": "explotación, el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley",
+      "cita": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, artículo 11",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La ley mexicana califica el impedimento de la lactancia como una forma de violencia laboral.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Impedirte la lactancia en el trabajo es violencia laboral?",
+    "concepto_central": "violencia laboral",
+    "respuesta_corta": "Sí, constituye violencia laboral el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley.",
+    "reglas": [
+      {
+        "conclusion": "Se considera violencia laboral cuando se impide a las mujeres ejercer su periodo de lactancia conforme a lo que establece la ley.",
+        "fuente": "F1",
+        "cita_literal": "explotación, el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley",
+        "condiciones": [
+          "Que el período de lactancia esté previsto en la ley"
+        ],
+        "excepciones": [],
+        "cita_literal_original": "Constituye violencia laboral: [...] el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley",
+        "ref": {
+          "documento": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+          "articulo": "11"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La ley califica el impedimento de la lactancia como una forma de violencia laboral.",
+        "fuente": "F1",
+        "cita_literal": "explotación, el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley",
+        "cita_literal_original": "Constituye violencia laboral: [...] el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "Para que el impedimento se considere violencia laboral, el periodo de lactancia debe estar reconocido en una norma legal.",
+        "condicion": "Que el derecho a la lactancia esté 'previsto en la ley'.",
+        "base": "Artículo 11 de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia."
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos no definen la duración del periodo de lactancia, las sanciones aplicables ni el procedimiento para presentar una denuncia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-24T03:57:55+00:00",
+    "solicitud": "2027-02-12_imagen_T168-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Impedirte la lactancia en el trabajo es violencia laboral?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El impedimento a las mujeres de llevar a cabo el periodo de lactancia previsto en la ley constituye violencia laboral.",
+              "sostenida": "si",
+              "motivo": "El artículo 11 de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia incluye explícitamente esta conducta en la definición de violencia laboral."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

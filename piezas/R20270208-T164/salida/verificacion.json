@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-23T21:37:18+00:00",
+      "consultado": "2026-11-24T03:59:39+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -18,7 +18,7 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "consultado": "2026-11-23T21:37:36+00:00",
+      "consultado": "2026-11-24T03:59:55+00:00",
       "http": 200,
       "bytes": 4225835,
       "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
@@ -32,17 +32,17 @@
   },
   "afirmaciones": [
     {
-      "id": "A1",
+      "id": "A2",
       "fuentes": [
-        "F1"
+        "F2"
       ],
       "dictamen": "VERIFICADA",
       "duda": null
     },
     {
-      "id": "A2",
+      "id": "A1",
       "fuentes": [
-        "F2"
+        "F1"
       ],
       "dictamen": "VERIFICADA",
       "duda": null

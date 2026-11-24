@@ -2488,3 +2488,34 @@
 {"ts": "2026-11-23T21:41:51+00:00", "pieza": "R20270205-T161", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-23T21:41:51+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 1, "producidas": 4, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 4}
 {"ts": "2026-11-24T03:44:42+00:00", "pieza": "R20270208-T164", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 23-11): el Reel decía «Por ley, al menos doce días deben ser continuos» y «El resto del periodo… puede distribuirse», cuando el art. 78 LFT dice «Dicho periodo, a potestad de la persona trabajadora podrá ser distribuido…» (no dice «el resto»), y el copy contradecía al video → titular «Solo si tú lo decides…», lista con la 2.ª oración literal del art. 78, titular final con «por lo menos» y la decisión de la persona trabajadora, copy con las dos oraciones literales; esquema, razonamiento y coherencia visible sin hallazgos (579 caracteres); se vuelve a verificar y producir"}
+{"ts": "2026-11-24T03:55:24+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-24T03:55:38+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-10_reel_T166-lote-9.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos analizados no especifican las multas o sanciones aplicables a la tienda, ni el proceso de denuncia ante la autoridad de protección al consumidor."}
+{"ts": "2026-11-24T03:56:40+00:00", "evento": "redactada", "pieza": "R20270211-T167", "solicitud": "2027-02-11_reel_T167-lote-9.json"}
+{"ts": "2026-11-24T03:57:06+00:00", "evento": "redactada", "pieza": "R20270212-T168", "solicitud": "2027-02-12_reel_T168-lote-9.json"}
+{"ts": "2026-11-24T03:57:55+00:00", "evento": "redactada", "pieza": "I20270212-T168", "solicitud": "2027-02-12_imagen_T168-lote-9.json"}
+{"ts": "2026-11-24T03:59:39+00:00", "evento": "redactada", "pieza": "I20270213-T169", "solicitud": "2027-02-13_imagen_T169-lote-9.json"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "I20270209-T165", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T03:43:23+00:00 versión 776f5b49f7a72eea (delegada)"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "I20270210-T166", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T03:43:23+00:00 versión c980696eb1eb662b (delegada)"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "I20270211-T167", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T03:43:23+00:00 versión e0c1de3be5101638 (delegada)"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "I20270212-T168", "evento": "encolado"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "I20270213-T169", "evento": "encolado"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "R20270211-T167", "evento": "encolado"}
+{"ts": "2026-11-24T03:59:39+00:00", "pieza": "R20270212-T168", "evento": "encolado"}
+{"ts": "2026-11-24T04:01:16+00:00", "pieza": "R20270208-T164", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.0"}
+{"ts": "2026-11-24T04:01:22+00:00", "pieza": "R20270208-T164", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-24T04:01:22+00:00", "evento": "revision_preparada", "pieza": "R20270208-T164", "version": "f1bd4e59ba139fb2", "canal": "chat"}
+{"ts": "2026-11-24T04:03:22+00:00", "pieza": "R20270211-T167", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.9"}
+{"ts": "2026-11-24T04:03:27+00:00", "pieza": "R20270211-T167", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-24T04:03:27+00:00", "evento": "revision_preparada", "pieza": "R20270211-T167", "version": "58c2204465e2f3cd", "canal": "chat"}
+{"ts": "2026-11-24T04:04:19+00:00", "pieza": "R20270212-T168", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.2"}
+{"ts": "2026-11-24T04:04:25+00:00", "pieza": "R20270212-T168", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-24T04:04:25+00:00", "evento": "revision_preparada", "pieza": "R20270212-T168", "version": "6861039f7be2e400", "canal": "chat"}
+{"ts": "2026-11-24T04:04:33+00:00", "pieza": "I20270212-T168", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-24T04:04:38+00:00", "pieza": "I20270212-T168", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-24T04:04:38+00:00", "evento": "revision_preparada", "pieza": "I20270212-T168", "version": "5032e16e7c0a29c9", "canal": "chat"}
+{"ts": "2026-11-24T04:04:52+00:00", "pieza": "I20270213-T169", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-24T04:04:58+00:00", "pieza": "I20270213-T169", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-24T04:04:58+00:00", "evento": "revision_preparada", "pieza": "I20270213-T169", "version": "deb3331a379380e4", "canal": "chat"}
+{"ts": "2026-11-24T04:04:58+00:00", "pieza": "R20270206-T162", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-24T04:04:58+00:00", "pieza": "I20270207-T163", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-24T04:04:58+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 1, "producidas": 5, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 5}

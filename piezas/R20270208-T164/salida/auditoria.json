@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.8 s"
+      "detalle": "41.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.8 s"
+      "detalle": "41.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "29 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "8e5f61f06ecda910"
+      "detalle": "2dcec6fcde535732"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270208-T164",
     "titulo": "¿Te pueden dar tus vacaciones en días sueltos?",
-    "fecha": "2026-11-23T21:39:37+00:00",
-    "sha256": "8e5f61f06ecda910dddfece051f2aac93d35554c6d57d7cdf9e7af70848d1a3f",
-    "duracion_s": 38.8,
+    "fecha": "2026-11-24T04:01:16+00:00",
+    "sha256": "2dcec6fcde53573266faaabd9508f4b510e01b3c5c12a4cfd5f400fcd015edfa",
+    "duracion_s": 41.0,
     "estado": "APTO",
-    "huella_guion": "e022dbe7a17aa84d9edfe18c9f3a34956547281dc82714bf9bb6423f774ae34a",
+    "huella_guion": "8c27b5340d9495f753864da1abb4c419b287d91171ea3afbdabc2e860d65b866",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.2,
-      "musica": 1.7,
-      "render_video": 37.7,
-      "mezcla_audio": 1.5,
-      "auditoria_tecnica": 8.2
+      "narracion": 8.1,
+      "musica": 1.1,
+      "render_video": 23.5,
+      "mezcla_audio": 1.4,
+      "auditoria_tecnica": 5.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 1.12,
-      "computo_equivalente_runner_usd": 0.0067,
+      "computo_minutos": 0.65,
+      "computo_equivalente_runner_usd": 0.0039,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1161,
-    "caracteres_narrados": 538
+    "frames": 1227,
+    "caracteres_narrados": 579
   }
 }

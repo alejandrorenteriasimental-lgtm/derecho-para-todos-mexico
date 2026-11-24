@@ -1,0 +1,267 @@
+{
+  "id": "I20270213-T169",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Padres tienen derecho a intervenir en la educación?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T169",
+  "pieza": {
+    "titular": "¿Padres tienen derecho a intervenir en la educación?",
+    "bajada": "Sí, quienes ejercen patria potestad, tutela o custodia tienen este derecho.",
+    "cita": "Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación",
+    "etiqueta_cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 57",
+    "ojo": "Sujeto al artículo 103 de la ley.",
+    "fuente_visible": "Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 57"
+  },
+  "copy": "La legislación mexicana reconoce de forma clara que las personas que ejercen la patria potestad, tutela o guarda y custodia tienen derecho a participar activamente en la formación educativa de niñas, niños y adolescentes.\n\nDe acuerdo con la Ley General de los Derechos de Niñas, Niños y Adolescentes, en su artículo 57, este derecho a intervenir en la educación debe ejercerse en los términos de lo previsto por el artículo 103 de la misma ley.\n\nAsimismo, el marco legal establece que la educación debe impartirse bajo un enfoque de derechos humanos e igualdad sustantiva, garantizando el respeto a la dignidad humana y el pleno desarrollo de la personalidad.\n\nGuarda este contenido para tenerlo a la mano o compártelo con quien busque conocer más sobre los derechos en el ámbito educativo.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Placa informativa sobre el derecho de quienes ejercen la patria potestad, tutela o guarda y custodia a intervenir en la educación de niñas, niños y adolescentes según el artículo 57 de la Ley General de los Derechos de Niñas, Niños y Adolescentes.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación que habrá de darse a niñas, niños y adolescentes",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 57",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "texto_literal": "en términos de lo previsto por el artículo 103 de esta Ley",
+      "cita": "Ley General de los Derechos de Niñas, Niños y Adolescentes, artículo 57",
+      "jurisdiccion": "general",
+      "consultado": "2026-11-24"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Quienes ejercen la patria potestad, tutela o guarda y custodia cuentan con el derecho a intervenir en la educación de los menores.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El ejercicio de la intervención educativa está sujeto a los términos establecidos por la ley.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Los padres tienen derecho a intervenir en la educación de sus hijos?",
+    "concepto_central": "intervención en la educación",
+    "respuesta_corta": "Sí, quienes ejercen la patria potestad, tutela o guarda y custodia tienen derecho a intervenir en la educación de los menores conforme a lo previsto en la ley.",
+    "reglas": [
+      {
+        "conclusion": "Los padres o quienes tengan la representación legal de los menores cuentan con el derecho de participar en el proceso educativo.",
+        "fuente": "F1",
+        "cita_literal": "Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación que habrá de darse a niñas, niños y adolescentes",
+        "condiciones": [
+          "La intervención debe realizarse en los términos de lo previsto por el artículo 103 de la Ley General de los Derechos de Niñas, Niños y Adolescentes."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+          "articulo": "57"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se establece el derecho de los responsables legales a intervenir en la formación educativa de los menores.",
+        "fuente": "F1",
+        "cita_literal": "tendrán derecho a intervenir en la educación que habrá de darse a niñas, niños y adolescentes"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El ejercicio de este derecho está sujeto a lo que dicte el artículo 103 de la misma ley.",
+        "fuente": "F1",
+        "cita_literal": "en términos de lo previsto por el artículo 103 de esta Ley"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "motivo": "El texto legal proporcionado no establece supuestos en los que se prohíba o limite este derecho de intervención de forma general."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmación": "La educación en la que intervienen los padres debe mantener un enfoque de derechos humanos e igualdad sustantiva.",
+        "condicion": "La ley exige que el sistema educativo garantice el respeto a la dignidad humana y el desarrollo de la personalidad.",
+        "base": "F1, párrafo primero."
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos proporcionados no detallan las acciones específicas que integran la intervención ni el contenido del artículo 103. Tampoco mencionan sanciones por impedir este derecho."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-24T03:59:39+00:00",
+    "solicitud": "2027-02-13_imagen_T169-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 8,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 5,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.6-flash"
+    }
+  },
+  "pregunta_original": "¿Los padres tienen derecho a intervenir en la educación de sus hijos?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (73 palabras visibles; máximo 60; sobran 13, quita al menos 18): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, quienes ejercen la patria potestad, tutela o guarda y custodia tienen derecho a intervenir en la educación de niñas, niños y adolescentes. \n Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación \n Debe ser en términos del artículo 103 de la Ley."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (73 palabras visibles; máximo 60; sobran 13, quita al menos 18): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Quienes ejercen la patria potestad, tutela o guarda y custodia tienen derecho a intervenir en la educación de los menores.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 establece explícitamente este derecho para las personas mencionadas."
+            },
+            {
+              "conclusion": "La intervención debe realizarse conforme a lo previsto por el artículo 103 de la Ley.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 condiciona expresamente el ejercicio de este derecho a lo dispuesto en el artículo 103."
+            },
+            {
+              "conclusion": "La participación de los padres debe darse bajo un enfoque de derechos humanos e igualdad.",
+              "sostenida": "parcial",
+              "motivo": "El texto oficial señala que la educación debe basarse en esos principios, pero no condiciona explícitamente la intervención de los padres a que ellos mismos apliquen dicho enfoque."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Es importante que esta participación se dé bajo un enfoque de derechos humanos e igualdad.",
+              "problema": "El artículo 57 establece que la educación debe basarse en esos principios, no condiciona la intervención de los padres a que ellos actúen bajo ese enfoque.",
+              "correccion": "Aclarar que la educación recibida debe seguir esos principios, sin atribuir esa obligación directamente a la forma en que los padres intervienen."
+            },
+            {
+              "donde": "Guarda esta información para conocer tus derechos y obligaciones legales. Comparte con otros padres y tutores.",
+              "problema": "El texto incluye un llamado a la acción que se aleja de la neutralidad informativa y roza el tono de asesoría o promoción.",
+              "correccion": "Eliminar el llamado a la acción y mantener un tono estrictamente informativo."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, quienes ejercen la patria potestad, tutela o guarda y custodia tienen derecho a intervenir en la educación conforme a la ley. \n Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación \n Conforme al artículo 103 de esta Ley."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, quienes ejercen la patria potestad, tutela o guarda y custodia tienen este derecho. \n Quienes ejerzan la patria potestad, tutela o guarda y custodia, tendrán derecho a intervenir en la educación \n Su ejercicio debe sujetarse a lo previsto en el artículo 103 de la ley."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las personas que ejercen la patria potestad, tutela o guarda y custodia tienen derecho a intervenir en la educación de los menores.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 de la Ley General de los Derechos de Niñas, Niños y Adolescentes establece explícitamente este derecho."
+            },
+            {
+              "conclusion": "El ejercicio de este derecho está sujeto a lo previsto en el artículo 103 de la misma ley.",
+              "sostenida": "si",
+              "motivo": "El artículo 57 condiciona expresamente la intervención a los términos del artículo 103."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
