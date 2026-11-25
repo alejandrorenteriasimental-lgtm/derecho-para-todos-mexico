@@ -13054,7 +13054,7 @@
       "id": "R20270209-T165",
       "formato": "reel",
       "huella": "1e6332d647bd5c16a77eabbf1a233b5675aec29f78dbd60f69c2d42105ffa21e",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-21T10:14:41+00:00",
@@ -13094,6 +13094,12 @@
           "a": "APROBADO",
           "ts": "2026-11-23T21:37:17+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-21T19:44:23+00:00 versión 367dfa7abfd20cb2 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-25T00:11:22+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -13125,7 +13131,7 @@
       "id": "I20270210-T166",
       "formato": "imagen",
       "huella": "07d8deca68ebd8115d2f0a07a3843d5bf69e710687f152b4ba4cb1ba4ebb9ba4",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-21T16:20:09+00:00",
@@ -13165,6 +13171,12 @@
           "a": "APROBADO",
           "ts": "2026-11-24T03:59:39+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T03:43:23+00:00 versión c980696eb1eb662b (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-25T00:11:22+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -13733,6 +13745,133 @@
         "huella_guion": "fb69bf91b7993456e91fde35f854edbbe9bdc0531d113c6a6e2c0013910b137f",
         "huella_archivo": "58b6446bdf9d803210db12a8bfc1c18316624055ed5ceb30f3a6a1c7623aeb8d",
         "preparada": "2026-11-24T20:37:53+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20270216-T172": {
+      "id": "I20270216-T172",
+      "formato": "imagen",
+      "huella": "90ccbc95ef28d9e3c3528d3445e9f6c38dc7c194da8322d238e49928a32fd136",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T00:08:51+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T00:11:06+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T00:11:10+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "3e90276dd30c5b5f",
+        "huella_guion": "2cace16c21e1e8613602b1041cea652b801b1399a1b257cb1d970774235efe5d",
+        "huella_archivo": "54dc8db3fbd473266aa04bb15aa8aa40fed27b0c6b71d11ef1ed38a02d0a5d07",
+        "preparada": "2026-11-25T00:11:10+00:00",
+        "canal": "chat"
+      }
+    },
+    "I20270217-T173": {
+      "id": "I20270217-T173",
+      "formato": "imagen",
+      "huella": "d1fcaad37b275d7dd3131dd023e1410154faf94331ed6d95c2e75784930809c9",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T00:08:51+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T00:11:17+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T00:11:22+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "2c039ad30151a113",
+        "huella_guion": "3685af3c6736d0fd6f3510299f9db1a36437294a39c05e595fc908b9138958d4",
+        "huella_archivo": "e8b3c6cc0c5765bac89ebc2f6167ec9b5bf5de0a522cef320f2b6de4b513142b",
+        "preparada": "2026-11-25T00:11:22+00:00",
+        "canal": "chat"
+      }
+    },
+    "R20270215-T171": {
+      "id": "R20270215-T171",
+      "formato": "reel",
+      "huella": "3a233e255ee985fe1e9f04c6d0edb76ca11afaa584508ddc9512894c3f147127",
+      "estado": "RETENIDO",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T00:08:52+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-11-25T00:09:49+00:00",
+          "motivo": "verificación jurídica: RETENER"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-11-25T00:09:49+00:00",
+        "verificador": "0.5.7"
+      }
+    },
+    "R20270216-T172": {
+      "id": "R20270216-T172",
+      "formato": "reel",
+      "huella": "8fe1305b563d89b39c563e51d8b356c7b53b549b7dd98f8b9cbdea45036bee04",
+      "estado": "REVISION_HUMANA",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T00:08:52+00:00",
+      "historial": [
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T00:10:45+00:00",
+          "motivo": "36.0"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T00:10:49+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        }
+      ],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null,
+      "revision": {
+        "version": "e7e22700d93ef255",
+        "huella_guion": "74e0e03ac78ccb5bb994d2e78ee3ff129444d72c431c38bb8337a5ab7c9a3222",
+        "huella_archivo": "d95db961785551049b77d52cb66af2811337e3f6d26088baba97a837ca97ecdf",
+        "preparada": "2026-11-25T00:10:49+00:00",
         "canal": "chat"
       }
     }

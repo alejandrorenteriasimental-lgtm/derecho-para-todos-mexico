@@ -1,0 +1,229 @@
+{
+  "id": "R20270216-T172",
+  "formato": "reel",
+  "titulo": "¿Te deben dar comprobante de los trabajos de reparación?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T172",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "62",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 62",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "62",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 62",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Te deben dar comprobante de los trabajos de reparación?",
+      "titulo": [
+        "¿TE DAN",
+        "COMPROBANTE?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, deben entregarte factura o comprobante con el detalle de piezas, mano de obra y precio.",
+      "titulo": [
+        "SÍ, ES",
+        "OBLIGATORIO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley exige: \"Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados\".",
+      "etiqueta": "LFPC, artículo 62",
+      "cita": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Los prestadores de servicios están obligados a entregar una factura o comprobante por los trabajos realizados.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Debe detallar:",
+      "items": [
+        "Partes y materiales",
+        "Precio de refacciones",
+        "Costo de mano de obra",
+        "Garantía si se otorgó"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Exige tu comprobante detallado por cada trabajo.",
+      "titulo": [
+        "PIDE TU",
+        "COMPROBANTE"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El comprobante debe detallar las partes, refacciones, materiales, precios, mano de obra y garantía si existe.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
+    "concepto_central": "comprobante de los trabajos efectuados",
+    "respuesta_corta": "Sí, los prestadores de servicios tienen la obligación de entregarte una factura o comprobante que detalle las piezas, la mano de obra y el precio.",
+    "reglas": [
+      {
+        "conclusion": "Los prestadores de servicios están obligados a entregar una factura o comprobante por los trabajos realizados.",
+        "fuente": "F1",
+        "cita_literal": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados",
+        "condiciones": [
+          "Que se trate de trabajos efectuados por prestadores de servicios."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "62"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "El documento debe detallar las partes, refacciones, materiales, el precio de estos, el costo de la mano de obra y la garantía si se otorgó.",
+        "fuente": "F1",
+        "cita_literal": "deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación de expedir el comprobante recae sobre los prestadores de servicios al realizar trabajos.",
+        "fuente": "F1",
+        "cita_literal": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [
+      {
+        "a": "comprobante",
+        "b": "garantia",
+        "diferencia": "El comprobante es el documento obligatorio que detalla el trabajo y costos, mientras que la garantía es el compromiso sobre la calidad que debe incluirse en dicho comprobante si se otorgó."
+      }
+    ],
+    "limites": "El texto no establece sanciones por el incumplimiento de esta obligación, plazos para exigir el comprobante, ni el procedimiento de queja ante la autoridad."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T00:08:18+00:00",
+    "solicitud": "2027-02-16_reel_T172-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Te deben dar comprobante de los trabajos de reparación?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben dar comprobante de los trabajos de reparación?\n\nSí, los prestadores de servicios tienen la obligación de entregarte una factura o comprobante que detalle las piezas, la mano de obra y el precio.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 62.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 725 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 105: recorta al menos 165 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Te deben dar comprobante de los trabajos de reparación? \n ¿TE DAN \n COMPROBANTE? \n Sí, los prestadores de servicios tienen la obligación de entregarte una factura o comprobante que detalle las piezas, la mano de obra y el precio. \n SÍ, ES \n OBLIGATORIO \n La Ley Federal de Protección al Consumidor establece que: \"Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados\". \n Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 725 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 105: recorta al menos 165 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los prestadores de servicios están obligados a entregar una factura o comprobante por los trabajos realizados.",
+              "sostenida": "si",
+              "motivo": "El artículo 62 de la Ley Federal de Protección al Consumidor establece explícitamente esta obligación para los prestadores de servicios."
+            },
+            {
+              "conclusion": "El comprobante debe detallar las partes, refacciones, materiales, precios, mano de obra y garantía si existe.",
+              "sostenida": "si",
+              "motivo": "El artículo 62 enumera taxativamente estos elementos como requisitos obligatorios del comprobante."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

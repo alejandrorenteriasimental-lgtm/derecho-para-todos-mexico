@@ -1,0 +1,227 @@
+{
+  "id": "R20270215-T171",
+  "formato": "reel",
+  "titulo": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T171",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo",
+      "cita": "Ley Federal del Trabajo, artículo 57",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "57",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo",
+      "cita": "Ley Federal del Trabajo, artículo 57",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-25"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sientes que tu jornada de trabajo es excesiva?",
+      "titulo": [
+        "¿TU JORNADA ES",
+        "MUY EXCESIVA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, puedes solicitar ante el Tribunal que se modifiquen tus condiciones de trabajo si tu jornada laboral es excesiva.",
+      "titulo": [
+        "PIDE CAMBIOS",
+        "AL TRIBUNAL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La Ley Federal del Trabajo establece que: \"El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo\".",
+      "etiqueta": "Ley Federal del Trabajo, artículo 57",
+      "cita": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El trabajador puede pedir al Tribunal modificar sus condiciones ante una jornada excesiva.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Casos para pedir el cambio:",
+      "items": [
+        "Jornada laboral excesiva",
+        "Salario no remunerador",
+        "Causas económicas"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "El Tribunal valorará si tu jornada es excesiva para autorizar el cambio en tus condiciones laborales.",
+      "titulo": [
+        "EL TRIBUNAL",
+        "VALORARÁ EL CASO"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "interpretacion",
+          "texto": "El Tribunal es quien valora si la jornada es excesiva.",
+          "fuente": "F2",
+          "nota": "La ley no define un parámetro numérico de horas para calificar el exceso."
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
+    "concepto_central": "modificación de las condiciones de trabajo",
+    "respuesta_corta": "Sí, puedes solicitar ante el Tribunal que se modifiquen tus condiciones de trabajo si consideras que tu jornada laboral es excesiva.",
+    "reglas": [
+      {
+        "conclusion": "El trabajador tiene el derecho legal de pedir que se modifiquen sus condiciones laborales ante la autoridad judicial cuando la jornada de trabajo no sea adecuada.",
+        "fuente": "F1",
+        "cita_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo",
+        "condiciones": [
+          "Que la jornada de trabajo sea excesiva",
+          "Que el salario no sea remunerador",
+          "Que concurran circunstancias económicas que lo justifiquen"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "57"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El trabajador adquiere la facultad de solicitar formalmente un cambio en sus condiciones laborales actuales.",
+        "fuente": "F1",
+        "cita_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo"
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "cubierto",
+        "respuesta": "La solicitud de modificación debe presentarse ante el Tribunal.",
+        "fuente": "F1",
+        "cita_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo"
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "respuesta": "El texto legal proporcionado no establece un plazo específico para presentar esta solicitud.",
+        "fuente": "F1",
+        "cita_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo",
+        "motivo": "El artículo 57 de la Ley Federal del Trabajo no menciona términos de tiempo o prescripción para este derecho."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La determinación de si una jornada es realmente 'excesiva' dependerá de la valoración que realice el Tribunal.",
+        "condicion": "Debido a que el texto legal no define un parámetro numérico o específico de horas para calificar el exceso en este artículo.",
+        "base": "F1"
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos no definen qué criterios se usan para considerar una jornada como 'excesiva', ni el procedimiento procesal que debe seguirse ante el Tribunal, ni los plazos para ejercer esta acción."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T00:06:50+00:00",
+    "solicitud": "2027-02-15_reel_T171-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?\n\nSí, puedes solicitar ante el Tribunal que se modifiquen tus condiciones de trabajo si consideras que tu jornada laboral es excesiva.\n\nFuente: Ley Federal del Trabajo, artículo 57.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemma-4-26b-a4b-it",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[jurisprudencia] «CRITERIO DEL TRIBUNAL» invoca un criterio judicial que no está verificado en el Semanario Judicial de la Federación; no se cita."
+        ],
+        "visible": "  \n ¿Sientes que trabajas demasiadas horas? \n ¿TRABAJAS \n DEMASIADO? \n Sí, puedes pedir al Tribunal que modifique tus condiciones si tu jornada de trabajo es excesiva. \n AJUSTA TUS \n CONDICIONES \n La ley señala: «El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo». \n El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo \n Puedes pedir este cambio por: \n Jornada excesiva \n Salario insuficiente \n Motivos económicos \n El Tribunal es quien determinará si tu jornada se considera "
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El trabajador tiene el derecho legal de pedir que se modifiquen sus condiciones laborales ante la autoridad judicial cuando la jornada de trabajo no sea adecuada.",
+              "sostenida": "si",
+              "motivo": "La conclusión es jurídicamente válida ya que el artículo 57 de la LFT otorga la facultad de solicitar la modificación ante el Tribunal cuando la jornada es excesiva; el redactor utiliza 'no sea adecuada' como una paráfrasis de la condición de 'excesiva' y lo complementa correctamente en su afirmación A1."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": true
+  }
+}

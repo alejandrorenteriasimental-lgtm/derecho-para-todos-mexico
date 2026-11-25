@@ -1,0 +1,146 @@
+{
+  "id": "I20270217-T173",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Un migrante sin papeles puede acudir a la justicia?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T173",
+  "pieza": {
+    "titular": "¿Un migrante sin papeles puede acudir a la justicia?",
+    "bajada": "Sí, independientemente de su situación migratoria, tienen derecho a la procuración e impartición de justicia, respetando el debido proceso.",
+    "cita": "En cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia",
+    "etiqueta_cita": "Ley de Migración, artículo 11",
+    "ojo": "Así lo establece la Ley de Migración.",
+    "fuente_visible": "Ley de Migración, art. 11"
+  },
+  "copy": "De acuerdo con la Ley de Migración, las personas migrantes cuentan con garantías legales claras en el país.\n\nEl artículo 11 establece que en cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia, respetando en todo momento el derecho al debido proceso.\n\nTambién contempla el derecho a presentar quejas en materia de derechos humanos. Guarda y comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre el derecho de los migrantes sin papeles a acudir a la justicia en México según la Ley de Migración.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Migración",
+      "articulo": "11",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
+      "texto_literal": "En cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia",
+      "cita": "Ley de Migración, artículo 11",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los migrantes tienen derecho a la procuración e impartición de justicia sin importar su condición migratoria.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Un migrante sin papeles puede acudir a la justicia en México?",
+    "concepto_central": "derecho a la procuración e impartición de justicia",
+    "respuesta_corta": "Sí: independientemente de su situación migratoria, los migrantes tienen derecho a la procuración e impartición de justicia.",
+    "reglas": [
+      {
+        "conclusion": "Los migrantes tienen derecho a la procuración e impartición de justicia sin importar su condición migratoria.",
+        "fuente": "F1",
+        "cita_literal": "En cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia",
+        "condiciones": [
+          "respetando en todo momento el derecho al debido proceso"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley de Migración",
+          "articulo": "11"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Tienen el derecho legal reconocido a la procuración e impartición de justicia y a presentar quejas en derechos humanos.",
+        "fuente": "F1",
+        "cita_literal": "En cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia, respetando en todo momento el derecho al debido proceso",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla los trámites, vías procesales específicas ni plazos para acudir a dicha justicia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T00:08:51+00:00",
+    "solicitud": "2027-02-17_imagen_T173-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 1,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": "gemini-3.5-flash-lite",
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Un migrante sin papeles puede acudir a la justicia en México?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» parece cortado (no termina en punto): redáctalo como frase completa y breve, o quítalo"
+        ],
+        "visible": "  \n   \n Sí, independientemente de su situación migratoria, tienen derecho a la procuración e impartición de justicia, respetando el debido proceso. \n En cualquier caso, independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia \n Ley de Migración"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» parece cortado (no termina en punto): redáctalo como frase completa y breve, o quítalo"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los migrantes tienen derecho a la procuración e impartición de justicia sin importar su condición migratoria.",
+              "sostenida": "si",
+              "motivo": "El artículo 11 de la Ley de Migración establece explícitamente que, independientemente de la situación migratoria, se tiene derecho a la procuración e impartición de justicia."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+ "tema_id": "T172",
+ "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
+ "fecha": "2026-11-25T00:07:01+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
+  "concepto_central": "comprobante de los trabajos efectuados",
+  "respuesta_corta": "Sí, los prestadores de servicios tienen la obligación de entregarte una factura o comprobante que detalle las piezas, la mano de obra y el precio.",
+  "reglas": [
+   {
+    "conclusion": "Los prestadores de servicios están obligados a entregar una factura o comprobante por los trabajos realizados.",
+    "fuente": "F1",
+    "cita_literal": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados",
+    "condiciones": [
+     "Que se trate de trabajos efectuados por prestadores de servicios."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El documento debe detallar las partes, refacciones, materiales, el precio de estos, el costo de la mano de obra y la garantía si se otorgó.",
+    "fuente": "F1",
+    "cita_literal": "deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "La obligación de expedir el comprobante recae sobre los prestadores de servicios al realizar trabajos.",
+    "fuente": "F1",
+    "cita_literal": "Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "comprobante",
+    "b": "garantia",
+    "diferencia": "El comprobante es el documento obligatorio que detalla el trabajo y costos, mientras que la garantía es el compromiso sobre la calidad que debe incluirse en dicho comprobante si se otorgó."
+   }
+  ],
+  "limites": "El texto no establece sanciones por el incumplimiento de esta obligación, plazos para exigir el comprobante, ni el procedimiento de queja ante la autoridad.",
+  "fuentes_irrelevantes": []
+ }
+}

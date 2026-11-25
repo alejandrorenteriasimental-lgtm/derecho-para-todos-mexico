@@ -2567,3 +2567,26 @@
 {"ts": "2026-11-24T20:38:34+00:00", "pieza": "I20270208-T164", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-24T20:38:34+00:00", "pieza": "I20270209-T165", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-24T20:38:34+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 1, "producidas": 4, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 3, "en_revision": 4}
+{"ts": "2026-11-25T00:04:44+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-25T00:06:50+00:00", "evento": "redactada", "pieza": "R20270215-T171", "solicitud": "2027-02-15_reel_T171-lote-9.json"}
+{"ts": "2026-11-25T00:08:18+00:00", "evento": "redactada", "pieza": "R20270216-T172", "solicitud": "2027-02-16_reel_T172-lote-9.json"}
+{"ts": "2026-11-25T00:08:34+00:00", "evento": "redactada", "pieza": "I20270216-T172", "solicitud": "2027-02-16_imagen_T172-lote-9.json"}
+{"ts": "2026-11-25T00:08:51+00:00", "evento": "redactada", "pieza": "I20270217-T173", "solicitud": "2027-02-17_imagen_T173-lote-9.json"}
+{"ts": "2026-11-25T00:08:51+00:00", "pieza": "I20270216-T172", "evento": "encolado"}
+{"ts": "2026-11-25T00:08:51+00:00", "pieza": "I20270217-T173", "evento": "encolado"}
+{"ts": "2026-11-25T00:08:52+00:00", "pieza": "R20270215-T171", "evento": "encolado"}
+{"ts": "2026-11-25T00:08:52+00:00", "pieza": "R20270216-T172", "evento": "encolado"}
+{"ts": "2026-11-25T00:09:49+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER"}
+{"ts": "2026-11-25T00:09:49+00:00", "evento": "alerta", "mensaje": "R20270215-T171 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-25T00:10:45+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "PRODUCIDO", "motivo": "36.0"}
+{"ts": "2026-11-25T00:10:49+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T00:10:49+00:00", "evento": "revision_preparada", "pieza": "R20270216-T172", "version": "e7e22700d93ef255", "canal": "chat"}
+{"ts": "2026-11-25T00:11:06+00:00", "pieza": "I20270216-T172", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-25T00:11:10+00:00", "pieza": "I20270216-T172", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T00:11:10+00:00", "evento": "revision_preparada", "pieza": "I20270216-T172", "version": "3e90276dd30c5b5f", "canal": "chat"}
+{"ts": "2026-11-25T00:11:17+00:00", "pieza": "I20270217-T173", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-25T00:11:22+00:00", "pieza": "I20270217-T173", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T00:11:22+00:00", "evento": "revision_preparada", "pieza": "I20270217-T173", "version": "2c039ad30151a113", "canal": "chat"}
+{"ts": "2026-11-25T00:11:22+00:00", "pieza": "R20270209-T165", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-25T00:11:22+00:00", "pieza": "I20270210-T166", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-25T00:11:22+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 0, "producidas": 3, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 3}

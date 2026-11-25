@@ -1,0 +1,52 @@
+{
+  "decision": "RETENER",
+  "fuentes": {
+    "F1": {
+      "fuente": "F1",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-25T00:08:52+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 60445,
+      "extracto": "- el trabajador podra solicitar al tribunal la modificacion de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo o concurran circunstancias economicas que la justifiquen. parrafo reformado dof 01-05-2019 el patron podra solicitar la modificacion cuando concurran circunstancias economicas que la justifiquen. capitulo ii jornada de trabajo",
+      "huella_articulo": "a22b66f75d591bb019418188795fcab9fd103947ffdc39a61c430e8cfb5af2ed",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "consultado": "2026-11-25T00:09:07+00:00",
+      "http": 200,
+      "bytes": 4225835,
+      "sha256": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 60445,
+      "extracto": "- el trabajador podra solicitar al tribunal la modificacion de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo o concurran circunstancias economicas que la justifiquen. parrafo reformado dof 01-05-2019 el patron podra solicitar la modificacion cuando concurran circunstancias economicas que la justifiquen. capitulo ii jornada de trabajo",
+      "huella_articulo": "a22b66f75d591bb019418188795fcab9fd103947ffdc39a61c430e8cfb5af2ed",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F2"
+      ],
+      "dictamen": "RETENER",
+      "duda": "La ley no define un parámetro numérico de horas para calificar el exceso."
+    }
+  ],
+  "razonamiento": []
+}

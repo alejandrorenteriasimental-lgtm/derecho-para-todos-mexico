@@ -1,0 +1,43 @@
+{
+ "tema_id": "T172",
+ "pregunta": "¿Una tienda puede negarle la entrada a Profeco?",
+ "fecha": "2026-11-25T00:08:26+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Una tienda puede negarle la entrada a Profeco?",
+  "concepto_central": "acceso al lugar de verificación",
+  "respuesta_corta": "No, los proveedores, representantes o empleados están obligados a permitir el acceso al personal acreditado de la Procuraduría.",
+  "reglas": [
+   {
+    "conclusion": "Los proveedores, representantes y empleados tienen la obligación de permitir el acceso al personal de Profeco para las visitas de verificación.",
+    "fuente": "F1",
+    "cita_literal": "los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación.",
+    "condiciones": [
+     "cuando se trate de visitas de verificación de la Procuraduría"
+    ],
+    "excepciones": []
+   },
+   {
+    "conclusion": "Impedir u obstaculizar las visitas de verificación se considera una infracción.",
+    "fuente": "F1",
+    "cita_literal": "Se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Impedir o obstaculizar el acceso al personal de la Procuraduría se considera legalmente una infracción.",
+    "fuente": "F1",
+    "cita_literal": "Se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no especifica el monto o la sanción económica exacta derivada de cometer dicha infracción.",
+  "fuentes_irrelevantes": []
+ }
+}

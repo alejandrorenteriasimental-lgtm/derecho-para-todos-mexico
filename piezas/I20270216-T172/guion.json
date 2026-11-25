@@ -1,0 +1,167 @@
+{
+  "id": "I20270216-T172",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Una tienda puede negarle la entrada a Profeco?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T172",
+  "pieza": {
+    "titular": "¿Una tienda puede negarle la entrada a Profeco?",
+    "bajada": "Conoce lo que establece la ley sobre las visitas de verificación de la Procuraduría.",
+    "mito": "Cualquier tienda puede prohibir el paso al personal de la Procuraduría.",
+    "realidad": "No, los proveedores, representantes o empleados están obligados a permitir el acceso al personal acreditado de la Procuraduría.",
+    "fuente_visible": "Ley Federal de Protección al Consumidor, art. 13"
+  },
+  "copy": "La Ley Federal de Protección al Consumidor establece las reglas bajo las cuales la Procuraduría realiza visitas para verificar el cumplimiento de las normas.\n\nDe acuerdo con el artículo 13, «los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación».\n\nAsimismo, la ley advierte que «se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación».\n\nGuarda esta información y compártela para que más personas conozcan lo que dice la ley.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen editorial que explica si una tienda puede negar la entrada a la Procuraduría.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los proveedores y empleados tienen la obligación de permitir el acceso al personal de la Procuraduría.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Impedir las visitas de verificación constituye una infracción.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una tienda puede negarle la entrada a Profeco?",
+    "concepto_central": "acceso al lugar de verificación",
+    "respuesta_corta": "No, los proveedores, representantes o empleados están obligados a permitir el acceso al personal acreditado de la Procuraduría.",
+    "reglas": [
+      {
+        "conclusion": "Los proveedores, representantes y empleados tienen la obligación de permitir el acceso al personal de Profeco para las visitas de verificación.",
+        "fuente": "F1",
+        "cita_literal": "los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación.",
+        "condiciones": [
+          "cuando se trate de visitas de verificación de la Procuraduría"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "13"
+        }
+      },
+      {
+        "conclusion": "Impedir u obstaculizar las visitas de verificación se considera una infracción.",
+        "fuente": "F1",
+        "cita_literal": "Se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "13"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Impedir o obstaculizar el acceso al personal de la Procuraduría se considera legalmente una infracción.",
+        "fuente": "F1",
+        "cita_literal": "Se considerará infracción de los proveedores de bienes, productos o servicios la consistente en obstaculizar o impedir, por sí o por interpósita persona, las visitas de verificación"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no especifica el monto o la sanción económica exacta derivada de cometer dicha infracción."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T00:08:34+00:00",
+    "solicitud": "2027-02-16_imagen_T172-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Una tienda puede negarle la entrada a Profeco?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los proveedores, representantes y empleados tienen la obligación de permitir el acceso al personal de Profeco para las visitas de verificación.",
+              "sostenida": "si",
+              "motivo": "El artículo 13 de la Ley Federal de Protección al Consumidor establece explícitamente esta obligación para los proveedores, sus representantes o empleados."
+            },
+            {
+              "conclusion": "Impedir u obstaculizar las visitas de verificación se considera una infracción.",
+              "sostenida": "si",
+              "motivo": "El artículo 13 de la Ley Federal de Protección al Consumidor tipifica expresamente como infracción el obstaculizar o impedir las visitas de verificación."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
