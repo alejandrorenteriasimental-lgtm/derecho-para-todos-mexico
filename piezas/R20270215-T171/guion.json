@@ -24,7 +24,7 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "57",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo",
+      "texto_literal": "El patrón podrá solicitar la modificación cuando concurran circunstancias económicas que la justifiquen",
       "cita": "Ley Federal del Trabajo, artículo 57",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-25"
@@ -36,13 +36,13 @@
       "texto": "¿Sientes que tu jornada de trabajo es excesiva?",
       "titulo": [
         "¿TU JORNADA ES",
-        "MUY EXCESIVA?"
+        "EXCESIVA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, puedes solicitar ante el Tribunal que se modifiquen tus condiciones de trabajo si tu jornada laboral es excesiva.",
+      "texto": "Sí. Puedes pedir al Tribunal que modifique tus condiciones de trabajo.",
       "titulo": [
         "PIDE CAMBIOS",
         "AL TRIBUNAL"
@@ -51,7 +51,7 @@
     },
     {
       "tipo": "cita",
-      "texto": "La Ley Federal del Trabajo establece que: \"El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo\".",
+      "texto": "La ley dice: «El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo».",
       "etiqueta": "Ley Federal del Trabajo, artículo 57",
       "cita": "El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo",
       "afirmaciones": [
@@ -66,28 +66,27 @@
     },
     {
       "tipo": "lista",
-      "texto": "Casos para pedir el cambio:",
+      "texto": "También si hay circunstancias económicas que lo justifiquen.",
       "items": [
-        "Jornada laboral excesiva",
         "Salario no remunerador",
-        "Causas económicas"
+        "Jornada excesiva",
+        "Circunstancias económicas"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "El Tribunal valorará si tu jornada es excesiva para autorizar el cambio en tus condiciones laborales.",
+      "texto": "El patrón también puede pedir la modificación, cuando haya circunstancias económicas que la justifiquen.",
       "titulo": [
-        "EL TRIBUNAL",
-        "VALORARÁ EL CASO"
+        "EL PATRÓN",
+        "TAMBIÉN PUEDE"
       ],
       "afirmaciones": [
         {
           "id": "A2",
-          "tipo": "interpretacion",
-          "texto": "El Tribunal es quien valora si la jornada es excesiva.",
-          "fuente": "F2",
-          "nota": "La ley no define un parámetro numérico de horas para calificar el exceso."
+          "tipo": "hecho_normativo",
+          "texto": "El patrón puede solicitar la modificación cuando concurran circunstancias económicas que la justifiquen.",
+          "fuente": "F2"
         }
       ]
     },
@@ -223,5 +222,12 @@
       }
     ],
     "familia_distinta": true
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Retenido por la verificación (A2 «El Tribunal es quien valora si la jornada es excesiva», interpretación sin texto que la sostenga). Además: gancho visible «¿TU JORNADA ES MUY EXCESIVA?», lista narrada solo como «Casos para pedir el cambio:» (≈1 s) y «Causas económicas» sin la condición. → escena 5 con el segundo párrafo literal del art. 57 LFT («El patrón también puede pedir la modificación, cuando haya circunstancias económicas que la justifiquen.»; A2 hecho_normativo, F2 con ese texto literal), titular «EL PATRÓN TAMBIÉN PUEDE»; lista narrada con los tres supuestos del primer párrafo; gancho «¿TU JORNADA ES EXCESIVA?». Respuesta, cita, F1 y copy sin cambios. Ajuste por duración: respuesta «Sí. Puedes pedir al Tribunal que modifique tus condiciones de trabajo.», cita introducida como «La ley dice: «…»» y lista narrada «También si hay circunstancias económicas que lo justifiquen.» (los otros dos supuestos ya se narran en la cita)."
+    }
+  ]
 }

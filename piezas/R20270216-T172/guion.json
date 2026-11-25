@@ -42,7 +42,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, deben entregarte factura o comprobante con el detalle de piezas, mano de obra y precio.",
+      "texto": "Sí, es obligatorio para quien presta el servicio.",
       "titulo": [
         "SÍ, ES",
         "OBLIGATORIO"
@@ -66,12 +66,12 @@
     },
     {
       "tipo": "lista",
-      "texto": "Debe detallar:",
+      "texto": "Debe detallar partes, refacciones y materiales, su precio, la mano de obra y la garantía, si la hubo.",
       "items": [
-        "Partes y materiales",
-        "Precio de refacciones",
+        "Partes y refacciones",
+        "Su precio",
         "Costo de mano de obra",
-        "Garantía si se otorgó"
+        "Garantía, si se otorgó"
       ],
       "afirmaciones": []
     },
@@ -225,5 +225,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena de lista: la narración solo decía «Debe detallar:» (≈1.2 s), así que los 4 elementos pasaban en un instante sin narrarse. → narración con los elementos literales del art. 62 LFPC (partes, refacciones y materiales; su precio y el de la mano de obra; la garantía que en su caso se haya otorgado) y lista acorde. Resto sin cambios. Ajuste por duración (≤ 45 s): respuesta «Sí, es obligatorio para quien presta el servicio.» y lista narrada «Debe detallar partes, refacciones y materiales, su precio, la mano de obra y la garantía, si la hubo.»"
+    }
+  ]
 }

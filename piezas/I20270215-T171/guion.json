@@ -2,16 +2,16 @@
   "id": "I20270215-T171",
   "formato": "imagen",
   "plantilla": "dato",
-  "titulo": "¿Semanas para el subsidio por maternidad IMSS?",
+  "titulo": "¿Cuántas semanas debes cotizar para el subsidio por maternidad?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T171",
   "pieza": {
-    "titular": "¿Semanas para el subsidio por maternidad IMSS?",
-    "bajada": "Requiere al menos 30 cotizaciones semanales en los 12 meses previos al pago.",
-    "cita": "Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha",
+    "titular": "¿Cuántas semanas debes cotizar para el subsidio por maternidad?",
+    "bajada": "Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.",
+    "cita": "…por lo menos treinta cotizaciones semanales en el período de doce meses anteriores…",
     "etiqueta_cita": "Ley del Seguro Social, artículo 102",
-    "ojo": "Requiere certificación del Instituto y no trabajar pagado.",
+    "ojo": "También: certificación del IMSS y no trabajar con pago antes y después del parto.",
     "fuente_visible": "Ley del Seguro Social, art. 102"
   },
   "copy": "La Ley del Seguro Social, en su artículo 102, establece que para tener derecho al subsidio por maternidad del IMSS, la asegurada debe haber cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio.\n\nAdemás, el mismo artículo 102 exige que el Instituto certifique el embarazo y la fecha probable del parto, y que la asegurada no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto. Si la asegurada percibiera otro subsidio, se cancelará el que sea por menor cantidad.\n\nGuarda esta información o compártela con quien necesite conocer los requisitos legales del IMSS.\n\nEsto es información general, no es asesoría legal.",
@@ -180,5 +180,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Titular telegráfico («¿Semanas para el subsidio por maternidad IMSS?»), bajada que reducía la fecha a «previos al pago», cita cortada a media frase («…anteriores a la fecha») y OJO coloquial («no trabajar pagado»). → título y titular «¿Cuántas semanas debes cotizar para el subsidio por maternidad?» (la pregunta original); bajada con «la fecha en que debiera empezar el pago»; cita completa de la fr. I del art. 102 LSS; OJO con las fracciones II y III. Copy, fuentes y análisis sin cambios. Ajuste por longitud (≤ 60 palabras): bajada «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.», cita «…por lo menos treinta cotizaciones semanales en el período de doce meses anteriores…» (literal; la fecha va en la bajada) y OJO «También: certificación del IMSS y no trabajar con pago antes y después del parto.»"
+    }
+  ]
 }

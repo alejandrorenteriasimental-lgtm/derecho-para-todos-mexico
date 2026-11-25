@@ -64,7 +64,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "No: la ley fija los 15 años como edad mínima e impone a las autoridades la obligación de prevenir, atender y sancionar el trabajo infantil antes de esa edad.",
+      "texto": "No. La ley fija los 15 años como edad mínima para trabajar.",
       "titulo": [
         "EDAD MÍNIMA:",
         "15 AÑOS"
@@ -88,11 +88,11 @@
     },
     {
       "tipo": "lista",
-      "texto": "Las autoridades deben prevenir, atender y sancionar este trabajo.",
+      "texto": "Las autoridades están obligadas a prevenir, atender y sancionar estos casos.",
       "items": [
-        "Prevenir el trabajo",
-        "Atender las situaciones",
-        "Sancionar infracciones"
+        "Prevenir",
+        "Atender",
+        "Sancionar los casos"
       ],
       "afirmaciones": [
         {
@@ -105,10 +105,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "Esto aplica al trabajo antes de los 15 años conforme a la Constitución.",
+      "texto": "Ese deber es de las autoridades de todos los niveles de gobierno, cada una en su competencia.",
       "titulo": [
-        "PROTECCIÓN A",
-        "MENORES DE 15"
+        "DEBER DE LAS",
+        "AUTORIDADES"
       ],
       "afirmaciones": [
         {
@@ -268,5 +268,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-24",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "La lista decía «Sancionar infracciones» y «Atender las situaciones» (el art. 47 LGDNNA dice «prevenir, atender y sancionar los casos») y la escena 5 repetía la pregunta («Esto aplica al trabajo antes de los 15 años…») con un titular vago. → lista «Prevenir / Atender / Sancionar los casos» narrada como «Las autoridades están obligadas a prevenir, atender y sancionar estos casos.»; escena 5 con quiénes están obligados según el primer párrafo del art. 47 (federales, entidades federativas, municipales y demarcaciones de la CDMX, en su competencia), titular «DEBER DE LAS AUTORIDADES». Gancho, respuesta, cita, fuentes y copy sin cambios. Ajuste por duración (la versión anterior duraba 44.3 s y la nueva excedía 620 caracteres): respuesta «No. La ley fija los 15 años como edad mínima para trabajar.» (el deber de prevenir, atender y sancionar queda en la lista) y escena 5 «Ese deber es de las autoridades de todos los niveles de gobierno, cada una en su competencia.»"
+    }
+  ]
 }

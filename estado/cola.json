@@ -13616,7 +13616,7 @@
       "id": "I20270214-T170",
       "formato": "imagen",
       "huella": "392924d30dc9b60d2bbf4a220abcda3f562d689e41483d88a587257b79a468d7",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13632,6 +13632,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T20:38:07+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): El «OJO» solo repetía la fuente («Ley General de Víctimas, artículo 7.») y la cita no decía de qué fracción es (la XXVI; la fr. I usa otra redacción). → OJO «Es uno de los derechos que enumera el artículo 7, fracción XXVI.»; etiqueta y fuente visible con la fracción XXVI. Titular, bajada, cita, copy, fuentes y análisis sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13650,7 +13656,7 @@
       "id": "I20270215-T171",
       "formato": "imagen",
       "huella": "195336913acedec8973ffb6218680330d26952b859f3636f72d21476abb2b9b9",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13666,6 +13672,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T20:38:34+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Titular telegráfico («¿Semanas para el subsidio por maternidad IMSS?»), bajada que reducía la fecha a «previos al pago», cita cortada a media frase («…anteriores a la fecha») y OJO coloquial («no trabajar pagado»). → título y titular «¿Cuántas semanas debes cotizar para el subsidio por maternidad?» (la pregunta original); bajada con «la fecha en que debiera empezar el pago»; cita completa de la fr. I del art. 102 LSS; OJO con las fracciones II y III. Copy, fuentes y análisis sin cambios. Ajuste por longitud (≤ 60 palabras): bajada «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.», cita «…por lo menos treinta cotizaciones semanales en el período de doce meses anteriores…» (literal; la fecha va en la bajada) y OJO «También: certificación del IMSS y no trabajar con pago antes y después del parto.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13684,7 +13696,7 @@
       "id": "R20270213-T169",
       "formato": "reel",
       "huella": "0bf50efd8bc3c333c97694de6ae8e4b6530ccac30a54dccce05aa65632c20035",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13700,6 +13712,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T20:36:58+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): La lista decía «Sancionar infracciones» y «Atender las situaciones» (el art. 47 LGDNNA dice «prevenir, atender y sancionar los casos») y la escena 5 repetía la pregunta («Esto aplica al trabajo antes de los 15 años…») con un titular vago. → lista «Prevenir / Atender / Sancionar los casos» narrada como «Las autoridades están obligadas a prevenir, atender y sancionar estos casos.»; escena 5 con quiénes están obligados según el primer párrafo del art. 47 (federales, entidades federativas, municipales y demarcaciones de la CDMX, en su competencia), titular «DEBER DE LAS AUTORIDADES». Gancho, respuesta, cita, fuentes y copy sin cambios. Ajuste por duración (la versión anterior duraba 44.3 s y la nueva excedía 620 caracteres): respuesta «No. La ley fija los 15 años como edad mínima para trabajar.» (el deber de prevenir, atender y sancionar queda en la lista) y escena 5 «Ese deber es de las autoridades de todos los niveles de gobierno, cada una en su competencia.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13718,7 +13736,7 @@
       "id": "R20270214-T170",
       "formato": "reel",
       "huella": "59961eb45b130d6a7b7d41875ecd13fee51756b56457af12034684697c6b6e7a",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13734,6 +13752,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-24T20:37:53+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena 4: el titular visible «REGISTRO EN LA CARPETA» no coincidía con la narración («Esta información debe brindarse desde el primer contacto.», además sin ancla). → narración «Y debe dejar constancia de ello en la carpeta de investigación.» (art. 12 fr. I LGV, ya citado). Resto sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13752,7 +13776,7 @@
       "id": "I20270216-T172",
       "formato": "imagen",
       "huella": "90ccbc95ef28d9e3c3528d3445e9f6c38dc7c194da8322d238e49928a32fd136",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:51+00:00",
@@ -13768,6 +13792,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T00:11:10+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): La «realidad» omitía la condición del art. 13 LFPC: la obligación de permitir el acceso es para los lugares objeto de la verificación, no un acceso general. → realidad «No. Proveedores, representantes y empleados deben permitir al personal acreditado de la Procuraduría el acceso a los lugares objeto de la verificación.» Titular, mito, copy, fuentes y análisis sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13786,7 +13816,7 @@
       "id": "I20270217-T173",
       "formato": "imagen",
       "huella": "d1fcaad37b275d7dd3131dd023e1410154faf94331ed6d95c2e75784930809c9",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:51+00:00",
@@ -13802,6 +13832,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T00:11:22+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): El «OJO» era relleno («Así lo establece la Ley de Migración.»). → OJO «También tienen derecho a presentar quejas en materia de derechos humanos.» (misma oración del art. 11 LMigra). Resto sin cambios. Ajuste por longitud (64 palabras, invadía el pie): bajada «Sí, sin importar su situación migratoria y respetando siempre el debido proceso.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13820,7 +13856,7 @@
       "id": "R20270215-T171",
       "formato": "reel",
       "huella": "3a233e255ee985fe1e9f04c6d0edb76ca11afaa584508ddc9512894c3f147127",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:52+00:00",
@@ -13830,6 +13866,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-25T00:09:49+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:47:35+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche) tras la retención: A2 interpretativa («El Tribunal es quien valora…») sustituida por el segundo párrafo literal del art. 57 LFT (el patrón también puede pedir la modificación por circunstancias económicas); lista narrada; gancho visible sin «muy excesiva»; 543 caracteres; esquema, razonamiento y cita literal sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
@@ -13845,7 +13887,7 @@
       "id": "R20270216-T172",
       "formato": "reel",
       "huella": "8fe1305b563d89b39c563e51d8b356c7b53b549b7dd98f8b9cbdea45036bee04",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:52+00:00",
@@ -13861,6 +13903,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T00:10:49+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T03:46:29+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena de lista: la narración solo decía «Debe detallar:» (≈1.2 s), así que los 4 elementos pasaban en un instante sin narrarse. → narración con los elementos literales del art. 62 LFPC (partes, refacciones y materiales; su precio y el de la mano de obra; la garantía que en su caso se haya otorgado) y lista acorde. Resto sin cambios. Ajuste por duración (≤ 45 s): respuesta «Sí, es obligatorio para quien presta el servicio.» y lista narrada «Debe detallar partes, refacciones y materiales, su precio, la mano de obra y la garantía, si la hubo.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
         }
       ],
       "error": null,
