@@ -17,4 +17,4 @@ Próximos huecos: 2027-02-07 imagen, 2027-02-08 imagen, 2027-02-09 imagen, 2027-
 
 Cola: APROBADO 6, RETENIDO 8, REVISION_HUMANA 7, SIMULADO 158
 
-_Generado 2026-11-25T00:12:44+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._
+_Generado 2026-11-25T01:30:53+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._
