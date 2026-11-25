@@ -1,10 +1,10 @@
 {
-  "decision": "RETENER",
+  "decision": "APTA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "consultado": "2026-11-25T12:02:37+00:00",
+      "consultado": "2026-11-25T12:30:37+00:00",
       "http": 200,
       "bytes": 2161638,
       "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
@@ -18,7 +18,7 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "consultado": "2026-11-25T12:02:43+00:00",
+      "consultado": "2026-11-25T12:30:46+00:00",
       "http": 200,
       "bytes": 2161638,
       "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
@@ -48,11 +48,5 @@
       "duda": null
     }
   ],
-  "razonamiento": [
-    {
-      "regla": "sustento",
-      "severidad": "bloqueante",
-      "detalle": "«Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.» menciona un plazo (30 semana) que no aparece en los artículos citados."
-    }
-  ]
+  "razonamiento": []
 }

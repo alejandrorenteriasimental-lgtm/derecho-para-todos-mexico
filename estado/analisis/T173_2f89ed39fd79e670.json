@@ -1,0 +1,57 @@
+{
+ "tema_id": "T173",
+ "pregunta": "¿Un migrante sin papeles tiene derechos en México?",
+ "fecha": "2026-11-25T12:23:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Un migrante sin papeles tiene derechos en México?",
+  "concepto_central": "situación migratoria",
+  "respuesta_corta": "Sí, su situación migratoria no impide que ejerza los derechos y libertades reconocidos en la Constitución, tratados internacionales y la Ley de Migración.",
+  "reglas": [
+   {
+    "conclusion": "La falta de documentos o situación migratoria irregular no es un obstáculo para que el migrante ejerza sus derechos y libertades.",
+    "fuente": "F1",
+    "cita_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales",
+    "condiciones": [
+     "Que los derechos y libertades estén reconocidos en la Constitución, en tratados internacionales de los que México sea parte o en la Ley de Migración."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "El Estado debe garantizar la seguridad personal de los migrantes y permitir el ejercicio de sus derechos y libertades.",
+    "fuente": "F1",
+    "cita_literal": "El Estado mexicano garantizará el derecho a la seguridad personal de los migrantes, con independencia de su situación migratoria."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Estos derechos se garantizan sin importar si el migrante cuenta o no con documentos que acrediten su estancia legal.",
+    "fuente": "F1",
+    "cita_literal": "con independencia de su situación migratoria."
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "no_aplica",
+    "respuesta": "La ley no establece excepciones que permitan impedir el ejercicio de derechos basándose en la situación migratoria.",
+    "fuente": "F1",
+    "cita_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades",
+    "motivo": "El texto establece una regla general de no impedimento."
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La seguridad personal es una prioridad de protección estatal para cualquier migrante.",
+    "condicion": "Siempre que la persona se encuentre en territorio mexicano, independientemente de sus papeles.",
+    "base": "F1 menciona específicamente la seguridad personal como un derecho que el Estado garantizará con independencia de la situación migratoria."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto no especifica el catálogo completo de derechos, los procedimientos para denunciar violaciones a estos, ni las autoridades encargadas de recibir quejas.",
+  "fuentes_irrelevantes": []
+ }
+}

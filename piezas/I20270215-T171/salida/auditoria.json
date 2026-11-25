@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1191 KB"
+      "detalle": "1190 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1105"
+      "detalle": "fin del contenido en y=1077"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "54 palabras sin cabecera ni pie"
+      "detalle": "57 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 43 palabras reconocidas"
+      "detalle": "100% de 45 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -93,12 +93,12 @@
   "metadatos": {
     "id": "I20270215-T171",
     "formato": "imagen",
-    "titulo": "¿Semanas para el subsidio por maternidad IMSS?",
+    "titulo": "¿Cuántas semanas debes cotizar para el subsidio por maternidad?",
     "plantilla": "dato",
     "archivo": "I20270215-T171.png",
-    "sha256": "d152ebcb537da5034bf2e789f51697e7c00ae532d9934c7c7e7785799daa9e28",
-    "ahash": "1111111111111111111111111111111111111111111111111100000000001111100000000111111110000000000011111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
-    "huella_guion": "195336913acedec8973ffb6218680330d26952b859f3636f72d21476abb2b9b9",
+    "sha256": "48ef13c42909f0174c96188f616da400c2caa8f6b267da94239687b7496c5bcb",
+    "ahash": "1000011111111111111111111111111111111111111111111111111111111111100000000000001110000000001111111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "87c21c3b48d7dc84570d53b7130fb02f1f7bfee84e89dc958a5454eda6602bfe",
     "texto_alternativo": "Placa informativa sobre el subsidio por maternidad del IMSS donde se indica el requisito de 30 cotizaciones semanales previas.",
     "copy": "La Ley del Seguro Social, en su artículo 102, establece que para tener derecho al subsidio por maternidad del IMSS, la asegurada debe haber cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio.\n\nAdemás, el mismo artículo 102 exige que el Instituto certifique el embarazo y la fecha probable del parto, y que la asegurada no ejecute trabajo alguno mediante retribución durante los períodos anteriores y posteriores al parto. Si la asegurada percibiera otro subsidio, se cancelará el que sea por menor cantidad.\n\nGuarda esta información o compártela con quien necesite conocer los requisitos legales del IMSS.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-24T20:38:30+00:00",
+    "fecha": "2026-11-25T12:31:15+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "37.8 s"
+      "detalle": "38.6 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "37.8 s"
+      "detalle": "38.6 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "e334c2b1bd53a391"
+      "detalle": "621271b0f10cebdd"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270215-T171",
     "titulo": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
-    "fecha": "2026-11-25T12:01:23+00:00",
-    "sha256": "e334c2b1bd53a3915609d35712297b8748105df7565a86d9877fc50bd0fdd016",
-    "duracion_s": 37.8,
+    "fecha": "2026-11-25T12:28:54+00:00",
+    "sha256": "621271b0f10cebdd1138b298b2a663ae78bf6a6e1637d07d1aacf522e935771b",
+    "duracion_s": 38.6,
     "estado": "APTO",
-    "huella_guion": "ce887b527a796f0d15c026ffcde3ac1cb6d94d704c8a1866aadc4140a336e9bf",
+    "huella_guion": "87723313f53a3cf56f7ce0d29f3ca02c22e70061db2d0f7648f9c6bb5e18de0e",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 9.4,
-      "musica": 1.0,
-      "render_video": 20.5,
-      "mezcla_audio": 1.0,
-      "auditoria_tecnica": 4.0
+      "narracion": 14.2,
+      "musica": 1.9,
+      "render_video": 32.8,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 5.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.6,
-      "computo_equivalente_runner_usd": 0.0036,
+      "computo_minutos": 0.94,
+      "computo_equivalente_runner_usd": 0.0056,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1132,
-    "caracteres_narrados": 543
+    "frames": 1155,
+    "caracteres_narrados": 557
   }
 }
