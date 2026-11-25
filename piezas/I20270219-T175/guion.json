@@ -13,7 +13,7 @@
     "realidad": "Sí, la ley reconoce a los programas de cómputo como una de las ramas protegidas.",
     "fuente_visible": "Ley Federal del Derecho de Autor, art. 13"
   },
-  "copy": "De acuerdo con la Ley Federal del Derecho de Autor, en su artículo 13, los programas de cómputo son una de las ramas protegidas por esta normativa. El efecto jurídico de esto es el reconocimiento oficial de los derechos de autor sobre dichas creaciones.\n\nLa ley establece que \"Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas: [...] XI. Programas de cómputo\" (F1, Art. 13). Para que esta protección aplique, el software debe ser considerado una obra.\n\nAdemás, las autoridades deben implementar acciones para incentivar que más mujeres creadoras participen en esta y otras ramas, buscando asegurar el respeto al principio de igualdad sustantiva entre mujeres y hombres.\n\nGuarda esta información si desarrollas software o te interesa la propiedad intelectual en México. Comparte para que más personas conozcan sus derechos.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿El software tiene derechos de autor? Sí. La Ley Federal del Derecho de Autor, en su artículo 13, dice: «Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas:» y en la fracción XI incluye los «Programas de cómputo».\n\nEs decir, un programa de cómputo que sea una obra está protegido por el derecho de autor, igual que una obra literaria, musical o pictórica.\n\nGuarda esta información si desarrollas software o te interesa la propiedad intelectual en México. Comparte para que más personas conozcan sus derechos.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa con formato de mito y realidad. El mito dice que el software no tiene derechos de autor. La realidad aclara que la ley mexicana sí los reconoce como una rama protegida, siempre que se trate de una obra.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -23,7 +23,18 @@
       "documento": "Ley Federal del Derecho de Autor",
       "articulo": "13",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "texto_literal": "Las autoridades implementarán acciones afirmativas para incentivar la participación de mujeres creadoras en todas las ramas mencionadas",
+      "texto_literal": "XI. Programas de cómputo",
+      "cita": "Ley Federal del Derecho de Autor, artículo 13",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "13",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas:",
       "cita": "Ley Federal del Derecho de Autor, artículo 13",
       "jurisdiccion": "federal",
       "consultado": "2026-11-25"
@@ -33,7 +44,13 @@
     {
       "id": "A1",
       "tipo": "hecho_normativo",
-      "texto": "Las autoridades deben implementar acciones afirmativas para incentivar la participación de mujeres creadoras en los programas de cómputo.",
+      "texto": "La Ley Federal del Derecho de Autor reconoce los derechos de autor respecto de las obras de las ramas que enumera.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Una de esas ramas es la de programas de cómputo.",
       "fuente": "F1"
     }
   ],
@@ -46,12 +63,11 @@
       {
         "conclusion": "Los programas de cómputo son considerados legalmente como una de las ramas de obras que gozan de protección por derechos de autor.",
         "fuente": "F1",
-        "cita_literal": "- Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas: I.",
+        "cita_literal": "XI. Programas de cómputo",
         "condiciones": [
           "Debe tratarse de una obra"
         ],
         "excepciones": [],
-        "cita_literal_original": "Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas: [...] XI. Programas de cómputo",
         "ref": {
           "documento": "Ley Federal del Derecho de Autor",
           "articulo": "13"
@@ -63,19 +79,12 @@
         "elemento": "efecto",
         "estado": "cubierto",
         "respuesta": "El efecto jurídico es el reconocimiento oficial de los derechos de autor sobre dichas creaciones.",
-        "fuente": "F1",
-        "cita_literal": "- Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas: I.",
-        "motivo": null,
-        "cita_literal_original": "Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas: [...] XI. Programas de cómputo"
+        "fuente": "F2",
+        "cita_literal": "Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas:",
+        "motivo": null
       }
     ],
-    "interpretaciones": [
-      {
-        "afirmacion": "Las mujeres que crean programas de cómputo deben recibir incentivos a través de acciones afirmativas por parte de las autoridades.",
-        "condicion": "Para asegurar el respeto al principio de igualdad sustantiva entre mujeres y hombres.",
-        "base": "F1, párrafo final: 'Las autoridades implementarán acciones afirmativas para incentivar la participación de mujeres creadoras en todas las ramas mencionadas'."
-      }
-    ],
+    "interpretaciones": [],
     "distinciones": [],
     "limites": "Los textos proporcionados no definen los requisitos técnicos para que un software sea considerado obra, ni establecen los plazos de vigencia de estos derechos o las sanciones por su incumplimiento."
   },
@@ -146,5 +155,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-25",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Copy con la referencia interna «(F1, Art. 13)» visible al público y un párrafo de relleno sobre las acciones afirmativas para mujeres creadoras (último párrafo del art. 13, ajeno a la pregunta); la única fuente literal (F1) era ese párrafo y la respuesta («programas de cómputo» como rama protegida) no tenía ancla literal (la cita del análisis estaba cortada en «…ramas: I.»). → F1 con el literal «XI. Programas de cómputo» y F2 con el encabezado literal del art. 13; afirmaciones A1 (F2) y A2 (F1) ancladas; regla con la cita «XI. Programas de cómputo» (F1) y elemento «efecto» con el encabezado literal (F2); sin la interpretación de mujeres creadoras; copy reescrito con las dos citas literales. Titular, bajada, mito, realidad y fuente visible sin cambios."
+    }
+  ]
 }

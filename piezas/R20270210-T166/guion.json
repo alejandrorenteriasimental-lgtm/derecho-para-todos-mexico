@@ -46,17 +46,17 @@
       "tipo": "gancho",
       "texto": "¿Tu tienda en línea puede pasar tus datos a otras empresas?",
       "titulo": [
-        "¿PASAN TUS DATOS?",
-        "A OTRAS EMPRESAS"
+        "¿PASAN TUS DATOS",
+        "A OTRAS EMPRESAS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No. El proveedor debe guardar confidencialidad y no difundir tus datos.",
+      "texto": "No, salvo excepciones. Deben usar tu información en forma confidencial.",
       "titulo": [
-        "NO PUEDEN",
-        "COMPARTIRLOS"
+        "NO, SALVO",
+        "EXCEPCIONES"
       ],
       "afirmaciones": []
     },
@@ -94,18 +94,18 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Se exceptúan los proveedores necesarios para la transacción.",
-      "encabezado": "Empresas de la transacción",
-      "detalle": "Como servicios de paquetería",
+      "texto": "La prohibición es frente a proveedores ajenos a tu compra.",
+      "encabezado": "Empresas ajenas a la compra",
+      "detalle": "A ellas no se pueden pasar tus datos",
       "fuente_corta": "LFPC, art. 76 Bis",
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Tus datos son privados y no se difunden sin tu permiso.",
+      "texto": "Sin tu autorización expresa o un requerimiento de autoridad, no pueden pasarlos.",
       "titulo": [
-        "TUS DATOS",
-        "SON PRIVADOS"
+        "SIN TU PERMISO,",
+        "NO SE COMPARTEN"
       ],
       "afirmaciones": [
         {
@@ -261,5 +261,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-25",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Escena de excepción «Se exceptúan los proveedores necesarios para la transacción» con el ejemplo «Como servicios de paquetería»: ni la excepción ni el ejemplo están en el art. 76 Bis fr. I LFPC (solo dice «proveedores ajenos a la transacción»). Respuesta «No» y titular «NO PUEDEN COMPARTIRLOS» absolutos pese a las dos salvedades; cierre «Tus datos son privados y no se difunden sin tu permiso» omitía el requerimiento de autoridad; gancho visible con el signo de interrogación a media frase. → excepción reescrita con el texto literal («La prohibición es frente a proveedores ajenos a tu compra»; encabezado «Empresas ajenas a la compra»; detalle «A ellas no se pueden pasar tus datos»); respuesta «No, salvo excepciones. Deben usar tu información en forma confidencial.» (titular «NO, SALVO EXCEPCIONES»); cierre «Sin tu autorización expresa o un requerimiento de autoridad, no pueden pasarlos.» («SIN TU PERMISO, NO SE COMPARTEN»); gancho «¿PASAN TUS DATOS / A OTRAS EMPRESAS?». Cita, lista, fuentes, afirmaciones, análisis y copy sin cambios."
+    }
+  ]
 }

@@ -14239,7 +14239,7 @@
       "id": "I20270219-T175",
       "formato": "imagen",
       "huella": "36e80e2102a20f27ed31ca57378c0ce150284df06b624b4f3c2fc3274064af9d",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T11:57:49+00:00",
@@ -14255,6 +14255,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T12:31:57+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T19:45:15+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 2.ª ronda): copy con «(F1, Art. 13)» y párrafo ajeno a la pregunta; respuesta sin ancla literal → F1 «XI. Programas de cómputo» y F2 encabezado del art. 13; a re-producción"
         }
       ],
       "error": null,
@@ -14273,7 +14279,7 @@
       "id": "R20270210-T166",
       "formato": "reel",
       "huella": "3a1a2e648084762bff94d96c49f876fe49127fc96e2fc07cd289aa6d88dc959c",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T11:57:49+00:00",
@@ -14289,6 +14295,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T12:30:37+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T19:45:15+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 2.ª ronda): excepción «proveedores necesarios / paquetería» sin sustento en el art. 76 Bis LFPC → literal «proveedores ajenos a la compra»; respuesta y cierre con las dos salvedades; a re-producción"
         }
       ],
       "error": null,
