@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "36.0 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "36.0 s"
+      "detalle": "38.0 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.0 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "27 bloques"
+      "detalle": "29 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "d95db96178555104"
+      "detalle": "6d44ba2805115a78"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270216-T172",
     "titulo": "¿Te deben dar comprobante de los trabajos de reparación?",
-    "fecha": "2026-11-25T00:10:45+00:00",
-    "sha256": "d95db961785551049b77d52cb66af2811337e3f6d26088baba97a837ca97ecdf",
-    "duracion_s": 36.0,
+    "fecha": "2026-11-25T12:02:18+00:00",
+    "sha256": "6d44ba2805115a7887c38449ab6e654336e77bb1f6ea86704d361dc833e5ad39",
+    "duracion_s": 38.0,
     "estado": "APTO",
-    "huella_guion": "8fe1305b563d89b39c563e51d8b356c7b53b549b7dd98f8b9cbdea45036bee04",
+    "huella_guion": "273a42340c6aa07c98303ecc42cd61312b3e77b41d811943e0baaa3be68cfb57",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 11.0,
-      "musica": 1.2,
-      "render_video": 25.1,
-      "mezcla_audio": 1.1,
-      "auditoria_tecnica": 3.4
+      "narracion": 8.2,
+      "musica": 1.1,
+      "render_video": 20.9,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 4.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.7,
-      "computo_equivalente_runner_usd": 0.0042,
+      "computo_minutos": 0.59,
+      "computo_equivalente_runner_usd": 0.0035,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1079,
-    "caracteres_narrados": 498
+    "frames": 1139,
+    "caracteres_narrados": 543
   }
 }

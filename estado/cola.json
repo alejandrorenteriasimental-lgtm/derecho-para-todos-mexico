@@ -13208,7 +13208,7 @@
       "id": "I20270211-T167",
       "formato": "imagen",
       "huella": "6a1a8d88986dfeb647cb52692fb0679f57ea1cce39c2483028c9d28014ab816a",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-21T16:20:09+00:00",
@@ -13248,6 +13248,12 @@
           "a": "APROBADO",
           "ts": "2026-11-24T03:59:39+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T03:43:23+00:00 versión e0c1de3be5101638 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-25T12:03:29+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -13279,7 +13285,7 @@
       "id": "R20270208-T164",
       "formato": "reel",
       "huella": "e022dbe7a17aa84d9edfe18c9f3a34956547281dc82714bf9bb6423f774ae34a",
-      "estado": "APROBADO",
+      "estado": "SIMULADO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-23T21:37:17+00:00",
@@ -13319,6 +13325,12 @@
           "a": "APROBADO",
           "ts": "2026-11-24T11:59:59+00:00",
           "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-24T11:45:49+00:00 versión f1bd4e59ba139fb2 (delegada)"
+        },
+        {
+          "de": "APROBADO",
+          "a": "SIMULADO",
+          "ts": "2026-11-25T12:03:29+00:00",
+          "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"
         }
       ],
       "error": null,
@@ -13616,7 +13628,7 @@
       "id": "I20270214-T170",
       "formato": "imagen",
       "huella": "392924d30dc9b60d2bbf4a220abcda3f562d689e41483d88a587257b79a468d7",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13638,6 +13650,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): El «OJO» solo repetía la fuente («Ley General de Víctimas, artículo 7.») y la cita no decía de qué fracción es (la XXVI; la fr. I usa otra redacción). → OJO «Es uno de los derechos que enumera el artículo 7, fracción XXVI.»; etiqueta y fuente visible con la fracción XXVI. Titular, bajada, cita, copy, fuentes y análisis sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T12:02:32+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T12:02:37+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13645,10 +13669,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "8fcf4360b2202332",
-        "huella_guion": "cae96473222d2f7979a02d436ed2f0fe4de06da8d0d99082e692635bc59be859",
-        "huella_archivo": "bc8b9a13041e39177b1d7c036c76b913b8729ab3d407a9c6090d5189b37d70c5",
-        "preparada": "2026-11-24T20:38:07+00:00",
+        "version": "a98ab264b12d997e",
+        "huella_guion": "412279a5e8f2be1dc765b8e2769e1c5e53537a26deac3bb0edac11d5b94d08dc",
+        "huella_archivo": "bc2db8a3dbbc80eb89b8c2fd34f1ca06fb57568a1f8f147c33ca1bd737f97292",
+        "preparada": "2026-11-25T12:02:37+00:00",
         "canal": "chat"
       }
     },
@@ -13656,7 +13680,7 @@
       "id": "I20270215-T171",
       "formato": "imagen",
       "huella": "195336913acedec8973ffb6218680330d26952b859f3636f72d21476abb2b9b9",
-      "estado": "PENDIENTE",
+      "estado": "RETENIDO",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13678,12 +13702,22 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Titular telegráfico («¿Semanas para el subsidio por maternidad IMSS?»), bajada que reducía la fecha a «previos al pago», cita cortada a media frase («…anteriores a la fecha») y OJO coloquial («no trabajar pagado»). → título y titular «¿Cuántas semanas debes cotizar para el subsidio por maternidad?» (la pregunta original); bajada con «la fecha en que debiera empezar el pago»; cita completa de la fr. I del art. 102 LSS; OJO con las fracciones II y III. Copy, fuentes y análisis sin cambios. Ajuste por longitud (≤ 60 palabras): bajada «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.», cita «…por lo menos treinta cotizaciones semanales en el período de doce meses anteriores…» (literal; la fecha va en la bajada) y OJO «También: certificación del IMSS y no trabajar con pago antes y después del parto.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "RETENIDO",
+          "ts": "2026-11-25T12:02:57+00:00",
+          "motivo": "verificación jurídica: RETENER · [sustento] «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.» menciona un plazo (30 semana) que no aparece en los artículos citados."
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": null,
+      "retencion": {
+        "tipo": "sustantivo",
+        "desde": "2026-11-25T12:02:57+00:00",
+        "verificador": "0.5.7"
+      },
       "revision": {
         "version": "496cc210eb3262f3",
         "huella_guion": "4f166e25f44defe269feddf31cf79400efd6a5f6c3550da46a1c6ec7f0f1ebb8",
@@ -13696,7 +13730,7 @@
       "id": "R20270213-T169",
       "formato": "reel",
       "huella": "0bf50efd8bc3c333c97694de6ae8e4b6530ccac30a54dccce05aa65632c20035",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13718,6 +13752,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): La lista decía «Sancionar infracciones» y «Atender las situaciones» (el art. 47 LGDNNA dice «prevenir, atender y sancionar los casos») y la escena 5 repetía la pregunta («Esto aplica al trabajo antes de los 15 años…») con un titular vago. → lista «Prevenir / Atender / Sancionar los casos» narrada como «Las autoridades están obligadas a prevenir, atender y sancionar estos casos.»; escena 5 con quiénes están obligados según el primer párrafo del art. 47 (federales, entidades federativas, municipales y demarcaciones de la CDMX, en su competencia), titular «DEBER DE LAS AUTORIDADES». Gancho, respuesta, cita, fuentes y copy sin cambios. Ajuste por duración (la versión anterior duraba 44.3 s y la nueva excedía 620 caracteres): respuesta «No. La ley fija los 15 años como edad mínima para trabajar.» (el deber de prevenir, atender y sancionar queda en la lista) y escena 5 «Ese deber es de las autoridades de todos los niveles de gobierno, cada una en su competencia.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T11:58:46+00:00",
+          "motivo": "40.1"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T11:58:52+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13725,10 +13771,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "a49bfecbe5b137a4",
-        "huella_guion": "17ece6cfda74b27365953a1f522a8912fab726534999d02240cae698a5cd5bb5",
-        "huella_archivo": "7917d03e6cf581c97f50cd9b4c899d050283984398ea50eaac542c3386f8c100",
-        "preparada": "2026-11-24T20:36:58+00:00",
+        "version": "597e1a97178ff5b1",
+        "huella_guion": "c9da2e40284e5ad9bf007af8486300db5a3572908ecff8dd345cd8a9c34db4fa",
+        "huella_archivo": "43a531614190c5f8931bd4faf4eb2d60d670def344a16ff66b90b5f6b436d4bb",
+        "preparada": "2026-11-25T11:58:52+00:00",
         "canal": "chat"
       }
     },
@@ -13736,7 +13782,7 @@
       "id": "R20270214-T170",
       "formato": "reel",
       "huella": "59961eb45b130d6a7b7d41875ecd13fee51756b56457af12034684697c6b6e7a",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13758,6 +13804,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena 4: el titular visible «REGISTRO EN LA CARPETA» no coincidía con la narración («Esta información debe brindarse desde el primer contacto.», además sin ancla). → narración «Y debe dejar constancia de ello en la carpeta de investigación.» (art. 12 fr. I LGV, ya citado). Resto sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T11:59:42+00:00",
+          "motivo": "41.4"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T11:59:47+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13765,10 +13823,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "b3514c57c1689976",
-        "huella_guion": "fb69bf91b7993456e91fde35f854edbbe9bdc0531d113c6a6e2c0013910b137f",
-        "huella_archivo": "58b6446bdf9d803210db12a8bfc1c18316624055ed5ceb30f3a6a1c7623aeb8d",
-        "preparada": "2026-11-24T20:37:53+00:00",
+        "version": "53a40183448c56ef",
+        "huella_guion": "c744f6670b7bf0c0df129f1ce55485e39ab4e29b4d69d209022f2662599c6028",
+        "huella_archivo": "82622cee1a463f67d2a51e688ccf3f3d1cec24bbd250398ab7e997994345b492",
+        "preparada": "2026-11-25T11:59:47+00:00",
         "canal": "chat"
       }
     },
@@ -13776,7 +13834,7 @@
       "id": "I20270216-T172",
       "formato": "imagen",
       "huella": "90ccbc95ef28d9e3c3528d3445e9f6c38dc7c194da8322d238e49928a32fd136",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:51+00:00",
@@ -13798,6 +13856,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): La «realidad» omitía la condición del art. 13 LFPC: la obligación de permitir el acceso es para los lugares objeto de la verificación, no un acceso general. → realidad «No. Proveedores, representantes y empleados deben permitir al personal acreditado de la Procuraduría el acceso a los lugares objeto de la verificación.» Titular, mito, copy, fuentes y análisis sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T12:03:13+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T12:03:18+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13805,10 +13875,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "3e90276dd30c5b5f",
-        "huella_guion": "2cace16c21e1e8613602b1041cea652b801b1399a1b257cb1d970774235efe5d",
-        "huella_archivo": "54dc8db3fbd473266aa04bb15aa8aa40fed27b0c6b71d11ef1ed38a02d0a5d07",
-        "preparada": "2026-11-25T00:11:10+00:00",
+        "version": "dcd41dda8dda6cff",
+        "huella_guion": "4579b2cc2c4e206d06f057e12afbfecc99fbaeea2048aada66cfd23320f59b18",
+        "huella_archivo": "b267976242436249a28de9d5f4ab74e5c0b426151b407a35f12578d0434944eb",
+        "preparada": "2026-11-25T12:03:18+00:00",
         "canal": "chat"
       }
     },
@@ -13816,7 +13886,7 @@
       "id": "I20270217-T173",
       "formato": "imagen",
       "huella": "d1fcaad37b275d7dd3131dd023e1410154faf94331ed6d95c2e75784930809c9",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:51+00:00",
@@ -13838,6 +13908,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): El «OJO» era relleno («Así lo establece la Ley de Migración.»). → OJO «También tienen derecho a presentar quejas en materia de derechos humanos.» (misma oración del art. 11 LMigra). Resto sin cambios. Ajuste por longitud (64 palabras, invadía el pie): bajada «Sí, sin importar su situación migratoria y respetando siempre el debido proceso.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T12:03:24+00:00",
+          "motivo": "imagen"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T12:03:29+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13845,10 +13927,10 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "2c039ad30151a113",
-        "huella_guion": "3685af3c6736d0fd6f3510299f9db1a36437294a39c05e595fc908b9138958d4",
-        "huella_archivo": "e8b3c6cc0c5765bac89ebc2f6167ec9b5bf5de0a522cef320f2b6de4b513142b",
-        "preparada": "2026-11-25T00:11:22+00:00",
+        "version": "5e0c07b61472783e",
+        "huella_guion": "3a7fc8d45373af17089a2bed197d71a3e1235bdddca4dce71678cf5e08f4643d",
+        "huella_archivo": "53d5cc22bc97f3664326ce6a21ad29f1018fde3a3120f3ea7d55597da09919a5",
+        "preparada": "2026-11-25T12:03:29+00:00",
         "canal": "chat"
       }
     },
@@ -13856,7 +13938,7 @@
       "id": "R20270215-T171",
       "formato": "reel",
       "huella": "3a233e255ee985fe1e9f04c6d0edb76ca11afaa584508ddc9512894c3f147127",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:52+00:00",
@@ -13872,6 +13954,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:47:35+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche) tras la retención: A2 interpretativa («El Tribunal es quien valora…») sustituida por el segundo párrafo literal del art. 57 LFT (el patrón también puede pedir la modificación por circunstancias económicas); lista narrada; gancho visible sin «muy excesiva»; 543 caracteres; esquema, razonamiento y cita literal sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T12:01:23+00:00",
+          "motivo": "37.8"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T12:01:29+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13881,13 +13975,20 @@
         "tipo": "sustantivo",
         "desde": "2026-11-25T00:09:49+00:00",
         "verificador": "0.5.7"
+      },
+      "revision": {
+        "version": "2c8adbf75977ed38",
+        "huella_guion": "a54d368104d8edf68f9809aa0052b9ee76b7981208cf53ab94df5540d3851e02",
+        "huella_archivo": "e334c2b1bd53a3915609d35712297b8748105df7565a86d9877fc50bd0fdd016",
+        "preparada": "2026-11-25T12:01:29+00:00",
+        "canal": "chat"
       }
     },
     "R20270216-T172": {
       "id": "R20270216-T172",
       "formato": "reel",
       "huella": "8fe1305b563d89b39c563e51d8b356c7b53b549b7dd98f8b9cbdea45036bee04",
-      "estado": "PENDIENTE",
+      "estado": "REVISION_HUMANA",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:52+00:00",
@@ -13909,6 +14010,18 @@
           "a": "PENDIENTE",
           "ts": "2026-11-25T03:46:29+00:00",
           "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena de lista: la narración solo decía «Debe detallar:» (≈1.2 s), así que los 4 elementos pasaban en un instante sin narrarse. → narración con los elementos literales del art. 62 LFPC (partes, refacciones y materiales; su precio y el de la mano de obra; la garantía que en su caso se haya otorgado) y lista acorde. Resto sin cambios. Ajuste por duración (≤ 45 s): respuesta «Sí, es obligatorio para quien presta el servicio.» y lista narrada «Debe detallar partes, refacciones y materiales, su precio, la mano de obra y la garantía, si la hubo.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"
+        },
+        {
+          "de": "PENDIENTE",
+          "a": "PRODUCIDO",
+          "ts": "2026-11-25T12:02:18+00:00",
+          "motivo": "38.0"
+        },
+        {
+          "de": "PRODUCIDO",
+          "a": "REVISION_HUMANA",
+          "ts": "2026-11-25T12:02:24+00:00",
+          "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
         }
       ],
       "error": null,
@@ -13916,12 +14029,54 @@
       "proximo_intento": null,
       "retencion": null,
       "revision": {
-        "version": "e7e22700d93ef255",
-        "huella_guion": "74e0e03ac78ccb5bb994d2e78ee3ff129444d72c431c38bb8337a5ab7c9a3222",
-        "huella_archivo": "d95db961785551049b77d52cb66af2811337e3f6d26088baba97a837ca97ecdf",
-        "preparada": "2026-11-25T00:10:49+00:00",
+        "version": "6a1aa8145aaa8237",
+        "huella_guion": "8344d733b49ef21cc5228357e1017265a813f5767625bc403adc16534da2fedc",
+        "huella_archivo": "6d44ba2805115a7887c38449ab6e654336e77bb1f6ea86704d361dc833e5ad39",
+        "preparada": "2026-11-25T12:02:24+00:00",
         "canal": "chat"
       }
+    },
+    "I20270218-T174": {
+      "id": "I20270218-T174",
+      "formato": "imagen",
+      "huella": "105be97e39e3b55b30d7a13159a1333f7213fbf08803d608645644a18bafd14d",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T11:57:49+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
+    },
+    "I20270219-T175": {
+      "id": "I20270219-T175",
+      "formato": "imagen",
+      "huella": "36e80e2102a20f27ed31ca57378c0ce150284df06b624b4f3c2fc3274064af9d",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T11:57:49+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
+    },
+    "R20270210-T166": {
+      "id": "R20270210-T166",
+      "formato": "reel",
+      "huella": "3a1a2e648084762bff94d96c49f876fe49127fc96e2fc07cd289aa6d88dc959c",
+      "estado": "PENDIENTE",
+      "prioridad": 0,
+      "intentos": 0,
+      "creado": "2026-11-25T11:57:49+00:00",
+      "historial": [],
+      "error": null,
+      "publicaciones": {},
+      "proximo_intento": null,
+      "retencion": null
     }
   }
 }

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "44.3 s"
+      "detalle": "40.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "44.3 s"
+      "detalle": "40.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "33 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "7917d03e6cf581c9"
+      "detalle": "43a531614190c5f8"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270213-T169",
     "titulo": "¿Un niño menor de 15 años puede trabajar?",
-    "fecha": "2026-11-24T20:36:53+00:00",
-    "sha256": "7917d03e6cf581c97f50cd9b4c899d050283984398ea50eaac542c3386f8c100",
-    "duracion_s": 44.3,
+    "fecha": "2026-11-25T11:58:46+00:00",
+    "sha256": "43a531614190c5f8931bd4faf4eb2d60d670def344a16ff66b90b5f6b436d4bb",
+    "duracion_s": 40.1,
     "estado": "APTO",
-    "huella_guion": "0bf50efd8bc3c333c97694de6ae8e4b6530ccac30a54dccce05aa65632c20035",
+    "huella_guion": "1e7d517c36bfead7f4cdc714d787a1506b91276f613fc3af4c4a9096d2c4f101",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 8.2,
-      "musica": 1.3,
-      "render_video": 24.5,
-      "mezcla_audio": 1.1,
-      "auditoria_tecnica": 4.8
+      "narracion": 7.1,
+      "musica": 1.1,
+      "render_video": 23.2,
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 4.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.66,
-      "computo_equivalente_runner_usd": 0.004,
+      "computo_minutos": 0.61,
+      "computo_equivalente_runner_usd": 0.0037,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1326,
-    "caracteres_narrados": 606
+    "frames": 1200,
+    "caracteres_narrados": 541
   }
 }

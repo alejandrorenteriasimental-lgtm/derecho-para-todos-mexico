@@ -1,0 +1,60 @@
+{
+ "tema_id": "T174",
+ "pregunta": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+ "fecha": "2026-11-25T11:55:28+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+  "concepto_central": "lactancia",
+  "respuesta_corta": "Sí, las mujeres privadas de la libertad tienen derecho a la lactancia y pueden conservar la custodia de sus hijos menores de tres años para ejercerlo.",
+  "reglas": [
+   {
+    "conclusion": "Las mujeres que se encuentran en un Centro Penitenciario tienen el derecho garantizado a la maternidad y a la lactancia.",
+    "fuente": "F1",
+    "cita_literal": "las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia",
+    "condiciones": [
+     "Aplica para mujeres privadas de su libertad en un Centro Penitenciario"
+    ],
+    "excepciones": [
+     "no_aplica"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se establece el derecho a la lactancia y a contar con instalaciones adecuadas y artículos de higiene necesarios.",
+    "fuente": "F1",
+    "cita_literal": "Contar con las instalaciones adecuadas y los artículos necesarios para una estancia digna y segura, siendo prioritarios los artículos para satisfacer las necesidades de higiene"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Para ejercer este derecho, la mujer puede conservar la custodia de su hijo menor de tres años, sujeto a un dictamen de la autoridad.",
+    "fuente": "F1",
+    "cita_literal": "artículo, las mujeres en reclusión podrán conservar la custodia de sus hijas e hijos en el interior de los Centros Penitenciarios. La Autoridad Penitenciaria, atendiendo el",
+    "cita_literal_original": "las mujeres en reclusión podrán conservar la custodia de sus hijas e hijos en el interior de los Centros Penitenciarios. La Autoridad Penitenciaria [...] deberá emitir el dictamen correspondiente"
+   },
+   {
+    "elemento": "excepcion",
+    "estado": "cubierto",
+    "respuesta": "El derecho a conservar la custodia para la lactancia no aplica si la madre manifiesta que no desea mantenerla.",
+    "fuente": "F1",
+    "cita_literal": "En el supuesto de que la madre no deseara conservar la custodia de sus hijas e hijos, estos serán entregados a la institución de asistencia social competente",
+    "motivo": "no_aplica"
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "El ejercicio de la lactancia dentro del centro depende de la evaluación que haga la autoridad sobre el bienestar del menor.",
+    "condicion": "Que la autoridad emita un dictamen favorable ponderando el interés superior de la niñez.",
+    "base": "F1: 'La Autoridad Penitenciaria, atendiendo el interés superior de la niñez, deberá emitir el dictamen correspondiente'."
+   }
+  ],
+  "distinciones": [],
+  "limites": "La ley no especifica protocolos de extracción o almacenamiento de leche en caso de que el menor no resida en el centro, ni detalla la duración de los periodos de lactancia durante el día.",
+  "fuentes_irrelevantes": []
+ }
+}

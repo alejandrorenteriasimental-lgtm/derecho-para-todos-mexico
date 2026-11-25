@@ -1,0 +1,236 @@
+{
+  "id": "I20270218-T174",
+  "formato": "imagen",
+  "plantilla": "dato",
+  "titulo": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T174",
+  "pieza": {
+    "titular": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+    "bajada": "Sí. Tienen derecho a la maternidad y custodia de sus hijos menores.",
+    "cita": "las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia",
+    "etiqueta_cita": "Ley Nacional de Ejecución Penal, artículo 10",
+    "ojo": "Requiere dictamen de la autoridad y artículos de higiene.",
+    "fuente_visible": "Ley Nacional de Ejecución Penal, art. 10"
+  },
+  "copy": "De acuerdo con la Ley Nacional de Ejecución Penal, en su artículo 10, las mujeres que se encuentran en un Centro Penitenciario tienen garantizado el derecho a la maternidad y a la lactancia.\n\nPara ejercer este derecho, la norma establece que pueden conservar la custodia de sus hijos menores de tres años dentro del centro. Esto requiere que la Autoridad Penitenciaria emita un dictamen basado en el interés superior de la niñez.\n\nAdemás, el centro debe proporcionar instalaciones adecuadas y artículos de higiene necesarios para una estancia digna. Si la madre decide no conservar la custodia, el menor será entregado a una institución de asistencia social.\n\nConocer estos derechos es fundamental para asegurar un trato digno. Guarda esta información o compártela con quien la necesite.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía que explica que las mujeres en prisión en México tienen derecho a la lactancia y a conservar la custodia de sus hijos menores de tres años, sujeto a un dictamen de la autoridad penitenciaria.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Nacional de Ejecución Penal",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "texto_literal": "las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia",
+      "cita": "Ley Nacional de Ejecución Penal, artículo 10",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Nacional de Ejecución Penal",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "texto_literal": "artículo, las mujeres en reclusión podrán conservar la custodia de sus hijas e hijos en el interior de los Centros Penitenciarios. La Autoridad Penitenciaria, atendiendo el",
+      "cita": "Ley Nacional de Ejecución Penal, artículo 10",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-25"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Nacional de Ejecución Penal",
+      "articulo": "10",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "texto_literal": "Contar con las instalaciones adecuadas y los artículos necesarios para una estancia digna y segura, siendo prioritarios los artículos para satisfacer las necesidades de higiene",
+      "cita": "Ley Nacional de Ejecución Penal, artículo 10",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-25"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Las mujeres en centros penitenciarios tienen derecho a la maternidad y lactancia.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Se puede conservar la custodia de hijos menores de tres años dentro del centro.",
+      "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "Deben existir instalaciones y artículos de higiene para una estancia digna.",
+      "fuente": "F3",
+      "nota": "La ley no especifica protocolos de extracción o almacenamiento de leche en caso de que el menor no resida en el centro."
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+    "concepto_central": "lactancia",
+    "respuesta_corta": "Sí, las mujeres privadas de la libertad tienen derecho a la lactancia y pueden conservar la custodia de sus hijos menores de tres años para ejercerlo.",
+    "reglas": [
+      {
+        "conclusion": "Las mujeres que se encuentran en un Centro Penitenciario tienen el derecho garantizado a la maternidad y a la lactancia.",
+        "fuente": "F1",
+        "cita_literal": "las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia",
+        "condiciones": [
+          "Aplica para mujeres privadas de su libertad en un Centro Penitenciario"
+        ],
+        "excepciones": [
+          "no_aplica"
+        ],
+        "ref": {
+          "documento": "Ley Nacional de Ejecución Penal",
+          "articulo": "10"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se establece el derecho a la lactancia y a contar con instalaciones adecuadas y artículos de higiene necesarios.",
+        "fuente": "F1",
+        "cita_literal": "Contar con las instalaciones adecuadas y los artículos necesarios para una estancia digna y segura, siendo prioritarios los artículos para satisfacer las necesidades de higiene"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Para ejercer este derecho, la mujer puede conservar la custodia de su hijo menor de tres años, sujeto a un dictamen de la autoridad.",
+        "fuente": "F1",
+        "cita_literal": "artículo, las mujeres en reclusión podrán conservar la custodia de sus hijas e hijos en el interior de los Centros Penitenciarios. La Autoridad Penitenciaria, atendiendo el",
+        "cita_literal_original": "las mujeres en reclusión podrán conservar la custodia de sus hijas e hijos en el interior de los Centros Penitenciarios. La Autoridad Penitenciaria [...] deberá emitir el dictamen correspondiente"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "El derecho a conservar la custodia para la lactancia no aplica si la madre manifiesta que no desea mantenerla.",
+        "fuente": "F1",
+        "cita_literal": "En el supuesto de que la madre no deseara conservar la custodia de sus hijas e hijos, estos serán entregados a la institución de asistencia social competente",
+        "motivo": "no_aplica"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "El ejercicio de la lactancia dentro del centro depende de la evaluación que haga la autoridad sobre el bienestar del menor.",
+        "condicion": "Que la autoridad emita un dictamen favorable ponderando el interés superior de la niñez.",
+        "base": "F1: 'La Autoridad Penitenciaria, atendiendo el interés superior de la niñez, deberá emitir el dictamen correspondiente'."
+      }
+    ],
+    "distinciones": [],
+    "limites": "La ley no especifica protocolos de extracción o almacenamiento de leche en caso de que el menor no resida en el centro, ni detalla la duración de los periodos de lactancia durante el día."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T11:57:04+00:00",
+    "solicitud": "2027-02-18_imagen_T174-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 3,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Las mujeres en prisión tienen derecho a la lactancia?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí, tienen derecho a la maternidad y lactancia, y pueden conservar la custodia de sus hijos menores de tres años bajo dictamen de la autoridad. \n las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia \n La autoridad debe emitir un dictamen para la custodia."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+          "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ],
+        "visible": "  \n   \n Sí. Tienen derecho a la maternidad y a la custodia de sus hijos menores de tres años. \n las mujeres privadas de la libertad tendrán derecho a: I. La maternidad y la lactancia \n Se requiere dictamen de la autoridad y artículos de higiene para el menor."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 2,
+        "errores": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 2,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Las mujeres privadas de la libertad tienen derecho a la lactancia.",
+              "sostenida": "si",
+              "motivo": "El artículo 10, fracción I, establece explícitamente este derecho."
+            },
+            {
+              "conclusion": "Para ejercer la lactancia, las mujeres pueden conservar la custodia de sus hijos menores de tres años.",
+              "sostenida": "si",
+              "motivo": "La ley vincula la posibilidad de conservar la custodia (fracción VI) con el ejercicio de los derechos de maternidad y lactancia (fracción I)."
+            },
+            {
+              "conclusion": "La permanencia del menor con la madre requiere un dictamen de la autoridad penitenciaria.",
+              "sostenida": "si",
+              "motivo": "El texto oficial señala que la autoridad debe emitir un dictamen atendiendo el interés superior de la niñez para la conservación de la custodia."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

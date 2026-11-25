@@ -1,0 +1,265 @@
+{
+  "id": "R20270210-T166",
+  "formato": "reel",
+  "titulo": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T166",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "El proveedor utilizará la información proporcionada por el consumidor en forma confidencial",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "76 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 76 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-25"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Tu tienda en línea puede pasar tus datos a otras empresas?",
+      "titulo": [
+        "¿PASAN TUS DATOS?",
+        "A OTRAS EMPRESAS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "No. El proveedor debe guardar confidencialidad y no difundir tus datos.",
+      "titulo": [
+        "NO PUEDEN",
+        "COMPARTIRLOS"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley señala: «no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente».",
+      "etiqueta": "Ley Federal de Protección al Consumidor, art. 76 Bis",
+      "cita": "no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El proveedor debe tratar la información del consumidor de forma confidencial.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Solo se permite en estos casos:",
+      "items": [
+        "Con tu autorización expresa",
+        "Por requerimiento de autoridad"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Se prohíbe transmitir datos a proveedores ajenos a la transacción sin permiso.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Se exceptúan los proveedores necesarios para la transacción.",
+      "encabezado": "Empresas de la transacción",
+      "detalle": "Como servicios de paquetería",
+      "fuente_corta": "LFPC, art. 76 Bis",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Tus datos son privados y no se difunden sin tu permiso.",
+      "titulo": [
+        "TUS DATOS",
+        "SON PRIVADOS"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "La prohibición de transmitir datos aplica específicamente a proveedores ajenos a la transacción.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
+    "concepto_central": "transmisión de información del consumidor",
+    "respuesta_corta": "Depende: el proveedor no puede transmitir tus datos a terceros ajenos a la compra, salvo que lo autorices expresamente o una autoridad lo requiera.",
+    "reglas": [
+      {
+        "conclusion": "En transacciones electrónicas, el proveedor tiene prohibido difundir o transmitir la información del consumidor a otros proveedores que no formen parte de la transacción.",
+        "fuente": "F1",
+        "cita_literal": "no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente",
+        "condiciones": [
+          "Que se trate de transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología"
+        ],
+        "excepciones": [
+          "Autorización expresa del propio consumidor",
+          "Requerimiento de autoridad competente"
+        ],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "76 Bis"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El proveedor debe mantener la información en forma confidencial y utilizar elementos técnicos para brindar seguridad a los datos proporcionados.",
+        "fuente": "F1",
+        "cita_literal": "El proveedor utilizará la información proporcionada por el consumidor en forma confidencial"
+      },
+      {
+        "elemento": "vía",
+        "estado": "no_cubierto",
+        "motivo": "El texto menciona que debe haber mecanismos para presentar reclamaciones, pero no especifica la vía legal o administrativa externa."
+      },
+      {
+        "elemento": "autoridad",
+        "estado": "no_cubierto",
+        "motivo": "El fragmento no identifica a la autoridad específica ante la cual denunciar el incumplimiento de estas obligaciones."
+      },
+      {
+        "elemento": "plazo",
+        "estado": "no_cubierto",
+        "motivo": "No se establece un plazo para ejercer acciones legales o administrativas por el mal uso de los datos."
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La tienda puede compartir los datos con empresas que sí formen parte de la transacción (como servicios de paquetería o procesadores de pago).",
+        "condicion": "Siempre que dicha comunicación sea necesaria para concretar la transacción específica.",
+        "base": "La prohibición de la Fracción I del artículo 76 Bis se limita a proveedores «ajenos a la transacción»."
+      }
+    ],
+    "distinciones": [],
+    "limites": "Los textos proporcionados no establecen multas, sanciones penales ni el procedimiento detallado para presentar una queja ante la Procuraduría Federal del Consumidor."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-25T11:55:14+00:00",
+    "solicitud": "2027-02-10_reel_T166-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Una tienda en línea puede pasar tus datos a otras empresas?\n\nDepende: el proveedor no puede transmitir tus datos a terceros ajenos a la compra, salvo que lo autorices expresamente o una autoridad lo requiera.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 76 Bis.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 624 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 4: recorta al menos 64 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Tu tienda en línea puede pasar tus datos a otras empresas? \n ¿PASAN TUS DATOS? \n A OTRAS EMPRESAS \n No, el proveedor debe guardar confidencialidad y no darlos a terceros ajenos a tu compra. \n NO PUEDEN \n COMPARTIRLOS \n La ley dicta que el proveedor «no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente». \n no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente \n Solo se permite en estos casos: \n Con tu autorización expresa \n Por requerimiento de autorida"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 624 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 4: recorta al menos 64 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El proveedor tiene prohibido transmitir datos a terceros ajenos a la transacción, salvo autorización o requerimiento de autoridad.",
+              "sostenida": "si",
+              "motivo": "El artículo 76 Bis, fracción I, establece explícitamente esta prohibición y sus excepciones."
+            },
+            {
+              "conclusion": "La prohibición de compartir datos no aplica a proveedores que forman parte de la transacción.",
+              "sostenida": "si",
+              "motivo": "Se deriva lógicamente de la restricción legal que limita la prohibición a proveedores 'ajenos a la transacción'."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -2598,3 +2598,36 @@
 {"ts": "2026-11-25T03:46:29+00:00", "pieza": "R20270214-T170", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena 4: el titular visible «REGISTRO EN LA CARPETA» no coincidía con la narración («Esta información debe brindarse desde el primer contacto.», además sin ancla). → narración «Y debe dejar constancia de ello en la carpeta de investigación.» (art. 12 fr. I LGV, ya citado). Resto sin cambios. Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"}
 {"ts": "2026-11-25T03:46:29+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 24-11, noche): Escena de lista: la narración solo decía «Debe detallar:» (≈1.2 s), así que los 4 elementos pasaban en un instante sin narrarse. → narración con los elementos literales del art. 62 LFPC (partes, refacciones y materiales; su precio y el de la mano de obra; la garantía que en su caso se haya otorgado) y lista acorde. Resto sin cambios. Ajuste por duración (≤ 45 s): respuesta «Sí, es obligatorio para quien presta el servicio.» y lista narrada «Debe detallar partes, refacciones y materiales, su precio, la mano de obra y la garantía, si la hubo.» Esquema, razonamiento, cita literal y revisión previa sin hallazgos; se vuelve a verificar y producir"}
 {"ts": "2026-11-25T03:47:35+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 24-11, noche) tras la retención: A2 interpretativa («El Tribunal es quien valora…») sustituida por el segundo párrafo literal del art. 57 LFT (el patrón también puede pedir la modificación por circunstancias económicas); lista narrada; gancho visible sin «muy excesiva»; 543 caracteres; esquema, razonamiento y cita literal sin hallazgos; se vuelve a verificar y producir"}
+{"ts": "2026-11-25T11:53:46+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-25T11:55:14+00:00", "evento": "redactada", "pieza": "R20270210-T166", "solicitud": "2027-02-10_reel_T166-lote-9.json"}
+{"ts": "2026-11-25T11:57:04+00:00", "evento": "redactada", "pieza": "I20270218-T174", "solicitud": "2027-02-18_imagen_T174-lote-9.json"}
+{"ts": "2026-11-25T11:57:49+00:00", "evento": "redactada", "pieza": "I20270219-T175", "solicitud": "2027-02-19_imagen_T175-lote-9.json"}
+{"ts": "2026-11-25T11:57:49+00:00", "pieza": "I20270218-T174", "evento": "encolado"}
+{"ts": "2026-11-25T11:57:49+00:00", "pieza": "I20270219-T175", "evento": "encolado"}
+{"ts": "2026-11-25T11:57:49+00:00", "pieza": "R20270210-T166", "evento": "encolado"}
+{"ts": "2026-11-25T11:58:46+00:00", "pieza": "R20270213-T169", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.1"}
+{"ts": "2026-11-25T11:58:52+00:00", "pieza": "R20270213-T169", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T11:58:52+00:00", "evento": "revision_preparada", "pieza": "R20270213-T169", "version": "597e1a97178ff5b1", "canal": "chat"}
+{"ts": "2026-11-25T11:59:42+00:00", "pieza": "R20270214-T170", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.4"}
+{"ts": "2026-11-25T11:59:47+00:00", "pieza": "R20270214-T170", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T11:59:47+00:00", "evento": "revision_preparada", "pieza": "R20270214-T170", "version": "53a40183448c56ef", "canal": "chat"}
+{"ts": "2026-11-25T12:01:23+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "PRODUCIDO", "motivo": "37.8"}
+{"ts": "2026-11-25T12:01:29+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T12:01:29+00:00", "evento": "revision_preparada", "pieza": "R20270215-T171", "version": "2c8adbf75977ed38", "canal": "chat"}
+{"ts": "2026-11-25T12:02:18+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.0"}
+{"ts": "2026-11-25T12:02:24+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T12:02:24+00:00", "evento": "revision_preparada", "pieza": "R20270216-T172", "version": "6a1aa8145aaa8237", "canal": "chat"}
+{"ts": "2026-11-25T12:02:32+00:00", "pieza": "I20270214-T170", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-25T12:02:37+00:00", "pieza": "I20270214-T170", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T12:02:37+00:00", "evento": "revision_preparada", "pieza": "I20270214-T170", "version": "a98ab264b12d997e", "canal": "chat"}
+{"ts": "2026-11-25T12:02:57+00:00", "pieza": "I20270215-T171", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RETENER · [sustento] «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.» menciona un plazo (30 semana) que no aparece en los artículos citados."}
+{"ts": "2026-11-25T12:02:57+00:00", "evento": "alerta", "mensaje": "I20270215-T171 retenido por verificación jurídica (RETENER)."}
+{"ts": "2026-11-25T12:03:13+00:00", "pieza": "I20270216-T172", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-25T12:03:18+00:00", "pieza": "I20270216-T172", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T12:03:18+00:00", "evento": "revision_preparada", "pieza": "I20270216-T172", "version": "dcd41dda8dda6cff", "canal": "chat"}
+{"ts": "2026-11-25T12:03:24+00:00", "pieza": "I20270217-T173", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-25T12:03:29+00:00", "pieza": "I20270217-T173", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-25T12:03:29+00:00", "evento": "revision_preparada", "pieza": "I20270217-T173", "version": "5e0c07b61472783e", "canal": "chat"}
+{"ts": "2026-11-25T12:03:29+00:00", "pieza": "I20270211-T167", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-25T12:03:29+00:00", "pieza": "R20270208-T164", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-25T12:03:29+00:00", "evento": "fin_ciclo", "redactadas": 3, "descartadas": 0, "producidas": 7, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0, "en_revision": 7}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.1 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.1 s"
+      "detalle": "41.4 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "58b6446bdf9d8032"
+      "detalle": "82622cee1a463f67"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270214-T170",
     "titulo": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
-    "fecha": "2026-11-24T20:37:49+00:00",
-    "sha256": "58b6446bdf9d803210db12a8bfc1c18316624055ed5ceb30f3a6a1c7623aeb8d",
-    "duracion_s": 41.1,
+    "fecha": "2026-11-25T11:59:42+00:00",
+    "sha256": "82622cee1a463f67d2a51e688ccf3f3d1cec24bbd250398ab7e997994345b492",
+    "duracion_s": 41.4,
     "estado": "APTO",
-    "huella_guion": "59961eb45b130d6a7b7d41875ecd13fee51756b56457af12034684697c6b6e7a",
+    "huella_guion": "6a976b0fe62d62445f76a168651f93e99f524d46542356e092751e8791cd773a",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 7.6,
-      "musica": 1.1,
+      "narracion": 7.1,
+      "musica": 1.2,
       "render_video": 24.0,
-      "mezcla_audio": 1.1,
-      "auditoria_tecnica": 4.4
+      "mezcla_audio": 1.0,
+      "auditoria_tecnica": 4.2
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.64,
-      "computo_equivalente_runner_usd": 0.0038,
+      "computo_minutos": 0.62,
+      "computo_equivalente_runner_usd": 0.0037,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1232,
-    "caracteres_narrados": 597
+    "frames": 1240,
+    "caracteres_narrados": 603
   }
 }
