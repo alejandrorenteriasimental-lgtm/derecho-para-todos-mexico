@@ -13680,7 +13680,7 @@
       "id": "I20270215-T171",
       "formato": "imagen",
       "huella": "195336913acedec8973ffb6218680330d26952b859f3636f72d21476abb2b9b9",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-24T20:35:51+00:00",
@@ -13708,6 +13708,12 @@
           "a": "RETENIDO",
           "ts": "2026-11-25T12:02:57+00:00",
           "motivo": "verificación jurídica: RETENER · [sustento] «Al menos 30 semanas cotizadas en los 12 meses previos al inicio del pago.» menciona un plazo (30 semana) que no aparece en los artículos citados."
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T12:15:03+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11) tras la retención: bajada con «treinta cotizaciones semanales» (literal del art. 102 LSS) en lugar de «30 semanas»; a re-producción"
         }
       ],
       "error": null,
@@ -13938,7 +13944,7 @@
       "id": "R20270215-T171",
       "formato": "reel",
       "huella": "3a233e255ee985fe1e9f04c6d0edb76ca11afaa584508ddc9512894c3f147127",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T00:08:52+00:00",
@@ -13966,6 +13972,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-25T12:01:29+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-25T12:14:41+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11): gancho narrado no coincidía con la respuesta «Sí» → «¿Puedes pedir un cambio si tu jornada de trabajo es excesiva?»; a re-producción"
         }
       ],
       "error": null,
