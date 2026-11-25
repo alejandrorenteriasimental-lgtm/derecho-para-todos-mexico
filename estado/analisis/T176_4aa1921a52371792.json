@@ -1,0 +1,44 @@
+{
+ "tema_id": "T176",
+ "pregunta": "¿La violencia laboral solo la puede ejercer tu jefe?",
+ "fecha": "2026-11-25T19:27:27+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿La violencia laboral solo la puede ejercer tu jefe?",
+  "concepto_central": "violencia laboral",
+  "respuesta_corta": "No. Se ejerce por personas con un vínculo laboral o análogo con la víctima, sin importar si existe una relación de jerarquía o mando entre ellas.",
+  "reglas": [
+   {
+    "conclusion": "La violencia laboral no está limitada a la relación de subordinación jerárquica, sino que depende del vínculo laboral o docente.",
+    "fuente": "F1",
+    "cita_literal": "Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica",
+    "condiciones": [
+     "Existencia de un vínculo laboral, docente o análogo",
+     "Que consista en un acto o una omisión en abuso de poder"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.",
+    "fuente": "F1",
+    "cita_literal": "daña la autoestima, salud, integridad, libertad y seguridad de la víctima, e impide su desarrollo y atenta contra la igualdad",
+    "motivo": null
+   }
+  ],
+  "interpretaciones": [
+   {
+    "afirmacion": "La violencia laboral puede ser ejercida por compañeros de trabajo del mismo nivel.",
+    "condicion": "Si el acto u omisión se realiza en abuso de poder y daña la integridad o desarrollo de la víctima.",
+    "base": "La norma especifica que ocurre 'independientemente de la relación jerárquica'."
+   }
+  ],
+  "distinciones": [],
+  "limites": "El texto proporcionado no menciona sanciones administrativas, procedimientos de denuncia, autoridades competentes ni plazos de prescripción.",
+  "fuentes_irrelevantes": []
+ }
+}
