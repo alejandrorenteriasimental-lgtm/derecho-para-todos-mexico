@@ -163,3 +163,22 @@ def test_adelanto_autorizado_solo_con_reserva_completa():
     assert publicador.desde_efectivo(env, cal) == "2026-11-16"
     cal["dias"][3]["reel"] = {"version": "v"}                              # una pieza sin huella rompe la reserva
     assert publicador.desde_efectivo(env, cal) == "2026-11-23"
+
+
+def test_version_corta_ig_publicada_no_se_reporta_vencida(ent, monkeypatch, tmp_path):
+    # 25-11-2026: el Reel del 23-11 salió en IG como R20261123-T031-IG; pasada su ventana se reportaba VENCIDA_SIN_PUBLICAR
+    monkeypatch.setattr(publicador, "comprobar", lambda e, f, ahora=None: True)
+    dia = CAL["dias"][0]; cuando = publicador.hora_utc(dia["fecha"], dia["reel"]["hora"])
+    pid = dia["reel"]["pieza"]
+    vig = tmp_path / "versiones_ig.json"; monkeypatch.setattr(publicador, "VERSIONES_IG", vig)
+    vig.write_text(json.dumps({f"{pid}-IG": {"estado": "APROBADA", "sha256": "b" * 64, "asset_id": 1}}))
+    env = {"IG_REELS": "corto", "PUBLICAR": "1", "META_PAGE_ID": "P", "META_PAGE_TOKEN": "T"}
+    monkeypatch.setattr(publicar, "modo_operacion", lambda env: ("real", "prueba"))
+    def ig_de(r): return [a.get("instagram") for a in r["acciones"] if a["pieza"] == pid and a.get("instagram")]
+    tarde = cuando + timedelta(days=2)
+    monkeypatch.setattr(publicar, "publicar_reel", lambda *a, **k: {"estado": "SIMULADO"})
+    monkeypatch.setattr(publicar, "publicar_imagen", lambda *a, **k: {"estado": "SIMULADO"})
+    monkeypatch.setattr(publicador.youtube, "publicar_yt", lambda *a, **k: {"estado": "SIMULADO"})
+    assert ig_de(publicador.ejecutar(tarde, env=env, bajar=ent["bajar"])) == ["VENCIDA_SIN_PUBLICAR"]
+    publicar.registrar({"pieza": f"{pid}-IG", "marca": publicar.marca(f"{pid}-IG", "b" * 16) + "-ig", "modo": "real", "fase": "CONFIRMADA"})
+    assert ig_de(publicador.ejecutar(tarde, env=env, bajar=ent["bajar"])) == []

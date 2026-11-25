@@ -219,8 +219,11 @@ def ejecutar(ahora=None, env=os.environ, http=publicar.http_real, bajar=descarga
                     r = instagram.publicar_ig(e["pieza"], fmt, f, texto(e["pieza"]), e["version"], modo=modo, env=env, http=http)
                     acc["instagram"] = r.get("estado")
                 elif ahora - cuando > ventana_ig and modo == "real" and (fmt == "imagen" or env.get("IG_REELS") in ("1", "corto")):
-                    op = publicar.operacion(publicar.marca(e["pieza"], e["version"]) + "-ig", "real") or {}
-                    if op.get("fase") != "CONFIRMADA": acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
+                    marcas = [publicar.marca(e["pieza"], e["version"]) + "-ig"]
+                    ig = version_ig(e["pieza"]) if fmt == "reel" and env.get("IG_REELS") == "corto" else None
+                    if ig: marcas.append(publicar.marca(ig["pieza"], ig["version"]) + "-ig")   # 25-11: la versión corta -IG cuenta como publicada
+                    if not any((publicar.operacion(m, "real") or {}).get("fase") == "CONFIRMADA" for m in marcas):
+                        acc["instagram"] = "VENCIDA_SIN_PUBLICAR"
             except EnPlazoDeVeto as x:
                 acc["espera"] = str(x)                    # no es un error: se intenta en la siguiente ejecución
             except NoAprobada as x:
