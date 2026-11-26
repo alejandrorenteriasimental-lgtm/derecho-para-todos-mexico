@@ -13,7 +13,18 @@
       "documento": "Constitución Política de los Estados Unidos Mexicanos",
       "articulo": "103",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-      "texto_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos",
+      "texto_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite: I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 103",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "103",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "así como por los tratados internacionales de los que el Estado Mexicano sea parte",
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 103",
       "jurisdiccion": "federal",
       "consultado": "2026-11-26"
@@ -24,25 +35,26 @@
       "tipo": "gancho",
       "texto": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?",
       "titulo": [
-        "TRIBUNALES",
-        "FEDERALES"
+        "¿TRIBUNALES",
+        "FEDERALES REVISAN",
+        "TUS DERECHOS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, resuelven controversias por actos que violen derechos humanos.",
+      "texto": "Sí, cuando una autoridad viola derechos humanos.",
       "titulo": [
-        "SÍ",
+        "SÍ, LO",
         "REVISAN"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La Constitución señala: Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos",
+      "texto": "El artículo 103, fracción primera, dice que los Tribunales de la Federación resolverán toda controversia por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos.",
       "etiqueta": "Constitución, artículo 103",
-      "cita": "Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos",
+      "cita": "Los Tribunales de la Federación resolverán toda controversia que se suscite: I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos",
       "afirmaciones": []
     },
     {
@@ -51,7 +63,7 @@
       "items": [
         "Normas generales",
         "Actos de autoridad",
-        "Omisiones"
+        "Omisiones de autoridad"
       ],
       "afirmaciones": [
         {
@@ -64,12 +76,19 @@
     },
     {
       "tipo": "titular",
-      "texto": "Esto permite proteger los derechos humanos reconocidos.",
+      "texto": "Esto incluye los derechos humanos reconocidos en la Constitución y en los tratados internacionales de los que México es parte.",
       "titulo": [
-        "PROTECCIÓN",
-        "CONSTITUCIONAL"
+        "CONSTITUCIÓN",
+        "Y TRATADOS"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La protección abarca los derechos humanos reconocidos por la Constitución y por los tratados internacionales de los que México es parte.",
+          "fuente": "F2"
+        }
+      ]
     },
     {
       "tipo": "cierre",
@@ -85,9 +104,9 @@
     "respuesta_corta": "Sí, los Tribunales de la Federación resuelven controversias por normas generales, actos u omisiones de la autoridad que violen derechos humanos.",
     "reglas": [
       {
-        "conclusion": "Los tribunales federales resuelven controversias derivadas de normas generales, actos u omisiones de la autoridad que violen derechos humanos o garantías protegidas.",
+        "conclusion": "Los tribunales federales resuelven controversias derivadas de normas generales, actos u omisiones de la autoridad que violen derechos humanos reconocidos por la Constitución y por los tratados internacionales de los que México es parte.",
         "fuente": "F1",
-        "cita_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos",
+        "cita_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite: I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos",
         "condiciones": [
           "Que se suscite controversia por normas generales, actos u omisiones de la autoridad"
         ],
@@ -104,7 +123,7 @@
         "estado": "cubierto",
         "respuesta": "Los tribunales federales tienen la facultad de resolver dichas controversias.",
         "fuente": "F1",
-        "cita_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos"
+        "cita_literal": "Los Tribunales de la Federación resolverán toda controversia que se suscite: I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos"
       }
     ],
     "interpretaciones": [],
@@ -141,7 +160,7 @@
   "pregunta_original": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?\n\nSí, los Tribunales de la Federación resuelven controversias por normas generales, actos u omisiones de la autoridad que violen derechos humanos.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 103.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?\n\nSí. Los Tribunales de la Federación resuelven las controversias por normas generales, actos u omisiones de la autoridad que violen los derechos humanos reconocidos en la Constitución y en los tratados internacionales de los que México es parte.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 103, fracción I.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -187,5 +206,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-25",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Cita del art. 103 CPEUM narrada con la fracción «I.» pegada a «se suscite» y cortada antes de «reconocidos… por esta Constitución, así como por los tratados internacionales»; gancho visible «TRIBUNALES FEDERALES» sin pregunta; titular final de relleno («Esto permite proteger los derechos humanos reconocidos»). → F1 hasta «derechos humanos reconocidos» y F2 nueva con «así como por los tratados internacionales de los que el Estado Mexicano sea parte»; narración de la cita sin leer «I.» («fracción primera»); gancho «¿TRIBUNALES FEDERALES REVISAN TUS DERECHOS?»; respuesta «SÍ, LO REVISAN»; titular final «CONSTITUCIÓN Y TRATADOS» con afirmación A2 (F2); lista «Omisiones de autoridad»; copy con la fracción I y los tratados. Cierre sin cambios."
+    }
+  ]
 }

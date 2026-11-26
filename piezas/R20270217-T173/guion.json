@@ -13,7 +13,7 @@
       "documento": "Ley de Migración",
       "articulo": "66",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
-      "texto_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales",
+      "texto_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales de los cuales sea parte el Estado mexicano",
       "cita": "Ley de Migración, artículo 66",
       "jurisdiccion": "federal",
       "consultado": "2026-11-25"
@@ -35,40 +35,40 @@
       "tipo": "gancho",
       "texto": "¿Un migrante sin papeles tiene derechos en México?",
       "titulo": [
-        "¿UN MIGRANTE",
-        "TIENE DERECHOS?"
+        "¿UN MIGRANTE SIN",
+        "PAPELES TIENE",
+        "DERECHOS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, su situación migratoria no impide ejercer sus derechos.",
+      "texto": "Sí. Su situación migratoria no le impide ejercer sus derechos.",
       "titulo": [
-        "SÍ",
-        "TIENE"
+        "SÍ, PUEDE",
+        "EJERCERLOS"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley dice: «La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales».",
+      "texto": "La ley dice: «La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales de los cuales sea parte el Estado mexicano».",
       "etiqueta": "Ley de Migración, artículo 66",
-      "cita": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales",
+      "cita": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales de los cuales sea parte el Estado mexicano",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Aspectos clave reconocidos:",
+      "texto": "Esto abarca los derechos reconocidos en:",
       "items": [
-        "Garantía de seguridad",
-        "Derechos constitucionales",
-        "Sin importar documentos"
+        "La Constitución",
+        "Tratados en que México es parte"
       ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La situación migratoria no impide ejercer derechos.",
+          "texto": "La situación migratoria no impide ejercer los derechos reconocidos en la Constitución y en los tratados de los que México es parte.",
           "fuente": "F1"
         }
       ]
@@ -84,7 +84,7 @@
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "El Estado garantiza la seguridad personal sin importar documentos.",
+          "texto": "El Estado garantiza la seguridad personal de los migrantes, con independencia de su situación migratoria.",
           "fuente": "F2"
         }
       ]
@@ -100,14 +100,14 @@
     "suficiente": true,
     "pregunta": "¿Un migrante sin papeles tiene derechos en México?",
     "concepto_central": "situación migratoria",
-    "respuesta_corta": "Sí, su situación migratoria no impide que ejerza los derechos y libertades reconocidos en la Constitución, tratados internacionales y la Ley de Migración.",
+    "respuesta_corta": "Sí, su situación migratoria no le impide ejercer los derechos y libertades reconocidos en la Constitución y en los tratados internacionales de los que México es parte.",
     "reglas": [
       {
         "conclusion": "La falta de documentos o situación migratoria irregular no es un obstáculo para que el migrante ejerza sus derechos y libertades.",
         "fuente": "F1",
-        "cita_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales",
+        "cita_literal": "La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución, en los tratados y convenios internacionales de los cuales sea parte el Estado mexicano",
         "condiciones": [
-          "Que los derechos y libertades estén reconocidos en la Constitución, en tratados internacionales de los que México sea parte o en la Ley de Migración."
+          "Que los derechos y libertades estén reconocidos en la Constitución o en tratados y convenios internacionales de los que México sea parte."
         ],
         "excepciones": [],
         "ref": {
@@ -121,14 +121,14 @@
         "elemento": "contenido",
         "estado": "cubierto",
         "respuesta": "El Estado debe garantizar la seguridad personal de los migrantes y permitir el ejercicio de sus derechos y libertades.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "El Estado mexicano garantizará el derecho a la seguridad personal de los migrantes, con independencia de su situación migratoria."
       },
       {
         "elemento": "condiciones",
         "estado": "cubierto",
         "respuesta": "Estos derechos se garantizan sin importar si el migrante cuenta o no con documentos que acrediten su estancia legal.",
-        "fuente": "F1",
+        "fuente": "F2",
         "cita_literal": "con independencia de su situación migratoria."
       },
       {
@@ -175,7 +175,7 @@
   "pregunta_original": "¿Un migrante sin papeles tiene derechos en México?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Un migrante sin papeles tiene derechos en México?\n\nSí, su situación migratoria no impide que ejerza los derechos y libertades reconocidos en la Constitución, tratados internacionales y la Ley de Migración.\n\nFuente: Ley de Migración, artículo 66.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Un migrante sin papeles tiene derechos en México?\n\nSí. Su situación migratoria no le impide ejercer los derechos y libertades reconocidos en la Constitución y en los tratados internacionales de los que México es parte. Además, el Estado debe garantizar su seguridad personal, con independencia de su situación migratoria.\n\nFuente: Ley de Migración, artículo 66.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -226,5 +226,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-25",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Cita literal del art. 66 de la Ley de Migración cortada a media frase en «tratados y convenios internacionales» (omitía la condición «de los cuales sea parte el Estado mexicano, así como en la presente Ley»); gancho visible «¿UN MIGRANTE TIENE DERECHOS?» sin «sin papeles» (no coincidía con lo narrado); titular «SÍ / TIENE» y lista genérica. → F1, cita y regla hasta «de los cuales sea parte el Estado mexicano» (límite de pantalla); gancho «¿UN MIGRANTE SIN PAPELES TIENE DERECHOS?»; respuesta «Sí. Su situación migratoria no le impide ejercer sus derechos.» («SÍ, PUEDE EJERCERLOS»); lista «La Constitución / Tratados en que México es parte»; afirmaciones A1 y A2 con el texto de la ley; elementos con la fuente que contiene su cita (F2); respuesta corta y copy con la condición de los tratados. Escena de seguridad personal y cierre sin cambios."
+    }
+  ]
 }

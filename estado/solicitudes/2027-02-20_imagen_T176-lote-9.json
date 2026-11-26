@@ -14,14 +14,23 @@
   "hora_publicacion_mx": "09:00",
   "relacion": "independiente",
   "plantilla": "mito_realidad",
-  "angulo": "¿La violencia laboral solo la puede ejercer tu jefe?",
-  "estado": "DESCARTADA",
+  "angulo": "Imagen mito/realidad. Solo LGAMVLV art. 10. Respuesta corta (empieza con «No»): no; la ejercen las personas con vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica. Cita literal ÚNICA: «Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica». En el análisis, el elemento «efecto» es esa misma respuesta (quién puede ejercerla), con esa misma cita; no describir los daños a la víctima. Mito: «Solo tu jefe puede ejercer violencia laboral». Realidad: con la cita. «OJO» opcional y literal: «También incluye el acoso o el hostigamiento sexual».",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-21T10:04:26Z",
   "pieza_id": "I20270220-T176",
   "archivo": "2027-02-20_imagen_T176-lote-9.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Mito: S",
   "ultima_categoria": "juridico",
-  "huella_entrada": "09a1e8e6599cc44a"
+  "huella_entrada": "09a1e8e6599cc44a",
+  "historial_reaperturas": [
+    {
+      "fecha": "2026-11-25",
+      "por": "Claude (operación diaria)",
+      "motivo": "primer descarte (redacción/análisis): el análisis guardado incluía un elemento «efecto» (daño a la autoestima, salud… de la víctima) que no responde la pregunta y que la ficha mito/realidad no alcanzaba a mostrar; dos correcciones fallidas por cobertura. Causa del análisis, no del tema: se marca el análisis como objetado y se reabre con el efecto igual a la respuesta literal",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Mito: S"
+    }
+  ]
 }

@@ -14264,7 +14264,7 @@
       "id": "I20270218-T174",
       "formato": "imagen",
       "huella": "105be97e39e3b55b30d7a13159a1333f7213fbf08803d608645644a18bafd14d",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T11:57:49+00:00",
@@ -14274,22 +14274,24 @@
           "a": "RETENIDO",
           "ts": "2026-11-25T12:31:41+00:00",
           "motivo": "verificación jurídica: RETENER"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-26T03:47:17+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 3.ª ronda): retenida por duda en A3 (artículos de higiene) y F2 con fragmento cortado («artículo, … atendiendo el»); «ojo» mezclaba el dictamen con artículos de higiene; a re-producción"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": {
-        "tipo": "sustantivo",
-        "desde": "2026-11-25T12:31:41+00:00",
-        "verificador": "0.5.7"
-      }
+      "retencion": null
     },
     "I20270219-T175": {
       "id": "I20270219-T175",
       "formato": "imagen",
       "huella": "36e80e2102a20f27ed31ca57378c0ce150284df06b624b4f3c2fc3274064af9d",
-      "estado": "RETENIDO",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-25T11:57:49+00:00",
@@ -14317,16 +14319,18 @@
           "a": "RETENIDO",
           "ts": "2026-11-26T00:05:51+00:00",
           "motivo": "verificación jurídica: RECHAZADA"
+        },
+        {
+          "de": "RETENIDO",
+          "a": "PENDIENTE",
+          "ts": "2026-11-26T03:47:17+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 3.ª ronda): F1 «XI. Programas de cómputo» rechazada por el verificador (menos de 5 palabras) → «XI. Programas de cómputo; XII. Fotográfica»; a re-producción"
         }
       ],
       "error": null,
       "publicaciones": {},
       "proximo_intento": null,
-      "retencion": {
-        "tipo": "sustantivo",
-        "desde": "2026-11-26T00:05:51+00:00",
-        "verificador": "0.5.7"
-      },
+      "retencion": null,
       "revision": {
         "version": "0d2c48ff4bd5cd18",
         "huella_guion": "849d313b5a67e1e98fe80e1774ec4c23df9b3340f9e0c731092cf78000b2deb5",
@@ -14391,7 +14395,7 @@
       "id": "R20270217-T173",
       "formato": "reel",
       "huella": "3572c3617be3d1cc61bab18802768784a038f75dc830ee8a36d93d652a37e915",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-26T00:01:04+00:00",
@@ -14407,6 +14411,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-26T00:03:57+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-26T03:47:17+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 3.ª ronda): cita del art. 66 LMigra cortada a media frase (omitía «de los cuales sea parte el Estado mexicano, así como en la presente Ley») y gancho visible sin «sin papeles»; a re-producción"
         }
       ],
       "error": null,
@@ -14425,7 +14435,7 @@
       "id": "R20270218-T174",
       "formato": "reel",
       "huella": "fd444dd30724c6d896f2d61d3e0116f892d1c409947604e078ffad4ef325ec1b",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-26T00:01:04+00:00",
@@ -14441,6 +14451,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-26T00:05:34+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-26T03:47:17+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 25-11, 3.ª ronda): cita del art. 103 CPEUM narrada con «I.» pegado y cortada antes de «reconocidos… tratados»; gancho visible sin pregunta y titular de relleno; a re-producción"
         }
       ],
       "error": null,
