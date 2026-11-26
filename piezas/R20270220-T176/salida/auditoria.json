@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.1 s"
+      "detalle": "41.1 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.1 s"
+      "detalle": "41.1 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.5 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "899db5fc81738a04"
+      "detalle": "717ee710757a1237"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 7 oraciones"
+      "detalle": "desfase máximo 30 ms en 8 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270220-T176",
     "titulo": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
-    "fecha": "2026-11-26T19:22:03+00:00",
-    "sha256": "899db5fc81738a041dcc053b36297af23445b59f306e98232a7f7886b57ea725",
-    "duracion_s": 38.1,
+    "fecha": "2026-11-26T20:00:56+00:00",
+    "sha256": "717ee710757a12379b681026072f2daf4694edf45340f88c3f4fcea7ed4101d4",
+    "duracion_s": 41.1,
     "estado": "APTO",
-    "huella_guion": "281708508aae4e85dcdedc31a68024700dd21925d583fb88b8a405445e6156c9",
+    "huella_guion": "e10f1e7f04fb94fc6740bf4dea562213b8f9b11e41b47bbb3ec91a601084418b",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 13.8,
-      "musica": 1.8,
-      "render_video": 34.6,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 5.5
+      "narracion": 14.9,
+      "musica": 2.0,
+      "render_video": 31.9,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 5.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.96,
-      "computo_equivalente_runner_usd": 0.0057,
+      "computo_minutos": 0.94,
+      "computo_equivalente_runner_usd": 0.0056,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1141,
-    "caracteres_narrados": 547
+    "frames": 1231,
+    "caracteres_narrados": 587
   }
 }

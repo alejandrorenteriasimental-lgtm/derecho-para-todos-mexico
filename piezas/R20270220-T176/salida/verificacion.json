@@ -4,7 +4,7 @@
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "consultado": "2026-11-26T19:20:26+00:00",
+      "consultado": "2026-11-26T19:58:48+00:00",
       "http": 200,
       "bytes": 2161638,
       "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
@@ -18,7 +18,35 @@
     "F2": {
       "fuente": "F2",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "consultado": "2026-11-26T19:20:38+00:00",
+      "consultado": "2026-11-26T19:58:58+00:00",
+      "http": 200,
+      "bytes": 2161638,
+      "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
+      "ultima_reforma_documento": "2026-01-15",
+      "posicion_articulo": 89853,
+      "extracto": "quedan amparados por este seguro: i. el asegurado o asegurada; fraccion reformada dof 20-01-2023 ii. el pensionado o pensionada por: parrafo reformado dof 20-01-2023 a) incapacidad permanente total o parcial; b) invalidez; c) cesantia en edad avanzada y vejez, y d) viudez, orfandad o ascendencia; iii. la o el conyuge del asegurado o asegurada o, a falta de estos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco anos anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, union civil o concubinato",
+      "huella_articulo": "bdee6d86a1eb40b8e2de0a51150bcf87e6abf6bd2ea4a99859ab28f377f4bc9e",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F3": {
+      "fuente": "F3",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "consultado": "2026-11-26T19:59:07+00:00",
+      "http": 200,
+      "bytes": 2161638,
+      "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
+      "ultima_reforma_documento": "2026-01-15",
+      "posicion_articulo": 89853,
+      "extracto": "quedan amparados por este seguro: i. el asegurado o asegurada; fraccion reformada dof 20-01-2023 ii. el pensionado o pensionada por: parrafo reformado dof 20-01-2023 a) incapacidad permanente total o parcial; b) invalidez; c) cesantia en edad avanzada y vejez, y d) viudez, orfandad o ascendencia; iii. la o el conyuge del asegurado o asegurada o, a falta de estos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco anos anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, union civil o concubinato",
+      "huella_articulo": "bdee6d86a1eb40b8e2de0a51150bcf87e6abf6bd2ea4a99859ab28f377f4bc9e",
+      "estado": "VERIFICADA",
+      "motivo": "identidad, vigencia y literal comprobados en el documento oficial"
+    },
+    "F4": {
+      "fuente": "F4",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "consultado": "2026-11-26T19:59:16+00:00",
       "http": 200,
       "bytes": 2161638,
       "sha256": "8a28a16e1dce1f8e666f4cce5ed19745bc912b2ab1ca49787d5d4bef229398ed",
@@ -42,7 +70,23 @@
     {
       "id": "A2",
       "fuentes": [
+        "F3"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A3",
+      "fuentes": [
         "F2"
+      ],
+      "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A4",
+      "fuentes": [
+        "F4"
       ],
       "dictamen": "VERIFICADA",
       "duda": null

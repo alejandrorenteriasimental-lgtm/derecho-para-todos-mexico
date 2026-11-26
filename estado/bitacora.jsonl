@@ -2740,3 +2740,14 @@
 {"ts": "2026-11-26T19:22:26+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 3, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 4, "en_revision": 3}
 {"ts": "2026-11-26T19:47:54+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 26-11, 2.ª ronda): cita visible truncada, títulos sin acentos, titular de dependencia económica sin fuente y publicación con «hijos o tiempo» → cita, condición, excepción y dependencia económica literales del art. 84 LSS (F1–F4); a re-producción"}
 {"ts": "2026-11-26T19:47:54+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 26-11, 2.ª ronda): «Comisión Nacional» sin aclarar que es la Condusef → Realidad y publicación con la aclaración; fuentes sin cambios; a re-producción"}
+{"ts": "2026-11-26T19:58:48+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-26T19:58:48+00:00", "pieza": "R20270219-T175", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-26T19:45:20+00:00 versión aef7839c9936c8a9 (delegada)"}
+{"ts": "2026-11-26T20:00:56+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.1"}
+{"ts": "2026-11-26T20:01:02+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T20:01:02+00:00", "evento": "revision_preparada", "pieza": "R20270220-T176", "version": "57aa9a0593319a68", "canal": "chat"}
+{"ts": "2026-11-26T20:01:17+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-26T20:01:22+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T20:01:22+00:00", "evento": "revision_preparada", "pieza": "I20270220-T176", "version": "a615785ebf5060de", "canal": "chat"}
+{"ts": "2026-11-26T20:01:22+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T20:01:22+00:00", "pieza": "R20270216-T172", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T20:01:22+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 2, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 2}

@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1138 KB"
+      "detalle": "1142 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=954"
+      "detalle": "fin del contenido en y=939"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "35 palabras sin cabecera ni pie"
+      "detalle": "39 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 33 palabras reconocidas"
+      "detalle": "100% de 35 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -96,11 +96,11 @@
     "titulo": "¿Tienes que reclamarle primero a tu banco?",
     "plantilla": "mito_realidad",
     "archivo": "I20270220-T176.png",
-    "sha256": "cd808452c6d326d8b319541a26c32488c76a99ad606918c8457763b59c90f9fb",
-    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000001111001111111111111100111111111111110001111111111111000000000000011100000000000111111111111111111111111111111111111111111111111111111111111111110011000000011111001",
-    "huella_guion": "b23ad76aec6e900266648fcc1c5c8367a8bff0c2204e776368817a5f632a7f6f",
-    "texto_alternativo": "Imagen gráfica estilo mito y realidad que explica que no es obligatorio reclamar primero al banco antes de acudir a la Comisión Nacional.",
-    "copy": "Conforme a la Ley de Protección y Defensa al Usuario de Servicios Financieros (artículo 50 Bis), no estás obligado a agotar el trámite ante tu institución antes de buscar a la autoridad.\n\nLa norma dispone textualmente: «Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional».\n\nRecuerda que presentar tu reclamación ante la Unidad Especializada tiene el efecto legal de que «La presentación de reclamaciones ante la Unidad Especializada suspenderá la prescripción de las acciones a que pudieren dar lugar». Guarda o comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+    "sha256": "ee1bccc929be8eee62cb8ab235cdd47c4cd74b7102b90e7fd734a6bab0432afd",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000001111001111111111111100111111111111110001111111111111000000000000111100000000000111111111111111111111111111111111111111111111111111111111111111110011000000011111001",
+    "huella_guion": "0c74bdd923ef37f5f080364ba1d041e1e3f3485f565bd0d19708f78b0867d2f1",
+    "texto_alternativo": "Imagen gráfica estilo mito y realidad que explica que no es obligatorio reclamar primero al banco antes de acudir a la Comisión Nacional (Condusef).",
+    "copy": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?\n\nNo. El artículo 50 Bis de la Ley de Protección y Defensa al Usuario de Servicios Financieros dice: «Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional». La Comisión Nacional es la Condusef.\n\nDato útil: «La presentación de reclamaciones ante la Unidad Especializada suspenderá la prescripción de las acciones a que pudieren dar lugar».\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -117,7 +117,7 @@
     ],
     "relacion_reel": "independiente",
     "estado": "APTO",
-    "fecha": "2026-11-26T19:22:22+00:00",
+    "fecha": "2026-11-26T20:01:17+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"
