@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "36.9 s"
+      "detalle": "40.9 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "36.9 s"
+      "detalle": "40.9 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.0 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "27 bloques"
+      "detalle": "30 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "8326bdb341eb0c02"
+      "detalle": "7e21adc73c9f6a44"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270218-T174",
     "titulo": "¿Los tribunales federales revisan violación a derechos humanos?",
-    "fecha": "2026-11-26T00:05:31+00:00",
-    "sha256": "8326bdb341eb0c0287749b8dd56790ca9138479ead21d9c31a3b9cbe6a74c854",
-    "duracion_s": 36.9,
+    "fecha": "2026-11-26T12:01:07+00:00",
+    "sha256": "7e21adc73c9f6a44f044e9da5b8f14e2bcd95c5b28fe15096b6f44836ba1795b",
+    "duracion_s": 40.9,
     "estado": "APTO",
-    "huella_guion": "fd444dd30724c6d896f2d61d3e0116f892d1c409947604e078ffad4ef325ec1b",
+    "huella_guion": "56f114ede5d2fa2d4eb628917dcb0f2d00b255c53e3c07daadca49dfbf7131a6",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 13.0,
-      "musica": 1.8,
-      "render_video": 31.3,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 5.4
+      "narracion": 14.6,
+      "musica": 2.0,
+      "render_video": 34.8,
+      "mezcla_audio": 1.7,
+      "auditoria_tecnica": 5.8
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.89,
-      "computo_equivalente_runner_usd": 0.0053,
+      "computo_minutos": 0.98,
+      "computo_equivalente_runner_usd": 0.0059,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1105,
-    "caracteres_narrados": 518
+    "frames": 1224,
+    "caracteres_narrados": 586
   }
 }

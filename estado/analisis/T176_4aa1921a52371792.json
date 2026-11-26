@@ -1,20 +1,20 @@
 {
  "tema_id": "T176",
  "pregunta": "¿La violencia laboral solo la puede ejercer tu jefe?",
- "fecha": "2026-11-26T00:00:42+00:00",
- "objetado": true,
+ "fecha": "2026-11-26T11:56:58+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿La violencia laboral solo la puede ejercer tu jefe?",
   "concepto_central": "violencia laboral",
-  "respuesta_corta": "No. Se ejerce por personas con un vínculo laboral o análogo con la víctima, sin importar si existe una relación de jerarquía o mando entre ellas.",
+  "respuesta_corta": "No. La ley establece que esta violencia la ejercen personas con vínculo laboral, docente o análogo, sin importar su posición o relación jerárquica con la víctima.",
   "reglas": [
    {
-    "conclusion": "La violencia laboral no está limitada a la relación de subordinación jerárquica, sino que depende del vínculo laboral o docente.",
+    "conclusion": "La violencia laboral no depende de la jerarquía de quien la ejerce, sino del vínculo laboral o análogo con la víctima.",
     "fuente": "F1",
     "cita_literal": "Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica",
     "condiciones": [
-     "Existencia de un vínculo laboral, docente o análogo",
+     "Que exista un vínculo laboral, docente o análogo",
      "Que consista en un acto o una omisión en abuso de poder"
     ],
     "excepciones": []
@@ -24,7 +24,7 @@
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.",
+    "respuesta": "Esta conducta genera daños en la salud, libertad y seguridad de la persona, además de obstaculizar su desarrollo profesional e igualdad.",
     "fuente": "F1",
     "cita_literal": "daña la autoestima, salud, integridad, libertad y seguridad de la víctima, e impide su desarrollo y atenta contra la igualdad",
     "motivo": null
@@ -32,14 +32,13 @@
   ],
   "interpretaciones": [
    {
-    "afirmacion": "La violencia laboral puede ser ejercida por compañeros de trabajo del mismo nivel.",
-    "condicion": "Si el acto u omisión se realiza en abuso de poder y daña la integridad o desarrollo de la víctima.",
-    "base": "La norma especifica que ocurre 'independientemente de la relación jerárquica'."
+    "afirmacion": "Un compañero de trabajo con el mismo puesto puede ejercer violencia laboral.",
+    "condicion": "Si el acto u omisión se realiza en abuso de poder y daña la integridad o salud de la víctima.",
+    "base": "La norma indica que se presenta independientemente de la relación jerárquica."
    }
   ],
   "distinciones": [],
-  "limites": "El texto proporcionado no menciona sanciones administrativas, procedimientos de denuncia, autoridades competentes ni plazos de prescripción.",
+  "limites": "El texto no especifica las sanciones administrativas o penales, ni señala el plazo o la autoridad ante la cual se debe presentar una denuncia.",
   "fuentes_irrelevantes": []
- },
- "nota_objecion": "25-11 (operación diaria): elemento «efecto» con el daño a la víctima, ajeno a la pregunta; bloqueó la redacción de la imagen dos veces (cobertura). Se vuelve a analizar."
+ }
 }

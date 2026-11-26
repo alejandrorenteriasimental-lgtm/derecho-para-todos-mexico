@@ -1,0 +1,41 @@
+{
+ "tema_id": "T176",
+ "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
+ "fecha": "2026-11-26T11:56:06+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
+  "concepto_central": "concubina o el concubinario",
+  "respuesta_corta": "Sí, a falta de cónyuge, la concubina o el concubinario pueden quedar amparados si cumplen los requisitos de convivencia, estado civil y dependencia económica.",
+  "reglas": [
+   {
+    "conclusion": "La concubina o el concubinario pueden quedar amparados por el seguro a falta de cónyuge, siempre que cumplan con el tiempo de vida marital o tengan hijos en común, permanezcan libres de matrimonio o unión civil, y dependan económicamente.",
+    "fuente": "F1",
+    "cita_literal": "la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos",
+    "condiciones": [
+     "Hacer vida marital durante los cinco años anteriores a la enfermedad o haber procreado o registrado hijos",
+     "Ambos deben permanecer libres de matrimonio, unión civil o concubinato",
+     "Depender económicamente del asegurado o pensionado",
+     "Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91"
+    ],
+    "excepciones": [
+     "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección"
+    ]
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "Tienen derecho a las prestaciones del seguro si reúnen los requisitos de convivencia, dependencia económica y el derecho del asegurado.",
+    "fuente": "F1",
+    "cita_literal": "Los sujetos comprendidos en las fracciones III a IX, inclusive, tendrán derecho a las prestaciones respectivas si reúnen además los requisitos siguientes"
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no detalla el procedimiento administrativo ni los documentos específicos requeridos para realizar el registro de la pareja en unión libre ante el IMSS.",
+  "fuentes_irrelevantes": []
+ }
+}

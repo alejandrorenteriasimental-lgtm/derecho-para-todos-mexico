@@ -1,0 +1,245 @@
+{
+  "id": "R20270219-T175",
+  "formato": "reel",
+  "titulo": "¿Puedes exigir que reconozcan que tú creaste una obra?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T175",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "21",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada",
+      "cita": "Ley Federal del Derecho de Autor, artículo 21",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "21",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada",
+      "cita": "Ley Federal del Derecho de Autor, artículo 21",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Derecho de Autor",
+      "articulo": "21",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "texto_literal": "Los titulares de los derechos morales podrán en todo tiempo",
+      "cita": "Ley Federal del Derecho de Autor, artículo 21",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Hiciste una obra y no te dan el crédito que mereces?",
+      "titulo": [
+        "¿ES TU",
+        "CREACIÓN?",
+        "PIDE TU CRÉDITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí. Como titular de derechos morales, puedes pedir que se reconozca tu autoría en todo tiempo.",
+      "titulo": [
+        "DERECHO",
+        "AL CRÉDITO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley establece que puedes «Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada».",
+      "etiqueta": "Ley Federal del Derecho de Autor, artículo 21",
+      "cita": "Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Los titulares de derechos morales pueden exigir que se les reconozca como autores.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Como autor, tienes facultades sobre tu obra que puedes ejercer:",
+      "items": [
+        "Exigir reconocimiento",
+        "Usar un seudónimo",
+        "Mantenerla inédita",
+        "Oponerse a cambios"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La ley permite exigir el reconocimiento de la calidad de autor sobre la obra creada.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Este derecho es para los titulares de los derechos morales de la obra.",
+      "encabezado": "Condición de titularidad",
+      "detalle": "Debes ser el titular moral",
+      "fuente_corta": "Ley Federal del Derecho de Autor, art. 21",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En conclusión, los titulares de derechos morales pueden exigir que se reconozca su autoría.",
+      "titulo": [
+        "TU OBRA,",
+        "TU NOMBRE"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Los titulares de los derechos morales tienen facultades legales sobre su obra en todo tiempo.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Puedes exigir que reconozcan que tú creaste una obra?",
+    "concepto_central": "reconocimiento de su calidad de autor",
+    "respuesta_corta": "Sí, los titulares de los derechos morales pueden exigir en todo tiempo el reconocimiento de su autoría.",
+    "reglas": [
+      {
+        "conclusion": "Los titulares de los derechos morales tienen la facultad de exigir que se reconozca su autoría sobre la obra en cualquier momento.",
+        "fuente": "F1",
+        "cita_literal": "Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada",
+        "condiciones": [
+          "Ser titular de los derechos morales de la obra."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Derecho de Autor",
+          "articulo": "21"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "Tienes el derecho legal de exigir en todo tiempo que se reconozca tu calidad de autor.",
+        "fuente": "F1",
+        "cita_literal": "Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no establece el procedimiento legal específico ni las sanciones aplicables para hacer valer este derecho."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-26T11:52:46+00:00",
+    "solicitud": "2027-02-19_reel_T175-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 5,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Puedes exigir que reconozcan que tú creaste una obra?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Puedes exigir que reconozcan que tú creaste una obra?\n\nSí, los titulares de los derechos morales pueden exigir en todo tiempo el reconocimiento de su autoría.\n\nFuente: Ley Federal del Derecho de Autor, artículo 21.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ],
+        "visible": "  \n ¿Hiciste una obra y no te están dando el crédito que mereces por ella? \n ¿ES TU \n CREACIÓN? \n PIDE TU CRÉDITO \n Sí, puedes exigirlo. Como titular de los derechos morales, tienes la facultad de pedir que se reconozca tu autoría en todo tiempo. \n DERECHO \n AL CRÉDITO \n La Ley Federal del Derecho de Autor establece que puedes «Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada». \n Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada \n Como autor, la ley te otorga facultades especiales sobre tu obra que puedes ejercer: \n Exigir reconocimiento \n Usar un seudónimo \n Mantenerla inédita \n Oponerse a cambios \n Este derecho pertenece espe"
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "narración de 719 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 99: recorta al menos 159 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los titulares de los derechos morales tienen la facultad de exigir que se reconozca su autoría sobre la obra en cualquier momento.",
+              "sostenida": "si",
+              "motivo": "El artículo 21, fracción II, establece explícitamente la facultad de exigir el reconocimiento de la calidad de autor, y el encabezado del artículo señala que estas facultades pueden ejercerse 'en todo tiempo'."
+            },
+            {
+              "conclusion": "Los titulares de los derechos morales tienen facultades legales sobre su obra en todo tiempo.",
+              "sostenida": "si",
+              "motivo": "El artículo 21 comienza con la premisa: 'Los titulares de los derechos morales podrán en todo tiempo:' seguido de las facultades enumeradas."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "38.5 s"
+      "detalle": "41.7 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "38.5 s"
+      "detalle": "41.7 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.3 LUFS"
+      "detalle": "-14.2 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.6 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "28 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "09ef992d2af36581"
+      "detalle": "6aae6c9292bda940"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270217-T173",
     "titulo": "¿Un migrante sin papeles tiene derechos en México?",
-    "fecha": "2026-11-26T00:03:53+00:00",
-    "sha256": "09ef992d2af36581a914dfdc60758dae3d921e1c9394b460c8bf1ecfbdc126f0",
-    "duracion_s": 38.5,
+    "fecha": "2026-11-26T11:58:44+00:00",
+    "sha256": "6aae6c9292bda9409b9359c5570a93da3504c73fbc4da0cc2da780e5a33fa7da",
+    "duracion_s": 41.7,
     "estado": "APTO",
-    "huella_guion": "3572c3617be3d1cc61bab18802768784a038f75dc830ee8a36d93d652a37e915",
+    "huella_guion": "26915e35a12aad8d010202176299ec81402f5500cf367ceb9f00ad4944f141b4",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 13.9,
-      "musica": 1.8,
-      "render_video": 31.6,
+      "narracion": 16.2,
+      "musica": 2.0,
+      "render_video": 36.9,
       "mezcla_audio": 1.7,
-      "auditoria_tecnica": 5.7
+      "auditoria_tecnica": 5.9
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.91,
-      "computo_equivalente_runner_usd": 0.0055,
+      "computo_minutos": 1.04,
+      "computo_equivalente_runner_usd": 0.0063,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1152,
-    "caracteres_narrados": 533
+    "frames": 1250,
+    "caracteres_narrados": 592
   }
 }

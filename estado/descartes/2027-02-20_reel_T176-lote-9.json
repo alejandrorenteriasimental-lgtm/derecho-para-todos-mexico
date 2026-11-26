@@ -1,0 +1,102 @@
+{
+ "solicitud": "2027-02-20_reel_T176-lote-9.json",
+ "fecha": "2026-11-26T11:56:46+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 739 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 119: recorta al menos 179 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Tu pareja en unión libre puede tener servicio médico del IMSS? \\n ¿PAREJ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 632 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 12: recorta al menos 72 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[condiciones] Frase absoluta «Si existen varias parejas, ninguna tendrá derecho a la protección.» sobre una regla condicionada de F2 («…s a la enfermedad con quien ha procreado o registrado hijos siempre que ambos permanezcan libres de matrimonio union civil o concubinato o la persona…»).",
+    "[coherencia] Escena 5: el encabezado visible «Múltiples concubinatos» no corresponde a lo que se narra («Si existen varias parejas, ninguna tendrá derecho a la protección.»)."
+   ],
+   "visible": "  \n ¿Tu pareja en unión libre puede tener IMSS? \n ¿PAREJA \n CON IMSS? \n Sí, es posible si se cumplen requisitos de convivencia y estado civil. \n REQUISITOS \n DE LEY \n La ley ampara a «la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato». \n la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, … \n Para el registro se requiere: \n A falta de cónyuge \n 5 años junt"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 677 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 57: recorta al menos 117 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[condiciones] Frase absoluta «Si hay varias parejas, ninguna tiene derecho.» sobre una regla condicionada de F2 («…s a la enfermedad con quien ha procreado o registrado hijos siempre que ambos permanezcan libres de matrimonio union civil o concubinato o la persona…»).",
+    "[condiciones] Frase absoluta «Ninguna tendrá derecho al seguro» sobre una regla condicionada de F2 («…s a la enfermedad con quien ha procreado o registrado hijos siempre que ambos permanezcan libres de matrimonio union civil o concubinato o la persona…»)."
+   ],
+   "visible": "  \n ¿Tu pareja en unión libre puede tener IMSS? \n ¿PAREJA EN \n UNIÓN LIBRE? \n Sí, si viven juntos hace cinco años o tienen hijos, dependen de ti y no están casados. \n SÍ ES \n POSIBLE \n La ley protege a la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato. \n la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, … \n Deben tener cinco años de vida marital o hijos,"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La condición de que el derecho del concubino o concubina está supeditado a la inexistencia de un cónyuge (a falta de cónyuge), la cual es un requisito previo indispensable según el artículo 84."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La concubina o el concubinario tiene derecho a la protección a falta de cónyuge, cumpliendo requisitos de convivencia, dependencia y vigencia de derechos.",
+      "sostenida": "si",
+      "motivo": "El artículo 84, fracciones III y IV, establece explícitamente que el derecho del concubino o concubina opera 'a falta de cónyuge'."
+     },
+     {
+      "conclusion": "Sí, siempre que hayan hecho vida marital por cinco años o tengan hijos en común, dependan económicamente y estén libres de matrimonio.",
+      "sostenida": "parcial",
+      "motivo": "La respuesta omite la condición de 'a falta de cónyuge', lo cual es un requisito legal indispensable para que el concubinato sea reconocido para efectos de seguridad social."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Respuesta corta y sección de requisitos",
+      "problema": "Se presenta una lista de requisitos que parece exhaustiva, omitiendo que el derecho del concubino o concubina solo surge 'a falta de cónyuge'. Un usuario casado podría creer erróneamente que su pareja en unión libre también tiene derecho.",
+      "correccion": "Incluir explícitamente en la respuesta directa que el derecho aplica 'a falta de cónyuge' o 'si no existe un cónyuge registrado'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «efecto» («La pareja queda amparada por el seguro de enfermedades y mat») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 741 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 121: recorta al menos 181 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «SOLO UNA PAREJA» no corresponde a lo que se narra («Existe una restricción: \"Si la o el asegurado tiene varias o varios co»)."
+   ],
+   "visible": "  \n ¿Tu pareja en unión libre puede tener servicio médico del IMSS? \n ¿PAREJA CON IMSS? \n EN UNIÓN LIBRE \n Sí. A falta de cónyuge, la pareja puede estar amparada si cumple requisitos de convivencia y dependencia económica. \n SÍ ES POSIBLE \n BAJO REQUISITOS \n La Ley del Seguro Social incluye a \"la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos\". \n la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos \n Para que tenga derecho, deben cumplirse estos puntos: \n Cinco años de convivencia \n O h"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "narración de 646 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 26: recorta al menos 86 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[coherencia] Escena 5: el encabezado visible «RESTRICCIÓN POR PLURALIDAD» no corresponde a lo que se narra («Pero \"si la o el asegurado tiene varias o varios concubinas o concubin»)."
+   ],
+   "visible": "  \n ¿Tu pareja en unión libre puede tener servicio médico del IMSS? \n ¿TIENE \n DERECHO? \n Sí, si no hay cónyuge y cumplen con la convivencia, estado civil y dependencia económica. \n SÍ, CON \n REQUISITOS \n La ley ampara a \"la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos\". \n la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos \n Para el registro se requiere: \n 5 años juntos o hijos \n Ambos deben ser solteros \n Dependencia económica \n Pero \"si la o el asegurado tiene varias o varios conc"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 739 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 119: recorta al menos 179 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Tu pareja en unión libre puede tener servicio médico del IMSS? \n ¿PAREJA EN UNIÓN \n LIBRE CON IMSS? \n Sí, a falta de cónyuge, la concubina o el concubinario pueden asegurarse si cumplen con la ley. \n SÍ ES \n POSIBLE \n La ley protege a la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos. \n la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos \n Para el registro se requiere cumplir con estas condiciones de convivencia y estado civil: \n Cinco años viviendo juntos \n O tener hijos en común"
+  }
+ ]
+}
