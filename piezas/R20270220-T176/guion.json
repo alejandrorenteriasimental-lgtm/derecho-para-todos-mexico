@@ -13,10 +13,10 @@
       "documento": "Ley del Seguro Social",
       "articulo": "84",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "texto_literal": "a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio",
       "cita": "Ley del Seguro Social, artículo 84",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-26"
+      "consultado": "2026-11-26",
+      "texto_literal": "con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos"
     },
     "F2": {
       "tipo": "ley",
@@ -24,68 +24,114 @@
       "documento": "Ley del Seguro Social",
       "articulo": "84",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-      "texto_literal": "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección",
       "cita": "Ley del Seguro Social, artículo 84",
       "jurisdiccion": "federal",
-      "consultado": "2026-11-26"
+      "consultado": "2026-11-26",
+      "texto_literal": "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "84",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "cita": "Ley del Seguro Social, artículo 84",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26",
+      "texto_literal": "siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley del Seguro Social",
+      "articulo": "84",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "cita": "Ley del Seguro Social, artículo 84",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26",
+      "texto_literal": "Que dependan económicamente del asegurado o pensionado"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Tu pareja en unión libre puede tener IMSS?",
+      "texto": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
       "titulo": [
-        "UNION",
-        "LIBRE",
-        "IMSS"
+        "¿TU PAREJA",
+        "EN UNIÓN LIBRE",
+        "TIENE IMSS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "Sí, a falta de cónyuge.",
+      "texto": "Sí, a falta de cónyuge y con requisitos.",
       "titulo": [
-        "SERVICIO",
-        "MEDICO"
+        "SÍ, CON",
+        "REQUISITOS"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley dice: «a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio».",
+      "texto": "La ley protege a tu pareja «con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos».",
       "etiqueta": "Ley del Seguro Social, artículo 84",
-      "cita": "a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres …",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "excepcion",
-      "numero": 1,
-      "texto": "«Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección».",
-      "encabezado": "VARIAS PAREJAS EN CONCUBINATO",
-      "detalle": "Ninguno tendrá derecho a la protección",
-      "fuente_corta": "Ley, art. 84",
+      "cita": "con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "La protección opera a falta de cónyuge bajo requisitos de tiempo o hijos y libertad de matrimonio.",
-          "fuente": "F1"
+          "texto": "A falta de cónyuge, quedan amparados la concubina o el concubinario con quien el asegurado ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato.",
+      "encabezado": "Libres de matrimonio",
+      "detalle": "Tampoco unión civil o concubinato",
+      "fuente_corta": "Ley del Seguro Social, art. 84",
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La protección exige que ambos permanezcan libres de matrimonio, unión civil o concubinato.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 2,
+      "texto": "Y si la o el asegurado tiene varias o varios concubinas o concubinarios, ninguno de ellos tendrá derecho a la protección.",
+      "encabezado": "Varias parejas",
+      "detalle": "Cuando hay varias: sin protección",
+      "fuente_corta": "Ley del Seguro Social, art. 84",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Si el asegurado tiene varias concubinas o concubinarios, ninguno tiene derecho a la protección.",
+          "fuente": "F2"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Depende de la dependencia económica.",
+      "texto": "Y tu pareja debe depender económicamente de ti.",
       "titulo": [
-        "REQUISITO",
-        "ECONOMICO"
+        "DEPENDENCIA",
+        "ECONÓMICA"
       ],
       "afirmaciones": [
         {
-          "id": "A2",
+          "id": "A4",
           "tipo": "hecho_normativo",
-          "texto": "La existencia de varias parejas impide el derecho a la protección.",
-          "fuente": "F2"
+          "texto": "Para tener derecho a las prestaciones, la concubina o el concubinario debe depender económicamente del asegurado o pensionado.",
+          "fuente": "F4"
         }
       ]
     },
@@ -100,16 +146,15 @@
     "suficiente": true,
     "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
     "concepto_central": "concubinato",
-    "respuesta_corta": "Sí, la concubina o el concubinario puede tener servicio médico a falta de cónyuge, si cumplen los requisitos de vida marital, hijos o tiempo, y dependencia económica.",
+    "respuesta_corta": "Sí, a falta de cónyuge, la concubina o el concubinario queda amparado si cumple los requisitos del artículo 84: la vida marital o los hijos que señala la ley, que ambos permanezcan libres de matrimonio, unión civil o concubinato, y la dependencia económica.",
     "reglas": [
       {
-        "conclusion": "La protección para la concubina o concubinario opera únicamente a falta de cónyuge, siempre que hayan hecho vida marital por cinco años, procreado hijos o los hayan registrado, y ambos permanezcan libres de otro vínculo.",
+        "conclusion": "A falta de cónyuge, quedan amparados la concubina o el concubinario con quien el asegurado ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos.",
         "fuente": "F1",
-        "cita_literal": "a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio",
+        "cita_literal": "con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos",
         "condiciones": [
           "A falta de cónyuge",
-          "Hacer vida marital durante los cinco años anteriores a la enfermedad, o haber procreado o registrado hijos",
-          "Permanecer libres de matrimonio, unión civil o concubinato"
+          "Que ambos permanezcan libres de matrimonio, unión civil o concubinato"
         ],
         "excepciones": [
           "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección"
@@ -120,11 +165,34 @@
         }
       },
       {
-        "conclusion": "La concubina o concubinario debe depender económicamente del asegurado o pensionado y cumplir con los requisitos del artículo 91 para tener derecho a las prestaciones.",
-        "fuente": "F1",
-        "cita_literal": "Los sujetos comprendidos en las fracciones III a IX, inclusive, tendrán derecho a las prestaciones respectivas si reúnen además los requisitos siguientes: a) Que dependan económicamente del asegurado o pensionado",
+        "conclusion": "La protección exige que ambos permanezcan libres de matrimonio, unión civil o concubinato.",
+        "fuente": "F3",
+        "cita_literal": "siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "84"
+        }
+      },
+      {
+        "conclusion": "Si el asegurado tiene varias concubinas o concubinarios, ninguno tiene derecho a la protección.",
+        "fuente": "F2",
+        "cita_literal": "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección",
         "condiciones": [
-          "Depender económicamente del asegurado o pensionado",
+          "Que el asegurado tenga varias o varios concubinas o concubinarios"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley del Seguro Social",
+          "articulo": "84"
+        }
+      },
+      {
+        "conclusion": "La concubina o el concubinario debe depender económicamente del asegurado o pensionado, y el asegurado debe tener derecho a las prestaciones del artículo 91.",
+        "fuente": "F4",
+        "cita_literal": "Que dependan económicamente del asegurado o pensionado",
+        "condiciones": [
           "Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91 de esta Ley"
         ],
         "excepciones": [],
@@ -138,9 +206,10 @@
       {
         "elemento": "efecto",
         "estado": "cubierto",
-        "respuesta": "La persona en unión libre tiene derecho a las prestaciones respectivas del seguro social si cumple los requisitos de concubinato, convivencia y dependencia económica.",
+        "respuesta": "La concubina o el concubinario queda amparado por el seguro si cumple los requisitos del artículo 84.",
         "fuente": "F1",
-        "cita_literal": "Los sujetos comprendidos en las fracciones III a IX, inclusive, tendrán derecho a las prestaciones respectivas si reúnen además los requisitos siguientes"
+        "cita_literal": "con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos",
+        "motivo": ""
       }
     ],
     "interpretaciones": [],
@@ -177,7 +246,7 @@
   "pregunta_original": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?\n\nSí, la concubina o el concubinario puede tener servicio médico a falta de cónyuge, si cumplen los requisitos de vida marital, hijos o tiempo, y dependencia económica.\n\nFuente: Ley del Seguro Social, artículo 84.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?\n\nSí, a falta de cónyuge. El artículo 84 ampara a «la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato». Además, debe depender económicamente de la persona asegurada. Si la persona asegurada tiene varias parejas en concubinato, ninguna tiene derecho a la protección.\n\nFuente: Ley del Seguro Social, artículo 84.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -296,5 +365,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-26",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v61e6d25bf00df498: cita visible truncada con «…» y sin «unión civil o concubinato»; títulos sin acentos (UNION, MEDICO, ECONOMICO); titular «Depende de la dependencia económica» confuso y sin fuente; fuente corta «Ley, art. 84»; texto de la publicación con «hijos o tiempo» (el texto oficial los separa con coma, no con «o»); afirmaciones desplazadas de escena. → cita literal única (cinco años / hijos), condición literal F3 (libres de matrimonio, unión civil o concubinato), excepción literal F2 (varias parejas), dependencia económica con su literal F4 (párrafo final del art. 84), títulos con acentos, fuente corta completa, publicación con la cita completa; mapa de razonamiento ajustado a F1–F4. Todo del art. 84 LSS cotejado en registro/textos/LSS_84.json."
+    }
+  ]
 }
