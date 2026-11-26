@@ -1,0 +1,50 @@
+{
+ "solicitud": "2027-02-20_imagen_T176-lote-9.json",
+ "fecha": "2026-11-26T00:01:04+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible.\"], \"visible\": \"  \\n   \\n Mito: S",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Mito: Solo los jefes pueden ejercer violencia laboral. \n No. Se ejerce por personas con un vínculo laboral o análogo, independientemente de la relación jerárquica."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Mito: Solo los jefes pueden ejercer violencia laboral. \n No. Se ejerce por personas con un vínculo laboral o análogo, independientemente de la relación jerárquica."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud, integridad, libertad y seguridad de la persona, además de obstaculizar su desarrollo.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Mito: Solo los jefes pueden ejercer violencia laboral. \n No. Se ejerce por personas con un vínculo laboral o análogo, independientemente de la relación jerárquica."
+  }
+ ]
+}

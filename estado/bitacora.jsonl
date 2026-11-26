@@ -2666,3 +2666,25 @@
 {"ts": "2026-11-25T19:28:18+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0}
 {"ts": "2026-11-25T19:45:15+00:00", "pieza": "R20270210-T166", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 25-11, 2.ª ronda): excepción «proveedores necesarios / paquetería» sin sustento en el art. 76 Bis LFPC → literal «proveedores ajenos a la compra»; respuesta y cierre con las dos salvedades; a re-producción"}
 {"ts": "2026-11-25T19:45:15+00:00", "pieza": "I20270219-T175", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 25-11, 2.ª ronda): copy con «(F1, Art. 13)» y párrafo ajeno a la pregunta; respuesta sin ancla literal → F1 «XI. Programas de cómputo» y F2 encabezado del art. 13; a re-producción"}
+{"ts": "2026-11-25T23:49:22+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-25T23:59:38+00:00", "evento": "redactada", "pieza": "R20270217-T173", "solicitud": "2027-02-17_reel_T173-lote-9.json"}
+{"ts": "2026-11-26T00:00:37+00:00", "evento": "redactada", "pieza": "R20270218-T174", "solicitud": "2027-02-18_reel_T174-lote-9.json"}
+{"ts": "2026-11-26T00:01:04+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-20_imagen_T176-lote-9.json", "categoria": "juridico", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («Esta conducta genera un daño en la autoestima, salud"}
+{"ts": "2026-11-26T00:01:04+00:00", "pieza": "R20270215-T171", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-25T19:44:08+00:00 versión d1766095c091e4b0 (delegada)"}
+{"ts": "2026-11-26T00:01:04+00:00", "pieza": "I20270215-T171", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-25T19:44:09+00:00 versión b556a01038fd6c63 (delegada)"}
+{"ts": "2026-11-26T00:01:04+00:00", "pieza": "R20270217-T173", "evento": "encolado"}
+{"ts": "2026-11-26T00:01:04+00:00", "pieza": "R20270218-T174", "evento": "encolado"}
+{"ts": "2026-11-26T00:02:41+00:00", "pieza": "R20270210-T166", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.3"}
+{"ts": "2026-11-26T00:02:44+00:00", "pieza": "R20270210-T166", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T00:02:44+00:00", "evento": "revision_preparada", "pieza": "R20270210-T166", "version": "341159cc1078e1e2", "canal": "chat"}
+{"ts": "2026-11-26T00:03:53+00:00", "pieza": "R20270217-T173", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.5"}
+{"ts": "2026-11-26T00:03:57+00:00", "pieza": "R20270217-T173", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T00:03:57+00:00", "evento": "revision_preparada", "pieza": "R20270217-T173", "version": "c3008b03fa6315c9", "canal": "chat"}
+{"ts": "2026-11-26T00:05:31+00:00", "pieza": "R20270218-T174", "evento": "transicion", "a": "PRODUCIDO", "motivo": "36.9"}
+{"ts": "2026-11-26T00:05:34+00:00", "pieza": "R20270218-T174", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T00:05:34+00:00", "evento": "revision_preparada", "pieza": "R20270218-T174", "version": "644d4e417fe87253", "canal": "chat"}
+{"ts": "2026-11-26T00:05:51+00:00", "pieza": "I20270219-T175", "evento": "transicion", "a": "RETENIDO", "motivo": "verificación jurídica: RECHAZADA"}
+{"ts": "2026-11-26T00:05:51+00:00", "evento": "alerta", "mensaje": "I20270219-T175 retenido por verificación jurídica (RECHAZADA)."}
+{"ts": "2026-11-26T00:05:51+00:00", "pieza": "I20270214-T170", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T00:05:51+00:00", "pieza": "I20270215-T171", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T00:05:51+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 1, "producidas": 3, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 3}

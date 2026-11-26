@@ -1,10 +1,22 @@
 {
-  "decision": "APTA",
+  "decision": "RECHAZADA",
   "fuentes": {
     "F1": {
       "fuente": "F1",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
-      "consultado": "2026-11-25T12:31:41+00:00",
+      "consultado": "2026-11-26T00:05:34+00:00",
+      "http": 200,
+      "bytes": 969098,
+      "sha256": "1844f4e56b279c17061db90f4ab7970df3794e3a5ae10d74a0aec1f12641e7a5",
+      "ultima_reforma_documento": "2026-05-14",
+      "posicion_articulo": 7608,
+      "estado": "RECHAZADA",
+      "motivo": "la cita es demasiado corta para cotejarla con seguridad (mínimo 5 palabras)"
+    },
+    "F2": {
+      "fuente": "F2",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "consultado": "2026-11-26T00:05:39+00:00",
       "http": 200,
       "bytes": 969098,
       "sha256": "1844f4e56b279c17061db90f4ab7970df3794e3a5ae10d74a0aec1f12641e7a5",
@@ -20,9 +32,17 @@
     {
       "id": "A1",
       "fuentes": [
-        "F1"
+        "F2"
       ],
       "dictamen": "VERIFICADA",
+      "duda": null
+    },
+    {
+      "id": "A2",
+      "fuentes": [
+        "F1"
+      ],
+      "dictamen": "RECHAZADA",
       "duda": null
     }
   ],
