@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1138 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.24:1 («MITO»)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=954"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "35 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 33 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270220-T176",
+    "formato": "imagen",
+    "titulo": "¿Tienes que reclamarle primero a tu banco?",
+    "plantilla": "mito_realidad",
+    "archivo": "I20270220-T176.png",
+    "sha256": "cd808452c6d326d8b319541a26c32488c76a99ad606918c8457763b59c90f9fb",
+    "ahash": "0000000000000000100001111111111110000111111111111111111111111111100000000000000110000000000001111001111111111111100111111111111110001111111111111000000000000011100000000000111111111111111111111111111111111111111111111111111111111111111110011000000011111001",
+    "huella_guion": "b23ad76aec6e900266648fcc1c5c8367a8bff0c2204e776368817a5f632a7f6f",
+    "texto_alternativo": "Imagen gráfica estilo mito y realidad que explica que no es obligatorio reclamar primero al banco antes de acudir a la Comisión Nacional.",
+    "copy": "Conforme a la Ley de Protección y Defensa al Usuario de Servicios Financieros (artículo 50 Bis), no estás obligado a agotar el trámite ante tu institución antes de buscar a la autoridad.\n\nLa norma dispone textualmente: «Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional».\n\nRecuerda que presentar tu reclamación ante la Unidad Especializada tiene el efecto legal de que «La presentación de reclamaciones ante la Unidad Especializada suspenderá la prescripción de las acciones a que pudieren dar lugar». Guarda o comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+        "articulo": "50 Bis",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+        "articulo": "50 Bis",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-26T19:22:22+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

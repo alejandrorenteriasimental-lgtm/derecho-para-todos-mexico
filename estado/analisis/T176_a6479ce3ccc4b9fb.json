@@ -1,0 +1,35 @@
+{
+ "tema_id": "T176",
+ "pregunta": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?",
+ "fecha": "2026-11-26T19:18:24+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?",
+  "concepto_central": "elección para presentar reclamación",
+  "respuesta_corta": "No, puedes elegir libremente si presentas tu reclamación ante la Unidad Especializada del banco o directamente ante la Comisión Nacional.",
+  "reglas": [
+   {
+    "conclusion": "El usuario tiene la facultad de decidir si acude a la Unidad Especializada de la institución financiera o a la Comisión Nacional.",
+    "fuente": "F1",
+    "cita_literal": "Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional.",
+    "condiciones": [],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "efecto",
+    "estado": "cubierto",
+    "respuesta": "El usuario no está obligado a agotar el trámite ante el banco y puede acudir de manera directa ante la Comisión Nacional.",
+    "fuente": "F1",
+    "cita_literal": "Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional.",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial solo regula la facultad de elección del usuario entre la Unidad Especializada y la Comisión Nacional, sin establecer la obligación de acudir primero a una u otra instancia.",
+  "fuentes_irrelevantes": []
+ }
+}

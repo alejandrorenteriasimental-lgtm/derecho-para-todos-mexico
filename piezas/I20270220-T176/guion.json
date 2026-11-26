@@ -1,0 +1,182 @@
+{
+  "id": "I20270220-T176",
+  "formato": "imagen",
+  "plantilla": "mito_realidad",
+  "titulo": "¿Tienes que reclamarle primero a tu banco?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T176",
+  "pieza": {
+    "titular": "¿Tienes que reclamarle primero a tu banco?",
+    "bajada": "Descubre si es obligatorio acudir a tu institución financiera antes de buscar a la Comisión Nacional.",
+    "mito": "Primero tienes que reclamarle a tu banco.",
+    "realidad": "No, puedes elegir presentar tu reclamación ante la Unidad Especializada de la Institución Financiera o ante la Comisión Nacional.",
+    "fuente_visible": "Ley de Protección y Defensa al Usuario de Servicios Financieros, art. 50 Bis"
+  },
+  "copy": "Conforme a la Ley de Protección y Defensa al Usuario de Servicios Financieros (artículo 50 Bis), no estás obligado a agotar el trámite ante tu institución antes de buscar a la autoridad.\n\nLa norma dispone textualmente: «Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional».\n\nRecuerda que presentar tu reclamación ante la Unidad Especializada tiene el efecto legal de que «La presentación de reclamaciones ante la Unidad Especializada suspenderá la prescripción de las acciones a que pudieren dar lugar». Guarda o comparte esta información.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen gráfica estilo mito y realidad que explica que no es obligatorio reclamar primero al banco antes de acudir a la Comisión Nacional.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+      "articulo": "50 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf",
+      "texto_literal": "Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional.",
+      "cita": "Ley de Protección y Defensa al Usuario de Servicios Financieros, artículo 50 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+      "articulo": "50 Bis",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf",
+      "texto_literal": "La presentación de reclamaciones ante la Unidad Especializada suspenderá la prescripción de las acciones a que pudieren dar lugar.",
+      "cita": "Ley de Protección y Defensa al Usuario de Servicios Financieros, artículo 50 Bis",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-26"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El usuario puede elegir entre presentar su reclamación ante la Unidad Especializada de la institución financiera o ante la Comisión Nacional.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "La presentación de reclamaciones ante la Unidad Especializada suspende la prescripción de las acciones.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?",
+    "concepto_central": "elección para presentar reclamación",
+    "respuesta_corta": "No, puedes elegir libremente si presentas tu reclamación ante la Unidad Especializada del banco o directamente ante la Comisión Nacional.",
+    "reglas": [
+      {
+        "conclusion": "El usuario tiene la facultad de decidir si acude a la Unidad Especializada de la institución financiera o a la Comisión Nacional.",
+        "fuente": "F1",
+        "cita_literal": "Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional.",
+        "condiciones": [],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+          "articulo": "50 Bis"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El usuario no está obligado a agotar el trámite ante el banco y puede acudir de manera directa ante la Comisión Nacional.",
+        "fuente": "F1",
+        "cita_literal": "Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional.",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial solo regula la facultad de elección del usuario entre la Unidad Especializada y la Comisión Nacional, sin establecer la obligación de acudir primero a una u otra instancia."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-26T19:18:53+00:00",
+    "solicitud": "2027-02-20_imagen_T176-lote-9.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La pieza omite mencionar que presentar la reclamación ante la Unidad Especializada tiene el efecto jurídico de suspender la prescripción de las acciones, lo cual es un dato relevante para que el usuario tome una decisión informada."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El usuario tiene la facultad de decidir si acude a la Unidad Especializada de la institución financiera o a la Comisión Nacional.",
+              "sostenida": "si",
+              "motivo": "El artículo 50 Bis establece explícitamente la facultad de elección del usuario para presentar su consulta o reclamación ante cualquiera de las dos instancias."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Copy, párrafo final",
+              "problema": "La pieza omite una consecuencia jurídica relevante prevista en el artículo 50 Bis: la suspensión de la prescripción al presentar la reclamación ante la Unidad Especializada.",
+              "correccion": "Se debe añadir que, si bien el usuario puede elegir, presentar la reclamación ante la Unidad Especializada tiene el efecto legal de suspender la prescripción de las acciones, lo cual es un factor importante si el usuario está cerca de un plazo límite."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El usuario tiene la facultad de decidir si acude a la Unidad Especializada de la institución financiera o a la Comisión Nacional.",
+              "sostenida": "si",
+              "motivo": "El artículo 50 Bis establece explícitamente la facultad de elección del usuario entre ambas instancias."
+            },
+            {
+              "conclusion": "El usuario no está obligado a agotar el trámite ante el banco y puede acudir de manera directa ante la Comisión Nacional.",
+              "sostenida": "si",
+              "motivo": "La redacción del artículo 50 Bis al otorgar la elección directa elimina la jerarquía o obligatoriedad de agotar una instancia previa."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

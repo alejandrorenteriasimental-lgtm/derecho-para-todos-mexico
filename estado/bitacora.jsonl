@@ -2717,3 +2717,24 @@
 {"ts": "2026-11-26T12:03:31+00:00", "pieza": "R20270214-T170", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-26T12:03:31+00:00", "evento": "fin_ciclo", "redactadas": 1, "descartadas": 2, "producidas": 5, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 1, "en_revision": 5}
 {"ts": "2026-11-26T12:10:34+00:00", "pieza": "R20270219-T175", "evento": "transicion", "a": "PENDIENTE", "motivo": "edición editorial (Claude, revisión delegada 26-11): gancho narrado sin pregunta de sí/no antes de «Sí.» y condición «Debes ser el titular moral» poco clara → gancho = pregunta del plan y condición con el art. 18 LFDA literal; a re-producción"}
+{"ts": "2026-11-26T19:14:33+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-26T19:18:13+00:00", "evento": "redactada", "pieza": "R20270220-T176", "solicitud": "2027-02-20_reel_T176-lote-9.json"}
+{"ts": "2026-11-26T19:18:53+00:00", "evento": "redactada", "pieza": "I20270220-T176", "solicitud": "2027-02-20_imagen_T176-lote-9.json"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "I20270218-T174", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-26T12:09:40+00:00 versión 16726df2b987d709 (delegada)"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "I20270219-T175", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-26T12:09:40+00:00 versión 6a3d8aef6a65934f (delegada)"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "R20270217-T173", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-26T12:09:40+00:00 versión c5772e44f1dfd456 (delegada)"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "R20270218-T174", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-26T12:09:40+00:00 versión 5c8a92389f30b843 (delegada)"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "I20270220-T176", "evento": "encolado"}
+{"ts": "2026-11-26T19:18:53+00:00", "pieza": "R20270220-T176", "evento": "encolado"}
+{"ts": "2026-11-26T19:20:23+00:00", "pieza": "R20270219-T175", "evento": "transicion", "a": "PRODUCIDO", "motivo": "40.4"}
+{"ts": "2026-11-26T19:20:26+00:00", "pieza": "R20270219-T175", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T19:20:26+00:00", "evento": "revision_preparada", "pieza": "R20270219-T175", "version": "aef7839c9936c8a9", "canal": "chat"}
+{"ts": "2026-11-26T19:22:03+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "PRODUCIDO", "motivo": "38.1"}
+{"ts": "2026-11-26T19:22:06+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T19:22:06+00:00", "evento": "revision_preparada", "pieza": "R20270220-T176", "version": "61e6d25bf00df498", "canal": "chat"}
+{"ts": "2026-11-26T19:22:22+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-26T19:22:26+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-26T19:22:26+00:00", "evento": "revision_preparada", "pieza": "I20270220-T176", "version": "14d2531933e61f2e", "canal": "chat"}
+{"ts": "2026-11-26T19:22:26+00:00", "pieza": "I20270216-T172", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T19:22:26+00:00", "pieza": "I20270217-T173", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-26T19:22:26+00:00", "evento": "fin_ciclo", "redactadas": 2, "descartadas": 0, "producidas": 3, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 4, "en_revision": 3}

@@ -1,42 +1,50 @@
 {
  "tema_id": "T176",
  "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
- "fecha": "2026-11-26T11:56:06+00:00",
- "objetado": true,
+ "fecha": "2026-11-26T19:17:38+00:00",
+ "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
-  "concepto_central": "concubina o el concubinario",
-  "respuesta_corta": "Sí, a falta de cónyuge, la concubina o el concubinario pueden quedar amparados si cumplen los requisitos de convivencia, estado civil y dependencia económica.",
+  "concepto_central": "concubinato",
+  "respuesta_corta": "Sí, la concubina o el concubinario puede tener servicio médico a falta de cónyuge, si cumplen los requisitos de vida marital, hijos o tiempo, y dependencia económica.",
   "reglas": [
    {
-    "conclusion": "La concubina o el concubinario pueden quedar amparados por el seguro a falta de cónyuge, siempre que cumplan con el tiempo de vida marital o tengan hijos en común, permanezcan libres de matrimonio o unión civil, y dependan económicamente.",
+    "conclusion": "La protección para la concubina o concubinario opera únicamente a falta de cónyuge, siempre que hayan hecho vida marital por cinco años, procreado hijos o los hayan registrado, y ambos permanezcan libres de otro vínculo.",
     "fuente": "F1",
-    "cita_literal": "la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos",
+    "cita_literal": "a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos, siempre que ambos permanezcan libres de matrimonio",
     "condiciones": [
-     "Hacer vida marital durante los cinco años anteriores a la enfermedad o haber procreado o registrado hijos",
-     "Ambos deben permanecer libres de matrimonio, unión civil o concubinato",
-     "Depender económicamente del asegurado o pensionado",
-     "Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91"
+     "A falta de cónyuge",
+     "Hacer vida marital durante los cinco años anteriores a la enfermedad, o haber procreado o registrado hijos",
+     "Permanecer libres de matrimonio, unión civil o concubinato"
     ],
     "excepciones": [
      "Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección"
     ]
+   },
+   {
+    "conclusion": "La concubina o concubinario debe depender económicamente del asegurado o pensionado y cumplir con los requisitos del artículo 91 para tener derecho a las prestaciones.",
+    "fuente": "F1",
+    "cita_literal": "Los sujetos comprendidos en las fracciones III a IX, inclusive, tendrán derecho a las prestaciones respectivas si reúnen además los requisitos siguientes: a) Que dependan económicamente del asegurado o pensionado",
+    "condiciones": [
+     "Depender económicamente del asegurado o pensionado",
+     "Que el asegurado tenga derecho a las prestaciones consignadas en el artículo 91 de esta Ley"
+    ],
+    "excepciones": []
    }
   ],
   "elementos": [
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "Tienen derecho a las prestaciones del seguro si reúnen los requisitos de convivencia, dependencia económica y el derecho del asegurado.",
+    "respuesta": "La persona en unión libre tiene derecho a las prestaciones respectivas del seguro social si cumple los requisitos de concubinato, convivencia y dependencia económica.",
     "fuente": "F1",
     "cita_literal": "Los sujetos comprendidos en las fracciones III a IX, inclusive, tendrán derecho a las prestaciones respectivas si reúnen además los requisitos siguientes"
    }
   ],
   "interpretaciones": [],
   "distinciones": [],
-  "limites": "El texto oficial no detalla el procedimiento administrativo ni los documentos específicos requeridos para realizar el registro de la pareja en unión libre ante el IMSS.",
+  "limites": "El texto no detalla los documentos probatorios específicos que el IMSS solicita para acreditar el concubinato en la ventanilla.",
   "fuentes_irrelevantes": []
- },
- "nota_objecion": "26-11 (operación diaria): reúne «cinco años» e «hijos» con «o» y agrega requisitos de otros párrafos; el Reel se reabre con ángulo acotado. Se vuelve a analizar."
+ }
 }
