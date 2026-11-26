@@ -10,6 +10,7 @@ número de versión. El usuario responde «apruebo» o «rechazo». Claude regis
 Piezas derivadas (16-11-2026), con su propia versión y aprobación (nunca la del Reel del que salen):
   · <ID>-TT  versión larga solo para TikTok (sistema/tiktok_largo.py; registro estado/tiktok_largo.json).
   · Y<AAAAMMDD>-SEM  video largo semanal de YouTube (sistema/youtube_semanal.py; registro estado/youtube_semanal.json).
+  · D<AAAAMMDD>-<sufijo>  documental semanal de YouTube (26-11-2026; sistema/documental.py; registro estado/documentales.json).
   Se aprueban igual: aprobar <pieza> <versión> --por "…" --delegada; el veto de las 72 h es «rechazar … --nota».
 
 El script solo AÑADE una fila a estado/aprobaciones.jsonl (quién, cuándo, versión, huellas) después de comprobar que la
@@ -19,7 +20,7 @@ aplica la decisión al iniciar (revision.aplicar), con la misma doble comprobaci
 import argparse, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import cola, revision, tiktok_largo, youtube_semanal
+import cola, documental, revision, tiktok_largo, youtube_semanal
 
 
 class VersionDistinta(Exception):
@@ -35,6 +36,8 @@ def decidir(c, pid, decision, ver, por, nota="", canal="chat"):
         return tiktok_largo.decidir(pid, decision, ver, por, nota, canal)
     if youtube_semanal.es_semanal(pid):
         return youtube_semanal.decidir(pid, decision, ver, por, nota, canal)
+    if documental.es_documental(pid):
+        return documental.decidir(pid, decision, ver, por, nota, canal)
     t = c["trabajos"].get(pid)
     if not t or t["estado"] != "REVISION_HUMANA":
         raise VersionDistinta(f"{pid} no está en revisión humana")
@@ -61,12 +64,12 @@ if __name__ == "__main__":
             r = t.get("revision") or {}
             print(json.dumps({"pieza": t["id"], "formato": t.get("formato"), "version": r.get("version"), "preparada": r.get("preparada"),
                               "archivo": revision.principal(t["id"], t.get("formato", "reel"))}, ensure_ascii=False))
-        for x in tiktok_largo.pendientes() + youtube_semanal.pendientes():
+        for x in tiktok_largo.pendientes() + youtube_semanal.pendientes() + documental.pendientes():
             print(json.dumps(x, ensure_ascii=False))
         sys.exit(0)
     if not (a.pieza and a.version and a.por): ap.error("faltan pieza, versión o --por")
     try:
         print(json.dumps(decidir(c, a.pieza, "APROBADA" if a.accion == "aprobar" else "RECHAZADA", a.version, a.por, a.nota,
                                  canal="delegada" if a.delegada else "chat"), ensure_ascii=False, indent=2))
-    except (VersionDistinta, ValueError) as e:
+    except (VersionDistinta, ValueError) as e:   # NoDecidible (semanal y documental) es ValueError
         print(f"NO REGISTRADO: {e}"); sys.exit(2)

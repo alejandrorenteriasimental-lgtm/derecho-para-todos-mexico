@@ -123,3 +123,66 @@ Reels aprobados ni sus aprobaciones, y cada pieza derivada tiene su propia versi
 3. `registro/tiktok.jsonl`: `variante` = «larga» es lo esperado cuando la variante está aprobada; `variante_omitida` explica por qué salió el Reel normal.
 4. `estado/youtube_semanal.json` y `registro/youtube_semanal.jsonl`: `INSUFICIENTE` (no hay video esa semana; avisar al responsable si se repite), `ERROR` (repetir con `youtube-semanal.yml`, `accion=armar`, después de corregir), `RETENIDO` (fallas técnicas, también de la miniatura), `PROGRAMADO` (lo esperado el domingo, con `miniatura_yt.estado` = `PUESTA`; si es `ERROR`, ver el motivo), `VENCIDO`.
 5. Minutos: el armado semanal usa del orden de 15 a 25 min de Actions por semana y la versión larga unos minutos por pieza dentro del ciclo; todo pasa por la guardia de 1,850 min.
+
+## Documentales semanales (decisión del responsable, 26-11-2026)
+
+Un **documental de caso real por semana en YouTube** (horizontal, 8 a 12 min) sustituye al video semanal que juntaba Reels.
+Aprobación delegada: Claude aprueba con `decidir.py --delegada` y el responsable tiene 72 h de veto. **Primer documental:
+domingo 6-12-2026 a las 12:00 CDMX** (`documentales/D20261206-T001`). Registro de la decisión: `data/lanzamiento.json` →
+`documental_semanal`. No cambia `PUBLICAR_DESDE`, `ADELANTO_AUTORIZADO`, `PUBLICAR_HASTA` ni ninguna otra autorización.
+
+- **Video semanal de Reels: desactivado, código conservado.** `YOUTUBE_SEMANAL_MODO = "documental"` en `data/lanzamiento.json`:
+  `youtube_semanal.activo()` responde `false` y `youtube-semanal.yml` (armar y programar) termina sin hacer nada.
+- **Guion** (lo escribe y verifica el editor; la producción no toca el contenido): `documentales/<ID>/guion.json`, ID =
+  `D<AAAAMMDD de publicación>-<sufijo>`. Esquema y validador: `sistema/esquema_documental.py`
+  (`python sistema/esquema_documental.py documentales/<ID>/guion.json`). Reglas: duración estimada de 6 a 15 min (≈ 150
+  palabras/min); al menos 3 capítulos y el primero en la escena 1 (un capítulo empieza donde `capitulo` cambia: puede
+  escribirse solo en la primera escena o repetirse en todas); cada escena `cita` o `dato` con al menos una fuente cuya URL esté
+  en la lista completa; tipos de fuente `ley`, `sentencia`, `tesis`, `oficial`, `hemerografica`, `tratado`, `cronica`;
+  prohibido traer imágenes, videos, audios, archivos o URL en pantalla (solo gráficos originales de la marca); `titulo_corto`
+  opcional (si falta: el título o lo que va antes de «:», ≤ 6 palabras). El `aviso` del guion es obligatorio; el aviso de marca
+  «Información general, no asesoría legal.» lo pone siempre el sistema (inicio, final y descripción) y, si el del guion es otro,
+  también se agrega a la descripción.
+- **Producir** (no publica nada): Actions → `documental.yml` → *Run workflow* con `accion=producir` e `id=<ID>`
+  (por REST: `gh api -X POST repos/{repo}/actions/workflows/documental.yml/dispatches -f ref=main -f inputs[accion]=producir -f inputs[id]=<ID>`).
+  Localmente: `python sistema/documental.py producir <ID>` (requiere los modelos de voz: `bash sistema/descargar_modelos.sh`).
+  1. Valida el guion; si falla queda `INVALIDO` con los errores en `estado/documentales.json`.
+  2. Narra cada escena con la voz de la marca (`config_voz.json`, Kokoro `em_santa`); escena = voz + 0.7 s de respiro; cada
+     capítulo abre con una cortinilla de 2.6 s sin narración. La síntesis de ~10 min tarda del orden de 10 min.
+  3. Render 1920x1080, 30 cps (`sistema/render_documental.py`): fondo de marca en movimiento, entradas escalonadas, cita en
+     tarjeta con resaltado progresivo, línea de tiempo que avanza, documento que se desplaza («Representación gráfica»), cifras
+     que crecen, recreaciones esquemáticas con siluetas sin rostro y el rótulo **«RECREACIÓN · Ilustración, no es material
+     auténtico»** durante toda la escena, subtítulos quemados con la palabra en curso resaltada, «Voz generada con IA», capítulo
+     en curso y barra de avance. Música: solo el pad original del repositorio (`musica.pad`, generado por código), bajo la voz
+     con compresión lateral como en los Reels; no se descarga nada de terceros.
+  4. Entrada (logotipo, «DOCUMENTAL», título y aviso) y cierre (aviso, fuentes en la descripción, «Síguenos») con la firma
+     sonora: mismas piezas del video semanal (`_fondo`, logotipo, `_parte_tarjeta`). H.264 + AAC 48 kHz, −14 LUFS en dos pasadas.
+  5. Descripción: resumen del guion, capítulos con los tiempos reales (0:00 el primero), todas las fuentes (referencia, tipo y
+     URL), el aviso, la nota de recreaciones y «Voz generada con IA». Miniatura 1280x720 con el generador del video semanal
+     (titular = título corto).
+  6. Auditoría (`documentales/<ID>/salida/auditoria.json`): la técnica del video semanal (formato, 6-15 min, audio, integridad,
+     sonoridad, silencios, negros) + capítulos (≥ 3, 0:00, ≥ 10 s, en la descripción), fuentes completas, fuente en cada cita/dato,
+     aviso en descripción y en pantalla al inicio y al final, **rótulo de recreación medido en los píxeles del video final**
+     (inicio, mitad y final de cada recreación), subtítulos (≥ 85 % de la voz), título, descripción ≤ 4,900 y miniatura. Si algo
+     falla: `RETENIDO`.
+  7. Respaldo en el release `piezas-AAAA-MM` (video, miniatura, subtítulos, auditoría) y `REVISION_HUMANA`. **Versión** = huella
+     del manifiesto `documentales/<ID>/manifiesto.json`, que lleva las SHA-256 del video, la miniatura y el guion: si cambia
+     cualquiera (también si se edita el guion después de producir) no hay versión aprobable y hay que volver a producir.
+- **Revisión y aprobación delegada.** `python sistema/decidir.py listar` muestra el documental pendiente con su versión.
+  Revisar el video (descargarlo del release por su huella), los capítulos, la descripción y la miniatura, y:
+  `python sistema/decidir.py aprobar <ID> <versión> --por "Claude (revisión editorial delegada)" --delegada`.
+  **Para que salga el domingo a las 12:00, aprobar a más tardar el jueves a las 11:00 CDMX** (el veto de 72 h debe terminar
+  antes de la ejecución del domingo 11:07). Veto: `python sistema/decidir.py rechazar <ID> <versión> --por "responsable" --nota "veto del responsable"`.
+  Una pieza `APROBADA` o `PROGRAMADA` no se vuelve a producir (para cambiarla hay que vetarla primero).
+- **Programar.** `documental.yml` corre el domingo y el lunes a las 11:07 CDMX (o a mano con `accion=programar`):
+  `python sistema/documental.py programar` sube cada documental `APROBADO` y fuera de veto como **video normal (no Short)**,
+  privado con `publishAt` = su `fecha` a las 12:00 CDMX, y después pone la miniatura (`thumbnails.set`). Si el veto termina
+  tarde, la ejecución del lunes lo programa para las 12:00 de ese día; si pasan más de 6 días queda `VENCIDO`; más de 8 días
+  antes de su fecha queda `EN_ESPERA`. Idempotente con el libro de operaciones (marcas `…-yt` y `…-yt-min`): nunca se sube
+  dos veces; una carga sin confirmación no se reintenta sola. Comprueba aprobación, versión, huella del archivo descargado,
+  paro de emergencia y `PUBLICAR_HASTA`. Sin las condiciones de YouTube, solo simula.
+- **Qué revisa la operación diaria:** `estado/documentales.json` y `registro/documentales.jsonl`: `INVALIDO` (corregir el
+  guion), `ERROR` (repetir `producir` tras corregir), `RETENIDO` (falla técnica; ver `fallas_tecnicas`), `REVISION_HUMANA`
+  (revisar y aprobar), `PROGRAMADO` con `miniatura_yt.estado = PUESTA` (lo esperado), `VENCIDO`.
+- **Pruebas:** `pruebas/test_documental.py` con el guion de PRUEBA ficticio `pruebas/datos/documental_prueba/guion.json`
+  (voz simulada; render real corto).

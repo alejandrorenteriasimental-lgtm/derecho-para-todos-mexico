@@ -81,6 +81,13 @@
  },
  "TIKTOK_LARGO_DESDE": "2026-12-01",
  "YOUTUBE_SEMANAL_DESDE": "2026-12-03",
+ "YOUTUBE_SEMANAL_MODO": "documental",
+ "documental_semanal": {
+  "fecha": "2026-11-26",
+  "decision": "un DOCUMENTAL de caso real por semana en YouTube (horizontal, 8-12 min), en lugar del video semanal que junta Reels; aprobación delegada (Claude aprueba con decidir.py --delegada; el responsable tiene 72 h de veto); primer documental: domingo 6-12-2026 12:00 CDMX",
+  "efecto": "YOUTUBE_SEMANAL_MODO=documental: youtube-semanal.yml termina sin hacer nada (código conservado); documental.yml produce (workflow_dispatch con id) y programa (domingo y lunes 11:07 CDMX). No cambia PUBLICAR_DESDE, ADELANTO_AUTORIZADO, PUBLICAR_HASTA ni ninguna otra autorización.",
+  "implementacion": "sistema/esquema_documental.py, sistema/documental.py, sistema/render_documental.py, .github/workflows/documental.yml; docs/operacion_autonoma.md (Documentales semanales)"
+ },
  "IG_VENTANA_H": "12",
  "ig_ventana_nota": "23-11-2026: el cron de GitHub se retrasó hasta 8 h y el Reel del 22-11 no salió en Instagram; la ventana pasa de 3 a 12 h"
 }

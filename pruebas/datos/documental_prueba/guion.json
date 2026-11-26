@@ -1,0 +1,33 @@
+{
+ "id": "D20261206-prueba",
+ "prueba": "GUION DE PRUEBA DEL SISTEMA. Caso, personas, leyes y fuentes FICTICIOS. No es contenido de la marca ni se publica.",
+ "titulo": "[PRUEBA] El caso ficticio de la tienda La Esquina",
+ "titulo_corto": "Caso ficticio La Esquina",
+ "descripcion": "PRUEBA TÉCNICA del sistema de documentales. Todo es ficticio: el caso, las personas, la ley y las fuentes. Sirve solo para comprobar la producción.",
+ "fecha": "2026-12-06",
+ "aviso": "Información general, no asesoría legal.",
+ "escenas": [
+  {"n": 1, "capitulo": "Prueba: el comienzo", "narracion": "Esto es una prueba del sistema de documentales. El caso que vas a escuchar es ficticio y sirve solo para revisar la producción.",
+   "pantalla": {"tipo": "titulo", "textos": ["El caso ficticio de la tienda La Esquina", "Prueba técnica del sistema"], "fuente_corta": null}, "fuentes": []},
+  {"n": 2, "capitulo": null, "narracion": "Una tienda imaginaria cobró dos veces la misma compra. ¿Qué podía hacer la clienta, según una ley inventada para esta prueba?",
+   "pantalla": {"tipo": "pregunta", "textos": ["¿Qué podía hacer la clienta ficticia?"], "fuente_corta": null}, "fuentes": []},
+  {"n": 3, "capitulo": null, "narracion": "En esta recreación, la clienta ficticia llega al mostrador con su ticket y pide la devolución del segundo cobro.",
+   "pantalla": {"tipo": "recreacion", "textos": ["La clienta ficticia pide la devolución del cobro doble"], "fuente_corta": null, "escenario": "calle"}, "fuentes": []},
+  {"n": 4, "capitulo": "Prueba: lo que dice la norma", "narracion": "La ley ficticia de esta prueba dice, en su artículo uno, que todo cobro duplicado debe devolverse dentro de cinco días.",
+   "pantalla": {"tipo": "cita", "textos": ["Todo cobro duplicado deberá devolverse dentro de los cinco días siguientes a la reclamación."], "fuente_corta": "Ley Ficticia de Prueba, art. 1"},
+   "fuentes": [{"tipo": "ley", "referencia": "Ley Ficticia de Prueba, artículo 1 (documento inventado para pruebas)", "url": "https://example.org/prueba/ley-ficticia"}]},
+  {"n": 5, "capitulo": null, "narracion": "Según un registro también inventado, cinco días es el plazo que esa ley imaginaria fija para devolver el dinero.",
+   "pantalla": {"tipo": "dato", "textos": ["5 días", "plazo ficticio para devolver un cobro duplicado"], "fuente_corta": "Registro Ficticio de Prueba"},
+   "fuentes": [{"tipo": "oficial", "referencia": "Registro Ficticio de Prueba (dato inventado para pruebas)", "url": "https://example.org/prueba/registro"}]},
+  {"n": 6, "capitulo": null, "narracion": "El expediente ficticio resume la queja en una hoja: la fecha de la compra, el doble cargo y la petición de devolución.",
+   "pantalla": {"tipo": "documento", "textos": ["Expediente ficticio de prueba", "Compra del día uno", "Cargo duplicado", "Petición de devolución"], "fuente_corta": "Documento ficticio"}, "fuentes": []},
+  {"n": 7, "capitulo": "Prueba: el desenlace", "narracion": "La historia ficticia avanza así: la compra, la queja, la respuesta de la tienda y, al final, la devolución.",
+   "pantalla": {"tipo": "linea_tiempo", "textos": ["Día 1 | Compra con cobro doble", "Día 2 | La clienta reclama", "Día 4 | La tienda responde", "Día 6 | Devolución"], "fuente_corta": null}, "fuentes": []},
+  {"n": 8, "capitulo": null, "narracion": "Fin de la prueba. Recuerda que todo lo que escuchaste es ficticio y no describe ninguna ley real.",
+   "pantalla": {"tipo": "cierre", "textos": ["Lo que comprobó esta prueba", "Narración por escena", "Gráficos animados", "Subtítulos y capítulos"], "fuente_corta": null}, "fuentes": []}
+ ],
+ "fuentes": [
+  {"tipo": "ley", "referencia": "Ley Ficticia de Prueba, artículo 1 (documento inventado para pruebas)", "url": "https://example.org/prueba/ley-ficticia"},
+  {"tipo": "oficial", "referencia": "Registro Ficticio de Prueba (dato inventado para pruebas)", "url": "https://example.org/prueba/registro"}
+ ]
+}

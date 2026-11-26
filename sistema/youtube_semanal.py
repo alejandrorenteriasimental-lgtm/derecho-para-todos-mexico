@@ -94,9 +94,16 @@ def desde(archivo=None):
     except (OSError, ValueError): return None
 
 
+def modo(archivo=None):
+    """YOUTUBE_SEMANAL_MODO de data/lanzamiento.json. «documental» (decisión del responsable, 26-11-2026): el video semanal
+    que junta Reels ya no se arma ni se programa; cada semana sale un documental (sistema/documental.py). El código se conserva."""
+    try: return json.loads(Path(archivo or AUT).read_text()).get("YOUTUBE_SEMANAL_MODO") or "reels"
+    except (OSError, ValueError): return "reels"
+
+
 def activo(hoy, archivo=None):
     d = desde(archivo)
-    return bool(d) and hoy.isoformat() >= d
+    return bool(d) and hoy.isoformat() >= d and modo(archivo) != "documental"
 
 
 def cargar():
@@ -363,15 +370,16 @@ def _hex(c):
     return "#%02X%02X%02X" % tuple(c[:3])
 
 
-def miniatura(sel, salida):
+def miniatura(sel, salida, textos=None):
     """Miniatura 1280x720 con la identidad aprobada (fondo, colores, Inter Display y el símbolo/logotipo de marca/), sin
-    fotos de terceros. Devuelve la descripción de lo que se pintó (textos, cajas, colores y tamaños) para la auditoría."""
+    fotos de terceros. Devuelve la descripción de lo que se pintó (textos, cajas, colores y tamaños) para la auditoría.
+    textos = (antetítulo, titular) para otros videos (documental semanal, 26-11-2026); por omisión, los del video semanal."""
     from PIL import ImageDraw
     import marca
     C, F = marca.C, marca.F
     im = _fondo(MW, MH); d = ImageDraw.Draw(im)
     x0, ancho = 76, 700
-    ante, titular = textos_miniatura(sel)
+    ante, titular = textos if textos is not None else textos_miniatura(sel)
     textos = []
     # símbolo de marca (burbuja con §) a la derecha, grande: se reconoce aunque la miniatura se vea a 168x94
     s = marca.simbolo(330, "cempasuchil", "noche"); sx, sy = MW - 76 - s.width, 150
@@ -590,6 +598,13 @@ def armar_video(sel, archivos, carpeta, pid):
 
 def auditar(mp4, m, dur_min=None, dur_max=None):
     """Auditoría técnica del video largo (determinista, con ffprobe/ffmpeg) + controles de capítulos, fuentes y aviso."""
+    res, dur = auditar_tecnica(mp4, dur_min, dur_max)
+    return res + controles_metadatos(m, dur) + controles_miniatura(Path(mp4).parent, m), dur
+
+
+def auditar_tecnica(mp4, dur_min=None, dur_max=None):
+    """Solo los controles del archivo (formato, duración, audio, integridad, sonoridad, silencios, negros); también la usa
+    el documental semanal (sistema/documental.py) con su propio rango de duración. Devuelve (controles, duración)."""
     dur_min = DUR_MIN if dur_min is None else dur_min; dur_max = DUR_MAX if dur_max is None else dur_max
     res = []
     def ok(nombre, cond, detalle=""): res.append({"control": nombre, "resultado": "APROBADO" if cond else "FALLA", "detalle": detalle})
@@ -619,7 +634,7 @@ def auditar(mp4, m, dur_min=None, dur_max=None):
     err = subprocess.run(["ffmpeg", "-nostdin", "-nostats", "-i", str(mp4), "-vf", "blackdetect=d=1:pix_th=0.05", "-an", "-f", "null", "-"], capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=FF_TIMEOUT_S).stderr
     neg = re.findall(r"black_duration:([\d.]+)", err)
     ok("Sin pantallas negras mayores a 1 s (los fundidos son de 0.3 s)", not neg, f"{len(neg)} tramos")
-    return res + controles_metadatos(m, dur) + controles_miniatura(Path(mp4).parent, m), dur
+    return res, dur
 
 
 def controles_miniatura(carpeta, m):

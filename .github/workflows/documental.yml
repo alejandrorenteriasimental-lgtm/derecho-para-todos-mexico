@@ -1,0 +1,82 @@
+# Documental semanal de YouTube (decisión del responsable, 26-11-2026; sistema/documental.py). Sustituye al video semanal de Reels.
+#  · producir (workflow_dispatch, accion=producir, id=D<AAAAMMDD>-<sufijo>): con el guion ya en documentales/<id>/guion.json,
+#    lo valida, narra (voz de la marca), renderiza 1920x1080, audita, respalda en el release y lo deja en REVISION_HUMANA.
+#    No publica nada. Aprobación delegada: python sistema/decidir.py aprobar <id> <versión> --por "…" --delegada (72 h de veto).
+#  · programar (domingo y lunes 11:07 CDMX, o workflow_dispatch accion=programar): sube como video normal (no Short), privado
+#    con publishAt = fecha del guion a las 12:00 CDMX, y pone la miniatura. Idempotente (libro de operaciones). Sin PUBLICAR=1,
+#    LANZAMIENTO_AUTORIZADO=SI, YOUTUBE=1 y los secretos de YouTube, solo simula. Respeta el paro de emergencia y PUBLICAR_HASTA.
+# Costo: 0 MXN (repositorio público: runners estándar gratuitos).
+name: documental
+on:
+  schedule:
+    - cron: "7 17 * * 0"      # domingo 11:07 CDMX: programar para las 12:00
+    - cron: "7 17 * * 1"      # lunes 11:07 CDMX: si el veto terminó después del domingo 11:07
+  workflow_dispatch:
+    inputs:
+      accion: { description: "producir | programar", required: true, default: "producir" }
+      id: { description: "ID del documental (D<AAAAMMDD>-<sufijo>) para producir", required: false, default: "" }
+concurrency: { group: documental, cancel-in-progress: false }
+permissions:
+  contents: write             # estado/, registro/, manifiesto y auditoría; los archivos van al release
+  actions: read
+jobs:
+  producir:
+    if: github.event_name == 'workflow_dispatch' && inputs.accion == 'producir'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - name: ffmpeg estático (caché)
+        uses: actions/cache@v4
+        with: { path: ~/ffmpeg-static, key: ffmpeg-btbn-v1 }
+      - name: Dependencias
+        timeout-minutes: 14
+        run: |
+          bash sistema/apt.sh
+          pip install -q -r requirements.txt
+      - name: Modelos de voz (caché)
+        uses: actions/cache@v4
+        with: { path: models, key: modelos-v0.2-kokoro1.0-piper-claude }
+      - name: Descargar modelos si faltan (GitHub Releases, sin costo)
+        run: bash sistema/descargar_modelos.sh
+      - name: Producir, auditar y respaldar
+        env:
+          ID: ${{ inputs.id }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python sistema/documental.py producir "$ID"
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add estado registro documentales/*/manifiesto.json documentales/*/salida/*.json || true
+          git diff --cached --quiet || (git commit -m "documental ${{ inputs.id }} (${{ github.run_id }})" && git pull --rebase -q && git push)
+  programar:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.accion == 'programar')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: Programar en YouTube lo aprobado y fuera de veto
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLICAR: ${{ vars.PUBLICAR }}
+          LANZAMIENTO_AUTORIZADO: ${{ vars.LANZAMIENTO_AUTORIZADO }}
+          PAUSA_PUBLICACION: ${{ vars.PAUSA_PUBLICACION }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_SYSTEM_TOKEN: ${{ secrets.META_SYSTEM_TOKEN }}
+          YOUTUBE: ${{ vars.YOUTUBE }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python3 sistema/documental.py programar
+      - name: Guardar registros
+        if: always()
+        run: |
+          git config user.name "dpt-bot" && git config user.email "dpt-bot@users.noreply.github.com"
+          git add -A registro estado || true
+          git diff --cached --quiet || (git commit -m "documental programar ${{ github.run_id }}" && git pull --rebase -q && git push)
