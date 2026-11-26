@@ -14561,7 +14561,7 @@
       "id": "R20270219-T175",
       "formato": "reel",
       "huella": "cef3374e35d7540fd663a5d62aab75ac4fe63014a9f0e093359f36327df49cf5",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-26T11:57:28+00:00",
@@ -14577,6 +14577,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-26T12:02:33+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-26T12:10:34+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 26-11): gancho narrado sin pregunta de sí/no antes de «Sí.» y condición «Debes ser el titular moral» poco clara → gancho = pregunta del plan y condición con el art. 18 LFDA literal; a re-producción"
         }
       ],
       "error": null,
