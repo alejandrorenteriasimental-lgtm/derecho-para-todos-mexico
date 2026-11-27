@@ -1,0 +1,99 @@
+{
+ "solicitud": "2027-02-28_reel_T184-lote-10.json",
+ "fecha": "2026-11-27T23:47:00+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: elemento de lista demasiado largo («Inscripción en el Registro Agr…»)\"], \"visible\": \"  \\n ¿A quién puede vender su parcela un ejidatario? \\n ¿A QUIÉN \\n PUEDES \\n VENDER? \\n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \\n VENTA \\n PARCELARIA \\n La ley establece textualm",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "reutilizado": true,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "el plazo de treinta días naturales para el ejercicio del derecho del tanto"
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los ejidatarios pueden vender sus derechos parcelarios únicamente a otros ejidatarios o avecindados del mismo núcleo de población.",
+      "sostenida": "parcial",
+      "motivo": "El texto oficial no utiliza el término restrictivo 'únicamente'; se limita a señalar a quiénes podrán enajenar."
+     },
+     {
+      "conclusion": "La validez de la enajenación depende del cumplimiento de los requisitos de conformidad, notificación y aviso; posteriormente, el Registro Agrario Nacional procederá a la inscripción y expedición de nuevos certificados.",
+      "sostenida": "si",
+      "motivo": "La conclusión sintetiza correctamente los requisitos de validez y el efecto registral descritos en el artículo 80."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Titular y respuesta corta",
+      "problema": "Error de concordancia entre pregunta y respuesta. La pregunta es abierta ('¿A quién...?') y la respuesta inicia con un 'Sí', lo cual es gramaticalmente incorrecto para este tipo de interrogante.",
+      "correccion": "Eliminar el 'Sí' inicial para que la respuesta sea directa: 'A otros ejidatarios o avecindados del mismo núcleo de población...'"
+     },
+     {
+      "donde": "Lista de requisitos",
+      "problema": "Omisión de un elemento esencial para la validez: el plazo. La notificación al cónyuge, concubina/o e hijos conlleva un plazo de caducidad de treinta días naturales.",
+      "correccion": "Especificar que el derecho del tanto debe ejercerse dentro del término de treinta días naturales contados a partir de la notificación."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[respuesta] La respuesta corta no contesta de forma directa (debe empezar con Sí, No, Depende…): «A otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos»."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La enajenación tiene como efecto que el Registro Agrario Nacional proceda a inscribirla y expida nuevos certificados parcelarios.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n ¿A quién puede vender su parcela un ejidatario? \n ¿A QUIÉN \n PUEDES \n VENDER? \n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \n VENTA \n PARCELARIA \n La ley establece textualmente que los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Para que tenga validez jurídica se deben cumplir ciertos requisitos: \n Conformidad por escrito \n Notificar a la familia \n Aviso al comisariado \n Sí, a otros ejidatarios o avecindados del mismo núcleo de p"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La enajenación tiene como efecto que el Registro Agrario Nacional proceda a inscribirla y expida nuevos certificados parcelarios.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "errores_esquema": [
+    "escena 3: elemento de lista demasiado largo («El Registro Agrario Nacional p…»)"
+   ],
+   "visible": "  \n ¿A quién puede vender su parcela un ejidatario? \n ¿A QUIÉN \n PUEDES \n VENDER? \n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \n VENTA \n PARCELARIA \n La ley establece textualmente que los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Para que tenga validez jurídica se deben cumplir ciertos requisitos: \n Conformidad por escrito \n Notificar a la familia \n Aviso al comisariado \n El Registro Agrario Nacional procede a inscribirla y expide"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 2,
+   "errores": [
+    "escena 3: elemento de lista demasiado largo («El Registro Agrario Nacional p…»)"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "escena 3: elemento de lista demasiado largo («Inscripción en el Registro Agr…»)"
+   ],
+   "visible": "  \n ¿A quién puede vender su parcela un ejidatario? \n ¿A QUIÉN \n PUEDES \n VENDER? \n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \n VENTA \n PARCELARIA \n La ley establece textualmente que los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población. \n Para que tenga validez jurídica se deben cumplir ciertos requisitos: \n Conformidad por escrito \n Notificar a la familia \n Aviso al comisariado \n Inscripción en el Registro Agrario Nacional \n Sí, a otros e"
+  }
+ ]
+}

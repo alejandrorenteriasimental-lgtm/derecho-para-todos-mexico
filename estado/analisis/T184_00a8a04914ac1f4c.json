@@ -1,22 +1,22 @@
 {
  "tema_id": "T184",
  "pregunta": "¿A quién puede vender su parcela un ejidatario?",
- "fecha": "2026-11-27T13:05:28+00:00",
+ "fecha": "2026-11-27T23:46:50+00:00",
  "objetado": false,
  "mapa": {
   "suficiente": true,
   "pregunta": "¿A quién puede vender su parcela un ejidatario?",
-  "concepto_central": "enajenación de derechos parcelarios",
-  "respuesta_corta": "Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos legales correspondientes.",
+  "concepto_central": "enajenar sus derechos parcelarios",
+  "respuesta_corta": "Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez.",
   "reglas": [
    {
-    "conclusion": "Los ejidatarios pueden vender sus derechos parcelarios únicamente a otros ejidatarios o avecindados del mismo núcleo de población.",
+    "conclusion": "Los ejidatarios pueden vender sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población cumpliendo los requisitos legales.",
     "fuente": "F1",
     "cita_literal": "Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población.",
     "condiciones": [
-     "manifestación de conformidad por escrito ante dos testigos ratificada ante fedatario público",
-     "notificación por escrito del derecho del tanto",
-     "dar aviso por escrito al comisariado ejidal"
+     "Manifestación de conformidad por escrito de las partes ante dos testigos, ratificada ante fedatario público",
+     "Notificación por escrito al cónyuge, concubina o concubinario y los hijos",
+     "Dar aviso por escrito al comisariado ejidal"
     ],
     "excepciones": []
    }
@@ -25,20 +25,14 @@
    {
     "elemento": "efecto",
     "estado": "cubierto",
-    "respuesta": "La validez de la enajenación depende del cumplimiento de los requisitos de conformidad, notificación y aviso; posteriormente, el Registro Agrario Nacional procederá a la inscripción y expedición de nuevos certificados.",
+    "respuesta": "La enajenación tiene como efecto que el Registro Agrario Nacional proceda a inscribirla y expida nuevos certificados parcelarios.",
     "fuente": "F1",
     "cita_literal": "Realizada la enajenación, el Registro Agrario Nacional, procederá a inscribirla y expedirá los nuevos certificados parcelarios, cancelando los anteriores."
    }
   ],
   "interpretaciones": [],
-  "distinciones": [
-   {
-    "a": "renuncia",
-    "b": "enajenación",
-    "diferencia": "La renuncia es la manifestación para declinar el derecho del tanto, mientras que la enajenación es la venta de los derechos parcelarios."
-   }
-  ],
-  "limites": "El texto no señala consecuencias específicas por vender a personas distintas de las autorizadas ni detalla otros supuestos no previstos en el artículo.",
+  "distinciones": [],
+  "limites": "El texto oficial no prevé la venta a personas distintas de ejidatarios o avecindados del mismo núcleo de población.",
   "fuentes_irrelevantes": []
  }
 }

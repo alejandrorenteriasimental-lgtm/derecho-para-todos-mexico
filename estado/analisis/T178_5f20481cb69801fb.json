@@ -1,0 +1,45 @@
+{
+ "tema_id": "T178",
+ "pregunta": "¿Te tienen que pagar durante el periodo de prueba?",
+ "fecha": "2026-11-27T23:42:32+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Te tienen que pagar durante el periodo de prueba?",
+  "concepto_central": "periodo de prueba",
+  "respuesta_corta": "Sí, durante el periodo de prueba tienes derecho a recibir salario, seguridad social y las prestaciones del puesto.",
+  "reglas": [
+   {
+    "conclusion": "Durante el periodo de prueba el trabajador tiene derecho a recibir su salario, seguridad social y prestaciones.",
+    "fuente": "F1",
+    "cita_literal": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+    "condiciones": [
+     "Estar en una relación de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días"
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "Se debe otorgar el salario, la seguridad social y las prestaciones de la categoría o puesto desempeñado.",
+    "fuente": "F1",
+    "cita_literal": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+    "motivo": ""
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "Aplica cuando se establece un periodo a prueba en relaciones de trabajo por tiempo indeterminado o que exceden de ciento ochenta días.",
+    "fuente": "F1",
+    "cita_literal": "En las relaciones de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días, podrá establecerse un periodo a prueba",
+    "motivo": ""
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [],
+  "limites": "El texto oficial no especifica fechas límite exactas para el pago ni los montos específicos del salario, solo indica que corresponde al de la categoría o puesto desempeñado.",
+  "fuentes_irrelevantes": []
+ }
+}

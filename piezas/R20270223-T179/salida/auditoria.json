@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "43.5 s"
+      "detalle": "41.5 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "43.5 s"
+      "detalle": "41.5 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,12 +38,12 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.8 dBTP"
+      "detalle": "-1.5 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "33 bloques"
+      "detalle": "32 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "13281332dde7b0bd"
+      "detalle": "b2efd23d8aea662a"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270223-T179",
     "titulo": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
-    "fecha": "2026-11-27T19:22:27+00:00",
-    "sha256": "13281332dde7b0bd2ecf03263ed8df61382b2f0f905d0b382ceddee76f87055e",
-    "duracion_s": 43.5,
+    "fecha": "2026-11-27T23:50:29+00:00",
+    "sha256": "b2efd23d8aea662a9b0a1143b9d991e274458a3995e39cf4091ff17a0cb5cd91",
+    "duracion_s": 41.5,
     "estado": "APTO",
-    "huella_guion": "14060e7994a84b78226ed2e82086fb8fb98d72e9396c2a79b42d183a8caf98cd",
+    "huella_guion": "b23f1322eae346d5b3d7a505eab61d91b6794e26c2e9f8d4e9be0406b8d3967d",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 13.2,
-      "musica": 1.9,
-      "render_video": 30.7,
-      "mezcla_audio": 1.6,
-      "auditoria_tecnica": 5.5
+      "narracion": 14.3,
+      "musica": 1.8,
+      "render_video": 31.3,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 5.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.88,
-      "computo_equivalente_runner_usd": 0.0053,
+      "computo_minutos": 0.9,
+      "computo_equivalente_runner_usd": 0.0054,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1302,
-    "caracteres_narrados": 614
+    "frames": 1242,
+    "caracteres_narrados": 589
   }
 }
