@@ -1,0 +1,144 @@
+{
+  "tecnica": [
+    {
+      "control": "Resolución 1080x1920 (9:16)",
+      "resultado": "APROBADO",
+      "detalle": "1080x1920"
+    },
+    {
+      "control": "Códec H.264, yuv420p",
+      "resultado": "APROBADO",
+      "detalle": "h264, yuv420p"
+    },
+    {
+      "control": "30 cuadros por segundo",
+      "resultado": "APROBADO",
+      "detalle": "30.00 fps"
+    },
+    {
+      "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
+      "resultado": "APROBADO",
+      "detalle": "43.0 s"
+    },
+    {
+      "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
+      "resultado": "FALLA",
+      "detalle": "43.0 s"
+    },
+    {
+      "control": "Pista de audio AAC 48 kHz estéreo",
+      "resultado": "APROBADO",
+      "detalle": "aac, 48000 Hz, 2 canales"
+    },
+    {
+      "control": "Archivo íntegro (decodificación completa sin errores)",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Sonoridad -14 LUFS ±1.5",
+      "resultado": "APROBADO",
+      "detalle": "-14.2 LUFS"
+    },
+    {
+      "control": "Pico verdadero ≤ -1 dBTP",
+      "resultado": "APROBADO",
+      "detalle": "-1.9 dBTP"
+    },
+    {
+      "control": "Sin silencios mayores a 1.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 silencios"
+    },
+    {
+      "control": "Sin pantallas negras mayores a 0.5 s",
+      "resultado": "APROBADO",
+      "detalle": "0 tramos"
+    },
+    {
+      "control": "Subtítulos presentes y dentro de la duración",
+      "resultado": "APROBADO",
+      "detalle": "32 bloques"
+    },
+    {
+      "control": "Bloques de subtítulo de 30 caracteres o menos",
+      "resultado": "APROBADO",
+      "detalle": "0 excedidos"
+    },
+    {
+      "control": "No duplica un video ya registrado (SHA-256)",
+      "resultado": "APROBADO",
+      "detalle": "d92b12397ba8716b"
+    },
+    {
+      "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
+      "resultado": "APROBADO",
+      "detalle": "desfase máximo 30 ms en 8 oraciones"
+    },
+    {
+      "control": "Subtítulos sin tapar citas ni contenido",
+      "resultado": "APROBADO",
+      "detalle": "0 cuadros con solape"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "registro": {
+    "id": "R20270224-T180",
+    "titulo": "¿Te deben devolver tu dinero si no es lo ofrecido?",
+    "fecha": "2026-11-27T12:14:05+00:00",
+    "sha256": "d92b12397ba8716b46bb0d477c66777d5466dcd013ca95e0ba0cf5c674543bc2",
+    "duracion_s": 43.0,
+    "estado": "APTO",
+    "huella_guion": "9112680cb3d370789cad194913199a23c1f9dfb1cdd12868c4d19215ae664043",
+    "carril": "A",
+    "tiempos_s": {
+      "auditoria_juridica": 0.0,
+      "narracion": 11.2,
+      "musica": 2.0,
+      "render_video": 28.7,
+      "mezcla_audio": 1.4,
+      "auditoria_tecnica": 4.6
+    },
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "computo_minutos": 0.8,
+      "computo_equivalente_runner_usd": 0.0048,
+      "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
+    },
+    "frames": 1288,
+    "caracteres_narrados": 618
+  }
+}

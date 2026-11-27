@@ -1,0 +1,137 @@
+{
+ "solicitud": "2027-02-22_imagen_T178-lote-10.json",
+ "fecha": "2026-11-27T12:01:05+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo en los casos de excepción previstos por la ley. \\n No se requ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ],
+   "visible": "  \n   \n Depende: se requiere permiso por escrito, pero no es necesario si el menor expresa su opinión sobre asuntos que le afectan directamente. \n No debe afectarse la honra o reputación del menor."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.»), pero la pieza no lo dice: agrégalo al texto visible."
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Los medios de comunicación tienen la obligación general de obtener el consentimiento de los padres o tutores para difundir entrevistas de menores.",
+      "sostenida": "si",
+      "motivo": "El artículo 78, fracción I, establece la regla general de recabar el consentimiento de quienes ejerzan la patria potestad o tutela."
+     },
+     {
+      "conclusion": "No es obligatorio el permiso de los padres cuando la entrevista permite que el menor opine sobre temas que le impactan de forma directa.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite la condición esencial de que dicha excepción solo aplica 'siempre que ello no implique una afectación a sus derechos, en especial a su honra y reputación'."
+     },
+     {
+      "conclusion": "Un adolescente puede autorizar su propia entrevista si no es posible localizar a sus padres o tutores.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite la condición de que el adolescente solo puede otorgar el consentimiento 'siempre que ello no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Copy: 'La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.'",
+      "problema": "La redacción omite la condición de salvaguarda de derechos (honra y reputación) que el artículo 78 exige explícitamente para que esta excepción sea válida.",
+      "correccion": "Debe incluirse la condición: '...siempre que ello no implique una afectación a sus derechos, en especial a su honra y reputación'."
+     },
+     {
+      "donde": "Copy: 'En el caso de adolescentes, si no es posible localizar a sus tutores, ellos mismos pueden autorizar la entrevista si esto no daña su privacidad o reputación.'",
+      "problema": "La redacción es imprecisa al decir 'si no es posible localizar', cuando la ley dice 'no sea posible recabar el consentimiento'. Además, la redacción original es un poco laxa respecto a la protección de la honra.",
+      "correccion": "Ajustar a: 'En el caso de adolescentes, si no es posible recabar el consentimiento de sus tutores, ellos mismos pueden otorgarlo, siempre que esto no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación'."
+     },
+     {
+      "donde": "Copy: 'Quien entrevista debe ser siempre respetuoso para no afectar el desarrollo integral del menor.'",
+      "problema": "El uso de la palabra 'siempre' contraviene la instrucción de no usar lenguaje absoluto, aunque el texto legal impone una prohibición clara de conducta.",
+      "correccion": "Eliminar 'siempre' y redactar: 'Quien entrevista debe ser respetuoso y no puede mostrar actitudes ni emitir comentarios que afecten el desarrollo integral del menor'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[sustento] La cita de la conclusión «No es necesario el permiso de los padres cuando la entrevist» no está en Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 78."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo excepciones previstas por la ley. \n Deberá recabar el consentimiento por escrito o cualquier otro medio, de quienes ejerzan la patria potestad o tutela \n Sin afectar sus derechos, honra o reputación."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Por regla general, los medios de comunicación deben recabar el consentimiento de quienes ejerzan la patria potestad o tutela para difundir entrevistas a niñas, niños y adolescentes.",
+      "sostenida": "si",
+      "motivo": "El artículo 78, fracción I, establece la obligación de recabar el consentimiento de quienes ejerzan la patria potestad o tutela."
+     },
+     {
+      "conclusion": "En el caso de adolescentes, si no es posible recabar la autorización de sus padres o tutores, ellos mismos pueden otorgarla.",
+      "sostenida": "parcial",
+      "motivo": "La pieza omite que el consentimiento del adolescente está condicionado a que no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "En el caso de adolescentes, si no es posible recabar la autorización de sus padres o tutores, ellos mismos pueden otorgarla.",
+      "problema": "La pieza presenta el consentimiento del adolescente como una facultad sin mencionar la limitante legal expresa que condiciona su validez.",
+      "correccion": "Añadir que el adolescente puede otorgar el consentimiento siempre que ello no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo en los casos de excepción previstos por la ley. \n No se requerirá el consentimiento de quienes ejerzan la patria potestad o tutela \n El adolescente puede otorgarlo si no afecta su honra."
+  }
+ ]
+}

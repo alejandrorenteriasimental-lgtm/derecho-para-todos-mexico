@@ -1,0 +1,167 @@
+{
+  "id": "I20270221-T177",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿Derecho a asesoría gratuita en el Centro de Conciliación?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T177",
+  "pieza": {
+    "titular": "¿Derecho a asesoría gratuita en el Centro de Conciliación?",
+    "bajada": "Sí. Los Centros de Conciliación deben dar asesoría jurídica gratuita sobre derechos, plazos y procedimientos a los interesados.",
+    "cita": "Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos",
+    "etiqueta_cita": "Ley Federal del Trabajo, artículo 684-E",
+    "ojo": "Debes solicitar el auxilio para elaborar tu petición.",
+    "fuente_visible": "Ley Federal del Trabajo, art. 684-E"
+  },
+  "copy": "Si vas a iniciar un proceso laboral, es importante que sepas que no estás solo en el trámite inicial. Según la Ley Federal del Trabajo en su artículo 684-E, los Centros de Conciliación tienen la obligación de brindarte orientación sin costo.\n\nEsta asesoría gratuita incluye información sobre tus derechos, los plazos que tienes para reclamarlos (prescripción) y cómo funcionan los procedimientos tanto en el Centro como ante los tribunales. Además, si lo pides, el personal debe auxiliarte para redactar tu solicitud de conciliación.\n\nRecuerda que este apoyo es un derecho de los interesados para asegurar que el proceso sea justo desde el primer paso. Guarda esta información por si necesitas acudir pronto.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Infografía sobre el derecho a asesoría jurídica gratuita en los Centros de Conciliación laboral en México, citando el artículo 684-E de la Ley Federal del Trabajo.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "684-E",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos, así como respecto de los procedimientos de conciliación y jurisdiccionales",
+      "cita": "Ley Federal del Trabajo, artículo 684-E",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "684-E",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Los Centros de Conciliación auxiliarán a los interesados que así lo soliciten para elaborar su petición.",
+      "cita": "Ley Federal del Trabajo, artículo 684-E",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "Los Centros de Conciliación deben dar asesoría jurídica gratuita sobre derechos, plazos de prescripción y procedimientos.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "El Centro de Conciliación debe ayudar a redactar la solicitud si el interesado lo pide.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Tienes derecho a asesoría gratuita en el Centro de Conciliación laboral?",
+    "concepto_central": "Asesoría jurídica gratuita en el Centro de Conciliación",
+    "respuesta_corta": "Sí, los Centros de Conciliación deben proporcionar asesoría jurídica gratuita sobre derechos, plazos de prescripción y procedimientos a los interesados.",
+    "reglas": [
+      {
+        "conclusion": "Los Centros de Conciliación tienen la obligación de brindar asesoría jurídica de manera gratuita sobre derechos, plazos de prescripción y procedimientos conciliatorios y jurisdiccionales laborales.",
+        "fuente": "F1",
+        "cita_literal": "Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos, así como respecto de los procedimientos de conciliación y jurisdiccionales para solucionar los conflictos laborales;",
+        "condiciones": [
+          "Aplica para interesados en el procedimiento de conciliación laboral que soliciten auxilio para su petición o requieran asesoría sobre sus derechos, plazos y procedimientos."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "684-E"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma establece que los Centros de Conciliación deben dar asesoría jurídica gratuita acerca de derechos, plazos de prescripción y procedimientos de conciliación y jurisdiccionales.",
+        "fuente": "F1",
+        "cita_literal": "Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos, así como respecto de los procedimientos de conciliación y jurisdiccionales"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Para la elaboración de la petición, se requiere que los interesados así lo soliciten al Centro de Conciliación.",
+        "fuente": "F1",
+        "cita_literal": "Los Centros de Conciliación auxiliarán a los interesados que así lo soliciten para elaborar su petición."
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "no_aplica",
+        "respuesta": "",
+        "fuente": "",
+        "cita_literal": "",
+        "motivo": "El texto de la ley no establece excepciones a la gratuidad de la asesoría jurídica."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no contempla ningún supuesto en el que la asesoría jurídica prestada por el Centro de Conciliación tenga costo."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-27T11:58:31+00:00",
+    "solicitud": "2027-02-21_imagen_T177-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 4,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Tienes derecho a asesoría gratuita en el Centro de Conciliación laboral?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los Centros de Conciliación tienen la obligación de brindar asesoría jurídica de manera gratuita sobre derechos, plazos de prescripción y procedimientos conciliatorios y jurisdiccionales laborales.",
+              "sostenida": "si",
+              "motivo": "El artículo 684-E, fracción III, establece explícitamente esta obligación para los Centros de Conciliación."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

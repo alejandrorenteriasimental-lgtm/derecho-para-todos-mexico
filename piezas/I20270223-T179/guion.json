@@ -1,0 +1,152 @@
+{
+  "id": "I20270223-T179",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿Una suspensión puede dirigirse a una sola persona?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T179",
+  "pieza": {
+    "titular": "¿Una suspensión puede dirigirse a una sola persona?",
+    "bajada": "No, debe establecerse por medio de prevenciones generales.",
+    "cita": "por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona.",
+    "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+    "ojo": "Aplica ante graves peligros.",
+    "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 29"
+  },
+  "copy": "La Constitución Política de los Estados Unidos Mexicanos, en su artículo 29, regula las medidas extraordinarias aplicables cuando existe invasión, perturbación grave de la paz pública o situaciones que pongan a la sociedad en grave peligro.\n\nFrente a estas circunstancias excepcionales, la norma establece que cualquier restricción o suspensión del ejercicio de derechos debe emitirse \"por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona\", descartando su aplicación individual.\n\nGuarda esta información y compártela para conocer los límites constitucionales establecidos en nuestra legislación.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa que explica que la suspensión de derechos no puede dirigirse contra una sola persona.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona.",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "La restricción o suspensión de derechos no puede dirigirse a un individuo específico, sino que requiere prevenciones generales.",
+      "fuente": "F1"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Una suspensión de derechos puede dirigirse contra una sola persona?",
+    "concepto_central": "suspensión de derechos",
+    "respuesta_corta": "No, la suspensión de derechos debe establecerse por medio de prevenciones generales y sin contraerse a una persona determinada.",
+    "reglas": [
+      {
+        "conclusion": "La restricción o suspensión del ejercicio de los derechos y garantías no puede dirigirse contra una persona específica.",
+        "fuente": "F1",
+        "cita_literal": "por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona.",
+        "condiciones": [
+          "En los casos de invasión, perturbación grave de la paz pública, o de cualquier otro que ponga a la sociedad en grave peligro o conflicto."
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Constitución Política de los Estados Unidos Mexicanos",
+          "articulo": "29"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La medida no puede aplicarse a un individuo en específico, ya que la norma exige que se emita mediante prevenciones generales.",
+        "fuente": "F1",
+        "cita_literal": "por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona."
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla consecuencias adicionales ni procedimientos específicos si un decreto se dirige contra una sola persona, salvo la prohibición constitucional expresa."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-27T12:11:15+00:00",
+    "solicitud": "2027-02-23_imagen_T179-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 6,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Una suspensión de derechos puede dirigirse contra una sola persona?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "imagen: contenido demasiado largo: invade el pie de la ficha"
+        ],
+        "visible": "  \n   \n No, la suspensión de derechos debe establecerse por medio de prevenciones generales y sin contraerse a una persona determinada. \n por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona. \n Debe aplicarse de forma general ante graves peligros."
+      },
+      {
+        "etapa": "reparacion_puntual",
+        "intento": 1,
+        "errores": [
+          "imagen: contenido demasiado largo (62 palabras visibles; máximo 60; sobran 2, quita al menos 7): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta",
+          "imagen: contenido demasiado largo: invade el pie de la ficha"
+        ]
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La restricción o suspensión del ejercicio de los derechos y garantías no puede dirigirse contra una persona específica.",
+              "sostenida": "si",
+              "motivo": "El artículo 29 de la Constitución establece explícitamente que la restricción o suspensión debe hacerse por medio de prevenciones generales y sin contraerse a una persona determinada."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

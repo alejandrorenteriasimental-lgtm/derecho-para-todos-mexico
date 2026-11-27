@@ -1,0 +1,274 @@
+{
+  "id": "R20270224-T180",
+  "formato": "reel",
+  "titulo": "¿Te deben devolver tu dinero si no es lo ofrecido?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T180",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "ésta se efectuará utilizando la misma forma de pago con la que se realizó la compra, pudiendo hacerse por una forma de pago distinta si el consumidor lo acepta",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Lo que compraste no es lo que te ofrecieron?",
+      "titulo": [
+        "¿NO ES LO QUE",
+        "COMPRASTE?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, puedes elegir que te devuelvan tu dinero si el bien no cumple con la calidad, marca o especificaciones prometidas.",
+      "titulo": [
+        "SÍ TIENES",
+        "DERECHO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica: \"Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido\".",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 92",
+      "cita": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El consumidor puede elegir la devolución si el bien no corresponde a lo ofrecido.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Este derecho aplica en casos como:",
+      "items": [
+        "Marca o calidad distinta",
+        "Contenido menor al envase",
+        "Incumple normas oficiales"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La ley garantiza el derecho a elegir entre reposición o devolución del dinero.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Si el producto requiere conocimientos técnicos para ser evaluado.",
+      "encabezado": "Bienes con características técnicas",
+      "detalle": "Se requiere juicio de peritos",
+      "fuente_corta": "Ley, art. 92",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Recuperas tu dinero al entregar el bien y recibes una bonificación como compensación adicional.",
+      "titulo": [
+        "DINERO Y",
+        "BONIFICACIÓN"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "El reembolso debe hacerse preferentemente en la misma forma de pago original.",
+          "fuente": "F3"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?",
+    "concepto_central": "devolución de dinero",
+    "respuesta_corta": "Sí, tienes derecho a elegir la devolución de tu dinero si el producto no cumple con la calidad, marca o especificaciones bajo las cuales se te ofreció.",
+    "reglas": [
+      {
+        "conclusion": "El consumidor tiene el derecho legal de elegir que se le reintegre el monto pagado si el producto no coincide con lo que se le prometió al comprarlo.",
+        "fuente": "F1",
+        "cita_literal": "Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido",
+        "condiciones": [
+          "Que el bien no corresponda a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido",
+          "Que se entregue el producto adquirido para que proceda el reembolso"
+        ],
+        "excepciones": [
+          "En bienes que requieran conocimientos técnicos, la procedencia dependerá del juicio de peritos o verificación en laboratorios."
+        ],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "92"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se debe devolver la cantidad pagada en la misma forma de pago original, además de otorgar una bonificación.",
+        "fuente": "F1",
+        "cita_literal": "ésta se efectuará utilizando la misma forma de pago con la que se realizó la compra, pudiendo hacerse por una forma de pago distinta si el consumidor lo acepta"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "El derecho aplica si el contenido es menor al indicado o si el producto no cumple con las normas oficiales mexicanas.",
+        "fuente": "F1",
+        "cita_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido"
+      },
+      {
+        "elemento": "excepcion",
+        "estado": "cubierto",
+        "respuesta": "Para productos complejos que necesiten análisis técnico, la devolución queda sujeta a un peritaje.",
+        "fuente": "F1",
+        "cita_literal": "En los casos de aparatos, unidades y bienes que por sus características ameriten conocimientos técnicos, se estará al juicio de peritos"
+      }
+    ],
+    "interpretaciones": [
+      {
+        "afirmacion": "La devolución del dinero no es la única opción, ya que el consumidor puede preferir que le cambien el producto por uno nuevo.",
+        "condicion": "Siempre que el consumidor así lo elija en lugar del reembolso.",
+        "base": "F1: 'Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada'"
+      }
+    ],
+    "distinciones": [
+      {
+        "a": "devolución dinero",
+        "b": "bonificación",
+        "diferencia": "La devolución es el reembolso del precio pagado, mientras que la bonificación es una compensación adicional que se debe entregar en todo caso."
+      },
+      {
+        "a": "devolución dinero",
+        "b": "cambio reposición",
+        "diferencia": "En la devolución se recupera el dinero entregando el bien; en la reposición se recibe un producto nuevo a cambio del que no cumplió lo ofrecido."
+      }
+    ],
+    "limites": "Los textos no establecen un plazo máximo de días para solicitar la devolución tras la compra, ni definen el porcentaje exacto de la bonificación."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-27T11:57:10+00:00",
+    "solicitud": "2027-02-24_reel_T180-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?",
+  "tipo_pregunta": "derecho",
+  "revision_razonamiento": [],
+  "copy": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?\n\nSí, tienes derecho a elegir la devolución de tu dinero si el producto no cumple con la calidad, marca o especificaciones bajo las cuales se te ofreció.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[conceptos] La respuesta habla de «bonificacion», no de «devolucion_dinero», que es lo que pregunta el título.",
+          "[conceptos] El título trata «devolucion_dinero», pero el contenido visible responde con «bonificacion» del mismo grupo (consumo_postventa) sin hablar de «devolucion_dinero»."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El consumidor tiene el derecho legal de elegir que se le reintegre el monto pagado si el producto no coincide con lo que se le prometió al comprarlo.",
+              "sostenida": "si",
+              "motivo": "El artículo 92 establece explícitamente el derecho a la elección entre reposición o devolución de la cantidad pagada ante los supuestos de incumplimiento."
+            },
+            {
+              "conclusion": "La devolución del dinero no es la única opción, ya que el consumidor puede preferir que le cambien el producto por uno nuevo.",
+              "sostenida": "si",
+              "motivo": "La norma otorga al consumidor la facultad de elegir entre la reposición o la devolución."
+            },
+            {
+              "conclusion": "El reembolso debe hacerse preferentemente en la misma forma de pago original.",
+              "sostenida": "si",
+              "motivo": "El texto legal indica que la devolución se efectuará utilizando la misma forma de pago, salvo aceptación del consumidor de una distinta."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

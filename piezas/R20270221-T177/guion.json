@@ -1,0 +1,191 @@
+{
+  "id": "R20270221-T177",
+  "formato": "reel",
+  "titulo": "¿Pedir la conciliación detiene el plazo para demandar?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T177",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "521",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley.",
+      "cita": "Ley Federal del Trabajo, artículo 521",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Se te acaba el tiempo para demandar a tu patrón?",
+      "titulo": [
+        "¿SE AGOTA",
+        "EL TIEMPO?",
+        "MIRA ESTO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí: pedir la conciliación interrumpe el plazo de prescripción para demandar.",
+      "titulo": [
+        "SÍ DETIENE",
+        "EL PLAZO"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica que la prescripción se interrumpe «Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley. La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia».",
+      "etiqueta": "Ley Federal del Trabajo, artículo 521",
+      "cita": "Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley. La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la …",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "presentar la solicitud de conciliación interrumpe el plazo de prescripción",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "El plazo vuelve a correr si:",
+      "items": [
+        "Expiden la constancia",
+        "Archivan por desinterés"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen, pedir la conciliación sí detiene el plazo para demandar.",
+      "titulo": [
+        "EL RELOJ",
+        "SE DETIENE"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?",
+    "concepto_central": "interrupción de la prescripción",
+    "respuesta_corta": "Sí: presentar la solicitud de conciliación interrumpe el plazo de prescripción para demandar.",
+    "reglas": [
+      {
+        "conclusion": "La presentación de la solicitud de conciliación interrumpe el plazo de prescripción, y esta interrupción cesa a partir del día siguiente a que el Centro de Conciliación expida la constancia de no conciliación o archive el expediente por falta de interés.",
+        "fuente": "F1",
+        "cita_literal": "Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley. La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia",
+        "condiciones": [
+          "Presentar la solicitud de conciliación conforme al artículo 684-B de la Ley Federal del Trabajo"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "521"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "La consecuencia jurídica de presentar la solicitud de conciliación es que interrumpe la prescripción para demandar.",
+        "fuente": "F1",
+        "cita_literal": "La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia de no conciliación o en su caso, se determine el archivo del expediente por falta de interés de parte.",
+        "motivo": null
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no señala los plazos específicos de prescripción ni los requisitos de la solicitud de conciliación previstos en el artículo 684-B."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-27T11:55:03+00:00",
+    "solicitud": "2027-02-21_reel_T177-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 4,
+        "auditor": 2
+      },
+      "llamadas_ia_total": 6,
+      "intentos_analisis": 2,
+      "intentos_redaccion": 1,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "copy": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?\n\nSí: presentar la solicitud de conciliación interrumpe el plazo de prescripción para demandar.\n\nFuente: Ley Federal del Trabajo, artículo 521.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": [
+          "[sustento] La conclusión «El tiempo para demandar vuelve a contar una vez que el proceso de conc» trata «mutuo_consentimiento», pero Ley Federal del Trabajo, art. 521 no regula ese concepto (no aparece en su texto).",
+          "[cobertura] El elemento «efecto» («La consecuencia jurídica es la interrupción de la prescripci») no trae una cita literal que esté en el texto oficial de su fuente."
+        ]
+      },
+      {
+        "etapa": "analisis",
+        "intento": 1,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "La presentación de la solicitud de conciliación interrumpe el plazo de prescripción para demandar.",
+              "sostenida": "si",
+              "motivo": "El artículo 521, fracción III, de la Ley Federal del Trabajo establece expresamente que la prescripción se interrumpe por la presentación de la solicitud de conciliación."
+            },
+            {
+              "conclusion": "La interrupción de la prescripción cesa al día siguiente de que el Centro de Conciliación expida la constancia de no conciliación o archive el expediente.",
+              "sostenida": "si",
+              "motivo": "El artículo 521, fracción III, de la Ley Federal del Trabajo señala explícitamente el momento en que cesa la interrupción."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

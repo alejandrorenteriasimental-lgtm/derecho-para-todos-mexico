@@ -2755,3 +2755,32 @@
 {"ts": "2026-11-27T00:05:14+00:00", "pieza": "I20270218-T174", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-27T00:05:14+00:00", "pieza": "I20270219-T175", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
 {"ts": "2026-11-27T00:05:14+00:00", "evento": "fin_ciclo", "redactadas": 0, "descartadas": 0, "producidas": 0, "retenidas": 0, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 0}
+{"ts": "2026-11-27T11:51:00+00:00", "evento": "inicio_ciclo", "modo": "simulacion", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)", "tope_mxn": 0.0}
+{"ts": "2026-11-27T11:55:03+00:00", "evento": "redactada", "pieza": "R20270221-T177", "solicitud": "2027-02-21_reel_T177-lote-10.json"}
+{"ts": "2026-11-27T11:55:22+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-22_reel_T178-lote-10.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no definen qué se considera una difusión 'lícita' ni establecen las sanciones económicas o legales por incumplir esta prohibición."}
+{"ts": "2026-11-27T11:56:05+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-23_reel_T179-lote-10.json", "categoria": "juridico", "transitoria": false, "motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] La cita de la conclusión «El Presidente tiene la facultad de suspender derechos especí» no está en Constitución Política de los Estados Unidos Mexicanos, art. 29.\"]}"}
+{"ts": "2026-11-27T11:57:10+00:00", "evento": "redactada", "pieza": "R20270224-T180", "solicitud": "2027-02-24_reel_T180-lote-10.json"}
+{"ts": "2026-11-27T11:58:31+00:00", "evento": "redactada", "pieza": "I20270221-T177", "solicitud": "2027-02-21_imagen_T177-lote-10.json"}
+{"ts": "2026-11-27T12:01:05+00:00", "evento": "redaccion_descartada", "solicitud": "2027-02-22_imagen_T178-lote-10.json", "categoria": "redaccion", "transitoria": false, "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respues"}
+{"ts": "2026-11-27T12:11:15+00:00", "evento": "redactada", "pieza": "I20270223-T179", "solicitud": "2027-02-23_imagen_T179-lote-10.json"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "I20270220-T176", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-27T03:43:55+00:00 versión a615785ebf5060de (delegada)"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "R20270220-T176", "evento": "transicion", "a": "APROBADO", "motivo": "aprobación humana: Claude (revisión editorial delegada) 2026-11-27T03:43:55+00:00 versión 57aa9a0593319a68 (delegada)"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "I20270221-T177", "evento": "encolado"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "I20270223-T179", "evento": "encolado"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "R20270221-T177", "evento": "encolado"}
+{"ts": "2026-11-27T12:11:15+00:00", "pieza": "R20270224-T180", "evento": "encolado"}
+{"ts": "2026-11-27T12:12:48+00:00", "pieza": "R20270221-T177", "evento": "transicion", "a": "PRODUCIDO", "motivo": "41.2"}
+{"ts": "2026-11-27T12:12:53+00:00", "pieza": "R20270221-T177", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-27T12:12:53+00:00", "evento": "revision_preparada", "pieza": "R20270221-T177", "version": "9704889dee170922", "canal": "chat"}
+{"ts": "2026-11-27T12:14:05+00:00", "pieza": "R20270224-T180", "evento": "transicion", "a": "PRODUCIDO", "motivo": "43.0"}
+{"ts": "2026-11-27T12:14:09+00:00", "pieza": "R20270224-T180", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-27T12:14:09+00:00", "evento": "revision_preparada", "pieza": "R20270224-T180", "version": "6f04624816d5dd85", "canal": "chat"}
+{"ts": "2026-11-27T12:15:21+00:00", "pieza": "I20270221-T177", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-27T12:15:25+00:00", "pieza": "I20270221-T177", "evento": "transicion", "a": "RETENIDO", "motivo": "RETENIDO: Regla: Sin frases de asesoría o adjetivos de culpabilidad"}
+{"ts": "2026-11-27T12:15:25+00:00", "evento": "alerta", "mensaje": "I20270221-T177 retenido: RETENIDO"}
+{"ts": "2026-11-27T12:15:57+00:00", "pieza": "I20270223-T179", "evento": "transicion", "a": "PRODUCIDO", "motivo": "imagen"}
+{"ts": "2026-11-27T12:16:01+00:00", "pieza": "I20270223-T179", "evento": "transicion", "a": "REVISION_HUMANA", "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"}
+{"ts": "2026-11-27T12:16:01+00:00", "evento": "revision_preparada", "pieza": "I20270223-T179", "version": "458d10c4ce0f287a", "canal": "chat"}
+{"ts": "2026-11-27T12:16:01+00:00", "pieza": "R20270210-T166", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-27T12:16:01+00:00", "pieza": "R20270217-T173", "evento": "transicion", "a": "SIMULADO", "motivo": "falta la autorización expresa de lanzamiento (LANZAMIENTO_AUTORIZADO=SI)"}
+{"ts": "2026-11-27T12:16:01+00:00", "evento": "fin_ciclo", "redactadas": 4, "descartadas": 3, "producidas": 4, "retenidas": 1, "simuladas": 2, "publicando": 0, "confirmadas": 0, "errores": 0, "decisiones": 2, "en_revision": 3}

@@ -1,0 +1,128 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1220 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Ley Federal del »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1118"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "60 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 43 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "RETENIDO",
+    "tipo_retencion": "sustantivo",
+    "motivos": [
+      "Regla: Sin frases de asesoría o adjetivos de culpabilidad"
+    ],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "FALLA",
+        "detalle": "asesoria gratuita"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270221-T177",
+    "formato": "imagen",
+    "titulo": "¿Derecho a asesoría gratuita en el Centro de Conciliación?",
+    "plantilla": "concepto",
+    "archivo": "I20270221-T177.png",
+    "sha256": "be73008a66ac0715af51ea457d76064c9a59d1098939f6919295a6281f37bdf8",
+    "ahash": "1111111111111111111111111111111111111111111111111100000100000011100000000000001110000000000111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
+    "huella_guion": "76c296df95df5e18d4451923949cb0c058a58de6663a18653aeab3a09bd41d5a",
+    "texto_alternativo": "Infografía sobre el derecho a asesoría jurídica gratuita en los Centros de Conciliación laboral en México, citando el artículo 684-E de la Ley Federal del Trabajo.",
+    "copy": "Si vas a iniciar un proceso laboral, es importante que sepas que no estás solo en el trámite inicial. Según la Ley Federal del Trabajo en su artículo 684-E, los Centros de Conciliación tienen la obligación de brindarte orientación sin costo.\n\nEsta asesoría gratuita incluye información sobre tus derechos, los plazos que tienes para reclamarlos (prescripción) y cómo funcionan los procedimientos tanto en el Centro como ante los tribunales. Además, si lo pides, el personal debe auxiliarte para redactar tu solicitud de conciliación.\n\nRecuerda que este apoyo es un derecho de los interesados para asegurar que el proceso sea justo desde el primer paso. Guarda esta información por si necesitas acudir pronto.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "684-E",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Ley Federal del Trabajo",
+        "articulo": "684-E",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "RETENIDO",
+    "fecha": "2026-11-27T12:15:21+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}
