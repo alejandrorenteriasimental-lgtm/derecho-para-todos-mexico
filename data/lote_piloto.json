@@ -1,258 +1,155 @@
 {
- "id": "lote-9",
+ "id": "lote-10",
  "activo": true,
- "creado": "2026-11-14",
- "activado": "2026-11-20",
- "max_por_formato": 13,
+ "creado": "2026-11-25",
+ "activado": "2026-11-26",
+ "max_por_formato": 8,
  "arrastre": [],
- "nota": "Semanas 12 y 13 (08-02 al 20-02-2027), 26 temas (13 días; última quincena autorizada hasta PUBLICAR_HASTA). Preparada el 14-11 por la operación diaria para mantener siempre un lote propuesto (inventario de 90 días). Se activa en data/lote_piloto.json cuando el lote 8 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de las 3 semanas previas (lotes 7 y 8, con sus sustituciones); días consecutivos de materias distintas (laboral, proceso penal, consumidor, ciudadanía, violencia contra las mujeres, niñez, víctimas, seguridad social, migración, derechos humanos y prisión, derechos de autor). Los 26 fragmentos literales se cotejaron por programa el 14-11 con el texto oficial (textos.yml → registro/textos/). Se evitaron LFT 66 y 68 (reforma de jornada DOF 01-05-2026: revisar transitorios antes de usarlos) y el Código Civil Federal (los códigos civiles locales rigen la mayoría de los casos). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. 19-11 (operación diaria): Reel del 16-02 cambiado de LFPC 9 a LFPC 62 porque la imagen del 04-02 del lote 8 ya usa LFPC 9 desde su sustitución del 17-11. Activado el 20-11 por la operación diaria: el lote 8 tenía sus 28 solicitudes redactadas (GUION_LISTO; 26 piezas aprobadas y 2 en re-producción: R20270207-T163 e I20270205-T161, que no dependen de solicitudes). Al activarlo se cotejó contra el lote 8 vigente con sus sustituciones (LFT 518 en la imagen del 05-02; LFPC 9 en la del 04-02) y el lote 7: ningún fundamento se repite. Vigencia de LFT 58, segundo párrafo (adicionado por el decreto DOF 01-05-2026, reducción de la jornada): el transitorio Primero fija la entrada en vigor el 1-05-2026 y ningún transitorio difiere el art. 58 (el Segundo gradúa el art. 59; el Cuarto, el 66; el Quinto, las reglas del art. 132 fr. XXXIV desde el 1-01-2027); arts. 57 y 78 no fueron tocados por ese decreto. 24-11 (operación diaria): Reel del 10-02 sustituido tras el 2.º descarte (LFPC 43 → LFPC 76 Bis fr. I). 26-11 (operación diaria): imagen del 20-02 sustituida tras el 2.º descarte (LGAMVLV 10 → LPDUSF 50 Bis).",
+ "nota": "Lote complementario (8 temas por formato, 16 solicitudes; fechas nominales 21 al 28-02-2027). Preparado el 25-11 por la operación diaria porque no había ningún lote propuesto (la guía pide mantener siempre uno) y porque, aun con las 16 piezas del lote 9 que faltan, el calendario quedaría con unos 15 huecos antes del 20-02 (el adelanto del 16 al 22-11 consumió 14 espacios). Las fechas de las solicitudes son solo espacios: cada pieza aprobada va al primer hueco libre de su formato; lo que quede después de PUBLICAR_HASTA (2027-02-20) no se programa ni publica sin autorización expresa del responsable. Se activa en data/lote_piloto.json cuando el lote 9 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de los lotes 8 y 9 (ni de ninguna pieza ya en el calendario); materias de días consecutivos distintas (laboral, niñez, Constitución, servicios financieros —nueva: LPDUSF—, ejecución penal y víctimas, laboral, consumidor, agrario —nueva: Ley Agraria—). Los fragmentos literales se cotejaron por programa el 25-11 con el texto oficial descargado ese día (textos.yml → registro/textos/). Descartados: CPEUM 38 (la extracción del PDF salió truncada), LSS 101 y Ley de Migración 13/67 (muy parecidos a LSS 102 y LMigra 11/66 del lote 9), LFPC 61 (parecido a LFPC 62 del lote 9). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. 26-11 (operación diaria, 3.ª ronda): T180 sustituido antes de activar (LPDUSF 50 Bis fr. IV y 50 Bis → LFPC 92 fr. II en el Reel y LFPC 92 Ter en la imagen), porque la imagen del 20-02 del lote 9 pasó a LPDUSF 50 Bis el 26-11; fragmentos cotejados por programa con registro/textos/. LFPC 92 y 92 Ter no están en ninguna pieza del calendario. Activado el 26-11 por la operación diaria: el lote 9 tenía sus 26 solicitudes redactadas y todas sus piezas aprobadas y en el calendario (la última, T176, el 26-11).",
  "temas": [
   {
    "formato": "reel",
-   "fecha": "2027-02-08",
-   "tema_id": "T164",
+   "fecha": "2027-02-21",
+   "tema_id": "T177",
    "tipo_pregunta": "legalidad",
-   "pregunta": "¿Te pueden dar tus vacaciones en días sueltos?",
-   "fuentes_sugeridas": "LFT art. 78",
-   "motivo_seleccion": "LFT art. 78 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_78.json; última reforma de la ley 2026-05-14): «la persona trabajadora disfrutará de doce días de vacaciones continuos, por lo menos». Condición literal: el resto del periodo «a potestad de la persona trabajadora podrá ser distribuido en la forma y tiempo que así lo requiera». Respuesta: no del todo; al menos doce días deben ser seguidos."
+   "pregunta": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?",
+   "fuentes_sugeridas": "LFT art. 521 fr. III",
+   "motivo_seleccion": "LFT art. 521 fr. III (texto oficial cotejado el 25-11-2026, registro/textos/LFT_521.json; última reforma de la ley 2026-05-14): «III. Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley.» «La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia de no conciliación» Respuesta: sí; la solicitud de conciliación interrumpe la prescripción. Condición literal: la interrupción cesa al día siguiente de la constancia de no conciliación o del archivo por falta de interés."
   },
   {
    "formato": "imagen",
-   "fecha": "2027-02-08",
-   "tema_id": "T164",
+   "fecha": "2027-02-21",
+   "tema_id": "T177",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Tienes derecho a asesoría gratuita en el Centro de Conciliación laboral?",
+   "fuentes_sugeridas": "LFT art. 684-E fr. III",
+   "motivo_seleccion": "LFT art. 684-E fr. III (texto oficial cotejado el 25-11-2026, registro/textos/LFT_684-E.json; última reforma de la ley 2026-05-14): «Los Centros de Conciliación auxiliarán a los interesados que así lo soliciten para elaborar su petición.» «Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos» Respuesta: sí; asesoría jurídica gratuita sobre derechos, plazos de prescripción y procedimientos, y ayuda para elaborar la solicitud si se pide."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-22",
+   "tema_id": "T178",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Se pueden difundir datos que identifiquen a un niño?",
+   "fuentes_sugeridas": "LGDNNA art. 76",
+   "motivo_seleccion": "LGDNNA art. 76 (texto oficial cotejado el 25-11-2026, registro/textos/LGDNNA_76.json; última reforma de la ley 2026-01-15): «Niñas, niños y adolescentes tienen derecho a la intimidad personal y familiar, y a la protección de sus datos personales.» «tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra su honra, imagen o reputación» Respuesta: no cuando la difusión es ilícita y atenta contra su honra, imagen o reputación (condición literal; no afirmar una prohibición absoluta)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-22",
+   "tema_id": "T178",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Un medio puede entrevistar a un niño sin permiso de sus padres?",
+   "fuentes_sugeridas": "LGDNNA art. 78 fr. I",
+   "motivo_seleccion": "LGDNNA art. 78 fr. I (texto oficial cotejado el 25-11-2026, registro/textos/LGDNNA_78.json; última reforma de la ley 2026-01-15): «I. Deberá recabar el consentimiento por escrito o cualquier otro medio, de quienes ejerzan la patria potestad o tutela, así como la opinión de la niña, niño o adolescente» «No se requerirá el consentimiento de quienes ejerzan la patria potestad o tutela de niñas, niños o adolescentes, cuando la entrevista tenga por objeto que éstos expresen libremente» Respuesta: por regla, no; excepciones literales del mismo artículo: el adolescente puede consentir si no es posible recabar el consentimiento, y no se requiere cuando la entrevista es para que expresen su opinión sobre asuntos que les afecten, sin afectar su honra."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-23",
+   "tema_id": "T179",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
+   "fuentes_sugeridas": "CPEUM art. 29",
+   "motivo_seleccion": "CPEUM art. 29 (texto oficial cotejado el 25-11-2026, registro/textos/CPEUM_29.json; última reforma de la ley 2026-10-07): «En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida, a la integridad personal» Respuesta: no; hay derechos que no pueden restringirse ni suspenderse (lista literal del párrafo segundo). Condición: solo el Presidente con aprobación del Congreso o de la Comisión Permanente, por tiempo limitado."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-23",
+   "tema_id": "T179",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una suspensión de derechos puede dirigirse contra una sola persona?",
+   "fuentes_sugeridas": "CPEUM art. 29",
+   "motivo_seleccion": "CPEUM art. 29 (texto oficial cotejado el 25-11-2026, registro/textos/CPEUM_29.json; última reforma de la ley 2026-10-07): «pero deberá hacerlo por un tiempo limitado, por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona» Respuesta: no; debe ser por prevenciones generales y por tiempo limitado."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-24",
+   "tema_id": "T180",
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?",
+   "fuentes_sugeridas": "LFPC art. 92 fr. II",
+   "motivo_seleccion": "LFPC art. 92 fr. II (texto oficial cotejado por programa el 26-11-2026 con registro/textos/LFPC_92.json; última reforma de la ley 2025-12-12): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» … «II. Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido o no cumple con las normas oficiales mexicanas». Respuesta: sí; a tu elección, reposición del producto o devolución de lo pagado, contra la entrega del producto, y en todo caso una bonificación. Condición literal: «contra la entrega del producto adquirido». Sustituye a LPDUSF 50 Bis fr. IV (26-11, operación diaria): la imagen del 20-02 del lote 9 pasó a LPDUSF 50 Bis tras su 2.º descarte, y el lote no repite fundamentos de los lotes 8 y 9."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-24",
+   "tema_id": "T180",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿De cuánto es la bonificación si un producto no cumple lo ofrecido?",
+   "fuentes_sugeridas": "LFPC art. 92 Ter",
+   "motivo_seleccion": "LFPC art. 92 Ter (texto oficial cotejado por programa el 26-11-2026 con registro/textos/LFPC_92_Ter.json; última reforma de la ley 2025-12-12): la bonificación de los arts. 92 y 92 Bis «no podrá ser menor al veinte por ciento del precio pagado». Condición literal: «El pago de dicha bonificación se efectuará sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios». Respuesta: al menos el veinte por ciento del precio pagado. Sustituye a LPDUSF 50 Bis (26-11, operación diaria): la imagen del 20-02 del lote 9 ya usa ese artículo con una pregunta casi igual."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-25",
+   "tema_id": "T181",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Cuántas horas de visita debe permitir una prisión?",
+   "fuentes_sugeridas": "LNEP art. 59",
+   "motivo_seleccion": "LNEP art. 59 (texto oficial cotejado el 25-11-2026, registro/textos/LNEP_59.json; última reforma de la ley 2024-04-01): «debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales» «En casos de restricción de visitas por sanción disciplinaria grave, estas podrán limitarse hasta una hora de visita semanal» Respuesta: mínimo 5 y máximo 15 horas semanales (sin contar la visita íntima). Excepción literal: por sanción disciplinaria grave, hasta una hora semanal."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-25",
+   "tema_id": "T181",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿El Ministerio Público puede prohibir que tu agresor se te acerque?",
+   "fuentes_sugeridas": "CNPP art. 137 fr. I",
+   "motivo_seleccion": "CNPP art. 137 fr. I (texto oficial cotejado el 25-11-2026, registro/textos/CNPP_137.json; última reforma de la ley 2025-11-28): «cuando estime que el imputado representa un riesgo inminente en contra de la seguridad de la víctima u ofendido» «I. Prohibición de acercarse o comunicarse con la víctima u ofendido;» Respuesta: sí, como medida de protección cuando el imputado representa un riesgo inminente para la víctima. Condición literal: audiencia dentro de los cinco días siguientes para las fracciones I a III."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-26",
+   "tema_id": "T182",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Te pueden dar peores condiciones de trabajo por estar embarazada?",
+   "fuentes_sugeridas": "LFT art. 56",
+   "motivo_seleccion": "LFT art. 56 (texto oficial cotejado el 25-11-2026, registro/textos/LFT_56.json; última reforma de la ley 2026-05-14): «sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo» «salvo las modalidades expresamente consignadas en esta Ley» Respuesta: no; excepción literal: las modalidades expresamente previstas en la ley (no inventar cuáles)."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-26",
+   "tema_id": "T182",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Qué debe decir tu contrato de trabajo por escrito?",
+   "fuentes_sugeridas": "LFT art. 25",
+   "motivo_seleccion": "LFT art. 25 (texto oficial cotejado el 25-11-2026, registro/textos/LFT_25.json; última reforma de la ley 2026-05-14): «El escrito en que consten las condiciones de trabajo deberá contener:» «V. La duración de la jornada; VI. La forma y el monto del salario; VII. El día y el lugar de pago del salario;» Respuesta: lista literal de las fracciones I a X (elegir las más útiles sin parafrasear)."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-27",
+   "tema_id": "T183",
+   "tipo_pregunta": "obligacion",
+   "pregunta": "¿Las etiquetas de los productos deben estar en español?",
+   "fuentes_sugeridas": "LFPC art. 34",
+   "motivo_seleccion": "LFPC art. 34 (texto oficial cotejado el 25-11-2026, registro/textos/LFPC_34.json; última reforma de la ley 2025-12-12): «se expresarán en idioma español y su precio en moneda nacional en términos comprensibles y legibles» «sin perjuicio de que, además, se expresen en otro idioma u otro sistema de medida» Respuesta: sí, también en productos importados y en la publicidad; pueden estar además en otro idioma."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-27",
+   "tema_id": "T183",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿Una empresa de autofinanciamiento necesita autorización para operar?",
+   "fuentes_sugeridas": "LFPC art. 63",
+   "motivo_seleccion": "LFPC art. 63 (texto oficial cotejado el 25-11-2026, registro/textos/LFPC_63.json; última reforma de la ley 2025-12-12): «y sólo podrán ponerse en práctica previa autorización de la Secretaría.» Respuesta: sí; los sistemas de grupos de consumidores que aportan dinero administrado por un tercero solo operan con autorización previa de la Secretaría de Economía y para bienes determinados o determinables."
+  },
+  {
+   "formato": "reel",
+   "fecha": "2027-02-28",
+   "tema_id": "T184",
+   "tipo_pregunta": "legalidad",
+   "pregunta": "¿A quién puede vender su parcela un ejidatario?",
+   "fuentes_sugeridas": "Ley Agraria art. 80",
+   "motivo_seleccion": "Ley Agraria art. 80 (texto oficial cotejado el 25-11-2026, registro/textos/LAgra_80.json; última reforma de la ley 2025-11-14): «Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población.» «quienes, en ese orden, gozarán del derecho del tanto, el cual deberán ejercer dentro del término de treinta días naturales» Respuesta: a otros ejidatarios o avecindados del mismo núcleo, con los requisitos literales (escrito ante dos testigos ratificado ante fedatario, aviso al comisariado) y derecho del tanto de cónyuge/concubina(rio) e hijos por 30 días naturales. No referirse a parcelas con dominio pleno (arts. 81-82): decir «derechos parcelarios»."
+  },
+  {
+   "formato": "imagen",
+   "fecha": "2027-02-28",
+   "tema_id": "T184",
    "tipo_pregunta": "definicion",
-   "pregunta": "¿Qué es la jornada de trabajo según la ley?",
-   "fuentes_sugeridas": "LFT art. 58",
-   "motivo_seleccion": "LFT art. 58 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_58.json; última reforma de la ley 2026-05-14): «Jornada de trabajo es el tiempo durante el cual el trabajador está a disposición del patrón para prestar su trabajo». Párrafo adicionado DOF 01-05-2026: «Esta podrá ser distribuida de común acuerdo por las personas empleadoras y trabajadoras».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-09",
-   "tema_id": "T165",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Si te detienen, tienes derecho a llamar a alguien?",
-   "fuentes_sugeridas": "CNPP art. 113 fr. II",
-   "motivo_seleccion": "CNPP art. 113 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/CNPP_113.json; última reforma de la ley 2025-11-28): «A comunicarse con un familiar y con su Defensor cuando sea detenido, debiendo brindarle el Ministerio Público todas las facilidades para lograrlo». Código nacional (aplica en todo el país). Fracción distinta de la III (silencio), usada en una pieza anterior."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-09",
-   "tema_id": "T165",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿La policía puede tomarte tu declaración?",
-   "fuentes_sugeridas": "CNPP art. 114",
-   "motivo_seleccion": "CNPP art. 114 (texto oficial cotejado el 14-11-2026, registro/textos/CNPP_114.json; última reforma de la ley 2025-11-28): «En caso que el imputado manifieste a la Policía su deseo de declarar sobre los hechos que se investigan, ésta deberá comunicar dicha situación al Ministerio Público». Respuesta literal: no la recibe la policía; debe comunicarlo al Ministerio Público «para que se reciban sus manifestaciones con las formalidades previstas en este Código»; la declaración puede rendirse ante el Ministerio Público o el Órgano jurisdiccional, en presencia del Defensor.",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-10",
-   "tema_id": "T166",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Una tienda en línea puede pasar tus datos a otras empresas?",
-   "fuentes_sugeridas": "LFPC art. 76 Bis fr. I",
-   "motivo_seleccion": "LFPC art. 76 Bis, fr. I (texto oficial en registro/textos/LFPC_76_Bis.json, consultado el 05-11-2026; última reforma de la ley DOF 12-12-2025, que reformó la fr. VI, no la I): «El proveedor utilizará la información proporcionada por el consumidor en forma confidencial, por lo que no podrá difundirla o transmitirla a otros proveedores ajenos a la transacción, salvo autorización expresa del propio consumidor o por requerimiento de autoridad competente». Ámbito literal del primer párrafo: «transacciones efectuadas a través del uso de medios electrónicos, ópticos o de cualquier otra tecnología». Alcance federal. Artículo sin uso en los lotes 1 a 9. Sustituye a LFPC art. 43 (dos descartes, 21-11 y 23-11: el análisis exigió multas, Profeco, denuncias y plazos que están en otros artículos). Ningún fundamento de las 3 semanas previas; el día anterior (CNPP) y el siguiente (CPEUM) son de otra materia."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-10",
-   "tema_id": "T166",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Un negocio de servicios debe mostrar sus tarifas a la vista?",
-   "fuentes_sugeridas": "LFPC art. 57",
-   "motivo_seleccion": "LFPC art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_57.json; última reforma de la ley 2025-12-12): «En todo establecimiento de prestación de servicios, deberá exhibirse a la vista del público la tarifa de los principales servicios ofrecidos, con caracteres claramente legibles». Condición literal: «Las tarifas de los demás, en todo caso, deberán estar disponibles al público».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-11",
-   "tema_id": "T167",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Puedes ser candidato sin un partido político?",
-   "fuentes_sugeridas": "CPEUM art. 35 fr. II",
-   "motivo_seleccion": "CPEUM art. 35 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_35.json; última reforma de la ley 2026-10-07): «así como a los ciudadanos y las ciudadanas que soliciten su registro de manera independiente y cumplan con los requisitos, condiciones y términos que determine la legislación». Respuesta literal: sí, el derecho de solicitar el registro corresponde a los partidos y también a quienes lo soliciten de manera independiente, con los requisitos de la ley."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-11",
-   "tema_id": "T167",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Tienes derecho a asociarte para participar en la política?",
-   "fuentes_sugeridas": "CPEUM art. 35 fr. III",
-   "motivo_seleccion": "CPEUM art. 35 fr. III (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_35.json; última reforma de la ley 2026-10-07): «Asociarse individual y libremente para tomar parte en forma pacífica en los asuntos políticos». Condición literal: «en forma pacífica». Es un derecho de la ciudadanía.",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-12",
-   "tema_id": "T168",
-   "tipo_pregunta": "definicion",
-   "pregunta": "¿Cuál es la diferencia entre hostigamiento y acoso sexual?",
-   "fuentes_sugeridas": "LGAMVLV art. 13",
-   "motivo_seleccion": "LGAMVLV art. 13 (texto oficial cotejado el 14-11-2026, registro/textos/LGAMVLV_13.json; última reforma de la ley 2026-01-15): «El hostigamiento sexual es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar». Distinción literal: «El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder». Ley general (alcance nacional)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-12",
-   "tema_id": "T168",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Impedirte la lactancia en el trabajo es violencia laboral?",
-   "fuentes_sugeridas": "LGAMVLV art. 11",
-   "motivo_seleccion": "LGAMVLV art. 11 (texto oficial cotejado el 14-11-2026, registro/textos/LGAMVLV_11.json; última reforma de la ley 2026-01-15): «el impedimento a las mujeres de llevar a cabo el período de lactancia previsto en la ley». Respuesta literal: sí, el artículo lo enumera entre lo que «Constituye violencia laboral».",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-13",
-   "tema_id": "T169",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Un niño menor de 15 años puede trabajar?",
-   "fuentes_sugeridas": "LGDNNA art. 47 fr. V",
-   "motivo_seleccion": "LGDNNA art. 47 fr. V (texto oficial cotejado el 14-11-2026, registro/textos/LGDNNA_47.json; última reforma de la ley 2026-01-15): «El trabajo antes de la edad mínima de quince años». Encabezado literal: las autoridades «están obligadas a tomar las medidas necesarias para prevenir, atender y sancionar los casos en que niñas, niños o adolescentes se vean afectados por» (fr. V) el trabajo antes de la edad mínima de quince años prevista en el art. 123 constitucional. Ángulo sugerido: la edad mínima es 15 años; sin sanciones ni procedimientos."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-13",
-   "tema_id": "T169",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Los padres tienen derecho a intervenir en la educación de sus hijos?",
-   "fuentes_sugeridas": "LGDNNA art. 57",
-   "motivo_seleccion": "LGDNNA art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LGDNNA_57.json; última reforma de la ley 2026-01-15): «tendrán derecho a intervenir en la educación que habrá de darse a niñas, niños y adolescentes». Sujeto literal: «Quienes ejerzan la patria potestad, tutela o guarda y custodia».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-14",
-   "tema_id": "T170",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿El Ministerio Público debe informarte tus derechos si eres víctima?",
-   "fuentes_sugeridas": "LGV art. 12 fr. I",
-   "motivo_seleccion": "LGV art. 12 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LGV_12.json; última reforma de la ley 2024-04-01): «A ser informadas de manera clara, precisa y accesible de sus derechos por el Ministerio Público o la primera autoridad con la que tenga contacto o que conozca del hecho delictivo, tan pronto éste ocurra». Condición literal: «con total independencia de que exista o no un probable responsable de los hechos». Ley general (alcance nacional)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-14",
-   "tema_id": "T170",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Si eres víctima, tienes derecho a una investigación pronta?",
-   "fuentes_sugeridas": "LGV art. 7 fr. I",
-   "motivo_seleccion": "LGV art. 7 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LGV_7.json; última reforma de la ley 2024-04-01): «A una investigación pronta y eficaz». Fracción I literal completa en el texto oficial; los derechos de la ley «son de carácter enunciativo».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-15",
-   "tema_id": "T171",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Puedes pedir que cambien tus condiciones si tu jornada es excesiva?",
-   "fuentes_sugeridas": "LFT art. 57",
-   "motivo_seleccion": "LFT art. 57 (texto oficial cotejado el 14-11-2026, registro/textos/LFT_57.json; última reforma de la ley 2026-05-14): «El trabajador podrá solicitar al Tribunal la modificación de las condiciones de trabajo, cuando el salario no sea remunerador o sea excesiva la jornada de trabajo». Condición literal: se pide «al Tribunal»; también procede «cuando concurran circunstancias económicas que la justifiquen»."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-15",
-   "tema_id": "T171",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuántas semanas debes cotizar para el subsidio por maternidad del IMSS?",
-   "fuentes_sugeridas": "LSS art. 102 fr. I",
-   "motivo_seleccion": "LSS art. 102 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LSS_102.json; última reforma de la ley 2026-01-15): «Que haya cubierto por lo menos treinta cotizaciones semanales en el período de doce meses anteriores a la fecha en que debiera comenzar el pago del subsidio». Otros requisitos literales: embarazo y fecha probable certificados por el Instituto (fr. II) y no trabajar con retribución en esos periodos (fr. III).",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-16",
-   "tema_id": "T172",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Te deben dar comprobante de los trabajos de reparación?",
-   "fuentes_sugeridas": "LFPC art. 62",
-   "motivo_seleccion": "LFPC art. 62 (texto oficial cotejado el 15-11-2026, registro/textos/LFPC_62.json; última reforma de la ley 2025-12-12): «Los prestadores de servicios tendrán obligación de expedir factura o comprobante de los trabajos efectuados, en los que deberán especificarse las partes, refacciones y materiales empleados; el precio de ellos y de la mano de obra; la garantía que en su caso se haya otorgado». Alcance federal. Sustituye el 19-11 a LFPC art. 9, que ya está en la imagen del 04-02 (lote 8, sustitución del 17-11): misma pregunta a 12 días. Distinta del Reel del 27-01 (LFPC 60, piezas usadas)."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-16",
-   "tema_id": "T172",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Una tienda puede negarle la entrada a Profeco?",
-   "fuentes_sugeridas": "LFPC art. 13",
-   "motivo_seleccion": "LFPC art. 13 (texto oficial cotejado el 14-11-2026, registro/textos/LFPC_13.json; última reforma de la ley 2025-12-12): «los proveedores, sus representantes o sus empleados están obligados a permitir al personal acreditado de la Procuraduría el acceso al lugar o lugares objeto de la verificación». Condición literal: «personal acreditado».",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-17",
-   "tema_id": "T173",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Un migrante sin papeles tiene derechos en México?",
-   "fuentes_sugeridas": "Ley de Migración art. 66",
-   "motivo_seleccion": "Ley de Migración art. 66 (texto oficial cotejado el 14-11-2026, registro/textos/LMigra_66.json; última reforma de la ley 2026-01-15): «La situación migratoria de un migrante no impedirá el ejercicio de sus derechos y libertades reconocidos en la Constitución». También literal: «El Estado mexicano garantizará el derecho a la seguridad personal de los migrantes, con independencia de su situación migratoria». Ley federal."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-17",
-   "tema_id": "T173",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Un migrante sin papeles puede acudir a la justicia en México?",
-   "fuentes_sugeridas": "Ley de Migración art. 11",
-   "motivo_seleccion": "Ley de Migración art. 11 (texto oficial cotejado el 14-11-2026, registro/textos/LMigra_11.json; última reforma de la ley 2026-01-15): «independientemente de su situación migratoria, los migrantes tendrán derecho a la procuración e impartición de justicia». Incluye literal: «así como a presentar quejas en materia de derechos humanos».",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-18",
-   "tema_id": "T174",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Los tribunales federales pueden revisar si una autoridad viola tus derechos humanos?",
-   "fuentes_sugeridas": "CPEUM art. 103 fr. I",
-   "motivo_seleccion": "CPEUM art. 103 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/CPEUM_103.json; última reforma de la ley 2026-10-07): «Los Tribunales de la Federación resolverán toda controversia que se suscite I. Por normas generales, actos u omisiones de la autoridad que violen los derechos humanos». Respuesta literal: sí; incluye derechos reconocidos por la Constitución y por los tratados internacionales. Sin explicar el trámite del amparo."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-18",
-   "tema_id": "T174",
-   "tipo_pregunta": "derecho",
-   "pregunta": "¿Las mujeres en prisión tienen derecho a la lactancia?",
-   "fuentes_sugeridas": "LNEP art. 10 fr. I",
-   "motivo_seleccion": "LNEP art. 10 fr. I (texto oficial cotejado el 14-11-2026, registro/textos/LNEP_10.json; última reforma de la ley 2024-04-01): «La maternidad y la lactancia». Encabezado literal: «las mujeres privadas de la libertad tendrán derecho a». Ley nacional.",
-   "plantilla": "dato"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-19",
-   "tema_id": "T175",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Puedes exigir que reconozcan que tú creaste una obra?",
-   "fuentes_sugeridas": "LFDA art. 21 fr. II",
-   "motivo_seleccion": "LFDA art. 21 fr. II (texto oficial cotejado el 14-11-2026, registro/textos/LFDA_21.json; última reforma de la ley 2026-05-14): «Exigir el reconocimiento de su calidad de autor respecto de la obra por él creada». Encabezado literal: «Los titulares de los derechos morales podrán en todo tiempo». Complemento del art. 18 (no se cita): el autor es titular perpetuo de los derechos morales."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-19",
-   "tema_id": "T175",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Los programas de cómputo tienen derechos de autor?",
-   "fuentes_sugeridas": "LFDA art. 13 fr. XI",
-   "motivo_seleccion": "LFDA art. 13 fr. XI (texto oficial cotejado el 14-11-2026, registro/textos/LFDA_13.json; última reforma de la ley 2026-05-14): «Programas de cómputo». Encabezado literal: «Los derechos de autor a que se refiere esta Ley se reconocen respecto de las obras de las siguientes ramas».",
-   "plantilla": "mito_realidad"
-  },
-  {
-   "formato": "reel",
-   "fecha": "2027-02-20",
-   "tema_id": "T176",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Tu pareja en unión libre puede tener servicio médico del IMSS?",
-   "fuentes_sugeridas": "LSS art. 84 fr. III",
-   "motivo_seleccion": "LSS art. 84 fr. III (texto oficial cotejado el 14-11-2026, registro/textos/LSS_84.json; última reforma de la ley 2026-01-15): «a falta de éstos, la concubina o el concubinario con quien ha hecho vida marital durante los cinco años anteriores a la enfermedad, con quien ha procreado o registrado hijos». Condiciones literales (seguro de enfermedades y maternidad): a falta de cónyuge; «siempre que ambos permanezcan libres de matrimonio, unión civil o concubinato»; «Si la o el asegurado tiene varias o varios concubinas o concubinarios ninguno de ellos tendrá derecho a la protección». Los cinco años y los hijos van separados por coma en el texto: decirlo con sus palabras, sin afirmar que basta uno u otro. Ángulo: solo la fracción III."
-  },
-  {
-   "formato": "imagen",
-   "fecha": "2027-02-20",
-   "tema_id": "T176",
-   "tipo_pregunta": "legalidad",
-   "pregunta": "¿Tienes que reclamarle primero a tu banco antes de ir a la Condusef?",
-   "fuentes_sugeridas": "LPDUSF art. 50 Bis",
-   "motivo_seleccion": "LPDUSF art. 50 Bis, penúltimo bloque (texto oficial en registro/textos/LPDUSF_50_Bis.json, consultado el 25-11-2026; última reforma de la ley DOF 14-11-2025): «Los Usuarios podrán a su elección presentar su consulta o reclamación ante la Unidad Especializada de la Institución Financiera de que se trate o ante la Comisión Nacional». Respuesta literal: no; a su elección, ante la Unidad Especializada del banco o ante la Comisión Nacional (Condusef). Contexto literal: «Cada Institución Financiera deberá contar con una Unidad Especializada que tendrá por objeto atender consultas y reclamaciones de los Usuarios». Alcance federal. Sin uso de esta ley en los lotes 7 a 9; el lote 10 propuesto usa el mismo artículo con otras preguntas (plazo de respuesta y existencia de la Unidad), sin coincidir. Sustituye a LGAMVLV art. 10 (dos descartes, 25-11 y 26-11: el análisis exigió mostrar el daño a la víctima, que la ficha no admitía).",
-   "plantilla": "mito_realidad"
+   "pregunta": "¿Quién es ejidatario según la ley?",
+   "fuentes_sugeridas": "Ley Agraria art. 12",
+   "motivo_seleccion": "Ley Agraria art. 12 (texto oficial cotejado el 25-11-2026, registro/textos/LAgra_12.json; última reforma de la ley 2025-11-14): «Son ejidatarios los hombres y las mujeres titulares de derechos ejidales.» Respuesta: definición literal; sin agregar requisitos de otros artículos."
   }
  ]
 }

@@ -1,9 +1,9 @@
 {
  "id": "lote-10",
- "estado": "PROPUESTA (25-11-2026, operación diaria)",
+ "estado": "ACTIVADO el 26-11-2026 (ver data/lote_piloto.json)",
  "creado": "2026-11-25",
  "max_por_formato": 8,
- "nota": "Lote complementario (8 temas por formato, 16 solicitudes; fechas nominales 21 al 28-02-2027). Preparado el 25-11 por la operación diaria porque no había ningún lote propuesto (la guía pide mantener siempre uno) y porque, aun con las 16 piezas del lote 9 que faltan, el calendario quedaría con unos 15 huecos antes del 20-02 (el adelanto del 16 al 22-11 consumió 14 espacios). Las fechas de las solicitudes son solo espacios: cada pieza aprobada va al primer hueco libre de su formato; lo que quede después de PUBLICAR_HASTA (2027-02-20) no se programa ni publica sin autorización expresa del responsable. Se activa en data/lote_piloto.json cuando el lote 9 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de los lotes 8 y 9 (ni de ninguna pieza ya en el calendario); materias de días consecutivos distintas (laboral, niñez, Constitución, servicios financieros —nueva: LPDUSF—, ejecución penal y víctimas, laboral, consumidor, agrario —nueva: Ley Agraria—). Los fragmentos literales se cotejaron por programa el 25-11 con el texto oficial descargado ese día (textos.yml → registro/textos/). Descartados: CPEUM 38 (la extracción del PDF salió truncada), LSS 101 y Ley de Migración 13/67 (muy parecidos a LSS 102 y LMigra 11/66 del lote 9), LFPC 61 (parecido a LFPC 62 del lote 9). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto.",
+ "nota": "Lote complementario (8 temas por formato, 16 solicitudes; fechas nominales 21 al 28-02-2027). Preparado el 25-11 por la operación diaria porque no había ningún lote propuesto (la guía pide mantener siempre uno) y porque, aun con las 16 piezas del lote 9 que faltan, el calendario quedaría con unos 15 huecos antes del 20-02 (el adelanto del 16 al 22-11 consumió 14 espacios). Las fechas de las solicitudes son solo espacios: cada pieza aprobada va al primer hueco libre de su formato; lo que quede después de PUBLICAR_HASTA (2027-02-20) no se programa ni publica sin autorización expresa del responsable. Se activa en data/lote_piloto.json cuando el lote 9 tenga todas sus solicitudes redactadas. Misma metodología: pregunta con respuesta literal en un artículo federal, general o nacional, sin jurisprudencia; ningún fundamento de los lotes 8 y 9 (ni de ninguna pieza ya en el calendario); materias de días consecutivos distintas (laboral, niñez, Constitución, servicios financieros —nueva: LPDUSF—, ejecución penal y víctimas, laboral, consumidor, agrario —nueva: Ley Agraria—). Los fragmentos literales se cotejaron por programa el 25-11 con el texto oficial descargado ese día (textos.yml → registro/textos/). Descartados: CPEUM 38 (la extracción del PDF salió truncada), LSS 101 y Ley de Migración 13/67 (muy parecidos a LSS 102 y LMigra 11/66 del lote 9), LFPC 61 (parecido a LFPC 62 del lote 9). Reels de 30 a 42 s. Aprobación delegada con 72 h de veto. 26-11 (operación diaria, 3.ª ronda): T180 sustituido antes de activar (LPDUSF 50 Bis fr. IV y 50 Bis → LFPC 92 fr. II en el Reel y LFPC 92 Ter en la imagen), porque la imagen del 20-02 del lote 9 pasó a LPDUSF 50 Bis el 26-11; fragmentos cotejados por programa con registro/textos/. LFPC 92 y 92 Ter no están en ninguna pieza del calendario.",
  "temas": [
   {
    "formato": "reel",
@@ -63,19 +63,19 @@
    "formato": "reel",
    "fecha": "2027-02-24",
    "tema_id": "T180",
-   "tipo_pregunta": "obligacion",
-   "pregunta": "¿Cuánto tiempo tiene tu banco para responder una reclamación?",
-   "fuentes_sugeridas": "LPDUSF art. 50 Bis fr. IV",
-   "motivo_seleccion": "LPDUSF art. 50 Bis fr. IV (texto oficial cotejado el 25-11-2026, registro/textos/LPDUSF_50_Bis.json; última reforma de la ley 2025-11-14): «IV. Deberá recibir la consulta, reclamación o aclaración del Usuario por cualquier medio que facilite su recepción» «responder por escrito dentro de un plazo que no exceda de treinta días hábiles, contado a partir de la fecha de su recepción» Respuesta: hasta 30 días hábiles desde que recibe la reclamación, por escrito, a través de su Unidad Especializada. Aplica a instituciones financieras (no solo bancos): decirlo así."
+   "tipo_pregunta": "derecho",
+   "pregunta": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?",
+   "fuentes_sugeridas": "LFPC art. 92 fr. II",
+   "motivo_seleccion": "LFPC art. 92 fr. II (texto oficial cotejado por programa el 26-11-2026 con registro/textos/LFPC_92.json; última reforma de la ley 2025-12-12): «Los consumidores tendrán derecho, a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación» … «II. Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido o no cumple con las normas oficiales mexicanas». Respuesta: sí; a tu elección, reposición del producto o devolución de lo pagado, contra la entrega del producto, y en todo caso una bonificación. Condición literal: «contra la entrega del producto adquirido». Sustituye a LPDUSF 50 Bis fr. IV (26-11, operación diaria): la imagen del 20-02 del lote 9 pasó a LPDUSF 50 Bis tras su 2.º descarte, y el lote no repite fundamentos de los lotes 8 y 9."
   },
   {
    "formato": "imagen",
    "fecha": "2027-02-24",
    "tema_id": "T180",
    "tipo_pregunta": "obligacion",
-   "pregunta": "¿Tu banco debe tener un área para atender tus reclamaciones?",
-   "fuentes_sugeridas": "LPDUSF art. 50 Bis",
-   "motivo_seleccion": "LPDUSF art. 50 Bis (texto oficial cotejado el 25-11-2026, registro/textos/LPDUSF_50_Bis.json; última reforma de la ley 2025-11-14): «Cada Institución Financiera deberá contar con una Unidad Especializada que tendrá por objeto atender consultas y reclamaciones de los Usuarios.» Respuesta: sí; toda institución financiera debe tener una Unidad Especializada (UNE)."
+   "pregunta": "¿De cuánto es la bonificación si un producto no cumple lo ofrecido?",
+   "fuentes_sugeridas": "LFPC art. 92 Ter",
+   "motivo_seleccion": "LFPC art. 92 Ter (texto oficial cotejado por programa el 26-11-2026 con registro/textos/LFPC_92_Ter.json; última reforma de la ley 2025-12-12): la bonificación de los arts. 92 y 92 Bis «no podrá ser menor al veinte por ciento del precio pagado». Condición literal: «El pago de dicha bonificación se efectuará sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios». Respuesta: al menos el veinte por ciento del precio pagado. Sustituye a LPDUSF 50 Bis (26-11, operación diaria): la imagen del 20-02 del lote 9 ya usa ese artículo con una pregunta casi igual."
   },
   {
    "formato": "reel",
