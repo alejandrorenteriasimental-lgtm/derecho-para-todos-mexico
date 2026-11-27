@@ -1,0 +1,105 @@
+{
+ "solicitud": "2027-02-24_imagen_T180-lote-10.json",
+ "fecha": "2026-11-27T19:18:30+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n ",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza omite la información procedimental clave contenida en el texto: que el consumidor puede hacer efectiva la bonificación directamente con el proveedor presentando su comprobante en los casos del artículo 92, fracción I."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La bonificación no puede ser menor al 20% del precio pagado.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter establece explícitamente este porcentaje mínimo."
+     },
+     {
+      "conclusion": "La bonificación es distinta de la devolución del precio.",
+      "sostenida": "parcial",
+      "motivo": "El texto oficial no define ni menciona la 'devolución del precio', aunque sí establece que la bonificación es independiente de la indemnización por daños y perjuicios."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "La bonificación es una cantidad que el proveedor debe pagar al consumidor como compensación, la cual es distinta de la devolución del precio.",
+      "problema": "El texto oficial no menciona la 'devolución del precio', por lo que la distinción es una interpretación editorial que no se apoya en el texto entregado.",
+      "correccion": "Eliminar la mención a la 'devolución del precio' o sustituirla por la aclaración de que la bonificación es independiente de la indemnización por daños y perjuicios, tal como indica el texto: 'El pago de dicha bonificación se efectuará sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "imagen: contenido demasiado largo (69 palabras visibles; máximo 60; sobran 9, quita al menos 14): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n No podrá ser menor al veinte por ciento del precio pagado, sin perjuicio de la indemnización por daños y perjuicios. \n La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado. \n No incluye el pago de posibles daños y perjuicios."
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "imagen: contenido demasiado largo (69 palabras visibles; máximo 60; sobran 9, quita al menos 14): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "El procedimiento para hacer efectiva la bonificación directamente ante el proveedor en los casos de la fracción I del artículo 92."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "La bonificación por incumplimiento no puede ser inferior al veinte por ciento del precio pagado.",
+      "sostenida": "si",
+      "motivo": "El artículo 92 Ter establece explícitamente este porcentaje mínimo."
+     },
+     {
+      "conclusion": "El pago de la bonificación excluye la indemnización por daños y perjuicios.",
+      "sostenida": "no",
+      "motivo": "El texto legal indica que el pago se efectúa 'sin perjuicio de la indemnización', lo que significa que son conceptos independientes y no excluyentes."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Ojo: Excluye daños y perjuicios.",
+      "problema": "La expresión 'sin perjuicio de' en el texto legal significa que la bonificación no impide ni excluye el derecho a reclamar indemnización por daños y perjuicios.",
+      "corrección": "Cambiar por: 'La bonificación es independiente de la indemnización por daños y perjuicios'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse",
+    "imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+   ],
+   "visible": "  \n   \n No podrá ser menor al veinte por ciento del precio pagado, sin perjuicio de la indemnización por daños y perjuicios. \n La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado. \n La bonificación es independiente de daños y perjuicios."
+  }
+ ]
+}

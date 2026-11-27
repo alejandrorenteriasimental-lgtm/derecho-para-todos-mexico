@@ -15,13 +15,13 @@
   "relacion": "independiente",
   "plantilla": "concepto",
   "angulo": "¿De cuánto es la bonificación si un producto no cumple lo ofrecido?",
-  "estado": "PENDIENTE_GUION",
+  "estado": "DESCARTADA",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "I20270224-T180",
   "archivo": "2027-02-24_imagen_T180-lote-10.json",
-  "intentos": 1,
-  "ultimo_motivo": "modelo no disponible: gemini-3.5-flash-lite: falló repetidamente en este ciclo (no se vuelve a llamar)",
-  "ultima_categoria": "tecnico",
+  "intentos": 2,
+  "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[ojo] El «OJO» repite la respuesta: debe agregar una precisión distinta tomada del análisis (condición, excepción u otro dato de la cita), o quitarse\", \"imagen: contenido demasiado largo (66 palabras visibles; máximo 60; sobran 6, quita al menos 11): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n ",
+  "ultima_categoria": "redaccion",
   "huella_entrada": "0cf81e760d95436f"
 }

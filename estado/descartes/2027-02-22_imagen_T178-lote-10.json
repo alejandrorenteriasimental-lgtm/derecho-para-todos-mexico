@@ -1,7 +1,7 @@
 {
  "solicitud": "2027-02-22_imagen_T178-lote-10.json",
- "fecha": "2026-11-27T12:01:05+00:00",
- "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta\"], \"visible\": \"  \\n   \\n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo en los casos de excepción previstos por la ley. \\n No se requ",
+ "fecha": "2026-11-27T19:17:44+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: no se requiere el consentimiento de quienes ejerzan la patria potestad cuando la ».\"], \"visible\": \"  \\n   \\n Depende: no se requiere el permiso de los padres si la entrevista busca que expresen libremente su opinión o si un adolescente lo otorga. \\n Siempre debes r",
  "historial": [
   {
    "etapa": "analisis",
@@ -12,15 +12,15 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ],
-   "visible": "  \n   \n Depende: se requiere permiso por escrito, pero no es necesario si el menor expresa su opinión sobre asuntos que le afectan directamente. \n No debe afectarse la honra o reputación del menor."
+   "visible": "  \n   \n Depende: se requiere consentimiento, salvo cuando la entrevista busca que expresen su opinión en asuntos que les afecten. \n Deberá recabar el consentimiento por escrito o cualquier otro medio, de quienes ejerzan la patria potestad o tutela \n Cuidar que no se afecte la honra del menor."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "[cobertura] El análisis responde qué consecuencia jurídica tiene la situación (es válida, nula, legal, ilegal…) («La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.»), pero la pieza no lo dice: agrégalo al texto visible."
+    "imagen: contenido demasiado largo (65 palabras visibles; máximo 60; sobran 5, quita al menos 10): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ]
   },
   {
@@ -30,40 +30,44 @@
     "veredicto": "con_objeciones",
     "cobertura": {
      "responde_nucleo": true,
-     "faltantes": []
+     "faltantes": [
+      "La obligación de recabar la opinión del menor (además del consentimiento de los padres)",
+      "La obligación del entrevistador de ser respetuoso y no afectar el desarrollo integral del menor",
+      "La excepción específica para adolescentes cuando no es posible localizar a los padres"
+     ]
     },
     "conclusiones": [
      {
-      "conclusion": "Los medios de comunicación tienen la obligación general de obtener el consentimiento de los padres o tutores para difundir entrevistas de menores.",
+      "conclusion": "Los medios de comunicación deben recabar el consentimiento de quienes ejerzan la patria potestad o tutela para difundir entrevistas a menores.",
+      "sostenida": "parcial",
+      "motivo": "El artículo 78, fracción I, establece que además del consentimiento, es obligatorio recabar la opinión de la niña, niño o adolescente."
+     },
+     {
+      "conclusion": "Un adolescente puede otorgar su propio consentimiento si no es posible obtener el de sus padres y no se afecta su privacidad.",
       "sostenida": "si",
-      "motivo": "El artículo 78, fracción I, establece la regla general de recabar el consentimiento de quienes ejerzan la patria potestad o tutela."
+      "motivo": "El artículo 78 prevé esta posibilidad expresamente."
      },
      {
-      "conclusion": "No es obligatorio el permiso de los padres cuando la entrevista permite que el menor opine sobre temas que le impactan de forma directa.",
-      "sostenida": "parcial",
-      "motivo": "La conclusión omite la condición esencial de que dicha excepción solo aplica 'siempre que ello no implique una afectación a sus derechos, en especial a su honra y reputación'."
-     },
-     {
-      "conclusion": "Un adolescente puede autorizar su propia entrevista si no es posible localizar a sus padres o tutores.",
-      "sostenida": "parcial",
-      "motivo": "La conclusión omite la condición de que el adolescente solo puede otorgar el consentimiento 'siempre que ello no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación'."
+      "conclusion": "No se requiere consentimiento de padres o tutores cuando la entrevista busca que expresen libremente su opinión en asuntos que les afecten.",
+      "sostenida": "si",
+      "motivo": "El artículo 78 establece esta excepción siempre que no se afecten sus derechos, en especial su honra y reputación."
      }
     ],
     "objeciones": [
      {
-      "donde": "Copy: 'La entrevista puede difundirse legalmente sin permiso de los padres si el objetivo es la libre expresión del menor sobre temas que le afectan.'",
-      "problema": "La redacción omite la condición de salvaguarda de derechos (honra y reputación) que el artículo 78 exige explícitamente para que esta excepción sea válida.",
-      "correccion": "Debe incluirse la condición: '...siempre que ello no implique una afectación a sus derechos, en especial a su honra y reputación'."
+      "donde": "Copy, primer párrafo",
+      "problema": "Omite que, además del consentimiento de los padres, la ley exige recabar la opinión del menor.",
+      "correccion": "Añadir que el medio debe recabar el consentimiento de los padres 'así como la opinión de la niña, niño o adolescente'."
      },
      {
-      "donde": "Copy: 'En el caso de adolescentes, si no es posible localizar a sus tutores, ellos mismos pueden autorizar la entrevista si esto no daña su privacidad o reputación.'",
-      "problema": "La redacción es imprecisa al decir 'si no es posible localizar', cuando la ley dice 'no sea posible recabar el consentimiento'. Además, la redacción original es un poco laxa respecto a la protección de la honra.",
-      "correccion": "Ajustar a: 'En el caso de adolescentes, si no es posible recabar el consentimiento de sus tutores, ellos mismos pueden otorgarlo, siempre que esto no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación'."
+      "donde": "Copy",
+      "problema": "Omite la obligación del entrevistador de ser respetuoso y no afectar el desarrollo integral del menor.",
+      "correccion": "Incluir que, conforme al artículo 78, fracción II, la persona que realice la entrevista debe ser respetuosa y no mostrar actitudes que afecten el desarrollo integral del menor."
      },
      {
-      "donde": "Copy: 'Quien entrevista debe ser siempre respetuoso para no afectar el desarrollo integral del menor.'",
-      "problema": "El uso de la palabra 'siempre' contraviene la instrucción de no usar lenguaje absoluto, aunque el texto legal impone una prohibición clara de conducta.",
-      "correccion": "Eliminar 'siempre' y redactar: 'Quien entrevista debe ser respetuoso y no puede mostrar actitudes ni emitir comentarios que afecten el desarrollo integral del menor'."
+      "donde": "Copy",
+      "problema": "Omite la excepción sobre adolescentes cuando no es posible obtener el consentimiento de los padres.",
+      "correccion": "Mencionar que, en caso de no ser posible recabar el consentimiento de los padres de un adolescente, este puede otorgarlo si no se afecta su privacidad, honra o reputación."
      }
     ]
    }
@@ -72,7 +76,7 @@
    "etapa": "analisis",
    "intento": 0,
    "errores": [
-    "[sustento] La cita de la conclusión «No es necesario el permiso de los padres cuando la entrevist» no está en Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 78."
+    "[sustento] La cita de la conclusión «No se requiere el consentimiento de quienes ejercen la patri» no está en Ley General de los Derechos de Niñas, Niños y Adolescentes, art. 78."
    ]
   },
   {
@@ -84,15 +88,15 @@
    "etapa": "redaccion",
    "intento": 0,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ],
-   "visible": "  \n   \n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo excepciones previstas por la ley. \n Deberá recabar el consentimiento por escrito o cualquier otro medio, de quienes ejerzan la patria potestad o tutela \n Sin afectar sus derechos, honra o reputación."
+   "visible": "  \n   \n Depende: no se requiere el consentimiento de quienes ejerzan la patria potestad cuando la entrevista tenga por objeto que expresen libremente su opinión. \n No se requerirá el consentimiento de quienes ejerzan la patria potestad o tutela \n No debe afectar su honra o reputación."
   },
   {
    "etapa": "reparacion_puntual",
    "intento": 1,
    "errores": [
-    "imagen: contenido demasiado largo (64 palabras visibles; máximo 60; sobran 4, quita al menos 9): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    "imagen: contenido demasiado largo (61 palabras visibles; máximo 60; sobran 1, quita al menos 6): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
    ]
   },
   {
@@ -102,25 +106,33 @@
     "veredicto": "con_objeciones",
     "cobertura": {
      "responde_nucleo": true,
-     "faltantes": []
+     "faltantes": [
+      "La obligación de recabar la opinión de la niña, niño o adolescente, la cual es un requisito obligatorio independientemente del consentimiento de los padres.",
+      "La excepción específica para adolescentes cuando no es posible localizar a quienes ejercen la patria potestad."
+     ]
     },
     "conclusiones": [
      {
-      "conclusion": "Por regla general, los medios de comunicación deben recabar el consentimiento de quienes ejerzan la patria potestad o tutela para difundir entrevistas a niñas, niños y adolescentes.",
+      "conclusion": "Por regla general, los medios deben recabar el consentimiento de quienes ejerzan la patria potestad o tutela.",
       "sostenida": "si",
-      "motivo": "El artículo 78, fracción I, establece la obligación de recabar el consentimiento de quienes ejerzan la patria potestad o tutela."
+      "motivo": "El artículo 78 establece la obligación general de recabar el consentimiento."
      },
      {
-      "conclusion": "En el caso de adolescentes, si no es posible recabar la autorización de sus padres o tutores, ellos mismos pueden otorgarla.",
+      "conclusion": "No se requiere el consentimiento de los padres cuando la entrevista busca que expresen libremente su opinión en asuntos que les afecten.",
       "sostenida": "parcial",
-      "motivo": "La pieza omite que el consentimiento del adolescente está condicionado a que no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación."
+      "motivo": "La pieza omite que existe otra excepción legal para adolescentes cuando no es posible localizar a los padres, y no menciona que la opinión del menor es un requisito obligatorio en todos los casos."
      }
     ],
     "objeciones": [
      {
-      "donde": "En el caso de adolescentes, si no es posible recabar la autorización de sus padres o tutores, ellos mismos pueden otorgarla.",
-      "problema": "La pieza presenta el consentimiento del adolescente como una facultad sin mencionar la limitante legal expresa que condiciona su validez.",
-      "correccion": "Añadir que el adolescente puede otorgar el consentimiento siempre que ello no implique una afectación a su derecho a la privacidad por el menoscabo a su honra o reputación."
+      "donde": "Copy",
+      "problema": "La pieza omite la excepción prevista en el segundo párrafo del artículo 78, que permite al adolescente otorgar su propio consentimiento cuando no es posible localizar a quienes ejercen la patria potestad.",
+      "correccion": "Incluir que, en el caso de adolescentes, si no es posible localizar a los padres o tutores, el propio adolescente puede otorgar el consentimiento, siempre que no afecte su privacidad, honra o reputación."
+     },
+     {
+      "donde": "Copy",
+      "problema": "La pieza no menciona que, además del consentimiento (o su excepción), es obligatorio recabar la opinión de la niña, niño o adolescente.",
+      "correccion": "Añadir que, conforme a la fracción I del artículo 78, siempre se debe recabar la opinión de la niña, niño o adolescente."
      }
     ]
    }
@@ -129,9 +141,9 @@
    "etapa": "redaccion",
    "intento": 2,
    "errores_esquema": [
-    "imagen: contenido demasiado largo (67 palabras visibles; máximo 60; sobran 7, quita al menos 12): acorta la bajada, la cita destacada o el «ojo» sin quitar la respuesta"
+    "[respuesta] La respuesta corta no aparece en el contenido visible: «Depende: no se requiere el consentimiento de quienes ejerzan la patria potestad cuando la »."
    ],
-   "visible": "  \n   \n Depende: requiere consentimiento de quienes ejerzan la patria potestad o tutela, salvo en los casos de excepción previstos por la ley. \n No se requerirá el consentimiento de quienes ejerzan la patria potestad o tutela \n El adolescente puede otorgarlo si no afecta su honra."
+   "visible": "  \n   \n Depende: no se requiere el permiso de los padres si la entrevista busca que expresen libremente su opinión o si un adolescente lo otorga. \n Siempre debes recabar la opinión del menor."
   }
  ]
 }

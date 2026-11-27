@@ -1,0 +1,107 @@
+{
+ "solicitud": "2027-02-22_reel_T178-lote-10.json",
+ "fecha": "2026-11-27T19:14:01+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Se pueden difundir datos que identifiquen a un niño? \\n ¿DATOS DE \\n MENOR",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": false,
+     "faltantes": [
+      "La condición de que la información o datos atenten contra la honra, imagen o reputación de la niña, niño o adolescente para que la prohibición de la difusión ilícita sea aplicable según el artículo 76."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "No se permite la difusión ilícita de datos personales o información que permita identificar a niñas, niños y adolescentes.",
+      "sostenida": "parcial",
+      "motivo": "La conclusión omite un requisito esencial del artículo 76: la prohibición de divulgaciones o difusiones ilícitas se aplica a aquellas que, además de permitir la identificación, 'atenten contra su honra, imagen o reputación'."
+     },
+     {
+      "conclusion": "La difusión de datos que permitan identificar a un niño está prohibida cuando es ilícita.",
+      "sostenida": "parcial",
+      "motivo": "Al igual que la anterior, la conclusión es incompleta porque no menciona que la ilicitud debe ir acompañada de la afectación a la 'honra, imagen o reputación' para encuadrar en la prohibición de este precepto."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Título y respuesta corta",
+      "problema": "La pieza responde de forma directa con un 'No' a la pregunta '¿Se pueden difundir datos que identifiquen a un niño?', lo cual es jurídicamente incorrecto. La ley no prohíbe la difusión de datos que identifiquen de manera absoluta, sino que establece condiciones específicas (que sea ilícita y que atente contra la honra, imagen o reputación).",
+      "correccion": "La respuesta debe ser 'Depende' o 'Solo si...', aclarando que la prohibición recae sobre las divulgaciones o difusiones ilícitas que permitan la identificación y que atenten contra la honra, imagen o reputación del menor."
+     },
+     {
+      "donde": "Razonamiento y elementos",
+      "problema": "Se presenta la prohibición de la difusión ilícita como una regla general sin mencionar el límite o requisito de afectación a la honra, imagen o reputación.",
+      "correccion": "Integrar en la explicación que la protección contra la difusión ilícita de datos identificables está condicionada a que dicha información atente contra la honra, imagen o reputación de la niña, niño o adolescente."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 626 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 6: recorta al menos 66 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Se pueden difundir datos que identifiquen a un niño? \n DATO DE \n MENORES \n No, si la difusión es ilícita, permite identificarlos y atenta contra su honra, imagen o reputación. \n PROTECCIÓN \n DE DATOS \n La ley señala: tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra su honra, imagen o reputación. \n tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra … \n Las condicion"
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 626 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 6: recorta al menos 66 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Se prohíben las divulgaciones o difusiones ilícitas de datos personales que permitan identificar a niñas, niños o adolescentes cuando atenten contra su honra, imagen o reputación.",
+      "sostenida": "si",
+      "motivo": "El artículo 76 establece explícitamente la prohibición de divulgaciones ilícitas que permitan identificarlos y atenten contra su honra, imagen o reputación."
+     },
+     {
+      "conclusion": "Ninguna noticia justifica vulnerar su intimidad.",
+      "sostenida": "parcial",
+      "motivo": "La ley no prohíbe toda noticia sobre menores, sino específicamente aquellas que sean ilícitas, permitan identificarlos y atenten contra su honra, imagen o reputación."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Titular: 'Ninguna noticia justifica vulnerar su intimidad.'",
+      "problema": "Es una afirmación absoluta que no refleja los requisitos específicos del artículo 76 (que la difusión sea ilícita, que identifique al menor y que atente contra su honra, imagen o reputación).",
+      "correccion": "Cambiar por: 'Las noticias que identifiquen a menores y atenten contra su honra, imagen o reputación son ilícitas.'"
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Se pueden difundir datos que identifiquen a un niño? \n ¿DATOS DE \n MENORES? \n No, si la difusión es ilícita, permite identificarlos y atenta contra su honra, imagen o reputación. \n DIFUSIÓN \n PROHIBIDA \n La ley prohíbe expresamente lo siguiente: «tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra su honra, imagen o reputación.» \n tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que a"
+  }
+ ]
+}

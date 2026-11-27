@@ -1,0 +1,49 @@
+{
+ "tema_id": "T180",
+ "pregunta": "¿De cuánto es la bonificación si un producto no cumple lo ofrecido?",
+ "fecha": "2026-11-27T19:18:23+00:00",
+ "objetado": true,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿De cuánto es la bonificación si un producto no cumple lo ofrecido?",
+  "concepto_central": "bonificacion",
+  "respuesta_corta": "No podrá ser menor al veinte por ciento del precio pagado, sin perjuicio de la indemnización por daños y perjuicios.",
+  "reglas": [
+   {
+    "conclusion": "La bonificación por incumplimiento no puede ser inferior al veinte por ciento del precio pagado.",
+    "fuente": "F1",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado.",
+    "condiciones": [
+     "Aplica en los supuestos a que se refieren los artículos 92 y 92 Bis."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La bonificación no podrá ser menor al veinte por ciento del precio pagado.",
+    "fuente": "F1",
+    "cita_literal": "La bonificación a que se refieren los artículos 92 y 92 Bis no podrá ser menor al veinte por ciento del precio pagado."
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El pago de la bonificación se efectúa sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios.",
+    "fuente": "F1",
+    "cita_literal": "El pago de dicha bonificación se efectuará sin perjuicio de la indemnización que en su caso corresponda por daños y perjuicios."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "bonificacion",
+    "b": "indemnizacion",
+    "diferencia": "La bonificación es un porcentaje mínimo del precio pagado que se otorga por el incumplimiento, la cual se efectúa sin perjuicio de la indemnización por daños y perjuicios."
+   }
+  ],
+  "limites": "El texto oficial solo establece el porcentaje mínimo del veinte por ciento y su relación con los daños y perjuicios, sin detallar fórmulas para calcular montos mayores.",
+  "fuentes_irrelevantes": []
+ }
+}
