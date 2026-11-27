@@ -2,20 +2,20 @@
   "id": "I20270223-T179",
   "formato": "imagen",
   "plantilla": "concepto",
-  "titulo": "¿Una suspensión puede dirigirse a una sola persona?",
+  "titulo": "¿En una emergencia pueden suspender derechos a una sola persona?",
   "version_esquema": "0.3",
   "riesgo": "bajo",
   "tema_id": "T179",
   "pieza": {
-    "titular": "¿Una suspensión puede dirigirse a una sola persona?",
-    "bajada": "No, debe establecerse por medio de prevenciones generales.",
+    "titular": "¿En una emergencia pueden suspender derechos a una sola persona?",
+    "bajada": "No. La suspensión de derechos por emergencia debe ser general.",
     "cita": "por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona.",
     "etiqueta_cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
-    "ojo": "Aplica ante graves peligros.",
+    "ojo": "Solo el Presidente, con aprobación del Congreso, y por tiempo limitado.",
     "fuente_visible": "Constitución Política de los Estados Unidos Mexicanos, art. 29"
   },
-  "copy": "La Constitución Política de los Estados Unidos Mexicanos, en su artículo 29, regula las medidas extraordinarias aplicables cuando existe invasión, perturbación grave de la paz pública o situaciones que pongan a la sociedad en grave peligro.\n\nFrente a estas circunstancias excepcionales, la norma establece que cualquier restricción o suspensión del ejercicio de derechos debe emitirse \"por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona\", descartando su aplicación individual.\n\nGuarda esta información y compártela para conocer los límites constitucionales establecidos en nuestra legislación.\n\nEsto es información general, no es asesoría legal.",
-  "alt": "Imagen informativa que explica que la suspensión de derechos no puede dirigirse contra una sola persona.",
+  "copy": "¿En una emergencia pueden suspender derechos a una sola persona?\n\nNo. El artículo 29 de la Constitución permite restringir o suspender el ejercicio de derechos en casos de invasión, perturbación grave de la paz pública o grave peligro, pero «por medio de prevenciones generales y sin que la restricción o suspensión se contraiga a determinada persona».\n\nOjo: solo puede hacerlo el Presidente, con la aprobación del Congreso de la Unión (o de la Comisión Permanente si el Congreso no está reunido), y por un tiempo limitado.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 29.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa: en una emergencia, la suspensión de derechos del artículo 29 constitucional debe ser general y no puede dirigirse contra una sola persona.",
   "relacion_reel": "independiente",
   "fuentes": {
     "F1": {
@@ -28,6 +28,28 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
       "jurisdiccion": "federal",
       "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "solamente el Presidente de los Estados Unidos Mexicanos, con la aprobación del Congreso de la Unión o de la Comisión Permanente cuando aquel no estuviere reunido",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "pero deberá hacerlo por un tiempo limitado",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
     }
   },
   "afirmaciones": [
@@ -36,6 +58,12 @@
       "tipo": "hecho_normativo",
       "texto": "La restricción o suspensión de derechos no puede dirigirse a un individuo específico, sino que requiere prevenciones generales.",
       "fuente": "F1"
+    },
+    {
+      "tipo": "hecho_normativo",
+      "texto": "Solamente el Presidente, con la aprobación del Congreso de la Unión o de la Comisión Permanente, puede restringir o suspender derechos, y por un tiempo limitado.",
+      "fuente": "F2",
+      "id": "A2"
     }
   ],
   "razonamiento": {
@@ -148,5 +176,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v458d10c4ce0f287a: el titular «¿Una suspensión puede dirigirse a una sola persona?» no decía de qué suspensión se trata (otras normas, como el art. 38 constitucional, sí suspenden derechos de personas determinadas); la bajada no tenía sujeto y el «ojo» («Aplica ante graves peligros») era vago. → Titular acotado a la emergencia del art. 29, bajada con sujeto, «ojo» con quién y por cuánto tiempo (F2 y F3 literales del art. 29); publicación y texto alternativo reescritos. CPEUM 29 cotejado en registro/textos."
+    }
+  ]
 }

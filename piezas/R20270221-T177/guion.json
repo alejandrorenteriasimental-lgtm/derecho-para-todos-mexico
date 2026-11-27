@@ -17,6 +17,17 @@
       "cita": "Ley Federal del Trabajo, artículo 521",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "521",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia de no conciliación o en su caso, se determine el archivo del expediente por falta de interés de parte.",
+      "cita": "Ley Federal del Trabajo, artículo 521",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
@@ -34,16 +45,16 @@
       "tipo": "titular",
       "texto": "Sí: pedir la conciliación interrumpe el plazo de prescripción para demandar.",
       "titulo": [
-        "SÍ DETIENE",
-        "EL PLAZO"
+        "SÍ, LO",
+        "INTERRUMPE"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley indica que la prescripción se interrumpe «Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley. La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la constancia».",
+      "texto": "La ley dice que la prescripción se interrumpe «Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley».",
       "etiqueta": "Ley Federal del Trabajo, artículo 521",
-      "cita": "Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley. La interrupción de la prescripción cesará a partir del día siguiente en que el Centro de Conciliación expida la …",
+      "cita": "Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley.",
       "afirmaciones": [
         {
           "id": "A1",
@@ -56,19 +67,27 @@
     },
     {
       "tipo": "lista",
-      "texto": "El plazo vuelve a correr si:",
+      "texto": "Ojo: la interrupción termina al día siguiente de que te den la constancia de no conciliación o de que archiven el expediente por falta de interés.",
       "items": [
-        "Expiden la constancia",
-        "Archivan por desinterés"
+        "Constancia de no conciliación",
+        "Archivo por falta de interés"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "La interrupción cesa al día siguiente de la constancia de no conciliación o del archivo por falta de interés.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "En resumen, pedir la conciliación sí detiene el plazo para demandar.",
+      "texto": "En resumen: pedir la conciliación sí interrumpe el plazo para demandar, pero solo mientras dura el trámite.",
       "titulo": [
-        "EL RELOJ",
-        "SE DETIENE"
+        "EL PLAZO",
+        "SE INTERRUMPE"
       ],
       "afirmaciones": []
     },
@@ -143,7 +162,7 @@
   "pregunta_original": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?\n\nSí: presentar la solicitud de conciliación interrumpe el plazo de prescripción para demandar.\n\nFuente: Ley Federal del Trabajo, artículo 521.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Pedir la conciliación detiene el plazo para demandar a tu patrón?\n\nSí: la prescripción se interrumpe «Por la presentación de la solicitud de conciliación a que se refiere el artículo 684-B de esta Ley».\n\nOjo: la interrupción cesa a partir del día siguiente en que el Centro de Conciliación expida la constancia de no conciliación o se archive el expediente por falta de interés de parte.\n\nFuente: Ley Federal del Trabajo, artículo 521, fracción III.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -187,5 +206,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v9704889dee170922: la cita visible salía truncada con «…» («expida la …»), sin «de no conciliación»; la lista decía «El plazo vuelve a correr si: Expiden la constancia» (incompleto e impreciso: es interrupción, no suspensión). → Cita solo con la primera oración de la fr. III (F1); lista «Constancia de no conciliación / Archivo por falta de interés» con F2 literal (segunda oración de la fr. III); titulares «SÍ, LO INTERRUMPE» y «EL PLAZO SE INTERRUMPE»; publicación con F1 y F2 literales. LFT 521 fr. III cotejado en registro/textos."
+    }
+  ]
 }

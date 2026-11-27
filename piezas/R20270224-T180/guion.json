@@ -13,7 +13,7 @@
       "documento": "Ley Federal de Protección al Consumidor",
       "articulo": "92",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
-      "texto_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido",
+      "texto_literal": "Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido o no cumple con las normas oficiales mexicanas",
       "cita": "Ley Federal de Protección al Consumidor, artículo 92",
       "jurisdiccion": "federal",
       "consultado": "2026-11-27"
@@ -39,6 +39,39 @@
       "cita": "Ley Federal de Protección al Consumidor, artículo 92",
       "jurisdiccion": "federal",
       "consultado": "2026-11-27"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Cuando el contenido neto de un producto o la cantidad entregada sea menor a la indicada en el envase, recipiente, empaque",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F5": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "se estará al juicio de peritos o a la verificación en laboratorios debidamente acreditados",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F6": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "92",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "y en todo caso, a una bonificación",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 92",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
@@ -53,7 +86,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "Sí, puedes elegir que te devuelvan tu dinero si el bien no cumple con la calidad, marca o especificaciones prometidas.",
+      "texto": "Sí: puedes elegir que te devuelvan tu dinero si no cumple con la calidad, marca o especificaciones ofrecidas.",
       "titulo": [
         "SÍ TIENES",
         "DERECHO"
@@ -77,7 +110,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Este derecho aplica en casos como:",
+      "texto": "Por ejemplo:",
       "items": [
         "Marca o calidad distinta",
         "Contenido menor al envase",
@@ -87,23 +120,36 @@
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "La ley garantiza el derecho a elegir entre reposición o devolución del dinero.",
-          "fuente": "F2"
+          "texto": "Aplica si el bien no corresponde a la calidad, marca o especificaciones ofrecidas o no cumple con las normas oficiales mexicanas.",
+          "fuente": "F1"
+        },
+        {
+          "id": "A2b",
+          "tipo": "hecho_normativo",
+          "texto": "Aplica si el contenido neto es menor al indicado en el envase.",
+          "fuente": "F4"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Si el producto requiere conocimientos técnicos para ser evaluado.",
-      "encabezado": "Bienes con características técnicas",
-      "detalle": "Se requiere juicio de peritos",
+      "texto": "Ojo: en aparatos técnicos, deciden peritos o laboratorios acreditados.",
+      "encabezado": "Aparatos técnicos",
+      "detalle": "Lo revisan peritos o laboratorios",
       "fuente_corta": "Ley, art. 92",
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "En bienes que ameriten conocimientos técnicos se estará al juicio de peritos o a la verificación en laboratorios acreditados.",
+          "fuente": "F5"
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "Recuperas tu dinero al entregar el bien y recibes una bonificación como compensación adicional.",
+      "texto": "Si eliges la devolución, entregas el producto y recuperas tu pago, más una bonificación.",
       "titulo": [
         "DINERO Y",
         "BONIFICACIÓN"
@@ -112,8 +158,8 @@
         {
           "id": "A3",
           "tipo": "hecho_normativo",
-          "texto": "El reembolso debe hacerse preferentemente en la misma forma de pago original.",
-          "fuente": "F3"
+          "texto": "En todo caso el consumidor tiene derecho a una bonificación.",
+          "fuente": "F6"
         }
       ]
     },
@@ -221,7 +267,7 @@
   "pregunta_original": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?",
   "tipo_pregunta": "derecho",
   "revision_razonamiento": [],
-  "copy": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?\n\nSí, tienes derecho a elegir la devolución de tu dinero si el producto no cumple con la calidad, marca o especificaciones bajo las cuales se te ofreció.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te deben devolver tu dinero si el producto no es lo que te ofrecieron?\n\nSí. Puedes elegir entre la reposición del producto o la devolución de lo que pagaste, contra la entrega del producto, y en todo caso te corresponde una bonificación. Aplica, por ejemplo, si el bien no corresponde a la calidad, marca o especificaciones con que se ofreció.\n\nOjo: en aparatos que requieren conocimientos técnicos, se estará al juicio de peritos o a la verificación en laboratorios acreditados.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 92.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -270,5 +316,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v6f04624816d5dd85: la escena de «excepción» presentaba los bienes técnicos como si quedaran fuera del derecho (el art. 92 solo dice que se estará al juicio de peritos o laboratorios); la afirmación de la escena «DINERO Y BONIFICACIÓN» hablaba de la forma de pago y no de la bonificación narrada; «normas oficiales» y «contenido menor al envase» sin cita literal. → Escena 5 «Aparatos técnicos / Lo revisan peritos o laboratorios» con F5 literal; escena 6 con F6 («y en todo caso, a una bonificación»); F1 completa la fr. II y F4 (fr. I) respalda la lista; publicación reescrita. LFPC 92 cotejado en registro/textos."
+    }
+  ]
 }
