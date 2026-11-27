@@ -1,0 +1,60 @@
+{
+ "tema_id": "T181",
+ "pregunta": "¿Cuántas horas de visita debe permitir una prisión?",
+ "fecha": "2026-11-27T12:38:55+00:00",
+ "objetado": false,
+ "mapa": {
+  "suficiente": true,
+  "pregunta": "¿Cuántas horas de visita debe permitir una prisión?",
+  "concepto_central": "horas de visita en centros penitenciarios",
+  "respuesta_corta": "Debe permitir un mínimo de cinco y un máximo de quince horas de visita semanal, salvo excepciones por sanciones disciplinarias o visita íntima.",
+  "reglas": [
+   {
+    "conclusion": "El centro penitenciario debe permitir un tiempo mínimo de cinco horas semanales y un máximo de quince horas semanales de visita general.",
+    "fuente": "F1",
+    "cita_literal": "debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales",
+    "condiciones": [
+     "Las horas de visita semanal se calculan sumando el tiempo efectivo de todos los tipos de visita, salvo la íntima."
+    ],
+    "excepciones": [
+     "En caso de restricción por sanción disciplinaria grave, las visitas pueden limitarse hasta una hora semanal."
+    ]
+   },
+   {
+    "conclusion": "La visita íntima se otorga por un plazo de dos horas como mínimo y cinco como máximo, al menos una vez cada dos semanas.",
+    "fuente": "F1",
+    "cita_literal": "tendrán derecho a la visita íntima por un plazo de dos horas mínimo y cinco máximo, y con una periodicidad de al menos una vez cada dos semanas",
+    "condiciones": [
+     "Se requiere solicitud previa a la autoridad penitenciaria."
+    ],
+    "excepciones": []
+   }
+  ],
+  "elementos": [
+   {
+    "elemento": "contenido",
+    "estado": "cubierto",
+    "respuesta": "La norma establece que la prisión debe permitir entre cinco y quince horas semanales de visita general, y de dos a cinco horas por sesión de visita íntima al menos cada dos semanas.",
+    "fuente": "F1",
+    "cita_literal": "debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales"
+   },
+   {
+    "elemento": "condiciones",
+    "estado": "cubierto",
+    "respuesta": "El tiempo de visita semanal se calcula sumando la duración de las visitas permitidas, pero puede restringirse hasta una hora a la semana en caso de sanción disciplinaria grave.",
+    "fuente": "F1",
+    "cita_literal": "En casos de restricción de visitas por sanción disciplinaria grave, estas podrán limitarse hasta una hora de visita semanal, de conformidad a lo establecido en la presente Ley."
+   }
+  ],
+  "interpretaciones": [],
+  "distinciones": [
+   {
+    "a": "visita semanal ordinaria",
+    "b": "visita íntima",
+    "diferencia": "La visita ordinaria abarca de cinco a quince horas a la semana sumando distintos tipos de visita, mientras que la visita íntima dura entre dos y cinco horas por sesión y no entra en dicho cómputo semanal."
+   }
+  ],
+  "limites": "La ley no detalla los días específicos de la semana ni los horarios diarios de atención para las visitas, solo establece las sumas mínimas y máximas de horas.",
+  "fuentes_irrelevantes": []
+ }
+}

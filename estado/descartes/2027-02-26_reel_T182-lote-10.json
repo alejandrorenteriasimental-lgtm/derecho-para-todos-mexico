@@ -1,0 +1,131 @@
+{
+ "solicitud": "2027-02-26_reel_T182-lote-10.json",
+ "fecha": "2026-11-27T12:55:58+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 902 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 282: recorta al menos 342 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden dar peores condiciones de trabajo por estar embarazada? \\n ¿TE",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te dan peores condiciones de trabajo por embarazo? \n ¿PEORES \n CONDICIONES POR \n EMBARAZO? \n No: las condiciones no son inferiores a la Ley ni fijan diferencias por embarazo, salvo excepciones legales. \n RESPUESTA \n LEGAL \n La norma señala: sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo, responsabilidades familiares o estado civil. \n sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones "
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 656 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 36: recorta al menos 96 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La obligación de garantizar un entorno libre de violencias y discriminación en todas sus formas, que es un componente esencial de las condiciones de trabajo según el artículo 56."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "Las condiciones de trabajo no pueden ser inferiores a las señaladas en la ley ni incluir diferencias o exclusiones por motivo de embarazo, a menos que existan modalidades expresas en la norma.",
+      "sostenida": "si",
+      "motivo": "La conclusión integra correctamente la regla general y la excepción establecida en el texto oficial."
+     },
+     {
+      "conclusion": "Las condiciones de trabajo no pueden ser inferiores a la Ley ni establecer diferencias o exclusiones por motivo de embarazo.",
+      "sostenida": "parcial",
+      "motivo": "Omite la excepción 'salvo las modalidades expresamente consignadas en esta Ley', lo que hace que la prohibición parezca absoluta."
+     },
+     {
+      "conclusion": "La Ley prohíbe establecer diferencias o exclusiones por condiciones de embarazo.",
+      "sostenida": "parcial",
+      "motivo": "Al igual que la anterior, omite la salvedad de las modalidades expresamente consignadas en la Ley."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "escenas -> tipo: cita -> afirmaciones -> A1",
+      "problema": "La afirmación presenta la prohibición como una regla absoluta, omitiendo la excepción legal que el mismo artículo 56 contempla.",
+      "correccion": "Añadir la excepción: '...sin que puedan establecerse diferencias y/o exclusiones por motivo de embarazo, salvo las modalidades expresamente consignadas en esta Ley'."
+     },
+     {
+      "donde": "escenas -> tipo: lista -> afirmaciones -> A2",
+      "problema": "La afirmación es incompleta por la misma razón: no menciona que existen modalidades legales que podrían actuar como excepción.",
+      "correccion": "Ajustar el texto para indicar que la prohibición rige 'salvo las modalidades expresamente consignadas en la Ley'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": [
+    "[cobertura] El elemento «efecto» («La ley establece que no se pueden fijar condiciones inferior») no trae una cita literal que esté en el texto oficial de su fuente."
+   ]
+  },
+  {
+   "etapa": "analisis",
+   "intento": 1,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 721 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 101: recorta al menos 161 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Peores condiciones por estar embarazada? \n ¿PEORES CONDICIONES \n POR EMBARAZO? \n No, la ley prohíbe establecer diferencias o exclusiones en las condiciones de trabajo por estar embarazada, salvo las modalidades fijadas en la ley. \n LA LEY LO PROHÍBE \n IGUALDAD EN TRABAJO \n La ley indica «sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo, responsabilidades familiares o estado civil,». \n sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, "
+  },
+  {
+   "etapa": "reparacion_puntual",
+   "intento": 1,
+   "errores": [
+    "narración de 721 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 101: recorta al menos 161 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ]
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": [
+      "La pieza no explica qué son las 'modalidades expresamente consignadas en la Ley' que menciona como excepción, lo cual puede generar confusión sobre cuándo sí es legal una distinción."
+     ]
+    },
+    "conclusiones": [
+     {
+      "conclusion": "No se pueden establecer diferencias ni exclusiones en las condiciones de trabajo por motivos de embarazo, salvo las modalidades expresamente consignadas en la ley.",
+      "sostenida": "si",
+      "motivo": "El artículo 56 de la LFT establece explícitamente la prohibición de diferencias o exclusiones por 'condiciones de embarazo', incluyendo la salvedad de las 'modalidades expresamente consignadas en esta Ley'."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena 'excepcion', detalle: 'Modalidades consignadas en la ley'",
+      "problema": "La pieza menciona la excepción pero no aclara que el artículo 56 no define cuáles son esas 'modalidades', dejando al lector sin contexto sobre qué podría constituir una excepción legal válida.",
+      "correccion": "Añadir una nota aclaratoria indicando que el artículo 56 no detalla cuáles son esas modalidades, por lo que la interpretación depende de otras disposiciones específicas de la Ley Federal del Trabajo."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 902 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 282: recorta al menos 342 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción"
+   ],
+   "visible": "  \n ¿Te pueden dar peores condiciones de trabajo por estar embarazada? \n ¿TE PUEDEN DAR \n PEORES CONDICIONES \n POR ESTAR EMBARAZADA \n No, la ley prohíbe establecer diferencias o exclusiones en las condiciones de trabajo por estar embarazada, salvo las modalidades fijadas en la ley. \n IGUALDAD \n SUSTANTIVA \n La ley dice: «sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo, responsabilidades familiares o estado civil,». \n sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o"
+  }
+ ]
+}

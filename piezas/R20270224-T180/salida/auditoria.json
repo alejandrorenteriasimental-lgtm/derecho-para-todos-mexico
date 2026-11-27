@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "43.0 s"
+      "detalle": "41.8 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "43.0 s"
+      "detalle": "41.8 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -43,7 +43,7 @@
     {
       "control": "Pico verdadero ≤ -1 dBTP",
       "resultado": "APROBADO",
-      "detalle": "-1.9 dBTP"
+      "detalle": "-1.8 dBTP"
     },
     {
       "control": "Sin silencios mayores a 1.5 s",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "32 bloques"
+      "detalle": "33 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "d92b12397ba8716b"
+      "detalle": "2273a9fc009c1d49"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270224-T180",
     "titulo": "¿Te deben devolver tu dinero si no es lo ofrecido?",
-    "fecha": "2026-11-27T12:14:05+00:00",
-    "sha256": "d92b12397ba8716b46bb0d477c66777d5466dcd013ca95e0ba0cf5c674543bc2",
-    "duracion_s": 43.0,
+    "fecha": "2026-11-27T13:11:09+00:00",
+    "sha256": "2273a9fc009c1d497cb03a03165bbaa0c8c1520a562c3d1315de28ea8f5915f5",
+    "duracion_s": 41.8,
     "estado": "APTO",
-    "huella_guion": "9112680cb3d370789cad194913199a23c1f9dfb1cdd12868c4d19215ae664043",
+    "huella_guion": "95daf0c1ace7004c522b148ea0c336532588da9099da94407fb8c43fa96af22d",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 11.2,
+      "narracion": 16.4,
       "musica": 2.0,
-      "render_video": 28.7,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 4.6
+      "render_video": 35.0,
+      "mezcla_audio": 1.9,
+      "auditoria_tecnica": 6.3
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.8,
-      "computo_equivalente_runner_usd": 0.0048,
+      "computo_minutos": 1.03,
+      "computo_equivalente_runner_usd": 0.0062,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1288,
-    "caracteres_narrados": 618
+    "frames": 1252,
+    "caracteres_narrados": 585
   }
 }

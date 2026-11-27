@@ -8,7 +8,7 @@
     {
       "control": "Peso menor a 8 MB",
       "resultado": "APROBADO",
-      "detalle": "1220 KB"
+      "detalle": "1198 KB"
     },
     {
       "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
@@ -28,17 +28,17 @@
     {
       "control": "Contenido sin invadir el pie",
       "resultado": "APROBADO",
-      "detalle": "fin del contenido en y=1118"
+      "detalle": "fin del contenido en y=1105"
     },
     {
       "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
       "resultado": "APROBADO",
-      "detalle": "60 palabras sin cabecera ni pie"
+      "detalle": "56 palabras sin cabecera ni pie"
     },
     {
       "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
       "resultado": "APROBADO",
-      "detalle": "100% de 43 palabras reconocidas"
+      "detalle": "100% de 44 palabras reconocidas"
     },
     {
       "control": "Firma de marca y aviso presentes",
@@ -57,11 +57,9 @@
     }
   ],
   "juridica": {
-    "decision": "RETENIDO",
-    "tipo_retencion": "sustantivo",
-    "motivos": [
-      "Regla: Sin frases de asesoría o adjetivos de culpabilidad"
-    ],
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
     "verificacion": "APTA",
     "carril": "A",
     "reglas": [
@@ -77,8 +75,8 @@
       },
       {
         "control": "Sin frases de asesoría o adjetivos de culpabilidad",
-        "resultado": "FALLA",
-        "detalle": "asesoria gratuita"
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
       },
       {
         "control": "Sin personas reales identificables",
@@ -95,14 +93,14 @@
   "metadatos": {
     "id": "I20270221-T177",
     "formato": "imagen",
-    "titulo": "¿Derecho a asesoría gratuita en el Centro de Conciliación?",
+    "titulo": "¿El Centro de Conciliación te asesora sin costo?",
     "plantilla": "concepto",
     "archivo": "I20270221-T177.png",
-    "sha256": "be73008a66ac0715af51ea457d76064c9a59d1098939f6919295a6281f37bdf8",
-    "ahash": "1111111111111111111111111111111111111111111111111100000100000011100000000000001110000000000111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011000000000000001111111111111111111111111111111111111111111111101",
-    "huella_guion": "76c296df95df5e18d4451923949cb0c058a58de6663a18653aeab3a09bd41d5a",
+    "sha256": "22939d135491cd498a01a789c78525b48868259d5b958f834e9bb36a6a208061",
+    "ahash": "1101111111111111111111111111111111111111111111111000000001111111100000000011111110000000000001111111111111111111111111111111111110000000000000011000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "4c7e76b3c0b879699d353d036073524278ff7cf82fc2fde58a98d87bf7e44ba8",
     "texto_alternativo": "Infografía sobre el derecho a asesoría jurídica gratuita en los Centros de Conciliación laboral en México, citando el artículo 684-E de la Ley Federal del Trabajo.",
-    "copy": "Si vas a iniciar un proceso laboral, es importante que sepas que no estás solo en el trámite inicial. Según la Ley Federal del Trabajo en su artículo 684-E, los Centros de Conciliación tienen la obligación de brindarte orientación sin costo.\n\nEsta asesoría gratuita incluye información sobre tus derechos, los plazos que tienes para reclamarlos (prescripción) y cómo funcionan los procedimientos tanto en el Centro como ante los tribunales. Además, si lo pides, el personal debe auxiliarte para redactar tu solicitud de conciliación.\n\nRecuerda que este apoyo es un derecho de los interesados para asegurar que el proceso sea justo desde el primer paso. Guarda esta información por si necesitas acudir pronto.\n\nEsto es información general, no es asesoría legal.",
+    "copy": "¿El Centro de Conciliación te asesora sin costo?\n\nSí. Según el artículo 684-E de la Ley Federal del Trabajo, los Centros de Conciliación «Deberán proporcionar asesoría jurídica de manera gratuita sobre sus derechos y los plazos de prescripción de los mismos, así como respecto de los procedimientos de conciliación y jurisdiccionales».\n\nOjo: además, «Los Centros de Conciliación auxiliarán a los interesados que así lo soliciten para elaborar su petición».\n\nFuente: Ley Federal del Trabajo, artículo 684-E, fracción III.\n\nEsto es información general, no es asesoría legal.",
     "fuentes": [
       {
         "id": "F1",
@@ -118,8 +116,8 @@
       }
     ],
     "relacion_reel": "independiente",
-    "estado": "RETENIDO",
-    "fecha": "2026-11-27T12:15:21+00:00",
+    "estado": "APTO",
+    "fecha": "2026-11-27T13:14:40+00:00",
     "costo": {
       "apis_de_pago_usd": 0.0,
       "nota": "Pillow + tesseract, locales y gratuitos"

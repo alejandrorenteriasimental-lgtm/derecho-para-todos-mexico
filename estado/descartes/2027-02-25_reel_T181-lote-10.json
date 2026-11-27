@@ -1,0 +1,66 @@
+{
+ "solicitud": "2027-02-25_reel_T181-lote-10.json",
+ "fecha": "2026-11-27T12:45:35+00:00",
+ "motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 671 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 51: recorta al menos 111 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[minimo] «Íntima: 2-5h c/2 semanas» presenta como exacta una cifra que la ley fija como mín",
+ "historial": [
+  {
+   "etapa": "analisis",
+   "intento": 0,
+   "errores": []
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 0,
+   "errores_esquema": [
+    "narración de 681 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 61: recorta al menos 121 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «La visita ordinaria suma diversos tipos de visitas, excepto la íntima que dura de dos a ci» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»).",
+    "[minimo] «Íntima: 2 a 5 horas» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Cuántas horas de visita debe permitir una prisión? \n ¿CUÁNTAS HORAS \n DE VISITA DEBEN \n PERMITIR? \n Debe permitir entre cinco y quince horas de visita semanal, salvo por sanción disciplinaria o visita íntima. \n TIEMPO PERMITIDO \n EN PRISIÓN \n La ley señala: debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales. \n debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales \n La visita ordinaria suma diversos tipos de visitas, excepto la íntima que dura de dos a cinco horas y no entra en la suma. \n Suma distintas visitas \n Excluye la visita íntima \n Íntima: 2 a 5 h"
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 1,
+   "auditoria_ia": {
+    "veredicto": "con_objeciones",
+    "cobertura": {
+     "responde_nucleo": true,
+     "faltantes": []
+    },
+    "conclusiones": [
+     {
+      "conclusion": "El centro penitenciario debe permitir un tiempo mínimo de cinco horas semanales y un máximo de quince horas semanales de visita general.",
+      "sostenida": "si",
+      "motivo": "La cita literal respalda directamente los rangos de tiempo establecidos para las visitas."
+     },
+     {
+      "conclusion": "La visita íntima se otorga por un plazo de dos horas como mínimo y cinco como máximo, al menos una vez cada dos semanas.",
+      "sostenida": "si",
+      "motivo": "La cita literal respalda la duración y la periodicidad de la visita íntima."
+     }
+    ],
+    "objeciones": [
+     {
+      "donde": "Escena de tipo 'titular' (A2)",
+      "problema": "La afirmación 'Las visitas pueden limitarse por sanción disciplinaria grave' se presenta como un hecho normativo general, pero la ley establece que esto es una excepción específica que reduce el tiempo a un límite concreto.",
+      "correccion": "Debe precisarse que la limitación a una hora semanal es una consecuencia específica de una sanción disciplinaria grave, no una facultad general de limitación."
+     },
+     {
+      "donde": "Escena de tipo 'lista'",
+      "problema": "El ítem 'Mínimo 2 a 5 horas en íntima' es una conclusión incompleta que omite la periodicidad (al menos una vez cada dos semanas), lo cual es un elemento esencial del derecho mencionado en la norma.",
+      "correccion": "El ítem debe decir: 'Visita íntima: de 2 a 5 horas, al menos cada dos semanas'."
+     }
+    ]
+   }
+  },
+  {
+   "etapa": "redaccion",
+   "intento": 2,
+   "errores_esquema": [
+    "narración de 671 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 51: recorta al menos 111 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción",
+    "[minimo] «Íntima: 2-5h c/2 semanas» presenta como exacta una cifra que la ley fija como mínimo («por lo menos»)."
+   ],
+   "visible": "  \n ¿Cuántas horas de visita debe permitir una prisión? \n ¿CUÁNTAS HORAS \n DE VISITA DEBE \n PERMITIR LA PRISIÓN? \n Debe permitir un mínimo de cinco y un máximo de quince horas de visita semanal, salvo excepciones por sanciones disciplinarias o visita íntima. \n HORAS DE VISITA \n EN PRISIÓN \n La ley dice: «debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales». \n debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales \n Las visitas ordinarias se suman por semana y se diferencian de la visita íntima. \n Mínimo 5 y máximo 15 hrs \n Íntima: 2-5h c/2 semanas \n Suma visita"
+  }
+ ]
+}

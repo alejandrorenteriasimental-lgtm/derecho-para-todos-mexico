@@ -1,0 +1,235 @@
+{
+  "id": "R20270227-T183",
+  "formato": "reel",
+  "titulo": "¿Las etiquetas de los productos deben estar en español?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T183",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "34",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "Los datos que ostenten los productos o sus etiquetas, envases y empaques y la publicidad respectiva, tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 34",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "34",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "su precio en moneda nacional en términos comprensibles y legibles conforme al sistema general de unidades de medida, sin perjuicio de que, además, se expresen en otro idioma u otro sistema de medida.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 34",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Las etiquetas deben estar en español?",
+      "titulo": [
+        "ETIQUETAS",
+        "EN ESPAÑOL"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, los datos en productos, etiquetas, envases y publicidad deben expresarse en español.",
+      "titulo": [
+        "LO QUE DICE",
+        "LA LEY"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley indica textualmente: Los datos que ostenten los productos o sus etiquetas, envases y empaques y la publicidad respectiva, tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español.",
+      "etiqueta": "Ley Federal de Protección al Consumidor, artículo 34",
+      "cita": "Los datos que ostenten los productos o sus etiquetas, envases y empaques y la publicidad respectiva, tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español",
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "Los datos en productos, etiquetas, envases y publicidad deben expresarse en español.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "La norma también incluye las siguientes reglas sobre precios y otros idiomas:",
+      "items": [
+        "Precio en moneda nacional",
+        "Permite otro idioma o sistema",
+        "Términos legibles"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, los datos y su precio en moneda nacional deben expresarse conforme a la ley.",
+      "titulo": [
+        "CONCLUSIÓN",
+        "ÚTIL"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El precio debe expresarse en moneda nacional y se permite otro idioma o sistema.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Las etiquetas de los productos deben estar en español?",
+    "concepto_central": "etiquetas en español",
+    "respuesta_corta": "Sí, los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en español.",
+    "reglas": [
+      {
+        "conclusion": "Los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en idioma español, ya sean de manufactura nacional o extranjera.",
+        "fuente": "F1",
+        "cita_literal": "Los datos que ostenten los productos o sus etiquetas, envases y empaques y la publicidad respectiva, tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español",
+        "condiciones": [
+          "aplica a productos de manufactura nacional y de procedencia extranjera"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal de Protección al Consumidor",
+          "articulo": "34"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "La norma establece la obligación de expresar en idioma español los datos en productos, etiquetas, envases, empaques y su publicidad.",
+        "fuente": "F1",
+        "cita_literal": "Los datos que ostenten los productos o sus etiquetas, envases y empaques y la publicidad respectiva, tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español"
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "La obligación aplica por igual a los productos de manufactura nacional y a los de procedencia extranjera.",
+        "fuente": "F1",
+        "cita_literal": "tanto de manufactura nacional como de procedencia extranjera, se expresarán en idioma español"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no detalla sanciones específicas por omitir el idioma español en las etiquetas, ni impide que además se use otro idioma."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-27T13:01:31+00:00",
+    "solicitud": "2027-02-27_reel_T183-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 3,
+        "auditor": 4
+      },
+      "llamadas_ia_total": 7,
+      "intentos_analisis": 1,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3.5-flash-lite"
+    }
+  },
+  "pregunta_original": "¿Las etiquetas de los productos deben estar en español?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Las etiquetas de los productos deben estar en español?\n\nSí, los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en español.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 34.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "intento": 0,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": [
+              "La obligación de expresar el precio en moneda nacional.",
+              "La aclaración de que es permitido incluir otros idiomas o sistemas de medida adicionales."
+            ]
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en idioma español, ya sean de manufactura nacional o extranjera.",
+              "sostenida": "si",
+              "motivo": "El artículo 34 de la Ley Federal de Protección al Consumidor establece explícitamente esta obligación para productos nacionales y extranjeros."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "En la explicación general de la norma.",
+              "problema": "La pieza omite que el artículo 34 también regula la expresión del precio en moneda nacional y permite el uso de otros idiomas o sistemas de medida.",
+              "correccion": "Añadir que, además del idioma español, el precio debe expresarse en moneda nacional y que la ley permite, sin perjuicio de lo anterior, incluir otros idiomas o sistemas de medida."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Los datos en productos, etiquetas, envases y publicidad deben expresarse en español.",
+              "sostenida": "si",
+              "motivo": "El artículo 34 de la Ley Federal de Protección al Consumidor establece de forma imperativa que los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en idioma español."
+            },
+            {
+              "conclusion": "El precio debe expresarse en moneda nacional y se permite otro idioma o sistema.",
+              "sostenida": "si",
+              "motivo": "El artículo 34 vincula la obligación del idioma con la del precio en moneda nacional y permite expresamente el uso adicional de otros idiomas o sistemas de medida."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

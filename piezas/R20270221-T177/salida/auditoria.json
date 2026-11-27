@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "41.2 s"
+      "detalle": "42.3 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "41.2 s"
+      "detalle": "42.3 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.1 LUFS"
+      "detalle": "-14.0 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "32 bloques"
+      "detalle": "34 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,12 +68,12 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "79a598acb4a69539"
+      "detalle": "e606bb18417e0d26"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
       "resultado": "APROBADO",
-      "detalle": "desfase máximo 30 ms en 8 oraciones"
+      "detalle": "desfase máximo 30 ms en 7 oraciones"
     },
     {
       "control": "Subtítulos sin tapar citas ni contenido",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270221-T177",
     "titulo": "¿Pedir la conciliación detiene el plazo para demandar?",
-    "fecha": "2026-11-27T12:12:48+00:00",
-    "sha256": "79a598acb4a695395e22cba2e2c4b9ae0652d7b7267cbe673db4101987c74f8c",
-    "duracion_s": 41.2,
+    "fecha": "2026-11-27T13:08:49+00:00",
+    "sha256": "e606bb18417e0d266dfebdd673a1896251ff274aa1fe7e4e0cb305eb809294b7",
+    "duracion_s": 42.3,
     "estado": "APTO",
-    "huella_guion": "b5301e58a05c8b054dbee5e5859292a207cc872f36e0c4151f5e80b833bf346c",
+    "huella_guion": "1ade6695ef2dfad33f1374ab921fb489541fafb7ebf210b959b102fdae55c844",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 18.8,
-      "musica": 2.0,
-      "render_video": 32.6,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 4.4
+      "narracion": 16.1,
+      "musica": 2.1,
+      "render_video": 32.4,
+      "mezcla_audio": 1.8,
+      "auditoria_tecnica": 6.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.99,
+      "computo_minutos": 0.97,
       "computo_equivalente_runner_usd": 0.0059,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1233,
-    "caracteres_narrados": 578
+    "frames": 1268,
+    "caracteres_narrados": 609
   }
 }
