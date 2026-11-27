@@ -28,6 +28,17 @@
       "cita": "Ley Federal de Protección al Consumidor, artículo 34",
       "jurisdiccion": "federal",
       "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal de Protección al Consumidor",
+      "articulo": "34",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "texto_literal": "sin perjuicio de que, además, se expresen en otro idioma u otro sistema de medida.",
+      "cita": "Ley Federal de Protección al Consumidor, artículo 34",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
@@ -44,8 +55,8 @@
       "tipo": "titular",
       "texto": "Sí, los datos en productos, etiquetas, envases y publicidad deben expresarse en español.",
       "titulo": [
-        "LO QUE DICE",
-        "LA LEY"
+        "SÍ, EN",
+        "ESPAÑOL"
       ],
       "afirmaciones": []
     },
@@ -66,20 +77,27 @@
     },
     {
       "tipo": "lista",
-      "texto": "La norma también incluye las siguientes reglas sobre precios y otros idiomas:",
+      "texto": "Además, el mismo artículo pide:",
       "items": [
         "Precio en moneda nacional",
-        "Permite otro idioma o sistema",
-        "Términos legibles"
+        "Términos legibles",
+        "Otro idioma, solo además"
       ],
-      "afirmaciones": []
+      "afirmaciones": [
+        {
+          "id": "A9",
+          "tipo": "hecho_normativo",
+          "texto": "Otro idioma u otro sistema de medida solo puede usarse además del español.",
+          "fuente": "F3"
+        }
+      ]
     },
     {
       "tipo": "titular",
-      "texto": "Sí, los datos y su precio en moneda nacional deben expresarse conforme a la ley.",
+      "texto": "En resumen: puede venir en otro idioma, pero siempre también en español.",
       "titulo": [
-        "CONCLUSIÓN",
-        "ÚTIL"
+        "ESPAÑOL,",
+        "SIEMPRE"
       ],
       "afirmaciones": [
         {
@@ -167,7 +185,7 @@
   "pregunta_original": "¿Las etiquetas de los productos deben estar en español?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Las etiquetas de los productos deben estar en español?\n\nSí, los datos en productos, etiquetas, envases, empaques y publicidad deben expresarse en español.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 34.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Las etiquetas de los productos deben estar en español?\n\nSí. Los datos de los productos, sus etiquetas, envases, empaques y publicidad, nacionales o extranjeros, se expresarán en idioma español y su precio en moneda nacional, en términos comprensibles y legibles.\n\nOjo: pueden venir también en otro idioma, pero solo «además» del español.\n\nFuente: Ley Federal de Protección al Consumidor, artículo 34.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -231,5 +249,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v0c7cebbf122abeff: titulares de relleno («LO QUE DICE LA LEY», «CONCLUSIÓN ÚTIL»); cierre vago («deben expresarse conforme a la ley»); el punto «Permite otro idioma o sistema» omitía que es solo «además» del español. → Titulares «SÍ, EN ESPAÑOL» y «ESPAÑOL, SIEMPRE»; lista «Otro idioma, solo además» con F3 literal; publicación con el precio en moneda nacional y la precisión. LFPC 34 cotejado en registro/textos."
+    }
+  ]
 }

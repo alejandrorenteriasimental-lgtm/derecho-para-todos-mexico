@@ -12,7 +12,7 @@
   "lote": "lote-10",
   "motivo_seleccion": "CPEUM art. 29 (texto oficial cotejado el 25-11-2026, registro/textos/CPEUM_29.json; última reforma de la ley 2026-10-07): «En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida, a la integridad personal» Respuesta: no; hay derechos que no pueden restringirse ni suspenderse (lista literal del párrafo segundo). Condición: solo el Presidente con aprobación del Congreso o de la Comisión Permanente, por tiempo limitado.",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270223-T179",
@@ -20,5 +20,13 @@
   "intentos": 1,
   "ultimo_motivo": "el análisis jurídico no superó la revisión contra el texto oficial: {\"etapa\": \"analisis\", \"intento\": 1, \"errores\": [\"[sustento] La cita de la conclusión «El Presidente tiene la facultad de suspender derechos especí» no está en Constitución Política de los Estados Unidos Mexicanos, art. 29.\"]}",
   "ultima_categoria": "juridico",
-  "huella_entrada": "4e816767051a7ccd"
+  "huella_entrada": "4e816767051a7ccd",
+  "angulo": "Solo CPEUM art. 29. Respuesta corta (empieza con «No»): no; en los decretos no podrá restringirse ni suspenderse el ejercicio de ciertos derechos. Cita literal: «En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida, a la integridad personal». Toda cita del análisis debe copiarse exacta del art. 29 (el 1.er intento inventó «El Presidente tiene la facultad de suspender derechos específicos»). No repetir el ángulo de la imagen I20270223-T179 (prevenciones generales). Reel de 30 a 42 s: narración total ≤ 560 caracteres (máximo del esquema 620); gancho = pregunta; una sola cita literal corta; lista de 2 elementos como máximo; cierre de una frase.",
+  "historial": [
+    {
+      "ts": "2026-11-27T13:21:37+00:00",
+      "por": "Claude (operación diaria 27-11)",
+      "motivo": "1.er descarte (análisis con una cita que no está en el art. 29): se reabre con cita literal fijada"
+    }
+  ]
 }

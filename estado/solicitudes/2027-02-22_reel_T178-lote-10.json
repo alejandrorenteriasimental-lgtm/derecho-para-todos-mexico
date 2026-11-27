@@ -12,7 +12,7 @@
   "lote": "lote-10",
   "motivo_seleccion": "LGDNNA art. 76 (texto oficial cotejado el 25-11-2026, registro/textos/LGDNNA_76.json; última reforma de la ley 2026-01-15): «Niñas, niños y adolescentes tienen derecho a la intimidad personal y familiar, y a la protección de sus datos personales.» «tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra su honra, imagen o reputación» Respuesta: no cuando la difusión es ilícita y atenta contra su honra, imagen o reputación (condición literal; no afirmar una prohibición absoluta).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270222-T178",
@@ -20,5 +20,13 @@
   "intentos": 1,
   "ultimo_motivo": "el análisis concluyó que los textos oficiales no bastan para responder la pregunta: Los textos proporcionados no definen qué se considera una difusión 'lícita' ni establecen las sanciones económicas o legales por incumplir esta prohibición.",
   "ultima_categoria": "juridico",
-  "huella_entrada": "53e685a810520b45"
+  "huella_entrada": "53e685a810520b45",
+  "angulo": "Solo LGDNNA art. 76. Respuesta corta (empieza con «No»): no, si la difusión es ilícita, permite identificarlos y atenta contra su honra, imagen o reputación. Cita literal: «tampoco de divulgaciones o difusiones ilícitas de información o datos personales». Condición literal: «que permita identificarlos y que atenten contra su honra, imagen o reputación». No hace falta definir «ilícita» ni hablar de sanciones: el análisis es suficiente con la condición literal y lo dice en «límites». Reel de 30 a 42 s: narración total ≤ 560 caracteres (máximo del esquema 620); gancho = pregunta; una sola cita literal corta; lista de 2 elementos como máximo; cierre de una frase.",
+  "historial": [
+    {
+      "ts": "2026-11-27T13:21:37+00:00",
+      "por": "Claude (operación diaria 27-11)",
+      "motivo": "1.er descarte (análisis: «los textos no bastan»): la pregunta se responde con la condición literal del art. 76; se reabre con ángulo acotado"
+    }
+  ]
 }

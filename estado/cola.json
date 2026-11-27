@@ -15121,7 +15121,7 @@
       "id": "R20270227-T183",
       "formato": "reel",
       "huella": "6904af5833ba1d07ce12c9d35463f293bb8392a60c21840720fa91e103148bc8",
-      "estado": "REVISION_HUMANA",
+      "estado": "PENDIENTE",
       "prioridad": 0,
       "intentos": 0,
       "creado": "2026-11-27T13:06:07+00:00",
@@ -15137,6 +15137,12 @@
           "a": "REVISION_HUMANA",
           "ts": "2026-11-27T13:12:47+00:00",
           "motivo": "APTO; pieza redactada por IA: espera la aprobación editorial humana"
+        },
+        {
+          "de": "REVISION_HUMANA",
+          "a": "PENDIENTE",
+          "ts": "2026-11-27T13:20:57+00:00",
+          "motivo": "edición editorial (Claude, revisión delegada 27-11): titulares de relleno, cierre vago y «otro idioma» sin decir que es solo además del español → titulares con la respuesta y F3 literal (LFPC 34); a re-producción"
         }
       ],
       "error": null,

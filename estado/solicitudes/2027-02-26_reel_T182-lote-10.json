@@ -12,7 +12,7 @@
   "lote": "lote-10",
   "motivo_seleccion": "LFT art. 56 (texto oficial cotejado el 25-11-2026, registro/textos/LFT_56.json; última reforma de la ley 2026-05-14): «sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo» «salvo las modalidades expresamente consignadas en esta Ley» Respuesta: no; excepción literal: las modalidades expresamente previstas en la ley (no inventar cuáles).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270226-T182",
@@ -20,5 +20,13 @@
   "intentos": 1,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 902 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 282: recorta al menos 342 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Te pueden dar peores condiciones de trabajo por estar embarazada? \\n ¿TE",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "afaea0e262ad395b"
+  "huella_entrada": "afaea0e262ad395b",
+  "angulo": "Reel de 30 a 42 s: narración total ≤ 560 caracteres (máximo del esquema 620); gancho = pregunta; una sola cita literal corta; lista de 2 elementos como máximo; cierre de una frase.",
+  "historial": [
+    {
+      "ts": "2026-11-27T13:21:37+00:00",
+      "por": "Claude (operación diaria 27-11)",
+      "motivo": "1.er descarte (narración de 902 caracteres): se reabre con indicación de longitud"
+    }
+  ]
 }
