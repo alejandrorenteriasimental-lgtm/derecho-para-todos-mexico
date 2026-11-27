@@ -28,57 +28,94 @@
       "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
       "jurisdiccion": "federal",
       "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "solamente el Presidente de los Estados Unidos Mexicanos, con la aprobación del Congreso de la Unión o de la Comisión Permanente cuando aquel no estuviere reunido, podrá restringir o suspender",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
+    },
+    "F4": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Constitución Política de los Estados Unidos Mexicanos",
+      "articulo": "29",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "texto_literal": "pero deberá hacerlo por un tiempo limitado",
+      "cita": "Constitución Política de los Estados Unidos Mexicanos, artículo 29",
+      "jurisdiccion": "federal",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿El gobierno puede suspender tus derechos en emergencias?",
+      "texto": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
       "titulo": [
-        "¿EL GOBIERNO",
-        "PUEDE SUSPENDER",
-        "TUS DERECHOS?"
+        "¿PUEDEN SUSPENDER",
+        "TODOS TUS",
+        "DERECHOS?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No. La Constitución prohíbe suspender derechos como la vida y la no discriminación.",
+      "texto": "No todos. La Constitución prohíbe suspender derechos como la vida y la no discriminación.",
       "titulo": [
-        "RESPUESTA",
-        "OFICIAL"
+        "NO,",
+        "NO TODOS"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "El artículo 29 señala: En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida,",
+      "texto": "El artículo 29 señala: En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida, y sigue la lista.",
       "etiqueta": "Constitución, artículo 29",
       "cita": "En los decretos que se expidan, no podrá restringirse ni suspenderse el ejercicio de los derechos a la no discriminación, al reconocimiento de la personalidad jurídica, a la vida,",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Se requiere para aplicar la medida en una emergencia:",
-      "items": [
-        "Aprobación del Congreso",
-        "Derechos no suspendibles"
-      ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "En los decretos no podrá restringirse ni suspenderse el ejercicio de ciertos derechos.",
-          "fuente": "F1"
+          "texto": "En los decretos no podrá restringirse ni suspenderse el ejercicio de ciertos derechos, como la no discriminación y la vida.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para restringir los demás, se exige:",
+      "items": [
+        "Solo el Presidente",
+        "Con aprobación del Congreso",
+        "Por un tiempo limitado"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Solamente el Presidente, con la aprobación del Congreso de la Unión o de la Comisión Permanente, podrá restringir o suspender derechos.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "La restricción o suspensión debe hacerse por un tiempo limitado.",
+          "fuente": "F4"
         }
       ]
     },
     {
       "tipo": "titular",
-      "texto": "Al terminar el plazo, todas las medidas legales y administrativas adoptadas durante su vigencia quedarán sin efecto de forma inmediata.",
+      "texto": "Y al terminar, las medidas adoptadas durante su vigencia quedan sin efecto de forma inmediata.",
       "titulo": [
-        "FIN DE",
-        "LA MEDIDA"
+        "TODO QUEDA",
+        "SIN EFECTO"
       ],
       "afirmaciones": [
         {
@@ -100,7 +137,7 @@
     "suficiente": true,
     "pregunta": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
     "concepto_central": "suspensión de derechos en caso de emergencia",
-    "respuesta_corta": "No. El gobierno puede restringir ciertos derechos en una emergencia, pero la Constitución prohíbe suspender derechos como la vida, la integridad y la no discriminación.",
+    "respuesta_corta": "No todos. En una emergencia pueden restringirse algunos derechos, pero la Constitución prohíbe suspender otros, como la vida, la integridad y la no discriminación.",
     "reglas": [
       {
         "conclusion": "El Presidente puede restringir o suspender derechos que sean un obstáculo para enfrentar la emergencia, pero existen derechos específicos que no pueden suspenderse.",
@@ -163,7 +200,7 @@
   "pregunta_original": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿El gobierno puede suspender todos tus derechos en una emergencia?\n\nNo. El gobierno puede restringir ciertos derechos en una emergencia, pero la Constitución prohíbe suspender derechos como la vida, la integridad y la no discriminación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 29.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿El gobierno puede suspender todos tus derechos en una emergencia?\n\nNo todos. En casos de invasión o perturbación grave de la paz pública, solo el Presidente, con aprobación del Congreso, puede restringir o suspender derechos, por un tiempo limitado. Pero nunca derechos como la vida, la integridad personal y la no discriminación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 29.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -231,5 +268,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v0a65c8775737b256: el gancho quitaba «todos» y con eso el «No» quedaba incorrecto (el art. 29 sí permite restringir o suspender algunos derechos); titular de relleno («RESPUESTA OFICIAL»); la lista ponía «Derechos no suspendibles» como requisito; la cita terminaba en coma y el subtítulo unía «a la vida, Se requiere». → Gancho con «todos», titular «NO, NO TODOS», cita cerrada («y sigue la lista»), requisitos literales (solo el Presidente con aprobación del Congreso, F3; tiempo limitado, F4), titular «TODO QUEDA SIN EFECTO»; publicación con las condiciones. CPEUM 29 cotejado en registro/textos."
+    }
+  ]
 }

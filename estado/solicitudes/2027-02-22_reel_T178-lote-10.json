@@ -2,31 +2,38 @@
   "fecha": "2027-02-22",
   "formato": "reel",
   "tema_id": "T178",
-  "titulo": "¿Se pueden difundir datos que identifiquen a un niño?",
-  "gancho": "¿Se pueden difundir datos que identifiquen a un niño?",
-  "pregunta": "¿Se pueden difundir datos que identifiquen a un niño?",
-  "tipo_pregunta": "legalidad",
+  "titulo": "¿Te tienen que pagar durante el periodo de prueba?",
+  "gancho": "¿Te tienen que pagar durante el periodo de prueba?",
+  "pregunta": "¿Te tienen que pagar durante el periodo de prueba?",
+  "tipo_pregunta": "obligacion",
   "carril": "A",
-  "fuentes_sugeridas": "LGDNNA art. 76",
+  "fuentes_sugeridas": "LFT art. 39-A",
   "riesgo_exactitud": "",
   "lote": "lote-10",
-  "motivo_seleccion": "LGDNNA art. 76 (texto oficial cotejado el 25-11-2026, registro/textos/LGDNNA_76.json; última reforma de la ley 2026-01-15): «Niñas, niños y adolescentes tienen derecho a la intimidad personal y familiar, y a la protección de sus datos personales.» «tampoco de divulgaciones o difusiones ilícitas de información o datos personales, incluyendo aquélla que tenga carácter informativo a la opinión pública o de noticia que permita identificarlos y que atenten contra su honra, imagen o reputación» Respuesta: no cuando la difusión es ilícita y atenta contra su honra, imagen o reputación (condición literal; no afirmar una prohibición absoluta).",
+  "motivo_seleccion": "LFT art. 39-A (texto oficial en registro/textos/LFT_39-A.json, consultado el 2026-11-08; última reforma de la ley DOF 2026-05-14; el art. 39-A no fue reformado desde su adición DOF 30-11-2012, cotejado por programa con verificador.contiene el 27-11-2026): «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe». Contexto literal: «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Alcance federal. Sin uso en los lotes 8 a 10. Sustituye a LGDNNA art. 76 (dos descartes, 27-11: análisis insuficiente y narración de 653 caracteres).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270222-T178",
   "archivo": "2027-02-22_reel_T178-lote-10.json",
-  "intentos": 2,
+  "intentos": 0,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Se pueden difundir datos que identifiquen a un niño? \\n ¿DATOS DE \\n MENOR",
   "ultima_categoria": "redaccion",
   "huella_entrada": "21c416108b1b22a9",
-  "angulo": "Solo LGDNNA art. 76. Respuesta corta (empieza con «No»): no, si la difusión es ilícita, permite identificarlos y atenta contra su honra, imagen o reputación. Cita literal: «tampoco de divulgaciones o difusiones ilícitas de información o datos personales». Condición literal: «que permita identificarlos y que atenten contra su honra, imagen o reputación». No hace falta definir «ilícita» ni hablar de sanciones: el análisis es suficiente con la condición literal y lo dice en «límites». Reel de 30 a 42 s: narración total ≤ 560 caracteres (máximo del esquema 620); gancho = pregunta; una sola cita literal corta; lista de 2 elementos como máximo; cierre de una frase.",
+  "angulo": "Solo LFT art. 39-A. Respuesta corta (empieza con «Sí»): sí; durante el periodo de prueba tienes salario, seguridad social y las prestaciones de tu puesto. Cita literal ÚNICA de la escena de cita: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe». Lista (máx. 3): Salario / Seguridad social / Prestaciones del puesto. Condición literal en un titular: el periodo de prueba «no podrá exceder de treinta días» (hasta ciento ochenta solo en puestos de dirección o especializados, si cabe). Narración ≤ 560 caracteres; sin hablar de la terminación de la relación.",
   "historial": [
     {
       "ts": "2026-11-27T13:21:37+00:00",
       "por": "Claude (operación diaria 27-11)",
       "motivo": "1.er descarte (análisis: «los textos no bastan»): la pregunta se responde con la condición literal del art. 76; se reabre con ángulo acotado"
+    },
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (operación diaria, 3.ª ronda)",
+      "motivo": "pregunta sustituida tras el segundo descarte (LGDNNA art. 76): ahora LFT art. 39-A, respuesta literal, alcance federal",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Se pueden difundir datos que identifiquen a un niño? \\n ¿DATOS DE \\n MENOR"
     }
   ]
 }

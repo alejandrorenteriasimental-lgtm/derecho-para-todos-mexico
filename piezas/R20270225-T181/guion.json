@@ -28,6 +28,17 @@
       "cita": "Ley Nacional de Ejecución Penal, artículo 59",
       "jurisdiccion": "nacional",
       "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Nacional de Ejecución Penal",
+      "articulo": "59",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "texto_literal": "Las horas de visita semanal se considerarán sumando el tiempo efectivo de todos los tipos de visita, excepto aquellas destinadas a la visita íntima.",
+      "cita": "Ley Nacional de Ejecución Penal, artículo 59",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
@@ -42,60 +53,68 @@
     },
     {
       "tipo": "titular",
-      "texto": "Depende: mínimo cinco y máximo quince horas semanales, salvo excepciones.",
+      "texto": "Al menos cinco y como máximo quince horas a la semana.",
       "titulo": [
-        "LÍMITES",
-        "LEGALES"
+        "DE 5 A 15 HORAS",
+        "A LA SEMANA"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley señala lo siguiente: \"debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales\".",
+      "texto": "El artículo 59 dice que las visitas se limitarán, debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales.",
       "etiqueta": "Ley Nacional de Ejecución Penal, artículo 59",
       "cita": "debiendo permitirse por lo menos un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Considera las siguientes reglas para el cómputo:",
-      "items": [
-        "Suma los tipos de visita",
-        "Exceptúa la visita íntima"
-      ],
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Se establece un tiempo mínimo y máximo de visita general semanal.",
-          "fuente": "F1"
+          "texto": "Debe permitirse un tiempo mínimo de visita de cinco horas semanales y máximo de quince horas semanales.",
+          "fuente": "F1",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Para contarlas:",
+      "items": [
+        "Se suma cada tipo de visita",
+        "Excepto la visita íntima"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Las horas de visita semanal se consideran sumando el tiempo efectivo de cada tipo de visita, excepto la visita íntima.",
+          "fuente": "F3"
         }
       ]
     },
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "En caso de restricción por sanción disciplinaria grave, las visitas pueden limitarse.",
+      "texto": "Pero por una sanción disciplinaria grave, las visitas pueden limitarse hasta una hora a la semana.",
       "encabezado": "Sanción disciplinaria grave",
-      "detalle": "Se limita hasta una hora semanal",
-      "fuente_corta": "Ley, art. 59",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Debe permitir de cinco a quince horas semanales, salvo excepciones.",
-      "titulo": [
-        "CONCLUSIÓN",
-        "GENERAL"
-      ],
+      "detalle": "Hasta una hora a la semana",
+      "fuente_corta": "LNEP, art. 59",
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "Las visitas pueden limitarse por sanción disciplinaria grave.",
+          "texto": "Por sanción disciplinaria grave, las visitas pueden limitarse hasta una hora de visita semanal.",
           "fuente": "F2"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: de cinco a quince horas semanales, salvo una sanción disciplinaria grave.",
+      "titulo": [
+        "MÍNIMO 5 HORAS",
+        "POR SEMANA"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -108,7 +127,7 @@
     "suficiente": true,
     "pregunta": "¿Cuántas horas de visita debe permitir una prisión?",
     "concepto_central": "horas de visita en centros penitenciarios",
-    "respuesta_corta": "Debe permitir un mínimo de cinco y un máximo de quince horas de visita semanal, salvo excepciones por sanciones disciplinarias o visita íntima.",
+    "respuesta_corta": "Debe permitir un mínimo de cinco y un máximo de quince horas de visita a la semana; por sanción disciplinaria grave pueden limitarse hasta una hora semanal.",
     "reglas": [
       {
         "conclusion": "El centro penitenciario debe permitir un tiempo mínimo de cinco horas semanales y un máximo de quince horas semanales de visita general.",
@@ -195,7 +214,7 @@
   "pregunta_original": "¿Cuántas horas de visita debe permitir una prisión?",
   "tipo_pregunta": "obligacion",
   "revision_razonamiento": [],
-  "copy": "¿Cuántas horas de visita debe permitir una prisión?\n\nDebe permitir un mínimo de cinco y un máximo de quince horas de visita semanal, salvo excepciones por sanciones disciplinarias o visita íntima.\n\nFuente: Ley Nacional de Ejecución Penal, artículo 59.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Cuántas horas de visita debe permitir una prisión?\n\nAl menos cinco y como máximo quince horas a la semana. Se suma el tiempo de todos los tipos de visita, excepto la visita íntima.\n\nOjo: por una sanción disciplinaria grave, las visitas pueden limitarse hasta una hora semanal.\n\nFuente: Ley Nacional de Ejecución Penal, artículo 59.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -246,5 +265,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v7cbdb8a5b89ed32e: titulares de relleno («LÍMITES LEGALES», «CONCLUSIÓN GENERAL»); «Depende:» sin sustento; la cita se narraba como fragmento entre comillas rectas; lista en imperativo («Suma…», «Exceptúa…») sin cita propia; la publicación ponía la visita íntima como «excepción» del mínimo. → Titulares «DE 5 A 15 HORAS» y «MÍNIMO 5 HORAS»; cita introducida con «las visitas se limitarán» (literal); cómputo con F3 literal; excepción con F2 literal; publicación corregida. LNEP 59 cotejado en registro/textos."
+    }
+  ]
 }
