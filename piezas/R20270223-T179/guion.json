@@ -114,8 +114,9 @@
       "tipo": "titular",
       "texto": "Y al terminar, las medidas adoptadas durante su vigencia quedan sin efecto de forma inmediata.",
       "titulo": [
-        "TODO QUEDA",
-        "SIN EFECTO"
+        "AL TERMINAR,",
+        "LAS MEDIDAS",
+        "QUEDAN SIN EFECTO"
       ],
       "afirmaciones": [
         {
@@ -200,7 +201,7 @@
   "pregunta_original": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿El gobierno puede suspender todos tus derechos en una emergencia?\n\nNo todos. En casos de invasión o perturbación grave de la paz pública, solo el Presidente, con aprobación del Congreso, puede restringir o suspender derechos, por un tiempo limitado. Pero nunca derechos como la vida, la integridad personal y la no discriminación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 29.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿El gobierno puede suspender todos tus derechos en una emergencia?\n\nNo todos. En casos de invasión, perturbación grave de la paz pública u otros que pongan a la sociedad en grave peligro, solo el Presidente, con aprobación del Congreso o de la Comisión Permanente, puede restringir o suspender derechos, y por un tiempo limitado. Pero nunca derechos como la vida, la integridad personal y la no discriminación.\n\nFuente: Constitución Política de los Estados Unidos Mexicanos, artículo 29.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -274,6 +275,11 @@
       "fecha": "2026-11-27",
       "por": "Claude (revisión editorial delegada)",
       "que": "Revisión de la v0a65c8775737b256: el gancho quitaba «todos» y con eso el «No» quedaba incorrecto (el art. 29 sí permite restringir o suspender algunos derechos); titular de relleno («RESPUESTA OFICIAL»); la lista ponía «Derechos no suspendibles» como requisito; la cita terminaba en coma y el subtítulo unía «a la vida, Se requiere». → Gancho con «todos», titular «NO, NO TODOS», cita cerrada («y sigue la lista»), requisitos literales (solo el Presidente con aprobación del Congreso, F3; tiempo limitado, F4), titular «TODO QUEDA SIN EFECTO»; publicación con las condiciones. CPEUM 29 cotejado en registro/textos."
+    },
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v724b258a100ac1a0 (re-producción de la edición de la 3.ª ronda): el texto de la publicación limitaba los supuestos a «invasión o perturbación grave» (el art. 29 incluye «cualquier otro que ponga a la sociedad en grave peligro o conflicto») y omitía a la Comisión Permanente; el titular «TODO QUEDA SIN EFECTO» no decía cuándo ni qué. → Publicación con los tres supuestos y la Comisión Permanente; titular «AL TERMINAR, LAS MEDIDAS QUEDAN SIN EFECTO» (F2). CPEUM 29 cotejado en registro/textos."
     }
   ]
 }

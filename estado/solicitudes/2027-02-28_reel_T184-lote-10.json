@@ -12,7 +12,7 @@
   "lote": "lote-10",
   "motivo_seleccion": "Ley Agraria art. 80 (texto oficial cotejado el 25-11-2026, registro/textos/LAgra_80.json; última reforma de la ley 2025-11-14): «Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población.» «quienes, en ese orden, gozarán del derecho del tanto, el cual deberán ejercer dentro del término de treinta días naturales» Respuesta: a otros ejidatarios o avecindados del mismo núcleo, con los requisitos literales (escrito ante dos testigos ratificado ante fedatario, aviso al comisariado) y derecho del tanto de cónyuge/concubina(rio) e hijos por 30 días naturales. No referirse a parcelas con dominio pleno (arts. 81-82): decir «derechos parcelarios».",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270228-T184",
@@ -20,5 +20,15 @@
   "intentos": 2,
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: elemento de lista demasiado largo («Inscripción en el Registro Agr…»)\"], \"visible\": \"  \\n ¿A quién puede vender su parcela un ejidatario? \\n ¿A QUIÉN \\n PUEDES \\n VENDER? \\n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \\n VENTA \\n PARCELARIA \\n La ley establece textualm",
   "ultima_categoria": "redaccion",
-  "huella_entrada": "646353f2f563c7e8"
+  "huella_entrada": "646353f2f563c7e8",
+  "historial": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (operación diaria, 4.ª ronda)",
+      "motivo": "1.er descarte de redacción (elemento de lista de más de 32 caracteres); el intento anterior fue una falla técnica transitoria (HTTP 503), no un descarte del tema: se reabre con lista acotada",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"escena 3: elemento de lista demasiado largo («Inscripción en el Registro Agr…»)\"], \"visible\": \"  \\n ¿A quién puede vender su parcela un ejidatario? \\n ¿A QUIÉN \\n PUEDES \\n VENDER? \\n Sí, a otros ejidatarios o avecindados del mismo núcleo de población, cumpliendo los requisitos de validez. \\n VENTA \\n PARCELARIA \\n La ley establece textualm"
+    }
+  ],
+  "angulo": "Solo Ley Agraria art. 80. Hablar de «derechos parcelarios», nunca de parcelas con dominio pleno. Respuesta corta: a otros ejidatarios o avecindados del mismo núcleo de población. Cita literal de la escena de cita: «Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población.» Lista de requisitos (exactamente 3, cada elemento ≤ 28 caracteres): «Por escrito ante 2 testigos» / «Notificar a cónyuge e hijos» (o concubina o concubinario, dicho en la narración) / «Aviso al comisariado». Excepción o titular con la condición literal: cónyuge, concubina o concubinario e hijos tienen derecho del tanto «dentro del término de treinta días naturales». No mencionar el Registro Agrario Nacional en la lista. Narración ≤ 560 caracteres."
 }

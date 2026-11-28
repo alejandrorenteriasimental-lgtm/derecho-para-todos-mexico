@@ -12,7 +12,7 @@
   "lote": "lote-10",
   "motivo_seleccion": "LFT art. 39-A (texto oficial en registro/textos/LFT_39-A.json, consultado el 2026-11-08; última reforma de la ley DOF 2026-05-14; el art. 39-A no fue reformado desde su adición DOF 30-11-2012, cotejado por programa con verificador.contiene el 27-11-2026): «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe». Contexto literal: «podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días». Alcance federal. Sin uso en los lotes 8 a 10. Sustituye a LGDNNA art. 76 (dos descartes, 27-11: análisis insuficiente y narración de 653 caracteres).",
   "hora_publicacion_mx": "19:00",
-  "estado": "DESCARTADA",
+  "estado": "PENDIENTE_GUION",
   "instrucciones": "docs/tarea_guionista.md",
   "creada": "2026-11-27T11:51:00Z",
   "pieza_id": "R20270222-T178",
@@ -21,7 +21,7 @@
   "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 687 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 67: recorta al menos 127 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Duración máxima» no corresponde a lo que se n",
   "ultima_categoria": "tecnico",
   "huella_entrada": "4ec44c3c2f791e19",
-  "angulo": "Solo LFT art. 39-A. Respuesta corta (empieza con «Sí»): sí; durante el periodo de prueba tienes salario, seguridad social y las prestaciones de tu puesto. Cita literal ÚNICA de la escena de cita: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe». Lista (máx. 3): Salario / Seguridad social / Prestaciones del puesto. Condición literal en un titular: el periodo de prueba «no podrá exceder de treinta días» (hasta ciento ochenta solo en puestos de dirección o especializados, si cabe). Narración ≤ 560 caracteres; sin hablar de la terminación de la relación.",
+  "angulo": "Solo LFT art. 39-A. Respuesta corta (empieza con «Sí»): sí; durante el periodo de prueba tienes salario, seguridad social y las prestaciones de tu puesto. Cita literal ÚNICA de la escena de cita: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe». Lista (máx. 3, cada elemento ≤ 28 caracteres): Salario / Seguridad social / Prestaciones del puesto. Un solo titular con la condición literal: «no podrá exceder de treinta días». No usar escena de excepción ni encabezados como «Duración máxima» (el encabezado visible debe decir lo mismo que se narra). Narración total ≤ 540 caracteres: gancho ≤ 60, cita narrada sin introducción larga, cierre estándar; sin hablar de la terminación de la relación ni de los 180 días.",
   "historial": [
     {
       "ts": "2026-11-27T13:21:37+00:00",
@@ -34,6 +34,13 @@
       "motivo": "pregunta sustituida tras el segundo descarte (LGDNNA art. 76): ahora LFT art. 39-A, respuesta literal, alcance federal",
       "estado_anterior": "DESCARTADA",
       "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 653 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 33: recorta al menos 93 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\"], \"visible\": \"  \\n ¿Se pueden difundir datos que identifiquen a un niño? \\n ¿DATOS DE \\n MENOR"
+    },
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (operación diaria, 4.ª ronda)",
+      "motivo": "1.er descarte tras la sustitución (redacción: narración de 687 caracteres y encabezado «Duración máxima» que no correspondía a lo narrado): se reabre con ángulo acotado (≤ 540 caracteres, sin escena de excepción)",
+      "estado_anterior": "DESCARTADA",
+      "ultimo_motivo": "no superó la validación o la auditoría independiente tras dos correcciones: {\"etapa\": \"redaccion\", \"intento\": 2, \"errores_esquema\": [\"narración de 687 caracteres (rango 300–620, ≈20–43 s; los Reels deben durar ≤ 45 s para Instagram); sobran 67: recorta al menos 127 caracteres (meta ≤ 560) quitando frases repetidas o de relleno, nunca la cita literal, la condición ni la excepción\", \"[coherencia] Escena 5: el encabezado visible «Duración máxima» no corresponde a lo que se n"
     }
   ]
 }

@@ -77,7 +77,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Para contarlas:",
+      "texto": "Se suma el tiempo de todas las visitas, excepto la íntima.",
       "items": [
         "Se suma cada tipo de visita",
         "Excepto la visita íntima"
@@ -109,10 +109,10 @@
     },
     {
       "tipo": "titular",
-      "texto": "En resumen: de cinco a quince horas semanales, salvo una sanción disciplinaria grave.",
+      "texto": "En resumen: de cinco a quince horas semanales, salvo sanción disciplinaria grave.",
       "titulo": [
-        "MÍNIMO 5 HORAS",
-        "POR SEMANA"
+        "DE 5 A 15 HORAS,",
+        "SALVO SANCIÓN GRAVE"
       ],
       "afirmaciones": []
     },
@@ -271,6 +271,11 @@
       "fecha": "2026-11-27",
       "por": "Claude (revisión editorial delegada)",
       "que": "Revisión de la v7cbdb8a5b89ed32e: titulares de relleno («LÍMITES LEGALES», «CONCLUSIÓN GENERAL»); «Depende:» sin sustento; la cita se narraba como fragmento entre comillas rectas; lista en imperativo («Suma…», «Exceptúa…») sin cita propia; la publicación ponía la visita íntima como «excepción» del mínimo. → Titulares «DE 5 A 15 HORAS» y «MÍNIMO 5 HORAS»; cita introducida con «las visitas se limitarán» (literal); cómputo con F3 literal; excepción con F2 literal; publicación corregida. LNEP 59 cotejado en registro/textos."
+    },
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v9595d29e07cff253: la lista (cómputo sin la visita íntima, F3) estaba en pantalla solo 1.3 s con la narración «Para contarlas:», ilegible y sin narrar la condición; el titular final («MÍNIMO 5 HORAS POR SEMANA») no coincidía con lo narrado (de cinco a quince, salvo sanción grave). → Lista narrada «Se suma el tiempo de todas las visitas, excepto la íntima.» (F3); titular final «DE 5 A 15 HORAS, SALVO SANCIÓN GRAVE» (F1, F2). LNEP 59 cotejado en registro/textos."
     }
   ]
 }

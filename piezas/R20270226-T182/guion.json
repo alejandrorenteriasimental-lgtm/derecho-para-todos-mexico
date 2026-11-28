@@ -17,59 +17,102 @@
       "cita": "Ley Federal del Trabajo, artículo 56",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-27"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "56",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "condiciones de embarazo, responsabilidades familiares o estado civil, salvo las modalidades expresamente consignadas en esta Ley",
+      "cita": "Ley Federal del Trabajo, artículo 56",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "56",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "en ningún caso podrán ser inferiores a las fijadas en esta Ley",
+      "cita": "Ley Federal del Trabajo, artículo 56",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-27"
     }
   },
   "escenas": [
     {
       "tipo": "gancho",
-      "texto": "¿Peores condiciones por embarazo?",
+      "texto": "¿Te pueden dar peores condiciones de trabajo por estar embarazada?",
       "titulo": [
-        "PEORES",
-        "CONDICIONES",
-        "POR EMBARAZO?"
+        "¿PEORES CONDICIONES",
+        "POR ESTAR",
+        "EMBARAZADA?"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "titular",
-      "texto": "No, la ley prohíbe diferencias por embarazo, salvo modalidades.",
+      "texto": "No. La ley lo prohíbe, salvo las modalidades que ella misma fija.",
       "titulo": [
-        "RESPUESTA",
-        "OFICIAL"
+        "NO, LA LEY",
+        "LO PROHÍBE"
       ],
       "afirmaciones": []
     },
     {
       "tipo": "cita",
-      "texto": "La ley señala que sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias sexuales, condiciones de embarazo, responsabilidades familiares o estado civil,",
+      "texto": "El artículo 56 prohíbe diferencias por motivos como condiciones de embarazo, responsabilidades familiares o estado civil, salvo las modalidades expresamente consignadas en esta Ley.",
       "etiqueta": "Ley Federal del Trabajo, artículo 56",
-      "cita": "sin que puedan establecerse diferencias y/o exclusiones por motivo de origen étnico o nacionalidad, sexo, género, edad, discapacidad, condición social, condiciones de salud, religión, opiniones, preferencias …",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "lista",
-      "texto": "Puntos clave de la norma:",
-      "items": [
-        "Igualdad sustantiva",
-        "Modalidades de ley"
-      ],
+      "cita": "condiciones de embarazo, responsabilidades familiares o estado civil, salvo las modalidades expresamente consignadas en esta Ley",
       "afirmaciones": [
         {
           "id": "A1",
           "tipo": "hecho_normativo",
-          "texto": "Prohibición de diferencias o exclusiones por condiciones de embarazo en las condiciones de trabajo.",
+          "texto": "No pueden establecerse diferencias y/o exclusiones por condiciones de embarazo, salvo las modalidades expresamente consignadas en la Ley Federal del Trabajo.",
+          "fuente": "F2",
+          "comparar_literal": true
+        }
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Y, salvo esas modalidades, tus condiciones de trabajo no pueden ser inferiores a las que fija la ley.",
+      "items": [
+        "Sin diferencias por embarazo",
+        "No inferiores a la ley"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "Las condiciones de trabajo en ningún caso podrán ser inferiores a las fijadas en la Ley Federal del Trabajo.",
+          "fuente": "F3"
+        },
+        {
+          "id": "A4",
+          "tipo": "hecho_normativo",
+          "texto": "No pueden establecerse diferencias y/o exclusiones por condiciones de embarazo.",
           "fuente": "F1"
         }
       ]
     },
     {
-      "tipo": "titular",
-      "texto": "La ley prohíbe la discriminación.",
-      "titulo": [
-        "ENTORNO",
-        "LIBRE"
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Ojo: solo valen las modalidades que la ley establece expresamente.",
+      "encabezado": "Salvo",
+      "detalle": "Modalidades expresas de la ley",
+      "afirmaciones": [
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Se exceptúan las modalidades expresamente consignadas en la Ley Federal del Trabajo.",
+          "fuente": "F2"
+        }
       ],
-      "afirmaciones": []
+      "fuente_corta": "LFT, art. 56"
     },
     {
       "tipo": "cierre",
@@ -143,7 +186,7 @@
   "pregunta_original": "¿Te pueden dar peores condiciones de trabajo por estar embarazada?",
   "tipo_pregunta": "legalidad",
   "revision_razonamiento": [],
-  "copy": "¿Te pueden dar peores condiciones de trabajo por estar embarazada?\n\nNo, la ley prohíbe establecer diferencias o exclusiones en las condiciones de trabajo por estar embarazada, salvo las modalidades fijadas en la ley.\n\nFuente: Ley Federal del Trabajo, artículo 56.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "¿Te pueden dar peores condiciones de trabajo por estar embarazada?\n\nNo. La Ley Federal del Trabajo prohíbe establecer diferencias o exclusiones en las condiciones de trabajo por condiciones de embarazo, y esas condiciones nunca pueden ser inferiores a las que fija la ley.\n\nOjo: la ley exceptúa las modalidades que ella misma establece expresamente.\n\nFuente: Ley Federal del Trabajo, artículo 56.\n\nEsto es información general, no es asesoría legal.",
   "auditoria_ia": {
     "veredicto": "sin_objeciones",
     "modelo_auditor": "gemini-3.1-flash-lite",
@@ -189,5 +232,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-27",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v929ef7f2fe680e2c: gancho narrado abreviado («¿Peores condiciones por embarazo?»); titulares de relleno («RESPUESTA OFICIAL», «ENTORNO LIBRE»); la cita en pantalla terminaba en «…» y la narración la leía completa hasta una coma (≈18 s); la lista («Igualdad sustantiva», «Modalidades de ley») no explicaba nada y la salvedad no se narraba. → Gancho con la pregunta completa; titular «NO, LA LEY LO PROHÍBE» con la salvedad narrada; cita literal cerrada que incluye «condiciones de embarazo» y la salvedad (F2, ≤ 220 caracteres; la oración completa del art. 56 no cabe en pantalla); lista con las dos reglas (F1; F3 «en ningún caso podrán ser inferiores a las fijadas en esta Ley»), narrada con la salvedad; excepción «Salvo: modalidades expresas de la ley» (F2, sin inventar cuáles) con fuente_corta; publicación con la salvedad. 569 caracteres. LFT 56 cotejado en registro/textos."
+    }
+  ]
 }
