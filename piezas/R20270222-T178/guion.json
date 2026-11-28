@@ -28,6 +28,17 @@
       "cita": "Ley Federal del Trabajo, artículo 39-A",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-28"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "39-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "podrá extenderse hasta ciento ochenta días, sólo cuando se trate de trabajadores para puestos de dirección, gerenciales y demás personas que ejerzan funciones de dirección o administración en la empresa o establecimiento de carácter general o para desempeñar labores técnicas o profesionales especializadas",
+      "cita": "Ley Federal del Trabajo, artículo 39-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-28"
     }
   },
   "escenas": [
@@ -51,14 +62,14 @@
     },
     {
       "tipo": "cita",
-      "texto": "La ley es clara: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe».",
+      "texto": "La ley dice: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe».",
       "etiqueta": "Ley Federal del Trabajo, art. 39-A",
       "cita": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
       "afirmaciones": []
     },
     {
       "tipo": "lista",
-      "texto": "Desde que inicias, debes contar con:",
+      "texto": "Desde el inicio: salario, seguridad social y prestaciones del puesto.",
       "items": [
         "Salario",
         "Seguridad social",
@@ -76,27 +87,33 @@
     {
       "tipo": "excepcion",
       "numero": 1,
-      "texto": "Por regla general este tiempo no podrá exceder de treinta días, pero llega a ciento ochenta en puestos de dirección o especializados.",
-      "encabezado": "no podrá exceder de treinta días",
-      "detalle": "Hasta 180 en puestos de dirección",
+      "texto": "Y es de máximo treinta días; hasta ciento ochenta en dirección o labores técnicas o profesionales especializadas.",
+      "encabezado": "Máximo treinta días",
+      "detalle": "Hasta 180: dirección o especializadas",
       "fuente_corta": "Ley, art. 39-A",
-      "afirmaciones": []
-    },
-    {
-      "tipo": "titular",
-      "texto": "Sí te pagan; el periodo de prueba no anula tus derechos económicos.",
-      "titulo": [
-        "DERECHOS",
-        "VIGENTES"
-      ],
       "afirmaciones": [
         {
           "id": "A2",
           "tipo": "hecho_normativo",
-          "texto": "El periodo de prueba general es de 30 días.",
+          "texto": "El periodo de prueba no podrá exceder de treinta días.",
           "fuente": "F2"
+        },
+        {
+          "id": "A3",
+          "tipo": "hecho_normativo",
+          "texto": "Puede extenderse hasta ciento ochenta días solo en puestos de dirección, gerenciales o para labores técnicas o profesionales especializadas.",
+          "fuente": "F3"
         }
       ]
+    },
+    {
+      "tipo": "titular",
+      "texto": "En resumen: en la prueba sí te pagan.",
+      "titulo": [
+        "SALARIO Y",
+        "PRESTACIONES"
+      ],
+      "afirmaciones": []
     },
     {
       "tipo": "cierre",
@@ -248,5 +265,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-28",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la v4c05d368326295fe (cuadro por cuadro): la lista (salario, seguridad social, prestaciones) se veía sin narrarse; la «excepción» decía «puestos especializados» (la ley: labores técnicas o profesionales especializadas) con encabezado en minúsculas como fragmento; titular de relleno «DERECHOS VIGENTES» con la generalización «no anula tus derechos económicos». → Cita introducida con «La ley dice:»; lista narrada (F1); excepción «Máximo treinta días / Hasta 180: dirección o especializadas» con F2 y F3 literales y narrada completa; titular final «SALARIO Y PRESTACIONES» («En resumen: en la prueba sí te pagan»). 598 caracteres. LFT 39-A cotejado en registro/textos."
+    }
+  ]
 }

@@ -8,10 +8,10 @@
   "tema_id": "T178",
   "pieza": {
     "titular": "¿Cuánto dura el periodo de prueba?",
-    "bajada": "No más de treinta días; hasta ciento ochenta en puestos directivos. Válido en relaciones por tiempo indeterminado o que excedan de ciento ochenta días.",
+    "bajada": "Hasta treinta días; hasta ciento ochenta en puestos de dirección, gerenciales o de labores técnicas o profesionales especializadas.",
     "cita": "podrá establecerse un periodo a prueba, el cual no podrá exceder de treinta días",
     "etiqueta_cita": "Ley Federal del Trabajo, artículo 39-A",
-    "ojo": "La excepción aplica a labores técnicas especializadas.",
+    "ojo": "Solo en relaciones por tiempo indeterminado o de más de 180 días.",
     "fuente_visible": "Ley Federal del Trabajo, art. 39-A"
   },
   "copy": "La Ley Federal del Trabajo, en su artículo 39-A, establece límites claros para el tiempo que una persona puede estar a prueba. Por regla general, este periodo tiene un tope de treinta días para verificar que se cuenta con los conocimientos necesarios.\n\nSin embargo, existen casos donde el plazo se amplía. Para puestos de dirección, gerenciales o que requieran labores técnicas o profesionales especializadas, la ley permite que la prueba se extienda hasta ciento ochenta días.\n\nEs fundamental recordar que estas reglas solo operan en contratos por tiempo indeterminado o en aquellos cuya duración sea mayor a ciento ochenta días. Guarda esta información para cuando revises tu próximo contrato laboral.\n\nEsto es información general, no es asesoría legal.",
@@ -35,7 +35,18 @@
       "documento": "Ley Federal del Trabajo",
       "articulo": "39-A",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "texto_literal": "podrá extenderse hasta ciento ochenta días, sólo cuando se trate de trabajadores para puestos de dirección, gerenciales y demás personas que ejerzan funciones de dirección",
+      "texto_literal": "podrá extenderse hasta ciento ochenta días, sólo cuando se trate de trabajadores para puestos de dirección, gerenciales y demás personas que ejerzan funciones de dirección o administración en la empresa o establecimiento de carácter general o para desempeñar labores técnicas o profesionales especializadas",
+      "cita": "Ley Federal del Trabajo, artículo 39-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-28"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "39-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "En las relaciones de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días, podrá establecerse un periodo a prueba",
       "cita": "Ley Federal del Trabajo, artículo 39-A",
       "jurisdiccion": "federal (aplica en todo el país)",
       "consultado": "2026-11-28"
@@ -51,15 +62,21 @@
     {
       "id": "A2",
       "tipo": "hecho_normativo",
-      "texto": "En puestos de dirección o especializados, el periodo de prueba puede extenderse hasta ciento ochenta días.",
+      "texto": "Puede extenderse hasta ciento ochenta días en puestos de dirección, gerenciales o para labores técnicas o profesionales especializadas.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "El periodo a prueba puede establecerse en relaciones por tiempo indeterminado o que excedan de ciento ochenta días.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
     "suficiente": true,
     "pregunta": "¿Cuánto puede durar el periodo de prueba en un trabajo?",
     "concepto_central": "periodo de prueba",
-    "respuesta_corta": "Hasta 30 días como regla general, o hasta 180 días si se trata de puestos de dirección, gerenciales o labores técnicas o profesionales especializadas.",
+    "respuesta_corta": "Hasta treinta días; hasta ciento ochenta en puestos de dirección, gerenciales o de labores técnicas o profesionales especializadas.",
     "reglas": [
       {
         "conclusion": "El periodo de prueba no puede exceder de 30 días como regla general.",
@@ -194,5 +211,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-28",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la vffd93685a45492d6: bajada con «puestos directivos» y «Válido en…» sin sujeto; el «OJO» («La excepción aplica a labores técnicas especializadas») omitía «o profesionales» y los puestos gerenciales y podía leerse como restricción. → Bajada con los supuestos literales de la ampliación (F2 completo); «OJO»: «Solo en relaciones por tiempo indeterminado o de más de 180 días» (F3 literal). LFT 39-A cotejado en registro/textos."
+    }
+  ]
 }

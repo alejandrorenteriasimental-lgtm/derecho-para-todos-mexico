@@ -1,6 +1,6 @@
 # Avance de la primera etapa (2026-11-23 al 2027-02-20)
 
-**Terminadas: 170/180** · imágenes 85/90 · Reels 85/90
+**Terminadas: 171/180** · imágenes 85/90 · Reels 86/90
 Calendario completo y sin huecos hasta: 2027-02-15
 Reserva para lanzar el 2026-11-16: 92/45 días consecutivos
 
@@ -11,10 +11,10 @@ Reserva para lanzar el 2026-11-16: 92/45 días consecutivos
 | 2026-12-23 al 2027-01-06 | 15/15 | 15/15 |
 | 2027-01-07 al 2027-01-21 | 15/15 | 15/15 |
 | 2027-01-22 al 2027-02-05 | 15/15 | 15/15 |
-| 2027-02-06 al 2027-02-20 | 10/15 | 10/15 |
+| 2027-02-06 al 2027-02-20 | 10/15 | 11/15 |
 
-Próximos huecos: 2027-02-16 imagen, 2027-02-17 imagen, 2027-02-18 imagen, 2027-02-19 imagen, 2027-02-20 imagen, 2027-02-16 reel, 2027-02-17 reel, 2027-02-18 reel, 2027-02-19 reel, 2027-02-20 reel
+Próximos huecos: 2027-02-16 imagen, 2027-02-17 imagen, 2027-02-18 imagen, 2027-02-19 imagen, 2027-02-20 imagen, 2027-02-17 reel, 2027-02-18 reel, 2027-02-19 reel, 2027-02-20 reel
 
-Cola: APROBADO 1, RETENIDO 7, REVISION_HUMANA 6, SIMULADO 184
+Cola: APROBADO 1, PENDIENTE 5, RETENIDO 7, REVISION_HUMANA 1, SIMULADO 184
 
-_Generado 2026-11-28T12:06:32+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._
+_Generado 2026-11-28T12:16:20+00:00 por sistema/avance.py. Terminada = en calendario con versión aprobada, SHA-256 y respaldo._

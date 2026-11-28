@@ -8,13 +8,13 @@
   "tema_id": "T181",
   "pieza": {
     "titular": "¿El Ministerio Público puede prohibir que se te acerquen?",
-    "bajada": "Sí, el Ministerio Público puede ordenar esta medida cuando estime que el imputado representa un riesgo inminente.",
+    "bajada": "Sí: el Ministerio Público puede ordenarlo si estima que el imputado es un riesgo inminente para la seguridad de la víctima.",
     "cita": "I. Prohibición de acercarse o comunicarse con la víctima u ofendido;",
     "etiqueta_cita": "Código Nacional de Procedimientos Penales, artículo 137",
-    "ojo": "Requiere audiencia ante el juez en los siguientes cinco días.",
+    "ojo": "Un juez debe revisarla en audiencia dentro de cinco días.",
     "fuente_visible": "Código Nacional de Procedimientos Penales, art. 137"
   },
-  "copy": "El Código Nacional de Procedimientos Penales, en su artículo 137, faculta al Ministerio Público para dictar medidas de protección. Esto ocurre cuando la autoridad considera que existe un riesgo real para la integridad de la víctima.\n\nUna de estas medidas es, precisamente, la prohibición de acercarse o comunicarse. Según la ley, el Ministerio Público \"ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente\".\n\nEs importante saber que, para que esta prohibición se mantenga, debe celebrarse una audiencia ante un juez dentro de los cinco días posteriores a su imposición. Guarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
+  "copy": "El Código Nacional de Procedimientos Penales, en su artículo 137, faculta al Ministerio Público para ordenar medidas de protección cuando estime que la persona imputada representa un riesgo inminente para la seguridad de la víctima u ofendido.\n\nUna de esas medidas es, precisamente, la prohibición de acercarse o comunicarse con la víctima u ofendido. Según la ley, el Ministerio Público «ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente en contra de la seguridad de la víctima u ofendido».\n\nOjo: dentro de los cinco días siguientes a que se impone esta medida debe celebrarse una audiencia en la que el juez puede cancelarla, ratificarla o modificarla. Guarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
   "alt": "Imagen informativa sobre medidas de protección en México. El título pregunta si el Ministerio Público puede prohibir que un agresor se acerque. La respuesta indica que sí, cuando exista riesgo inminente. Incluye la cita del artículo 137 del Código Nacional de Procedimientos Penales.",
   "relacion_reel": "independiente",
   "fuentes": {
@@ -24,7 +24,7 @@
       "documento": "Código Nacional de Procedimientos Penales",
       "articulo": "137",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
-      "texto_literal": "El Ministerio Público, bajo su más estricta responsabilidad, ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente",
+      "texto_literal": "El Ministerio Público, bajo su más estricta responsabilidad, ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente en contra de la seguridad de la víctima u ofendido",
       "cita": "Código Nacional de Procedimientos Penales, artículo 137",
       "jurisdiccion": "nacional",
       "consultado": "2026-11-28"
@@ -36,6 +36,17 @@
       "articulo": "137",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
       "texto_literal": "I. Prohibición de acercarse o comunicarse con la víctima u ofendido;",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 137",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-28"
+    },
+    "F3": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "137",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "Dentro de los cinco días siguientes a la imposición de las medidas de protección previstas en las fracciones I, II y III deberá celebrarse audiencia en la que el juez podrá cancelarlas, o bien, ratificarlas o modificarlas",
       "cita": "Código Nacional de Procedimientos Penales, artículo 137",
       "jurisdiccion": "nacional",
       "consultado": "2026-11-28"
@@ -53,13 +64,19 @@
       "tipo": "hecho_normativo",
       "texto": "Una de las medidas de protección permitidas es evitar que el imputado se comunique o se acerque a la víctima.",
       "fuente": "F2"
+    },
+    {
+      "id": "A3",
+      "tipo": "hecho_normativo",
+      "texto": "Dentro de los cinco días siguientes debe celebrarse audiencia en la que el juez podrá cancelar, ratificar o modificar la medida.",
+      "fuente": "F3"
     }
   ],
   "razonamiento": {
     "suficiente": true,
     "pregunta": "¿El Ministerio Público puede prohibir que tu agresor se te acerque?",
     "concepto_central": "medidas de protección",
-    "respuesta_corta": "Sí, el Ministerio Público puede ordenar esta medida cuando estime que el imputado representa un riesgo inminente.",
+    "respuesta_corta": "Sí: el Ministerio Público puede ordenarlo si estima que el imputado es un riesgo inminente para la seguridad de la víctima.",
     "reglas": [
       {
         "conclusion": "El Ministerio Público puede ordenar la prohibición de acercarse como medida de protección ante un riesgo inminente.",
@@ -161,5 +178,12 @@
       }
     ],
     "familia_distinta": false
-  }
+  },
+  "ediciones": [
+    {
+      "fecha": "2026-11-28",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la vd39fbf8bad8e135a: bajada y publicación cortaban la condición («riesgo inminente» sin «en contra de la seguridad de la víctima u ofendido») y la cita de la publicación quedaba truncada; la publicación decía «para que esta prohibición se mantenga» (la ley: el juez podrá cancelarla, ratificarla o modificarla). → Bajada con la condición completa (F1); «OJO»: «Un juez debe revisarla en audiencia dentro de cinco días» (F3 literal); publicación con la cita completa y los tres resultados de la audiencia. CNPP 137 cotejado en registro/textos."
+    }
+  ]
 }

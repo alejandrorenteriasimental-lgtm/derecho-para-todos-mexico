@@ -65,7 +65,7 @@
     },
     {
       "tipo": "titular",
-      "texto": "No todos. La Constitución prohíbe suspender derechos como la vida y la no discriminación.",
+      "texto": "No todos.",
       "titulo": [
         "NO,",
         "NO TODOS"
@@ -89,7 +89,7 @@
     },
     {
       "tipo": "lista",
-      "texto": "Para restringir los demás, se exige:",
+      "texto": "Los demás solo puede restringirlos el Presidente, con aprobación del Congreso o de la Comisión Permanente, y por un tiempo limitado.",
       "items": [
         "Solo el Presidente",
         "Con aprobación del Congreso",
@@ -280,6 +280,11 @@
       "fecha": "2026-11-27",
       "por": "Claude (revisión editorial delegada)",
       "que": "Revisión de la v724b258a100ac1a0 (re-producción de la edición de la 3.ª ronda): el texto de la publicación limitaba los supuestos a «invasión o perturbación grave» (el art. 29 incluye «cualquier otro que ponga a la sociedad en grave peligro o conflicto») y omitía a la Comisión Permanente; el titular «TODO QUEDA SIN EFECTO» no decía cuándo ni qué. → Publicación con los tres supuestos y la Comisión Permanente; titular «AL TERMINAR, LAS MEDIDAS QUEDAN SIN EFECTO» (F2). CPEUM 29 cotejado en registro/textos."
+    },
+    {
+      "fecha": "2026-11-28",
+      "por": "Claude (revisión editorial delegada)",
+      "que": "Revisión de la vb0757fc7719e3be8 (cuadro por cuadro): la lista de requisitos (solo el Presidente, aprobación del Congreso, tiempo limitado) quedaba en pantalla ≈4 s sin narrarse. → Requisitos narrados con la Comisión Permanente (F3) y el tiempo limitado (F4); titular narrado «No todos.» (la cita siguiente ya dice cuáles no se suspenden) para no pasar de 620 caracteres (605). CPEUM 29 cotejado en registro/textos."
     }
   ]
 }
