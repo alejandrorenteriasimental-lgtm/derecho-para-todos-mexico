@@ -1,0 +1,126 @@
+{
+  "tecnica": [
+    {
+      "control": "Formato 1080×1350 PNG (4:5)",
+      "resultado": "APROBADO",
+      "detalle": "(1080, 1350) PNG"
+    },
+    {
+      "control": "Peso menor a 8 MB",
+      "resultado": "APROBADO",
+      "detalle": "1196 KB"
+    },
+    {
+      "control": "Tamaño mínimo de texto ≥ 24 px (cuerpo ≥ 32)",
+      "resultado": "APROBADO",
+      "detalle": "mínimo 26 px"
+    },
+    {
+      "control": "Contraste WCAG AA ≥ 4.5:1 en todos los textos",
+      "resultado": "APROBADO",
+      "detalle": "peor 5.85:1 («Fuente: Código Nacional »)"
+    },
+    {
+      "control": "Todo el texto dentro de márgenes seguros",
+      "resultado": "APROBADO",
+      "detalle": "margen 72 px"
+    },
+    {
+      "control": "Contenido sin invadir el pie",
+      "resultado": "APROBADO",
+      "detalle": "fin del contenido en y=1109"
+    },
+    {
+      "control": "Contenido ≤ 60 palabras (una idea central; el resto va en el copy)",
+      "resultado": "APROBADO",
+      "detalle": "55 palabras sin cabecera ni pie"
+    },
+    {
+      "control": "OCR: el texto renderizado es legible y completo (≥ 90 %)",
+      "resultado": "APROBADO",
+      "detalle": "100% de 47 palabras reconocidas"
+    },
+    {
+      "control": "Firma de marca y aviso presentes",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "Fuente visible en la pieza",
+      "resultado": "APROBADO",
+      "detalle": ""
+    },
+    {
+      "control": "No es casi idéntica a una imagen anterior",
+      "resultado": "APROBADO",
+      "detalle": "distancia mínima 256/256"
+    }
+  ],
+  "juridica": {
+    "decision": "APTO",
+    "tipo_retencion": null,
+    "motivos": [],
+    "verificacion": "APTA",
+    "carril": "A",
+    "reglas": [
+      {
+        "control": "Aviso de información general",
+        "resultado": "APROBADO",
+        "detalle": "Debe decir que no es asesoría legal"
+      },
+      {
+        "control": "Leyenda de jurisdicción en temas penales o locales",
+        "resultado": "APROBADO",
+        "detalle": "Requerida si se cita derecho penal"
+      },
+      {
+        "control": "Sin frases de asesoría o adjetivos de culpabilidad",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "Sin personas reales identificables",
+        "resultado": "APROBADO",
+        "detalle": "ninguna"
+      },
+      {
+        "control": "La fuente al pie de cada cita es el artículo citado",
+        "resultado": "APROBADO",
+        "detalle": "coinciden"
+      }
+    ]
+  },
+  "metadatos": {
+    "id": "I20270225-T181",
+    "formato": "imagen",
+    "titulo": "¿El Ministerio Público puede prohibir que se te acerquen?",
+    "plantilla": "concepto",
+    "archivo": "I20270225-T181.png",
+    "sha256": "2ca4fddf3131275ce714cab8170a3b24546a2c2647902f2b83b7381aca314888",
+    "ahash": "1001111111111111111111111111111111111111111111111000000000000001100000000000001110000000011111111111111111111111111111111111111111111111111111111000000000000001100000000000000110000000000000011111111111111111111111111111111111111111111111111111111111111101",
+    "huella_guion": "19f7c3cbc971c5a4fa76e9a791cbbc030f9b1c614ddf99e6b5ea024be5b9a354",
+    "texto_alternativo": "Imagen informativa sobre medidas de protección en México. El título pregunta si el Ministerio Público puede prohibir que un agresor se acerque. La respuesta indica que sí, cuando exista riesgo inminente. Incluye la cita del artículo 137 del Código Nacional de Procedimientos Penales.",
+    "copy": "El Código Nacional de Procedimientos Penales, en su artículo 137, faculta al Ministerio Público para dictar medidas de protección. Esto ocurre cuando la autoridad considera que existe un riesgo real para la integridad de la víctima.\n\nUna de estas medidas es, precisamente, la prohibición de acercarse o comunicarse. Según la ley, el Ministerio Público \"ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente\".\n\nEs importante saber que, para que esta prohibición se mantenga, debe celebrarse una audiencia ante un juez dentro de los cinco días posteriores a su imposición. Guarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
+    "fuentes": [
+      {
+        "id": "F1",
+        "documento": "Código Nacional de Procedimientos Penales",
+        "articulo": "137",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf"
+      },
+      {
+        "id": "F2",
+        "documento": "Código Nacional de Procedimientos Penales",
+        "articulo": "137",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf"
+      }
+    ],
+    "relacion_reel": "independiente",
+    "estado": "APTO",
+    "fecha": "2026-11-28T12:04:49+00:00",
+    "costo": {
+      "apis_de_pago_usd": 0.0,
+      "nota": "Pillow + tesseract, locales y gratuitos"
+    }
+  }
+}

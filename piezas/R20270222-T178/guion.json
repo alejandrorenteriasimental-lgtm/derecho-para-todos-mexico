@@ -1,0 +1,252 @@
+{
+  "id": "R20270222-T178",
+  "formato": "reel",
+  "titulo": "¿Te tienen que pagar durante el periodo de prueba?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "carril_inicial": "A",
+  "tema_id": "T178",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "39-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+      "cita": "Ley Federal del Trabajo, artículo 39-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Ley Federal del Trabajo",
+      "articulo": "39-A",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "texto_literal": "no podrá exceder de treinta días",
+      "cita": "Ley Federal del Trabajo, artículo 39-A",
+      "jurisdiccion": "federal (aplica en todo el país)",
+      "consultado": "2026-11-28"
+    }
+  },
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "texto": "¿Sabes si te deben pagar durante tu periodo de prueba?",
+      "titulo": [
+        "¿PAGO EN",
+        "PRUEBA?"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí, tienes derecho a tu salario y prestaciones desde el inicio.",
+      "titulo": [
+        "SÍ TE",
+        "PAGAN"
+      ],
+      "afirmaciones": []
+    },
+    {
+      "tipo": "cita",
+      "texto": "La ley es clara: «Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe».",
+      "etiqueta": "Ley Federal del Trabajo, art. 39-A",
+      "cita": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "lista",
+      "texto": "Desde que inicias, debes contar con:",
+      "items": [
+        "Salario",
+        "Seguridad social",
+        "Prestaciones del puesto"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A1",
+          "tipo": "hecho_normativo",
+          "texto": "El trabajador en periodo de prueba goza de salario y seguridad social.",
+          "fuente": "F1"
+        }
+      ]
+    },
+    {
+      "tipo": "excepcion",
+      "numero": 1,
+      "texto": "Por regla general este tiempo no podrá exceder de treinta días, pero llega a ciento ochenta en puestos de dirección o especializados.",
+      "encabezado": "no podrá exceder de treinta días",
+      "detalle": "Hasta 180 en puestos de dirección",
+      "fuente_corta": "Ley, art. 39-A",
+      "afirmaciones": []
+    },
+    {
+      "tipo": "titular",
+      "texto": "Sí te pagan; el periodo de prueba no anula tus derechos económicos.",
+      "titulo": [
+        "DERECHOS",
+        "VIGENTES"
+      ],
+      "afirmaciones": [
+        {
+          "id": "A2",
+          "tipo": "hecho_normativo",
+          "texto": "El periodo de prueba general es de 30 días.",
+          "fuente": "F2"
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "texto": "Esto es información general, no asesoría legal. Síguenos para entender tus derechos.",
+      "aviso": "Información general, no asesoría legal.",
+      "afirmaciones": []
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿Te tienen que pagar durante el periodo de prueba?",
+    "concepto_central": "periodo de prueba",
+    "respuesta_corta": "Sí, durante el periodo de prueba tienes derecho a recibir salario, seguridad social y las prestaciones del puesto.",
+    "reglas": [
+      {
+        "conclusion": "Durante el periodo de prueba el trabajador tiene derecho a recibir su salario, seguridad social y prestaciones.",
+        "fuente": "F1",
+        "cita_literal": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+        "condiciones": [
+          "Estar en una relación de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Ley Federal del Trabajo",
+          "articulo": "39-A"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "contenido",
+        "estado": "cubierto",
+        "respuesta": "Se debe otorgar el salario, la seguridad social y las prestaciones de la categoría o puesto desempeñado.",
+        "fuente": "F1",
+        "cita_literal": "Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe.",
+        "motivo": ""
+      },
+      {
+        "elemento": "condiciones",
+        "estado": "cubierto",
+        "respuesta": "Aplica cuando se establece un periodo a prueba en relaciones de trabajo por tiempo indeterminado o que exceden de ciento ochenta días.",
+        "fuente": "F1",
+        "cita_literal": "En las relaciones de trabajo por tiempo indeterminado o cuando excedan de ciento ochenta días, podrá establecerse un periodo a prueba",
+        "motivo": ""
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto oficial no especifica fechas límite exactas para el pago ni los montos específicos del salario, solo indica que corresponde al de la categoría o puesto desempeñado."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-28T11:49:18+00:00",
+    "solicitud": "2027-02-22_reel_T178-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 3
+      },
+      "llamadas_ia_total": 5,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿Te tienen que pagar durante el periodo de prueba?",
+  "tipo_pregunta": "obligacion",
+  "revision_razonamiento": [],
+  "copy": "¿Te tienen que pagar durante el periodo de prueba?\n\nSí, durante el periodo de prueba tienes derecho a recibir salario, seguridad social y las prestaciones del puesto.\n\nFuente: Ley Federal del Trabajo, artículo 39-A.\n\nEsto es información general, no es asesoría legal.",
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "auditoria_ia": {
+          "veredicto": "con_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Durante el periodo de prueba el trabajador tiene derecho a recibir su salario, seguridad social y prestaciones.",
+              "sostenida": "si",
+              "motivo": "La cita literal del artículo 39-A respalda directamente esta afirmación."
+            },
+            {
+              "conclusion": "En las relaciones de trabajo por tiempo indeterminado puede establecerse un periodo a prueba.",
+              "sostenida": "si",
+              "motivo": "El artículo 39-A establece esta posibilidad para relaciones por tiempo indeterminado o superiores a 180 días."
+            },
+            {
+              "conclusion": "Este tiempo no podrá exceder de treinta días.",
+              "sostenida": "parcial",
+              "motivo": "La pieza omite la excepción legal donde el periodo puede extenderse hasta 180 días para puestos de dirección, gerenciales o labores técnicas especializadas."
+            }
+          ],
+          "objeciones": [
+            {
+              "donde": "Escena: 'NO PODRÁ EXCEDER DE TREINTA DÍAS'",
+              "problema": "La pieza presenta como regla absoluta que el periodo de prueba no puede exceder de 30 días, omitiendo la excepción legal prevista en el mismo artículo 39-A para puestos de dirección, gerenciales o labores técnicas especializadas, donde puede extenderse hasta 180 días.",
+              "correccion": "Debe aclararse que, por regla general, el periodo es de 30 días, pero puede extenderse hasta 180 días para puestos de dirección, gerenciales o labores técnicas o profesionales especializadas."
+            }
+          ]
+        }
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "Durante el periodo de prueba el trabajador tiene derecho a recibir su salario, seguridad social y prestaciones.",
+              "sostenida": "si",
+              "motivo": "El artículo 39-A de la Ley Federal del Trabajo establece explícitamente que el trabajador disfrutará de estos conceptos durante dicho periodo."
+            },
+            {
+              "conclusion": "El periodo de prueba general es de 30 días.",
+              "sostenida": "si",
+              "motivo": "El artículo 39-A señala que el periodo de prueba no podrá exceder de treinta días, salvo las excepciones para puestos de dirección o especializados."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}

@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "b2efd23d8aea662a"
+      "detalle": "4a469c7a7991fe8a"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,24 +118,24 @@
   "registro": {
     "id": "R20270223-T179",
     "titulo": "¿El gobierno puede suspender todos tus derechos en una emergencia?",
-    "fecha": "2026-11-27T23:50:29+00:00",
-    "sha256": "b2efd23d8aea662a9b0a1143b9d991e274458a3995e39cf4091ff17a0cb5cd91",
+    "fecha": "2026-11-28T11:56:52+00:00",
+    "sha256": "4a469c7a7991fe8a4456aaf9344658bbc6684b8988fe30447a0a9609920f8553",
     "duracion_s": 41.5,
     "estado": "APTO",
-    "huella_guion": "b23f1322eae346d5b3d7a505eab61d91b6794e26c2e9f8d4e9be0406b8d3967d",
+    "huella_guion": "832212ef626b77715ad83ef61b1251b25eccc592445e4787a96df88a65ea2045",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 14.3,
+      "narracion": 12.4,
       "musica": 1.8,
-      "render_video": 31.3,
+      "render_video": 30.9,
       "mezcla_audio": 1.5,
       "auditoria_tecnica": 5.0
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.9,
-      "computo_equivalente_runner_usd": 0.0054,
+      "computo_minutos": 0.86,
+      "computo_equivalente_runner_usd": 0.0052,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
     "frames": 1242,

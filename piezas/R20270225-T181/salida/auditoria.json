@@ -18,12 +18,12 @@
     {
       "control": "Duración entre 20 y 45 s (límite de Reels de Instagram por API, comprobado el 2-11-2026)",
       "resultado": "APROBADO",
-      "detalle": "40.4 s"
+      "detalle": "42.6 s"
     },
     {
       "control": "Duración mayor a 60 s (requisito de TikTok Recompensas)",
       "resultado": "FALLA",
-      "detalle": "40.4 s"
+      "detalle": "42.6 s"
     },
     {
       "control": "Pista de audio AAC 48 kHz estéreo",
@@ -38,7 +38,7 @@
     {
       "control": "Sonoridad -14 LUFS ±1.5",
       "resultado": "APROBADO",
-      "detalle": "-14.2 LUFS"
+      "detalle": "-14.1 LUFS"
     },
     {
       "control": "Pico verdadero ≤ -1 dBTP",
@@ -58,7 +58,7 @@
     {
       "control": "Subtítulos presentes y dentro de la duración",
       "resultado": "APROBADO",
-      "detalle": "30 bloques"
+      "detalle": "31 bloques"
     },
     {
       "control": "Bloques de subtítulo de 30 caracteres o menos",
@@ -68,7 +68,7 @@
     {
       "control": "No duplica un video ya registrado (SHA-256)",
       "resultado": "APROBADO",
-      "detalle": "87ccb5babac145a7"
+      "detalle": "be9a538bd2e7598a"
     },
     {
       "control": "Sincronía voz-subtítulos ≤ 150 ms por oración",
@@ -118,27 +118,27 @@
   "registro": {
     "id": "R20270225-T181",
     "titulo": "¿Cuántas horas de visita debe permitir una prisión?",
-    "fecha": "2026-11-27T23:51:39+00:00",
-    "sha256": "87ccb5babac145a7b0aade75d653ccc5d252786edff058485dd1d4028604fd6b",
-    "duracion_s": 40.4,
+    "fecha": "2026-11-28T11:58:01+00:00",
+    "sha256": "be9a538bd2e7598ac0e33a0f130ddc7889adb415ca1777296504163492938ec0",
+    "duracion_s": 42.6,
     "estado": "APTO",
-    "huella_guion": "0c5bff3224af4d393f46a741593364c98bbd6ce581451a14267665e64c84d799",
+    "huella_guion": "8a9c25aa679d92b367826fdfd683347e46f9db26dbd3b2f2215c24fccf69a5d1",
     "carril": "A",
     "tiempos_s": {
       "auditoria_juridica": 0.0,
-      "narracion": 11.7,
-      "musica": 1.7,
-      "render_video": 26.9,
-      "mezcla_audio": 1.4,
-      "auditoria_tecnica": 5.0
+      "narracion": 12.1,
+      "musica": 1.8,
+      "render_video": 27.7,
+      "mezcla_audio": 1.5,
+      "auditoria_tecnica": 5.1
     },
     "costo": {
       "apis_de_pago_usd": 0.0,
-      "computo_minutos": 0.78,
-      "computo_equivalente_runner_usd": 0.0047,
+      "computo_minutos": 0.8,
+      "computo_equivalente_runner_usd": 0.0048,
       "nota": "Producción 100% local con herramientas gratuitas. El cómputo equivale al costo de un runner de GitHub Actions solo si se exceden los 2,000 minutos gratuitos al mes. No incluye el uso de Claude para investigación y guion (cubierto por la suscripción existente)."
     },
-    "frames": 1209,
-    "caracteres_narrados": 557
+    "frames": 1275,
+    "caracteres_narrados": 596
   }
 }

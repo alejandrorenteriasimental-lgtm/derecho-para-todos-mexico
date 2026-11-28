@@ -1,0 +1,165 @@
+{
+  "id": "I20270225-T181",
+  "formato": "imagen",
+  "plantilla": "concepto",
+  "titulo": "¿El Ministerio Público puede prohibir que se te acerquen?",
+  "version_esquema": "0.3",
+  "riesgo": "bajo",
+  "tema_id": "T181",
+  "pieza": {
+    "titular": "¿El Ministerio Público puede prohibir que se te acerquen?",
+    "bajada": "Sí, el Ministerio Público puede ordenar esta medida cuando estime que el imputado representa un riesgo inminente.",
+    "cita": "I. Prohibición de acercarse o comunicarse con la víctima u ofendido;",
+    "etiqueta_cita": "Código Nacional de Procedimientos Penales, artículo 137",
+    "ojo": "Requiere audiencia ante el juez en los siguientes cinco días.",
+    "fuente_visible": "Código Nacional de Procedimientos Penales, art. 137"
+  },
+  "copy": "El Código Nacional de Procedimientos Penales, en su artículo 137, faculta al Ministerio Público para dictar medidas de protección. Esto ocurre cuando la autoridad considera que existe un riesgo real para la integridad de la víctima.\n\nUna de estas medidas es, precisamente, la prohibición de acercarse o comunicarse. Según la ley, el Ministerio Público \"ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente\".\n\nEs importante saber que, para que esta prohibición se mantenga, debe celebrarse una audiencia ante un juez dentro de los cinco días posteriores a su imposición. Guarda esta información o compártela con quien pueda necesitarla.\n\nEsto es información general, no es asesoría legal.",
+  "alt": "Imagen informativa sobre medidas de protección en México. El título pregunta si el Ministerio Público puede prohibir que un agresor se acerque. La respuesta indica que sí, cuando exista riesgo inminente. Incluye la cita del artículo 137 del Código Nacional de Procedimientos Penales.",
+  "relacion_reel": "independiente",
+  "fuentes": {
+    "F1": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "137",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "El Ministerio Público, bajo su más estricta responsabilidad, ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 137",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-28"
+    },
+    "F2": {
+      "tipo": "ley",
+      "nivel": "oficial",
+      "documento": "Código Nacional de Procedimientos Penales",
+      "articulo": "137",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "texto_literal": "I. Prohibición de acercarse o comunicarse con la víctima u ofendido;",
+      "cita": "Código Nacional de Procedimientos Penales, artículo 137",
+      "jurisdiccion": "nacional",
+      "consultado": "2026-11-28"
+    }
+  },
+  "afirmaciones": [
+    {
+      "id": "A1",
+      "tipo": "hecho_normativo",
+      "texto": "El Ministerio Público tiene la facultad de ordenar medidas de protección si considera que hay un riesgo para la víctima.",
+      "fuente": "F1"
+    },
+    {
+      "id": "A2",
+      "tipo": "hecho_normativo",
+      "texto": "Una de las medidas de protección permitidas es evitar que el imputado se comunique o se acerque a la víctima.",
+      "fuente": "F2"
+    }
+  ],
+  "razonamiento": {
+    "suficiente": true,
+    "pregunta": "¿El Ministerio Público puede prohibir que tu agresor se te acerque?",
+    "concepto_central": "medidas de protección",
+    "respuesta_corta": "Sí, el Ministerio Público puede ordenar esta medida cuando estime que el imputado representa un riesgo inminente.",
+    "reglas": [
+      {
+        "conclusion": "El Ministerio Público puede ordenar la prohibición de acercarse como medida de protección ante un riesgo inminente.",
+        "fuente": "F1",
+        "cita_literal": "El Ministerio Público, bajo su más estricta responsabilidad, ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente",
+        "condiciones": [
+          "cuando estime que el imputado representa un riesgo inminente en contra de la seguridad de la víctima u ofendido"
+        ],
+        "excepciones": [],
+        "ref": {
+          "documento": "Código Nacional de Procedimientos Penales",
+          "articulo": "137"
+        }
+      }
+    ],
+    "elementos": [
+      {
+        "elemento": "efecto",
+        "estado": "cubierto",
+        "respuesta": "El Ministerio Público emite la orden de protección de forma fundada y motivada.",
+        "fuente": "F1",
+        "cita_literal": "ordenará fundada y motivadamente la aplicación de las medidas de protección idóneas cuando estime que el imputado representa un riesgo inminente"
+      }
+    ],
+    "interpretaciones": [],
+    "distinciones": [],
+    "limites": "El texto se limita a facultar al Ministerio Público para ordenar medidas de protección basadas en el riesgo inminente."
+  },
+  "generacion": {
+    "afirmaciones_eliminadas_sin_ancla": [],
+    "fuentes_descartadas": [],
+    "fecha": "2026-11-28T11:53:58+00:00",
+    "solicitud": "2027-02-25_imagen_T181-lote-10.json",
+    "metodo": "analisis_previo_v2_cobertura",
+    "metricas": {
+      "llamadas_ia": {
+        "investigador": 0,
+        "redactor": 2,
+        "auditor": 1
+      },
+      "llamadas_ia_total": 3,
+      "intentos_analisis": 0,
+      "intentos_redaccion": 2,
+      "investigacion_complementaria": false
+    },
+    "modelos": {
+      "investigador": [
+        "gemini:gemini-3.5-flash-lite",
+        "gemini:gemini-3-flash-preview",
+        "gemini:gemini-3.1-flash-lite",
+        "gemini:gemini-3.6-flash"
+      ],
+      "redactor": "gemini-3-flash-preview"
+    }
+  },
+  "pregunta_original": "¿El Ministerio Público puede prohibir que tu agresor se te acerque?",
+  "tipo_pregunta": "legalidad",
+  "revision_razonamiento": [],
+  "auditoria_ia": {
+    "veredicto": "sin_objeciones",
+    "modelo_auditor": "gemini-3.1-flash-lite",
+    "historial": [
+      {
+        "etapa": "analisis",
+        "reutilizado": true,
+        "errores": []
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 0,
+        "errores_esquema": [
+          "[respuesta] La respuesta corta no aparece en el contenido visible: «Sí, el Ministerio Público puede ordenar esta medida cuando estime que el imputado represen»."
+        ],
+        "visible": "  \n   \n Sí, como medida de protección, cuando estime que el imputado representa un riesgo inminente contra la seguridad de la víctima. \n I. Prohibición de acercarse o comunicarse con la víctima u ofendido; \n Se requiere audiencia en los cinco días siguientes."
+      },
+      {
+        "etapa": "redaccion",
+        "intento": 1,
+        "auditoria_ia": {
+          "veredicto": "sin_objeciones",
+          "cobertura": {
+            "responde_nucleo": true,
+            "faltantes": []
+          },
+          "conclusiones": [
+            {
+              "conclusion": "El Ministerio Público puede ordenar la prohibición de acercarse como medida de protección ante un riesgo inminente.",
+              "sostenida": "si",
+              "motivo": "El artículo 137 del CNPP faculta expresamente al Ministerio Público para ordenar medidas de protección, incluyendo la prohibición de acercamiento, cuando estime un riesgo inminente."
+            },
+            {
+              "conclusion": "Para que la medida se mantenga, debe celebrarse una audiencia ante un juez dentro de los cinco días posteriores.",
+              "sostenida": "si",
+              "motivo": "El artículo 137 establece explícitamente que dentro de los cinco días siguientes a la imposición de las medidas (fracciones I, II y III) debe celebrarse audiencia para ratificar, modificar o cancelar."
+            }
+          ],
+          "objeciones": []
+        }
+      }
+    ],
+    "familia_distinta": false
+  }
+}
